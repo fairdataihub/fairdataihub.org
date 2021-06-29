@@ -1,15 +1,29 @@
 <template>
-  <Navbar></Navbar>
+  <the-navbar></the-navbar>
   <router-view name="mainContent"></router-view>
+  <the-footer></the-footer>
 </template>
 
 <script>
-import Navbar from "./components/UI/Navbar.vue";
+import TheNavbar from "./components/UI/TheNavbar.vue";
+import TheFooter from "./components/UI/TheFooter.vue";
 
 export default {
   name: "App",
   components: {
-    Navbar,
+    TheNavbar,
+    TheFooter,
+  },
+  mounted() {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.querySelector("html").classList.add("dark");
+    } else if (localStorage.theme === "dark") {
+      document.querySelector("html").classList.add("dark");
+    }
   },
 };
 </script>

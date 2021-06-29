@@ -4,7 +4,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx,html}",
   ],
-  darkMode: "media",
+  darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: (theme) => ({

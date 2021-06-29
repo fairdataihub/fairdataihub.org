@@ -1,15 +1,16 @@
 <template>
-  <base-section class="pt-3 sm:pt-16">
+  <base-section class="pt-12 sm:pt-16">
     <div
       class="
         bg-udCompleteTask bg-right
-        mobile-svg-div
-        sm:regular-svg-div
         svg-div
+        w-99vw
         justify-start
+        h-40vh
+        sm:h-99vh
       "
     >
-      <card-content :parentClasses="['text-right']">
+      <card-content :textAlign="`text-right`">
         <template #title>
           Scientific Data Curation and Sharing Made Easy
         </template>
@@ -17,7 +18,7 @@
           Making all biomedical research data Findable, Accessible,
           Interoperable, amd Reusable (FAIR) is crucial to enhance the pace of
           discovery for improving human health. We develop tools so that it is
-          easy, rapid and fun for researchers =to achieve that.
+          easy, rapid and fun for researchers to achieve that.
         </template>
       </card-content>
     </div>
@@ -26,13 +27,14 @@
     <div
       class="
         bg-udDesignInspiration bg-left
-        mobile-svg-div
-        sm:regular-svg-div
+        w-99vw
+        h-40vh
+        sm:h-99vh
         svg-div
         justify-end
       "
     >
-      <card-content :parentClasses="['text-left']">
+      <card-content :textAlign="`text-left`">
         <template #title> Our Vision </template>
         <template #default>
           SODA (Software to Organize Data Automatically) for SPARC is a desktop

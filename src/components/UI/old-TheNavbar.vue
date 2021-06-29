@@ -82,6 +82,7 @@
         </div>
         <div
           class="
+            pr-2
             flex-1 flex
             items-center
             justify-center
@@ -132,7 +133,7 @@
 
 <script>
 export default {
-  name: "Navbar",
+  name: "TheNavbar",
   props: {
     msg: String,
   },

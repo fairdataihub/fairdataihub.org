@@ -10,13 +10,16 @@
 @tailwind utilities;
 
 @layer utilities {
-  .mobile-svg-div {
-    width: 99vw;
-    height: 50vh;
-  }
-  .regular-svg-div {
-    width: 99vw;
-    height: 99vh;
+  @variants responsive {
+    .w-99vw {
+      width: 99vw;
+    }
+    .h-99vh {
+      height: 99vh;
+    }
+    .h-40vh {
+      height: 40vh;
+    }
   }
 }
 
@@ -24,4 +27,8 @@
 }
 
 @layer base {
+}
+
+.nav-bar-item.router-link-active {
+  @apply border-b-2 border-gray-900 dark:border-white !important;
 }
