@@ -5,6 +5,7 @@ import "./index.css";
 
 import HomePage from "./components/HomePage/HomePage.vue";
 import TheTeam from "./components/TheTeam/TheTeam.vue";
+import BaseSection from "./components/UI/BaseSection.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -16,6 +17,8 @@ const router = createRouter({
 });
 
 const app = createApp(App);
+
+app.component("base-section", BaseSection);
 
 app.use(router);
 

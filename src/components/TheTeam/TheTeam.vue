@@ -3,6 +3,11 @@
 <script>
 export default {
   name: "TheTeam",
+  data() {
+    return {
+      teamsShown: false,
+    };
+  },
 };
 </script>
 

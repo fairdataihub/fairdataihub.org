@@ -2,23 +2,26 @@
 
 @tailwind components;
 
+@font-face {
+  font-family: "Bitter";
+  src: local("Bitter"), url(./fonts/Bitter-Bold.ttf) format("ttf");
+}
+
 @tailwind utilities;
 
-@layer components {
-  .nav-bar-item {
-    @apply border-b-2 border-transparent text-gray-500 px-2 pt-2 text-base text-center font-medium transition-all hover:border-gray-500 hover:text-gray-900;
+@layer utilities {
+  .mobile-svg-div {
+    width: 99vw;
+    height: 50vh;
   }
-  .mobile-nav-bar-item {
-    @apply bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium;
-  }
-
-  .mobile-nav-bar-item.router-link-active {
-    @apply text-white !important;
+  .regular-svg-div {
+    width: 99vw;
+    height: 99vh;
   }
 }
 
+@layer components {
+}
+
 @layer base {
-  .router-link-active {
-    @apply text-gray-900 border-b-2 border-gray-800 !important;
-  }
 }

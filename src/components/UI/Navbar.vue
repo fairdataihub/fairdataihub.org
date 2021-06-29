@@ -1,6 +1,19 @@
 <template>
   <nav class="bg-transparent">
-    <div class="max-w-7xl sm:ml-5">
+    <div
+      class="
+        w-full
+        sm:ml-5
+        backdrop-filter backdrop-blur-lg
+        fixed
+        mb-2
+        bg-red
+        sm:bg-green-500
+        md:bg-blue-700
+        lg:bg-pink-600
+        z-10
+      "
+    >
       <div class="relative flex items-center justify-between h-14">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -72,40 +85,26 @@
             flex-1 flex
             items-center
             justify-center
-            sm:items-stretch sm:justify-start
+            sm:items-stretch sm:justify-between
           "
         >
           <div class="flex-shrink-0 flex items-center">
             <img
               class="block md:hidden h-8 w-auto"
-              src="../assets/iconLogo.svg"
+              src="../../assets/iconLogo.svg"
               alt="Workflow"
             />
             <img
               class="hidden md:block h-8 w-auto"
-              src="../assets/fullLogo.svg"
+              src="../../assets/fullLogo.svg"
               alt="Workflow"
             />
           </div>
-          <div class="hidden sm:block sm:ml-6">
-            <div class="flex space-x-8">
+          <div class="hidden sm:block sm:mr-10">
+            <div class="flex space-x-4">
               <router-link to="/home" class="nav-bar-item"> Home </router-link>
 
-              <div
-                href="#"
-                class="
-                  text-gray-500
-                  border-b-2 border-transparent
-                  px-2
-                  pt-2
-                  text-base text-center
-                  font-medium
-                  transition-all
-                  hover:border-b-2 hover:border-gray-500 hover:text-gray-700
-                "
-              >
-                Projects
-              </div>
+              <div href="#" class="nav-bar-item">Projects</div>
 
               <router-link to="/team" class="nav-bar-item">
                 The Team
@@ -114,17 +113,18 @@
           </div>
         </div>
       </div>
-    </div>
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div v-if="isMenuOpen" class="sm:hidden transition" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-700">
+          <router-link to="/home" class="mobile-nav-bar-item">
+            Home
+          </router-link>
+          <a href="#" class="mobile-nav-bar-item">Projects</a>
 
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div v-if="isMenuOpen" class="sm:hidden transition" id="mobile-menu">
-      <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-700">
-        <router-link to="/home" class="mobile-nav-bar-item"> Home </router-link>
-        <a href="#" class="mobile-nav-bar-item">Projects</a>
-
-        <router-link to="/team" class="mobile-nav-bar-item">
-          The Team
-        </router-link>
+          <router-link to="/team" class="mobile-nav-bar-item">
+            The Team
+          </router-link>
+        </div>
       </div>
     </div>
   </nav>
@@ -150,4 +150,17 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped lang="postcss">
+.nav-bar-item {
+  @apply border-b-2 border-transparent text-gray-500 px-2 pt-2 text-base text-center font-medium transition-all hover:border-gray-500 hover:text-gray-900;
+}
+.mobile-nav-bar-item {
+  @apply bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium;
+}
+.nav-bar-item.router-link-active {
+  @apply text-gray-900 border-b-2 border-gray-800 !important;
+}
+.mobile-nav-bar-item.router-link-active {
+  @apply text-white !important;
+}
+</style>
