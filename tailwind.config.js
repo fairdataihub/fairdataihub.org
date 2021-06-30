@@ -3,6 +3,7 @@ module.exports = {
     "./public/**/*.html",
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx,html}",
+    "./node_modules/vueperslides/dist/vueperslides.css",
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
