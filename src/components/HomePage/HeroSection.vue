@@ -5,11 +5,12 @@
         <div class="lg:max-w-lg">
           <h1
             class="
-              dark:text-white
               md:py-3
               w-full
               font-sans font-black
-              text-gray-900 text-xl
+              text-black
+              dark:text-white
+              text-xl
               sm:text-3xl
               md:text-4xl
               lg:text-5xl
@@ -28,8 +29,8 @@
               sm:text-base
               md:text-lg
               lg:text-xl
-              text-gray-900
-              dark:text-gray-50
+              text-black
+              dark:text-white
             "
           >
             Making all biomedical research data Findable, Accessible,

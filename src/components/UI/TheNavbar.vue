@@ -127,8 +127,7 @@
                     "
                   >
                     <span
-                      class="w-max flex justify-center h-auto"
-                      style="white-space: nowrap"
+                      class="w-max flex justify-center h-auto whitespace-nowrap"
                     >
                       Our Projects
                     </span>

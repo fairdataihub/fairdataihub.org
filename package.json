@@ -12,7 +12,8 @@
     "@heroicons/vue": "^1.0.1",
     "core-js": "^3.6.5",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.10"
+    "vue-router": "^4.0.10",
+    "vueperslides": "^3.3.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

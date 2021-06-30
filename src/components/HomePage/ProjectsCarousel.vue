@@ -1,7 +1,64 @@
 <template>
-  <div class="m-10 mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200">
-    <!-- Carousel Body -->
-    <div
+  <div class="w-full h-auto mx-auto py-3">
+    <vueper-slides
+      :bullets="true"
+      :arrows="true"
+      :touchable="false"
+      autoplay
+      :pause-on-hover="true"
+      :class="`no-shadow`"
+      fixed-height="75vh"
+    >
+      <vueper-slide>
+        <template v-slot:content>
+          <project-card
+            :projectImage="`https://images.unsplash.com/photo-1494726161322-5360d4d0eeae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80`"
+            :actionButtons="sodaForSPARCData"
+            :learnMoreLink="`/sodasparc`"
+          >
+            <template #title> SODA for SPARC </template>
+            <template #description>
+              SODA for SPARC is a desktop software intended to facilitate the
+              data organization and submission process for SPARC investigators
+              and thus promote the FAIR Data Principles. SODA for SPARC is
+              designed such that users can accomplish all the requirements to
+              submit a SPARC dataset rapidly through a single interface. SODA
+              for SPARC is designed such that users can accomplish all the
+              requirements to submit a SPARC dataset rapidly through a single
+              interface. SODA for SPARC is designed such that users can
+              accomplish all the requirements to submit a SPARC dataset rapidly
+              through a single interface. SODA for SPARC is designed such that
+              users can accomplish all the requirements to submit a SPARC
+              dataset rapidly through a single interface.
+            </template>
+            <template #subtitle> Download SODA </template>
+          </project-card>
+        </template>
+      </vueper-slide>
+      <vueper-slide>
+        <template v-slot:content>
+          <project-card
+            :projectImage="`https://images.unsplash.com/photo-1494726161322-5360d4d0eeae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80`"
+            :actionButtons="sodaForSPARCData"
+            :learnMoreLink="`/sodasparc`"
+          >
+            <template #title> SODA for SPARC 2 </template>
+            <template #description>
+              SODA for SPARC is a desktop software intended to facilitate the
+              data organization and submission process for SPARC investigators
+              and thus promote the FAIR Data Principles. SODA for SPARC is
+              designed such that users can accomplish all the requirements to
+              submit a SPARC dataset rapidly through a single interface.
+            </template>
+            <template #subtitle> Download SODA for COVID </template>
+          </project-card>
+        </template>
+      </vueper-slide>
+    </vueper-slides>
+  </div>
+  <!-- <div class="m-10 mx-auto p-16 sm:p-24 lg:p-48 bg-gray-200"> -->
+  <!-- Carousel Body -->
+  <!-- <div 
       class="
         relative
         rounded-lg
@@ -18,7 +75,7 @@
           relative
           w-full
           md:w-2/5
-          h-full
+          h-auto
           overflow-hidden
           rounded-t-lg
           md:rounded-t-none md:rounded-l-lg
@@ -30,9 +87,7 @@
           src="https://stripe.com/img/v3/payments/overview/photos/missguided.jpg"
           alt=""
         />
-        <div
-          class="absolute inset-0 w-full h-full bg-indigo-900 opacity-75"
-        ></div>
+        <div class="absolute w-full h-full bg-indigo-900 opacity-75"></div>
         <div
           class="
             absolute
@@ -62,11 +117,19 @@
       >
         <div class="p-12 md:pr-24 md:pl-16 md:py-12">
           <p class="text-gray-600">
-            <span class="text-gray-900">Missguided</span> is a UK-based fashion
-            retailer that has nearly doubled in size since last year. They
-            integrated Stripe to deliver seamless checkout across mobile and web
-            for customers in 100+ countries, all while automatically combating
-            fraud.
+            <span class="text-gray-900">
+              SODA(Software to Organize Data Automatically)
+            </span>
+            for SPARC is a desktop software intended to facilitate the data
+            organization and submission process for SPARC investigators and thus
+            promote the FAIR Data Principles. SODA for SPARC is designed such
+            that users can accomplish all the requirements to submit a SPARC
+            dataset rapidly through a single interface. SODA for SPARC is
+            designed such that users can accomplish all the requirements to
+            submit a SPARC dataset rapidly through a single interface. SODA for
+            SPARC is designed such that users can accomplish all the
+            requirements to submit a SPARC dataset rapidly through a single
+            interface.
           </p>
           <a
             class="
@@ -104,9 +167,7 @@
       <button
         class="
           absolute
-          top-0
-          mt-32
-          left-0
+          mx-auto
           bg-white
           rounded-full
           shadow-md
@@ -141,10 +202,11 @@
       >
         <span class="block" style="transform: scale(1)">&#x279c;</span>
       </button>
-    </div>
+    </div> -->
 
-    <!-- Carousel Tabs -->
-    <div class="flex items-center pt-5 justify-between">
+  <!-- Carousel Tabs -->
+  <!-- Inspiration from: https://stripe.com/gb/payments -->
+  <!-- <div class="flex items-center pt-5 justify-around"> 
       <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
         <img
           class="w-full"
@@ -152,31 +214,9 @@
           alt=""
           style="max-height: 60px"
         />
+        SODA for SPARC logo
       </button>
-      <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
-        <img
-          class="w-full"
-          src="https://stripe.com/img/v3/payments/overview/logos/slack.svg"
-          alt=""
-          style="max-height: 60px"
-        />
-      </button>
-      <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
-        <img
-          class="w-full"
-          src="https://stripe.com/img/v3/payments/overview/logos/glossier.svg"
-          alt=""
-          style="max-height: 60px"
-        />
-      </button>
-      <button class="px-2 opacity-50 hover:opacity-100 focus:opacity-100">
-        <img
-          class="w-full"
-          src="https://stripe.com/img/v3/payments/overview/logos/charity_water.svg"
-          alt=""
-          style="max-height: 60px"
-        />
-      </button>
+
       <button class="px-2 opacity-100 hover:opacity-100 focus:opacity-100">
         <img
           class="w-full"
@@ -184,15 +224,64 @@
           alt=""
           style="max-height: 60px"
         />
+        SODA for COVID-19 logo
       </button>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
+import { VueperSlides, VueperSlide } from "vueperslides";
+import "vueperslides/dist/vueperslides.css";
+import ProjectCard from "./ProjectCard.vue";
+
 export default {
   name: "ProjectsCarousel",
+  components: {
+    VueperSlides,
+    VueperSlide,
+    ProjectCard,
+  },
+  data() {
+    return {
+      sodaForSPARCData: [
+        { name: "Windows Installer", href: "/sodasparc-windowsinstaller" },
+        { name: "macOS Installer", href: "/sodasparc-macosinstaller" },
+        { name: "Linux Installer", href: "/sodasparc-linuxinstaller" },
+      ],
+    };
+  },
+  methods: {},
 };
 </script>
 
-<style></style>
+<style>
+.vueperslides__bullet .default {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  box-shadow: none;
+  transition: 0.3s;
+  width: 16px;
+  height: 16px;
+}
+
+.vueperslides__bullets {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.vueperslides__bullet--active .default {
+  background-color: #42b983;
+}
+
+.vueperslides__bullet span {
+  display: block;
+  color: #fff;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.vueperslides__arrow {
+  color: purple;
+}
+</style>
