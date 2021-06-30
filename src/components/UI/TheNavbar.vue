@@ -1,8 +1,22 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <Disclosure as="nav" class="bg-gray-50 dark:bg-gray-800" v-slot="{ open }">
-    <div class="max-w-screen mx-auto px-2 sm:px-4">
-      <div class="relative flex items-center justify-between h-16">
+    <div class="min-w-screen mx-auto bg-gray-50 dark:bg-gray-800">
+      <div
+        class="
+          fixed
+          flex
+          items-center
+          justify-between
+          h-16
+          w-screen
+          bg-gray-50
+          dark:bg-gray-800
+          z-10
+          px-2
+          sm:px-6
+        "
+      >
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
@@ -31,16 +45,20 @@
           "
         >
           <div class="flex-shrink-0 flex items-center">
-            <img
-              class="block lg:hidden h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-              alt="Workflow"
-            />
-            <img
-              class="hidden lg:block h-8 w-auto"
-              src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
-              alt="Workflow"
-            />
+            <router-link to="/home">
+              <img
+                class="block lg:hidden h-8 w-auto"
+                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                alt="Workflow"
+              />
+            </router-link>
+            <router-link to="/home">
+              <img
+                class="hidden lg:block h-8 w-auto"
+                src="https://tailwindui.com/img/logos/workflow-logo-indigo-500-mark-white-text.svg"
+                alt="Workflow"
+              />
+            </router-link>
           </div>
         </div>
         <div
@@ -138,7 +156,10 @@
                   rounded-md
                   shadow-lg
                   py-1
-                  bg-white
+                  bg-gray-800
+                  dark:bg-gray-50
+                  text-sm text-white
+                  dark:text-black
                 "
               >
                 <router-link to="/sodasparc">
@@ -147,7 +168,7 @@
                       href="#"
                       :class="[
                         active ? 'bg-gray-100' : '',
-                        'block px-4 py-2 text-sm text-gray-700',
+                        'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
                       ]"
                     >
                       SODA for SPARC
@@ -160,7 +181,7 @@
                       href="#"
                       :class="[
                         active ? 'bg-gray-100' : '',
-                        'block px-4 py-2 text-sm text-gray-700',
+                        'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
                       ]"
                     >
                       SODA for COVID-19
@@ -173,7 +194,7 @@
                       href="#"
                       :class="[
                         active ? 'bg-gray-100' : '',
-                        'block px-4 py-2 text-sm text-gray-700',
+                        'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
                       ]"
                     >
                       MyFAIRData.io
@@ -183,7 +204,7 @@
               </MenuItems>
             </transition>
           </Menu>
-          <div class="flex items-center justify-center pl-4 pr-1">
+          <div class="hidden sm:flex items-center justify-center pl-4 pr-1">
             <div class="w-full max-w-xs mx-auto">
               <div as="div" class="flex items-center space-x-4">
                 <SunIcon class="w-4 h-4" />
@@ -227,7 +248,7 @@
                     }"
                   />
                 </Switch>
-                <MoonIcon class="w-4 h-4" :currentColor="white" />
+                <MoonIcon class="w-4 h-4" />
               </div>
             </div>
           </div>
@@ -235,21 +256,26 @@
       </div>
     </div>
 
-    <DisclosurePanel class="sm:hidden">
+    <!-- Mobile menu panel -->
+    <DisclosurePanel class="sm:hidden pt-16">
       <div class="px-2 pt-2 pb-3 space-y-1">
-        <a
+        <router-link
           v-for="item in navigation"
           :key="item.name"
-          :href="item.href"
-          :class="[
-            item.current
-              ? 'bg-gray-900 text-white'
-              : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-            'block px-3 py-2 rounded-md text-base font-medium',
-          ]"
-          :aria-current="item.current ? 'page' : undefined"
-          >{{ item.name }}</a
+          :to="item.href"
+          class="
+            text-gray-300
+            hover:bg-gray-700 hover:text-white
+            block
+            px-3
+            py-2
+            rounded-md
+            text-base
+            font-medium
+          "
         >
+          {{ item.name }}
+        </router-link>
       </div>
     </DisclosurePanel>
   </Disclosure>
@@ -276,8 +302,8 @@ import {
 } from "@heroicons/vue/outline";
 
 const navigation = [
-  { name: "Home", href: "/home", current: true },
-  { name: "Meet The Team", href: "/team", current: false },
+  { name: "Home", href: "/home" },
+  { name: "Meet The Team", href: "/team" },
 ];
 
 export default {
@@ -299,32 +325,50 @@ export default {
   },
   setup() {
     const open = ref(false);
-    let switchValue;
-
-    if (localStorage.theme == "dark") {
-      switchValue = ref(true);
-    } else {
-      switchValue = ref(false);
-    }
 
     return {
       navigation,
       open,
-      switchValue,
     };
   },
+  mounted() {
+    if (!("theme" in localStorage)) {
+      this.switchValue = false;
+      this.checked = false;
+    } else if (localStorage.theme == "dark") {
+      this.switchValue = true;
+      this.checked = true;
+    }
+  },
   data() {
-    return { darkModeEnabled: false };
+    return { switchValue: false, checked: false };
   },
   methods: {
     switchToDarkMode() {
       let htmlClasses = document.querySelector("html").classList;
-      if (localStorage.theme == "dark") {
-        htmlClasses.remove("dark");
-        localStorage.removeItem("theme");
+      if ("theme" in localStorage) {
+        if (localStorage.theme == "dark") {
+          htmlClasses.remove("dark");
+          localStorage.removeItem("theme");
+          this.switchValue = false;
+          this.checked = false;
+        } else {
+          htmlClasses.add("dark");
+          localStorage.theme = "dark";
+          this.switchValue = true;
+          this.checked = true;
+        }
       } else {
-        htmlClasses.add("dark");
-        localStorage.theme = "dark";
+        if (this.switchValue) {
+          htmlClasses.add("dark");
+          localStorage.theme = "dark";
+          this.checked = true;
+        } else {
+          htmlClasses.remove("dark");
+          localStorage.removeItem("theme");
+          this.switchValue = false;
+          this.checked = false;
+        }
       }
     },
   },

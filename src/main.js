@@ -6,6 +6,7 @@ import "./index.css";
 import HomePage from "./components/HomePage/HomePage.vue";
 import TheTeam from "./components/TheTeam/TheTeam.vue";
 import BaseSection from "./components/UI/BaseSection.vue";
+import TheErrorPage from "./components/TheErrorPage/TheErrorPage.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -13,6 +14,11 @@ const router = createRouter({
     { path: "/", name: "root", redirect: "/home" },
     { path: "/home", components: { mainContent: HomePage }, name: "home" },
     { path: "/team", components: { mainContent: TheTeam }, name: "theTeam" },
+    {
+      path: "/:pathMatch(.*)*",
+      components: { mainContent: TheErrorPage },
+      name: "TheErrorPage",
+    },
   ],
 });
 

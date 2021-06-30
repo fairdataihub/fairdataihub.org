@@ -1,64 +1,45 @@
 <template>
-  <base-section class="pt-12 sm:pt-16">
-    <div
-      class="
-        bg-udCompleteTask bg-right
-        svg-div
-        w-99vw
-        justify-start
-        h-40vh
-        sm:h-99vh
-      "
-    >
-      <card-content :textAlign="`text-right`">
-        <template #title>
-          Scientific Data Curation and Sharing Made Easy
-        </template>
-        <template #default>
-          Making all biomedical research data Findable, Accessible,
-          Interoperable, amd Reusable (FAIR) is crucial to enhance the pace of
-          discovery for improving human health. We develop tools so that it is
-          easy, rapid and fun for researchers to achieve that.
-        </template>
-      </card-content>
-    </div>
+  <base-section class="pt-12 sm:pt-16 dark:bg-gray-700">
+    <hero-section></hero-section>
   </base-section>
-  <base-section>
-    <div
-      class="
-        bg-udDesignInspiration bg-left
-        w-99vw
-        h-40vh
-        sm:h-99vh
-        svg-div
-        justify-end
-      "
-    >
-      <card-content :textAlign="`text-left`">
-        <template #title> Our Vision </template>
-        <template #default>
-          SODA (Software to Organize Data Automatically) for SPARC is a desktop
-          software intended to facilitate the data organization and submission
-          process for SPARC investigators and thus promote the FAIR Data
-          Principles.
-        </template>
-      </card-content>
-    </div>
+  <base-section class="dark:bg-gray-800">
+    <our-vision></our-vision>
   </base-section>
+  <base-section class="dark:bg-gray-700 pb-6">
+    <about-us></about-us>
+  </base-section>
+  <base-section class="dark:bg-gray-800">
+    <hr class="border-0 bg-gray-300 w-9/12 mx-auto text-gray-500 h-px"
+  /></base-section>
+  <base-section class="dark:bg-gray-800">
+    <homepage-testimonials></homepage-testimonials>
+  </base-section>
+  <base-section class="dark:bg-gray-800">
+    <projects-carousel></projects-carousel>
+  </base-section>
+  <!-- Add a used by which orgs components -->
+  <!-- Add a pull from google tags component -->
 </template>
 
 <script>
 import BaseSection from "../UI/BaseSection.vue";
-import CardContent from "./CardContent.vue";
+import HeroSection from "./HeroSection.vue";
+import OurVision from "./OurVision.vue";
+import AboutUs from "./AboutUs.vue";
+import HomepageTestimonials from "./HomepageTestimonials.vue";
+import ProjectsCarousel from "./ProjectsCarousel.vue";
+
 export default {
   name: "HomePage",
-  components: { BaseSection, CardContent },
+  components: {
+    BaseSection,
+    HeroSection,
+    OurVision,
+    AboutUs,
+    HomepageTestimonials,
+    ProjectsCarousel,
+  },
 };
 </script>
 
-CardContent
-<style scoped language="postcss">
-.svg-div {
-  @apply bg-no-repeat bg-contain flex items-center mx-auto;
-}
-</style>
+<style scoped language="postcss"></style>
