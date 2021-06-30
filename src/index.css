@@ -21,6 +21,8 @@
       height: 40vh;
     }
   }
+  @variants dark {
+  }
 }
 
 @layer components {
@@ -28,7 +30,6 @@
 
 @layer base {
 }
-
 .nav-bar-item.router-link-active {
   @apply border-b-2 border-gray-900 dark:border-white !important;
 }

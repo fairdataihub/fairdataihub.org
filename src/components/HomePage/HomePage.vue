@@ -19,6 +19,10 @@
     <projects-carousel></projects-carousel>
   </base-section>
 
+  <base-section class="dark:bg-gray-800">
+    <hr class="border-0 bg-gray-300 w-9/12 mx-auto text-gray-500 h-px" />
+  </base-section>
+
   <base-section class="dark:bg-gray-700">
     <collaborators-section></collaborators-section>
   </base-section>

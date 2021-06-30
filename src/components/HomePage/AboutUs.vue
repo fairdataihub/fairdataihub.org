@@ -10,6 +10,7 @@
           alt="Catalogue-pana.svg"
         />
       </div>
+
       <div class="w-full lg:w-1/2">
         <div class="lg:max-w-2xl">
           <h1
@@ -29,6 +30,7 @@
           >
             About Us
           </h1>
+
           <p
             class="
               mt-2

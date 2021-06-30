@@ -20,6 +20,7 @@
           >
             Scientific Data Curation and Sharing Made Easy
           </h1>
+
           <p
             class="
               mt-2

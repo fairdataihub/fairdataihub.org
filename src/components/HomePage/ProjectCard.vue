@@ -7,7 +7,7 @@
           w-4/5
           mx-auto
           overflow-hidden
-          bg-white
+          bg-gray-100
           rounded-lg
           shadow-lg
           dark:bg-gray-700
