@@ -1,9 +1,11 @@
 <template>
-  <div class="w-full h-auto mx-auto py-3">
+  <div class="w-full max-w-screen-2xl h-auto mx-auto py-3">
     <!-- Slides container -->
     <vueper-slides
       :bullets="true"
       :arrows="true"
+      autoplay
+      :pause-on-hover="true"
       :touchable="false"
       :class="`no-shadow`"
       fixed-height="75vh"

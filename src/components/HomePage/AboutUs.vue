@@ -11,8 +11,8 @@
         />
       </div>
 
-      <div class="w-full lg:w-1/2">
-        <div class="lg:max-w-2xl">
+      <div class="w-full lg:w-1/2 h-full">
+        <div class="lg:max-w-2xl h-full">
           <h1
             class="
               md:py-3
@@ -50,6 +50,32 @@
             Data Principles. We also belive that doing so should be easy for the
             researchers collecting that data.
           </p>
+          <div class="flex w-full justify-center py-5">
+            <router-link to="/team">
+              <button
+                type="button"
+                class="
+                  py-4
+                  px-6
+                  bg-indigo-600
+                  hover:bg-indigo-700
+                  focus:ring-indigo-500 focus:ring-offset-indigo-200
+                  text-white
+                  w-max-content
+                  transition
+                  ease-in
+                  duration-200
+                  text-center text-base
+                  font-semibold
+                  shadow-md
+                  focus:outline-none focus:ring-2 focus:ring-offset-2
+                  rounded-full
+                "
+              >
+                Meet the team
+              </button>
+            </router-link>
+          </div>
         </div>
       </div>
     </div>

@@ -6,10 +6,12 @@
       md:flex-row
       gap-4
       mb-8
+      mx-auto
       md:mb-0
-      flex-between
+      justify-between
       items-center
       p-8
+      max-w-screen-2xl
     "
   >
     <div

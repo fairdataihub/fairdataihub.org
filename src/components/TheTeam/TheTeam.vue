@@ -1,12 +1,20 @@
 <template>
   <base-section class="pt-16">
-    <section class="text-gray-600 body-font">
+    <section class="text-gray-600 body-font dark:bg-gray-700">
       <div class="flex flex-col md:flex-row w-11/12 mx-auto">
         <div class="w-full md:w-1/3 p-5">
-          <h1 class="font-sans font-black text-black text-3xl py-2">
+          <h1
+            class="
+              font-sans font-black
+              text-black
+              dark:text-white
+              text-3xl
+              py-2
+            "
+          >
             About Us
           </h1>
-          <p class="font-sans text-black text-lg">
+          <p class="font-sans text-black dark:text-white text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             laborum commodi corporis tempore dolores saepe quisquam ad inventore
             dignissimos, modi a enim, eaque nulla ex delectus! Dolor,

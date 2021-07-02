@@ -34,6 +34,7 @@
               hover:text-white hover:bg-gray-700
               focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
             "
+            @click="open = !open"
           >
             <span class="sr-only">Open main menu</span>
             <MenuIcon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
@@ -122,6 +123,7 @@
                       py-2
                       w-max
                       flex
+                      nav-bar-item
                       justify-center
                       items-center
                     "
@@ -131,6 +133,7 @@
                         w-max
                         text-sm
                         font-medium
+                        nav-bar-item
                         flex
                         justify-center
                         text-black
@@ -150,6 +153,7 @@
                       stroke="currentColor"
                       class="
                         w-4
+                        nav-bar-item
                         h-4
                         text-lg text-gray-800
                         dark:text-white
@@ -350,6 +354,7 @@
             font-medium
             z-10
           "
+          @click="open = !open"
         >
           {{ item.name }}
         </router-link>

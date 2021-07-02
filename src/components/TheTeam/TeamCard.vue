@@ -1,16 +1,27 @@
 <template>
   <div :class="[borderClasses, `flex flex-col sm:flex-row`]">
-    <div class="w-full md:w-1/3 h-full">
+    <div class="w-full md:w-1/3 h-full shadow-2xl dark:shadow-none">
       <img :src="profile.image" alt="" class="w-full h-auto rounded-lg" />
     </div>
-    <div class="w-full md:w-2/3 py-3 px-0 sm:py-4 sm:px-4 flex flex-col">
-      <h1 class="font-sans text-black text-xl">
+    <div
+      class="w-full md:w-2/3 py-3 px-0 sm:py-4 sm:px-4 lg:ml-8 flex flex-col"
+    >
+      <h1 class="font-sans text-black dark:text-white text-xl lg:text-3xl">
         {{ profile.name }}
       </h1>
-      <h2 class="font-sans text-indigo-600 text-lg pb-2">
+      <h2
+        class="
+          font-sans
+          text-indigo-600
+          dark:text-indigo-200
+          text-lg
+          lg:text-2xl
+          pb-2
+        "
+      >
         {{ profile.title }}
       </h2>
-      <p class="font-sans tex-black text-base">
+      <p class="font-sans text-black dark:text-white text-base lg:text-xl">
         {{ profile.bio }}
       </p>
       <div class="flex">
@@ -26,11 +37,12 @@
             class="
               text-lg
               hover:text-gray-800
-              dark:hover:text-white
+              dark:text-gray-200 dark:hover:text-white
               transition-colors
               duration-200
               h-10
               sm:h-6
+              lg:h-12
             "
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
@@ -53,11 +65,12 @@
             class="
               text-xl
               hover:text-gray-800
-              dark:hover:text-white
+              dark:text-gray-200 dark:hover:text-white
               transition-colors
               duration-200
               h-10
               sm:h-6
+              lg:h-12
             "
             viewBox="0 0 1792 1792"
           >
@@ -78,11 +91,12 @@
             class="
               text-xl
               hover:text-gray-800
-              dark:hover:text-white
+              dark:text-gray-200 dark:hover:text-white
               transition-colors
               duration-200
               h-10
               sm:h-6
+              lg:h-12
             "
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +119,7 @@ export default {
   },
   data() {
     return {
-      borderClasses: `flex p-4 border-grey-800 `,
+      borderClasses: `flex p-4 lg:p-10 border-grey-800 `,
     };
   },
   mounted() {

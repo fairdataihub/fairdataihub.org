@@ -10,6 +10,7 @@
               text-2xl text-black
               dark:text-gray-50
               text-bold
+              p-4
             "
           >
             <strong> Need Help? Contact Us. </strong>
@@ -18,7 +19,7 @@
             class="
               text-center
               font-sans
-              text-base text-black
+              text-xl text-black
               dark:text-gray-100
               text-bold
             "
@@ -31,7 +32,7 @@
 
       <hr class="my-10 dark:border-gray-500" />
 
-      <div class="sm:flex sm:items-center sm:justify-between">
+      <div class="flex items-center justify-between">
         <p class="text-sm text-gray-400">SODA © All rights reserved.</p>
 
         <div class="flex mt-3 -mx-2 sm:mt-0">
