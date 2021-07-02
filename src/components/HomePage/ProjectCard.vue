@@ -26,13 +26,22 @@
             </h1>
           </div>
 
-          <div class="flex justify-evenly h-3/6">
-            <div
+          <div class="flex justify-evenly mt-2 p-5">
+            <!-- <div
               class="w-1/3 h-full bg-cover"
               :style="`background-image:url(${projectImage})`"
-            ></div>
-            <div class="w-1/2 p-4 md:p-1">
-              <p class="mt-2 text-sm text-black dark:text-white">
+            ></div> -->
+            <div class="w-1/3 h-full flex justify-center items-center">
+              <img
+                :src="projectImage"
+                alt=""
+                class="w-full h-auto rounded-lg"
+              />
+            </div>
+            <div
+              class="w-2/3 p-4 md:p-1 md:ml-3 flex justify-center items-center"
+            >
+              <p class="text-sm text-black dark:text-white">
                 <slot name="description">Project description</slot>
               </p>
             </div>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-6 py-8 lg:px-4 mx-auto">
+  <div class="container px-6 py-8 lg:px-4 mx-auto" :id="id">
     <div class="items-center lg:flex">
       <div
         class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2"
@@ -57,7 +57,7 @@
 </template>
 
 <script>
-export default { name: "AboutUs" };
+export default { name: "AboutUs", props: ["id"] };
 </script>
 
 <style></style>

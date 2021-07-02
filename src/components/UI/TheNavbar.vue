@@ -1,6 +1,10 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <Disclosure as="nav" class="bg-gray-50 dark:bg-gray-800" v-slot="{ open }">
+  <Disclosure
+    as="nav"
+    class="bg-gray-50 dark:bg-gray-800 relative"
+    v-slot="{ open }"
+  >
     <div class="min-w-screen mx-auto bg-gray-50 dark:bg-gray-800">
       <div
         class="
@@ -113,13 +117,9 @@
                   <span class="sr-only">Open user menu</span>
                   <div
                     class="
-                      text-black
-                      dark:text-gray-300
                       hover:bg-gray-700 hover:text-white
                       px-3
                       py-2
-                      text-sm
-                      font-medium
                       w-max
                       flex
                       justify-center
@@ -127,11 +127,45 @@
                     "
                   >
                     <span
-                      class="w-max flex justify-center h-auto whitespace-nowrap"
+                      class="
+                        w-max
+                        text-sm
+                        font-medium
+                        flex
+                        justify-center
+                        text-black
+                        hover:text-white
+                        dark:text-white
+                        h-auto
+                        pr-2
+                        whitespace-nowrap
+                      "
                     >
                       Our Projects
                     </span>
-                    <ChevronDownIcon class="w-4 h-4"></ChevronDownIcon>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      class="
+                        w-4
+                        h-4
+                        text-lg text-gray-800
+                        dark:text-white
+                        hover:text-white
+                        transition-colors
+                        duration-200
+                      "
+                      data-v-12379316=""
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 9l-7 7-7-7"
+                      ></path>
+                    </svg>
                   </div>
                 </div>
               </MenuButton>
@@ -206,7 +240,28 @@
           <div class="hidden sm:flex items-center justify-center pl-4 pr-1">
             <div class="w-full max-w-xs mx-auto">
               <div as="div" class="flex items-center space-x-4">
-                <SunIcon class="w-4 h-4" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="
+                    w-4
+                    h-4
+                    text-lg text-gray-800
+                    dark:text-white
+                    transition-colors
+                    duration-200
+                  "
+                  data-v-12379316=""
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
+                  ></path>
+                </svg>
 
                 <Switch
                   as="button"
@@ -247,7 +302,28 @@
                     }"
                   />
                 </Switch>
-                <MoonIcon class="w-4 h-4" />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="
+                    w-4
+                    h-4
+                    text-lg text-gray-800
+                    dark:text-white
+                    transition-colors
+                    duration-200
+                  "
+                  data-v-12379316=""
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"
+                  ></path>
+                </svg>
               </div>
             </div>
           </div>
@@ -256,14 +332,15 @@
     </div>
 
     <!-- Mobile menu panel -->
-    <DisclosurePanel class="sm:hidden pt-16">
-      <div class="px-2 pt-2 pb-3 space-y-1">
+    <DisclosurePanel class="sm:hidden pt-16 fixed w-screen bg-gray-500">
+      <div class="px-2 pt-2 pb-3 space-y-1 z-10">
         <router-link
           v-for="item in navigation"
           :key="item.name"
           :to="item.href"
           class="
             text-gray-300
+            bg-gray-700
             hover:bg-gray-700 hover:text-white
             block
             px-3
@@ -271,6 +348,7 @@
             rounded-md
             text-base
             font-medium
+            z-10
           "
         >
           {{ item.name }}
@@ -292,13 +370,7 @@ import {
   MenuItems,
   Switch,
 } from "@headlessui/vue";
-import {
-  MenuIcon,
-  XIcon,
-  ChevronDownIcon,
-  SunIcon,
-  MoonIcon,
-} from "@heroicons/vue/outline";
+import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 
 const navigation = [
   { name: "Home", href: "/home" },
@@ -316,11 +388,8 @@ export default {
     MenuItem,
     MenuItems,
     Switch,
-    ChevronDownIcon,
     MenuIcon,
     XIcon,
-    SunIcon,
-    MoonIcon,
   },
   setup() {
     const open = ref(false);

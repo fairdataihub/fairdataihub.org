@@ -8,7 +8,7 @@
   </base-section>
 
   <base-section class="dark:bg-gray-700 pb-6">
-    <about-us></about-us>
+    <about-us id="aboutus"></about-us>
   </base-section>
 
   <base-section class="dark:bg-gray-800">
