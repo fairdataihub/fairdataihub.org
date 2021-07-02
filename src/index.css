@@ -31,5 +31,5 @@
 @layer base {
 }
 .nav-bar-item.router-link-active {
-  @apply border-b-2 border-gray-900 dark:border-white !important;
+  @apply border rounded-xl border-gray-900 dark:border-white !important;
 }

@@ -83,8 +83,7 @@
                 :to="item.href"
                 class="
                   text-black
-                  dark:text-gray-300
-                  hover:bg-gray-700 hover:text-white
+                  dark:text-white
                   px-3
                   py-2
                   text-sm
@@ -118,7 +117,6 @@
                   <span class="sr-only">Open user menu</span>
                   <div
                     class="
-                      hover:bg-gray-700 hover:text-white
                       px-3
                       py-2
                       w-max
@@ -133,11 +131,9 @@
                         w-max
                         text-sm
                         font-medium
-                        nav-bar-item
                         flex
                         justify-center
                         text-black
-                        hover:text-white
                         dark:text-white
                         h-auto
                         pr-2
@@ -157,11 +153,9 @@
                         h-4
                         text-lg text-gray-800
                         dark:text-white
-                        hover:text-white
                         transition-colors
                         duration-200
                       "
-                      data-v-12379316=""
                     >
                       <path
                         stroke-linecap="round"
@@ -257,7 +251,6 @@
                     transition-colors
                     duration-200
                   "
-                  data-v-12379316=""
                 >
                   <path
                     stroke-linecap="round"
@@ -319,7 +312,6 @@
                     transition-colors
                     duration-200
                   "
-                  data-v-12379316=""
                 >
                   <path
                     stroke-linecap="round"
@@ -450,6 +442,6 @@ export default {
 
 <style scoped lang="postcss">
 .nav-bar-item {
-  @apply border-0 transition-all hover:border-gray-500 hover:text-white;
+  @apply border-b-2 border-transparent hover:border-gray-400 dark:hover:border-gray-200 transition-all;
 }
 </style>

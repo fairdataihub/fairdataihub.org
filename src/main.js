@@ -12,10 +12,18 @@ import SodaSparc from "./components/SodaSparc/SodaSparc.vue";
 const router = createRouter({
   history: createWebHistory(),
   scrollBehavior: function (to, from, savedPosition) {
-    console.log(from, savedPosition);
+    if (from == savedPosition) {
+      console.log(from, savedPosition);
+    }
+    if (savedPosition) {
+      console.log("moving to saved position");
+      return savedPosition;
+    }
     if (to.hash) {
-      return { el: to.hash };
+      console.log("moving to element");
+      return { el: to.hash, behavior: "smooth" };
     } else {
+      console.log("moving to top of the page");
       return { x: 0, y: 0 };
     }
   },
