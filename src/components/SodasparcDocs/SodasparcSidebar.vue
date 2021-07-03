@@ -1,13 +1,13 @@
 <template>
-  <div class="relative bg-white dark:bg-gray-800">
-    <div class="flex flex-col sm:flex-row sm:justify-around">
-      <div class="w-72 h-screen">
+  <div class="relative bg-white dark:bg-gray-700">
+    <div class="hidden sm:flex flex-col sm:flex-row sm:justify-around">
+      <div class="w-72">
         <nav class="mt-4 px-6">
           <div v-for="section in sidebarList" :key="section.title" class="pb-3">
             <p
               class="
                 text-black
-                ml-2
+                dark:text-white
                 w-full
                 border-b-2
                 pb-2
@@ -28,14 +28,14 @@
                   hover:text-gray-800
                   font-thin
                   text-black
-                  dark:text-gray-400
-                  hover:bg-gray-100
+                  dark:text-white
+                  hover:bg-gray-200
+                  dark:hover:bg-gray-600
                   flex
                   items-center
                   p-1
-                  my-0
+                  my-1
                   transition-colors
-                  dark:hover:text-white dark:hover:bg-gray-600
                   duration-200
                   justify-start
                   rounded-lg
@@ -63,24 +63,12 @@ export default {
           title: "Getting started",
           subsections: [
             {
-              subtitle: "Download and open SODA",
-              href: "/sodasparc/docs/user-interface",
-            },
-            {
               subtitle: "User interface",
               href: "/sodasparc/docs/user-interface",
             },
             {
               subtitle: "Organize and submit SPARC datasets with SODA",
               href: "/sodasparc/docs/Organize-and-submit-SPARC-datasets-with-SODA",
-            },
-            {
-              subtitle: "Beta testing",
-              href: "/sodasparc/docs/user-interface",
-            },
-            {
-              subtitle: "Privacy Policy",
-              href: "/sodasparc/docs/user-interface",
             },
           ],
         },
@@ -89,47 +77,47 @@ export default {
           subsections: [
             {
               subtitle: "Connect your Pennsieve account with SODA",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA",
             },
             {
               subtitle: "Create a new dataset",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Create-a-new-dataset",
             },
             {
               subtitle: "Rename an existing dataset",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Rename-an-existing-dataset",
             },
             {
               subtitle: "Make PI owner of dataset",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Make-PI-owner-of-dataset",
             },
             {
               subtitle: "Add edit permissions",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Add-edit-permissions",
             },
             {
               subtitle: "Add edit subtitle",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Add-edit-subtitle",
             },
             {
               subtitle: "Add edit description",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Add-edit-description",
             },
             {
               subtitle: "Upload a banner image",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Upload-a-banner-image",
             },
             {
               subtitle: "Assign a license",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Assign-a-license",
             },
             {
               subtitle: "Upload a local dataset to Pennsieve",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Upload-a-local-dataset-to-Pennsieve",
             },
             {
               subtitle: "View and change status",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/View-and-change-status",
             },
           ],
         },
@@ -138,27 +126,23 @@ export default {
           subsections: [
             {
               subtitle: "Connect your Airtable account with SODA",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Connect-your-Airtable-account-with-SODA",
             },
             {
               subtitle: "Create submission.xlsx",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Create-submission-xlsx",
             },
             {
               subtitle: "Create dataset_description.xlsx",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Create-dataset_description-xlsx",
             },
             {
               subtitle: "Create subjects.xlsx",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Create-subjects-xlsx",
             },
             {
               subtitle: "Create samples.xlsx",
-              href: "/sodasparc/docs/user-interface",
-            },
-            {
-              subtitle: "Download templates",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Create-samples.xlsx",
             },
           ],
         },
@@ -167,7 +151,7 @@ export default {
           subsections: [
             {
               subtitle: "Organize dataset",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Organize-dataset",
             },
           ],
         },
@@ -176,15 +160,15 @@ export default {
           subsections: [
             {
               subtitle: "Share with Curation Team",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Share-with-curation-team",
             },
             {
               subtitle: "Share with SPARC Consortium",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Share-with-SPARC-Consortium",
             },
             {
               subtitle: "Submit for pre-publishing review",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Submit-for-pre-publishing-review",
             },
           ],
         },
@@ -193,19 +177,19 @@ export default {
           subsections: [
             {
               subtitle: "Installing the Pennsieve Agent",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Installing-the-Pennsieve-agent",
             },
             {
               subtitle: "Pennsieve Agent is already running",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/The-Pennsieve-agent-is-already-running",
             },
             {
               subtitle: "Sending log files to SODA Team",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Sending-log-files-to-SODA-Team",
             },
             {
               subtitle: "Issues regarding hidden files or folders",
-              href: "/sodasparc/docs/user-interface",
+              href: "/sodasparc/docs/Issues-regarding-hidden-files-or-folders",
             },
           ],
         },
@@ -216,10 +200,7 @@ export default {
 </script>
 
 <style lang="postcss" scoped>
-.router-link-exact-active {
-  background-color: rgba(45, 96, 248, 0.829);
-}
-.router-link-exact-active:hover {
-  background-color: royalblue;
+.router-link-active {
+  @apply bg-indigo-600 text-white;
 }
 </style>

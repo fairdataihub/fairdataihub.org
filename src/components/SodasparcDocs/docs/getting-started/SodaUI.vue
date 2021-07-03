@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-300">
+  <div class="">
     <h1>
       Click on the image below and watch our short video to get familiarized
       with SODA's user interface

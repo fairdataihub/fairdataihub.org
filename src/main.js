@@ -40,11 +40,107 @@ const router = createRouter({
       component: SodasparcDocs,
       children: [
         {
-          path: "user-interface",
+          path: "User-Interface",
           component: SodaUI,
         },
         {
           path: "Organize-and-submit-SPARC-datasets-with-SODA",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Connect-your-Pennsieve-account-with-SODA",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Create-a-new-dataset",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Rename-an-existing-dataset",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Make-PI-owner-of-dataset",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Add-edit-permissions",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Add-edit-subtitle",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Add-edit-description",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Upload-a-banner-image",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Assign-a-license",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Upload-a-local-dataset-to-Pennsieve",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "View-and-change-status",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Connect-your-Airtable-account-with-SODA",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Create-submission-xlsx",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Create-dataset_description-xlsx",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Create-subjects-xlsx",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Create-samples.xlsx",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Organize-dataset",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Share-with-curation-team",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Share-with-SPARC-Consortium",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Submit-for-pre-publishing-review",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Installing-the-Pennsieve-agent",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "The-Pennsieve-agent-is-already-running",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Sending-log-files-to-SODA-Team",
+          component: OrganizeSubmit,
+        },
+        {
+          path: "Issues-regarding-hidden-files-or-folders",
           component: OrganizeSubmit,
         },
       ],
