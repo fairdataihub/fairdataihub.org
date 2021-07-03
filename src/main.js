@@ -6,6 +6,7 @@ import "./index.css";
 import HomePage from "./components/HomePage/HomePage.vue";
 import TheTeam from "./components/TheTeam/TheTeam.vue";
 import BaseSection from "./components/UI/BaseSection.vue";
+import BaseDocscontent from "./components/UI/BaseDocscontent.vue";
 import TheErrorPage from "./components/TheErrorPage/TheErrorPage.vue";
 import SodaSparc from "./components/SodaSparc/SodaSparc.vue";
 import SodasparcDocs from "./components/SodasparcDocs/SodasparcDocs.vue";
@@ -155,6 +156,7 @@ const router = createRouter({
 const app = createApp(App);
 
 app.component("base-section", BaseSection);
+app.component("base-docs-content", BaseDocscontent);
 
 app.use(router);
 

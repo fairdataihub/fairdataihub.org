@@ -4,11 +4,11 @@
       Click on the image below and watch our short video to get familiarized
       with SODA's user interface
     </h1>
-    <p align="center">
+    <div class="flex justify-center">
       <a href="https://www.youtube.com/watch?v=Fyn9R0Tk_pU" target="_blank">
         <img src="https://img.youtube.com/vi/Fyn9R0Tk_pU/0.jpg" />
       </a>
-    </p>
+    </div>
 
     <h1>Notes</h1>
     <br />
