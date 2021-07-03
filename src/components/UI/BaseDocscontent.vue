@@ -1,5 +1,7 @@
 <template>
-  <div class="p-10"><slot></slot></div>
+  <div class="p-10 w-full">
+    <slot></slot>
+  </div>
 </template>
 
 <script>

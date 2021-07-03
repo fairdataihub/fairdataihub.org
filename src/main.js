@@ -7,11 +7,12 @@ import HomePage from "./components/HomePage/HomePage.vue";
 import TheTeam from "./components/TheTeam/TheTeam.vue";
 import BaseSection from "./components/UI/BaseSection.vue";
 import BaseDocscontent from "./components/UI/BaseDocscontent.vue";
+import BaseDocstitle from "./components/UI/BaseDocstitle.vue";
 import TheErrorPage from "./components/TheErrorPage/TheErrorPage.vue";
 import SodaSparc from "./components/SodaSparc/SodaSparc.vue";
-import SodasparcDocs from "./components/SodasparcDocs/SodasparcDocs.vue";
-import SodaUI from "./components/SodasparcDocs/docs/getting-started/SodaUI.vue";
-import OrganizeSubmit from "./components/SodasparcDocs/docs/getting-started/OrganizeSubmit.vue";
+import SodasparcDocs from "./components/SodaSPARCDocs/SodasparcDocs.vue";
+import SodaUI from "./components/SodaSPARCDocs/docs/getting-started/SodaUI.vue";
+import OrganizeSubmit from "./components/SodaSPARCDocs/docs/getting-started/OrganizeSubmit.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -157,6 +158,7 @@ const app = createApp(App);
 
 app.component("base-section", BaseSection);
 app.component("base-docs-content", BaseDocscontent);
+app.component("base-docs-title", BaseDocstitle);
 
 app.use(router);
 

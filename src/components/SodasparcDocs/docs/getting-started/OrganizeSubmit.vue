@@ -1,4 +1,101 @@
 <template>
+  <div>
+    <base-docs-title :title="`Organize and submit SPARC datasets with SODA`">
+    </base-docs-title>
+  </div>
+
+  <div class="flex flex-col mb-3">
+    <h2
+      class="font-sans font-semibold text-base text-black dark:text-white mb-4"
+    >
+      Checklist: prepare and submit SPARC datasets with SODA
+    </h2>
+    <h3 class="font-sans text-base text-black dark:text-white">
+      This is the suggested workflow for preparing and submitting your SPARC
+      datasets with SODA using the Free Form Mode features. All these steps are
+      mandatory (unless marked otherwise) if you wish to satisfy the SPARC
+      requirements.
+    </h3>
+  </div>
+
+  <div class="flex flex-col">
+    <h2
+      class="font-sans font-semibold text-base text-black dark:text-white mb-2"
+    >
+      Preliminary steps (only required once)
+    </h2>
+    <form class="flex flex-col">
+      <div>
+        <label class="inline-flex items-center">
+          <input
+            type="checkbox"
+            class="
+              rounded
+              bg-gray-200
+              border-transparent
+              focus:border-transparent focus:bg-gray-200
+              text-black
+              dark:text-white
+              focus:ring-1 focus:ring-offset-2 focus:ring-gray-500
+            "
+            disabled
+          />
+          <span class="ml-2">
+            Read about the
+            <a
+              href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
+              target="_blank"
+              class="underline text-blue-400"
+            >
+              SPARC requirements for organizing and sharing all SPARC
+              datasets.</a
+            >
+          </span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input
+            type="checkbox"
+            class="
+              rounded
+              bg-gray-200
+              border-transparent
+              focus:border-transparent focus:bg-gray-200
+              text-black
+              dark:text-white
+              focus:ring-1 focus:ring-offset-2 focus:ring-gray-500
+            "
+            disabled
+          />
+          <span class="ml-2">
+            Sign up
+
+            <a
+              href="https://app.pennsieve.net/"
+              target="_blank"
+              class="underline text-blue-400"
+            >
+              Pennsieve
+            </a>
+            to and get access to the SPARC Consortium organization (contact
+            <a
+              href="mailto:support@pennsieve.net"
+              target="_blank"
+              class="underline text-blue-400"
+            >
+              support@pennsieve.net
+            </a>
+            for help)
+          </span>
+        </label>
+      </div>
+    </form>
+  </div>
+
+  Sign up to Pennsieve and get access to the SPARC Consortium organization
+  (contact support@pennsieve.net for help)
+
   <div class="p-10">
     <div class="markdown-body">
       <h2>
