@@ -26,12 +26,14 @@
             </h1>
           </div>
 
-          <div class="flex justify-evenly mt-2 p-5">
+          <div class="flex flex-col sm:flex-row justify-evenly mt-2 p-5">
             <!-- <div
               class="w-1/3 h-full bg-cover"
               :style="`background-image:url(${projectImage})`"
             ></div> -->
-            <div class="w-1/3 h-full flex justify-center items-center">
+            <div
+              class="w-full sm:w-1/3 h-full flex justify-center items-center"
+            >
               <img
                 :src="projectImage"
                 alt=""
@@ -39,7 +41,15 @@
               />
             </div>
             <div
-              class="w-2/3 p-4 md:p-1 md:ml-3 flex justify-center items-center"
+              class="
+                w-full
+                sm:w-2/3
+                p-4
+                md:p-1 md:ml-3
+                flex
+                justify-center
+                items-center
+              "
             >
               <p class="text-sm text-black dark:text-white">
                 <slot name="description">Project description</slot>
@@ -47,7 +57,7 @@
             </div>
           </div>
 
-          <div class="w-full">
+          <div class="w-full hidden sm:flex sm:justify-center">
             <h2
               class="text-center font-sans text-xl text-black dark:text-white"
             >
@@ -55,7 +65,7 @@
             </h2>
           </div>
 
-          <div class="w-5/6 mx-auto flex justify-evenly">
+          <div class="w-5/6 mx-auto hidden sm:flex justify-evenly">
             <button v-for="item in actionButtons" :key="item.name">
               <router-link
                 :to="item.href"

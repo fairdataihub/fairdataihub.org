@@ -1,0 +1,60 @@
+<template>
+  <section class="text-gray-600 body-font dark:bg-gray-700">
+    <div class="container px-5 py-12 flex flex-wrap max-w-screen-xl mx-auto">
+      <h2
+        class="
+          sm:text-3xl
+          text-2xl text-black
+          font-medium
+          title-font
+          mb-2
+          md:w-2/5
+          dark:text-white
+        "
+      >
+        About NIH-SPARC
+      </h2>
+      <div class="md:w-3/5 md:pl-6">
+        <p class="leading-relaxed text-base text-black dark:text-white">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters.
+        </p>
+        <div class="flex mt-2 md:mt-1">
+          <a
+            href="https://sparc.science"
+            target="_blank"
+            class="
+              text-indigo-600
+              dark:text-indigo-400
+              inline-flex
+              items-center
+            "
+          >
+            Learn More
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+export default {
+  name: "AboutSparc",
+};
+</script>
+
+<style></style>

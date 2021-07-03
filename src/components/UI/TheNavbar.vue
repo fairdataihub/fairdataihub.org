@@ -16,7 +16,7 @@
           w-screen
           bg-gray-50
           dark:bg-gray-800
-          z-10
+          z-20
           px-2
           sm:px-6
         "
@@ -130,10 +130,10 @@
                       class="
                         w-max
                         text-sm
-                        font-medium
+                        font-sans
                         flex
-                        justify-center
                         text-black
+                        justify-center
                         dark:text-white
                         h-auto
                         pr-2
@@ -329,7 +329,7 @@
 
     <!-- Mobile menu panel -->
     <DisclosurePanel class="sm:hidden pt-16 fixed w-screen bg-gray-500">
-      <div class="px-2 pt-2 pb-3 space-y-1 z-10">
+      <div class="px-2 pt-2 pb-3 space-y-1 z-20">
         <router-link
           v-for="item in navigation"
           :key="item.name"
@@ -344,7 +344,7 @@
             rounded-md
             text-base
             font-medium
-            z-10
+            z-20
           "
           @click="open = !open"
         >

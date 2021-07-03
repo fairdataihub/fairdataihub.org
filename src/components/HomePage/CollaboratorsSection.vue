@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-6 pt-4 pb-0 lg:px-4 mx-auto">
+  <div class="container px-6 pt-4 pb-0 lg:px-4 max-w-screen-xl mx-auto">
     <div>
       <p
         class="

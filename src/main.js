@@ -8,6 +8,9 @@ import TheTeam from "./components/TheTeam/TheTeam.vue";
 import BaseSection from "./components/UI/BaseSection.vue";
 import TheErrorPage from "./components/TheErrorPage/TheErrorPage.vue";
 import SodaSparc from "./components/SodaSparc/SodaSparc.vue";
+import SodasparcDocs from "./components/SodasparcDocs/SodasparcDocs.vue";
+import SodaUI from "./components/SodasparcDocs/docs/getting-started/SodaUI.vue";
+import OrganizeSubmit from "./components/SodasparcDocs/docs/getting-started/OrganizeSubmit.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -29,17 +32,26 @@ const router = createRouter({
   },
   routes: [
     { path: "/", name: "root", redirect: "/home" },
-    { path: "/home", components: { mainContent: HomePage }, name: "home" },
-    { path: "/team", components: { mainContent: TheTeam }, name: "theTeam" },
+    { path: "/home", component: HomePage },
+    { path: "/team", component: TheTeam },
+    { path: "/sodasparc", component: SodaSparc },
     {
-      path: "/sodasparc",
-      components: { mainContent: SodaSparc },
-      name: "SodaSparc",
+      path: "/sodasparc/docs",
+      component: SodasparcDocs,
+      children: [
+        {
+          path: "user-interface",
+          component: SodaUI,
+        },
+        {
+          path: "Organize-and-submit-SPARC-datasets-with-SODA",
+          component: OrganizeSubmit,
+        },
+      ],
     },
     {
       path: "/:pathMatch(.*)*",
       components: { mainContent: TheErrorPage },
-      name: "TheErrorPage",
     },
   ],
 });

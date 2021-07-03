@@ -29,7 +29,10 @@
 }
 
 @layer base {
+  button {
+    @apply font-sans;
+  }
 }
 .nav-bar-item.router-link-active {
-  @apply border rounded-xl border-gray-900 dark:border-white !important;
+  @apply border-b-2  border-gray-900 dark:border-white !important;
 }

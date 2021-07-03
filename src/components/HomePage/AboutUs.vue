@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-6 py-8 lg:px-4 mx-auto" :id="id">
+  <div class="container px-6 py-8 lg:px-4 max-w-screen-xl mx-auto" :id="id">
     <div class="items-center lg:flex">
       <div
         class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2"
@@ -44,8 +44,8 @@
               dark:text-white
             "
           >
-            We are a team of researchers from the Caliornia Medical Innovation
-            Instiute who believe that all scientific research data should be
+            We are a team of researchers from the Caliornia Medical Innovations
+            Institute who believe that all scientific research data should be
             curated and shared according to applicable standards on the FAIR
             Data Principles. We also belive that doing so should be easy for the
             researchers collecting that data.

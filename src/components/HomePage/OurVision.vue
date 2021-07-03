@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="sm:py-12">
+  <div class="sm:py-12 max-w-screen-xl mx-auto">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <h2
@@ -29,10 +29,11 @@
         </p>
         <p
           class="
+            font-sans
             mt-4
             max-w-2xl
-            text-xl text-gray-500
-            dark:text-gray-50
+            text-xl text-black
+            dark:text-white
             lg:mx-auto
           "
         >
@@ -71,18 +72,21 @@
               </div>
               <p
                 class="
+                  font-sans
                   ml-16
                   text-lg
                   leading-6
                   font-medium
-                  text-gray-900
-                  dark:text-gray-100
+                  text-black
+                  dark:text-white
                 "
               >
                 {{ feature.name }}
               </p>
             </dt>
-            <dd class="mt-2 ml-16 text-base text-gray-500 dark:text-gray-200">
+            <dd
+              class="mt-2 ml-16 text-base text-black dark:text-white font-sans"
+            >
               {{ feature.description }}
             </dd>
           </div>

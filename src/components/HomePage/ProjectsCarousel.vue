@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-screen-2xl h-auto mx-auto py-3">
+  <div class="w-full max-w-screen-xl mx-auto h-auto pt-1 pb-3">
     <!-- Slides container -->
     <vueper-slides
       :bullets="true"
@@ -8,7 +8,7 @@
       :pause-on-hover="true"
       :touchable="false"
       :class="`no-shadow`"
-      fixed-height="75vh"
+      :fixed-height="`90vh`"
     >
       <vueper-slide>
         <template v-slot:content>
@@ -23,14 +23,7 @@
               data organization and submission process for SPARC investigators
               and thus promote the FAIR Data Principles. SODA for SPARC is
               designed such that users can accomplish all the requirements to
-              submit a SPARC dataset rapidly through a single interface. SODA
-              for SPARC is designed such that users can accomplish all the
-              requirements to submit a SPARC dataset rapidly through a single
-              interface. SODA for SPARC is designed such that users can
-              accomplish all the requirements to submit a SPARC dataset rapidly
-              through a single interface. SODA for SPARC is designed such that
-              users can accomplish all the requirements to submit a SPARC
-              dataset rapidly through a single interface.
+              submit a SPARC dataset rapidly through a single interface.
             </template>
             <template #subtitle> Download SODA </template>
           </project-card>

@@ -34,7 +34,6 @@
   <base-section class="dark:bg-gray-800">
     <homepage-testimonials></homepage-testimonials>
   </base-section>
-  <!-- Add a used by which orgs components -->
   <!-- Add a pull from google tags component -->
 </template>
 
