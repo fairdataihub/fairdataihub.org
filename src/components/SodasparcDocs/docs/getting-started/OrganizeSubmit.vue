@@ -24,35 +24,26 @@
     >
       Preliminary steps (only required once)
     </h2>
-    <form class="flex flex-col">
+    <div class="flex flex-col">
       <div>
-        <label class="inline-flex items-center">
+        <label class="flex">
           <input
             type="checkbox"
             class="
+              mt-1
+              w-4
+              h-4
+              border-gray-300
               rounded
-              bg-gray-200
-              border-transparent
-              focus:border-transparent focus:bg-gray-200
-              text-black
-              dark:text-white
-              focus:ring-1 focus:ring-offset-2 focus:ring-gray-500
+              disabled:opacity-50 disabled:cursor-not-allowed
             "
-            disabled
           />
-          <span class="ml-2">
-            Read about the
-            <a
-              href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
-              target="_blank"
-              class="underline text-blue-400"
-            >
-              SPARC requirements for organizing and sharing all SPARC
-              datasets.</a
-            >
-          </span>
+          <div class="ml-3">
+            <span class="span-content"> </span>
+          </div>
         </label>
       </div>
+
       <div>
         <label class="inline-flex items-center">
           <input
@@ -69,32 +60,77 @@
             disabled
           />
           <span class="ml-2">
-            Sign up
-
+            Sign up to
             <a
               href="https://app.pennsieve.net/"
               target="_blank"
               class="underline text-blue-400"
             >
-              Pennsieve
+              <span>Pennsieve</span>
             </a>
-            to and get access to the SPARC Consortium organization (contact
+            and get access to the SPARC Consortium organization (contact
             <a
               href="mailto:support@pennsieve.net"
               target="_blank"
               class="underline text-blue-400"
             >
-              support@pennsieve.net
+              <span>support@pennsieve.net</span>
             </a>
             for help)
           </span>
         </label>
       </div>
-    </form>
+      <div>
+        <label class="inline-flex items-center">
+          <input
+            type="checkbox"
+            class="
+              rounded
+              bg-gray-200
+              border-transparent
+              focus:border-transparent focus:bg-gray-200
+              text-black
+              dark:text-white
+              focus:ring-1 focus:ring-offset-2 focus:ring-gray-500
+            "
+            disabled
+          />
+          <span class="ml-2">
+            Download and install the
+            <a
+              href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
+              target="_blank"
+              class="underline text-blue-400"
+            >
+              <span>Pennsieve agent</span>
+            </a>
+            required to upload files through SODA.
+          </span>
+        </label>
+      </div>
+      <div>
+        <label class="inline-flex items-center">
+          <input
+            type="checkbox"
+            class="
+              rounded
+              bg-gray-200
+              border-transparent
+              focus:border-transparent focus:bg-gray-200
+              text-black
+              dark:text-white
+              focus:ring-1 focus:ring-offset-2 focus:ring-gray-500
+            "
+            disabled
+          />
+          <span class="ml-2">
+            Open SODA and watch our quick video located under the Overview tab
+            to familiarize yourself with the user interface of SODA.
+          </span>
+        </label>
+      </div>
+    </div>
   </div>
-
-  Sign up to Pennsieve and get access to the SPARC Consortium organization
-  (contact support@pennsieve.net for help)
 
   <div class="p-10">
     <div class="markdown-body">
@@ -540,7 +576,60 @@
 <script>
 export default {
   name: "OrganizeSubmit",
+  data() {
+    return {
+      organizeList: [
+        {
+          section: "Preliminary steps (only required once)",
+          items: [
+            {
+              content: `
+                Read about the
+                <a
+                  href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  SPARC requirements for organizing and sharing all SPARC
+                  datasets.</a
+                >
+              `,
+            },
+            {
+              content: `
+                Sign up to
+                <a
+                  href="https://app.pennsieve.net/"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  <span>Pennsieve</span>
+                </a>
+                and get access to the SPARC Consortium organization (contact
+                <a
+                  href="mailto:support@pennsieve.net"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  <span>support@pennsieve.net</span>
+                </a>
+                for help)
+              `,
+            },
+            {
+              content:
+                'Sign up to <a href="https://app.pennsieve.net/" target="_blank" class="underline text-blue-400"> <span>Pennsieve</span> </a> and get access to the SPARC Consortium organization (contact <a href="mailto:support@pennsieve.net" target="_blank" class="underline text-blue-400" > <span>support@pennsieve.net</span> </a> for help) ',
+            },
+          ],
+        },
+      ],
+    };
+  },
 };
 </script>
 
-<style></style>
+<style lang="postcss" scoped>
+.span-content {
+  @apply block leading-normal text-base text-black dark:text-white;
+}
+</style>

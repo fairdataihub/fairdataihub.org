@@ -9,7 +9,7 @@
       with SODA's user interface
     </h2>
 
-    <div class="flex justify-center my-4">
+    <div class="flex justify-start mx-8 my-4">
       <a href="https://www.youtube.com/watch?v=Fyn9R0Tk_pU" target="_blank">
         <img src="https://img.youtube.com/vi/Fyn9R0Tk_pU/0.jpg" />
       </a>
@@ -17,25 +17,40 @@
 
     <h2 class="font-sans text-base text-black dark:text-white mb-2">Notes:</h2>
 
-    <ul class="list-inside bg-rose-200 list-disc">
-      <li>
-        The window size of the application frame can be easily adjusted to fit
-        your screen by dragging the borders.
-      </li>
-      <li>
-        Closing the interface will stop any on-going process (dataset
-        organization, uploading, etc).
-      </li>
-      <li>
-        Click on the document icon next to each feature's title to open the
-        related documentation page in your browser.
-      </li>
-      <li>
-        A pop-up message will appear when launching the app if a newer version
-        is available for download.
-      </li>
-      <li>
-        <svg
+    <ul class="list-outside bg-rose-200 list-disc ml-4">
+      <li
+        v-for="item in notesList"
+        :key="item.content"
+        v-html="item.content"
+      ></li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "SodaUI",
+  data() {
+    return {
+      notesList: [
+        {
+          content:
+            "The window size of the application frame can be easily adjusted to fit your screen by dragging the borders.",
+        },
+        {
+          content:
+            "Closing the interface will stop any on-going process (dataset organization, uploading, etc).",
+        },
+        {
+          content:
+            "Click on the document icon next to each feature's title to open the related documentation page in your browser.",
+        },
+        {
+          content:
+            "A pop-up message will appear when launching the app if a newer version is available for download.",
+        },
+        {
+          content: `<svg
           aria-hidden="true"
           focusable="false"
           data-prefix="fas"
@@ -54,15 +69,11 @@
           ></path>
         </svg>
         Tooltips are used throughout the interface to provide users with
-        additional information.
-      </li>
-    </ul>
-  </div>
-</template>
-
-<script>
-export default {
-  name: "SodaUI",
+        additional information.`,
+        },
+      ],
+    };
+  },
 };
 </script>
 
