@@ -19,29 +19,79 @@
   </div>
 
   <div class="flex flex-col">
-    <h2
-      class="font-sans font-semibold text-base text-black dark:text-white mb-2"
-    >
-      Preliminary steps (only required once)
-    </h2>
-    <div class="flex flex-col">
-      <div>
-        <label class="flex">
-          <input
-            type="checkbox"
-            class="
-              mt-1
-              w-4
-              h-4
-              border-gray-300
-              rounded
-              disabled:opacity-50 disabled:cursor-not-allowed
-            "
-          />
-          <div class="ml-3">
-            <span class="span-content"> </span>
-          </div>
-        </label>
+    <div v-for="item in organizeList" :key="item.section" class="mb-3">
+      <h2
+        class="
+          font-sans font-semibold
+          text-base text-black
+          dark:text-white
+          mb-2
+        "
+      >
+        {{ item.section }}
+      </h2>
+      <div class="flex flex-col">
+        <div v-for="subitem in item.items" :key="subitem.content">
+          <label class="flex">
+            <input
+              type="checkbox"
+              class="
+                mt-1
+                w-4
+                h-4
+                border-gray-300
+                rounded
+                disabled:opacity-50 disabled:cursor-not-allowed
+              "
+            />
+            <div class="ml-3">
+              <span class="span-content" v-html="subitem.content"> </span>
+            </div>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2
+        class="
+          font-sans font-semibold
+          text-base text-black
+          dark:text-white
+          mb-2
+        "
+      >
+        Preliminary steps (only required once)
+      </h2>
+      <div class="flex flex-col">
+        <div>
+          <label class="flex">
+            <input
+              type="checkbox"
+              class="
+                mt-1
+                w-4
+                h-4
+                border-gray-300
+                rounded
+                disabled:opacity-50 disabled:cursor-not-allowed
+              "
+            />
+            <div class="ml-3">
+              <span class="span-content">
+                Read about the
+                <a
+                  href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  SPARC requirements for organizing and sharing all SPARC
+                  datasets.
+                </a>
+              </span>
+            </div>
+          </label>
+        </div>
       </div>
 
       <div>
@@ -583,21 +633,18 @@ export default {
           section: "Preliminary steps (only required once)",
           items: [
             {
-              content: `
-                Read about the
+              content: `Read about the
                 <a
                   href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
                   target="_blank"
                   class="underline text-blue-400"
                 >
                   SPARC requirements for organizing and sharing all SPARC
-                  datasets.</a
-                >
-              `,
+                  datasets.
+                </a>`,
             },
             {
-              content: `
-                Sign up to
+              content: `Sign up to
                 <a
                   href="https://app.pennsieve.net/"
                   target="_blank"
@@ -613,12 +660,68 @@ export default {
                 >
                   <span>support@pennsieve.net</span>
                 </a>
-                for help)
-              `,
+                for help)`,
             },
             {
-              content:
-                'Sign up to <a href="https://app.pennsieve.net/" target="_blank" class="underline text-blue-400"> <span>Pennsieve</span> </a> and get access to the SPARC Consortium organization (contact <a href="mailto:support@pennsieve.net" target="_blank" class="underline text-blue-400" > <span>support@pennsieve.net</span> </a> for help) ',
+              content: `Download and install the
+                <a
+                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  <span>Pennsieve agent</span>
+                </a> 
+                required to upload files through SODA.`,
+            },
+            {
+              content: `Open SODA and watch our quick video located under the Overview tab to familiarize yourself with the user interface of SODA.`,
+            },
+          ],
+        },
+        {
+          section:
+            "Prepare Dataset on Pennsieve (under the Manage Datasets tab of the Free Form Mode)",
+          items: [
+            {
+              content: `<a
+                  href="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+                  class="underline text-blue-400"
+                >
+                  Connect your Pennsieve account with SODA</a>. 
+                This is only required the first time you use SODA.`,
+            },
+            {
+              content: `Sign up to
+                <a
+                  href="https://app.pennsieve.net/"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  <span>Pennsieve</span>
+                </a>
+                and get access to the SPARC Consortium organization (contact
+                <a
+                  href="mailto:support@pennsieve.net"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  <span>support@pennsieve.net</span>
+                </a>
+                for help)`,
+            },
+            {
+              content: `Download and install the
+                <a
+                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
+                  target="_blank"
+                  class="underline text-blue-400"
+                >
+                  <span>Pennsieve agent</span>
+                </a> 
+                required to upload files through SODA.`,
+            },
+            {
+              content: `Open SODA and watch our quick video located under the Overview tab to familiarize yourself with the user interface of SODA.`,
             },
           ],
         },
