@@ -7,7 +7,7 @@
   </div>
 
   <div class="flex flex-col">
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Virtually structure your dataset using this interface as if you were
         organizing it on your computer but without actually modifying any local
@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>Go inside a folder by double-clicking on it.</li>
       <li>
         Import files/folders inside a folder using drag-and-drop or the "Import"
@@ -37,13 +37,13 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/organize-step3-part1.gif"
       />
     </div>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>
         Use the "Details" option from the right-click menu to see the actual
         path of the file and include metadata (description, Additional Metadata)
@@ -56,7 +56,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/organize-step3-part2-files.gif"
       />
@@ -69,5 +69,3 @@ export default {
   name: "OrganizeDatasetStep3",
 };
 </script>
-
-<style></style>

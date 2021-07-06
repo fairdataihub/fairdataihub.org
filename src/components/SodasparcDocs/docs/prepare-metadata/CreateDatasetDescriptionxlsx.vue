@@ -7,7 +7,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Under this feature, SODA lets you quickly and accurately prepare the
         dataset_description metadata file which is mandatory for all SPARC
@@ -21,23 +21,25 @@
     </div>
 
     <base-docs-subtitle> How to </base-docs-subtitle>
-    <p>
-      First, we suggest to add/edit your Airtable account and SPARC award(s) as
-      instructed here then confirm.
-    </p>
-    <p>
-      The subsequent interface divides the dataset description file into five
-      convenient sections to facilitate your task. Go through them successively
-      and populate the various fields as indicated (mandatory fields are marked
-      with a start in the interface):
-    </p>
+    <div class="p-parent-div">
+      <p>
+        First, we suggest to add/edit your Airtable account and SPARC award(s)
+        as instructed here then confirm.
+      </p>
+      <p>
+        The subsequent interface divides the dataset description file into five
+        convenient sections to facilitate your task. Go through them
+        successively and populate the various fields as indicated (mandatory
+        fields are marked with a start in the interface):
+      </p>
+    </div>
 
     <base-docs-heading
       >Dataset Info (high-level information about your
       dataset):</base-docs-heading
     >
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Name: Descriptive title for the dataset. Since this field should match
         exactly with your dataset on Pennsieve , SODA lets you select it from
@@ -64,7 +66,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/dataset-info.gif"
       />
@@ -75,7 +77,7 @@
       dataset):</base-docs-heading
     >
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>SPARC Award: Select the SPARC award associated with your dataset</li>
       <li>
         Other funding sources: Specify other funding sources, if any. Hit
@@ -87,7 +89,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/award-info.gif"
       />
@@ -97,7 +99,7 @@
       Contributor Info (information about the contributors to your dataset):
     </base-docs-heading>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Provide information about any contributor to the dataset. Note that the
         "Contributor" list is compiled from the SPARC Airtable sheet based on
@@ -120,7 +122,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/contributor-info-1-1.gif"
       />
@@ -131,10 +133,10 @@
       related to this dataset):
     </base-docs-heading>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Link type: Select the nature of the link among
-        <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+        <ul class="docs-ul list-outside list-disc">
           <li>
             Protocol URL or DOI: URLs (if still private) / DOIs (if public) of
             protocols from protocols.io related to this dataset
@@ -160,7 +162,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/link-info-1.gif"
       />
@@ -171,7 +173,7 @@
       dataset(s))
     </base-docs-heading>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Completeness of dataset: Is the data set as uploaded complete or is it
         part of an ongoing study? Select "hasNext" to indicate that you expect
@@ -192,7 +194,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/completeness-info-1.gif"
       />
@@ -207,7 +209,7 @@
 
     <base-docs-subtitle> Notes </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>
         In the contributors' table, you can drag and drop rows to organize
         contributors in the order that they should appear in the
@@ -223,5 +225,3 @@ export default {
   name: "CreateDatasetDescriptionxlsx",
 };
 </script>
-
-<style></style>

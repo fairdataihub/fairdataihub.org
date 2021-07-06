@@ -8,7 +8,7 @@
     <base-docs-subtitle> Background </base-docs-subtitle>
 
     <div class="my-4">
-      <p>
+      <p class="font-sans text-black dark:text-white mb-2">
         With this feature, you can upload a data from your computer on to a
         Pennsieve dataset (with folder structure preserved).
       </p>
@@ -16,7 +16,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
         connected your Pennsieve account with SODA yet, see here.
@@ -38,5 +38,3 @@ export default {
   name: "UploadLocalDatasetPennsieve",
 };
 </script>
-
-<style></style>

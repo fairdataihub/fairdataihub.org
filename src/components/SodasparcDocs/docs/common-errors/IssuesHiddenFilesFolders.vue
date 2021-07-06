@@ -7,7 +7,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         There are some issues related to hidden files and folders that SODA
         users have experienced. If you get any errors caused by hidden file(s)
@@ -18,14 +18,14 @@
 
     <base-docs-subtitle> Solution </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         To learn about how to show hidden files and folders, please visit the
         link below for your Operating system:
       </p>
     </div>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>Windows users</li>
       <li>macOS users</li>
       <li>Ubuntu users</li>
@@ -38,5 +38,3 @@ export default {
   name: "IssuesHiddenFilesFolders",
 };
 </script>
-
-<style></style>

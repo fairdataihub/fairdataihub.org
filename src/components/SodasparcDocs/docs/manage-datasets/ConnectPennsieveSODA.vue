@@ -7,15 +7,15 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
-      <p class="font-sans text-black dark:text-white mb-2">
+    <div class="p-parent-div">
+      <p>
         SPARC uses the Pennsieve platform to store data and metadata files as
         well as append additional metadata. All SPARC researchers must thus
         share their data on Pennsieve. When using SODA for the first time, you
         will have to connect your Pennsieve account with SODA to use Pennsieve
         related functionalities implemented in SODA.
       </p>
-      <p class="font-sans text-black dark:text-white mb-2">
+      <p>
         SODA will automatically check and see if you have an associated account
         with Pennsieve when you open the application. If we find an account on
         your system (i.e you have used SODA or the Pennsieve Agent previously)
@@ -27,18 +27,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul
-      class="
-        list-outside
-        bg-rose-200
-        list-decimal
-        ml-4
-        mb-2
-        font-sans
-        text-black
-        dark:text-white
-      "
-    >
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Click on any features (e.g. Create a new dataset) under Manage Datasets.
       </li>
@@ -49,7 +38,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/Connect-to-BF/connect-to-PS-SODA.png"
       />
@@ -57,18 +46,7 @@
 
     <base-docs-subtitle> Note </base-docs-subtitle>
 
-    <ul
-      class="
-        list-outside
-        bg-rose-200
-        list-disc
-        ml-4
-        mb-2
-        font-sans
-        text-black
-        dark:text-white
-      "
-    >
+    <ul class="docs-ul list-outside list-disc">
       <li>
         During subsequent uses, SODA will automatically connect to the Pennsieve
         account you were connected to the last time.
@@ -94,5 +72,3 @@ export default {
   name: "ConnectPennsieveSODA",
 };
 </script>
-
-<style></style>

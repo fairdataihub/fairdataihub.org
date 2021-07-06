@@ -7,7 +7,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         The SODA app saves all errors in several log files on your computer. In
         order to solve user issues, the SODA Team usually needs to take a look
@@ -22,7 +22,7 @@
       simply email/Slack it to us
     </base-docs-heading>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>Windows: C:\Users\_your_username_\AppData\Roaming\SODA\logs</li>
       <li>macOS: ~/_your_username_/Library/Logs/SODA</li>
       <li>Ubuntu: /home/_your_username_/.config/SODA/logs</li>
@@ -37,7 +37,7 @@
       folder
     </base-docs-heading>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         <strong>Solution</strong>: It is very likely that the folder is hidden
         on your computer. To learn about how to show hidden files and folders,
@@ -52,5 +52,3 @@ export default {
   name: "SendingLogFiles",
 };
 </script>
-
-<style></style>

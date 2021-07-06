@@ -7,7 +7,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Issue Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         <i> "Name 'AgentInstallationError'" </i>
         issue happens when SODA detects that you have not installed the
@@ -17,7 +17,7 @@
     </div>
 
     <base-docs-subtitle> Solution </base-docs-subtitle>
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         You can follow the instructions provided here to install the Pennsieve
         agent. For any other questions, please visit the dedicated Pennsieve
@@ -32,5 +32,3 @@ export default {
   name: "InstallingPennsieveAgent",
 };
 </script>
-
-<style></style>

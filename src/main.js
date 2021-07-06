@@ -36,6 +36,7 @@ import CreateSubmissionxlsx from "./components/SodaSPARCDocs/docs/prepare-metada
 import CreateDatasetDescriptionxlsx from "./components/SodaSPARCDocs/docs/prepare-metadata/CreateDatasetDescriptionxlsx.vue";
 import CreateSubjectsxlsx from "./components/SodaSPARCDocs/docs/prepare-metadata/CreateSubjectsxlsx.vue";
 import CreateSamplesxlsx from "./components/SodaSPARCDocs/docs/prepare-metadata/CreateSamplesxlsx.vue";
+import DowloadTemplates from "./components/SodaSPARCDocs/docs/prepare-metadata/DowloadTemplates.vue";
 
 import OrganizeDataset from "./components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDataset.vue";
 import OrganizeDatasetStep1 from "./components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep1.vue";
@@ -148,6 +149,11 @@ const router = createRouter({
           path: "Create-samples.xlsx",
           component: CreateSamplesxlsx,
         },
+        {
+          path: "Download-templates",
+          component: DowloadTemplates,
+        },
+
         {
           path: "Organize-dataset",
           component: OrganizeDataset,

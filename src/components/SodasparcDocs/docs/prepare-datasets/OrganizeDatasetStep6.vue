@@ -5,7 +5,7 @@
   </div>
 
   <div class="flex flex-col">
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         The dataset will be generated based on the information provided during
         the previous steps. It could be generated locally on your computer or
@@ -18,7 +18,7 @@
       </p>
     </div>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Select the desired destination to generate the dataset on your computer.
       </li>
@@ -29,13 +29,13 @@
       <li>Click "Generate" to create your dataset.</li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/generate-1.gif"
       />
     </div>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         If you select to generate your dataset directly on Pennsieve, it will be
         generated on the Pennsieve dataset with the specified structure. No
@@ -44,19 +44,19 @@
       </p>
     </div>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>Select desired Pennsieve account from the drop-down list.</li>
       <li>
         Select to generate on a new Pennsieve dataset or to use an existing one.
       </li>
     </ul>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>
         If you select to generate on a new Pennsieve dataset, specify a name for
         it.
 
-        <div class="flex justify-start mx-8 my-4 shadow-xl">
+        <div class="img-parent-div">
           <img
             src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/generate-21.gif"
           />
@@ -68,7 +68,7 @@
         files/folders specified in your dataset that may already exist on the
         selected Pennsieve dataset.
 
-        <div class="flex justify-start mx-8 my-4 shadow-xl">
+        <div class="img-parent-div">
           <img
             src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/generate-3.gif"
           />
@@ -83,5 +83,3 @@ export default {
   name: "OrganizeDatasetStep6",
 };
 </script>
-
-<style></style>

@@ -6,8 +6,8 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
-      <p>
+    <div class="my-2">
+      <p class="font-sans text-black dark:text-white mb-2">
         All SPARC datasets must have the following metadata on Pennsieve:
         subtitle, description, banner image, and license. This interface allows
         you to easily add a subtitle to your dataset. This subtitle will become
@@ -18,7 +18,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
         connected your Pennsieve account with SODA yet, see here.
@@ -38,5 +38,3 @@ export default {
   name: "AddEditSubtitle",
 };
 </script>
-
-<style></style>

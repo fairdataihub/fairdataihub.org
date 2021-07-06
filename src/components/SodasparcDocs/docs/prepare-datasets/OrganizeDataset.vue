@@ -6,7 +6,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         All SPARC datasets must follow the top level SPARC folder structure
         imposed by the SPARC Dataset Structure. This top level folder structure
@@ -17,7 +17,7 @@
       </p>
     </div>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-dataset/Specify-files/SPARC-dataset-structure.PNG"
         alt="Overview of the top level folder structure required for all SPARC datasets (taken from the instructions prepared by the SPARC Curation Team)."
@@ -26,7 +26,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul class="list-inside bg-rose-200 list-none mb-2">
+    <ul class="list-inside list-none">
       <li>Step 1: Getting started</li>
       <li>Step 2: Specify high-level folders</li>
       <li>Step 3: Structure dataset files</li>
@@ -36,10 +36,12 @@
       <li>Step 7: Preview dataset</li>
     </ul>
 
-    <p>
-      Note that you can save your progress using the Save progress button
-      available in the lower right corner starting from Step 3.
-    </p>
+    <div class="p-parent-div">
+      <p>
+        Note that you can save your progress using the Save progress button
+        available in the lower right corner starting from Step 3.
+      </p>
+    </div>
   </div>
 </template>
 
@@ -49,4 +51,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped language="postcss">
+ul {
+  @apply mb-2 font-sans text-black dark:text-white;
+}
+</style>

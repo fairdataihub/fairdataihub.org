@@ -5,14 +5,14 @@
   </div>
 
   <div class="flex flex-col">
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Select between the following 4 options to get started with your dataset
         organization process with SODA:
       </p>
     </div>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         <strong> Prepare a new dataset: </strong>
         Select this option if you want to start organizing and curating a new
@@ -41,7 +41,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/getting-started.PNG"
       />
@@ -54,5 +54,3 @@ export default {
   name: "OrganizeDatasetStep1",
 };
 </script>
-
-<style></style>

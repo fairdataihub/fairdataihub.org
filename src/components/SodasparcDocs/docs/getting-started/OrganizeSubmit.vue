@@ -137,13 +137,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
                   class="underline text-blue-400"
                 >
                   Connect your Pennsieve account with SODA.
-                </a>
+                </router-link>
                 This is only required the first time you use SODA.
               </span>
             </div>
@@ -157,13 +156,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://app.pennsieve.net/"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Create-a-new-dataset"
                   class="underline text-blue-400"
                 >
                   <span> Create a new dataset </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -176,15 +174,14 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Make-PI-owner-of-dataset"
                   class="underline text-blue-400"
                 >
                   <span>
                     Make PI of the SPARC award the owner of the dataset
                   </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -197,16 +194,15 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Add-edit-permissions"
                   class="underline text-blue-400"
                 >
                   <span>
                     Give access to other members/teams who may need to
                     contribute to the dataset</span
                   >
-                </a>
+                </router-link>
                 (note: optional)
               </span>
             </div>
@@ -220,13 +216,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Add-edit-subtitle"
                   class="underline text-blue-400"
                 >
                   <span> Add a subtitle </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -239,13 +234,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Add-edit-description"
                   class="underline text-blue-400"
                 >
                   <span> Add a description </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -258,13 +252,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Upload-a-banner-image"
                   class="underline text-blue-400"
                 >
                   <span> Upload a banner image </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -277,13 +270,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Assign-a-license"
                   class="underline text-blue-400"
                 >
                   <span> Assign a license </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -331,13 +323,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://app.pennsieve.net/"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Create-submission-xlsx"
                   class="underline text-blue-400"
                 >
                   <span> Prepare submission file </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -350,13 +341,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Create-dataset_description-xlsx"
                   class="underline text-blue-400"
                 >
                   <span> Prepare dataset description file </span>
-                </a>
+                </router-link>
               </span>
             </div>
           </label>
@@ -369,14 +359,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                Prepare subjects file (
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                Prepare subjects file (<router-link
+                  to="/sodasparc/docs/Download-templates"
                   class="underline text-blue-400"
                 >
-                  <span> download template</span>
-                </a>
+                  <span>download template</span>
+                </router-link>
                 in SODA, more support will be available in SODA soon - note:
                 required only if your study includes subjects)
               </span>
@@ -391,13 +379,11 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                Prepare samples file (
-                <a
-                  href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                  target="_blank"
+                Prepare samples file (<router-link
+                  to="/sodasparc/docs/Download-templates"
                   class="underline text-blue-400"
                 >
-                  <span> download template</span> </a
+                  <span>download template</span> </router-link
                 >, more support will be available in SODA soon - note: required
                 only if your study includes samples)
               </span>
@@ -427,14 +413,15 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Organize-dataset"
                   class="underline text-blue-400"
                 >
-                  Specify files and metadata files to be included in your
-                  dataset and generate dataset directly on Pennsieve
-                </a>
+                  <span>
+                    Specify files and metadata files to be included in your
+                    dataset and generate dataset directly on Pennsieve
+                  </span>
+                </router-link>
               </span>
             </div>
           </label>
@@ -462,14 +449,15 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Share-with-curation-team"
                   class="underline text-blue-400"
                 >
-                  Share with the Curation Team to add your dataset to their
-                  queue for review
-                </a>
+                  <span>
+                    Share with the Curation Team to add your dataset to their
+                    queue for review
+                  </span>
+                </router-link>
                 (it is highly suggested to not make any changes after this step
                 until you are contacted by the Curation Team)
               </span>
@@ -500,13 +488,14 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Share-with-SPARC-Consortium"
                   class="underline text-blue-400"
                 >
-                  Share dataset with the SPARC Consortium as Embargoed dataset
-                </a>
+                  <span>
+                    Share dataset with the SPARC Consortium as Embargoed dataset
+                  </span>
+                </router-link>
               </span>
             </div>
           </label>
@@ -519,13 +508,12 @@
             />
             <div class="ml-3">
               <span class="span-content">
-                <a
-                  href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
-                  target="_blank"
+                <router-link
+                  to="/sodasparc/docs/Submit-for-pre-publishing-review"
                   class="underline text-blue-400"
                 >
-                  Send dataset for pre-publishing review
-                </a>
+                  <span> Send dataset for pre-publishing review </span>
+                </router-link>
               </span>
             </div>
           </label>

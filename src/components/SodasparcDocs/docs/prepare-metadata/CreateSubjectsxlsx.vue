@@ -6,7 +6,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Under this feature, SODA lets you quickly and accurately prepare the
         subjects metadata file which is mandatory for all SPARC datasets. SODA
@@ -23,47 +23,51 @@
 
     <base-docs-heading> Step 1: </base-docs-heading>
 
-    <p>
-      Currently, there are 2 ways to start creating your subjects.xlsx file with
-      SODA:
-    </p>
-
-    <blockquote>
-      <p>1A. Start from scratch with SODA</p>
-    </blockquote>
-
-    <blockquote>
+    <div class="p-parent-div">
       <p>
-        1B. Continue working on an existing, locally-stored subjects.xlsx file
+        Currently, there are 2 ways to start creating your subjects.xlsx file
+        with SODA:
       </p>
-    </blockquote>
 
-    <p>If you start with:</p>
-    <p>(1A): You can go straight to step 2.</p>
-    <p>If you start with:</p>
-    <p>
-      (1B): You will be able to specify the location of the existing subjects
-      file. Clicking "Confirm" after specifying the file path will load the
-      information from the file onto SODA.
-    </p>
+      <blockquote>
+        <p>1A. Start from scratch with SODA</p>
+      </blockquote>
+
+      <blockquote>
+        <p>
+          1B. Continue working on an existing, locally-stored subjects.xlsx file
+        </p>
+      </blockquote>
+
+      <p>If you start with:</p>
+      <p>(1A): You can go straight to step 2.</p>
+      <p>If you start with:</p>
+      <p>
+        (1B): You will be able to specify the location of the existing subjects
+        file. Clicking "Confirm" after specifying the file path will load the
+        information from the file onto SODA.
+      </p>
+    </div>
 
     <base-docs-heading> Step 2: </base-docs-heading>
 
-    <p>
-      You will be able to add new subjects or edit/delete existing subjects (if
-      any). If at least 1 subject is added, a table of subjects will be provided
-      with each row containing a subject and the tasks associated with it
-      (Edit/Delete).
-    </p>
+    <div class="p-parent-div">
+      <p>
+        You will be able to add new subjects or edit/delete existing subjects
+        (if any). If at least 1 subject is added, a table of subjects will be
+        provided with each row containing a subject and the tasks associated
+        with it (Edit/Delete).
+      </p>
 
-    <p>
-      Clicking on "Add a subject" will prompt you to a form where you can add a
-      new subject by entering information about it. The form contains the below
-      fields with mandatory fields written in bold and optional fields in
-      italic.
-    </p>
+      <p>
+        Clicking on "Add a subject" will prompt you to a form where you can add
+        a new subject by entering information about it. The form contains the
+        below fields with mandatory fields written in bold and optional fields
+        in italic.
+      </p>
+    </div>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>
         <strong>subject id</strong>: Lab-based schema for identifying each
         subject. This field should match the primary's sub-folder names. The
@@ -72,7 +76,7 @@
       <li>
         Experimental Setup (Mandatory if available):
 
-        <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+        <ul class="docs-ul list-outside list-disc">
           <li>
             pool id: If data is collected on multiple subjects at the same time
             include the identifier of the pool where the data file will be
@@ -88,7 +92,7 @@
       <li>
         Species Information (Mandatory if available):
 
-        <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+        <ul class="docs-ul list-outside list-disc">
           <li>
             Sex: This is the sex of the subject, or if unknown, leave it empty.
             E.g: Female.
@@ -120,7 +124,7 @@
       <li>
         Optional details:
 
-        <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+        <ul class="docs-ul list-outside list-disc">
           <li>
             <i> Age category</i>: The age category that the subject belongs to.
             An search field with suggestions based on list derived from UBERON
@@ -136,7 +140,7 @@
       <li>
         Protocol Information (Optional):
 
-        <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+        <ul class="docs-ul list-outside list-disc">
           <li>
             <i> Protocol title on protocols.io</i>: This field refers to the
             title of the protocol within Protocols.io once the research protocol
@@ -161,7 +165,7 @@
       <li>
         Additional fields (Optional):
 
-        <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+        <ul class="docs-ul list-outside list-disc">
           <li>
             <i> Handedness</i>: This refers to the preference of the subject to
             use the right or left hand, whenever applicable.
@@ -183,16 +187,18 @@
       <li>Custom fields (Optional)</li>
     </ul>
 
-    <p>
-      Click "Add custom field" button to start adding a header for a field that
-      is not a SPARC-standard subjects.xlsx field. You will have the option to
-      add value for this field after it is created. Click on the "trash can"
-      icon next to a field to delete a custom field.
-    </p>
+    <div class="p-parent-div">
+      <p>
+        Click "Add custom field" button to start adding a header for a field
+        that is not a SPARC-standard subjects.xlsx field. You will have the
+        option to add value for this field after it is created. Click on the
+        "trash can" icon next to a field to delete a custom field.
+      </p>
+    </div>
 
     <base-docs-subtitle> Notes </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>
         If you have a properly structured SPARC primary folder to import, you
         can choose to import it specified under the table of subjects after you
@@ -217,5 +223,3 @@ export default {
   name: "CreateSubjectsxlsx",
 };
 </script>
-
-<style></style>

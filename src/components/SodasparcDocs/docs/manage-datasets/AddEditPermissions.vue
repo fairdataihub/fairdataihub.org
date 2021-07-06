@@ -6,7 +6,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         There are four roles available for a dataset: owner, manager, editor,
         and viewer. Each of them provides different permissions for making
@@ -62,7 +62,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Start by selecting/confirming your Pennsieve account and dataset. If you
         have not connected your Pennsieve account with SODA yet, see here. The
@@ -74,14 +74,14 @@
       Add/edit permissions for team members or teams
     </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>Click on "Add/edit user permissions".</li>
       <li>Select the user from the dropdown list.</li>
       <li>Select a role from the dropdown list.</li>
       <li>Click on "Add permission for user".</li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-6 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/Manage-permissions/add-permissions.gif"
       />
@@ -89,7 +89,7 @@
 
     <base-docs-subtitle> Add/edit permissions for teams </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mt-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>Click on "Add/edit team permissions".</li>
       <li>Select the team from the dropdown list.</li>
       <li>Select a role from the dropdown list.</li>

@@ -7,7 +7,7 @@
   </div>
 
   <div class="flex flex-col">
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Select the high-level folder(s) to be included in your dataset. Refer to
         the description provided in the figure here about the content of each
@@ -19,7 +19,7 @@
       </p>
     </div>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/high-level-folders-1.gif"
       />
@@ -32,5 +32,3 @@ export default {
   name: "OrganizeDatasetStep2",
 };
 </script>
-
-<style></style>

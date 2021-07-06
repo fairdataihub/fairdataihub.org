@@ -6,7 +6,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         There are four permission privileges available for a dataset on
         Pennsieve: owner, manager, editor, and viewer. Each of them provides
@@ -23,7 +23,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
         connected your Pennsieve account with SODA yet, see here.
@@ -42,5 +42,3 @@ export default {
   name: "MakePIDatasetOwner",
 };
 </script>
-
-<style></style>

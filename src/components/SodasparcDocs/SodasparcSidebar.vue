@@ -73,7 +73,7 @@ export default {
           ],
         },
         {
-          title: "Manage Datasets",
+          title: "Manage Dataset",
           subsections: [
             {
               subtitle: "Connect your Pennsieve account with SODA",
@@ -144,10 +144,14 @@ export default {
               subtitle: "Create samples.xlsx",
               href: "/sodasparc/docs/Create-samples.xlsx",
             },
+            {
+              subtitle: "Download templates",
+              href: "/sodasparc/docs/Dowload-templates",
+            },
           ],
         },
         {
-          title: "Prepare Datasets",
+          title: "Prepare Dataset",
           subsections: [
             {
               subtitle: "Organize dataset",
@@ -184,7 +188,7 @@ export default {
           ],
         },
         {
-          title: "Disseminate Datasets",
+          title: "Disseminate Dataset",
           subsections: [
             {
               subtitle: "Share with Curation Team",

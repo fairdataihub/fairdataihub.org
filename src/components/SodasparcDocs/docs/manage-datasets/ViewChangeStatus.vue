@@ -6,7 +6,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         The status of a dataset is used to allow easy communication between
         SPARC investigators and the SPARC Dataset Curation Team regarding the
@@ -22,7 +22,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
         connected your Pennsieve account with SODA yet, see here.
@@ -34,7 +34,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/View-change-status/view-change-status.PNG"
       />
@@ -42,12 +42,14 @@
 
     <base-docs-subtitle> Notes </base-docs-subtitle>
 
-    <p class="my-1">
-      Typically, SPARC investigators should only have to change dataset status
-      to one of the following options:
-    </p>
+    <div class="p-parent-div">
+      <p>
+        Typically, SPARC investigators should only have to change dataset status
+        to one of the following options:
+      </p>
+    </div>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>
         "02. Work in Progress (Investigator)": Select to indicate that you are
         working on your dataset
@@ -81,5 +83,3 @@ export default {
   name: "ViewChangeStatus",
 };
 </script>
-
-<style></style>

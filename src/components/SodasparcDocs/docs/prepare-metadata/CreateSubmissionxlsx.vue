@@ -6,7 +6,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Under this feature, SODA lets you rapidly prepare the submission
         metadata file for your dataset. This feature is designed to avoid
@@ -14,13 +14,12 @@
         of this file, generated automatically by SODA, is explained in our
         corresponding "How to" page if you would like to learn about it.
       </p>
-      <br />
       <p>
         SODA makes use of two resources to help you prepare the submission file
         rapidly and without errors:
       </p>
 
-      <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+      <ul class="docs-ul list-outside list-disc">
         <li>The SPARC Airtable sheet as explained here.</li>
         <li>
           The Data Deliverables document associated with your award. This
@@ -36,7 +35,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>
         We suggest to add/edit your Airtable account and SPARC award(s) as
         instructed here then confirm.
@@ -66,7 +65,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Submission/submission.gif"
       />
@@ -79,5 +78,3 @@ export default {
   name: "CreateSubmissionxlsx",
 };
 </script>
-
-<style></style>

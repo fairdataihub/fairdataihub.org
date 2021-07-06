@@ -7,7 +7,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         SODA make use of the SPARC Airtable sheet to automatically get award
         numbers and contributors information such that you don't have to enter
@@ -16,7 +16,6 @@
         SODA will then automatically connect to your Airtable account during
         subsequent uses.
       </p>
-      <br />
       <p>
         We suggest keeping your group information up to date in the Airtable
         sheet, especially contributors' names, email, affiliations, and ORCID to
@@ -26,7 +25,7 @@
 
     <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>Create an Airtable account.</li>
       <li>
         Get access to the SPARC Airtable sheet (contact Dr. Charles Horn at
@@ -50,7 +49,7 @@
       </li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Connect-to-Airtable/connect-to-airtable.gif"
       />
@@ -58,7 +57,7 @@
 
     <base-docs-subtitle> Note </base-docs-subtitle>
 
-    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+    <ul class="docs-ul list-outside list-disc">
       <li>
         During subsequent uses, SODA will automatically connect to the Pennsieve
         account you were connected to the last time.
@@ -84,5 +83,3 @@ export default {
   name: "ConnectAirtableSODA",
 };
 </script>
-
-<style></style>

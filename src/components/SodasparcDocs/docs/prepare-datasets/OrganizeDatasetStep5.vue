@@ -5,7 +5,7 @@
   </div>
 
   <div class="flex flex-col">
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         Manifest files are mandatory for all datasets. To learn more about this
         metadata file we refer to our corresponding "How to" page.
@@ -22,7 +22,7 @@
       </p>
     </div>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/request-manifests.PNG"
       />
@@ -35,5 +35,3 @@ export default {
   name: "OrganizeDatasetStep5",
 };
 </script>
-
-<style></style>

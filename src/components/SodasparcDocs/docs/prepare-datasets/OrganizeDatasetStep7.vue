@@ -5,7 +5,7 @@
   </div>
 
   <div class="flex flex-col">
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         This step serves as a confirmation page before SODA generates your
         dataset. You can preview your dataset organization with specified SPARC
@@ -20,7 +20,7 @@
       </p>
     </div>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/preview-dataset.PNG"
       />
@@ -33,5 +33,3 @@ export default {
   name: "OrganizeDatasetStep7",
 };
 </script>
-
-<style></style>

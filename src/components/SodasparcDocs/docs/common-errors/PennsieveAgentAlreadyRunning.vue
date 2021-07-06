@@ -7,7 +7,7 @@
   <div class="flex flex-col">
     <base-docs-subtitle> Issue Background </base-docs-subtitle>
 
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         "The Pennsieve agent is already running" issue happens when SODA tries
         to initiate an upload, but an existing pennsieve_agent process is
@@ -17,7 +17,7 @@
     </div>
 
     <base-docs-subtitle> Solution </base-docs-subtitle>
-    <div class="my-4">
+    <div class="p-parent-div">
       <p>
         A general solution for this issue is to end the pennsieve.exe process
         that is still running. Click the below to learn about how to end a
@@ -25,13 +25,13 @@
       </p>
     </div>
 
-    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+    <ul class="docs-ul list-outside list-decimal">
       <li>Windows</li>
       <li>MAC</li>
       <li>Ubuntu</li>
     </ul>
 
-    <div class="flex justify-start mx-8 my-4 shadow-xl">
+    <div class="img-parent-div">
       <img
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Common-errors/blackfynn-agent-running-error.gif"
         alt="A GIF illustrating how to kill a process in Windows."
@@ -45,5 +45,3 @@ export default {
   name: "PennsieveAgentAlreadyRunning",
 };
 </script>
-
-<style></style>
