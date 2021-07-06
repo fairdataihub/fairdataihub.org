@@ -1,0 +1,85 @@
+<template>
+  <div>
+    <base-docs-title :title="`View and change status`"> </base-docs-title>
+  </div>
+
+  <div class="flex flex-col">
+    <base-docs-subtitle> Background </base-docs-subtitle>
+
+    <div class="my-4">
+      <p>
+        The status of a dataset is used to allow easy communication between
+        SPARC investigators and the SPARC Dataset Curation Team regarding the
+        progress of a dataset through the curation process. There are 12 status
+        options that each SPARC Dataset will go through one by one during the
+        submission and curation process. Each status indicates which team is
+        responsible for the step. The dataset status changes required from the
+        investigators are done automatically in SODA when they execute the
+        associated actions so investigators should not have to use this features
+        in most cases.
+      </p>
+    </div>
+
+    <base-docs-subtitle> How to </base-docs-subtitle>
+
+    <ul class="list-outside bg-rose-200 list-decimal ml-4 mb-2">
+      <li>
+        Select/confirm your Pennsieve account and dataset. If you have not
+        connected your Pennsieve account with SODA yet, see here.
+      </li>
+      <li>Select the desired option from the list.</li>
+      <li>
+        Fill in your Pennsieve "Email Address" and "Password" and click "Connect
+        to Pennsieve"
+      </li>
+    </ul>
+
+    <div class="flex justify-start mx-8 my-4">
+      <img
+        src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/View-change-status/view-change-status.PNG"
+      />
+    </div>
+
+    <base-docs-subtitle> Notes </base-docs-subtitle>
+
+    <p class="my-1">
+      Typically, SPARC investigators should only have to change dataset status
+      to one of the following options:
+    </p>
+
+    <ul class="list-outside bg-rose-200 list-disc ml-4 mb-2">
+      <li>
+        "02. Work in Progress (Investigator)": Select to indicate that you are
+        working on your dataset
+      </li>
+      <li>
+        "03. Ready for Curation (Investigator)": Select to inform the SPARC
+        Dataset Curation Team that your dataset is ready to be reviewed. You
+        dataset will be added to the curation queue.
+      </li>
+      <li>
+        "11. Complete, Under Embargo (Investigator)": Select to share your
+        dataset with the SPARC Consortium. This will give viewer permissions to
+        the SPARC Embargoed Data Sharing Group and will therefore allow any
+        SPARC investigator who has signed the SPARC Non-disclosure form to see
+        your data.
+      </li>
+      <li>
+        "12. Published (Investigator)": Select this option once you have
+        published your dataset. One year after the initial upload of your
+        dataset, you must publish your dataset to Pennsieve Discover, which
+        populates the SPARC Portal. To do this, open the dataset of interest on
+        the Pennsieve webpage, click on the Settings tab on the left, and select
+        Publish Dataset.
+      </li>
+    </ul>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "ViewChangeStatus",
+};
+</script>
+
+<style></style>

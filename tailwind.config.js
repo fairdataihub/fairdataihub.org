@@ -28,5 +28,5 @@ module.exports = {
       transitionProperty: ["responsive", "motion-safe", "motion-reduce"],
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [],
 };

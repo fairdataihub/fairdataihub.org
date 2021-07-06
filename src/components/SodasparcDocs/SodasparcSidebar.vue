@@ -153,6 +153,34 @@ export default {
               subtitle: "Organize dataset",
               href: "/sodasparc/docs/Organize-dataset",
             },
+            {
+              subtitle: "Step 1: Getting started",
+              href: "/sodasparc/docs/Organize-dataset/step-1",
+            },
+            {
+              subtitle: "Step 2: Specify high-level folders",
+              href: "/sodasparc/docs/Organize-dataset/step-2",
+            },
+            {
+              subtitle: "Step 3: Structure dataset files",
+              href: "/sodasparc/docs/Organize-dataset/step-3",
+            },
+            {
+              subtitle: "Step 4: Specify high-level metadata files",
+              href: "/sodasparc/docs/Organize-dataset/step-4",
+            },
+            {
+              subtitle: "Step 5: Request manifest files",
+              href: "/sodasparc/docs/Organize-dataset/step-5",
+            },
+            {
+              subtitle: "Step 6: Generate dataset",
+              href: "/sodasparc/docs/Organize-dataset/step-6",
+            },
+            {
+              subtitle: "Step 7: Preview dataset",
+              href: "/sodasparc/docs/Organize-dataset/step-7",
+            },
           ],
         },
         {
