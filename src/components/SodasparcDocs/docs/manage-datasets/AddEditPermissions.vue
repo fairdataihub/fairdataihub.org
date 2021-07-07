@@ -39,9 +39,9 @@
               sm:rounded-lg
             "
           >
-            <table class="min-w-full divide-y divide-gray-200">
+            <table class="min-w-full divide-y divide-gray-200 relative">
               <thead class="bg-gray-50 dark:bg-gray-500">
-                <tr>
+                <tr class="divide-x divide-gray-200">
                   <th scope="col" class="">Permissions</th>
                   <th scope="col" class="">Owner</th>
                   <th scope="col" class="">Manager</th>
@@ -50,7 +50,11 @@
                 </tr>
               </thead>
               <tbody class="bg-white dark:bg-gray-600 divide-y divide-gray-200">
-                <tr v-for="item in permissionsList" :key="item.permission">
+                <tr
+                  v-for="item in permissionsList"
+                  :key="item.permission"
+                  class="divide-x divide-gray-200"
+                >
                   <td class="px-6 py-4 text-black dark:text-white">
                     {{ item.permission }}
                   </td>
@@ -200,6 +204,6 @@ export default {
 
 <style lang="postcss" scoped>
 th {
-  @apply px-6 py-3 text-left text-base font-medium text-black dark:text-white;
+  @apply px-6 py-3 text-left text-base font-medium text-black dark:text-white sticky top-0 z-10;
 }
 </style>

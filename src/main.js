@@ -75,6 +75,7 @@ const router = createRouter({
     { path: "/home", component: HomePage },
     { path: "/team", component: TheTeam },
     { path: "/sodasparc", component: SodaSparc },
+    { path: "/sodasparc/docs", redirect: "/sodasparc/docs/User-Interface" },
     {
       path: "/sodasparc/docs",
       component: SodasparcDocs,
@@ -227,7 +228,7 @@ const router = createRouter({
     },
     {
       path: "/:pathMatch(.*)*",
-      components: { mainContent: TheErrorPage },
+      component: TheErrorPage,
     },
   ],
 });

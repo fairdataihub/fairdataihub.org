@@ -575,6 +575,6 @@ export default {
 }
 
 input {
-  @apply mt-1 w-4 h-4 border-gray-300 rounded;
+  @apply mt-1 w-4 h-4 border-gray-300 rounded flex-none;
 }
 </style>

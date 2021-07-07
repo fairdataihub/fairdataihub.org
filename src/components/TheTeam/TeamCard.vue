@@ -6,7 +6,16 @@
     <div
       class="w-full md:w-2/3 py-3 px-0 sm:py-4 sm:px-4 lg:ml-8 flex flex-col"
     >
-      <h1 class="font-sans text-black dark:text-white text-xl lg:text-3xl">
+      <h1
+        class="
+          font-sans
+          text-black
+          dark:text-white
+          text-2xl
+          sm:text-xl
+          lg:text-3xl
+        "
+      >
         {{ profile.name }}
       </h1>
       <h2
@@ -14,33 +23,44 @@
           font-sans
           text-indigo-600
           dark:text-indigo-200
-          text-lg
+          text-xl
+          sm:text-lg
           lg:text-2xl
           pb-2
         "
       >
         {{ profile.title }}
       </h2>
-      <p class="font-sans text-black dark:text-white text-base lg:text-xl">
+      <p
+        class="
+          font-sans
+          text-black
+          dark:text-white
+          text-lg
+          sm:text-base
+          lg:text-xl
+        "
+      >
         {{ profile.bio }}
       </p>
       <div class="flex">
         <a
           v-if="profile.twitter.show"
           :href="profile.twitter.link"
-          class="py-2 px-2"
+          class="py-2 px-1"
         >
           <svg
             width="30"
             height="30"
             fill="currentColor"
             class="
-              text-lg
+              text-xl
               hover:text-gray-800
               dark:text-gray-200 dark:hover:text-white
               transition-colors
               duration-200
-              h-10
+              h-9
+              w-9
               sm:h-6
               lg:h-12
             "
@@ -68,7 +88,8 @@
               dark:text-gray-200 dark:hover:text-white
               transition-colors
               duration-200
-              h-10
+              h-9
+              w-9
               sm:h-6
               lg:h-12
             "
@@ -94,7 +115,8 @@
               dark:text-gray-200 dark:hover:text-white
               transition-colors
               duration-200
-              h-10
+              h-9
+              w-9
               sm:h-6
               lg:h-12
             "

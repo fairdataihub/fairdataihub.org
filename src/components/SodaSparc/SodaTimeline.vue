@@ -1,7 +1,21 @@
 <template>
   <section class="dark:bg-gray-600">
-    <div class="container w-full h-full pb-4 max-w-screen-xl mx-auto">
+    <div class="container w-full h-full py-4 max-w-screen-xl mx-auto">
       <div class="relative wrap overflow-hidden p-2 sm:p-10 h-full">
+        <h2
+          class="
+            text-3xl
+            sm:text-3xl
+            font-bold font-sans
+            text-black
+            mb-8
+            w-full
+            text-center
+            dark:text-white
+          "
+        >
+          SODA Timeline
+        </h2>
         <div
           class="
             border-2-2
@@ -13,8 +27,8 @@
           "
           style="left: 50%"
         ></div>
-        <!-- right timeline -->
 
+        <!-- timeline -->
         <div
           v-for="(item, index) in timelineList"
           :key="index"
@@ -88,7 +102,9 @@
             <h3 class="mb-1 sm:mb-3 font-bold text-black text-xl">
               {{ item.title }}
             </h3>
-            <p class="text-xs sm:text-sm leading-snug tracking-wide text-black">
+            <p
+              class="text-base sm:text-sm leading-snug tracking-wide text-black"
+            >
               {{ item.content }}
             </p>
           </div>

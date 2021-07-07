@@ -1,15 +1,15 @@
 <template>
-  <div class="container px-6 pt-4 pb-0 lg:px-4 max-w-screen-xl mx-auto">
-    <div>
+  <div class="container px-6 pt-4 pb-0 md:p-10 max-w-screen-xl mx-auto">
+    <div class="flex flex-col items-center mb-4">
       <p
         class="
           mt-2
-          text-3xl
           leading-8
           font-extrabold
           tracking-tight
-          text-gray-900
+          text-black
           dark:text-white
+          text-4xl
           sm:text-4xl
           text-center
         "
@@ -19,10 +19,10 @@
       <p
         class="
           mt-4
+          w-full
           max-w-2xl
-          text-xl text-gray-500
-          dark:text-gray-50
-          lg:mx-auto
+          text-xl text-black
+          dark:text-white
           text-center
         "
       >
@@ -30,12 +30,21 @@
         make a difference
       </p>
     </div>
-    <div class="w-full flex flex-col sm:flex-row sm:justify-evenly">
+    <div
+      class="
+        w-full
+        grid grid-cols-2
+        sm:grid-cols-2
+        md:grid-cols-3
+        gap-4
+        lg:flex lg:flex-row lg:justify-evenly
+      "
+    >
       <img
         v-for="logo in logoList"
         :key="logo"
         :src="logo"
-        class="h-28 sm:h-24 md:h-40"
+        class="h-28 sm:h-36 md:h-40 m-2 justify-self-center"
       />
     </div>
   </div>

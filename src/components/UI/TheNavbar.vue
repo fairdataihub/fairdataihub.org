@@ -16,7 +16,7 @@
           w-screen
           bg-gray-50
           dark:bg-gray-800
-          z-20
+          z-30
           px-2
           sm:px-6
         "
@@ -34,7 +34,7 @@
               hover:text-white hover:bg-gray-700
               focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
             "
-            @click="open = !open"
+            ref="mobileMenuButton"
           >
             <span class="sr-only">Open main menu</span>
             <MenuIcon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
@@ -76,20 +76,19 @@
           "
         >
           <div class="hidden sm:block sm:ml-6">
-            <div class="flex space-x-4">
+            <div class="flex">
+              <div class="hidden sm:inline-block md:hidden">sm</div>
+              <div class="hidden md:inline-block lg:hidden">md</div>
+              <div class="hidden lg:inline-block">lg</div>
               <router-link
                 v-for="item in navigation"
                 :key="item.name"
                 :to="item.href"
-                class="
-                  text-black
-                  dark:text-white
-                  px-3
-                  py-2
-                  text-sm
-                  font-medium
-                  nav-bar-item
-                "
+                :id="item.id"
+                :class="[
+                  `text-black dark:text-white px-3 mx-1 py-2 text-sm font-medium `,
+                  isSodaSparc(item.id),
+                ]"
               >
                 {{ item.name }}
               </router-link>
@@ -108,7 +107,7 @@
           "
         >
           <!-- Projects dropdown -->
-          <Menu as="div" class="relative w-max">
+          <Menu as="div" class="relative w-max hidden">
             <div>
               <MenuButton
                 class="flex text-sm justify-center items-center w-max"
@@ -139,6 +138,7 @@
                         pr-2
                         whitespace-nowrap
                       "
+                      aria-hidden="true"
                     >
                       Our Projects
                     </span>
@@ -329,35 +329,38 @@
     </div>
 
     <!-- Mobile menu panel -->
-    <DisclosurePanel class="sm:hidden pt-16 fixed w-screen bg-gray-500">
-      <div class="px-2 pt-2 pb-3 space-y-1 z-20">
-        <router-link
-          v-for="item in navigation"
-          :key="item.name"
-          :to="item.href"
-          class="
-            text-gray-300
-            bg-gray-700
-            hover:bg-gray-700 hover:text-white
-            block
-            px-3
-            py-2
-            rounded-md
-            text-base
-            font-medium
-            z-20
-          "
-          @click="open = !open"
-        >
-          {{ item.name }}
-        </router-link>
-      </div>
-    </DisclosurePanel>
+    <div v-show="open">
+      <DisclosurePanel
+        static
+        class="sm:hidden pt-16 fixed w-screen bg-gray-500 z-20"
+      >
+        <div class="px-2 pt-2 pb-3 space-y-1 z-20">
+          <router-link
+            v-for="item in navigation"
+            :key="item.name"
+            :to="item.href"
+            class="
+              text-white
+              bg-gray-700
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base
+              font-medium
+              z-20
+            "
+            @click="clickMenu"
+          >
+            {{ item.name }}
+          </router-link>
+        </div>
+      </DisclosurePanel>
+    </div>
   </Disclosure>
 </template>
 
 <script>
-import { ref } from "vue";
 import {
   Disclosure,
   DisclosureButton,
@@ -371,8 +374,9 @@ import {
 import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 
 const navigation = [
-  { name: "Home", href: "/home" },
-  { name: "Meet The Team", href: "/team" },
+  { name: "Home", href: "/home", id: "nav-home" },
+  { name: "Meet The Team", href: "/team", id: "nav-team" },
+  { name: "SODA for SPARC", href: "/sodasparc", id: "nav-sodasparc" },
 ];
 
 export default {
@@ -390,11 +394,8 @@ export default {
     XIcon,
   },
   setup() {
-    const open = ref(false);
-
     return {
       navigation,
-      open,
     };
   },
   mounted() {
@@ -407,7 +408,7 @@ export default {
     }
   },
   data() {
-    return { switchValue: false, checked: false };
+    return { switchValue: false, checked: false, open: false };
   },
   methods: {
     switchToDarkMode() {
@@ -437,12 +438,25 @@ export default {
         }
       }
     },
+    isSodaSparc: function (element) {
+      if (
+        this.$route.path.search("sodasparc") != -1 &&
+        element === "nav-sodasparc"
+      ) {
+        return "border-b-2 border-gray-900 dark:border-white !important;";
+      }
+      return "nav-bar-item";
+    },
+    clickMenu: function () {
+      this.open = false;
+      document.querySelector("#headlessui-disclosure-button-1").click();
+    },
   },
 };
 </script>
 
 <style scoped lang="postcss">
 .nav-bar-item {
-  @apply border-b-2 border-transparent hover:border-gray-400 dark:hover:border-gray-200 transition-all;
+  @apply border-b-2 border-transparent hover:border-gray-400 dark:hover:border-gray-300 transition-all;
 }
 </style>

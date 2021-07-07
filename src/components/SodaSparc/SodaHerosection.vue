@@ -7,13 +7,15 @@
           mx-auto
           flex
           px-5
-          py-10
+          py-2
+          sm:py-10
           flex-col-reverse
           sm:flex-col
           md:flex-row
           items-center
         "
       >
+        <!-- text div -->
         <div
           class="
             lg:flex-grow
@@ -22,7 +24,8 @@
             md:pr-16
             flex flex-col
             md:items-start md:text-left
-            mb-16
+            mb-2
+            sm:mb-16
             md:mb-0
             items-center
             text-center
@@ -31,10 +34,11 @@
           <h1
             class="
               font-sans font-black
-              sm:text-4xl
               text-3xl
+              sm:text-4xl
               w-full
-              mb-4
+              mb-1
+              sm:mb-4
               text-center text-black
               dark:text-white
             "
@@ -46,8 +50,9 @@
               font-sans
               w-full
               sm:text-2xl
-              text-xl
-              mb-4
+              text-2xl
+              mb-2
+              sm:mb-4
               font-medium
               text-black
               dark:text-white
@@ -60,7 +65,7 @@
             class="
               mb-8
               leading-relaxed
-              text-center
+              text-center text-base
               w-full
               font-sans
               text-black
@@ -115,6 +120,7 @@
             </router-link>
           </div>
         </div>
+        <!-- image div -->
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 py-2 sm:py-0">
           <img
             class="object-cover object-center rounded"

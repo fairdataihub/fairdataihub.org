@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10 w-full">
+  <div class="px-4 py-0 sm:p-10 w-full">
     <slot></slot>
   </div>
 </template>

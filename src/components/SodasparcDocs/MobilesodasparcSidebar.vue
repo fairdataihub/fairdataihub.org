@@ -1,63 +1,34 @@
 <template>
-  <div class="relative bg-white dark:bg-gray-700">
-    <div class="hidden sm:flex flex-col sm:flex-row sm:justify-around">
-      <div class="sm:w-52 md:w-56 lg:w-64">
-        <nav class="mt-4 px-6">
-          <div v-for="section in sidebarList" :key="section.title" class="pb-3">
-            <p
-              class="
-                text-black
-                dark:text-white
-                w-full
-                border-b-2
-                pb-2
-                border-gray-100
-                text-md
-                font-normal
-              "
-            >
-              {{ section.title }}
-            </p>
-            <div
-              v-for="subsection in section.subsections"
-              :key="subsection.subtitle"
-            >
-              <router-link
-                :to="subsection.href"
-                class="
-                  hover:text-gray-800
-                  font-thin
-                  text-black
-                  dark:text-white
-                  hover:bg-gray-200
-                  dark:hover:bg-gray-600
-                  flex
-                  items-center
-                  p-1
-                  my-1
-                  transition-colors
-                  duration-200
-                  justify-start
-                  rounded-lg
-                "
-              >
-                <span class="mx-1 text-sm">
-                  {{ subsection.subtitle }}
-                </span>
-              </router-link>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </div>
+  <nav class="mt-4 px-6 z-0">
+    <select
+      id="docs-title"
+      @change="onChange()"
+      class="text-base w-full z-0"
+      v-model="docsLink"
+    >
+      <optgroup
+        v-for="item in sidebarList"
+        :key="item.title"
+        :label="item.title"
+      >
+        <option
+          :value="subsection.href"
+          v-for="subsection in item.subsections"
+          :key="subsection.subtitle"
+        >
+          {{ subsection.subtitle }}
+        </option>
+      </optgroup>
+    </select>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: "SodasparcSidebar",
+  name: "MobilesodasparcSidebar",
   data() {
     return {
+      docsLink: "/sodasparc/docs/user-interface",
       sidebarList: [
         {
           title: "Getting started",
@@ -228,11 +199,12 @@ export default {
       ],
     };
   },
+  methods: {
+    onChange() {
+      this.$router.push({ path: this.docsLink });
+    },
+  },
 };
 </script>
 
-<style lang="postcss" scoped>
-.router-link-active {
-  @apply bg-indigo-600 text-white;
-}
-</style>
+<style lang="postcss" scoped></style>

@@ -1,5 +1,22 @@
 <template>
   <div class="w-full max-w-screen-xl mx-auto h-auto pt-1 pb-3">
+    <h1
+      class="
+        pt-6
+        w-full
+        font-sans font-black
+        text-black
+        dark:text-white
+        text-4xl
+        sm:text-3xl
+        md:text-4xl
+        lg:text-4xl
+        subpixel-antialiased
+        text-center
+      "
+    >
+      Our Projects
+    </h1>
     <!-- Slides container -->
     <vueper-slides
       :bullets="true"

@@ -127,5 +127,8 @@ dist
 # TernJS port file
 .tern-port
 
+# Firebase files
+.firebase/
+
 package-lock.json
 .nosync

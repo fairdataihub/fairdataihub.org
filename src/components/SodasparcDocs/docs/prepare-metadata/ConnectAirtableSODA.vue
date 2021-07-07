@@ -97,27 +97,6 @@
         src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Connect-to-Airtable/connect-to-airtable.gif"
       />
     </div>
-
-    <base-docs-subtitle> Note </base-docs-subtitle>
-
-    <ul class="docs-ul list-outside list-disc">
-      <li>
-        During subsequent uses, SODA will automatically connect to the Pennsieve
-        account you were connected to the last time.
-      </li>
-      <li>
-        Neither the SODA Team nor anyone else besides you will have access to
-        your Pennsieve account. The generated login information required for
-        future sessions on your Pennsieve account will be stored locally on your
-        computer only.
-      </li>
-      <li>
-        If you do not wish to provide your login details to SODA, you can create
-        a set of API keys on Pennsieve and provide it to SODA. Instructions for
-        this process can be found at Connect your Pennsieve account with SODA
-        (API Key)
-      </li>
-    </ul>
   </div>
 </template>
 

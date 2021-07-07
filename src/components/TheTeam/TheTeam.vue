@@ -8,13 +8,14 @@
               font-sans font-black
               text-black
               dark:text-white
-              text-3xl
+              text-4xl
+              sm:text-3xl
               py-2
             "
           >
             About Us
           </h1>
-          <p class="font-sans text-black dark:text-white text-lg">
+          <p class="font-sans text-black dark:text-white text-xl sm:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             laborum commodi corporis tempore dolores saepe quisquam ad inventore
             dignissimos, modi a enim, eaque nulla ex delectus! Dolor,
