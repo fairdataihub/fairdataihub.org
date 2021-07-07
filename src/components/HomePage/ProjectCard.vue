@@ -112,7 +112,7 @@
                 dark:focus:bg-gray-600
               "
             >
-              <slot name="moreInfo">Learn More</slot>
+              <slot name="moreInfo">Explore</slot>
             </router-link>
           </div>
         </div>

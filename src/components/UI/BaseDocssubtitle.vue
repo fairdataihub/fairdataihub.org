@@ -1,5 +1,8 @@
 <template>
-  <h3 class="font-sans font-semibold text-lg text-black dark:text-white mb-1">
+  <h3
+    :id="id"
+    class="font-sans font-semibold text-lg text-black dark:text-white mb-1"
+  >
     <slot></slot>
   </h3>
 
@@ -9,6 +12,13 @@
 <script>
 export default {
   name: "BaseDocssubtitle",
+  props: {
+    id: {
+      required: false,
+      type: String,
+      default: Math.random().toString(36).substring(15),
+    },
+  },
 };
 </script>
 

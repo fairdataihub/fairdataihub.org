@@ -12,7 +12,13 @@
         and viewer. Each of them provides different permissions for making
         changes to a dataset. These permissions are summarized in the table
         below. You can find out more about permissions on the associated
-        Pennsieve help page.
+        <a
+          href="https://docs.pennsieve.io/docs/dataset-permissions"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+          >Pennsieve help page</a
+        >.
       </p>
       <p>
         When you create a dataset, it is private and accessible only to you (you
@@ -65,8 +71,13 @@
     <div class="p-parent-div">
       <p>
         Start by selecting/confirming your Pennsieve account and dataset. If you
-        have not connected your Pennsieve account with SODA yet, see here. The
-        current permissions on the selected dataset will be displayed.
+        have not connected your Pennsieve account with SODA yet, see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >. The current permissions on the selected dataset will be displayed.
       </p>
     </div>
 

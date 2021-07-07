@@ -25,7 +25,13 @@
     <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
-        connected your Pennsieve account with SODA yet, see here.
+        connected your Pennsieve account with SODA yet, see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </li>
       <li>Select the desired option from the list.</li>
       <li>

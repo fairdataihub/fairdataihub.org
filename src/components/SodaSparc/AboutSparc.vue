@@ -32,7 +32,7 @@
               items-center
             "
           >
-            Learn More
+            Learn more about the SPARC program
             <svg
               fill="none"
               stroke="currentColor"

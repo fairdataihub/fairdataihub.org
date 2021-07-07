@@ -21,7 +21,13 @@
     <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account. If you have not connected your
-        Pennsieve account with SODA yet, see here.
+        Pennsieve account with SODA yet, see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </li>
       <li>Enter the desired name for the dataset.</li>
       <li>Click "Create dataset".</li>

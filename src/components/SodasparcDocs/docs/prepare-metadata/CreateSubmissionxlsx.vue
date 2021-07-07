@@ -12,7 +12,16 @@
         metadata file for your dataset. This feature is designed to avoid
         commonly found errors when preparing this file. The expected structure
         of this file, generated automatically by SODA, is explained in our
-        corresponding "How to" page if you would like to learn about it.
+        corresponding
+        <a
+          href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-submission-metadata-file"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          "How to"</a
+        >
+        page if you would like to learn about it.
       </p>
       <p>
         SODA makes use of two resources to help you prepare the submission file
@@ -20,7 +29,15 @@
       </p>
 
       <ul class="docs-ul list-outside list-disc">
-        <li>The SPARC Airtable sheet as explained here.</li>
+        <li>
+          The SPARC Airtable sheet as explained
+          <router-link
+            to="/sodasparc/docs/Connect-your-Airtable-account-with-SODA"
+            class="hover:underline text-blue-600 dark:text-blue-400"
+          >
+            <span>here</span> </router-link
+          >.
+        </li>
         <li>
           The Data Deliverables document associated with your award. This
           document list the milestones and associated datasets as agreed between
@@ -28,7 +45,14 @@
           to provide milestone and milestone completion dates associated with
           your dataset exactly as specified in the Data Deliverables document.
           This document is usually kept by the PI of the SPARC award or the
-          award manager. Click here to find out more about it.
+          award manager. Click
+          <router-link
+            to="/sodasparc/docs/How-to-get-your-data-deliverables-document"
+            class="hover:underline text-blue-600 dark:text-blue-400"
+          >
+            <span>here</span>
+          </router-link>
+          to find out more about it.
         </li>
       </ul>
     </div>
@@ -38,7 +62,14 @@
     <ul class="docs-ul list-outside list-decimal">
       <li>
         We suggest to add/edit your Airtable account and SPARC award(s) as
-        instructed here then confirm.
+        instructed
+        <router-link
+          to="/sodasparc/docs/Connect-your-Airtable-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span>
+        </router-link>
+        then confirm.
       </li>
       <li>
         Select an award number from the drop-down list (if Airtable account

@@ -15,8 +15,16 @@
         than the Excel spreadsheet template. It also makes use of information
         from your dataset on Pennsieve and the SPARC Airtable sheet to help you
         populate some of the fields easily. The expected structure of this file,
-        generated automatically by SODA, is explained in our corresponding "How
-        to" page if you would like to learn about it.
+        generated automatically by SODA, is explained in our corresponding
+        <a
+          href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-dataset-description-metadata-file"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          "How to"</a
+        >
+        page if you would like to learn about it.
       </p>
     </div>
 
@@ -24,7 +32,14 @@
     <div class="p-parent-div">
       <p>
         First, we suggest to add/edit your Airtable account and SPARC award(s)
-        as instructed here then confirm.
+        as instructed
+        <router-link
+          to="/sodasparc/docs/Connect-your-Airtable-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span>
+        </router-link>
+        then confirm.
       </p>
       <p>
         The subsequent interface divides the dataset description file into five
@@ -42,15 +57,27 @@
     <ul class="docs-ul list-outside list-decimal">
       <li>
         Name: Descriptive title for the dataset. Since this field should match
-        exactly with your dataset on Pennsieve , SODA lets you select it from
-        your list of Pennsieve datasets (see "Connect to your Pennsieve account"
+        exactly with your dataset on Pennsieve, SODA lets you select it from
+        your list of Pennsieve datasets (see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>"Connect to your Pennsieve account"</span>
+        </router-link>
         section).
       </li>
       <li>
         Description: Brief description of the study and the dataset. This is
         populated automatically from your dataset subtitle on Pennsieve for your
-        convenience (see "Add metadata to dataset" feature for adding a
-        description).
+        convenience (see
+        <router-link
+          to="/sodasparc/docs/Add-edit-description"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span> this section</span>
+        </router-link>
+        to add a description).
       </li>
       <li>
         Keywords: A set of 3-5 keywords (other than those used in the name and

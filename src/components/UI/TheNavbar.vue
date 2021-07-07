@@ -280,6 +280,7 @@
                   :class="switchValue ? 'bg-green-600' : 'bg-gray-200'"
                   v-slot="{ checked }"
                   @click="switchToDarkMode"
+                  aria-label="Toggle dark mode"
                 >
                   <span
                     class="

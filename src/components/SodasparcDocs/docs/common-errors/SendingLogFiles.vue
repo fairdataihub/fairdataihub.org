@@ -41,7 +41,13 @@
       <p>
         <strong>Solution</strong>: It is very likely that the folder is hidden
         on your computer. To learn about how to show hidden files and folders,
-        please visit here.
+        please visit
+        <router-link
+          to="/sodasparc/docs/Issues-regarding-hidden-files-or-folders"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </p>
     </div>
   </div>

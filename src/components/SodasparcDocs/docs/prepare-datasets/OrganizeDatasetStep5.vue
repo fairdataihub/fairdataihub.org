@@ -8,7 +8,16 @@
     <div class="p-parent-div">
       <p>
         Manifest files are mandatory for all datasets. To learn more about this
-        metadata file we refer to our corresponding "How to" page.
+        metadata file we refer to our corresponding
+        <a
+          href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-manifest-metadata-file"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          "How to"</a
+        >
+        page.
       </p>
       <p>
         To generate and include manifest files automatically, simply toggle the

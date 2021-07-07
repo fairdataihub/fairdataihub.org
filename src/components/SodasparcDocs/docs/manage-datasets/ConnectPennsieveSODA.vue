@@ -9,11 +9,19 @@
 
     <div class="p-parent-div">
       <p>
-        SPARC uses the Pennsieve platform to store data and metadata files as
-        well as append additional metadata. All SPARC researchers must thus
-        share their data on Pennsieve. When using SODA for the first time, you
-        will have to connect your Pennsieve account with SODA to use Pennsieve
-        related functionalities implemented in SODA.
+        SPARC uses the
+        <a
+          href="https://app.pennsieve.net/"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+          >Pennsieve</a
+        >
+        platform to store data and metadata files as well as append additional
+        metadata. All SPARC researchers must thus share their data on Pennsieve.
+        When using SODA for the first time, you will have to connect your
+        Pennsieve account with SODA to use Pennsieve related functionalities
+        implemented in SODA.
       </p>
       <p>
         SODA will automatically check and see if you have an associated account
@@ -60,8 +68,13 @@
       <li>
         If you do not wish to provide your login details to SODA, you can create
         a set of API keys on Pennsieve and provide it to SODA. Instructions for
-        this process can be found at Connect your Pennsieve account with SODA
-        (API Key)
+        this process can be found at
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA-(API-Key)"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span> Connect your Pennsieve account with SODA (API Key) </span>
+        </router-link>
       </li>
     </ul>
   </div>

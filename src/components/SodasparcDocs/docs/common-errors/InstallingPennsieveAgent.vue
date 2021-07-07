@@ -19,9 +19,25 @@
     <base-docs-subtitle> Solution </base-docs-subtitle>
     <div class="p-parent-div">
       <p>
-        You can follow the instructions provided here to install the Pennsieve
-        agent. For any other questions, please visit the dedicated Pennsieve
-        Documentation page.
+        You can follow the instructions provided
+        <a
+          href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          here</a
+        >
+        to install the Pennsieve agent. For any other questions, please visit
+        the dedicated
+        <a
+          href="https://docs.pennsieve.io/docs"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          Pennsieve Documentation page</a
+        >.
       </p>
     </div>
   </div>

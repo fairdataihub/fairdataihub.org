@@ -12,9 +12,14 @@
         dataset is ready to be reviewed. Sharing with the SPARC Curation Team
         will give them "manager" permissions, which is necessary for them to
         review your dataset, and set the dataset status to "03. Ready for
-        Curation" (see our documentation on dataset status) thus adding the
-        dataset to the Curation Team's queue for review. It is then highly
-        recommended to not make any changes to your dataset.
+        Curation" (see our
+        <router-link
+          to="/sodasparc/docs/View-and-change-status"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span> documentation on dataset status</span> </router-link
+        >) thus adding the dataset to the Curation Team's queue for review. It
+        is then highly recommended to not make any changes to your dataset.
       </p>
     </div>
 
@@ -23,7 +28,13 @@
     <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
-        connected your Pennsieve account with SODA yet, see here.
+        connected your Pennsieve account with SODA yet, see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </li>
       <li>
         Click on 'Share now' to add your dataset to the Curation team's review

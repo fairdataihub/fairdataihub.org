@@ -146,7 +146,7 @@ export default {
             },
             {
               subtitle: "Download templates",
-              href: "/sodasparc/docs/Dowload-templates",
+              href: "/sodasparc/docs/Download-templates",
             },
           ],
         },

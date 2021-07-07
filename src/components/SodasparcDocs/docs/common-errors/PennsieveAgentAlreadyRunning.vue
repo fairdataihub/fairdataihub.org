@@ -26,9 +26,36 @@
     </div>
 
     <ul class="docs-ul list-outside list-decimal">
-      <li>Windows</li>
-      <li>MAC</li>
-      <li>Ubuntu</li>
+      <li>
+        <a
+          href="https://winaero.com/kill-process-windows-10/"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          Windows</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://support.apple.com/guide/activity-monitor/quit-a-process-actmntr1002/mac"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          MAC</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.cyberciti.biz/faq/stop-process-ubuntu-linux-command/"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          Ubuntu</a
+        >
+      </li>
     </ul>
 
     <div class="img-parent-div">

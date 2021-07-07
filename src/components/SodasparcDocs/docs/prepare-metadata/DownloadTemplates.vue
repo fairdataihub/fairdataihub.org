@@ -10,10 +10,17 @@
       <p>
         The Curation Team has release templates for all the metadata files
         required in SPARC datasets. These templates are available in SPARC
-        Dataset Structure which may be downloaded as a zip file. They are used
-        in SODA when generating the metadata files. You can also download them
-        conveniently in this SODA feature in case you wish to fill them out
-        manually.
+        Dataset Structure which may be
+        <a
+          href="https://github.com/SciCrunch/sparc-curation/releases/tag/dataset-template-1.2.3"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          downloaded as a zip file</a
+        >. They are used in SODA when generating the metadata files. You can
+        also download them conveniently in this SODA feature in case you wish to
+        fill them out manually.
       </p>
     </div>
 
@@ -37,6 +44,6 @@
 
 <script>
 export default {
-  name: "DowloadTemplates",
+  name: "DownloadTemplates",
 };
 </script>

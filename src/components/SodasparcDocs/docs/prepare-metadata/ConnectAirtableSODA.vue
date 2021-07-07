@@ -9,12 +9,20 @@
 
     <div class="p-parent-div">
       <p>
-        SODA make use of the SPARC Airtable sheet to automatically get award
-        numbers and contributors information such that you don't have to enter
-        them manually in your metadata file. To enable this, you have to connect
-        your Airtable account with SODA. You will only have to do that one time,
-        SODA will then automatically connect to your Airtable account during
-        subsequent uses.
+        SODA make use of the
+        <a
+          href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          SPARC Airtable sheet</a
+        >
+        to automatically get award numbers and contributors information such
+        that you don't have to enter them manually in your metadata file. To
+        enable this, you have to connect your Airtable account with SODA. You
+        will only have to do that one time, SODA will then automatically connect
+        to your Airtable account during subsequent uses.
       </p>
       <p>
         We suggest keeping your group information up to date in the Airtable
@@ -26,10 +34,36 @@
     <base-docs-subtitle> How to </base-docs-subtitle>
 
     <ul class="docs-ul list-outside list-decimal">
-      <li>Create an Airtable account.</li>
       <li>
-        Get access to the SPARC Airtable sheet (contact Dr. Charles Horn at
-        chorn@pitt.edu).
+        Create an
+        <a
+          href="https://airtable.com/"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          Airtable account</a
+        >.
+      </li>
+      <li>
+        Get access to the
+        <a
+          href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          SPARC Airtable sheet</a
+        >
+        (contact Dr. Charles Horn at
+        <a
+          href="mailto:chorn@pitt.edu"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          chorn@pitt.edu</a
+        >).
       </li>
       <li>
         Under the "Create submission.xlsx" feature from the "Prepare Metadata"
@@ -37,9 +71,18 @@
       </li>
       <li>
         Provide a key name of your choice and enter your Airtable API key in the
-        dedicated SODA interface. Checkout the Airtable Help page to learn how
-        to obtain or re-generate your API key. Note that the key will be stored
-        locally on your computer and the SODA Team will not have access to it.
+        dedicated SODA interface. Checkout the
+        <a
+          href="https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          Airtable Help page</a
+        >
+        to learn how to obtain or re-generate your API key. Note that the key
+        will be stored locally on your computer and the SODA Team will not have
+        access to it.
       </li>
       <li>Click on "Connect".</li>
       <li>

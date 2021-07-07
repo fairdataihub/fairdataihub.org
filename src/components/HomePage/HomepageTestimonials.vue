@@ -34,7 +34,7 @@
           />
         </a>
         <div class="flex flex-col ml-2 justify-between">
-          <span class="font-semibold text-indigo-500 text-sm">
+          <span class="font-semibold text-indigo-600 text-sm">
             Sarah Dayan
           </span>
           <span class="text-black dark:text-gray-50 text-xs flex items-center">
@@ -64,7 +64,7 @@
           />
         </a>
         <div class="flex flex-col ml-2 justify-between">
-          <span class="font-semibold text-indigo-500 text-sm">
+          <span class="font-semibold text-indigo-600 text-sm">
             Sarah Dayan
           </span>
           <span class="text-black dark:text-gray-50 text-xs flex items-center">
@@ -94,7 +94,7 @@
           />
         </a>
         <div class="flex flex-col ml-2 justify-between">
-          <span class="font-semibold text-indigo-500 text-sm">
+          <span class="font-semibold text-indigo-600 text-sm">
             Sarah Dayan
           </span>
           <span class="text-black dark:text-gray-50 text-xs flex items-center">

@@ -11,7 +11,13 @@
         There are four permission privileges available for a dataset on
         Pennsieve: owner, manager, editor, and viewer. Each of them provides
         different permissions for making changes to a dataset. These permissions
-        are summarized in the table available here.
+        are summarized in the table available
+        <router-link
+          to="/sodasparc/docs//sodasparc/docs/Add-edit-permissions"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </p>
       <p>
         When you create a dataset, you have 'owner' permissions on the dataset.
@@ -26,7 +32,13 @@
     <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
-        connected your Pennsieve account with SODA yet, see here.
+        connected your Pennsieve account with SODA yet, see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </li>
       <li>Select your SPARC award's PI's name in the drop-down list.</li>
       <li>

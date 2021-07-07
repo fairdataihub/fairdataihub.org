@@ -21,13 +21,26 @@
     <ul class="docs-ul list-outside list-decimal">
       <li>
         Select/confirm your Pennsieve account and dataset. If you have not
-        connected your Pennsieve account with SODA yet, see here.
+        connected your Pennsieve account with SODA yet, see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </li>
       <li>
         In the textbox, provide a detailed description of your dataset. It is
         typically recommended to include three sections: Study Purpose, Data
         Collected, and Primary Conclusion. You can see published datasets on
-        sparc.science for inspiration.
+        <a
+          href="https://sparc.science/"
+          target="_blank"
+          rel="nofollow"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+          >sparc.science</a
+        >
+        for inspiration.
       </li>
       <li>Click on "Add description".</li>
     </ul>

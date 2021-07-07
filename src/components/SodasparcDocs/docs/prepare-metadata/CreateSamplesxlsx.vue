@@ -76,6 +76,7 @@
         <strong>sample id</strong>: Lab-based schema for identifying each
         sample. The sample id must be unique across the whole dataset.
       </li>
+
       <li>
         Experimental Setup (Mandatory if available):
 
@@ -119,7 +120,15 @@
             typing to search for a strain, SODA provides strain suggestions
             based on the common strains observed from SPARC datasets. Once a
             strain is specified, the Research Resource Identifier Identification
-            (RRID) of the strain will be automatically pulled out from Scicrunch
+            (RRID) of the strain will be automatically pulled out from
+            <a
+              href="https://scicrunch.org/resources/Organisms/search"
+              target="_blank"
+              rel="nofollow"
+              class="hover:underline text-blue-600 dark:text-blue-400"
+            >
+              Scicrunch</a
+            >
             by SODA.
           </li>
           <li>
@@ -139,8 +148,16 @@
         <ul class="docs-ul list-outside list-disc">
           <li>
             <i> Age category</i>: The age category that the subject belongs to.
-            An search field with suggestions based on list derived from UBERON
-            life cycle stage is provided in the interface for your convenience.
+            An search field with suggestions based on list derived from
+            <a
+              href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
+              target="_blank"
+              rel="nofollow"
+              class="hover:underline text-blue-600 dark:text-blue-400"
+            >
+              UBERON life cycle stage</a
+            >
+            is provided in the interface for your convenience.
           </li>
           <li>
             <i> Age range</i>: This is the minimal age (youngest) and the
@@ -160,8 +177,15 @@
             protocols.io account by clicking on "Help me with my protocol
             information" under the Protocol Information tab. An login interface
             will instruct users to sign in their account in the browser at
-            protocols.io. An access token is required for automatic extraction
-            of the protocol titles and links and can be easily obtained from the
+            <a
+              href="https://www.protocols.io/developers"
+              target="_blank"
+              rel="nofollow"
+              class="hover:underline text-blue-600 dark:text-blue-400"
+            >
+              protocols.io</a
+            >. An access token is required for automatic extraction of the
+            protocol titles and links and can be easily obtained from the
             provided website once they are signed in. Once users successfully
             connect their account with with SODA, they can search in the input
             field for their protocol titles.

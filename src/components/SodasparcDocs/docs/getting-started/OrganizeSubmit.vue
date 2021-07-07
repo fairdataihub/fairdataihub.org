@@ -41,7 +41,7 @@
                 <a
                   href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
                   target="_blank"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   SPARC requirements for organizing and sharing all SPARC
                   datasets.
@@ -62,7 +62,7 @@
                 <a
                   href="https://app.pennsieve.net/"
                   target="_blank"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>Pennsieve</span>
                 </a>
@@ -70,7 +70,7 @@
                 <a
                   href="mailto:support@pennsieve.net"
                   target="_blank"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>support@pennsieve.net</span>
                 </a>
@@ -91,7 +91,7 @@
                 <a
                   href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
                   target="_blank"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>Pennsieve agent</span>
                 </a>
@@ -139,7 +139,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   Connect your Pennsieve account with SODA.
                 </router-link>
@@ -158,7 +158,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Create-a-new-dataset"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Create a new dataset </span>
                 </router-link>
@@ -176,7 +176,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Make-PI-owner-of-dataset"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>
                     Make PI of the SPARC award the owner of the dataset
@@ -196,7 +196,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Add-edit-permissions"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>
                     Give access to other members/teams who may need to
@@ -218,7 +218,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Add-edit-subtitle"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Add a subtitle </span>
                 </router-link>
@@ -236,7 +236,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Add-edit-description"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Add a description </span>
                 </router-link>
@@ -254,7 +254,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Upload-a-banner-image"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Upload a banner image </span>
                 </router-link>
@@ -272,7 +272,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Assign-a-license"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Assign a license </span>
                 </router-link>
@@ -307,7 +307,7 @@
                 <a
                   href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
                   target="_blank"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   instructions provided here
                 </a>
@@ -325,7 +325,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Create-submission-xlsx"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Prepare submission file </span>
                 </router-link>
@@ -343,7 +343,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Create-dataset_description-xlsx"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Prepare dataset description file </span>
                 </router-link>
@@ -361,7 +361,7 @@
               <span class="span-content">
                 Prepare subjects file (<router-link
                   to="/sodasparc/docs/Download-templates"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>download template</span>
                 </router-link>
@@ -381,7 +381,7 @@
               <span class="span-content">
                 Prepare samples file (<router-link
                   to="/sodasparc/docs/Download-templates"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>download template</span> </router-link
                 >, more support will be available in SODA soon - note: required
@@ -415,7 +415,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Organize-dataset"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>
                     Specify files and metadata files to be included in your
@@ -451,7 +451,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Share-with-curation-team"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>
                     Share with the Curation Team to add your dataset to their
@@ -490,7 +490,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Share-with-SPARC-Consortium"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span>
                     Share dataset with the SPARC Consortium as Embargoed dataset
@@ -510,7 +510,7 @@
               <span class="span-content">
                 <router-link
                   to="/sodasparc/docs/Submit-for-pre-publishing-review"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span> Send dataset for pre-publishing review </span>
                 </router-link>
@@ -545,7 +545,7 @@
                 <a
                   href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
                   target="_blank"
-                  class="underline text-blue-400"
+                  class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   Connect your Pennsieve account with SODA.
                 </a>

@@ -44,7 +44,7 @@
           flex-col
         "
       >
-        <a
+        <div
           class="
             flex
             title-font
@@ -70,7 +70,7 @@
             ></path>
           </svg>
           <span class="ml-3 text-xl text-black dark:text-white">FairHub</span>
-        </a>
+        </div>
         <p
           class="
             text-sm

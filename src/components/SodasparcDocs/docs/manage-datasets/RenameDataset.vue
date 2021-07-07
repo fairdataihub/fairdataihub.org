@@ -22,7 +22,13 @@
       <li>
         Select/confirm your Pennsieve account and the dataset that you wish to
         rename. If you have not connected your Pennsieve account with SODA yet,
-        see here.
+        see
+        <router-link
+          to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
+          class="hover:underline text-blue-600 dark:text-blue-400"
+        >
+          <span>here</span> </router-link
+        >.
       </li>
       <li>Enter a new name and click "Rename".</li>
     </ul>
