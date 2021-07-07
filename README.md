@@ -19,6 +19,15 @@ npm run build
 ```
 npm run lint
 ```
+### Firebase deploy
+```
+// first time only
+npm install -g firebase-tools
+npm run build
+firebase deploy
+```
+
+
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
