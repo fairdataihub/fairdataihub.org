@@ -22,10 +22,22 @@ module.exports = {
         bitter: ["Bitter", "sans-serif"],
       },
     },
+    textColor: (theme) => ({
+      ...theme("colors"),
+      primary: "#4507dc",
+    }),
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+      primary: "#0092E0",
+      "dark-primary": "#00b4d8",
+      "light-background": "#F5F5F5",
+      "dark-background": "#1F1E28",
+    }),
   },
   variants: {
     extend: {
       transitionProperty: ["responsive", "motion-safe", "motion-reduce"],
+      display: ["dark"],
     },
   },
   plugins: [],

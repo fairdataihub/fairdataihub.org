@@ -56,7 +56,7 @@
                 h-12
                 w-12
                 rounded-md
-                bg-indigo-500
+                bg-primary
                 text-white
               "
             >
@@ -74,7 +74,7 @@
                 sm:text-lg
                 leading-6
                 font-medium
-                text-black
+                text-primary
                 dark:text-white
               "
             >
