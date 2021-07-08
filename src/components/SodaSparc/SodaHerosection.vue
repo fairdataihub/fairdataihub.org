@@ -77,7 +77,7 @@
             <i> By SPARC investigators, for SPARC investigators </i>
           </p>
           <div class="w-full flex justify-center">
-            <a
+            <!-- <a
               href="https://github.com/bvhpatel/SODA#Downloading-soda"
               target="_blank"
             >
@@ -98,7 +98,25 @@
               >
                 Download now
               </button>
-            </a>
+            </a> -->
+            <button
+              class="
+                hidden
+                sm:inline-flex
+                text-white
+                bg-indigo-500
+                border-0
+                py-2
+                px-6
+                focus:outline-none
+                hover:bg-indigo-600
+                rounded
+                text-lg
+              "
+              @click="downloadSODA"
+            >
+              Download now
+            </button>
             <router-link to="/sodasparc/docs">
               <button
                 class="
@@ -134,8 +152,71 @@
 </template>
 
 <script>
+const path = require("path");
 export default {
   name: "SodaHerosection",
+  methods: {
+    downloadSODA: async function () {
+      const os = await this.getOS();
+      const downloadLink = await this.getLatestVersion(os);
+      Object.assign(document.createElement("a"), {
+        target: "_blank",
+        href: downloadLink,
+      }).click();
+    },
+    getOS: async function () {
+      var userAgent = window.navigator.userAgent,
+        platform = window.navigator.platform,
+        macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
+        windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
+        iosPlatforms = ["iPhone", "iPad", "iPod"],
+        os = "null";
+
+      if (macosPlatforms.indexOf(platform) !== -1) {
+        os = "macOS";
+      } else if (iosPlatforms.indexOf(platform) !== -1) {
+        os = "all";
+      } else if (windowsPlatforms.indexOf(platform) !== -1) {
+        os = "windows";
+      } else if (/Android/.test(userAgent)) {
+        os = "all";
+      } else if (!os && /Linux/.test(platform)) {
+        os = "linux";
+      } else {
+        os = "all";
+      }
+
+      return os;
+    },
+    getLatestVersion: async function (os) {
+      const res = await fetch(
+        "https://api.github.com/repos/bvhpatel/soda/releases"
+      );
+      const data = await res.json();
+      const release = data[0];
+      let link = this.$route.path;
+      release.assets.forEach((asset) => {
+        let file_name = asset.name;
+        let file_ext = path.extname(file_name);
+        if (os === "macOS") {
+          if (file_ext === ".dmg") {
+            link = asset.browser_download_url;
+          }
+        }
+        if (os === "windows") {
+          if (file_ext === ".exe") {
+            link = asset.browser_download_url;
+          }
+        }
+        if (os === "linux") {
+          if (file_ext === ".AppImage") {
+            link = asset.browser_download_url;
+          }
+        }
+      });
+      return link;
+    },
+  },
 };
 </script>
 
