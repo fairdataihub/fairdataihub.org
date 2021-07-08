@@ -1,17 +1,7 @@
 <template>
   <div class="w-full h-full flex justify-center items-center">
     <div
-      class="
-        flex
-        w-4/5
-        mx-auto
-        overflow-hidden
-        bg-gray-100
-        rounded-lg
-        shadow-lg
-        dark:bg-gray-700
-        justify-center
-      "
+      class="flex w-4/5 mx-auto overflow-hidden rounded-lg justify-center"
       style="height: 75%"
     >
       <div class="w-full flex flex-col justify-evenly">

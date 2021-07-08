@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-4 sm:pt-10 px-6 mx-auto dark:bg-gray-700">
+  <div class="pb-4 sm:pt-10 px-6 mx-auto">
     <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row">
       <h1
         class="

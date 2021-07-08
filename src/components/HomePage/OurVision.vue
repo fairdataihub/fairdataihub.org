@@ -74,7 +74,7 @@
                 sm:text-lg
                 leading-6
                 font-medium
-                text-primary
+                text-black
                 dark:text-white
               "
             >

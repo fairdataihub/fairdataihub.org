@@ -1,5 +1,5 @@
 <template>
-  <section class="dark:bg-gray-600">
+  <section>
     <div class="container w-full h-full py-4 max-w-screen-xl mx-auto">
       <div class="relative wrap overflow-hidden p-2 sm:p-10 h-full">
         <h2

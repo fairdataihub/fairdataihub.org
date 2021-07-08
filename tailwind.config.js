@@ -32,6 +32,7 @@ module.exports = {
       "dark-primary": "#00b4d8",
       "light-background": "#F5F5F5",
       "dark-background": "#1F1E28",
+      "dark-background-2": "#2a2937",
     }),
   },
   variants: {

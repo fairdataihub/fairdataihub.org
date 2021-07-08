@@ -71,8 +71,8 @@
               class="
                 py-4
                 px-6
-                bg-indigo-600
-                hover:bg-indigo-700
+                bg-primary
+                hover:bg-blue-600
                 focus:ring-indigo-500 focus:ring-offset-indigo-200
                 text-white
                 w-max-content

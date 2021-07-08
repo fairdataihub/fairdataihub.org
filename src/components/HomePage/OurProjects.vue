@@ -47,7 +47,6 @@
           px-5
           sm:mb-2
           flex-col-reverse
-          sm:flex-col
           md:flex-row md:justify-evenly
           items-center
         "
@@ -132,8 +131,8 @@
                   hidden
                   sm:inline-flex
                   text-white
-                  bg-indigo-500
-                  hover:bg-indigo-600
+                  bg-primary
+                  hover:bg-blue-600
                   border-0
                   py-2
                   px-6
@@ -154,8 +153,8 @@
                   sm:ml-4
                   inline-flex
                   text-white
-                  bg-indigo-500
-                  hover:bg-indigo-600
+                  bg-primary
+                  hover:bg-blue-600
                   border-0
                   py-2
                   px-6
@@ -186,7 +185,16 @@
           "
         >
           <img
-            class="object-cover object-center rounded"
+            class="
+              object-cover object-center
+              rounded
+              sm:h-52
+              md:h-40
+              lg:h-auto
+              sm:w-52
+              md:w-40
+              lg:w-auto
+            "
             alt="SODA for SPARC logo"
             src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
           />

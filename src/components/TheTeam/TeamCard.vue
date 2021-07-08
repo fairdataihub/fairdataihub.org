@@ -1,6 +1,8 @@
 <template>
-  <div :class="[borderClasses, `flex flex-col sm:flex-row`]">
-    <div class="w-full md:w-1/3 h-full shadow-2xl dark:shadow-none">
+  <div :class="[borderClasses, `flex flex-col sm:flex-row items-center`]">
+    <div
+      class="w-full md:w-1/3 h-full shadow-2xl dark:shadow-none my-3 sm:my-2"
+    >
       <img :src="profile.image" alt="" class="w-full h-auto rounded-lg" />
     </div>
     <div
@@ -38,16 +40,16 @@
           dark:text-white
           text-lg
           sm:text-base
-          lg:text-xl
+          lg:text-lg
         "
       >
         {{ profile.bio }}
       </p>
-      <div class="flex">
+      <div class="flex py-2">
         <a
           v-if="profile.twitter.show"
           :href="profile.twitter.link"
-          class="py-2 px-1"
+          class="px-1"
         >
           <svg
             width="30"
@@ -62,7 +64,7 @@
               h-9
               w-9
               sm:h-6
-              lg:h-12
+              lg:h-8 lg:w-8
             "
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
@@ -72,11 +74,7 @@
             ></path>
           </svg>
         </a>
-        <a
-          v-if="profile.github.show"
-          :href="profile.github.link"
-          class="py-2 px-2"
-        >
+        <a v-if="profile.github.show" :href="profile.github.link" class="px-1">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -91,7 +89,7 @@
               h-9
               w-9
               sm:h-6
-              lg:h-12
+              lg:h-8 lg:w-8
             "
             viewBox="0 0 1792 1792"
           >
@@ -103,7 +101,7 @@
         <a
           v-if="profile.linkedin.show"
           :href="profile.linkedin.link"
-          class="py-2 px-2"
+          class="px-1"
         >
           <svg
             width="30"
@@ -118,7 +116,7 @@
               h-9
               w-9
               sm:h-6
-              lg:h-12
+              lg:h-8 lg:w-8
             "
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"

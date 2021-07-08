@@ -1,16 +1,25 @@
 <template>
-  <base-section class="pt-16">
-    <soda-herosection></soda-herosection>
-  </base-section>
-  <base-section>
-    <about-sparc></about-sparc>
-  </base-section>
-  <base-section>
-    <soda-timeline></soda-timeline>
-  </base-section>
-  <base-section>
-    <the-faq> </the-faq>
-  </base-section>
+  <div class="divide-y divide-gray-50 dark:divide-gray-800">
+    <base-section class="pt-16 bg-white dark:bg-dark-background py-10">
+      <soda-herosection></soda-herosection>
+    </base-section>
+
+    <base-section class="bg-white dark:bg-dark-background py-10">
+      <about-sparc></about-sparc>
+    </base-section>
+
+    <base-section class="bg-white dark:bg-dark-background py-10">
+      <about-sparc></about-sparc>
+    </base-section>
+
+    <base-section class="bg-white dark:bg-dark-background py-10">
+      <soda-timeline></soda-timeline>
+    </base-section>
+
+    <base-section class="bg-white dark:bg-dark-background py-10">
+      <the-faq> </the-faq>
+    </base-section>
+  </div>
 </template>
 
 <script>

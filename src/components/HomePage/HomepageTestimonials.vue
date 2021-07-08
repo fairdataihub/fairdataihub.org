@@ -15,7 +15,18 @@
     "
   >
     <div
-      class="bg-white dark:bg-gray-600 w-72 shadow-lg mx-auto rounded-xl p-4"
+      class="
+        bg-white
+        dark:bg-gray-600
+        md:w-64
+        lg:w-72
+        shadow-lg
+        mx-auto
+        rounded-xl
+        p-8
+        my-4
+        md:p-4
+      "
       v-for="item in testimonialsList"
       :key="item.name"
     >

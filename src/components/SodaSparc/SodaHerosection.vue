@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center items-center dark:bg-gray-600">
-    <section class="text-gray-600 body-font max-w-screen-xl mx-auto p-5">
+  <div class="flex flex-col justify-center items-center">
+    <section class="max-w-screen-xl mx-auto p-5">
       <div
         class="
           container
