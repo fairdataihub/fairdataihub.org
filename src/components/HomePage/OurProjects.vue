@@ -186,14 +186,7 @@
           "
         >
           <img
-            class="
-              object-cover object-center
-              rounded
-              md:w-auto
-              lg:w-full
-              md:h-full
-              lg:h-auto
-            "
+            class="object-cover object-center rounded"
             alt="SODA for SPARC logo"
             src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
           />

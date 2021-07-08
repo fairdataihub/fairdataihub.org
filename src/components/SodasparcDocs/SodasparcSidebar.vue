@@ -63,6 +63,10 @@ export default {
           title: "Getting started",
           subsections: [
             {
+              subtitle: "Download SODA",
+              href: "/sodasparc/docs/Download-Soda",
+            },
+            {
               subtitle: "User interface",
               href: "/sodasparc/docs/user-interface",
             },

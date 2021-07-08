@@ -16,6 +16,7 @@ import SodaSparc from "./components/SodaSparc/SodaSparc.vue";
 
 import SodasparcDocs from "./components/SodaSPARCDocs/SodasparcDocs.vue";
 
+import DownloadSoda from "./components/SodaSPARCDocs/docs/getting-started/DownloadSoda.vue";
 import UserInterface from "./components/SodaSPARCDocs/docs/getting-started/UserInterface.vue";
 import OrganizeSubmit from "./components/SodaSPARCDocs/docs/getting-started/OrganizeSubmit.vue";
 
@@ -80,6 +81,10 @@ const router = createRouter({
       path: "/sodasparc/docs",
       component: SodasparcDocs,
       children: [
+        {
+          path: "Download-soda",
+          component: DownloadSoda,
+        },
         {
           path: "User-Interface",
           component: UserInterface,
