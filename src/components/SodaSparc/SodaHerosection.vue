@@ -163,6 +163,7 @@ export default {
         target: "_blank",
         href: downloadLink,
       }).click();
+      this.$router.push({ path: "/sodasparc/docs/Download-soda" });
     },
     getOS: async function () {
       var userAgent = window.navigator.userAgent,
