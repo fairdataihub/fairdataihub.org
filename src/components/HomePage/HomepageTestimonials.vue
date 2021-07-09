@@ -10,7 +10,7 @@
       justify-between
       items-center
       p-8
-      max-w-screen-xl
+      max-w-screen-lg
       mx-auto
     "
   >

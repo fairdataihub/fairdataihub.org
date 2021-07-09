@@ -33,7 +33,7 @@
     @apply font-sans;
   }
   body {
-    @apply dark:bg-gray-600;
+    @apply dark:bg-dark-background;
   }
 }
 

@@ -1,7 +1,13 @@
 <template>
   <h3
     :id="id"
-    class="font-sans font-semibold text-lg text-black dark:text-white mb-1"
+    class="
+      font-sans font-semibold
+      text-lg text-black
+      dark:text-white
+      mb-1
+      print:dark:text-black
+    "
   >
     <slot></slot>
   </h3>

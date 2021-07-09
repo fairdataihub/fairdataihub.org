@@ -21,6 +21,10 @@ module.exports = {
       fontFamily: {
         bitter: ["Bitter", "sans-serif"],
       },
+      screens: {
+        print: { raw: "print" },
+        // => @media print { ... }
+      },
     },
     textColor: (theme) => ({
       ...theme("colors"),

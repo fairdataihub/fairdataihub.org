@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container px-6 py-0 sm:pt-6 sm:pb-4 max-w-screen-xl mx-auto"
+    class="container px-6 py-0 sm:pt-6 sm:pb-4 max-w-screen-lg mx-auto"
     :id="id"
   >
     <div class="items-center sm:flex">
@@ -58,7 +58,7 @@
             dark:text-white
           "
         >
-          We are a team of researchers from the Caliornia Medical Innovations
+          We are a team of researchers from the California Medical Innovations
           Institute who believe that all scientific research data should be
           curated and shared according to applicable standards on the FAIR Data
           Principles. We also believe that doing so should be easy for the

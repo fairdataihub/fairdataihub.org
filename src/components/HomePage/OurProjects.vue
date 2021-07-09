@@ -4,7 +4,7 @@
       flex flex-col
       justify-center
       items-center
-      max-w-screen-xl
+      max-w-screen-lg
       mx-auto
       sdark:bg-gray-600
     "

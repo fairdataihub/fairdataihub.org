@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <div class="max-w-screen-xl mx-auto px-6 sm:px-6 lg:px-8">
+  <div class="max-w-screen-lg mx-auto px-6 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <h2
         class="text-base text-indigo-600 font-semibold tracking-wide uppercase"

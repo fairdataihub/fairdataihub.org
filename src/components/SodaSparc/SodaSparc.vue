@@ -9,10 +9,6 @@
     </base-section>
 
     <base-section class="bg-white dark:bg-dark-background py-10">
-      <about-sparc></about-sparc>
-    </base-section>
-
-    <base-section class="bg-white dark:bg-dark-background py-10">
       <soda-timeline></soda-timeline>
     </base-section>
 
