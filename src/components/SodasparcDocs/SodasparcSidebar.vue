@@ -11,7 +11,7 @@
                 w-full
                 border-b-2
                 pb-2
-                border-gray-100
+                border-gray-200
                 text-md
                 font-normal
               "

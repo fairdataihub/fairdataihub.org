@@ -19,7 +19,9 @@
           z-30
           px-2
           sm:px-6
+          transition
         "
+        id="navbar"
       >
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
@@ -432,6 +434,15 @@ const navigation = [
   { name: "Meet The Team", href: "/team", id: "nav-team" },
   { name: "SODA for SPARC", href: "/sodasparc", id: "nav-sodasparc" },
 ];
+
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector("#navbar");
+  if (window.pageYOffset > 0) {
+    nav.classList.add("shadow-lg");
+  } else {
+    nav.classList.remove("shadow-lg");
+  }
+});
 
 export default {
   name: "TheNavbar",

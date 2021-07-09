@@ -32,7 +32,7 @@ module.exports = {
     }),
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      primary: "#0092E0",
+      primary: "#E76F51",
       "dark-primary": "#00b4d8",
       "light-background": "#F5F5F5",
       "dark-background": "#1F1E28",

@@ -8,6 +8,7 @@
         flex flex-col
         md:flex-row
         gap-4
+        mx-auto
         mb-8
         md:mb-0
         justify-between

@@ -60,11 +60,7 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="
-                      text-black
-                      dark:text-white
-                      print:text-sm print:dark:text-black
-                    "
+                    class="print:text-sm print:text-black print:dark:text-black"
                   >
                     SPARC requirements for organizing and sharing all SPARC
                     datasets.
@@ -96,7 +92,8 @@
                   target="_blank"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black"
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
                     >Pennsieve</span
                   >
                 </a>
@@ -114,7 +111,8 @@
                   target="_blank"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black"
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
                     >support@pennsieve.net</span
                   >
                 </a>
@@ -153,7 +151,8 @@
                   target="_blank"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black"
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
                     >Pennsieve agent</span
                   >
                 </a>
@@ -220,7 +219,9 @@
                   to="/sodasparc/docs/Connect-your-Pennsieve-account-with-SODA"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Connect your Pennsieve account with SODA.
                   </span>
                 </router-link>
@@ -254,7 +255,9 @@
                     print:text-sm print:dark:text-black
                   "
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Create a new dataset
                   </span>
                 </router-link>
@@ -274,7 +277,9 @@
                   to="/sodasparc/docs/Make-PI-owner-of-dataset"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Make PI of the SPARC award the owner of the dataset
                   </span>
                 </router-link>
@@ -294,7 +299,9 @@
                   to="/sodasparc/docs/Add-edit-permissions"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Give access to other members/teams who may need to
                     contribute to the dataset</span
                   >
@@ -324,7 +331,9 @@
                   to="/sodasparc/docs/Add-edit-subtitle"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Add a subtitle
                   </span>
                 </router-link>
@@ -344,7 +353,9 @@
                   to="/sodasparc/docs/Add-edit-description"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Add a description
                   </span>
                 </router-link>
@@ -364,7 +375,9 @@
                   to="/sodasparc/docs/Upload-a-banner-image"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Upload a banner image
                   </span>
                 </router-link>
@@ -384,7 +397,9 @@
                   to="/sodasparc/docs/Assign-a-license"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Assign a license
                   </span>
                 </router-link>
@@ -430,7 +445,9 @@
                   target="_blank"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     instructions provided here
                   </span>
                 </a>
@@ -450,7 +467,9 @@
                   to="/sodasparc/docs/Create-submission-xlsx"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Prepare submission file
                   </span>
                 </router-link>
@@ -470,7 +489,9 @@
                   to="/sodasparc/docs/Create-dataset_description-xlsx"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Prepare dataset description file
                   </span>
                 </router-link>
@@ -499,7 +520,9 @@
                   to="/sodasparc/docs/Download-templates"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     download template
                   </span>
                 </router-link>
@@ -538,7 +561,9 @@
                   to="/sodasparc/docs/Download-templates"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     download template</span
                   >
                 </router-link>
@@ -583,7 +608,9 @@
                   to="/sodasparc/docs/Organize-dataset"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Specify files and metadata files to be included in your
                     dataset and generate dataset directly on Pennsieve
                   </span>
@@ -620,7 +647,9 @@
                   to="/sodasparc/docs/Share-with-curation-team"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Share with the Curation Team to add your dataset to their
                     queue for review
                   </span>
@@ -668,7 +697,9 @@
                   to="/sodasparc/docs/Share-with-SPARC-Consortium"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Share dataset with the SPARC Consortium as Embargoed dataset
                   </span>
                 </router-link>
@@ -688,7 +719,9 @@
                   to="/sodasparc/docs/Submit-for-pre-publishing-review"
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
-                  <span class="print:text-sm print:dark:text-black">
+                  <span
+                    class="print:text-sm print:text-black print:dark:text-black"
+                  >
                     Send dataset for pre-publishing review
                   </span>
                 </router-link>
