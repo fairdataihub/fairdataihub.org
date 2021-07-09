@@ -45,7 +45,7 @@
       >
         {{ profile.bio }}
       </p>
-      <div class="flex py-2">
+      <div class="flex py-3">
         <a
           v-if="profile.twitter.show"
           :href="profile.twitter.link"
