@@ -23,7 +23,7 @@
       <h2
         class="
           font-sans
-          text-indigo-600
+          text-primary
           dark:text-indigo-200
           text-xl
           sm:text-lg

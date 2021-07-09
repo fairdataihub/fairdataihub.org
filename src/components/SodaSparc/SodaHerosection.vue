@@ -104,7 +104,7 @@
                 hidden
                 sm:inline-flex
                 text-white
-                bg-indigo-500
+                bg-primary
                 border-0
                 py-2
                 px-6
@@ -122,8 +122,8 @@
                 class="
                   ml-4
                   inline-flex
-                  text-gray-700
-                  bg-gray-100
+                  text-white
+                  bg-primary
                   border-0
                   py-2
                   px-6

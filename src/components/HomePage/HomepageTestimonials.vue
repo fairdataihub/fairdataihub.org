@@ -49,7 +49,7 @@
           <span
             class="
               font-semibold
-              text-indigo-600
+              text-primary
               dark:text-indigo-400
               text-xl
               sm:text-sm
