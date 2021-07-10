@@ -22,7 +22,7 @@ npm run lint
 ### Firebase deploy
 ```
 // first time only
-firebase login
+npx firebase login
 
 // To push to firebase
 npm run deploy
