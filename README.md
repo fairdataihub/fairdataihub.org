@@ -22,9 +22,10 @@ npm run lint
 ### Firebase deploy
 ```
 // first time only
-npm install -g firebase-tools
-npm run build
-firebase deploy
+firebase login
+
+// To push to firebase
+npm run deploy
 ```
 
 
