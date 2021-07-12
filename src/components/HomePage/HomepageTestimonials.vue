@@ -3,7 +3,6 @@
     class="
       w-full
       flex flex-col
-      md:flex-row
       gap-4
       mb-8
       md:mb-0
@@ -14,61 +13,95 @@
       mx-auto
     "
   >
-    <div
-      class="
-        bg-white
-        dark:bg-gray-600
-        md:w-64
-        lg:w-72
-        shadow-lg
-        mx-auto
-        rounded-xl
-        p-8
-        my-4
-        md:p-4
-      "
-      v-for="item in testimonialsList"
-      :key="item.name"
-    >
-      <p class="text-gray-600 dark:text-white">
-        <span class="font-bold text-indigo-500 text-lg"> “ </span>
-        <span class="text-black dark:text-gray-50 text-lg sm:text-base">
-          {{ item.content }}
-        </span>
-        <span class="font-bold text-indigo-500 text-lg"> ” </span>
+    <div class="flex flex-col items-center mb-4">
+      <p
+        class="
+          my-2
+          leading-8
+          font-extrabold
+          tracking-tight
+          text-gray-900
+          dark:text-white
+          text-4xl
+          sm:text-4xl
+          text-center
+        "
+      >
+        Testimonials
       </p>
-      <div class="flex items-center mt-4">
-        <a href="#" class="block relative">
-          <img
-            alt="profile"
-            :src="item.img"
-            class="mx-auto object-cover rounded-full h-16 sm:h-10 w-16 sm:w-10"
-          />
-        </a>
-        <div class="flex flex-col ml-2 justify-between">
-          <span
-            class="
-              font-semibold
-              text-primary
-              dark:text-indigo-400
-              text-xl
-              sm:text-sm
-            "
-          >
-            {{ item.name }}
+      <p
+        class="
+          w-full
+          max-w-2xl
+          text-xl text-black
+          dark:text-white
+          text-center
+          p-2
+        "
+      >
+        See what people who use our products have to say about us.
+      </p>
+    </div>
+    <div class="w-full flex flex-col md:flex-row">
+      <div
+        class="
+          bg-white
+          dark:bg-gray-600
+          md:w-64
+          lg:w-72
+          shadow-lg
+          mx-auto
+          rounded-xl
+          p-8
+          my-4
+          md:p-4
+        "
+        v-for="item in testimonialsList"
+        :key="item.name"
+      >
+        <p class="text-gray-600 dark:text-white">
+          <span class="font-bold text-indigo-500 text-lg"> “ </span>
+          <span class="text-black dark:text-gray-50 text-lg sm:text-base">
+            {{ item.content }}
           </span>
-          <span
-            class="
-              text-black
-              dark:text-gray-50
-              text-base
-              sm:text-xs
-              flex
-              items-center
-            "
-          >
-            {{ item.title }}
-          </span>
+          <span class="font-bold text-indigo-500 text-lg"> ” </span>
+        </p>
+        <div class="flex items-center mt-4">
+          <a href="#" class="block relative">
+            <img
+              alt="profile"
+              :src="item.img"
+              class="
+                mx-auto
+                object-cover
+                rounded-full
+                h-16
+                sm:h-10
+                w-16
+                sm:w-10
+              "
+            />
+          </a>
+          <div class="flex flex-col ml-2 justify-between">
+            <span
+              class="font-semibold dark:text-indigo-400 text-xl sm:text-sm"
+              :style="`color: ${textColor};`"
+            >
+              {{ item.name }}
+            </span>
+            <span
+              class="
+                text-black
+                dark:text-gray-50
+                text-base
+                sm:text-xs
+                flex
+                items-center
+              "
+            >
+              {{ item.title }}
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -78,6 +111,7 @@
 <script>
 export default {
   name: "HomepageTestimonials",
+  props: ["textColor"],
   data() {
     return {
       testimonialsList: [

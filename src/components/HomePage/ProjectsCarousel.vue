@@ -30,13 +30,13 @@
       </p>
     </div>
     <!-- Slides container -->
+    <!-- autoplay
+      :pause-on-hover="true" -->
     <vueper-slides
       :bullets="true"
       :arrows="true"
       :touchable="false"
       :class="`no-shadow`"
-      autoplay
-      :pause-on-hover="true"
       :fixed-height="`55vh`"
     >
       <vueper-slide>
@@ -136,8 +136,6 @@
                         hidden
                         sm:inline-flex
                         text-white
-                        bg-primary
-                        hover:bg-blue-600
                         border-0
                         py-2
                         px-6
@@ -148,6 +146,7 @@
                         lg:text-lg
                         transition
                       "
+                      :style="`background-color: ${buttonColor};`"
                     >
                       Download now
                     </button>
@@ -158,8 +157,6 @@
                         sm:ml-4
                         inline-flex
                         text-white
-                        bg-primary
-                        hover:bg-blue-600
                         border-0
                         py-2
                         px-6
@@ -170,6 +167,7 @@
                         lg:text-lg
                         transition
                       "
+                      :style="'background-color: ' + buttonColor + ';'"
                     >
                       Learn more about SODA for SPARC
                     </button>
@@ -305,8 +303,6 @@
                         hidden
                         sm:inline-flex
                         text-white
-                        bg-primary
-                        hover:bg-blue-600
                         border-0
                         py-2
                         px-6
@@ -317,6 +313,7 @@
                         lg:text-lg
                         transition
                       "
+                      :style="'background-color: ' + buttonColor + ';'"
                     >
                       Download now
                     </button>
@@ -327,8 +324,6 @@
                         sm:ml-4
                         inline-flex
                         text-white
-                        bg-primary
-                        hover:bg-blue-600
                         border-0
                         py-2
                         px-6
@@ -339,6 +334,7 @@
                         lg:text-lg
                         transition
                       "
+                      :style="'background-color: ' + buttonColor + ';'"
                     >
                       Learn more about SODA for SPARC
                     </button>
@@ -393,6 +389,7 @@ export default {
     VueperSlide,
     // ProjectCard,
   },
+  props: ["buttonColor"],
   data() {
     return {
       sodaForSPARCData: [
@@ -402,7 +399,6 @@ export default {
       ],
     };
   },
-  methods: {},
 };
 </script>
 

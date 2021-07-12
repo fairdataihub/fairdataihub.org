@@ -4,7 +4,7 @@
       <soda-herosection></soda-herosection>
     </base-section>
 
-    <base-section class="bg-white dark:bg-dark-background py-10">
+    <base-section class="dark:bg-dark-background py-10">
       <about-sparc></about-sparc>
     </base-section>
 

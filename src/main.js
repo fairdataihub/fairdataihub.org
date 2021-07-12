@@ -57,6 +57,7 @@ import SubmitPrePublishingReview from "./components/SodaSPARCDocs/docs/dissemina
 import InstallingPennsieveAgent from "./components/SodaSPARCDocs/docs/common-errors/InstallingPennsieveAgent.vue";
 import PennsieveAgentAlreadyRunning from "./components/SodaSPARCDocs/docs/common-errors/PennsieveAgentAlreadyRunning.vue";
 import SendingLogFiles from "./components/SodaSPARCDocs/docs/common-errors/SendingLogFiles.vue";
+import IssuesHiddenFilesFolders from "./components/SodaSPARCDocs/docs/common-errors/IssuesHiddenFilesFolders.vue";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -67,7 +68,6 @@ const router = createRouter({
     if (to.hash) {
       return { el: to.hash, behavior: "smooth" };
     } else {
-      console.log("moving to top of the page");
       window.scrollTo(0, 0);
     }
   },
@@ -227,7 +227,7 @@ const router = createRouter({
         },
         {
           path: "Issues-regarding-hidden-files-or-folders",
-          component: OrganizeSubmit,
+          component: IssuesHiddenFilesFolders,
         },
       ],
     },

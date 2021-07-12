@@ -5,31 +5,55 @@
     </base-section>
 
     <base-section class="bg-gray-50 dark:bg-dark-background-2 py-10">
-      <our-vision></our-vision>
+      <our-vision :buttonColor="buttonColor"></our-vision>
     </base-section>
 
     <base-section class="bg-white dark:bg-dark-background py-10">
-      <about-us id="aboutus"></about-us>
+      <about-us
+        id="aboutus"
+        :buttonColor="buttonColor"
+        :svgColor="svgColor"
+      ></about-us>
     </base-section>
 
     <!-- <base-section class="bg-light-background dark:bg-dark-background">
     <hr class="border-0 bg-gray-300 w-9/12 mx-auto text-gray-500 h-px" />
   </base-section> -->
 
+    <div class="w-full flex flex-col items-center justify-center">
+      <label for="">
+        <input v-model="buttonColor" type="color" />
+        Button Color
+      </label>
+      <label for="">
+        <input v-model="svgColor" type="color" />
+        SVG Color
+      </label>
+    </div>
+
+    <!-- Mobile projects section -->
     <base-section
       class="bg-gray-50 dark:bg-dark-background-2 py-10 block sm:hidden"
     >
       <our-projects></our-projects>
     </base-section>
 
+    <!-- Desktop projects section -->
     <base-section
       class="bg-gray-50 dark:bg-dark-background-2 py-10 hidden sm:block"
     >
-      <projects-carousel></projects-carousel>
+      <projects-carousel :buttonColor="buttonColor"></projects-carousel>
     </base-section>
 
+    <div class="w-full flex flex-col items-center justify-center">
+      <label for="">
+        <input v-model="textColor" type="color" />
+        Text Color
+      </label>
+    </div>
+
     <base-section class="bg-white dark:bg-dark-background py-10">
-      <homepage-testimonials></homepage-testimonials>
+      <homepage-testimonials :textColor="textColor"></homepage-testimonials>
     </base-section>
 
     <base-section class="bg-gray-50 dark:bg-dark-background-2 py-10">
@@ -60,6 +84,18 @@ export default {
     ProjectsCarousel,
     CollaboratorsSection,
     OurProjects,
+  },
+  data() {
+    return {
+      buttonColor: "#000000",
+      textColor: "#000000",
+      svgColor: "#000000",
+    };
+  },
+  computed: {
+    outputColor() {
+      return this.buttonColor;
+    },
   },
 };
 </script>

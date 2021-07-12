@@ -366,8 +366,6 @@
               class="
                 py-4
                 px-6
-                bg-primary
-                hover:bg-blue-600
                 focus:ring-indigo-500 focus:ring-offset-indigo-200
                 text-white
                 w-max-content
@@ -380,6 +378,7 @@
                 focus:outline-none focus:ring-2 focus:ring-offset-2
                 rounded-lg
               "
+              :style="'background-color: ' + buttonColor + ';'"
             >
               Meet the team
             </button>
@@ -391,11 +390,10 @@
 </template>
 
 <script>
-export default { name: "AboutUs", props: ["id"], data(){
-  return{
-    svgColor: "#41ad9d"
-  }
-} };
+export default {
+  name: "AboutUs",
+  props: ["id", "buttonColor", "svgColor"],
+};
 </script>
 
 <style></style>

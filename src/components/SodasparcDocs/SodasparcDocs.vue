@@ -1,7 +1,5 @@
 <template>
-  <base-section
-    class="pt-16 print:pt-0 bg-light-background dark:bg-dark-background"
-  >
+  <base-section class="pt-16 print:pt-0 dark:bg-dark-background">
     <div
       class="
         w-full
@@ -40,7 +38,17 @@
         <mobilesodasparc-sidebar :sidebarList="sidebarList">
         </mobilesodasparc-sidebar>
       </div>
-      <div class="top-16 w-full sm:w-8/12 md:w-9/12 lg:w-4/5">
+      <div
+        class="
+          bg-gray-50
+          dark:bg-dark-background
+          top-16
+          w-full
+          sm:w-8/12
+          md:w-9/12
+          lg:w-4/5
+        "
+      >
         <div class="sm:top-0 sm:bottom-0 sm:right-0 sm:overflow-auto test">
           <base-docs-content>
             <router-view></router-view>

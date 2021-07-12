@@ -34,6 +34,27 @@
   }
   body {
     @apply dark:bg-dark-background;
+    background: radial-gradient(
+        circle,
+        transparent 20%,
+        #f8f9fa 20%,
+        #f8f9fa 80%,
+        transparent 80%,
+        transparent
+      ),
+      radial-gradient(
+          circle,
+          transparent 20%,
+          #f8f9fa 20%,
+          #f8f9fa 80%,
+          transparent 80%,
+          transparent
+        )
+        50px 50px,
+      linear-gradient(#f3f5f7 8px, transparent 8px) 0 -4px,
+      linear-gradient(90deg, #f3f5f7 8px, transparent 8px) -4px 0;
+    background-color: #f8f9fa;
+    background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
   }
 }
 

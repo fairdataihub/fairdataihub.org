@@ -9,6 +9,7 @@
           px-5
           py-2
           sm:py-10
+          w-full
           flex-col-reverse
           sm:flex-col
           md:flex-row
@@ -140,8 +141,23 @@
         </div>
         <!-- image div -->
         <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 py-2 sm:py-0">
-          <img
+          <!-- <img
             class="object-cover object-center rounded"
+            alt="SODA for SPARC logo"
+            src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
+          /> -->
+          <img
+            class="
+              object-cover object-center
+              rounded
+              sm:h-36
+              md:h-40
+              lg:h-auto
+              sm:w-36
+              md:w-40
+              lg:w-auto
+              mx-auto
+            "
             alt="SODA for SPARC logo"
             src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
           />
@@ -221,4 +237,81 @@ export default {
 };
 </script>
 
-<style></style>
+<style scoped type="text/css">
+.st0 {
+  opacity: 0.85;
+  fill-opacity: 0;
+  enable-background: new;
+}
+.st1 {
+  fill: #e8e8e8;
+  fill-opacity: 0.9804;
+  stroke: #12716d;
+  stroke-width: 11.3386;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 12.5008;
+}
+.st2 {
+  fill: none;
+  stroke: #13716d;
+  stroke-width: 7.3769;
+  stroke-linejoin: round;
+  stroke-opacity: 0.9922;
+}
+.st3 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #13716d;
+  fill-opacity: 0.9922;
+  stroke: #13716d;
+  stroke-width: 13.7862;
+  stroke-linejoin: round;
+  stroke-miterlimit: 12.5008;
+  stroke-opacity: 0.9922;
+}
+.st4 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: #258193;
+  stroke: #258193;
+  stroke-width: 7.3945;
+  stroke-miterlimit: 12.5008;
+}
+.st5 {
+  fill: #13716d;
+  stroke: #13716d;
+  stroke-width: 2.8;
+  stroke-opacity: 0.9922;
+}
+.st6 {
+  fill: #13716d;
+  fill-opacity: 0.9922;
+  stroke: #13716d;
+  stroke-width: 1.0332;
+  stroke-linejoin: round;
+  stroke-opacity: 0.9922;
+}
+.st7 {
+  clip-path: url(#SVGID_2_);
+  fill: #13716d;
+  fill-opacity: 0.9922;
+  stroke: #13716d;
+  stroke-width: 2.8731;
+  stroke-linejoin: round;
+}
+.st8 {
+  fill: none;
+  stroke: #13716d;
+  stroke-width: 23.2139;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.st9 {
+  fill: none;
+  stroke: #13716d;
+  stroke-width: 19.3902;
+  stroke-miterlimit: 12.5008;
+  stroke-opacity: 0.9922;
+}
+</style>

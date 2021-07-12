@@ -54,6 +54,11 @@
 </template>
 
 <script>
+const scrollIntoView = () => {
+  const element = document.querySelector(".router-link-exact-active");
+  element.scrollIntoView(true);
+};
+
 export default {
   name: "SodasparcSidebar",
   props: {
@@ -64,6 +69,9 @@ export default {
   },
   data() {
     return {};
+  },
+  mounted() {
+    scrollIntoView();
   },
 };
 </script>

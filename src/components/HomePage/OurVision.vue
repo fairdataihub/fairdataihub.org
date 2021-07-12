@@ -3,7 +3,13 @@
   <div class="max-w-screen-lg mx-auto px-6 sm:px-6 lg:px-8">
     <div class="lg:text-center">
       <h2
-        class="text-base text-indigo-600 font-semibold tracking-wide uppercase hidden"
+        class="
+          text-base text-indigo-600
+          font-semibold
+          tracking-wide
+          uppercase
+          hidden
+        "
       >
         some topic maybe
       </h2>
@@ -56,9 +62,9 @@
                 h-12
                 w-12
                 rounded-md
-                bg-primary
                 text-white
               "
+              :style="'background-color: ' + buttonColor + ';'"
             >
               <component
                 :is="feature.icon"
@@ -137,6 +143,7 @@ const features = [
 
 export default {
   name: "OurVision",
+  props: ["buttonColor"],
   setup() {
     return {
       features,
