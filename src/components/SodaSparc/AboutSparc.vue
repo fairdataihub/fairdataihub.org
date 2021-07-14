@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="sm:pt-10 px-6 mx-auto">
+    <div class="sm:pt-10 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row">
         <h1
           class="
@@ -134,7 +134,7 @@
               </h3>
             </dt>
             <dd class="mb-10 sm:mb-5 w-full">
-              <div class="flex flex-row py-3">
+              <div class="flex flex-col md:flex-row py-3">
                 <router-link to="/team/#Rogue-Amendiares">
                   <div class="flex flex-row items-center pr-32">
                     <div

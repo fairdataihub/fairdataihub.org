@@ -3,19 +3,29 @@
     <div class="w-full flex flex-col">
       <h2
         class="
-          font-sans font-bold
+          font-bold
           text-2xl
           sm:text-2xl
           md:text-3xl
-          lg:text-4xl
+          lg:text-5xl
           text-center
-          py-2
+          py-1
           dark:text-gray-50
         "
       >
         Impact of SODA for SPARC
       </h2>
-      <h3 class="font-sans text-lg md:text-xl text-center dark:text-gray-50">
+
+      <h3
+        class="
+          font-sans
+          text-lg
+          md:text-xl
+          lg:text-2xl
+          text-center
+          dark:text-gray-50
+        "
+      >
         Trusted by researchers all over the world
       </h3>
     </div>

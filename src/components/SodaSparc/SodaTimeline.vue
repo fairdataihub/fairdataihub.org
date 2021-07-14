@@ -1,24 +1,21 @@
 <template>
   <section>
-    <div class="container w-full h-full max-w-screen-lg mx-auto">
-      <div class="relative wrap overflow-hidden p-2 sm:p-8 h-full">
+    <div class="container w-full h-full max-w-screen-lg px-10 mx-auto">
+      <div class="relative wrap overflow-hidden p-2 sm:p-4 h-full">
         <h2
           class="
-            text-3xl
-            sm:text-3xl
-            font-bold font-sans
-            text-black
-            mb-8
-            w-full
+            mb-10
+            text-4xl
+            font-bold
             text-center
-            dark:text-white
+            sm:text-5xl
+            dark:text-gray-50
           "
         >
           SODA Timeline
         </h2>
 
-        <!-- Mobile timeline -->
-        <div class="container px-5 py-5 mx-auto sm:hidden flex flex-wrap">
+        <div class="container px-1 py-5 mx-auto flex flex-wrap">
           <div class="flex flex-wrap w-full">
             <div
               class="flex relative pb-8"
@@ -81,18 +78,18 @@
                 </svg>
               </div>
               <div class="flex-grow pl-4">
-                <h2
+                <h3 class="font-semibold dark:text-gray-50">
+                  {{ item.longDate }} - {{ item.title }}
+                </h3>
+                <p
                   class="
-                    font-medium
-                    title-font
-                    text-sm text-gray-900
-                    mb-1
-                    tracking-wider
+                    w-full
+                    text-base
+                    font-sans
+                    text-black
+                    dark:text-gray-50
                   "
                 >
-                  {{ item.longDate }} - {{ item.title }}
-                </h2>
-                <p class="leading-relaxed">
                   {{ item.content }}
                 </p>
               </div>
@@ -101,7 +98,62 @@
         </div>
 
         <!-- Desktop timeline -->
-        <div class="hidden sm:block">
+
+        <!-- <ul class="p-2 lg:p-8 dark:bg-coolGray-800 dark:text-coolGray-100">
+          <li v-for="(item, index) in timelineList" :key="index">
+            <article>
+              <div
+                class="
+                  grid
+                  p-4
+                  overflow-hidden
+                  md:grid-cols-5
+                  rounded-xl
+                  lg:p-6
+                  xl:grid-cols-12
+                  hover:dark:bg-coolGray-900
+                "
+              >
+                <h3
+                  class="
+                    mb-1
+                    md:ml-8
+                    font-semibold
+                    md:col-start-2 md:col-span-4 md:ml-0
+                    xl:col-start-3 xl:col-span-9
+                  "
+                >
+                  {{ item.title }}
+                </h3>
+                <time
+                  datetime=""
+                  class="
+                    row-start-1
+                    mb-1
+                    md:col-start-1
+                    xl:col-span-2
+                    dark:text-coolGray-400
+                  "
+                >
+                  {{ item.longDate }}
+                </time>
+                <p
+                  class="
+                    md:ml-8 md:col-start-2 md:col-span-4
+                    xl:col-start-3 xl:col-span-9
+                    md:ml-0
+                    dark:text-coolGray-300
+                  "
+                >
+                  {{ item.content }}
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul> -->
+
+        <!-- Desktop timeline -->
+        <!-- <div class="hidden sm:block">
           <div
             class="
               border-2-2
@@ -201,7 +253,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>

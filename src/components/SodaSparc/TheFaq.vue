@@ -13,9 +13,11 @@
       <h2
         class="
           mb-10
+          w-full
           text-4xl
           font-bold
-          text-center
+          text-left
+          md:text-center
           sm:text-5xl
           dark:text-gray-50
         "
@@ -24,7 +26,9 @@
       </h2>
       <div class="grid gap-4 md:gap-8 md:grid-cols-2 lg:px-12 xl:px-32">
         <div>
-          <h3 class="font-semibold dark:text-gray-50">What is SPARC?</h3>
+          <h3 class="font-semibold text-xl dark:text-gray-50">
+            What is SPARC?
+          </h3>
 
           <p
             class="
@@ -44,36 +48,35 @@
             function.
           </p>
           <div class="flex mt-2 md:mt-1">
-            <a
-              href="https://sparc.science"
-              target="_blank"
-              class="
-                text-indigo-600
-                dark:text-indigo-400
-                inline-flex
-                items-center
-                text-lg
-                sm:text-base
-              "
-            >
-              Learn more about the SPARC program
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-4 h-4 ml-2"
-                viewBox="0 0 24 24"
+            <a href="https://sparc.science" target="_blank" class="">
+              <text
+                class="
+                  text-indigo-600
+                  dark:text-indigo-400
+                  items-center
+                  text-xl
+                  sm:text-base
+                "
               >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
+                Learn more about the SPARC program <span>&#8594;</span>
+              </text>
             </a>
           </div>
         </div>
         <div v-for="item in questionsList" :key="item.question">
-          <h3 class="font-semibold dark:text-gray-50">{{ item.question }}</h3>
-          <p class="mt-1 dark:text-gray-50">
+          <h3 class="font-semibold text-xl dark:text-gray-50 mt-2">
+            {{ item.question }}
+          </h3>
+          <p
+            class="
+              w-full
+              text-lg
+              sm:text-base
+              font-sans
+              text-black
+              dark:text-gray-50
+            "
+          >
             {{ item.answer }}
           </p>
         </div>

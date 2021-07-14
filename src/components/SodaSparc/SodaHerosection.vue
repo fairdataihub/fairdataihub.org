@@ -8,10 +8,10 @@
           flex
           px-5
           py-2
-          sm:py-10
+          sm:py-4
+          md:py-10
           w-full
-          flex-col-reverse
-          sm:flex-col
+          flex-col-reverse flex-col
           md:flex-row
           items-center
         "
@@ -19,9 +19,7 @@
         <!-- text div -->
         <div
           class="
-            lg:flex-grow
-            md:w-1/2
-            lg:pr-24
+            lg:flex-grow lg:pr-24
             md:pr-16
             flex flex-col
             md:items-start md:text-left
@@ -140,7 +138,7 @@
           </div>
         </div>
         <!-- image div -->
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 py-2 sm:py-0">
+        <div class="lg:max-w-lg py-2 sm:py-0">
           <!-- <img
             class="object-cover object-center rounded"
             alt="SODA for SPARC logo"
@@ -151,11 +149,11 @@
               object-cover object-center
               rounded
               sm:h-36
-              md:h-40
-              lg:h-auto
+              md:h-56
+              lg:h-80
               sm:w-36
-              md:w-40
-              lg:w-auto
+              md:w-56
+              lg:w-80
               mx-auto
             "
             alt="SODA for SPARC logo"
