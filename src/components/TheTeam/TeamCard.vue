@@ -1,5 +1,8 @@
 <template>
-  <div :class="[borderClasses, `flex flex-col sm:flex-row items-center`]">
+  <div
+    :id="profile.id"
+    :class="[borderClasses, `flex flex-col sm:flex-row items-center`]"
+  >
     <div
       class="w-full md:w-1/3 h-full shadow-2xl dark:shadow-none my-3 sm:my-2"
     >

@@ -55,6 +55,7 @@
       linear-gradient(90deg, #f3f5f7 8px, transparent 8px) -4px 0;
     background-color: #f8f9fa;
     background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
+    /* background-attachment: fixed; */
   }
 }
 

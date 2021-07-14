@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="pb-4 sm:pt-10 px-6 mx-auto">
+    <div class="sm:pt-10 px-6 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row">
         <h1
           class="
@@ -23,7 +23,7 @@
         <dl class="w-full md:w-2/3">
           <div>
             <dt class="mb-2">
-              <h3
+              <!-- <h3
                 class="
                   text-2xl
                   sm:text-xl
@@ -33,7 +33,7 @@
                 "
               >
                 What is SODA?
-              </h3>
+              </h3> -->
             </dt>
             <dd class="mb-10 sm:mb-5 w-full">
               <p
@@ -64,7 +64,7 @@
             </dd>
           </div>
           <div>
-            <dt class="mb-2">
+            <dt class="mb-1">
               <h3
                 class="
                   text-2xl
@@ -74,7 +74,7 @@
                   dark:text-white
                 "
               >
-                What is SPARC?
+                Funding
               </h3>
             </dt>
             <dd class="mb-10 sm:mb-5 w-full">
@@ -88,16 +88,11 @@
                   dark:text-white
                 "
               >
-                The SPARC program is supported by the NIH Common Fund to
-                accelerate development of therapeutic devices and identification
-                of neural targets for bioelectronic medicine—modulating
-                electrical activity in nerves to help treat diseases and
-                conditions, such as hypertension and gastrointestinal disorders,
-                by precisely adjusting organ function.
+                SODA for SPARC has been funded by the NIH SPARC program.
               </p>
               <div class="flex mt-2 md:mt-1">
                 <a
-                  href="https://sparc.science"
+                  href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                   target="_blank"
                   class="
                     text-indigo-600
@@ -108,7 +103,7 @@
                     sm:text-base
                   "
                 >
-                  Learn more about the SPARC program
+                  Explore the award on NIH Reporter
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -121,6 +116,108 @@
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
                 </a>
+              </div>
+            </dd>
+          </div>
+          <div>
+            <dt class="mb-1">
+              <h3
+                class="
+                  text-2xl
+                  sm:text-xl
+                  font-sans font-bold
+                  text-black
+                  dark:text-white
+                "
+              >
+                Team Members
+              </h3>
+            </dt>
+            <dd class="mb-10 sm:mb-5 w-full">
+              <div class="flex flex-row py-3">
+                <router-link to="/team/#Rogue-Amendiares">
+                  <div class="flex flex-row items-center pr-32">
+                    <div
+                      class="
+                        flex flex-row
+                        items-center
+                        p-2
+                        rounded-lg
+                        hover:bg-gray-100
+                        dark:hover:bg-gray-700
+                      "
+                    >
+                      <img
+                        src="https://images.generated.photos/ADbBAzeK5oWF2oDJWfZ2-Wq3TBjqex-dxZVQGD5LPJY/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxMzk2ODBfMDUz/NjY1Nl8wNzAxMDQ2/LmpwZw.jpg"
+                        alt=""
+                        class="
+                          w-10
+                          h-10
+                          border
+                          rounded-full
+                          dark:border-coolGray-700
+                        "
+                      />
+                      <p class="ml-2 text-base dark:text-gray-50">
+                        Bhavesh Patel
+                      </p>
+                    </div>
+                  </div>
+                </router-link>
+                <router-link to="/team/#Hanako-Arasaka">
+                  <div
+                    class="
+                      flex flex-row
+                      items-center
+                      p-2
+                      rounded-lg
+                      hover:bg-gray-100
+                      dark:hover:bg-gray-700
+                    "
+                  >
+                    <img
+                      src="https://images.generated.photos/syc9o2f_obuIoFJBYnGFwnKNNz9LrnKDZcIfhnclJXM/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA0OTMwMzBfMDA2/MzYzNl8wMTU5Nzkx/LmpwZw.jpg"
+                      alt=""
+                      class="
+                        w-10
+                        h-10
+                        border
+                        rounded-full
+                        dark:border-coolGray-700
+                      "
+                    />
+                    <p class="ml-2 text-base dark:text-gray-50">Tram Ngo</p>
+                  </div>
+                </router-link>
+              </div>
+              <div class="flex flex-col sm:flex-row justify-between">
+                <router-link to="/team/#Panam-Palmer">
+                  <div
+                    class="
+                      flex flex-row
+                      items-center
+                      p-2
+                      rounded-lg
+                      hover:bg-gray-100
+                      dark:hover:bg-gray-700
+                    "
+                  >
+                    <img
+                      src="https://images.generated.photos/XML68W6_tNAx4BhHYZSLpszf-vb6NDpjShMIzYaA3iU/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzA0NzY1MjkuanBn.jpg"
+                      alt=""
+                      class="
+                        w-10
+                        h-10
+                        border
+                        rounded-full
+                        dark:border-coolGray-700
+                      "
+                    />
+                    <p class="ml-2 text-base dark:text-gray-50">
+                      Sanjay Soundarajan
+                    </p>
+                  </div>
+                </router-link>
               </div>
             </dd>
           </div>

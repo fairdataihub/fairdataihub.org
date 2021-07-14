@@ -1,55 +1,83 @@
 <template>
   <div class="pb-4 sm:pt-10 px-6 mx-auto">
-    <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row">
-      <h1
+    <div
+      class="
+        max-w-screen-xl
+        mx-auto
+        container
+        flex flex-col
+        justify-center
+        items-center
+      "
+    >
+      <h2
         class="
-          md:mr-8 md:w-1/3
-          py-5
-          md:py-0
-          font-sans font-black
-          text-black
-          dark:text-white
+          mb-10
           text-4xl
-          sm:text-4xl
-          md:text-5xl
-          lg:text-5xl
-          subpixel-antialiased
-          text-left
+          font-bold
+          text-center
+          sm:text-5xl
+          dark:text-gray-50
         "
       >
-        Frequently-asked questions
-      </h1>
-      <dl class="w-full md:w-2/3">
-        <div v-for="item in questionsList" :key="item.question">
-          <dt class="mb-2 sm:mb-4">
-            <h3
+        Frequently Asked Questions
+      </h2>
+      <div class="grid gap-4 md:gap-8 md:grid-cols-2 lg:px-12 xl:px-32">
+        <div>
+          <h3 class="font-semibold dark:text-gray-50">What is SPARC?</h3>
+
+          <p
+            class="
+              w-full
+              text-lg
+              sm:text-base
+              font-sans
+              text-black
+              dark:text-gray-50
+            "
+          >
+            The SPARC program is supported by the NIH Common Fund to accelerate
+            development of therapeutic devices and identification of neural
+            targets for bioelectronic medicine modulating electrical activity in
+            nerves to help treat diseases and conditions, such as hypertension
+            and gastrointestinal disorders, by precisely adjusting organ
+            function.
+          </p>
+          <div class="flex mt-2 md:mt-1">
+            <a
+              href="https://sparc.science"
+              target="_blank"
               class="
-                text-2xl
-                sm:text-xl
-                font-sans font-bold
-                text-black
-                dark:text-white
-              "
-            >
-              {{ item.question }}
-            </h3>
-          </dt>
-          <dd class="mb-10 sm:mb-10 w-full">
-            <p
-              class="
-                w-full
+                text-indigo-600
+                dark:text-indigo-400
+                inline-flex
+                items-center
                 text-lg
                 sm:text-base
-                font-sans
-                text-black
-                dark:text-white
               "
             >
-              {{ item.answer }}
-            </p>
-          </dd>
+              Learn more about the SPARC program
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-4 h-4 ml-2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
         </div>
-      </dl>
+        <div v-for="item in questionsList" :key="item.question">
+          <h3 class="font-semibold dark:text-gray-50">{{ item.question }}</h3>
+          <p class="mt-1 dark:text-gray-50">
+            {{ item.answer }}
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -61,9 +89,9 @@ export default {
     return {
       questionsList: [
         {
-          question: "Question 1?",
+          question: "What is SPARC?",
           answer:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, aut adipisci? Consequatur ea commodi voluptatum magnam voluptatem alias odit, cupiditate accusantium quod. Non amet possimus illo quo ducimus assumenda dolore.",
+            "The SPARC program is supported by the NIH Common Fund to accelerate development of therapeutic devices and identification of neural targets for bioelectronic medicine—modulating electrical activity in nerves to help treat diseases and conditions, such as hypertension and gastrointestinal disorders, by precisely adjusting organ function.",
         },
         {
           question: "Question 2?",

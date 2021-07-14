@@ -59,6 +59,7 @@ export default {
     return {
       teamsList: [
         {
+          id: "Judy-Álvarez",
           name: "Judy Álvarez",
           title: "Braindance editor",
           bio: "Judy Álvarez is a skilled braindance technician and a member of the Mox. She has her own apartment in northeastern Kabuki, Watson District.",
@@ -80,6 +81,7 @@ export default {
           },
         },
         {
+          id: "Panam-Palmer",
           name: "Panam Palmer",
           title: "Aldecaldo leader",
           bio: "Panam Palmer is introduced as a former member of the Aldecaldos nomad clan, who, after a family dispute, decided to live a more independent life as a mercenary.",
@@ -101,6 +103,8 @@ export default {
           },
         },
         {
+          id: "Hanako-Arasaka",
+
           name: "Hanako Arasaka",
           title: "VP, User Experience",
           bio: "Hanako Arasaka is the third child and only daughter to Saburo. Hanako is a skilled netrunner and the head of the Kiji Faction of the Arasaka Corporation. She is loved by many people and often described as sweet and beautiful in the eyes of many Arasaka employees.",
@@ -122,6 +126,8 @@ export default {
           },
         },
         {
+          id: "Rogue-Amendiares",
+
           name: "Rogue Amendiares",
           title: "Queen of fixers",
           bio: "Rogue Amendiares used to be a solo who went on to become the best fixer in Night City by 2077. She is the owner of the famous Afterlife nightclub.",

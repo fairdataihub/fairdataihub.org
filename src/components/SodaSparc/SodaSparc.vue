@@ -4,8 +4,16 @@
       <soda-herosection></soda-herosection>
     </base-section>
 
-    <base-section class="dark:bg-dark-background py-10">
+    <base-section class="bg-white dark:bg-dark-background py-10">
       <about-sparc></about-sparc>
+    </base-section>
+
+    <base-section class="bg-white dark:bg-dark-background py-10">
+      <sodasparc-stats></sodasparc-stats>
+    </base-section>
+
+    <base-section class="bg-white dark:bg-dark-background py-10">
+      <sodasparc-publications></sodasparc-publications>
     </base-section>
 
     <base-section class="bg-white dark:bg-dark-background py-10">
@@ -20,12 +28,21 @@
 
 <script>
 import AboutSparc from "./AboutSparc.vue";
+import SodasparcStats from "./SodasparcStats.vue";
 import SodaHerosection from "./SodaHerosection.vue";
 import SodaTimeline from "./SodaTimeline.vue";
 import TheFaq from "./TheFaq.vue";
+import SodasparcPublications from "./SodasparcPublications.vue";
 
 export default {
-  components: { TheFaq, SodaHerosection, SodaTimeline, AboutSparc },
+  components: {
+    TheFaq,
+    SodaHerosection,
+    SodaTimeline,
+    AboutSparc,
+    SodasparcStats,
+    SodasparcPublications,
+  },
   name: "SodaSparc",
 };
 </script>
