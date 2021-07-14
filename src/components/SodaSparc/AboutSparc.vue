@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="sm:pt-10 sm:px-10 mx-auto">
+    <div class="sm:pt-10 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col md:flex-row">
         <h1
           class="

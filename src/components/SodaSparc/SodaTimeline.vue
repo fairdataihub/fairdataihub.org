@@ -1,6 +1,8 @@
 <template>
   <section>
-    <div class="container w-full h-full max-w-screen-lg px-10 mx-auto">
+    <div
+      class="container w-full h-full max-w-screen-lg pl-2 pr-3 sm:px-10 mx-auto"
+    >
       <div class="relative wrap overflow-hidden p-2 sm:p-4 h-full">
         <h2
           class="

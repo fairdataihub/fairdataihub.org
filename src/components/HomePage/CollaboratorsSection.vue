@@ -109,7 +109,7 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 192.756 192.756"
-        class="h-28 sm:h-36 md:h-40 m-2 justify-self-center"
+        class="h-28 sm:h-36 md:h-40 m-2 justify-self-center col-span-2"
       >
         <g fill-rule="evenodd" clip-rule="evenodd">
           <path

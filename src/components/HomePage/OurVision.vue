@@ -64,7 +64,7 @@
                 rounded-md
                 text-white
               "
-              :style="'background-color: ' + buttonColor + ';'"
+              :style="'background-color: ' + visionColor + ';'"
             >
               <component
                 :is="feature.icon"
@@ -90,6 +90,7 @@
           <dd
             class="
               mt-2
+              md:mt-0
               ml-16
               text-lg
               sm:text-base
@@ -143,7 +144,7 @@ const features = [
 
 export default {
   name: "OurVision",
-  props: ["buttonColor"],
+  props: ["visionColor"],
   setup() {
     return {
       features,

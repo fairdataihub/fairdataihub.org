@@ -9,36 +9,39 @@
       sdark:bg-gray-600
     "
   >
-    <div class="flex flex-col items-center mb-4">
-      <p
+    <div class="flex flex-col items-center mb-4 px-4">
+      <h2
         class="
-          my-2
-          leading-8
+          w-full
+          mt-2
+          mb-1
           font-extrabold
-          tracking-tight
           text-gray-900
           dark:text-white
           text-4xl
           sm:text-4xl
-          text-center
+          font-inter
+          text-left
+          md:text-center
         "
       >
         Current Projects
-      </p>
+      </h2>
       <p
         class="
           w-full
           max-w-2xl
           text-xl text-black
           dark:text-white
-          text-center
-          p-2
+          text-left
+          md:text-center
+          pb-2
         "
       >
         These are the projects we are working on at the moment.
       </p>
     </div>
-    <section class="text-gray-600 w-full body-font px-5 mb-4">
+    <section class="text-gray-600 w-full body-font px-2 mb-4">
       <div
         class="
           container
@@ -206,7 +209,7 @@
 
 <script>
 export default {
-  name: "OurProjects",
+  name: "MobileProjects",
   components: {},
   data() {
     return {

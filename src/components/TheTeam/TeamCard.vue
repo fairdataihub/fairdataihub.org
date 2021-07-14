@@ -52,6 +52,7 @@
         <a
           v-if="profile.twitter.show"
           :href="profile.twitter.link"
+          target="_blank"
           class="px-1"
         >
           <svg
@@ -77,7 +78,12 @@
             ></path>
           </svg>
         </a>
-        <a v-if="profile.github.show" :href="profile.github.link" class="px-1">
+        <a
+          v-if="profile.github.show"
+          :href="profile.github.link"
+          target="_blank"
+          class="px-1"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="30"
@@ -104,6 +110,7 @@
         <a
           v-if="profile.linkedin.show"
           :href="profile.linkedin.link"
+          target="_blank"
           class="px-1"
         >
           <svg

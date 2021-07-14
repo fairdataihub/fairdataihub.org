@@ -2,10 +2,7 @@
 
 @tailwind components;
 
-@font-face {
-  font-family: "Bitter";
-  src: local("Bitter"), url(./fonts/Bitter-Bold.ttf) format("ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter");
 
 @tailwind utilities;
 
@@ -33,7 +30,8 @@
     @apply font-sans;
   }
   body {
-    @apply dark:bg-dark-background;
+    /*
+     @apply dark:bg-dark-background; 
     background: radial-gradient(
         circle,
         transparent 20%,
@@ -56,6 +54,7 @@
     background-color: #f8f9fa;
     background-size: 100px 100px, 100px 100px, 50px 50px, 50px 50px;
     /* background-attachment: fixed; */
+    @apply bg-gray-50 dark:bg-gray-800;
   }
 }
 
