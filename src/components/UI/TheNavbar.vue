@@ -482,7 +482,7 @@ export default {
       switchValue: false,
       checked: false,
       open: false,
-      svgColor: "#000000",
+      svgColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
     };
   },
   methods: {

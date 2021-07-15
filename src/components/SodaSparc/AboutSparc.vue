@@ -133,34 +133,40 @@
               </h3>
             </dt>
             <dd class="mb-10 sm:mb-5 w-full">
-              <div class="flex flex-col md:flex-row py-3">
+              <div class="flex flex-col md:flex-row py-0 md:py-3">
                 <router-link to="/team/#Rogue-Amendiares">
-                  <div class="flex flex-row items-center pr-32">
-                    <div
+                  <div
+                    class="
+                      flex flex-row
+                      items-center
+                      p-2
+                      md:mr-32
+                      rounded-lg
+                      hover:bg-gray-100
+                      dark:hover:bg-gray-700
+                    "
+                  >
+                    <img
+                      src="https://images.generated.photos/ADbBAzeK5oWF2oDJWfZ2-Wq3TBjqex-dxZVQGD5LPJY/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxMzk2ODBfMDUz/NjY1Nl8wNzAxMDQ2/LmpwZw.jpg"
+                      alt=""
                       class="
-                        flex flex-row
-                        items-center
-                        p-2
-                        rounded-lg
-                        hover:bg-gray-100
-                        dark:hover:bg-gray-700
+                        w-10
+                        h-10
+                        border
+                        rounded-full
+                        dark:border-coolGray-700
+                      "
+                    />
+                    <p
+                      class="
+                        ml-2
+                        font-fsans font-medium
+                        text-lg
+                        dark:text-gray-50
                       "
                     >
-                      <img
-                        src="https://images.generated.photos/ADbBAzeK5oWF2oDJWfZ2-Wq3TBjqex-dxZVQGD5LPJY/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxMzk2ODBfMDUz/NjY1Nl8wNzAxMDQ2/LmpwZw.jpg"
-                        alt=""
-                        class="
-                          w-10
-                          h-10
-                          border
-                          rounded-full
-                          dark:border-coolGray-700
-                        "
-                      />
-                      <p class="ml-2 font-fsans text-base dark:text-gray-50">
-                        Bhavesh Patel
-                      </p>
-                    </div>
+                      Bhavesh Patel
+                    </p>
                   </div>
                 </router-link>
                 <router-link to="/team/#Hanako-Arasaka">
@@ -185,19 +191,27 @@
                         dark:border-coolGray-700
                       "
                     />
-                    <p class="ml-2 font-fsans text-base dark:text-gray-50">
+                    <p
+                      class="
+                        ml-2
+                        font-fsans
+                        text-lg text-base
+                        dark:text-gray-50
+                      "
+                    >
                       Tram Ngo
                     </p>
                   </div>
                 </router-link>
               </div>
-              <div class="flex flex-col sm:flex-row justify-between">
+              <div class="flex flex-col md:flex-row py-0 md:py-3">
                 <router-link to="/team/#Panam-Palmer">
                   <div
                     class="
                       flex flex-row
                       items-center
                       p-2
+                      md:mr-32
                       rounded-lg
                       hover:bg-gray-100
                       dark:hover:bg-gray-700
@@ -214,7 +228,14 @@
                         dark:border-coolGray-700
                       "
                     />
-                    <p class="ml-2 font-fsans text-base dark:text-gray-50">
+                    <p
+                      class="
+                        ml-2
+                        font-fsans font-medium
+                        text-lg
+                        dark:text-gray-50
+                      "
+                    >
                       Sanjay Soundarajan
                     </p>
                   </div>

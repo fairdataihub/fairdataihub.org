@@ -144,10 +144,10 @@ export default {
   },
   data() {
     return {
-      buttonColor: "#e27d60",
-      textColor: "#85dcb0",
-      svgColor: "#e8a87c",
-      visionColor: "#41b3a3",
+      buttonColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
+      textColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
+      svgColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
+      visionColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
     };
   },
   computed: {

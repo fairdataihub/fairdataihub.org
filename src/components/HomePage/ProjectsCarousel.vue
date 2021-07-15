@@ -35,7 +35,7 @@
       autoplay
       :pause-on-hover="true"
       :class="`no-shadow`"
-      :fixed-height="`55vh`"
+      :fixed-height="`45vh`"
     >
       <vueper-slide>
         <template v-slot:content>

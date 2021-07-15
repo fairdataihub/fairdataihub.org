@@ -11,20 +11,12 @@ module.exports = {
   darkMode: "class", // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        udMedicalResearch: "url('./assets/udMedicalResearch.svg')",
-        udScience: "url('./assets/udScience.svg')",
-        udEnvironmentalStudy: "url('./assets/udEnvironmentalStudy.svg')",
-        udDesignInspiration: "url('./assets/udDesignInspiration.svg')",
-        udCompleteTask: "url('./assets/udCompleteTask.svg')",
-      }),
       zIndex: {
         "-1": "-1",
       },
       fontFamily: {
-        fsans: ["Fira Sans"],
+        fsans: ["Lato"],
         inter: ["Inter"],
-        raleway: ["Raleway"],
       },
       screens: {
         print: { raw: "print" },
@@ -42,6 +34,9 @@ module.exports = {
       "dark-background": "#1F1E28",
       "dark-background-2": "#2a2937",
     }),
+    fontFamily: {
+      sans: [...defaultTheme.fontFamily.sans],
+    },
   },
   variants: {
     extend: {
