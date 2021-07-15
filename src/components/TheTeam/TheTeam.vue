@@ -1,5 +1,5 @@
 <template>
-  <base-section class="pt-16">
+  <base-section class="pt-16 dark:bg-dark-background">
     <section
       class="
         text-black

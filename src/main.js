@@ -61,12 +61,13 @@ import IssuesHiddenFilesFolders from "./components/SodaSPARCDocs/docs/common-err
 
 const router = createRouter({
   history: createWebHistory(),
-  scrollBehavior: function (to, _from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition;
-    }
+  scrollBehavior: function (to) {
     if (to.hash) {
-      return { el: to.hash, behavior: "smooth" };
+      return {
+        el: to.hash,
+        behavior: "smooth",
+        top: 30,
+      };
     } else {
       window.scrollTo(0, 0);
     }

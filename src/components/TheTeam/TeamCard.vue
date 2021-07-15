@@ -1,13 +1,12 @@
 <template>
-  <div :class="[borderClasses, `flex flex-col sm:flex-row `]">
+  <div :class="[borderClasses, `flex flex-col sm:flex-row `]" :id="profile.id">
     <div
-      :id="profile.id"
       class="w-full md:w-1/3 h-full shadow-2xl dark:shadow-none my-3 sm:my-2"
     >
       <img :src="profile.image" alt="" class="w-full h-auto rounded-lg" />
     </div>
     <div
-      class="w-full md:w-2/3 py-3 px-0 sm:py-4 sm:px-8 lg:ml-8 flex flex-col"
+      class="w-full md:w-2/3 py-3 px-0 sm:py-4 sm:px-8 lg:ml-2 flex flex-col"
     >
       <h1 class="font-inter dark:text-gray-50 text-2xl sm:text-xl lg:text-3xl">
         {{ profile.name }}
