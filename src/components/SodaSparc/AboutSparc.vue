@@ -133,7 +133,7 @@
               </h3>
             </dt>
             <dd class="mb-10 sm:mb-5 w-full">
-              <div class="flex flex-col md:flex-row py-0 md:py-3">
+              <div class="flex flex-col md:flex-row py-0 md:py-1">
                 <router-link to="/team/#Rogue-Amendiares">
                   <div
                     class="
@@ -204,7 +204,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="flex flex-col md:flex-row py-0 md:py-3">
+              <div class="flex flex-col md:flex-row py-0 md:py-1">
                 <router-link to="/team/#Panam-Palmer">
                   <div
                     class="

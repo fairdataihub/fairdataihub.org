@@ -66,7 +66,6 @@ const router = createRouter({
       return {
         el: to.hash,
         behavior: "smooth",
-        top: 30,
       };
     } else {
       window.scrollTo(0, 0);
