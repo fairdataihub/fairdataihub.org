@@ -29,6 +29,7 @@
       </h2>
       <p
         class="
+          font-inter
           w-full
           max-w-2xl
           text-xl text-black
@@ -68,7 +69,7 @@
         >
           <h3
             class="
-              font-sans font-semibold
+              font-inter font-semibold
               text-3xl
               md:text-2xl
               lg:text-3xl
@@ -94,7 +95,7 @@
               text-base
               md:text-base
               lg:text-lg
-              font-sans
+              font-fsans
               text-black
               dark:text-white
             "
