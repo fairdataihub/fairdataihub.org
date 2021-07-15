@@ -2,7 +2,7 @@
   <h3
     :id="id"
     class="
-      font-sans font-semibold
+      font-inter font-semibold
       text-lg text-black
       dark:text-white
       mb-1

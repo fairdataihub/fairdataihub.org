@@ -5,6 +5,7 @@
         class="
           font-bold
           text-2xl
+          font-inter
           sm:text-2xl
           md:text-3xl
           lg:text-5xl
@@ -18,7 +19,7 @@
 
       <h3
         class="
-          font-sans
+          font-inter
           text-lg
           md:text-xl
           lg:text-2xl
@@ -38,7 +39,8 @@
       >
         <p
           class="
-            font-bold
+            my-1
+            font-fsans font-bold
             text-5xl
             sm:text-4xl
             md:text-5xl
@@ -48,7 +50,16 @@
         >
           {{ item.value }}
         </p>
-        <p class="text-xl sm:text-lg md:text-xl lg:text-2xl text-center">
+        <p
+          class="
+            text-xl
+            font-fsans
+            sm:text-lg
+            md:text-xl
+            lg:text-2xl
+            text-center
+          "
+        >
           {{ item.name }}
         </p>
       </div>

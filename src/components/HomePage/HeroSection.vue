@@ -6,7 +6,7 @@
           class="
             md:py-3
             w-full
-            font-sans font-black
+            font-inter font-black
             text-black
             dark:text-white
             text-4xl
@@ -25,7 +25,7 @@
             mt-2
             sm:mt-0
             w-full
-            font-sans
+            font-fsans
             text-xl
             sm:text-base
             md:text-lg

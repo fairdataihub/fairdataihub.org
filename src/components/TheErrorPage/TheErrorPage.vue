@@ -466,7 +466,7 @@
               d="M728.77,614.86s16.3-22.81,15.48-39.11,3.84-56,3.84-56"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -474,7 +474,7 @@
               d="M788.24,553.76s16.29-30.14,14.66-46.43c0,0,17.11-31,30.14-28.52"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -482,7 +482,7 @@
               d="M877.85,468.22s44.8-16.29,47.25-29.32"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -490,7 +490,7 @@
               d="M894.14,505.7s47.25-21.18,47.25-26.89H965s34.22,44.81,30.15,64.36"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -498,7 +498,7 @@
               d="M949.54,538.28s-45.62-3.26-61.92,9.78S842,567.61,842,567.61s-17.11,36.66-23.63,43.17-17.11,29.33-17.11,29.33"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -506,7 +506,7 @@
               d="M949.54,581.46s4.88,17.1,11.4,26.88,16.29,44.8,16.29,44.8"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -514,7 +514,7 @@
               d="M1026.11,631.15s10.34,28.77,19.43,29.05"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -522,7 +522,7 @@
               d="M958.38,507.66s26.86,7.26,38.09,24.85S1042,566.05,1042,566.05"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -530,7 +530,7 @@
               d="M969.9,421s0,37.47,10.59,37.47,34.22,4.07,34.22,4.07"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />
@@ -538,7 +538,7 @@
               d="M918,376.5s-2.71,64.73-16.56,81.49"
               transform="translate(-83.88 -33.68)"
               fill="none"
-              stroke="#000"
+              stroke="#000000"
               stroke-miterlimit="10"
               opacity="0.1"
             />

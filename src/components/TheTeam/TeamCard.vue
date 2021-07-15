@@ -1,8 +1,5 @@
 <template>
-  <div
-    :id="profile.id"
-    :class="[borderClasses, `flex flex-col sm:flex-row items-center`]"
-  >
+  <div :id="profile.id" :class="[borderClasses, `flex flex-col sm:flex-row `]">
     <div
       class="w-full md:w-1/3 h-full shadow-2xl dark:shadow-none my-3 sm:my-2"
     >
@@ -13,7 +10,7 @@
     >
       <h1
         class="
-          font-sans
+          font-inter
           text-black
           dark:text-white
           text-2xl
@@ -25,20 +22,20 @@
       </h1>
       <h2
         class="
-          font-sans
+          font-inter
           text-primary
           dark:text-indigo-200
           text-xl
           sm:text-lg
           lg:text-2xl
-          pb-2
+          pb-1
         "
       >
         {{ profile.title }}
       </h2>
       <p
         class="
-          font-sans
+          font-fsans
           text-black
           dark:text-white
           text-lg

@@ -1,11 +1,10 @@
 <template>
   <div class="container px-6 pt-4 pb-0 md:p-10 max-w-screen-lg mx-auto">
-    <div class="flex flex-col items-center mb-4">
+    <div class="flex flex-col items-center mb-4 w-full">
       <p
         class="
-          mt-2
-          leading-8
-          font-extrabold
+          my-2
+          font-inter font-extrabold
           tracking-tight
           text-black
           dark:text-white
@@ -17,14 +16,7 @@
         Collaborators
       </p>
       <p
-        class="
-          mt-4
-          w-full
-          max-w-2xl
-          text-xl text-black
-          dark:text-white
-          text-center
-        "
+        class="w-full font-fsans text-xl text-black dark:text-white text-center"
       >
         Some of the amazing organizations and institutions where our products
         make a difference

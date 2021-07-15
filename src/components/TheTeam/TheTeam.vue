@@ -20,7 +20,7 @@
         <div class="w-full md:w-1/3 p-5">
           <h1
             class="
-              font-sans font-black
+              font-inter font-black
               text-black
               dark:text-white
               text-4xl
@@ -30,7 +30,7 @@
           >
             About Us
           </h1>
-          <p class="font-sans text-black dark:text-white text-xl sm:text-lg">
+          <p class="font-fsans text-black dark:text-white text-xl sm:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             laborum commodi corporis tempore dolores saepe quisquam ad inventore
             dignissimos, modi a enim, eaque nulla ex delectus! Dolor,

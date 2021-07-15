@@ -7,7 +7,7 @@
             md:mr-8 md:w-1/3
             py-5
             md:py-0
-            font-sans font-black
+            font-inter font-black
             text-black
             dark:text-white
             text-4xl
@@ -41,7 +41,7 @@
                   w-full
                   text-lg
                   sm:text-base
-                  font-sans
+                  font-fsans
                   text-black
                   dark:text-white
                 "
@@ -69,7 +69,7 @@
                 class="
                   text-2xl
                   sm:text-xl
-                  font-sans font-bold
+                  font-inter font-bold
                   text-black
                   dark:text-white
                 "
@@ -83,7 +83,7 @@
                   w-full
                   text-lg
                   sm:text-base
-                  font-sans
+                  font-fsans
                   text-black
                   dark:text-white
                 "
@@ -103,7 +103,9 @@
                     sm:text-base
                   "
                 >
-                  Explore the award on NIH Reporter
+                  <span class="font-fsans">
+                    Explore the award on NIH Reporter
+                  </span>
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -125,7 +127,7 @@
                 class="
                   text-2xl
                   sm:text-xl
-                  font-sans font-bold
+                  font-inter font-bold
                   text-black
                   dark:text-white
                 "
@@ -158,7 +160,7 @@
                           dark:border-coolGray-700
                         "
                       />
-                      <p class="ml-2 text-base dark:text-gray-50">
+                      <p class="ml-2 font-fsans text-base dark:text-gray-50">
                         Bhavesh Patel
                       </p>
                     </div>
@@ -186,7 +188,9 @@
                         dark:border-coolGray-700
                       "
                     />
-                    <p class="ml-2 text-base dark:text-gray-50">Tram Ngo</p>
+                    <p class="ml-2 font-fsans text-base dark:text-gray-50">
+                      Tram Ngo
+                    </p>
                   </div>
                 </router-link>
               </div>
@@ -213,7 +217,7 @@
                         dark:border-coolGray-700
                       "
                     />
-                    <p class="ml-2 text-base dark:text-gray-50">
+                    <p class="ml-2 font-fsans text-base dark:text-gray-50">
                       Sanjay Soundarajan
                     </p>
                   </div>

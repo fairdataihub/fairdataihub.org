@@ -6,7 +6,7 @@
           <div
             class="
               text-center
-              font-sans
+              font-inter
               text-2xl text-black
               dark:text-gray-50
               text-bold
@@ -18,7 +18,7 @@
           <div
             class="
               text-center
-              font-sans
+              font-fsans
               text-xl text-black
               dark:text-gray-100
               text-bold
@@ -69,10 +69,13 @@
               d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
             ></path>
           </svg>
-          <span class="ml-3 text-xl text-black dark:text-white">FairHub</span>
+          <span class="font-inter ml-3 text-xl text-black dark:text-white"
+            >FairHub</span
+          >
         </div>
         <p
           class="
+            font-inter
             text-sm
             sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0
             mt-4

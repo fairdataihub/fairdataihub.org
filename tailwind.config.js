@@ -22,13 +22,12 @@ module.exports = {
         "-1": "-1",
       },
       fontFamily: {
-        bitter: ["Bitter", "sans-serif"],
-        sans: ["Inter"],
+        fsans: ["Fira Sans"],
         inter: ["Inter"],
+        raleway: ["Raleway"],
       },
       screens: {
         print: { raw: "print" },
-        // => @media print { ... }
       },
     },
     textColor: (theme) => ({

@@ -1,8 +1,8 @@
 <template>
   <div class="relative bg-light-background dark:bg-dark-background">
     <div class="hidden sm:flex flex-col sm:flex-row sm:justify-around">
-      <div class="sm:w-52 md:w-56 lg:w-64">
-        <nav class="mt-4 px-6">
+      <div class="sm:w-52 md:w-56 lg:w-60">
+        <nav class="mt-4 px-6 lg:px-3">
           <div v-for="section in sidebarList" :key="section.title" class="pb-3">
             <p
               class="
@@ -13,7 +13,7 @@
                 pb-2
                 border-gray-200
                 text-md
-                font-normal
+                font-inter font-normal
               "
             >
               {{ section.title }}
@@ -41,7 +41,7 @@
                   rounded-lg
                 "
               >
-                <span class="mx-1 text-sm">
+                <span class="font-fsans mx-1 text-sm">
                   {{ subsection.subtitle }}
                 </span>
               </router-link>

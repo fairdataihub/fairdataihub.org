@@ -3,7 +3,7 @@
     <div class="w-full flex flex-col">
       <h2
         class="
-          font-sans font-bold
+          font-inter font-bold
           text-2xl
           sm:text-2xl
           md:text-3xl
@@ -23,15 +23,15 @@
         :key="item.doi"
       >
         <a :href="item.doi" target="_blank" class="my-2">
-          <p class="font-semibold text-xl">
+          <p class="font-inter font-semibold text-xl">
             {{ item.title }}
           </p>
         </a>
 
         <div class="bg-gray-100 dark:bg-gray-700 rounded p-3 m2-3 relative">
-          <p class="text-xs text-gray-400">Citation</p>
+          <p class="font-fsans text-xs text-gray-400">Citation</p>
           <p
-            class="text-black text-base dark:text-white"
+            class="font-fsans text-black text-base dark:text-white"
             v-html="item.citation"
           ></p>
         </div>
@@ -96,10 +96,9 @@ export default {
           citation: `Patel, Bhavesh, Harshit Srivastava, Parya Aghasafari, and Karl Helmer. "SPARC: SODA, an interactive software for curating SPARC datasets."
           <i>
             The FASEB Journal
-          </i> 34, no. S1 (2020): 1-1. <a href="https://doi.org/10.1096/fasebj.2020.34.s1.02483" target="_blank">
-            <p class="hover:underline text-blue-600 dark:text-blue-400 break-words">
+          </i> 34, no. S1 (2020): 1-1. <a href="https://doi.org/10.1096/fasebj.2020.34.s1.02483" target="_blank"><span class="hover:underline text-blue-600 dark:text-blue-400 break-words">
               doi.org/10.1096/fasebj.2020.34.s1.02483
-            </p>
+            </span>
           </a>`,
         },
       ],

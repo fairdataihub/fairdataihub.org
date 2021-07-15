@@ -12,7 +12,7 @@
           w-full
           mt-6
           lg:mt-0 lg:w-1/2
-          p-2
+          p-8
         "
       >
         <!-- <img
@@ -323,7 +323,7 @@
             pt-6
             md:py-3
             w-full
-            font-sans font-black
+            font-inter font-black
             text-black
             dark:text-white
             text-4xl
@@ -342,7 +342,7 @@
           class="
             my-2
             w-full
-            font-sans
+            font-fsans
             text-left
             sm:text-center
             text-xl

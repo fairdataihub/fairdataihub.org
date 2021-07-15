@@ -15,9 +15,8 @@
       </h2>
       <p
         class="
-          mt-2
-          leading-8
-          font-extrabold
+          my-2
+          font-inter font-extrabold
           tracking-tight
           text-gray-900
           dark:text-white
@@ -29,8 +28,7 @@
       </p>
       <p
         class="
-          font-sans
-          mt-4
+          font-fsans
           max-w-2xl
           text-xl
           sm:text-xl
@@ -74,11 +72,10 @@
             </div>
             <p
               class="
-                font-sans
+                font-inter
                 ml-16
                 text-xl
                 sm:text-lg
-                leading-6
                 font-medium
                 text-black
                 dark:text-white
@@ -96,7 +93,7 @@
               sm:text-base
               text-black
               dark:text-white
-              font-sans
+              font-fsans
             "
           >
             {{ feature.description }}

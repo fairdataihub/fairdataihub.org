@@ -10,7 +10,7 @@
     </base-docs-subtitle>
     <h3
       class="
-        font-sans
+        font-fsans
         text-base text-black
         dark:text-white
         print:text-sm print:dark:text-black
@@ -27,7 +27,7 @@
     <div class="mb-3 print:my-1">
       <h2
         class="
-          font-sans font-semibold
+          font-inter font-semibold
           text-base text-black
           dark:text-white
           mb-2
@@ -49,6 +49,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -60,7 +61,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     SPARC requirements for organizing and sharing all SPARC
                     datasets.
@@ -82,6 +86,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -93,7 +98,11 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      print:text-sm
+                      font-fsans
+                      print:text-black print:dark:text-black
+                    "
                     >Pennsieve</span
                   >
                 </a>
@@ -101,6 +110,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -112,12 +122,16 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                     >support@pennsieve.net</span
                   >
                 </a>
                 <span
                   class="
+                    font-fsans
                     text-black
                     dark:text-white
                     print:text-sm print:dark:text-black
@@ -141,6 +155,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -152,7 +167,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      print:text-sm print:text-black print:dark:text-black
+                      font-fsans
+                    "
                     >Pennsieve agent</span
                   >
                 </a>
@@ -160,6 +178,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -181,6 +200,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -196,7 +216,7 @@
     <div class="mb-3 print:my-1">
       <h2
         class="
-          font-sans font-semibold
+          font-inter font-semibold
           text-base text-black
           dark:text-white
           mb-2
@@ -220,7 +240,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      print:text-sm print:text-black print:dark:text-black
+                      font-fsans
+                    "
                   >
                     Connect your Pennsieve account with SODA.
                   </span>
@@ -229,6 +252,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -256,7 +280,10 @@
                   "
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Create a new dataset
                   </span>
@@ -278,7 +305,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Make PI of the SPARC award the owner of the dataset
                   </span>
@@ -300,7 +330,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Give access to other members/teams who may need to
                     contribute to the dataset</span
@@ -308,6 +341,7 @@
                 </router-link>
                 <span
                   class="
+                    font-fsans
                     text-black
                     dark:text-white
                     print:text-sm print:dark:text-black
@@ -332,7 +366,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Add a subtitle
                   </span>
@@ -354,7 +391,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Add a description
                   </span>
@@ -376,7 +416,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Upload a banner image
                   </span>
@@ -398,7 +441,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Assign a license
                   </span>
@@ -412,7 +458,7 @@
     <div class="mb-3 print:my-1">
       <h2
         class="
-          font-sans font-semibold
+          font-inter font-semibold
           text-base text-black
           dark:text-white
           mb-2
@@ -435,6 +481,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -446,7 +493,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     instructions provided here
                   </span>
@@ -468,7 +518,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Prepare submission file
                   </span>
@@ -490,7 +543,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Prepare dataset description file
                   </span>
@@ -510,6 +566,7 @@
                 <span
                   class="
                     text-black
+                    font-fsans
                     dark:text-white
                     print:text-sm print:dark:text-black
                   "
@@ -521,7 +578,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     download template
                   </span>
@@ -530,6 +590,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -552,6 +613,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -562,7 +624,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     download template</span
                   >
@@ -571,6 +636,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                   >, more support will be available in SODA soon - note:
@@ -585,7 +651,7 @@
     <div class="mb-3 print:my-1">
       <h2
         class="
-          font-sans font-semibold
+          font-inter font-semibold
           text-base text-black
           dark:text-white
           mb-2
@@ -609,7 +675,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Specify files and metadata files to be included in your
                     dataset and generate dataset directly on Pennsieve
@@ -624,7 +693,7 @@
     <div class="mb-3 print:my-1">
       <h2
         class="
-          font-sans font-semibold
+          font-inter font-semibold
           text-base text-black
           dark:text-white
           mb-2
@@ -648,7 +717,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Share with the Curation Team to add your dataset to their
                     queue for review
@@ -658,6 +730,7 @@
                   class="
                     text-black
                     dark:text-white
+                    font-fsans
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -673,7 +746,7 @@
     <div class="mb-3 print:my-1">
       <h2
         class="
-          font-sans font-semibold
+          font-inter font-semibold
           text-base text-black
           dark:text-white
           mb-2
@@ -698,7 +771,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Share dataset with the SPARC Consortium as Embargoed dataset
                   </span>
@@ -720,7 +796,10 @@
                   class="hover:underline text-blue-600 dark:text-blue-400"
                 >
                   <span
-                    class="print:text-sm print:text-black print:dark:text-black"
+                    class="
+                      font-fsans
+                      print:text-sm print:text-black print:dark:text-black
+                    "
                   >
                     Send dataset for pre-publishing review
                   </span>

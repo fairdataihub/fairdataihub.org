@@ -4,8 +4,7 @@
       <h2
         class="
           my-2
-          leading-8
-          font-extrabold
+          font-inter font-extrabold
           tracking-tight
           text-gray-900
           dark:text-white
@@ -20,10 +19,11 @@
         class="
           w-full
           max-w-2xl
-          text-xl text-black
+          text-xl
+          font-fsans
+          text-black
           dark:text-white
           text-center
-          p-2
         "
       >
         These are the projects we are working on at the moment.
@@ -70,7 +70,7 @@
               >
                 <h3
                   class="
-                    font-sans font-semibold
+                    font-inter font-semibold
                     text-3xl
                     md:text-2xl
                     lg:text-3xl
@@ -94,7 +94,7 @@
                     text-base
                     md:text-base
                     lg:text-lg
-                    font-sans
+                    font-fsans
                     text-black
                     dark:text-white
                   "
@@ -110,7 +110,9 @@
                     class="inline-flex items-center text-lg sm:text-base"
                     :style="`color: ${textColor};`"
                   >
-                    Learn more about SODA for SPARC
+                    <span class="font-fsans">
+                      Learn more about SODA for SPARC
+                    </span>
                     <svg
                       fill="none"
                       stroke="currentColor"
@@ -225,6 +227,7 @@
           </section>
         </template>
       </vueper-slide>
+
       <vueper-slide>
         <template v-slot:content>
           <section
@@ -256,7 +259,7 @@
               >
                 <h3
                   class="
-                    font-sans font-semibold
+                    font-inter font-semibold
                     text-3xl
                     md:text-2xl
                     lg:text-3xl
@@ -280,7 +283,7 @@
                     text-base
                     md:text-base
                     lg:text-lg
-                    font-sans
+                    font-fsans
                     text-black
                     dark:text-white
                   "
@@ -296,7 +299,9 @@
                     class="inline-flex items-center text-lg sm:text-base"
                     :style="`color: ${textColor};`"
                   >
-                    Learn more about SODA for SPARC
+                    <span class="font-fsans">
+                      Learn more about SODA for SPARC
+                    </span>
                     <svg
                       fill="none"
                       stroke="currentColor"

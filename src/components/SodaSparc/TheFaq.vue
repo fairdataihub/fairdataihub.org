@@ -15,7 +15,7 @@
           mb-10
           w-full
           text-4xl
-          font-bold
+          font-inter font-bold
           text-left
           md:text-center
           sm:text-5xl
@@ -26,7 +26,7 @@
       </h2>
       <div class="grid gap-4 md:gap-8 md:grid-cols-2 lg:px-12 xl:px-32">
         <div>
-          <h3 class="font-semibold text-xl dark:text-gray-50">
+          <h3 class="font-inter font-semibold text-xl dark:text-gray-50">
             What is SPARC?
           </h3>
 
@@ -35,7 +35,7 @@
               w-full
               text-lg
               sm:text-base
-              font-sans
+              font-fsans
               text-black
               dark:text-gray-50
             "
@@ -55,6 +55,7 @@
                   dark:text-indigo-400
                   items-center
                   text-xl
+                  font-fsans
                   sm:text-base
                 "
               >
@@ -64,7 +65,7 @@
           </div>
         </div>
         <div v-for="item in questionsList" :key="item.question">
-          <h3 class="font-semibold text-xl dark:text-gray-50 mt-2">
+          <h3 class="font-inter font-semibold text-xl dark:text-gray-50 mt-2">
             {{ item.question }}
           </h3>
           <p
@@ -72,7 +73,7 @@
               w-full
               text-lg
               sm:text-base
-              font-sans
+              font-fsans
               text-black
               dark:text-gray-50
             "

@@ -32,12 +32,11 @@
         >
           <h1
             class="
-              font-sans font-black
+              font-inter font-black
               text-3xl
               sm:text-4xl
               w-full
               mb-1
-              sm:mb-4
               text-center text-black
               dark:text-white
             "
@@ -46,12 +45,11 @@
           </h1>
           <h2
             class="
-              font-sans
+              font-inter
               w-full
               sm:text-2xl
               text-2xl
               mb-2
-              sm:mb-4
               font-medium
               text-black
               dark:text-white
@@ -66,7 +64,7 @@
               leading-relaxed
               text-center text-base
               w-full
-              font-sans
+              font-fsans
               text-black
               dark:text-white
             "

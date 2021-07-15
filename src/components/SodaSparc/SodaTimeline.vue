@@ -6,6 +6,7 @@
       <div class="relative wrap overflow-hidden p-2 sm:p-4 h-full">
         <h2
           class="
+            font-inter
             mb-10
             text-4xl
             font-bold
@@ -80,14 +81,14 @@
                 </svg>
               </div>
               <div class="flex-grow pl-4">
-                <h3 class="font-semibold dark:text-gray-50">
+                <h3 class="font-inter font-semibold dark:text-gray-50">
                   {{ item.longDate }} - {{ item.title }}
                 </h3>
                 <p
                   class="
                     w-full
                     text-base
-                    font-sans
+                    font-fsans
                     text-black
                     dark:text-gray-50
                   "
