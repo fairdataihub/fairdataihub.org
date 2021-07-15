@@ -18,8 +18,7 @@
           my-2
           font-inter font-extrabold
           tracking-tight
-          text-gray-900
-          dark:text-white
+          dark:text-gray-50
           text-4xl
           sm:text-4xl
         "
@@ -77,8 +76,7 @@
                 text-xl
                 sm:text-lg
                 font-medium
-                text-black
-                dark:text-white
+                dark:text-gray-50
               "
             >
               {{ feature.name }}

@@ -6,7 +6,7 @@
       items-center
       max-w-screen-lg
       mx-auto
-      sdark:bg-gray-600
+      dark:bg-gray-600
     "
   >
     <div class="flex flex-col items-center mb-4 px-4">
@@ -22,7 +22,6 @@
           sm:text-4xl
           font-inter
           text-left
-          md:text-center
         "
       >
         Current Projects
@@ -35,7 +34,6 @@
           text-xl text-black
           dark:text-white
           text-left
-          md:text-center
           pb-2
         "
       >
@@ -43,42 +41,16 @@
       </p>
     </div>
     <section class="text-gray-600 w-full body-font px-2 mb-4">
-      <div
-        class="
-          container
-          mx-auto
-          flex
-          px-5
-          sm:mb-2
-          flex-col-reverse
-          md:flex-row md:justify-evenly
-          items-center
-        "
-      >
+      <div class="container mx-auto flex px-5 flex-col-reverse items-center">
         <!-- text div -->
-        <div
-          class="
-            md:w-7/12
-            flex flex-col
-            my-1
-            sm:mb-16
-            md:mb-0
-            items-center
-            text-center
-          "
-        >
+        <div class="flex flex-col my-1 items-center text-center">
           <h3
             class="
               font-inter font-semibold
-              text-3xl
-              md:text-2xl
-              lg:text-3xl
+              text-4xl
               w-full
-              mb-1
-              sm:mb-4
-              text-left
-              sm:text-center
-              text-black
+              mb-4
+              text-left text-black
               dark:text-white
             "
           >
@@ -88,13 +60,8 @@
           <p
             class="
               w-full
-              mb-4
-              sm:mb-8
-              text-left
-              sm:text-center
-              text-base
-              md:text-base
-              lg:text-lg
+              mb-8
+              text-left text-xl
               font-fsans
               text-black
               dark:text-white
@@ -129,7 +96,7 @@
                 Download now (github)
               </button>
             </a> -->
-            <router-link to="/sodasparc/docs/Download-soda">
+            <!-- <router-link to="/sodasparc/docs/Download-soda">
               <button
                 class="
                   hidden
@@ -143,32 +110,27 @@
                   focus:outline-none
                   rounded
                   text-base
-                  md:text-base
-                  lg:text-lg
                   transition
                 "
               >
                 Download now
               </button>
-            </router-link>
+            </router-link> -->
             <router-link to="/sodasparc">
               <button
                 class="
                   sm:ml-4
                   inline-flex
                   text-white
-                  bg-primary
-                  hover:bg-blue-600
                   border-0
                   py-2
                   px-6
                   focus:outline-none
                   rounded
                   text-lg
-                  md:text-base
-                  lg:text-lg
                   transition
                 "
+                :style="'background-color: ' + buttonColor + ';'"
               >
                 Learn more about SODA for SPARC
               </button>
@@ -176,29 +138,9 @@
           </div>
         </div>
         <!-- image div -->
-        <div
-          class="
-            lg:max-w-lg
-            md:w-3/12
-            w-5/6
-            py-4
-            my-2
-            sm:py-0
-            flex
-            justify-center
-          "
-        >
+        <div class="w-5/6 py-4 my-2 flex justify-center">
           <img
-            class="
-              object-cover object-center
-              rounded
-              sm:h-52
-              md:h-40
-              lg:h-auto
-              sm:w-52
-              md:w-40
-              lg:w-auto
-            "
+            class="object-cover object-center rounded"
             alt="SODA for SPARC logo"
             src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
           />
@@ -211,7 +153,7 @@
 <script>
 export default {
   name: "MobileProjects",
-  components: {},
+  props: ["buttonColor"],
   data() {
     return {
       sodaForSPARCData: [

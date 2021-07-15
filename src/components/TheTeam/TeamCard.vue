@@ -8,16 +8,7 @@
     <div
       class="w-full md:w-2/3 py-3 px-0 sm:py-4 sm:px-4 lg:ml-8 flex flex-col"
     >
-      <h1
-        class="
-          font-inter
-          text-black
-          dark:text-white
-          text-2xl
-          sm:text-xl
-          lg:text-3xl
-        "
-      >
+      <h1 class="font-inter dark:text-gray-50 text-2xl sm:text-xl lg:text-3xl">
         {{ profile.name }}
       </h1>
       <h2

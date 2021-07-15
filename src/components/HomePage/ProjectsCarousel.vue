@@ -6,8 +6,7 @@
           my-2
           font-inter font-extrabold
           tracking-tight
-          text-gray-900
-          dark:text-white
+          dark:text-gray-50
           text-4xl
           sm:text-4xl
           text-center
@@ -21,8 +20,7 @@
           max-w-2xl
           text-xl
           font-fsans
-          text-black
-          dark:text-white
+          dark:text-gray-50
           text-center
         "
       >
@@ -79,8 +77,7 @@
                     sm:mb-4
                     text-left
                     sm:text-center
-                    text-black
-                    dark:text-white
+                    dark:text-gray-50
                   "
                 >
                   SODA for SPARC
@@ -268,8 +265,7 @@
                     sm:mb-4
                     text-left
                     sm:text-center
-                    text-black
-                    dark:text-white
+                    dark:text-gray-50
                   "
                 >
                   SODA for COVID

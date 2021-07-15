@@ -37,8 +37,8 @@
               sm:text-4xl
               w-full
               mb-1
-              text-center text-black
-              dark:text-white
+              text-center
+              dark:text-gray-50
             "
           >
             SODA for SPARC
@@ -51,8 +51,7 @@
               text-2xl
               mb-2
               font-medium
-              text-black
-              dark:text-white
+              dark:text-gray-50
               text-center
             "
           >

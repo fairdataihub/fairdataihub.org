@@ -57,7 +57,7 @@
             sm:text-lg
             md:text-xl
             lg:text-2xl
-            text-center
+            text-center text-black
           "
         >
           {{ item.name }}

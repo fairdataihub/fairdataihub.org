@@ -6,8 +6,7 @@
           my-2
           font-inter font-extrabold
           tracking-tight
-          text-black
-          dark:text-white
+          dark:text-gray-50
           text-4xl
           sm:text-4xl
           text-center
@@ -15,9 +14,7 @@
       >
         Collaborators
       </p>
-      <p
-        class="w-full font-fsans text-xl text-black dark:text-white text-center"
-      >
+      <p class="w-full font-fsans text-xl dark:text-gray-50 text-center">
         Some of the amazing organizations and institutions where our products
         make a difference
       </p>

@@ -15,18 +15,12 @@
           >
             <strong> Need Help? Contact Us. </strong>
           </div>
-          <div
-            class="
-              text-center
-              font-fsans
-              text-xl text-black
-              dark:text-gray-100
-              text-bold
-            "
+          <h1
+            class="text-center font-fsans text-xl dark:text-gray-50 text-bold"
           >
             11107 Roselle St, San Diego, CA 92121 | abc@gmail.com | +1 (555)
             555-5555
-          </div>
+          </h1>
         </div>
       </div>
 

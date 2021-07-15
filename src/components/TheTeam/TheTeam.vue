@@ -21,8 +21,7 @@
           <h1
             class="
               font-inter font-black
-              text-black
-              dark:text-white
+              dark:text-gray-50
               text-4xl
               sm:text-3xl
               py-2

@@ -80,7 +80,7 @@
     <base-section
       class="bg-gray-50 dark:bg-dark-background-2 py-10 block sm:hidden"
     >
-      <mobile-projects></mobile-projects>
+      <mobile-projects :buttonColor="buttonColor"></mobile-projects>
     </base-section>
 
     <!-- Desktop projects section -->
@@ -144,10 +144,10 @@ export default {
   },
   data() {
     return {
-      buttonColor: "#000000",
-      textColor: "#000000",
-      svgColor: "#000000",
-      visionColor: "#000000",
+      buttonColor: "#e27d60",
+      textColor: "#85dcb0",
+      svgColor: "#e8a87c",
+      visionColor: "#41b3a3",
     };
   },
   computed: {

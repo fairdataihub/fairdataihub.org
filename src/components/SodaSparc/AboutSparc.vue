@@ -8,8 +8,7 @@
             py-5
             md:py-0
             font-inter font-black
-            text-black
-            dark:text-white
+            dark:text-gray-50
             text-4xl
             sm:text-4xl
             md:text-5xl
@@ -70,8 +69,7 @@
                   text-2xl
                   sm:text-xl
                   font-inter font-bold
-                  text-black
-                  dark:text-white
+                  dark:text-gray-50
                 "
               >
                 Funding
@@ -128,8 +126,7 @@
                   text-2xl
                   sm:text-xl
                   font-inter font-bold
-                  text-black
-                  dark:text-white
+                  dark:text-gray-50
                 "
               >
                 Team Members

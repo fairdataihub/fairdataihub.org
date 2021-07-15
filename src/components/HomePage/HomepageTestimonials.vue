@@ -16,11 +16,11 @@
     <div class="flex flex-col items-center mb-4">
       <p
         class="
+          w-full
           my-2
           font-inter font-extrabold
           tracking-tight
-          text-gray-900
-          dark:text-white
+          dark:text-gray-50
           text-4xl
           sm:text-4xl
           text-center
@@ -34,8 +34,7 @@
           max-w-2xl
           text-xl
           font-fsans
-          text-black
-          dark:text-white
+          dark:text-gray-50
           text-center
         "
       >

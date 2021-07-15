@@ -7,13 +7,11 @@
             md:py-3
             w-full
             font-inter font-black
-            text-black
-            dark:text-white
+            dark:text-gray-50
             text-4xl
             sm:text-3xl
             md:text-4xl
             lg:text-5xl
-            subpixel-antialiased
             text-left
           "
         >
@@ -31,7 +29,7 @@
             md:text-lg
             lg:text-xl
             text-black
-            dark:text-white
+            dark:text-gray-50
           "
         >
           Making all biomedical research data Findable, Accessible,

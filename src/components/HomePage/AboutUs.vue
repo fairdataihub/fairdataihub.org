@@ -321,11 +321,11 @@
         <h1
           class="
             pt-6
+            py-4
             md:py-3
             w-full
             font-inter font-black
-            text-black
-            dark:text-white
+            dark:text-gray-50
             text-4xl
             sm:text-3xl
             md:text-3xl
@@ -340,7 +340,9 @@
 
         <p
           class="
-            my-2
+            mt-2
+            mb-6
+            md:my-2
             w-full
             font-fsans
             text-left
