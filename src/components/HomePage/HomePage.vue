@@ -1,4 +1,41 @@
 <template>
+  <div class=" flex flex-col fixed right-5 top-20 items-end z-20 opacity-5
+        hover:opacity-100">
+        <div>
+          <input v-model="selectedHue" type="number"  class="w-12" min="0" max="360"/>
+          hue
+        </div>
+        <div>
+          <select v-model="selectedScheme">
+            <option value="mono">mono</option>
+            <option value="tetrade">tetrade</option>
+          </select>
+        scheme
+        </div>
+        <div v-show="selectedScheme === 'tetrade'">
+          <input  v-model="selectedDistance" type="number"  class="w-12" min="0" max="100"/>
+          Distance
+        </div>
+        <div>
+          <select v-model="selectedFilter">
+            <option value="default">default</option>
+            <option value="pastel">pastel</option>
+            <option value="soft">soft</option>
+            <option value="light">light</option>
+            <option value="hard">hard</option>
+            <option value="pale">pale</option>
+          </select>
+          filter
+        </div>
+        <div>
+          <select v-model="selectedVariation">
+            <option :value="n - 1" v-for="n in totalVariations" :key="n">{{n}}</option>
+          </select>
+          variation
+        </div>
+  </div>
+
+
   <div class="divide-y divide-gray-50 dark:divide-gray-800">
     <base-section class="pt-12 sm:pt-16 bg-white dark:bg-dark-background py-10">
       <hero-section :svgColor="svgColor"></hero-section>
@@ -130,6 +167,8 @@ import ProjectsCarousel from "./ProjectsCarousel.vue";
 import CollaboratorsSection from "./CollaboratorsSection.vue";
 import MobileProjects from "./MobileProjects.vue";
 
+const ColorScheme = require('color-scheme');
+
 export default {
   name: "HomePage",
   components: {
@@ -148,13 +187,78 @@ export default {
       textColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
       svgColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
       visionColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
+      selectedScheme: "mono",
+      selectedHue: "0",
+      selectedFilter: "default",
+      selectedDistance: 0,
+      selectedVariation: 0,
+      totalVariations: 1,
+      multiple: 1
     };
   },
-  computed: {
-    outputColor() {
-      return this.buttonColor;
+  watch: {
+    selectedScheme: function(newval){
+      if (newval == "mono")
+      {
+        this.multiple = 1
+        this.totalVariations = 1
+        this.selectedVariation = 0
+      }
+      if (newval == "tetrade")
+      {
+        this.multiple = 4
+        this.totalVariations = 4
+        this.selectedVariation = 0
+      }
+      this.changeColors()
     },
+    selectedFilter: function(){
+      this.changeColors()
+    },
+    selectedVariation: function(){
+      this.changeColors()
+    },
+    selectedHue: function(){
+      this.changeColors()
+    },
+    selectedDistance: function(){
+      this.changeColors()
+    }
   },
+  methods:{
+    changeColors: function (){
+      let scheme = new ColorScheme;
+      if (this.selectedScheme == "mono")
+      {
+        scheme.from_hue(this.selectedHue).scheme(this.selectedScheme).variation(this.selectedFilter);
+      }
+      else if (this.selectedScheme === "tetrade"){
+        scheme.from_hue(this.selectedHue).scheme(this.selectedScheme).distance(this.selectedDistance/100).variation(this.selectedFilter);
+      }
+      let colors = scheme.colors();
+
+
+      // console.log((0 * this.multiple) + this.selectedVariation, (1 * this.multiple) + this.selectedVariation, (2 * this.multiple) + this.selectedVariation, (3 * this.multiple) + this.selectedVariation);
+
+      this.buttonColor = `#${colors[(0 * this.multiple) + this.selectedVariation]}`;
+      this.textColor = `#${colors[(1 * this.multiple) + this.selectedVariation]}`;
+      this.svgColor = `#${colors[(2 * this.multiple) + this.selectedVariation]}`;
+      this.visionColor = `#${colors[(3 * this.multiple) + this.selectedVariation]}`;
+    }
+  },
+  mounted() {
+    let scheme = new ColorScheme;
+    let rand = Math.floor(Math.random() * 359)
+    // console.log(rand)
+    scheme.from_hue(rand).scheme('contrast').variation('pastel');
+    let colors = scheme.colors();
+    // console.log(colors);
+
+    this.buttonColor = `#${colors[0]}`;
+    this.textColor = `#${colors[2]}`;
+    this.svgColor = `#${colors[4]}`;
+    this.visionColor = `#${colors[6]}`;
+  }
 };
 </script>
 
