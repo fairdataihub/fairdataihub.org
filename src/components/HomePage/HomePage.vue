@@ -189,7 +189,7 @@ export default {
       visionColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
       selectedScheme: "tetrade",
       selectedHue: "180",
-      selectedFilter: "hard",
+      selectedFilter: "default",
       selectedDistance: 50,
       selectedVariation: 1,
       totalVariations: 4,
@@ -250,6 +250,7 @@ export default {
     let scheme = new ColorScheme;
     let rand = Math.floor(Math.random() * 359)
     this.selectedHue = rand
+    this.selectedDistance = Math.floor(Math.random() * 100)
     // console.log(rand)
     scheme.from_hue(rand).scheme('contrast').variation('pastel');
     let colors = scheme.colors();
