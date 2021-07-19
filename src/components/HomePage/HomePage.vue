@@ -187,13 +187,13 @@ export default {
       textColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
       svgColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
       visionColor: "#" + Math.floor(Math.random() * 16777215).toString(16),
-      selectedScheme: "mono",
-      selectedHue: "0",
-      selectedFilter: "default",
-      selectedDistance: 0,
-      selectedVariation: 0,
-      totalVariations: 1,
-      multiple: 1
+      selectedScheme: "tetrade",
+      selectedHue: "180",
+      selectedFilter: "hard",
+      selectedDistance: 50,
+      selectedVariation: 1,
+      totalVariations: 4,
+      multiple: 4
     };
   },
   watch: {
