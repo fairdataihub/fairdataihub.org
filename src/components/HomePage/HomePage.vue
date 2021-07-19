@@ -249,6 +249,7 @@ export default {
   mounted() {
     let scheme = new ColorScheme;
     let rand = Math.floor(Math.random() * 359)
+    this.selectedHue = rand
     // console.log(rand)
     scheme.from_hue(rand).scheme('contrast').variation('pastel');
     let colors = scheme.colors();
