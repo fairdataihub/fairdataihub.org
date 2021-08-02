@@ -27,7 +27,7 @@
       </p>
       <p
         class="
-          font-lato
+          font-asap
           max-w-2xl
           text-xl
           sm:text-xl
@@ -91,7 +91,7 @@
               sm:text-base
               text-black
               dark:text-white
-              font-lato
+              font-asap
             "
           >
             {{ feature.description }}

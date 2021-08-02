@@ -15,10 +15,41 @@
           >
             <strong> Need Help? Contact Us. </strong>
           </div>
-          <h1 class="text-center font-lato text-xl dark:text-gray-50 text-bold">
-            11107 Roselle St, San Diego, CA 92121 | info@fairdatahub.org | +1
-            (555) 555-5555
-          </h1>
+          <div
+            class="
+              flex flex-col
+              sm:flex-row
+              divide-gray-500 divide-x-0
+              sm:divide-x
+            "
+          >
+            <h1
+              class="
+                text-center
+                font-lato
+                text-xl
+                dark:text-gray-50
+                text-bold
+                px-2
+                py-1
+              "
+            >
+              11107 Roselle St, San Diego, CA 92121
+            </h1>
+            <h1
+              class="
+                text-center
+                font-lato
+                text-xl
+                dark:text-gray-50
+                text-bold
+                px-2
+                py-1
+              "
+            >
+              info@fairdatahub.org
+            </h1>
+          </div>
         </div>
       </div>
 

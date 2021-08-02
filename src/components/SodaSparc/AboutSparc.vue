@@ -40,7 +40,7 @@
                   w-full
                   text-lg
                   sm:text-base
-                  font-lato
+                  font-asap
                   text-black
                   dark:text-white
                 "
@@ -81,7 +81,7 @@
                   w-full
                   text-lg
                   sm:text-base
-                  font-lato
+                  font-asap
                   text-black
                   dark:text-white
                 "
@@ -160,7 +160,7 @@
                     <p
                       class="
                         ml-2
-                        font-lato font-medium
+                        font-asap font-normal
                         text-lg
                         dark:text-gray-50
                       "
@@ -194,7 +194,7 @@
                     <p
                       class="
                         ml-2
-                        font-lato
+                        font-asap font-normal
                         text-lg text-base
                         dark:text-gray-50
                       "
@@ -231,7 +231,7 @@
                     <p
                       class="
                         ml-2
-                        font-lato font-medium
+                        font-asap font-normal
                         text-lg
                         dark:text-gray-50
                       "

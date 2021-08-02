@@ -8,7 +8,7 @@
     <base-docs-subtitle> Background </base-docs-subtitle>
 
     <div class="my-4">
-      <p class="font-sans text-black dark:text-white mb-2">
+      <p class="font-asap text-black dark:text-white mb-2">
         With this feature, you can upload a data from your computer on to a
         Pennsieve dataset (with folder structure preserved).
       </p>

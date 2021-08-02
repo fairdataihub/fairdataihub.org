@@ -88,7 +88,7 @@
                   class="
                     w-full
                     text-base
-                    font-lato
+                    font-asap
                     text-black
                     dark:text-gray-50
                   "

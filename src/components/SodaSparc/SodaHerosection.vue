@@ -63,7 +63,7 @@
               leading-relaxed
               text-center text-base
               w-full
-              font-lato
+              font-asap
               text-black
               dark:text-white
             "

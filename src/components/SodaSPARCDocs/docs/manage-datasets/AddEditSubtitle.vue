@@ -7,7 +7,7 @@
     <base-docs-subtitle> Background </base-docs-subtitle>
 
     <div class="my-2">
-      <p class="font-sans text-black dark:text-white mb-2">
+      <p class="font-asap text-black dark:text-white mb-2">
         All SPARC datasets must have the following metadata on Pennsieve:
         subtitle, description, banner image, and license. This interface allows
         you to easily add a subtitle to your dataset. This subtitle will become

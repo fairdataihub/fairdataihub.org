@@ -65,7 +65,7 @@
 }
 
 .p-parent-div {
-  @apply my-2 font-lato text-black dark:text-white;
+  @apply my-2 font-asap text-black dark:text-white;
 }
 
 .img-parent-div {
@@ -81,5 +81,5 @@
 }
 
 .docs-ul {
-  @apply ml-4 mb-2 font-lato text-black dark:text-white;
+  @apply ml-4 mb-2 font-asap text-black dark:text-white;
 }

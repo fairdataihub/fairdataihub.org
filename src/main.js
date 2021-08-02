@@ -59,6 +59,8 @@ import PennsieveAgentAlreadyRunning from "./components/SodaSPARCDocs/docs/common
 import SendingLogFiles from "./components/SodaSPARCDocs/docs/common-errors/SendingLogFiles.vue";
 import IssuesHiddenFilesFolders from "./components/SodaSPARCDocs/docs/common-errors/IssuesHiddenFilesFolders.vue";
 
+import KnowMore from "./components/KnowMore/KnowMore.vue";
+
 const router = createRouter({
   history: createWebHistory(),
   scrollBehavior: function (to) {
@@ -76,6 +78,7 @@ const router = createRouter({
     { path: "/home", component: HomePage },
     { path: "/team", component: TheTeam },
     { path: "/sodasparc", component: SodaSparc },
+    { path: "/knowmore", component: KnowMore },
     { path: "/sodasparc/docs", redirect: "/sodasparc/docs/User-Interface" },
     {
       path: "/sodasparc/docs",

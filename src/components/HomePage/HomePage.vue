@@ -143,7 +143,10 @@
       <base-section
         class="bg-gray-50 dark:bg-dark-background-2 py-10 block sm:hidden"
       >
-        <mobile-projects :buttonColor="buttonColor"></mobile-projects>
+        <mobile-projects
+          :buttonColor="buttonColor"
+          :projectsList="projectsList"
+        ></mobile-projects>
       </base-section>
 
       <!-- Desktop projects section -->
@@ -153,6 +156,7 @@
         <projects-carousel
           :buttonColor="buttonColor"
           :textColor="textColor"
+          :projectsList="projectsList"
         ></projects-carousel>
       </base-section>
 
@@ -221,6 +225,40 @@ export default {
       selectedVariation: 1,
       totalVariations: 4,
       multiple: 4,
+      projectsList: [
+        {
+          name: "SODA for SPARC",
+          imageUrl:
+            "https://raw.githubusercontent.com/bvhpatel/SODA/6c9c10c398e8845c57279969f9b9fe25e1c21887/src/assets/logo-svg/Logo-soda-with-circle.svg",
+          description:
+            "SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators and thus promote the FAIR Data Principles.",
+          page: "/sodasparc",
+        },
+        {
+          name: "KnowMore",
+          imageUrl:
+            "https://github.com/SPARC-FAIR-Codeathon/KnowMore/raw/main/docs/kmlogo-with-text3.png",
+          description:
+            "KnowMore is an automated knowledge discovery tool integrated within the SPARC Portal that allows users of the portal to visualize, in just a few clicks, potential similarities, differences, and connections between multiple SPARC datasets of their choice.",
+          page: "/knowmore",
+        },
+        {
+          name: "SPARClink",
+          imageUrl:
+            "https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/logo.svg",
+          description:
+            "SPARClink is a system that queries publications using open source tools and platforms and create an interactable visualization that showcases the impact that SPARC and FAIR data generation practices have in advancing the field of bioelectronic medicine.",
+          page: "/sparclink",
+        },
+        {
+          name: "AQUA",
+          imageUrl:
+            "https://github.com/SPARC-FAIR-Codeathon/aqua/raw/main/src/assets/images/logo_aqua-1.jpg",
+          description:
+            "AQUA (Advanced QUery Architecture for the SPARC Portal) is an application that improves the SPARC Portal by making the search engine smarter at reading and understanding user search keywords, enhancing the result display feature of the SPARC Portal, and providing users with better result filtering and sorting options.",
+          page: "/aqua",
+        },
+      ],
     };
   },
   watch: {

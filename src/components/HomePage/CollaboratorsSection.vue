@@ -14,7 +14,7 @@
       >
         Collaborators
       </p>
-      <p class="w-full font-lato text-xl dark:text-gray-50 text-center">
+      <p class="w-full font-asap text-xl dark:text-gray-50 text-center">
         Some of the amazing organizations and institutions where our products
         make a difference
       </p>

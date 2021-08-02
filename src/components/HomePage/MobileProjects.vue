@@ -40,13 +40,28 @@
         These are the projects we are working on at the moment.
       </p>
     </div>
-    <section class="text-gray-600 w-full body-font px-2 mb-4">
-      <div class="container mx-auto flex px-5 flex-col-reverse items-center">
+    <section class="text-gray-600 w-full body-font px-2 mb-4 divide-y px-2">
+      <div
+        class="
+          container
+          mx-auto
+          flex
+          px-5
+          flex-col-reverse
+          items-center
+          justify-start
+          my-4
+          pb-10
+        "
+        v-for="project in projectsList"
+        :key="project.name"
+      >
         <!-- text div -->
         <div class="flex flex-col my-1 items-center text-center">
           <h3
             class="
               font-inter font-semibold
+              hidden
               text-4xl
               w-full
               mb-4
@@ -54,7 +69,7 @@
               dark:text-white
             "
           >
-            SODA for SPARC
+            {{ project.name }}
           </h3>
 
           <p
@@ -62,61 +77,15 @@
               w-full
               mb-8
               text-left text-xl
-              font-lato
+              font-asap
               text-black
               dark:text-white
             "
           >
-            SODA (Software to Organize Data Automatically) for SPARC is a
-            desktop software intended to facilitate the data organization and
-            submission process for SPARC investigators and thus promote the FAIR
-            Data Principles.
+            {{ project.description }}
           </p>
           <div class="w-full flex justify-center">
-            <!-- <a
-              href="https://github.com/bvhpatel/SODA#Downloading-soda"
-              target="_blank"
-            >
-              <button
-                class="
-                  hidden
-                  sm:inline-flex
-                  text-white
-                  border-0
-                  py-2
-                  px-6
-                  focus:outline-none
-                  bg-indigo-500
-                  hover:bg-indigo-600
-                  rounded
-                  text-lg
-                  transition
-                "
-              >
-                Download now (github)
-              </button>
-            </a> -->
-            <!-- <router-link to="/sodasparc/docs/Download-soda">
-              <button
-                class="
-                  hidden
-                  sm:inline-flex
-                  text-white
-                  bg-primary
-                  hover:bg-blue-600
-                  border-0
-                  py-2
-                  px-6
-                  focus:outline-none
-                  rounded
-                  text-base
-                  transition
-                "
-              >
-                Download now
-              </button>
-            </router-link> -->
-            <router-link to="/sodasparc">
+            <router-link :to="project.page">
               <button
                 class="
                   sm:ml-4
@@ -132,17 +101,17 @@
                 "
                 :style="'background-color: ' + buttonColor + ';'"
               >
-                Learn more about SODA for SPARC
+                Learn more about {{ project.name }}
               </button>
             </router-link>
           </div>
         </div>
         <!-- image div -->
-        <div class="w-5/6 py-4 my-2 flex justify-center">
+        <div class="pt-10 pb-6 my-2 w-full">
           <img
-            class="object-cover object-center rounded"
+            class="object-cover rounded"
             alt="SODA for SPARC logo"
-            src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
+            :src="project.imageUrl"
           />
         </div>
       </div>
@@ -153,7 +122,7 @@
 <script>
 export default {
   name: "MobileProjects",
-  props: ["buttonColor"],
+  props: ["buttonColor", "projectsList"],
   data() {
     return {
       sodaForSPARCData: [

@@ -53,7 +53,7 @@
         <p
           class="
             text-xl
-            font-lato
+            font-asap
             sm:text-lg
             md:text-xl
             lg:text-2xl
@@ -75,7 +75,7 @@ export default {
       statsList: [
         { name: "Files touched", value: "7800+" },
         { name: "Datasets modified", value: "60+" },
-        { name: "Data uploaded", value: "1.8TB+" },
+        { name: "Data uploaded", value: "2.6TB+" },
       ],
     };
   },

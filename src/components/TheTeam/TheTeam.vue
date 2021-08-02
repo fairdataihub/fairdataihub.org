@@ -29,7 +29,7 @@
           >
             About Us
           </h1>
-          <p class="font-lato text-black dark:text-white text-xl sm:text-lg">
+          <p class="font-asap text-black dark:text-white text-xl sm:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             laborum commodi corporis tempore dolores saepe quisquam ad inventore
             dignissimos, modi a enim, eaque nulla ex delectus! Dolor,
@@ -58,8 +58,8 @@ export default {
     return {
       teamsList: [
         {
-          id: "Judy-Álvarez",
-          name: "Judy Álvarez",
+          id: "Bhavesh-Patel",
+          name: "Bhavesh Patel",
           title: "Braindance editor",
           bio: "Judy Álvarez is a skilled braindance technician and a member of the Mox. She has her own apartment in northeastern Kabuki, Watson District.",
           image:
@@ -68,20 +68,20 @@ export default {
           borderBottom: false,
           twitter: {
             show: true,
-            link: "https://twitter.com/SVLeonard",
+            link: "https://twitter.com/bvhpatel",
           },
           github: {
             show: true,
-            link: "https://github.com/anaisbetts",
+            link: "https://github.com/bvhpatel",
           },
           linkedin: {
             show: true,
-            link: "https://www.linkedin.com/in/leslie-with-8039a1b7?trk=people-guest_people_search-card",
+            link: "https://www.linkedin.com/in/bvhpatel",
           },
         },
         {
-          id: "Panam-Palmer",
-          name: "Panam Palmer",
+          id: "Tram-Ngo",
+          name: "Tram Ngo",
           title: "Aldecaldo leader",
           bio: "Panam Palmer is introduced as a former member of the Aldecaldos nomad clan, who, after a family dispute, decided to live a more independent life as a mercenary.",
           image:
@@ -90,21 +90,20 @@ export default {
           borderBottom: false,
           twitter: {
             show: false,
-            link: "https://twitter.com/eleanorraybooks",
+            link: "",
           },
           github: {
             show: true,
-            link: "https://github.com/bendemboski",
+            link: "https://github.com/tramngo1603",
           },
           linkedin: {
-            show: false,
-            link: "https://www.linkedin.com/in/leslie-shaw-315565a?trk=people-guest_people_search-card",
+            show: true,
+            link: "https://www.linkedin.com/in/tramngo1603",
           },
         },
         {
-          id: "Hanako-Arasaka",
-
-          name: "Hanako Arasaka",
+          id: "Sanjay-Soundarajan",
+          name: "Sanjay Soundarajan",
           title: "VP, User Experience",
           bio: "Hanako Arasaka is the third child and only daughter to Saburo. Hanako is a skilled netrunner and the head of the Kiji Faction of the Arasaka Corporation. She is loved by many people and often described as sweet and beautiful in the eyes of many Arasaka employees.",
           image:
@@ -112,21 +111,20 @@ export default {
           borderTop: true,
           borderBottom: false,
           twitter: {
-            show: false,
-            link: "https://twitter.com/eleanorraybooks",
+            show: true,
+            link: "https://twitter.com/megasanjay",
           },
           github: {
             show: true,
-            link: "https://github.com/bendemboski",
+            link: "https://github.com/megasanjay",
           },
           linkedin: {
             show: true,
-            link: "https://www.linkedin.com/in/leslie-shaw-315565a?trk=people-guest_people_search-card",
+            link: "https://www.linkedin.com/in/sanjay-soundarajan",
           },
         },
         {
           id: "Rogue-Amendiares",
-
           name: "Rogue Amendiares",
           title: "Queen of fixers",
           bio: "Rogue Amendiares used to be a solo who went on to become the best fixer in Night City by 2077. She is the owner of the famous Afterlife nightclub.",

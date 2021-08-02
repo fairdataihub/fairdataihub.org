@@ -10,7 +10,7 @@
     </base-docs-subtitle>
     <h3
       class="
-        font-lato
+        font-asap
         text-base text-black
         dark:text-white
         print:text-sm print:dark:text-black
@@ -49,7 +49,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -62,7 +62,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -86,7 +86,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -100,7 +100,7 @@
                   <span
                     class="
                       print:text-sm
-                      font-lato
+                      font-asap
                       print:text-black print:dark:text-black
                     "
                     >Pennsieve</span
@@ -110,7 +110,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -123,7 +123,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                     >support@pennsieve.net</span
@@ -131,7 +131,7 @@
                 </a>
                 <span
                   class="
-                    font-lato
+                    font-asap
                     text-black
                     dark:text-white
                     print:text-sm print:dark:text-black
@@ -155,7 +155,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -169,7 +169,7 @@
                   <span
                     class="
                       print:text-sm print:text-black print:dark:text-black
-                      font-lato
+                      font-asap
                     "
                     >Pennsieve agent</span
                   >
@@ -178,7 +178,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -200,7 +200,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -242,7 +242,7 @@
                   <span
                     class="
                       print:text-sm print:text-black print:dark:text-black
-                      font-lato
+                      font-asap
                     "
                   >
                     Connect your Pennsieve account with SODA.
@@ -252,7 +252,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -281,7 +281,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -306,7 +306,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -331,7 +331,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -341,7 +341,7 @@
                 </router-link>
                 <span
                   class="
-                    font-lato
+                    font-asap
                     text-black
                     dark:text-white
                     print:text-sm print:dark:text-black
@@ -367,7 +367,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -392,7 +392,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -417,7 +417,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -442,7 +442,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -481,7 +481,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -494,7 +494,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -519,7 +519,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -544,7 +544,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -566,7 +566,7 @@
                 <span
                   class="
                     text-black
-                    font-lato
+                    font-asap
                     dark:text-white
                     print:text-sm print:dark:text-black
                   "
@@ -579,7 +579,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -590,7 +590,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -613,7 +613,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -625,7 +625,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -636,7 +636,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                   >, more support will be available in SODA soon - note:
@@ -676,7 +676,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -718,7 +718,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -730,7 +730,7 @@
                   class="
                     text-black
                     dark:text-white
-                    font-lato
+                    font-asap
                     print:text-sm print:dark:text-black
                   "
                 >
@@ -772,7 +772,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
@@ -797,7 +797,7 @@
                 >
                   <span
                     class="
-                      font-lato
+                      font-asap
                       print:text-sm print:text-black print:dark:text-black
                     "
                   >
