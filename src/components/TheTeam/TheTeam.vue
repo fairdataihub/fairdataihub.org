@@ -29,7 +29,7 @@
           >
             About Us
           </h1>
-          <p class="font-fsans text-black dark:text-white text-xl sm:text-lg">
+          <p class="font-lato text-black dark:text-white text-xl sm:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
             laborum commodi corporis tempore dolores saepe quisquam ad inventore
             dignissimos, modi a enim, eaque nulla ex delectus! Dolor,

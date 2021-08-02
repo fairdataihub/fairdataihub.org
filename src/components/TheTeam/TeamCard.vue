@@ -26,7 +26,7 @@
       </h2>
       <p
         class="
-          font-fsans
+          font-lato
           text-black
           dark:text-white
           text-lg

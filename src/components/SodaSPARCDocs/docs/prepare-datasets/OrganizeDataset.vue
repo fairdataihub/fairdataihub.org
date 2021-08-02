@@ -109,6 +109,6 @@ export default {
 
 <style scoped language="postcss">
 ul {
-  @apply mb-2 font-fsans text-black dark:text-white;
+  @apply mb-2 font-lato text-black dark:text-white;
 }
 </style>

@@ -23,7 +23,7 @@
             mt-2
             sm:mt-0
             w-full
-            font-fsans font-medium
+            font-lato font-medium
             text-xl
             sm:text-base
             md:text-lg

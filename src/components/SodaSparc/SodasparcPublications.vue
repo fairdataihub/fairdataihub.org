@@ -29,9 +29,9 @@
         </a>
 
         <div class="bg-gray-100 dark:bg-gray-700 rounded p-3 m2-3 relative">
-          <p class="font-fsans text-xs text-gray-400">Citation</p>
+          <p class="font-lato text-xs text-gray-400">Citation</p>
           <p
-            class="font-fsans text-black text-base dark:text-white"
+            class="font-lato text-black text-base dark:text-white"
             v-html="item.citation"
           ></p>
         </div>

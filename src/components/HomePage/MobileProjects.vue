@@ -62,7 +62,7 @@
               w-full
               mb-8
               text-left text-xl
-              font-fsans
+              font-lato
               text-black
               dark:text-white
             "

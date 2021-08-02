@@ -344,7 +344,7 @@
             mb-6
             md:my-2
             w-full
-            font-fsans
+            font-lato
             text-left
             sm:text-center
             text-xl

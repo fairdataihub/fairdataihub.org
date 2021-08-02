@@ -15,11 +15,9 @@
           >
             <strong> Need Help? Contact Us. </strong>
           </div>
-          <h1
-            class="text-center font-fsans text-xl dark:text-gray-50 text-bold"
-          >
-            11107 Roselle St, San Diego, CA 92121 | abc@gmail.com | +1 (555)
-            555-5555
+          <h1 class="text-center font-lato text-xl dark:text-gray-50 text-bold">
+            11107 Roselle St, San Diego, CA 92121 | info@fairdatahub.org | +1
+            (555) 555-5555
           </h1>
         </div>
       </div>
@@ -34,8 +32,8 @@
           mx-auto
           flex
           items-center
-          sm:flex-row
           flex-col
+          sm:flex-row
         "
       >
         <div
@@ -63,22 +61,25 @@
               d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
             ></path>
           </svg>
-          <span class="font-inter ml-3 text-xl text-black dark:text-white"
-            >FairHub</span
-          >
+          <span class="font-inter ml-3 text-xl text-black dark:text-white">
+            Fair Data Hub
+          </span>
         </div>
-        <p
+
+        <div
           class="
-            font-inter
-            text-sm
             sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0
             mt-4
-            text-black
-            dark:text-white
+            self-center
           "
         >
-          © 2020 FairHub
-        </p>
+          <img
+            class="w-40 sm:w-36"
+            src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+            alt="Powered by Vercel"
+          />
+        </div>
+
         <span
           class="
             inline-flex

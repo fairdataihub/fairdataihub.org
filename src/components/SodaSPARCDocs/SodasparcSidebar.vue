@@ -41,7 +41,7 @@
                   rounded-lg
                 "
               >
-                <span class="font-fsans font-medium mx-1 text-sm">
+                <span class="font-lato font-medium mx-1 text-sm">
                   {{ subsection.subtitle }}
                 </span>
               </router-link>

@@ -33,7 +33,7 @@
           w-full
           max-w-2xl
           text-xl
-          font-fsans
+          font-lato
           dark:text-gray-50
           text-center
         "
@@ -61,7 +61,7 @@
         <p class="text-gray-600 dark:text-white">
           <span class="font-bold text-indigo-500 text-lg"> “ </span>
           <span
-            class="font-fsans text-black dark:text-gray-50 text-lg sm:text-base"
+            class="font-lato text-black dark:text-gray-50 text-lg sm:text-base"
           >
             {{ item.content }}
           </span>

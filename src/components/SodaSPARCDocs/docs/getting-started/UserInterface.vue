@@ -22,7 +22,7 @@
         v-for="item in notesList"
         :key="item.content"
         v-html="item.content"
-        class="font-fsans text-black dark:text-white"
+        class="font-lato text-black dark:text-white"
       ></li>
     </ul>
   </div>

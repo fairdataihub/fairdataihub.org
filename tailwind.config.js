@@ -15,8 +15,9 @@ module.exports = {
         "-1": "-1",
       },
       fontFamily: {
-        fsans: ["Lato"],
+        lato: ["Lato"],
         inter: ["Inter"],
+        asap: ["Asap"],
       },
       screens: {
         print: { raw: "print" },

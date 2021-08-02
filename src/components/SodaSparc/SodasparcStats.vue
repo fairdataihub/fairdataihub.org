@@ -40,7 +40,7 @@
         <p
           class="
             my-1
-            font-fsans font-bold
+            font-lato font-bold
             text-5xl
             sm:text-4xl
             md:text-5xl
@@ -53,7 +53,7 @@
         <p
           class="
             text-xl
-            font-fsans
+            font-lato
             sm:text-lg
             md:text-xl
             lg:text-2xl

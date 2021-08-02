@@ -35,7 +35,7 @@
               w-full
               text-lg
               sm:text-base
-              font-fsans
+              font-lato
               text-black
               dark:text-gray-50
             "
@@ -55,7 +55,7 @@
                   dark:text-indigo-400
                   items-center
                   text-xl
-                  font-fsans
+                  font-lato
                   sm:text-base
                 "
               >
@@ -73,7 +73,7 @@
               w-full
               text-lg
               sm:text-base
-              font-fsans
+              font-lato
               text-black
               dark:text-gray-50
             "

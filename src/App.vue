@@ -1,6 +1,8 @@
 <template>
   <the-navbar class="print:hidden"></the-navbar>
+
   <router-view></router-view>
+
   <the-footer class="print:hidden"></the-footer>
 </template>
 
