@@ -42,7 +42,7 @@
           >
             Sorry, this page isn&#x27;t available
           </h1>
-          <router-link to="/home">
+          <router-link to="/">
             <button
               type="button"
               class="

@@ -251,7 +251,7 @@
 
 <script>
 export default {
-  name: "AboutSparc",
+  name: "AboutSoda",
 };
 </script>
 

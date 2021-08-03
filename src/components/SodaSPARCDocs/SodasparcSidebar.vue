@@ -78,6 +78,6 @@ export default {
 
 <style lang="postcss" scoped>
 .router-link-active {
-  @apply bg-primary text-white;
+  @apply bg-light-accent text-white;
 }
 </style>

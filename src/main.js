@@ -74,8 +74,7 @@ const router = createRouter({
     }
   },
   routes: [
-    { path: "/", name: "root", redirect: "/home" },
-    { path: "/home", component: HomePage },
+    { path: "/", component: HomePage },
     { path: "/team", component: TheTeam },
     { path: "/sodasparc", component: SodaSparc },
     { path: "/knowmore", component: KnowMore },

@@ -29,14 +29,7 @@
         Testimonials
       </p>
       <p
-        class="
-          w-full
-          max-w-2xl
-          text-xl
-          font-asap
-          dark:text-gray-50
-          text-center
-        "
+        class="w-full max-w-2xl text-xl font-asap dark:text-gray-50 text-center"
       >
         See what people who use our products have to say about us.
       </p>
@@ -45,10 +38,11 @@
       <div
         class="
           bg-white
-          dark:bg-gray-600
+          dark:bg-gray-700
           md:w-64
           lg:w-72
           shadow-lg
+          dark:shadow-white
           mx-auto
           rounded-xl
           p-8
@@ -58,14 +52,14 @@
         v-for="item in testimonialsList"
         :key="item.name"
       >
-        <p class="text-gray-600 dark:text-white">
-          <span class="font-bold text-indigo-500 text-lg"> “ </span>
+        <p>
+          <span class="font-bold text-accent text-lg"> “ </span>
           <span
-            class="font-asap text-black dark:text-gray-50 text-lg sm:text-base"
+            class="font-asap text-black dark:text-white text-lg sm:text-base"
           >
             {{ item.content }}
           </span>
-          <span class="font-bold text-indigo-500 text-lg"> ” </span>
+          <span class="font-bold text-accent text-lg"> ” </span>
         </p>
         <div class="flex items-center mt-4">
           <a href="#" class="block relative">
@@ -90,8 +84,8 @@
                 dark:text-indigo-400
                 text-xl
                 sm:text-sm
+                text-accent
               "
-              :style="`color: ${textColor};`"
             >
               {{ item.name }}
             </span>

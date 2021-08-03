@@ -154,7 +154,6 @@
               width="89.1223"
               height="89.1223"
               transform="translate(24.19656 -198.80902) rotate(12.05764)"
-              :fill="svgColor"
             />
             <path
               id="ae36c3dd-7325-441a-986f-f572badd95bc"
@@ -273,7 +272,6 @@
                 y="19.76259"
                 width="310.7554"
                 height="147.7554"
-                :fill="svgColor"
               />
               <rect
                 id="ea8f1f59-00f0-4c1b-ada9-716e448c4de5"
@@ -298,7 +296,6 @@
                 y="270.71223"
                 width="310.7554"
                 height="147.7554"
-                :fill="svgColor"
               />
               <rect
                 id="b1bb1ad4-cb36-48f5-bc5b-cbf5d51e5b88"
@@ -379,8 +376,8 @@
                 shadow-md
                 focus:outline-none focus:ring-2 focus:ring-offset-2
                 rounded-lg
+                bg-button-background
               "
-              :style="'background-color: ' + buttonColor + ';'"
             >
               Meet the team
             </button>
@@ -394,7 +391,7 @@
 <script>
 export default {
   name: "AboutUs",
-  props: ["id", "buttonColor", "svgColor"],
+  props: ["id"],
 };
 </script>
 

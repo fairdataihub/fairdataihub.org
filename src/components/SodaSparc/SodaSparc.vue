@@ -5,7 +5,7 @@
     </base-section>
 
     <base-section class="bg-white dark:bg-dark-background py-10">
-      <about-sparc></about-sparc>
+      <about-soda></about-soda>
     </base-section>
 
     <base-section class="bg-white dark:bg-dark-background py-10">
@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import AboutSparc from "./AboutSparc.vue";
+import AboutSoda from "./AboutSoda.vue";
 import SodasparcStats from "./SodasparcStats.vue";
 import SodaHerosection from "./SodaHerosection.vue";
 import SodaTimeline from "./SodaTimeline.vue";
@@ -39,7 +39,7 @@ export default {
     TheFaq,
     SodaHerosection,
     SodaTimeline,
-    AboutSparc,
+    AboutSoda,
     SodasparcStats,
     SodasparcPublications,
   },

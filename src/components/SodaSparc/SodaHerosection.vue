@@ -100,12 +100,12 @@
                 hidden
                 sm:inline-flex
                 text-white
-                bg-primary
+                bg-button-background
                 border-0
                 py-2
                 px-6
                 focus:outline-none
-                hover:bg-indigo-600
+                hover:bg-gray-700
                 rounded
                 text-lg
               "
@@ -119,12 +119,12 @@
                   ml-4
                   inline-flex
                   text-white
-                  bg-primary
+                  bg-button-background
                   border-0
                   py-2
                   px-6
                   focus:outline-none
-                  hover:bg-gray-200
+                  hover:bg-gray-700
                   rounded
                   text-lg
                 "

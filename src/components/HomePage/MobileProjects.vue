@@ -40,7 +40,17 @@
         These are the projects we are working on at the moment.
       </p>
     </div>
-    <section class="text-gray-600 w-full body-font px-2 mb-4 divide-y px-2">
+    <section
+      class="
+        text-gray-600
+        w-full
+        body-font
+        px-2
+        mb-4
+        divide-y divide-gray-300
+        px-2
+      "
+    >
       <div
         class="
           container
@@ -98,8 +108,8 @@
                   rounded
                   text-lg
                   transition
+                  bg-button-background
                 "
-                :style="'background-color: ' + buttonColor + ';'"
               >
                 Learn more about {{ project.name }}
               </button>
@@ -122,7 +132,7 @@
 <script>
 export default {
   name: "MobileProjects",
-  props: ["buttonColor", "projectsList"],
+  props: ["projectsList"],
   data() {
     return {
       sodaForSPARCData: [

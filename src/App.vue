@@ -3,7 +3,7 @@
 
   <router-view></router-view>
 
-  <the-footer class="print:hidden"></the-footer>
+  <the-footer></the-footer>
 </template>
 
 <script>

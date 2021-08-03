@@ -103,7 +103,7 @@
           </div>
           <div class="hidden sm:block sm:mr-10">
             <div class="flex space-x-4">
-              <router-link to="/home" class="nav-bar-item"> Home </router-link>
+              <router-link to="/" class="nav-bar-item"> Home </router-link>
 
               <div href="#" class="nav-bar-item">Projects</div>
 
@@ -117,7 +117,7 @@
       <!-- Mobile menu, show/hide based on menu state. -->
       <div v-if="isMenuOpen" class="sm:hidden transition" id="mobile-menu">
         <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-700">
-          <router-link to="/home" class="mobile-nav-bar-item">
+          <router-link to="/" class="mobile-nav-bar-item">
             Home
           </router-link>
           <a href="#" class="mobile-nav-bar-item">Projects</a>

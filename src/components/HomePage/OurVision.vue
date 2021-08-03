@@ -60,8 +60,9 @@
                 w-12
                 rounded-md
                 text-white
+                bg-light-vision
+                dark:bg-dark-vision
               "
-              :style="'background-color: ' + visionColor + ';'"
             >
               <component
                 :is="feature.icon"
@@ -139,7 +140,6 @@ const features = [
 
 export default {
   name: "OurVision",
-  props: ["visionColor"],
   setup() {
     return {
       features,

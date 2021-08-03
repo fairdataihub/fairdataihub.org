@@ -61,7 +61,7 @@
 }
 
 .nav-bar-item.router-link-active {
-  @apply border-b-2  border-gray-900 dark:border-white !important;
+  @apply border-b-2  border-light-accent dark:border-white !important;
 }
 
 .p-parent-div {

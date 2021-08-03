@@ -45,7 +45,7 @@
                   w-10
                   h-10
                   rounded-full
-                  bg-indigo-500
+                  bg-light-accent
                   inline-flex
                   items-center
                   justify-center

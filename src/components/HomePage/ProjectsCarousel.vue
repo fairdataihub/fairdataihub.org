@@ -28,7 +28,7 @@
       autoplay
       :pause-on-hover="true"
       :class="`no-shadow`"
-      :fixed-height="`60vh`"
+      :fixed-height="`55vh`"
     >
       <vueper-slide v-for="project in projectsList" :key="project.name">
         <template v-slot:content>
@@ -116,8 +116,8 @@
                         md:text-base
                         lg:text-lg
                         transition
+                        bg-button-background
                       "
-                      :style="'background-color: ' + buttonColor + ';'"
                     >
                       Learn more about {{ project.name }}
                     </button>
@@ -170,7 +170,7 @@ export default {
     VueperSlides,
     VueperSlide,
   },
-  props: ["buttonColor", "textColor", "projectsList"],
+  props: ["projectsList"],
   data() {
     return {};
   },
@@ -187,10 +187,10 @@ export default {
 }
 
 .vueperslides__bullet--active .default {
-  @apply bg-green-400 opacity-50 hover:opacity-80 h-1.5 !important;
+  @apply bg-light-accent opacity-80 hover:opacity-80 h-1.5 !important;
 }
 
 .vueperslides__arrow {
-  @apply text-purple-600 dark:text-purple-400 opacity-10 hover:opacity-100 transition-all;
+  @apply text-accent opacity-10 hover:opacity-100 transition-all;
 }
 </style>

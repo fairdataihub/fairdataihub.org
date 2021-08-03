@@ -22,18 +22,30 @@ module.exports = {
       screens: {
         print: { raw: "print" },
       },
+      boxShadow: {
+        white:
+          "0 10px 15px -3px rgba(255,255,255, 0.1),  0 4px 6px -2px rgba(255,255,255, 0.05)",
+      },
     },
     textColor: (theme) => ({
       ...theme("colors"),
       primary: "#0077b6",
+      accent: "#CB128D",
     }),
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      primary: "#E76F51",
-      "dark-primary": "#00b4d8",
+      "light-accent": "#CD329F",
+      "dark-accent": "#00b4d8",
+      "light-vision": "#000",
+      "dark-vision": "#fff",
       "light-background": "#F5F5F5",
+      "button-background": "#CD329F",
       "dark-background": "#1F1E28",
       "dark-background-2": "#2a2937",
+    }),
+    borderColor: (theme) => ({
+      ...theme("colors"),
+      "light-accent": "#CD329F",
     }),
     fontFamily: {
       sans: [...defaultTheme.fontFamily.sans],
