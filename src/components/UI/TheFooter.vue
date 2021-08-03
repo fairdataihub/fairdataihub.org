@@ -340,7 +340,7 @@
             </svg>
           </a>
           <a
-            href="https://github.com/bvhpatel/SODA"
+            href="https://github.com/fairdatahub"
             target="_blank"
             class="
               mx-2

@@ -7,7 +7,7 @@
         <hero-section></hero-section>
       </base-section>
 
-      <base-section class="bg-gray-50 dark:bg-dark-background-2 py-10">
+      <base-section class="bg-gray-50 dark:bg-dark-background py-10">
         <our-vision></our-vision>
       </base-section>
 

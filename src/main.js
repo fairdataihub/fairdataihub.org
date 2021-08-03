@@ -61,6 +61,9 @@ import IssuesHiddenFilesFolders from "./components/SodaSPARCDocs/docs/common-err
 
 import KnowMore from "./components/KnowMore/KnowMore.vue";
 
+import SparcLink from "./components/SparcLink/SparcLink.vue";
+import TheAqua from "./components/Aqua/TheAqua.vue";
+
 const router = createRouter({
   history: createWebHistory(),
   scrollBehavior: function (to) {
@@ -78,6 +81,8 @@ const router = createRouter({
     { path: "/team", component: TheTeam },
     { path: "/sodasparc", component: SodaSparc },
     { path: "/knowmore", component: KnowMore },
+    { path: "/sparclink", component: SparcLink },
+    { path: "/aqua", component: TheAqua },
     { path: "/sodasparc/docs", redirect: "/sodasparc/docs/User-Interface" },
     {
       path: "/sodasparc/docs",
