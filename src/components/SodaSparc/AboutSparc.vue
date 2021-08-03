@@ -147,7 +147,7 @@
                     "
                   >
                     <img
-                      src="https://images.generated.photos/ADbBAzeK5oWF2oDJWfZ2-Wq3TBjqex-dxZVQGD5LPJY/rs:fit:512:512/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAxMzk2ODBfMDUz/NjY1Nl8wNzAxMDQ2/LmpwZw.jpg"
+                      src="https://www.tailwind-kit.com/images/person/4.jpg"
                       alt=""
                       class="
                         w-10
