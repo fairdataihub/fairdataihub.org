@@ -108,7 +108,7 @@
                   rounded
                   text-lg
                   transition
-                  bg-button-background
+                  bg-button-light-background dark:bg-button-dark-background
                 "
               >
                 Learn more about {{ project.name }}

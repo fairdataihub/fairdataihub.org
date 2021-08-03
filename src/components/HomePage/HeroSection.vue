@@ -15,7 +15,9 @@
             text-left
           "
         >
-          Scientific Data Curation and Sharing Made Easy
+          Scientific
+          <span class="text-accent"> data </span>
+          curation and sharing made easy
         </h1>
 
         <p

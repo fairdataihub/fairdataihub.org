@@ -33,12 +33,11 @@
         <collaborators-section></collaborators-section>
       </base-section>
 
-      <base-section class="bg-gray-50 dark:bg-dark-background-2 py-10">
+      <!-- <base-section class="bg-gray-50 dark:bg-dark-background-2 py-10">
         <homepage-testimonials></homepage-testimonials>
-      </base-section>
+      </base-section> -->
     </div>
   </div>
-  <!-- Add a pull from google tags component -->
 </template>
 
 <script>
@@ -46,7 +45,7 @@ import BaseSection from "../UI/BaseSection.vue";
 import HeroSection from "./HeroSection.vue";
 import OurVision from "./OurVision.vue";
 import AboutUs from "./AboutUs.vue";
-import HomepageTestimonials from "./HomepageTestimonials.vue";
+// import HomepageTestimonials from "./HomepageTestimonials.vue";
 import ProjectsCarousel from "./ProjectsCarousel.vue";
 import CollaboratorsSection from "./CollaboratorsSection.vue";
 import MobileProjects from "./MobileProjects.vue";
@@ -58,7 +57,7 @@ export default {
     HeroSection,
     OurVision,
     AboutUs,
-    HomepageTestimonials,
+    // HomepageTestimonials,
     ProjectsCarousel,
     CollaboratorsSection,
     MobileProjects,

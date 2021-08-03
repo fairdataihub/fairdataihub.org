@@ -93,8 +93,7 @@
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                   target="_blank"
                   class="
-                    text-indigo-600
-                    dark:text-indigo-400
+                    text-accent
                     inline-flex
                     items-center
                     text-lg
@@ -148,7 +147,7 @@
                   >
                     <img
                       src="https://www.tailwind-kit.com/images/person/4.jpg"
-                      alt=""
+                      alt="Bhavesh Patel profile picture"
                       class="
                         w-10
                         h-10
@@ -182,7 +181,7 @@
                   >
                     <img
                       src="https://www.tailwind-kit.com/images/person/9.jpg"
-                      alt=""
+                      alt="Tram Ngo profile picture"
                       class="
                         w-10
                         h-10
@@ -219,7 +218,7 @@
                   >
                     <img
                       src="https://www.tailwind-kit.com/images/person/10.jpg"
-                      alt=""
+                      alt="Sanjay Soundarajan profile picture"
                       class="
                         w-10
                         h-10

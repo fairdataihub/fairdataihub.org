@@ -116,7 +116,14 @@
                         md:text-base
                         lg:text-lg
                         transition
-                        bg-button-background
+                        bg-black
+                        dark:bg-pink-600
+                        text-white
+                        ring-2 ring-offset-2 ring-transparent
+                        dark:ring-offset-transparent
+                hover:ring-pink-600
+                dark:hover:ring-offset-1 dark:hover:ring-white
+                focus:ring-pink-600
                       "
                     >
                       Learn more about {{ project.name }}
@@ -187,10 +194,10 @@ export default {
 }
 
 .vueperslides__bullet--active .default {
-  @apply bg-light-accent opacity-80 hover:opacity-80 h-1.5 !important;
+  @apply bg-light-accent opacity-100 h-1.5 !important;
 }
 
 .vueperslides__arrow {
-  @apply text-accent opacity-10 hover:opacity-100 transition-all;
+  @apply text-accent opacity-30 hover:opacity-100 transition-all;
 }
 </style>

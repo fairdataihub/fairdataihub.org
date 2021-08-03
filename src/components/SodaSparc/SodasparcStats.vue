@@ -56,6 +56,7 @@
             font-asap
             sm:text-lg
             md:text-xl
+            dark:text-white
             lg:text-2xl
             text-center text-black
           "

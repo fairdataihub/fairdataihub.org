@@ -99,15 +99,20 @@
               class="
                 hidden
                 sm:inline-flex
-                text-white
-                bg-button-background
                 border-0
                 py-2
                 px-6
                 focus:outline-none
-                hover:bg-gray-700
                 rounded
                 text-lg
+                bg-black
+                dark:bg-pink-600
+                text-white
+                ring-2 ring-offset-2 ring-transparent
+                dark:ring-offset-transparent
+                hover:ring-pink-600
+                dark:hover:ring-offset-1 dark:hover:ring-white
+                focus:ring-pink-600
               "
               @click="downloadSODA"
             >
@@ -118,15 +123,19 @@
                 class="
                   ml-4
                   inline-flex
-                  text-white
-                  bg-button-background
-                  border-0
                   py-2
                   px-6
                   focus:outline-none
-                  hover:bg-gray-700
                   rounded
                   text-lg
+                  bg-black
+                  dark:bg-pink-600
+                  text-white
+                  ring-2 ring-offset-2 ring-transparent
+                  dark:ring-offset-transparent
+                  hover:ring-pink-600
+                  dark:hover:ring-offset-1 dark:hover:ring-white
+                  focus:ring-pink-600
                 "
               >
                 Explore the docs

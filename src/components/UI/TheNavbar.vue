@@ -218,7 +218,7 @@
                   :to="item.href"
                   :id="item.id"
                   :class="[
-                    `text-black dark:text-white px-3 mx-1 py-2 text-sm font-inter font-medium `,
+                    `text-black dark:text-white sm:px-2 lg:px-3 mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
                     isSodaSparc(item.id),
                   ]"
                 >
@@ -511,6 +511,9 @@ const navigation = [
   { name: "Home", href: "/", id: "nav-home" },
   { name: "Meet The Team", href: "/team", id: "nav-team" },
   { name: "SODA for SPARC", href: "/sodasparc", id: "nav-sodasparc" },
+  { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
+  { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
+  { name: "Aqua", href: "/aqua", id: "nav-aqua" },
 ];
 
 window.addEventListener("scroll", () => {
@@ -590,7 +593,7 @@ export default {
         this.$route.path.search("sodasparc") != -1 &&
         element === "nav-sodasparc"
       ) {
-        return "border-b-2 border-light-accent dark:border-white !important;";
+        return "border-b-2 border-light-accent  !important;";
       }
       return "nav-bar-item";
     },

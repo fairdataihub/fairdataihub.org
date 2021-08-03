@@ -365,18 +365,21 @@
               class="
                 py-4
                 px-6
-                focus:ring-indigo-500 focus:ring-offset-indigo-200
-                text-white
                 w-max-content
                 transition
-                ease-in
+                ease-in-out
                 duration-200
                 text-center text-base
+                rounded-md
                 font-semibold
-                shadow-md
-                focus:outline-none focus:ring-2 focus:ring-offset-2
-                rounded-lg
-                bg-button-background
+                bg-black
+                dark:bg-pink-600
+                text-white
+                ring-2 ring-offset-2 ring-transparent
+                dark:ring-offset-transparent
+                hover:ring-pink-600
+                dark:hover:ring-offset-1 dark:hover:ring-white
+                focus:ring-pink-600
               "
             >
               Meet the team

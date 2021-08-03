@@ -50,14 +50,7 @@
           <div class="flex mt-2 md:mt-1">
             <a href="https://sparc.science" target="_blank" class="">
               <text
-                class="
-                  text-indigo-600
-                  dark:text-indigo-400
-                  items-center
-                  text-xl
-                  font-asap
-                  sm:text-base
-                "
+                class="text-accent items-center text-xl font-asap sm:text-base"
               >
                 Learn more about the SPARC program <span>&#8594;</span>
               </text>
@@ -65,7 +58,7 @@
           </div>
         </div>
         <div v-for="item in questionsList" :key="item.question">
-          <h3 class="font-inter font-semibold text-xl dark:text-gray-50 mt-2">
+          <h3 class="font-inter font-semibold text-xl dark:text-gray-50 ">
             {{ item.question }}
           </h3>
           <p
