@@ -79,7 +79,7 @@
                 id="Layer_1"
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
-                class="block md:hidden h-7 w-auto"
+                class="block md:hidden h-4 w-auto"
                 viewBox="0 0 451.84 61.44"
               >
                 <path
@@ -139,7 +139,7 @@
                   id="Layer_1"
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="hidden dark:block h-7 w-auto"
+                  class="hidden dark:block md:h-6 lg:h-7 w-auto"
                   viewBox="0 0 451.84 61.44"
                 >
                   <path
@@ -205,7 +205,7 @@
                   id="Layer_1"
                   data-name="Layer 1"
                   xmlns="http://www.w3.org/2000/svg"
-                  class="block dark:hidden h-7 w-auto"
+                  class="block dark:hidden md:h-6 lg:h-7 w-auto"
                   viewBox="0 0 451.84 61.44"
                 >
                   <path
@@ -282,7 +282,7 @@
                   :to="item.href"
                   :id="item.id"
                   :class="[
-                    `text-black dark:text-white sm:px-2 lg:px-3 mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
+                    `text-black dark:text-white sm:px-1 lg:px-3 md:mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
                     isSodaSparc(item.id),
                   ]"
                 >

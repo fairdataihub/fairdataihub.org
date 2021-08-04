@@ -28,7 +28,7 @@
       autoplay
       :pause-on-hover="true"
       :class="`no-shadow`"
-      :fixed-height="`55vh`"
+      :fixed-height="getCarouselHeight"
     >
       <vueper-slide v-for="project in projectsList" :key="project.name">
         <template v-slot:content>
@@ -121,9 +121,9 @@
                         text-white
                         ring-2 ring-offset-2 ring-transparent
                         dark:ring-offset-transparent
-                hover:ring-pink-600
-                dark:hover:ring-offset-1 dark:hover:ring-white
-                focus:ring-pink-600
+                        hover:ring-pink-600
+                        dark:hover:ring-offset-1 dark:hover:ring-white
+                        focus:ring-pink-600
                       "
                     >
                       Learn more about {{ project.name }}
@@ -181,6 +181,22 @@ export default {
   data() {
     return {};
   },
+  computed: {
+    getCarouselHeight: function () {
+      const windowHeight = window.innerHeight;
+      if (windowHeight > 850) {
+        return `55vh`;
+      } else if (windowHeight < 650) {
+        return `80vh`;
+      } else if (windowHeight < 750) {
+        return `75vh`;
+      } else if (windowHeight < 850) {
+        return `70vh`;
+      }
+      return `55vh`;
+    },
+  },
+  mounted() {},
 };
 </script>
 
