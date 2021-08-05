@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "BaseDocssubtitle",
+  name: "BaseDocsSubtitle",
   props: {
     id: {
       required: false,

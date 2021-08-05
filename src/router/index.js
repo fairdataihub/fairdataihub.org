@@ -1,16 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 // Component imports
-import HomePage from "../components/HomePage/HomePage.vue";
-import TheTeam from "../components/TheTeam/TheTeam.vue";
-import TheErrorPage from "../components/TheErrorPage/TheErrorPage.vue";
+import HomePage from "../views/HomePage.vue";
+import TheTeam from "../views/TheTeam.vue";
+import TheErrorPage from "../views/ErrorPage.vue";
 
-import KnowMore from "../components/KnowMore/KnowMore.vue";
-import SparcLink from "../components/SparcLink/SparcLink.vue";
-import TheAqua from "../components/Aqua/TheAqua.vue";
+import KnowMore from "../views/KnowMore.vue";
+import SparcLink from "../views/SparcLink.vue";
+import TheAqua from "../views/TheAqua.vue";
 
-import SodaSparc from "../components/SodaSparc/SodaSparc.vue";
-import SodasparcDocs from "../components/SodaSPARCDocs/SodasparcDocs.vue";
+import SodaSparc from "../views/SodaSparc.vue";
+import SodasparcDocs from "../views/SodasparcDocs.vue";
 
 import DownloadSoda from "../components/SodaSPARCDocs/docs/getting-started/DownloadSoda.vue";
 import UserInterface from "../components/SodaSPARCDocs/docs/getting-started/UserInterface.vue";

@@ -581,7 +581,7 @@ window.addEventListener("scroll", () => {
 });
 
 export default {
-  name: "TheNavbar",
+  name: "AppNavbar",
   components: {
     Disclosure,
     DisclosureButton,

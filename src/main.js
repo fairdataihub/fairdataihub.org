@@ -4,18 +4,18 @@ import App from "./App.vue";
 import "./index.css";
 
 import BaseSection from "./components/UI/BaseSection.vue";
-import BaseDocscontent from "./components/UI/BaseDocscontent.vue";
-import BaseDocstitle from "./components/UI/BaseDocstitle.vue";
-import BaseDocssubtitle from "./components/UI/BaseDocssubtitle.vue";
-import BaseDocsheading from "./components/UI/BaseDocsheading.vue";
+import BaseDocsContent from "./components/UI/BaseDocsContent.vue";
+import BaseDocsTitle from "./components/UI/BaseDocsTitle.vue";
+import BaseDocsSubtitle from "./components/UI/BaseDocsSubtitle.vue";
+import BaseDocsHeading from "./components/UI/BaseDocsHeading.vue";
 
 const app = createApp(App);
 
 app.component("base-section", BaseSection);
-app.component("base-docs-content", BaseDocscontent);
-app.component("base-docs-title", BaseDocstitle);
-app.component("base-docs-subtitle", BaseDocssubtitle);
-app.component("base-docs-heading", BaseDocsheading);
+app.component("base-docs-content", BaseDocsContent);
+app.component("base-docs-title", BaseDocsTitle);
+app.component("base-docs-subtitle", BaseDocsSubtitle);
+app.component("base-docs-heading", BaseDocsHeading);
 
 app.use(router);
 

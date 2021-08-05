@@ -64,8 +64,8 @@
 </template>
 
 <script>
-import SodasparcSidebar from "./SodasparcSidebar.vue";
-import MobilesodasparcSidebar from "./MobilesodasparcSidebar.vue";
+import SodasparcSidebar from "../components/SodaSPARCDocs/SodasparcSidebar.vue";
+import MobilesodasparcSidebar from "../components/SodaSPARCDocs/MobilesodasparcSidebar.vue";
 
 export default {
   components: { SodasparcSidebar, MobilesodasparcSidebar },

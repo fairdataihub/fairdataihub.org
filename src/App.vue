@@ -1,5 +1,5 @@
 <template>
-  <the-navbar class="print:hidden"></the-navbar>
+  <AppNavbar class="print:hidden"></AppNavbar>
 
   <router-view v-slot="{ Component }">
     <transition name="route-view" appear mode="out-in">
@@ -7,18 +7,18 @@
     </transition>
   </router-view>
 
-  <the-footer></the-footer>
+  <AppFooter></AppFooter>
 </template>
 
 <script>
-import TheNavbar from "./components/UI/TheNavbar.vue";
-import TheFooter from "./components/UI/TheFooter.vue";
+import AppNavbar from "./components/UI/AppNavbar.vue";
+import AppFooter from "./components/UI/AppFooter.vue";
 
 export default {
   name: "App",
   components: {
-    TheNavbar,
-    TheFooter,
+    AppNavbar,
+    AppFooter,
   },
   mounted() {
     if (!("theme" in localStorage)) {

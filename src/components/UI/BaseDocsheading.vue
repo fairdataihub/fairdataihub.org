@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "BaseDocsheading",
+  name: "BaseDocsHeading",
 };
 </script>
 

@@ -48,15 +48,13 @@
               class="
                 px-2
                 py-2
-                bg-indigo-600
-                hover:bg-indigo-700
+                bg-pink-600
+                hover:bg-pink-700
                 focus:ring-indigo-500 focus:ring-offset-indigo-200
                 text-white
                 w-36
                 mt-8
-                transition
-                ease-in
-                duration-200
+                transition-all
                 text-center text-base
                 font-semibold
                 shadow-md

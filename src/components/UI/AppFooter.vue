@@ -369,7 +369,7 @@
 
 <script>
 export default {
-  name: "TheFooter",
+  name: "AppFooter",
   computed: {
     isDocs: function () {
       return this.$route.path.includes("sodasparc/docs");

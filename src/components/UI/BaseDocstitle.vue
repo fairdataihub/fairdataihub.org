@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "BaseDocstitle",
+  name: "BaseDocsTitle",
   props: ["title"],
 };
 </script>

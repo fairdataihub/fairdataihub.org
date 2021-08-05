@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import TeamCard from "./TeamCard.vue";
+import TeamCard from "../components/TheTeam/TeamCard.vue";
 export default {
   components: { TeamCard },
   name: "TheTeam",
