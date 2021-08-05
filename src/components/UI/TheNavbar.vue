@@ -282,7 +282,7 @@
                   :to="item.href"
                   :id="item.id"
                   :class="[
-                    `text-black dark:text-white sm:px-1 lg:px-3 :mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
+                    `text-black dark:text-white sm:px-1 lg:px-3 mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
                     isSodaSparc(item.id),
                   ]"
                 >
@@ -571,15 +571,6 @@ import {
 } from "@headlessui/vue";
 import { MenuIcon, XIcon } from "@heroicons/vue/outline";
 
-const navigation = [
-  { name: "Home", href: "/", id: "nav-home" },
-  { name: "Meet The Team", href: "/team", id: "nav-team" },
-  { name: "SODA for SPARC", href: "/sodasparc", id: "nav-sodasparc" },
-  { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
-  { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
-  { name: "Aqua", href: "/aqua", id: "nav-aqua" },
-];
-
 window.addEventListener("scroll", () => {
   const nav = document.querySelector("#navbar");
   if (window.pageYOffset > 0) {
@@ -603,11 +594,6 @@ export default {
     MenuIcon,
     XIcon,
   },
-  setup() {
-    return {
-      navigation,
-    };
-  },
   mounted() {
     if (!("theme" in localStorage)) {
       this.switchValue = false;
@@ -622,6 +608,14 @@ export default {
       switchValue: false,
       checked: false,
       open: false,
+      navigation: [
+        { name: "Home", href: "/", id: "nav-home" },
+        { name: "Meet The Team", href: "/team", id: "nav-team" },
+        { name: "SODA for SPARC", href: "/sodasparc", id: "nav-sodasparc" },
+        { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
+        { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
+        { name: "AQUA", href: "/aqua", id: "nav-aqua" },
+      ],
     };
   },
   methods: {
