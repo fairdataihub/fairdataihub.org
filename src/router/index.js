@@ -1,59 +1,60 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 // Component imports
-import HomePage from "../views/HomePage.vue";
-import TheTeam from "../views/TheTeam.vue";
+import HomePage from "../views/HomePage/HomePage.vue";
+import TheTeam from "../views/TheTeam/TheTeam.vue";
 import ErrorPage from "../views/ErrorPage.vue";
 
 import KnowMore from "../views/KnowMore.vue";
 import SparcLink from "../views/SparcLink.vue";
 import TheAqua from "../views/TheAqua.vue";
 
-import SodaSparc from "../views/SodaSparc.vue";
-import SodasparcDocs from "../views/SodasparcDocs.vue";
+import SodaSparc from "../views/SodaSparc/SodaSparc.vue";
 
-import DownloadSoda from "../components/SodaSPARCDocs/docs/getting-started/DownloadSoda.vue";
-import UserInterface from "../components/SodaSPARCDocs/docs/getting-started/UserInterface.vue";
-import OrganizeSubmit from "../components/SodaSPARCDocs/docs/getting-started/OrganizeSubmit.vue";
+import SodasparcDocs from "../views/SodaSPARCDocs/SodasparcDocs.vue";
 
-import ConnectPennsieveSODA from "../components/SodaSPARCDocs/docs/manage-datasets/ConnectPennsieveSODA.vue";
-import ConnectPennsieveSODAAPIKey from "../components/SodaSPARCDocs/docs/manage-datasets/ConnectPennsieveSODAAPIKey.vue";
-import CreateDataset from "../components/SodaSPARCDocs/docs/manage-datasets/CreateDataset.vue";
-import RenameDataset from "../components/SodaSPARCDocs/docs/manage-datasets/RenameDataset.vue";
-import MakePIDatasetOwner from "../components/SodaSPARCDocs/docs/manage-datasets/MakePIDatasetOwner.vue";
-import AddEditPermissions from "../components/SodaSPARCDocs/docs/manage-datasets/AddEditPermissions.vue";
-import AddEditSubtitle from "../components/SodaSPARCDocs/docs/manage-datasets/AddEditSubtitle.vue";
-import AddEditDescription from "../components/SodaSPARCDocs/docs/manage-datasets/AddEditDescription.vue";
-import UploadBannerImage from "../components/SodaSPARCDocs/docs/manage-datasets/UploadBannerImage.vue";
-import AssignLicense from "../components/SodaSPARCDocs/docs/manage-datasets/AssignLicense.vue";
-import UploadLocalDatasetPennsieve from "../components/SodaSPARCDocs/docs/manage-datasets/UploadLocalDatasetPennsieve.vue";
-import ViewChangeStatus from "../components/SodaSPARCDocs/docs/manage-datasets/ViewChangeStatus.vue";
+import DownloadSoda from "../views/SodaSPARCDocs/docs/getting-started/DownloadSoda.vue";
+import UserInterface from "../views/SodaSPARCDocs/docs/getting-started/UserInterface.vue";
+import OrganizeSubmit from "../views/SodaSPARCDocs/docs/getting-started/OrganizeSubmit.vue";
 
-import ConnectAirtableSODA from "../components/SodaSPARCDocs/docs/prepare-metadata/ConnectAirtableSODA.vue";
-import CreateSubmissionxlsx from "../components/SodaSPARCDocs/docs/prepare-metadata/CreateSubmissionxlsx.vue";
-import CreateDatasetDescriptionxlsx from "../components/SodaSPARCDocs/docs/prepare-metadata/CreateDatasetDescriptionxlsx.vue";
-import CreateSubjectsxlsx from "../components/SodaSPARCDocs/docs/prepare-metadata/CreateSubjectsxlsx.vue";
-import CreateSamplesxlsx from "../components/SodaSPARCDocs/docs/prepare-metadata/CreateSamplesxlsx.vue";
-import DownloadTemplates from "../components/SodaSPARCDocs/docs/prepare-metadata/DownloadTemplates.vue";
-import DataDeliverables from "../components/SodaSPARCDocs/docs/prepare-metadata/DataDeliverables.vue";
+import ConnectPennsieveSODA from "../views/SodaSPARCDocs/docs/manage-datasets/ConnectPennsieveSODA.vue";
+import ConnectPennsieveSODAAPIKey from "../views/SodaSPARCDocs/docs/manage-datasets/ConnectPennsieveSODAAPIKey.vue";
+import CreateDataset from "../views/SodaSPARCDocs/docs/manage-datasets/CreateDataset.vue";
+import RenameDataset from "../views/SodaSPARCDocs/docs/manage-datasets/RenameDataset.vue";
+import MakePIDatasetOwner from "../views/SodaSPARCDocs/docs/manage-datasets/MakePIDatasetOwner.vue";
+import AddEditPermissions from "../views/SodaSPARCDocs/docs/manage-datasets/AddEditPermissions.vue";
+import AddEditSubtitle from "../views/SodaSPARCDocs/docs/manage-datasets/AddEditSubtitle.vue";
+import AddEditDescription from "../views/SodaSPARCDocs/docs/manage-datasets/AddEditDescription.vue";
+import UploadBannerImage from "../views/SodaSPARCDocs/docs/manage-datasets/UploadBannerImage.vue";
+import AssignLicense from "../views/SodaSPARCDocs/docs/manage-datasets/AssignLicense.vue";
+import UploadLocalDatasetPennsieve from "../views/SodaSPARCDocs/docs/manage-datasets/UploadLocalDatasetPennsieve.vue";
+import ViewChangeStatus from "../views/SodaSPARCDocs/docs/manage-datasets/ViewChangeStatus.vue";
 
-import OrganizeDataset from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDataset.vue";
-import OrganizeDatasetStep1 from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep1.vue";
-import OrganizeDatasetStep2 from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep2.vue";
-import OrganizeDatasetStep3 from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep3.vue";
-import OrganizeDatasetStep4 from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep4.vue";
-import OrganizeDatasetStep5 from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep5.vue";
-import OrganizeDatasetStep6 from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep6.vue";
-import OrganizeDatasetStep7 from "../components/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep7.vue";
+import ConnectAirtableSODA from "../views/SodaSPARCDocs/docs/prepare-metadata/ConnectAirtableSODA.vue";
+import CreateSubmissionxlsx from "../views/SodaSPARCDocs/docs/prepare-metadata/CreateSubmissionxlsx.vue";
+import CreateDatasetDescriptionxlsx from "../views/SodaSPARCDocs/docs/prepare-metadata/CreateDatasetDescriptionxlsx.vue";
+import CreateSubjectsxlsx from "../views/SodaSPARCDocs/docs/prepare-metadata/CreateSubjectsxlsx.vue";
+import CreateSamplesxlsx from "../views/SodaSPARCDocs/docs/prepare-metadata/CreateSamplesxlsx.vue";
+import DownloadTemplates from "../views/SodaSPARCDocs/docs/prepare-metadata/DownloadTemplates.vue";
+import DataDeliverables from "../views/SodaSPARCDocs/docs/prepare-metadata/DataDeliverables.vue";
 
-import ShareCurationTeam from "../components/SodaSPARCDocs/docs/disseminate-datasets/ShareCurationTeam.vue";
-import ShareSPARCConsortium from "../components/SodaSPARCDocs/docs/disseminate-datasets/ShareSPARCConsortium.vue";
-import SubmitPrePublishingReview from "../components/SodaSPARCDocs/docs/disseminate-datasets/SubmitPrePublishingReview.vue";
+import OrganizeDataset from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDataset.vue";
+import OrganizeDatasetStep1 from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep1.vue";
+import OrganizeDatasetStep2 from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep2.vue";
+import OrganizeDatasetStep3 from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep3.vue";
+import OrganizeDatasetStep4 from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep4.vue";
+import OrganizeDatasetStep5 from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep5.vue";
+import OrganizeDatasetStep6 from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep6.vue";
+import OrganizeDatasetStep7 from "../views/SodaSPARCDocs/docs/prepare-datasets/OrganizeDatasetStep7.vue";
 
-import InstallingPennsieveAgent from "../components/SodaSPARCDocs/docs/common-errors/InstallingPennsieveAgent.vue";
-import PennsieveAgentAlreadyRunning from "../components/SodaSPARCDocs/docs/common-errors/PennsieveAgentAlreadyRunning.vue";
-import SendingLogFiles from "../components/SodaSPARCDocs/docs/common-errors/SendingLogFiles.vue";
-import IssuesHiddenFilesFolders from "../components/SodaSPARCDocs/docs/common-errors/IssuesHiddenFilesFolders.vue";
+import ShareCurationTeam from "../views/SodaSPARCDocs/docs/disseminate-datasets/ShareCurationTeam.vue";
+import ShareSPARCConsortium from "../views/SodaSPARCDocs/docs/disseminate-datasets/ShareSPARCConsortium.vue";
+import SubmitPrePublishingReview from "../views/SodaSPARCDocs/docs/disseminate-datasets/SubmitPrePublishingReview.vue";
+
+import InstallingPennsieveAgent from "../views/SodaSPARCDocs/docs/common-errors/InstallingPennsieveAgent.vue";
+import PennsieveAgentAlreadyRunning from "../views/SodaSPARCDocs/docs/common-errors/PennsieveAgentAlreadyRunning.vue";
+import SendingLogFiles from "../views/SodaSPARCDocs/docs/common-errors/SendingLogFiles.vue";
+import IssuesHiddenFilesFolders from "../views/SodaSPARCDocs/docs/common-errors/IssuesHiddenFilesFolders.vue";
 
 // router paths
 const routes = [

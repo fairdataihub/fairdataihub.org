@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import TeamCard from "../components/TheTeam/TeamCard.vue";
+import TeamCard from "./TeamCard.vue";
 export default {
   components: { TeamCard },
   name: "TheTeam",
@@ -58,7 +58,7 @@ export default {
     return {
       teamsList: [
         {
-          id: "Bhavesh-Patel",
+          id: "BhaveshPatel",
           name: "Bhavesh Patel",
           title: "Braindance editor",
           bio: "Judy Álvarez is a skilled braindance technician and a member of the Mox. She has her own apartment in northeastern Kabuki, Watson District.",
@@ -80,7 +80,7 @@ export default {
           },
         },
         {
-          id: "Tram-Ngo",
+          id: "TramNgo",
           name: "Tram Ngo",
           title: "Aldecaldo leader",
           bio: "Panam Palmer is introduced as a former member of the Aldecaldos nomad clan, who, after a family dispute, decided to live a more independent life as a mercenary.",
@@ -102,7 +102,7 @@ export default {
           },
         },
         {
-          id: "Sanjay-Soundarajan",
+          id: "SanjaySoundarajan",
           name: "Sanjay Soundarajan",
           title: "VP, User Experience",
           bio: "Hanako Arasaka is the third child and only daughter to Saburo. Hanako is a skilled netrunner and the head of the Kiji Faction of the Arasaka Corporation. She is loved by many people and often described as sweet and beautiful in the eyes of many Arasaka employees.",
@@ -147,6 +147,18 @@ export default {
         },
       ],
     };
+  },
+  mounted() {
+    const hash = this.$route.hash;
+    if (hash != "") {
+      const id = hash.substring(1);
+      const el = document.getElementById(id);
+      el.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+    }
   },
 };
 </script>

@@ -65,8 +65,7 @@
           sm:flex-row
         "
       >
-        <div>
-          <!-- White text logo -->
+        <!-- <div>
           <svg
             id="Layer_1"
             data-name="Layer 1"
@@ -132,7 +131,6 @@
           </svg>
         </div>
         <div>
-          <!-- Black text logo -->
           <svg
             id="Layer_1"
             data-name="Layer 1"
@@ -189,6 +187,13 @@
               transform="translate(-490.4 -347.16)"
             />
           </svg>
+        </div> -->
+
+        <div>
+          <img
+            src="https://calmi2.org/wp-content/themes/calmi2/images/logo.png"
+            alt="California Medical Innovations Institute logo"
+          />
         </div>
 
         <div

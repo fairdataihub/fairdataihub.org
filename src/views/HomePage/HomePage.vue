@@ -41,19 +41,17 @@
 </template>
 
 <script>
-import BaseSection from "../components/UI/BaseSection.vue";
-import HeroSection from "../components/HomePage/HeroSection.vue";
-import OurVision from "../components/HomePage/OurVision.vue";
-import AboutUs from "../components/HomePage/AboutUs.vue";
+import HeroSection from "./HeroSection.vue";
+import OurVision from "./OurVision.vue";
+import AboutUs from "./AboutUs.vue";
 // import HomepageTestimonials from "./HomepageTestimonials.vue";
-import ProjectsCarousel from "../components/HomePage/ProjectsCarousel.vue";
-import CollaboratorsSection from "../components/HomePage/CollaboratorsSection.vue";
-import MobileProjects from "../components/HomePage/MobileProjects.vue";
+import ProjectsCarousel from "./ProjectsCarousel.vue";
+import CollaboratorsSection from "./CollaboratorsSection.vue";
+import MobileProjects from "./MobileProjects.vue";
 
 export default {
   name: "HomePage",
   components: {
-    BaseSection,
     HeroSection,
     OurVision,
     AboutUs,

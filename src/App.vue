@@ -1,11 +1,12 @@
 <template>
   <AppNavbar class="print:hidden"></AppNavbar>
 
-  <router-view v-slot="{ Component }">
-    <transition name="route-view" appear mode="out-in">
+  <!-- <router-view v-slot="{ Component }">
+    <transition name="route-view" mode="out-in">
       <component :is="Component" />
-    </transition>
-  </router-view>
+    </transition> 
+  </router-view> -->
+  <router-view></router-view>
 
   <AppFooter></AppFooter>
 </template>
@@ -40,15 +41,5 @@ export default {
 
 h1 {
   color: #2c3e50;
-}
-
-.route-view-enter-active,
-.route-view-leave-active {
-  transition: all 0.4s ease-in-out;
-}
-.route-view-enter,
-.route-view-leave-to {
-  opacity: 0;
-  transform: translateX(-20px);
 }
 </style>

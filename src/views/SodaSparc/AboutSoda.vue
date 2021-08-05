@@ -133,7 +133,7 @@
             </dt>
             <dd class="mb-10 sm:mb-5 w-full">
               <div class="flex flex-col md:flex-row py-0 md:py-1">
-                <router-link to="/team/#Rogue-Amendiares">
+                <router-link to="/team/#BhaveshPatel">
                   <div
                     class="
                       flex flex-row
@@ -168,7 +168,7 @@
                     </p>
                   </div>
                 </router-link>
-                <router-link to="/team/#Hanako-Arasaka">
+                <router-link to="/team/#TramNgo">
                   <div
                     class="
                       flex flex-row
@@ -204,7 +204,7 @@
                 </router-link>
               </div>
               <div class="flex flex-col md:flex-row py-0 md:py-1">
-                <router-link to="/team/#Panam-Palmer">
+                <router-link to="/team/#SanjaySoundarajan">
                   <div
                     class="
                       flex flex-row

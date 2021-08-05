@@ -27,12 +27,12 @@
 </template>
 
 <script>
-import AboutSoda from "../components/SodaSparc/AboutSoda.vue";
-import SodasparcStats from "../components/SodaSparc/SodasparcStats.vue";
-import SodaHerosection from "../components/SodaSparc/SodaHerosection.vue";
-import SodaTimeline from "../components/SodaSparc/SodaTimeline.vue";
-import TheFaq from "../components/SodaSparc/TheFaq.vue";
-import SodasparcPublications from "../components/SodaSparc/SodasparcPublications.vue";
+import AboutSoda from "./AboutSoda.vue";
+import SodasparcStats from "./SodasparcStats.vue";
+import SodaHerosection from "./SodaHerosection.vue";
+import SodaTimeline from "./SodaTimeline.vue";
+import TheFaq from "./TheFaq.vue";
+import SodasparcPublications from "./SodasparcPublications.vue";
 
 export default {
   components: {
