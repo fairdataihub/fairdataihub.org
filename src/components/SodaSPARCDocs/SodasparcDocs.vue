@@ -51,7 +51,11 @@
       >
         <div class="sm:top-0 sm:bottom-0 sm:right-0 sm:overflow-auto test">
           <base-docs-content>
-            <router-view></router-view>
+            <router-view v-slot="{ Component }">
+              <transition name="docs-view" appear mode="out-in">
+                <component :is="Component" />
+              </transition>
+            </router-view>
           </base-docs-content>
         </div>
       </div>
@@ -288,5 +292,15 @@ export default {
 /* Resizer */
 ::-webkit-resizer {
   background: rgba(220, 222, 224, 0.849);
+}
+
+.docs-view-enter-active,
+.docs-view-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+.docs-view-enter,
+.docs-view-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
 }
 </style>

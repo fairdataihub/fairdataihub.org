@@ -1,7 +1,11 @@
 <template>
   <the-navbar class="print:hidden"></the-navbar>
 
-  <router-view></router-view>
+  <router-view v-slot="{ Component }">
+    <transition name="route-view" appear mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 
   <the-footer></the-footer>
 </template>
@@ -33,7 +37,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
 }
+
 h1 {
   color: #2c3e50;
+}
+
+.route-view-enter-active,
+.route-view-leave-active {
+  transition: all 0.4s ease-in-out;
+}
+.route-view-enter,
+.route-view-leave-to {
+  opacity: 0;
+  transform: translateX(-20px);
 }
 </style>

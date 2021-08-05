@@ -1,30 +1,30 @@
 <template>
   <div>
     <base-docs-title :title="`User Interface`"> </base-docs-title>
-  </div>
 
-  <div class="flex flex-col">
-    <base-docs-subtitle>
-      Click on the image below and watch our short video to get familiarized
-      with SODA's user interface
-    </base-docs-subtitle>
+    <div class="flex flex-col">
+      <base-docs-subtitle>
+        Click on the image below and watch our short video to get familiarized
+        with SODA's user interface
+      </base-docs-subtitle>
 
-    <div class="flex justify-start mx-8 my-5">
-      <a href="https://www.youtube.com/watch?v=Fyn9R0Tk_pU" target="_blank">
-        <img src="https://img.youtube.com/vi/Fyn9R0Tk_pU/0.jpg" />
-      </a>
+      <div class="flex justify-start mx-8 my-5">
+        <a href="https://www.youtube.com/watch?v=Fyn9R0Tk_pU" target="_blank">
+          <img src="https://img.youtube.com/vi/Fyn9R0Tk_pU/0.jpg" />
+        </a>
+      </div>
+
+      <base-docs-subtitle> Notes </base-docs-subtitle>
+
+      <ul class="list-outside bg-rose-200 list-disc ml-4">
+        <li
+          v-for="item in notesList"
+          :key="item.content"
+          v-html="item.content"
+          class="font-asap text-black dark:text-white"
+        ></li>
+      </ul>
     </div>
-
-    <base-docs-subtitle> Notes </base-docs-subtitle>
-
-    <ul class="list-outside bg-rose-200 list-disc ml-4">
-      <li
-        v-for="item in notesList"
-        :key="item.content"
-        v-html="item.content"
-        class="font-asap text-black dark:text-white"
-      ></li>
-    </ul>
   </div>
 </template>
 

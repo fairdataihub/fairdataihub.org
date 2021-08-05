@@ -282,7 +282,7 @@
                   :to="item.href"
                   :id="item.id"
                   :class="[
-                    `text-black dark:text-white sm:px-1 lg:px-3 md:mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
+                    `text-black dark:text-white sm:px-1 lg:px-3 :mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
                     isSodaSparc(item.id),
                   ]"
                 >

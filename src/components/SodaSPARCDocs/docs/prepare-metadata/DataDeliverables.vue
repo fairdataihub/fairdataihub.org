@@ -2,64 +2,65 @@
   <div>
     <base-docs-title :title="`How to get your Data Deliverables document`">
     </base-docs-title>
-  </div>
 
-  <div class="flex flex-col">
-    <base-docs-subtitle> Background </base-docs-subtitle>
+    <div class="flex flex-col">
+      <base-docs-subtitle> Background </base-docs-subtitle>
 
-    <div class="p-parent-div">
-      <p>
-        The milestones and associated datasets as agreed between awardees and
-        SPARC are summarized in a document called Data Deliverables document.
-        This documents lists, among other, the milestones of the award, the
-        expected datasets to be associated with each milestone, and the
-        tentative submission date for each of these datasets. The awardee are
-        then expected to submit each dataset by the agreed submission date. When
-        a dataset is submitted by the awardees, the milestone and submission
-        date associated with it must be included in the
-        <a
-          href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-submission-metadata-file"
-          target="_blank"
-          rel="nofollow"
-          class="hover:underline text-blue-600 dark:text-blue-400"
-        >
-          submission</a
-        >
-        metadata file. In SODA, we provide you the option to import your Data
-        Deliverables document such that you can easily prepare you submission
-        metadata file without errors.
-      </p>
-    </div>
+      <div class="p-parent-div">
+        <p>
+          The milestones and associated datasets as agreed between awardees and
+          SPARC are summarized in a document called Data Deliverables document.
+          This documents lists, among other, the milestones of the award, the
+          expected datasets to be associated with each milestone, and the
+          tentative submission date for each of these datasets. The awardee are
+          then expected to submit each dataset by the agreed submission date.
+          When a dataset is submitted by the awardees, the milestone and
+          submission date associated with it must be included in the
+          <a
+            href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-submission-metadata-file"
+            target="_blank"
+            rel="nofollow"
+            class="hover:underline text-blue-600 dark:text-blue-400"
+          >
+            submission</a
+          >
+          metadata file. In SODA, we provide you the option to import your Data
+          Deliverables document such that you can easily prepare you submission
+          metadata file without errors.
+        </p>
+      </div>
 
-    <base-docs-subtitle> How to </base-docs-subtitle>
+      <base-docs-subtitle> How to </base-docs-subtitle>
 
-    <div class="p-parent-div">
-      <p>
-        To obtain the Data Deliverables document associated with your award,
-        simply ask your PI or grant manager. Click
-        <a
-          href="https://github.com/bvhpatel/SODA/raw/master/src/file_templates/DataDeliverablesDocument-template.docx"
-          target="_blank"
-          rel="nofollow"
-          class="hover:underline text-blue-600 dark:text-blue-400"
-        >
-          here</a
-        >
-        to download a template of the Data Deliverables document to see the
-        expected format. A screenshot of a sample Dataset Deliverables document
-        is provided below. Most importantly, it should be in the docx format and
-        at least one table should be included with these exact three headers:
-        'Related milestone, aim, or task', 'Description of data', 'Expected date
-        of completion'." If any of these headers have been modified, make sure
-        to edit them before importing the file in SODA.
-      </p>
-    </div>
+      <div class="p-parent-div">
+        <p>
+          To obtain the Data Deliverables document associated with your award,
+          simply ask your PI or grant manager. Click
+          <a
+            href="https://github.com/bvhpatel/SODA/raw/master/src/file_templates/DataDeliverablesDocument-template.docx"
+            target="_blank"
+            rel="nofollow"
+            class="hover:underline text-blue-600 dark:text-blue-400"
+          >
+            here</a
+          >
+          to download a template of the Data Deliverables document to see the
+          expected format. A screenshot of a sample Dataset Deliverables
+          document is provided below. Most importantly, it should be in the docx
+          format and at least one table should be included with these exact
+          three headers: 'Related milestone, aim, or task', 'Description of
+          data', 'Expected date of completion'." If any of these headers have
+          been modified, make sure to edit them before importing the file in
+          SODA.
+        </p>
+      </div>
 
-    <div class="img-parent-div">
-      <img
-        src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG"
-        alt='A screenshot of our a demo Data Deliverables document. The "Milestone achieved" value in the submission file must be one of the milestone specified under "Related milestone, aim, or task" of the document and the "Milestone completion date" must be the corresponding "Expected date of completion" in the document.'
-      />
+      <div class="img-parent-div">
+        <img
+          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG"
+          alt='A screenshot of our a demo Data Deliverables document. The "Milestone achieved" value in the submission file must be one of the milestone specified under "Related milestone, aim, or task" of the document and the "Milestone completion date" must be the corresponding "Expected date of completion" in the document.'
+        />
+      </div>
     </div>
   </div>
 </template>

@@ -35,7 +35,7 @@
                   items-center
                   p-1
                   my-1
-                  transition-colors
+                  transition-all
                   duration-200
                   justify-start
                   rounded-lg
