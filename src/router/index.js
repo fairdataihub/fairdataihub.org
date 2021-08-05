@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 // Component imports
 import HomePage from "../views/HomePage.vue";
 import TheTeam from "../views/TheTeam.vue";
-import TheErrorPage from "../views/ErrorPage.vue";
+import ErrorPage from "../views/ErrorPage.vue";
 
 import KnowMore from "../views/KnowMore.vue";
 import SparcLink from "../views/SparcLink.vue";
@@ -220,7 +220,7 @@ const routes = [
   },
   {
     path: "/:pathMatch(.*)*",
-    component: TheErrorPage,
+    component: ErrorPage,
   },
 ];
 
