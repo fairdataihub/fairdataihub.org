@@ -1,13 +1,14 @@
 import { createRouter, createWebHistory } from "vue-router";
 
 // Component imports
-import HomePage from "../views/HomePage/HomePage.vue";
-import TheTeam from "../views/TheTeam/TheTeam.vue";
+import HomePage from "../views/home/HomePage.vue";
+import TheTeam from "../views/team/TheTeam.vue";
 import ErrorPage from "../views/ErrorPage.vue";
+import ContactUs from "../views/contact/ContactUs.vue";
 
-import KnowMore from "../views/KnowMore.vue";
-import SparcLink from "../views/SparcLink.vue";
-import TheAqua from "../views/TheAqua.vue";
+import KnowMore from "../views/knowmore/KnowMore.vue";
+import SparcLink from "../views/sparclink/SparcLink.vue";
+import TheAqua from "../views/aqua/TheAqua.vue";
 
 import SodaSparc from "../views/SodaSparc/SodaSparc.vue";
 
@@ -64,6 +65,7 @@ const routes = [
   { path: "/knowmore", component: KnowMore },
   { path: "/sparclink", component: SparcLink },
   { path: "/aqua", component: TheAqua },
+  { path: "/contact", component: ContactUs },
   { path: "/sodasparc/docs", redirect: "/sodasparc/docs/User-Interface" },
   {
     path: "/sodasparc/docs",

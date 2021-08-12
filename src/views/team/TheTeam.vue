@@ -38,6 +38,7 @@
         </div>
         <div class="w-full md:w-2/3 p-2 md:p-5">
           <team-card
+            data-aos="fade-in"
             v-for="member in teamsList"
             :key="member.image"
             :profile="member"

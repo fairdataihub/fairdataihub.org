@@ -21,11 +21,16 @@ module.exports = {
       },
       screens: {
         print: { raw: "print" },
+        "3xl": "2400px",
       },
       boxShadow: {
         white:
           "0 10px 15px -3px rgba(255,255,255, 0.1),  0 4px 6px -2px rgba(255,255,255, 0.05)",
       },
+      backgroundImage: (theme) => ({
+        haikeiWavy: "url('./assets/wavy-background.svg')",
+        haikeiCircleScatter: "url('./assets/circle-scatter-haikei.svg')",
+      }),
     },
     textColor: (theme) => ({
       ...theme("colors"),

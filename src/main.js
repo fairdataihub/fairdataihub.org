@@ -3,6 +3,9 @@ import { router } from "./router";
 import App from "./App.vue";
 import "./index.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import BaseSection from "./components/UI/BaseSection.vue";
 import BaseDocsContent from "./components/UI/BaseDocsContent.vue";
 import BaseDocsTitle from "./components/UI/BaseDocsTitle.vue";
@@ -18,5 +21,11 @@ app.component("base-docs-subtitle", BaseDocsSubtitle);
 app.component("base-docs-heading", BaseDocsHeading);
 
 app.use(router);
+
+app.use({
+  install: () => {
+    AOS.init({ duration: 500, anchorPlacement: "top-center" });
+  },
+});
 
 app.mount("#app");

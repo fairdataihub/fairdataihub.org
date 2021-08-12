@@ -36,8 +36,7 @@
         >
           Making all biomedical research data Findable, Accessible,
           Interoperable, and Reusable (FAIR) is crucial to enhance the pace of
-          discovery for improving human health. We develop tools so that it is
-          easy, rapid and fun for researchers to achieve that.
+          discovery for improving human health.
         </p>
       </div>
 

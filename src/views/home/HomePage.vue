@@ -1,39 +1,51 @@
 <template>
   <div>
-    <div class="divide-y divide-gray-50 dark:divide-gray-800">
-      <base-section
-        class="pt-12 sm:pt-16 bg-white dark:bg-dark-background py-10"
+    <div class="divide-y divide-white bg-white dark:divide-gray-800">
+      <div
+        class="
+          bg-haikeiWavy bg-cover
+          2xl:bg-contain
+          bg-no-repeat bg-top
+          md:bg-right-top
+        "
       >
-        <hero-section></hero-section>
-      </base-section>
+        <base-section class="pt-12 sm:pt-16 dark:bg-dark-background mb-10">
+          <hero-section></hero-section>
+        </base-section>
 
-      <base-section class="bg-gray-50 dark:bg-dark-background py-10">
-        <our-vision></our-vision>
-      </base-section>
+        <base-section data-aos="fade-in" class="dark:bg-dark-background py-10">
+          <our-vision></our-vision>
+        </base-section>
+      </div>
 
-      <base-section class="bg-white dark:bg-dark-background py-10">
+      <!-- <base-section class="bg-transparent dark:bg-dark-background py-10">
         <about-us id="aboutus"></about-us>
-      </base-section>
+      </base-section> -->
 
       <!-- Mobile projects section -->
       <base-section
-        class="bg-gray-50 dark:bg-dark-background-2 py-10 block sm:hidden"
+        data-aos="fade-in"
+        class="bg-white dark:bg-dark-background-2 py-10 block sm:hidden"
       >
         <mobile-projects :projectsList="projectsList"></mobile-projects>
       </base-section>
 
       <!-- Desktop projects section -->
       <base-section
-        class="bg-gray-50 dark:bg-dark-background-2 py-10 hidden sm:block"
+        data-aos="fade-in"
+        class="bg-white dark:bg-dark-background-2 py-10 hidden sm:block"
       >
         <projects-carousel :projectsList="projectsList"></projects-carousel>
       </base-section>
 
-      <base-section class="bg-white dark:bg-dark-background py-10">
+      <base-section
+        data-aos="fade-in"
+        class="bg-gray-50 dark:bg-dark-background py-10"
+      >
         <collaborators-section></collaborators-section>
       </base-section>
 
-      <!-- <base-section class="bg-gray-50 dark:bg-dark-background-2 py-10">
+      <!-- <base-section class="bg-white dark:bg-dark-background-2 py-10">
         <homepage-testimonials></homepage-testimonials>
       </base-section> -->
     </div>
@@ -43,7 +55,7 @@
 <script>
 import HeroSection from "./HeroSection.vue";
 import OurVision from "./OurVision.vue";
-import AboutUs from "./AboutUs.vue";
+// import AboutUs from "./AboutUs.vue";
 // import HomepageTestimonials from "./HomepageTestimonials.vue";
 import ProjectsCarousel from "./ProjectsCarousel.vue";
 import CollaboratorsSection from "./CollaboratorsSection.vue";
@@ -54,7 +66,7 @@ export default {
   components: {
     HeroSection,
     OurVision,
-    AboutUs,
+    // AboutUs,
     // HomepageTestimonials,
     ProjectsCarousel,
     CollaboratorsSection,

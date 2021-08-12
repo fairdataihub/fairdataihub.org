@@ -23,7 +23,7 @@
         "
         id="navbar"
       >
-        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div class="absolute inset-y-0 right-2 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <DisclosureButton
             class="
@@ -65,21 +65,16 @@
               flex-shrink-0 flex
               items-center
               justify-center
-              w-screen
+              px-4
               sm:w-auto
             "
           >
             <router-link to="/">
-              <!-- <img
-                class="block md:hidden h-8 w-auto"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                alt="Workflow"
-              /> -->
               <svg
                 id="Layer_1"
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"
-                class="block md:hidden h-4 w-auto"
+                class="block md:hidden h-6 w-auto"
                 viewBox="0 0 451.84 61.44"
               >
                 <path
@@ -430,7 +425,9 @@
                 </MenuItems>
               </transition>
             </Menu>
-            <div class="hidden sm:flex items-center justify-center pl-4 pr-1">
+
+            <!-- dark mode toggle - hidden for now -->
+            <div class="hidden items-center justify-center pl-4 pr-1">
               <div class="w-full max-w-xs mx-auto">
                 <div as="div" class="flex items-center space-x-4">
                   <Switch
@@ -615,6 +612,7 @@ export default {
         { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
         { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
         { name: "AQUA", href: "/aqua", id: "nav-aqua" },
+        { name: "Contact Us", href: "/contact", id: "nav-contactus" },
       ],
     };
   },

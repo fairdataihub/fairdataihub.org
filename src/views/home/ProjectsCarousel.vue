@@ -185,7 +185,7 @@ export default {
     getCarouselHeight: function () {
       const windowHeight = window.innerHeight;
       if (windowHeight > 850) {
-        return `55vh`;
+        return `53vh`;
       } else if (windowHeight < 650) {
         return `80vh`;
       } else if (windowHeight < 750) {

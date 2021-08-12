@@ -1,5 +1,6 @@
 <template>
   <div>SparcLink</div>
+  
 </template>
 
 <script>
