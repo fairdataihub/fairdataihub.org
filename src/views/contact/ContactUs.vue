@@ -262,6 +262,14 @@ export default {
             function (response) {
               console.log("SUCCESS!", response.status, response.text);
 
+              this.$notify({
+                title: "Nice to meet you",
+                text: "We will be in touch with you soon.",
+                type: "success",
+                duration: 10000,
+                speed: 1000,
+              });
+
               // Reset form field
               this.name = "";
               this.email = "";
@@ -274,15 +282,6 @@ export default {
           );
       }
     },
-  },
-  mounted() {
-    this.$notify({
-      title: "Nice to meet you",
-      text: "We will be in touch with you soon.",
-      type: "success",
-      duration: 10000,
-      speed: 1000,
-    });
   },
 };
 </script>
