@@ -10,6 +10,7 @@
   "dependencies": {
     "@headlessui/vue": "^1.4.0",
     "@heroicons/vue": "^1.0.3",
+    "@kyvg/vue3-notification": "^2.3.3",
     "aos": "^2.3.4",
     "core-js": "^3.16.0",
     "emailjs-com": "^3.2.0",

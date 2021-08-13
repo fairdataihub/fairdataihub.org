@@ -3,6 +3,7 @@ import { router } from "./router";
 import App from "./App.vue";
 import "./index.css";
 
+import Notifications from "@kyvg/vue3-notification";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +22,7 @@ app.component("base-docs-subtitle", BaseDocsSubtitle);
 app.component("base-docs-heading", BaseDocsHeading);
 
 app.use(router);
-
+app.use(Notifications);
 app.use({
   install: () => {
     AOS.init({ duration: 500, anchorPlacement: "top-center" });

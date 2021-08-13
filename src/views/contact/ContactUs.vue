@@ -175,6 +175,7 @@
         </form>
       </div>
     </base-section>
+    <notifications position="bottom right" />
   </div>
 </template>
 
@@ -255,11 +256,12 @@ export default {
               message: this.formMessage.trim(),
               institute: this.formInstitute.trim(),
             },
-            process.env.USER_ID
+            process.env.VUE_APP_USER_ID
           )
           .then(
             function (response) {
               console.log("SUCCESS!", response.status, response.text);
+
               // Reset form field
               this.name = "";
               this.email = "";
@@ -274,14 +276,13 @@ export default {
     },
   },
   mounted() {
-    console.log(
-      // process.env.VUE_APP_SERVICE_ID,
-      // process.env.VUE_APP_TEMPLATE_ID,
-      // process.env.VUE_APP_USER_ID,
-      process.env.VUE_APP_TEST_ENV,
-      process.env.TEST_ENV,
-      process.env.NODE_ENV
-    );
+    this.$notify({
+      title: "Nice to meet you",
+      text: "We will be in touch with you soon.",
+      type: "success",
+      duration: 10000,
+      speed: 1000,
+    });
   },
 };
 </script>

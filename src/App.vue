@@ -9,6 +9,7 @@
   <router-view></router-view>
 
   <AppFooter></AppFooter>
+  
 </template>
 
 <script>
