@@ -18,9 +18,9 @@
         </base-section>
       </div>
 
-      <!-- <base-section class="bg-transparent dark:bg-dark-background py-10">
+      <base-section class="bg-transparent dark:bg-dark-background py-10">
         <about-us id="aboutus"></about-us>
-      </base-section> -->
+      </base-section>
 
       <!-- Mobile projects section -->
       <base-section
@@ -55,7 +55,7 @@
 <script>
 import HeroSection from "./HeroSection.vue";
 import OurVision from "./OurVision.vue";
-// import AboutUs from "./AboutUs.vue";
+import AboutUs from "./AboutUs.vue";
 // import HomepageTestimonials from "./HomepageTestimonials.vue";
 import ProjectsCarousel from "./ProjectsCarousel.vue";
 import CollaboratorsSection from "./CollaboratorsSection.vue";
@@ -66,7 +66,7 @@ export default {
   components: {
     HeroSection,
     OurVision,
-    // AboutUs,
+    AboutUs,
     // HomepageTestimonials,
     ProjectsCarousel,
     CollaboratorsSection,

@@ -3,8 +3,8 @@
     class="container px-6 py-0 sm:pt-6 sm:pb-4 max-w-screen-lg mx-auto"
     :id="id"
   >
-    <div class="items-center sm:flex">
-      <div
+    <div class="items-center justify-center sm:flex">
+      <!-- <div
         class="
           flex
           items-center
@@ -15,11 +15,11 @@
           p-8
         "
       >
-        <!-- <img
+        <img
           class="w-full h-full lg:max-w-2xl"
           src="../../assets/udDesignInspiration.svg"
           alt="Catalogue-pana.svg"
-        /> -->
+        />
         <svg
           id="fdfa9ae0-980d-4a82-b48b-ed21726c951a"
           class="w-full h-full lg:max-w-2xl"
@@ -312,9 +312,9 @@
             </g>
           </g>
         </svg>
-      </div>
+      </div> -->
 
-      <div class="w-full lg:w-1/2 lg:max-w-2xl h-full p-2">
+      <div class="w-full lg:max-w-2xl h-full p-2">
         <h1
           class="
             pt-6
