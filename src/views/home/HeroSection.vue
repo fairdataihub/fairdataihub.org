@@ -15,9 +15,9 @@
             text-left
           "
         >
-          Scientific
+          Making FAIR
           <span class="text-accent"> data </span>
-          curation and sharing made easy
+          practices more accessible
         </h1>
 
         <p
@@ -34,9 +34,8 @@
             dark:text-gray-50
           "
         >
-          Making all biomedical research data Findable, Accessible,
-          Interoperable, and Reusable (FAIR) is crucial to enhance the pace of
-          discovery for improving human health.
+          Findable, Accessible,
+          Interoperable, and Reusable (FAIR) data practices are taking the biomedical research world by a storm. We build tools to help researchers navigate through them.
         </p>
       </div>
 

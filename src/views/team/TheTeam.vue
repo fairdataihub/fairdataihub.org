@@ -30,10 +30,8 @@
             About Us
           </h1>
           <p class="font-asap text-black dark:text-white text-xl sm:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            laborum commodi corporis tempore dolores saepe quisquam ad inventore
-            dignissimos, modi a enim, eaque nulla ex delectus! Dolor,
-            cupiditate? Itaque, molestias.
+          FAIR Data Hub is part from the California Medical Innovations
+          Institute. We have a multidisciplinary team of enthusiasts about FAIR Data practices and software development.
           </p>
         </div>
         <div class="w-full md:w-2/3 p-2 md:p-5">
@@ -60,9 +58,9 @@ export default {
       teamsList: [
         {
           id: "BhaveshPatel",
-          name: "Bhavesh Patel",
-          title: "Braindance editor",
-          bio: "Judy Álvarez is a skilled braindance technician and a member of the Mox. She has her own apartment in northeastern Kabuki, Watson District.",
+          name: "Bhavesh Patel (he/him)",
+          title: "Founder/Lead",
+          bio: "Bhavesh hails from Thiais, France. He specializes in modeling (mathematical) and computational simulations. He is also learning software development so he can criticize his team's work. He is passionate about soccer and croissants (vegan).",
           image:
             "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
           borderTop: false,

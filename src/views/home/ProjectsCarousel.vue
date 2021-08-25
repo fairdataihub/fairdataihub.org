@@ -17,7 +17,7 @@
       <p
         class="w-full max-w-2xl text-xl font-asap dark:text-gray-50 text-center"
       >
-        These are the projects we are working on at the moment.
+        These are the projects we are working on at the moment:
       </p>
     </div>
     <!-- Slides container -->

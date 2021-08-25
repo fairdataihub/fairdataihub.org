@@ -352,11 +352,8 @@
             dark:text-white
           "
         >
-          We are a team of researchers from the California Medical Innovations
-          Institute who believe that all scientific research data should be
-          curated and shared according to applicable standards on the FAIR Data
-          Principles. We also believe that doing so should be easy for the
-          researchers collecting that data.
+          FAIR Data Hub is part from the California Medical Innovations
+          Institute. We have a multidisciplinary team of enthusiasts about FAIR Data practices and software development.
         </p>
         <div class="flex w-full justify-center py-5">
           <router-link to="/team">

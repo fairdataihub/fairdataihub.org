@@ -36,8 +36,7 @@
           lg:mx-auto
         "
       >
-        Small summary text here. Small summary text here. Small summary text
-        here. Small summary text here. Small summary text here.
+        Only with tools that support and assist researchers, we will achieve a widespread adoption of FAIR Data practices.
       </p>
     </div>
 
@@ -113,27 +112,27 @@ import {
 
 const features = [
   {
-    name: "Title 1",
+    name: "What is FAIR?",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by human and machines.",
     icon: GlobeAltIcon,
   },
   {
-    name: "Title 2",
+    name: "Why is it important?",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "FAIR Data practices are crucial for ensuring reproducibility of scientific findings and enabling AI/ML-driven analysis to increase the peace of discoveries.",
     icon: ScaleIcon,
   },
   {
-    name: "Title 3",
+    name: "What are the challenges?",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "Despite effort from funding agencies, industry, and researchers, FAIR Data practices are not widely adopted due to their complex and time consuming nature.",
     icon: LightningBoltIcon,
   },
   {
-    name: "Title 4",
+    name: "What do we do?",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+      "We develop tools that makes it easier and faster for biomedical researchers to comply with the FAIR data practices of their field.",
     icon: AnnotationIcon,
   },
 ];
