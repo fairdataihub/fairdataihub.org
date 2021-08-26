@@ -165,7 +165,13 @@
       </vueper-slide>
     </vueper-slides>
     <Flicking
-      :options="{ circular: true, align: 'center', horizontal: true }"
+      :options="{
+        circular: true,
+        align: 'center',
+        horizontal: true,
+        autoResize: true,
+        moveType: 'snap',
+      }"
       :plugins="plugins"
     >
       <section
@@ -177,21 +183,22 @@
           w-full
           h-full
           body-font
+          my-auto mx-auto
           px-5
           py-5
-          flex
+          flex flex-row
           justify-center
+          items-center
         "
       >
         <div
           class="
             container
             mx-auto
-            flex
-            w-4/5
-            sm:mb-5
-            flex-col-reverse
+            flex flex-col-reverse
+            justify-center
             items-center
+            h-full
           "
         >
           <!-- text div -->
@@ -319,7 +326,11 @@ export default {
   data() {
     return {
       plugins: [
-        new AutoPlay({ duration: 2000, direction: "NEXT", stopOnHover: true }),
+        new AutoPlay({
+          duration: 200000,
+          direction: "NEXT",
+          stopOnHover: true,
+        }),
         new Pagination({ type: "scroll" }),
       ],
     };
@@ -344,7 +355,7 @@ export default {
 </script>
 
 <style language="postcss">
-.vueperslides__bullet .default {
+.vueperslides__bullets .default {
   @apply bg-gray-400 dark:bg-gray-300 border-0 shadow-none transition-all w-14 h-1 opacity-20 hover:opacity-70 my-4 mx-1;
 }
 
