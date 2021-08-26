@@ -104,10 +104,10 @@
 
 <script>
 import {
-  AnnotationIcon,
-  GlobeAltIcon,
+  DesktopComputerIcon,
   LightningBoltIcon,
   ScaleIcon,
+  ExclamationCircleIcon,
 } from "@heroicons/vue/outline";
 
 const features = [
@@ -115,13 +115,13 @@ const features = [
     name: "What is FAIR?",
     description:
       "The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by human and machines.",
-    icon: GlobeAltIcon,
+    icon: ScaleIcon,
   },
   {
     name: "Why is it important?",
     description:
       "FAIR Data practices are crucial for ensuring reproducibility of scientific findings and enabling AI/ML-driven analysis to increase the peace of discoveries.",
-    icon: ScaleIcon,
+    icon: ExclamationCircleIcon,
   },
   {
     name: "What are the challenges?",
@@ -132,8 +132,8 @@ const features = [
   {
     name: "What do we do?",
     description:
-      "We develop open source tools that makes it easier and faster for biomedical researchers to comply with the FAIR data practices of their field.",
-    icon: AnnotationIcon,
+      "We develop open source tools that enhance FAIR data practices for biomedical researchers through automation and intuitive user interfaces.",
+    icon: DesktopComputerIcon,
   },
 ];
 

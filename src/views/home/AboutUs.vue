@@ -352,8 +352,8 @@
             dark:text-white
           "
         >
-          FAIR Data Hub is part from the California Medical Innovations
-          Institute. We have a multidisciplinary team of enthusiasts about FAIR Data practices and software development.
+          FAIR Data Hub is part of the California Medical Innovations
+          Institute, a non profit biomedical research organization located in San Diego, CA. We have a multidisciplinary team of enthusiasts about FAIR Data practices and software development.
         </p>
         <div class="flex w-full justify-center py-5">
           <router-link to="/team">
