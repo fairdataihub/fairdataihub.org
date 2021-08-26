@@ -62,7 +62,7 @@ export default {
           title: "Founder/Lead",
           bio: "Bhavesh hails from Thiais, France. His expertize lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
           image:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YXZhdGFyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "https://i.ibb.co/D8g0cdH/Pics-Art-08-25-09-29-37.jpg",
           borderTop: false,
           borderBottom: false,
           twitter: {
@@ -80,11 +80,11 @@ export default {
         },
         {
           id: "TramNgo",
-          name: "Tram Ngo",
-          title: "Aldecaldo leader",
-          bio: "Panam Palmer is introduced as a former member of the Aldecaldos nomad clan, who, after a family dispute, decided to live a more independent life as a mercenary.",
+          name: "Tram Ngo (she/her)",
+          title: "Software Developer",
+          bio: "My professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In my free time, I enjoy reading, cooking, doing pilates and yoga.",
           image:
-            "https://images.unsplash.com/photo-1598630388567-9fdbfd7e928e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
           borderTop: true,
           borderBottom: false,
           twitter: {
@@ -102,8 +102,8 @@ export default {
         },
         {
           id: "SanjaySoundarajan",
-          name: "Sanjay Soundarajan",
-          title: "VP, User Experience",
+          name: "Sanjay Soundarajan (he/him)",
+          title: "Software Developer",
           bio: "Hanako Arasaka is the third child and only daughter to Saburo. Hanako is a skilled netrunner and the head of the Kiji Faction of the Arasaka Corporation. She is loved by many people and often described as sweet and beautiful in the eyes of many Arasaka employees.",
           image:
             "https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
@@ -123,9 +123,9 @@ export default {
           },
         },
         {
-          id: "Rogue-Amendiares",
-          name: "Rogue Amendiares",
-          title: "Queen of fixers",
+          id: "Ismail-Qaddoura",
+          name: "Ismail Qaddoura (he/him)",
+          title: "Information Technology (IT) Manager",
           bio: "Rogue Amendiares used to be a solo who went on to become the best fixer in Night City by 2077. She is the owner of the famous Afterlife nightclub.",
           image:
             "https://images.unsplash.com/photo-1596813362035-3edcff0c2487?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
