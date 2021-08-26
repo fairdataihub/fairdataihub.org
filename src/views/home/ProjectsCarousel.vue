@@ -21,7 +21,7 @@
       </p>
     </div>
     <!-- Slides container -->
-    <vueper-slides
+    <!-- <vueper-slides
       :bullets="true"
       :arrows="true"
       :touchable="false"
@@ -56,7 +56,7 @@
                 items-center
               "
             >
-              <!-- text div -->
+              
               <div
                 class="
                   flex flex-col
@@ -67,22 +67,7 @@
                   text-center
                 "
               >
-                <!-- <h3
-                    class="
-                      font-inter font-semibold
-                      text-3xl
-                      md:text-2xl
-                      lg:text-3xl
-                      w-full
-                      mb-1
-                      sm:mb-4
-                      text-left
-                      sm:text-center
-                      dark:text-gray-50
-                    "
-                  >
-                    KnowMore
-                  </h3> -->
+              
 
                 <p
                   class="
@@ -131,7 +116,7 @@
                   </router-link>
                 </div>
               </div>
-              <!-- image div -->
+              
               <div
                 class="
                   lg:max-w-lg
@@ -163,7 +148,7 @@
           </section>
         </template>
       </vueper-slide>
-    </vueper-slides>
+    </vueper-slides> -->
     <Flicking
       :options="{
         circular: true,
@@ -183,7 +168,8 @@
           w-full
           h-full
           body-font
-          my-auto mx-auto
+          my-auto
+          mx-auto
           px-5
           py-5
           flex flex-row
@@ -307,8 +293,8 @@
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from "vueperslides";
-import "vueperslides/dist/vueperslides.css";
+// import { VueperSlides, VueperSlide } from "vueperslides";
+// import "vueperslides/dist/vueperslides.css";
 import Flicking from "@egjs/vue3-flicking";
 import "@egjs/vue3-flicking/dist/flicking.css";
 import "@egjs/flicking-plugins/dist/flicking-plugins.css";
@@ -318,8 +304,8 @@ import { AutoPlay, Pagination } from "@egjs/flicking-plugins";
 export default {
   name: "ProjectsCarousel",
   components: {
-    VueperSlides,
-    VueperSlide,
+    // VueperSlides,
+    // VueperSlide,
     Flicking,
   },
   props: ["projectsList"],

@@ -18,7 +18,7 @@
         </base-section>
       </div>
 
-      <base-section class="bg-transparent dark:bg-dark-background py-10">
+      <base-section class="bg-gray-50 dark:bg-dark-background py-10">
         <about-us id="aboutus"></about-us>
       </base-section>
 
