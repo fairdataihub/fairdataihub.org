@@ -280,9 +280,9 @@
 <script>
 // import { VueperSlides, VueperSlide } from "vueperslides";
 // import "vueperslides/dist/vueperslides.css";
-import Flicking from "@egjs/vue3-flicking";
 import "@egjs/vue3-flicking/dist/flicking.css";
 import "@egjs/flicking-plugins/dist/flicking-plugins.css";
+import Flicking from "@egjs/vue3-flicking";
 
 import { AutoPlay, Pagination, Arrow } from "@egjs/flicking-plugins";
 
@@ -298,7 +298,7 @@ export default {
     return {
       plugins: [
         new AutoPlay({
-          duration: 2000,
+          duration: 200000,
           direction: "NEXT",
           stopOnHover: true,
         }),
