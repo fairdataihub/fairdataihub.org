@@ -128,7 +128,7 @@ export default {
           title: "Information Technology (IT) Manager",
           bio: "Rogue Amendiares used to be a solo who went on to become the best fixer in Night City by 2077. She is the owner of the famous Afterlife nightclub.",
           image:
-            "https://images.unsplash.com/photo-1596813362035-3edcff0c2487?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "https://i.ibb.co/0XDxPF9/ismail2.jpg",
           borderTop: true,
           borderBottom: false,
           twitter: {
