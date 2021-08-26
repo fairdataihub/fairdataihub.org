@@ -154,8 +154,6 @@
         circular: true,
         align: 'center',
         horizontal: true,
-        autoResize: true,
-        moveType: 'snap',
       }"
       :plugins="plugins"
     >
@@ -165,16 +163,18 @@
         class="
           flex flex-col
           text-gray-600
-          w-full
+          w-4/5
           h-full
           body-font
           my-auto
-          mx-auto
+          mx-10
           px-5
-          py-5
+          py-10
           flex flex-row
           justify-center
           items-center
+          rounded-lg
+          shadow-xl
         "
       >
         <div
@@ -191,23 +191,6 @@
           <div
             class="flex flex-col my-4 sm:mb-16 md:mb-0 items-center text-center"
           >
-            <!-- <h3
-                    class="
-                      font-inter font-semibold
-                      text-3xl
-                      md:text-2xl
-                      lg:text-3xl
-                      w-full
-                      mb-1
-                      sm:mb-4
-                      text-left
-                      sm:text-center
-                      dark:text-gray-50
-                    "
-                  >
-                    KnowMore
-                  </h3> -->
-
             <p
               class="
                 w-full
@@ -286,6 +269,8 @@
         </div>
       </section>
       <template #viewport>
+        <span class="flicking-arrow-prev"></span>
+        <span class="flicking-arrow-next"></span>
         <div class="flicking-pagination"></div>
       </template>
     </Flicking>
@@ -299,7 +284,7 @@ import Flicking from "@egjs/vue3-flicking";
 import "@egjs/vue3-flicking/dist/flicking.css";
 import "@egjs/flicking-plugins/dist/flicking-plugins.css";
 
-import { AutoPlay, Pagination } from "@egjs/flicking-plugins";
+import { AutoPlay, Pagination, Arrow } from "@egjs/flicking-plugins";
 
 export default {
   name: "ProjectsCarousel",
@@ -313,11 +298,12 @@ export default {
     return {
       plugins: [
         new AutoPlay({
-          duration: 200000,
+          duration: 2000,
           direction: "NEXT",
           stopOnHover: true,
         }),
         new Pagination({ type: "scroll" }),
+        new Arrow(),
       ],
     };
   },
@@ -355,5 +341,9 @@ export default {
 
 .vueperslides__arrow {
   @apply text-accent opacity-30 hover:opacity-100 transition-all;
+}
+
+.flicking-viewport {
+  @apply py-10;
 }
 </style>

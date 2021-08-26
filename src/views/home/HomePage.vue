@@ -104,7 +104,7 @@ export default {
           imageUrl:
             "https://github.com/SPARC-FAIR-Codeathon/aqua/raw/main/src/assets/images/logo_aqua-1.jpg",
           description:
-            "AQUA (Advanced QUery Architecture for the SPARC Portal) is an application that improves the SPARC Portal by making the search engine smarter at reading and understanding user search keywords, enhancing the result display feature of the SPARC Portal, and providing users with better result filtering and sorting options.",
+            "AQUA (Advanced QUery Architecture for the SPARC Portal) improves the SPARC Portal by making the search engine smarter at understanding user search keywords, enhancing the result display  the SPARC Portal, and providing users with better result filtering and sorting options.",
           page: "/aqua",
         },
       ],
