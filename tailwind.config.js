@@ -7,6 +7,7 @@ module.exports = {
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx,html}",
     "./node_modules/vueperslides/dist/vueperslides.css",
+    "./node_modules/vue3-carousel/dist/carousel.css",
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
