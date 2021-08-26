@@ -36,7 +36,7 @@
           lg:mx-auto
         "
       >
-        Only with tools that support and assist researchers, we will achieve a widespread adoption of FAIR Data practices.
+        Only with tools that support and assist researchers we will achieve a widespread adoption of FAIR Data practices.
       </p>
     </div>
 
@@ -132,7 +132,7 @@ const features = [
   {
     name: "What do we do?",
     description:
-      "We develop tools that makes it easier and faster for biomedical researchers to comply with the FAIR data practices of their field.",
+      "We develop open source tools that makes it easier and faster for biomedical researchers to comply with the FAIR data practices of their field.",
     icon: AnnotationIcon,
   },
 ];

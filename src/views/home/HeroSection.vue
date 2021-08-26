@@ -17,7 +17,7 @@
         >
           Making FAIR
           <span class="text-accent"> data </span>
-          practices more accessible
+          practices more accessible one tool at a time
         </h1>
 
         <p
@@ -35,7 +35,7 @@
           "
         >
           Findable, Accessible,
-          Interoperable, and Reusable (FAIR) data practices are taking the biomedical research world by a storm. We build tools to help researchers navigate through them.
+          Interoperable, and Reusable (FAIR) data practices are taking the biomedical research world by a storm. We build open source tools to help researchers navigate through them.
         </p>
       </div>
 
