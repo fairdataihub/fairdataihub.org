@@ -112,7 +112,7 @@ export default {
           image: "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
           borderTop: true,
           borderBottom: false,
-          education: [`B. Sc. Economics and Mathematics (UC San Diego, 2018)`],
+          education: [`B.Sc. Economics and Mathematics (University of California, San Diego, 2018)`],
           twitter: {
             show: true,
             link: "https://twitter.com/tramngo41410636",
@@ -136,8 +136,8 @@ export default {
           borderTop: true,
           borderBottom: false,
           education: [
-            `M. Sc. in Computer Science (California State University, Fresno, 2020)`,
-            `B. Sc. in Computer Science (California State University, Fresno, 2018)`,
+            `M.Sc. in Computer Science (California State University, Fresno, 2020)`,
+            `B.Sc. in Computer Science (California State University, Fresno, 2018)`,
           ],
           twitter: {
             show: true,
