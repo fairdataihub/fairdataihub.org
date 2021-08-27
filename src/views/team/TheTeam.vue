@@ -39,16 +39,16 @@
           <a
             href="https://calmi2.org"
             target="_blank"
-            class="text-accent inline-flex items-center text-lg sm:text-base"
+            class="text-accent inline-flex items-center text-lg"
           >
-            <span class="font-lato"> Learn more about CALMII </span>
+            <span class="font-asap"> Learn more about CALMII </span>
             <svg
               fill="none"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              class="w-4 h-4 ml-2"
+              class="w-4 h-4 ml-2 arrow-animate"
               viewBox="0 0 24 24"
             >
               <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -192,4 +192,20 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="postcss" scoped>
+.arrow-animate {
+  animation: bounce ease-in-out 2s 5 alternate-reverse;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translatex(0);
+  }
+  50% {
+    transform: translatex(4px);
+  }
+  100% {
+    transform: translatex(0);
+  }
+}
+</style>
