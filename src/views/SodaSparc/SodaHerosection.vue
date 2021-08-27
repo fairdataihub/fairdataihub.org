@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col justify-center items-center">
-    <section class="max-w-screen-xl mx-auto p-5">
+  <div class="flex flex-col justify-center items-center bg-patternRandomized">
+    <section class="max-w-screen-xl mx-auto p-5 bg-patternRandomized">
       <div
         class="
           container

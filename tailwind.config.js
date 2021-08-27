@@ -31,6 +31,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         haikeiWavy: "url('./assets/wavy-background.svg')",
         haikeiCircleScatter: "url('./assets/circle-scatter-haikei.svg')",
+        patternRandomized: "url('./assets/pattern-randomized (1).svg')",
       }),
     },
     textColor: (theme) => ({
