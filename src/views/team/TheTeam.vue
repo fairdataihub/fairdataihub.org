@@ -81,7 +81,7 @@ export default {
           id: "BhaveshPatel",
           name: "Bhavesh Patel (he/him)",
           title: "Founder/Lead",
-          bio: "Bhavesh hails from Thiais, France. His expertize lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
+          bio: "Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
           image: "https://i.ibb.co/D8g0cdH/Pics-Art-08-25-09-29-37.jpg",
           borderTop: false,
           borderBottom: false,
@@ -112,7 +112,9 @@ export default {
           image: "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
           borderTop: true,
           borderBottom: false,
-          education: [`B.Sc. Economics and Mathematics (University of California, San Diego, 2018)`],
+          education: [
+            `B.Sc. Economics and Mathematics (University of California, San Diego, 2018)`,
+          ],
           twitter: {
             show: true,
             link: "https://twitter.com/tramngo41410636",
@@ -130,9 +132,9 @@ export default {
           id: "SanjaySoundarajan",
           name: "Sanjay Soundarajan (he/him)",
           title: "Software Developer",
-          bio: "Hanako Arasaka is the third child and only daughter to Saburo. Hanako is a skilled netrunner and the head of the Kiji Faction of the Arasaka Corporation. She is loved by many people and often described as sweet and beautiful in the eyes of many Arasaka employees.",
+          bio: "Sanjay moved from Sri Lanka to pursue higer education. His published works lie in Parallel Computing and the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
           image:
-            "https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "https://i.ibb.co/3Fc4xY9/IMG-9079-1.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -157,8 +159,7 @@ export default {
           name: "Ismail Qaddoura (he/him)",
           title: "Information Technology (IT) Manager",
           bio: "Rogue Amendiares used to be a solo who went on to become the best fixer in Night City by 2077. She is the owner of the famous Afterlife nightclub.",
-          image:
-            "https://i.ibb.co/0XDxPF9/ismail2.jpg",
+          image: "https://i.ibb.co/0XDxPF9/ismail2.jpg",
           borderTop: true,
           borderBottom: false,
           twitter: {
