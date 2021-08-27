@@ -352,10 +352,39 @@
             dark:text-white
           "
         >
-          FAIR Data Hub is part of the California Medical Innovations
-          Institute, a non profit biomedical research organization located in San Diego, CA. We have a multidisciplinary team of enthusiasts about FAIR Data practices and software development.
+          FAIR Data Hub is part of the California Medical Innovations Institute,
+          a non profit biomedical research organization located in San Diego,
+          CA. We have a multidisciplinary team of enthusiasts about FAIR Data
+          practices and software development.
         </p>
         <div class="flex w-full justify-center py-5">
+          <a href="https://calmi2.org/" target="_blank" class="hidden">
+            <button
+              type="button"
+              class="
+                py-4
+                px-6
+                mx-2
+                w-max-content
+                transition
+                ease-in-out
+                duration-200
+                text-center text-base
+                rounded-md
+                font-semibold
+                bg-black
+                dark:bg-pink-600
+                text-white
+                ring-2 ring-offset-2 ring-transparent
+                dark:ring-offset-transparent
+                hover:ring-pink-600
+                dark:hover:ring-offset-1 dark:hover:ring-white
+                focus:ring-pink-600
+              "
+            >
+              Learn about CALMII
+            </button>
+          </a>
           <router-link to="/team">
             <button
               type="button"

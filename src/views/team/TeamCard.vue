@@ -1,13 +1,24 @@
 <template>
   <div :id="profile.id">
     <div :class="[borderClasses, `flex flex-col sm:flex-row `]">
-      <div
-        class="w-full md:w-1/3 h-full shadow-2xl dark:shadow-none my-3 sm:my-2"
-      >
-        <img :src="profile.image" alt="" class="w-full h-auto rounded-lg" />
+      <div class="w-full md:w-1/2 lg:w-2/5 my-3 sm:my-2">
+        <img
+          :src="profile.image"
+          alt=""
+          class="w-full h-auto rounded-lg shadow-2xl"
+        />
       </div>
       <div
-        class="w-full md:w-2/3 py-3 px-0 sm:py-4 sm:px-8 lg:ml-2 flex flex-col"
+        class="
+          w-full
+          md:w-1/2
+          lg:w-3/5
+          py-3
+          px-0
+          sm:py-4 sm:px-8
+          lg:ml-2
+          flex flex-col
+        "
       >
         <h1
           class="font-inter dark:text-gray-50 text-2xl sm:text-xl lg:text-3xl"
@@ -39,6 +50,30 @@
         >
           {{ profile.bio }}
         </p>
+        <div class="py-2" v-if="profile.education">
+          <h3
+            class="
+              font-inter
+              text-primary
+              dark:text-indigo-200
+              text-lg
+              sm:text-md
+              lg:text-xl
+              pb-1
+            "
+          >
+            Education
+          </h3>
+          <ul>
+            <li
+              v-for="degree in profile.education"
+              :key="degree"
+              class="font-asap"
+            >
+              {{ degree }}
+            </li>
+          </ul>
+        </div>
         <div class="flex py-3">
           <a
             v-if="profile.twitter.show"

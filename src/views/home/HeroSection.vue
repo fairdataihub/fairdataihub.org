@@ -25,7 +25,7 @@
             mt-2
             sm:mt-0
             w-full
-            font-lato font-medium
+            font-inter font-normal
             text-xl
             sm:text-base
             md:text-lg
@@ -34,8 +34,12 @@
             dark:text-gray-50
           "
         >
-          Findable, Accessible,
-          Interoperable, and Reusable (FAIR) data practices are taking the biomedical research world by a storm. We build open source tools to help researchers navigate through them.
+          <span class="font-medium">F</span>indable,
+          <span class="font-medium">A</span>ccessible,
+          <span class="font-medium">I</span>nteroperable, and
+          <span class="font-medium">R</span>eusable (FAIR) data practices are
+          taking the biomedical research world by a storm. We build open source
+          tools to help researchers navigate through them.
         </p>
       </div>
 

@@ -16,8 +16,8 @@
         max-w-screen-2xl
       "
     >
-      <div class="flex flex-col md:flex-row w-11/12 mx-auto">
-        <div class="w-full md:w-1/3 p-5">
+      <div class="flex flex-col lg:flex-row w-11/12 mx-auto">
+        <div class="w-full lg:w-1/3 p-5">
           <h1
             class="
               font-inter font-black
@@ -30,11 +30,32 @@
             About Us
           </h1>
           <p class="font-asap text-black dark:text-white text-xl sm:text-lg">
-          FAIR Data Hub is part of the California Medical Innovations
-          Institute, a non profit biomedical research organization located in San Diego, CA. We have a multidisciplinary team of enthusiasts about FAIR Data practices and software development.
+            FAIR Data Hub is part of the California Medical Innovations
+            Institute, a non profit biomedical research organization located in
+            San Diego, CA. We have a multidisciplinary team of enthusiasts about
+            FAIR Data practices and software development.
           </p>
+
+          <a
+            href="https://calmi2.org"
+            target="_blank"
+            class="text-accent inline-flex items-center text-lg sm:text-base"
+          >
+            <span class="font-lato"> Learn more about CALMII </span>
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-4 h-4 ml-2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
         </div>
-        <div class="w-full md:w-2/3 p-2 md:p-5">
+        <div class="w-full lg:w-2/3 p-2 md:p-5">
           <team-card
             data-aos="fade-in"
             v-for="member in teamsList"
@@ -61,10 +82,15 @@ export default {
           name: "Bhavesh Patel (he/him)",
           title: "Founder/Lead",
           bio: "Bhavesh hails from Thiais, France. His expertize lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
-          image:
-            "https://i.ibb.co/D8g0cdH/Pics-Art-08-25-09-29-37.jpg",
+          image: "https://i.ibb.co/D8g0cdH/Pics-Art-08-25-09-29-37.jpg",
           borderTop: false,
           borderBottom: false,
+          education: [
+            `Ph.D. in Mechanical Engineering (UC Berkeley, 2015)`,
+            `M.A. in Mathematics (UC Berkeley, 2014)`,
+            `M.Sc. In Mechanical Engineering (UC Berkeley, 2013)`,
+            `Diplôme d'Ingénieur, Arts et Métiers ParisTech (2013)`,
+          ],
           twitter: {
             show: true,
             link: "https://twitter.com/bvhpatel",
@@ -83,13 +109,13 @@ export default {
           name: "Tram Ngo (she/her)",
           title: "Software Developer",
           bio: "My professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In my free time, I enjoy reading, cooking, doing pilates and yoga.",
-          image:
-            "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
+          image: "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
           borderTop: true,
           borderBottom: false,
+          education: [`B. Sc. Economics and Mathematics (UC San Diego, 2018)`],
           twitter: {
-            show: false,
-            link: "",
+            show: true,
+            link: "https://twitter.com/tramngo41410636",
           },
           github: {
             show: true,
@@ -109,6 +135,10 @@ export default {
             "https://images.unsplash.com/photo-1614644147798-f8c0fc9da7f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
           borderTop: true,
           borderBottom: false,
+          education: [
+            `M. Sc. in Computer Science (California State University, Fresno, 2020)`,
+            `B. Sc. in Computer Science (California State University, Fresno, 2018)`,
+          ],
           twitter: {
             show: true,
             link: "https://twitter.com/megasanjay",

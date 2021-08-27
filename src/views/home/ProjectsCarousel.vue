@@ -324,7 +324,7 @@ export default {
 <style language="postcss">
 .carousel__next,
 .carousel__prev {
-  @apply bg-light-accent;
+  @apply bg-light-accent hover:bg-pink-400 transition-all;
 }
 
 .carousel__pagination-button {

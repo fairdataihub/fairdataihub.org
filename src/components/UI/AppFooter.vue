@@ -189,7 +189,7 @@
           </svg>
         </div> -->
 
-        <div>
+        <a href="https://calmi2.org" target="_blank">
           <svg
             id="e2e7ad45-a5d8-45e3-97ca-4ba2e5555a04"
             data-name="Layer 1"
@@ -428,7 +428,7 @@
               fill="#455560"
             />
           </svg>
-        </div>
+        </a>
 
         <div
           class="

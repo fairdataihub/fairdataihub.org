@@ -527,7 +527,7 @@
     <div v-show="open">
       <DisclosurePanel
         static
-        class="sm:hidden pt-16 fixed w-screen bg-gray-500 z-20"
+        class="sm:hidden pt-16 fixed w-screen bg-white z-20"
       >
         <div class="px-2 pt-2 pb-3 space-y-1 z-20">
           <router-link
@@ -535,13 +535,13 @@
             :key="item.name"
             :to="item.href"
             class="
-              text-white
-              bg-gray-700
+              text-black
+              font-inter
               block
               px-3
               py-2
               rounded-md
-              text-base
+              text-base text-center
               font-medium
               z-20
             "
