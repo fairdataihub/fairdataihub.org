@@ -108,7 +108,7 @@ export default {
           id: "TramNgo",
           name: "Tram Ngo (she/her)",
           title: "Software Developer",
-          bio: "My professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In my free time, I enjoy reading, cooking, doing pilates and yoga.",
+          bio: "Tram's professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In her free time, she enjoys reading, cooking, doing pilates and yoga.",
           image: "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
           borderTop: true,
           borderBottom: false,
