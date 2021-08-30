@@ -149,7 +149,7 @@
       :settings="settings"
       :breakpoints="breakpoints"
       :wrap-around="true"
-      :autoplay="2000"
+      :autoplay="10000"
       pause-autoplay-on-hover
     >
       <Slide v-for="project in projectsList" :key="project.name" class="py-10">
