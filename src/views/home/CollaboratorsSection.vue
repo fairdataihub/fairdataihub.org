@@ -20,23 +20,23 @@
       </p>
     </div>
     <div class="block">
-      <collaborators-logos-carousel></collaborators-logos-carousel>
+      <CollaboratorsVue3Carousel></CollaboratorsVue3Carousel>
     </div>
     <div class="hidden">
-      <collaborators-logos></collaborators-logos>
+      <CollaboratorsFlicking></CollaboratorsFlicking>
     </div>
   </div>
 </template>
 
 <script>
-import CollaboratorsLogos from "./CollaboratorsLogos.vue";
-import CollaboratorsLogosCarousel from "./CollaboratorsLogosCarousel.vue";
+import CollaboratorsFlicking from "./CollaboratorsFlicking.vue";
+import CollaboratorsVue3Carousel from "./CollaboratorsVue3Carousel.vue";
 
 export default {
   name: "CollaboratorsSection",
   components: {
-    CollaboratorsLogos,
-    CollaboratorsLogosCarousel,
+    CollaboratorsFlicking,
+    CollaboratorsVue3Carousel,
   },
   data() {
     return {};
