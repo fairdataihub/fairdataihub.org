@@ -2,6 +2,7 @@
   <div>
     <div class="divide-y divide-white bg-white dark:divide-gray-800">
       <div
+        data-aos="fade-in"
         class="
           bg-haikeiWavy bg-cover
           2xl:bg-contain
@@ -9,7 +10,10 @@
           md:bg-right-top
         "
       >
-        <base-section class="pt-12 sm:pt-16 dark:bg-dark-background mb-10">
+        <base-section
+          class="pt-12 sm:pt-16 dark:bg-dark-background mb-10"
+          data-aos="fade-in"
+        >
           <hero-section></hero-section>
         </base-section>
 

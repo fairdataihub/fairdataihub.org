@@ -74,9 +74,9 @@ export default {
   data() {
     return {
       statsList: [
-        { name: "Files touched", value: "7800+" },
+        { name: "Files touched", value: "16,300+" },
         { name: "Datasets modified", value: "60+" },
-        { name: "Data uploaded", value: "2.6TB+" },
+        { name: "Data uploaded", value: "3.55TB+" },
       ],
     };
   },

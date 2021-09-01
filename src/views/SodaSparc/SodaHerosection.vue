@@ -7,7 +7,7 @@
       <div
         class="
           hidden
-          sm:block
+          lg:block
           absolute
           bottom-1
           sm:bottom-12
@@ -29,16 +29,19 @@
           sm:py-4
           md:py-10
           w-full
-          flex-col-reverse flex-col
-          md:flex-row
+          flex-col-reverse
+          lg:flex-row
           items-center
         "
       >
         <!-- text div -->
         <div
           class="
-            lg:flex-grow lg:pr-24
-            md:pr-16
+            lg:flex-grow
+            pt-5
+            sm:pt-0
+            lg:pr-24
+            md:pr-0
             flex flex-col
             md:items-start md:text-left
             mb-2
@@ -90,39 +93,19 @@
             <br />
             <i> By SPARC investigators, for SPARC investigators </i>
           </p>
-          <div class="w-full flex justify-center">
-            <!-- <a
-              href="https://github.com/bvhpatel/SODA#Downloading-soda"
-              target="_blank"
-            >
-              <button
-                class="
-                  hidden
-                  sm:inline-flex
-                  text-white
-                  bg-indigo-500
-                  border-0
-                  py-2
-                  px-6
-                  focus:outline-none
-                  hover:bg-indigo-600
-                  rounded
-                  text-lg
-                "
-              >
-                Download now
-              </button>
-            </a> -->
+          <div class="w-full flex">
             <button
               class="
-                hidden
-                sm:inline-flex
+                flex
+                justify-center
+                items-center
                 border-0
                 py-2
                 px-6
                 focus:outline-none
                 rounded
                 text-lg
+                transition-all
                 bg-black
                 dark:bg-pink-600
                 text-white
@@ -133,6 +116,7 @@
                 focus:ring-pink-600
               "
               @click="downloadSODA"
+              v-if="getOS() != 'all'"
             >
               Download now
             </button>
@@ -140,12 +124,12 @@
               <button
                 class="
                   ml-4
-                  inline-flex
                   py-2
                   px-6
                   focus:outline-none
                   rounded
                   text-lg
+                  transition-all
                   bg-black
                   dark:bg-pink-600
                   text-white
@@ -165,7 +149,7 @@
         <div class="lg:max-w-2xl py-2 sm:py-0 z-10 relative">
           <div
             class="
-              sm:hidden
+              lg:hidden
               absolute
               bottom-1
               sm:bottom-0
@@ -224,7 +208,6 @@ export default {
       } else {
         os = "all";
       }
-
       return os;
     },
     getLatestVersion: async function (os) {

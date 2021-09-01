@@ -140,17 +140,16 @@
                       items-center
                       p-2
                       md:mr-32
-                      rounded-lg
                       hover:bg-gray-100
                       dark:hover:bg-gray-700
                     "
                   >
                     <img
-                      src="https://www.tailwind-kit.com/images/person/4.jpg"
+                      src="https://i.ibb.co/drZPXHs/Bhavesh-head.jpg"
                       alt="Bhavesh Patel profile picture"
                       class="
-                        w-10
-                        h-10
+                        w-14
+                        h-14
                         border
                         rounded-full
                         dark:border-coolGray-700
@@ -180,7 +179,7 @@
                     "
                   >
                     <img
-                      src="https://www.tailwind-kit.com/images/person/9.jpg"
+                      src="https://i.ibb.co/VpYFGBv/Tram-head.jpg"
                       alt="Tram Ngo profile picture"
                       class="
                         w-10

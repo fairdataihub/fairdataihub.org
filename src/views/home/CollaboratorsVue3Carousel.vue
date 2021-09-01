@@ -4,9 +4,8 @@
     :breakpoints="breakpoints"
     :wrap-around="true"
     :autoplay="1000"
-    :transition="400"
   >
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- UCSD -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +26,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- UCSF -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +52,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- Thomas Jefferson University -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +79,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- Cedars Sinai -->
       <svg
         id="f23d4166-76d0-4a6d-ae63-a23b18e0a3f7"
@@ -130,7 +129,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- University of Michigan -->
       <svg
         id="a3574edd-360c-48d8-bbcc-6b89d4c1565a"
@@ -179,7 +178,7 @@
         </g>
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- SPARC -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +219,7 @@
         </g>
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- Cleveland Clinic -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -244,7 +243,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- Purdue -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -273,7 +272,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- Emory University -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -325,7 +324,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- Harvard Medical School -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -710,7 +709,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- Mass gen hospital -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -755,7 +754,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- ripple neuro -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1304,7 +1303,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- u of wisconsin-madison -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1539,7 +1538,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- fda -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1806,7 +1805,7 @@
         </g>
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- u of auckland -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1869,7 +1868,7 @@
         ></path>
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- uconn -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1890,7 +1889,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- u of idaho -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1906,7 +1905,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- u of lousiville -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -2041,7 +2040,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- u of melbourne -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -2311,7 +2310,7 @@
         />
       </svg>
     </Slide>
-    <Slide class="px-1 sm:mx-5">
+    <Slide class="px-4">
       <!-- usf -->
       <svg
         xmlns="http://www.w3.org/2000/svg"

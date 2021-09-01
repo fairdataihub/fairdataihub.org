@@ -23,7 +23,7 @@
 
     <base-section
       data-aos="fade-in"
-      class="bg-grey-50 dark:bg-dark-background py-10"
+      class="bg-grey-50 dark:bg-dark-background pt-10"
     >
       <about-soda></about-soda>
     </base-section>
