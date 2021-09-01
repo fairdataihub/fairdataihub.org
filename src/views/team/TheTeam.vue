@@ -157,10 +157,14 @@ export default {
           id: "Ismail-Qaddoura",
           name: "Ismail Qaddoura (he/him)",
           title: "Information Technology (IT) Manager",
-          bio: "Rogue Amendiares used to be a solo who went on to become the best fixer in Night City by 2077. She is the owner of the famous Afterlife nightclub.",
+          bio: "Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.",
           image: "https://i.ibb.co/0XDxPF9/ismail2.jpg",
           borderTop: true,
           borderBottom: false,
+          education: [
+            `M.Sc. in Information Technology (Coleman University, San Diego, 1995)`,
+            `B.Sc. in Information Technology (Coleman University, San Diego, 1993)`,
+          ],
           twitter: {
             show: true,
             link: "https://twitter.com/eleanorraybooks",
