@@ -9,7 +9,21 @@
 
     <base-section
       data-aos="fade-in"
-      class="bg-white dark:bg-dark-background py-10"
+      class="bg-grey-50 dark:bg-dark-background py-10"
+    >
+      <about-soda-vision></about-soda-vision>
+    </base-section>
+
+    <base-section
+      data-aos="fade-in"
+      class="bg-grey-50 dark:bg-dark-background py-10"
+    >
+      <funding-team></funding-team>
+    </base-section>
+
+    <base-section
+      data-aos="fade-in"
+      class="bg-grey-50 dark:bg-dark-background py-10"
     >
       <about-soda></about-soda>
     </base-section>
@@ -23,14 +37,7 @@
 
     <base-section
       data-aos="fade-in"
-      class="bg-white dark:bg-dark-background py-10"
-    >
-      <sodasparc-publications></sodasparc-publications>
-    </base-section>
-
-    <base-section
-      data-aos="fade-in"
-      class="bg-white dark:bg-dark-background py-10"
+      class="bg-grey-50 dark:bg-dark-background py-10"
     >
       <soda-timeline></soda-timeline>
     </base-section>
@@ -39,6 +46,13 @@
       data-aos="fade-in"
       class="bg-white dark:bg-dark-background py-10"
     >
+      <sodasparc-publications></sodasparc-publications>
+    </base-section>
+
+    <base-section
+      data-aos="fade-in"
+      class="bg-white dark:bg-dark-background py-10 hidden"
+    >
       <the-faq> </the-faq>
     </base-section>
   </div>
@@ -46,6 +60,8 @@
 
 <script>
 import AboutSoda from "./AboutSoda.vue";
+import FundingTeam from "./FundingTeam.vue";
+import AboutSodaVision from "./AboutSodaVision.vue";
 import SodasparcStats from "./SodasparcStats.vue";
 import SodaHerosection from "./SodaHerosection.vue";
 import SodaTimeline from "./SodaTimeline.vue";
@@ -58,6 +74,8 @@ export default {
     SodaHerosection,
     SodaTimeline,
     AboutSoda,
+    FundingTeam,
+    AboutSodaVision,
     SodasparcStats,
     SodasparcPublications,
   },
