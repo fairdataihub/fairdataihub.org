@@ -4,6 +4,7 @@
     :breakpoints="breakpoints"
     :wrap-around="true"
     :autoplay="1000"
+    :transition="400"
   >
     <Slide class="px-1 sm:mx-5">
       <!-- UCSD -->
@@ -2459,9 +2460,4 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
-.carousel__track,
-.carousel__track {
-  @apply transition-all;
-}
-</style>
+<style lang="postcss" scoped></style>
