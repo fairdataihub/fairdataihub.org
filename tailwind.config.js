@@ -8,6 +8,8 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx,html}",
     "./node_modules/vueperslides/dist/vueperslides.css",
     "./node_modules/vue3-carousel/dist/carousel.css",
+    "./node_modules/@egjs/vue3-flicking/dist/flicking.css",
+    "./node_modules/@egjs/flicking-plugins/dist/flicking-plugins.css",
   ],
   darkMode: "class", // or 'media' or 'class'
   theme: {
@@ -31,6 +33,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         haikeiWavy: "url('./assets/wavy-background.svg')",
         haikeiCircleScatter: "url('./assets/circle-scatter-haikei.svg')",
+        patternRandomized: "url('./assets/pattern-randomized (1).svg')",
       }),
     },
     textColor: (theme) => ({

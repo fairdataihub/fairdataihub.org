@@ -1,12 +1,30 @@
 <template>
   <div class="flex flex-col justify-center items-center">
-    <section class="max-w-screen-xl mx-auto p-5">
+    <section class="max-w-screen-2xl mx-auto py-5 relative">
+      <div class="absolute top-1 sm:top-10 right-0 z-0 opacity-60 w-40">
+        <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+      </div>
+      <div
+        class="
+          hidden
+          sm:block
+          absolute
+          bottom-1
+          sm:bottom-12
+          right-5
+          z-0
+          opacity-60
+          w-40
+        "
+      >
+        <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+      </div>
       <div
         class="
           container
           mx-auto
           flex
-          px-5
+          px-1
           py-2
           sm:py-4
           md:py-10
@@ -144,26 +162,26 @@
           </div>
         </div>
         <!-- image div -->
-        <div class="lg:max-w-lg py-2 sm:py-0">
-          <!-- <img
-            class="object-cover object-center rounded"
-            alt="SODA for SPARC logo"
-            src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
-          /> -->
-          <img
+        <div class="lg:max-w-2xl py-2 sm:py-0 z-10 relative">
+          <div
             class="
-              object-cover object-center
-              rounded
-              sm:h-36
-              md:h-56
-              lg:h-80
-              sm:w-36
-              md:w-56
-              lg:w-80
-              mx-auto
+              sm:hidden
+              absolute
+              bottom-1
+              sm:bottom-0
+              left-0
+              z-0
+              opacity-60
+              w-40
             "
+          >
+            <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+          </div>
+          <img
+            data-aos="fade-in"
+            class="relative rounded mx-auto z-10"
             alt="SODA for SPARC logo"
-            src="https://github.com/bvhpatel/SODA/raw/master/src/assets/img/logo-can1024-grey-circle.png"
+            src="../../assets/soda-app-macos.png"
           />
         </div>
       </div>
@@ -241,81 +259,4 @@ export default {
 };
 </script>
 
-<style scoped type="text/css">
-.st0 {
-  opacity: 0.85;
-  fill-opacity: 0;
-  enable-background: new;
-}
-.st1 {
-  fill: #e8e8e8;
-  fill-opacity: 0.9804;
-  stroke: #12716d;
-  stroke-width: 11.3386;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 12.5008;
-}
-.st2 {
-  fill: none;
-  stroke: #13716d;
-  stroke-width: 7.3769;
-  stroke-linejoin: round;
-  stroke-opacity: 0.9922;
-}
-.st3 {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: #13716d;
-  fill-opacity: 0.9922;
-  stroke: #13716d;
-  stroke-width: 13.7862;
-  stroke-linejoin: round;
-  stroke-miterlimit: 12.5008;
-  stroke-opacity: 0.9922;
-}
-.st4 {
-  fill-rule: evenodd;
-  clip-rule: evenodd;
-  fill: #258193;
-  stroke: #258193;
-  stroke-width: 7.3945;
-  stroke-miterlimit: 12.5008;
-}
-.st5 {
-  fill: #13716d;
-  stroke: #13716d;
-  stroke-width: 2.8;
-  stroke-opacity: 0.9922;
-}
-.st6 {
-  fill: #13716d;
-  fill-opacity: 0.9922;
-  stroke: #13716d;
-  stroke-width: 1.0332;
-  stroke-linejoin: round;
-  stroke-opacity: 0.9922;
-}
-.st7 {
-  clip-path: url(#SVGID_2_);
-  fill: #13716d;
-  fill-opacity: 0.9922;
-  stroke: #13716d;
-  stroke-width: 2.8731;
-  stroke-linejoin: round;
-}
-.st8 {
-  fill: none;
-  stroke: #13716d;
-  stroke-width: 23.2139;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-.st9 {
-  fill: none;
-  stroke: #13716d;
-  stroke-width: 19.3902;
-  stroke-miterlimit: 12.5008;
-  stroke-opacity: 0.9922;
-}
-</style>
+<style lang="postcss" scoped></style>
