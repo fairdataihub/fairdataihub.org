@@ -126,7 +126,7 @@ export default {
           longDate: "Sept 2020 - Aug 2021",
           title: "Phase II development",
           content:
-            "The user interface is upgraded to become more intuitive, support is included for additional elements of the SDS, and transition of SPARC from Blackfynn to Pennsieve was accomodated.",
+            "The user interface was upgraded to become more intuitive, support was included for additional elements of the SDS, and the transition of SPARC from Blackfynn to Pennsieve was accommodated.",
         },
         {
           longDate: "Sept 2021 - Aug 2022",

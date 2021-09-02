@@ -17,7 +17,7 @@
           Funding
         </h1>
         <dl class="w-full py-2">
-          <div class="w-full flex flex-row justify-between">
+          <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
               <p
                 class="
@@ -31,7 +31,7 @@
               >
                 SODA for SPARC is funded by the National Institutes of Health
                 (NIH)'s SPARC program. The funding was initially provided as a
-                supplement to an existing SPARC award at Calmi2 during the first
+                supplement to an existing SPARC award at Calmii during the first
                 phase of development before now having a standalone award.
               </p>
               <div class="flex mt-2 md:mt-1">
@@ -63,7 +63,7 @@
                 </a>
               </div>
             </dd>
-            <div class="">
+            <div class="py-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"

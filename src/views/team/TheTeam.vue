@@ -32,8 +32,8 @@
           <p class="font-asap text-black dark:text-white text-xl sm:text-lg">
             FAIR Data Hub is part of the California Medical Innovations
             Institute, a non profit biomedical research organization located in
-            San Diego, CA. We have a multidisciplinary team of enthusiasts about
-            FAIR Data practices and software development.
+            San Diego, California. We have a multidisciplinary team of
+            enthusiasts about FAIR data practices and software development.
           </p>
 
           <a
@@ -83,7 +83,8 @@ export default {
           title: "Founder/Lead",
           bio: "Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
           image: "https://i.ibb.co/D8g0cdH/Pics-Art-08-25-09-29-37.jpg",
-          placeholder: "https://i.ibb.co/s906YLv/Pics-Art-08-25-09-29-37-min.jpg",
+          placeholder:
+            "https://i.ibb.co/s906YLv/Pics-Art-08-25-09-29-37-min.jpg",
           borderTop: false,
           borderBottom: false,
           education: [
@@ -134,8 +135,9 @@ export default {
           id: "SanjaySoundarajan",
           name: "Sanjay Soundarajan (he/him)",
           title: "Software Developer",
-          bio: "Sanjay moved from Sri Lanka to pursue higer education. His published works lie in Parallel Computing and the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
-          image: "https://i.ibb.co/C8vSG2Y/IMG-9079.jpg", placeholder: "https://i.ibb.co/nQH1M49/IMG-9079-1-min.jpg",
+          bio: "Sanjay moved from Sri Lanka to pursue higer education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
+          image: "https://i.ibb.co/C8vSG2Y/IMG-9079.jpg",
+          placeholder: "https://i.ibb.co/nQH1M49/IMG-9079-1-min.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -169,16 +171,16 @@ export default {
             `B.Sc. in Information Technology (Coleman University, San Diego, 1993)`,
           ],
           twitter: {
-            show: true,
-            link: "https://twitter.com/eleanorraybooks",
+            show: false,
+            link: "https://twitter.com",
           },
           github: {
-            show: true,
-            link: "https://github.com/bendemboski",
+            show: false,
+            link: "https://github.com",
           },
           linkedin: {
             show: true,
-            link: "https://www.linkedin.com/in/leslie-shaw-315565a?trk=people-guest_people_search-card",
+            link: "https://www.linkedin.com/in/ismail-qaddoura-76664754",
           },
         },
       ],

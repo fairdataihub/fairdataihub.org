@@ -103,19 +103,19 @@ const features = [
   {
     name: "What is FAIR?",
     description:
-      "The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by human and machines.",
+      "The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by both human and machines.",
     icon: ScaleIcon,
   },
   {
     name: "Why is it important?",
     description:
-      "FAIR Data practices are crucial for ensuring reproducibility of scientific findings and enabling AI/ML-driven analysis to increase the peace of discoveries.",
+      "FAIR data practices are crucial for ensuring reproducibility of scientific findings and enabling AI/ML-driven analysis to increase the pace of new and exciting discoveries.",
     icon: ExclamationCircleIcon,
   },
   {
     name: "What are the challenges?",
     description:
-      "Despite effort from funding agencies, industry, and researchers, FAIR Data practices are not widely adopted due to their complex and time consuming nature.",
+      "Despite effort from funding agencies, industry, and researchers, FAIR data practices are not widely adopted due to their complex and time consuming nature.",
     icon: LightningBoltIcon,
   },
   {

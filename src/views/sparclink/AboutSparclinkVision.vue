@@ -105,7 +105,7 @@ import {
 const features = [
   {
     name: "What is SPARC?",
-    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function 
+    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function. 
     <div class="flex mt-2 md:mt-1">
       <a href="https://sparc.science" target="_blank" class="">
         <text

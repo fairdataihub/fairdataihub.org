@@ -27,7 +27,7 @@
           @submit.prevent="sendEmail"
           class="flex flex-col py-5 px-5 sm:px-10 text-3xl"
         >
-          <h2 class="font-inter pt-3 text-center">
+          <h2 class="font-inter pt-3 text-center text-4xl">
             Tell us about your project
           </h2>
           <h2 class="font-inter pb-10 text-center">
@@ -177,6 +177,7 @@
     </base-section>
     <notifications position="bottom right" />
   </div>
+  
 </template>
 
 <script>

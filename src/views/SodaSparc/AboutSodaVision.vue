@@ -105,9 +105,9 @@ import {
 const features = [
   {
     name: "What is SPARC?",
-    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function 
+    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function. 
     <div class="flex mt-2 md:mt-1">
-      <a href="https://sparc.science" target="_blank" class="">
+      <a href="https://commonfund.nih.gov/sparc" target="_blank" class="">
         <text
           class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
         >
@@ -155,7 +155,7 @@ const features = [
   {
     name: "What are the challenges?",
     description:
-      "The guidelines are very exaustive to maximize FAIRness of SPARC dataset but are challenging and time-consuming to implement for the researchers.",
+      "The guidelines are very exhaustive to maximize FAIRness of SPARC datasets but are challenging and time-consuming for researchers to implement.",
     icon: LightningBoltIcon,
   },
   {
