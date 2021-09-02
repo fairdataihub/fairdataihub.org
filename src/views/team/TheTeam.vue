@@ -83,6 +83,7 @@ export default {
           title: "Founder/Lead",
           bio: "Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
           image: "https://i.ibb.co/D8g0cdH/Pics-Art-08-25-09-29-37.jpg",
+          placeholder: "https://i.ibb.co/s906YLv/Pics-Art-08-25-09-29-37-min.jpg",
           borderTop: false,
           borderBottom: false,
           education: [
@@ -110,6 +111,7 @@ export default {
           title: "Software Developer",
           bio: "Tram's professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In her free time, she enjoys reading, cooking, doing pilates and yoga.",
           image: "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
+          placeholder: "https://i.ibb.co/jLsyBqL/Tram-s-Profile-pic-min.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -133,7 +135,7 @@ export default {
           name: "Sanjay Soundarajan (he/him)",
           title: "Software Developer",
           bio: "Sanjay moved from Sri Lanka to pursue higer education. His published works lie in Parallel Computing and the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
-          image: "https://i.ibb.co/C8vSG2Y/IMG-9079.jpg",
+          image: "https://i.ibb.co/C8vSG2Y/IMG-9079.jpg", placeholder: "https://i.ibb.co/nQH1M49/IMG-9079-1-min.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -159,6 +161,7 @@ export default {
           title: "Information Technology (IT) Manager",
           bio: "Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.",
           image: "https://i.ibb.co/0XDxPF9/ismail2.jpg",
+          placeholder: "https://i.ibb.co/ZJ2p8nM/IMG-5945-min.jpg",
           borderTop: true,
           borderBottom: false,
           education: [

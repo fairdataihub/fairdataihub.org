@@ -524,33 +524,36 @@
     </div>
 
     <!-- Mobile menu panel -->
-    <div v-show="open">
-      <DisclosurePanel
-        static
-        class="sm:hidden pt-16 fixed w-screen bg-white z-20"
-      >
-        <div class="px-2 pt-2 pb-3 space-y-1 z-20">
-          <router-link
-            v-for="item in navigation"
-            :key="item.name"
-            :to="item.href"
-            class="
-              text-black
-              font-inter
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base text-center
-              font-medium
-              z-20
-            "
-            @click="clickMenu"
-          >
-            {{ item.name }}
-          </router-link>
-        </div>
-      </DisclosurePanel>
+    <div >
+      <transition name="slidedown" appear>
+        <DisclosurePanel
+          v-show="open"
+          static
+          class="sm:hidden pt-16 fixed w-screen bg-white z-20 shadow-sm"
+        >
+          <div class="px-2 pt-2 pb-3 space-y-1 z-20">
+            <router-link
+              v-for="item in navigation"
+              :key="item.name"
+              :to="item.href"
+              class="
+                text-black
+                font-inter
+                block
+                px-3
+                py-2
+                rounded-md
+                text-base text-center
+                font-medium
+                z-20
+              "
+              @click="clickMenu"
+            >
+              {{ item.name }}
+            </router-link>
+          </div>
+        </DisclosurePanel>
+      </transition>
     </div>
   </Disclosure>
 </template>
@@ -661,8 +664,25 @@ export default {
 };
 </script>
 
-<style scoped lang="postcss">
+<style lang="postcss" scoped>
 .nav-bar-item {
   @apply border-b-2 border-transparent hover:border-gray-400 dark:hover:border-gray-300 transition-all;
+}
+
+.slidedown-enter-active,
+.slidedown-leave-active {
+  transition: all 0.5s ease-out;
+}
+
+.slidedown-enter-to,
+.slidedown-leave-from {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.slidedown-enter-from,
+.slidedown-leave-to {
+  transform: translateY(-50vh);
+  opacity: 0.8;
 }
 </style>

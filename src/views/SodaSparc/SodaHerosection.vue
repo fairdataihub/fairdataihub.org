@@ -96,6 +96,8 @@
           <div class="w-full flex justify-center">
             <button
               class="
+                hidden
+                sm:block
                 flex
                 justify-center
                 items-center
@@ -116,7 +118,6 @@
                 focus:ring-pink-600
               "
               @click="downloadSODA"
-              v-if="getOS() != 'all'"
             >
               Download now
             </button>
@@ -124,6 +125,7 @@
               <button
                 class="
                   ml-4
+                  sm:ml-0
                   py-2
                   px-6
                   focus:outline-none
@@ -188,12 +190,12 @@ export default {
       this.$router.push({ path: "/sodasparc/docs/Download-soda" });
     },
     getOS: async function () {
-      var userAgent = window.navigator.userAgent,
-        platform = window.navigator.platform,
-        macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
-        windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
-        iosPlatforms = ["iPhone", "iPad", "iPod"],
-        os = "null";
+      let userAgent = window.navigator.userAgent;
+      let platform = window.navigator.platform;
+      let macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"];
+      let windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"];
+      let iosPlatforms = ["iPhone", "iPad", "iPod"];
+      let os = "null";
 
       if (macosPlatforms.indexOf(platform) !== -1) {
         os = "macOS";
@@ -238,6 +240,9 @@ export default {
       });
       return link;
     },
+  },
+  data() {
+    return {};
   },
 };
 </script>

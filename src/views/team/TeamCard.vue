@@ -2,10 +2,14 @@
   <div :id="profile.id">
     <div :class="[borderClasses, `flex flex-col sm:flex-row `]">
       <div class="w-full md:w-1/2 lg:w-2/5 my-3 sm:my-2">
-        <img
+        <!-- <img
           :src="profile.image"
           alt=""
           class="w-full h-auto rounded-lg shadow-2xl"
+        /> -->
+        <v-lazy-image
+          :src="profile.image"
+          :src-placeholder="profile.placeholder"
         />
       </div>
       <div
@@ -169,8 +173,10 @@
 </template>
 
 <script>
+import VLazyImage from "v-lazy-image";
 export default {
   name: "TeamCard",
+  components: { VLazyImage },
   props: {
     profile: { required: true, type: Object },
   },
@@ -192,4 +198,13 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="postcss" scoped>
+.v-lazy-image {
+  filter: blur(2px);
+  transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+  filter: blur(0);
+}
+</style>

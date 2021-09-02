@@ -1,10 +1,10 @@
 <template>
   <Flicking :options="{ circular: true, horizontal: true }" :plugins="plugins">
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class=" flex justify-center items-center m-2">
       <!-- UCSD -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 -5.12936964 288 61.5702165"
+        viewBox="0 -5.12936964 288 61.5702165" width="150" height="150"
         class="mx-2 my-6 sm:my-2"
       >
         <g fill="#0e284b">
@@ -21,7 +21,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- UCSF -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- Thomas Jefferson University -->
       <svg
         id="f3895ac3-cdf0-43bb-ad4b-a2adee5a016f"
@@ -75,7 +75,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- Cedars Sinai -->
       <svg
         id="f23d4166-76d0-4a6d-ae63-a23b18e0a3f7"
@@ -125,7 +125,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- University of Michigan -->
       <svg
         id="a3574edd-360c-48d8-bbcc-6b89d4c1565a"
@@ -174,7 +174,7 @@
         </g>
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- SPARC -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -215,7 +215,7 @@
         </g>
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- Cleveland Clinic -->
       <svg
         id="ea0e3a4e-c7e3-4485-80b6-5553464271c3"
@@ -240,7 +240,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- Purdue -->
       <svg
         id="b1f7db53-5cbc-4e63-9061-bf44040b1702"
@@ -270,7 +270,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- Emory University -->
       <svg
         id="b6ffa577-2c5d-4678-8c57-6d5401b62d04"
@@ -323,7 +323,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- Harvard Medical School -->
       <svg
         id="e0a16e00-56f8-42ef-9a04-02df85b50181"
@@ -710,7 +710,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- mass gen hospital -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224.05 45.53">
         <path
@@ -751,7 +751,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- ripple neuro -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1300,7 +1300,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- u of wisconsin-madison -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1535,7 +1535,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- fda -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1802,12 +1802,13 @@
         </g>
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- u of auckland -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 338.24 324.79"
-        class="mx-10 my-6 sm:my-10 justify-self-center"
+        width="160"
+        height="160"
       >
         <path
           fill="#00467f"
@@ -1864,7 +1865,7 @@
         ></path>
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- uconn -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1885,7 +1886,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- u of idaho -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -1901,7 +1902,7 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- u of lousiville -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -2036,12 +2037,12 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- u of melbourne -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
+        width="160"
         viewBox="0 0 192.756 192.756"
-        class="mx-10 my-6 sm:my-10 justify-self-center"
       >
         <path
           d="M113.764 111.238c11.072-3.885 14.959-8.74 17.871-12.432 4.662-5.246 7.383-13.987 7.383-22.534l-.389-5.051-.582-5.633-.777-5.245-.777-5.051c-.195-1.555-.389-3.303-.195-4.856-.193-4.468.973-8.742 4.857-11.655l-1.943-2.525c1.748-1.554 2.525-3.108 1.555-3.497.582-.388 7.381-8.158.971-4.662 1.361-.777 2.332-3.108 2.721-4.662-2.525.389-3.498.777-6.023 1.554l-6.021 2.331-4.078-5.439-1.75-2.331c-.389.583-.775.971-1.164 1.359-2.332 2.137-5.828 2.137-8.936 1.749l-5.828-.971-4.662-.583c-4.273-.776-9.325-.971-13.792-.583l-5.439.583-6.604 1.166c-4.08.583-9.713 1.359-12.238-2.914l-6.41 8.159c-.777-.194-1.943-.583-3.302-.777-.195.777.583 2.137 1.554 3.302l-.976 1.36-5.439 7.188c5.051 3.691 5.051 10.101 4.468 15.734l-1.554 9.519-.583 5.051c-.389 2.914-.583 6.022-.389 9.13.389 15.929 9.907 27.973 24.67 33.024l3.108 1.166c4.857 2.137 9.713 4.078 13.792 8.158.195-.195.388-.195.388-.389 4.858-4.469 10.685-6.606 16.513-8.743z"
@@ -2305,11 +2306,11 @@
         />
       </svg>
     </div>
-    <div class="w-1/5 flex justify-center items-center m-2">
+    <div class="w-1/3 sm:w-1/5 flex justify-center items-center m-2">
       <!-- usf -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 884.46 149.99"
+        viewBox="0 0 884.46 149.99" width="150" height="150"
         class="mx-2 my-6 sm:my-2 justify-self-center"
       >
         <path

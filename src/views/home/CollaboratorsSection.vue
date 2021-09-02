@@ -22,7 +22,7 @@
     <div class="block">
       <CollaboratorsVue3Carousel></CollaboratorsVue3Carousel>
     </div>
-    <div class="hidden">
+    <div class="block">
       <CollaboratorsFlicking></CollaboratorsFlicking>
     </div>
   </div>
