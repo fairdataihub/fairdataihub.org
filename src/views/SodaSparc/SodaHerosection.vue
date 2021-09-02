@@ -93,7 +93,7 @@
             <br />
             <i> By SPARC investigators, for SPARC investigators </i>
           </p>
-          <div class="w-full flex">
+          <div class="w-full flex justify-center">
             <button
               class="
                 flex

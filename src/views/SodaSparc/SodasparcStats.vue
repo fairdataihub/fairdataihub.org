@@ -47,9 +47,9 @@
             lg:text-6xl
             text-center
           "
-        >
-          {{ item.value }}
-        </p>
+          :data-inviewport="item.class"
+        ></p>
+
         <p
           class="
             text-xl
@@ -74,14 +74,103 @@ export default {
   data() {
     return {
       statsList: [
-        { name: "Files touched", value: "16,300+" },
-        { name: "Datasets modified", value: "60+" },
-        { name: "Data uploaded", value: "3.55TB+" },
+        {
+          name: "Files touched",
+          class: "files",
+        },
+        {
+          name: "Datasets modified",
+          class: "datasets",
+        },
+        {
+          name: "Data uploaded",
+          class: "data",
+        },
       ],
     };
   },
-  mounted() {},
+  mounted() {
+    // run when entering or leaving viewport
+    const inViewport = (entries, observer) => {
+      entries.forEach((entry) => {
+        entry.target.classList.toggle("is-inViewport", entry.isIntersecting);
+        if (entry.isIntersecting) {
+          // if in viewport
+          document
+            .querySelector(`[data-inviewport="data"]`)
+            .style.setProperty("--percent", 3.55); // Needed for the decimal animation
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+
+    const Obs = new IntersectionObserver(inViewport);
+    const obsOptions = {};
+
+    // Attach observer to every [data-inviewport] element:
+    const ELs_inViewport = document.querySelectorAll("[data-inviewport]");
+    ELs_inViewport.forEach((EL) => {
+      Obs.observe(EL, obsOptions);
+    });
+  },
 };
 </script>
 
-<style></style>
+<style lang="postcss" scoped>
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@property --percent {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --temp {
+  syntax: "<number>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --v1 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+@property --v2 {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+[data-inviewport="files"].is-inViewport {
+  transition: --num 1s;
+  counter-reset: num var(--num);
+  --num: 16300;
+}
+[data-inviewport="files"]::after {
+  content: counter(num) "+";
+}
+
+[data-inviewport="datasets"].is-inViewport {
+  transition: --num 1s;
+  counter-reset: num var(--num);
+  --num: 60;
+}
+[data-inviewport="datasets"]::after {
+  content: counter(num) "+";
+}
+
+[data-inviewport="data"].is-inViewport {
+  transition: --percent 1s;
+  --temp: var(--percent);
+  --v1: max(var(--temp) - 0.5, 0);
+  --v2: max((var(--temp) - var(--v1)) * 100 - 0.5, 0);
+  counter-reset: v1 var(--v1) v2 var(--v2);
+}
+
+[data-inviewport="data"]::before {
+  content: counter(v1) "." counter(v2, decimal-leading-zero) "+ TB";
+}
+</style>
