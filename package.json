@@ -5,11 +5,10 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-report": "vue-cli-service build --report",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@egjs/flicking-plugins": "^4.2.1",
-    "@egjs/vue3-flicking": "^4.2.4",
     "@headlessui/vue": "^1.4.0",
     "@heroicons/vue": "^1.0.3",
     "@kyvg/vue3-notification": "^2.3.3",

@@ -22,20 +22,20 @@
     <div class="block">
       <CollaboratorsVue3Carousel></CollaboratorsVue3Carousel>
     </div>
-    <div class="hidden">
+    <!-- <div class="hidden">
       <CollaboratorsFlicking></CollaboratorsFlicking>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import CollaboratorsFlicking from "./CollaboratorsFlicking.vue";
+// import CollaboratorsFlicking from "./CollaboratorsFlicking.vue";
 import CollaboratorsVue3Carousel from "./CollaboratorsVue3Carousel.vue";
 
 export default {
   name: "CollaboratorsSection",
   components: {
-    CollaboratorsFlicking,
+    // CollaboratorsFlicking,
     CollaboratorsVue3Carousel,
   },
   data() {
