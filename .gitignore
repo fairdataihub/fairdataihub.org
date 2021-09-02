@@ -133,4 +133,3 @@ dist
 package-lock.json
 .nosync
 .env.development
-yarn.lock
