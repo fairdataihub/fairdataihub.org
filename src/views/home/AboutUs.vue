@@ -1496,7 +1496,7 @@
                 focus:ring-pink-600
               "
             >
-              Meet the team
+              Meet our team
             </button>
           </router-link>
         </div>

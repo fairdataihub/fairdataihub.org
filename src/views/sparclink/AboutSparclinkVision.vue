@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About SODA for SPARC
+          About SPARClink
         </p>
         <p
           class="
@@ -25,10 +25,10 @@
             lg:mx-auto
           "
         >
-          SODA (Sofware for Organizing Data Automatically) for SPARC is a
-          cross-platform desktop software that allows SPARC-funded researchers
-          to easily comply with the FAIR SPARC Data curation and sharing
-          guidelines.
+          SPARClink provides a system that queries all external publications
+          using open source tools and platforms to create interactable
+          visualizations that showcases the impact that SPARC has on the overall
+          scientific research community.
         </p>
       </div>
 
