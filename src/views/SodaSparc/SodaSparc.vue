@@ -2,25 +2,21 @@
   <div class="divide-y divide-gray-50 dark:divide-gray-800">
     <base-section
       data-aos="fade-in"
-      class="pt-16 bg-transparent dark:bg-dark-background py-10"
+      class="pt-16 bg-white dark:bg-dark-background py-10"
     >
       <soda-herosection></soda-herosection>
     </base-section>
 
     <base-section
       data-aos="fade-in"
-      class="bg-transparent dark:bg-dark-background py-10"
+      class="bg-grey-50 dark:bg-dark-background py-10"
     >
       <about-soda-vision></about-soda-vision>
     </base-section>
 
     <base-section
       data-aos="fade-in"
-      class="
-        dark:bg-dark-background
-        py-10
-        
-      "
+      class="bg-white dark:bg-dark-background py-10"
     >
       <sodasparc-stats></sodasparc-stats>
     </base-section>
@@ -34,7 +30,7 @@
 
     <base-section
       data-aos="fade-in"
-      class="bg-grey-50 dark:bg-dark-background py-10"
+      class="bg-white dark:bg-dark-background py-10"
     >
       <soda-timeline></soda-timeline>
     </base-section>

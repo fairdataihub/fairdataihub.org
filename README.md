@@ -1,34 +1,29 @@
 # soda-website
 
 ## Project setup
+
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
+
 ```
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
+
 ```
-npm run build
+yarn build
 ```
 
 ### Lints and fixes files
-```
-npm run lint
-```
-### Firebase deploy
-```
-// first time only
-npx firebase login
 
-// To push to firebase
-npm run deploy
 ```
-
-
+yarn lint
+```
 
 ### Customize configuration
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
