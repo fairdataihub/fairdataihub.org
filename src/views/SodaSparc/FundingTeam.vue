@@ -29,7 +29,7 @@
                   dark:text-white
                 "
               >
-                SODA for SPARC is funded by the NIH SPARC program.
+                SODA for SPARC is funded by the National Institutes of Health (NIH)'s SPARC program. The funding was initially provided as a supplement to an existing SPARC award at Calmi2 during the first phase of development before now having a standalone award.
               </p>
               <div class="flex mt-2 md:mt-1">
                 <a

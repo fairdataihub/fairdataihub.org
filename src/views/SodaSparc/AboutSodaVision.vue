@@ -25,8 +25,9 @@
             lg:mx-auto
           "
         >
-          Only with tools that support and assist researchers we will achieve a
-          widespread adoption of FAIR Data practices.
+          SODA (Sofware for Organizing Data Automatically) for SPARC is a
+          cross-platform desktop software that allows SPARC-funded researchers
+          to easily comply with the FAIR SPARC Data curation and sharing guidelines.
         </p>
       </div>
 
@@ -98,42 +99,41 @@ import {
   DesktopComputerIcon,
   LightningBoltIcon,
   ScaleIcon,
-  ExclamationCircleIcon,
+  ExclamationCircleIcon
 } from "@heroicons/vue/outline";
 
 const features = [
   {
-    name: "What is FAIR?",
+    name: "What is SPARC?",
     description:
-      "The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by human and machines.",
-    icon: ScaleIcon,
+      "The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function",
+    icon: ScaleIcon
   },
   {
-    name: "Why is it important?",
-    description:
-      "FAIR Data practices are crucial for ensuring reproducibility of scientific findings and enabling AI/ML-driven analysis to increase the peace of discoveries.",
-    icon: ExclamationCircleIcon,
+    name: "What are the FAIR SPARC Data Guidelines?",
+    description: "All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.",
+    icon: ExclamationCircleIcon
   },
   {
     name: "What are the challenges?",
     description:
-      "Despite effort from funding agencies, industry, and researchers, FAIR Data practices are not widely adopted due to their complex and time consuming nature.",
-    icon: LightningBoltIcon,
+      "The guidelines are very exaustive to maximize FAIRness of SPARC dataset but are challenging and time-consuming to implement for the researchers.",
+    icon: LightningBoltIcon
   },
   {
-    name: "What do we do?",
+    name: "What does SODA for SPARC do?",
     description:
-      "We develop open source tools that enhance FAIR data practices for biomedical researchers through automation and intuitive user interfaces.",
-    icon: DesktopComputerIcon,
-  },
+      "SODA for SPARC combines intuitive user interfaces and automation such that researchers can efficiently and accurately curate their SPARC datasets.",
+    icon: DesktopComputerIcon
+  }
 ];
 export default {
   name: "AboutSodaVision",
   setup() {
     return {
-      features,
+      features
     };
-  },
+  }
 };
 </script>
 

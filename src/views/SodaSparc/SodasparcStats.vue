@@ -14,7 +14,7 @@
           dark:text-gray-50
         "
       >
-        Impact of SODA for SPARC
+        Impact on SPARC datasets
       </h2>
 
       <h3
