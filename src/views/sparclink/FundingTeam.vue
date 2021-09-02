@@ -55,7 +55,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-2 arrow-animate"
+                    class="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -188,40 +188,32 @@ export default {
     return {
       membersList: [
         {
-          name: "Bhavesh Patel",
-          href: "/team/#BhaveshPatel",
-          image: "https://i.ibb.co/drZPXHs/Bhavesh-head.jpg",
-        },
-        {
-          name: "Tram Ngo",
-          href: "/team/#TramNgo",
-          image: "https://i.ibb.co/VpYFGBv/Tram-head.jpg",
-        },
-        {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
           image: "https://www.tailwind-kit.com/images/person/10.jpg",
+        },
+        {
+          name: "Sachira Kurrupu",
+          href: "/sparclink/#",
+          image: "https://avatars.dicebear.com/api/male/Sachira.svg",
+        },
+        {
+          name: "Ashutosh Singh",
+          href: "/sparclink/#",
+          image: "https://avatars.dicebear.com/api/male/Ashutosh.svg",
+        },
+        {
+          name: "Monalisa Achalla",
+          href: "/sparclink/#",
+          image: "https://avatars.dicebear.com/api/female/Monalisa.svg",
+        },
+        {
+          name: "Jongchan Kim",
+          href: "/sparclink/#",
+          image: "https://avatars.dicebear.com/api/male/Jongchan.svg",
         },
       ],
     };
   },
 };
 </script>
-
-<style lang="postcss" scoped>
-.arrow-animate {
-  animation: bounce ease-in-out 2s 5 alternate-reverse;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translatex(0);
-  }
-  50% {
-    transform: translatex(4px);
-  }
-  100% {
-    transform: translatex(0);
-  }
-}
-</style>

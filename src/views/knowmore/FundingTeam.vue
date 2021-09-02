@@ -55,7 +55,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-2 arrow-animate"
+                    class="w-4 h-4 ml-2"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -193,35 +193,22 @@ export default {
           image: "https://i.ibb.co/drZPXHs/Bhavesh-head.jpg",
         },
         {
-          name: "Tram Ngo",
-          href: "/team/#TramNgo",
-          image: "https://i.ibb.co/VpYFGBv/Tram-head.jpg",
+          name: "Ryan Quey",
+          href: "/knowmore/#",
+          image: "https://avatars.dicebear.com/api/male/Ryan.svg",
         },
         {
-          name: "Sanjay Soundarajan",
-          href: "/team/#SanjaySoundarajan",
-          image: "https://www.tailwind-kit.com/images/person/10.jpg",
+          name: "Anmol Kiran",
+          href: "/knowmore/#",
+          image: "https://avatars.dicebear.com/api/male/Anmol.svg",
+        },
+        {
+          name: "Matthew Schiefer",
+          href: "/knowmore/#",
+          image: "https://avatars.dicebear.com/api/male/Matthew.svg",
         },
       ],
     };
   },
 };
 </script>
-
-<style lang="postcss" scoped>
-.arrow-animate {
-  animation: bounce ease-in-out 2s 5 alternate-reverse;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translatex(0);
-  }
-  50% {
-    transform: translatex(4px);
-  }
-  100% {
-    transform: translatex(0);
-  }
-}
-</style>

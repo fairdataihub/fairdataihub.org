@@ -609,9 +609,9 @@ export default {
         { name: "Home", href: "/", id: "nav-home" },
         { name: "Meet The Team", href: "/team", id: "nav-team" },
         { name: "SODA for SPARC", href: "/sodasparc", id: "nav-sodasparc" },
-        // { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
-        // { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
-        // { name: "AQUA", href: "/aqua", id: "nav-aqua" },
+        { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
+        { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
+        { name: "AQUA", href: "/aqua", id: "nav-aqua" },
         { name: "Contact Us", href: "/contact", id: "nav-contactus" },
       ],
     };

@@ -106,7 +106,7 @@
 
 <script>
 export default {
-  name: "SodaTimeline",
+  name: "SparclinkTimeline",
   data() {
     return {
       timelineList: [

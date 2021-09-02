@@ -166,7 +166,7 @@ const features = [
   },
 ];
 export default {
-  name: "AboutSodaVision",
+  name: "AboutSparclinkVision",
   setup() {
     return {
       features,
