@@ -15,7 +15,7 @@
             dark:text-gray-50
           "
         >
-          SODA Timeline
+          Timeline
         </h2>
 
         <div class="container px-1 py-5 mx-auto flex flex-wrap">
@@ -270,31 +270,31 @@ export default {
       timelineList: [
         {
           shortDate: "03/21",
-          longDate: "Mar 2021",
-          title: "Title 1",
+          longDate: "December 2018",
+          title: "Birth of SODA for SPARC",
           content:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "The first prototype of SODA for SPARC is developped during the 2018 NIH SPARC Hackathon where it wins the Public's Choice Award.",
         },
         {
           shortDate: "06/21",
-          longDate: "Jun 2021",
-          title: "Title 2",
+          longDate: "May 2019 - Aug 2020",
+          title: "Phase I development",
           content:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "The base framework of the software is developed and support for high-level requirements of the SDS are integrated.",
         },
         {
           shortDate: "09/21",
-          longDate: "Sep 2021",
-          title: "Title 3",
+          longDate: "Sept 2020 - Aug 2021",
+          title: "Phase II development",
           content:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "The user interface is upgraded to become more intuitive, support is included for additional elements of the SDS, and transition of SPARC from Blackfynn to Pennsieve in accomodated.",
         },
         {
           shortDate: "12/21",
-          longDate: "Dec 2021",
-          title: "Title 3",
+          longDate: "Sept 2021 - Aug 2022",
+          title: "Phase III development",
           content:
-            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+            "Support is provided for the evolving SPARC guidelines, a guided mode is integrated to simply further data curation, and the workflow is adapted for non-SPARC datasets.",
         },
       ],
     };

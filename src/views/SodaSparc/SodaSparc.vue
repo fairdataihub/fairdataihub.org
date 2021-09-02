@@ -51,7 +51,7 @@
 
     <base-section
       data-aos="fade-in"
-      class="bg-white dark:bg-dark-background py-10 hidden"
+      class="bg-white dark:bg-dark-background py-10"
     >
       <the-faq> </the-faq>
     </base-section>
