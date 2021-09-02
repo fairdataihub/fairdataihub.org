@@ -148,7 +148,6 @@
                       flex flex-col
                       items-center
                       p-2
-                      md:mr-32
                       rounded-lg
                       transition-all
                       hover:bg-gray-200
@@ -193,24 +192,24 @@ export default {
           image: "https://www.tailwind-kit.com/images/person/10.jpg",
         },
         {
-          name: "Sachira Kurrupu",
+          name: "Sachira Kuruppu",
           href: "/sparclink/#",
-          image: "https://avatars.dicebear.com/api/male/Sachira.svg",
+          image: "https://avatars.dicebear.com/api/male/SachiraKuruppu.svg",
         },
         {
           name: "Ashutosh Singh",
           href: "/sparclink/#",
-          image: "https://avatars.dicebear.com/api/male/Ashutosh.svg",
+          image: "https://avatars.dicebear.com/api/male/AshutoshSingh.svg",
         },
         {
           name: "Monalisa Achalla",
           href: "/sparclink/#",
-          image: "https://avatars.dicebear.com/api/female/Monalisa.svg",
+          image: "https://avatars.dicebear.com/api/female/MonalisaAchalla.svg",
         },
         {
           name: "Jongchan Kim",
           href: "/sparclink/#",
-          image: "https://avatars.dicebear.com/api/male/Jongchan.svg",
+          image: "https://avatars.dicebear.com/api/male/JongchanKim.svg",
         },
       ],
     };

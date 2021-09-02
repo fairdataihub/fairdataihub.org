@@ -148,7 +148,6 @@
                       flex flex-col
                       items-center
                       p-2
-                      md:mr-32
                       rounded-lg
                       transition-all
                       hover:bg-gray-200
@@ -195,17 +194,17 @@ export default {
         {
           name: "Laila Bekhet",
           href: "/aqua/#",
-          image: "https://avatars.dicebear.com/api/female/Laila.svg",
+          image: "https://avatars.dicebear.com/api/female/LailaBekhet.svg",
         },
         {
           name: "Yuda Munarko",
           href: "/aqua/#",
-          image: "https://avatars.dicebear.com/api/male/Yuda.svg",
+          image: "https://avatars.dicebear.com/api/male/YudaMunarko.svg",
         },
         {
           name: "Niloofar Shahidi",
           href: "/aqua/#",
-          image: "https://avatars.dicebear.com/api/female/Niloofar.svg",
+          image: "https://avatars.dicebear.com/api/female/NiloofarShahidi.svg",
         },
         {
           name: "Xuanzhi ",

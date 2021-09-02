@@ -148,7 +148,6 @@
                       flex flex-col
                       items-center
                       p-2
-                      md:mr-32
                       rounded-lg
                       transition-all
                       hover:bg-gray-200

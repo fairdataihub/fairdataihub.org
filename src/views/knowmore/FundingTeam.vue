@@ -148,7 +148,6 @@
                       flex flex-col
                       items-center
                       p-2
-                      md:mr-32
                       rounded-lg
                       transition-all
                       hover:bg-gray-200
@@ -195,17 +194,17 @@ export default {
         {
           name: "Ryan Quey",
           href: "/knowmore/#",
-          image: "https://avatars.dicebear.com/api/male/Ryan.svg",
+          image: "https://avatars.dicebear.com/api/male/RyanQuey.svg",
         },
         {
           name: "Anmol Kiran",
           href: "/knowmore/#",
-          image: "https://avatars.dicebear.com/api/male/Anmol.svg",
+          image: "https://avatars.dicebear.com/api/male/AnmolKiran.svg",
         },
         {
           name: "Matthew Schiefer",
           href: "/knowmore/#",
-          image: "https://avatars.dicebear.com/api/male/Matthew.svg",
+          image: "https://avatars.dicebear.com/api/male/MatthewSchiefer.svg",
         },
       ],
     };
