@@ -64,6 +64,10 @@
   @apply border-b-2  border-light-accent  !important;
 }
 
+.mobile-menu.router-link-active {
+  @apply bg-light-accent text-white;
+}
+
 .p-parent-div {
   @apply my-2 font-asap text-black dark:text-white;
 }

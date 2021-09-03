@@ -85,7 +85,7 @@ export default {
             "https://raw.githubusercontent.com/bvhpatel/SODA/6c9c10c398e8845c57279969f9b9fe25e1c21887/src/assets/logo-svg/Logo-soda-with-circle.svg",
           description:
             "SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators and thus promote the FAIR Data Principles.",
-          page: "/sodasparc",
+          page: "/sodaforsparc",
         },
         {
           name: "KnowMore",

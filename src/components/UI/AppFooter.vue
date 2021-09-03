@@ -611,7 +611,7 @@ export default {
   name: "AppFooter",
   computed: {
     isDocs: function () {
-      return this.$route.path.includes("sodasparc/docs");
+      return this.$route.path.includes("sodaforsparc/docs");
     },
   },
 };

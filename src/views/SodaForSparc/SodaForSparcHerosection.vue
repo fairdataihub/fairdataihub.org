@@ -62,7 +62,7 @@
               dark:text-gray-50
             "
           >
-            SPARClink
+            SODA for SPARC
           </h1>
           <h2
             class="
@@ -96,6 +96,8 @@
           <div class="w-full flex justify-center">
             <button
               class="
+                hidden
+                sm:block
                 flex
                 justify-center
                 items-center
@@ -116,14 +118,13 @@
                 focus:ring-pink-600
               "
               @click="downloadSODA"
-              v-if="getOS() != 'all'"
             >
               Download now
             </button>
             <router-link to="/sodaforsparc/docs">
               <button
                 class="
-                  ml-4
+                  sm:ml-4
                   py-2
                   px-6
                   focus:outline-none
@@ -176,7 +177,7 @@
 <script>
 const path = require("path");
 export default {
-  name: "SparclinkHerosection",
+  name: "SodaForSparcHerosection",
   methods: {
     downloadSODA: async function () {
       const os = await this.getOS();
@@ -185,15 +186,15 @@ export default {
         target: "_blank",
         href: downloadLink,
       }).click();
-      this.$router.push({ path: "/sodaforsparc/docs/Download-soda" });
+      this.$router.push({ path: "/sodasparc/docs/Download-soda" });
     },
     getOS: async function () {
-      var userAgent = window.navigator.userAgent,
-        platform = window.navigator.platform,
-        macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
-        windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
-        iosPlatforms = ["iPhone", "iPad", "iPod"],
-        os = "null";
+      let userAgent = window.navigator.userAgent;
+      let platform = window.navigator.platform;
+      let macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"];
+      let windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"];
+      let iosPlatforms = ["iPhone", "iPad", "iPod"];
+      let os = "null";
 
       if (macosPlatforms.indexOf(platform) !== -1) {
         os = "macOS";
@@ -239,7 +240,8 @@ export default {
       return link;
     },
   },
+  data() {
+    return {};
+  },
 };
 </script>
-
-<style lang="postcss" scoped></style>

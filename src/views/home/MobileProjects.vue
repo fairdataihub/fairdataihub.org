@@ -108,7 +108,8 @@
                   rounded
                   text-lg
                   transition
-                  bg-button-light-background dark:bg-button-dark-background
+                  bg-button-light-background
+                  dark:bg-button-dark-background
                 "
               >
                 Learn more about {{ project.name }}
@@ -134,16 +135,8 @@ export default {
   name: "MobileProjects",
   props: ["projectsList"],
   data() {
-    return {
-      sodaForSPARCData: [
-        { name: "Windows Installer", href: "/sodasparc-windowsinstaller" },
-        { name: "macOS Installer", href: "/sodasparc-macosinstaller" },
-        { name: "Linux Installer", href: "/sodasparc-linuxinstaller" },
-      ],
-    };
+    return {};
   },
   methods: {},
 };
 </script>
-
-<style></style>

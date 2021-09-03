@@ -1,13 +1,12 @@
 <template>
   <div class="container px-6 py-8 max-w-screen-lg mx-auto">
-    <div class="items-center sm:flex justify-center">
+    <div class="items-center md:flex justify-center">
       <div class="w-full lg:w-1/2 lg:max-w-lg p-2">
         <h1
           class="
             md:py-3
             w-full
             font-inter font-black
-            dark:text-gray-50
             text-4xl
             sm:text-3xl
             md:text-4xl
@@ -31,7 +30,6 @@
             md:text-lg
             lg:text-xl
             text-black
-            dark:text-gray-50
           "
         >
           <span class="font-medium">F</span>indable,
@@ -41,27 +39,46 @@
           taking the biomedical research world by a storm. We build open source
           tools to help researchers navigate through them.
         </p>
+
+        <router-link to="/contactus">
+          <button
+            type="button"
+            class="
+              my-3
+              p-3
+              transition-all
+              text-center text-base
+              rounded-lg
+              font-semibold
+              bg-transparent
+              border border-black border-2
+              hover:border-light-accent
+              text-black
+              hover:text-accent
+            "
+          >
+            Tell us about your project
+          </button>
+        </router-link>
       </div>
 
       <div
         class="
+          w-full
+          lg:w-1/2
           flex
           items-center
           justify-center
-          w-full
           mt-6
-          lg:mt-0 lg:w-1/2
+          lg:mt-0
           p-5
-          lg:p-10
+          lg:p-2
         "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          id="ab47acfe-844d-4101-aa7b-df38aa50dbe4"
-          data-name="Layer 1"
           class="w-full h-full lg:max-w-2xl"
           viewBox="0 0 971.0518 628.38145"
-          data-src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/Dev_focus_re_6iwt.svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
         >
           <path
@@ -217,18 +234,11 @@
             fill="#3f3d56"
           ></path>
         </svg>
-        <!-- <img
-          class="w-full h-full lg:max-w-2xl"
-          src="../../assets/udCompleteTask.svg"
-          alt="Catalogue-pana.svg"
-        /> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default { name: "HeroSection", props: ["svgColor"] };
+export default { name: "HeroSection" };
 </script>
-
-<style></style>

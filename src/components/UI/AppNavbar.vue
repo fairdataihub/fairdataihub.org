@@ -383,7 +383,7 @@
                     dark:text-black
                   "
                 >
-                  <router-link to="/sodasparc">
+                  <router-link to="/sodaforsparc">
                     <MenuItem v-slot="{ active }">
                       <a
                         href="#"
@@ -524,7 +524,7 @@
     </div>
 
     <!-- Mobile menu panel -->
-    <div >
+    <div>
       <transition name="slidedown" appear>
         <DisclosurePanel
           v-show="open"
@@ -546,6 +546,9 @@
                 text-base text-center
                 font-medium
                 z-20
+                transition-all
+                mobile-menu
+                hover:bg-light-accent hover:text-white
               "
               @click="clickMenu"
             >
@@ -611,11 +614,15 @@ export default {
       navigation: [
         { name: "Home", href: "/", id: "nav-home" },
         { name: "Meet The Team", href: "/team", id: "nav-team" },
-        { name: "SODA for SPARC", href: "/sodasparc", id: "nav-sodasparc" },
+        {
+          name: "SODA for SPARC",
+          href: "/sodaforsparc",
+          id: "nav-sodaforsparc",
+        },
         { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
         { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
         { name: "AQUA", href: "/aqua", id: "nav-aqua" },
-        { name: "Contact Us", href: "/contact", id: "nav-contactus" },
+        { name: "Contact Us", href: "/contactus", id: "nav-contactus" },
       ],
     };
   },
@@ -649,8 +656,8 @@ export default {
     },
     isSodaSparc: function (element) {
       if (
-        this.$route.path.search("sodasparc") != -1 &&
-        element === "nav-sodasparc"
+        this.$route.path.search("sodaforsparc") != -1 &&
+        element === "nav-sodaforsparc"
       ) {
         return "border-b-2 border-light-accent  !important;";
       }
