@@ -599,13 +599,12 @@ export default {
   },
   watch: {
     $route() {
-      console.log(this.$route.path);
       if (this.$route.path.includes("sodaforsparc/docs")) {
         const nav = document.querySelector("#navbar");
-        nav.classList.add("shadow-sm");
+        nav.classList.add("sm:shadow-sm");
       } else {
         const nav = document.querySelector("#navbar");
-        nav.classList.remove("shadow-sm");
+        nav.classList.remove("sm:shadow-sm");
       }
     },
   },
