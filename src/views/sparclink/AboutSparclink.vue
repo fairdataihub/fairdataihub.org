@@ -12,12 +12,12 @@
             sm:text-4xl
           "
         >
-          About SODA for SPARC
+          About SPARClink
         </p>
         <p
           class="
             font-asap
-            max-w-2xl
+            max-w-3xl
             text-xl
             sm:text-xl
             text-black
@@ -25,10 +25,10 @@
             lg:mx-auto
           "
         >
-          SODA (Sofware for Organizing Data Automatically) for SPARC is a
-          cross-platform desktop software that allows SPARC-funded researchers
-          to easily comply with the FAIR SPARC Data curation and sharing
-          guidelines.
+          SPARClink provides a system that queries all external publications
+          using open source tools and platforms to create interactable
+          visualizations that showcases the impact that SPARC has on the overall
+          scientific research community.
         </p>
       </div>
 
@@ -105,7 +105,7 @@ import {
 const features = [
   {
     name: "What is SPARC?",
-    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function 
+    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function. 
     <div class="flex mt-2 md:mt-1">
       <a href="https://sparc.science" target="_blank" class="">
         <text
@@ -159,14 +159,14 @@ const features = [
     icon: LightningBoltIcon,
   },
   {
-    name: "What does SODA for SPARC do?",
+    name: "What does SPARClink do?",
     description:
-      "SODA for SPARC combines intuitive user interfaces and automation such that researchers can efficiently and accurately curate their SPARC datasets.",
+      "SPARClink uses data from existing SPARC publications, datasets and protocols to create an interactive visualization that you can use to view the impact of SPARC.",
     icon: DesktopComputerIcon,
   },
 ];
 export default {
-  name: "AboutKnowMoreVision",
+  name: "AboutSparclink",
   setup() {
     return {
       features,

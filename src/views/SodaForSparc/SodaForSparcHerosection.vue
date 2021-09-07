@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-center items-center">
     <section class="max-w-screen-2xl mx-auto py-5 relative">
       <div class="absolute top-1 sm:top-10 right-0 z-0 opacity-60 w-40">
-        <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+        <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
       </div>
       <div
         class="
@@ -17,7 +17,7 @@
           w-40
         "
       >
-        <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+        <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
       </div>
       <div
         class="
@@ -160,7 +160,10 @@
               w-40
             "
           >
-            <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+            <img
+              src="../../assets/backgrounds/dot-grid-grey.svg"
+              alt="Grey grid"
+            />
           </div>
           <img
             data-aos="fade-in"

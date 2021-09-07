@@ -166,7 +166,7 @@ const features = [
   },
 ];
 export default {
-  name: "AboutAquaVision",
+  name: "AboutAqua",
   setup() {
     return {
       features,

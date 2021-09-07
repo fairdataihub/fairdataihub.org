@@ -11,7 +11,7 @@
       data-aos="fade-in"
       class="bg-grey-50 dark:bg-dark-background py-10"
     >
-      <AboutAquaVision></AboutAquaVision>
+      <AboutAqua></AboutAqua>
     </base-section>
 
     <base-section
@@ -25,7 +25,7 @@
       data-aos="fade-in"
       class="bg-grey-50 dark:bg-dark-background py-10"
     >
-      <funding-team></funding-team>
+      <AquaDevApproachFundingTeam></AquaDevApproachFundingTeam>
     </base-section>
 
     <base-section
@@ -41,23 +41,15 @@
     >
       <AquaPublications></AquaPublications>
     </base-section>
-
-    <!-- <base-section
-      data-aos="fade-in"
-      class="bg-white dark:bg-dark-background py-10"
-    >
-      <the-faq> </the-faq>
-    </base-section> -->
   </div>
 </template>
 
 <script>
-import FundingTeam from "./FundingTeam.vue";
-import AboutAquaVision from "./AboutAquaVision.vue";
+import AquaDevApproachFundingTeam from "./AquaDevApproachFundingTeam.vue";
+import AboutAqua from "./AboutAqua.vue";
 import AquaStats from "./AquaStats.vue";
 import AquaHerosection from "./AquaHerosection.vue";
 import AquaTimeline from "./AquaTimeline.vue";
-// import TheFaq from "./TheFaq.vue";
 import AquaPublications from "./AquaPublications.vue";
 
 export default {
@@ -65,8 +57,8 @@ export default {
     // TheFaq,
     AquaHerosection,
     AquaTimeline,
-    FundingTeam,
-    AboutAquaVision,
+    AquaDevApproachFundingTeam,
+    AboutAqua,
     AquaStats,
     AquaPublications,
   },

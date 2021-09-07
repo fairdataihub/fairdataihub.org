@@ -11,7 +11,7 @@
       data-aos="fade-in"
       class="bg-grey-50 dark:bg-dark-background py-10"
     >
-      <AboutKnowMoreVision></AboutKnowMoreVision>
+      <AboutKnowMore></AboutKnowMore>
     </base-section>
 
     <base-section
@@ -25,7 +25,7 @@
       data-aos="fade-in"
       class="bg-grey-50 dark:bg-dark-background py-10"
     >
-      <funding-team></funding-team>
+      <KnowMoreDevApproachFundingTeam></KnowMoreDevApproachFundingTeam>
     </base-section>
 
     <base-section
@@ -52,8 +52,8 @@
 </template>
 
 <script>
-import FundingTeam from "./FundingTeam.vue";
-import AboutKnowMoreVision from "./AboutKnowMoreVision.vue";
+import KnowMoreDevApproachFundingTeam from "./KnowMoreDevApproachFundingTeam.vue";
+import AboutKnowMore from "./AboutKnowMore.vue";
 import KnowMoreStats from "./KnowMoreStats.vue";
 import KnowMoreHerosection from "./KnowMoreHerosection.vue";
 import KnowMoreTimeline from "./KnowMoreTimeline.vue";
@@ -65,8 +65,8 @@ export default {
     // TheFaq,
     KnowMoreHerosection,
     KnowMoreTimeline,
-    FundingTeam,
-    AboutKnowMoreVision,
+    KnowMoreDevApproachFundingTeam,
+    AboutKnowMore,
     KnowMoreStats,
     KnowMorePublications,
   },

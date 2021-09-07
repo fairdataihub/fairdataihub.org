@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About SPARClink
+          About SODA for SPARC
         </p>
         <p
           class="
@@ -25,10 +25,10 @@
             lg:mx-auto
           "
         >
-          SPARClink provides a system that queries all external publications
-          using open source tools and platforms to create interactable
-          visualizations that showcases the impact that SPARC has on the overall
-          scientific research community.
+          SODA (Sofware for Organizing Data Automatically) for SPARC is a
+          cross-platform desktop software that allows SPARC-funded researchers
+          to easily comply with the FAIR SPARC Data curation and sharing
+          guidelines.
         </p>
       </div>
 
@@ -105,7 +105,7 @@ import {
 const features = [
   {
     name: "What is SPARC?",
-    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function. 
+    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function 
     <div class="flex mt-2 md:mt-1">
       <a href="https://sparc.science" target="_blank" class="">
         <text
@@ -166,7 +166,7 @@ const features = [
   },
 ];
 export default {
-  name: "AboutSparclinkVision",
+  name: "AboutKnowMore",
   setup() {
     return {
       features,

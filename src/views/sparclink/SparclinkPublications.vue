@@ -62,20 +62,6 @@ export default {
             </span>
           </a>`,
         },
-        {
-          title:
-            "SPARC: SODA, an interactive software for curating SPARC datasets",
-          doi: "https://doi.org/10.1096/fasebj.2020.34.s1.02483",
-          citation: `Patel, Bhavesh, Harshit Srivastava, Parya Aghasafari, and Karl Helmer. "SPARC: SODA, an interactive software for curating SPARC datasets."
-          <i>
-            The FASEB Journal
-          </i> 34, no. S1 (2020): 1-1. 
-          <a href="https://doi.org/10.1096/fasebj.2020.34.s1.02483" target="_blank">
-            <span class="hover:underline text-blue-600 dark:text-blue-400 break-words">
-              doi.org/10.1096/fasebj.2020.34.s1.02483
-            </span>
-          </a>`,
-        },
       ],
     };
   },

@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-center items-center">
     <section class="max-w-screen-2xl mx-auto py-5 relative">
       <div class="absolute top-1 sm:top-10 right-0 z-0 opacity-60 w-40">
-        <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+        <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
       </div>
       <div
         class="
@@ -17,7 +17,7 @@
           w-40
         "
       >
-        <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+        <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
       </div>
       <div
         class="
@@ -76,11 +76,11 @@
               text-center
             "
           >
-            Keep Calm and Curate!
+            Visualizing the Impact of SPARC
           </h2>
           <p
             class="
-              mb-8
+              mb-5
               leading-relaxed
               text-center text-base
               w-full
@@ -89,38 +89,14 @@
               dark:text-white
             "
           >
-            Your one-stop tool for curating and submitting SPARC datasets
-            <br />
-            <i> By SPARC investigators, for SPARC investigators </i>
+            Explore the impact of SPARC resources in real time.
           </p>
           <div class="w-full flex justify-center">
-            <button
-              class="
-                flex
-                justify-center
-                items-center
-                border-0
-                py-2
-                px-6
-                focus:outline-none
-                rounded
-                text-lg
-                transition-all
-                bg-black
-                dark:bg-pink-600
-                text-white
-                ring-2 ring-offset-2 ring-transparent
-                dark:ring-offset-transparent
-                hover:ring-pink-600
-                dark:hover:ring-offset-1 dark:hover:ring-white
-                focus:ring-pink-600
-              "
-              @click="downloadSODA"
-              v-if="getOS() != 'all'"
+            <a
+              href="https://sparclink.vercel.app/sparclink"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Download now
-            </button>
-            <router-link to="/sodaforsparc/docs">
               <button
                 class="
                   ml-4
@@ -140,9 +116,9 @@
                   focus:ring-pink-600
                 "
               >
-                Explore the docs
+                Explore SPARClink
               </button>
-            </router-link>
+            </a>
           </div>
         </div>
         <!-- image div -->
@@ -159,13 +135,16 @@
               w-40
             "
           >
-            <img src="../../assets/dot-grid-grey.svg" alt="Grey grid" />
+            <img
+              src="../../assets/backgrounds/dot-grid-grey.svg"
+              alt="Grey grid"
+            />
           </div>
           <img
             data-aos="fade-in"
-            class="relative rounded mx-auto z-10"
+            class="relative rounded mx-auto z-10 shadow-xl pointer-events-none"
             alt="SODA for SPARC logo"
-            src="../../assets/soda-app-macos.png"
+            src="https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/2021-07-25%2013-47-30.gif"
           />
         </div>
       </div>
@@ -174,71 +153,8 @@
 </template>
 
 <script>
-const path = require("path");
 export default {
   name: "SparclinkHerosection",
-  methods: {
-    downloadSODA: async function () {
-      const os = await this.getOS();
-      const downloadLink = await this.getLatestVersion(os);
-      Object.assign(document.createElement("a"), {
-        target: "_blank",
-        href: downloadLink,
-      }).click();
-      this.$router.push({ path: "/sodaforsparc/docs/Download-soda" });
-    },
-    getOS: async function () {
-      var userAgent = window.navigator.userAgent,
-        platform = window.navigator.platform,
-        macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
-        windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
-        iosPlatforms = ["iPhone", "iPad", "iPod"],
-        os = "null";
-
-      if (macosPlatforms.indexOf(platform) !== -1) {
-        os = "macOS";
-      } else if (iosPlatforms.indexOf(platform) !== -1) {
-        os = "all";
-      } else if (windowsPlatforms.indexOf(platform) !== -1) {
-        os = "windows";
-      } else if (/Android/.test(userAgent)) {
-        os = "all";
-      } else if (!os && /Linux/.test(platform)) {
-        os = "linux";
-      } else {
-        os = "all";
-      }
-      return os;
-    },
-    getLatestVersion: async function (os) {
-      const res = await fetch(
-        "https://api.github.com/repos/bvhpatel/soda/releases"
-      );
-      const data = await res.json();
-      const release = data[0];
-      let link = this.$route.path;
-      release.assets.forEach((asset) => {
-        let file_name = asset.name;
-        let file_ext = path.extname(file_name);
-        if (os === "macOS") {
-          if (file_ext === ".dmg") {
-            link = asset.browser_download_url;
-          }
-        }
-        if (os === "windows") {
-          if (file_ext === ".exe") {
-            link = asset.browser_download_url;
-          }
-        }
-        if (os === "linux") {
-          if (file_ext === ".AppImage") {
-            link = asset.browser_download_url;
-          }
-        }
-      });
-      return link;
-    },
-  },
 };
 </script>
 
