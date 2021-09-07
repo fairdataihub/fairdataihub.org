@@ -7,6 +7,7 @@
       dark:text-white
       mb-1
       print:dark:text-black
+      level-1-heading
     "
   >
     <slot></slot>

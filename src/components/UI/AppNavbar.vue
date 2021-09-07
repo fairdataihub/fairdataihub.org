@@ -597,6 +597,18 @@ export default {
     MenuIcon,
     XIcon,
   },
+  watch: {
+    $route() {
+      console.log(this.$route.path);
+      if (this.$route.path.includes("sodaforsparc/docs")) {
+        const nav = document.querySelector("#navbar");
+        nav.classList.add("shadow-sm");
+      } else {
+        const nav = document.querySelector("#navbar");
+        nav.classList.remove("shadow-sm");
+      }
+    },
+  },
   mounted() {
     if (!("theme" in localStorage)) {
       this.switchValue = false;
@@ -626,6 +638,7 @@ export default {
       ],
     };
   },
+
   methods: {
     switchToDarkMode() {
       let htmlClasses = document.querySelector("html").classList;

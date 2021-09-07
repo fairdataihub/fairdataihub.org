@@ -37,7 +37,7 @@
               </p>
               <div class="flex mt-3 text-accent">
                 <a
-                  href="https://github.com/SPARC-FAIR-Codeathon/SPARClink/graphs/contributors"
+                  href="https://github.com/megasanjay/SPARClink/graphs/contributors"
                   target="_blank"
                   class="mr-2"
                 >
@@ -47,7 +47,7 @@
                   />
                 </a>
                 <a
-                  href="https://github.com/SPARC-FAIR-Codeathon/SPARClink/stargazers"
+                  href="https://github.com/megasanjay/SPARClink/stargazers"
                   target="_blank"
                   class="mr-2"
                 >
@@ -57,7 +57,7 @@
                   />
                 </a>
                 <a
-                  href="https://github.com/SPARC-FAIR-Codeathon/SPARClink/issues"
+                  href="https://github.com/megasanjay/SPARClink/issues"
                   target="_blank"
                   class="mr-2"
                 >
@@ -67,7 +67,7 @@
                   />
                 </a>
                 <a
-                  href="https://github.com/SPARC-FAIR-Codeathon/SPARClink/blob/master/LICENSE"
+                  href="https://github.com/megasanjay/SPARClink/blob/master/LICENSE"
                   target="_blank"
                   class="mr-2"
                 >
@@ -80,7 +80,7 @@
             </dd>
             <div class="py-3">
               <a
-                href="http://github.com/SPARC-FAIR-Codeathon/SPARClink"
+                href="http://github.com/megasanjay/SPARClink"
                 target="_blank"
                 rel="noopener noreferrer"
               >

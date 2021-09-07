@@ -89,7 +89,8 @@
               dark:text-white
             "
           >
-            Explore the impact of SPARC resources in real time.
+            A tool to understand the impact that SPARC and <br />
+            the SPARC Data Standard have on the scientfic community.
           </p>
           <div class="w-full flex justify-center">
             <a

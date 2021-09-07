@@ -96,10 +96,10 @@
 
 <script>
 import {
-  DesktopComputerIcon,
-  LightningBoltIcon,
-  ScaleIcon,
-  ExclamationCircleIcon,
+  CodeIcon,
+  ChartPieIcon,
+  InformationCircleIcon,
+  DatabaseIcon,
 } from "@heroicons/vue/outline";
 
 const features = [
@@ -126,7 +126,7 @@ const features = [
         </text>
       </a>
     </div>`,
-    icon: ScaleIcon,
+    icon: InformationCircleIcon,
   },
   {
     name: "What are the FAIR SPARC Data Guidelines?",
@@ -150,19 +150,19 @@ const features = [
         </text>
       </a>
     </div>`,
-    icon: ExclamationCircleIcon,
+    icon: DatabaseIcon,
   },
   {
-    name: "What are the challenges?",
+    name: "What does Impact mean?",
     description:
-      "The guidelines are very exaustive to maximize FAIRness of SPARC dataset but are challenging and time-consuming to implement for the researchers.",
-    icon: LightningBoltIcon,
+      "The SPARC program provides datasets, maps and computational studies that follow FAIR principles and is used by researchers all around the world. The usage of SPARC resouces by platforms and programs ouside SPARC is what we view as the meaning of the term 'Impact'.",
+    icon: ChartPieIcon,
   },
   {
     name: "What does SPARClink do?",
     description:
       "SPARClink uses data from existing SPARC publications, datasets and protocols to create an interactive visualization that you can use to view the impact of SPARC.",
-    icon: DesktopComputerIcon,
+    icon: CodeIcon,
   },
 ];
 export default {
