@@ -76,7 +76,7 @@
               text-center
             "
           >
-            Keep Calm and Curate!
+          Advanced Query Architecture for the SPARC Portal
           </h2>
           <p
             class="
@@ -89,11 +89,12 @@
               dark:text-white
             "
           >
-            Your one-stop tool for curating and submitting SPARC datasets
-            <br />
-            <i> By SPARC investigators, for SPARC investigators </i>
+            Level up your SPARC search with AQUA.
+
           </p>
           <div class="w-full flex justify-center">
+          <a href="https://github.com/SPARC-FAIR-Codeathon/aqua"
+            target="_blank">
             <button
               class="
                 flex
@@ -115,12 +116,12 @@
                 dark:hover:ring-offset-1 dark:hover:ring-white
                 focus:ring-pink-600
               "
-              @click="downloadSODA"
-              v-if="getOS() != 'all'"
             >
-              Download now
+              Explore AQUA
             </button>
-            <router-link to="/sodasparc/docs">
+          </a>
+            <a href="https://github.com/SPARC-FAIR-Codeathon/aqua/blob/main/Documentation/Documentation.md"
+            target="_blank">
               <button
                 class="
                   ml-4
@@ -140,32 +141,18 @@
                   focus:ring-pink-600
                 "
               >
-                Explore the docs
+                Documentation
               </button>
-            </router-link>
+              </a>
           </div>
         </div>
         <!-- image div -->
         <div class="lg:max-w-2xl py-2 sm:py-0 z-10 relative">
-          <div
-            class="
-              lg:hidden
-              absolute
-              bottom-1
-              sm:bottom-0
-              left-0
-              z-0
-              opacity-60
-              w-40
-            "
-          >
-            <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
-          </div>
+
           <img
             data-aos="fade-in"
             class="relative rounded mx-auto z-10"
-            alt="SODA for SPARC logo"
-            src="../../assets/soda-app-macos.png"
+            src="../../assets/aqua-tool-images/logoAQUA.png"
           />
         </div>
       </div>

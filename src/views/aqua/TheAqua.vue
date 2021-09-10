@@ -18,7 +18,7 @@
       data-aos="fade-in"
       class="bg-white dark:bg-dark-background py-10"
     >
-      <AquaStats></AquaStats>
+      <AQUAToolsUsed></AQUAToolsUsed>
     </base-section>
 
     <base-section
@@ -26,13 +26,6 @@
       class="bg-grey-50 dark:bg-dark-background py-10"
     >
       <AquaDevApproachFundingTeam></AquaDevApproachFundingTeam>
-    </base-section>
-
-    <base-section
-      data-aos="fade-in"
-      class="bg-grey-50 dark:bg-dark-background py-10"
-    >
-      <AquaTimeline></AquaTimeline>
     </base-section>
 
     <base-section
@@ -45,21 +38,19 @@
 </template>
 
 <script>
-import AquaDevApproachFundingTeam from "./AquaDevApproachFundingTeam.vue";
+import AQUAToolsUsed from "./AQUAToolsUsed.vue";
 import AboutAqua from "./AboutAqua.vue";
-import AquaStats from "./AquaStats.vue";
+import AquaDevApproachFundingTeam from "./AquaDevApproachFundingTeam.vue";
 import AquaHerosection from "./AquaHerosection.vue";
-import AquaTimeline from "./AquaTimeline.vue";
 import AquaPublications from "./AquaPublications.vue";
 
 export default {
   components: {
     // TheFaq,
     AquaHerosection,
-    AquaTimeline,
     AquaDevApproachFundingTeam,
+    AQUAToolsUsed,
     AboutAqua,
-    AquaStats,
     AquaPublications,
   },
   name: "TheAqua",
