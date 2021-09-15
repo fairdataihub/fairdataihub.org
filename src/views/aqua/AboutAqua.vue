@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About SODA for SPARC
+          About AQUA for SPARC
         </p>
         <p
           class="
@@ -25,10 +25,7 @@
             lg:mx-auto
           "
         >
-          SODA (Sofware for Organizing Data Automatically) for SPARC is a
-          cross-platform desktop software that allows SPARC-funded researchers
-          to easily comply with the FAIR SPARC Data curation and sharing
-          guidelines.
+          AQUA (Advanced Query Architecture for the SPARC Portal) an application that aims at improving the search capabilities of the SPARC Portal.
         </p>
       </div>
 
@@ -105,21 +102,21 @@ import {
 const features = [
   {
     name: "What is SPARC?",
-    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function 
+    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function
     <div class="flex mt-2 md:mt-1">
       <a href="https://sparc.science" target="_blank" class="">
         <text
           class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
         >
-          Learn more about SPARC 
-          <svg 
-            fill="none" 
-            stroke="currentColor" 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            class="w-4 h-4 ml-2 
-            arrow-animate" 
+          Learn more about SPARC
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2
+            arrow-animate"
             viewBox="0 0 24 24" data-v-6a723fb6="">
             <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
           </svg>
@@ -136,14 +133,14 @@ const features = [
         <text
           class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
         >
-          Learn more about SDS 
-          <svg 
-            fill="none" 
-            stroke="currentColor" 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            class="w-4 h-4 ml-2 arrow-animate" 
+          Learn more about SDS
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2 arrow-animate"
             viewBox="0 0 24 24" data-v-6a723fb6="">
               <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
           </svg>
@@ -154,14 +151,13 @@ const features = [
   },
   {
     name: "What are the challenges?",
-    description:
-      "The guidelines are very exaustive to maximize FAIRness of SPARC dataset but are challenging and time-consuming to implement for the researchers.",
+    description: "Currently, the search feature of the SPARC Portal is very limited.</br> 1. It does not recognize nearby words (typos and close-matches) or synonyms.</br>2. The result display is limited. E.g.: Limited result filtering and sorting (only by Published Date or Alphabetical Ordered Titles).",
     icon: LightningBoltIcon,
   },
   {
-    name: "What does SODA for SPARC do?",
+    name: "What does AQUA do?",
     description:
-      "SODA for SPARC combines intuitive user interfaces and automation such that researchers can efficiently and accurately curate their SPARC datasets.",
+      "AQUA makes the current SPARC Portal search engine smarter at understanding user query and improve search result display. The end goal is to improve exponentially the visibility of the SPARC datasets.",
     icon: DesktopComputerIcon,
   },
 ];
