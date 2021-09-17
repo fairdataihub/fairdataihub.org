@@ -150,6 +150,7 @@
         <div class="lg:max-w-2xl py-2 sm:py-0 z-10 relative">
 
           <img
+            style="width: 80%"
             data-aos="fade-in"
             class="relative rounded mx-auto z-10"
             src="../../assets/aqua-tool-images/logoAQUA.png"
