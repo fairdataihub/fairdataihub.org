@@ -33,7 +33,7 @@
               </p>
             </dd>
           </div>
-          <div class="w-full flex flex-col sm:flex-row justify-between item-center" style="margin-top:20px;">
+          <div class="w-full flex flex-col sm:flex-row justify-between items-center" style="margin-top:20px;">
             <dd class="mb-10 sm:mb-5 pr-10">
               <img style="margin:20px 10px" src="../../assets/aqua-tool-images/iconFrontEnd.png"/>
             </dd>
