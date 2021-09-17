@@ -50,13 +50,13 @@ export default {
       publicationsList: [
         {
           title:
-            "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
-          doi: "https://doi.org/10.1101/2021.02.10.430563",
-          citation: `Bandrowski, Anita, Jeffrey S. Grethe, Anna Pilko, Thomas H. Gillespie, Gabi Pine, Bhavesh Patel, Monique Surles-Zeiglera, and Maryann E. Martone. "Sparc data structure: Rationale and design of a fair standard for biomedical research data."
+            "AQUA: an Advanced QUery Architecture for the SPARC Portal",
+          doi: "https://doi.org/10.12688/f1000research.73018.1",
+          citation: `Niloofar Shahidi, Xuanzhi Lin, Yuda Munarko, Laila Rasmy, Tram Ngo. "AQUA: an Advanced QUery Architecture for the SPARC Portal"
           <i>
-            bioRxiv
+            F1000Research 2021
           </i> (2021).
-          <a href="https://doi.org/10.1101/2021.02.10.430563" target="_blank">
+          <a href="https://f1000research.com/articles/10-930/v1" target="_blank">
             <span class="hover:underline text-blue-600 dark:text-blue-400 break-words">
               doi.org/10.1101/2021.02.10.430563
             </span>
@@ -69,13 +69,27 @@ export default {
           citation: `Patel, Bhavesh, Harshit Srivastava, Parya Aghasafari, and Karl Helmer. "SPARC: SODA, an interactive software for curating SPARC datasets."
           <i>
             The FASEB Journal
-          </i> 34, no. S1 (2020): 1-1. 
+          </i> 34, no. S1 (2020): 1-1.
           <a href="https://doi.org/10.1096/fasebj.2020.34.s1.02483" target="_blank">
             <span class="hover:underline text-blue-600 dark:text-blue-400 break-words">
               doi.org/10.1096/fasebj.2020.34.s1.02483
             </span>
           </a>`,
         },
+        {
+        title:
+          "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
+        doi: "https://doi.org/10.1101/2021.02.10.430563",
+        citation: `Bandrowski, Anita, Jeffrey S. Grethe, Anna Pilko, Thomas H. Gillespie, Gabi Pine, Bhavesh Patel, Monique Surles-Zeiglera, and Maryann E. Martone. "Sparc data structure: Rationale and design of a fair standard for biomedical research data."
+        <i>
+          bioRxiv
+        </i> (2021).
+        <a href="https://doi.org/10.1101/2021.02.10.430563" target="_blank">
+          <span class="hover:underline text-blue-600 dark:text-blue-400 break-words">
+            doi.org/10.1101/2021.02.10.430563
+          </span>
+        </a>`,
+        }
       ],
     };
   },
