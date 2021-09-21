@@ -184,12 +184,13 @@ export default {
   methods: {
     downloadSODA: async function () {
       const os = await this.getOS();
+      console.log(os);
       const downloadLink = await this.getLatestVersion(os);
       Object.assign(document.createElement("a"), {
         target: "_blank",
         href: downloadLink,
       }).click();
-      this.$router.push({ path: "/sodasparc/docs/Download-soda" });
+      this.$router.push({ path: "/sodaforsparc/docs/Download-soda" });
     },
     getOS: async function () {
       let userAgent = window.navigator.userAgent;
@@ -207,7 +208,7 @@ export default {
         os = "windows";
       } else if (/Android/.test(userAgent)) {
         os = "all";
-      } else if (!os && /Linux/.test(platform)) {
+      } else if (/Linux/.test(platform)) {
         os = "linux";
       } else {
         os = "all";
