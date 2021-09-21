@@ -189,7 +189,7 @@
           </svg>
         </div> -->
 
-        <a href="https://calmi2.org" target="_blank">
+        <a href="https://calmi2.org" target="_blank" rel="noopener">
           <svg
             id="e2e7ad45-a5d8-45e3-97ca-4ba2e5555a04"
             data-name="Layer 1"
@@ -461,6 +461,7 @@
               dark:text-gray-50
               hover:text-gray-500
               dark:hover:text-white
+              hidden
             "
             aria-label="Twitter"
           >
@@ -484,7 +485,7 @@
             </svg>
           </a>
           <a
-            href="https://www.twitter.com/NIH"
+            href="https://www.twitter.com/fairdataihub"
             class="
               mx-2
               text-gray-400
@@ -520,7 +521,7 @@
               text-gray-400
               dark:text-gray-50
               hover:text-gray-500
-              dark:hover:text-white
+              dark:hover:text-white hidden
             "
             aria-label="Instagram"
           >
@@ -579,7 +580,7 @@
             </svg>
           </a>
           <a
-            href="https://github.com/fairdatahub"
+            href="https://github.com/fairdataihub"
             target="_blank"
             class="
               mx-2

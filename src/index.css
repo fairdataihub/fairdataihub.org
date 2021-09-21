@@ -87,3 +87,12 @@
 .docs-ul {
   @apply ml-4 mb-2 font-asap text-black dark:text-white;
 }
+
+.v-lazy-image {
+  filter: blur(2px);
+  transition: filter 0.7s;
+}
+
+.v-lazy-image-loaded {
+  filter: blur(0);
+}

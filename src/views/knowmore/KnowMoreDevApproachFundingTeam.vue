@@ -142,7 +142,7 @@
               <div class="flex mt-2 md:mt-1">
                 <a
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   class="
                     text-accent
                     inline-flex

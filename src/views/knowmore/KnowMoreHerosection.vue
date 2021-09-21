@@ -94,35 +94,39 @@
             <i> </i>
           </p>
           <div class="w-full flex justify-center">
-          <a href="https://sparc-know-more.herokuapp.com/sparc-app/"
-            target="_blank">
-            <button
-              class="
-                flex
-                justify-center
-                items-center
-                border-0
-                py-2
-                px-6
-                focus:outline-none
-                rounded
-                text-lg
-                transition-all
-                bg-black
-                dark:bg-pink-600
-                text-white
-                ring-2 ring-offset-2 ring-transparent
-                dark:ring-offset-transparent
-                hover:ring-pink-600
-                dark:hover:ring-offset-1 dark:hover:ring-white
-                focus:ring-pink-600
-              "
+            <a
+              href="https://sparc-know-more.herokuapp.com/sparc-app/"
+              target="_blank"
             >
-              Test KnowMore
-            </button>
-          </a>
-            <a href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
-            target="_blank">
+              <button
+                class="
+                  flex
+                  justify-center
+                  items-center
+                  border-0
+                  py-2
+                  px-6
+                  focus:outline-none
+                  rounded
+                  text-lg
+                  transition-all
+                  bg-black
+                  dark:bg-pink-600
+                  text-white
+                  ring-2 ring-offset-2 ring-transparent
+                  dark:ring-offset-transparent
+                  hover:ring-pink-600
+                  dark:hover:ring-offset-1 dark:hover:ring-white
+                  focus:ring-pink-600
+                "
+              >
+                Test KnowMore
+              </button>
+            </a>
+            <a
+              href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
+              target="_blank"
+            >
               <button
                 class="
                   ml-4
@@ -144,7 +148,7 @@
               >
                 Documentation
               </button>
-              </a>
+            </a>
           </div>
         </div>
         <!-- image div -->
@@ -161,13 +165,15 @@
               w-40
             "
           >
-            <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
+            <img
+              src="../../assets/backgrounds/dot-grid-grey.svg"
+              alt="Grey grid"
+            />
           </div>
-          <img
-            data-aos="fade-in"
-            class="relative rounded mx-auto z-10"
+          <v-lazy-image
             alt="SODA for SPARC logo"
-            src="../../assets/soda-app-macos.png"
+            src="https://i.ibb.co/HCxy4JH/soda-app-macos.png"
+            src-placeholder="'../../assets/soda-app-macos-min.png"
           />
         </div>
       </div>

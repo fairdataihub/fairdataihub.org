@@ -165,11 +165,10 @@
               alt="Grey grid"
             />
           </div>
-          <img
-            data-aos="fade-in"
-            class="relative rounded mx-auto z-10"
+          <v-lazy-image
             alt="SODA for SPARC logo"
-            src="../../assets/soda-app-macos.png"
+            src="https://i.ibb.co/HCxy4JH/soda-app-macos.png"
+            src-placeholder="'../../assets/soda-app-macos-min.png"
           />
         </div>
       </div>
