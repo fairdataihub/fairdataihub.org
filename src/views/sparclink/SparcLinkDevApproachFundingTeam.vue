@@ -136,7 +136,7 @@
                 SPARC Codeathon. The idea behind the topic was created as a
                 method of visualizing citation data to determine the degree of
                 use of SPARC material outside of the official channels.
-                SPARClink received the third place prize at the Codeathon.
+                SPARClink received the third-place prize at the Codeathon.
               </p>
               <div class="flex mt-2 md:mt-1">
                 <a
