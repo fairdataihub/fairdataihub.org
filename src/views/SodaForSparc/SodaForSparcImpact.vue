@@ -98,7 +98,7 @@ export default {
           // if in viewport
           document
             .querySelector(`[data-inviewport="data"]`)
-            .style.setProperty("--percent", 3.55); // Needed for the decimal animation
+            .style.setProperty("--percent", 3.5); // Needed for the decimal animation
           observer.unobserve(entry.target);
         }
       });

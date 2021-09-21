@@ -134,8 +134,9 @@
               >
                 SODA for SPARC is funded by the National Institutes of Health
                 (NIH)'s SPARC program. The funding was initially provided as a
-                supplement to an existing SPARC award at CalMI<sup>2</sup> during the first
-                phase of development before now having a standalone award.
+                supplement to an existing SPARC award at CalMI<sup>2</sup>
+                during the first phase of development before now having a
+                standalone award.
               </p>
               <div class="flex mt-2 md:mt-1">
                 <a
@@ -302,7 +303,7 @@ export default {
         {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
-          image: "https://www.tailwind-kit.com/images/person/10.jpg",
+          image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
         },
       ],
     };

@@ -25,7 +25,8 @@
             lg:mx-auto
           "
         >
-          AQUA (Advanced Query Architecture for the SPARC Portal) an application that aims at improving the search capabilities of the SPARC Portal.
+          AQUA (Advanced Query Architecture for the SPARC Portal) an application
+          that aims at improving the search capabilities of the SPARC Portal.
         </p>
       </div>
 
@@ -151,7 +152,8 @@ const features = [
   },
   {
     name: "What are the challenges?",
-    description: "Currently, the search feature of the SPARC Portal is very limited.</br> 1. It does not recognize nearby words (typos and close-matches) or synonyms.</br>2. The result display is limited. E.g.: Limited result filtering and sorting (only by Published Date or Alphabetical Ordered Titles).",
+    description:
+      "Currently, the search feature of the SPARC Portal is very limited. It does not recognize nearby words (typos and close-matches) or synonyms and provides limited result information.",
     icon: LightningBoltIcon,
   },
   {
