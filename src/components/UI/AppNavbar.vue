@@ -345,7 +345,6 @@
                         stroke="currentColor"
                         class="
                           w-4
-                          nav-bar-item
                           h-4
                           text-lg text-gray-800
                           dark:text-white
