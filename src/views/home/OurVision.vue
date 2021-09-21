@@ -25,7 +25,8 @@
           lg:mx-auto
         "
       >
-        Only with tools that support and assist researchers we will achieve a widespread adoption of FAIR Data practices.
+        Only with tools that support and assist researchers we will achieve a
+        widespread adoption of FAIR Data practices.
       </p>
     </div>
 
@@ -82,9 +83,8 @@
               dark:text-white
               font-asap
             "
-          >
-            {{ feature.description }}
-          </dd>
+            v-html="feature.description"
+          ></dd>
         </div>
       </dl>
     </div>
@@ -102,8 +102,25 @@ import {
 const features = [
   {
     name: "What is FAIR?",
-    description:
-      "The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by both human and machines.",
+    description: `The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by both human and machines. <div class="flex mt-2 md:mt-1">
+      <a href="https://doi.org/10.1038/sdata.2016.18" target="_blank" class="">
+        <text
+          class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
+        >
+          Learn more about FAIR 
+          <svg 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            class="w-4 h-4 ml-2 arrow-animate" 
+            viewBox="0 0 24 24" data-v-6a723fb6="">
+              <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
+          </svg>
+        </text>
+      </a>
+    </div>`,
     icon: ScaleIcon,
   },
   {

@@ -223,13 +223,13 @@ export default {
   },
   methods: {
     getOS: function () {
-      var userAgent = window.navigator.userAgent,
+      let userAgent = window.navigator.userAgent,
         platform = window.navigator.platform,
         macosPlatforms = ["Macintosh", "MacIntel", "MacPPC", "Mac68K"],
         windowsPlatforms = ["Win32", "Win64", "Windows", "WinCE"],
-        iosPlatforms = ["iPhone", "iPad", "iPod"],
-        os = "null";
+        iosPlatforms = ["iPhone", "iPad", "iPod"];
 
+      console.log(window.navigator.platform);
       if (macosPlatforms.indexOf(platform) !== -1) {
         this.current_os = "macOS";
       } else if (iosPlatforms.indexOf(platform) !== -1) {
@@ -238,7 +238,7 @@ export default {
         this.current_os = "windows";
       } else if (/Android/.test(userAgent)) {
         this.current_os = "all";
-      } else if (!os && /Linux/.test(platform)) {
+      } else if (/Linux/.test(platform)) {
         this.current_os = "linux";
       } else {
         this.current_os = "all";

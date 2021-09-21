@@ -103,7 +103,7 @@
     </div>
   </section>
   <section>
-    <div class="sm:pt-2 px-5 sm:px-10 mx-auto" style="margin-top:50px">
+    <div class="sm:pt-2 px-5 sm:px-10 mx-auto" style="margin-top: 50px">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
           class="
@@ -188,22 +188,23 @@ export default {
         {
           name: "Laila Bekhet",
           href: "/aqua/#",
-          image: "https://avatars.dicebear.com/api/micah/LailaBekhet.svg",
+          image: "https://avatars.dicebear.com/api/jdenticon/LailaBekhet.svg",
         },
         {
           name: "Yuda Munarko",
           href: "/aqua/#",
-          image: "https://avatars.dicebear.com/api/micah/YudaMunarko.svg",
+          image: "https://avatars.dicebear.com/api/jdenticon/YudaMunarko.svg",
         },
         {
           name: "Niloofar Shahidi",
           href: "/aqua/#",
-          image: "https://avatars.dicebear.com/api/micah/NiloofarShahidi.svg",
+          image:
+            "https://avatars.dicebear.com/api/jdenticon/NiloofarShahidi.svg",
         },
         {
           name: "Xuanzhi ",
           href: "/aqua/#",
-          image: "https://avatars.dicebear.com/api/micah/Xuanzhi.svg",
+          image: "https://avatars.dicebear.com/api/jdenticon/Xuanzhi.svg",
         },
       ],
     };

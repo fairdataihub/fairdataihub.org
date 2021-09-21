@@ -300,24 +300,23 @@ export default {
           name: "Sachira Kuruppu",
           href: "/sparclink/#",
           image:
-            "https://avatars.dicebear.com/api/open-peeps/SachiraKuruppu.svg",
+            "https://avatars.dicebear.com/api/jdenticon/SachiraKuruppu.svg",
         },
         {
           name: "Ashutosh Singh",
           href: "/sparclink/#",
-          image:
-            "https://avatars.dicebear.com/api/open-peeps/AshutoshSingh.svg",
+          image: "https://avatars.dicebear.com/api/jdenticon/AshutoshSingh.svg",
         },
         {
           name: "Monalisa Achalla",
           href: "/sparclink/#",
           image:
-            "https://avatars.dicebear.com/api/open-peeps/MonalisaAchalla.svg",
+            "https://avatars.dicebear.com/api/jdenticon/MonalisaAchalla.svg",
         },
         {
           name: "Jongchan Kim",
           href: "/sparclink/#",
-          image: "https://avatars.dicebear.com/api/open-peeps/JongchanKim.svg",
+          image: "https://avatars.dicebear.com/api/jdenticon/JongchanKim.svg",
         },
       ],
     };
