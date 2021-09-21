@@ -38,7 +38,7 @@
 
           <a
             href="https://calmi2.org"
-            target="_blank"
+            target="_blank" rel="noopener"
             class="text-accent inline-flex items-center text-lg"
           >
             <span class="font-asap"> Learn more about CALMI<sup>2</sup> </span>

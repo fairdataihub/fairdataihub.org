@@ -173,10 +173,8 @@
 </template>
 
 <script>
-import VLazyImage from "v-lazy-image";
 export default {
   name: "TeamCard",
-  components: { VLazyImage },
   props: {
     profile: { required: true, type: Object },
   },
@@ -198,13 +196,3 @@ export default {
 };
 </script>
 
-<style lang="postcss" scoped>
-.v-lazy-image {
-  filter: blur(2px);
-  transition: filter 0.7s;
-}
-
-.v-lazy-image-loaded {
-  filter: blur(0);
-}
-</style>

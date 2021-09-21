@@ -107,7 +107,7 @@ const features = [
     name: "What is SPARC?",
     description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function. 
     <div class="flex mt-2 md:mt-1">
-      <a href="https://commonfund.nih.gov/sparc" target="_blank" class="">
+      <a href="https://commonfund.nih.gov/sparc" target="_blank" rel="noopener">
         <text
           class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
         >
@@ -132,7 +132,7 @@ const features = [
     name: "What are the FAIR SPARC Data Guidelines?",
     description: `All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.
       <div class="flex mt-2 md:mt-1">
-      <a href="https://doi.org/10.1101/2021.02.10.430563" target="_blank" class="">
+      <a href="https://doi.org/10.1101/2021.02.10.430563" target="_blank" rel="noopener">
         <text
           class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
         >

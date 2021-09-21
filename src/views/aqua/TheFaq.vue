@@ -48,7 +48,7 @@
             function.
           </p>
           <div class="flex mt-2 md:mt-1">
-            <a href="https://sparc.science" target="_blank" class="">
+            <a href="https://sparc.science" target="_blank" rel="noopener">
               <text
                 class="text-accent items-center text-xl font-asap sm:text-base"
               >

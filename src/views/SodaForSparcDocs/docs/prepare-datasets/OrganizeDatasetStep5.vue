@@ -11,7 +11,7 @@
           <a
             href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-manifest-metadata-file"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             "How to"</a

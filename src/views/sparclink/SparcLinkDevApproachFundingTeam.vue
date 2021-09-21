@@ -141,7 +141,7 @@
               <div class="flex mt-2 md:mt-1">
                 <a
                   href="https://sparc.science/help/2021-sparc-fair-codeathon"
-                  target="_blank"
+                  target="_blank" rel="noopener"
                   class="
                     text-accent
                     inline-flex
