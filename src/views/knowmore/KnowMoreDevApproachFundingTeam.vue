@@ -39,12 +39,12 @@
               </p>
               <div class="flex mt-3 text-accent">
                 <a
-                  href="https://github.com/bvhpatel/SODA/graphs/contributors"
+                  href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/graphs/contributors"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
