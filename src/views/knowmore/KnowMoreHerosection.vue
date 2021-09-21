@@ -76,7 +76,7 @@
               text-center
             "
           >
-            Say "no more" to manual discovery across SPARC datasets
+            Say "no more" to manual discovery
           </h2>
           <p
             class="
