@@ -76,7 +76,7 @@
               text-center
             "
           >
-            Keep Calm and Curate!
+            Say "no more" to manual discovery across SPARC datasets
           </h2>
           <p
             class="
@@ -89,11 +89,13 @@
               dark:text-white
             "
           >
-            Your one-stop tool for curating and submitting SPARC datasets
+            Automated Knowledge Discovery Tool for SPARC Datasets
             <br />
-            <i> By SPARC investigators, for SPARC investigators </i>
+            <i> </i>
           </p>
           <div class="w-full flex justify-center">
+          <a href="https://sparc-know-more.herokuapp.com/sparc-app/"
+            target="_blank">
             <button
               class="
                 flex
@@ -115,12 +117,12 @@
                 dark:hover:ring-offset-1 dark:hover:ring-white
                 focus:ring-pink-600
               "
-              @click="downloadSODA"
-              v-if="getOS() != 'all'"
             >
-              Download now
+              Test KnowMore
             </button>
-            <router-link to="/sodasparc/docs">
+          </a>
+            <a href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
+            target="_blank">
               <button
                 class="
                   ml-4
@@ -140,9 +142,9 @@
                   focus:ring-pink-600
                 "
               >
-                Explore the docs
+                Documentation
               </button>
-            </router-link>
+              </a>
           </div>
         </div>
         <!-- image div -->

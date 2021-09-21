@@ -14,12 +14,12 @@
       <AboutKnowMore></AboutKnowMore>
     </base-section>
 
-    <base-section
+    <!-- <base-section
       data-aos="fade-in"
       class="bg-white dark:bg-dark-background py-10"
     >
       <KnowMoreStats></KnowMoreStats>
-    </base-section>
+    </base-section> -->
 
     <base-section
       data-aos="fade-in"
@@ -54,7 +54,7 @@
 <script>
 import KnowMoreDevApproachFundingTeam from "./KnowMoreDevApproachFundingTeam.vue";
 import AboutKnowMore from "./AboutKnowMore.vue";
-import KnowMoreStats from "./KnowMoreStats.vue";
+//import KnowMoreStats from "./KnowMoreStats.vue";
 import KnowMoreHerosection from "./KnowMoreHerosection.vue";
 import KnowMoreTimeline from "./KnowMoreTimeline.vue";
 // import TheFaq from "./TheFaq.vue";
@@ -67,7 +67,7 @@ export default {
     KnowMoreTimeline,
     KnowMoreDevApproachFundingTeam,
     AboutKnowMore,
-    KnowMoreStats,
+    //KnowMoreStats,
     KnowMorePublications,
   },
   name: "KnowMore",
