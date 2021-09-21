@@ -47,7 +47,7 @@
                 py-1
               "
             >
-              info@fairdatahub.org
+              info@fairdataihub.org
             </h1>
           </div>
         </div>

@@ -293,8 +293,7 @@ export default {
         {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
-          image:
-            "https://avatars.dicebear.com/api/open-peeps/SanjaySoundarajan.svg",
+          image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
         },
         {
           name: "Sachira Kuruppu",
