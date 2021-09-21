@@ -285,6 +285,7 @@
                   :class="[
                     `text-black dark:text-white sm:px-1 lg:px-3 mx-1 py-2 sm:text-xs lg:text-sm font-inter font-medium `,
                     isSodaSparc(item.id),
+                    item.showOnDesktop ? '' : 'hidden',
                   ]"
                 >
                   {{ item.name }}
@@ -303,7 +304,7 @@
             "
           >
             <!-- Projects dropdown -->
-            <Menu as="div" class="relative w-max hidden">
+            <Menu as="div" class="relative w-max hidden sm:block">
               <div>
                 <MenuButton
                   class="flex text-sm justify-center items-center w-max"
@@ -312,7 +313,7 @@
                     <span class="sr-only">Open user menu</span>
                     <div
                       class="
-                        px-3
+                        pr-2
                         py-2
                         w-max
                         flex
@@ -323,16 +324,15 @@
                     >
                       <span
                         class="
-                          w-max
-                          text-sm
-                          font-sans
                           flex
                           text-black
                           justify-center
                           dark:text-white
-                          h-auto
-                          pr-2
-                          whitespace-nowrap
+                          sm:px-1
+                          lg:pr-3
+                          sm:text-xs
+                          lg:text-sm
+                          font-inter font-medium
                         "
                         aria-hidden="true"
                       >
@@ -402,7 +402,7 @@
                       </a>
                     </MenuItem>
                   </router-link>
-                  <router-link to="/sodacovid19">
+                  <router-link to="/knowmore">
                     <MenuItem v-slot="{ active }">
                       <a
                         href="#"
@@ -411,11 +411,11 @@
                           'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
                         ]"
                       >
-                        SODA for COVID-19
+                        KnowMore
                       </a>
                     </MenuItem>
                   </router-link>
-                  <router-link to="/myfairdataio">
+                  <router-link to="/sparclink">
                     <MenuItem v-slot="{ active }">
                       <a
                         href="#"
@@ -424,7 +424,20 @@
                           'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
                         ]"
                       >
-                        MyFAIRData.io
+                        SPARClink
+                      </a>
+                    </MenuItem>
+                  </router-link>
+                  <router-link to="/aqua">
+                    <MenuItem v-slot="{ active }">
+                      <a
+                        href="#"
+                        :class="[
+                          active ? 'bg-gray-100' : '',
+                          'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
+                        ]"
+                      >
+                        AQUA
                       </a>
                     </MenuItem>
                   </router-link>
@@ -629,17 +642,38 @@ export default {
       checked: false,
       open: false,
       navigation: [
-        { name: "Home", href: "/", id: "nav-home" },
-        { name: "Meet The Team", href: "/team", id: "nav-team" },
+        { name: "Home", href: "/", id: "nav-home", showOnDesktop: true },
+        {
+          name: "Meet The Team",
+          href: "/team",
+          id: "nav-team",
+          showOnDesktop: true,
+        },
         {
           name: "SODA for SPARC",
           href: "/sodaforsparc",
           id: "nav-sodaforsparc",
+          showOnDesktop: false,
         },
-        { name: "KnowMore", href: "/knowmore", id: "nav-knowmore" },
-        { name: "SPARClink", href: "/sparclink", id: "nav-sparclink" },
-        { name: "AQUA", href: "/aqua", id: "nav-aqua" },
-        { name: "Contact Us", href: "/contactus", id: "nav-contactus" },
+        {
+          name: "KnowMore",
+          href: "/knowmore",
+          id: "nav-knowmore",
+          showOnDesktop: false,
+        },
+        {
+          name: "SPARClink",
+          href: "/sparclink",
+          id: "nav-sparclink",
+          showOnDesktop: false,
+        },
+        { name: "AQUA", href: "/aqua", id: "nav-aqua", showOnDesktop: false },
+        {
+          name: "Contact Us",
+          href: "/contactus",
+          id: "nav-contactus",
+          showOnDesktop: true,
+        },
       ],
     };
   },
