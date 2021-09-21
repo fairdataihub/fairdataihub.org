@@ -36,7 +36,7 @@
           <span class="font-medium">A</span>ccessible,
           <span class="font-medium">I</span>nteroperable, and
           <span class="font-medium">R</span>eusable (FAIR) data practices are
-          taking the biomedical research world by a storm. We build open source
+          taking the biomedical research world by storm. We build open source
           tools to help researchers navigate through them.
         </p>
 
