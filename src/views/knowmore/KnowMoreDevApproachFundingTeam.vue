@@ -29,8 +29,8 @@
                   dark:text-white
                 "
               >
-                SODA for SPARC is distributed as an open-source application with
-                an MIT License. Anyone is free to fork our GitHub repository and
+                KnowMore is developed as an open-source application with
+                an MIT License. It is currently integrated into our fork of the SPARC Portal and is not available in the official SPARC Portal release. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
                 submit a feature modification, or feature suggestion, please
                 feel free to submit an issue on the repository.
@@ -47,32 +47,32 @@
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/stargazers"
+                  href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/stargazers"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/issues"
+                  href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/issues"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/blob/master/LICENSE"
+                  href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/blob/master/LICENSE"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
@@ -80,7 +80,7 @@
             </dd>
             <div class="py-3">
               <a
-                href="http://github.com/bvhpatel/soda"
+                href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -117,7 +117,7 @@
             text-left
           "
         >
-          Funding
+          Origin Story
         </h1>
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
@@ -132,39 +132,9 @@
                   dark:text-white
                 "
               >
-                SODA for SPARC is funded by the National Institutes of Health
-                (NIH)'s SPARC program. The funding was initially provided as a
-                supplement to an existing SPARC award at Calmii during the first
-                phase of development before now having a standalone award.
+                KnowMore was introduced as a project during the 2021 NIH SPARC Codeathon with the aim of leveraging the FAIR characteristics of the SPARC datasets to enable automated comparision across them. 
+                KnowMore won the Grand Prize at the Codeathon.
               </p>
-              <div class="flex mt-2 md:mt-1">
-                <a
-                  href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
-                  target="_blank"
-                  class="
-                    text-accent
-                    inline-flex
-                    items-center
-                    text-lg
-                    sm:text-base
-                  "
-                >
-                  <span class="font-lato">
-                    Explore the award on NIH Reporter
-                  </span>
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="w-4 h-4 ml-2 arrow-animate"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
-              </div>
             </dd>
             <div class="py-3">
               <a

@@ -28,12 +28,12 @@
       <KnowMoreDevApproachFundingTeam></KnowMoreDevApproachFundingTeam>
     </base-section>
 
-    <base-section
+    <!-- <base-section
       data-aos="fade-in"
       class="bg-grey-50 dark:bg-dark-background py-10"
     >
       <KnowMoreTimeline></KnowMoreTimeline>
-    </base-section>
+    </base-section> -->
 
     <base-section
       data-aos="fade-in"
@@ -56,7 +56,7 @@ import KnowMoreDevApproachFundingTeam from "./KnowMoreDevApproachFundingTeam.vue
 import AboutKnowMore from "./AboutKnowMore.vue";
 //import KnowMoreStats from "./KnowMoreStats.vue";
 import KnowMoreHerosection from "./KnowMoreHerosection.vue";
-import KnowMoreTimeline from "./KnowMoreTimeline.vue";
+//import KnowMoreTimeline from "./KnowMoreTimeline.vue";
 // import TheFaq from "./TheFaq.vue";
 import KnowMorePublications from "./KnowMorePublications.vue";
 
@@ -64,7 +64,7 @@ export default {
   components: {
     // TheFaq,
     KnowMoreHerosection,
-    KnowMoreTimeline,
+    //KnowMoreTimeline,
     KnowMoreDevApproachFundingTeam,
     AboutKnowMore,
     //KnowMoreStats,
