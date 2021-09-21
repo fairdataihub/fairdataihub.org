@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About SODA for SPARC
+          About KnowMore
         </p>
         <p
           class="
@@ -25,10 +25,7 @@
             lg:mx-auto
           "
         >
-          SODA (Sofware for Organizing Data Automatically) for SPARC is a
-          cross-platform desktop software that allows SPARC-funded researchers
-          to easily comply with the FAIR SPARC Data curation and sharing
-          guidelines.
+          KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process. 
         </p>
       </div>
 
@@ -155,13 +152,13 @@ const features = [
   {
     name: "What are the challenges?",
     description:
-      "The guidelines are very exaustive to maximize FAIRness of SPARC dataset but are challenging and time-consuming to implement for the researchers.",
+      "The process of comparing and analyzing multiple SPARC datasets is currently tedious because it requires investigating each dataset individually and downloading all of them to conduct cross-analyses.",
     icon: LightningBoltIcon,
   },
   {
-    name: "What does SODA for SPARC do?",
+    name: "What does KnowMore do?",
     description:
-      "SODA for SPARC combines intuitive user interfaces and automation such that researchers can efficiently and accurately curate their SPARC datasets.",
+      "KnowMore uses several SPARC resources, data science methods, and knowledge of the SDS to generate various visualizations to help the user identify potential relations across datasets of interests.",
     icon: DesktopComputerIcon,
   },
 ];
