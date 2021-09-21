@@ -28,7 +28,7 @@
           class="flex flex-col py-5 px-5 sm:px-10 text-3xl"
         >
           <h2 class="font-inter pt-3 text-center text-4xl">
-            Tell us about your project
+            Let us know if you have any feedback or want to collaborate
           </h2>
           <h2 class="font-inter pb-10 text-center">
             We'll get back to you soon
@@ -122,7 +122,7 @@
             <textarea
               v-model="formMessage"
               required
-              placeholder="Tell us more about your project idea *"
+              placeholder="Tell us more about what you have in mind*"
               rows="5"
               class="
                 w-full
