@@ -29,9 +29,11 @@
                   dark:text-white
                 "
               >
-                KnowMore is developed as an open-source application with
-                an MIT License. It is currently integrated into our fork of the SPARC Portal and is not available in the official SPARC Portal release. Anyone is free to fork our GitHub repository and
-                make their own changes if they would like. If you would like to
+                KnowMore is developed as an open-source application with an MIT
+                License. It is currently integrated into our fork of the SPARC
+                Portal and is not available in the official SPARC Portal
+                release. Anyone is free to fork our GitHub repository and make
+                their own changes if they would like. If you would like to
                 submit a feature modification, or feature suggestion, please
                 feel free to submit an issue on the repository.
               </p>
@@ -132,9 +134,39 @@
                   dark:text-white
                 "
               >
-                KnowMore was introduced as a project during the 2021 NIH SPARC Codeathon with the aim of leveraging the FAIR characteristics of the SPARC datasets to enable automated comparision across them. 
+                KnowMore was introduced as a project during the 2021 NIH SPARC
+                Codeathon with the aim of leveraging the FAIR characteristics of
+                the SPARC datasets to enable automated comparision across them.
                 KnowMore won the Grand Prize at the Codeathon.
               </p>
+              <div class="flex mt-2 md:mt-1">
+                <a
+                  href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
+                  target="_blank"
+                  class="
+                    text-accent
+                    inline-flex
+                    items-center
+                    text-lg
+                    sm:text-base
+                  "
+                >
+                  <span class="font-lato">
+                    Learn more about the SPARC Codeathon
+                  </span>
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2 arrow-animate"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
             </dd>
             <div class="py-3">
               <a
