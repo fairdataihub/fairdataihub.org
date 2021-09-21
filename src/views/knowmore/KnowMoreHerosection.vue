@@ -173,7 +173,7 @@
           <v-lazy-image
             alt="SODA for SPARC logo"
             src="https://i.ibb.co/HCxy4JH/soda-app-macos.png"
-            src-placeholder="'../../assets/soda-app-macos-min.png"
+            src-placeholder="https://i.ibb.co/KXN8cqX/soda-app-macos-min.png"
           />
         </div>
       </div>
