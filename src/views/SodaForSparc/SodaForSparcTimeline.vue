@@ -120,13 +120,13 @@ export default {
           longDate: "May 2019 - Aug 2020",
           title: "Phase I development",
           content:
-            "The base framework of the software was developed and support for high-level requirements of the SDS were integrated.",
+            "The base framework of the software is developed and support for high-level requirements of the SDS are integrated.",
         },
         {
           longDate: "Sept 2020 - Aug 2021",
           title: "Phase II development",
           content:
-            "The user interface was upgraded to become more intuitive, support was included for additional elements of the SDS, and the transition of SPARC from Blackfynn to Pennsieve was accommodated.",
+            "The user interface is upgraded to become more intuitive, support is included for additional elements of the SDS, and the transition of SPARC from Blackfynn to Pennsieve is achieved.",
         },
         {
           longDate: "Sept 2021 - Aug 2022",

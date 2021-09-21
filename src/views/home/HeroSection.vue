@@ -16,7 +16,7 @@
         >
           Making FAIR
           <span class="text-accent"> data </span>
-          practices more accessible one tool at a time
+          practices more accessible
         </h1>
 
         <p
@@ -57,7 +57,7 @@
               hover:text-accent
             "
           >
-            Tell us about your project
+            Contact us
           </button>
         </router-link>
       </div>

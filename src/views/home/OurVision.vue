@@ -109,13 +109,13 @@ const features = [
   {
     name: "Why is it important?",
     description:
-      "FAIR data practices are crucial for ensuring reproducibility of scientific findings and enabling AI/ML-driven analysis to increase the pace of new and exciting discoveries.",
+      "FAIR data practices are crucial for ensuring reproducibility of scientific findings and enabling AI/ML-driven analysis to increase the pace of new discoveries.",
     icon: ExclamationCircleIcon,
   },
   {
     name: "What are the challenges?",
     description:
-      "Despite effort from funding agencies, industry, and researchers, FAIR data practices are not widely adopted due to their complex and time consuming nature.",
+      "Despite effort from funding agencies, industry, and researchers, FAIR data practices are not widely adopted due to their complex nature and lack of support.",
     icon: LightningBoltIcon,
   },
   {
