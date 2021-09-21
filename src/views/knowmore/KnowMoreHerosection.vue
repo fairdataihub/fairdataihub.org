@@ -170,10 +170,11 @@
               alt="Grey grid"
             />
           </div>
-          <v-lazy-image
-            alt="SODA for SPARC logo"
-            src="https://i.ibb.co/HCxy4JH/soda-app-macos.png"
-            src-placeholder="https://i.ibb.co/KXN8cqX/soda-app-macos-min.png"
+          <img
+            data-aos="fade-in"
+            class="relative rounded mx-auto z-10 shadow-xl pointer-events-none"
+            alt="Knowmore gif"
+            src="https://github.com/fairdataihub/KnowMore/raw/main/docs/knowmore-website.gif"
           />
         </div>
       </div>
