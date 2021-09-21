@@ -171,6 +171,6 @@ export default {
 }
 
 [data-inviewport="data"]::before {
-  content: counter(v1) "." counter(v2, decimal-leading-zero) "+ TB";
+  content: counter(v1) "." counter(v2) "+ TB";
 }
 </style>
