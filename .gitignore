@@ -133,3 +133,4 @@ dist
 package-lock.json
 .nosync
 .env.development
+sitemap.xml
