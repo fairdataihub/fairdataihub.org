@@ -44,7 +44,7 @@
 
       <base-section
         data-aos="fade-in"
-        class="bg-gray-50 dark:bg-dark-background py-10 hidden"
+        class="bg-gray-50 dark:bg-dark-background py-10 "
       >
         <collaborators-section></collaborators-section>
       </base-section>
