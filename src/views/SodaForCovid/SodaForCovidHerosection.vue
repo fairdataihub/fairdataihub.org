@@ -89,9 +89,9 @@
               dark:text-white
             "
           >
-            Your one-stop tool for organizing and sharing COVID-19 research data
+            Your one-stop tool for rapidly organizing and sharing COVID-19 research data
             <br />
-            <i> By SPARC investigators, for SPARC investigators </i>
+            <i> Help the fight against the pandemic with your data </i>
           </p>
           <div class="w-full flex justify-center">
             <button

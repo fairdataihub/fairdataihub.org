@@ -79,10 +79,38 @@
                   />
                 </a>
               </div>
+              <div class="flex mt-2 md:mt-1">
+                <a
+                  href="https://github.com/fairdataihub/KnowMore"
+                  target="_blank"
+                  class="
+                    text-accent
+                    inline-flex
+                    items-center
+                    text-lg
+                    sm:text-base
+                  "
+                >
+                  <span class="font-lato">
+                    Explore the GitHub repository
+                  </span>
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2 arrow-animate"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
             </dd>
             <div class="py-3">
               <a
-                href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
+                href="https://github.com/fairdataihub/KnowMore"
                 target="_blank"
                 rel="noopener noreferrer"
               >
