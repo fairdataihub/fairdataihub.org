@@ -323,6 +323,7 @@
                     class="
                       flex flex-col
                       items-center
+                      h-full
                       p-2
                       rounded-lg
                       transition-all
@@ -333,11 +334,11 @@
                     <img
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
-                      class="h-28 w-28 my-2"
+                      class="my-auto mx-10"
                     />
                     <p
                       class="
-                        ml-2
+                        ml-2 mt-3
                         font-asap font-normal
                         text-lg text-center
                         dark:text-gray-50

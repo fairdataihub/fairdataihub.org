@@ -261,7 +261,7 @@
                     <img
                       :src="member.image"
                       :alt="member.name + ` profile picture`"
-                      class="h-28 rounded-full my-2"
+                      class="h-28 rounded-full my-3"
                     />
                     <p
                       class="
@@ -323,6 +323,7 @@
                     class="
                       flex flex-col
                       items-center
+                      h-full
                       p-2
                       rounded-lg
                       transition-all
@@ -333,11 +334,11 @@
                     <img
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
-                      class=" my-2 mx-10"
+                      class="my-auto mx-10"
                     />
                     <p
                       class="
-                        ml-2
+                        ml-2 mt-3
                         font-asap font-normal
                         text-lg text-center
                         dark:text-gray-50
@@ -382,17 +383,19 @@ export default {
         {
           name: "Pennsieve",
           href: "https://app.pennsieve.io",
-          image: "https://app.pennsieve.io/static/images/pennsieve-logo-full.svg",
+          image:
+            "https://app.pennsieve.io/static/images/pennsieve-logo-full.svg",
+        },
+        {
+          name: "FAIR Data Informatics Lab",
+          href: "https://www.fdilab.org/",
+          image:
+            "https://images.squarespace-cdn.com/content/v1/5c69f76f0cf57dde0186bd67/1556848982638-TROTINLLKBZD5WSAPP76/fdi+logo+final+-+white2_white+copy_white+copy.png?format=1500w",
         },
         {
           name: "MBF Bioscience",
           href: "https://www.mbfbioscience.com",
           image: "https://www.mbfbioscience.com/sites/all/themes/mbf/logo.png",
-        },
-        {
-          name: "FAIR Data Informatics Lab",
-          href: "https://www.fdilab.org/",
-          image: "https://images.squarespace-cdn.com/content/v1/5c69f76f0cf57dde0186bd67/1556848982638-TROTINLLKBZD5WSAPP76/fdi+logo+final+-+white2_white+copy_white+copy.png?format=1500w",
         },
       ],
     };
