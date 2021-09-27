@@ -136,7 +136,7 @@
               >
                 KnowMore was introduced as a project during the 2021 NIH SPARC
                 Codeathon with the aim of leveraging the FAIR characteristics of
-                the SPARC datasets to enable automated comparision across them.
+                the SPARC datasets to enable automated comparison across them.
                 KnowMore won the Grand Prize at the Codeathon.
               </p>
               <div class="flex mt-2 md:mt-1">
