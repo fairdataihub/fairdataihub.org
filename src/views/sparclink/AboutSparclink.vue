@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About SPARClink
+          About
         </p>
         <p
           class="

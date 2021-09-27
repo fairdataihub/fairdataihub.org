@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About SODA for SPARC
+          About
         </p>
         <p
           class="
@@ -25,10 +25,9 @@
             lg:mx-auto
           "
         >
-          SODA (Sofware for Organizing Data Automatically) for SPARC is a
-          cross-platform desktop software that allows SPARC-funded researchers
-          to easily comply with the FAIR SPARC Data curation and sharing
-          guidelines.
+          SODA (Sofware for Organizing Data Automatically) for COVID-19 Research is a
+          cross-platform desktop software that allows researchers
+          to easily organize and share their COVID-19 related research data according to applicable FAIR guidelines.
         </p>
       </div>
 

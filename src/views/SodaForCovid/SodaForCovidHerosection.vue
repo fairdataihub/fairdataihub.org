@@ -62,7 +62,7 @@
               dark:text-gray-50
             "
           >
-            SODA for Covid-19 
+            SODA for COVID-19 Research 
           </h1>
           <h2
             class="
@@ -76,7 +76,7 @@
               text-center
             "
           >
-            Keep Calm and Curate!
+            <!-- Keep Calm and Curate! -->
           </h2>
           <p
             class="
@@ -89,7 +89,7 @@
               dark:text-white
             "
           >
-            Your one-stop tool for curating and submitting SPARC datasets
+            Your one-stop tool for organizing and sharing COVID-19 research data
             <br />
             <i> By SPARC investigators, for SPARC investigators </i>
           </p>

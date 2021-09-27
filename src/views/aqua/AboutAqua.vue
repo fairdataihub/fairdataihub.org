@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About AQUA for SPARC
+          About
         </p>
         <p
           class="

@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About SODA for SPARC
+          About
         </p>
         <p
           class="
