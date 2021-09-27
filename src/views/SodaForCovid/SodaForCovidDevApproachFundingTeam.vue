@@ -333,7 +333,7 @@
                     <img
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
-                      class=" my-2 mx-10"
+                      class="h-28 w-28 my-2"
                     />
                     <p
                       class="
@@ -358,7 +358,7 @@
 
 <script>
 export default {
-  name: "SodaForSparcDevApproachFundingTeam",
+  name: "SodaForCovidDevApproachFundingTeam",
   data() {
     return {
       membersList: [
@@ -380,19 +380,9 @@ export default {
       ],
       collaboratorsList: [
         {
-          name: "Pennsieve",
-          href: "https://app.pennsieve.io",
-          image: "https://app.pennsieve.io/static/images/pennsieve-logo-full.svg",
-        },
-        {
-          name: "MBF Bioscience",
-          href: "https://www.mbfbioscience.com",
-          image: "https://www.mbfbioscience.com/sites/all/themes/mbf/logo.png",
-        },
-        {
-          name: "FAIR Data Informatics Lab",
-          href: "https://www.fdilab.org/",
-          image: "https://images.squarespace-cdn.com/content/v1/5c69f76f0cf57dde0186bd67/1556848982638-TROTINLLKBZD5WSAPP76/fdi+logo+final+-+white2_white+copy_white+copy.png?format=1500w",
+          name: "UCSF",
+          href: "https://www.ucsf.edu/",
+          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
         },
       ],
     };

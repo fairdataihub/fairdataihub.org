@@ -401,6 +401,19 @@
                       </a>
                     </MenuItem>
                   </router-link>
+                  <router-link to="/sodaforcovid">
+                    <MenuItem v-slot="{ active }">
+                      <a
+                        href="#"
+                        :class="[
+                          active ? 'bg-gray-100' : '',
+                          'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
+                        ]"
+                      >
+                        SODA for Covid
+                      </a>
+                    </MenuItem>
+                  </router-link>
                   <router-link to="/knowmore">
                     <MenuItem v-slot="{ active }">
                       <a
@@ -440,6 +453,7 @@
                       </a>
                     </MenuItem>
                   </router-link>
+                  
                 </MenuItems>
               </transition>
             </Menu>
