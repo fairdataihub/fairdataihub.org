@@ -30,15 +30,17 @@
             About Us
           </h1>
           <p class="font-asap text-black dark:text-white text-xl sm:text-lg">
-            FAIR Data Innovations Hub is a division of the California Medical Innovations Institute (CalMI<sup>2</sup>),
-          a non profit biomedical research organization located in San Diego,
-          California. We have a multidisciplinary team of enthusiasts about FAIR Data
-          practices and software development.
+            FAIR Data Innovations Hub is a division of the California Medical
+            Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
+            research organization located in San Diego, California. We have a
+            multidisciplinary team of enthusiasts about FAIR Data practices and
+            software development.
           </p>
 
           <a
             href="https://calmi2.org"
-            target="_blank" rel="noopener"
+            target="_blank"
+            rel="noopener"
             class="text-accent inline-flex items-center text-lg"
           >
             <span class="font-asap"> Learn more about CALMI<sup>2</sup> </span>
@@ -181,6 +183,31 @@ export default {
           linkedin: {
             show: true,
             link: "https://www.linkedin.com/in/ismail-qaddoura-76664754",
+          },
+        },
+        {
+          id: "ChristopherMarroquin",
+          name: "Christopher Marroquin (he/him)",
+          title: "Software Developer",
+          bio: "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
+          image: "https://i.ibb.co/9sqmshb/20180724-120150.jpg",
+          placeholder: "https://i.ibb.co/ZJ2p8nM/IMG-5945-min.jpg",
+          borderTop: true,
+          borderBottom: false,
+          education: [
+            `B.Sc. in Computer Science (California State University, Fresno, 2019)`,
+          ],
+          twitter: {
+            show: false,
+            link: "https://twitter.com",
+          },
+          github: {
+            show: true,
+            link: "https://github.com/aaronm-2112",
+          },
+          linkedin: {
+            show: true,
+            link: "https://www.linkedin.com/in/christopher-marroquin/",
           },
         },
       ],
