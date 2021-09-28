@@ -139,7 +139,7 @@ export default {
           title: "Software Developer",
           bio: "Sanjay moved from Sri Lanka to pursue higer education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
           image: "https://i.ibb.co/C8vSG2Y/IMG-9079.jpg",
-          placeholder: "https://i.ibb.co/nQH1M49/IMG-9079-1-min.jpg",
+          placeholder: "https://i.ibb.co/NnrHkTW/sanjay-min.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -191,7 +191,7 @@ export default {
           title: "Information Technology (IT) Manager",
           bio: "Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.",
           image: "https://i.ibb.co/0XDxPF9/ismail2.jpg",
-          placeholder: "https://i.ibb.co/ZJ2p8nM/IMG-5945-min.jpg",
+          placeholder: "https://i.ibb.co/q0ccLZN/ismail-min.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
