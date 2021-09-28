@@ -148,9 +148,9 @@
           </div>
 
           <div class="w-full flex flex-col justify-center items-center">
-            <span v-if="formValid" class="text-red-500 text-xs font-inter">
+            <!-- <span v-if="formValid" class="text-red-500 text-xs font-inter">
               Please complete all the required fields.
-            </span>
+            </span> -->
             <input
               type="submit"
               value="Send"
@@ -177,7 +177,6 @@
     </base-section>
     <notifications position="bottom right" />
   </div>
-  
 </template>
 
 <script>
@@ -245,7 +244,7 @@ export default {
     },
     sendEmail() {
       const formValid = this.validateInput();
-
+      let that = this;
       if (formValid) {
         emailjs
           .send(
@@ -263,8 +262,8 @@ export default {
             function (response) {
               console.log("SUCCESS!", response.status, response.text);
 
-              this.$notify({
-                title: "Nice to meet you",
+              that.$notify({
+                title: "Nice to meet you!",
                 text: "We will be in touch with you soon.",
                 type: "success",
                 duration: 10000,
@@ -272,10 +271,10 @@ export default {
               });
 
               // Reset form field
-              this.name = "";
-              this.email = "";
-              this.message = "";
-              this.formInstitute = "";
+              // that.name = "";
+              // that.email = "";
+              // that.message = "";
+              // that.formInstitute = "";
             },
             function (error) {
               console.log("FAILED...", error);

@@ -25,8 +25,9 @@
             lg:mx-auto
           "
         >
-          AQUA (Advanced Query Architecture for the SPARC Portal) an application
-          that aims at improving the search capabilities of the SPARC Portal.
+          SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a
+          cross-platform desktop software that allows researchers
+          to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines.
         </p>
       </div>
 
@@ -102,22 +103,22 @@ import {
 
 const features = [
   {
-    name: "What is SPARC?",
-    description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function
+    name: "What is COVID-19?",
+    description: `Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus.
     <div class="flex mt-2 md:mt-1">
-      <a href="https://sparc.science" target="_blank" rel="noopener">
+      <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" target="_blank" rel="noopener">
         <text
           class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
         >
-          Learn more about SPARC
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-2
-            arrow-animate"
+          Learn more about COVID-19 
+          <svg 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            class="w-4 h-4 ml-2 
+            arrow-animate" 
             viewBox="0 0 24 24" data-v-6a723fb6="">
             <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
           </svg>
@@ -127,21 +128,21 @@ const features = [
     icon: ScaleIcon,
   },
   {
-    name: "What are the FAIR SPARC Data Guidelines?",
-    description: `All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.
+    name: "Why are FAIR data practices important?",
+    description: `Given the urgency of the pandemic, it is crucial that researchers rapidly curate and share their data according to applicable FAIR guidelines to promote transparency and increase the pace of discoveries. 
       <div class="flex mt-2 md:mt-1">
-      <a href="https://doi.org/10.1101/2021.02.10.430563" target="_blank" rel="noopener">
+      <a href="niaid.nih.gov/research/share-covid-19-research-data" target="_blank" rel="noopener">
         <text
           class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
         >
-          Learn more about SDS
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-2 arrow-animate"
+          Learn more about COVID-19 data sharing 
+          <svg 
+            fill="none" 
+            stroke="currentColor" 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            class="w-4 h-4 ml-2 arrow-animate" 
             viewBox="0 0 24 24" data-v-6a723fb6="">
               <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
           </svg>
@@ -153,18 +154,18 @@ const features = [
   {
     name: "What are the challenges?",
     description:
-      "Currently, the search feature of the SPARC Portal is very limited. It does not recognize nearby words (typos and close-matches) or synonyms and provides limited result information.",
+      "Support is lacking to educate and assist the researchers, manual curation is not suitable to manage the amount of data being generated, and there is a lack of standard approach across research labs.",
     icon: LightningBoltIcon,
   },
   {
-    name: "What does AQUA do?",
+    name: "What does SODA for COVID-19 Research do?",
     description:
-      "AQUA makes the current SPARC Portal search engine smarter at understanding user query and improve search result display. The end goal is to improve exponentially the visibility of the SPARC datasets.",
+      "Through intuitive user interfaces and automation, this software provides a standardized tool for rapidly curating and sharing COVID-19 data according to applicable FAIR guidelines.",
     icon: DesktopComputerIcon,
   },
 ];
 export default {
-  name: "AboutAqua",
+  name: "AboutSodaForCovid",
   setup() {
     return {
       features,

@@ -12,7 +12,7 @@
             sm:text-4xl
           "
         >
-          About KnowMore
+          About
         </p>
         <p
           class="

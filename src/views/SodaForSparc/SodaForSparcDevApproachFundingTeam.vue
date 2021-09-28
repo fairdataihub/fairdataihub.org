@@ -77,10 +77,38 @@
                   />
                 </a>
               </div>
+              <div class="flex mt-2 md:mt-1">
+                <a
+                  href="https://github.com/fairdataihub/SODA-for-SPARC"
+                  target="_blank"
+                  class="
+                    text-accent
+                    inline-flex
+                    items-center
+                    text-lg
+                    sm:text-base
+                  "
+                >
+                  <span class="font-lato">
+                    Explore the GitHub repository
+                  </span>
+                  <svg
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    class="w-4 h-4 ml-2 arrow-animate"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
             </dd>
             <div class="py-3">
               <a
-                href="http://github.com/bvhpatel/soda"
+                href="https://github.com/fairdataihub/SODA-for-SPARC"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -261,7 +289,7 @@
                     <img
                       :src="member.image"
                       :alt="member.name + ` profile picture`"
-                      class="h-28 rounded-full my-2"
+                      class="h-28 rounded-full my-3"
                     />
                     <p
                       class="
@@ -275,6 +303,79 @@
                     </p>
                   </div>
                 </router-link>
+              </div>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
+      <div class="max-w-screen-lg mx-auto flex flex-col">
+        <h1
+          class="
+            md:mr-8
+            pb-5
+            font-inter font-black
+            dark:text-gray-50
+            text-4xl
+            subpixel-antialiased
+            text-left
+          "
+        >
+          Collaborators
+        </h1>
+        <dl class="w-full">
+          <div>
+            <dd class="mb-10 sm:mb-5 w-full">
+              <div
+                class="
+                  grid grid-cols-2
+                  md:grid-cols-2
+                  lg:grid-cols-3
+                  md:gap-3
+                  lg:gap-4
+                  py-0
+                  md:py-1
+                "
+              >
+                <a
+                  v-for="collaborator in collaboratorsList"
+                  :key="collaborator.name"
+                  :href="collaborator.href"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div
+                    class="
+                      flex flex-col
+                      items-center
+                      h-full
+                      p-2
+                      rounded-lg
+                      transition-all
+                      hover:bg-gray-200
+                      dark:hover:bg-gray-700
+                    "
+                  >
+                    <img
+                      :src="collaborator.image"
+                      :alt="collaborator.name + ` profile picture`"
+                      class="my-auto mx-10"
+                    />
+                    <p
+                      class="
+                        ml-2 mt-3
+                        font-asap font-normal
+                        text-lg text-center
+                        dark:text-gray-50
+                      "
+                    >
+                      {{ collaborator.name }}
+                    </p>
+                  </div>
+                </a>
               </div>
             </dd>
           </div>
@@ -304,6 +405,25 @@ export default {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
           image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
+        },
+      ],
+      collaboratorsList: [
+        {
+          name: "Pennsieve",
+          href: "https://app.pennsieve.io",
+          image:
+            "https://app.pennsieve.io/static/images/pennsieve-logo-full.svg",
+        },
+        {
+          name: "FAIR Data Informatics Lab",
+          href: "https://www.fdilab.org/",
+          image:
+            "https://images.squarespace-cdn.com/content/v1/5c69f76f0cf57dde0186bd67/1556848982638-TROTINLLKBZD5WSAPP76/fdi+logo+final+-+white2_white+copy_white+copy.png?format=1500w",
+        },
+        {
+          name: "MBF Bioscience",
+          href: "https://www.mbfbioscience.com",
+          image: "https://www.mbfbioscience.com/sites/all/themes/mbf/logo.png",
         },
       ],
     };

@@ -11,6 +11,7 @@ import SparcLink from "../views/sparclink/SparcLink.vue";
 import TheAqua from "../views/aqua/TheAqua.vue";
 
 import SodaForSparc from "../views/SodaForSparc/SodaForSparc.vue";
+import SodaForCovid from "../views/SodaForCovid/SodaForCovid.vue";
 
 import SodaForSparcDocs from "../views/SodaForSparcDocs/SodaForSparcDocs.vue";
 
@@ -62,6 +63,7 @@ const routes = [
   { path: "/", component: HomePage },
   { path: "/team", component: TheTeam },
   { path: "/sodaforsparc", component: SodaForSparc },
+  { path: "/sodaforcovid", component: SodaForCovid },
   { path: "/knowmore", component: KnowMore },
   { path: "/sparclink", component: SparcLink },
   { path: "/aqua", component: TheAqua },
