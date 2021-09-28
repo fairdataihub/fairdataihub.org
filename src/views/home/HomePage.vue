@@ -44,7 +44,7 @@
 
       <base-section
         data-aos="fade-in"
-        class="bg-gray-50 dark:bg-dark-background py-10 "
+        class="bg-gray-50 dark:bg-dark-background py-10"
       >
         <collaborators-section></collaborators-section>
       </base-section>
@@ -110,6 +110,13 @@ export default {
           description:
             "AQUA (Advanced QUery Architecture for the SPARC Portal) improves the SPARC Portal by making the search engine smarter at understanding user search keywords, enhancing the result display, and providing users with better result filtering and sorting options.",
           page: "/aqua",
+        },
+        {
+          name: "SODA for COVID-19 Research",
+          imageUrl: "https://i.ibb.co/92qvsnC/imageonline-co-textimage-1.png",
+          description:
+            "SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related research data according to applicable FAIR guidelines.",
+          page: "/sodaforcovid",
         },
       ],
     };

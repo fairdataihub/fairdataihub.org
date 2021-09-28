@@ -89,9 +89,7 @@
                     sm:text-base
                   "
                 >
-                  <span class="font-lato">
-                    Explore the GitHub repository
-                  </span>
+                  <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -160,7 +158,9 @@
                   dark:text-white
                 "
               >
-                SODA for COVID-19 Research is funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID).
+                SODA for COVID-19 Research is funded through a supplemental
+                award from the National Institute of Allergy and Infectious
+                Diseases (NIAID).
               </p>
               <div class="flex mt-2 md:mt-1">
                 <a
@@ -378,11 +378,18 @@
                     <img
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
+                      class="h-28 w-28 rounded-full my-2"
+                      v-if="collaborator.type === 'person'"
+                    />
+                    <img v-else
+                      :src="collaborator.image"
+                      :alt="collaborator.name + ` profile picture`"
                       class="my-auto mx-10"
                     />
                     <p
                       class="
-                        ml-2 mt-3
+                        ml-2
+                        mt-3
                         font-asap font-normal
                         text-lg text-center
                         dark:text-gray-50
@@ -427,12 +434,15 @@ export default {
         {
           name: "Zicheng Hu (UCSF)",
           href: "https://profiles.ucsf.edu/zicheng.hu",
-          image: "https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113",
+          image:
+            "https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113",
+          type: "person",
         },
         {
           name: "The Butte Lab",
           href: "https://profiles.ucsf.edu/zicheng.hu",
           image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
+          type: "lab",
         },
       ],
     };

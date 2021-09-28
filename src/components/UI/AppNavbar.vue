@@ -453,7 +453,6 @@
                       </a>
                     </MenuItem>
                   </router-link>
-                  
                 </MenuItems>
               </transition>
             </Menu>
@@ -548,6 +547,37 @@
                     </span>
                   </Switch>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              hidden
+              sm:flex
+              items-center
+              justify-center
+              sm:items-stretch sm:justify-end
+            "
+          >
+            <div class="hidden sm:block">
+              <div class="flex">
+                <router-link
+                  to="/contactus"
+                  class="
+                    text-black
+                    dark:text-white
+                    sm:px-1
+                    lg:px-3
+                    mx-1
+                    py-2
+                    sm:text-xs
+                    lg:text-sm
+                    font-inter font-medium
+                    nav-bar-item
+                  "
+                >
+                  Contact Us
+                </router-link>
               </div>
             </div>
           </div>
@@ -691,7 +721,7 @@ export default {
           name: "Contact Us",
           href: "/contactus",
           id: "nav-contactus",
-          showOnDesktop: true,
+          showOnDesktop: false,
         },
       ],
     };
