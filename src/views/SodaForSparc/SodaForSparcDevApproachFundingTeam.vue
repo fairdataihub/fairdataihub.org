@@ -89,9 +89,7 @@
                     sm:text-base
                   "
                 >
-                  <span class="font-lato">
-                    Explore the GitHub repository
-                  </span>
+                  <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -366,7 +364,8 @@
                     />
                     <p
                       class="
-                        ml-2 mt-3
+                        ml-2
+                        mt-3
                         font-asap font-normal
                         text-lg text-center
                         dark:text-gray-50
