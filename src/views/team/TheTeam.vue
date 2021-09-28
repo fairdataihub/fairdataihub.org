@@ -159,6 +159,32 @@ export default {
             link: "https://www.linkedin.com/in/sanjay-soundarajan",
           },
         },
+
+        {
+          id: "ChristopherMarroquin",
+          name: "Christopher Marroquin (he/him)",
+          title: "Software Developer",
+          bio: "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
+          image: "https://i.ibb.co/44xrNNw/aaron.jpg",
+          placeholder: "https://i.ibb.co/PzbxbDf/aaron-min.jpg",
+          borderTop: true,
+          borderBottom: false,
+          education: [
+            `B.Sc. in Computer Science (California State University, Fresno, 2019)`,
+          ],
+          twitter: {
+            show: false,
+            link: "https://twitter.com",
+          },
+          github: {
+            show: true,
+            link: "https://github.com/aaronm-2112",
+          },
+          linkedin: {
+            show: true,
+            link: "https://www.linkedin.com/in/christopher-marroquin/",
+          },
+        },
         {
           id: "Ismail-Qaddoura",
           name: "Ismail Qaddoura (he/him)",
@@ -183,31 +209,6 @@ export default {
           linkedin: {
             show: true,
             link: "https://www.linkedin.com/in/ismail-qaddoura-76664754",
-          },
-        },
-        {
-          id: "ChristopherMarroquin",
-          name: "Christopher Marroquin (he/him)",
-          title: "Software Developer",
-          bio: "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
-          image: "https://i.ibb.co/tL3KCP7/IMG-1231.jpg",
-          placeholder: "https://i.ibb.co/ZJ2p8nM/IMG-5945-min.jpg",
-          borderTop: true,
-          borderBottom: false,
-          education: [
-            `B.Sc. in Computer Science (California State University, Fresno, 2019)`,
-          ],
-          twitter: {
-            show: false,
-            link: "https://twitter.com",
-          },
-          github: {
-            show: true,
-            link: "https://github.com/aaronm-2112",
-          },
-          linkedin: {
-            show: true,
-            link: "https://www.linkedin.com/in/christopher-marroquin/",
           },
         },
       ],
