@@ -335,7 +335,7 @@
                   dark:text-white
                 "
               >
-                SODA for COVID-19 Research is developed is collaboration with Dr. Zicheng Hu (UCSF) and his colleagues at UCSF and Stanford who are conducting 
+                SODA for COVID-19 Research is developed in collaboration with Dr. Zicheng Hu (UCSF) and his colleagues at UCSF and Stanford who are conducting 
                 a clinical trial for a novel treatment approach for COVID-19. They will be providing overall guidance on the applicable FAIR guidelines as well as
                 conducting beta testing of the software.
               </p>
