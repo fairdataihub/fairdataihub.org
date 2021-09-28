@@ -29,7 +29,7 @@
                   dark:text-white
                 "
               >
-                SODA for COVID-19 Research is developed is collaboration with Dr. Zicheng Hu and hist team at UCSF. It is distributed as an open-source application with
+                SODA for COVID-19 is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
                 submit a feature modification, or feature suggestion, please
@@ -322,6 +322,26 @@
         >
           Collaborators
         </h1>
+        <dl class="w-full py-2">
+          <div class="w-full flex flex-col sm:flex-row justify-between">
+            <dd class="mb-10 sm:mb-5 pr-10">
+              <p
+                class="
+                  w-full
+                  text-lg
+                  sm:text-base
+                  font-asap
+                  text-black
+                  dark:text-white
+                "
+              >
+                SODA for COVID-19 Research is developed is collaboration with Dr. Zicheng Hu (UCSF) and his colleagues at UCSF and Stanford who are conducting 
+                a clinical trial for a novel treatment approach for COVID-19. They will be providing overall guidance on the applicable FAIR guidelines as well as
+                conducting beta testing of the software.
+              </p>
+            </dd>
+          </div>
+        </dl>
         <dl class="w-full">
           <div>
             <dd class="mb-10 sm:mb-5 w-full">

@@ -326,6 +326,24 @@
         >
           Collaborators
         </h1>
+        <dl class="w-full py-2">
+          <div class="w-full flex flex-col sm:flex-row justify-between">
+            <dd class="mb-10 sm:mb-5 pr-10">
+              <p
+                class="
+                  w-full
+                  text-lg
+                  sm:text-base
+                  font-asap
+                  text-black
+                  dark:text-white
+                "
+              >
+                SODA for SPARC connects with several ressources developed by the SPARC Data Ressource Center (DRC) and we therefore collaborate with the DRC teams.
+              </p>
+            </dd>
+          </div>
+        </dl>
         <dl class="w-full">
           <div>
             <dd class="mb-10 sm:mb-5 w-full">
