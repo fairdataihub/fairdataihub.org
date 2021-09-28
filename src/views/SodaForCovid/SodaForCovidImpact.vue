@@ -14,7 +14,7 @@
           dark:text-gray-50
         "
       >
-        Impact on SPARC datasets
+        Impact
       </h2>
 
       <h3
@@ -27,11 +27,11 @@
           dark:text-gray-50
         "
       >
-        Trusted by researchers all over the world
+        Coming soon...
       </h3>
     </div>
 
-    <div class="p-6 dark:text-gray-50 flex flex-col sm:flex-row justify-around">
+    <!-- <div class="p-6 dark:text-gray-50 flex flex-col sm:flex-row justify-around">
       <div
         class="flex flex-col m-2 lg:m-6 items-center justify-center mb-5"
         v-for="item in statsList"
@@ -64,7 +64,7 @@
           {{ item.name }}
         </p>
       </div>
-    </div>
+    </div> -->
   </section>
 </template>
 

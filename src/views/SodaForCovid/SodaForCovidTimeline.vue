@@ -111,28 +111,16 @@ export default {
     return {
       timelineList: [
         {
-          longDate: "December 2018",
+          longDate: "November 2020",
           title: "Birth of SODA for SPARC",
           content:
-            "The first prototype of SODA for SPARC is developed during the 2018 NIH SPARC Hackathon where it won the Public's Choice Award.",
+            "The first prototype of SODA for COVID-19 Research is developed for demo purpose by the FAIR Data Innovations Hub.",
         },
         {
-          longDate: "May 2019 - Aug 2020",
+          longDate: "September 2021 - Aug 2022",
           title: "Phase I development",
           content:
-            "The base framework of the software is developed and support for high-level requirements of the SDS are integrated.",
-        },
-        {
-          longDate: "Sept 2020 - Aug 2021",
-          title: "Phase II development",
-          content:
-            "The user interface is upgraded to become more intuitive, support is included for additional elements of the SDS, and the transition of SPARC from Blackfynn to Pennsieve is achieved.",
-        },
-        {
-          longDate: "Sept 2021 - Aug 2022",
-          title: "Phase III development",
-          content:
-            "Support will be provided for the evolving SPARC guidelines. A guided mode is to be integrated to simplify further data curation, and the workflow will be adapted for non-SPARC datasets.",
+            "The base framework of the software will be developed and support for major genomics, immunology, and general data types will be provided.",
         },
       ],
     };

@@ -94,37 +94,14 @@
             <i> Help the fight against the pandemic with your data </i>
           </p>
           <div class="w-full flex justify-center">
-            <button
-              class="
-                hidden
-                sm:block
-                flex
-                justify-center
-                items-center
-                border-0
-                py-2
-                px-6
-                focus:outline-none
-                rounded
-                text-lg
-                transition-all
-                bg-black
-                dark:bg-pink-600
-                text-white
-                ring-2 ring-offset-2 ring-transparent
-                dark:ring-offset-transparent
-                hover:ring-pink-600
-                dark:hover:ring-offset-1 dark:hover:ring-white
-                focus:ring-pink-600
-              "
-              @click="downloadSODA"
-            >
-              Download now
-            </button>
-            <router-link to="/sodaforsparc/docs">
+            <a href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
+            target="_blank">
               <button
                 class="
-                  sm:ml-4
+                  flex
+                  justify-center
+                  items-center
+                  border-0
                   py-2
                   px-6
                   focus:outline-none
@@ -141,9 +118,9 @@
                   focus:ring-pink-600
                 "
               >
-                Explore the docs
+                Explore
               </button>
-            </router-link>
+            </a>
           </div>
         </div>
         <!-- image div -->

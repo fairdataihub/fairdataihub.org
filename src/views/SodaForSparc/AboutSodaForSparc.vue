@@ -25,7 +25,7 @@
             lg:mx-auto
           "
         >
-          SODA (Sofware for Organizing Data Automatically) for SPARC is a
+          SODA (Sofware to Organize Data Automatically) for SPARC is a
           cross-platform desktop software that allows SPARC-funded researchers
           to easily comply with the FAIR SPARC Data curation and sharing
           guidelines.

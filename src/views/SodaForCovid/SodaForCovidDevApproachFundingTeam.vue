@@ -29,7 +29,7 @@
                   dark:text-white
                 "
               >
-                SODA for COVID-19 Research is distributed as an open-source application with
+                SODA for COVID-19 Research is developed is collaboration with Dr. Zicheng Hu and hist team at UCSF. It is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
                 submit a feature modification, or feature suggestion, please
@@ -160,11 +160,11 @@
                   dark:text-white
                 "
               >
-                SODA for COVID-19 Research is funded through a supplemental award National Institute of Allergy and Infectious Diseases (NIAID).
+                SODA for COVID-19 Research is funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID).
               </p>
               <div class="flex mt-2 md:mt-1">
                 <a
-                  href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
+                  href=""
                   target="_blank"
                   class="
                     text-accent
@@ -392,11 +392,11 @@ export default {
           href: "/team/#BhaveshPatel",
           image: "https://i.ibb.co/drZPXHs/Bhavesh-head.jpg",
         },
-        {
-          name: "Tram Ngo",
-          href: "/team/#TramNgo",
-          image: "https://i.ibb.co/VpYFGBv/Tram-head.jpg",
-        },
+        // {
+        //   name: "Tram Ngo",
+        //   href: "/team/#TramNgo",
+        //   image: "https://i.ibb.co/VpYFGBv/Tram-head.jpg",
+        // },
         {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
@@ -405,8 +405,13 @@ export default {
       ],
       collaboratorsList: [
         {
-          name: "UCSF",
-          href: "https://www.ucsf.edu/",
+          name: "Zicheng Hu (UCSF)",
+          href: "https://profiles.ucsf.edu/zicheng.hu",
+          image: "https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113",
+        },
+        {
+          name: "The Butte Lab",
+          href: "https://profiles.ucsf.edu/zicheng.hu",
           image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
         },
       ],
