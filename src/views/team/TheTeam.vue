@@ -190,7 +190,7 @@ export default {
           name: "Christopher Marroquin (he/him)",
           title: "Software Developer",
           bio: "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
-          image: "https://i.ibb.co/9sqmshb/20180724-120150.jpg",
+          image: "https://i.ibb.co/tL3KCP7/IMG-1231.jpg",
           placeholder: "https://i.ibb.co/ZJ2p8nM/IMG-5945-min.jpg",
           borderTop: true,
           borderBottom: false,
