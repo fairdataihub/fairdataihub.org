@@ -60,20 +60,20 @@
 
         <ul class="docs-ul list-outside list-disc">
           <li>
-            subject_id: Lab-based schema for identifying each subject. This
+            <strong>subject_id</strong>: Lab-based schema for identifying each subject. This
             field should match the primary's sub-folder names. The subject_id
             must be unique.
           </li>
 
           <li>
-            pool_id: If data is collected on multiple subjects at the same time
+            <strong>pool_id</strong>: If data is collected on multiple subjects at the same time
             include the identifier of the pool where the data file will be
             found. If this is included it should be the name of the top level
             folder inside primary.
           </li>
 
           <li>
-            experimental group: This field refers to the experimental group that
+            <strong>experimental group</strong>: This field refers to the experimental group that
             a subject is assigned to in the research project.
           </li>
 

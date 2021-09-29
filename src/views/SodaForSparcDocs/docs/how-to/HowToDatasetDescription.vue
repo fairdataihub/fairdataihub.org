@@ -64,36 +64,36 @@
 
         <ul class="docs-ul list-outside list-disc">
           <li>
-            Name: Descriptive title for the dataset. This field should match
-            exactly with your dataset name on Pennsieve.
+            <strong>Name</strong>: Descriptive title for the dataset. This field
+            should match exactly with your dataset name on Pennsieve.
           </li>
 
           <li>
-            Description: Brief description of the study and the data set.
-            Equivalent to the abstract of a scientific paper. This could match
-            the subtitle provided on Pennsieve.
+            <strong>Description</strong>: Brief description of the study and the
+            data set. Equivalent to the abstract of a scientific paper. This
+            could match the subtitle provided on Pennsieve.
           </li>
 
           <li>
-            Keywords: A set of 3-5 keywords other than already mentioned in the
-            above elements that will aid in search of your dataset once
-            published on the SPARC portal. Each keyword must be provided in a
-            separate column.
+            <strong>Keywords</strong>: A set of 3-5 keywords other than already
+            mentioned in the above elements that will aid in search of your
+            dataset once published on the SPARC portal. Each keyword must be
+            provided in a separate column.
           </li>
 
           <li>
-            Contributors: Name of any contributors to the dataset. These
-            individuals need not have been authors on any publications
-            describing the data, but should be acknowledged for their role in
-            producing and publishing the dataset. If more than one, add each
-            contributor in a new column. For each contributor it is mandatory at
-            least one affiliation, at least one role, and role as contact
-            person.
+            <strong>Contributors</strong>: Name of any contributors to the
+            dataset. These individuals need not have been authors on any
+            publications describing the data, but should be acknowledged for
+            their role in producing and publishing the dataset. If more than
+            one, add each contributor in a new column. For each contributor it
+            is mandatory at least one affiliation, at least one role, and role
+            as contact person.
           </li>
 
           <li>
-            Contributor ORCID ID: This is the contributor's ORCID ID number. If
-            you do not have one, you can sign up for one at
+            <strong>Contributor ORCID ID</strong>: This is the contributor's
+            ORCID ID number. If you do not have one, you can sign up for one at
             <a
               href="https://orcid.org"
               target="_blank"
@@ -106,8 +106,8 @@
           </li>
 
           <li>
-            Contributor Affiliation: Institutional affiliation for contributors.
-            A
+            <strong>Contributor Affiliation</strong>: Institutional affiliation
+            for contributors. A
             <a
               href="https://ror.org/"
               target="_blank"
@@ -122,8 +122,8 @@
           </li>
 
           <li>
-            Contributor Role: Role(s) of the contributor. It must one of the
-            following roles provided by the Data Cite schema:
+            <strong>Contributor Role</strong>: Role(s) of the contributor. It
+            must one of the following roles provided by the Data Cite schema:
             PrincipleInvestigator, Creator, CoInvestigator, ContactPerson,
             DataCollector, DataCurator, DataManager, Distributor, Editor,
             Producer, ProjectLeader, ProjectManager, ProjectMember,
@@ -145,9 +145,9 @@
           </li>
 
           <li>
-            Is Contact Person: Specify "Yes" if the contributor is a contact
-            person for the dataset, otherwise specify "No". One and only one of
-            the contributors must be marked "Yes".
+            <strong>Is Contact Person</strong>: Specify "Yes" if the contributor
+            is a contact person for the dataset, otherwise specify "No". One and
+            only one of the contributors must be marked "Yes".
           </li>
 
           <li>
@@ -155,10 +155,10 @@
           </li>
 
           <li>
-            Funding: Specify the number of your SPARC award (mandatory in the
-            OT2OD0XXXXX format) and other funding award if applicable
-            (optional). If multiple award numbers are specified, each award
-            number must be specified in a separate column.
+            <strong>Funding</strong>: Specify the number of your SPARC award
+            (mandatory in the OT2OD0XXXXX format) and other funding award if
+            applicable (optional). If multiple award numbers are specified, each
+            award number must be specified in a separate column.
           </li>
 
           <li>
@@ -167,8 +167,8 @@
           </li>
 
           <li>
-            Protocol URL or DOI: URLs (if still private) / DOIs (if public) of
-            protocols from protocols.io related to this dataset
+            <strong>Protocol URL or DOI</strong>: URLs (if still private) / DOIs
+            (if public) of protocols from protocols.io related to this dataset
           </li>
 
           <li>
@@ -179,13 +179,14 @@
           <li>Link Description: Short description of URL content.</li>
 
           <li>
-            Number of subjects: Number of unique subjects in this dataset,
-            should match subjects metadata file.
+            <strong>Number of subjects</strong>: Number of unique subjects in
+            this dataset, should match subjects metadata file.
           </li>
 
           <li>
-            Number of samples: Number of unique samples in this dataset, should
-            match samples metadata file. Set to zero if there are no samples.
+            <strong>Number of samples</strong>: Number of unique samples in this
+            dataset, should match samples metadata file. Set to zero if there
+            are no samples.
           </li>
 
           <li>
@@ -221,15 +222,15 @@
 
       <base-docs-subtitle> Note </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside">
-        <li>
+      <div class="p-parent-div">
+        <p>
           There should be only one of "Originating Article DOI", "Protocol URL
           or DOI", or "Additional Links" specified in each column. If there are
           multiple of those elements, each must be in a separate column. This is
           to avoid confusion about what the "Link Description" is for in case it
           is provided.
-        </li>
-      </ul>
+        </p>
+      </div>
     </div>
   </div>
 </template>

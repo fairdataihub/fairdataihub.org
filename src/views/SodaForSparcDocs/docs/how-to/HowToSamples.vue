@@ -1,6 +1,7 @@
 <template>
   <div>
-    <base-docs-title :title="`How to structure the samples metadata file`"> </base-docs-title>
+    <base-docs-title :title="`How to structure the samples metadata file`">
+    </base-docs-title>
 
     <div class="flex flex-col">
       <base-docs-subtitle> Background </base-docs-subtitle>
@@ -58,32 +59,33 @@
 
         <ul class="docs-ul list-outside list-disc">
           <li>
-            subject_id: Lab-based schema for identifying each subject. This
-            field should match the primary's sub-folder names. The subject_id
-            must be unique.
+            <strong>subject_id</strong>: Lab-based schema for identifying each
+            subject. This field should match the primary's sub-folder names. The
+            subject_id must be unique.
           </li>
 
           <li>
-            sample_id: Lab-based schema for identifying each sample. The
-            sample_id must be unique across the whole dataset.
+            <strong>sample_id</strong>: Lab-based schema for identifying each
+            sample. The sample_id must be unique across the whole dataset.
           </li>
 
           <li>
-            wasDerivedFromSample: This is the sample_id of the sample from which
-            the current sample was derived (e.g., slice, tissue punch, biopsy,
-            etc.).
+            <strong>wasDerivedFromSample</strong>: This is the sample_id of the
+            sample from which the current sample was derived (e.g., slice,
+            tissue punch, biopsy, etc.).
           </li>
 
           <li>
-            pool_id: If data is collected on multiple subjects at the same time
-            include the identifier of the pool where the data file will be
-            found. If this is included it should be the name of the top level
-            folder inside primary.
+            <strong>pool_id</strong>: If data is collected on multiple subjects
+            at the same time include the identifier of the pool where the data
+            file will be found. If this is included it should be the name of the
+            top level folder inside primary.
           </li>
 
           <li>
-            experimental group: This field refers to the experimental group that
-            a subject is assigned to in the research project.
+            <strong>experimental group</strong>: This field refers to the
+            experimental group that a subject is assigned to in the research
+            project.
           </li>
 
           <li>
