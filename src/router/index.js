@@ -18,6 +18,7 @@ import SodaForSparcDocs from "../views/SodaForSparcDocs/SodaForSparcDocs.vue";
 import DownloadSoda from "../views/SodaForSparcDocs/docs/getting-started/DownloadSoda.vue";
 import UserInterface from "../views/SodaForSparcDocs/docs/getting-started/UserInterface.vue";
 import OrganizeSubmit from "../views/SodaForSparcDocs/docs/getting-started/OrganizeSubmit.vue";
+import OrganizeSubmitNewDataset from "../views/SodaForSparcDocs/docs/getting-started/OrganizeSubmitNewDataset.vue";
 
 import ConnectPennsieveSODA from "../views/SodaForSparcDocs/docs/manage-datasets/ConnectPennsieveSODA.vue";
 import ConnectPennsieveSODAAPIKey from "../views/SodaForSparcDocs/docs/manage-datasets/ConnectPennsieveSODAAPIKey.vue";
@@ -92,6 +93,10 @@ const routes = [
       {
         path: "Organize-and-submit-SPARC-datasets-with-SODA",
         component: OrganizeSubmit,
+      },
+      {
+        path: "Organize-and-submit-a-new-SPARC-dataset-with-SODA",
+        component: OrganizeSubmitNewDataset,
       },
       {
         path: "Connect-your-Pennsieve-account-with-SODA",

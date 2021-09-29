@@ -89,6 +89,10 @@ export default {
               subtitle: "Organize and submit SPARC datasets with SODA",
               href: "/sodaforsparc/docs/Organize-and-submit-SPARC-datasets-with-SODA",
             },
+            {
+              subtitle: "Organize and submit a new SPARC dataset with SODA",
+              href: "/sodaforsparc/docs/Organize-and-submit-a-new-SPARC-dataset-with-SODA",
+            },
           ],
         },
         {

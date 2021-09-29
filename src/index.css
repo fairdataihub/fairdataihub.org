@@ -88,6 +88,10 @@
   @apply ml-4 mb-2 font-asap text-black dark:text-white;
 }
 
+.highlight-text{
+  @apply bg-gray-300 px-2 rounded-md
+}
+
 .v-lazy-image {
   filter: blur(2px);
   transition: filter 0.7s;
