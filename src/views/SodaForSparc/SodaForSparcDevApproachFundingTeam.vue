@@ -438,11 +438,11 @@ export default {
           image:
             "https://images.squarespace-cdn.com/content/v1/5c69f76f0cf57dde0186bd67/1556848982638-TROTINLLKBZD5WSAPP76/fdi+logo+final+-+white2_white+copy_white+copy.png?format=1500w",
         },
-        {
-          name: "MBF Bioscience",
-          href: "https://www.mbfbioscience.com",
-          image: "https://www.mbfbioscience.com/sites/all/themes/mbf/logo.png",
-        },
+        // {
+        //   name: "MBF Bioscience",
+        //   href: "https://www.mbfbioscience.com",
+        //   image: "https://www.mbfbioscience.com/sites/all/themes/mbf/logo.png",
+        // },
       ],
     };
   },

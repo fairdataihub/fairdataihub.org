@@ -353,7 +353,7 @@
                   md:gap-3
                   lg:gap-4
                   py-0
-                  md:py-1
+                  md:py-1 hidden
                 "
               >
                 <a
