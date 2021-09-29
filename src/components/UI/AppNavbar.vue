@@ -378,7 +378,7 @@
                     absolute
                     right-0
                     mt-2
-                    w-48
+                    w-60
                     rounded-md
                     shadow-lg
                     py-1
@@ -410,7 +410,7 @@
                           'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
                         ]"
                       >
-                        SODA for Covid
+                        SODA for COVID-19 Research
                       </a>
                     </MenuItem>
                   </router-link>
@@ -696,6 +696,12 @@ export default {
           name: "SODA for SPARC",
           href: "/sodaforsparc",
           id: "nav-sodaforsparc",
+          showOnDesktop: false,
+        },
+        {
+          name: "SODA for COVID-19 Research",
+          href: "/sodaforcovid",
+          id: "nav-sodaforcovid",
           showOnDesktop: false,
         },
         {
