@@ -45,7 +45,7 @@
         />
       </div>
 
-      <base-docs-subtitle> Notes </base-docs-subtitle>
+      <base-docs-subtitle> Note </base-docs-subtitle>
 
       <div class="p-parent-div">
         <p>
