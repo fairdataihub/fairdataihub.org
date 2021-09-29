@@ -58,6 +58,14 @@ import PennsieveAgentAlreadyRunning from "../views/SodaForSparcDocs/docs/common-
 import SendingLogFiles from "../views/SodaForSparcDocs/docs/common-errors/SendingLogFiles.vue";
 import IssuesHiddenFilesFolders from "../views/SodaForSparcDocs/docs/common-errors/IssuesHiddenFilesFolders.vue";
 
+import HowToSubmission from "../views/SodaForSparcDocs/docs/how-to/HowToSubmission.vue";
+import HowToDatasetDescription from "../views/SodaForSparcDocs/docs/how-to/HowToDatasetDescription.vue";
+import HowToSubjects from "../views/SodaForSparcDocs/docs/how-to/HowToSubjects.vue";
+import HowToSamples from "../views/SodaForSparcDocs/docs/how-to/HowToSamples.vue";
+import HowToManifest from "../views/SodaForSparcDocs/docs/how-to/HowToManifest.vue";
+import HowToDataDeliverables from "../views/SodaForSparcDocs/docs/how-to/HowToDataDeliverables.vue";
+
+
 // router paths
 const routes = [
   { path: "/", component: HomePage },
@@ -150,7 +158,7 @@ const routes = [
         component: CreateSubjectsxlsx,
       },
       {
-        path: "Create-samples.xlsx",
+        path: "Create-samples-xlsx",
         component: CreateSamplesxlsx,
       },
       {
@@ -220,6 +228,30 @@ const routes = [
       {
         path: "Issues-regarding-hidden-files-or-folders",
         component: IssuesHiddenFilesFolders,
+      },
+      {
+        path: "How-to-structure-the-submission-metadata-file",
+        component: HowToSubmission,
+      },
+      {
+        path: "How-to-structure-the-dataset-description-metadata-file",
+        component: HowToDatasetDescription,
+      },
+      {
+        path: "How-to-structure-the-subjects-metadata-file",
+        component: HowToSubjects,
+      },
+      {
+        path: "How-to-structure-the-samples-metadata-file",
+        component: HowToSamples,
+      },
+      {
+        path: "How-to-structure-the-manifest-metadata-file",
+        component: HowToManifest,
+      },
+      {
+        path: "How-to-get-your-data-deliverables-document",
+        component: HowToDataDeliverables,
       },
     ],
   },

@@ -161,7 +161,7 @@ export default {
             },
             {
               subtitle: "Create samples.xlsx",
-              href: "/sodaforsparc/docs/Create-samples.xlsx",
+              href: "/sodaforsparc/docs/Create-samples-xlsx",
             },
             {
               subtitle: "Download templates",
@@ -241,6 +241,35 @@ export default {
             {
               subtitle: "Issues regarding hidden files or folders",
               href: "/sodaforsparc/docs/Issues-regarding-hidden-files-or-folders",
+            },
+          ],
+        },
+        {
+          title: "'How to' SPARC series",
+          subsections: [
+            {
+              subtitle: "How to structure the submission metadata file",
+              href: "/sodaforsparc/docs/How-to-structure-the-submission-metadata-file",
+            },
+            {
+              subtitle: "How to structure the dataset_description metadata file",
+              href: "/sodaforsparc/docs/How-to-structure-the-dataset-description-metadata-file",
+            },
+            {
+              subtitle: "How to structure the subjects metadata file",
+              href: "/sodaforsparc/docs/How-to-structure-the-subjects-metadata-file",
+            },
+            {
+              subtitle: "How to structure the samples metadata file",
+              href: "/sodaforsparc/docs/How-to-structure-the-samples-metadata-file",
+            },
+            {
+              subtitle: "How to structure the manifest metadata file",
+              href: "/sodaforsparc/docs/How-to-structure-the-manifest-metadata-file",
+            },
+            {
+              subtitle: "How to get your Data Deliverables document",
+              href: "/sodaforsparc/docs/How-to-get-your-data-deliverables-document",
             },
           ],
         },

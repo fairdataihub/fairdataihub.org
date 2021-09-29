@@ -239,7 +239,7 @@
         generate the file anyway (and address the issues later).
       </base-docs-heading>
 
-      <base-docs-subtitle> Notes </base-docs-subtitle>
+      <base-docs-subtitle> Note </base-docs-subtitle>
 
       <ul class="docs-ul list-outside list-disc">
         <li>

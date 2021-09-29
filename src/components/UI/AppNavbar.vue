@@ -378,7 +378,7 @@
                     absolute
                     right-0
                     mt-2
-                    w-48
+                    w-60
                     rounded-md
                     shadow-lg
                     py-1
@@ -410,7 +410,7 @@
                           'block px-4 py-2 hover:bg-gray-600 dark:hover:bg-gray-200',
                         ]"
                       >
-                        SODA for Covid
+                        SODA for COVID-19 Research
                       </a>
                     </MenuItem>
                   </router-link>
@@ -453,7 +453,6 @@
                       </a>
                     </MenuItem>
                   </router-link>
-                  
                 </MenuItems>
               </transition>
             </Menu>
@@ -548,6 +547,37 @@
                     </span>
                   </Switch>
                 </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              hidden
+              sm:flex
+              items-center
+              justify-center
+              sm:items-stretch sm:justify-end
+            "
+          >
+            <div class="hidden sm:block">
+              <div class="flex">
+                <router-link
+                  to="/contactus"
+                  class="
+                    text-black
+                    dark:text-white
+                    sm:px-1
+                    lg:px-3
+                    mx-1
+                    py-2
+                    sm:text-xs
+                    lg:text-sm
+                    font-inter font-medium
+                    nav-bar-item
+                  "
+                >
+                  Contact Us
+                </router-link>
               </div>
             </div>
           </div>
@@ -669,6 +699,12 @@ export default {
           showOnDesktop: false,
         },
         {
+          name: "SODA for COVID-19 Research",
+          href: "/sodaforcovid",
+          id: "nav-sodaforcovid",
+          showOnDesktop: false,
+        },
+        {
           name: "KnowMore",
           href: "/knowmore",
           id: "nav-knowmore",
@@ -685,7 +721,7 @@ export default {
           name: "Contact Us",
           href: "/contactus",
           id: "nav-contactus",
-          showOnDesktop: true,
+          showOnDesktop: false,
         },
       ],
     };
