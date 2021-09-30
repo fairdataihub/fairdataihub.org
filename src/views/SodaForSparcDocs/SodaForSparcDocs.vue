@@ -161,7 +161,7 @@ export default {
             },
             {
               subtitle: "Create samples.xlsx",
-              href: "/sodaforsparc/docs/Create-samples.xlsx",
+              href: "/sodaforsparc/docs/Create-samples-xlsx",
             },
             {
               subtitle: "Download templates",

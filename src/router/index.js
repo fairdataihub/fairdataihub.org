@@ -148,7 +148,7 @@ const routes = [
         component: CreateSubjectsxlsx,
       },
       {
-        path: "Create-samples.xlsx",
+        path: "Create-samples-xlsx",
         component: CreateSamplesxlsx,
       },
       {
