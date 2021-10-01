@@ -563,40 +563,29 @@
               />
               <div class="ml-3">
                 <span class="span-content">
-                  <span
-                    class="
-                      text-black
-                      font-asap
-                      dark:text-white
-                      print:text-sm print:dark:text-black
-                    "
-                  >
-                    Prepare subjects file (</span
-                  >
                   <router-link
-                    to="/sodaforsparc/docs/Download-templates"
+                    to="/sodaforsparc/docs/Create-subjects-xlsx"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
-                    <span
-                      class="
-                        font-asap
-                        print:text-sm print:text-black print:dark:text-black
-                      "
-                    >
-                      download template
-                    </span>
-                  </router-link>
                   <span
                     class="
-                      text-black
-                      dark:text-white
                       font-asap
-                      print:text-sm print:dark:text-black
+                      print:text-sm print:text-black print:dark:text-black
                     "
                   >
-                    in SODA, more support will be available in SODA soon - note:
-                    required only if your study includes subjects)
+                    Prepare subjects file
                   </span>
+                </router-link>
+                <span
+                  class="
+                    text-black
+                    dark:text-white
+                    font-asap
+                    print:text-sm print:dark:text-black
+                  "
+                >
+                  (required only if your study includes subjects)
+                </span>
                 </span>
               </div>
             </label>
@@ -609,39 +598,29 @@
               />
               <div class="ml-3">
                 <span class="span-content">
-                  <span
-                    class="
-                      text-black
-                      dark:text-white
-                      font-asap
-                      print:text-sm print:dark:text-black
-                    "
-                  >
-                    Prepare samples file (</span
-                  >
                   <router-link
-                    to="/sodaforsparc/docs/Download-templates"
+                    to="/sodaforsparc/docs/Create-samples-xlsx"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
-                    <span
-                      class="
-                        font-asap
-                        print:text-sm print:text-black print:dark:text-black
-                      "
-                    >
-                      download template</span
-                    >
-                  </router-link>
                   <span
                     class="
-                      text-black
-                      dark:text-white
                       font-asap
-                      print:text-sm print:dark:text-black
+                      print:text-sm print:text-black print:dark:text-black
                     "
-                    >, more support will be available in SODA soon - note:
-                    required only if your study includes samples)
-                  </span>
+                  >
+                    Prepare samples file
+                </span>
+                </router-link>
+                <span
+                  class="
+                    text-black
+                    dark:text-white
+                    font-asap
+                    print:text-sm print:dark:text-black
+                  "
+                >
+                  (required only if your study includes samples)
+                </span>
                 </span>
               </div>
             </label>
