@@ -37,42 +37,42 @@
               </p>
               <div class="flex mt-3 text-accent">
                 <a
-                  href="https://github.com/SPARC-FAIR-Codeathon/aqua/graphs/contributors"
+                  href="https://github.com/fairdataihub/AQUA/graphs/contributors"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/stargazers"
+                  href="https://github.com/fairdataihub/AQUA/stargazers"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/issues"
+                  href="https://github.com/fairdataihub/AQUA/issues"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/blob/master/LICENSE"
+                  href="https://github.com/fairdataihub/AQUA/blob/master/LICENSE"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>

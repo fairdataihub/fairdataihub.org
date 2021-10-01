@@ -46,7 +46,7 @@
 
         <div class="img-parent-div">
           <img
-            src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/How%20to/submission/submission-template.PNG"
+            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/submission-template.PNG?raw=true"
           />
         </div>
 
@@ -84,7 +84,7 @@
 
           <div class="img-parent-div">
             <img
-              src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
             />
           </div>
         </ul>

@@ -46,7 +46,7 @@
 
         <div class="img-parent-div">
           <img
-            src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/How%20to/manifest/manifest-example.PNG"
+            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/manifest/manifest-example.PNG?raw=true"
           />
         </div>
 

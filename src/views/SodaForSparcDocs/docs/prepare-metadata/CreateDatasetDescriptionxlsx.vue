@@ -16,14 +16,12 @@
           sheet to help you populate some of the fields easily. The expected
           structure of this file, generated automatically by SODA, is explained
           in our corresponding
-          <a
-            href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-dataset-description-metadata-file"
-            target="_blank"
-            rel="nofollow"
+          <router-link
+            to="/sodaforsparc/docs/How-to-structure-the-dataset-description-metadata-file"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            "How to"</a
-          >
+            <span> "How to"</span>
+          </router-link>
           page if you would like to learn about it.
         </p>
       </div>
@@ -97,7 +95,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/dataset-info.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/dataset-info.gif?raw=true"
         />
       </div>
 
@@ -122,7 +120,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/award-info.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/award-info.gif?raw=true"
         />
       </div>
 
@@ -156,7 +154,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/contributor-info-1-1.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/contributor-info-1-1.gif?raw=true"
         />
       </div>
 
@@ -196,7 +194,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/link-info-1.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/link-info-1.gif?raw=true"
         />
       </div>
 
@@ -228,7 +226,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/completeness-info-1.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/completeness-info-1.gif?raw=true"
         />
       </div>
 

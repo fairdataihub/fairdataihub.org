@@ -59,7 +59,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Common-errors/blackfynn-agent-running-error.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Common-errors/blackfynn-agent-running-error.gif?raw=true"
           alt="A GIF illustrating how to kill a process in Windows."
         />
       </div>

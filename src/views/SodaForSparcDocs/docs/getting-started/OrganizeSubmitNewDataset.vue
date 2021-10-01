@@ -242,7 +242,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/Add-metadata/banner-image.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Add-metadata/banner-image.gif?raw=true"
         />
       </div>
 
@@ -766,7 +766,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-dataset/Specify-files/SPARC-dataset-structure.PNG"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-dataset/Specify-files/SPARC-dataset-structure.PNG?raw=true"
         />
       </div>
 
@@ -808,7 +808,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/high-level-folders-1.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/high-level-folders-1.gif?raw=true"
         />
       </div>
 
@@ -853,7 +853,7 @@
 
         <div class="img-parent-div">
           <img
-            src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/organize-step3-part1.gif"
+            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part1.gif?raw=true"
           />
         </div>
 
@@ -868,7 +868,7 @@
 
           <div class="img-parent-div">
             <img
-              src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/organize-step3-part2-files.gif"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part2-files.gif?raw=true"
             />
           </div>
         </li>
@@ -895,7 +895,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/organize-step4-metadata-files.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step4-metadata-files.gif?raw=true"
         />
       </div>
 
@@ -947,7 +947,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/generate-3.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-3.gif?raw=true"
         />
       </div>
 
@@ -970,7 +970,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/preview-dataset.PNG"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/preview-dataset.PNG?raw=true"
         />
       </div>
 

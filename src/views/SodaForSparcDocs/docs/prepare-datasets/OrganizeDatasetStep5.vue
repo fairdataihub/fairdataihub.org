@@ -8,14 +8,12 @@
         <p>
           Manifest files are mandatory for all datasets. To learn more about
           this metadata file we refer to our corresponding
-          <a
-            href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-manifest-metadata-file"
-            target="_blank"
-            rel="noopener"
+          <router-link
+            to="/sodaforsparc/docs/How-to-structure-the-manifest-metadata-file"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            "How to"</a
-          >
+            <span> "How to"</span>
+          </router-link>
           page.
         </p>
         <p>
@@ -32,7 +30,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/request-manifests.PNG"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/request-manifests.PNG?raw=true"
         />
       </div>
     </div>

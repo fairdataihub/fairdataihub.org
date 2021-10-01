@@ -34,7 +34,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Download-templates/download-templates.PNG"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Download-templates/download-templates.PNG?raw=true"
           alt="A screenshot of our interface for downloading templates released by the Curation Team."
         />
       </div>

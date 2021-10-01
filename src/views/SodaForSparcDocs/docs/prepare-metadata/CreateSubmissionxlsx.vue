@@ -12,14 +12,12 @@
           commonly found errors when preparing this file. The expected structure
           of this file, generated automatically by SODA, is explained in our
           corresponding
-          <a
-            href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-submission-metadata-file"
-            target="_blank"
-            rel="nofollow"
+          <router-link
+            to="/sodaforsparc/docs/How-to-structure-the-submission-metadata-file"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            "How to"</a
-          >
+            <span> "How to"</span>
+          </router-link>
           page if you would like to learn about it.
         </p>
         <p>
@@ -98,7 +96,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Submission/submission.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Submission/submission.gif?raw=true"
         />
       </div>
     </div>

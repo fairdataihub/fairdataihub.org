@@ -41,7 +41,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/View-change-status/view-change-status.PNG"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/View-change-status/view-change-status.PNG?raw=true"
         />
       </div>
 
