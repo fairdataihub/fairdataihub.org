@@ -137,6 +137,12 @@
               the ISO-formatted text in the number field, and select "N/A" for
               the unit field.
             </li>
+            <li>
+              Member of: Provide a population that the specimen of your subject belongs to.
+            </li>
+            <li>
+              Also in dataset: Include the Pennsieve id(s) for other datasets that have data about the same specimen.
+            </li>
           </ul>
         </li>
         <li>
@@ -160,6 +166,9 @@
               <i> Age range</i>: This is the minimal age (youngest) and the
               maximum age (oldest) of the research subjects. The format for
               these 2 fields is numerical value + space + unit (spelled out).
+            </li>
+            <li>
+              <i> Date of birth</i>: The date of birth of the subject.
             </li>
           </ul>
         </li>
@@ -205,10 +214,25 @@
               to use the right or left hand, whenever applicable.
             </li>
             <li>
+              <i> Body mass</i>: The body mass of the subject.
+            </li>
+            <li>
               <i> Genotype</i>: This refers to the genetic makeup of genetically
               modified alleles in transgenic animals belonging to the same
               subject group. Note: Ignore this field if the RRID is already
               provided.
+            </li>
+            <li>
+              <i> Phenotype</i>: Provide the phenotype of the subject.
+            </li>
+            <li>
+              <i> Disease or disorder</i>: Provide any disease of disorder of the subject.
+            </li>
+            <li>
+            <i> Disease model</i>: Provide the disease model of the subject..
+            </li>
+            <li>
+              <i> Intervention</i>: Provide the intervention applied to your subject (if any).
             </li>
             <li>
               <i> Reference atlas</i>: Enter here the reference atlas and organ.
@@ -216,6 +240,12 @@
             <li>
               <i> Experimental log file name</i>: This is a file containing
               experimental records for each sample, whenever applicable.
+            </li>
+            <li>
+              <i> Experimental date</i>: Provide the date at which the experiment takes place.
+            </li>
+            <li>
+              <i> Laboratory internal id</i>: Provide a mapping for groups that have incompatible internal identifier conventions.
             </li>
           </ul>
         </li>
