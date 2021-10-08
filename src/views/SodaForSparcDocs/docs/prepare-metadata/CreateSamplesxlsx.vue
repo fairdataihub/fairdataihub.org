@@ -103,67 +103,18 @@
 
           <ul class="docs-ul list-outside list-disc">
             <li>
-              Specimen type: This refers to the physical type of the specimen
+              Sample type: This refers to the physical type of the specimen
               from which the data were extracted.
             </li>
             <li>
-              Specimen anatomical location: This is the organ, or sub-region of
+              Sample anatomical location: This is the organ, or sub-region of
               organ from which the data were extracted.
             </li>
             <li>
-              Species: This is the species of the subject. When users start
-              typing to search for a species, SODA provides species suggestions
-              based on the NCBI taxonomy. E.g: Rattus
+              Member of: Provide a population that the specimen or sample belongs to.
             </li>
             <li>
-              Strain: This is the organism strain of the subject. When users
-              start typing to search for a strain, SODA provides strain
-              suggestions based on the common strains observed from SPARC
-              datasets. Once a strain is specified, the Research Resource
-              Identifier Identification (RRID) of the strain will be
-              automatically pulled out from
-              <a
-                href="https://scicrunch.org/resources/Organisms/search"
-                target="_blank"
-                rel="nofollow"
-                class="hover:underline text-blue-600 dark:text-blue-400"
-              >
-                Scicrunch</a
-              >
-              by SODA.
-            </li>
-            <li>
-              Exact age at the start of experiment: Age of the subject (e.g.,
-              hours, days, weeks, years old) or if unknown, leave it empty. For
-              your convenience, SODA separates this entry into 2 fields: A
-              number field (e.g: 1, 2, 3) and a unit field (e.g: hours, days,
-              weeks, etc). If an ISO format is expected for this entry, enter
-              the ISO-formatted text in the number field, and select "N/A" for
-              the unit field.
-            </li>
-          </ul>
-        </li>
-        <li>
-          Optional details:
-
-          <ul class="docs-ul list-outside list-disc">
-            <li>
-              <i> Age category</i>: The age category that the subject belongs
-              to. An search field with suggestions based on list derived from
-              <a
-                href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
-                target="_blank"
-                rel="nofollow"
-                class="hover:underline text-blue-600 dark:text-blue-400"
-              >
-                UBERON life cycle stage</a
-              >
-              is provided in the interface for your convenience.
-            </li>
-            <li>
-              <i> Age range</i>: This is the minimal age (youngest) and the
-              maximum age (oldest) of the research subjects. The format for
-              these 2 fields is numerical value + space + unit (spelled out).
+              Also in dataset: Include the Pennsieve id(s) for other datasets that have data about the same specimen.
             </li>
           </ul>
         </li>
@@ -202,21 +153,24 @@
         </li>
         <li>
           Additional fields (Optional):
-
           <ul class="docs-ul list-outside list-disc">
             <li>
-              <i> Sex</i>: This is the sex of the subject, or if unknown, leave
-              it empty. E.g: Female.
+              <i> Laboratory internal id</i>: Provide a mapping for groups that have incompatible internal identifier conventions.
             </li>
             <li>
-              <i> Handedness</i>: This refers to the preference of the subject
-              to use the right or left hand, whenever applicable.
+              <i> Date of derivation</i>: Provide the date at which the subject was collected.
             </li>
             <li>
-              <i> Genotype</i>: This refers to the genetic makeup of genetically
-              modified alleles in transgenic animals belonging to the same
-              subject group. Note: Ignore this field if the RRID is already
-              provided.
+              <i> Pathology</i>: Provide the pathological condition of the sample if applicable.
+            </li>
+            <li>
+              <i> Laterality</i>: This indicates which one of a pair of organs (i.e: kidneys or lungs) the sample is.
+            </li>
+            <li>
+              <i> Cell type</i>: Provide the cell type of your subject.
+            </li>
+            <li>
+              <i> Plane of section</i>: Provide the plane of section of your subject.
             </li>
             <li>
               <i> Reference atlas</i>: Enter here the reference atlas and organ.
@@ -232,7 +186,7 @@
 
       <div class="p-parent-div">
         <p>
-          Click "Add custom field" button to start adding a header for a field
+          Click <strong>Add custom field</strong> to start adding a header for a field
           that is not a SPARC-standard samples.xlsx field. You will have the
           option to add value for this field after it is created. Click on the
           "trash can" icon next to a field to delete a custom field.
@@ -244,18 +198,8 @@
       <ul class="docs-ul list-outside list-disc">
         <li>
           If you have a properly structured SPARC primary folder to import, you
-          can choose to import it specified under the table of samples after you
-          enter Step 2. SODA will extract the subject ID(s) and sample ID(s) (if
-          available) onto the table of samples for your edits.
-        </li>
-        <li>
-          In the sample table, click on the "pen" symbol next to a sample to
-          edit information about an existing sample.
-        </li>
-        <li>
-          If you wish to import information from an existing sample to a new
-          sample, you have the option to do that by clicking "Add a sample", and
-          specify an existing subject and sample to copy information from.
+          can click on <strong>I want to import subject ID(s) from my primary folder</strong> specified under the button "Add a subject" to import it to the table of samples. SODA will extract the subject ID(s) and sample ID(s) (if available)
+          onto the table of samples for your edits.
         </li>
       </ul>
     </div>

@@ -65,7 +65,7 @@
           You will be able to add new subjects or edit/delete existing subjects
           (if any). If at least 1 subject is added, a table of subjects will be
           provided with each row containing a subject and the tasks associated
-          with it (Edit/Delete).
+          with it (Edit/Copy/Delete).
         </p>
 
         <p>
@@ -266,18 +266,8 @@
       <ul class="docs-ul list-outside list-disc">
         <li>
           If you have a properly structured SPARC primary folder to import, you
-          can choose to import it specified under the table of subjects after
-          you enter Step 2. SODA will extract the subject ID(s) (if available)
-          onto the table of samples for your edits.
-        </li>
-        <li>
-          In the subject table, click on the "pen" symbol next to a subject to
-          edit information about an existing subject.
-        </li>
-        <li>
-          If you wish to import information from an existing subject to a new
-          subject, you have the option to do that by clicking "Add a subject",
-          and specify an existing subject to copy information from.
+          can click on <strong>I want to import subject ID(s) from my primary folder</strong> specified under the button "Add a subject" to import it to the table of subjects. SODA will extract the subject ID(s) (if available)
+          onto the table of subjects for your edits.
         </li>
       </ul>
     </div>

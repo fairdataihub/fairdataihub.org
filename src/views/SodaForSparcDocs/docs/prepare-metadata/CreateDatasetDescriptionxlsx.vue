@@ -75,12 +75,6 @@
         </li>
       </ul>
 
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/dataset-info.gif"
-        />
-      </div>
-
       <base-docs-heading
         >Participant Info (information about the subjects or samples of your dataset):</base-docs-heading
       >
@@ -121,11 +115,6 @@
         Study primary conclusion: A description of the primary conclusion drawn from the study for the structured abstract.
         </li>
       </ul>
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Prepare-metadata/Dataset_description/dataset-info.gif"
-        />
-      </div>
 
       <base-docs-heading
         >Award and Contributor Info (information about the SPARC award and the contributors to your
