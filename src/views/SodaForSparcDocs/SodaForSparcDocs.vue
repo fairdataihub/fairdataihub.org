@@ -86,7 +86,8 @@ export default {
               href: "/sodaforsparc/docs/user-interface",
             },
             {
-              subtitle: "Organize and submit SPARC datasets with SODA",
+              subtitle:
+                "Checklist to organize and submit SPARC datasets with SODA",
               href: "/sodaforsparc/docs/Organize-and-submit-SPARC-datasets-with-SODA",
             },
             {
@@ -256,7 +257,8 @@ export default {
               href: "/sodaforsparc/docs/How-to-structure-the-submission-metadata-file",
             },
             {
-              subtitle: "How to structure the dataset_description metadata file",
+              subtitle:
+                "How to structure the dataset_description metadata file",
               href: "/sodaforsparc/docs/How-to-structure-the-dataset-description-metadata-file",
             },
             {
