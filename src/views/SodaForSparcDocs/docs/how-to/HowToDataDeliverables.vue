@@ -48,7 +48,7 @@
           To obtain the Data Deliverables document associated with your award,
           simply ask your PI or grant manager. Click
           <a
-            href="https://github.com/bvhpatel/SODA/raw/master/src/file_templates/DataDeliverablesDocument-template.docx"
+            href="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/src/file_templates/DataDeliverablesDocument-template.docx?raw=true"
             target="_blank"
             rel="nofollow"
             class="hover:underline text-blue-600 dark:text-blue-400"
@@ -68,7 +68,7 @@
 
       <div class="img-parent-div">
           <img
-            src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG"
+            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
           />
         </div>
     </div>

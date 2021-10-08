@@ -44,7 +44,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Organize-dataset/getting-started.PNG"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/getting-started.PNG?raw=true"
         />
       </div>
     </div>

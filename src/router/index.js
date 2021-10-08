@@ -69,7 +69,8 @@ import HowToDataDeliverables from "../views/SodaForSparcDocs/docs/how-to/HowToDa
 
 // router paths
 const routes = [
-  { path: "/", component: HomePage },
+  { path: "/", redirect: '/home' },
+  { path: "/home", component: HomePage },
   { path: "/team", component: TheTeam },
   { path: "/sodaforsparc", component: SodaForSparc },
   { path: "/sodaforcovid", component: SodaForCovid },

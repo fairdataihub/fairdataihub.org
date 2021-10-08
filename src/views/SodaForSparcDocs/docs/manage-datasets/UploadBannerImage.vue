@@ -41,7 +41,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/Add-metadata/banner-image.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Add-metadata/banner-image.gif?raw=true"
         />
       </div>
 

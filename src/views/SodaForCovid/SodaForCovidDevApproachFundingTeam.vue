@@ -37,42 +37,42 @@
               </p>
               <div class="flex mt-3 text-accent">
                 <a
-                  href="https://github.com/bvhpatel/SODA/graphs/contributors"
+                  href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/graphs/contributors"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/contributors/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/stargazers"
+                  href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/stargazers"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/stars/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/issues"
+                  href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/issues"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/issues/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/blob/master/LICENSE"
+                  href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/blob/master/LICENSE"
                   target="_blank"
                   class="mr-2"
                 >
                   <img
-                    src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
+                    src="https://img.shields.io/github/license/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                     alt="soda for sparc contributors"
                   />
                 </a>

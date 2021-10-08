@@ -101,7 +101,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/Manage-datasets/Manage-permissions/add-permissions.gif"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Manage-permissions/add-permissions.gif?raw=true"
         />
       </div>
 

@@ -37,7 +37,7 @@
               </p>
               <div class="flex mt-3 text-accent">
                 <a
-                  href="https://github.com/bvhpatel/SODA/graphs/contributors"
+                  href="https://github.com/fairdataihub/SODA-for-SPARC/graphs/contributors"
                   target="_blank"
                   class="mr-2"
                 >
@@ -47,7 +47,7 @@
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/stargazers"
+                  href="https://github.com/fairdataihub/SODA-for-SPARC/stargazers"
                   target="_blank"
                   class="mr-2"
                 >
@@ -57,7 +57,7 @@
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/issues"
+                  href="https://github.com/fairdataihub/SODA-for-SPARC/issues"
                   target="_blank"
                   class="mr-2"
                 >
@@ -67,7 +67,7 @@
                   />
                 </a>
                 <a
-                  href="https://github.com/bvhpatel/SODA/blob/master/LICENSE"
+                  href="https://github.com/fairdataihub/SODA-for-SPARC/blob/master/LICENSE"
                   target="_blank"
                   class="mr-2"
                 >

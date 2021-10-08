@@ -21,5 +21,5 @@ yarn build
 ### Lints and fixes files
 
 ```
-yarn lint
+yarn lintt
 ```

@@ -16,14 +16,12 @@
           then expected to submit each dataset by the agreed submission date.
           When a dataset is submitted by the awardees, the milestone and
           submission date associated with it must be included in the
-          <a
-            href="https://github.com/bvhpatel/SODA/wiki/How-to-structure-the-submission-metadata-file"
-            target="_blank"
-            rel="nofollow"
+          <router-link
+            to="/sodaforsparc/docs/How-to-structure-the-submission-metadata-file"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            submission</a
-          >
+            <span> submission</span>
+          </router-link>
           metadata file. In SODA, we provide you the option to import your Data
           Deliverables document such that you can easily prepare you submission
           metadata file without errors.
@@ -37,7 +35,7 @@
           To obtain the Data Deliverables document associated with your award,
           simply ask your PI or grant manager. Click
           <a
-            href="https://github.com/bvhpatel/SODA/raw/master/src/file_templates/DataDeliverablesDocument-template.docx"
+            href="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/src/file_templates/DataDeliverablesDocument-template.docx?raw=true"
             target="_blank"
             rel="nofollow"
             class="hover:underline text-blue-600 dark:text-blue-400"
@@ -57,7 +55,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/bvhpatel/SODA/raw/master/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
           alt='A screenshot of our a demo Data Deliverables document. The "Milestone achieved" value in the submission file must be one of the milestone specified under "Related milestone, aim, or task" of the document and the "Milestone completion date" must be the corresponding "Expected date of completion" in the document.'
         />
       </div>

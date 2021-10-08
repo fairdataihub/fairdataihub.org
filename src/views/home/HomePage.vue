@@ -82,7 +82,7 @@ export default {
         {
           name: "SODA for SPARC",
           imageUrl:
-            "https://raw.githubusercontent.com/bvhpatel/SODA/6c9c10c398e8845c57279969f9b9fe25e1c21887/src/assets/logo-svg/Logo-soda-with-circle.svg",
+            "https://raw.githubusercontent.com/fairdataihub/SODA-for-SPARC/8d20346b9312017905259079b4ac0c689423d1cd/src/assets/logo-svg/Logo-soda-with-circle.svg",
           description:
             "SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators according to the FAIR SPARC data standards.",
           page: "/sodaforsparc",
