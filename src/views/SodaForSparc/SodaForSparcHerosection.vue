@@ -216,7 +216,7 @@ export default {
     },
     getLatestVersion: async function (os) {
       const res = await fetch(
-        "https://api.github.com/repos/bvhpatel/soda/releases"
+        "https://api.github.com/repos/fairdataihub/SODA-for-SPARC/releases"
       );
       const data = await res.json();
       const release = data[0];
