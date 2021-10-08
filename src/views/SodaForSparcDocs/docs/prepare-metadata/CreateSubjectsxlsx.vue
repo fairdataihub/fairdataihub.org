@@ -64,7 +64,7 @@
           You will be able to add new subjects or edit/delete existing subjects
           (if any). If at least 1 subject is added, a table of subjects will be
           provided with each row containing a subject and the tasks associated
-          with it (Edit/Delete).
+          with it (Edit/Copy/Delete).
         </p>
 
         <p>
@@ -136,6 +136,12 @@
               the ISO-formatted text in the number field, and select "N/A" for
               the unit field.
             </li>
+            <li>
+              Member of: Provide a population that the specimen of your subject belongs to.
+            </li>
+            <li>
+              Also in dataset: Include the Pennsieve id(s) for other datasets that have data about the same specimen.
+            </li>
           </ul>
         </li>
         <li>
@@ -159,6 +165,9 @@
               <i> Age range</i>: This is the minimal age (youngest) and the
               maximum age (oldest) of the research subjects. The format for
               these 2 fields is numerical value + space + unit (spelled out).
+            </li>
+            <li>
+              <i> Date of birth</i>: The date of birth of the subject.
             </li>
           </ul>
         </li>
@@ -204,10 +213,25 @@
               to use the right or left hand, whenever applicable.
             </li>
             <li>
+              <i> Body mass</i>: The body mass of the subject.
+            </li>
+            <li>
               <i> Genotype</i>: This refers to the genetic makeup of genetically
               modified alleles in transgenic animals belonging to the same
               subject group. Note: Ignore this field if the RRID is already
               provided.
+            </li>
+            <li>
+              <i> Phenotype</i>: Provide the phenotype of the subject.
+            </li>
+            <li>
+              <i> Disease or disorder</i>: Provide any disease of disorder of the subject.
+            </li>
+            <li>
+            <i> Disease model</i>: Provide the disease model of the subject..
+            </li>
+            <li>
+              <i> Intervention</i>: Provide the intervention applied to your subject (if any).
             </li>
             <li>
               <i> Reference atlas</i>: Enter here the reference atlas and organ.
@@ -215,6 +239,12 @@
             <li>
               <i> Experimental log file name</i>: This is a file containing
               experimental records for each sample, whenever applicable.
+            </li>
+            <li>
+              <i> Experimental date</i>: Provide the date at which the experiment takes place.
+            </li>
+            <li>
+              <i> Laboratory internal id</i>: Provide a mapping for groups that have incompatible internal identifier conventions.
             </li>
           </ul>
         </li>
@@ -235,18 +265,8 @@
       <ul class="docs-ul list-outside list-disc">
         <li>
           If you have a properly structured SPARC primary folder to import, you
-          can choose to import it specified under the table of subjects after
-          you enter Step 2. SODA will extract the subject ID(s) (if available)
-          onto the table of samples for your edits.
-        </li>
-        <li>
-          In the subject table, click on the "pen" symbol next to a subject to
-          edit information about an existing subject.
-        </li>
-        <li>
-          If you wish to import information from an existing subject to a new
-          subject, you have the option to do that by clicking "Add a subject",
-          and specify an existing subject to copy information from.
+          can click on <strong>I want to import subject ID(s) from my primary folder</strong> specified under the button "Add a subject" to import it to the table of subjects. SODA will extract the subject ID(s) (if available)
+          onto the table of subjects for your edits.
         </li>
       </ul>
     </div>

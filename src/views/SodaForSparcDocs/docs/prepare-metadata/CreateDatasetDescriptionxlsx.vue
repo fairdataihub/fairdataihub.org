@@ -27,31 +27,18 @@
       </div>
 
       <base-docs-subtitle> How to </base-docs-subtitle>
-      <div class="p-parent-div">
-        <p>
-          First, we suggest to add/edit your Airtable account and SPARC award(s)
-          as instructed
-          <router-link
-            to="/sodaforsparc/docs/Connect-your-Airtable-account-with-SODA"
-            class="hover:underline text-blue-600 dark:text-blue-400"
-          >
-            <span>here</span>
-          </router-link>
-          then confirm.
-        </p>
-        <p>
-          The subsequent interface divides the dataset description file into
-          five convenient sections to facilitate your task. Go through them
-          successively and populate the various fields as indicated (mandatory
-          fields are marked with a start in the interface):
-        </p>
-      </div>
-
+      <ul class="docs-ul list-outside list-decimal">
+        <li>
+          You can start by either Creating a dataset_description.xlsx file from scratch with SODA or Continue working on an existing dataset_description.xlsx file.
+        </li>
+        <li>
+          The subsequent interface divides the dataset description file into six convenient sections to facilitate your task. Go through them successively and populate the various fields as indicated:
+        </li>
+      </ul>
       <base-docs-heading
         >Dataset Info (high-level information about your
         dataset):</base-docs-heading
       >
-
       <ul class="docs-ul list-outside list-decimal">
         <li>
           Name: Descriptive title for the dataset. Since this field should match
@@ -78,9 +65,18 @@
           to add a description).
         </li>
         <li>
+          Dataset type: The type of this dataset, specifically whether it is experimental or computational.
+        </li>
+        <li>
           Keywords: A set of 3-5 keywords (other than those used in the name and
           description) that will help in searching your dataset once published
         </li>
+      </ul>
+
+      <base-docs-heading
+        >Participant Info (information about the subjects or samples of your dataset):</base-docs-heading
+      >
+      <ul class="docs-ul list-outside list-decimal">
         <li>
           Number of subjects: The number of unique subjects in this dataset,
           should match the subjects metadata file. Must be greater or equal to
@@ -93,20 +89,128 @@
         </li>
       </ul>
 
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/dataset-info.gif?raw=true"
-        />
-      </div>
+      <base-docs-heading
+        >Study Info (high-level information about your
+        experiment or study):</base-docs-heading
+      >
+      <ul class="docs-ul list-outside list-decimal">
+        <li>
+        Study organ system: The major organ systems related to this study.
+        </li>
+        <li>
+        Study approach: The experimental approach or approaches taken in this study.
+        </li>
+        <li>
+        Study technique: The experimental techniques used in this study.
+        </li>
+        <li>
+        Study purpose: A description of the study purpose for the structured abstract.
+        </li>
+        <li>
+        Study data collection: A description of the study data collection process for this dataset. Used to generate the structured abstract.
+        </li>
+        <li>
+        Study primary conclusion: A description of the primary conclusion drawn from the study for the structured abstract.
+        </li>
+      </ul>
 
       <base-docs-heading
-        >Award Info (information about the contributors to your
+        >Award and Contributor Info (information about the SPARC award and the contributors to your
         dataset):</base-docs-heading
       >
 
       <ul class="docs-ul list-outside list-decimal">
         <li>
-          SPARC Award: Select the SPARC award associated with your dataset
+          <strong>SPARC Award associated with this dataset</strong>: You can either type the SPARC award number or have SODA retrieve your SPARC award and its contributor information by connecting SODA with your Airtable account. Instructions are provided <router-link
+            to="/sodaforsparc/docs/Connect-your-Airtable-account-with-SODA"
+            class="hover:underline text-blue-600 dark:text-blue-400"
+          ><span>here.</span>
+        </router-link>
+        </li>
+        <li>
+          Click on <strong>Add a contributor</strong> to start adding contributors to your dataset_description file.
+          <ul class="docs-ul list-outside list-disc">
+            <li>
+              Provide information about any contributor to the dataset. Note that
+              the "Contributor" list is compiled from the SPARC Airtable sheet based
+              on the SPARC award selected. Select one Contributor to get the ORCID
+              ID, Contributor Affiliation, and Contributor Role populated
+              automatically (if specified in the SPARC Airtable Sheet). Select
+              "Other contributors" in the "Contributors" dropdown list if you'd like
+              to enter a Contributor name manually (although we suggest entering
+              them directly in the SPARC Airtable - restart SODA to see them in the
+              list).
+            </li>
+            <li>
+              Check "Corresponding Author" if the contributor is a contact person/corresponding author for
+              the dataset. At least one and only one of the contributors should be
+              the corresponding author.
+            </li>
+            <li>
+              Click "Add contributor" to add the contributor to SODA's contributor table. Each
+              contributor added to the table will be added to the dataset
+              description file when it is generated.
+            </li>
+            </ul>
+        </li>
+      </ul>
+      <div class="img-parent-div">
+        <img
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/contributor-info-1-1.gif?raw=true"
+        />
+      </div>
+
+      <base-docs-heading>
+      Related Information: protocol, paper, dataset, etc. :
+      </base-docs-heading>
+
+      <ul class="docs-ul list-outside list-decimal">
+        <li> Click <strong>Add a protocol</strong> to add a protocol.
+          <ul class="docs-ul list-outside list-disc">
+            <li>
+              Protocol URL or DOI: URLs (if still private) / DOIs (if public) of
+              protocols from protocols.io related to this dataset
+            </li>
+            <li>
+              Protocol type: This will state whether your link is a "URL" or a "DOI" item. Use one of those two items to reference the type of identifier.
+            </li>
+            <li>
+              Relation to the dataset: A prespecified list of relations for common protocols used in SPARC datasets. The value in this field must be read as the 'relationship that this dataset has to the specified protocol'.
+            </li>
+            <li>
+              Protocol description: Provide a short description of the link.
+            </li>
+          </ul>
+        </li>
+        <li>Click <strong>Add a URL/DOI</strong> to add a link other than a protocol.</li>
+        <ul class="docs-ul list-outside list-disc">
+          <li>
+            URL or DOI: Specify your actual URL (if resource is public) or DOI (if resource is private). This can be web links to repositories or papers (DOI).
+          </li>
+          <li>
+            Link type: This will state whether your link is a 'URL' or 'DOI' item. Use one of those two items to reference the type of link.
+          </li>
+          <li>
+            Relation to the dataset: A prespecified list of relations for common URLs or DOIs used in SPARC datasets. The value in this field must be read as the 'relationship that this dataset has to the specified URL/DOI.
+          </li>
+          <li>
+            Link description: Provide a short description of the link.
+          </li>
+        </ul>
+      </ul>
+
+      <div class="img-parent-div">
+        <img
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/link-info-1.gif?raw=true"
+        />
+      </div>
+
+      <base-docs-heading>
+        Additional Information:
+      </base-docs-heading>
+      <ul class="docs-ul list-outside list-decimal">
+        <li>
+          Study collection title: Title of the larger collection of to which this dataset belongs.
         </li>
         <li>
           Other funding sources: Specify other funding sources, if any. Hit
@@ -117,118 +221,6 @@
           contributors. Leave empty if none.
         </li>
       </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/award-info.gif?raw=true"
-        />
-      </div>
-
-      <base-docs-heading>
-        Contributor Info (information about the contributors to your dataset):
-      </base-docs-heading>
-
-      <ul class="docs-ul list-outside list-decimal">
-        <li>
-          Provide information about any contributor to the dataset. Note that
-          the "Contributor" list is compiled from the SPARC Airtable sheet based
-          on the SPARC award selected. Select one Contributor to get the ORCID
-          ID, Contributor Affiliation, and Contributor Role populated
-          automatically (if specified in the SPARC Airtable Sheet). Select
-          "Other contributors" in the "Contributors" dropdown list if you'd like
-          to enter a Contributor name manually (although we suggest entering
-          them directly in the SPARC Airtable - restart SODA to see them in the
-          list).
-        </li>
-        <li>
-          Check "Is Contact person?" if the contributor is a contact person for
-          the dataset. At least one and only one of the contributors should be
-          the contact person.
-        </li>
-        <li>
-          Click "Add" to add the contributor to SODA's contributor table. Each
-          contributor added to the table will be added to the dataset
-          description file when it is generated.
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/contributor-info-1-1.gif?raw=true"
-        />
-      </div>
-
-      <base-docs-heading>
-        Article(s) and protocol(s) (information about article(s) and protocol(s)
-        related to this dataset):
-      </base-docs-heading>
-
-      <ul class="docs-ul list-outside list-decimal">
-        <li>
-          Link type: Select the nature of the link among
-          <ul class="docs-ul list-outside list-disc">
-            <li>
-              Protocol URL or DOI: URLs (if still private) / DOIs (if public) of
-              protocols from protocols.io related to this dataset
-            </li>
-            <li>
-              Originating Article DOI: DOIs of published articles that were
-              generated from this dataset
-            </li>
-            <li>
-              Additional links: URLs of additional resources used by this
-              dataset (e.g., a link to a code repository)
-            </li>
-          </ul>
-        </li>
-        <li>Link: Enter the link</li>
-        <li>
-          Link description: Optionally provide a short description of the link.
-        </li>
-        <li>
-          Click on "Add" to register a specified link to SODA's link table. All
-          links and descriptions added to the table will be included in your
-          dataset description file when it is generated.
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/link-info-1.gif?raw=true"
-        />
-      </div>
-
-      <base-docs-heading>
-        Completeness Info (information about potential relation with other
-        dataset(s))
-      </base-docs-heading>
-
-      <ul class="docs-ul list-outside list-decimal">
-        <li>
-          Completeness of dataset: Is the data set as uploaded complete or is it
-          part of an ongoing study? Select "hasNext" to indicate that you expect
-          more data on different subjects as a continuation of this study.
-          Select “hasChildren” to indicate that you expect more data on the same
-          subjects or samples derived from those subjects. Leave empty if none.
-        </li>
-        <li>
-          Parent dataset(s): If this is a part of a larger dataset, or
-          references subjects or samples from a parent dataset, select the prior
-          dataset. You need only the last dataset, not all datasets. If samples
-          and subjects are from multiple parent datasets please select them all.
-          Leave empty if none.
-        </li>
-        <li>
-          Title for a complete dataset: Give a provisional title for the entire
-          dataset. Leave empty if not applicable.
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/completeness-info-1.gif?raw=true"
-        />
-      </div>
 
       <base-docs-heading>
         After you complete all steps, click on "Generate" to generate your
