@@ -66,6 +66,12 @@
         </p>
       </div>
 
+      <div class="img-parent-div">
+        <video controls autoplay="true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Samples-interface.mp4"
+        />
+      </div>
+
       <ul class="docs-ul list-outside list-disc">
         <li>
           <strong>subject id</strong>: Lab-based schema for identifying each
@@ -150,6 +156,11 @@
               will be automatically filled out for this field.
             </li>
           </ul>
+          <div class="img-parent-div">
+            <video controls autoplay="true"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Samples-protocols.mp4"
+            />
+          </div>
         </li>
         <li>
           Additional fields (Optional):

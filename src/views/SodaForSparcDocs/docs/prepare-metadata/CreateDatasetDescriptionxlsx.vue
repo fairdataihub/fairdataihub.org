@@ -72,6 +72,11 @@
           description) that will help in searching your dataset once published
         </li>
       </ul>
+      <div class="img-parent-div">
+        <video controls autoplay="true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/DD-datasetInfo.mp4"
+        />
+      </div>
 
       <base-docs-heading
         >Participant Info (information about the subjects or samples of your dataset):</base-docs-heading
@@ -155,8 +160,8 @@
         </li>
       </ul>
       <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/contributor-info-1-1.gif?raw=true"
+        <video controls autoplay="true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/dd-awardInfo.mp4"
         />
       </div>
 
@@ -200,8 +205,8 @@
       </ul>
 
       <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Dataset_description/link-info-1.gif?raw=true"
+        <video controls autoplay="true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/DD-protocols.mp4"
         />
       </div>
 

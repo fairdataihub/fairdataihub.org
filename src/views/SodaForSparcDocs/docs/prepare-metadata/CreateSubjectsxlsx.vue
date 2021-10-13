@@ -15,7 +15,7 @@
           help you populate some of the fields easily. The expected structure of
           this file, generated automatically by SODA, is explained in our
           corresponding
-         
+
           <router-link
             to="/sodaforsparc/docs/How-to-structure-the-subjects-metadata-file"
             class="hover:underline text-blue-600 dark:text-blue-400"
@@ -73,6 +73,12 @@
           the below fields with mandatory fields written in bold and optional
           fields in italic.
         </p>
+      </div>
+
+      <div class="img-parent-div">
+        <video controls autoplay="true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-interface.mp4"
+        />
       </div>
 
       <ul class="docs-ul list-outside list-disc">
@@ -171,6 +177,11 @@
             </li>
           </ul>
         </li>
+        <div class="img-parent-div">
+          <video controls autoplay="true"
+            src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-species.mp4"
+          />
+        </div>
         <li>
           Protocol Information (Optional):
 
@@ -204,6 +215,11 @@
             </li>
           </ul>
         </li>
+        <div class="img-parent-div">
+          <video controls autoplay="true"
+            src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-protocols.mp4"
+          />
+        </div>
         <li>
           Additional fields (Optional):
 
