@@ -337,8 +337,9 @@
                   dark:text-white
                 "
               >
-                SODA for SPARC connects with several ressources developed by the SPARC Data Ressource Center (DRC) 
-                and we therefore collaborate actively with the DRC teams throughout our development process.
+                SODA for SPARC connects with several ressources developed by the
+                SPARC Data Ressource Center (DRC) and we therefore collaborate
+                actively with the DRC teams throughout our development process.
               </p>
             </dd>
           </div>
