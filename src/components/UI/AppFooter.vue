@@ -437,11 +437,17 @@
             self-center
           "
         >
-          <img
-            class="w-40 sm:w-40"
-            src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-            alt="Powered by Vercel"
-          />
+          <a
+            href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              class="w-40 sm:w-40"
+              src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
+              alt="Powered by Vercel"
+            />
+          </a>
         </div>
 
         <div
@@ -521,7 +527,8 @@
               text-gray-400
               dark:text-gray-50
               hover:text-gray-500
-              dark:hover:text-white hidden
+              dark:hover:text-white
+              hidden
             "
             aria-label="Instagram"
           >
