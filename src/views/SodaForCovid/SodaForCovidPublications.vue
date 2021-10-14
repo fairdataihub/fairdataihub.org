@@ -49,8 +49,7 @@ export default {
       supportsCB: false,
       publicationsList: [
         {
-          title:
-            "Coming soon",
+          title: "Coming soon",
           // doi: "https://doi.org/10.1101/2021.02.10.430563",
           // citation: `Bandrowski, Anita, Jeffrey S. Grethe, Anna Pilko, Thomas H. Gillespie, Gabi Pine, Bhavesh Patel, Monique Surles-Zeiglera, and Maryann E. Martone. "Sparc data structure: Rationale and design of a fair standard for biomedical research data."
           // <i>

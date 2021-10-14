@@ -348,7 +348,7 @@
         </dl>
         <dl class="w-full">
           <div>
-            <dd class="mb-10 sm:mb-5 w-full">
+            <dd class="mb-10 sm:mb-5 w-full hidden">
               <div
                 class="
                   grid grid-cols-2
@@ -358,7 +358,6 @@
                   lg:gap-4
                   py-0
                   md:py-1
-                  hidden
                 "
               >
                 <a
