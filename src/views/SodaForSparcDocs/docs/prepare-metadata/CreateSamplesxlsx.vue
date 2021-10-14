@@ -67,7 +67,9 @@
       </div>
 
       <div class="img-parent-div">
-        <video controls autoplay="true"
+        <video
+          controls
+          autoplay="true"
           src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Samples-interface.mp4"
         />
       </div>
@@ -109,18 +111,20 @@
 
           <ul class="docs-ul list-outside list-disc">
             <li>
-              Sample type: This refers to the physical type of the specimen
-              from which the data were extracted.
+              Sample type: This refers to the physical type of the specimen from
+              which the data were extracted.
             </li>
             <li>
               Sample anatomical location: This is the organ, or sub-region of
               organ from which the data were extracted.
             </li>
             <li>
-              Member of: Provide a population that the specimen or sample belongs to.
+              Member of: Provide a population that the specimen or sample
+              belongs to.
             </li>
             <li>
-              Also in dataset: Include the Pennsieve id(s) for other datasets that have data about the same specimen.
+              Also in dataset: Include the Pennsieve id(s) for other datasets
+              that have data about the same specimen.
             </li>
           </ul>
         </li>
@@ -157,7 +161,9 @@
             </li>
           </ul>
           <div class="img-parent-div">
-            <video controls autoplay="true"
+            <video
+              controls
+              autoplay="true"
               src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Samples-protocols.mp4"
             />
           </div>
@@ -166,22 +172,25 @@
           Additional fields (Optional):
           <ul class="docs-ul list-outside list-disc">
             <li>
-              <i> Laboratory internal id</i>: Provide a mapping for groups that have incompatible internal identifier conventions.
+              <i> Laboratory internal id</i>: Provide a mapping for groups that
+              have incompatible internal identifier conventions.
             </li>
             <li>
-              <i> Date of derivation</i>: Provide the date at which the subject was collected.
+              <i> Date of derivation</i>: Provide the date at which the subject
+              was collected.
             </li>
             <li>
-              <i> Pathology</i>: Provide the pathological condition of the sample if applicable.
+              <i> Pathology</i>: Provide the pathological condition of the
+              sample if applicable.
             </li>
             <li>
-              <i> Laterality</i>: This indicates which one of a pair of organs (i.e: kidneys or lungs) the sample is.
+              <i> Laterality</i>: This indicates which one of a pair of organs
+              (i.e: kidneys or lungs) the sample is.
             </li>
+            <li><i> Cell type</i>: Provide the cell type of your subject.</li>
             <li>
-              <i> Cell type</i>: Provide the cell type of your subject.
-            </li>
-            <li>
-              <i> Plane of section</i>: Provide the plane of section of your subject.
+              <i> Plane of section</i>: Provide the plane of section of your
+              subject.
             </li>
             <li>
               <i> Reference atlas</i>: Enter here the reference atlas and organ.
@@ -197,10 +206,10 @@
 
       <div class="p-parent-div">
         <p>
-          Click <strong>Add custom field</strong> to start adding a header for a field
-          that is not a SPARC-standard samples.xlsx field. You will have the
-          option to add value for this field after it is created. Click on the
-          "trash can" icon next to a field to delete a custom field.
+          Click <strong>Add custom field</strong> to start adding a header for a
+          field that is not a SPARC-standard samples.xlsx field. You will have
+          the option to add value for this field after it is created. Click on
+          the "trash can" icon next to a field to delete a custom field.
         </p>
       </div>
 
@@ -209,8 +218,11 @@
       <ul class="docs-ul list-outside list-disc">
         <li>
           If you have a properly structured SPARC primary folder to import, you
-          can click on <strong>I want to import subject ID(s) from my primary folder</strong> specified under the button "Add a subject" to import it to the table of samples. SODA will extract the subject ID(s) and sample ID(s) (if available)
-          onto the table of samples for your edits.
+          can click on
+          <strong>I want to import subject ID(s) from my primary folder</strong>
+          specified under the button "Add a subject" to import it to the table
+          of samples. SODA will extract the subject ID(s) and sample ID(s) (if
+          available) onto the table of samples for your edits.
         </li>
       </ul>
     </div>

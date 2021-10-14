@@ -29,25 +29,46 @@
                   dark:text-white
                 "
               >
-                AQUA for SPARC utilized 2 main tool groups to develop the User interface and the Back end. The former includes the HTML-CSS-JS trio using: VueJS and NuxtJS. The latter is implemented using Python, Docker, SciGraph, and SQLite.
+                AQUA for SPARC utilized 2 main tool groups to develop the User
+                interface and the Back end. The former includes the HTML-CSS-JS
+                trio using: VueJS and NuxtJS. The latter is implemented using
+                Python, Docker, SciGraph, and SQLite.
               </p>
             </dd>
           </div>
-          <div class="w-full flex flex-col sm:flex-row justify-between items-center" style="margin-top:20px;">
+          <div
+            class="
+              w-full
+              flex flex-col
+              sm:flex-row
+              justify-between
+              items-center
+            "
+            style="margin-top: 20px"
+          >
             <dd class="mb-10 sm:mb-5 pr-10">
-              <img style="margin:20px 10px" src="../../assets/aqua-tool-images/iconFrontEnd.png"/>
+              <img
+                style="margin: 20px 10px"
+                src="../../assets/aqua-tool-images/iconFrontEnd.png"
+              />
             </dd>
             <dd class="mb-10 sm:mb-5 pr-10">
-              <img style="margin:auto;height:100%; width: 400px" src="../../assets/aqua-tool-images/pythonIcon.png"/>
+              <img
+                style="margin: auto; height: 100%; width: 400px"
+                src="../../assets/aqua-tool-images/pythonIcon.png"
+              />
             </dd>
             <dd class="mb-10 sm:mb-5 pr-10">
-              <img src="../../assets/aqua-tool-images/dockerIcon.png"/>
+              <img src="../../assets/aqua-tool-images/dockerIcon.png" />
             </dd>
             <dd class="mb-10 sm:mb-5 pr-10">
-              <img style="margin:auto" src="../../assets/aqua-tool-images/scigraphIcon.png"/>
+              <img
+                style="margin: auto"
+                src="../../assets/aqua-tool-images/scigraphIcon.png"
+              />
             </dd>
             <dd class="mb-10 sm:mb-5 pr-10">
-              <img src="../../assets/aqua-tool-images/sqliteIcon.png"/>
+              <img src="../../assets/aqua-tool-images/sqliteIcon.png" />
             </dd>
           </div>
         </dl>
@@ -58,7 +79,7 @@
 
 <script>
 export default {
-  name: "AQUAToolsUsed"
+  name: "AQUAToolsUsed",
 };
 </script>
 

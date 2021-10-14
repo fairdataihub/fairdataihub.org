@@ -66,12 +66,14 @@
         </li>
         <li>
           Under the "Create submission.xlsx" feature from the "Prepare Metadata"
-          section, start by either Creating a submission file from scratch with SODA or Continue working on an existing submission.xlsx file.
-          Click on "Click here to import my SPARC award from Airtable" to connect SODA with your Airtable account.
+          section, start by either Creating a submission file from scratch with
+          SODA or Continue working on an existing submission.xlsx file. Click on
+          "Click here to import my SPARC award from Airtable" to connect SODA
+          with your Airtable account.
         </li>
         <li>
-          Enter your Airtable API key in
-          the dedicated SODA interface. Checkout the
+          Enter your Airtable API key in the dedicated SODA interface. Checkout
+          the
           <a
             href="https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key"
             target="_blank"
@@ -85,9 +87,9 @@
           have access to it.
         </li>
         <li>Click on "Add account".</li>
-        <strong>Note: </strong>You will
-        have to do this only once and the Airtable connection will be then remembered by SODA
-        during subsequent uses.
+        <strong>Note: </strong
+        >You will have to do this only once and the Airtable connection will be
+        then remembered by SODA during subsequent uses.
       </ul>
 
       <div class="img-parent-div">

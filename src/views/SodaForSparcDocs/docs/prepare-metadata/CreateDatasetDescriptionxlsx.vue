@@ -29,10 +29,14 @@
       <base-docs-subtitle> How to </base-docs-subtitle>
       <ul class="docs-ul list-outside list-decimal">
         <li>
-          You can start by either Creating a dataset_description.xlsx file from scratch with SODA or Continue working on an existing dataset_description.xlsx file.
+          You can start by either Creating a dataset_description.xlsx file from
+          scratch with SODA or Continue working on an existing
+          dataset_description.xlsx file.
         </li>
         <li>
-          The subsequent interface divides the dataset description file into six convenient sections to facilitate your task. Go through them successively and populate the various fields as indicated:
+          The subsequent interface divides the dataset description file into six
+          convenient sections to facilitate your task. Go through them
+          successively and populate the various fields as indicated:
         </li>
       </ul>
       <base-docs-heading
@@ -65,7 +69,8 @@
           to add a description).
         </li>
         <li>
-          Dataset type: The type of this dataset, specifically whether it is experimental or computational.
+          Dataset type: The type of this dataset, specifically whether it is
+          experimental or computational.
         </li>
         <li>
           Keywords: A set of 3-5 keywords (other than those used in the name and
@@ -73,13 +78,16 @@
         </li>
       </ul>
       <div class="img-parent-div">
-        <video controls autoplay="true"
+        <video
+          controls
+          autoplay="true"
           src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/DD-datasetInfo.mp4"
         />
       </div>
 
       <base-docs-heading
-        >Participant Info (information about the subjects or samples of your dataset):</base-docs-heading
+        >Participant Info (information about the subjects or samples of your
+        dataset):</base-docs-heading
       >
       <ul class="docs-ul list-outside list-decimal">
         <li>
@@ -95,127 +103,152 @@
       </ul>
 
       <base-docs-heading
-        >Study Info (high-level information about your
-        experiment or study):</base-docs-heading
+        >Study Info (high-level information about your experiment or
+        study):</base-docs-heading
       >
       <ul class="docs-ul list-outside list-decimal">
         <li>
-        Study organ system: The major organ systems related to this study.
+          Study organ system: The major organ systems related to this study.
         </li>
         <li>
-        Study approach: The experimental approach or approaches taken in this study.
+          Study approach: The experimental approach or approaches taken in this
+          study.
         </li>
         <li>
-        Study technique: The experimental techniques used in this study.
+          Study technique: The experimental techniques used in this study.
         </li>
         <li>
-        Study purpose: A description of the study purpose for the structured abstract.
+          Study purpose: A description of the study purpose for the structured
+          abstract.
         </li>
         <li>
-        Study data collection: A description of the study data collection process for this dataset. Used to generate the structured abstract.
+          Study data collection: A description of the study data collection
+          process for this dataset. Used to generate the structured abstract.
         </li>
         <li>
-        Study primary conclusion: A description of the primary conclusion drawn from the study for the structured abstract.
+          Study primary conclusion: A description of the primary conclusion
+          drawn from the study for the structured abstract.
         </li>
       </ul>
 
       <base-docs-heading
-        >Award and Contributor Info (information about the SPARC award and the contributors to your
-        dataset):</base-docs-heading
+        >Award and Contributor Info (information about the SPARC award and the
+        contributors to your dataset):</base-docs-heading
       >
 
       <ul class="docs-ul list-outside list-decimal">
         <li>
-          <strong>SPARC Award associated with this dataset</strong>: You can either type the SPARC award number or have SODA retrieve your SPARC award and its contributor information by connecting SODA with your Airtable account. Instructions are provided <router-link
+          <strong>SPARC Award associated with this dataset</strong>: You can
+          either type the SPARC award number or have SODA retrieve your SPARC
+          award and its contributor information by connecting SODA with your
+          Airtable account. Instructions are provided
+          <router-link
             to="/sodaforsparc/docs/Connect-your-Airtable-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
-          ><span>here.</span>
-        </router-link>
+            ><span>here.</span>
+          </router-link>
         </li>
         <li>
-          Click on <strong>Add a contributor</strong> to start adding contributors to your dataset_description file.
+          Click on <strong>Add a contributor</strong> to start adding
+          contributors to your dataset_description file.
           <ul class="docs-ul list-outside list-disc">
             <li>
-              Provide information about any contributor to the dataset. Note that
-              the "Contributor" list is compiled from the SPARC Airtable sheet based
-              on the SPARC award selected. Select one Contributor to get the ORCID
-              ID, Contributor Affiliation, and Contributor Role populated
-              automatically (if specified in the SPARC Airtable Sheet). Select
-              "Other contributors" in the "Contributors" dropdown list if you'd like
-              to enter a Contributor name manually (although we suggest entering
-              them directly in the SPARC Airtable - restart SODA to see them in the
-              list).
+              Provide information about any contributor to the dataset. Note
+              that the "Contributor" list is compiled from the SPARC Airtable
+              sheet based on the SPARC award selected. Select one Contributor to
+              get the ORCID ID, Contributor Affiliation, and Contributor Role
+              populated automatically (if specified in the SPARC Airtable
+              Sheet). Select "Other contributors" in the "Contributors" dropdown
+              list if you'd like to enter a Contributor name manually (although
+              we suggest entering them directly in the SPARC Airtable - restart
+              SODA to see them in the list).
             </li>
             <li>
-              Check "Corresponding Author" if the contributor is a contact person/corresponding author for
-              the dataset. At least one and only one of the contributors should be
-              the corresponding author.
+              Check "Corresponding Author" if the contributor is a contact
+              person/corresponding author for the dataset. At least one and only
+              one of the contributors should be the corresponding author.
             </li>
             <li>
-              Click "Add contributor" to add the contributor to SODA's contributor table. Each
-              contributor added to the table will be added to the dataset
-              description file when it is generated.
+              Click "Add contributor" to add the contributor to SODA's
+              contributor table. Each contributor added to the table will be
+              added to the dataset description file when it is generated.
             </li>
-            </ul>
+          </ul>
         </li>
       </ul>
       <div class="img-parent-div">
-        <video controls autoplay="true"
+        <video
+          controls
+          autoplay="true"
           src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/dd-awardInfo.mp4"
         />
       </div>
 
       <base-docs-heading>
-      Related Information: protocol, paper, dataset, etc. :
+        Related Information: protocol, paper, dataset, etc. :
       </base-docs-heading>
 
       <ul class="docs-ul list-outside list-decimal">
-        <li> Click <strong>Add a protocol</strong> to add a protocol.
+        <li>
+          Click <strong>Add a protocol</strong> to add a protocol.
           <ul class="docs-ul list-outside list-disc">
             <li>
               Protocol URL or DOI: URLs (if still private) / DOIs (if public) of
               protocols from protocols.io related to this dataset
             </li>
             <li>
-              Protocol type: This will state whether your link is a "URL" or a "DOI" item. Use one of those two items to reference the type of identifier.
+              Protocol type: This will state whether your link is a "URL" or a
+              "DOI" item. Use one of those two items to reference the type of
+              identifier.
             </li>
             <li>
-              Relation to the dataset: A prespecified list of relations for common protocols used in SPARC datasets. The value in this field must be read as the 'relationship that this dataset has to the specified protocol'.
+              Relation to the dataset: A prespecified list of relations for
+              common protocols used in SPARC datasets. The value in this field
+              must be read as the 'relationship that this dataset has to the
+              specified protocol'.
             </li>
             <li>
               Protocol description: Provide a short description of the link.
             </li>
           </ul>
         </li>
-        <li>Click <strong>Add a URL/DOI</strong> to add a link other than a protocol.</li>
+        <li>
+          Click <strong>Add a URL/DOI</strong> to add a link other than a
+          protocol.
+        </li>
         <ul class="docs-ul list-outside list-disc">
           <li>
-            URL or DOI: Specify your actual URL (if resource is public) or DOI (if resource is private). This can be web links to repositories or papers (DOI).
+            URL or DOI: Specify your actual URL (if resource is public) or DOI
+            (if resource is private). This can be web links to repositories or
+            papers (DOI).
           </li>
           <li>
-            Link type: This will state whether your link is a 'URL' or 'DOI' item. Use one of those two items to reference the type of link.
+            Link type: This will state whether your link is a 'URL' or 'DOI'
+            item. Use one of those two items to reference the type of link.
           </li>
           <li>
-            Relation to the dataset: A prespecified list of relations for common URLs or DOIs used in SPARC datasets. The value in this field must be read as the 'relationship that this dataset has to the specified URL/DOI.
+            Relation to the dataset: A prespecified list of relations for common
+            URLs or DOIs used in SPARC datasets. The value in this field must be
+            read as the 'relationship that this dataset has to the specified
+            URL/DOI.
           </li>
-          <li>
-            Link description: Provide a short description of the link.
-          </li>
+          <li>Link description: Provide a short description of the link.</li>
         </ul>
       </ul>
 
       <div class="img-parent-div">
-        <video controls autoplay="true"
+        <video
+          controls
+          autoplay="true"
           src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/DD-protocols.mp4"
         />
       </div>
 
-      <base-docs-heading>
-        Additional Information:
-      </base-docs-heading>
+      <base-docs-heading> Additional Information: </base-docs-heading>
       <ul class="docs-ul list-outside list-decimal">
         <li>
-          Study collection title: Title of the larger collection of to which this dataset belongs.
+          Study collection title: Title of the larger collection of to which
+          this dataset belongs.
         </li>
         <li>
           Other funding sources: Specify other funding sources, if any. Hit

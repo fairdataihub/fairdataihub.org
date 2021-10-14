@@ -76,7 +76,9 @@
       </div>
 
       <div class="img-parent-div">
-        <video controls autoplay="true"
+        <video
+          controls
+          autoplay="true"
           src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-interface.mp4"
         />
       </div>
@@ -143,10 +145,12 @@
               the unit field.
             </li>
             <li>
-              Member of: Provide a population that the specimen of your subject belongs to.
+              Member of: Provide a population that the specimen of your subject
+              belongs to.
             </li>
             <li>
-              Also in dataset: Include the Pennsieve id(s) for other datasets that have data about the same specimen.
+              Also in dataset: Include the Pennsieve id(s) for other datasets
+              that have data about the same specimen.
             </li>
           </ul>
         </li>
@@ -172,13 +176,13 @@
               maximum age (oldest) of the research subjects. The format for
               these 2 fields is numerical value + space + unit (spelled out).
             </li>
-            <li>
-              <i> Date of birth</i>: The date of birth of the subject.
-            </li>
+            <li><i> Date of birth</i>: The date of birth of the subject.</li>
           </ul>
         </li>
         <div class="img-parent-div">
-          <video controls autoplay="true"
+          <video
+            controls
+            autoplay="true"
             src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-species.mp4"
           />
         </div>
@@ -216,7 +220,9 @@
           </ul>
         </li>
         <div class="img-parent-div">
-          <video controls autoplay="true"
+          <video
+            controls
+            autoplay="true"
             src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-protocols.mp4"
           />
         </div>
@@ -228,26 +234,24 @@
               <i> Handedness</i>: This refers to the preference of the subject
               to use the right or left hand, whenever applicable.
             </li>
-            <li>
-              <i> Body mass</i>: The body mass of the subject.
-            </li>
+            <li><i> Body mass</i>: The body mass of the subject.</li>
             <li>
               <i> Genotype</i>: This refers to the genetic makeup of genetically
               modified alleles in transgenic animals belonging to the same
               subject group. Note: Ignore this field if the RRID is already
               provided.
             </li>
+            <li><i> Phenotype</i>: Provide the phenotype of the subject.</li>
             <li>
-              <i> Phenotype</i>: Provide the phenotype of the subject.
+              <i> Disease or disorder</i>: Provide any disease of disorder of
+              the subject.
             </li>
             <li>
-              <i> Disease or disorder</i>: Provide any disease of disorder of the subject.
+              <i> Disease model</i>: Provide the disease model of the subject..
             </li>
             <li>
-            <i> Disease model</i>: Provide the disease model of the subject..
-            </li>
-            <li>
-              <i> Intervention</i>: Provide the intervention applied to your subject (if any).
+              <i> Intervention</i>: Provide the intervention applied to your
+              subject (if any).
             </li>
             <li>
               <i> Reference atlas</i>: Enter here the reference atlas and organ.
@@ -257,10 +261,12 @@
               experimental records for each sample, whenever applicable.
             </li>
             <li>
-              <i> Experimental date</i>: Provide the date at which the experiment takes place.
+              <i> Experimental date</i>: Provide the date at which the
+              experiment takes place.
             </li>
             <li>
-              <i> Laboratory internal id</i>: Provide a mapping for groups that have incompatible internal identifier conventions.
+              <i> Laboratory internal id</i>: Provide a mapping for groups that
+              have incompatible internal identifier conventions.
             </li>
           </ul>
         </li>
@@ -281,8 +287,11 @@
       <ul class="docs-ul list-outside list-disc">
         <li>
           If you have a properly structured SPARC primary folder to import, you
-          can click on <strong>I want to import subject ID(s) from my primary folder</strong> specified under the button "Add a subject" to import it to the table of subjects. SODA will extract the subject ID(s) (if available)
-          onto the table of subjects for your edits.
+          can click on
+          <strong>I want to import subject ID(s) from my primary folder</strong>
+          specified under the button "Add a subject" to import it to the table
+          of subjects. SODA will extract the subject ID(s) (if available) onto
+          the table of subjects for your edits.
         </li>
       </ul>
     </div>

@@ -25,9 +25,10 @@
             lg:mx-auto
           "
         >
-          SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a
-          cross-platform desktop software that allows researchers
-          to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines.
+          SODA (Sofware to Organize Data Automatically) for COVID-19 Research is
+          a cross-platform desktop software that allows researchers to easily
+          organize and share their COVID-19 related genomics, immunology, and
+          other general research data according to applicable FAIR guidelines.
         </p>
       </div>
 

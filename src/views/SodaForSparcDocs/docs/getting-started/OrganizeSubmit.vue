@@ -567,25 +567,25 @@
                     to="/sodaforsparc/docs/Create-subjects-xlsx"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
+                    <span
+                      class="
+                        font-asap
+                        print:text-sm print:text-black print:dark:text-black
+                      "
+                    >
+                      Prepare subjects file
+                    </span>
+                  </router-link>
                   <span
                     class="
+                      text-black
+                      dark:text-white
                       font-asap
-                      print:text-sm print:text-black print:dark:text-black
+                      print:text-sm print:dark:text-black
                     "
                   >
-                    Prepare subjects file
+                    (required only if your study includes subjects)
                   </span>
-                </router-link>
-                <span
-                  class="
-                    text-black
-                    dark:text-white
-                    font-asap
-                    print:text-sm print:dark:text-black
-                  "
-                >
-                  (required only if your study includes subjects)
-                </span>
                 </span>
               </div>
             </label>
@@ -602,25 +602,25 @@
                     to="/sodaforsparc/docs/Create-samples-xlsx"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
+                    <span
+                      class="
+                        font-asap
+                        print:text-sm print:text-black print:dark:text-black
+                      "
+                    >
+                      Prepare samples file
+                    </span>
+                  </router-link>
                   <span
                     class="
+                      text-black
+                      dark:text-white
                       font-asap
-                      print:text-sm print:text-black print:dark:text-black
+                      print:text-sm print:dark:text-black
                     "
                   >
-                    Prepare samples file
-                </span>
-                </router-link>
-                <span
-                  class="
-                    text-black
-                    dark:text-white
-                    font-asap
-                    print:text-sm print:dark:text-black
-                  "
-                >
-                  (required only if your study includes samples)
-                </span>
+                    (required only if your study includes samples)
+                  </span>
                 </span>
               </div>
             </label>

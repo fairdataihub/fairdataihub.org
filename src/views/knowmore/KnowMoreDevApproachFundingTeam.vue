@@ -91,9 +91,7 @@
                     sm:text-base
                   "
                 >
-                  <span class="font-lato">
-                    Explore the GitHub repository
-                  </span>
+                  <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -170,7 +168,8 @@
               <div class="flex mt-2 md:mt-1">
                 <a
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="
                     text-accent
                     inline-flex

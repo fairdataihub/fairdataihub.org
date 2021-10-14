@@ -58,7 +58,7 @@
           </div>
         </div>
         <div v-for="item in questionsList" :key="item.question">
-          <h3 class="font-inter font-semibold text-xl dark:text-gray-50 ">
+          <h3 class="font-inter font-semibold text-xl dark:text-gray-50">
             {{ item.question }}
           </h3>
           <p

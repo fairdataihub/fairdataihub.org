@@ -29,11 +29,12 @@
                   dark:text-white
                 "
               >
-                SODA for COVID-19 is distributed as an open-source application with
-                an MIT License. Anyone is free to fork our GitHub repository and
-                make their own changes if they would like. If you would like to
-                submit a feature modification, or feature suggestion, please
-                feel free to submit an issue on the repository.
+                SODA for COVID-19 is distributed as an open-source application
+                with an MIT License. Anyone is free to fork our GitHub
+                repository and make their own changes if they would like. If you
+                would like to submit a feature modification, or feature
+                suggestion, please feel free to submit an issue on the
+                repository.
               </p>
               <div class="flex mt-3 text-accent">
                 <a
@@ -335,9 +336,12 @@
                   dark:text-white
                 "
               >
-                SODA for COVID-19 Research is developed in collaboration with Dr. Zicheng Hu (UCSF) and his colleagues at UCSF and Stanford who are conducting 
-                a clinical trial for a novel treatment approach for COVID-19. They will be providing overall guidance on the applicable FAIR guidelines as well as
-                conducting beta testing of the software.
+                SODA for COVID-19 Research is developed in collaboration with
+                Dr. Zicheng Hu (UCSF) and his colleagues at UCSF and Stanford
+                who are conducting a clinical trial for a novel treatment
+                approach for COVID-19. They will be providing overall guidance
+                on the applicable FAIR guidelines as well as conducting beta
+                testing of the software.
               </p>
             </dd>
           </div>
@@ -353,7 +357,8 @@
                   md:gap-3
                   lg:gap-4
                   py-0
-                  md:py-1 hidden
+                  md:py-1
+                  hidden
                 "
               >
                 <a
@@ -381,7 +386,8 @@
                       class="h-28 w-28 rounded-full my-2"
                       v-if="collaborator.type === 'person'"
                     />
-                    <img v-else
+                    <img
+                      v-else
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
                       class="my-auto mx-10"

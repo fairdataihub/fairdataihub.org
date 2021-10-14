@@ -49,8 +49,7 @@ export default {
       supportsCB: false,
       publicationsList: [
         {
-          title:
-            "AQUA: an Advanced QUery Architecture for the SPARC Portal",
+          title: "AQUA: an Advanced QUery Architecture for the SPARC Portal",
           doi: "https://doi.org/10.12688/f1000research.73018.1",
           citation: `Niloofar Shahidi, Xuanzhi Lin, Yuda Munarko, Laila Rasmy, Tram Ngo. "AQUA: an Advanced QUery Architecture for the SPARC Portal"
           <i>

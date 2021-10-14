@@ -185,9 +185,7 @@
 <script>
 export default {
   name: "KnowMoreHerosection",
-  methods: {
-    
-  },
+  methods: {},
 };
 </script>
 

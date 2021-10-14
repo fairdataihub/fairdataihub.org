@@ -1,6 +1,7 @@
 <template>
   <div>
-    <base-docs-title :title="`How to structure the manifest metadata file`"> </base-docs-title>
+    <base-docs-title :title="`How to structure the manifest metadata file`">
+    </base-docs-title>
 
     <div class="flex flex-col">
       <base-docs-subtitle> Background </base-docs-subtitle>

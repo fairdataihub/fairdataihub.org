@@ -1,6 +1,7 @@
 <template>
   <div>
-    <base-docs-title :title="`How to get your Data Deliverables document`"> </base-docs-title>
+    <base-docs-title :title="`How to get your Data Deliverables document`">
+    </base-docs-title>
 
     <div class="flex flex-col">
       <base-docs-subtitle> Background </base-docs-subtitle>
@@ -67,10 +68,10 @@
       </div>
 
       <div class="img-parent-div">
-          <img
-            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
-          />
-        </div>
+        <img
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
+        />
+      </div>
     </div>
   </div>
 </template>

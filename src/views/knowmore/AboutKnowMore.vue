@@ -25,7 +25,11 @@
             lg:mx-auto
           "
         >
-          KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process. 
+          KnowMore is a tool readily integrable into the SPARC Portal that
+          allows to find potential relation, difference, and similarities
+          between multiple SPARC datasets in just a few clicks, which can lead
+          to a new discovery, new hypothesis, or simply guide the user to the
+          next logical step in their discovery process.
         </p>
       </div>
 

@@ -89,9 +89,7 @@
                     sm:text-base
                   "
                 >
-                  <span class="font-lato">
-                    Explore the GitHub repository
-                  </span>
+                  <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
                     fill="none"
                     stroke="currentColor"
@@ -169,7 +167,8 @@
               <div class="flex mt-2 md:mt-1">
                 <a
                   href="https://sparc.science/help/2021-sparc-fair-codeathon"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="
                     text-accent
                     inline-flex

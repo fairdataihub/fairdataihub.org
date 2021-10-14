@@ -58,10 +58,13 @@
 
       <ul class="docs-ul list-outside list-decimal">
         <li>
-          You can start by either Creating a submission file from scratch with SODA or Continue working on an existing submission.xlsx file.
+          You can start by either Creating a submission file from scratch with
+          SODA or Continue working on an existing submission.xlsx file.
         </li>
         <li>
-          Enter the SPARC Award number.  <br><strong>Note: </strong>SODA can help retrieve your SPARC award number if you are connected to the SPARC Airtable sheet. Instructions are provided
+          Enter the SPARC Award number. <br /><strong>Note: </strong>SODA can
+          help retrieve your SPARC award number if you are connected to the
+          SPARC Airtable sheet. Instructions are provided
           <router-link
             to="/sodaforsparc/docs/Connect-your-Airtable-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
@@ -70,19 +73,22 @@
           </router-link>
         </li>
         <li>
-          Enter the milestone(s) for this submission. Enter "Not specified in the Data
-          Deliverables document" if this dataset isn't associated with any
-          milestone initially planned.<br>
-          <strong>Note: </strong>Click on "Click here to import milestones from my Data Deliverables
-          document" to import your Data Deliverable document. SODA will
-          automatically extract milestones and associated information which will
-          be used to help you prepare the submission metadata file. You will
-          have to do this only once and it will be then remembered by SODA
-          during subsequent uses. Note that the information from your Data
-          Deliverables document will be saved locally on your computer so only
-          visible to you.
+          Enter the milestone(s) for this submission. Enter "Not specified in
+          the Data Deliverables document" if this dataset isn't associated with
+          any milestone initially planned.<br />
+          <strong>Note: </strong>Click on "Click here to import milestones from
+          my Data Deliverables document" to import your Data Deliverable
+          document. SODA will automatically extract milestones and associated
+          information which will be used to help you prepare the submission
+          metadata file. You will have to do this only once and it will be then
+          remembered by SODA during subsequent uses. Note that the information
+          from your Data Deliverables document will be saved locally on your
+          computer so only visible to you.
         </li>
-        <li>Enter the date associated with this milestone or select from a dropdown of milestone(s) if a Data Deliverable document is imported.</li>
+        <li>
+          Enter the date associated with this milestone or select from a
+          dropdown of milestone(s) if a Data Deliverable document is imported.
+        </li>
         <li>
           Review and click on "Generate" to generate your submission file. The
           generated file will be ready to be included in your dataset.

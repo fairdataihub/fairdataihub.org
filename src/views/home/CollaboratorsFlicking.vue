@@ -1,10 +1,12 @@
 <template>
   <Flicking :options="{ circular: true, horizontal: true }" :plugins="plugins">
-    <div class=" flex justify-center items-center m-2">
+    <div class="flex justify-center items-center m-2">
       <!-- UCSD -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 -5.12936964 288 61.5702165" width="150" height="150"
+        viewBox="0 -5.12936964 288 61.5702165"
+        width="150"
+        height="150"
         class="mx-2 my-6 sm:my-2"
       >
         <g fill="#0e284b">
@@ -2310,7 +2312,9 @@
       <!-- usf -->
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 884.46 149.99" width="150" height="150"
+        viewBox="0 0 884.46 149.99"
+        width="150"
+        height="150"
         class="mx-2 my-6 sm:my-2 justify-self-center"
       >
         <path
