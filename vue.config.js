@@ -10,6 +10,11 @@ module.exports = {
           changefreq: "weekly",
         },
         {
+          loc: "https://fairdataihub.org/home",
+          priority: 0.8,
+          changefreq: "weekly",
+        },
+        {
           loc: "https://fairdataihub.org/team",
           priority: 0.8,
           changefreq: "monthly",

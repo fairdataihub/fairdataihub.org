@@ -22,7 +22,7 @@ app.component("base-docs-title", BaseDocsTitle);
 app.component("base-docs-subtitle", BaseDocsSubtitle);
 app.component("base-docs-heading", BaseDocsHeading);
 
-app.component("v-lazy-image",  VLazyImage );
+app.component("v-lazy-image", VLazyImage);
 
 app.use(router);
 app.use(Notifications);

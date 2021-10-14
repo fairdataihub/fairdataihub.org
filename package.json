@@ -20,7 +20,7 @@
     "vue": "^3.1.5",
     "vue-animate-onscroll": "^1.0.8",
     "vue-router": "^4.0.10",
-    "vue3-carousel": "^0.1.25"
+    "vue3-carousel": "0.1.24"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.3.3",

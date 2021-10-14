@@ -66,10 +66,9 @@ import HowToSamples from "../views/SodaForSparcDocs/docs/how-to/HowToSamples.vue
 import HowToManifest from "../views/SodaForSparcDocs/docs/how-to/HowToManifest.vue";
 import HowToDataDeliverables from "../views/SodaForSparcDocs/docs/how-to/HowToDataDeliverables.vue";
 
-
 // router paths
 const routes = [
-  { path: "/", redirect: '/home' },
+  { path: "/", redirect: "/home" },
   { path: "/home", component: HomePage },
   { path: "/team", component: TheTeam },
   { path: "/sodaforsparc", component: SodaForSparc },
