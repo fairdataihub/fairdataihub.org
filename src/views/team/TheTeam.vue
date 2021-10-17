@@ -137,7 +137,7 @@ export default {
           id: "SanjaySoundarajan",
           name: "Sanjay Soundarajan (he/him)",
           title: "Software Developer",
-          bio: "Sanjay moved from Sri Lanka to pursue higer education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
+          bio: "Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
           image: "https://i.ibb.co/C8vSG2Y/IMG-9079.jpg",
           placeholder: "https://i.ibb.co/NnrHkTW/sanjay-min.jpg",
           borderTop: true,
