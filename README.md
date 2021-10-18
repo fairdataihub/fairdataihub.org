@@ -1,4 +1,4 @@
-# fairdataihub.org
+# [fairdataihub.org](https://fairdataihub.org/home)
 
 ## Project setup
 
