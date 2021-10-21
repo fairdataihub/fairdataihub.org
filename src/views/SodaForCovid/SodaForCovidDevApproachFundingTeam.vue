@@ -260,7 +260,7 @@
                 class="
                   grid grid-cols-2
                   md:grid-cols-2
-                  lg:grid-cols-3
+                  lg:grid-cols-4
                   md:gap-3
                   lg:gap-4
                   py-0
@@ -321,7 +321,7 @@
             text-left
           "
         >
-          Collaborators
+          Research Partners
         </h1>
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
@@ -348,12 +348,12 @@
         </dl>
         <dl class="w-full">
           <div>
-            <dd class="mb-10 sm:mb-5 w-full hidden">
+            <dd class="mb-10 sm:mb-5 w-full">
               <div
                 class="
                   grid grid-cols-2
                   md:grid-cols-2
-                  lg:grid-cols-3
+                  lg:grid-cols-4
                   md:gap-3
                   lg:gap-4
                   py-0
@@ -444,9 +444,21 @@ export default {
           type: "person",
         },
         {
-          name: "The Butte Lab",
+          name: "The Butte Lab (UCSF)",
           href: "https://profiles.ucsf.edu/zicheng.hu",
-          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
+          image: "https://avatars.dicebear.com/api/identicon/ucsf.svg",
+          type: "lab",
+        },
+        {
+          name: "The Jagannathan Lab",
+          href: "https://med.stanford.edu/jagannathan-lab.html",
+          image: "https://med.stanford.edu/identity/logo/_jcr_content/main/panel_builder/panel_0/panel_builder_0/panel_0/download_1/file.res/Stanford_Medicine_V-web.png",
+          type: "lab",
+        },
+        {
+          name: "Dr. Greenhouse Lab (UCSF)",
+          href: "https://profiles.ucsf.edu/bryan.greenhouse#toc-id2",
+          image: "https://avatars.dicebear.com/api/identicon/ucsf.svg",
           type: "lab",
         },
       ],

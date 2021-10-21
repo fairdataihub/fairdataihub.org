@@ -261,7 +261,7 @@
                 class="
                   grid grid-cols-2
                   md:grid-cols-2
-                  lg:grid-cols-3
+                  lg:grid-cols-4
                   md:gap-3
                   lg:gap-4
                   py-0
@@ -322,7 +322,7 @@
             text-left
           "
         >
-          Collaborators
+          Research Partners
         </h1>
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
@@ -351,7 +351,7 @@
                 class="
                   grid grid-cols-2
                   md:grid-cols-2
-                  lg:grid-cols-3
+                  lg:grid-cols-4
                   md:gap-3
                   lg:gap-4
                   py-0
@@ -439,11 +439,11 @@ export default {
           image:
             "https://images.squarespace-cdn.com/content/v1/5c69f76f0cf57dde0186bd67/1556848982638-TROTINLLKBZD5WSAPP76/fdi+logo+final+-+white2_white+copy_white+copy.png?format=1500w",
         },
-        // {
-        //   name: "MBF Bioscience",
-        //   href: "https://www.mbfbioscience.com",
-        //   image: "https://www.mbfbioscience.com/sites/all/themes/mbf/logo.png",
-        // },
+        {
+          name: "MBF Bioscience",
+          href: "https://www.mbfbioscience.com",
+          image: "https://forums.mbfbioscience.com/uploads/default/original/1X/dbc9fa6a4e9dabf5e2868ef07db73d3effaf71a7.png",
+        },
       ],
     };
   },
