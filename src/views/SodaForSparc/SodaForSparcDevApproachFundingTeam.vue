@@ -442,7 +442,8 @@ export default {
         {
           name: "MBF Bioscience",
           href: "https://www.mbfbioscience.com",
-          image: "https://forums.mbfbioscience.com/uploads/default/original/1X/dbc9fa6a4e9dabf5e2868ef07db73d3effaf71a7.png",
+          image:
+            "https://forums.mbfbioscience.com/uploads/default/original/1X/dbc9fa6a4e9dabf5e2868ef07db73d3effaf71a7.png",
         },
       ],
     };

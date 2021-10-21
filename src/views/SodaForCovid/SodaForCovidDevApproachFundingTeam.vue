@@ -452,7 +452,8 @@ export default {
         {
           name: "The Jagannathan Lab",
           href: "https://med.stanford.edu/jagannathan-lab.html",
-          image: "https://med.stanford.edu/identity/logo/_jcr_content/main/panel_builder/panel_0/panel_builder_0/panel_0/download_1/file.res/Stanford_Medicine_V-web.png",
+          image:
+            "https://med.stanford.edu/identity/logo/_jcr_content/main/panel_builder/panel_0/panel_builder_0/panel_0/download_1/file.res/Stanford_Medicine_V-web.png",
           type: "lab",
         },
         {
