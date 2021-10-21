@@ -112,7 +112,7 @@ export default {
       timelineList: [
         {
           longDate: "November 2020",
-          title: "Birth of SODA for SPARC",
+          title: "Birth of SODA for COVID-19 Research",
           content:
             "The first prototype of SODA for COVID-19 Research is developed for demo purpose by the FAIR Data Innovations Hub.",
         },
