@@ -2493,9 +2493,10 @@ export default {
   data() {
     return {
       marqueeOptions: {
-        duration: 30,
+        duration: 40,
         gradient: true,
         gradientColor: [249, 250, 251],
+        gradientWidth: 125,
         clone: true,
       },
     };
