@@ -447,7 +447,7 @@ export default {
         {
           name: "The Butte Lab",
           href: "https://profiles.ucsf.edu/zicheng.hu",
-          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
+          image: "https://buttelab.ucsf.edu/",
           type: "lab",
         },
         {
