@@ -394,7 +394,6 @@
                     />
                     <p
                       class="
-                        ml-2
                         mt-3
                         font-asap font-normal
                         text-lg text-center
@@ -446,8 +445,8 @@ export default {
         },
         {
           name: "The Butte Lab",
-          href: "https://profiles.ucsf.edu/zicheng.hu",
-          image: "https://buttelab.ucsf.edu/",
+          href: "https://buttelab.ucsf.edu/",
+          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
           type: "lab",
         },
         {
