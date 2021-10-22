@@ -445,9 +445,9 @@ export default {
           type: "person",
         },
         {
-          name: "The Butte Lab (UCSF)",
+          name: "The Butte Lab",
           href: "https://profiles.ucsf.edu/zicheng.hu",
-          image: "https://avatars.dicebear.com/api/identicon/ucsf.svg",
+          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
           type: "lab",
         },
         {
@@ -458,9 +458,9 @@ export default {
           type: "lab",
         },
         {
-          name: "Dr. Greenhouse Lab (UCSF)",
+          name: "Dr. Greenhouse Lab",
           href: "https://profiles.ucsf.edu/bryan.greenhouse#toc-id2",
-          image: "https://avatars.dicebear.com/api/identicon/ucsf.svg",
+          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
           type: "lab",
         },
       ],
