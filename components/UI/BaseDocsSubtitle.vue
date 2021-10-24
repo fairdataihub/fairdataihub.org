@@ -1,0 +1,32 @@
+<template>
+  <h3
+    :id="id"
+    class="
+      font-inter font-semibold
+      text-lg text-black
+      dark:text-white
+      mb-1
+      print:dark:text-black
+      level-1-heading
+    "
+  >
+    <slot></slot>
+  </h3>
+
+  <div class="w-full border-b border-grey-500 mb-2"></div>
+</template>
+
+<script>
+export default {
+  name: "BaseDocsSubtitle",
+  props: {
+    id: {
+      required: false,
+      type: String,
+      default: Math.random().toString(36).substring(15),
+    },
+  },
+};
+</script>
+
+<style></style>
