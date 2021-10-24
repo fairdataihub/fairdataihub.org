@@ -6,6 +6,7 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
+    "./node_modules/vue3-carousel/dist/carousel.css",
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -48,5 +49,5 @@ module.exports = {
       display: ["dark"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-debug-screens")],
 };

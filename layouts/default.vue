@@ -1,19 +1,22 @@
 <template>
   <div>
     <AppHeader />
+    <main>
+      <slot />
+    </main>
 
-    <br />
-    <slot />
-
-    footer
+    <AppFooter />
   </div>
 </template>
 
 <script>
-import AppHeader from "~~/components/UI/AppHeader.vue";
+import AppHeader from "~~/components/App/AppHeader.vue";
+import AppFooter from "~~/components/App/AppFooter.vue";
+
 export default {
   components: {
     AppHeader,
+    AppFooter,
   },
 };
 </script>
