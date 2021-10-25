@@ -135,10 +135,28 @@
                     SODA for SPARC
                   </NuxtLink>
                   <NuxtLink
-                    to="/"
+                    to="/sodaforcovid"
                     class="px-4 py-2 hover:bg-gray-500 transition-all"
                   >
                     SODA for COVID-19 Research
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/knowmore"
+                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                  >
+                    KnowMore
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/sparclink"
+                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                  >
+                    SPARClink
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/aqua"
+                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                  >
+                    AQUA
                   </NuxtLink>
                 </div>
               </div>

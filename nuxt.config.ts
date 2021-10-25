@@ -8,5 +8,8 @@ export default defineNuxtConfig({
       postcssOptions: require("./postcss.config.js"),
     },
   },
-  
+  modules: [
+    // Simple usage
+    "@nuxtjs/robots",
+  ],
 });
