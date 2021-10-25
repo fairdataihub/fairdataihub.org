@@ -52,6 +52,7 @@ import CollaboratorsSection from "~~/components/home/CollaboratorsSection.vue";
 
 export default {
   layout: "default",
+  scrollToTop: true,
   components: {
     HeroSection,
     BaseSection,

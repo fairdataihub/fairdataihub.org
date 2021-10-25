@@ -34,7 +34,7 @@ import SodaForCovidDevApproachFundingTeam from "~~/components/sodaforcovid/SodaF
 import SodaForCovidTimeline from "~~/components/sodaforcovid/SodaForCovidTimeline.vue";
 import SodaForCovidPublications from "~~/components/sodaforcovid/SodaForCovidPublications.vue";
 export default {
-  layout: "default",
+  layout: "default",scrollToTop: true,
   components: {
     SodaForCovidHerosection,
     AboutSodaForCovid,

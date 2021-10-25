@@ -30,7 +30,7 @@
 
 <script>
 export default {
- 
+ scrollToTop: true,
   layout: "docs",
   data() {
     return {

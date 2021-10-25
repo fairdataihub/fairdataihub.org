@@ -46,6 +46,7 @@ import AquaPublications from "~~/components/aqua/AquaPublications.vue";
 
 export default {
   layout: "default",
+  scrollToTop: true,
   components: {
     AquaHerosection,
     AboutAqua,

@@ -300,6 +300,6 @@
 
 <script>
 export default {
-  layout: "docs",
+  layout: "docs",scrollToTop: true,
 };
 </script>

@@ -18,15 +18,7 @@
     >
       <div class="flex flex-col lg:flex-row w-11/12 mx-auto">
         <div class="w-full lg:w-1/3 p-5">
-          <h1
-            class="
-               font-black
-              dark:text-gray-50
-              text-4xl
-              sm:text-3xl
-              py-2
-            "
-          >
+          <h1 class="font-black dark:text-gray-50 text-4xl sm:text-3xl py-2">
             About Us
           </h1>
           <p class="font-asap text-black dark:text-white text-xl sm:text-lg">
@@ -76,6 +68,7 @@ import TeamCard from "~~/components/team/TeamCard.vue";
 export default {
   components: { TeamCard },
   layout: "default",
+  scrollToTop: true,
   data() {
     return {
       teamsList: [

@@ -184,7 +184,7 @@
 import Notifications from "@kyvg/vue3-notification";
 
 export default {
-  layout: "default",
+  layout: "default",scrollToTop: true,
   components: {
     Notifications,
   },

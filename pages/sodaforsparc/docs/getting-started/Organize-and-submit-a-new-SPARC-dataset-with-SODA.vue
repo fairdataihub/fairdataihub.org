@@ -1008,7 +1008,7 @@
 
 <script>
 export default {
-
+scrollToTop: true,
   layout: "docs"
 };
 </script>

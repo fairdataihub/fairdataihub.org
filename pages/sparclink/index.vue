@@ -28,7 +28,7 @@ import SparcLinkDevApproachFundingTeam from "~~/components/sparclink/SparcLinkDe
 // import SparclinkPublications from "~~/components/sparclink/SparclinkPublications.vue";
 
 export default {
-  layout: "default",
+  layout: "default",scrollToTop: true,
   components: {
     SparclinkHerosection,
     AboutSparclink,
