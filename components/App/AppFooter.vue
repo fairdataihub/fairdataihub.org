@@ -5,8 +5,7 @@
         <div>
           <div
             class="
-              text-center
-              text-2xl text-black
+              text-center text-2xl text-black
               dark:text-gray-50
               text-bold
               p-3
@@ -23,26 +22,12 @@
             "
           >
             <h1
-              class="
-                text-center
-                text-xl
-                dark:text-gray-50
-                text-bold
-                px-2
-                py-1
-              "
+              class="text-center text-xl dark:text-gray-50 text-bold px-2 py-1"
             >
               11107 Roselle St, San Diego, CA 92121
             </h1>
             <h1
-              class="
-                text-center
-                text-xl
-                dark:text-gray-50
-                text-bold
-                px-2
-                py-1
-              "
+              class="text-center text-xl dark:text-gray-50 text-bold px-2 py-1"
             >
               info@fairdataihub.org
             </h1>
@@ -65,7 +50,6 @@
         <a href="https://calmi2.org" target="_blank" rel="noopener">
           <svg
             id="e2e7ad45-a5d8-45e3-97ca-4ba2e5555a04"
-         
             xmlns="http://www.w3.org/2000/svg"
             class="h-20"
             viewBox="0 0 428.58 149.12"
@@ -373,6 +357,7 @@
               dark:hover:text-white
             "
             aria-label="Twitter"
+            rel="noopener"
           >
             <svg
               fill="currentColor"
@@ -404,6 +389,7 @@
               hidden
             "
             aria-label="Instagram"
+            rel="noopener"
           >
             <svg
               fill="none"
@@ -436,6 +422,7 @@
               dark:hover:text-white
             "
             aria-label="Linked In"
+            rel="noopener"
           >
             <svg
               fill="currentColor"
@@ -469,6 +456,7 @@
               dark:text-gray-200 dark:hover:text-accent
             "
             aria-label="Github"
+            rel="noopener"
           >
             <svg
               class="w-5 h-5 fill-current"

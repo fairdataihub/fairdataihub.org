@@ -75,6 +75,7 @@
             v-if="profile.twitter.show"
             :href="profile.twitter.link"
             target="_blank"
+            rel="noopener"
             class="px-1"
           >
             <svg
@@ -104,6 +105,7 @@
             v-if="profile.github.show"
             :href="profile.github.link"
             target="_blank"
+            rel="noopener"
             class="px-1"
           >
             <svg
@@ -133,6 +135,7 @@
             v-if="profile.linkedin.show"
             :href="profile.linkedin.link"
             target="_blank"
+            rel="noopener"
             class="px-1"
           >
             <svg

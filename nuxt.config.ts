@@ -4,12 +4,8 @@ export default defineNuxtConfig({
   css: ["~/assets/css/tailwind.css"],
   build: {
     postcss: {
-      // add Postcss options
       postcssOptions: require("./postcss.config.js"),
     },
   },
-  modules: [
-    // Simple usage
-    "@nuxtjs/robots",
-  ],
+  modules: ["@nuxtjs/robots"],
 });

@@ -7,7 +7,7 @@
             md:mr-8
             py-5
             md:py-0
-             font-black
+            font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased
@@ -136,7 +136,7 @@
             md:mr-8
             py-5
             md:py-0
-             font-black
+            font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased
@@ -245,7 +245,7 @@
           class="
             md:mr-8
             pb-5
-             font-black
+            font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased
@@ -315,7 +315,7 @@
           class="
             md:mr-8
             pb-5
-             font-black
+            font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased
@@ -424,6 +424,11 @@ export default {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
           image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
+        },
+        {
+          name: "Christopher Marroquin",
+          href: "/team/#ChristopherMarroquin",
+          image: "https://i.ibb.co/42PyRHs/IMG-1231-4.jpg",
         },
       ],
       collaboratorsList: [

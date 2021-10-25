@@ -1433,7 +1433,7 @@
             py-4
             md:py-3
             w-full
-             font-black
+            font-black
             dark:text-gray-50
             text-4xl
             sm:text-3xl
@@ -1471,7 +1471,13 @@
           software development.
         </p>
         <div class="flex w-full justify-center py-5">
-          <a href="https://calmi2.org/" target="_blank" class="hidden"> </a>
+          <a
+            href="https://calmi2.org/"
+            target="_blank"
+            class="hidden"
+            rel="noopener"
+          >
+          </a>
           <NuxtLink to="/team">
             <button
               type="button"

@@ -2,7 +2,7 @@
   <div class="flex flex-col justify-center items-center">
     <section class="max-w-screen-2xl mx-auto py-5 relative">
       <div class="absolute top-1 sm:top-10 right-0 z-0 opacity-60 w-40">
-        <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
+        <img src="~/assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
       </div>
       <div
         class="
@@ -17,7 +17,7 @@
           w-40
         "
       >
-        <img src="../../assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
+        <img src="~/assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
       </div>
       <div
         class="
@@ -53,7 +53,7 @@
         >
           <h1
             class="
-               font-black
+              font-black
               text-3xl
               sm:text-4xl
               w-full
@@ -66,7 +66,6 @@
           </h1>
           <h2
             class="
-              
               w-full
               sm:text-2xl
               text-2xl
@@ -96,7 +95,6 @@
           <div class="w-full flex justify-center">
             <button
               class="
-                hidden
                 sm:block
                 flex
                 justify-center
@@ -161,7 +159,7 @@
             "
           >
             <img
-              src="../../assets/backgrounds/dot-grid-grey.svg"
+              src="~/assets/backgrounds/dot-grid-grey.svg"
               alt="Grey grid"
             />
           </div>

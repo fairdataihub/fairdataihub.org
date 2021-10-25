@@ -20,7 +20,6 @@
           dark:text-white
           text-4xl
           sm:text-4xl
-          
           text-left
         "
       >
@@ -28,7 +27,6 @@
       </h2>
       <p
         class="
-          
           w-full
           max-w-2xl
           text-xl text-black
@@ -41,15 +39,7 @@
       </p>
     </div>
     <section
-      class="
-        text-gray-600
-        w-full
-        body-font
-        px-2
-        mb-4
-        divide-y divide-gray-300
-        px-2
-      "
+      class="text-gray-600 w-full body-font mb-4 divide-y divide-gray-300 px-2"
     >
       <div
         class="
@@ -70,7 +60,7 @@
         <div class="flex flex-col my-1 items-center text-center">
           <h3
             class="
-               font-semibold
+              font-semibold
               hidden
               text-4xl
               w-full
