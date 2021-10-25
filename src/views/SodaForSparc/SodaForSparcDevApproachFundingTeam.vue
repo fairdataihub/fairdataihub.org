@@ -305,6 +305,11 @@ export default {
           href: "/team/#SanjaySoundarajan",
           image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
         },
+        {
+          name: "Christopher Marroquin",
+          href: "/team/#ChristopherMarroquin",
+          image: "https://i.ibb.co/42PyRHs/IMG-1231-4.jpg",
+        },
       ],
     };
   },
