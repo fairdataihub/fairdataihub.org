@@ -3,7 +3,7 @@
     class="
       text-xl
       lg:text-3xl
-      font-inter
+      
       text-black
       dark:text-white
       print:hidden

@@ -27,7 +27,7 @@
 </template>
 
 <script>
-import BaseSection from "~~/components/UI/BaseSection.vue";
+import BaseSection from "~~/components/Base/BaseSection.vue";
 import SodaForSparcHerosection from "~~/components/sodaforsparc/SodaForSparcHerosection.vue";
 import AboutSodaForSparc from "~~/components/sodaforsparc/AboutSodaForSparc.vue";
 import SodaForSparcImpact from "~~/components/sodaforsparc/SodaForSparcImpact.vue";
@@ -45,7 +45,7 @@ export default {
     SodaForSparcTimeline,
     SodaForSparcPublications,
   },
-  name: "SodaForSparc",
+
   layout: "default",
 };
 </script>

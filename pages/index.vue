@@ -1,12 +1,25 @@
 <template>
   <div class="divide-y divide-white bg-white">
-    <base-section class="pt-12 sm:pt-16 mb-10" data-aos="fade-in">
-      <hero-section></hero-section>
-    </base-section>
+    <div
+        data-aos="fade-in"
+        class="
+          bg-haikeiWavy bg-cover
+          2xl:bg-contain
+          bg-no-repeat bg-top
+          md:bg-right-top
+        "
+      >
+        <base-section
+          class="pt-12 sm:pt-16 dark:bg-dark-background mb-10"
+          data-aos="fade-in"
+        >
+          <hero-section></hero-section>
+        </base-section>
 
-    <base-section data-aos="fade-in" class="py-10">
-      <OurVision></OurVision>
-    </base-section>
+        <base-section data-aos="fade-in" class="dark:bg-dark-background py-10">
+          <our-vision></our-vision>
+        </base-section>
+      </div>
 
     <base-section class="bg-gray-50 py-10">
       <AboutUs></AboutUs>
@@ -38,7 +51,6 @@ import CollaboratorsSection from "~~/components/home/CollaboratorsSection.vue";
 // import HomepageTestimonials from "./HomepageTestimonials.vue";
 
 export default {
-  name: "HomePage",
   layout: "default",
   components: {
     HeroSection,

@@ -5,7 +5,7 @@
         class="
           font-bold
           text-2xl
-          font-inter
+          
           sm:text-2xl
           md:text-3xl
           lg:text-5xl
@@ -19,7 +19,7 @@
 
       <h3
         class="
-          font-inter
+          
           text-lg
           md:text-xl
           lg:text-2xl

@@ -1,7 +1,7 @@
 <template>
   <h4
     class="
-      font-inter font-semibold
+       font-semibold
       text-base text-black
       dark:text-white
       my-2

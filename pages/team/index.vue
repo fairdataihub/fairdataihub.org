@@ -20,7 +20,7 @@
         <div class="w-full lg:w-1/3 p-5">
           <h1
             class="
-              font-inter font-black
+               font-black
               dark:text-gray-50
               text-4xl
               sm:text-3xl
@@ -72,11 +72,10 @@
 
 <script>
 import TeamCard from "~~/components/team/TeamCard.vue";
-import BaseSection from "~~/components/Base/BaseSection.vue";
 
 export default {
-  components: { TeamCard, BaseSection },
-  name: "TheTeam",
+  components: { TeamCard },
+  layout: "default",
   data() {
     return {
       teamsList: [

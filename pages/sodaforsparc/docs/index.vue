@@ -1,12 +1,15 @@
-<template>
-  <div></div>
-</template>
+<template></template>
 
 <script>
 export default {
-  layout: "docs",
+  middleware: [
+    function ({ redirect }) {
+      console.log("redirect");
+      return redirect("/sodaforsparc/docs/getting-started/User-Interface");
+    },
+  ],
   mounted() {
-    this.$router.push({ path: "/sodaforsparc/docs/user-interface" });
-  },
+    this.$router.push("/sodaforsparc/docs/getting-started/User-Interface");
+  }
 };
 </script>

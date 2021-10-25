@@ -232,7 +232,6 @@
             :to="item.href"
             class="
               text-black
-              font-inter
               block
               px-3
               py-2

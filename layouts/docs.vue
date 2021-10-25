@@ -66,9 +66,9 @@
 </template>
 
 <script>
-import AppHeader from "~~/components/UI/AppHeader.vue";
-import BaseSection from "~~/components/UI/BaseSection.vue";
-import BaseDocsContent from "~~/components/UI/BaseDocsContent.vue";
+import AppHeader from "~~/components/App/AppHeader.vue";
+import BaseSection from "~~/components/Base/BaseSection.vue";
+import BaseDocsContent from "~~/components/Base/BaseDocsContent.vue";
 import SodaForSparcSidebar from "~~/components/sodaforsparcdocs/SodaForSparcSidebar.vue";
 import MobileSodaForSparcSidebar from "~~/components/sodaforsparcdocs/SodaForSparcSidebar.vue";
 
@@ -88,20 +88,20 @@ export default {
           subsections: [
             {
               subtitle: "Download SODA",
-              href: "/sodaforsparc/docs/Download-Soda",
+              href: "/sodaforsparc/docs/getting-started/Download-Soda",
             },
             {
               subtitle: "User interface",
-              href: "/sodaforsparc/docs/user-interface",
+              href: "/sodaforsparc/docs/getting-started/User-Interface",
             },
             {
               subtitle:
                 "Checklist to organize and submit SPARC datasets with SODA",
-              href: "/sodaforsparc/docs/Organize-and-submit-SPARC-datasets-with-SODA",
+              href: "/sodaforsparc/docs/getting-started/Organize-and-submit-SPARC-datasets-with-SODA",
             },
             {
               subtitle: "Organize and submit a new SPARC dataset with SODA",
-              href: "/sodaforsparc/docs/Organize-and-submit-a-new-SPARC-dataset-with-SODA",
+              href: "/sodaforsparc/docs/getting-started/Organize-and-submit-a-new-SPARC-dataset-with-SODA",
             },
           ],
         },
@@ -110,47 +110,47 @@ export default {
           subsections: [
             {
               subtitle: "Connect your Pennsieve account with SODA",
-              href: "/sodaforsparc/docs/Connect-your-Pennsieve-account-with-SODA",
+              href: "/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA",
             },
             {
               subtitle: "Create a new dataset",
-              href: "/sodaforsparc/docs/Create-a-new-dataset",
+              href: "/sodaforsparc/docs/manage-dataset/Create-a-new-dataset",
             },
             {
               subtitle: "Rename an existing dataset",
-              href: "/sodaforsparc/docs/Rename-an-existing-dataset",
+              href: "/sodaforsparc/docs/manage-dataset/Rename-an-existing-dataset",
             },
             {
               subtitle: "Make PI owner of dataset",
-              href: "/sodaforsparc/docs/Make-PI-owner-of-dataset",
+              href: "/sodaforsparc/docs/manage-dataset/Make-PI-owner-of-dataset",
             },
             {
               subtitle: "Add edit permissions",
-              href: "/sodaforsparc/docs/Add-edit-permissions",
+              href: "/sodaforsparc/docs/manage-dataset/Add-edit-permissions",
             },
             {
               subtitle: "Add edit subtitle",
-              href: "/sodaforsparc/docs/Add-edit-subtitle",
+              href: "/sodaforsparc/docs/manage-dataset/Add-edit-subtitle",
             },
             {
               subtitle: "Add edit description",
-              href: "/sodaforsparc/docs/Add-edit-description",
+              href: "/sodaforsparc/docs/manage-dataset/Add-edit-description",
             },
             {
               subtitle: "Upload a banner image",
-              href: "/sodaforsparc/docs/Upload-a-banner-image",
+              href: "/sodaforsparc/docs/manage-dataset/Upload-a-banner-image",
             },
             {
               subtitle: "Assign a license",
-              href: "/sodaforsparc/docs/Assign-a-license",
+              href: "/sodaforsparc/docs/manage-dataset/Assign-a-license",
             },
             {
               subtitle: "Upload a local dataset to Pennsieve",
-              href: "/sodaforsparc/docs/Upload-a-local-dataset-to-Pennsieve",
+              href: "/sodaforsparc/docs/manage-dataset/Upload-a-local-dataset-to-Pennsieve",
             },
             {
               subtitle: "View and change status",
-              href: "/sodaforsparc/docs/View-and-change-status",
+              href: "/sodaforsparc/docs/manage-dataset/View-and-change-status",
             },
           ],
         },
@@ -159,27 +159,27 @@ export default {
           subsections: [
             {
               subtitle: "Connect your Airtable account with SODA",
-              href: "/sodaforsparc/docs/Connect-your-Airtable-account-with-SODA",
+              href: "/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA",
             },
             {
               subtitle: "Create submission.xlsx",
-              href: "/sodaforsparc/docs/Create-submission-xlsx",
+              href: "/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx",
             },
             {
               subtitle: "Create dataset_description.xlsx",
-              href: "/sodaforsparc/docs/Create-dataset_description-xlsx",
+              href: "/sodaforsparc/docs/prepare-metadata/Create-dataset_description-xlsx",
             },
             {
               subtitle: "Create subjects.xlsx",
-              href: "/sodaforsparc/docs/Create-subjects-xlsx",
+              href: "/sodaforsparc/docs/prepare-metadata/Create-subjects-xlsx",
             },
             {
               subtitle: "Create samples.xlsx",
-              href: "/sodaforsparc/docs/Create-samples-xlsx",
+              href: "/sodaforsparc/docs/prepare-metadata/Create-samples-xlsx",
             },
             {
               subtitle: "Download templates",
-              href: "/sodaforsparc/docs/Download-templates",
+              href: "/sodaforsparc/docs/prepare-metadata/Download-templates",
             },
           ],
         },
@@ -188,35 +188,35 @@ export default {
           subsections: [
             {
               subtitle: "Organize dataset",
-              href: "/sodaforsparc/docs/Organize-dataset",
+              href: "/sodaforsparc/docs/organize-dataset",
             },
             {
               subtitle: "Step 1: Getting started",
-              href: "/sodaforsparc/docs/Organize-dataset/step-1",
+              href: "/sodaforsparc/docs/organize-dataset/step-1",
             },
             {
               subtitle: "Step 2: Specify high-level folders",
-              href: "/sodaforsparc/docs/Organize-dataset/step-2",
+              href: "/sodaforsparc/docs/organize-dataset/step-2",
             },
             {
               subtitle: "Step 3: Structure dataset files",
-              href: "/sodaforsparc/docs/Organize-dataset/step-3",
+              href: "/sodaforsparc/docs/organize-dataset/step-3",
             },
             {
               subtitle: "Step 4: Specify high-level metadata files",
-              href: "/sodaforsparc/docs/Organize-dataset/step-4",
+              href: "/sodaforsparc/docs/organize-dataset/step-4",
             },
             {
               subtitle: "Step 5: Request manifest files",
-              href: "/sodaforsparc/docs/Organize-dataset/step-5",
+              href: "/sodaforsparc/docs/organize-dataset/step-5",
             },
             {
               subtitle: "Step 6: Generate dataset",
-              href: "/sodaforsparc/docs/Organize-dataset/step-6",
+              href: "/sodaforsparc/docs/organize-dataset/step-6",
             },
             {
               subtitle: "Step 7: Preview dataset",
-              href: "/sodaforsparc/docs/Organize-dataset/step-7",
+              href: "/sodaforsparc/docs/organize-dataset/step-7",
             },
           ],
         },
@@ -225,15 +225,15 @@ export default {
           subsections: [
             {
               subtitle: "Share with Curation Team",
-              href: "/sodaforsparc/docs/Share-with-curation-team",
+              href: "/sodaforsparc/docs/disseminate-dataset/Share-with-curation-team",
             },
             {
               subtitle: "Share with SPARC Consortium",
-              href: "/sodaforsparc/docs/Share-with-SPARC-Consortium",
+              href: "/sodaforsparc/docs/disseminate-dataset/Share-with-SPARC-Consortium",
             },
             {
               subtitle: "Submit for pre-publishing review",
-              href: "/sodaforsparc/docs/Submit-for-pre-publishing-review",
+              href: "/sodaforsparc/docs/disseminate-dataset/Submit-for-pre-publishing-review",
             },
           ],
         },
@@ -242,19 +242,19 @@ export default {
           subsections: [
             {
               subtitle: "Installing the Pennsieve Agent",
-              href: "/sodaforsparc/docs/Installing-the-Pennsieve-agent",
+              href: "/sodaforsparc/docs/common-errors/Installing-the-Pennsieve-agent",
             },
             {
               subtitle: "Pennsieve Agent is already running",
-              href: "/sodaforsparc/docs/The-Pennsieve-agent-is-already-running",
+              href: "/sodaforsparc/docs/common-errors/The-Pennsieve-agent-is-already-running",
             },
             {
               subtitle: "Sending log files to SODA Team",
-              href: "/sodaforsparc/docs/Sending-log-files-to-SODA-Team",
+              href: "/sodaforsparc/docs/common-errors/Sending-log-files-to-SODA-Team",
             },
             {
               subtitle: "Issues regarding hidden files or folders",
-              href: "/sodaforsparc/docs/Issues-regarding-hidden-files-or-folders",
+              href: "/sodaforsparc/docs/common-errors/Issues-regarding-hidden-files-or-folders",
             },
           ],
         },
@@ -263,28 +263,28 @@ export default {
           subsections: [
             {
               subtitle: "How to structure the submission metadata file",
-              href: "/sodaforsparc/docs/How-to-structure-the-submission-metadata-file",
+              href: "/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file",
             },
             {
               subtitle:
                 "How to structure the dataset_description metadata file",
-              href: "/sodaforsparc/docs/How-to-structure-the-dataset-description-metadata-file",
+              href: "/sodaforsparc/docs/how-to/How-to-structure-the-dataset-description-metadata-file",
             },
             {
               subtitle: "How to structure the subjects metadata file",
-              href: "/sodaforsparc/docs/How-to-structure-the-subjects-metadata-file",
+              href: "/sodaforsparc/docs/how-to/How-to-structure-the-subjects-metadata-file",
             },
             {
               subtitle: "How to structure the samples metadata file",
-              href: "/sodaforsparc/docs/How-to-structure-the-samples-metadata-file",
+              href: "/sodaforsparc/docs/how-to/How-to-structure-the-samples-metadata-file",
             },
             {
               subtitle: "How to structure the manifest metadata file",
-              href: "/sodaforsparc/docs/How-to-structure-the-manifest-metadata-file",
+              href: "/sodaforsparc/docs/how-to/How-to-structure-the-manifest-metadata-file",
             },
             {
               subtitle: "How to get your Data Deliverables document",
-              href: "/sodaforsparc/docs/How-to-get-your-data-deliverables-document",
+              href: "/sodaforsparc/docs/how-to/How-to-get-your-data-deliverables-document",
             },
           ],
         },

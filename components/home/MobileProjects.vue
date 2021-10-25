@@ -20,7 +20,7 @@
           dark:text-white
           text-4xl
           sm:text-4xl
-          font-inter
+          
           text-left
         "
       >
@@ -28,7 +28,7 @@
       </h2>
       <p
         class="
-          font-inter
+          
           w-full
           max-w-2xl
           text-xl text-black
@@ -70,7 +70,7 @@
         <div class="flex flex-col my-1 items-center text-center">
           <h3
             class="
-              font-inter font-semibold
+               font-semibold
               hidden
               text-4xl
               w-full

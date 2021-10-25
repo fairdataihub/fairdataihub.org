@@ -7,7 +7,7 @@
             md:mr-8
             py-5
             md:py-0
-            font-inter font-black
+             font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased
@@ -136,7 +136,7 @@
             md:mr-8
             py-5
             md:py-0
-            font-inter font-black
+             font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased
@@ -245,7 +245,7 @@
           class="
             md:mr-8
             pb-5
-            font-inter font-black
+             font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased
@@ -315,7 +315,7 @@
           class="
             md:mr-8
             pb-5
-            font-inter font-black
+             font-black
             dark:text-gray-50
             text-4xl
             subpixel-antialiased

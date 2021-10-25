@@ -27,10 +27,10 @@
           @submit.prevent="sendEmail"
           class="flex flex-col py-5 px-5 sm:px-10 text-3xl"
         >
-          <h2 class="font-inter pt-3 text-center text-4xl">
+          <h2 class=" pt-3 text-center text-4xl">
             Let us know if you have any feedback or want to collaborate
           </h2>
-          <h2 class="font-inter pb-10 text-center">
+          <h2 class=" pb-10 text-center">
             We'll get back to you soon
           </h2>
 
@@ -56,7 +56,7 @@
             />
             <span
               v-if="formNameRequired"
-              class="text-red-500 text-xs font-inter"
+              class="text-red-500 text-xs "
             >
               Please complete this required field.
             </span>
@@ -84,7 +84,7 @@
             />
             <span
               v-if="formInstituteRequired"
-              class="text-red-500 text-xs font-inter"
+              class="text-red-500 text-xs "
             >
               Please complete this required field.
             </span>
@@ -112,7 +112,7 @@
             />
             <span
               v-if="formEmailRequired"
-              class="text-red-500 text-xs font-inter"
+              class="text-red-500 text-xs "
             >
               Please complete this required field.
             </span>
@@ -141,14 +141,14 @@
             ></textarea>
             <span
               v-if="formMessageRequired"
-              class="text-red-500 text-xs font-inter"
+              class="text-red-500 text-xs "
             >
               Please complete this required field.
             </span>
           </div>
 
           <div class="w-full flex flex-col justify-center items-center">
-            <!-- <span v-if="formValid" class="text-red-500 text-xs font-inter">
+            <!-- <span v-if="formValid" class="text-red-500 text-xs ">
               Please complete all the required fields.
             </span> -->
             <input
@@ -168,7 +168,7 @@
                 my-2
               "
             />
-            <span v-if="formValid" class="text-red-500 text-xs font-inter">
+            <span v-if="formValid" class="text-red-500 text-xs ">
               Please complete all the required fields.
             </span>
           </div>
@@ -184,7 +184,6 @@
 import Notifications from "@kyvg/vue3-notification";
 
 export default {
-  name: "ContactUs",
   layout: "default",
   components: {
     Notifications,

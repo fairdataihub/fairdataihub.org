@@ -10,15 +10,7 @@
 </template>
 
 <script>
-import AppHeader from "~~/components/App/AppHeader.vue";
-import AppFooter from "~~/components/App/AppFooter.vue";
-
-export default {
-  components: {
-    AppHeader,
-    AppFooter,
-  },
-};
+export default {};
 </script>
 
 <style></style>

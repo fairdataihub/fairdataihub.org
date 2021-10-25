@@ -6,7 +6,6 @@
           <div
             class="
               text-center
-              font-inter
               text-2xl text-black
               dark:text-gray-50
               text-bold
@@ -26,7 +25,6 @@
             <h1
               class="
                 text-center
-                font-inter
                 text-xl
                 dark:text-gray-50
                 text-bold
@@ -39,7 +37,6 @@
             <h1
               class="
                 text-center
-                font-inter
                 text-xl
                 dark:text-gray-50
                 text-bold
@@ -68,7 +65,7 @@
         <a href="https://calmi2.org" target="_blank" rel="noopener">
           <svg
             id="e2e7ad45-a5d8-45e3-97ca-4ba2e5555a04"
-            data-name="Layer 1"
+         
             xmlns="http://www.w3.org/2000/svg"
             class="h-20"
             viewBox="0 0 428.58 149.12"

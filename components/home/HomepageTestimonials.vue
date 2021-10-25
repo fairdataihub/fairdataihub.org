@@ -18,7 +18,7 @@
         class="
           w-full
           my-2
-          font-inter font-extrabold
+           font-extrabold
           tracking-tight
           dark:text-gray-50
           text-4xl
@@ -80,7 +80,7 @@
           <div class="flex flex-col ml-2 justify-between">
             <span
               class="
-                font-inter font-semibold
+                 font-semibold
                 dark:text-indigo-400
                 text-xl
                 sm:text-sm
@@ -91,7 +91,7 @@
             </span>
             <span
               class="
-                font-inter font-semibold
+                 font-semibold
                 text-black
                 dark:text-gray-50
                 text-base

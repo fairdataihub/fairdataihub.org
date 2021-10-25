@@ -13,7 +13,7 @@
                 pb-2
                 border-gray-200
                 text-md
-                font-inter font-normal
+                 font-normal
               "
             >
               {{ section.title }}

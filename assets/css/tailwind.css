@@ -11,6 +11,30 @@
     @apply font-inter;
   }
 
+  .p-parent-div {
+    @apply my-2 font-asap text-black;
+  }
+
+  .img-parent-div {
+    @apply flex justify-center mx-8 my-4;
+  }
+
+  .img-parent-div > img {
+    @apply shadow-xl;
+  }
+
+  .p-parent-div + p {
+    @apply mb-2;
+  }
+
+  .docs-ul {
+    @apply ml-4 mb-2 font-asap text-black ;
+  }
+
+  .highlight-text {
+    @apply bg-gray-300 px-2 rounded-md;
+  }
+
   /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {

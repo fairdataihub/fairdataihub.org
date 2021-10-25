@@ -24,8 +24,6 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
-          id="271e5882-3c8d-41ed-8a0a-1cb2b4d0cbc1"
-          data-name="Layer 1"
           class="w-full h-full lg:max-w-2xl"
           viewBox="0 0 1137.68 859.71"
         >
@@ -1435,7 +1433,7 @@
             py-4
             md:py-3
             w-full
-            font-inter font-black
+             font-black
             dark:text-gray-50
             text-4xl
             sm:text-3xl

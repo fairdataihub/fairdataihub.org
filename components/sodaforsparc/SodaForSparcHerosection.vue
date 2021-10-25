@@ -53,7 +53,7 @@
         >
           <h1
             class="
-              font-inter font-black
+               font-black
               text-3xl
               sm:text-4xl
               w-full
@@ -66,7 +66,7 @@
           </h1>
           <h2
             class="
-              font-inter
+              
               w-full
               sm:text-2xl
               text-2xl
@@ -121,7 +121,7 @@
             >
               Download now
             </button>
-            <NuxtLink to="/sodaforsparc/docs">
+            <NuxtLink to="/sodaforsparc/docs/getting-started/User-Interface">
               <button
                 class="
                   sm:ml-4
@@ -226,17 +226,17 @@ export default {
         let file_ext = file_name.split(".").pop();
 
         if (os === "macOS") {
-          if (file_ext === ".dmg") {
+          if (file_ext === "dmg") {
             link = asset.browser_download_url;
           }
         }
         if (os === "windows") {
-          if (file_ext === ".exe") {
+          if (file_ext === "exe") {
             link = asset.browser_download_url;
           }
         }
         if (os === "linux") {
-          if (file_ext === ".AppImage") {
+          if (file_ext === "AppImage") {
             link = asset.browser_download_url;
           }
         }

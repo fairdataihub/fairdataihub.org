@@ -20,14 +20,11 @@
           flex flex-col
         "
       >
-        <h1
-          class="font-inter dark:text-gray-50 text-2xl sm:text-xl lg:text-3xl"
-        >
+        <h1 class="dark:text-gray-50 text-2xl sm:text-xl lg:text-3xl">
           {{ profile.name }}
         </h1>
         <h2
           class="
-            font-inter
             text-primary
             dark:text-indigo-200
             text-xl
@@ -53,7 +50,6 @@
         <div class="py-2" v-if="profile.education">
           <h3
             class="
-              font-inter
               text-primary
               dark:text-indigo-200
               text-lg
@@ -171,9 +167,7 @@
 <script>
 export default {
   name: "TeamCard",
-  props: {
-    profile: { required: true, type: Object },
-  },
+  props: ["profile"],
   data() {
     return {
       borderClasses: `flex py-4 px-1 lg:p-10 border-grey-800 `,

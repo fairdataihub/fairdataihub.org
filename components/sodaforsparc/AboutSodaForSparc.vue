@@ -5,7 +5,7 @@
         <p
           class="
             my-2
-            font-inter font-extrabold
+             font-extrabold
             tracking-tight
             dark:text-gray-50
             text-4xl
@@ -63,7 +63,7 @@
               </div>
               <p
                 class="
-                  font-inter
+                  
                   ml-16
                   text-xl
                   sm:text-lg
