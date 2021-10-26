@@ -35,12 +35,12 @@
       <SparclinkTimeline></SparclinkTimeline>
     </base-section> -->
 
-    <!-- <base-section
+    <base-section
       data-aos="fade-in"
       class="bg-white dark:bg-dark-background py-10"
     >
       <SparclinkPublications></SparclinkPublications>
-    </base-section> -->
+    </base-section> 
 
     <!-- <base-section
       data-aos="fade-in"
@@ -58,7 +58,7 @@ import AboutSparclink from "./AboutSparclink.vue";
 import SparclinkHerosection from "./SparclinkHerosection.vue";
 // import SparclinkTimeline from "./SparclinkTimeline.vue";
 // import TheFaq from "./TheFaq.vue";
-// import SparclinkPublications from "./SparclinkPublications.vue";
+import SparclinkPublications from "./SparclinkPublications.vue";
 
 export default {
   components: {
@@ -68,7 +68,7 @@ export default {
     SparcLinkDevApproachFundingTeam,
     AboutSparclink,
     // SparclinkStats,
-    // SparclinkPublications,
+    SparclinkPublications,
   },
   name: "SparcLink",
 };
