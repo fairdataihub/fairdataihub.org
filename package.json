@@ -1,5 +1,16 @@
 {
+  "name": "fairdataihub-website",
+  "version": "0.9.0",
   "private": true,
+  "author": "Fair Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
+  "license": "ISC",
+  "keywords": [
+    "fair data",
+    "fairhub",
+    "fairdataihub",
+    "calmi2",
+    "calmii"
+  ],
   "scripts": {
     "dev": "nuxt dev",
     "build": "nuxt build",
@@ -25,5 +36,17 @@
     "v-lazy-image": "^2.0.1",
     "vue3-carousel": "^0.1.28",
     "vue3-marquee": "^1.0.0"
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=16.11.1"
+  },
+  "bugs": {
+    "url": "https://github.com/fairdataihub/fairdataihub-website/issues/new/choose"
+  },
+  "homepage": "https://fairdataihub.org"
 }
