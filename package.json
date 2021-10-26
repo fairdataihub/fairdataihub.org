@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@heroicons/vue": "^1.0.5",
+    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/eslint-config": "^6.0.1",
     "autoprefixer": "^10.3.7",
     "eslint": "^8.1.0",
@@ -29,9 +30,12 @@
   },
   "dependencies": {
     "@kyvg/vue3-notification": "^2.3.4",
+    "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/robots": "^2.5.0",
     "@vitejs/plugin-vue": "^1.9.3",
+    "dot-env": "^0.0.1",
     "emailjs-com": "^3.2.0",
+    "nuxt-mail": "^3.0.12",
     "path": "^0.12.7",
     "v-lazy-image": "^2.0.1",
     "vue3-carousel": "^0.1.28",

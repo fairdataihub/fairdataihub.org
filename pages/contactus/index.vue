@@ -23,16 +23,11 @@
           rounded-lg
         "
       >
-        <form
-          @submit.prevent="sendEmail"
-          class="flex flex-col py-5 px-5 sm:px-10 text-3xl"
-        >
-          <h2 class=" pt-3 text-center text-4xl">
+        <form class="flex flex-col py-5 px-5 sm:px-10 text-3xl" @submit.prevent>
+          <h2 class="pt-3 text-center text-4xl">
             Let us know if you have any feedback or want to collaborate
           </h2>
-          <h2 class=" pb-10 text-center">
-            We'll get back to you soon
-          </h2>
+          <h2 class="pb-10 text-center">We'll get back to you soon</h2>
 
           <div class="sm:my-3 flex flex-col">
             <input
@@ -54,10 +49,7 @@
                 outline-none
               "
             />
-            <span
-              v-if="formNameRequired"
-              class="text-red-500 text-xs "
-            >
+            <span v-if="formNameRequired" class="text-red-500 text-xs">
               Please complete this required field.
             </span>
           </div>
@@ -82,10 +74,7 @@
                 outline-none
               "
             />
-            <span
-              v-if="formInstituteRequired"
-              class="text-red-500 text-xs "
-            >
+            <span v-if="formInstituteRequired" class="text-red-500 text-xs">
               Please complete this required field.
             </span>
           </div>
@@ -110,10 +99,7 @@
                 outline-none
               "
             />
-            <span
-              v-if="formEmailRequired"
-              class="text-red-500 text-xs "
-            >
+            <span v-if="formEmailRequired" class="text-red-500 text-xs">
               Please complete this required field.
             </span>
           </div>
@@ -139,10 +125,7 @@
                 resize-none
               "
             ></textarea>
-            <span
-              v-if="formMessageRequired"
-              class="text-red-500 text-xs "
-            >
+            <span v-if="formMessageRequired" class="text-red-500 text-xs">
               Please complete this required field.
             </span>
           </div>
@@ -151,9 +134,8 @@
             <!-- <span v-if="formValid" class="text-red-500 text-xs ">
               Please complete all the required fields.
             </span> -->
-            <input
-              type="submit"
-              value="Send"
+            <button
+              @click="sendEmail"
               class="
                 cursor-pointer
                 bg-pink-600
@@ -167,40 +149,111 @@
                 transition-all
                 my-2
               "
-            />
-            <span v-if="formValid" class="text-red-500 text-xs ">
+            >
+              Send
+            </button>
+            <span v-if="formValid" class="text-red-500 text-xs">
               Please complete all the required fields.
             </span>
           </div>
         </form>
       </div>
     </base-section>
-    <Notifications position="bottom right" />
+    <!-- <Notifications position="bottom right" /> -->
   </div>
 </template>
 
-<script>
-// import emailjs from "emailjs-com";
-import Notifications from "@kyvg/vue3-notification";
+<script setup>
+import { ref } from "vue";
 
-export default {
-  layout: "default",scrollToTop: true,
-  components: {
-    Notifications,
-  },
-  data() {
-    return {
-      formName: "",
-      formNameRequired: false,
-      formInstitute: "",
-      formInstituteRequired: false,
-      formEmail: "",
-      formEmailRequired: false,
-      formMessage: "",
-      formMessageRequired: false,
-      formValid: false,
+const config = useRuntimeConfig();
+
+let formName = ref("");
+let formNameRequired = ref(false);
+let formInstitute = ref("");
+let formInstituteRequired = ref(false);
+let formEmail = ref("");
+let formEmailRequired = ref(false);
+let formMessage = ref("");
+let formMessageRequired = ref(false);
+
+function validateInput() {
+  if (
+    formName.value.trim() == "" ||
+    formInstitute.value.trim() == "" ||
+    formEmail.value.trim() == "" ||
+    formMessage.value.trim() == ""
+  ) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+function sendEmail() {
+  console.log("here");
+  const formValid = validateInput();
+  console.log("here2", formValid);
+  if (formValid) {
+    const data = {
+      service_id: config.SERVICE_ID,
+      template_id: config.TEMPLATE_ID,
+      user_id: config.USER_ID,
+      accessToken: config.ACCESS_TOKEN,
+      template_params: {
+        name: formName.value.trim(),
+        email: formEmail.value.trim(),
+        message: formMessage.value.trim(),
+        institute: formInstitute.value.trim(),
+      },
     };
-  },
+
+    const requestOptions = {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    };
+    fetch("https://api.emailjs.com/api/v1.0/email/send", requestOptions)
+      .then(async (response) => {
+        console.log("sent");
+        console.log(response);
+
+        // check for error response
+        if (!response.ok) {
+          // get error message from body or default to response status
+
+          const error = (data && data.message) || response.status;
+          return Promise.reject(error);
+        }
+
+        console.log("SUCCESS!", response.status, response.text);
+
+        // Reset form field
+        formName = "";
+        formEmail = "";
+        formMessage = "";
+        formInstitute = "";
+      })
+      .catch((error) => {
+        console.error("There was an error!");
+        console.log(error);
+      });
+
+    //       that.$notify({
+    //         title: "Nice to meet you!",
+    //         text: "We will be in touch with you soon.",
+    //         type: "success",
+    //         duration: 10000,
+    //         speed: 1000,
+    //       });
+  }
+}
+</script>
+
+<script>
+export default {
+  layout: "default",
+  scrollToTop: true,
   watch: {
     formName: function (val) {
       if (val.trim() != "") {
@@ -228,62 +281,6 @@ export default {
         this.formMessageRequired = false;
       } else {
         this.formMessageRequired = true;
-      }
-    },
-  },
-  methods: {
-    validateInput() {
-      if (
-        this.formName.trim() == "" ||
-        this.formInstitute.trim() == "" ||
-        this.formEmail.trim() == "" ||
-        this.formMessage.trim() == ""
-      ) {
-        this.formValid = true;
-        return false;
-      } else {
-        this.formValid = false;
-        return true;
-      }
-    },
-    sendEmail() {
-      const formValid = this.validateInput();
-      let that = this;
-      if (formValid) {
-        emailjs
-          .send(
-            process.env.VUE_APP_SERVICE_ID,
-            process.env.VUE_APP_TEMPLATE_ID,
-            {
-              name: this.formName.trim(),
-              email: this.formEmail.trim(),
-              message: this.formMessage.trim(),
-              institute: this.formInstitute.trim(),
-            },
-            process.env.VUE_APP_USER_ID
-          )
-          .then(
-            function (response) {
-              console.log("SUCCESS!", response.status, response.text);
-
-              that.$notify({
-                title: "Nice to meet you!",
-                text: "We will be in touch with you soon.",
-                type: "success",
-                duration: 10000,
-                speed: 1000,
-              });
-
-              // Reset form field
-              // that.name = "";
-              // that.email = "";
-              // that.message = "";
-              // that.formInstitute = "";
-            },
-            function (error) {
-              console.log("FAILED...", error);
-            }
-          );
       }
     },
   },
