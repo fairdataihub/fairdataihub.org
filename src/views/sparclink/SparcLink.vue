@@ -40,7 +40,7 @@
       class="bg-white dark:bg-dark-background py-10"
     >
       <SparclinkPublications></SparclinkPublications>
-    </base-section> 
+    </base-section>
 
     <!-- <base-section
       data-aos="fade-in"
