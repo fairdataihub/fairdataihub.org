@@ -42,9 +42,6 @@
     "last 2 versions",
     "not dead"
   ],
-  "engines": {
-    "node": ">=16.11.1"
-  },
   "bugs": {
     "url": "https://github.com/fairdataihub/fairdataihub-website/issues/new/choose"
   },
