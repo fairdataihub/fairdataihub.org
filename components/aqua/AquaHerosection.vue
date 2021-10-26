@@ -154,7 +154,7 @@
             style="width: 80%"
             data-aos="fade-in"
             class="relative rounded mx-auto z-10"
-            src="../../assets/aqua-tool-images/logoAQUA.png"
+            src="~/assets/aqua-tool-images/logoAQUA.png"
           />
         </div>
       </div>
