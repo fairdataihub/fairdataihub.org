@@ -49,9 +49,18 @@ export default {
       supportsCB: false,
       publicationsList: [
         {
-          title: "Coming soon...",
-          doi: "Coming soon...",
-          citation: "Coming soon...",
+          title:
+            "SPARClink: an interactive tool to visualize the impact of the SPARC program",
+          doi: "https://doi.org/10.1101/2021.10.22.465507",
+          citation: `Soundarajan, Sanjay , Sachira Kuruppu, Ashutosh Singh, Jongchan Kim and Monalisa Achalla. "SPARClink: an interactive tool to visualize the impact of the SPARC program."
+          <i>
+            bioRxiv
+          </i> (2021).
+          <a href="https://doi.org/10.1101/2021.10.22.465507" target="_blank">
+            <span class="hover:underline text-blue-600 dark:text-blue-400 break-words">
+              doi.org/10.1101/2021.10.22.465507
+            </span>
+          </a>`,
         },
       ],
     };

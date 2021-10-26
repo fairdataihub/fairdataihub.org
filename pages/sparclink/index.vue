@@ -12,12 +12,9 @@
       <SparcLinkDevApproachFundingTeam></SparcLinkDevApproachFundingTeam>
     </base-section>
 
-    <!-- <base-section
-      data-aos="fade-in"
-      class="bg-white  py-10"
-    >
+    <base-section data-aos="fade-in" class="bg-white py-10">
       <SparclinkPublications></SparclinkPublications>
-    </base-section> -->
+    </base-section>
   </div>
 </template>
 
@@ -25,15 +22,16 @@
 import SparclinkHerosection from "~~/components/sparclink/SparclinkHerosection.vue";
 import AboutSparclink from "~~/components/sparclink/AboutSparclink.vue";
 import SparcLinkDevApproachFundingTeam from "~~/components/sparclink/SparcLinkDevApproachFundingTeam.vue";
-// import SparclinkPublications from "~~/components/sparclink/SparclinkPublications.vue";
+import SparclinkPublications from "~~/components/sparclink/SparclinkPublications.vue";
 
 export default {
-  layout: "default",scrollToTop: true,
+  layout: "default",
+  scrollToTop: true,
   components: {
     SparclinkHerosection,
     AboutSparclink,
     SparcLinkDevApproachFundingTeam,
-    // SparclinkPublications,
+    SparclinkPublications,
   },
 };
 </script>
