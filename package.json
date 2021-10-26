@@ -1,64 +1,52 @@
 {
-  "name": "soda-website",
-  "version": "0.1.0",
+  "name": "fairdataihub-website",
+  "version": "0.9.0",
   "private": true,
+  "author": "Fair Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
+  "license": "ISC",
+  "keywords": [
+    "fair data",
+    "fairhub",
+    "fairdataihub",
+    "calmi2",
+    "calmii"
+  ],
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build-report": "vue-cli-service build --report",
-    "sitemap": "vue-cli-service sitemap"
-  },
-  "dependencies": {
-    "@headlessui/vue": "^1.4.0",
-    "@heroicons/vue": "^1.0.3",
-    "@kyvg/vue3-notification": "^2.3.3",
-    "aos": "^2.3.4",
-    "core-js": "^3.16.0",
-    "emailjs-com": "^3.2.0",
-    "v-lazy-image": "^2.0.1",
-    "vue": "^3.1.5",
-    "vue-animate-onscroll": "^1.0.8",
-    "vue-router": "^4.0.10",
-    "vue3-carousel": "0.1.24",
-    "vue3-marquee": "^1.0.0"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@tailwindcss/forms": "^0.3.3",
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.1.5",
-    "autoprefixer": "^9.8.6",
-    "babel-eslint": "^10.1.0",
-    "dotenv-webpack": "^7.0.3",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.15.1",
-    "esm": "^3.2.25",
-    "jsconfig.json": "^2.2.0",
-    "postcss": "^7.0.36",
-    "prettier": "^2.3.1",
-    "serve": "^12.0.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.4",
-    "vue-cli-plugin-sitemap": "~2.3.0"
+    "@heroicons/vue": "^1.0.5",
+    "@nuxtjs/eslint-config": "^6.0.1",
+    "autoprefixer": "^10.3.7",
+    "eslint": "^8.1.0",
+    "nuxt3": "latest",
+    "postcss": "^8.3.11",
+    "prettier": "^2.4.1",
+    "tailwindcss": "^2.2.17",
+    "tailwindcss-debug-screens": "^2.2.0"
   },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
+  "dependencies": {
+    "@kyvg/vue3-notification": "^2.3.4",
+    "@nuxtjs/robots": "^2.5.0",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "emailjs-com": "^3.2.0",
+    "path": "^0.12.7",
+    "v-lazy-image": "^2.0.1",
+    "vue3-carousel": "^0.1.28",
+    "vue3-marquee": "^1.0.0"
   },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "engines": {
+    "node": ">=16.11.1"
+  },
+  "bugs": {
+    "url": "https://github.com/fairdataihub/fairdataihub-website/issues/new/choose"
+  },
+  "homepage": "https://fairdataihub.org"
 }

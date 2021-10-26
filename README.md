@@ -2,32 +2,32 @@
 
 ## Project setup
 
-```
+Make sure to install the dependencies.
+
+```bash
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
 
-```
-yarn serve
+Start the development server on http://localhost:3000
+
+```bash
+yarn dev
 ```
 
 ### Compiles and minifies for production
 
-Use this step to build a local production version of the site. Use `serve` to preview the local build.
+Use this step to build a local production version of the site. Use `start` to preview the local build.
 
-```
+```bash
 yarn build
-npx serve -s dist
+yarn start
 ```
+
+We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
 Note: You will not need to do anything to the hosted site. Continuous Delivery has been setup with Vercel. All you need to do is push your commit and wait for it to deploy.
-
-### Lints and fixes files
-
-```
-yarn lint
-```
 
 A special thank you to Vercel for hosting this website.
 
