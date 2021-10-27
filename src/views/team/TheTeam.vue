@@ -191,8 +191,7 @@ export default {
           title: "Volunteer Developer",
           bio: "Dorian is a frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
           image: "https://i.ibb.co/bB875fB/IMG-6470.jpg",
-          placeholder:
-            "https://i.ibb.co/bB875fB/IMG-6470-min.jpg",
+          placeholder: "https://i.ibb.co/bB875fB/IMG-6470-min.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
