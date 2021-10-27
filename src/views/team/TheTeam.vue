@@ -186,6 +186,32 @@ export default {
           },
         },
         {
+          id: "DorianPortillo",
+          name: "Dorian Portillo (they/them)",
+          title: "Volunteer Developer",
+          bio: "Dorian is a frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
+          image: "https://i.ibb.co/bB875fB/IMG-6470.jpg",
+          placeholder:
+            "https://i.ibb.co/bB875fB/IMG-6470-min.jpg",
+          borderTop: true,
+          borderBottom: false,
+          education: [
+            `B.Sc in Computer Science (Cal State University, San Bernardino, 2020)`,
+          ],
+          twitter: {
+            show: false,
+            link: "https://twitter.com/",
+          },
+          github: {
+            show: true,
+            link: "https://github.com/slugb0t",
+          },
+          linkedin: {
+            show: true,
+            link: "https://www.linkedin.com/in/dorian-portillo-4733b61b5/",
+          },
+        },
+        {
           id: "Ismail-Qaddoura",
           name: "Ismail Qaddoura (he/him)",
           title: "Information Technology (IT) Manager",
