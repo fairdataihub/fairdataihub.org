@@ -1,5 +1,5 @@
 <template>
-  <nav class="min-w-screen debug-screens sticky top-0 z-30 shadow-lg">
+  <nav class="min-w-screen sticky top-0 z-30 shadow-lg">
     <div class="flex flex-row justify-between px-5 py-3 bg-gray-50">
       <NuxtLink to="/" class="flex flex-row justify-center items-center">
         <svg
@@ -193,7 +193,7 @@
                 bg-light-accent
                 transform
                 transition
-                duration-500
+                duration-200
                 ease-in-out
               "
               :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
@@ -208,7 +208,7 @@
                 bg-light-accent
                 transform
                 transition
-                duration-500
+                duration-200
                 ease-in-out
               "
               :class="{ 'opacity-0': open }"
@@ -223,7 +223,7 @@
                 bg-light-accent
                 transform
                 transition
-                duration-500
+                duration-200
                 ease-in-out
               "
               :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
