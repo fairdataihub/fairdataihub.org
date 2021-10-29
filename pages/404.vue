@@ -47,7 +47,6 @@
             <button
               type="button"
               class="
-                
                 bg-pink-600
                 hover:bg-pink-700
                 text-white
@@ -56,7 +55,8 @@
                 text-center text-3xl
                 lg:text-5xl
                 shadow-md
-                rounded-lg p-4
+                rounded-lg
+                p-4
               "
             >
               Go back home
