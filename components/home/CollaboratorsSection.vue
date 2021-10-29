@@ -54,7 +54,7 @@ export default {
       },
       logoImages: [
         {
-          url: "/assets/logos/ucsf-logo.png",
+          url: "https://i.ibb.co/CKXDZzf/ucsf-logo.png",
           alt: "UCSF logo",
         },
         {
@@ -62,11 +62,11 @@ export default {
           alt: "NIH SPARC logo",
         },
         {
-          url: "/assets/logos/fdilab-inverted-logo.png",
+          url: "https://i.ibb.co/XLGBZvG/fdilab-inverted-logo.png",
           alt: "FDI Lab logo",
         },
         {
-          url: "/assets/logos/calmi-logo.png",
+          url: "https://i.ibb.co/0r83YnL/calmi-logo.png",
           alt: "California Medical Innovations Institute logo",
         },
       ],

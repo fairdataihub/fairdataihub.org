@@ -1,5 +1,5 @@
 <template>
-  <nav class="min-w-screen debug-screens sticky top-0 z-30">
+  <nav class="min-w-screen debug-screens sticky top-0 z-30 shadow-lg">
     <div class="flex flex-row justify-between px-5 py-3 bg-gray-50">
       <NuxtLink to="/" class="flex flex-row justify-center items-center">
         <svg
