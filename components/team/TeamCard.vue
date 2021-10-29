@@ -143,7 +143,7 @@
 // import VLazyImage from "v-lazy-image";
 </script>
 <script>
-import VLazyImage from "v-lazy-image";
+// import VLazyImage from "v-lazy-image";
 
 export default {
   name: "TeamCard",
