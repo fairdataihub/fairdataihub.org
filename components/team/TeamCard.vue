@@ -139,15 +139,9 @@
   </div>
 </template>
 
-<script setup>
-// import VLazyImage from "v-lazy-image";
-</script>
 <script>
-// import VLazyImage from "v-lazy-image";
-
 export default {
   name: "TeamCard",
-  components: { VLazyImage },
   props: ["profile"],
   data() {
     return {
