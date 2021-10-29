@@ -143,20 +143,19 @@
 export default {
   name: "TeamCard",
   props: ["profile"],
-  data() {
+  setup({ profile }) {
+    let borderClasses = `flex py-4 px-1 lg:p-10 border-grey-800 `;
+
+    if (profile["borderTop"]) {
+      borderClasses += "sm:border-t sm:border-gray-200 dark:sm:border-gray-800";
+    }
+    if (profile["borderBottom"]) {
+      borderClasses += "sm:border-b sm:border-gray-200 dark:sm:border-gray-800";
+    }
+
     return {
-      borderClasses: `flex py-4 px-1 lg:p-10 border-grey-800 `,
+      borderClasses,
     };
-  },
-  mounted() {
-    if (this.profile["borderTop"]) {
-      this.borderClasses +=
-        "sm:border-t sm:border-gray-200 dark:sm:border-gray-800";
-    }
-    if (this.profile["borderBottom"]) {
-      this.borderClasses +=
-        "sm:border-b sm:border-gray-200 dark:sm:border-gray-800";
-    }
   },
 };
 </script>

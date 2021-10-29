@@ -17,10 +17,26 @@
     <div class="block">
       <Vue3Marquee :options="marqueeOptions">
         <img
-          :src="img.url"
-          :alt="img.alt"
-          v-for="img in logoImages"
-          :key="img.alt"
+          src="https://i.ibb.co/CKXDZzf/ucsf-logo.png"
+          alt="UCSF logo"
+          width="200"
+          class="mx-4 py-2"
+        />
+        <img
+          src="https://sparc.science/_nuxt/img/logo-sparc-wave-primary.8ed83a5.svg"
+          alt="NIH SPARC logo"
+          width="200"
+          class="mx-4 py-2"
+        />
+        <img
+          src="https://i.ibb.co/XLGBZvG/fdilab-inverted-logo.png"
+          alt="FDI Lab logo"
+          width="200"
+          class="mx-4 py-2"
+        />
+        <img
+          src="https://i.ibb.co/0r83YnL/calmi-logo.png"
+          alt="California Medical Innovations Institute logo"
           width="200"
           class="mx-4 py-2"
         />
