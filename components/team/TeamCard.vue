@@ -2,11 +2,13 @@
   <div :id="profile.id">
     <div :class="[borderClasses, `flex flex-col sm:flex-row `]">
       <div class="w-full md:w-1/2 lg:w-2/5 my-3 sm:my-2">
-        <!-- <VLazyImage
+        <!-- <v-lazy-image
           :src="profile.image"
           :src-placeholder="profile.placeholder"
         /> -->
         <img :src="profile.image" alt="" class="rounded-lg" />
+        <!-- <v-lazy-image src="http://lorempixel.com/400/200/" /> -->
+        <!-- <VLazyImage src="http://lorempixel.com/400/200/" /> -->
       </div>
       <div
         class="
@@ -20,44 +22,17 @@
           flex flex-col
         "
       >
-        <h1 class="dark:text-gray-50 text-2xl sm:text-xl lg:text-3xl">
+        <h1 class="text-2xl sm:text-xl lg:text-3xl">
           {{ profile.name }}
         </h1>
-        <h2
-          class="
-            text-primary
-            dark:text-indigo-200
-            text-xl
-            sm:text-lg
-            lg:text-2xl
-            pb-1
-          "
-        >
+        <h2 class="text-primary text-xl sm:text-lg lg:text-2xl pb-1">
           {{ profile.title }}
         </h2>
-        <p
-          class="
-            font-asap
-            text-black
-            dark:text-white
-            text-lg
-            sm:text-base
-            lg:text-lg
-          "
-        >
+        <p class="font-asap text-black text-lg sm:text-base lg:text-lg">
           {{ profile.bio }}
         </p>
         <div class="py-2" v-if="profile.education">
-          <h3
-            class="
-              text-primary
-              dark:text-indigo-200
-              text-lg
-              sm:text-md
-              lg:text-xl
-              pb-1
-            "
-          >
+          <h3 class="text-primary text-lg sm:text-md lg:text-xl pb-1">
             Education
           </h3>
           <ul>
@@ -85,7 +60,6 @@
               class="
                 text-xl text-gray-700
                 hover:text-accent
-                dark:text-gray-200 dark:hover:text-accent
                 transition-colors
                 duration-200
                 h-9
@@ -116,7 +90,6 @@
               class="
                 text-xl text-gray-700
                 hover:text-accent
-                dark:text-gray-200 dark:hover:text-accent
                 transition-colors
                 duration-200
                 h-9
@@ -145,7 +118,6 @@
               class="
                 text-xl text-gray-700
                 hover:text-accent
-                dark:text-gray-200 dark:hover:text-accent
                 transition-colors
                 duration-200
                 h-9
@@ -167,9 +139,15 @@
   </div>
 </template>
 
+<script setup>
+// import VLazyImage from "v-lazy-image";
+</script>
 <script>
+import VLazyImage from "v-lazy-image";
+
 export default {
   name: "TeamCard",
+  components: { VLazyImage },
   props: ["profile"],
   data() {
     return {

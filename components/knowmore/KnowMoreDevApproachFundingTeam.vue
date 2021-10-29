@@ -23,7 +23,6 @@
                 class="
                   w-full
                   text-lg
-                  sm:text-base
                   font-asap
                   text-black
                   dark:text-white
@@ -84,11 +83,7 @@
                   href="https://github.com/fairdataihub/KnowMore"
                   target="_blank"
                   class="
-                    text-accent
-                    inline-flex
-                    items-center
-                    text-lg
-                    sm:text-base
+                    text-url hover-underline-animation
                   "
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
@@ -154,7 +149,6 @@
                 class="
                   w-full
                   text-lg
-                  sm:text-base
                   font-asap
                   text-black
                   dark:text-white
@@ -171,11 +165,7 @@
                   target="_blank"
                   rel="noopener"
                   class="
-                    text-accent
-                    inline-flex
-                    items-center
-                    text-lg
-                    sm:text-base
+                    text-url hover-underline-animation
                   "
                 >
                   <span class="font-lato">

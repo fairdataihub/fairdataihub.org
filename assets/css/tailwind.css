@@ -28,11 +28,43 @@
   }
 
   .docs-ul {
-    @apply ml-4 mb-2 font-asap text-black ;
+    @apply ml-4 mb-2 font-asap text-black;
   }
 
   .highlight-text {
     @apply bg-gray-300 px-2 rounded-md;
+  }
+
+  .hover-underline-animation {
+    @apply relative;
+  }
+
+  .text-url {
+    @apply text-accent  inline-flex items-center text-lg;
+  }
+
+  .hover-underline-animation:after {
+    @apply absolute w-full bottom-0 left-0 bg-light-accent h-[2px];
+    content: "";
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  .nav-item {
+    @apply relative sm:px-1 lg:px-3 py-2 mx-1;
+  }
+
+  .nav-item.router-link-active:after {
+    @apply absolute w-full bottom-0 left-0 bg-light-accent h-[2px] transition-all;
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    content: "";
   }
 
   /* ===== Scrollbar CSS ===== */

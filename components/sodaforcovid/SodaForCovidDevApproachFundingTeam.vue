@@ -19,16 +19,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  sm:text-base
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full font-asap text-lg text-black dark:text-white">
                 SODA for COVID-19 is distributed as an open-source application
                 with an MIT License. Anyone is free to fork our GitHub
                 repository and make their own changes if they would like. If you
@@ -82,13 +73,7 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
                   target="_blank"
-                  class="
-                    text-accent
-                    inline-flex
-                    items-center
-                    text-lg
-                    sm:text-base
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -149,16 +134,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  sm:text-base
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for COVID-19 Research is funded through a supplemental
                 award from the National Institute of Allergy and Infectious
                 Diseases (NIAID).
@@ -167,13 +143,7 @@
                 <a
                   href=""
                   target="_blank"
-                  class="
-                    text-accent
-                    inline-flex
-                    items-center
-                    text-lg
-                    sm:text-base
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato">
                     Explore the award on NIH Reporter
@@ -192,7 +162,7 @@
                 </a>
               </div>
             </dd>
-            <div class="py-3">
+            <div class="py-3 hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -326,22 +296,14 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  sm:text-base
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for COVID-19 Research is developed in collaboration with
-                Dr. Zicheng Hu (UCSF) and his colleagues at UCSF and Stanford
-                who are conducting a clinical trial for a novel treatment
-                approach for COVID-19. They will be providing overall guidance
-                on the applicable FAIR guidelines as well as conducting beta
-                testing of the software.
+                Dr. Zicheng Hu (UCSF) and his colleagues at University of
+                California, San Francisco and Stanford University who are
+                conducting a clinical trial for a novel treatment approach for
+                COVID-19. They will be providing overall guidance on the
+                applicable FAIR guidelines as well as conducting beta testing of
+                the software.
               </p>
             </dd>
           </div>

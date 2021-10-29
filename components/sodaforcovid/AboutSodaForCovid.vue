@@ -109,7 +109,7 @@ const features = [
     <div class="flex mt-2 md:mt-1">
       <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1" target="_blank" rel="noopener">
         <text
-          class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
+          class="text-url hover-underline-animation"
         >
           Learn more about COVID-19 
           <svg 
@@ -134,7 +134,7 @@ const features = [
       <div class="flex mt-2 md:mt-1">
       <a href="niaid.nih.gov/research/share-covid-19-research-data" target="_blank" rel="noopener">
         <text
-          class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
+          class="text-url hover-underline-animation"
         >
           Learn more about COVID-19 data sharing 
           <svg 

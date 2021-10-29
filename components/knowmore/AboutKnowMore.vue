@@ -110,7 +110,7 @@ const features = [
     <div class="flex mt-2 md:mt-1">
       <a href="https://sparc.science" target="_blank" rel="noopener">
         <text
-          class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
+          class="text-url hover-underline-animation"
         >
           Learn more about SPARC 
           <svg 
@@ -135,7 +135,7 @@ const features = [
       <div class="flex mt-2 md:mt-1">
       <a href="https://doi.org/10.1101/2021.02.10.430563" target="_blank" rel="noopener">
         <text
-          class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
+          class="text-url hover-underline-animation"
         >
           Learn more about SDS 
           <svg 

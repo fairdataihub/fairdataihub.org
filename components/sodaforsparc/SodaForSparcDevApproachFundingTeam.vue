@@ -23,7 +23,6 @@
                 class="
                   w-full
                   text-lg
-                  sm:text-base
                   font-asap
                   text-black
                   dark:text-white
@@ -82,11 +81,7 @@
                   href="https://github.com/fairdataihub/SODA-for-SPARC"
                   target="_blank"
                   class="
-                    text-accent
-                    inline-flex
-                    items-center
-                    text-lg
-                    sm:text-base
+                    text-url hover-underline-animation
                   "
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
@@ -152,10 +147,8 @@
                 class="
                   w-full
                   text-lg
-                  sm:text-base
                   font-asap
                   text-black
-                  dark:text-white
                 "
               >
                 SODA for SPARC is funded by the National Institutes of Health
@@ -169,11 +162,7 @@
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                   target="_blank"
                   class="
-                    text-accent
-                    inline-flex
-                    items-center
-                    text-lg
-                    sm:text-base
+                    text-url hover-underline-animation
                   "
                 >
                   <span class="font-lato">
@@ -331,14 +320,13 @@
                 class="
                   w-full
                   text-lg
-                  sm:text-base
                   font-asap
                   text-black
                   dark:text-white
                 "
               >
-                SODA for SPARC connects with several ressources developed by the
-                SPARC Data Ressource Center (DRC) and we therefore collaborate
+                SODA for SPARC connects with several resources developed by the
+                SPARC Data Resource Center (DRC) and we therefore collaborate
                 actively with the DRC teams throughout our development process.
               </p>
             </dd>

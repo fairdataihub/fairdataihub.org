@@ -14,5 +14,4 @@ export default defineNuxtConfig({
     SERVICE_ID: process.env.VUE_APP_SERVICE_ID,
     ACCESS_TOKEN: process.env.VUE_APP_ACCESS_TOKEN,
   },
-  dev: false,
 });

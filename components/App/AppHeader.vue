@@ -5,7 +5,7 @@
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 md:h-6 lg:h-7 w-auto"
-          viewBox="0 0 451.84 61.44" 
+          viewBox="0 0 451.84 61.44"
         >
           <path
             d="M475.44,366.35v1.21h8.22v7.54h-8.22v32.36H463.67V375.1h-4.29v-7.54h4.29V366.5c0-1.28,0-3.17.08-4.53.6-7.09,5.2-11.38,16.07-11.38a21.39,21.39,0,0,1,4.52.52v8c-4.9-.91-8.37.45-8.75,3.92A24.6,24.6,0,0,0,475.44,366.35Z"
@@ -74,19 +74,13 @@
             font-medium
           "
         >
-          <NuxtLink
-            to="/"
-            class="sm:px-1 lg:px-3 py-2 mx-1 rounded-lg hover:bg-gray-200"
-          >
+          <NuxtLink to="/" class="nav-item hover-underline-animation">
             Home
           </NuxtLink>
-          <NuxtLink
-            to="/team"
-            class="sm:px-1 lg:px-3 py-2 mx-1 rounded-lg hover:bg-gray-200"
-          >
+          <NuxtLink to="/team" class="nav-item hover-underline-animation">
             Meet The Team
           </NuxtLink>
-          <div class="relative group rounded-lg hover:bg-gray-200">
+          <div class="relative group rounded-lg">
             <button
               class="
                 flex flex-row
@@ -96,6 +90,7 @@
                 mx-1
                 py-2
                 font-medium
+                hover-underline-animation
               "
             >
               <div class="flex flex-row w-max justify-center items-center">
@@ -116,45 +111,47 @@
                 </svg>
               </div>
             </button>
-            <div class="absolute z-10 hidden group-hover:block right-4 w-max">
+            <div
+              class="absolute z-10 hidden group-hover:block py-1 right-4 w-max"
+            >
               <div
                 class="
-                  py-2
-                  bg-gray-800
+                  py-3
                   shadow-lg
+                  bg-gray-100
                   text-left text-md
                   rounded-lg
-                  text-white
+                  border-2 border-gray-200
                 "
               >
                 <div class="flex flex-col">
                   <NuxtLink
                     to="/sodaforsparc"
-                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                    class="my-2 nav-item hover-underline-animation"
                   >
                     SODA for SPARC
                   </NuxtLink>
                   <NuxtLink
                     to="/sodaforcovid"
-                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                    class="my-2 nav-item hover-underline-animation"
                   >
                     SODA for COVID-19 Research
                   </NuxtLink>
                   <NuxtLink
                     to="/knowmore"
-                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                    class="my-2 nav-item hover-underline-animation"
                   >
                     KnowMore
                   </NuxtLink>
                   <NuxtLink
                     to="/sparclink"
-                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                    class="my-2 nav-item hover-underline-animation"
                   >
                     SPARClink
                   </NuxtLink>
                   <NuxtLink
                     to="/aqua"
-                    class="px-4 py-2 hover:bg-gray-500 transition-all"
+                    class="my-2 nav-item hover-underline-animation"
                   >
                     AQUA
                   </NuxtLink>
@@ -162,11 +159,7 @@
               </div>
             </div>
           </div>
-
-          <NuxtLink
-            to="/contactus"
-            class="sm:px-1 lg:px-3 mx-1 py-2 rounded-lg hover:bg-gray-200"
-          >
+          <NuxtLink to="/contactus" class="nav-item hover-underline-animation">
             Contact Us
           </NuxtLink>
         </div>

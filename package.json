@@ -13,8 +13,7 @@
   ],
   "scripts": {
     "dev": "nuxt dev",
-    "build": "nuxt build",
-    "start": "node .output/server/index.mjs"
+    "build": "nuxt build"
   },
   "devDependencies": {
     "@heroicons/vue": "^1.0.5",
@@ -22,7 +21,7 @@
     "@nuxtjs/eslint-config": "^6.0.1",
     "autoprefixer": "^10.3.7",
     "eslint": "^8.1.0",
-    "nuxt3": "latest",
+    "nuxt3": "^3.0.0-27257216.f5aea9f",
     "postcss": "^8.3.11",
     "prettier": "^2.4.1",
     "tailwindcss": "^2.2.17",

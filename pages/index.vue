@@ -34,7 +34,7 @@
       <ProjectsCarousel :projectsList="projectsList"></ProjectsCarousel>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-gray-50 py-10">
+    <base-section data-aos="fade-in" class="bg-gray-50 py-10 ">
       <CollaboratorsSection></CollaboratorsSection>
     </base-section>
   </div>
