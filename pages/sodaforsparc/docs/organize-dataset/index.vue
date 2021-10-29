@@ -104,12 +104,13 @@
 
 <script>
 export default {
-  layout: "docs",scrollToTop: true,
+  layout: "docs",
+  scrollToTop: true,
 };
 </script>
 
 <style scoped language="postcss">
 ul {
-  @apply mb-2 font-lato text-black ;
+  @apply mb-2 font-lato text-black;
 }
 </style>

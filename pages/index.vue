@@ -1,25 +1,25 @@
 <template>
   <div class="divide-y divide-white bg-white">
     <div
+      data-aos="fade-in"
+      class="
+        bg-haikeiWavy bg-cover
+        2xl:bg-contain
+        bg-no-repeat bg-top
+        md:bg-right-top
+      "
+    >
+      <base-section
+        class="pt-12 sm:pt-16 dark:bg-dark-background mb-10"
         data-aos="fade-in"
-        class="
-          bg-haikeiWavy bg-cover
-          2xl:bg-contain
-          bg-no-repeat bg-top
-          md:bg-right-top
-        "
       >
-        <base-section
-          class="pt-12 sm:pt-16 dark:bg-dark-background mb-10"
-          data-aos="fade-in"
-        >
-          <hero-section></hero-section>
-        </base-section>
+        <hero-section></hero-section>
+      </base-section>
 
-        <base-section data-aos="fade-in" class="dark:bg-dark-background py-10">
-          <our-vision></our-vision>
-        </base-section>
-      </div>
+      <base-section data-aos="fade-in" class="dark:bg-dark-background py-10">
+        <our-vision></our-vision>
+      </base-section>
+    </div>
 
     <base-section class="bg-gray-50 py-10">
       <AboutUs></AboutUs>
@@ -34,7 +34,7 @@
       <ProjectsCarousel :projectsList="projectsList"></ProjectsCarousel>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-gray-50 py-10 ">
+    <base-section data-aos="fade-in" class="bg-gray-50 py-10">
       <CollaboratorsSection></CollaboratorsSection>
     </base-section>
   </div>

@@ -10,6 +10,6 @@ export default {
   ],
   mounted() {
     this.$router.push("/sodaforsparc/docs/getting-started/User-Interface");
-  }
+  },
 };
 </script>

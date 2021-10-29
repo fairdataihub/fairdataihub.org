@@ -37,6 +37,7 @@
 
 <script>
 export default {
-  layout: "docs",scrollToTop: true,
+  layout: "docs",
+  scrollToTop: true,
 };
 </script>

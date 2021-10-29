@@ -5,7 +5,6 @@
         class="
           font-bold
           text-2xl
-          
           sm:text-2xl
           md:text-3xl
           lg:text-5xl
@@ -17,16 +16,7 @@
         Impact on SPARC datasets
       </h2>
 
-      <h3
-        class="
-          
-          text-lg
-          md:text-xl
-          lg:text-2xl
-          text-center
-          dark:text-gray-50
-        "
-      >
+      <h3 class="text-lg md:text-xl lg:text-2xl text-center dark:text-gray-50">
         Trusted by researchers all over the world
       </h3>
     </div>

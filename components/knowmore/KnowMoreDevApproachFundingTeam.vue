@@ -19,15 +19,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 KnowMore is developed as an open-source application with an MIT
                 License. It is currently integrated into our fork of the SPARC
                 Portal and is not available in the official SPARC Portal
@@ -82,9 +74,7 @@
                 <a
                   href="https://github.com/fairdataihub/KnowMore"
                   target="_blank"
-                  class="
-                    text-url hover-underline-animation
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -145,15 +135,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 KnowMore was introduced as a project during the 2021 NIH SPARC
                 Codeathon with the aim of leveraging the FAIR characteristics of
                 the SPARC datasets to enable automated comparison across them.
@@ -164,9 +146,7 @@
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                   target="_blank"
                   rel="noopener"
-                  class="
-                    text-url hover-underline-animation
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato">
                     Learn more about the SPARC Codeathon

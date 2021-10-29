@@ -19,15 +19,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for SPARC is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
@@ -80,9 +72,7 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC"
                   target="_blank"
-                  class="
-                    text-url hover-underline-animation
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -143,14 +133,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  font-asap
-                  text-black
-                "
-              >
+              <p class="w-full text-lg font-asap text-black">
                 SODA for SPARC is funded by the National Institutes of Health
                 (NIH)'s SPARC program. The funding was initially provided as a
                 supplement to an existing SPARC award at CalMI<sup>2</sup>
@@ -161,9 +144,7 @@
                 <a
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                   target="_blank"
-                  class="
-                    text-url hover-underline-animation
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato">
                     Explore the award on NIH Reporter
@@ -316,15 +297,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for SPARC connects with several resources developed by the
                 SPARC Data Resource Center (DRC) and we therefore collaborate
                 actively with the DRC teams throughout our development process.

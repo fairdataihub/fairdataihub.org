@@ -140,10 +140,7 @@
               w-40
             "
           >
-            <img
-              src="~/assets/backgrounds/dot-grid-grey.svg"
-              alt="Grey grid"
-            />
+            <img src="~/assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
           </div>
           <!-- <v-lazy-image
             alt="SODA for SPARC logo"

@@ -37,7 +37,8 @@ import KnowMoreDevApproachFundingTeam from "~~/components/knowmore/KnowMoreDevAp
 import KnowMorePublications from "~~/components/knowmore/KnowMorePublications.vue";
 
 export default {
-  layout: "default",scrollToTop: true,
+  layout: "default",
+  scrollToTop: true,
   components: {
     KnowMoreHerosection,
     AboutKnowMore,

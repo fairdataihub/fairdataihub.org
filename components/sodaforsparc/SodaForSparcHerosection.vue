@@ -158,10 +158,7 @@
               w-40
             "
           >
-            <img
-              src="~/assets/backgrounds/dot-grid-grey.svg"
-              alt="Grey grid"
-            />
+            <img src="~/assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
           </div>
           <img src="https://i.ibb.co/HCxy4JH/soda-app-macos.png" alt="" />
           <!-- <v-lazy-image

@@ -4,7 +4,7 @@
       <h2
         class="
           my-2
-           font-extrabold
+          font-extrabold
           tracking-tight
           text-4xl
           sm:text-4xl

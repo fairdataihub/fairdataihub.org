@@ -3,7 +3,7 @@
     <div class="w-full flex flex-col">
       <h2
         class="
-           font-bold
+          font-bold
           text-2xl
           sm:text-2xl
           md:text-3xl
@@ -23,7 +23,7 @@
         :key="item.doi"
       >
         <a :href="item.doi" target="_blank" class="my-2">
-          <p class=" font-semibold text-xl">
+          <p class="font-semibold text-xl">
             {{ item.title }}
           </p>
         </a>

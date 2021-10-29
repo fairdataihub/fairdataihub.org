@@ -46,7 +46,8 @@ export default {
     SodaForSparcPublications,
   },
 
-  layout: "default",scrollToTop: true,
+  layout: "default",
+  scrollToTop: true,
 };
 </script>
 

@@ -26,7 +26,7 @@
       <div class="mb-3 print:my-1">
         <h2
           class="
-             font-semibold
+            font-semibold
             text-base text-black
             dark:text-white
             mb-2
@@ -216,7 +216,7 @@
       <div class="mb-3 print:my-1">
         <h2
           class="
-             font-semibold
+            font-semibold
             text-base text-black
             dark:text-white
             mb-2
@@ -458,7 +458,7 @@
       <div class="mb-3 print:my-1">
         <h2
           class="
-             font-semibold
+            font-semibold
             text-base text-black
             dark:text-white
             mb-2
@@ -630,7 +630,7 @@
       <div class="mb-3 print:my-1">
         <h2
           class="
-             font-semibold
+            font-semibold
             text-base text-black
             dark:text-white
             mb-2
@@ -672,7 +672,7 @@
       <div class="mb-3 print:my-1">
         <h2
           class="
-             font-semibold
+            font-semibold
             text-base text-black
             dark:text-white
             mb-2
@@ -725,7 +725,7 @@
       <div class="mb-3 print:my-1">
         <h2
           class="
-             font-semibold
+            font-semibold
             text-base text-black
             dark:text-white
             mb-2
@@ -796,7 +796,8 @@
 
 <script>
 export default {
-  layout: "docs",scrollToTop: true,
+  layout: "docs",
+  scrollToTop: true,
   data() {
     return {};
   },

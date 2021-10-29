@@ -19,15 +19,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 SPARClink was created as an open-source application with an MIT
                 License. Anyone is free to fork our GitHub repository and make
                 their own changes if they would like. If you would like to
@@ -80,9 +72,7 @@
                 <a
                   href="https://github.com/fairdataihub/SPARClink"
                   target="_blank"
-                  class="
-                    text-url hover-underline-animation
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -143,15 +133,7 @@
         <dl class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <dd class="mb-10 sm:mb-5 pr-10">
-              <p
-                class="
-                  w-full
-                  text-lg
-                  font-asap
-                  text-black
-                  dark:text-white
-                "
-              >
+              <p class="w-full text-lg font-asap text-black dark:text-white">
                 The SPARClink project was first born as an idea at the 2021 NIH
                 SPARC Codeathon. The idea behind the topic was created as a
                 method of visualizing citation data to determine the degree of
@@ -163,9 +145,7 @@
                   href="https://sparc.science/help/2021-sparc-fair-codeathon"
                   target="_blank"
                   rel="noopener"
-                  class="
-                    text-url hover-underline-animation
-                  "
+                  class="text-url hover-underline-animation"
                 >
                   <span class="font-lato">
                     Learn more about the SPARC Codeathon

@@ -5,7 +5,7 @@
         <p
           class="
             my-2
-             font-extrabold
+            font-extrabold
             tracking-tight
             dark:text-gray-50
             text-4xl
@@ -61,16 +61,7 @@
                   aria-hidden="true"
                 />
               </div>
-              <p
-                class="
-                  
-                  ml-16
-                  text-xl
-                  sm:text-lg
-                  font-medium
-                  dark:text-gray-50
-                "
-              >
+              <p class="ml-16 text-xl sm:text-lg font-medium dark:text-gray-50">
                 {{ feature.name }}
               </p>
             </dt>
