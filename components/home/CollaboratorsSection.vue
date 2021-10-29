@@ -64,7 +64,7 @@ export default {
       marqueeOptions: {
         duration: 40,
         gradient: true,
-        gradientColor: [249, 250, 251],
+        gradientColor: [255, 255, 255],
         gradientWidth: 125,
         clone: true,
       },

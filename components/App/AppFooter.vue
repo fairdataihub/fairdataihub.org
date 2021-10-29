@@ -1,7 +1,7 @@
 <template>
-  <footer class="bg-white pt-5" v-if="!isDocs">
+  <footer class="bg-gray-50 pt-5" v-if="!isDocs">
     <div class="container px-6 py-8 max-w-screen-lg mx-auto">
-      <div class="flex justify-center mb-8">
+      <div class="flex justify-center mb-8 mt-5">
         <div>
           <div
             class="
