@@ -349,15 +349,18 @@ export default {
       ],
     };
   },
-  methods: {},
-  mounted() {},
+  watch: {
+    $route() {
+      this.open = false;
+    },
+  },
 };
 </script>
 
 <style>
 .slidedown-enter-active,
 .slidedown-leave-active {
-  transition: all 0.5s ease-out;
+  transition: all 0.2s ease-out;
 }
 .slidedown-enter-to,
 .slidedown-leave-from {
