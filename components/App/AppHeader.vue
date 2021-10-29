@@ -1,0 +1,372 @@
+<template>
+  <nav class="min-w-screen debug-screens sticky top-0 z-30">
+    <div class="flex flex-row justify-between px-5 py-3 bg-gray-50">
+      <NuxtLink to="/" class="flex flex-row justify-center items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 md:h-6 lg:h-7 w-auto"
+          viewBox="0 0 451.84 61.44"
+        >
+          <path
+            d="M475.44,366.35v1.21h8.22v7.54h-8.22v32.36H463.67V375.1h-4.29v-7.54h4.29V366.5c0-1.28,0-3.17.08-4.53.6-7.09,5.2-11.38,16.07-11.38a21.39,21.39,0,0,1,4.52.52v8c-4.9-.91-8.37.45-8.75,3.92A24.6,24.6,0,0,0,475.44,366.35Z"
+            transform="translate(-459.38 -350.59)"
+          />
+          <path
+            d="M511.79,401.57l-1.81,4.3a18.36,18.36,0,0,1-10,2.64c-6.79,0-12.9-4.15-12.9-11.76,0-8.75,7.77-13.88,21.95-13.88h2.56v-.68a29.27,29.27,0,0,0-.15-3.47c-.22-2.41-2-4.38-5.58-4.38s-5.73,2.27-6,6.26H488.56c.23-9.2,8-14.4,17.8-14.4,11.92,0,16.22,5.2,16.82,12.37.15,1.88.23,4.15.23,6.48v12.22a69.8,69.8,0,0,0,.75,10.19H512.62Zm-.15-8.75v-2.94c-7.31-.6-12.37,1.21-12.37,5.88,0,3,2.19,4.61,5.43,4.61C508.25,400.37,511.64,397.8,511.64,392.82Z"
+            transform="translate(-459.38 -350.59)"
+          />
+          <path
+            d="M544.6,357.68c0,3.69-2.56,6-6.33,6s-6.26-2.34-6.26-6,2.49-6,6.26-6S544.6,354.06,544.6,357.68Zm-12.22,49.78V367.25h11.85v40.21Z"
+            transform="translate(-459.38 -350.59)"
+          />
+          <path
+            d="M578.39,366.5v9.58c-9.35-.6-13.35,3.17-13.35,14.56v16.82H553.2V367.25H565V375l3-5.58a10.61,10.61,0,0,1,7.31-3.17A16.24,16.24,0,0,1,578.39,366.5Z"
+            transform="translate(-459.38 -350.59)"
+          />
+          <path
+            d="M623.49,407.46H611.65v-6l-3,4.45c-2.27,1.74-6.26,2.64-10.34,2.64-11.09,0-17.8-8.45-17.8-20.36,0-14.41,8.83-21.95,19.16-21.95,3.32,0,7.32.83,9.35,2.11l2.64,4.22V352h11.84Zm-11.84-19.61V386c0-8.6-4.75-11.62-9.2-11.62-5.73,0-9.8,4.38-9.8,13.13,0,7.92,3.84,12.9,9.42,12.9C607.43,400.37,611.65,397.05,611.65,387.85Z"
+            transform="translate(-459.38 -350.59)"
+            fill="#CB128D"
+          />
+          <path
+            d="M655.09,401.57l-1.8,4.3a18.42,18.42,0,0,1-10,2.64c-6.79,0-12.9-4.15-12.9-11.76,0-8.75,7.77-13.88,22-13.88h2.56v-.68a29.27,29.27,0,0,0-.15-3.47c-.22-2.41-2-4.38-5.58-4.38s-5.73,2.27-6,6.26H631.86c.23-9.2,8-14.4,17.8-14.4,11.92,0,16.22,5.2,16.82,12.37.15,1.88.23,4.15.23,6.48v12.22a69.8,69.8,0,0,0,.75,10.19H655.92Zm-.15-8.75v-2.94c-7.31-.6-12.37,1.21-12.37,5.88,0,3,2.19,4.61,5.43,4.61C651.55,400.37,654.94,397.8,654.94,392.82Z"
+            transform="translate(-459.38 -350.59)"
+            fill="#CB128D"
+          />
+          <path
+            d="M689.86,392c0,1.36,0,2.72.08,3.77.3,4,1.66,4.91,7.69,4.53v7.54a45.92,45.92,0,0,1-7.31.61c-8.83,0-11.69-2.87-12.15-8.75-.15-2-.15-3.85-.15-6.11V375.1h-6.11v-7.54H678V357.45h11.84v10.11h8.53v7.54h-8.53Z"
+            transform="translate(-459.38 -350.59)"
+            fill="#CB128D"
+          />
+          <path
+            d="M726.82,401.57l-1.81,4.3a18.39,18.39,0,0,1-10,2.64c-6.78,0-12.89-4.15-12.89-11.76,0-8.75,7.77-13.88,22-13.88h2.56v-.68a29.27,29.27,0,0,0-.15-3.47c-.23-2.41-2-4.38-5.58-4.38-3.7,0-5.73,2.27-6,6.26H703.59c.23-9.2,8-14.4,17.8-14.4,11.92,0,16.22,5.2,16.82,12.37.15,1.88.23,4.15.23,6.48v12.22a69.8,69.8,0,0,0,.75,10.19H727.65Zm-.15-8.75v-2.94c-7.32-.6-12.37,1.21-12.37,5.88,0,3,2.19,4.61,5.43,4.61C723.28,400.37,726.67,397.8,726.67,392.82Z"
+            transform="translate(-459.38 -350.59)"
+            fill="#CB128D"
+          />
+          <path
+            d="M759.63,357.68c0,3.69-2.57,6-6.34,6s-6.26-2.34-6.26-6,2.49-6,6.26-6S759.63,354.06,759.63,357.68Zm-12.22,49.78V367.25h11.84v40.21Z"
+            transform="translate(-459.38 -350.59)"
+            fill="#000"
+          />
+          <path
+            d="M807.37,384.75v22.71H795.53v-20.9c0-1.51,0-3.54-.15-5.58-.3-4.07-2.57-6.64-7.17-6.64s-8.14,4.23-8.14,14.49v18.63H768.23V351.64h11.84v21.95l3.32-4.83a15.82,15.82,0,0,1,9.35-2.56c8.45,0,13.35,4.07,14.25,11.09A50.83,50.83,0,0,1,807.37,384.75Z"
+            transform="translate(-459.38 -350.59)"
+          />
+          <path
+            d="M854.21,407.46H842.44v-6.87L839.05,406a15.85,15.85,0,0,1-9.36,2.56c-8.29,0-13.27-4.67-14.18-10.18a51.19,51.19,0,0,1-.37-7.47V367.25H826.9V388.3a53.42,53.42,0,0,0,.31,5.5c.52,4.08,2.63,6.49,7.24,6.49,4.82,0,8-4.15,8-11.54v-21.5h11.77Z"
+            transform="translate(-459.38 -350.59)"
+          />
+          <path
+            d="M906.17,386.49c0,14.48-8.82,22-19.15,22-3.32,0-7.32-.83-9.36-2.11L875,402.18v5.28H863.18V352H875v21.27l3-4.45c2.26-1.74,6.26-2.64,10.33-2.64C899.46,366.2,906.17,374.65,906.17,386.49Zm-12.14.75c0-7.92-3.85-12.9-9.43-12.9S875,377.66,875,386.87v1.8c0,8.68,4.68,11.7,9.2,11.7C890,400.37,894,396,894,387.24Z"
+            transform="translate(-459.38 -350.59)"
+          />
+        </svg>
+      </NuxtLink>
+      <div class="hidden sm:block">
+        <div
+          class="
+            flex flex-row
+            justify-center
+            items-center
+            h-full
+            sm:text-sm
+            md:text-md
+            font-medium
+          "
+        >
+          <NuxtLink to="/" class="nav-item hover-underline-animation">
+            Home
+          </NuxtLink>
+          <NuxtLink to="/team" class="nav-item hover-underline-animation">
+            Meet The Team
+          </NuxtLink>
+          <div class="relative group rounded-lg">
+            <button
+              class="
+                flex flex-row
+                items-center
+                sm:px-1
+                lg:px-3
+                mx-1
+                py-2
+                font-medium
+                hover-underline-animation
+              "
+            >
+              <div class="flex flex-row w-max justify-center items-center">
+                Our Projects
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  class="w-4 h-4 text-lg transition-all ml-2"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="absolute z-10 hidden group-hover:block py-1 right-4 w-max"
+            >
+              <div
+                class="
+                  py-3
+                  shadow-lg
+                  bg-gray-100
+                  text-left text-md
+                  rounded-lg
+                  border-2 border-gray-200
+                "
+              >
+                <div class="flex flex-col">
+                  <NuxtLink
+                    to="/sodaforsparc"
+                    class="my-2 nav-item hover-underline-animation"
+                  >
+                    SODA for SPARC
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/sodaforcovid"
+                    class="my-2 nav-item hover-underline-animation"
+                  >
+                    SODA for COVID-19 Research
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/knowmore"
+                    class="my-2 nav-item hover-underline-animation"
+                  >
+                    KnowMore
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/sparclink"
+                    class="my-2 nav-item hover-underline-animation"
+                  >
+                    SPARClink
+                  </NuxtLink>
+                  <NuxtLink
+                    to="/aqua"
+                    class="my-2 nav-item hover-underline-animation"
+                  >
+                    AQUA
+                  </NuxtLink>
+                </div>
+              </div>
+            </div>
+          </div>
+          <NuxtLink to="/contactus" class="nav-item hover-underline-animation">
+            Contact Us
+          </NuxtLink>
+        </div>
+      </div>
+
+      <!-- Mobile menu hamburger -->
+      <div class="block sm:hidden">
+        <button
+          class="text-gray-500 w-10 h-10 relative focus:outline-none"
+          @click="open = !open"
+        >
+          <span class="sr-only">Open main menu</span>
+          <div
+            class="
+              block
+              w-5
+              absolute
+              left-1/2
+              top-1/2
+              transform
+              -translate-x-1/2 -translate-y-1/2
+            "
+          >
+            <span
+              aria-hidden="true"
+              class="
+                block
+                absolute
+                h-1
+                w-6
+                bg-light-accent
+                transform
+                transition
+                duration-500
+                ease-in-out
+              "
+              :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="
+                block
+                absolute
+                h-1
+                w-6
+                bg-light-accent
+                transform
+                transition
+                duration-500
+                ease-in-out
+              "
+              :class="{ 'opacity-0': open }"
+            ></span>
+            <span
+              aria-hidden="true"
+              class="
+                block
+                absolute
+                h-1
+                w-6
+                bg-light-accent
+                transform
+                transition
+                duration-500
+                ease-in-out
+              "
+              :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
+            ></span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <transition name="slidedown" appear>
+      <div class="fixed w-screen bg-white z-10 shadow-sm" v-if="open">
+        <div class="pt-2 pb-3">
+          <NuxtLink
+            v-for="item in mobileNavigation"
+            :key="item.name"
+            :to="item.href"
+            class="
+              text-black
+              block
+              px-3
+              py-2
+              rounded-md
+              text-base text-center
+              font-medium
+              z-20
+              transition-all
+              mobile-menu
+              hover:bg-light-accent hover:text-white
+            "
+          >
+            {{ item.name }}
+          </NuxtLink>
+        </div>
+      </div>
+    </transition>
+  </nav>
+</template>
+
+<script>
+export default {
+  name: "AppHeader",
+  data() {
+    return {
+      open: false,
+      dev: process.env.NODE_ENV !== "production",
+      mobileNavigation: [
+        { name: "Home", href: "/", id: "nav-home", showOnDesktop: true },
+        {
+          name: "Meet The Team",
+          href: "/team",
+          id: "nav-team",
+          showOnDesktop: true,
+        },
+        {
+          name: "SODA for SPARC",
+          href: "/sodaforsparc",
+          id: "nav-sodaforsparc",
+          showOnDesktop: false,
+        },
+        {
+          name: "SODA for COVID-19 Research",
+          href: "/sodaforcovid",
+          id: "nav-sodaforcovid",
+          showOnDesktop: false,
+        },
+        {
+          name: "KnowMore",
+          href: "/knowmore",
+          id: "nav-knowmore",
+          showOnDesktop: false,
+        },
+        {
+          name: "SPARClink",
+          href: "/sparclink",
+          id: "nav-sparclink",
+          showOnDesktop: false,
+        },
+        { name: "AQUA", href: "/aqua", id: "nav-aqua", showOnDesktop: false },
+        {
+          name: "Contact Us",
+          href: "/contactus",
+          id: "nav-contactus",
+          showOnDesktop: true,
+        },
+      ],
+      desktopMainNavbar: [
+        { name: "Home", href: "/", id: "nav-home" },
+        {
+          name: "Meet The Team",
+          href: "/team",
+          id: "nav-team",
+        },
+        {
+          name: "Contact Us",
+          href: "/contactus",
+          id: "nav-contactus",
+          showOnDesktop: true,
+        },
+      ],
+      desktopProjectsBar: [
+        {
+          name: "SODA for SPARC",
+          href: "/sodaforsparc",
+          id: "nav-sodaforsparc",
+        },
+        {
+          name: "SODA for COVID-19 Research",
+          href: "/sodaforcovid",
+          id: "nav-sodaforcovid",
+        },
+        {
+          name: "KnowMore",
+          href: "/knowmore",
+          id: "nav-knowmore",
+        },
+        {
+          name: "SPARClink",
+          href: "/sparclink",
+          id: "nav-sparclink",
+        },
+        { name: "AQUA", href: "/aqua", id: "nav-aqua" },
+      ],
+    };
+  },
+  methods: {},
+  mounted() {},
+};
+</script>
+
+<style>
+.slidedown-enter-active,
+.slidedown-leave-active {
+  transition: all 0.5s ease-out;
+}
+.slidedown-enter-to,
+.slidedown-leave-from {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.slidedown-enter-from,
+.slidedown-leave-to {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+</style>

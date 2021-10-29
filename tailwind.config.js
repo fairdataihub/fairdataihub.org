@@ -1,19 +1,16 @@
-const defaultTheme = require("tailwindcss/defaultTheme");
-
 module.exports = {
   mode: "jit",
   purge: [
-    "./public/**/*.html",
-    "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx,html}",
+    "./components/**/*.{vue,js}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./nuxt.config.{js,ts}",
     "./node_modules/vue3-carousel/dist/carousel.css",
   ],
-  darkMode: "class", // or 'media' or 'class'
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      zIndex: {
-        "-1": "-1",
-      },
       fontFamily: {
         lato: ["Lato"],
         inter: ["Inter"],
@@ -23,16 +20,12 @@ module.exports = {
         print: { raw: "print" },
         "3xl": "2400px",
       },
-      boxShadow: {
-        white:
-          "0 10px 15px -3px rgba(255,255,255, 0.1),  0 4px 6px -2px rgba(255,255,255, 0.05)",
-      },
-      backgroundImage: () => ({
+      backgroundImage: {
         haikeiWavy: "url('./assets/backgrounds/wavy-background.svg')",
         haikeiCircleScatter:
           "url('./assets/backgrounds/circle-scatter-haikei.svg')",
         patternRandomized: "url('./assets/backgrounds/pattern-randomized.svg')",
-      }),
+      },
     },
     textColor: (theme) => ({
       ...theme("colors"),
@@ -55,9 +48,6 @@ module.exports = {
       ...theme("colors"),
       "light-accent": "#CD329F",
     }),
-    fontFamily: {
-      sans: [...defaultTheme.fontFamily.sans],
-    },
   },
   variants: {
     extend: {
@@ -65,5 +55,5 @@ module.exports = {
       display: ["dark"],
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-debug-screens")],
 };
