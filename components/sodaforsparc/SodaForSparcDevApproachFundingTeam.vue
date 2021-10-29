@@ -403,7 +403,7 @@ export default {
           name: "FAIR Data Informatics Lab",
           href: "https://www.fdilab.org/",
           image:
-            "https://images.squarespace-cdn.com/content/v1/5c69f76f0cf57dde0186bd67/1556848982638-TROTINLLKBZD5WSAPP76/fdi+logo+final+-+white2_white+copy_white+copy.png?format=1500w",
+            "https://i.ibb.co/XLGBZvG/fdilab-inverted-logo.png",
         },
         {
           name: "MBF Bioscience",
