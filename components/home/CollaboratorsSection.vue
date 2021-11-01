@@ -29,7 +29,7 @@
           class="mx-4 py-2"
         />
         <img
-          src="https://i.ibb.co/XLGBZvG/fdilab-inverted-logo.png"
+          src="https://i.ibb.co/tJ6PmYs/FDILab-Trans-Logo.png"
           alt="FDI Lab logo"
           width="200"
           class="mx-4 py-2"
