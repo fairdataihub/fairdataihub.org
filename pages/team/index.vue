@@ -179,6 +179,32 @@ export default {
           },
         },
         {
+          id: "JacobClark",
+          name: "Jacob Clark (he/him)",
+          title: "Software Developer",
+          bio: "Jacob is a full-stack developer out of Fresno, CA that strives to create applications that are performant, easy to use, and create value for users. In his free time, Jacob enjoys reading, rock climbing, and playing basketball.",
+          image: "https://i.ibb.co/q7NyZpw/jacob.jpg",
+          placeholder: "https://i.ibb.co/qJRYXVh/jacob-min.jpg",
+          borderTop: true,
+          borderBottom: false,
+          education: [
+            `B.Sc. in Computer Science (Western Governors University, Salt Lake City, 2021)`,
+          ],
+          twitter: {
+            show: false,
+            link: "https://twitter.com",
+          },
+          github: {
+            show: true,
+            link: "https://github.com/JacobiClark",
+          },
+          linkedin: {
+            show: true,
+            link: "https://www.linkedin.com/in/jacob-clarksd/",
+          },
+        },
+
+        {
           id: "DorianPortillo",
           name: "Dorian Portillo (they/them)",
           title: "Volunteer Developer",
