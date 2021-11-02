@@ -1,7 +1,20 @@
 <template>
   <base-section class="">
     <section
-      class="text-black body-font dark:bg-dark-background flex flex-col md:flex-row gap-4 mx-auto mb-8 md:mb-0 justify-between items-center max-w-screen-2xl"
+      class="
+        text-black
+        body-font
+        dark:bg-dark-background
+        flex flex-col
+        md:flex-row
+        gap-4
+        mx-auto
+        mb-8
+        md:mb-0
+        justify-between
+        items-center
+        max-w-screen-2xl
+      "
     >
       <div class="flex flex-col lg:flex-row w-11/12 mx-auto">
         <div class="w-full lg:w-1/3 p-5">
@@ -63,8 +76,7 @@ export default {
           id: "BhaveshPatel",
           name: "Bhavesh Patel (he/him)",
           title: "Founder/Lead",
-          bio:
-            "Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
+          bio: "Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
           image: "https://i.ibb.co/D8g0cdH/Pics-Art-08-25-09-29-37.jpg",
           placeholder:
             "https://i.ibb.co/s906YLv/Pics-Art-08-25-09-29-37-min.jpg",
@@ -93,8 +105,7 @@ export default {
           id: "TramNgo",
           name: "Tram Ngo (she/her)",
           title: "Software Developer",
-          bio:
-            "Tram's professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In her free time, she enjoys reading, cooking, doing pilates and yoga.",
+          bio: "Tram's professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In her free time, she enjoys reading, cooking, doing pilates and yoga.",
           image: "https://i.ibb.co/vjdt62f/Tram-s-Profile-pic.jpg",
           placeholder: "https://i.ibb.co/jLsyBqL/Tram-s-Profile-pic-min.jpg",
           borderTop: true,
@@ -119,8 +130,7 @@ export default {
           id: "SanjaySoundarajan",
           name: "Sanjay Soundarajan (he/him)",
           title: "Software Developer",
-          bio:
-            "Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
+          bio: "Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
           image: "https://i.ibb.co/C8vSG2Y/IMG-9079.jpg",
           placeholder: "https://i.ibb.co/NnrHkTW/sanjay-min.jpg",
           borderTop: true,
@@ -147,8 +157,7 @@ export default {
           id: "ChristopherMarroquin",
           name: "Christopher Marroquin (he/him)",
           title: "Software Developer",
-          bio:
-            "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
+          bio: "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
           image: "https://i.ibb.co/44xrNNw/aaron.jpg",
           placeholder: "https://i.ibb.co/PzbxbDf/aaron-min.jpg",
           borderTop: true,
@@ -173,8 +182,7 @@ export default {
           id: "JacobClark",
           name: "Jacob Clark (he/him)",
           title: "Software Developer",
-          bio:
-            "Jacob is a full-stack developer out of Fresno, CA that strives to create applications that are performant, easy to use, and create value for users. In his free time, Jacob enjoys reading, rock climbing, and playing basketball.",
+          bio: "Jacob is a full-stack developer out of Fresno, CA that strives to create applications that are performant, easy to use, and create value for users. In his free time, Jacob enjoys reading, rock climbing, and playing basketball.",
           image: "https://i.ibb.co/q7NyZpw/jacob.jpg",
           placeholder: "https://i.ibb.co/qJRYXVh/jacob-min.jpg",
           borderTop: true,
@@ -200,8 +208,7 @@ export default {
           id: "DorianPortillo",
           name: "Dorian Portillo (they/them)",
           title: "Volunteer Developer",
-          bio:
-            "Dorian is a frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
+          bio: "Dorian is a frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
           image: "https://i.ibb.co/bB875fB/IMG-6470.jpg",
           placeholder: "https://i.ibb.co/bB875fB/IMG-6470-min.jpg",
           borderTop: true,
@@ -226,8 +233,7 @@ export default {
           id: "Ismail-Qaddoura",
           name: "Ismail Qaddoura (he/him)",
           title: "Information Technology (IT) Manager",
-          bio:
-            "Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.",
+          bio: "Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.",
           image: "https://i.ibb.co/0XDxPF9/ismail2.jpg",
           placeholder: "https://i.ibb.co/q0ccLZN/ismail-min.jpg",
           borderTop: true,
