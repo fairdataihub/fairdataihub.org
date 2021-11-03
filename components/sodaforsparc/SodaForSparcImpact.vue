@@ -50,7 +50,7 @@
             md:text-5xl
             lg:text-6xl
             text-center
-            hidden
+            
           "
         >
           {{ item.num }}
@@ -83,17 +83,17 @@ export default {
         {
           name: "Files touched",
           class: "files",
-          num: 16300,
+          num: "16300",
         },
         {
           name: "Datasets modified",
           class: "datasets",
-          num: 60,
+          num: "60",
         },
         {
           name: "Data uploaded",
           class: "data",
-          num: 3.5+,
+          num: "3.5+",
         },
       ],
     };
