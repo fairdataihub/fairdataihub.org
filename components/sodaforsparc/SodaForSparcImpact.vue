@@ -82,12 +82,12 @@ export default {
         {
           name: "Files touched",
           class: "files",
-          num: "16300",
+          num: "16300+",
         },
         {
           name: "Datasets modified",
           class: "datasets",
-          num: "60",
+          num: "60+",
         },
         {
           name: "Data uploaded",
