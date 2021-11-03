@@ -50,7 +50,6 @@
             md:text-5xl
             lg:text-6xl
             text-center
-            
           "
         >
           {{ item.num }}
