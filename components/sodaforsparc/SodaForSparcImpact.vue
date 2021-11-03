@@ -35,7 +35,8 @@
             sm:text-4xl
             md:text-5xl
             lg:text-6xl
-            text-center hidden
+            text-center
+            hidden
           "
           :data-inviewport="item.class"
         ></p>
@@ -48,9 +49,12 @@
             sm:text-4xl
             md:text-5xl
             lg:text-6xl
-            text-center hidden
+            text-center
+            hidden
           "
-        >{{ item.num }}</p>
+        >
+          {{ item.num }}
+        </p>
 
         <p
           class="
