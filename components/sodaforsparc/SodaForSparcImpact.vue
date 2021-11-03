@@ -35,10 +35,22 @@
             sm:text-4xl
             md:text-5xl
             lg:text-6xl
-            text-center
+            text-center hidden
           "
           :data-inviewport="item.class"
         ></p>
+
+        <p
+          class="
+            my-1
+            font-lato font-bold
+            text-5xl
+            sm:text-4xl
+            md:text-5xl
+            lg:text-6xl
+            text-center hidden
+          "
+        >{{ item.num }}</p>
 
         <p
           class="
@@ -67,14 +79,17 @@ export default {
         {
           name: "Files touched",
           class: "files",
+          num: 16300,
         },
         {
           name: "Datasets modified",
           class: "datasets",
+          num: 60,
         },
         {
           name: "Data uploaded",
           class: "data",
+          num: 3.5+,
         },
       ],
     };
