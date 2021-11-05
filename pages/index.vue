@@ -109,7 +109,9 @@ export default {
   },
   watch: {},
   methods: {},
-  mounted() {},
+  mounted() {
+    window.scrollTo(0, 0)
+  },
 };
 </script>
 

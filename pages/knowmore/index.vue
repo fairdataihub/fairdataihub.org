@@ -45,6 +45,9 @@ export default {
     KnowMoreDevApproachFundingTeam,
     KnowMorePublications,
   },
+  mounted() {
+    window.scrollTo(0, 0)
+  },
 };
 </script>
 
