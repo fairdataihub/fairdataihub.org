@@ -184,7 +184,9 @@ export default {
         target: "_blank",
         href: downloadLink,
       }).click();
-      this.$router.push({ path: "/sodaforsparc/docs/getting-started/Download-Soda" });
+      this.$router.push({
+        path: "/sodaforsparc/docs/getting-started/Download-Soda",
+      });
     },
     getOS: async function () {
       let userAgent = window.navigator.userAgent;
