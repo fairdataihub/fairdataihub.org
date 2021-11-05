@@ -391,6 +391,11 @@ export default {
           href: "/team/#ChristopherMarroquin",
           image: "https://i.ibb.co/42PyRHs/IMG-1231-4.jpg",
         },
+        {
+          name: "Jacob Clark",
+          href: "/team/#JacobClark",
+          image: "https://i.ibb.co/Hgdr4y0/jacob-head.jpg",
+        },
       ],
       collaboratorsList: [
         {
