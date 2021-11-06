@@ -140,19 +140,56 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
   name: "TeamCard",
-  props: ["profile"],
-  setup({ profile }) {
-    let borderClasses = `flex py-4 px-1 lg:p-10 border-grey-800 `;
+  props: {
+    profile: {
+      type: Object,
+      required: false,
+      default() {
+        return {
+          id: "",
+          name: "",
+          title: "",
+          bio: "",
+          image:
+            "https://images.unsplash.com/photo-1582736317407-371893d9e146?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+          placeholder:
+            "https://images.unsplash.com/photo-1582736317407-371893d9e146?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80",
+          borderTop: false,
+          borderBottom: false,
+          education: [],
+          twitter: {
+            show: false,
+            link: "https://twitter.com",
+          },
+          github: {
+            show: false,
+            link: "https://github.com",
+          },
+          linkedin: {
+            show: false,
+            link: "https://www.linkedin.com",
+          },
+        };
+      },
+    },
+  },
+  setup(props) {
+    let borderClasses = ref("flex py-4 px-1 lg:p-10 border-grey-800 ");
 
-    if (profile["borderTop"]) {
-      borderClasses += "sm:border-t sm:border-gray-200 dark:sm:border-gray-800";
+    if (props.profile) {
+      if (props.profile["borderTop"]) {
+        borderClasses +=
+          "sm:border-t sm:border-gray-200 dark:sm:border-gray-800";
+      }
+      if (props.profile["borderBottom"]) {
+        borderClasses +=
+          "sm:border-b sm:border-gray-200 dark:sm:border-gray-800";
+      }
     }
-    if (profile["borderBottom"]) {
-      borderClasses += "sm:border-b sm:border-gray-200 dark:sm:border-gray-800";
-    }
-
     return {
       borderClasses,
     };
