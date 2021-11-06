@@ -5,7 +5,17 @@
 
     <div class="flex flex-col mb-3 print:mb-1">
       <base-docs-subtitle>
-        Checklist: prepare and submit SPARC datasets with SODA
+        <template v-slot:default>
+          Checklist: Prepare and submit SPARC datasets with SODA
+        </template>
+        <template v-slot:actionArea>
+          <button
+            class="text-url hover-underline-animation mb-1 print:hidden"
+            @click="printPage"
+          >
+            Print this page
+          </button>
+        </template>
       </base-docs-subtitle>
       <h3
         class="
@@ -800,6 +810,11 @@ export default {
   scrollToTop: true,
   data() {
     return {};
+  },
+  methods: {
+    printPage() {
+      window.print();
+    },
   },
 };
 </script>
