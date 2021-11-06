@@ -140,7 +140,6 @@
 </template>
 
 <script>
-import { ref } from "vue";
 
 export default {
   name: "TeamCard",
@@ -178,7 +177,7 @@ export default {
     },
   },
   setup(props) {
-    let borderClasses = ref("flex py-4 px-1 lg:p-10 border-grey-800 ");
+    let borderClasses = "flex py-4 px-1 lg:p-5 border-grey-800 ";
 
     if (props.profile) {
       if (props.profile["borderTop"]) {
