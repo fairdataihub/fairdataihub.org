@@ -1,5 +1,8 @@
 <template>
   <div>
+    <Head>
+      <Link rel="canonical" :href="`https://fairdataihub.org${$route.path}`" />
+    </Head>
     <AppHeader></AppHeader>
     <base-section class="print:pt-0 dark:bg-dark-background">
       <div

@@ -79,7 +79,6 @@ export default {
           content: "https://i.ibb.co/svDc3xk/image.png",
         },
       ],
-      link: [{ rel: "canonical", href: "https://fairdataihub.org" }],
     });
   },
 };

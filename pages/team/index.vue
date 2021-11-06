@@ -69,6 +69,12 @@ export default {
   components: { TeamCard },
   layout: "default",
   scrollToTop: true,
+  // setup() {
+
+  //   useMeta({
+  //     link: [{ rel: "canonical", href: "https://fairdataihub.org" }],
+  //   });
+  // },
   data() {
     return {
       teamsList: [
