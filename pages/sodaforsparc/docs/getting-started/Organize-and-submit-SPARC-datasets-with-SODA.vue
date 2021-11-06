@@ -1,12 +1,14 @@
 <template>
   <div>
-    <base-docs-title :title="`Organize and submit SPARC datasets with SODA`">
+    <base-docs-title
+      :title="`Checklist to organize and submit SPARC datasets with SODA`"
+    >
     </base-docs-title>
 
     <div class="flex flex-col mb-3 print:mb-1">
       <base-docs-subtitle>
         <template v-slot:default>
-          Checklist: Prepare and submit SPARC datasets with SODA
+          Prepare and submit SPARC datasets with SODA
         </template>
         <template v-slot:actionArea>
           <button
