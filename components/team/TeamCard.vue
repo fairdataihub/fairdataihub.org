@@ -140,7 +140,6 @@
 </template>
 
 <script>
-
 export default {
   name: "TeamCard",
   props: {
