@@ -63,10 +63,11 @@ export default {
   },
   mounted() {
     const hash = this.$route.hash;
-    console.log(this.$refs.slotWrapper.textContent);
+
     this.subtitleID = this.$refs.slotWrapper.textContent
       .trim()
       .replace(/\s+/g, "-");
+
     if (hash != "") {
       const id = hash.substring(1);
       setTimeout(() => {
@@ -74,8 +75,8 @@ export default {
           const el = document.getElementById(id);
           el.scrollIntoView({
             behavior: "smooth",
-            block: "center",
-            inline: "center",
+            block: "start",
+            inline: "start",
           });
         } else {
           setTimeout(() => {
