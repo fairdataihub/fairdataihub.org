@@ -6690,6 +6690,11 @@ vue-bundle-renderer@^0.3.2:
   dependencies:
     bundle-runner "^0.0.1"
 
+vue-class-component@^8.0.0-0:
+  version "8.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz#db692cd97656eb9a08206c03d0b7398cdb1d9420"
+  integrity sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==
+
 vue-eslint-parser@^7.10.0:
   version "7.11.0"
   resolved "https://registry.yarnpkg.com/vue-eslint-parser/-/vue-eslint-parser-7.11.0.tgz#214b5dea961007fcffb2ee65b8912307628d0daf"
@@ -6746,10 +6751,12 @@ vue3-carousel@^0.1.28:
   resolved "https://registry.yarnpkg.com/vue3-carousel/-/vue3-carousel-0.1.28.tgz#9a140c3aee01b91cedf22fd9770501a555a375de"
   integrity sha512-9l0An73u+CMUcuzCadCqKIDjWLiR82q40EYDjEFtmT46+iVYvfRGlQ6ydTUWnqGmlALVgNrxSLxImyxPg5+Iyw==
 
-vue3-marquee@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/vue3-marquee/-/vue3-marquee-1.0.0.tgz#00e87681d497a20cd9946f4a93340e6b0313bf1e"
-  integrity sha512-Z7wi2Bj9gSCMnkCrcl6qX/nbNTmj71nvudhjYsadhj2wgSb117xOW44wzcOcAFGAMELScVejmN/w3c5E7t2Cfg==
+vue3-marquee@^2.0.1-beta:
+  version "2.0.1-beta"
+  resolved "https://registry.yarnpkg.com/vue3-marquee/-/vue3-marquee-2.0.1-beta.tgz#3be127b4d12319d8f24d78f5fb2dc8d23a0628cc"
+  integrity sha512-U6EEB5bJ0m34lCXXRM54VjPSqrANKqa0QXmclfFRdCvuxObqQwUPcQ8SVJ1JWbg7nAL2xVwQPU47hkVEtqFwbw==
+  dependencies:
+    vue-class-component "^8.0.0-0"
 
 vue@^3.2.20:
   version "3.2.20"

@@ -15,7 +15,13 @@
       </p>
     </div>
     <div class="block">
-      <Vue3Marquee :options="marqueeOptions">
+      <Vue3Marquee
+        :duration="40"
+        :gradient="true"
+        :gradientColor="[255, 255, 255]"
+        gradientWidth="125px"
+        :clone="true"
+      >
         <img
           src="https://i.ibb.co/CKXDZzf/ucsf-logo.png"
           alt="UCSF logo"

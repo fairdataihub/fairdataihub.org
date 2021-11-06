@@ -38,7 +38,7 @@
     "path": "^0.12.7",
     "v-lazy-image": "^2.0.1",
     "vue3-carousel": "^0.1.28",
-    "vue3-marquee": "^1.0.0"
+    "vue3-marquee": "^2.0.1-beta"
   },
   "browserslist": [
     "> 1%",
