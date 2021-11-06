@@ -258,16 +258,38 @@ export default {
       ],
     };
   },
+  methods: {
+    checkIfElementExists(id) {
+      if (document) {
+        const el = document.getElementById(id);
+        if (el) {
+          return true;
+        } else {
+          return false;
+        }
+      } else {
+        return false;
+      }
+    },
+  },
   mounted() {
     const hash = this.$route.hash;
     if (hash != "") {
       const id = hash.substring(1);
-      const el = document.getElementById(id);
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "center",
-      });
+      setTimeout(() => {
+        if (this.checkIfElementExists(id)) {
+          const el = document.getElementById(id);
+          el.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "center",
+          });
+        } else {
+          setTimeout(() => {
+            this.checkIfElementExists(id);
+          }, 100);
+        }
+      }, 100);
     }
   },
 };

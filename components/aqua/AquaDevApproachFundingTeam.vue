@@ -300,23 +300,23 @@ export default {
         },
         {
           name: "Laila Bekhet",
-          href: "/aqua/#",
+          href: "",
           image: "https://avatars.dicebear.com/api/jdenticon/LailaBekhet.svg",
         },
         {
           name: "Yuda Munarko",
-          href: "/aqua/#",
+          href: "",
           image: "https://avatars.dicebear.com/api/jdenticon/YudaMunarko.svg",
         },
         {
           name: "Niloofar Shahidi",
-          href: "/aqua/#",
+          href: "",
           image:
             "https://avatars.dicebear.com/api/jdenticon/NiloofarShahidi.svg",
         },
         {
           name: "Xuanzhi ",
-          href: "/aqua/#",
+          href: "",
           image: "https://avatars.dicebear.com/api/jdenticon/Xuanzhi.svg",
         },
       ],

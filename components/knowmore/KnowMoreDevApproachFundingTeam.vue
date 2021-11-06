@@ -300,17 +300,17 @@ export default {
         },
         {
           name: "Ryan Quey",
-          href: "/knowmore/#",
+          href: "",
           image: "https://avatars.dicebear.com/api/jdenticon/RyanQuey.svg",
         },
         {
           name: "Anmol Kiran",
-          href: "/knowmore/#",
+          href: "",
           image: "https://avatars.dicebear.com/api/jdenticon/AnmolKiran.svg",
         },
         {
           name: "Matthew Schiefer",
-          href: "/knowmore/#",
+          href: "",
           image:
             "https://avatars.dicebear.com/api/jdenticon/MatthewSchiefer.svg",
         },
