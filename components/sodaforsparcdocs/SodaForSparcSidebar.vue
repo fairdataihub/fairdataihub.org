@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-light-background ">
+  <div class="relative bg-light-background">
     <div class="hidden sm:flex flex-col sm:flex-row sm:justify-around">
       <div class="sm:w-52 md:w-56 lg:w-60">
         <nav class="mt-4 px-6 lg:px-3">

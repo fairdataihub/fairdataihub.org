@@ -29,10 +29,7 @@
             print:hidden
           "
         >
-          <div
-            class="top-0 absolute bottom-0"
-            style="overflow-y: scroll"
-          >
+          <div class="top-0 absolute bottom-0" style="overflow-y: scroll">
             <SodaForSparcSidebar :sidebarList="sidebarList" />
           </div>
         </div>
