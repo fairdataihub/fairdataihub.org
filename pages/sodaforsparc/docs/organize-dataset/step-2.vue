@@ -9,12 +9,12 @@
       <div class="p-parent-div">
         <p>
           Select the high-level folder(s) to be included in your dataset. Refer
-          to the description provided in the figure
+          to the
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset#background"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span> here</span>
+            <span> description provided in the figure </span>
           </NuxtLink>
           about the content of each folder to determine which folder you need
           for your dataset. A high-level folder can only be included from Step 2
@@ -28,6 +28,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/high-level-folders-1.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
     </div>

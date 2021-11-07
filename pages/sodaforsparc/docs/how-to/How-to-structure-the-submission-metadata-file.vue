@@ -42,13 +42,14 @@
           Format: the submission file is accepted in either xlsx, csv, or json
           format. SODA generates it in the xlsx format based on the template
           provided by the Curation Team. A screenshot is provided below:
-        </li>
 
-        <div class="img-parent-div">
-          <img
-            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/submission-template.PNG?raw=true"
-          />
-        </div>
+          <div class="img-parent-div">
+            <img
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/submission-template.PNG?raw=true"
+              alt="screenshot of sample submission file"
+            />
+          </div>
+        </li>
 
         <li>
           Location in the dataset: The submission file must be included in the
@@ -59,35 +60,36 @@
           Content: The "Submission Item" and "Value" columns are mandatory (the
           "Definition" column could be kept or removed). Each of the three
           "Submission Item" element must be provided a "Value".
+
+          <ul class="docs-ul list-outside list-disc">
+            <li>SPARC Award number: The number of your SPARC award.</li>
+
+            <li>
+              Milestone achieved: This milestone must match exactly with one of
+              the milestones agreed with the NIH in the Dataset Deliverables
+              document. A screenshot of a sample Dataset Deliverables document
+              is provided below. In case the dataset isn't related to a
+              pre-agreed dataset, it should be explicitly mentioned (e.g., "Not
+              included in the Dataset Deliverables document").
+            </li>
+
+            <li>
+              Milestone completion date: This date must match exactly with the
+              completion date agreed with the NIH in the Dataset Deliverables
+              document for the above mentioned "Milestone achieved". In the case
+              the dataset isn't related to a pre-agreed milestone, it should be
+              explicitly mentioned (e.g., "Not included in the Dataset
+              Deliverables document").
+
+              <div class="img-parent-div">
+                <img
+                  src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
+                  alt="screenshot of sample Dataset Deliverables document"
+                />
+              </div>
+            </li>
+          </ul>
         </li>
-
-        <ul class="docs-ul list-outside list-disc">
-          <li>SPARC Award number: The number of your SPARC award.</li>
-
-          <li>
-            Milestone achieved: This milestone must match exactly with one of
-            the milestones agreed with the NIH in the Dataset Deliverables
-            document. A screenshot of a sample Dataset Deliverables document is
-            provided below. In case the dataset isn't related to a pre-agreed
-            dataset, it should be explicitly mentioned (e.g., "Not included in
-            the Dataset Deliverables document").
-          </li>
-
-          <li>
-            Milestone completion date: This date must match exactly with the
-            completion date agreed with the NIH in the Dataset Deliverables
-            document for the above mentioned "Milestone achieved". In the case
-            the dataset isn't related to a pre-agreed milestone, it should be
-            explicitly mentioned (e.g., "Not included in the Dataset
-            Deliverables document").
-          </li>
-
-          <div class="img-parent-div">
-            <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
-            />
-          </div>
-        </ul>
       </ul>
     </div>
   </div>

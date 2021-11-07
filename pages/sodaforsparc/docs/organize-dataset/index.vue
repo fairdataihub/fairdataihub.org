@@ -19,7 +19,7 @@
           >. This top level folder structure is shown in the figure below. If
           your data organization doesn't follow this structure inherently, you
           can create it virtually with SODA then either generate it locally on
-          your computer or directly on Blackfynn (to avoid duplicating files
+          your computer or directly on Pennsieve (to avoid duplicating files
           locally).
         </p>
       </div>

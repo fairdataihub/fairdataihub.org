@@ -57,144 +57,146 @@
           are also mandatory when available. The remaining fields are either
           recommended or optional. Custom fields can also be added to the
           subjects.xlsx file.
-        </li>
 
-        <ul class="docs-ul list-outside list-disc">
-          <li>
-            <strong>subject_id</strong>: Lab-based schema for identifying each
-            subject. This field should match the primary's sub-folder names. The
-            subject_id must be unique.
-          </li>
+          <ul class="docs-ul list-outside list-disc">
+            <li>
+              <strong>subject_id</strong>: Lab-based schema for identifying each
+              subject. This field should match the primary's sub-folder names.
+              The subject_id must be unique.
+            </li>
 
-          <li>
-            <strong>pool_id</strong>: If data is collected on multiple subjects
-            at the same time include the identifier of the pool where the data
-            file will be found. If this is included it should be the name of the
-            top level folder inside primary.
-          </li>
+            <li>
+              <strong>pool_id</strong>: If data is collected on multiple
+              subjects at the same time include the identifier of the pool where
+              the data file will be found. If this is included it should be the
+              name of the top level folder inside primary.
+            </li>
 
-          <li>
-            <strong>experimental group</strong>: This field refers to the
-            experimental group that a subject is assigned to in the research
-            project.
-          </li>
+            <li>
+              <strong>experimental group</strong>: This field refers to the
+              experimental group that a subject is assigned to in the research
+              project.
+            </li>
 
-          <li>
-            Age: Age of the subject (e.g., hours, days, weeks, years old) or if
-            unknown, leave it empty. For your convenience, SODA separates this
-            entry into 2 fields: A number field (e.g: 1, 2, 3) and a unit field
-            (e.g: hours, days, weeks, etc). If an ISO format is expected for
-            this entry, enter the ISO-formatted text in the number field, and
-            select "N/A" for the unit field.
-          </li>
+            <li>
+              Age: Age of the subject (e.g., hours, days, weeks, years old) or
+              if unknown, leave it empty. For your convenience, SODA separates
+              this entry into 2 fields: A number field (e.g: 1, 2, 3) and a unit
+              field (e.g: hours, days, weeks, etc). If an ISO format is expected
+              for this entry, enter the ISO-formatted text in the number field,
+              and select "N/A" for the unit field.
+            </li>
 
-          <li>
-            Sex: This is the sex of the subject, or if unknown, leave it empty.
-          </li>
+            <li>
+              Sex: This is the sex of the subject, or if unknown, leave it
+              empty.
+            </li>
 
-          <li>
-            Species: This is the species of the subject. When users start typing
-            to search for a species, SODA provides species suggestions based on
-            the NCBI taxonomy.
-          </li>
+            <li>
+              Species: This is the species of the subject. When users start
+              typing to search for a species, SODA provides species suggestions
+              based on the NCBI taxonomy.
+            </li>
 
-          <li>Strain: This is the organism strain of the subject.</li>
+            <li>Strain: This is the organism strain of the subject.</li>
 
-          <li>
-            RRID for strain: This is the Research Resource Identifier
-            Identification (RRID) for the strain of the subject. SODA utilizes
-            Scicrunch
-            <a
-              href="https://scicrunch.org/resources/Organisms/search"
-              target="_blank"
-              rel="noopener"
-              class="hover:underline text-blue-600 dark:text-blue-400"
-            >
+            <li>
+              RRID for strain: This is the Research Resource Identifier
+              Identification (RRID) for the strain of the subject. SODA utilizes
               Scicrunch
-            </a>
-            to identify the RRID of the strain users provide.
-          </li>
+              <a
+                href="https://scicrunch.org/resources/Organisms/search"
+                target="_blank"
+                rel="noopener"
+                class="hover:underline text-blue-600 dark:text-blue-400"
+              >
+                Scicrunch
+              </a>
+              to identify the RRID of the strain users provide.
+            </li>
 
-          <li>
-            Additional Fields (e.g. MINDS): Provide any additional fields that
-            you would like to include in your subjects.xlsx file.
-          </li>
+            <li>
+              Additional Fields (e.g. MINDS): Provide any additional fields that
+              you would like to include in your subjects.xlsx file.
+            </li>
 
-          <li>
-            Age category: The age category that the subject belongs to. An
-            search field with suggestions based on list derived from
-            <a
-              href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
-              target="_blank"
-              rel="noopener"
-              class="hover:underline text-blue-600 dark:text-blue-400"
-            >
-              UBERON life cycle stage
-            </a>
-            is provided in the interface for your convenience.
-          </li>
+            <li>
+              Age category: The age category that the subject belongs to. An
+              search field with suggestions based on list derived from
+              <a
+                href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
+                target="_blank"
+                rel="noopener"
+                class="hover:underline text-blue-600 dark:text-blue-400"
+              >
+                UBERON life cycle stage
+              </a>
+              is provided in the interface for your convenience.
+            </li>
 
-          <li>
-            Age range (min): This is the minimal age (youngest) of the research
-            subjects. The format for this field is numerical value + space +
-            unit (spelled out).
-          </li>
+            <li>
+              Age range (min): This is the minimal age (youngest) of the
+              research subjects. The format for this field is numerical value +
+              space + unit (spelled out).
+            </li>
 
-          <li>
-            Age range (max): This is the maximal age (oldest) of the research
-            subjects. The format for this field is numerical value + space +
-            unit (spelled out).
-          </li>
+            <li>
+              Age range (max): This is the maximal age (oldest) of the research
+              subjects. The format for this field is numerical value + space +
+              unit (spelled out).
+            </li>
 
-          <li>
-            Handedness: This refers to the preference of the subject to use the
-            right or left hand, whenever applicable.
-          </li>
+            <li>
+              Handedness: This refers to the preference of the subject to use
+              the right or left hand, whenever applicable.
+            </li>
 
-          <li>
-            Genotype: This refers to the genetic makeup of genetically modified
-            alleles in transgenic animals belonging to the same subject group.
-            Note: Ignore this field if the RRID is already provided.
-          </li>
+            <li>
+              Genotype: This refers to the genetic makeup of genetically
+              modified alleles in transgenic animals belonging to the same
+              subject group. Note: Ignore this field if the RRID is already
+              provided.
+            </li>
 
-          <li>Reference atlas: Enter here the reference atlas and organ.</li>
+            <li>Reference atlas: Enter here the reference atlas and organ.</li>
 
-          <li>
-            Protocol title: This field refers to the title of the protocol
-            within Protocols.io once the research protocol is uploaded to
-            Protocols.io. In SODA, users can connect to their protocols.io
-            account by clicking on "Help me with my protocol information" under
-            the Protocol Information tab. An login interface will instruct users
-            to sign in their account in the browser at
-            <a
-              href="https://www.protocols.io/developers"
-              target="_blank"
-              rel="nofollow"
-              class="hover:underline text-blue-600 dark:text-blue-400"
-            >
-              protocols.io </a
-            >. An access token is required for automatic extraction of the
-            protocol titles and links and can be easily obtained from the
-            provided website once they are signed in. Once users successfully
-            connect their account with with SODA, they can search in the input
-            field for their protocol titles.
-          </li>
+            <li>
+              Protocol title: This field refers to the title of the protocol
+              within Protocols.io once the research protocol is uploaded to
+              Protocols.io. In SODA, users can connect to their protocols.io
+              account by clicking on "Help me with my protocol information"
+              under the Protocol Information tab. An login interface will
+              instruct users to sign in their account in the browser at
+              <a
+                href="https://www.protocols.io/developers"
+                target="_blank"
+                rel="nofollow"
+                class="hover:underline text-blue-600 dark:text-blue-400"
+              >
+                protocols.io </a
+              >. An access token is required for automatic extraction of the
+              protocol titles and links and can be easily obtained from the
+              provided website once they are signed in. Once users successfully
+              connect their account with with SODA, they can search in the input
+              field for their protocol titles.
+            </li>
 
-          <li>
-            Protocol.io location: This refers to the Protocol.io URL for the
-            protocol title. Once the protocol is uploaded to Protocols.io, the
-            protocol must be shared with the SPARC group and the Protocol.io URL
-            is noted in this field. Please share with the SPARC group. In SODA,
-            when users select a protocol title in the previous field (Protocol
-            title), the protocol location or link will be automatically filled
-            out for this field.
-          </li>
+            <li>
+              Protocol.io location: This refers to the Protocol.io URL for the
+              protocol title. Once the protocol is uploaded to Protocols.io, the
+              protocol must be shared with the SPARC group and the Protocol.io
+              URL is noted in this field. Please share with the SPARC group. In
+              SODA, when users select a protocol title in the previous field
+              (Protocol title), the protocol location or link will be
+              automatically filled out for this field.
+            </li>
 
-          <li>
-            Experimental log file name: This is a file containing experimental
-            records for each sample, whenever applicable.
-          </li>
-        </ul>
+            <li>
+              Experimental log file name: This is a file containing experimental
+              records for each sample, whenever applicable.
+            </li>
+          </ul>
+        </li>
       </ul>
     </div>
   </div>

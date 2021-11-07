@@ -32,7 +32,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-1.gif?raw=true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-1.gif?raw=true" alt="screenshot of soda"
         />
       </div>
 
@@ -60,7 +60,7 @@
 
           <div class="img-parent-div">
             <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-21.gif?raw=true"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-21.gif?raw=true" alt="screenshot of soda"
             />
           </div>
         </li>
@@ -72,7 +72,7 @@
 
           <div class="img-parent-div">
             <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-3.gif?raw=true"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-3.gif?raw=true" alt="screenshot of soda"
             />
           </div>
         </li>

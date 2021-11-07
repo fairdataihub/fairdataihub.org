@@ -48,7 +48,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/connect-to-PS-SODA.png?raw=true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/connect-to-PS-SODA.png?raw=true" alt="screenshot of soda"
         />
       </div>
 

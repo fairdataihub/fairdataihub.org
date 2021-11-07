@@ -23,6 +23,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/preview-dataset.PNG?raw=true"
+          alt="screenshot of soda"
         />
       </div>
     </div>

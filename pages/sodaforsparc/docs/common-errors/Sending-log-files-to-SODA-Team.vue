@@ -40,12 +40,12 @@
         <p>
           <strong>Solution</strong>: It is very likely that the folder is hidden
           on your computer. To learn about how to show hidden files and folders,
-          please visit
+          
           <NuxtLink
             to="/sodaforsparc/docs/common-errors/Issues-regarding-hidden-files-or-folders"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here</span> </NuxtLink
+            <span>please visit here</span> </NuxtLink
           >.
         </p>
       </div>

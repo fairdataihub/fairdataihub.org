@@ -23,12 +23,12 @@
       <ul class="docs-ul list-outside list-decimal">
         <li>
           Select/confirm your Pennsieve account and dataset. If you have not
-          connected your Pennsieve account with SODA yet, see
-          <router-link
+          connected your Pennsieve account with SODA yet,
+          <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here</span> </router-link
+            <span>use the instructions available here</span> </NuxtLink
           >.
         </li>
         <li>Click on "Assign Creative Commons Attribution (CC-BY) license".</li>

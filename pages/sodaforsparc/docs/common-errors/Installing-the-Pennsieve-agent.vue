@@ -8,7 +8,7 @@
 
       <div class="p-parent-div">
         <p>
-          <i> "Name 'AgentInstallationError'" </i>
+          <i> Name 'AgentInstallationError' </i>
           issue happens when SODA detects that you have not installed the
           Pennsieve agent. The Pennsieve agent is necessary for the dataset
           upload process.
@@ -18,15 +18,15 @@
       <base-docs-subtitle> Solution </base-docs-subtitle>
       <div class="p-parent-div">
         <p>
-          You can follow the instructions provided
+          You can follow the
           <a
             href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
             target="_blank"
             rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            here</a
-          >
+            instructions provided here
+          </a>
           to install the Pennsieve agent. For any other questions, please visit
           the dedicated
           <a

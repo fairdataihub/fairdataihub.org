@@ -60,164 +60,167 @@
           "Value". If more than one "Value" is to be provided (for instance
           multiple "Contributors") for a "Metadata Item", each subsequent value
           column must be named "Value 2", "Value 3", "Value 4", and so forth.
+
+          <ul class="docs-ul list-outside list-disc">
+            <li>
+              <strong>Name</strong>: Descriptive title for the dataset. This
+              field should match exactly with your dataset name on Pennsieve.
+            </li>
+
+            <li>
+              <strong>Description</strong>: Brief description of the study and
+              the data set. Equivalent to the abstract of a scientific paper.
+              This could match the subtitle provided on Pennsieve.
+            </li>
+
+            <li>
+              <strong>Keywords</strong>: A set of 3-5 keywords other than
+              already mentioned in the above elements that will aid in search of
+              your dataset once published on the SPARC portal. Each keyword must
+              be provided in a separate column.
+            </li>
+
+            <li>
+              <strong>Contributors</strong>: Name of any contributors to the
+              dataset. These individuals need not have been authors on any
+              publications describing the data, but should be acknowledged for
+              their role in producing and publishing the dataset. If more than
+              one, add each contributor in a new column. For each contributor it
+              is mandatory at least one affiliation, at least one role, and role
+              as contact person.
+            </li>
+
+            <li>
+              <strong>Contributor ORCID ID</strong>: This is the contributor's
+              ORCID ID number. If you do not have one, you can sign up for one
+              at
+              <a
+                href="https://orcid.org"
+                target="_blank"
+                rel="noopener"
+                class="hover:underline text-blue-600 dark:text-blue-400"
+              >
+                https://orcid.org </a
+              >. It must be in the format
+              "https://orcid.org/xxxx-xxxx-xxxx-xxxx". It is not mandatory but
+              highly recommended.
+            </li>
+
+            <li>
+              <strong>Contributor Affiliation</strong>: Institutional
+              affiliation for contributors. A
+              <a
+                href="https://ror.org/"
+                target="_blank"
+                rel="noopener"
+                class="hover:underline text-blue-600 dark:text-blue-400"
+              >
+                ror ID
+              </a>
+              in the "https://ror.org/xxxxxxxxx" format could be provided if
+              available. If multiple affiliations, each must be semi-colon
+              separated in a single cell.
+            </li>
+
+            <li>
+              <strong>Contributor Role</strong>: Role(s) of the contributor. It
+              must one of the following roles provided by the Data Cite schema:
+              PrincipleInvestigator, Creator, CoInvestigator, ContactPerson,
+              DataCollector, DataCurator, DataManager, Distributor, Editor,
+              Producer, ProjectLeader, ProjectManager, ProjectMember,
+              RelatedPerson, Researcher, ResearchGroup, Sponsor, Supervisor,
+              WorkPackageLeader, Other. The definition of each of these roles is
+              provided in the
+              <a
+                href="https://schema.datacite.org/meta/kernel-4.3/"
+                target="_blank"
+                rel="noopener"
+                class="hover:underline text-blue-600 dark:text-blue-400"
+              >
+                document here </a
+              >. The role "ContactPerson" must be provided for the person marked
+              as "Yes" in the "Is Contact Person" element of the "Metadata Item"
+              (this is done automatically in SODA). If more than one role is to
+              be specified for a contributor, each must be comma-separated in a
+              single cell.
+            </li>
+
+            <li>
+              <strong>Is Contact Person</strong>: Specify "Yes" if the
+              contributor is a contact person for the dataset, otherwise specify
+              "No". One and only one of the contributors must be marked "Yes".
+            </li>
+
+            <li>
+              Acknowledgements: Acknowledgements beyond funding and contributors
+            </li>
+
+            <li>
+              <strong>Funding</strong>: Specify the number of your SPARC award
+              (mandatory in the OT2OD0XXXXX format) and other funding award if
+              applicable (optional). If multiple award numbers are specified,
+              each award number must be specified in a separate column.
+            </li>
+
+            <li>
+              Originating Article DOI: DOIs of published articles that were
+              generated from this dataset
+            </li>
+
+            <li>
+              <strong>Protocol URL or DOI</strong>: URLs (if still private) /
+              DOIs (if public) of protocols from protocols.io related to this
+              dataset
+            </li>
+
+            <li>
+              Additional Links: URLs of additional resources used by this
+              dataset (e.g., a link to a code repository)
+            </li>
+
+            <li>Link Description: Short description of URL content.</li>
+
+            <li>
+              <strong>Number of subjects</strong>: Number of unique subjects in
+              this dataset, should match subjects metadata file.
+            </li>
+
+            <li>
+              <strong>Number of samples</strong>: Number of unique samples in
+              this dataset, should match samples metadata file. Set to zero if
+              there are no samples.
+            </li>
+
+            <li>
+              Completeness of data set: Is the data set as uploaded complete or
+              is it part of an ongoing study? Use "hasNext" to indicate that you
+              expect more data on different subjects as a continuation of this
+              study. Use “hasChildren” to indicate that you expect more data on
+              the same subjects or samples derived from those subjects. Leave
+              empty if none of these two apply.
+            </li>
+
+            <li>
+              Parent dataset ID: If this is a part of a larger data set, or
+              references subjects or samples from a parent dataset, provide the
+              Pennsieve ID of the prior batch in the
+              "N:dataset:c5c2f40f-76be-4979-bfc4-b9f9947231cf " format. You need
+              only give us the Pennsieve ID of the last batch, not all batches.
+              If samples and subjects are from multiple parent datasets please
+              create a comma separated list of all parent Pennsieve IDs.
+            </li>
+
+            <li>
+              Title for complete data set: Please give us a provisional title
+              for the entire data set.
+            </li>
+
+            <li>
+              Metadata Version DO NOT CHANGE: The "Value" for this must not be
+              changed
+            </li>
+          </ul>
         </li>
-
-        <ul class="docs-ul list-outside list-disc">
-          <li>
-            <strong>Name</strong>: Descriptive title for the dataset. This field
-            should match exactly with your dataset name on Pennsieve.
-          </li>
-
-          <li>
-            <strong>Description</strong>: Brief description of the study and the
-            data set. Equivalent to the abstract of a scientific paper. This
-            could match the subtitle provided on Pennsieve.
-          </li>
-
-          <li>
-            <strong>Keywords</strong>: A set of 3-5 keywords other than already
-            mentioned in the above elements that will aid in search of your
-            dataset once published on the SPARC portal. Each keyword must be
-            provided in a separate column.
-          </li>
-
-          <li>
-            <strong>Contributors</strong>: Name of any contributors to the
-            dataset. These individuals need not have been authors on any
-            publications describing the data, but should be acknowledged for
-            their role in producing and publishing the dataset. If more than
-            one, add each contributor in a new column. For each contributor it
-            is mandatory at least one affiliation, at least one role, and role
-            as contact person.
-          </li>
-
-          <li>
-            <strong>Contributor ORCID ID</strong>: This is the contributor's
-            ORCID ID number. If you do not have one, you can sign up for one at
-            <a
-              href="https://orcid.org"
-              target="_blank"
-              rel="noopener"
-              class="hover:underline text-blue-600 dark:text-blue-400"
-            >
-              https://orcid.org </a
-            >. It must be in the format "https://orcid.org/xxxx-xxxx-xxxx-xxxx".
-            It is not mandatory but highly recommended.
-          </li>
-
-          <li>
-            <strong>Contributor Affiliation</strong>: Institutional affiliation
-            for contributors. A
-            <a
-              href="https://ror.org/"
-              target="_blank"
-              rel="noopener"
-              class="hover:underline text-blue-600 dark:text-blue-400"
-            >
-              ror ID
-            </a>
-            in the "https://ror.org/xxxxxxxxx" format could be provided if
-            available. If multiple affiliations, each must be semi-colon
-            separated in a single cell.
-          </li>
-
-          <li>
-            <strong>Contributor Role</strong>: Role(s) of the contributor. It
-            must one of the following roles provided by the Data Cite schema:
-            PrincipleInvestigator, Creator, CoInvestigator, ContactPerson,
-            DataCollector, DataCurator, DataManager, Distributor, Editor,
-            Producer, ProjectLeader, ProjectManager, ProjectMember,
-            RelatedPerson, Researcher, ResearchGroup, Sponsor, Supervisor,
-            WorkPackageLeader, Other. The definition of each of these roles is
-            provided in the
-            <a
-              href="https://schema.datacite.org/meta/kernel-4.3/"
-              target="_blank"
-              rel="noopener"
-              class="hover:underline text-blue-600 dark:text-blue-400"
-            >
-              document here </a
-            >. The role "ContactPerson" must be provided for the person marked
-            as "Yes" in the "Is Contact Person" element of the "Metadata Item"
-            (this is done automatically in SODA). If more than one role is to be
-            specified for a contributor, each must be comma-separated in a
-            single cell.
-          </li>
-
-          <li>
-            <strong>Is Contact Person</strong>: Specify "Yes" if the contributor
-            is a contact person for the dataset, otherwise specify "No". One and
-            only one of the contributors must be marked "Yes".
-          </li>
-
-          <li>
-            Acknowledgements: Acknowledgements beyond funding and contributors
-          </li>
-
-          <li>
-            <strong>Funding</strong>: Specify the number of your SPARC award
-            (mandatory in the OT2OD0XXXXX format) and other funding award if
-            applicable (optional). If multiple award numbers are specified, each
-            award number must be specified in a separate column.
-          </li>
-
-          <li>
-            Originating Article DOI: DOIs of published articles that were
-            generated from this dataset
-          </li>
-
-          <li>
-            <strong>Protocol URL or DOI</strong>: URLs (if still private) / DOIs
-            (if public) of protocols from protocols.io related to this dataset
-          </li>
-
-          <li>
-            Additional Links: URLs of additional resources used by this dataset
-            (e.g., a link to a code repository)
-          </li>
-
-          <li>Link Description: Short description of URL content.</li>
-
-          <li>
-            <strong>Number of subjects</strong>: Number of unique subjects in
-            this dataset, should match subjects metadata file.
-          </li>
-
-          <li>
-            <strong>Number of samples</strong>: Number of unique samples in this
-            dataset, should match samples metadata file. Set to zero if there
-            are no samples.
-          </li>
-
-          <li>
-            Completeness of data set: Is the data set as uploaded complete or is
-            it part of an ongoing study? Use "hasNext" to indicate that you
-            expect more data on different subjects as a continuation of this
-            study. Use “hasChildren” to indicate that you expect more data on
-            the same subjects or samples derived from those subjects. Leave
-            empty if none of these two apply.
-          </li>
-
-          <li>
-            Parent dataset ID: If this is a part of a larger data set, or
-            references subjects or samples from a parent dataset, provide the
-            Pennsieve ID of the prior batch in the
-            "N:dataset:c5c2f40f-76be-4979-bfc4-b9f9947231cf " format. You need
-            only give us the Pennsieve ID of the last batch, not all batches. If
-            samples and subjects are from multiple parent datasets please create
-            a comma separated list of all parent Pennsieve IDs.
-          </li>
-
-          <li>
-            Title for complete data set: Please give us a provisional title for
-            the entire data set.
-          </li>
-
-          <li>
-            Metadata Version DO NOT CHANGE: The "Value" for this must not be
-            changed
-          </li>
-        </ul>
       </ul>
 
       <base-docs-subtitle> Note </base-docs-subtitle>

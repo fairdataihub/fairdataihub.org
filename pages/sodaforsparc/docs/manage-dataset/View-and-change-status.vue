@@ -23,13 +23,13 @@
 
       <ul class="docs-ul list-outside list-decimal">
         <li>
-          Select/confirm your Pennsieve account and dataset. If you have not
-          connected your Pennsieve account with SODA yet, see
+          Select/confirm your Pennsieve account and dataset. If
+          you have not connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here</span> </NuxtLink
+            <span>use the instructions available here</span> </NuxtLink
           >.
         </li>
         <li>Select the desired option from the list.</li>
@@ -41,7 +41,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/View-change-status/view-change-status.PNG?raw=true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/View-change-status/view-change-status.PNG?raw=true" alt="screenshot of soda"
         />
       </div>
 

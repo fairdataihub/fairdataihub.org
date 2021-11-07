@@ -44,7 +44,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part1.gif?raw=true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part1.gif?raw=true" alt="screenshot of soda"
         />
       </div>
 
@@ -64,7 +64,7 @@
 
       <div class="img-parent-div">
         <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part2-files.gif?raw=true"
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part2-files.gif?raw=true" alt="screenshot of soda"
         />
       </div>
     </div>

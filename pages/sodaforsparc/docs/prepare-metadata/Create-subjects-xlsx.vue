@@ -178,14 +178,15 @@
             </li>
             <li><i> Date of birth</i>: The date of birth of the subject.</li>
           </ul>
+
+          <div class="img-parent-div">
+            <video
+              controls
+              autoplay="true"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-species.mp4"
+            />
+          </div>
         </li>
-        <div class="img-parent-div">
-          <video
-            controls
-            autoplay="true"
-            src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-species.mp4"
-          />
-        </div>
         <li>
           Protocol Information (Optional):
 
@@ -218,14 +219,15 @@
               will be automatically filled out for this field.
             </li>
           </ul>
+
+          <div class="img-parent-div">
+            <video
+              controls
+              autoplay="true"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-protocols.mp4"
+            />
+          </div>
         </li>
-        <div class="img-parent-div">
-          <video
-            controls
-            autoplay="true"
-            src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-protocols.mp4"
-          />
-        </div>
         <li>
           Additional fields (Optional):
 
