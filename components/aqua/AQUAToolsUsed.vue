@@ -16,19 +16,34 @@
           </div>
           <div class="flex flex-col sm:flex-row justify-between items-center">
             <dd>
-              <img src="~/assets/aqua-tool-images/iconFrontEnd.png" />
+              <img
+                src="~/assets/aqua-tool-images/iconFrontEnd.png"
+                alt="html css javascript logos"
+              />
             </dd>
             <dd>
-              <img src="~/assets/aqua-tool-images/pythonIcon.png" />
+              <img
+                src="~/assets/aqua-tool-images/pythonIcon.png"
+                alt="python logo"
+              />
             </dd>
             <dd>
-              <img src="~/assets/aqua-tool-images/dockerIcon.png" />
+              <img
+                src="~/assets/aqua-tool-images/dockerIcon.png"
+                alt="docker logo"
+              />
             </dd>
             <dd>
-              <img src="~/assets/aqua-tool-images/scigraphIcon.png" />
+              <img
+                src="~/assets/aqua-tool-images/scigraphIcon.png"
+                alt="scigraph logo"
+              />
             </dd>
             <dd>
-              <img src="~/assets/aqua-tool-images/sqliteIcon.png" />
+              <img
+                src="~/assets/aqua-tool-images/sqliteIcon.png"
+                alt="sqlite logo"
+              />
             </dd>
           </div>
         </dl>

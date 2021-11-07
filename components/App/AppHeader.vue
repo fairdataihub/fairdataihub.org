@@ -1,7 +1,7 @@
 <template>
   <nav class="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
     <div class="flex flex-row justify-between px-5 py-3 bg-gray-50">
-      <NuxtLink to="/" class="flex flex-row justify-center items-center">
+      <NuxtLink to="/" class="flex flex-row justify-center items-center" aria-label="Homepage">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 md:h-6 lg:h-7 w-auto"

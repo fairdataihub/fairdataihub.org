@@ -97,7 +97,7 @@
           <div class="w-full flex justify-center">
             <a
               href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
-              target="_blank"
+              target="_blank" rel="noopener"
             >
               <button
                 class="

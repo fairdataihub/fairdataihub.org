@@ -12,7 +12,7 @@
           <a
             href="https://app.pennsieve.net/"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
             >Pennsieve</a
           >

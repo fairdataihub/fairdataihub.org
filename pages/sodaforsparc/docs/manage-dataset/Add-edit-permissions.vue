@@ -14,7 +14,7 @@
           <a
             href="https://docs.pennsieve.io/docs/dataset-permissions"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
             >Pennsieve help page</a
           >.

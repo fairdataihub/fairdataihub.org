@@ -16,9 +16,9 @@
         >
           Development Approach
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for SPARC is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
@@ -30,7 +30,7 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/graphs/contributors"
                   target="_blank"
-                  class="mr-2"
+                  class="mr-2" rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
@@ -40,31 +40,31 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/stargazers"
                   target="_blank"
-                  class="mr-2"
+                  class="mr-2" rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="soda for sparc stars"
                   />
                 </a>
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/issues"
                   target="_blank"
-                  class="mr-2"
+                  class="mr-2" rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="soda for sparc issues"
                   />
                 </a>
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/blob/master/LICENSE"
                   target="_blank"
-                  class="mr-2"
+                  class="mr-2" rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="soda for sparc license"
                   />
                 </a>
               </div>
@@ -72,7 +72,7 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC"
                   target="_blank"
-                  class="text-url hover-underline-animation"
+                  class="text-url hover-underline-animation" rel="noopener"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -88,12 +88,12 @@
                   </svg>
                 </a>
               </div>
-            </dd>
+            </div>
             <div class="py-3">
               <a
                 href="https://github.com/fairdataihub/SODA-for-SPARC"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener" aria-label="Github"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@
               </a>
             </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -130,9 +130,9 @@
         >
           Funding
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full text-lg font-asap text-black">
                 SODA for SPARC is funded by the National Institutes of Health
                 (NIH)'s SPARC program. The funding was initially provided as a
@@ -144,7 +144,7 @@
                 <a
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                   target="_blank"
-                  class="text-url hover-underline-animation"
+                  class="text-url hover-underline-animation" rel="noopener"
                 >
                   <span class="font-lato">
                     Explore the award on NIH Reporter
@@ -162,7 +162,7 @@
                   </svg>
                 </a>
               </div>
-            </dd>
+            </div>
             <div class="py-3">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -204,7 +204,7 @@
               </svg>
             </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -224,9 +224,9 @@
         >
           Team Members
         </h1>
-        <dl class="w-full">
+        <div class="w-full">
           <div>
-            <dd class="mb-10 sm:mb-5 w-full">
+            <div class="mb-10 sm:mb-5 w-full">
               <div
                 class="
                   grid grid-cols-2
@@ -272,9 +272,9 @@
                   </div>
                 </router-link>
               </div>
-            </dd>
+            </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -294,20 +294,20 @@
         >
           Research Partners
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for SPARC connects with several resources developed by the
                 SPARC Data Resource Center (DRC) and we therefore collaborate
                 actively with the DRC teams throughout our development process.
               </p>
-            </dd>
+            </div>
           </div>
-        </dl>
-        <dl class="w-full">
+        </div>
+        <div class="w-full">
           <div>
-            <dd class="mb-10 sm:mb-5 w-full">
+            <div class="mb-10 sm:mb-5 w-full">
               <div
                 class="
                   grid grid-cols-2
@@ -324,7 +324,7 @@
                   :key="collaborator.name"
                   :href="collaborator.href"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   <div
                     class="
@@ -357,9 +357,9 @@
                   </div>
                 </a>
               </div>
-            </dd>
+            </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>

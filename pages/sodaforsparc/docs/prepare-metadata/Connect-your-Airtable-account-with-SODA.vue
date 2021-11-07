@@ -12,7 +12,7 @@
           <a
             href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             SPARC Airtable sheet</a

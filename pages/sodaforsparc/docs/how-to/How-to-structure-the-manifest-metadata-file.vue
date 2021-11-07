@@ -82,7 +82,7 @@
             <a
               href="https://en.wikipedia.org/wiki/ISO_8601"
               target="_blank"
-              rel="nofollow"
+              rel="noopener"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
               ISO 8601 format

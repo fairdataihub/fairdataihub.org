@@ -9,9 +9,15 @@
       </base-docs-subtitle>
 
       <div class="flex justify-start mx-8 my-5">
-        <a href="https://www.youtube.com/watch?v=Fyn9R0Tk_pU" target="_blank">
-          <img src="https://img.youtube.com/vi/Fyn9R0Tk_pU/0.jpg" />
-        </a>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/Fyn9R0Tk_pU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
 
       <base-docs-subtitle> Notes </base-docs-subtitle>

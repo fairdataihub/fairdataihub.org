@@ -22,7 +22,7 @@
           <a
             href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             here</a
@@ -32,7 +32,7 @@
           <a
             href="https://docs.pennsieve.io/docs"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             Pennsieve Documentation page</a

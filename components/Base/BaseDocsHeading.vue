@@ -1,5 +1,5 @@
 <template>
-  <h4
+  <h3
     class="
       font-semibold
       text-base text-black
@@ -9,7 +9,7 @@
     "
   >
     <slot></slot>
-  </h4>
+  </h3>
 </template>
 
 <script>

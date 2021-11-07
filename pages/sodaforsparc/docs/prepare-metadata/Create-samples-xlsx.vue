@@ -143,7 +143,7 @@
               <a
                 href="https://www.protocols.io/developers"
                 target="_blank"
-                rel="nofollow"
+                rel="noopener"
                 class="hover:underline text-blue-600 dark:text-blue-400"
               >
                 protocols.io</a

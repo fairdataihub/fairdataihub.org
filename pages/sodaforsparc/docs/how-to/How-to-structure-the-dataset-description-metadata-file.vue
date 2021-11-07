@@ -97,7 +97,7 @@
             <a
               href="https://orcid.org"
               target="_blank"
-              rel="nofollow"
+              rel="noopener"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
               https://orcid.org </a
@@ -111,7 +111,7 @@
             <a
               href="https://ror.org/"
               target="_blank"
-              rel="nofollow"
+              rel="noopener"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
               ror ID
@@ -133,7 +133,7 @@
             <a
               href="https://schema.datacite.org/meta/kernel-4.3/"
               target="_blank"
-              rel="nofollow"
+              rel="noopener"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
               document here </a

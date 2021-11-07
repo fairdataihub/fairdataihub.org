@@ -16,9 +16,9 @@
         >
           Development Approach
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full text-lg font-asap text-black dark:text-white">
                 KnowMore is developed as an open-source application with an MIT
                 License. It is currently integrated into our fork of the SPARC
@@ -33,40 +33,44 @@
                   href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/graphs/contributors"
                   target="_blank"
                   class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="know more contributors"
                   />
                 </a>
                 <a
                   href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/stargazers"
                   target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
                     src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="know more stars"
                   />
                 </a>
                 <a
                   href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/issues"
                   target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
                     src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="know more issues"
                   />
                 </a>
                 <a
                   href="https://github.com/SPARC-FAIR-Codeathon/KnowMore/blob/master/LICENSE"
                   target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
                     src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="know more license"
                   />
                 </a>
               </div>
@@ -75,6 +79,7 @@
                   href="https://github.com/fairdataihub/KnowMore"
                   target="_blank"
                   class="text-url hover-underline-animation"
+                  rel="noopener"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -90,12 +95,13 @@
                   </svg>
                 </a>
               </div>
-            </dd>
+            </div>
             <div class="py-3">
               <a
                 href="https://github.com/fairdataihub/KnowMore"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
+                aria-label="Github"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +117,7 @@
               </a>
             </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -132,9 +138,9 @@
         >
           Origin Story
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full text-lg font-asap text-black dark:text-white">
                 KnowMore was introduced as a project during the 2021 NIH SPARC
                 Codeathon with the aim of leveraging the FAIR characteristics of
@@ -164,11 +170,12 @@
                   </svg>
                 </a>
               </div>
-            </dd>
+            </div>
             <div class="py-3">
               <a
                 href="https://sparc.science/help/2021-sparc-fair-codeathon"
                 target="_blank"
+                rel="noopener"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -211,7 +218,7 @@
               </a>
             </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -231,9 +238,9 @@
         >
           Team Members
         </h1>
-        <dl class="w-full">
+        <div class="w-full">
           <div>
-            <dd class="mb-10 sm:mb-5 w-full">
+            <div class="mb-10 sm:mb-5 w-full">
               <div
                 class="
                   grid grid-cols-2
@@ -279,9 +286,9 @@
                   </div>
                 </router-link>
               </div>
-            </dd>
+            </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>

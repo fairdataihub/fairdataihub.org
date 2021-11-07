@@ -107,7 +107,7 @@
             <a
               href="https://scicrunch.org/resources/Organisms/search"
               target="_blank"
-              rel="nofollow"
+              rel="noopener"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
               Scicrunch
@@ -126,7 +126,7 @@
             <a
               href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
               target="_blank"
-              rel="nofollow"
+              rel="noopener"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
               UBERON life cycle stage

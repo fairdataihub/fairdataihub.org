@@ -96,7 +96,7 @@
             <a
               href="https://sparclink.vercel.app/sparclink"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
             >
               <button
                 class="

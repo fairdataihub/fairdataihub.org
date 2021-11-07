@@ -29,7 +29,7 @@
           <a
             href="https://winaero.com/kill-process-windows-10/"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             Windows</a
@@ -39,7 +39,7 @@
           <a
             href="https://support.apple.com/guide/activity-monitor/quit-a-process-actmntr1002/mac"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             MAC</a
@@ -49,7 +49,7 @@
           <a
             href="https://www.cyberciti.biz/faq/stop-process-ubuntu-linux-command/"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             Ubuntu</a
