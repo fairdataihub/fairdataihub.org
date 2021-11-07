@@ -61,8 +61,8 @@
           below. Most importantly, it should be in the docx format and at least
           one table should be included with these exact three headers: 'Related
           milestone, aim, or task', 'Description of data', 'Expected date of
-          completion'." If any of these headers need to be modified, make sure to
-          edit them before importing the file in SODA.
+          completion'." If any of these headers need to be modified, make sure
+          to edit them before importing the file in SODA.
         </p>
       </div>
 

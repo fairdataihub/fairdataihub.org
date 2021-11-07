@@ -55,7 +55,8 @@
           generate the API key and secret.
           <div class="img-parent-div">
             <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/consortium-bf-account.PNG?raw=true" alt="screenshot of soda"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/consortium-bf-account.PNG?raw=true"
+              alt="screenshot of soda"
             />
           </div>
         </li>
@@ -64,7 +65,8 @@
           fields then click on "Add".
           <div class="img-parent-div">
             <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/connect-to-blackfynn.gif?raw=true" alt="screenshot of soda"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/connect-to-blackfynn.gif?raw=true"
+              alt="screenshot of soda"
             />
           </div>
         </li>
