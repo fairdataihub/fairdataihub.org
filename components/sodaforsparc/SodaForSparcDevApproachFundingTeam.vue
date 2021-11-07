@@ -30,7 +30,8 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/graphs/contributors"
                   target="_blank"
-                  class="mr-2" rel="noopener"
+                  class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
@@ -40,7 +41,8 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/stargazers"
                   target="_blank"
-                  class="mr-2" rel="noopener"
+                  class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
@@ -50,7 +52,8 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/issues"
                   target="_blank"
-                  class="mr-2" rel="noopener"
+                  class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
@@ -60,7 +63,8 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/blob/master/LICENSE"
                   target="_blank"
-                  class="mr-2" rel="noopener"
+                  class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
@@ -72,7 +76,8 @@
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC"
                   target="_blank"
-                  class="text-url hover-underline-animation" rel="noopener"
+                  class="text-url hover-underline-animation"
+                  rel="noopener"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -93,7 +98,8 @@
               <a
                 href="https://github.com/fairdataihub/SODA-for-SPARC"
                 target="_blank"
-                rel="noopener" aria-label="Github"
+                rel="noopener"
+                aria-label="Github"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +150,8 @@
                 <a
                   href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                   target="_blank"
-                  class="text-url hover-underline-animation" rel="noopener"
+                  class="text-url hover-underline-animation"
+                  rel="noopener"
                 >
                   <span class="font-lato">
                     Explore the award on NIH Reporter

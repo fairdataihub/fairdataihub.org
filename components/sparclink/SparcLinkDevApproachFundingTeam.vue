@@ -30,16 +30,18 @@
                 <a
                   href="https://github.com/megasanjay/SPARClink/graphs/contributors"
                   target="_blank"
-                  class="mr-2" rel="noopener"
+                  class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
-                    alt="soda for sparc contributors" 
+                    alt="soda for sparc contributors"
                   />
                 </a>
                 <a
                   href="https://github.com/megasanjay/SPARClink/stargazers"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
@@ -49,7 +51,8 @@
                 </a>
                 <a
                   href="https://github.com/megasanjay/SPARClink/issues"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
@@ -59,7 +62,8 @@
                 </a>
                 <a
                   href="https://github.com/megasanjay/SPARClink/blob/master/LICENSE"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
@@ -72,7 +76,8 @@
                 <a
                   href="https://github.com/fairdataihub/SPARClink"
                   target="_blank"
-                  class="text-url hover-underline-animation" rel="noopener"
+                  class="text-url hover-underline-animation"
+                  rel="noopener"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -93,7 +98,8 @@
               <a
                 href="https://github.com/fairdataihub/SPARClink"
                 target="_blank"
-                rel="noopener" aria-label="Github"
+                rel="noopener"
+                aria-label="Github"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +173,8 @@
             <div class="py-3">
               <a
                 href="https://sparc.science/help/2021-sparc-fair-codeathon"
-                target="_blank" rel="noopener"
+                target="_blank"
+                rel="noopener"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

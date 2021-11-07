@@ -47,7 +47,12 @@
           sm:flex-row
         "
       >
-        <a href="https://calmi2.org" target="_blank" rel="noopener" aria-label="View California Medical Innovations Institute website">
+        <a
+          href="https://calmi2.org"
+          target="_blank"
+          rel="noopener"
+          aria-label="View California Medical Innovations Institute website"
+        >
           <svg
             id="e2e7ad45-a5d8-45e3-97ca-4ba2e5555a04"
             xmlns="http://www.w3.org/2000/svg"

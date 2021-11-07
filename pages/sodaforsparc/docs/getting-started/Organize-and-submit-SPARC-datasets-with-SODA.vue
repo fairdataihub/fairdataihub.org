@@ -68,7 +68,8 @@
                   </span>
                   <a
                     href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
-                    target="_blank" rel="noopener"
+                    target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -105,7 +106,8 @@
                   </span>
                   <a
                     href="https://app.pennsieve.net/"
-                    target="_blank" rel="noopener"
+                    target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -129,7 +131,8 @@
                   </span>
                   <a
                     href="mailto:support@pennsieve.net"
-                    target="_blank" rel="noopener"
+                    target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -174,7 +177,8 @@
                   </span>
                   <a
                     href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-                    target="_blank" rel="noopener"
+                    target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -501,7 +505,8 @@
                   </span>
                   <a
                     href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
-                    target="_blank" rel="noopener"
+                    target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span

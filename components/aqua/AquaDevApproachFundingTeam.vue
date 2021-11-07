@@ -29,7 +29,8 @@
               <div class="flex mt-3 text-accent">
                 <a
                   href="https://github.com/fairdataihub/AQUA/graphs/contributors"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
@@ -39,7 +40,8 @@
                 </a>
                 <a
                   href="https://github.com/fairdataihub/AQUA/stargazers"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
@@ -49,8 +51,9 @@
                 </a>
                 <a
                   href="https://github.com/fairdataihub/AQUA/issues"
-                  target="_blank" rel="noopener"
-                  class="mr-2" 
+                  target="_blank"
+                  rel="noopener"
+                  class="mr-2"
                 >
                   <img
                     src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
@@ -59,7 +62,8 @@
                 </a>
                 <a
                   href="https://github.com/fairdataihub/AQUA/blob/master/LICENSE"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="mr-2"
                 >
                   <img
@@ -71,7 +75,8 @@
               <div class="flex mt-2 md:mt-1">
                 <a
                   href="https://github.com/fairdataihub/AQUA"
-                  target="_blank" rel="noopener"
+                  target="_blank"
+                  rel="noopener"
                   class="text-url hover-underline-animation"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
@@ -93,7 +98,8 @@
               <a
                 href="https://github.com/fairdataihub/AQUA"
                 target="_blank"
-                rel="noopener" aria-label="Github"
+                rel="noopener"
+                aria-label="Github"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +173,8 @@
             <div class="py-3">
               <a
                 href="https://sparc.science/help/2021-sparc-fair-codeathon"
-                target="_blank" rel="noopener"
+                target="_blank"
+                rel="noopener"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

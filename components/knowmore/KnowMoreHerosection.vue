@@ -96,7 +96,8 @@
           <div class="w-full flex justify-center">
             <a
               href="https://sparc-know-more.herokuapp.com/sparc-app/"
-              target="_blank" rel="noopener"
+              target="_blank"
+              rel="noopener"
             >
               <button
                 class="
@@ -125,7 +126,8 @@
             </a>
             <a
               href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
-              target="_blank" rel="noopener"
+              target="_blank"
+              rel="noopener"
             >
               <button
                 class="

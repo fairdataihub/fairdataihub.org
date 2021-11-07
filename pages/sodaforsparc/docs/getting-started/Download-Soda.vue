@@ -32,7 +32,8 @@
           <li>
             <a
               :href="windows_url"
-              target="_blank" rel="noopener"
+              target="_blank"
+              rel="noopener"
               class="
                 hover:underline
                 text-blue-600
@@ -78,7 +79,8 @@
           <li>
             <a
               :href="macOS_url"
-              target="_blank" rel="noopener"
+              target="_blank"
+              rel="noopener"
               class="
                 hover:underline
                 text-blue-600
@@ -119,7 +121,8 @@
           <li>
             <a
               :href="linux_url"
-              target="_blank" rel="noopener"
+              target="_blank"
+              rel="noopener"
               class="
                 hover:underline
                 text-blue-600

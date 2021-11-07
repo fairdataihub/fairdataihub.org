@@ -94,7 +94,8 @@
           <div class="w-full flex justify-center">
             <a
               href="https://github.com/SPARC-FAIR-Codeathon/aqua"
-              target="_blank" rel="noopener"
+              target="_blank"
+              rel="noopener"
             >
               <button
                 class="
@@ -123,7 +124,8 @@
             </a>
             <a
               href="https://github.com/SPARC-FAIR-Codeathon/aqua/blob/main/Documentation/Documentation.md"
-              target="_blank" rel="noopener"
+              target="_blank"
+              rel="noopener"
             >
               <button
                 class="
