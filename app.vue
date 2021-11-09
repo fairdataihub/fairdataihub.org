@@ -13,7 +13,7 @@ export default {
         lang: "en-US",
       },
       meta: [
-        { name: "author", content: "Jeffrey Harmon" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
           content:
