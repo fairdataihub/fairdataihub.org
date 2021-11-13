@@ -294,6 +294,7 @@ export default {
           setTimeout(() => {
             this.checkIfElementExists(id);
           }, 100);
+          window.scrollTo(0, 0);
         }
       }, 100);
     }
