@@ -92,7 +92,7 @@ export default {
         {
           name: "Data uploaded",
           class: "data",
-          num: "3.5+",
+          num: "3.5+ TB",
         },
       ],
     };
