@@ -39,10 +39,11 @@
           successively and populate the various fields as indicated:
         </li>
       </ul>
-      <base-docs-heading
-        >Dataset Info (high-level information about your
-        dataset):</base-docs-heading
-      >
+
+      <base-docs-heading>
+        Dataset Info (high-level information about your dataset):
+      </base-docs-heading>
+
       <ul class="docs-ul list-outside list-decimal">
         <li>
           Name: Descriptive title for the dataset. Since this field should match
@@ -85,10 +86,11 @@
         />
       </div>
 
-      <base-docs-heading
-        >Participant Info (information about the subjects or samples of your
-        dataset):</base-docs-heading
-      >
+      <base-docs-heading>
+        Participant Info (information about the subjects or samples of your
+        dataset):
+      </base-docs-heading>
+
       <ul class="docs-ul list-outside list-decimal">
         <li>
           Number of subjects: The number of unique subjects in this dataset,
@@ -102,10 +104,10 @@
         </li>
       </ul>
 
-      <base-docs-heading
-        >Study Info (high-level information about your experiment or
-        study):</base-docs-heading
-      >
+      <base-docs-heading>
+        Study Info (high-level information about your experiment or study):
+      </base-docs-heading>
+
       <ul class="docs-ul list-outside list-decimal">
         <li>
           Study organ system: The major organ systems related to this study.
@@ -131,10 +133,10 @@
         </li>
       </ul>
 
-      <base-docs-heading
-        >Award and Contributor Info (information about the SPARC award and the
-        contributors to your dataset):</base-docs-heading
-      >
+      <base-docs-heading>
+        Award and Contributor Info (information about the SPARC award and the
+        contributors to your dataset):
+      </base-docs-heading>
 
       <ul class="docs-ul list-outside list-decimal">
         <li>
@@ -215,25 +217,26 @@
         <li>
           Click <strong>Add a URL/DOI</strong> to add a link other than a
           protocol.
+
+          <ul class="docs-ul list-outside list-disc">
+            <li>
+              URL or DOI: Specify your actual URL (if resource is public) or DOI
+              (if resource is private). This can be web links to repositories or
+              papers (DOI).
+            </li>
+            <li>
+              Link type: This will state whether your link is a 'URL' or 'DOI'
+              item. Use one of those two items to reference the type of link.
+            </li>
+            <li>
+              Relation to the dataset: A prespecified list of relations for
+              common URLs or DOIs used in SPARC datasets. The value in this
+              field must be read as the 'relationship that this dataset has to
+              the specified URL/DOI.
+            </li>
+            <li>Link description: Provide a short description of the link.</li>
+          </ul>
         </li>
-        <ul class="docs-ul list-outside list-disc">
-          <li>
-            URL or DOI: Specify your actual URL (if resource is public) or DOI
-            (if resource is private). This can be web links to repositories or
-            papers (DOI).
-          </li>
-          <li>
-            Link type: This will state whether your link is a 'URL' or 'DOI'
-            item. Use one of those two items to reference the type of link.
-          </li>
-          <li>
-            Relation to the dataset: A prespecified list of relations for common
-            URLs or DOIs used in SPARC datasets. The value in this field must be
-            read as the 'relationship that this dataset has to the specified
-            URL/DOI.
-          </li>
-          <li>Link description: Provide a short description of the link.</li>
-        </ul>
       </ul>
 
       <div class="img-parent-div">

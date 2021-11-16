@@ -16,9 +16,9 @@
         >
           Development Approach
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full font-asap text-lg text-black dark:text-white">
                 SODA for COVID-19 is distributed as an open-source application
                 with an MIT License. Anyone is free to fork our GitHub
@@ -32,40 +32,44 @@
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/graphs/contributors"
                   target="_blank"
                   class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/contributors/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="soda for covid 19 research contributors"
                   />
                 </a>
                 <a
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/stargazers"
                   target="_blank"
                   class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/stars/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="soda for covid 19 research stars"
                   />
                 </a>
                 <a
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/issues"
                   target="_blank"
                   class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/issues/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="soda for covid 19 research issues"
                   />
                 </a>
                 <a
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/blob/master/LICENSE"
                   target="_blank"
                   class="mr-2"
+                  rel="noopener"
                 >
                   <img
                     src="https://img.shields.io/github/license/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                    alt="soda for sparc contributors"
+                    alt="soda for covid 19 research license"
                   />
                 </a>
               </div>
@@ -74,6 +78,8 @@
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
                   target="_blank"
                   class="text-url hover-underline-animation"
+                  aria-label="Github"
+                  rel="noopener"
                 >
                   <span class="font-lato"> Explore the GitHub repository </span>
                   <svg
@@ -89,12 +95,13 @@
                   </svg>
                 </a>
               </div>
-            </dd>
+            </div>
             <div class="py-3">
               <a
                 href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
+                aria-label="Github"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +117,7 @@
               </a>
             </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -131,19 +138,20 @@
         >
           Funding
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for COVID-19 Research is funded through a supplemental
                 award from the National Institute of Allergy and Infectious
                 Diseases (NIAID).
               </p>
-              <div class="flex mt-2 md:mt-1">
+              <div class="mt-2 md:mt-1 hidden" aria-hidden="true">
                 <a
-                  href=""
+                  href="#"
                   target="_blank"
                   class="text-url hover-underline-animation"
+                  rel="noopener"
                 >
                   <span class="font-lato">
                     Explore the award on NIH Reporter
@@ -161,49 +169,9 @@
                   </svg>
                 </a>
               </div>
-            </dd>
-            <div class="py-3 hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                viewBox="0 0 170.5327 84.5895"
-                class="h-20"
-              >
-                <defs>
-                  <linearGradient
-                    id="linear-gradient"
-                    y1="42.7643"
-                    x2="170.5327"
-                    y2="42.7643"
-                    gradientUnits="userSpaceOnUse"
-                  >
-                    <stop offset="0" stop-color="#0b00bf" />
-                    <stop offset="1" stop-color="#bc00fc" />
-                  </linearGradient>
-                </defs>
-                <title>sparc-logo-primary</title>
-                <g id="primary-logo">
-                  <path
-                    d="M169.0691,57.0889l-60.922-1.5a2.8941,2.8941,0,0,0-2.7225,1.7374l-.0289.0665L99.327,71.3508,87.0724,4.2313l-.0045-.03a3.9867,3.9867,0,0,0-7.8393-.0051L69.6429,55.6522,1.4623,57.3835a1.5,1.5,0,0,0,.0125,3l70.6845,1.2053a2.9235,2.9235,0,0,0,2.9-2.2814l.0259-.1154L83.01,23.8779,95.2029,82.1654l.0113.0551a3,3,0,0,0,5.684.5645l9.237-21.2451,58.9339-1.451a1.5,1.5,0,0,0,0-3Z"
-                    style="fill: url(#linear-gradient)"
-                  />
-                  <path
-                    d="M11.3962.9629c6.9756,0,11.2637,4.48,11.2637,11.583V16.77H16.0681V12.5459c0-3.2637-1.7285-5.2471-4.6719-5.2471-3.0078,0-4.7353,1.9834-4.7353,5.2471a6.6109,6.6109,0,0,0,2.4316,5.0557L17.86,25.8574c2.8154,2.6875,5.3115,5.6319,5.3115,10.56,0,7.1035-4.416,11.583-11.5195,11.583-7.167,0-11.583-4.48-11.583-11.583V32.1924H6.6609V36.417c0,3.2637,1.792,5.2471,4.9912,5.2471,3.1357,0,4.9277-1.9834,4.9277-5.2471a7.4448,7.4448,0,0,0-2.6875-5.44l-8.96-8.3828C1.3494,19.2656.0691,16.45.0691,12.3545.0691,5.4424,4.3572.9629,11.3962.9629Z"
-                  />
-                  <path
-                    d="M44.2927,31.9365V47.5518H37.7009V1.4111H48.9636c7.1035,0,11.583,4.48,11.583,11.583v7.3594c0,7.168-4.4795,11.583-11.583,11.583ZM48.9,25.73c3.1993,0,5.0557-1.92,5.0557-5.1836V12.8027c0-3.2-1.8564-5.1845-5.0557-5.1845H44.2927V25.73Z"
-                  />
-                  <path
-                    d="M116.6443,47.5518h-6.5918V1.4111h11.583c7.1035,0,11.583,4.48,11.583,11.583v6.2715a11.1941,11.1941,0,0,1-5.0557,9.8555c1.8565,5.6318,4.48,13.3115,6.1436,18.4307h-6.72l-5.5674-16.7666h-5.375Zm4.9267-22.9747c3.2,0,5.0557-1.92,5.0557-5.1191V12.8027c0-3.2-1.8555-5.1845-5.0557-5.1845h-4.9267V24.5771Z"
-                  />
-                  <path
-                    d="M170.4656,32.1924V36.417c0,7.1035-4.4151,11.583-11.5186,11.583-7.1679,0-11.583-4.48-11.583-11.583V12.5459c0-7.1035,4.4151-11.583,11.583-11.583,7.1035,0,11.5186,4.48,11.5186,11.583V16.77h-6.5908V12.5459c0-3.2637-1.792-5.2471-4.9278-5.2471-3.2,0-4.9922,1.9834-4.9922,5.2471V36.417c0,3.2637,1.792,5.2471,4.9922,5.2471,3.1358,0,4.9278-1.9834,4.9278-5.2471V32.1924Z"
-                  />
-                </g>
-              </svg>
             </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -223,9 +191,9 @@
         >
           Team Members
         </h1>
-        <dl class="w-full">
+        <div class="w-full">
           <div>
-            <dd class="mb-10 sm:mb-5 w-full">
+            <div class="mb-10 sm:mb-5 w-full">
               <div
                 class="
                   grid grid-cols-2
@@ -271,9 +239,9 @@
                   </div>
                 </router-link>
               </div>
-            </dd>
+            </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>
@@ -293,9 +261,9 @@
         >
           Research Partners
         </h1>
-        <dl class="w-full py-2">
+        <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
-            <dd class="mb-10 sm:mb-5 pr-10">
+            <div class="mb-10 sm:mb-5 pr-10">
               <p class="w-full text-lg font-asap text-black dark:text-white">
                 SODA for COVID-19 Research is developed in collaboration with
                 Dr. Zicheng Hu (UCSF) and his colleagues at University of
@@ -305,12 +273,12 @@
                 applicable FAIR guidelines as well as conducting beta testing of
                 the software.
               </p>
-            </dd>
+            </div>
           </div>
-        </dl>
-        <dl class="w-full">
+        </div>
+        <div class="w-full">
           <div>
-            <dd class="mb-10 sm:mb-5 w-full">
+            <div class="mb-10 sm:mb-5 w-full">
               <div
                 class="
                   grid grid-cols-2
@@ -327,7 +295,7 @@
                   :key="collaborator.name"
                   :href="collaborator.href"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                 >
                   <div
                     class="
@@ -367,9 +335,9 @@
                   </div>
                 </a>
               </div>
-            </dd>
+            </div>
           </div>
-        </dl>
+        </div>
       </div>
     </div>
   </section>

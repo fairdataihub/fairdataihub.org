@@ -13,7 +13,7 @@ export default {
         lang: "en-US",
       },
       meta: [
-        { name: "author", content: "Jeffrey Harmon" },
+        { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           name: "description",
           content:
@@ -79,7 +79,6 @@ export default {
           content: "https://i.ibb.co/svDc3xk/image.png",
         },
       ],
-      link: [{ rel: "canonical", href: "https://fairdataihub.org" }],
     });
   },
 };

@@ -13,7 +13,7 @@
           <a
             href="https://app.pennsieve.net/"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
             >Pennsieve Agent</a
           >.
@@ -33,6 +33,7 @@
             <a
               :href="windows_url"
               target="_blank"
+              rel="noopener"
               class="
                 hover:underline
                 text-blue-600
@@ -79,6 +80,7 @@
             <a
               :href="macOS_url"
               target="_blank"
+              rel="noopener"
               class="
                 hover:underline
                 text-blue-600
@@ -120,6 +122,7 @@
             <a
               :href="linux_url"
               target="_blank"
+              rel="noopener"
               class="
                 hover:underline
                 text-blue-600
@@ -156,7 +159,7 @@
             <a
               href="https://app.pennsieve.net/"
               target="_blank"
-              rel="nofollow"
+              rel="noopener"
               class="hover:underline text-blue-600 dark:text-blue-400"
               >AppImage Launcher</a
             >

@@ -98,6 +98,7 @@
             <a
               href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
               target="_blank"
+              rel="noopener"
             >
               <button
                 class="

@@ -19,11 +19,13 @@
     </div>
 
     <Carousel
-      :settings="settings"
-      :breakpoints="breakpoints"
+      :breakpoints="{}"
       :wrap-around="true"
-      :autoplay="7000"
+      :autoplay="6000"
+      :transition="300"
+      snapAlign="center"
       pause-autoplay-on-hover
+      v-if="ready"
     >
       <Slide v-for="project in projectsList" :key="project.name" class="py-10">
         <section
@@ -161,16 +163,12 @@ export default {
   },
   props: ["projectsList"],
   data() {
-    return {
-      settings: {
-        itemsToShow: 1,
-        snapAlign: "center",
-      },
-      breakpoints: {},
-    };
+    return { ready: false };
   },
   computed: {},
-  mounted() {},
+  mounted() {
+    this.ready = true;
+  },
 };
 </script>
 

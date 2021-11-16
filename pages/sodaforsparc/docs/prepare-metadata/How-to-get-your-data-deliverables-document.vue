@@ -37,7 +37,7 @@
           <a
             href="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/src/file_templates/DataDeliverablesDocument-template.docx?raw=true"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             here</a

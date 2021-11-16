@@ -69,6 +69,12 @@ export default {
   components: { TeamCard },
   layout: "default",
   scrollToTop: true,
+  // setup() {
+
+  //   useMeta({
+  //     link: [{ rel: "canonical", href: "https://fairdataihub.org" }],
+  //   });
+  // },
   data() {
     return {
       teamsList: [
@@ -258,16 +264,39 @@ export default {
       ],
     };
   },
+  methods: {
+    checkIfElementExists(id) {
+      if (document) {
+        const el = document.getElementById(id);
+        if (el) {
+          return true;
+        } else {
+          return false;
+        }
+      } else {
+        return false;
+      }
+    },
+  },
   mounted() {
     const hash = this.$route.hash;
     if (hash != "") {
       const id = hash.substring(1);
-      const el = document.getElementById(id);
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "center",
-      });
+      setTimeout(() => {
+        if (this.checkIfElementExists(id)) {
+          const el = document.getElementById(id);
+          el.scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+            inline: "center",
+          });
+        } else {
+          setTimeout(() => {
+            this.checkIfElementExists(id);
+          }, 100);
+          window.scrollTo(0, 0);
+        }
+      }, 100);
     }
   },
 };

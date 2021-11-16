@@ -27,13 +27,12 @@
 
         <ul class="docs-ul list-outside list-disc">
           <li>
-            The SPARC Airtable sheet as explained
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
-              <span>here</span> </NuxtLink
-            >.
+              <span>The SPARC Airtable sheet</span>
+            </NuxtLink>
           </li>
           <li>
             The Data Deliverables document associated with your award. This
@@ -42,14 +41,13 @@
             necessary to provide milestone and milestone completion dates
             associated with your dataset exactly as specified in the Data
             Deliverables document. This document is usually kept by the PI of
-            the SPARC award or the award manager. Click
+            the SPARC award or the award manager. Learn more about your
             <NuxtLink
               to="/sodaforsparc/docs/how-to/How-to-get-your-data-deliverables-document"
               class="hover:underline text-blue-600 dark:text-blue-400"
             >
-              <span>here</span>
-            </NuxtLink>
-            to find out more about it.
+              <span>Data Deliverables document</span> </NuxtLink
+            >.
           </li>
         </ul>
       </div>
@@ -64,12 +62,12 @@
         <li>
           Enter the SPARC Award number. <br /><strong>Note: </strong>SODA can
           help retrieve your SPARC award number if you are connected to the
-          SPARC Airtable sheet. Instructions are provided
+          SPARC Airtable sheet.
           <NuxtLink
             to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here.</span>
+            <span> Instructions are provided here.</span>
           </NuxtLink>
         </li>
         <li>
@@ -98,6 +96,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Submission/submission.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
     </div>

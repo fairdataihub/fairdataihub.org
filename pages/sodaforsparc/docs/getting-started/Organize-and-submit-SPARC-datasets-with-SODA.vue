@@ -1,11 +1,23 @@
 <template>
   <div>
-    <base-docs-title :title="`Organize and submit SPARC datasets with SODA`">
+    <base-docs-title
+      :title="`Checklist to organize and submit SPARC datasets with SODA`"
+    >
     </base-docs-title>
 
     <div class="flex flex-col mb-3 print:mb-1">
       <base-docs-subtitle>
-        Checklist: prepare and submit SPARC datasets with SODA
+        <template v-slot:default>
+          Prepare and submit SPARC datasets with SODA
+        </template>
+        <template v-slot:actionArea>
+          <button
+            class="text-url hover-underline-animation mb-1 print:hidden"
+            @click="printPage"
+          >
+            Print this page
+          </button>
+        </template>
       </base-docs-subtitle>
       <h3
         class="
@@ -57,6 +69,7 @@
                   <a
                     href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
                     target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -94,6 +107,7 @@
                   <a
                     href="https://app.pennsieve.net/"
                     target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -118,6 +132,7 @@
                   <a
                     href="mailto:support@pennsieve.net"
                     target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -163,6 +178,7 @@
                   <a
                     href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
                     target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -490,6 +506,7 @@
                   <a
                     href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
                     target="_blank"
+                    rel="noopener"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
@@ -800,6 +817,11 @@ export default {
   scrollToTop: true,
   data() {
     return {};
+  },
+  methods: {
+    printPage() {
+      window.print();
+    },
   },
 };
 </script>

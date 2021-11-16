@@ -46,6 +46,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/388cfd3023fb89515049abb608a8f70ff21208c0d8d402aafbc8ab9d98c8ec7f/68747470733a2f2f692e6962622e636f2f4e43485074347a2f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -64,6 +65,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/a92ee77f878c7668dd59628100ebdb12fbe4d3aba92479b720d121ce756438dc/68747470733a2f2f692e6962622e636f2f426756384c76762f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -87,6 +89,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/b95119c2a2f81cc5831dd78d52527e3bbc5ebcd19ea0ce05ff62deccee0b3890/68747470733a2f2f692e6962622e636f2f544c4e425064702f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -115,6 +118,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/0eacfb7a1a28854bdb789485b2afa7778d70c0858b146044073683e0bd2d9cfe/68747470733a2f2f692e6962622e636f2f744347726a56472f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -143,20 +147,18 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/0eacfb7a1a28854bdb789485b2afa7778d70c0858b146044073683e0bd2d9cfe/68747470733a2f2f692e6962622e636f2f744347726a56472f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
       <div class="p-parent-div">
-        <p>
-          If you need to learn more about the types of permissions and their
-          restrictions, click
-          <NuxtLink
-            to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
-            class="hover:underline text-blue-600 font-asap dark:text-blue-400"
-          >
-            here</NuxtLink
-          >.
-        </p>
+        <NuxtLink
+          to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
+          class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+        >
+          Learn more about the types of permissions and their
+          restrictions</NuxtLink
+        >.
       </div>
 
       <base-docs-heading> A5. Add a subtitle </base-docs-heading>
@@ -179,6 +181,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/5ae2f88375f706312d1a9c73823293d7a058a2f9da99550b84de04a07b9bf88e/68747470733a2f2f692e6962622e636f2f4a4674565444502f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -199,7 +202,7 @@
           <a
             href="https://sparc.science/"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 font-asap dark:text-blue-400"
           >
             sparc.science
@@ -211,6 +214,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/43fb106689ac3a41eaf3d3a0faf0adcaccf31623b8d1b32c72455bcac1f14169/68747470733a2f2f692e6962622e636f2f3353597351634b2f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -243,6 +247,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Add-metadata/banner-image.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -268,6 +273,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/4da3223b2eadcef9aecf5c545821c0f2c6f05195b8b054ea135f0e8a1ce81f8a/68747470733a2f2f692e6962622e636f2f59303170596d702f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -308,6 +314,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/bfcf10546da716ccabee27be5974a562bbfc6f3d4e26b5d5558fcc3076e54573/68747470733a2f2f692e6962622e636f2f44396658344e732f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -320,7 +327,7 @@
               <a
                 href="https://airtable.com/account"
                 target="_blank"
-                rel="nofollow"
+                rel="noopener"
                 class="
                   hover:underline
                   text-blue-600
@@ -342,6 +349,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/7422484284e52c387a1d0103bc28b2db24e85a9b6b3e3e136b76a1ad8238a265/68747470733a2f2f692e6962622e636f2f6e6673514d46762f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -352,6 +360,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/e6c98181aa267701b1be038abe77c0ab66a318b7362939504c2a1bdc18bc595c/68747470733a2f2f692e6962622e636f2f795051584d33462f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -374,6 +383,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/d9de8d44d6285b61fca338d7955657f067f94985730a3da26d6c8198ced1be8c/68747470733a2f2f692e6962622e636f2f46627a465053712f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -395,6 +405,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/e6c98181aa267701b1be038abe77c0ab66a318b7362939504c2a1bdc18bc595c/68747470733a2f2f692e6962622e636f2f795051584d33462f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -457,6 +468,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/6784c70a94fab65a56c69433be8357c4291d8394a036713495728a3a275a4528/68747470733a2f2f692e6962622e636f2f424c63444c716e2f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -495,6 +507,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/53da9515f2d57a695b63615acd51eebb61911cb2fca153de9a0ddc054d8a5db5/68747470733a2f2f692e6962622e636f2f704c3770724c732f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -590,6 +603,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/8ffce22d67e90fe62f0712bb232019a9cc97c15a0e03f746ef0fbbb6694d3b45/68747470733a2f2f692e6962622e636f2f507247664774562f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -602,7 +616,7 @@
               <a
                 href="https://scicrunch.org/resources"
                 target="_blank"
-                rel="nofollow"
+                rel="noopener"
                 class="
                   hover:underline
                   text-blue-600
@@ -622,6 +636,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/7ba6a7fbb04547bd53c79f6f0003562cce8d013c3922412e60fb63bb69717f39/68747470733a2f2f692e6962622e636f2f70336a436b79502f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
 
@@ -632,6 +647,7 @@
               <div class="img-parent-div">
                 <img
                   src="https://camo.githubusercontent.com/dd44cc7d70a105a5e03639e659d79e80b886ffc80227f774384832d3f04eba14/68747470733a2f2f692e6962622e636f2f7868714e714d372f696d6167652e706e67"
+                  alt="screenshot of soda"
                 />
               </div>
             </li>
@@ -753,7 +769,7 @@
           <a
             href="https://docs.google.com/presentation/d/1EQPn1FmANpPsFt3CguU-JOQVMMlJsNXluQAK_gb2qVg/edit#slide=id.p1"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 font-asap dark:text-blue-400"
           >
             How to</a
@@ -767,6 +783,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-dataset/Specify-files/SPARC-dataset-structure.PNG?raw=true"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -809,6 +826,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/high-level-folders-1.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -825,9 +843,10 @@
         </p>
       </div>
 
+      <p class="mb-1">
+        These are some of the functions you can do while you are in this step:
+      </p>
       <ul class="docs-ul list-outside list-disc">
-        These are some of the functions you can do while you are in this step.
-
         <li>Go inside a folder by double-clicking on it.</li>
         <li>
           Import files/folders inside a folder using drag-and-drop or the
@@ -850,16 +869,23 @@
           Multiple-select files/folders by either drag-selecting items or
           holding Ctrl and clicking items.
         </li>
+        <li>
+          Use the arrow located in the upper left corner to move up a folder.
+          The current location in the dataset is indicated right next to the
+          arrow.
+        </li>
+      </ul>
 
-        <div class="img-parent-div">
-          <img
-            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part1.gif?raw=true"
-          />
-        </div>
+      <div class="img-parent-div">
+        <img
+          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part1.gif?raw=true"
+          alt="screenshot of soda"
+        />
+      </div>
 
-        <strong> Adding file descriptions (optional)</strong>
-        <br />
-
+      <strong class="mt-4"> Adding file descriptions (optional)</strong>
+      <br />
+      <ul class="docs-ul list-outside list-disc">
         <li>
           Use the "Details" option from the right-click menu to see the actual
           path of the file and include metadata (description, Additional
@@ -869,14 +895,9 @@
           <div class="img-parent-div">
             <img
               src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part2-files.gif?raw=true"
+              alt="screenshot of soda"
             />
           </div>
-        </li>
-
-        <li>
-          Use the arrow located in the upper left corner to move up a folder.
-          The current location in the dataset is indicated right next to the
-          arrow.
         </li>
       </ul>
 
@@ -896,6 +917,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step4-metadata-files.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -913,6 +935,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/fb2f030c12514bb1537b8b5ad1e14f4b983ca18e196b8fc45e732edf293eb52a/68747470733a2f2f692e6962622e636f2f3638686473564c2f6d616e69666573742d73637265656e73686f742e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -931,6 +954,7 @@
       <div class="img-parent-div">
         <img
           src="https://camo.githubusercontent.com/4fc9c5a061ed9992f3cef118c0b46a049bb613aef9e9a4c2a7016355141892ad/68747470733a2f2f692e6962622e636f2f797962776842482f696d6167652e706e67"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -948,6 +972,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-3.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
 
@@ -971,6 +996,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/preview-dataset.PNG?raw=true"
+          alt="screenshot of soda"
         />
       </div>
 

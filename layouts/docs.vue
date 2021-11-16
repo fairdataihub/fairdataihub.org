@@ -1,68 +1,81 @@
 <template>
-  <AppHeader></AppHeader>
-  <base-section class="print:pt-0 dark:bg-dark-background">
-    <div
-      class="
-        w-full
-        max-w-screen-xl
-        gap-4
-        mb-8
-        md:mb-0
-        p-0
-        mx-auto
-        flex flex-col
-        sm:flex-row
-        items-center
-        sm:justify-center
-        relative
-      "
-    >
+  <div>
+    <Head>
+      <Link rel="canonical" :href="`https://fairdataihub.org${$route.path}`" />
+    </Head>
+    <AppHeader></AppHeader>
+    <base-section class="print:pt-0 dark:bg-dark-background">
       <div
-        class="hidden sm:block top-16 sm:w-4/12 md:w-3/12 lg:w-1/5 print:hidden"
+        class="
+          w-full
+          max-w-screen-xl
+          gap-4
+          mb-8
+          md:mb-0
+          p-0
+          mx-auto
+          flex flex-col
+          sm:flex-row
+          items-center
+          sm:justify-center
+          relative
+        "
       >
-        <div class="top-0 absolute bottom-0" style="overflow-y: scroll">
-          <SodaForSparcSidebar :sidebarList="sidebarList" />
+        <div
+          class="
+            hidden
+            sm:block
+            top-16
+            sm:w-4/12
+            md:w-3/12
+            lg:w-1/5
+            print:hidden
+          "
+        >
+          <div class="top-0 absolute bottom-0" style="overflow-y: scroll">
+            <SodaForSparcSidebar :sidebarList="sidebarList" />
+          </div>
         </div>
-      </div>
-      <div
-        class="
-          w-full
-          sm:hidden
-          flex
-          justify-center
-          bg-gray-50
-          p-2
-          z-0
-          print:hidden
-        "
-      >
-        <MobileSodaForSparcSidebar :sidebarList="sidebarList">
-        </MobileSodaForSparcSidebar>
-      </div>
-      <div
-        class="
-          bg-gray-50
-          dark:bg-dark-background
-          top-16
-          w-full
-          sm:w-8/12
-          md:w-9/12
-          lg:w-4/5
-        "
-      >
-        <div class="sm:top-0 sm:bottom-0 sm:right-0 sm:overflow-auto test">
-          <BaseDocsContent><slot /></BaseDocsContent>
-          <!-- <base-docs-content>
+        <div
+          class="
+            w-full
+            sm:hidden
+            flex
+            justify-center
+            bg-gray-50
+            p-2
+            z-0
+            print:hidden
+          "
+        >
+          <MobileSodaForSparcSidebar :sidebarList="sidebarList">
+          </MobileSodaForSparcSidebar>
+        </div>
+        <div
+          class="
+            bg-gray-50
+            dark:bg-dark-background
+            top-16
+            w-full
+            sm:w-8/12
+            md:w-9/12
+            lg:w-4/5
+          "
+        >
+          <div class="sm:top-0 sm:bottom-0 sm:right-0 sm:overflow-auto test">
+            <BaseDocsContent><slot /></BaseDocsContent>
+            <!-- <base-docs-content>
             <router-view v-slot="{ Component }">
               <transition name="docs-view" appear mode="out-in">
                 <component :is="Component" />
               </transition>
             </router-view>
           </base-docs-content> -->
+          </div>
         </div>
       </div>
-    </div>
-  </base-section>
+    </base-section>
+  </div>
 </template>
 
 <script>
@@ -70,7 +83,7 @@ import AppHeader from "~~/components/App/AppHeader.vue";
 import BaseSection from "~~/components/Base/BaseSection.vue";
 import BaseDocsContent from "~~/components/Base/BaseDocsContent.vue";
 import SodaForSparcSidebar from "~~/components/sodaforsparcdocs/SodaForSparcSidebar.vue";
-import MobileSodaForSparcSidebar from "~~/components/sodaforsparcdocs/SodaForSparcSidebar.vue";
+import MobileSodaForSparcSidebar from "~~/components/sodaforsparcdocs/MobileSodaForSparcSidebar.vue";
 
 export default {
   components: {

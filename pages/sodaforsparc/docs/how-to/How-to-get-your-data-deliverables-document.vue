@@ -47,29 +47,29 @@
       <div class="p-parent-div">
         <p>
           To obtain the Data Deliverables document associated with your award,
-          simply ask your PI or grant manager. Click
+          simply ask your PI or grant manager.
           <a
             href="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/src/file_templates/DataDeliverablesDocument-template.docx?raw=true"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            here
+            Download a template
           </a>
-          to download a template of the Data Deliverables document to see the
-          expected format. A screenshot of a sample Dataset Deliverables
-          document is provided below. Most importantly, it should be in the docx
-          format and at least one table should be included with these exact
-          three headers: 'Related milestone, aim, or task', 'Description of
-          data', 'Expected date of completion'." If any of these headers have
-          been modified, make sure to edit them before importing the file in
-          SODA.
+          of the Data Deliverables document to see the expected format. A
+          screenshot of a sample Dataset Deliverables document is provided
+          below. Most importantly, it should be in the docx format and at least
+          one table should be included with these exact three headers: 'Related
+          milestone, aim, or task', 'Description of data', 'Expected date of
+          completion'." If any of these headers need to be modified, make sure
+          to edit them before importing the file in SODA.
         </p>
       </div>
 
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
+          alt="screenshot of sample Dataset Deliverables document"
         />
       </div>
     </div>

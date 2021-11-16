@@ -12,7 +12,7 @@
           <a
             href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             SPARC Airtable sheet</a
@@ -86,15 +86,18 @@
           will be stored locally on your computer and the SODA Team will not
           have access to it.
         </li>
-        <li>Click on "Add account".</li>
-        <strong>Note: </strong
-        >You will have to do this only once and the Airtable connection will be
-        then remembered by SODA during subsequent uses.
+        <li>
+          Click on "Add account".
+          <strong>Note: </strong>You will have to do this only once and the
+          Airtable connection will be then remembered by SODA during subsequent
+          uses.
+        </li>
       </ul>
 
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Connect-to-Airtable/connect-to-airtable-new.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
     </div>

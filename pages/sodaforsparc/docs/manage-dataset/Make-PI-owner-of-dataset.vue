@@ -10,12 +10,12 @@
           There are four permission privileges available for a dataset on
           Pennsieve: owner, manager, editor, and viewer. Each of them provides
           different permissions for making changes to a dataset. These
-          permissions are summarized in the table available
+          permissions are summarized the
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here</span> </NuxtLink
+            <span>table here</span> </NuxtLink
           >.
         </p>
         <p>
@@ -31,12 +31,12 @@
       <ul class="docs-ul list-outside list-decimal">
         <li>
           Select/confirm your Pennsieve account and dataset. If you have not
-          connected your Pennsieve account with SODA yet, see
+          connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here</span> </NuxtLink
+            <span>use the instructions available here</span> </NuxtLink
           >.
         </li>
         <li>Select your SPARC award's PI's name in the drop-down list.</li>

@@ -14,7 +14,7 @@
           <a
             href="https://docs.pennsieve.io/docs/dataset-permissions"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
             >Pennsieve help page</a
           >.
@@ -78,12 +78,12 @@
       <div class="p-parent-div">
         <p>
           Start by selecting/confirming your Pennsieve account and dataset. If
-          you have not connected your Pennsieve account with SODA yet, see
+          you have not connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here</span> </NuxtLink
+            <span>use the instructions available here</span> </NuxtLink
           >. The current permissions on the selected dataset will be displayed.
         </p>
       </div>
@@ -102,6 +102,7 @@
       <div class="img-parent-div">
         <img
           src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Manage-permissions/add-permissions.gif?raw=true"
+          alt="screenshot of soda"
         />
       </div>
 

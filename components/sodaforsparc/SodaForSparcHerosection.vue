@@ -95,8 +95,8 @@
           <div class="w-full flex justify-center">
             <button
               class="
+                hidden
                 sm:block
-                flex
                 justify-center
                 items-center
                 border-0

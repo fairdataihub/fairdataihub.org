@@ -43,19 +43,20 @@
           format. SODA generates it in the xlsx format based on the template
           provided by the Curation Team. A screenshot of a sample manifest file
           from a primary folder is provided below:
-        </li>
 
-        <div class="img-parent-div">
-          <img
-            src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/manifest/manifest-example.PNG?raw=true"
-          />
-        </div>
+          <div class="img-parent-div">
+            <img
+              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/manifest/manifest-example.PNG?raw=true"
+              alt="screenshot an example manifest file"
+            />
+          </div>
+        </li>
 
         <li>
           Location in the dataset: a manifest file is required in either
-          <ul class="docs-ul list-outside list-decimal">
+          <ul class="docs-ul list-outside">
             <li>each of the high-level SPARC folders</li>
-            or
+            <li>OR</li>
             <li>in each of the dataset folders with at least one file.</li>
           </ul>
           SODA follows the structure #1 when generating the manifest files
@@ -66,40 +67,40 @@
         <li>
           Content: The "filename" and "timestamp" fields are mandatory and it is
           suggested to provide other fields as needed to understand each file.
+
+          <ul class="docs-ul list-outside list-disc">
+            <li>
+              Filename: This should be path to the files relative to the
+              high-level SPARC folder where the manifest file is located (with a
+              forward slash independently of the OS). Note that the extension of
+              the file is included.
+            </li>
+
+            <li>
+              Timestamp: The last time the file was modified locally on the
+              creator's computer, preferably in
+              <a
+                href="https://en.wikipedia.org/wiki/ISO_8601"
+                target="_blank"
+                rel="noopener"
+                class="hover:underline text-blue-600 dark:text-blue-400"
+              >
+                ISO 8601 format
+              </a>
+              with UTC offset. For example, this would be
+              "2019-07-13T02:43:14+05:30" for a file last modified on July 13th
+              2019 at 2:43 AM (14 seconds) in PST (thus +5:30 to show the offset
+              from UTC). If this timestamp is not available, the Pennsieve's
+              timestamp (which indicate the last time the file was modified on
+              Pennsieve) could be used as an alternative.
+            </li>
+
+            <li>
+              File type: Type of this file. Would be '.jpg' or 'Image file' for
+              the file histology.jpg.
+            </li>
+          </ul>
         </li>
-
-        <ul class="docs-ul list-outside list-disc">
-          <li>
-            Filename: This should be path to the files relative to the
-            high-level SPARC folder where the manifest file is located (with a
-            forward slash independently of the OS). Note that the extension of
-            the file is included.
-          </li>
-
-          <li>
-            Timestamp: The last time the file was modified locally on the
-            creator's computer, preferably in
-            <a
-              href="https://en.wikipedia.org/wiki/ISO_8601"
-              target="_blank"
-              rel="nofollow"
-              class="hover:underline text-blue-600 dark:text-blue-400"
-            >
-              ISO 8601 format
-            </a>
-            with UTC offset. For example, this would be
-            "2019-07-13T02:43:14+05:30" for a file last modified on July 13th
-            2019 at 2:43 AM (14 seconds) in PST (thus +5:30 to show the offset
-            from UTC). If this timestamp is not available, the Pennsieve's
-            timestamp (which indicate the last time the file was modified on
-            Pennsieve) could be used as an alternative.
-          </li>
-
-          <li>
-            File type: Type of this file. Would be '.jpg' or 'Image file' for
-            the file histology.jpg.
-          </li>
-        </ul>
       </ul>
     </div>
   </div>

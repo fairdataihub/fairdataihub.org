@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-light-background dark:bg-dark-background">
+  <div class="relative bg-light-background">
     <div class="hidden sm:flex flex-col sm:flex-row sm:justify-around">
       <div class="sm:w-52 md:w-56 lg:w-60">
         <nav class="mt-4 px-6 lg:px-3">
@@ -22,7 +22,7 @@
               v-for="subsection in section.subsections"
               :key="subsection.subtitle"
             >
-              <router-link
+              <NuxtLink
                 :to="subsection.href"
                 class="
                   hover:text-gray-800
@@ -44,7 +44,7 @@
                 <span class="font-asap font-normal mx-1 text-sm">
                   {{ subsection.subtitle }}
                 </span>
-              </router-link>
+              </NuxtLink>
             </div>
           </div>
         </nav>

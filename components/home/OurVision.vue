@@ -96,7 +96,7 @@ const features = [
     description: `The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are reusable by both human and machines. <div class="flex mt-2 md:mt-1">
       <a href="https://doi.org/10.1038/sdata.2016.18" target="_blank" rel="noopener">
         <text
-          class="text-accent items-center text-xl font-asap sm:text-base flex flex-row"
+          class="text-url hover-underline-animation"
         >
           Learn more about FAIR 
           <svg 

@@ -13,7 +13,7 @@
           <a
             href="https://github.com/SciCrunch/sparc-curation/releases/tag/dataset-template-1.2.3"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             downloaded as a zip file</a

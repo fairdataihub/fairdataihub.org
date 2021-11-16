@@ -12,14 +12,14 @@
           <a
             href="https://docs.google.com/presentation/d/1EQPn1FmANpPsFt3CguU-JOQVMMlJsNXluQAK_gb2qVg/edit#slide=id.p1"
             target="_blank"
-            rel="nofollow"
+            rel="noopener"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
             SPARC Dataset Structure</a
           >. This top level folder structure is shown in the figure below. If
           your data organization doesn't follow this structure inherently, you
           can create it virtually with SODA then either generate it locally on
-          your computer or directly on Blackfynn (to avoid duplicating files
+          your computer or directly on Pennsieve (to avoid duplicating files
           locally).
         </p>
       </div>

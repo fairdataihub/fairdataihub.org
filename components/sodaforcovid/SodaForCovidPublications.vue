@@ -22,14 +22,14 @@
         v-for="item in publicationsList"
         :key="item.doi"
       >
-        <a :href="item.doi" target="_blank" class="my-2">
+        <a :href="item.doi" target="_blank" class="my-2" rel="noopener">
           <p class="font-inter font-semibold text-xl">
             {{ item.title }}
           </p>
         </a>
 
         <div class="bg-gray-100 dark:bg-gray-700 rounded p-3 m2-3 relative">
-          <p class="font-lato text-xs text-gray-400">Citation</p>
+          <p class="font-lato text-xs text-gray-600">Citation</p>
           <p
             class="font-asap text-black text-base dark:text-white"
             v-html="item.citation"

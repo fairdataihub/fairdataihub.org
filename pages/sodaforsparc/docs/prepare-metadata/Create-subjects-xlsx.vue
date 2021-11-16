@@ -128,7 +128,7 @@
               <a
                 href="https://scicrunch.org/resources/Organisms/search"
                 target="_blank"
-                rel="nofollow"
+                rel="noopener"
                 class="hover:underline text-blue-600 dark:text-blue-400"
               >
                 Scicrunch</a
@@ -164,7 +164,7 @@
               <a
                 href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
                 target="_blank"
-                rel="nofollow"
+                rel="noopener"
                 class="hover:underline text-blue-600 dark:text-blue-400"
               >
                 UBERON life cycle stage</a
@@ -178,14 +178,15 @@
             </li>
             <li><i> Date of birth</i>: The date of birth of the subject.</li>
           </ul>
+
+          <div class="img-parent-div">
+            <video
+              controls
+              autoplay="true"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-species.mp4"
+            />
+          </div>
         </li>
-        <div class="img-parent-div">
-          <video
-            controls
-            autoplay="true"
-            src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-species.mp4"
-          />
-        </div>
         <li>
           Protocol Information (Optional):
 
@@ -201,7 +202,7 @@
               <a
                 href="https://www.protocols.io/developers"
                 target="_blank"
-                rel="nofollow"
+                rel="noopener"
                 class="hover:underline text-blue-600 dark:text-blue-400"
               >
                 protocols.io</a
@@ -218,14 +219,15 @@
               will be automatically filled out for this field.
             </li>
           </ul>
+
+          <div class="img-parent-div">
+            <video
+              controls
+              autoplay="true"
+              src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-protocols.mp4"
+            />
+          </div>
         </li>
-        <div class="img-parent-div">
-          <video
-            controls
-            autoplay="true"
-            src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Videos/Subjects-protocols.mp4"
-          />
-        </div>
         <li>
           Additional fields (Optional):
 

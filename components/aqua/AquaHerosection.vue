@@ -95,6 +95,7 @@
             <a
               href="https://github.com/SPARC-FAIR-Codeathon/aqua"
               target="_blank"
+              rel="noopener"
             >
               <button
                 class="
@@ -124,6 +125,7 @@
             <a
               href="https://github.com/SPARC-FAIR-Codeathon/aqua/blob/main/Documentation/Documentation.md"
               target="_blank"
+              rel="noopener"
             >
               <button
                 class="
@@ -155,6 +157,7 @@
             data-aos="fade-in"
             class="relative rounded mx-auto z-10"
             src="~/assets/aqua-tool-images/logoAQUA.png"
+            alt="aqua logo"
           />
         </div>
       </div>

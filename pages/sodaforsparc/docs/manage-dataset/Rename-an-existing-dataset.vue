@@ -21,12 +21,12 @@
         <li>
           Select/confirm your Pennsieve account and the dataset that you wish to
           rename. If you have not connected your Pennsieve account with SODA
-          yet, see
+          yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
             class="hover:underline text-blue-600 dark:text-blue-400"
           >
-            <span>here</span> </NuxtLink
+            <span>use the instructions available here</span> </NuxtLink
           >.
         </li>
         <li>Enter a new name and click "Rename".</li>
