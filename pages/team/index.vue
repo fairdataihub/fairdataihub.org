@@ -281,10 +281,13 @@ export default {
   mounted() {
     const hash = this.$route.hash;
     if (hash != "") {
+      window.scrollTo(0, 0);
+
       const id = hash.substring(1);
       setTimeout(() => {
         if (this.checkIfElementExists(id)) {
           const el = document.getElementById(id);
+
           el.scrollIntoView({
             behavior: "smooth",
             block: "center",
@@ -294,9 +297,10 @@ export default {
           setTimeout(() => {
             this.checkIfElementExists(id);
           }, 100);
-          window.scrollTo(0, 0);
         }
       }, 100);
+    } else {
+      window.scrollTo(0, 0);
     }
   },
 };
