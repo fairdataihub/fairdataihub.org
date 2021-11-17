@@ -41,7 +41,15 @@
           >
           for inspiration.
         </li>
-        <li>Click on "Add description".</li>
+        <li>
+          Click on "Add description".
+          <ul class="docs-ul list-outside list-disc">
+            <li>
+              If are editing an existing description you will be presented with
+              a 'Edit description' button to click.
+            </li>
+          </ul>
+        </li>
       </ul>
 
       <base-docs-subtitle> Note </base-docs-subtitle>
