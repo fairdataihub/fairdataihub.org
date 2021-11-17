@@ -156,7 +156,7 @@ export default {
             },
             {
               subtitle: "Add edit tags",
-              href: "/sodaforsparc/docs/manage-dataset/Add-edit-tags"  
+              href: "/sodaforsparc/docs/manage-dataset/Add-edit-tags",
             },
             {
               subtitle: "Upload a local dataset to Pennsieve",
