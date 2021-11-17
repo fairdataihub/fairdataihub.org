@@ -183,8 +183,8 @@ export default {
               href: "/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx",
             },
             {
-              subtitle: "Create dataset_description.xlsx",
-              href: "/sodaforsparc/docs/prepare-metadata/Create-dataset_description-xlsx",
+              subtitle: "Create dataset-description.xlsx",
+              href: "/sodaforsparc/docs/prepare-metadata/Create-dataset-description-xlsx",
             },
             {
               subtitle: "Create subjects.xlsx",

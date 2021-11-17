@@ -13,7 +13,7 @@
           SODA helps you prepare the
           <span class="span-content print:text-sm print:dark:text-black">
             <NuxtLink
-              to="/sodaforsparc/docs/prepare-metadata/Create-dataset_description-xlsx"
+              to="/sodaforsparc/docs/prepare-metadata/Create-dataset-description-xlsx"
               class="
                 hover:underline
                 text-blue-600

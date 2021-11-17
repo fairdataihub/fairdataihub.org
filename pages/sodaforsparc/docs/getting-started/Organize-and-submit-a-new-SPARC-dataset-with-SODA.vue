@@ -543,7 +543,7 @@
           All other information is optional.
           <br />
           When done, click on the
-          <span class="highlight-text"> Generate </span> bbutton to create the
+          <span class="highlight-text"> Generate </span> button to create the
           dataset_description.xlsx file on your computer. You will be asked to
           include this file when organizing your dataset in the later steps.
           <br />

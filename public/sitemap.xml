@@ -1,289 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<url>
-  <loc>https://fairdataihub.org/</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/team</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforcovid</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/knowmore</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sparclink</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/aqua</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/contactus</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/User-Interface</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/team/</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/niaid.nih.gov/research/share-covid-19-research-data</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/Coming%20soon.../</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/Download-Soda</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/Organize-and-submit-SPARC-datasets-with-SODA</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/Organize-and-submit-a-new-SPARC-dataset-with-SODA</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Create-a-new-dataset</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Rename-an-existing-dataset</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Make-PI-owner-of-dataset</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Add-edit-permissions</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Add-edit-subtitle</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Add-edit-description</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Upload-a-banner-image</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Assign-a-license</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Upload-a-local-dataset-to-Pennsieve</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/View-and-change-status</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-dataset_description-xlsx</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-subjects-xlsx</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-samples-xlsx</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-readme-txt</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-changes-txt</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Download-templates</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-1</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-2</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-3</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-4</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-5</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-6</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-7</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/disseminate-dataset/Share-with-curation-team</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/disseminate-dataset/Share-with-SPARC-Consortium</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/disseminate-dataset/Submit-for-pre-publishing-review</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/Installing-the-Pennsieve-agent</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/The-Pennsieve-agent-is-already-running</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/Sending-log-files-to-SODA-Team</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/Issues-regarding-hidden-files-or-folders</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-dataset-description-metadata-file</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-subjects-metadata-file</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-samples-metadata-file</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-manifest-metadata-file</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-get-your-data-deliverables-document</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA-(API-Key)</loc>
-  <lastmod>2021-11-06T22:45:49+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://fairdataihub.org/</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/team</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforcovid</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/knowmore</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sparclink</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/aqua</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/contactus</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/User-Interface</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/team/</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/niaid.nih.gov/research/share-covid-19-research-data</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/Coming%20soon.../</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/Download-Soda</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/Organize-and-submit-SPARC-datasets-with-SODA</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/getting-started/Organize-and-submit-a-new-SPARC-dataset-with-SODA</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Create-a-new-dataset</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Rename-an-existing-dataset</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Make-PI-owner-of-dataset</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Add-edit-permissions</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Add-edit-subtitle</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Add-edit-description</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Upload-a-banner-image</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Assign-a-license</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Add-edit-tags</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Upload-a-local-dataset-to-Pennsieve</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/View-and-change-status</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-dataset-description-xlsx</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-subjects-xlsx</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-samples-xlsx</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-readme-txt</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Create-changes-txt</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/prepare-metadata/Download-templates</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-1</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-2</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-3</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-4</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-5</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-6</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/organize-dataset/step-7</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/disseminate-dataset/Share-with-curation-team</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/disseminate-dataset/Share-with-SPARC-Consortium</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/disseminate-dataset/Submit-for-pre-publishing-review</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/Installing-the-Pennsieve-agent</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/The-Pennsieve-agent-is-already-running</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/Sending-log-files-to-SODA-Team</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/common-errors/Issues-regarding-hidden-files-or-folders</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-dataset-description-metadata-file</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-subjects-metadata-file</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-samples-metadata-file</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-structure-the-manifest-metadata-file</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/how-to/How-to-get-your-data-deliverables-document</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://fairdataihub.org/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA-(API-Key)</loc>
+    <lastmod>2021-11-17T23:34:47+00:00</lastmod>
+    <priority>0.41</priority>
+  </url>
 </urlset>

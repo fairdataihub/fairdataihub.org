@@ -556,7 +556,7 @@
               <div class="ml-3">
                 <span class="span-content">
                   <NuxtLink
-                    to="/sodaforsparc/docs/prepare-metadata/Create-dataset_description-xlsx"
+                    to="/sodaforsparc/docs/prepare-metadata/Create-description-xlsx"
                     class="hover:underline text-blue-600 dark:text-blue-400"
                   >
                     <span
