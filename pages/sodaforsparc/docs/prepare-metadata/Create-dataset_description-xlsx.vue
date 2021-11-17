@@ -34,8 +34,11 @@
           dataset_description.xlsx file.
         </li>
         <li>
-        If you want to continue working on an existing dataset_description.xlsx file, you will be prompted to either import it from your computer,
-         or specify a Pennsieve dataset where the file is currently located. SODA will load information from such dataset_description file for further edits at your convenience.
+          If you want to continue working on an existing
+          dataset_description.xlsx file, you will be prompted to either import
+          it from your computer, or specify a Pennsieve dataset where the file
+          is currently located. SODA will load information from such
+          dataset_description file for further edits at your convenience.
         </li>
         <li>
           The subsequent interface divides the dataset description file into six
@@ -269,12 +272,12 @@
 
       <base-docs-heading>
         After you complete all steps, click on "Generate" to generate your
-        dataset description file. You have the options to generate and save it on your computer or generate and upload it to Pennsieve.
-        A warning message may show up if any mandatory
-        fields are missing. You may decide to go back and address the issues or
-        generate the file anyway (and address the issues later).
+        dataset description file. You have the options to generate and save it
+        on your computer or generate and upload it to Pennsieve. A warning
+        message may show up if any mandatory fields are missing. You may decide
+        to go back and address the issues or generate the file anyway (and
+        address the issues later).
       </base-docs-heading>
-
 
       <base-docs-subtitle> Note </base-docs-subtitle>
 

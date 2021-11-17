@@ -25,8 +25,9 @@
       <base-docs-subtitle> Code-related metadata files: </base-docs-subtitle>
       <div class="p-parent-div">
         <p>
-          If you specify a code high level folder at Step 2: Specify high-level folders, you will be
-          able to import the code-related metadata files: code_description, inputs_metadata, and outputs_metadata.
+          If you specify a code high level folder at Step 2: Specify high-level
+          folders, you will be able to import the code-related metadata files:
+          code_description, inputs_metadata, and outputs_metadata.
         </p>
       </div>
 

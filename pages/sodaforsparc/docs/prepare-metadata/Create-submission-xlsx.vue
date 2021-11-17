@@ -60,8 +60,11 @@
           SODA or Continue working on an existing submission.xlsx file.
         </li>
         <li>
-        If you want to continue working on an existing submission.xlsx file, you will be prompted to either import it from your computer,
-         or specify a Pennsieve dataset where the file is currently located. SODA will load information from such submission file for further edits at your convenience.
+          If you want to continue working on an existing submission.xlsx file,
+          you will be prompted to either import it from your computer, or
+          specify a Pennsieve dataset where the file is currently located. SODA
+          will load information from such submission file for further edits at
+          your convenience.
         </li>
         <li>
           Enter the SPARC Award number. <br /><strong>Note: </strong>SODA can
@@ -92,9 +95,10 @@
           dropdown of milestone(s) if a Data Deliverable document is imported.
         </li>
         <li>
-          Review and click on "Generate" to generate your submission file.
-          You have the options to generate and save it on your computer or generate and upload it to Pennsieve. The
-          generated file will be ready to be included in your dataset.
+          Review and click on "Generate" to generate your submission file. You
+          have the options to generate and save it on your computer or generate
+          and upload it to Pennsieve. The generated file will be ready to be
+          included in your dataset.
         </li>
       </ul>
 
