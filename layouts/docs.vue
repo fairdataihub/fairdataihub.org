@@ -158,6 +158,10 @@ export default {
               href: "/sodaforsparc/docs/manage-dataset/Assign-a-license",
             },
             {
+              subtitle: "Add edit tags",
+              href: "/sodaforsparc/docs/manage-dataset/Add-edit-tags",
+            },
+            {
               subtitle: "Upload a local dataset to Pennsieve",
               href: "/sodaforsparc/docs/manage-dataset/Upload-a-local-dataset-to-Pennsieve",
             },
