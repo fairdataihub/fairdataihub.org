@@ -45,8 +45,8 @@
           Click on "Add description".
           <ul class="docs-ul list-outside list-disc">
             <li>
-              If editing an existing description you will be presented with
-              an 'Edit description' button to click.
+              If editing an existing description you will be presented with an
+              'Edit description' button to click.
             </li>
           </ul>
         </li>
