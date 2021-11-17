@@ -8,7 +8,7 @@
       <div class="p-parent-div">
         <p>
           All SPARC datasets must have the following metadata on Pennsieve:
-          subtitle, description, banner image, and license. This interface
+          subtitle, description, banner image, license, and tags. This interface
           allows you to easily add a description to your dataset. This
           description will be highly visible on the SPARC data portal once your
           dataset is published.
@@ -29,9 +29,9 @@
           >.
         </li>
         <li>
-          In the textbox, provide a detailed description of your dataset. It is
-          typically recommended to include three sections: Study Purpose, Data
-          Collected, and Primary Conclusion. You can see published datasets on
+          Fill in or edit your descriptive text in the Study Purpose, Data
+          Collection, and Primary Conclusion sections. You can see published
+          datasets on
           <a
             href="https://sparc.science/"
             target="_blank"
@@ -42,6 +42,33 @@
           for inspiration.
         </li>
         <li>Click on "Add description".</li>
+      </ul>
+
+      <base-docs-subtitle> Note </base-docs-subtitle>
+
+      <ul class="docs-ul list-outside list-disc">
+        <li>
+          SODA only allows you to edit the three required description sections:
+          Study Purpose, Data Collection, and Primary Conclusion. If you have
+          any nonstandard sections they will not be read into SODA for editing.
+        </li>
+        <li>
+          If text is found in your description that does not belong to any
+          required or user defined section it will be considered invalid and
+          placed in the Study Purpose textbox for you to reorganize.
+        </li>
+        <li>
+          SODA will notify you if one of your required sections is longer than a
+          single paragraph.
+        </li>
+        <li>
+          SODA will notify you if you are missing a required section before
+          finalizing your description.
+        </li>
+        <li>
+          SODA will never stop you from creating a description that does not
+          conform to SPARC guidelines.
+        </li>
       </ul>
     </div>
   </div>
