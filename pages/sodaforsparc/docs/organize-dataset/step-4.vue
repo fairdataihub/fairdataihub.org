@@ -22,10 +22,19 @@
         />
       </div>
 
+      <base-docs-subtitle> Code-related metadata files: </base-docs-subtitle>
       <div class="p-parent-div">
         <p>
-          <strong> <i> Note</i></strong
-          >: If you start with an existing local or Pennsieve dataset that has
+          If you specify a code high level folder at Step 2: Specify high-level folders, you will be
+          able to import the code-related metadata files: code_description, inputs_metadata, and outputs_metadata.
+        </p>
+      </div>
+
+      <base-docs-subtitle> Note: </base-docs-subtitle>
+
+      <div class="p-parent-div">
+        <p>
+          If you start with an existing local or Pennsieve dataset that has
           existing SPARC metadata files, these files will be automatically
           extracted and loaded here. Replace these existing files by uploading
           new ones or simply remove them from this step if required.

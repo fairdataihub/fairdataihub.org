@@ -42,7 +42,7 @@
 
         <blockquote>
           <p>
-            1B. Continue working on an existing, locally-stored subjects.xlsx
+            1B. Continue working on an existing subjects.xlsx
             file
           </p>
         </blockquote>
@@ -52,7 +52,7 @@
         <p>If you start with:</p>
         <p>
           (1B): You will be able to specify the location of the existing
-          subjects file. Clicking "Confirm" after specifying the file path will
+          subjects file: either from your computer or from a Pennsieve dataset. Clicking "Confirm" after specifying the file path or a Pennsieve dataset will
           load the information from the file onto SODA.
         </p>
       </div>
@@ -283,6 +283,12 @@
           "trash can" icon next to a field to delete a custom field.
         </p>
       </div>
+
+      <base-docs-heading>
+        After you complete all steps, click on "Generate" to generate your
+        subjects file. You have the options to generate and save it on your computer
+        or generate and upload it to Pennsieve.
+      </base-docs-heading>
 
       <base-docs-subtitle> Note </base-docs-subtitle>
 

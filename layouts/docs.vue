@@ -191,6 +191,14 @@ export default {
               href: "/sodaforsparc/docs/prepare-metadata/Create-samples-xlsx",
             },
             {
+              subtitle: "Create README.txt",
+              href: "/sodaforsparc/docs/prepare-metadata/Create-readme-txt",
+            },
+            {
+              subtitle: "Create CHANGES.txt",
+              href: "/sodaforsparc/docs/prepare-metadata/Create-changes-txt",
+            },
+            {
               subtitle: "Download templates",
               href: "/sodaforsparc/docs/prepare-metadata/Download-templates",
             },
