@@ -209,7 +209,31 @@ export default {
             link: "https://www.linkedin.com/in/jacob-clarksd/",
           },
         },
-
+        {
+          id: "TaijiYang",
+          name: "Taiji Yang (he/him)",
+          title: "Software Developer",
+          bio: "Taiji Yang is a full stack software developer who's interested in web development, data analysis and visualization. In his free time, he enjoys reading and playing video games.",
+          image: "https://i.ibb.co/nmhZXvT/blank-Profile.png",
+          placeholder: "https://i.ibb.co/nmhZXvT/blank-Profile.png",
+          borderTop: true,
+          borderBottom: false,
+          education: [
+            `B.Sc. in Computer Science (University of Minnesota, 2021)`,
+          ],
+          twitter: {
+            show: false,
+            link: "https://twitter.com/",
+          },
+          github: {
+            show: false,
+            link: "https://github.com/",
+          },
+          linkedin: {
+            show: true,
+            link: "https://www.linkedin.com/in/taiji-yang-1b4b8620b/",
+          },
+        },
         {
           id: "DorianPortillo",
           name: "Dorian Portillo (they/them)",
