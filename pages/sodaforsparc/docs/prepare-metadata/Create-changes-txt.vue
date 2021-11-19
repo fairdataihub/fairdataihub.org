@@ -38,6 +38,14 @@
           will be ready to be included in your dataset.
         </li>
       </ul>
+
+      <div class="img-parent-div">
+        <img
+          src="https://github.com/fairdataihub/SODA-for-SPARC/raw/main/docs/documentation/Prepare-metadata/Readme-Changes/changes.PNG?raw=true"
+          alt="screenshot of changes ui"
+        />
+      </div>
+
     </div>
   </div>
 </template>
