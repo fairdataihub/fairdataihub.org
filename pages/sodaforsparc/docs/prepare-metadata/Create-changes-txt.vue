@@ -45,7 +45,6 @@
           alt="screenshot of changes ui"
         />
       </div>
-
     </div>
   </div>
 </template>

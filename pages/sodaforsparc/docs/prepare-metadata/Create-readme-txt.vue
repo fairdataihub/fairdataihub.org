@@ -45,7 +45,6 @@
           alt="screenshot of readme ui"
         />
       </div>
-
     </div>
   </div>
 </template>
