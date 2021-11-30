@@ -359,6 +359,11 @@ export default {
           href: "/team/#SanjaySoundarajan",
           image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
         },
+        {
+          name: "Taiji Yang",
+          href: "/team/#TaijiYang",
+          image: "https://i.ibb.co/X3Ch9JZ/photo6.jpg",
+        },
       ],
       collaboratorsList: [
         {
