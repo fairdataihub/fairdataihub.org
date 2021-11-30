@@ -214,8 +214,8 @@ export default {
           name: "Taiji Yang (he/him)",
           title: "Software Developer",
           bio: "Taiji Yang is a full stack software developer who's interested in web development, data analysis and visualization. In his free time, he enjoys reading and playing video games.",
-          image: "https://i.ibb.co/nmhZXvT/blank-Profile.png",
-          placeholder: "https://i.ibb.co/nmhZXvT/blank-Profile.png",
+          image: "https://i.ibb.co/hY5md50/photo5.jpg",
+          placeholder: "https://i.ibb.co/hY5md50/photo5.jpg",
           borderTop: true,
           borderBottom: false,
           education: [
