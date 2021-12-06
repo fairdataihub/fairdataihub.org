@@ -46,6 +46,12 @@
           width="200"
           class="mx-4 py-2"
         />
+        <img
+          src="https://i.ibb.co/t4PKtvy/UCL-logo.png"
+          alt="University College London"
+          width="200"
+          class="mx-4 py-2"
+        />
       </Vue3Marquee>
     </div>
     <span class="text-xs text-gray-400">
