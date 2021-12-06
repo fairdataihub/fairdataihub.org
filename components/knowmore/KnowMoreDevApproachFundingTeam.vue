@@ -307,8 +307,8 @@ export default {
         },
         {
           name: "Ryan Quey",
-          href: "",
-          image: "https://avatars.dicebear.com/api/jdenticon/RyanQuey.svg",
+          href: "https://www.ryanquey.com/",
+          image: "https://i.ibb.co/0DNYPHt/profile-picture-centered.jpg",
         },
         {
           name: "Anmol Kiran",
