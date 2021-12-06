@@ -252,39 +252,66 @@
                   md:py-1
                 "
               >
-                <router-link
-                  v-for="member in membersList"
-                  :key="member.name"
-                  :to="member.href"
-                >
-                  <div
-                    class="
-                      flex flex-col
-                      items-center
-                      p-2
-                      rounded-lg
-                      transition-all
-                      hover:bg-gray-200
-                      dark:hover:bg-gray-700
-                    "
-                  >
-                    <img
-                      :src="member.image"
-                      :alt="member.name + ` profile picture`"
-                      class="h-28 rounded-full my-2"
-                    />
-                    <p
+                <div v-for="member in membersList" :key="member.name">
+                  <router-link :to="member.href" v-if="!member.external">
+                    <div
                       class="
-                        ml-2
-                        font-asap font-normal
-                        text-lg text-center
-                        dark:text-gray-50
+                        flex flex-col
+                        items-center
+                        p-2
+                        rounded-lg
+                        transition-all
+                        hover:bg-gray-200
+                        dark:hover:bg-gray-700
                       "
                     >
-                      {{ member.name }}
-                    </p>
-                  </div>
-                </router-link>
+                      <img
+                        :src="member.image"
+                        :alt="member.name + ` profile picture`"
+                        class="h-28 rounded-full my-2"
+                      />
+                      <p
+                        class="
+                          ml-2
+                          font-asap font-normal
+                          text-lg text-center
+                          dark:text-gray-50
+                        "
+                      >
+                        {{ member.name }}
+                      </p>
+                    </div>
+                  </router-link>
+                  <a v-else :href="member.href" target="_blank" rel="noopener">
+                    <div
+                      class="
+                        flex flex-col
+                        items-center
+                        p-2
+                        rounded-lg
+                        transition-all
+                        hover:bg-gray-200
+                        dark:hover:bg-gray-700
+                      "
+                    >
+                      <img
+                        :src="member.image"
+                        :alt="member.name + ` profile picture`"
+                        class="h-28 rounded-full my-2"
+                      />
+                      <p
+                        class="
+                          ml-2
+                          font-asap font-normal
+                          text-lg text-center
+                          dark:text-gray-50
+                        "
+                      >
+                        {{ member.name }}
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -303,27 +330,32 @@ export default {
         {
           name: "Tram Ngo",
           href: "/team/#TramNgo",
+          external: false,
           image: "https://i.ibb.co/VpYFGBv/Tram-head.jpg",
         },
         {
           name: "Laila Bekhet",
           href: "",
+          external: false,
           image: "https://avatars.dicebear.com/api/jdenticon/LailaBekhet.svg",
         },
         {
           name: "Yuda Munarko",
           href: "",
+          external: false,
           image: "https://avatars.dicebear.com/api/jdenticon/YudaMunarko.svg",
         },
         {
           name: "Niloofar Shahidi",
           href: "",
+          external: false,
           image:
             "https://avatars.dicebear.com/api/jdenticon/NiloofarShahidi.svg",
         },
         {
           name: "Xuanzhi ",
           href: "",
+          external: false,
           image: "https://avatars.dicebear.com/api/jdenticon/Xuanzhi.svg",
         },
       ],

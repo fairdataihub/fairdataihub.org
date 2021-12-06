@@ -251,39 +251,66 @@
                   md:py-1
                 "
               >
-                <router-link
-                  v-for="member in membersList"
-                  :key="member.name"
-                  :to="member.href"
-                >
-                  <div
-                    class="
-                      flex flex-col
-                      items-center
-                      p-2
-                      rounded-lg
-                      transition-all
-                      hover:bg-gray-200
-                      dark:hover:bg-gray-700
-                    "
-                  >
-                    <img
-                      :src="member.image"
-                      :alt="member.name + ` profile picture`"
-                      class="h-28 rounded-full my-2"
-                    />
-                    <p
+                <div v-for="member in membersList" :key="member.name">
+                  <router-link :to="member.href" v-if="!member.external">
+                    <div
                       class="
-                        ml-2
-                        font-asap font-normal
-                        text-lg text-center
-                        dark:text-gray-50
+                        flex flex-col
+                        items-center
+                        p-2
+                        rounded-lg
+                        transition-all
+                        hover:bg-gray-200
+                        dark:hover:bg-gray-700
                       "
                     >
-                      {{ member.name }}
-                    </p>
-                  </div>
-                </router-link>
+                      <img
+                        :src="member.image"
+                        :alt="member.name + ` profile picture`"
+                        class="h-28 rounded-full my-2"
+                      />
+                      <p
+                        class="
+                          ml-2
+                          font-asap font-normal
+                          text-lg text-center
+                          dark:text-gray-50
+                        "
+                      >
+                        {{ member.name }}
+                      </p>
+                    </div>
+                  </router-link>
+                  <a v-else :href="member.href" target="_blank" rel="noopener">
+                    <div
+                      class="
+                        flex flex-col
+                        items-center
+                        p-2
+                        rounded-lg
+                        transition-all
+                        hover:bg-gray-200
+                        dark:hover:bg-gray-700
+                      "
+                    >
+                      <img
+                        :src="member.image"
+                        :alt="member.name + ` profile picture`"
+                        class="h-28 rounded-full my-2"
+                      />
+                      <p
+                        class="
+                          ml-2
+                          font-asap font-normal
+                          text-lg text-center
+                          dark:text-gray-50
+                        "
+                      >
+                        {{ member.name }}
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -302,28 +329,33 @@ export default {
         {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
+          external: false,
           image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
         },
         {
           name: "Sachira Kuruppu",
           href: "",
+          external: false,
           image:
             "https://avatars.dicebear.com/api/jdenticon/SachiraKuruppu.svg",
         },
         {
           name: "Ashutosh Singh",
           href: "",
+          external: false,
           image: "https://avatars.dicebear.com/api/jdenticon/AshutoshSingh.svg",
         },
         {
           name: "Monalisa Achalla",
           href: "",
+          external: false,
           image:
             "https://avatars.dicebear.com/api/jdenticon/MonalisaAchalla.svg",
         },
         {
           name: "Jongchan Kim",
           href: "",
+          external: false,
           image: "https://avatars.dicebear.com/api/jdenticon/JongchanKim.svg",
         },
       ],

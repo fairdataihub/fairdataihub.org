@@ -252,39 +252,66 @@
                   md:py-1
                 "
               >
-                <router-link
-                  v-for="member in membersList"
-                  :key="member.name"
-                  :to="member.href"
-                >
-                  <div
-                    class="
-                      flex flex-col
-                      items-center
-                      p-2
-                      rounded-lg
-                      transition-all
-                      hover:bg-gray-200
-                      dark:hover:bg-gray-700
-                    "
-                  >
-                    <img
-                      :src="member.image"
-                      :alt="member.name + ` profile picture`"
-                      class="h-28 rounded-full my-2"
-                    />
-                    <p
+                <div v-for="member in membersList" :key="member.name">
+                  <router-link :to="member.href" v-if="!member.external">
+                    <div
                       class="
-                        ml-2
-                        font-asap font-normal
-                        text-lg text-center
-                        dark:text-gray-50
+                        flex flex-col
+                        items-center
+                        p-2
+                        rounded-lg
+                        transition-all
+                        hover:bg-gray-200
+                        dark:hover:bg-gray-700
                       "
                     >
-                      {{ member.name }}
-                    </p>
-                  </div>
-                </router-link>
+                      <img
+                        :src="member.image"
+                        :alt="member.name + ` profile picture`"
+                        class="h-28 rounded-full my-2"
+                      />
+                      <p
+                        class="
+                          ml-2
+                          font-asap font-normal
+                          text-lg text-center
+                          dark:text-gray-50
+                        "
+                      >
+                        {{ member.name }}
+                      </p>
+                    </div>
+                  </router-link>
+                  <a v-else :href="member.href" target="_blank" rel="noopener">
+                    <div
+                      class="
+                        flex flex-col
+                        items-center
+                        p-2
+                        rounded-lg
+                        transition-all
+                        hover:bg-gray-200
+                        dark:hover:bg-gray-700
+                      "
+                    >
+                      <img
+                        :src="member.image"
+                        :alt="member.name + ` profile picture`"
+                        class="h-28 rounded-full my-2"
+                      />
+                      <p
+                        class="
+                          ml-2
+                          font-asap font-normal
+                          text-lg text-center
+                          dark:text-gray-50
+                        "
+                      >
+                        {{ member.name }}
+                      </p>
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -303,21 +330,25 @@ export default {
         {
           name: "Bhavesh Patel",
           href: "/team/#BhaveshPatel",
+          external: false,
           image: "https://i.ibb.co/drZPXHs/Bhavesh-head.jpg",
         },
         {
           name: "Ryan Quey",
           href: "https://www.ryanquey.com/",
+          external: true,
           image: "https://i.ibb.co/0DNYPHt/profile-picture-centered.jpg",
         },
         {
           name: "Anmol Kiran",
           href: "",
+          external: false,
           image: "https://avatars.dicebear.com/api/jdenticon/AnmolKiran.svg",
         },
         {
           name: "Matthew Schiefer",
           href: "",
+          external: false,
           image:
             "https://avatars.dicebear.com/api/jdenticon/MatthewSchiefer.svg",
         },
