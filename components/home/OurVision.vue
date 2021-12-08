@@ -50,7 +50,7 @@ import {
   LightningBoltIcon,
   ScaleIcon,
   ExclamationCircleIcon,
-} from "@heroicons/vue/outline";
+} from "@heroicons/vue/outline/index.js";
 
 const features = [
   {

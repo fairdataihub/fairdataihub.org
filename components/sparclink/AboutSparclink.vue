@@ -55,7 +55,7 @@ import {
   ChartPieIcon,
   InformationCircleIcon,
   DatabaseIcon,
-} from "@heroicons/vue/outline";
+} from "@heroicons/vue/outline/index.js";
 
 const features = [
   {
