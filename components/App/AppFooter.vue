@@ -4,22 +4,12 @@
       <div class="flex justify-center mb-8 mt-5">
         <div>
           <div
-            class="
-              text-center text-2xl text-black
-              dark:text-gray-50
-              text-bold
-              p-3
-            "
+            class="text-center text-2xl text-black dark:text-gray-50 text-bold p-3"
           >
             <strong> Need Help? Contact Us. </strong>
           </div>
           <div
-            class="
-              flex flex-col
-              sm:flex-row
-              divide-gray-500 divide-x-0
-              sm:divide-x
-            "
+            class="flex flex-col sm:flex-row divide-gray-500 divide-x-0 sm:divide-x"
           >
             <h1
               class="text-center text-xl dark:text-gray-50 text-bold px-2 py-1"
@@ -36,16 +26,7 @@
       </div>
 
       <div
-        class="
-          container
-          px-5
-          py-2
-          mx-auto
-          flex
-          items-center
-          flex-col
-          sm:flex-row
-        "
+        class="container px-5 py-2 mx-auto flex items-center flex-col sm:flex-row"
       >
         <a
           href="https://calmi2.org"
@@ -293,11 +274,7 @@
         </a>
 
         <div
-          class="
-            sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0
-            mt-4
-            self-center
-          "
+          class="sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 self-center"
         >
           <a
             href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
@@ -313,24 +290,11 @@
         </div>
 
         <div
-          class="
-            inline-flex
-            sm:ml-auto sm:mt-0
-            mt-4
-            justify-center
-            sm:justify-start
-          "
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
         >
           <a
             href="https://www.twitter.com/NIH"
-            class="
-              mx-2
-              text-gray-400
-              dark:text-gray-50
-              hover:text-gray-500
-              dark:hover:text-white
-              hidden
-            "
+            class="mx-2 text-gray-400 dark:text-gray-50 hover:text-gray-500 dark:hover:text-white hidden"
             aria-label="Twitter"
           >
             <svg
@@ -338,13 +302,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              class="
-                text-gray-400
-                hover:text-accent
-                dark:text-gray-200 dark:hover:text-accent
-                w-5
-                h-5
-              "
+              class="text-gray-400 hover:text-accent dark:text-gray-200 dark:hover:text-accent w-5 h-5"
               viewBox="0 0 24 24"
             >
               <path
@@ -354,13 +312,7 @@
           </a>
           <a
             href="https://www.twitter.com/fairdataihub"
-            class="
-              mx-2
-              text-gray-400
-              dark:text-gray-50
-              hover:text-gray-500
-              dark:hover:text-white
-            "
+            class="mx-2 text-gray-400 dark:text-gray-50 hover:text-gray-500 dark:hover:text-white"
             aria-label="Twitter"
             rel="noopener"
           >
@@ -369,13 +321,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              class="
-                text-gray-400
-                hover:text-accent
-                dark:text-gray-200 dark:hover:text-accent
-                w-5
-                h-5
-              "
+              class="text-gray-400 hover:text-accent dark:text-gray-200 dark:hover:text-accent w-5 h-5"
               viewBox="0 0 24 24"
             >
               <path
@@ -385,14 +331,7 @@
           </a>
           <a
             href="https://www.instagram.com/instagram/?hl=en"
-            class="
-              mx-2
-              text-gray-400
-              dark:text-gray-50
-              hover:text-gray-500
-              dark:hover:text-white
-              hidden
-            "
+            class="mx-2 text-gray-400 dark:text-gray-50 hover:text-gray-500 dark:hover:text-white hidden"
             aria-label="Instagram"
             rel="noopener"
           >
@@ -402,13 +341,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              class="
-                text-gray-400
-                hover:text-accent
-                dark:text-gray-200 dark:hover:text-accent
-                w-5
-                h-5
-              "
+              class="text-gray-400 hover:text-accent dark:text-gray-200 dark:hover:text-accent w-5 h-5"
               viewBox="0 0 24 24"
             >
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
@@ -419,13 +352,7 @@
           </a>
           <a
             href="https://www.linkedin.com/company/california-medical-innovations-institute"
-            class="
-              mx-2
-              text-gray-400
-              dark:text-gray-50
-              hover:text-gray-500
-              dark:hover:text-white
-            "
+            class="mx-2 text-gray-400 dark:text-gray-50 hover:text-gray-500 dark:hover:text-white"
             aria-label="Linked In"
             rel="noopener"
           >
@@ -435,13 +362,7 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="0"
-              class="
-                text-gray-400
-                hover:text-accent
-                dark:text-gray-200 dark:hover:text-accent
-                w-5
-                h-5
-              "
+              class="text-gray-400 hover:text-accent dark:text-gray-200 dark:hover:text-accent w-5 h-5"
               viewBox="0 0 24 24"
             >
               <path
@@ -454,12 +375,7 @@
           <a
             href="https://github.com/fairdataihub"
             target="_blank"
-            class="
-              mx-2
-              text-gray-400
-              hover:text-accent
-              dark:text-gray-200 dark:hover:text-accent
-            "
+            class="mx-2 text-gray-400 hover:text-accent dark:text-gray-200 dark:hover:text-accent"
             aria-label="Github"
             rel="noopener"
           >

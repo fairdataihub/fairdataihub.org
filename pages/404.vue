@@ -1,63 +1,21 @@
 <template>
   <main class="bg-white relative overflow-hidden h-screen">
     <div
-      class="
-        container
-        mx-auto
-        h-screen
-        w-full
-        pt-32
-        md:pt-0
-        px-3
-        z-10
-        flex
-        items-center
-        justify-between
-      "
+      class="container mx-auto h-screen w-full pt-32 md:pt-0 px-3 z-10 flex items-center justify-between"
     >
       <div
-        class="
-          container
-          mx-auto
-          px-6
-          flex flex-col-reverse
-          lg:flex-row
-          justify-between
-          items-center
-          relative
-        "
+        class="container mx-auto px-6 flex flex-col-reverse lg:flex-row justify-between items-center relative"
       >
         <div class="w-full mb-16 md:mb-8 text-center lg:text-left">
           <h1
-            class="
-              font-light font-sans
-              text-center
-              lg:text-left
-              text-5xl
-              lg:text-8xl
-              mt-12
-              md:mt-0
-              text-gray-700
-              dark:text-gray-50
-            "
+            class="font-light font-sans text-center lg:text-left text-5xl lg:text-8xl mt-12 md:mt-0 text-gray-700 dark:text-gray-50"
           >
             Sorry, this page isn't available
           </h1>
           <NuxtLink to="/">
             <button
               type="button"
-              class="
-                bg-pink-600
-                hover:bg-pink-700
-                text-white
-                mt-8
-                transition-all
-                text-center text-3xl
-                lg:text-5xl
-                shadow-md
-                rounded-lg
-                p-4
-              "
+              class="bg-pink-600 hover:bg-pink-700 text-white mt-8 transition-all text-center text-3xl lg:text-5xl shadow-md rounded-lg p-4"
             >
               Go back home
             </button>

@@ -5,14 +5,7 @@
     >
       <div class="relative wrap overflow-hidden p-2 sm:p-4 h-full">
         <h2
-          class="
-            mb-10
-            text-4xl
-            font-bold
-            text-center
-            sm:text-5xl
-            dark:text-gray-50
-          "
+          class="mb-10 text-4xl font-bold text-center sm:text-5xl dark:text-gray-50"
         >
           Timeline
         </h2>
@@ -25,33 +18,13 @@
               :key="item.longDate"
             >
               <div
-                class="
-                  h-full
-                  w-10
-                  absolute
-                  inset-0
-                  flex
-                  items-center
-                  justify-center
-                "
+                class="h-full w-10 absolute inset-0 flex items-center justify-center"
                 v-if="index != timelineList.length - 1"
               >
                 <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="
-                  flex-shrink-0
-                  w-10
-                  h-10
-                  rounded-full
-                  bg-light-accent
-                  inline-flex
-                  items-center
-                  justify-center
-                  text-white
-                  relative
-                  z-10
-                "
+                class="flex-shrink-0 w-10 h-10 rounded-full bg-light-accent inline-flex items-center justify-center text-white relative z-10"
               >
                 <svg
                   fill="none"
@@ -84,13 +57,7 @@
                   {{ item.longDate }} - {{ item.title }}
                 </h3>
                 <p
-                  class="
-                    w-full
-                    text-base
-                    font-asap
-                    text-black
-                    dark:text-gray-50
-                  "
+                  class="w-full text-base font-asap text-black dark:text-gray-50"
                 >
                   {{ item.content }}
                 </p>

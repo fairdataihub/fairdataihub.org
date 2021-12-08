@@ -328,12 +328,7 @@
                 href="https://airtable.com/account"
                 target="_blank"
                 rel="noopener"
-                class="
-                  hover:underline
-                  text-blue-600
-                  font-asap
-                  dark:text-blue-400
-                "
+                class="hover:underline text-blue-600 font-asap dark:text-blue-400"
               >
                 your account</a
               >
@@ -617,12 +612,7 @@
                 href="https://scicrunch.org/resources"
                 target="_blank"
                 rel="noopener"
-                class="
-                  hover:underline
-                  text-blue-600
-                  font-asap
-                  dark:text-blue-400
-                "
+                class="hover:underline text-blue-600 font-asap dark:text-blue-400"
               >
                 Scicrunch</a
               >

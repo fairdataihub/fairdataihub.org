@@ -2,16 +2,7 @@
   <section class="max-w-screen-xl mx-auto">
     <div class="w-full flex flex-col">
       <h2
-        class="
-          font-bold
-          text-2xl
-          sm:text-2xl
-          md:text-3xl
-          lg:text-5xl
-          text-center
-          py-1
-          dark:text-gray-50
-        "
+        class="font-bold text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-center py-1 dark:text-gray-50"
       >
         Impact on SPARC datasets
       </h2>
@@ -28,43 +19,18 @@
         :key="item.name"
       >
         <p
-          class="
-            my-1
-            font-lato font-bold
-            text-5xl
-            sm:text-4xl
-            md:text-5xl
-            lg:text-6xl
-            text-center
-            hidden
-          "
+          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center hidden"
           :data-inviewport="item.class"
         ></p>
 
         <p
-          class="
-            my-1
-            font-lato font-bold
-            text-5xl
-            sm:text-4xl
-            md:text-5xl
-            lg:text-6xl
-            text-center
-          "
+          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center"
         >
           {{ item.num }}
         </p>
 
         <p
-          class="
-            text-xl
-            font-asap
-            sm:text-lg
-            md:text-xl
-            dark:text-white
-            lg:text-2xl
-            text-center text-black
-          "
+          class="text-xl font-asap sm:text-lg md:text-xl dark:text-white lg:text-2xl text-center text-black"
         >
           {{ item.name }}
         </p>

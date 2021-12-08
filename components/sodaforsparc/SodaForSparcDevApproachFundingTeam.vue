@@ -3,16 +3,7 @@
     <div class="sm:pt-10 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="
-            md:mr-8
-            py-5
-            md:py-0
-            font-black
-            dark:text-gray-50
-            text-4xl
-            subpixel-antialiased
-            text-left
-          "
+          class="md:mr-8 py-5 md:py-0 font-black dark:text-gray-50 text-4xl subpixel-antialiased text-left"
         >
           Development Approach
         </h1>
@@ -123,16 +114,7 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="
-            md:mr-8
-            py-5
-            md:py-0
-            font-black
-            dark:text-gray-50
-            text-4xl
-            subpixel-antialiased
-            text-left
-          "
+          class="md:mr-8 py-5 md:py-0 font-black dark:text-gray-50 text-4xl subpixel-antialiased text-left"
         >
           Funding
         </h1>
@@ -219,15 +201,7 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="
-            md:mr-8
-            pb-5
-            font-black
-            dark:text-gray-50
-            text-4xl
-            subpixel-antialiased
-            text-left
-          "
+          class="md:mr-8 pb-5 font-black dark:text-gray-50 text-4xl subpixel-antialiased text-left"
         >
           Team Members
         </h1>
@@ -235,28 +209,12 @@
           <div>
             <div class="mb-10 sm:mb-5 w-full">
               <div
-                class="
-                  grid grid-cols-2
-                  md:grid-cols-2
-                  lg:grid-cols-4
-                  md:gap-3
-                  lg:gap-4
-                  py-0
-                  md:py-1
-                "
+                class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 py-0 md:py-1"
               >
                 <div v-for="member in membersList" :key="member.name">
                   <router-link :to="member.href" v-if="!member.external">
                     <div
-                      class="
-                        flex flex-col
-                        items-center
-                        p-2
-                        rounded-lg
-                        transition-all
-                        hover:bg-gray-200
-                        dark:hover:bg-gray-700
-                      "
+                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200 dark:hover:bg-gray-700"
                     >
                       <img
                         :src="member.image"
@@ -264,12 +222,7 @@
                         class="h-28 rounded-full my-2"
                       />
                       <p
-                        class="
-                          ml-2
-                          font-asap font-normal
-                          text-lg text-center
-                          dark:text-gray-50
-                        "
+                        class="ml-2 font-asap font-normal text-lg text-center dark:text-gray-50"
                       >
                         {{ member.name }}
                       </p>
@@ -277,15 +230,7 @@
                   </router-link>
                   <a v-else :href="member.href" target="_blank" rel="noopener">
                     <div
-                      class="
-                        flex flex-col
-                        items-center
-                        p-2
-                        rounded-lg
-                        transition-all
-                        hover:bg-gray-200
-                        dark:hover:bg-gray-700
-                      "
+                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200 dark:hover:bg-gray-700"
                     >
                       <img
                         :src="member.image"
@@ -293,12 +238,7 @@
                         class="h-28 rounded-full my-2"
                       />
                       <p
-                        class="
-                          ml-2
-                          font-asap font-normal
-                          text-lg text-center
-                          dark:text-gray-50
-                        "
+                        class="ml-2 font-asap font-normal text-lg text-center dark:text-gray-50"
                       >
                         {{ member.name }}
                       </p>
@@ -316,15 +256,7 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="
-            md:mr-8
-            pb-5
-            font-black
-            dark:text-gray-50
-            text-4xl
-            subpixel-antialiased
-            text-left
-          "
+          class="md:mr-8 pb-5 font-black dark:text-gray-50 text-4xl subpixel-antialiased text-left"
         >
           Research Partners
         </h1>
@@ -343,15 +275,7 @@
           <div>
             <div class="mb-10 sm:mb-5 w-full">
               <div
-                class="
-                  grid grid-cols-2
-                  md:grid-cols-2
-                  lg:grid-cols-4
-                  md:gap-3
-                  lg:gap-4
-                  py-0
-                  md:py-1
-                "
+                class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 py-0 md:py-1"
               >
                 <a
                   v-for="collaborator in collaboratorsList"
@@ -361,16 +285,7 @@
                   rel="noopener"
                 >
                   <div
-                    class="
-                      flex flex-col
-                      items-center
-                      h-full
-                      p-2
-                      rounded-lg
-                      transition-all
-                      hover:bg-gray-200
-                      dark:hover:bg-gray-700
-                    "
+                    class="flex flex-col items-center h-full p-2 rounded-lg transition-all hover:bg-gray-200 dark:hover:bg-gray-700"
                   >
                     <img
                       :src="collaborator.image"
@@ -378,13 +293,7 @@
                       class="my-auto mx-10"
                     />
                     <p
-                      class="
-                        ml-2
-                        mt-3
-                        font-asap font-normal
-                        text-lg text-center
-                        dark:text-gray-50
-                      "
+                      class="ml-2 mt-3 font-asap font-normal text-lg text-center dark:text-gray-50"
                     >
                       {{ collaborator.name }}
                     </p>

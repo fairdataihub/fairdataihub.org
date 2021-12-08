@@ -2,14 +2,7 @@
   <div class="w-full max-w-screen-lg mx-auto h-auto pt-1 pb-3">
     <div class="flex flex-col justify-center items-center mb-4">
       <h2
-        class="
-          my-2
-          font-extrabold
-          tracking-tight
-          text-4xl
-          sm:text-4xl
-          text-center
-        "
+        class="my-2 font-extrabold tracking-tight text-4xl sm:text-4xl text-center"
       >
         Current Projects
       </h2>
@@ -29,53 +22,16 @@
     >
       <Slide v-for="project in projectsList" :key="project.name" class="py-10">
         <section
-          class="
-            text-gray-600
-            w-4/5
-            h-full
-            body-font
-            my-auto
-            mx-10
-            px-5
-            py-10
-            flex flex-row
-            justify-center
-            items-center
-            rounded-lg
-            shadow-xl
-          "
+          class="text-gray-600 w-4/5 h-full body-font my-auto mx-10 px-5 py-10 flex flex-row justify-center items-center rounded-lg shadow-xl"
         >
           <div
-            class="
-              container
-              mx-auto
-              flex flex-col-reverse
-              justify-center
-              items-center
-              h-full
-            "
+            class="container mx-auto flex flex-col-reverse justify-center items-center h-full"
           >
             <div
-              class="
-                flex flex-col
-                my-4
-                sm:mb-16
-                md:mb-0
-                items-center
-                text-center
-              "
+              class="flex flex-col my-4 sm:mb-16 md:mb-0 items-center text-center"
             >
               <p
-                class="
-                  w-full
-                  text-left
-                  sm:text-center
-                  text-base
-                  md:text-base
-                  lg:text-lg
-                  font-asap
-                  text-black
-                "
+                class="w-full text-left sm:text-center text-base md:text-base lg:text-lg font-asap text-black"
               >
                 {{ project.description }}
               </p>
@@ -83,27 +39,7 @@
               <div class="w-full flex justify-center py-4">
                 <NuxtLink :to="project.page">
                   <button
-                    class="
-                      sm:ml-4
-                      inline-flex
-                      border-0
-                      py-2
-                      px-6
-                      focus:outline-none
-                      rounded
-                      text-lg
-                      md:text-base
-                      lg:text-lg
-                      transition
-                      bg-black
-                      dark:bg-pink-600
-                      text-white
-                      ring-2 ring-offset-2 ring-transparent
-                      dark:ring-offset-transparent
-                      hover:ring-pink-600
-                      dark:hover:ring-offset-1 dark:hover:ring-white
-                      focus:ring-pink-600
-                    "
+                    class="sm:ml-4 inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg md:text-base lg:text-lg transition bg-black dark:bg-pink-600 text-white ring-2 ring-offset-2 ring-transparent dark:ring-offset-transparent hover:ring-pink-600 dark:hover:ring-offset-1 dark:hover:ring-white focus:ring-pink-600"
                   >
                     Learn more about {{ project.name }}
                   </button>
@@ -111,28 +47,10 @@
               </div>
             </div>
             <div
-              class="
-                lg:max-w-lg
-                my-5
-                sm:py-0
-                flex flex-row
-                justify-center
-                items-center
-              "
+              class="lg:max-w-lg my-5 sm:py-0 flex flex-row justify-center items-center"
             >
               <img
-                class="
-                  object-cover object-center
-                  rounded
-                  sm:pt-20
-                  md:pt-0
-                  sm:h-full
-                  md:h-auto
-                  lg:h-auto
-                  sm:w-60
-                  md:w-72
-                  lg:w-80
-                "
+                class="object-cover object-center rounded sm:pt-20 md:pt-0 sm:h-full md:h-auto lg:h-auto sm:w-60 md:w-72 lg:w-80"
                 alt="SODA for SPARC logo"
                 :src="project.imageUrl"
               />

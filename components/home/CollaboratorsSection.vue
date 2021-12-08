@@ -2,14 +2,7 @@
   <div class="container px-6 pt-4 pb-0 md:p-10 max-w-screen-lg mx-auto">
     <div class="flex flex-col items-center mb-4 w-full">
       <p
-        class="
-          my-2
-          font-extrabold
-          tracking-tight
-          text-4xl
-          sm:text-4xl
-          text-center
-        "
+        class="my-2 font-extrabold tracking-tight text-4xl sm:text-4xl text-center"
       >
         Where do our tools make a difference?
       </p>

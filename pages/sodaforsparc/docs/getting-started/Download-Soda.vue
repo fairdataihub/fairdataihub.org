@@ -34,12 +34,7 @@
               :href="windows_url"
               target="_blank"
               rel="noopener"
-              class="
-                hover:underline
-                text-blue-600
-                dark:text-blue-400
-                cursor-pointer
-              "
+              class="hover:underline text-blue-600 dark:text-blue-400 cursor-pointer"
             >
               Download the Windows installer.
             </a>
@@ -81,12 +76,7 @@
               :href="macOS_url"
               target="_blank"
               rel="noopener"
-              class="
-                hover:underline
-                text-blue-600
-                dark:text-blue-400
-                cursor-pointer
-              "
+              class="hover:underline text-blue-600 dark:text-blue-400 cursor-pointer"
             >
               Download the macOS installer.
             </a>
@@ -123,12 +113,7 @@
               :href="linux_url"
               target="_blank"
               rel="noopener"
-              class="
-                hover:underline
-                text-blue-600
-                dark:text-blue-400
-                cursor-pointer
-              "
+              class="hover:underline text-blue-600 dark:text-blue-400 cursor-pointer"
             >
               Download Linux AppImage.
             </a>

@@ -3,16 +3,7 @@
     <div class="items-center md:flex justify-center">
       <div class="w-full lg:w-1/2 lg:max-w-lg p-2">
         <h1
-          class="
-            md:py-3
-            w-full
-            font-black
-            text-4xl
-            sm:text-3xl
-            md:text-4xl
-            lg:text-5xl
-            text-left
-          "
+          class="md:py-3 w-full font-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-left"
         >
           Making FAIR
           <span class="text-accent"> data </span>
@@ -20,17 +11,7 @@
         </h1>
 
         <p
-          class="
-            mt-2
-            sm:mt-0
-            w-full
-            font-normal
-            text-xl
-            sm:text-base
-            md:text-lg
-            lg:text-xl
-            text-black
-          "
+          class="mt-2 sm:mt-0 w-full font-normal text-xl sm:text-base md:text-lg lg:text-xl text-black"
         >
           <span class="font-medium">F</span>indable,
           <span class="font-medium">A</span>ccessible,
@@ -43,19 +24,7 @@
         <NuxtLink to="/contactus">
           <button
             type="button"
-            class="
-              my-3
-              p-3
-              transition-all
-              text-center text-base
-              rounded-lg
-              font-semibold
-              bg-transparent
-              border-black border-2
-              hover:border-light-accent
-              text-black
-              hover:text-accent
-            "
+            class="my-3 p-3 transition-all text-center text-base rounded-lg font-semibold bg-transparent border-black border-2 hover:border-light-accent text-black hover:text-accent"
           >
             Contact us
           </button>
@@ -63,17 +32,7 @@
       </div>
 
       <div
-        class="
-          w-full
-          lg:w-1/2
-          flex
-          items-center
-          justify-center
-          mt-6
-          lg:mt-0
-          p-5
-          lg:p-2
-        "
+        class="w-full lg:w-1/2 flex items-center justify-center mt-6 lg:mt-0 p-5 lg:p-2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

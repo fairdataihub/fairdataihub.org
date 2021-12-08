@@ -2,12 +2,7 @@
   <div class="divide-y divide-white bg-white">
     <div
       data-aos="fade-in"
-      class="
-        bg-haikeiWavy bg-cover
-        2xl:bg-contain
-        bg-no-repeat bg-top
-        md:bg-right-top
-      "
+      class="bg-haikeiWavy bg-cover 2xl:bg-contain bg-no-repeat bg-top md:bg-right-top"
     >
       <base-section
         class="pt-12 sm:pt-16 dark:bg-dark-background mb-10"
