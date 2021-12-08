@@ -1,8 +1,13 @@
 <template>
   <div>
-    <Head>
-      <Link rel="canonical" :href="`https://fairdataihub.org${$route.path}`" />
-    </Head>
+    <Html>
+      <Head>
+        <Link
+          rel="canonical"
+          :href="`https://fairdataihub.org${$route.path}`"
+        />
+      </Head>
+    </Html>
     <AppHeader />
     <main>
       <slot />
