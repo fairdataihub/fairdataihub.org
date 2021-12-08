@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       postcssOptions: require("./postcss.config.js"),
     },
   },
-  modules: ["@nuxtjs/robots", "@nuxtjs/dotenv"],
+  modules: ["@nuxtjs/dotenv"],
   publicRuntimeConfig: {
     USER_ID: process.env.VUE_APP_USER_ID,
     TEMPLATE_ID: process.env.VUE_APP_TEMPLATE_ID,

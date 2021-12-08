@@ -1,27 +1,10 @@
 <template>
   <div
-    class="
-      bg-haikeiCircleScatter bg-cover bg-no-repeat
-      pt-16
-      sm:h-screen
-      flex
-      justify-center
-      items-center
-    "
+    class="bg-haikeiCircleScatter bg-cover bg-no-repeat pt-16 sm:h-screen flex justify-center items-center"
   >
     <base-section class="py-8">
       <div
-        class="
-          container
-          px-6
-          py-8
-          w-screen
-          max-w-screen-md
-          mx-auto
-          shadow-lg
-          bg-gray-50
-          rounded-lg
-        "
+        class="container px-6 py-8 w-screen max-w-screen-md mx-auto shadow-lg bg-gray-50 rounded-lg"
       >
         <form class="flex flex-col py-5 px-5 sm:px-10 text-3xl" @submit.prevent>
           <h2 class="pt-3 text-center text-4xl">
@@ -35,19 +18,7 @@
               required
               placeholder="Your Name *"
               v-model="formName"
-              class="
-                w-full
-                my-2
-                py-2
-                px-4
-                text-base
-                sm:text-lg
-                font-asap
-                border border-gray-300
-                focus:border-black
-                rounded
-                outline-none
-              "
+              class="w-full my-2 py-2 px-4 text-base sm:text-lg font-asap border border-gray-300 focus:border-black rounded outline-none"
             />
             <span v-if="formNameRequired" class="text-red-500 text-xs">
               Please complete this required field.
@@ -60,19 +31,7 @@
               required
               placeholder="Your Company or Institution *"
               v-model="formInstitute"
-              class="
-                w-full
-                my-2
-                py-2
-                px-4
-                text-base
-                sm:text-lg
-                font-asap
-                border border-gray-300
-                focus:border-black
-                rounded
-                outline-none
-              "
+              class="w-full my-2 py-2 px-4 text-base sm:text-lg font-asap border border-gray-300 focus:border-black rounded outline-none"
             />
             <span v-if="formInstituteRequired" class="text-red-500 text-xs">
               Please complete this required field.
@@ -85,19 +44,7 @@
               required
               placeholder="Your Email Address *"
               v-model="formEmail"
-              class="
-                w-full
-                my-2
-                py-2
-                px-4
-                text-base
-                sm:text-lg
-                font-asap
-                border border-gray-300
-                focus:border-black
-                rounded
-                outline-none
-              "
+              class="w-full my-2 py-2 px-4 text-base sm:text-lg font-asap border border-gray-300 focus:border-black rounded outline-none"
             />
             <span v-if="formEmailRequired" class="text-red-500 text-xs">
               Please complete this required field.
@@ -110,20 +57,7 @@
               required
               placeholder="Tell us more about what you have in mind*"
               rows="5"
-              class="
-                w-full
-                my-2
-                py-2
-                px-4
-                text-base
-                sm:text-lg
-                font-normal font-asap
-                border border-gray-300
-                focus:border-black
-                rounded
-                outline-none
-                resize-none
-              "
+              class="w-full my-2 py-2 px-4 text-base sm:text-lg font-normal font-asap border border-gray-300 focus:border-black rounded outline-none resize-none"
             ></textarea>
             <span v-if="formMessageRequired" class="text-red-500 text-xs">
               Please complete this required field.
@@ -136,19 +70,7 @@
             </span> -->
             <button
               @click="sendEmail"
-              class="
-                cursor-pointer
-                bg-pink-600
-                text-white
-                px-4
-                py-2
-                rounded-lg
-                shadow-lg
-                focus:bg-pink-500
-                hover:bg-pink-500
-                transition-all
-                my-2
-              "
+              class="cursor-pointer bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg focus:bg-pink-500 hover:bg-pink-500 transition-all my-2"
             >
               Send
             </button>

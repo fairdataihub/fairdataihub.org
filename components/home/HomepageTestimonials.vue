@@ -1,30 +1,10 @@
 <template>
   <div
-    class="
-      w-full
-      flex flex-col
-      gap-4
-      mb-8
-      md:mb-0
-      justify-between
-      items-center
-      p-8
-      max-w-screen-lg
-      mx-auto
-    "
+    class="w-full flex flex-col gap-4 mb-8 md:mb-0 justify-between items-center p-8 max-w-screen-lg mx-auto"
   >
     <div class="flex flex-col items-center mb-4">
       <p
-        class="
-          w-full
-          my-2
-          font-extrabold
-          tracking-tight
-          dark:text-gray-50
-          text-4xl
-          sm:text-4xl
-          text-center
-        "
+        class="w-full my-2 font-extrabold tracking-tight dark:text-gray-50 text-4xl sm:text-4xl text-center"
       >
         Testimonials
       </p>
@@ -36,19 +16,7 @@
     </div>
     <div class="w-full flex flex-col md:flex-row">
       <div
-        class="
-          bg-white
-          dark:bg-gray-700
-          md:w-64
-          lg:w-72
-          shadow-lg
-          dark:shadow-white
-          mx-auto
-          rounded-xl
-          p-8
-          my-4
-          md:p-4
-        "
+        class="bg-white dark:bg-gray-700 md:w-64 lg:w-72 shadow-lg dark:shadow-white mx-auto rounded-xl p-8 my-4 md:p-4"
         v-for="item in testimonialsList"
         :key="item.name"
       >
@@ -66,39 +34,17 @@
             <img
               alt="profile"
               :src="item.img"
-              class="
-                mx-auto
-                object-cover
-                rounded-full
-                h-16
-                sm:h-10
-                w-16
-                sm:w-10
-              "
+              class="mx-auto object-cover rounded-full h-16 sm:h-10 w-16 sm:w-10"
             />
           </a>
           <div class="flex flex-col ml-2 justify-between">
             <span
-              class="
-                font-semibold
-                dark:text-indigo-400
-                text-xl
-                sm:text-sm
-                text-accent
-              "
+              class="font-semibold dark:text-indigo-400 text-xl sm:text-sm text-accent"
             >
               {{ item.name }}
             </span>
             <span
-              class="
-                font-semibold
-                text-black
-                dark:text-gray-50
-                text-base
-                sm:text-xs
-                flex
-                items-center
-              "
+              class="font-semibold text-black dark:text-gray-50 text-base sm:text-xs flex items-center"
             >
               {{ item.title }}
             </span>

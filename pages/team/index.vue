@@ -1,20 +1,7 @@
 <template>
   <base-section class="">
     <section
-      class="
-        text-black
-        body-font
-        dark:bg-dark-background
-        flex flex-col
-        md:flex-row
-        gap-4
-        mx-auto
-        mb-8
-        md:mb-0
-        justify-between
-        items-center
-        max-w-screen-2xl
-      "
+      class="text-black body-font dark:bg-dark-background flex flex-col md:flex-row gap-4 mx-auto mb-8 md:mb-0 justify-between items-center max-w-screen-2xl"
     >
       <div class="flex flex-col lg:flex-row w-11/12 mx-auto">
         <div class="w-full lg:w-1/3 p-5">

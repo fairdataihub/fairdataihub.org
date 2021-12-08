@@ -68,15 +68,7 @@
       </NuxtLink>
       <div class="hidden sm:block">
         <div
-          class="
-            flex flex-row
-            justify-center
-            items-center
-            h-full
-            sm:text-sm
-            md:text-md
-            font-medium
-          "
+          class="flex flex-row justify-center items-center h-full sm:text-sm md:text-md font-medium"
         >
           <NuxtLink to="/" class="nav-item hover-underline-animation">
             Home
@@ -86,16 +78,7 @@
           </NuxtLink>
           <div class="relative group rounded-lg">
             <button
-              class="
-                flex flex-row
-                items-center
-                sm:px-1
-                lg:px-3
-                mx-1
-                py-2
-                font-medium
-                hover-underline-animation
-              "
+              class="flex flex-row items-center sm:px-1 lg:px-3 mx-1 py-2 font-medium hover-underline-animation"
             >
               <div class="flex flex-row w-max justify-center items-center">
                 Our Projects
@@ -119,14 +102,7 @@
               class="absolute z-10 hidden group-hover:block py-1 right-4 w-max"
             >
               <div
-                class="
-                  py-3
-                  shadow-lg
-                  bg-gray-100
-                  text-left text-md
-                  rounded-lg
-                  border-2 border-gray-200
-                "
+                class="py-3 shadow-lg bg-gray-100 text-left text-md rounded-lg border-2 border-gray-200"
               >
                 <div class="flex flex-col">
                   <NuxtLink
@@ -177,59 +153,21 @@
         >
           <span class="sr-only">Open main menu</span>
           <div
-            class="
-              block
-              w-5
-              absolute
-              left-1/2
-              top-1/2
-              transform
-              -translate-x-1/2 -translate-y-1/2
-            "
+            class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
           >
             <span
               aria-hidden="true"
-              class="
-                block
-                absolute
-                h-1
-                w-6
-                bg-light-accent
-                transform
-                transition
-                duration-200
-                ease-in-out
-              "
+              class="block absolute h-1 w-6 bg-light-accent transform transition duration-200 ease-in-out"
               :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
             ></span>
             <span
               aria-hidden="true"
-              class="
-                block
-                absolute
-                h-1
-                w-6
-                bg-light-accent
-                transform
-                transition
-                duration-200
-                ease-in-out
-              "
+              class="block absolute h-1 w-6 bg-light-accent transform transition duration-200 ease-in-out"
               :class="{ 'opacity-0': open }"
             ></span>
             <span
               aria-hidden="true"
-              class="
-                block
-                absolute
-                h-1
-                w-6
-                bg-light-accent
-                transform
-                transition
-                duration-200
-                ease-in-out
-              "
+              class="block absolute h-1 w-6 bg-light-accent transform transition duration-200 ease-in-out"
               :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
             ></span>
           </div>
@@ -245,19 +183,7 @@
             v-for="item in mobileNavigation"
             :key="item.name"
             :to="item.href"
-            class="
-              text-black
-              block
-              px-3
-              py-2
-              rounded-md
-              text-base text-center
-              font-medium
-              z-20
-              transition-all
-              mobile-menu
-              hover:bg-light-accent hover:text-white
-            "
+            class="text-black block px-3 py-2 rounded-md text-base text-center font-medium z-20 transition-all mobile-menu hover:bg-light-accent hover:text-white"
           >
             {{ item.name }}
           </NuxtLink>

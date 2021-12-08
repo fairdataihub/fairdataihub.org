@@ -2,30 +2,13 @@
   <section class="max-w-screen-xl mx-auto">
     <div class="w-full flex flex-col">
       <h2
-        class="
-          font-bold
-          text-2xl
-          font-inter
-          sm:text-2xl
-          md:text-3xl
-          lg:text-5xl
-          text-center
-          py-1
-          dark:text-gray-50
-        "
+        class="font-bold text-2xl font-inter sm:text-2xl md:text-3xl lg:text-5xl text-center py-1 dark:text-gray-50"
       >
         Impact
       </h2>
 
       <h3
-        class="
-          font-inter
-          text-lg
-          md:text-xl
-          lg:text-2xl
-          text-center
-          dark:text-gray-50
-        "
+        class="font-inter text-lg md:text-xl lg:text-2xl text-center dark:text-gray-50"
       >
         Coming soon...
       </h3>

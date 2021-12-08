@@ -12,18 +12,10 @@
           <span class="span-content print:text-sm print:dark:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Create-subjects-xlsx"
-              class="
-                hover:underline
-                text-blue-600
-                dark:text-blue-400
-                print:text-sm print:dark:text-black
-              "
+              class="hover:underline text-blue-600 dark:text-blue-400 print:text-sm print:dark:text-black"
             >
               <span
-                class="
-                  font-asap
-                  print:text-sm print:text-black print:dark:text-black
-                "
+                class="font-asap print:text-sm print:text-black print:dark:text-black"
               >
                 subjects metadata file
               </span>
