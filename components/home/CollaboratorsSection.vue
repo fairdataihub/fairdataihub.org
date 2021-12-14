@@ -22,8 +22,8 @@
           class="mx-4 py-2"
         />
         <img
-          src="https://sparc.science/_nuxt/img/logo-sparc-wave-primary.8ed83a5.svg"
-          alt="NIH SPARC logo"
+          src="https://sparc.science/_nuxt/img/logo-sparc-wave-primary.291d1ca.svg"
+          alt="NIH SPARC logo" 
           width="200"
           class="mx-4 py-2"
         />
