@@ -5972,6 +5972,11 @@ vue-class-component@^8.0.0-0:
   resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz#db692cd97656eb9a08206c03d0b7398cdb1d9420"
   integrity sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==
 
+vue-gtag-next@^1.14.0:
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/vue-gtag-next/-/vue-gtag-next-1.14.0.tgz#793aef0b90dff4213b9f3a79827cd99b06e678dd"
+  integrity sha512-iJl+cOG2GU5NuxqzSSIpt03WVOvZqyKB9TOy7d55KiuvRklcnb2nlqxW5B/a3/sbIt7fla+XEkRyMCcoz0zAHw==
+
 vue-loader@^16.8.3:
   version "16.8.3"
   resolved "https://registry.yarnpkg.com/vue-loader/-/vue-loader-16.8.3.tgz#d43e675def5ba9345d6c7f05914c13d861997087"
