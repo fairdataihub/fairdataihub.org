@@ -23,7 +23,7 @@
         />
         <img
           src="https://sparc.science/_nuxt/img/logo-sparc-wave-primary.291d1ca.svg"
-          alt="NIH SPARC logo" 
+          alt="NIH SPARC logo"
           width="200"
           class="mx-4 py-2"
         />
