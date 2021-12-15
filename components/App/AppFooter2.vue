@@ -352,10 +352,7 @@
 
       <div class="flex flex-row justify-center items-center py-5">
         <div class="text-gray-400 text-center">
-          <p>
-            © 2020 FAIR Data Innovations Hub. All rights
-            reserved.
-          </p>
+          <p>© 2020 FAIR Data Innovations Hub. All rights reserved.</p>
         </div>
 
         <div
