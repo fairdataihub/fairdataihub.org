@@ -113,9 +113,7 @@ function validateInput() {
 }
 
 function sendEmail() {
-  console.log("here");
   const formValid = validateInput();
-  console.log("here2", formValid);
   if (formValid) {
     const data = {
       service_id: config.SERVICE_ID,

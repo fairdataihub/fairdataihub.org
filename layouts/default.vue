@@ -14,7 +14,6 @@
     </main>
 
     <AppFooter />
-    <AppFooter2 />
   </div>
 </template>
 
