@@ -9,7 +9,7 @@
         <Title>Fair Data Innovations Hub</Title>
       </Head>
     </Html>
-    
+
     <div
       data-aos="fade-in"
       class="bg-haikeiWavy bg-cover 2xl:bg-contain bg-no-repeat bg-top md:bg-right-top"

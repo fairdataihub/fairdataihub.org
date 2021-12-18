@@ -7,7 +7,7 @@
         </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`Issues regarding hidden files or folders`">
     </base-docs-title>
 

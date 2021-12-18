@@ -2,9 +2,7 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          Share with SPARC Consortium - SODA for SPARC
-        </Title>
+        <Title> Share with SPARC Consortium - SODA for SPARC </Title>
       </Head>
     </Html>
 

@@ -2,12 +2,10 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          Add edit permissions - SODA for SPARC
-        </Title>
+        <Title> Add edit permissions - SODA for SPARC </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`Add edit permissions`"> </base-docs-title>
 
     <div class="flex flex-col">

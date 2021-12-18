@@ -3,7 +3,8 @@
     <Html>
       <Head>
         <Title>
-          Checklist to organize and submit SPARC datasets with SODA - SODA for SPARC
+          Checklist to organize and submit SPARC datasets with SODA - SODA for
+          SPARC
         </Title>
       </Head>
     </Html>

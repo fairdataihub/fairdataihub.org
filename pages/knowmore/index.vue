@@ -9,7 +9,7 @@
       </Head>
       <Title>KnowMore - Fair Data Innovations Hub</Title>
     </Html>
-    
+
     <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
       <KnowMoreHerosection></KnowMoreHerosection>
     </base-section>

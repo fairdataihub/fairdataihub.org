@@ -7,7 +7,7 @@
         </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title
       :title="`Organize dataset Step 3: Structure dataset files`"
     >

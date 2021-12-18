@@ -2,9 +2,7 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          The Pennsieve agent is already running - SODA for SPARC
-        </Title>
+        <Title> The Pennsieve agent is already running - SODA for SPARC </Title>
       </Head>
     </Html>
 

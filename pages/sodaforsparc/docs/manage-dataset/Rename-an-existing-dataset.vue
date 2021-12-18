@@ -2,12 +2,10 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          Rename an existing dataset - SODA for SPARC
-        </Title>
+        <Title> Rename an existing dataset - SODA for SPARC </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`Rename an existing dataset`"> </base-docs-title>
 
     <div class="flex flex-col">

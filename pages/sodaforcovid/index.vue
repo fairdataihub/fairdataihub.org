@@ -9,7 +9,7 @@
         <Title>SODA for COVID-19 Research - Fair Data Innovations Hub</Title>
       </Head>
     </Html>
-    
+
     <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
       <SodaForCovidHerosection></SodaForCovidHerosection>
     </base-section>

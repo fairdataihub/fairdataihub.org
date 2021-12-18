@@ -7,7 +7,7 @@
         </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`Connect your Airtable account with SODA`">
     </base-docs-title>
 

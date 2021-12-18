@@ -2,9 +2,7 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          Installing the Pennsieve agent - SODA for SPARC
-        </Title>
+        <Title> Installing the Pennsieve agent - SODA for SPARC </Title>
       </Head>
     </Html>
 

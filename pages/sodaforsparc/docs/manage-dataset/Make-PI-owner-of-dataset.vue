@@ -2,12 +2,10 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          Make PI owner of dataset - SODA for SPARC
-        </Title>
+        <Title> Make PI owner of dataset - SODA for SPARC </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`Make PI owner of dataset`"> </base-docs-title>
 
     <div class="flex flex-col">

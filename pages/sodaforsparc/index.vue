@@ -9,7 +9,7 @@
         <Title>SODA for SPARC - Fair Data Innovations Hub</Title>
       </Head>
     </Html>
-    
+
     <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
       <SodaForSparcHerosection />
     </base-section>

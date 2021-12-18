@@ -1,6 +1,6 @@
 <template>
   <base-section class="">
-  <Html>
+    <Html>
       <Head>
         <Link
           rel="canonical"
@@ -9,7 +9,7 @@
         <Title>Terms of Use - Fair Data Innovations Hub</Title>
       </Head>
     </Html>
-    
+
     <section
       class="text-black flex flex-col mx-auto max-w-screen-2xl py-5 text-lg text-justify px-6 sm:px-6 lg:px-8"
     >

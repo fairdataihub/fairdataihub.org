@@ -7,7 +7,7 @@
         </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`How to get your Data Deliverables document`">
     </base-docs-title>
 

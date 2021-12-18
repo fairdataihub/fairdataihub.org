@@ -2,9 +2,7 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          Sending log files to SODA Team - SODA for SPARC
-        </Title>
+        <Title> Sending log files to SODA Team - SODA for SPARC </Title>
       </Head>
     </Html>
 

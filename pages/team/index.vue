@@ -1,6 +1,6 @@
 <template>
   <base-section class="">
-  <Html>
+    <Html>
       <Head>
         <Link
           rel="canonical"
@@ -9,7 +9,7 @@
         <Title>Meet the Team - Fair Data Innovations Hub</Title>
       </Head>
     </Html>
-    
+
     <section
       class="text-black body-font flex flex-col md:flex-row gap-4 mx-auto mb-8 md:mb-0 justify-between items-center max-w-screen-2xl"
     >

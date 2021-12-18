@@ -7,7 +7,7 @@
         </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title
       :title="`Connect your Pennsieve account with SODA (API Key)`"
     >

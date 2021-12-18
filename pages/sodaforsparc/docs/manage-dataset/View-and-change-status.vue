@@ -2,12 +2,10 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          View and change status - SODA for SPARC
-        </Title>
+        <Title> View and change status - SODA for SPARC </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`View and change status`"> </base-docs-title>
 
     <div class="flex flex-col">

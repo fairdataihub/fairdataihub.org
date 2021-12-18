@@ -2,12 +2,10 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          Create CHANGES.txt - SODA for SPARC
-        </Title>
+        <Title> Create CHANGES.txt - SODA for SPARC </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`Create CHANGES.txt`"> </base-docs-title>
 
     <div class="flex flex-col">

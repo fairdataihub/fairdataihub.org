@@ -2,12 +2,10 @@
   <div>
     <Html>
       <Head>
-        <Title>
-          User Interface - SODA for SPARC
-        </Title>
+        <Title> User Interface - SODA for SPARC </Title>
       </Head>
     </Html>
-    
+
     <base-docs-title :title="`User Interface`"> </base-docs-title>
 
     <div class="flex flex-col">

@@ -9,7 +9,7 @@
         <Title>SPARClink - Fair Data Innovations Hub</Title>
       </Head>
     </Html>
-    
+
     <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
       <SparclinkHerosection></SparclinkHerosection>
     </base-section>
