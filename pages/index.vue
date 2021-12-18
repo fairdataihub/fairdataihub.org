@@ -1,5 +1,15 @@
 <template>
   <div class="divide-y divide-white bg-white">
+    <Html>
+      <Head>
+        <Link
+          rel="canonical"
+          :href="`https://fairdataihub.org${$route.path}`"
+        />
+        <Title>Fair Data Innovations Hub</Title>
+      </Head>
+    </Html>
+    
     <div
       data-aos="fade-in"
       class="bg-haikeiWavy bg-cover 2xl:bg-contain bg-no-repeat bg-top md:bg-right-top"

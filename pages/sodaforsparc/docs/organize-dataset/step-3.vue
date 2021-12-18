@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Organize dataset - Step 3: Structure dataset files - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+    
     <base-docs-title
       :title="`Organize dataset Step 3: Structure dataset files`"
     >

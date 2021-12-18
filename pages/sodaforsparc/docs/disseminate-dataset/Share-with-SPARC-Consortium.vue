@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Share with SPARC Consortium - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Share with SPARC Consortium`"> </base-docs-title>
 
     <div class="flex flex-col">

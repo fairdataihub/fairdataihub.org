@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Create submission.xlsx - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Create submission.xlsx`"> </base-docs-title>
 
     <div class="flex flex-col">

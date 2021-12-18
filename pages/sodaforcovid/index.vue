@@ -1,5 +1,15 @@
 <template>
   <div class="divide-y divide-gray-50">
+    <Html>
+      <Head>
+        <Link
+          rel="canonical"
+          :href="`https://fairdataihub.org${$route.path}`"
+        />
+        <Title>SODA for COVID-19 Research - Fair Data Innovations Hub</Title>
+      </Head>
+    </Html>
+    
     <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
       <SodaForCovidHerosection></SodaForCovidHerosection>
     </base-section>

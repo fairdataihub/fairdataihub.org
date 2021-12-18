@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Submit for pre publishing review - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+    
     <base-docs-title :title="`Submit for pre publishing review`">
     </base-docs-title>
 

@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Download templates - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+    
     <base-docs-title :title="`Download template`"> </base-docs-title>
 
     <div class="flex flex-col">

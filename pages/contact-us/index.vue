@@ -2,6 +2,16 @@
   <div
     class="bg-haikeiCircleScatter bg-cover bg-no-repeat pt-16 sm:h-screen flex justify-center items-center"
   >
+  <Html>
+      <Head>
+        <Link
+          rel="canonical"
+          :href="`https://fairdataihub.org${$route.path}`"
+        />
+        <Title>Contact Us - Fair Data Innovations Hub</Title>
+      </Head>
+    </Html>
+    
     <base-section class="py-8">
       <div
         class="container px-6 py-8 w-screen max-w-screen-md mx-auto shadow-lg bg-gray-50 rounded-lg"

@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Organize and submit a new SPARC dataset with SODA - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title
       :title="`Organize and submit a new SPARC dataset with SODA`"
     >

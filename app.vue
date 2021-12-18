@@ -8,7 +8,6 @@
 export default {
   setup() {
     useMeta({
-      title: "Fair Data Innovations Hub",
       htmlAttrs: {
         lang: "en-US",
       },

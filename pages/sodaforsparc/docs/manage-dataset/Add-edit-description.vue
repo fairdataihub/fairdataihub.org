@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Add edit description - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+    
     <base-docs-title :title="`Add edit description`"> </base-docs-title>
 
     <div class="flex flex-col">

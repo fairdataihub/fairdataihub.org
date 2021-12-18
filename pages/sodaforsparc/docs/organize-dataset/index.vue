@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Organize dataset - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+    
     <base-docs-title :title="`Organize dataset`"> </base-docs-title>
 
     <div class="flex flex-col">

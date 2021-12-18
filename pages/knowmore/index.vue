@@ -1,5 +1,15 @@
 <template>
   <div class="divide-y divide-gray-50">
+    <Html>
+      <Head>
+        <Link
+          rel="canonical"
+          :href="`https://fairdataihub.org${$route.path}`"
+        />
+      </Head>
+      <Title>KnowMore - Fair Data Innovations Hub</Title>
+    </Html>
+    
     <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
       <KnowMoreHerosection></KnowMoreHerosection>
     </base-section>

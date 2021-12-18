@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Create README.txt - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+    
     <base-docs-title :title="`Create README.txt`"> </base-docs-title>
 
     <div class="flex flex-col">

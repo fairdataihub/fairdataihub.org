@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Checklist to organize and submit SPARC datasets with SODA - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title
       :title="`Checklist to organize and submit SPARC datasets with SODA`"
     >
