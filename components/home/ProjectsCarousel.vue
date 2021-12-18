@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-screen-lg mx-auto h-auto pt-1 pb-3">
+  <div class="w-full max-w-screen-lg mx-auto h-auto pt-1 pb-3 px-4">
     <div class="flex flex-col justify-center items-center mb-4">
       <h2
         class="my-2 font-extrabold tracking-tight text-4xl sm:text-4xl text-center"
@@ -19,6 +19,7 @@
       snapAlign="center"
       pause-autoplay-on-hover
       v-if="ready"
+      :key="componentKey"
     >
       <Slide v-for="project in projectsList" :key="project.name" class="py-10">
         <section
@@ -81,11 +82,16 @@ export default {
   },
   props: ["projectsList"],
   data() {
-    return { ready: false };
+    return { ready: false, componentKey: 0 };
   },
   computed: {},
+  created() {
+    this.ready = false;
+    this.componentKey = Math.random();
+  },
   mounted() {
     this.ready = true;
+    this.componentKey++;
   },
 };
 </script>

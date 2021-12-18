@@ -22,7 +22,7 @@ export default {
         {
           name: "keywords",
           content:
-            "fair data, fairhub, fairdataihub, calmi2, calmii, soda, sparc, sparclink, aqua, know more",
+            "fair data, fairhub, fairdataihub, calmi2, calmii, soda, sparc, sparclink, aqua, know more, software",
         },
         {
           name: "robots",

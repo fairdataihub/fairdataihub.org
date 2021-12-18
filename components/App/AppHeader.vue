@@ -139,7 +139,7 @@
               </div>
             </div>
           </div>
-          <NuxtLink to="/contactus" class="nav-item hover-underline-animation">
+          <NuxtLink to="/contact-us" class="nav-item hover-underline-animation">
             Contact Us
           </NuxtLink>
         </div>
@@ -235,8 +235,8 @@ export default {
         { name: "AQUA", href: "/aqua", id: "nav-aqua", showOnDesktop: false },
         {
           name: "Contact Us",
-          href: "/contactus",
-          id: "nav-contactus",
+          href: "/contact-us",
+          id: "nav-contact-us",
           showOnDesktop: true,
         },
       ],
@@ -249,8 +249,8 @@ export default {
         },
         {
           name: "Contact Us",
-          href: "/contactus",
-          id: "nav-contactus",
+          href: "/contact-us",
+          id: "nav-contact-us",
           showOnDesktop: true,
         },
       ],

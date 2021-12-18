@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-screen-lg mx-auto px-10 py-3">
+  <section class="max-w-screen-lg mx-auto px-5 py-3">
     <div class="w-full flex flex-col">
       <h2
         class="font-inter font-bold text-2xl sm:text-2xl md:text-3xl lg:text-4xl py-2 dark:text-gray-50"
