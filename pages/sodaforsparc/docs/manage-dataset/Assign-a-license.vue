@@ -1,10 +1,12 @@
 <template>
   <div>
-    <base-docs-title
-      :title="`Assign a license
-`"
-    >
-    </base-docs-title>
+    <Html>
+      <Head>
+        <Title> Assign a license - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
+    <base-docs-title :title="`Assign a license`"> </base-docs-title>
 
     <div class="flex flex-col">
       <base-docs-subtitle> Background </base-docs-subtitle>

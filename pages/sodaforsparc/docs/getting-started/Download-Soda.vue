@@ -1,5 +1,10 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Download SODA - SODA for SPARC </Title>
+      </Head>
+    </Html>
     <base-docs-title :title="`Download SODA`"> </base-docs-title>
 
     <div class="flex flex-col">

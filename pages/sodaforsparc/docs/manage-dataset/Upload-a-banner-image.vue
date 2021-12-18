@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Upload a banner image - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Upload a banner image`"> </base-docs-title>
 
     <div class="flex flex-col">

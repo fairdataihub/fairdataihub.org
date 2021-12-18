@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Create a new dataset - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Create a new dataset`"> </base-docs-title>
 
     <div class="flex flex-col">

@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Connect your Pennsieve account with SODA (API Key) - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title
       :title="`Connect your Pennsieve account with SODA (API Key)`"
     >

@@ -1,5 +1,14 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Organize dataset Step 4: Specify high level metadata files - SODA for
+          SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title
       :title="`Organize dataset Step 4: Specify high level metadata files`"
     >

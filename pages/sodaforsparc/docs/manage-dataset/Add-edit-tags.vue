@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Add edit tags - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Add edit tags`"> </base-docs-title>
 
     <div class="flex flex-col">

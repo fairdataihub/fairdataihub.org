@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Issues regarding hidden files or folders - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Issues regarding hidden files or folders`">
     </base-docs-title>
 

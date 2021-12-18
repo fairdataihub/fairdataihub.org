@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Upload a local dataset to Pennsieve - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Upload a local dataset to Pennsieve`">
     </base-docs-title>
 

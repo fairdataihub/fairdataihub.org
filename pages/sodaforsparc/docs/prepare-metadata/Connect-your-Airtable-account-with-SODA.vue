@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          Connect your Airtable account with SODA - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Connect your Airtable account with SODA`">
     </base-docs-title>
 

@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Installing the Pennsieve agent - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Installing the Pennsieve agent`">
     </base-docs-title>
 

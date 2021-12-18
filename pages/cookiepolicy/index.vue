@@ -1,5 +1,15 @@
 <template>
   <base-section class="">
+    <Html>
+      <Head>
+        <Link
+          rel="canonical"
+          :href="`https://fairdataihub.org${$route.path}`"
+        />
+      </Head>
+      <Title>Cookie Policy - Fair Data Innovations Hub</Title>
+    </Html>
+
     <section
       class="text-black flex flex-col mx-auto max-w-screen-2xl py-5 text-lg text-justify px-6 sm:px-6 lg:px-8"
     >

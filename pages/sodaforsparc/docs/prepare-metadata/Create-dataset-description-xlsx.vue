@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Create dataset_description.xlsx - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Create dataset_description.xlsx`">
     </base-docs-title>
 

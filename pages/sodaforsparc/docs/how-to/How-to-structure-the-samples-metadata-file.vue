@@ -1,5 +1,13 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title>
+          How to structure the samples metadata file - SODA for SPARC
+        </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`How to structure the samples metadata file`">
     </base-docs-title>
 

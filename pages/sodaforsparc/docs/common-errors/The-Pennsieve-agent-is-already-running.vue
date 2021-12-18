@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> The Pennsieve agent is already running - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`The Pennsieve agent is already running`">
     </base-docs-title>
 

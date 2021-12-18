@@ -1,5 +1,11 @@
 <template>
   <div>
+    <Html>
+      <Head>
+        <Title> Share with curation team - SODA for SPARC </Title>
+      </Head>
+    </Html>
+
     <base-docs-title :title="`Share with curation team`"> </base-docs-title>
 
     <div class="flex flex-col">
