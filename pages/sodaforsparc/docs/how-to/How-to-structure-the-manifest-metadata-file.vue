@@ -7,15 +7,15 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black dark:text-white mb-2">
+        <p class="font-asap text-black mb-2">
           SODA helps you prepare the
-          <span class="span-content print:text-sm print:dark:text-black">
+          <span class="span-content print:text-sm print:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/organize-dataset/step-5"
-              class="hover:underline text-blue-600 dark:text-blue-400 print:text-sm print:dark:text-black"
+              class="hover:underline text-blue-600 print:text-sm print:text-black"
             >
               <span
-                class="font-asap print:text-sm print:text-black print:dark:text-black"
+                class="font-asap print:text-sm print:text-black print:text-black"
               >
                 manifest metadata files
               </span>
@@ -75,7 +75,7 @@
                 href="https://en.wikipedia.org/wiki/ISO_8601"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 dark:text-blue-400"
+                class="hover:underline text-blue-600"
               >
                 ISO 8601 format
               </a>

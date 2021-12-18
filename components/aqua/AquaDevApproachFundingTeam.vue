@@ -3,14 +3,14 @@
     <div class="px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="md:mr-8 py-5 md:py-0 font-inter font-black dark:text-gray-50 text-4xl subpixel-antialiased text-left"
+          class="md:mr-8 py-5 md:py-0 font-inter font-black text-4xl subpixel-antialiased text-left"
         >
           Development Platform
         </h1>
         <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <div class="mb-10 sm:mb-5 pr-10">
-              <p class="w-full text-lg font-asap text-black dark:text-white">
+              <p class="w-full text-lg font-asap text-black">
                 AQUA for SPARC is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
@@ -115,14 +115,14 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="md:mr-8 py-5 md:py-0 font-inter font-black dark:text-gray-50 text-4xl subpixel-antialiased text-left"
+          class="md:mr-8 py-5 md:py-0 font-inter font-black text-4xl subpixel-antialiased text-left"
         >
           Origin Story
         </h1>
         <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <div class="mb-10 sm:mb-5 pr-10">
-              <p class="w-full text-lg font-asap text-black dark:text-white">
+              <p class="w-full text-lg font-asap text-black">
                 The AQUA project was first born as an idea at the 2021 NIH SPARC
                 Codeathon. The idea was to improve user query understandability
                 and result display of the SPARC Portal search engine. AQUA
@@ -208,7 +208,7 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto" style="margin-top: 50px">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="md:mr-8 pb-5 font-inter font-black dark:text-gray-50 text-4xl subpixel-antialiased text-left"
+          class="md:mr-8 pb-5 font-inter font-black text-4xl subpixel-antialiased text-left"
         >
           Team Members
         </h1>
@@ -221,32 +221,28 @@
                 <div v-for="member in membersList" :key="member.name">
                   <router-link :to="member.href" v-if="!member.external">
                     <div
-                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200 dark:hover:bg-gray-700"
+                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
                         class="h-28 rounded-full my-2"
                       />
-                      <p
-                        class="ml-2 font-asap font-normal text-lg text-center dark:text-gray-50"
-                      >
+                      <p class="ml-2 font-asap font-normal text-lg text-center">
                         {{ member.name }}
                       </p>
                     </div>
                   </router-link>
                   <a v-else :href="member.href" target="_blank" rel="noopener">
                     <div
-                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200 dark:hover:bg-gray-700"
+                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
                         class="h-28 rounded-full my-2"
                       />
-                      <p
-                        class="ml-2 font-asap font-normal text-lg text-center dark:text-gray-50"
-                      >
+                      <p class="ml-2 font-asap font-normal text-lg text-center">
                         {{ member.name }}
                       </p>
                     </div>

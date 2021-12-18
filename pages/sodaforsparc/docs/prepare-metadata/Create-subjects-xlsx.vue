@@ -18,7 +18,7 @@
 
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-subjects-metadata-file"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span> "How to"</span>
           </NuxtLink>
@@ -127,7 +127,7 @@
                 href="https://scicrunch.org/resources/Organisms/search"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 dark:text-blue-400"
+                class="hover:underline text-blue-600"
               >
                 Scicrunch</a
               >
@@ -163,7 +163,7 @@
                 href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 dark:text-blue-400"
+                class="hover:underline text-blue-600"
               >
                 UBERON life cycle stage</a
               >
@@ -201,7 +201,7 @@
                 href="https://www.protocols.io/developers"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 dark:text-blue-400"
+                class="hover:underline text-blue-600"
               >
                 protocols.io</a
               >. An access token is required for automatic extraction of the

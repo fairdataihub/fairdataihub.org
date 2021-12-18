@@ -14,7 +14,7 @@
           corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span> "How to"</span>
           </NuxtLink>
@@ -29,7 +29,7 @@
           <li>
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
-              class="hover:underline text-blue-600 dark:text-blue-400"
+              class="hover:underline text-blue-600"
             >
               <span>The SPARC Airtable sheet</span>
             </NuxtLink>
@@ -44,7 +44,7 @@
             the SPARC award or the award manager. Learn more about your
             <NuxtLink
               to="/sodaforsparc/docs/how-to/How-to-get-your-data-deliverables-document"
-              class="hover:underline text-blue-600 dark:text-blue-400"
+              class="hover:underline text-blue-600"
             >
               <span>Data Deliverables document</span> </NuxtLink
             >.
@@ -72,7 +72,7 @@
           SPARC Airtable sheet.
           <NuxtLink
             to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span> Instructions are provided here.</span>
           </NuxtLink>

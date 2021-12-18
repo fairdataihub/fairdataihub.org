@@ -13,7 +13,7 @@
           permissions are summarized the
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span>table here</span> </NuxtLink
           >.
@@ -34,7 +34,7 @@
           connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span>use the instructions available here</span> </NuxtLink
           >.

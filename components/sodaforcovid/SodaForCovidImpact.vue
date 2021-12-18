@@ -2,19 +2,17 @@
   <section class="max-w-screen-xl mx-auto">
     <div class="w-full flex flex-col">
       <h2
-        class="font-bold text-2xl font-inter sm:text-2xl md:text-3xl lg:text-5xl text-center py-1 dark:text-gray-50"
+        class="font-bold text-2xl font-inter sm:text-2xl md:text-3xl lg:text-5xl text-center py-1"
       >
         Impact
       </h2>
 
-      <h3
-        class="font-inter text-lg md:text-xl lg:text-2xl text-center dark:text-gray-50"
-      >
+      <h3 class="font-inter text-lg md:text-xl lg:text-2xl text-center">
         Coming soon...
       </h3>
     </div>
 
-    <!-- <div class="p-6 dark:text-gray-50 flex flex-col sm:flex-row justify-around">
+    <!-- <div class="p-6  flex flex-col sm:flex-row justify-around">
       <div
         class="flex flex-col m-2 lg:m-6 items-center justify-center mb-5"
         v-for="item in statsList"
@@ -39,7 +37,7 @@
             font-asap
             sm:text-lg
             md:text-xl
-            dark:text-white
+            
             lg:text-2xl
             text-center text-black
           "

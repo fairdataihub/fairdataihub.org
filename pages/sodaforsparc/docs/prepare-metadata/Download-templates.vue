@@ -14,7 +14,7 @@
             href="https://github.com/SciCrunch/sparc-curation/releases/tag/dataset-template-1.2.3"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             downloaded as a zip file</a
           >. They are used in SODA when generating the metadata files. You can

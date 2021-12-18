@@ -9,7 +9,7 @@
       </Head>
     </Html>
     <AppHeader></AppHeader>
-    <base-section class="print:pt-0 dark:bg-dark-background">
+    <base-section class="print:pt-0">
       <div
         class="w-full max-w-screen-xl gap-4 mb-8 md:mb-0 p-0 mx-auto flex flex-col sm:flex-row items-center sm:justify-center relative"
       >
@@ -26,9 +26,7 @@
           <MobileSodaForSparcSidebar :sidebarList="sidebarList">
           </MobileSodaForSparcSidebar>
         </div>
-        <div
-          class="bg-gray-50 dark:bg-dark-background top-16 w-full sm:w-8/12 md:w-9/12 lg:w-4/5"
-        >
+        <div class="bg-gray-50 top-16 w-full sm:w-8/12 md:w-9/12 lg:w-4/5">
           <div class="sm:top-0 sm:bottom-0 sm:right-0 sm:overflow-auto test">
             <BaseDocsContent><slot /></BaseDocsContent>
             <!-- <base-docs-content>

@@ -18,7 +18,7 @@
           in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-dataset-description-metadata-file"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span> "How to"</span>
           </NuxtLink>
@@ -58,7 +58,7 @@
           your list of Pennsieve datasets (see
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span>"Connect to your Pennsieve account"</span>
           </NuxtLink>
@@ -70,7 +70,7 @@
           your convenience (see
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Add-edit-description"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span> this section</span>
           </NuxtLink>
@@ -153,7 +153,7 @@
           Airtable account. Instructions are provided
           <NuxtLink
             to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
             ><span>here.</span>
           </NuxtLink>
         </li>

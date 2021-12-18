@@ -22,12 +22,12 @@
 
       <base-docs-subtitle> Notes </base-docs-subtitle>
 
-      <ul class="list-outside bg-rose-200 list-disc ml-4">
+      <ul class="list-outside list-disc ml-4">
         <li
           v-for="item in notesList"
           :key="item.content"
           v-html="item.content"
-          class="font-asap text-black dark:text-white"
+          class="font-asap text-black"
         ></li>
       </ul>
     </div>

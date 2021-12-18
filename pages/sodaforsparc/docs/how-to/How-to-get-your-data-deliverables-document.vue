@@ -7,7 +7,7 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black dark:text-white mb-2">
+        <p class="font-asap text-black mb-2">
           The milestones and associated datasets as agreed between awardees and
           SPARC are summarized in a document called Data Deliverables document.
           This documents lists, among other, the milestones of the award, the
@@ -16,13 +16,13 @@
           then expected to submit each dataset by the agreed submission date.
           When a dataset is submitted by the awardees, the milestone and
           submission date associated with it must be included in the
-          <span class="span-content print:text-sm print:dark:text-black">
+          <span class="span-content print:text-sm print:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx"
-              class="hover:underline text-blue-600 dark:text-blue-400 print:text-sm print:dark:text-black"
+              class="hover:underline text-blue-600 print:text-sm print:text-black"
             >
               <span
-                class="font-asap print:text-sm print:text-black print:dark:text-black"
+                class="font-asap print:text-sm print:text-black print:text-black"
               >
                 submission
               </span>
@@ -44,7 +44,7 @@
             href="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/src/file_templates/DataDeliverablesDocument-template.docx?raw=true"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             Download a template
           </a>
