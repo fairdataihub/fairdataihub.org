@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-gray-50 pt-5" v-if="!isDocs">
     <div
-      class="container px-6 py-8 max-w-screen-lg w-full mx-auto flex flex-col "
+      class="container px-6 py-8 max-w-screen-lg w-full mx-auto flex flex-col"
     >
       <div class="flex flex-col md:flex-row justify-between pb-3 pr-3">
         <div class="w-full md:w-4/12 flex flex-col mb-5 md:mb-0">
@@ -266,7 +266,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                class="text-gray-400 hover:text-accent  w-7 h-7 transition-all"
+                class="text-gray-400 hover:text-accent w-7 h-7 transition-all"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -286,7 +286,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="0"
-                class="text-gray-400 hover:text-accent  w-7 h-7 transition-all"
+                class="text-gray-400 hover:text-accent w-7 h-7 transition-all"
                 viewBox="0 0 24 24"
               >
                 <path

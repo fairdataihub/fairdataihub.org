@@ -2,14 +2,10 @@
 <template>
   <div class="max-w-screen-lg mx-auto px-6 sm:px-6 lg:px-8">
     <div class="lg:text-center">
-      <p
-        class="my-2 font-extrabold tracking-tight  text-4xl sm:text-4xl"
-      >
+      <p class="my-2 font-extrabold tracking-tight text-4xl sm:text-4xl">
         Our Vision
       </p>
-      <p
-        class="font-asap max-w-2xl text-xl sm:text-xl text-black  lg:mx-auto"
-      >
+      <p class="font-asap max-w-2xl text-xl sm:text-xl text-black lg:mx-auto">
         Only with tools that support and assist researchers we will achieve a
         widespread adoption of FAIR Data practices.
       </p>
@@ -22,7 +18,7 @@
         <div v-for="feature in features" :key="feature.name" class="relative">
           <dt>
             <div
-              class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white bg-light-vision "
+              class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white bg-light-vision"
             >
               <component
                 :is="feature.icon"
@@ -30,12 +26,12 @@
                 aria-hidden="true"
               />
             </div>
-            <p class="ml-16 text-xl sm:text-lg font-medium ">
+            <p class="ml-16 text-xl sm:text-lg font-medium">
               {{ feature.name }}
             </p>
           </dt>
           <dd
-            class="mt-2 md:mt-0 ml-16 text-lg sm:text-base text-black  font-asap"
+            class="mt-2 md:mt-0 ml-16 text-lg sm:text-base text-black font-asap"
             v-html="feature.description"
           ></dd>
         </div>

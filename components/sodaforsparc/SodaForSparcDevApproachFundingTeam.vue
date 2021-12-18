@@ -3,14 +3,14 @@
     <div class="sm:pt-10 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="md:mr-8 py-5 md:py-0 font-black  text-4xl subpixel-antialiased text-left"
+          class="md:mr-8 py-5 md:py-0 font-black text-4xl subpixel-antialiased text-left"
         >
           Development Approach
         </h1>
         <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <div class="mb-10 sm:mb-5 pr-10">
-              <p class="w-full text-lg font-asap text-black ">
+              <p class="w-full text-lg font-asap text-black">
                 SODA for SPARC is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
@@ -114,7 +114,7 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="md:mr-8 py-5 md:py-0 font-black  text-4xl subpixel-antialiased text-left"
+          class="md:mr-8 py-5 md:py-0 font-black text-4xl subpixel-antialiased text-left"
         >
           Funding
         </h1>
@@ -201,7 +201,7 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="md:mr-8 pb-5 font-black  text-4xl subpixel-antialiased text-left"
+          class="md:mr-8 pb-5 font-black text-4xl subpixel-antialiased text-left"
         >
           Team Members
         </h1>
@@ -214,32 +214,28 @@
                 <div v-for="member in membersList" :key="member.name">
                   <router-link :to="member.href" v-if="!member.external">
                     <div
-                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200 "
+                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
                         class="h-28 rounded-full my-2"
                       />
-                      <p
-                        class="ml-2 font-asap font-normal text-lg text-center "
-                      >
+                      <p class="ml-2 font-asap font-normal text-lg text-center">
                         {{ member.name }}
                       </p>
                     </div>
                   </router-link>
                   <a v-else :href="member.href" target="_blank" rel="noopener">
                     <div
-                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200 "
+                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
                         class="h-28 rounded-full my-2"
                       />
-                      <p
-                        class="ml-2 font-asap font-normal text-lg text-center "
-                      >
+                      <p class="ml-2 font-asap font-normal text-lg text-center">
                         {{ member.name }}
                       </p>
                     </div>
@@ -256,14 +252,14 @@
     <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
       <div class="max-w-screen-lg mx-auto flex flex-col">
         <h1
-          class="md:mr-8 pb-5 font-black  text-4xl subpixel-antialiased text-left"
+          class="md:mr-8 pb-5 font-black text-4xl subpixel-antialiased text-left"
         >
           Research Partners
         </h1>
         <div class="w-full py-2">
           <div class="w-full flex flex-col sm:flex-row justify-between">
             <div class="mb-10 sm:mb-5 pr-10">
-              <p class="w-full text-lg font-asap text-black ">
+              <p class="w-full text-lg font-asap text-black">
                 SODA for SPARC connects with several resources developed by the
                 SPARC Data Resource Center (DRC) and we therefore collaborate
                 actively with the DRC teams throughout our development process.
@@ -285,7 +281,7 @@
                   rel="noopener"
                 >
                   <div
-                    class="flex flex-col items-center h-full p-2 rounded-lg transition-all hover:bg-gray-200 "
+                    class="flex flex-col items-center h-full p-2 rounded-lg transition-all hover:bg-gray-200"
                   >
                     <img
                       :src="collaborator.image"
@@ -293,7 +289,7 @@
                       class="my-auto mx-10"
                     />
                     <p
-                      class="ml-2 mt-3 font-asap font-normal text-lg text-center "
+                      class="ml-2 mt-3 font-asap font-normal text-lg text-center"
                     >
                       {{ collaborator.name }}
                     </p>

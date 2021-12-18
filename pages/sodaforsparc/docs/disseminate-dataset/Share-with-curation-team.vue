@@ -14,7 +14,7 @@
           Curation" (see our
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/View-and-change-status"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> documentation on dataset status</span> </NuxtLink
           >) thus adding the dataset to the Curation Team's queue for review. It
@@ -30,7 +30,7 @@
           connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span>use the instructions available here</span> </NuxtLink
           >.

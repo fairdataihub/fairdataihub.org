@@ -4,14 +4,11 @@
       data-aos="fade-in"
       class="bg-haikeiWavy bg-cover 2xl:bg-contain bg-no-repeat bg-top md:bg-right-top"
     >
-      <base-section
-        class="pt-12 sm:pt-16  mb-10"
-        data-aos="fade-in"
-      >
+      <base-section class="pt-12 sm:pt-16 mb-10" data-aos="fade-in">
         <hero-section></hero-section>
       </base-section>
 
-      <base-section data-aos="fade-in" class=" py-10">
+      <base-section data-aos="fade-in" class="py-10">
         <our-vision></our-vision>
       </base-section>
     </div>

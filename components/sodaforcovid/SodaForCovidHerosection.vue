@@ -17,17 +17,17 @@
           class="lg:flex-grow pt-5 sm:pt-0 lg:pr-24 md:pr-0 flex flex-col md:items-start md:text-left mb-2 sm:mb-16 md:mb-0 items-center text-center"
         >
           <h1
-            class="font-inter font-black text-3xl sm:text-4xl w-full mb-1 text-center "
+            class="font-inter font-black text-3xl sm:text-4xl w-full mb-1 text-center"
           >
             SODA for COVID-19 Research
           </h1>
           <h2
-            class="font-inter w-full sm:text-2xl text-2xl mb-2 font-medium  text-center"
+            class="font-inter w-full sm:text-2xl text-2xl mb-2 font-medium text-center"
           >
             <!-- Keep Calm and Curate! -->
           </h2>
           <p
-            class="mb-8 leading-relaxed text-center text-base w-full font-asap text-black "
+            class="mb-8 leading-relaxed text-center text-base w-full font-asap text-black"
           >
             Your one-stop tool for rapidly organizing and sharing COVID-19
             research data
@@ -41,7 +41,7 @@
               rel="noopener"
             >
               <button
-                class="flex justify-center items-center border-0 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black  text-white ring-2 ring-offset-2 ring-transparent  hover:ring-pink-600   focus:ring-pink-600"
+                class="flex justify-center items-center border-0 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
               >
                 Explore
               </button>

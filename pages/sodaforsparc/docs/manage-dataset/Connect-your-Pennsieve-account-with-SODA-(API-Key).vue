@@ -15,7 +15,7 @@
             href="https://app.pennsieve.net/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
             >Pennsieve</a
           >
           platform to store data and metadata files as well as append additional
@@ -29,7 +29,7 @@
           details. If you would like to use this method, please click
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Connect your Pennsieve account with SODA </span>
           </NuxtLink>

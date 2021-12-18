@@ -9,12 +9,12 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black  mb-2">
+        <p class="font-asap text-black mb-2">
           SODA helps you prepare the
           <span class="span-content print:text-sm print:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Create-dataset-description-xlsx"
-              class="hover:underline text-blue-600  print:text-sm print:text-black"
+              class="hover:underline text-blue-600 print:text-sm print:text-black"
             >
               <span
                 class="font-asap print:text-sm print:text-black print:text-black"
@@ -90,7 +90,7 @@
                 href="https://orcid.org"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 "
+                class="hover:underline text-blue-600"
               >
                 https://orcid.org </a
               >. It must be in the format
@@ -105,7 +105,7 @@
                 href="https://ror.org/"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 "
+                class="hover:underline text-blue-600"
               >
                 ror ID
               </a>
@@ -127,7 +127,7 @@
                 href="https://schema.datacite.org/meta/kernel-4.3/"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 "
+                class="hover:underline text-blue-600"
               >
                 document here </a
               >. The role "ContactPerson" must be provided for the person marked

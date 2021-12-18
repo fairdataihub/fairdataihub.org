@@ -30,7 +30,7 @@
             href="https://winaero.com/kill-process-windows-10/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             Windows</a
           >
@@ -40,7 +40,7 @@
             href="https://support.apple.com/guide/activity-monitor/quit-a-process-actmntr1002/mac"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             MAC</a
           >
@@ -50,7 +50,7 @@
             href="https://www.cyberciti.biz/faq/stop-process-ubuntu-linux-command/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             Ubuntu</a
           >

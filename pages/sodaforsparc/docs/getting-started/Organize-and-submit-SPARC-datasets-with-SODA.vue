@@ -19,9 +19,7 @@
           </button>
         </template>
       </base-docs-subtitle>
-      <h3
-        class="font-asap text-base text-black  print:text-sm print:text-black"
-      >
+      <h3 class="font-asap text-base text-black print:text-sm print:text-black">
         This is the suggested workflow for preparing and submitting your SPARC
         datasets with SODA using the Free Form Mode features. All these steps
         are mandatory (unless marked otherwise) if you wish to satisfy the SPARC
@@ -32,7 +30,7 @@
     <div class="flex flex-col">
       <div class="mb-3 print:my-1">
         <h2
-          class="font-semibold text-base text-black  mb-2 print:my-0 print:text-sm print:text-black"
+          class="font-semibold text-base text-black mb-2 print:my-0 print:text-sm print:text-black"
         >
           Preliminary steps (only required once)
         </h2>
@@ -46,7 +44,7 @@
               <div class="ml-3">
                 <span class="span-content">
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     Read about the
                   </span>
@@ -54,7 +52,7 @@
                     href="https://sparc.science/help/7k8nEPuw3FjOq2HuS8OVsd"
                     target="_blank"
                     rel="noopener"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -76,7 +74,7 @@
               <div class="ml-3">
                 <span class="span-content">
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     Sign up to
                   </span>
@@ -84,7 +82,7 @@
                     href="https://app.pennsieve.net/"
                     target="_blank"
                     rel="noopener"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="print:text-sm font-asap print:text-black print:text-black"
@@ -92,7 +90,7 @@
                     >
                   </a>
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     and get access to the SPARC Consortium organization (contact
                   </span>
@@ -100,7 +98,7 @@
                     href="mailto:support@pennsieve.net"
                     target="_blank"
                     rel="noopener"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -108,7 +106,7 @@
                     >
                   </a>
                   <span
-                    class="font-asap text-black  print:text-sm print:text-black"
+                    class="font-asap text-black print:text-sm print:text-black"
                   >
                     for help)
                   </span>
@@ -125,7 +123,7 @@
               <div class="ml-3">
                 <span class="span-content">
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     Download and install the
                   </span>
@@ -133,7 +131,7 @@
                     href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
                     target="_blank"
                     rel="noopener"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="print:text-sm print:text-black print:text-black font-asap"
@@ -141,7 +139,7 @@
                     >
                   </a>
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     required to upload files through SODA.
                   </span>
@@ -158,7 +156,7 @@
               <div class="ml-3">
                 <span class="span-content">
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     Open SODA and watch our quick video located under the
                     Overview tab to familiarize yourself with the user interface
@@ -172,7 +170,7 @@
       </div>
       <div class="mb-3 print:my-1">
         <h2
-          class="font-semibold text-base text-black  mb-2 print:my-0 print:text-sm print:text-black"
+          class="font-semibold text-base text-black mb-2 print:my-0 print:text-sm print:text-black"
         >
           Prepare Dataset on Pennsieve (under the Manage Datasets tab of the
           Free Form Mode)
@@ -188,7 +186,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="print:text-sm print:text-black print:text-black font-asap"
@@ -197,7 +195,7 @@
                     </span>
                   </NuxtLink>
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     This is only required the first time you use SODA.
                   </span>
@@ -215,7 +213,7 @@
                 <span class="span-content print:text-sm print:text-black">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Create-a-new-dataset"
-                    class="hover:underline text-blue-600  print:text-sm print:text-black"
+                    class="hover:underline text-blue-600 print:text-sm print:text-black"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -237,7 +235,7 @@
                 <span class="span-content print:text-sm print:text-black">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Make-PI-owner-of-dataset"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -259,7 +257,7 @@
                 <span class="span-content print:text-sm print:text-black">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -269,7 +267,7 @@
                     >
                   </NuxtLink>
                   <span
-                    class="font-asap text-black  print:text-sm print:text-black"
+                    class="font-asap text-black print:text-sm print:text-black"
                   >
                     (note: optional)
                   </span>
@@ -287,7 +285,7 @@
                 <span class="span-content print:text-sm print:text-black">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Add-edit-subtitle"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -309,7 +307,7 @@
                 <span class="span-content print:text-sm print:text-black">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Add-edit-description"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -331,7 +329,7 @@
                 <span class="span-content print:text-sm print:text-black">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Upload-a-banner-image"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -353,7 +351,7 @@
                 <span class="span-content print:text-sm print:text-black">
                   <NuxtLink
                     to="/sodaforsparc/docs/manage-dataset/Assign-a-license"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -369,7 +367,7 @@
       </div>
       <div class="mb-3 print:my-1">
         <h2
-          class="font-semibold text-base text-black  mb-2 print:my-0 print:text-sm print:text-black"
+          class="font-semibold text-base text-black mb-2 print:my-0 print:text-sm print:text-black"
         >
           Prepare SPARC Metadata Files (under the Prepare Metadata tab of the
           Free Form Mode)
@@ -384,7 +382,7 @@
               <div class="ml-3">
                 <span class="span-content">
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     Prepare protocol on protocols.io following the
                   </span>
@@ -392,7 +390,7 @@
                     href="https://sparc.science/help/1slXZSS2XtTYQsdY6mEJi5"
                     target="_blank"
                     rel="noopener"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -414,7 +412,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -436,7 +434,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/prepare-metadata/Create-description-xlsx"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -458,7 +456,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/prepare-metadata/Create-subjects-xlsx"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -467,7 +465,7 @@
                     </span>
                   </NuxtLink>
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     (required only if your study includes subjects)
                   </span>
@@ -485,7 +483,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/prepare-metadata/Create-samples-xlsx"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -494,7 +492,7 @@
                     </span>
                   </NuxtLink>
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     (required only if your study includes samples)
                   </span>
@@ -506,7 +504,7 @@
       </div>
       <div class="mb-3 print:my-1">
         <h2
-          class="font-semibold text-base text-black  mb-2 print:my-0 print:text-sm print:text-black"
+          class="font-semibold text-base text-black mb-2 print:my-0 print:text-sm print:text-black"
         >
           Organize dataset according to the SPARC Dataset Structure (under the
           Prepare Datasets tab of the Free Form Mode)
@@ -522,7 +520,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/organize-dataset"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -539,7 +537,7 @@
       </div>
       <div class="mb-3 print:my-1">
         <h2
-          class="font-semibold text-base text-black  mb-2 print:my-0 print:text-sm print:text-black"
+          class="font-semibold text-base text-black mb-2 print:my-0 print:text-sm print:text-black"
         >
           Submit Dataset to the Curation Team for Review (under the Disseminate
           Datasets tab of the Free Form Mode)
@@ -555,7 +553,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/disseminate-dataset/Share-with-curation-team"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -565,7 +563,7 @@
                     </span>
                   </NuxtLink>
                   <span
-                    class="text-black  font-asap print:text-sm print:text-black"
+                    class="text-black font-asap print:text-sm print:text-black"
                   >
                     (it is highly suggested to not make any changes after this
                     step until you are contacted by the Curation Team)
@@ -578,7 +576,7 @@
       </div>
       <div class="mb-3 print:my-1">
         <h2
-          class="font-semibold text-base text-black  mb-2 print:my-0 print:text-sm print:text-black"
+          class="font-semibold text-base text-black mb-2 print:my-0 print:text-sm print:text-black"
         >
           Post-curation steps to be completed ONLY after dataset is approved by
           the Curation Team (under the Disseminate Datasets tab of the Free Form
@@ -595,7 +593,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/disseminate-dataset/Share-with-SPARC-Consortium"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"
@@ -618,7 +616,7 @@
                 <span class="span-content">
                   <NuxtLink
                     to="/sodaforsparc/docs/disseminate-dataset/Submit-for-pre-publishing-review"
-                    class="hover:underline text-blue-600 "
+                    class="hover:underline text-blue-600"
                   >
                     <span
                       class="font-asap print:text-sm print:text-black print:text-black"

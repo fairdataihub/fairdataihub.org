@@ -1420,13 +1420,13 @@
 
       <div class="w-full lg:max-w-2xl h-full p-2">
         <h1
-          class="pt-6 py-4 md:py-3 w-full font-black  text-4xl sm:text-3xl md:text-3xl lg:text-4xl subpixel-antialiased text-left sm:text-center"
+          class="pt-6 py-4 md:py-3 w-full font-black text-4xl sm:text-3xl md:text-3xl lg:text-4xl subpixel-antialiased text-left sm:text-center"
         >
           About Us
         </h1>
 
         <p
-          class="mt-2 mb-6 md:my-2 w-full font-asap text-left sm:text-center text-xl sm:text-base md:text-lg lg:text-xl text-black "
+          class="mt-2 mb-6 md:my-2 w-full font-asap text-left sm:text-center text-xl sm:text-base md:text-lg lg:text-xl text-black"
         >
           FAIR Data Innovations Hub is a division of the California Medical
           Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
@@ -1445,7 +1445,7 @@
           <NuxtLink to="/team">
             <button
               type="button"
-              class="py-4 px-6 w-max-content transition ease-in-out duration-200 text-center text-base rounded-md font-semibold bg-black  text-white ring-2 ring-offset-2 ring-transparent  hover:ring-pink-600   focus:ring-pink-600"
+              class="py-4 px-6 w-max-content transition ease-in-out duration-200 text-center text-base rounded-md font-semibold bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
             >
               Meet our team
             </button>

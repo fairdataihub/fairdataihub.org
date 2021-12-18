@@ -13,7 +13,7 @@
             href="https://app.pennsieve.net/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
             >Pennsieve</a
           >
           platform to store data and metadata files as well as append additional
@@ -72,7 +72,7 @@
           Instructions for this process can be found at
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA-(API-Key)"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Connect your Pennsieve account with SODA (API Key) </span>
           </NuxtLink>

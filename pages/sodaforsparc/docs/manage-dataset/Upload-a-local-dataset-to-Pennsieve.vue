@@ -7,7 +7,7 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-4">
-        <p class="font-asap text-black  mb-2">
+        <p class="font-asap text-black mb-2">
           With this feature, you can upload a data from your computer on to a
           Pennsieve dataset (with folder structure preserved).
         </p>
@@ -21,7 +21,7 @@
           connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span>use the instructions available here</span> </NuxtLink
           >.

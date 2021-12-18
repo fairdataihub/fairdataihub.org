@@ -17,17 +17,17 @@
           class="lg:flex-grow pt-5 sm:pt-0 lg:pr-24 md:pr-0 flex flex-col md:items-start md:text-left mb-2 sm:mb-16 md:mb-0 items-center text-center"
         >
           <h1
-            class="font-inter font-black text-3xl sm:text-4xl w-full mb-1 text-center "
+            class="font-inter font-black text-3xl sm:text-4xl w-full mb-1 text-center"
           >
             SPARClink
           </h1>
           <h2
-            class="font-inter w-full sm:text-2xl text-2xl mb-2 font-medium  text-center"
+            class="font-inter w-full sm:text-2xl text-2xl mb-2 font-medium text-center"
           >
             Visualizing the Impact of SPARC
           </h2>
           <p
-            class="mb-5 leading-relaxed text-center text-base w-full font-asap text-black "
+            class="mb-5 leading-relaxed text-center text-base w-full font-asap text-black"
           >
             A tool to understand the impact that SPARC and <br />
             the SPARC Data Standard have on the scientfic community.
@@ -39,7 +39,7 @@
               rel="noopener"
             >
               <button
-                class="ml-4 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black  text-white ring-2 ring-offset-2 ring-transparent  hover:ring-pink-600   focus:ring-pink-600"
+                class="ml-4 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
               >
                 Explore SPARClink
               </button>

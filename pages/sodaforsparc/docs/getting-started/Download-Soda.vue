@@ -14,7 +14,7 @@
             href="https://app.pennsieve.net/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
             >Pennsieve Agent</a
           >.
           <span v-if="current_os === 'all'">
@@ -34,7 +34,7 @@
               :href="windows_url"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600  cursor-pointer"
+              class="hover:underline text-blue-600 cursor-pointer"
             >
               Download the Windows installer.
             </a>
@@ -76,7 +76,7 @@
               :href="macOS_url"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600  cursor-pointer"
+              class="hover:underline text-blue-600 cursor-pointer"
             >
               Download the macOS installer.
             </a>
@@ -113,7 +113,7 @@
               :href="linux_url"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600  cursor-pointer"
+              class="hover:underline text-blue-600 cursor-pointer"
             >
               Download Linux AppImage.
             </a>
@@ -145,7 +145,7 @@
               href="https://app.pennsieve.net/"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600 "
+              class="hover:underline text-blue-600"
               >AppImage Launcher</a
             >
             to organize and handle all AppImage programs for your Linux system.

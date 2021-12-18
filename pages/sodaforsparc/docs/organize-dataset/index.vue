@@ -13,7 +13,7 @@
             href="https://docs.google.com/presentation/d/1EQPn1FmANpPsFt3CguU-JOQVMMlJsNXluQAK_gb2qVg/edit#slide=id.p1"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             SPARC Dataset Structure</a
           >. This top level folder structure is shown in the figure below. If
@@ -37,7 +37,7 @@
         <li>
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset/step-1"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Step 1: Getting started </span>
           </NuxtLink>
@@ -45,7 +45,7 @@
         <li>
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset/step-2"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Step 2: Specify high-level folders </span>
           </NuxtLink>
@@ -53,7 +53,7 @@
         <li>
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset/step-3"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Step 3: Structure dataset files </span>
           </NuxtLink>
@@ -61,7 +61,7 @@
         <li>
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset/step-4"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Step 4: Specify high-level metadata files </span>
           </NuxtLink>
@@ -69,7 +69,7 @@
         <li>
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset/step-5"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Step 5: Request manifest files </span>
           </NuxtLink>
@@ -77,7 +77,7 @@
         <li>
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset/step-6"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Step 6: Generate dataset </span>
           </NuxtLink>
@@ -85,7 +85,7 @@
         <li>
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset/step-7"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> Step 7: Preview dataset </span>
           </NuxtLink>

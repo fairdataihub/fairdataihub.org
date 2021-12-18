@@ -12,7 +12,7 @@
           to the
           <NuxtLink
             to="/sodaforsparc/docs/organize-dataset#background"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span> description provided in the figure </span>
           </NuxtLink>

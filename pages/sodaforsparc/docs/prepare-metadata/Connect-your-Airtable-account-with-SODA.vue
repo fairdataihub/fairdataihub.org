@@ -13,7 +13,7 @@
             href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             SPARC Airtable sheet</a
           >
@@ -39,7 +39,7 @@
             href="https://airtable.com/"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             Airtable account</a
           >.
@@ -50,7 +50,7 @@
             href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             SPARC Airtable sheet</a
           >
@@ -59,7 +59,7 @@
             href="mailto:chorn@pitt.edu"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             chorn@pitt.edu</a
           >).
@@ -78,7 +78,7 @@
             href="https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             Airtable Help page</a
           >

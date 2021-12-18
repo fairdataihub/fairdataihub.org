@@ -16,18 +16,14 @@
         <div
           class="lg:flex-grow pt-5 sm:pt-0 lg:pr-24 md:pr-0 flex flex-col md:items-start md:text-left mb-2 sm:mb-16 md:mb-0 items-center text-center"
         >
-          <h1
-            class="font-black text-3xl sm:text-4xl w-full mb-1 text-center "
-          >
+          <h1 class="font-black text-3xl sm:text-4xl w-full mb-1 text-center">
             SODA for SPARC
           </h1>
-          <h2
-            class="w-full sm:text-2xl text-2xl mb-2 font-medium  text-center"
-          >
+          <h2 class="w-full sm:text-2xl text-2xl mb-2 font-medium text-center">
             Keep Calm and Curate!
           </h2>
           <p
-            class="mb-8 leading-relaxed text-center text-base w-full font-asap text-black "
+            class="mb-8 leading-relaxed text-center text-base w-full font-asap text-black"
           >
             Your one-stop tool for curating and submitting SPARC datasets
             <br />
@@ -35,14 +31,14 @@
           </p>
           <div class="w-full flex justify-center">
             <button
-              class="hidden sm:block justify-center items-center border-0 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black  text-white ring-2 ring-offset-2 ring-transparent  hover:ring-pink-600   focus:ring-pink-600"
+              class="hidden sm:block justify-center items-center border-0 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
               @click="downloadSODA"
             >
               Download now
             </button>
             <NuxtLink to="/sodaforsparc/docs/getting-started/User-Interface">
               <button
-                class="sm:ml-4 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black  text-white ring-2 ring-offset-2 ring-transparent  hover:ring-pink-600   focus:ring-pink-600"
+                class="sm:ml-4 py-2 px-6 focus:outline-none rounded text-lg transition-all bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
               >
                 Explore the docs
               </button>

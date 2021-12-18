@@ -24,7 +24,7 @@
           yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 "
+            class="hover:underline text-blue-600"
           >
             <span>use the instructions available here</span> </NuxtLink
           >.

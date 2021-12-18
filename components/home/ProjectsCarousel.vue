@@ -40,7 +40,7 @@
               <div class="w-full flex justify-center py-4">
                 <NuxtLink :to="project.page">
                   <button
-                    class="sm:ml-4 inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg md:text-base lg:text-lg transition bg-black  text-white ring-2 ring-offset-2 ring-transparent  hover:ring-pink-600  focus:ring-pink-600"
+                    class="sm:ml-4 inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg md:text-base lg:text-lg transition bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
                   >
                     Learn more about {{ project.name }}
                   </button>
@@ -92,7 +92,7 @@ export default {
   mounted() {
     this.ready = true;
     this.componentKey++;
-    console.log(process.env.NODE_ENV)
+    console.log(process.env.NODE_ENV);
   },
 };
 </script>
