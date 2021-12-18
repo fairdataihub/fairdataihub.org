@@ -19,6 +19,7 @@
       snapAlign="center"
       pause-autoplay-on-hover
       v-if="ready"
+      :key="componentKey"
     >
       <Slide v-for="project in projectsList" :key="project.name" class="py-10">
         <section
@@ -81,11 +82,16 @@ export default {
   },
   props: ["projectsList"],
   data() {
-    return { ready: false };
+    return { ready: false, componentKey: 0 };
   },
   computed: {},
+  created() {
+    this.ready = false;
+    this.componentKey = Math.random();
+  },
   mounted() {
     this.ready = true;
+    this.componentKey++;
   },
 };
 </script>
