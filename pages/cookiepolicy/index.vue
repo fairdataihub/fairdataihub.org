@@ -59,7 +59,8 @@
           <a
             href="https://support.google.com/accounts/answer/32050"
             rel="external nofollow noopener"
-            target="_blank" class="text-url"
+            target="_blank"
+            class="text-url"
             >https://support.google.com/accounts/answer/32050</a
           >
         </li>
@@ -69,7 +70,8 @@
           <a
             href="http://support.microsoft.com/kb/278835"
             rel="external nofollow noopener"
-            target="_blank" class="text-url"
+            target="_blank"
+            class="text-url"
             >http://support.microsoft.com/kb/278835</a
           >
         </li>
@@ -78,7 +80,8 @@
           <a
             href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored"
             rel="external nofollow noopener"
-            target="_blank" class="text-url"
+            target="_blank"
+            class="text-url"
             >https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored</a
           >
         </li>
@@ -87,7 +90,8 @@
           <a
             href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
             rel="external nofollow noopener"
-            target="_blank" class="text-url"
+            target="_blank"
+            class="text-url"
             >https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac</a
           >
         </li>
@@ -172,9 +176,7 @@
         </li>
       </ul>
 
-      
-
-     <h2 class="heading">Contact Information</h2>
+      <h2 class="heading">Contact Information</h2>
 
       <p>
         <strong> Address: </strong> 11107 Roselle St. Ste #211 San Diego, CA
@@ -203,7 +205,7 @@ export default {
   layout: "default",
   scrollToTop: true,
   mounted() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   },
 };
 </script>
