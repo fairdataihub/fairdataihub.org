@@ -21,7 +21,7 @@
           tools to help researchers navigate through them.
         </p>
 
-        <NuxtLink to="/contactus">
+        <NuxtLink to="/contact-us">
           <button
             type="button"
             class="my-3 p-3 transition-all text-center text-base rounded-lg font-semibold bg-transparent border-black border-2 hover:border-light-accent text-black hover:text-accent"

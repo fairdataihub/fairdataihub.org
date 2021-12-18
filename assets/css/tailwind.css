@@ -89,3 +89,12 @@
     border: 3px solid #ffffff;
   }
 }
+
+.page-enter-active, .page-leave-active {
+  transition-duration: 0.3s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+.page-enter, .page-leave-to {
+  opacity: 0;
+}

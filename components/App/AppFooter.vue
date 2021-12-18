@@ -326,25 +326,25 @@
                 <NuxtLink to="/team"> About </NuxtLink>
               </li>
               <li class="footer-item">
-                <NuxtLink to="/contactus"> Contact Us </NuxtLink>
+                <NuxtLink to="/contact-us"> Contact Us </NuxtLink>
               </li>
               <!-- <li class="footer-item">Blog</li>
               <li class="footer-item">Jobs</li>
               <li class="footer-item">Press</li> -->
-              <li class="footer-item">Partners</li>
+              <!-- <li class="footer-item">Partners</li> -->
             </ul>
           </div>
           <div class="flex flex-col">
             <h3 class="footer-header">Legal</h3>
             <ul>
               <li class="footer-item">
-                <NuxtLink to="/claim"> Claim </NuxtLink>
+                <NuxtLink to="/termsofuse"> Terms of Use </NuxtLink>
               </li>
               <li class="footer-item">
                 <NuxtLink to="/privacypolicy"> Privacy Policy </NuxtLink>
               </li>
               <li class="footer-item">
-                <NuxtLink to="/terms"> Terms </NuxtLink>
+                <NuxtLink to="/cookiepolicy"> Cookie Policy </NuxtLink>
               </li>
             </ul>
           </div>
@@ -376,7 +376,7 @@
       <hr class="text-gray-200 pb-3" />
 
       <div class="flex flex-col md:flex-row justify-center items-center py-5">
-        <div class="text-gray-400 text-center">
+        <div class="text-gray-500 text-center">
           <p>© 2020 FAIR Data Innovations Hub.</p>
           <p>All rights reserved.</p>
         </div>
