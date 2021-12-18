@@ -1,15 +1,15 @@
 <template>
   <div
-    class="flex flex-col justify-center items-center max-w-screen-lg mx-auto dark:bg-gray-600"
+    class="flex flex-col justify-center items-center max-w-screen-lg mx-auto "
   >
     <div class="flex flex-col items-center mb-4 px-4">
       <h2
-        class="w-full mt-2 mb-1 font-extrabold text-gray-900 dark:text-white text-4xl sm:text-4xl text-left"
+        class="w-full mt-2 mb-1 font-extrabold text-gray-900  text-4xl sm:text-4xl text-left"
       >
         Current Projects
       </h2>
       <p
-        class="w-full max-w-2xl text-xl text-black dark:text-white text-left pb-2"
+        class="w-full max-w-2xl text-xl text-black  text-left pb-2"
       >
         These are the projects we are working on at the moment.
       </p>
@@ -25,20 +25,20 @@
         <!-- text div -->
         <div class="flex flex-col my-1 items-center text-center">
           <h3
-            class="font-semibold hidden text-4xl w-full mb-4 text-left text-black dark:text-white"
+            class="font-semibold hidden text-4xl w-full mb-4 text-left text-black "
           >
             {{ project.name }}
           </h3>
 
           <p
-            class="w-full mb-8 text-left text-xl font-asap text-black dark:text-white"
+            class="w-full mb-8 text-left text-xl font-asap text-black "
           >
             {{ project.description }}
           </p>
           <div class="w-full flex justify-center">
             <NuxtLink :to="project.page">
               <button
-                class="sm:ml-4 inline-flex text-white border-0 py-2 px-6 focus:outline-none rounded text-lg transition bg-button-light-background dark:bg-button-dark-background"
+                class="sm:ml-4 inline-flex text-white border-0 py-2 px-6 focus:outline-none rounded text-lg transition bg-button-light-background "
               >
                 Learn more about {{ project.name }}
               </button>

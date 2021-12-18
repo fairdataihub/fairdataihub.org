@@ -148,11 +148,11 @@ export default {
     if (props.profile) {
       if (props.profile["borderTop"]) {
         borderClasses +=
-          "sm:border-t sm:border-gray-200 dark:sm:border-gray-800";
+          "sm:border-t sm:border-gray-200 ";
       }
       if (props.profile["borderBottom"]) {
         borderClasses +=
-          "sm:border-b sm:border-gray-200 dark:sm:border-gray-800";
+          "sm:border-b sm:border-gray-200 ";
       }
     }
     return {

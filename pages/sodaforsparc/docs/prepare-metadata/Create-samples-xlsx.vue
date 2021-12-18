@@ -142,7 +142,7 @@
                 href="https://www.protocols.io/developers"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 dark:text-blue-400"
+                class="hover:underline text-blue-600 "
               >
                 protocols.io</a
               >. An access token is required for automatic extraction of the

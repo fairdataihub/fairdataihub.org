@@ -1,6 +1,5 @@
 module.exports = {
-  mode: "jit",
-  purge: [
+  content: [
     "./components/**/*.{vue,js}",
     "./layouts/**/*.vue",
     "./pages/**/*.vue",
@@ -8,7 +7,7 @@ module.exports = {
     "./nuxt.config.{js,ts}",
     "./node_modules/vue3-carousel/dist/carousel.css",
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: "media",
   theme: {
     extend: {
       fontFamily: {
@@ -35,25 +34,14 @@ module.exports = {
     backgroundColor: (theme) => ({
       ...theme("colors"),
       "light-accent": "#CD329F",
-      "dark-accent": "#00b4d8",
       "light-vision": "#000",
-      "dark-vision": "#fff",
       "light-background": "#F5F5F5",
       "button-light-background": "#000",
-      "button-dark-background": "#000",
-      "dark-background": "#1F1E28",
-      "dark-background-2": "#2a2937",
     }),
     borderColor: (theme) => ({
       ...theme("colors"),
       "light-accent": "#CD329F",
     }),
-  },
-  variants: {
-    extend: {
-      transitionProperty: ["responsive", "motion-safe", "motion-reduce"],
-      display: ["dark"],
-    },
   },
   plugins: [require("tailwindcss-debug-screens")],
 };

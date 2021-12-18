@@ -15,7 +15,7 @@
             href="https://docs.pennsieve.io/docs/dataset-permissions"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
             >Pennsieve help page</a
           >.
         </p>
@@ -36,7 +36,7 @@
               class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
             >
               <table class="min-w-full divide-y divide-gray-200 relative">
-                <thead class="bg-gray-50 dark:bg-gray-500">
+                <thead class="bg-gray-50">
                   <tr class="divide-x divide-gray-200">
                     <th scope="col" class="">Permissions</th>
                     <th scope="col" class="">Owner</th>
@@ -45,15 +45,13 @@
                     <th scope="col" class="">Viewer</th>
                   </tr>
                 </thead>
-                <tbody
-                  class="bg-white dark:bg-gray-600 divide-y divide-gray-200"
-                >
+                <tbody class="bg-white divide-y divide-gray-200">
                   <tr
                     v-for="item in permissionsList"
                     :key="item.permission"
                     class="divide-x divide-gray-200"
                   >
-                    <td class="px-6 py-4 text-black dark:text-white">
+                    <td class="px-6 py-4 text-black">
                       {{ item.permission }}
                     </td>
                     <td class="px-6 py-4">{{ item.owner }}</td>
@@ -76,7 +74,7 @@
           you have not connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600"
           >
             <span>use the instructions available here</span> </NuxtLink
           >. The current permissions on the selected dataset will be displayed.

@@ -154,7 +154,7 @@
       <div class="p-parent-div">
         <NuxtLink
           to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
-          class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+          class="hover:underline text-blue-600 font-asap "
         >
           Learn more about the types of permissions and their
           restrictions</NuxtLink
@@ -203,7 +203,7 @@
             href="https://sparc.science/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+            class="hover:underline text-blue-600 font-asap "
           >
             sparc.science
           </a>
@@ -328,7 +328,7 @@
                 href="https://airtable.com/account"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+                class="hover:underline text-blue-600 font-asap "
               >
                 your account</a
               >
@@ -420,7 +420,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file"
-            class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+            class="hover:underline text-blue-600 font-asap "
           >
             How to</NuxtLink
           >
@@ -546,7 +546,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-dataset-description-metadata-file"
-            class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+            class="hover:underline text-blue-600 font-asap "
           >
             How to</NuxtLink
           >
@@ -612,7 +612,7 @@
                 href="https://scicrunch.org/resources"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+                class="hover:underline text-blue-600 font-asap "
               >
                 Scicrunch</a
               >
@@ -673,7 +673,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-subjects-metadata-file"
-            class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+            class="hover:underline text-blue-600 font-asap "
           >
             How to</NuxtLink
           >
@@ -737,7 +737,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-samples-metadata-file"
-            class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+            class="hover:underline text-blue-600 font-asap "
           >
             How to</NuxtLink
           >
@@ -760,7 +760,7 @@
             href="https://docs.google.com/presentation/d/1EQPn1FmANpPsFt3CguU-JOQVMMlJsNXluQAK_gb2qVg/edit#slide=id.p1"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 font-asap dark:text-blue-400"
+            class="hover:underline text-blue-600 font-asap "
           >
             How to</a
           >. This top-level folder structure is shown in the figure below. If

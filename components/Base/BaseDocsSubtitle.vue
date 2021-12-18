@@ -3,7 +3,7 @@
     <div class="flex justify-start items-center relative anchorDiv">
       <h2
         :id="subtitleID"
-        class="font-semibold text-lg text-black dark:text-white mb-1 print:dark:text-black level-1-heading"
+        class="font-semibold text-lg text-black mb-1 print:text-black level-1-heading"
         ref="slotWrapper"
       >
         <slot></slot>

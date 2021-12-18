@@ -1,29 +1,29 @@
 <template>
-  <div class="divide-y divide-gray-50 dark:divide-gray-800">
+  <div class="divide-y divide-gray-50 ">
     <base-section
       data-aos="fade-in"
-      class="pt-16 bg-white dark:bg-dark-background py-10"
+      class="pt-16 bg-white  py-10"
     >
       <KnowMoreHerosection></KnowMoreHerosection>
     </base-section>
 
     <base-section
       data-aos="fade-in"
-      class="bg-grey-50 dark:bg-dark-background py-10"
+      class="bg-grey-50  py-10"
     >
       <AboutKnowMore></AboutKnowMore>
     </base-section>
 
     <base-section
       data-aos="fade-in"
-      class="bg-grey-50 dark:bg-dark-background py-10"
+      class="bg-grey-50  py-10"
     >
       <KnowMoreDevApproachFundingTeam></KnowMoreDevApproachFundingTeam>
     </base-section>
 
     <base-section
       data-aos="fade-in"
-      class="bg-white dark:bg-dark-background py-10"
+      class="bg-white  py-10"
     >
       <KnowMorePublications></KnowMorePublications>
     </base-section>

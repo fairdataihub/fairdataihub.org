@@ -3,12 +3,12 @@
     <div class="max-w-screen-lg mx-auto px-6 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p
-          class="my-2 font-inter font-extrabold tracking-tight dark:text-gray-50 text-4xl sm:text-4xl"
+          class="my-2 font-inter font-extrabold tracking-tight  text-4xl sm:text-4xl"
         >
           About
         </p>
         <p
-          class="font-asap max-w-2xl text-xl sm:text-xl text-black dark:text-white lg:mx-auto"
+          class="font-asap max-w-2xl text-xl sm:text-xl text-black  lg:mx-auto"
         >
           AQUA (Advanced Query Architecture for the SPARC Portal) an application
           that aims at improving the search capabilities of the SPARC Portal.
@@ -22,7 +22,7 @@
           <div v-for="feature in features" :key="feature.name" class="relative">
             <dt>
               <div
-                class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white bg-light-vision dark:bg-dark-vision"
+                class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white bg-light-vision "
               >
                 <component
                   :is="feature.icon"
@@ -31,13 +31,13 @@
                 />
               </div>
               <p
-                class="font-inter ml-16 text-xl sm:text-lg font-medium dark:text-gray-50"
+                class="font-inter ml-16 text-xl sm:text-lg font-medium "
               >
                 {{ feature.name }}
               </p>
             </dt>
             <dd
-              class="mt-2 md:mt-0 ml-16 text-lg sm:text-base text-black dark:text-white font-asap"
+              class="mt-2 md:mt-0 ml-16 text-lg sm:text-base text-black  font-asap"
               v-html="feature.description"
             ></dd>
           </div>

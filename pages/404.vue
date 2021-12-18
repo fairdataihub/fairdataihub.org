@@ -8,7 +8,7 @@
       >
         <div class="w-full mb-16 md:mb-8 text-center lg:text-left">
           <h1
-            class="font-light font-sans text-center lg:text-left text-5xl lg:text-8xl mt-12 md:mt-0 text-gray-700 dark:text-gray-50"
+            class="font-light font-sans text-center lg:text-left text-5xl lg:text-8xl mt-12 md:mt-0 text-gray-700 "
           >
             Sorry, this page isn't available
           </h1>

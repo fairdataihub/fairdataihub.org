@@ -6,7 +6,7 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black dark:text-white mb-2">
+        <p class="font-asap text-black  mb-2">
           All SPARC datasets must have the following metadata on Pennsieve:
           subtitle, description, banner image, and license. This interface
           allows you to easily add a subtitle to your dataset. This subtitle
@@ -23,7 +23,7 @@
           connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600 "
           >
             <span>use the instructions available here</span> </NuxtLink
           >.

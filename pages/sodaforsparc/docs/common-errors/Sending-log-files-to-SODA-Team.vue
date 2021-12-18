@@ -43,7 +43,7 @@
 
           <NuxtLink
             to="/sodaforsparc/docs/common-errors/Issues-regarding-hidden-files-or-folders"
-            class="hover:underline text-blue-600 dark:text-blue-400"
+            class="hover:underline text-blue-600 "
           >
             <span>please visit here</span> </NuxtLink
           >.

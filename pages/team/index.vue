@@ -1,14 +1,14 @@
 <template>
   <base-section class="">
     <section
-      class="text-black body-font dark:bg-dark-background flex flex-col md:flex-row gap-4 mx-auto mb-8 md:mb-0 justify-between items-center max-w-screen-2xl"
+      class="text-black body-font  flex flex-col md:flex-row gap-4 mx-auto mb-8 md:mb-0 justify-between items-center max-w-screen-2xl"
     >
       <div class="flex flex-col lg:flex-row w-11/12 mx-auto">
         <div class="w-full lg:w-1/3 p-5">
-          <h1 class="font-black dark:text-gray-50 text-4xl sm:text-3xl py-2">
+          <h1 class="font-black  text-4xl sm:text-3xl py-2">
             About Us
           </h1>
-          <p class="font-asap text-black dark:text-white text-xl sm:text-lg">
+          <p class="font-asap text-black  text-xl sm:text-lg">
             FAIR Data Innovations Hub is a division of the California Medical
             Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
             research organization located in San Diego, California. We have a
