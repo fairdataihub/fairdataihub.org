@@ -6,10 +6,11 @@
       <h1 class="heading">Privacy Policy for FAIR Data Innovations Hub</h1>
 
       <p>
-        At Fair Data Innovations Hub, accessible from <NuxtLink to="/" class="text-url"> https://fairdataihub.org/ </NuxtLink>,
-        one of our main priorities is the privacy of our visitors. This Privacy
-        Policy document contains types of information that is collected and
-        recorded by Fair Data Innovations Hub and how we use it.
+        At Fair Data Innovations Hub, accessible from
+        <NuxtLink to="/" class="text-url"> https://fairdataihub.org/ </NuxtLink
+        >, one of our main priorities is the privacy of our visitors. This
+        Privacy Policy document contains types of information that is collected
+        and recorded by Fair Data Innovations Hub and how we use it.
       </p>
 
       <p>
@@ -261,7 +262,7 @@ export default {
   layout: "default",
   scrollToTop: true,
   mounted() {
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
   },
 };
 </script>
