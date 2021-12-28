@@ -281,7 +281,7 @@
 
       <p>
         Please feel free to contact us if you have any questions or complaints
-        about Fair Data Innovation Hub’s Privacy Policy or practices.
+        about Fair Data Innovation Hub's Privacy Policy or practices.
       </p>
 
       <p>

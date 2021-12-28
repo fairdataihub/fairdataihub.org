@@ -11,15 +11,9 @@
     </Html>
 
     <section
-      class="text-black flex flex-col mx-auto max-w-screen-2xl py-5 text-lg text-justify px-6 sm:px-6 lg:px-8"
+      class="text-black flex flex-col mx-auto max-w-screen-lg py-5 text-lg px-6 sm:px-6 lg:px-8"
     >
       <h1 class="heading">Cookie Policy for Fair Data Innovations Hub</h1>
-
-      <p>
-        This is the Cookie Policy for Fair Data Innovations Hub, accessible from
-        <NuxtLink to="/" class="text-url"> https://fairdataihub.org/ </NuxtLink
-        >.
-      </p>
 
       <h2 class="subheading">What Are Cookies?</h2>
 
@@ -31,6 +25,17 @@
         We will also share how you can prevent these cookies from being stored
         however this may downgrade or 'break' certain elements of the sites
         functionality.
+      </p>
+
+      <p>
+        For more information, please visit
+        <a
+          href="https://www.allaboutcookies.org/"
+          rel="external nofollow noopener"
+          target="_blank"
+          class="text-url text-base"
+          >AllAboutCookies.org</a
+        >.
       </p>
 
       <h2 class="subheading">How We Use Cookies</h2>
@@ -47,82 +52,137 @@
       <h2 class="subheading">Disabling Cookies</h2>
 
       <p>
-        If You prefer to avoid the use of Cookies on the Website, first You must
-        disable the use of Cookies in your browser and then delete the Cookies
+        If you prefer to avoid the use of cookies on the Website, first you must
+        disable the use of cookies in your browser and then delete the cookies
         saved in your browser associated with this website. You may use this
-        option for preventing the use of Cookies at any time.
+        option for preventing the use of cookies at any time.
       </p>
 
       <p>
-        If You do not accept Our Cookies, You may experience some inconvenience
+        If you do not accept our cookies, you may experience some inconvenience
         in your use of the Website and some features may not function properly.
       </p>
 
+      <p>Find out how to manage cookies on popular browsers:</p>
+
+      <div class="pl-8">
+        <ul
+          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+        >
+          <li>
+            <a
+              href="https://support.google.com/accounts/answer/61416"
+              rel="external nofollow noopener"
+              target="_blank"
+              class="text-url text-base"
+              >Google Chrome</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
+              rel="external nofollow noopener"
+              target="_blank"
+              class="text-url text-base"
+              >Mozilla Firefox</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
+              rel="external nofollow noopener"
+              target="_blank"
+              class="text-url text-base"
+              >Apple Safari</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://support.microsoft.com/sr-latn-rs/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy"
+              rel="external nofollow noopener"
+              target="_blank"
+              class="text-url text-base"
+              >Microsoft Edge</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies"
+              rel="external nofollow noopener"
+              target="_blank"
+              class="text-url text-base"
+              >Microsoft Internet Explorer</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://help.opera.com/en/latest/web-preferences/#cookies"
+              rel="external nofollow noopener"
+              target="_blank"
+              class="text-url text-base"
+              >Opera</a
+            >
+          </li>
+        </ul>
+      </div>
+
       <p>
-        If You'd like to delete Cookies or instruct your web browser to delete
-        or refuse Cookies, please visit the help pages of your web browser.
+        To find information relating to other browsers, visit the browser
+        developer's website.
       </p>
 
-      <ul class="list-disc list-inside pb-3">
-        <li>
-          For the Chrome web browser, please visit this page from Google:
-          <a
-            href="https://support.google.com/accounts/answer/32050"
-            rel="external nofollow noopener"
-            target="_blank"
-            class="text-url"
-            >https://support.google.com/accounts/answer/32050</a
-          >
-        </li>
-        <li>
-          For the Internet Explorer web browser, please visit this page from
-          Microsoft:
-          <a
-            href="http://support.microsoft.com/kb/278835"
-            rel="external nofollow noopener"
-            target="_blank"
-            class="text-url"
-            >http://support.microsoft.com/kb/278835</a
-          >
-        </li>
-        <li>
-          For the Firefox web browser, please visit this page from Mozilla:
-          <a
-            href="https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored"
-            rel="external nofollow noopener"
-            target="_blank"
-            class="text-url"
-            >https://support.mozilla.org/en-US/kb/delete-cookies-remove-info-websites-stored</a
-          >
-        </li>
-        <li>
-          For the Safari web browser, please visit this page from Apple:
-          <a
-            href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac"
-            rel="external nofollow noopener"
-            target="_blank"
-            class="text-url"
-            >https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac</a
-          >
-        </li>
-      </ul>
       <p>
-        For any other web browser, please visit your web browser's official web
-        pages.
+        To opt-out of being tracked by Google Analytics across all websites,
+        visit
+        <a
+          href="http://tools.google.com/dlpage/gaoptout"
+          rel="external nofollow noopener"
+          target="_blank"
+          class="text-url text-base"
+          >http://tools.google.com/dlpage/gaoptout</a
+        >
+      </p>
+
+      <p>
+        You can also visit the trade body representing these advertising
+        platforms for more information:
+        <a
+          href="https://www.networkadvertising.org/choices/;"
+          rel="external nofollow noopener"
+          target="_blank"
+          class="text-url text-base"
+          >Network Advertising Initiative</a
+        >.
+      </p>
+
+      <p>
+        When you access third party sites on our Sites, or when you are reading
+        integration or social media links, cookies can be created by the
+        companies disseminating these links. These third parties may be able to
+        use cookies in the context of Fair Data Innovations Hub's Services
+        (partners or other third parties supplying content or services available
+        on the Fair Data Innovations Hub site) and are responsible for the
+        cookies they install, and it is their conditions on cookies which apply.
+        For more information, you are advised to check the cookie policy
+        directly on these third-party sites concerning their use of cookies.
       </p>
 
       <h2 class="subheading">The Cookies We Set</h2>
 
-      <ul class="list-disc list-inside pb-3">
-        <li>
-          Site preferences cookies - In order to provide you with a great
-          experience on this site we provide the functionality to set your
-          preferences for how this site runs when you use it. In order to
-          remember your preferences we need to set cookies so that this
-          information can be called whenever you interact with a page is
-          affected by your preferences.
-        </li>
-      </ul>
+      <div class="pl-8">
+        <ul
+          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+        >
+          <li>
+            <span class="italic"> Site preferences cookies </span> - In order to
+            provide you with a great experience on this site we provide the
+            functionality to set your preferences for how this site runs when
+            you use it. In order to remember your preferences we need to set
+            cookies so that this information can be called whenever you interact
+            with a page is affected by your preferences.
+          </li>
+        </ul>
+      </div>
 
       <h2 class="subheading">Third Party Cookies</h2>
 
@@ -132,61 +192,71 @@
         might encounter through this site.
       </p>
 
-      <ul class="list-disc list-inside pb-3">
-        <li>
-          This site uses Google Analytics which is one of the most widespread
-          and trusted analytics solution on the web for helping us to understand
-          how you use the site and ways that we can improve your experience.
-          These cookies may track things such as how long you spend on the site
-          and the pages that you visit so we can continue to produce engaging
-          content. For more information on Google Analytics cookies, see the
-          official
-          <a
-            href="https://policies.google.com/privacy?hl=en-US"
-            target="_blank"
-            rel="noopener"
-            class="text-url"
-          >
-            Google Analytics page </a
-          >.
-        </li>
+      <div class="pl-8">
+        <ul
+          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+        >
+          <li>
+            This site uses Google Analytics which is one of the most widespread
+            and trusted analytics solution on the web for helping us to
+            understand how you use the site and ways that we can improve your
+            experience. These cookies may track things such as how long you
+            spend on the site and the pages that you visit so we can continue to
+            produce engaging content. For more information on Google Analytics
+            cookies, see the official
+            <a
+              href="https://policies.google.com/privacy?hl=en-US"
+              target="_blank"
+              rel="noopener"
+              class="text-url text-base"
+            >
+              Google Analytics page </a
+            >.
+          </li>
 
-        <li>
-          Third party analytics are used to track and measure usage of this site
-          so that we can continue to produce engaging content. These cookies may
-          track things such as how long you spend on the site or pages you visit
-          which helps us to understand how we can improve the site for you.
-        </li>
+          <li>
+            Third party analytics are used to track and measure usage of this
+            site so that we can continue to produce engaging content. These
+            cookies may track things such as how long you spend on the site or
+            pages you visit which helps us to understand how we can improve the
+            site for you.
+          </li>
 
-        <li>
-          From time to time we test new features and make subtle changes to the
-          way that the site is delivered. When we are still testing new features
-          these cookies may be used to ensure that you receive a consistent
-          experience whilst on the site whilst ensuring we understand which
-          optimisations our users appreciate the most.
-        </li>
+          <li>
+            From time to time we test new features and make subtle changes to
+            the way that the site is delivered. When we are still testing new
+            features these cookies may be used to ensure that you receive a
+            consistent experience whilst on the site whilst ensuring we
+            understand which optimisations our users appreciate the most.
+          </li>
 
-        <li>
-          As we sell products it's important for us to understand statistics
-          about how many of the visitors to our site actually make a purchase
-          and as such this is the kind of data that these cookies will track.
-          This is important to you as it means that we can accurately make
-          business predictions that allow us to monitor our advertising and
-          product costs to ensure the best possible price.
-        </li>
+          <li>
+            As we sell products it's important for us to understand statistics
+            about how many of the visitors to our site actually make a purchase
+            and as such this is the kind of data that these cookies will track.
+            This is important to you as it means that we can accurately make
+            business predictions that allow us to monitor our advertising and
+            product costs to ensure the best possible price.
+          </li>
 
-        <li>
-          We also use social media buttons and/or plugins on this site that
-          allow you to connect with your social network in various ways. For
-          these to work the following social media sites including Twitter,
-          Facebook, Instagram, etc., will set cookies through our site which may
-          be used to enhance your profile on their site or contribute to the
-          data they hold for various purposes outlined in their respective
-          privacy policies.
-        </li>
-      </ul>
+          <li>
+            We also use social media buttons and/or plugins on this site that
+            allow you to connect with your social network in various ways. For
+            these to work the following social media sites including Twitter,
+            Facebook, Instagram, etc., will set cookies through our site which
+            may be used to enhance your profile on their site or contribute to
+            the data they hold for various purposes outlined in their respective
+            privacy policies.
+          </li>
+        </ul>
+      </div>
 
-      <h2 class="heading">Contact Information</h2>
+      <h2 class="subheading">Questions and complaints</h2>
+
+      <p>
+        Please feel free to contact us if you have any questions or complaints
+        about Fair Data Innovation Hub's Cookie Policy.
+      </p>
 
       <p>
         <strong> Address: </strong> 11107 Roselle St. Ste #211 San Diego, CA
@@ -195,14 +265,14 @@
 
       <p>
         <strong> Contact form: </strong>
-        <NuxtLink to="/contact-us" class="text-url">
+        <NuxtLink to="/contact-us" class="text-url text-base">
           https://fairdataihub.org/contact-us
         </NuxtLink>
       </p>
 
       <p>
         <strong> Email: </strong>
-        <a href="mailto:info@fairdataihub.org" class="text-url">
+        <a href="mailto:info@fairdataihub.org" class="text-url text-base">
           info@fairdataihub.org
         </a>
       </p>
@@ -222,17 +292,14 @@ export default {
 
 <style lang="postcss" scoped>
 .heading {
-  @apply my-2 font-extrabold tracking-tight text-2xl;
+  @apply mb-3 mt-4 font-extrabold tracking-tight text-4xl;
 }
 
 .subheading {
-  @apply py-2 font-bold tracking-tight text-xl;
-}
-.subsubheading {
-  @apply py-2 font-bold tracking-tight text-lg;
+  @apply mb-3 mt-6 font-bold tracking-tight text-3xl;
 }
 
 p {
-  @apply pb-2;
+  @apply my-1 text-base leading-7 text-gray-800 font-normal;
 }
 </style>
