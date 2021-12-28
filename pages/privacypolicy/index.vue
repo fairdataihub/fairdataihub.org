@@ -11,13 +11,16 @@
     </Html>
 
     <section
-      class="text-black flex flex-col mx-auto max-w-screen-2xl py-5 text-lg text-justify px-6 sm:px-6 lg:px-8"
+      class="text-black flex flex-col mx-auto max-w-screen-lg py-5 text-lg px-6 sm:px-6 lg:px-8"
     >
       <h1 class="heading">Privacy Policy for FAIR Data Innovations Hub</h1>
 
+      <p>Effective Date: December 01, 2021</p>
+
       <p>
         At Fair Data Innovations Hub, accessible from
-        <NuxtLink to="/" class="text-url"> https://fairdataihub.org/ </NuxtLink
+        <NuxtLink to="/" class="text-url text-base">
+          https://fairdataihub.org/ </NuxtLink
         >, one of our main priorities is the privacy of our visitors. This
         Privacy Policy document contains types of information that is collected
         and recorded by Fair Data Innovations Hub and how we use it.
@@ -33,10 +36,7 @@
         for visitors to our website with regards to the information that they
         shared and/or collect in Fair Data Innovations Hub. This policy is not
         applicable to any information collected offline or via channels other
-        than this website. Our Privacy Policy was created with the help of the
-        <a href="https://www.privacypolicygenerator.info"
-          >Free Privacy Policy Generator</a
-        >.
+        than this website.
       </p>
 
       <h2 class="subheading">Consent</h2>
@@ -69,20 +69,24 @@
 
       <p>We use the information we collect in various ways, including to:</p>
 
-      <ul class="list-disc list-inside pb-3">
-        <li>Provide, operate, and maintain our website</li>
-        <li>Improve, personalize, and expand our website</li>
-        <li>Understand and analyze how you use our website</li>
-        <li>Develop new products, services, features, and functionality</li>
-        <li>
-          Communicate with you, either directly or through one of our partners,
-          including for customer service, to provide you with updates and other
-          information relating to the website, and for marketing and promotional
-          purposes
-        </li>
-        <li>Send you emails</li>
-        <li>Find and prevent fraud</li>
-      </ul>
+      <div class="pl-8">
+        <ul
+          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+        >
+          <li>Provide, operate, and maintain our website</li>
+          <li>Improve, personalize, and expand our website</li>
+          <li>Understand and analyze how you use our website</li>
+          <li>Develop new products, services, features, and functionality</li>
+          <li>
+            Communicate with you, either directly or through one of our
+            partners, including for customer service, to provide you with
+            updates and other information relating to the website, and for
+            marketing and promotional purposes
+          </li>
+          <li>Send you emails</li>
+          <li>Find and prevent fraud</li>
+        </ul>
+      </div>
 
       <h2 class="subheading">Log Files</h2>
 
@@ -111,9 +115,10 @@
       </p>
 
       <p>
-        For more general information on cookies, please read
-        <a href="https://www.generateprivacypolicy.com/#cookies"
-          >the Cookies article on Generate Privacy Policy website</a
+        FAIR Data Innovations Hub may also collect data automatically through
+        cookies. For information on how we use cookies, refer to our
+        <NuxtLink to="/cookiepolicy" class="text-url text-base">
+          Cookie Policy </NuxtLink
         >.
       </p>
 
@@ -157,7 +162,7 @@
       </p>
 
       <h2 class="subheading">
-        CCPA Privacy Rights (Do Not Sell My Personal Information)
+        CCPA Privacy Rights
       </h2>
 
       <p>
@@ -165,25 +170,29 @@
         to:
       </p>
 
-      <ul class="list-disc list-inside pb-3">
-        <li>
-          Request that a business that collects a consumer's personal data
-          disclose the categories and specific pieces of personal data that a
-          business has collected about consumers.
-        </li>
-        <li>
-          Request that a business delete any personal data about the consumer
-          that a business has collected.
-        </li>
-        <li>
-          Request that a business that sells a consumer's personal data, not
-          sell the consumer's personal data.
-        </li>
-        <li>
-          If you make a request, we have one month to respond to you. If you
-          would like to exercise any of these rights, please contact us.
-        </li>
-      </ul>
+      <div class="pl-8">
+        <ul
+          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+        >
+          <li>
+            Request that a business that collects a consumer's personal data
+            disclose the categories and specific pieces of personal data that a
+            business has collected about consumers.
+          </li>
+          <li>
+            Request that a business delete any personal data about the consumer
+            that a business has collected.
+          </li>
+          <li>
+            Request that a business that sells a consumer's personal data, not
+            sell the consumer's personal data.
+          </li>
+          <li>
+            If you make a request, we have one month to respond to you. If you
+            would like to exercise any of these rights, please contact us.
+          </li>
+        </ul>
+      </div>
 
       <h2 class="subheading">GDPR Data Protection Rights</h2>
 
@@ -191,36 +200,45 @@
         We would like to make sure you are fully aware of all of your data
         protection rights. Every user is entitled to the following:
       </p>
-      <ul class="list-disc list-inside pb-3">
-        <li>
-          The right to access – You have the right to request copies of your
-          personal data. We may charge you a small fee for this service.
-        </li>
-        <li>
-          The right to rectification – You have the right to request that we
-          correct any information you believe is inaccurate. You also have the
-          right to request that we complete the information you believe is
-          incomplete.
-        </li>
-        <li>
-          The right to erasure – You have the right to request that we erase
-          your personal data, under certain conditions.
-        </li>
-        <li>
-          The right to restrict processing – You have the right to request that
-          we restrict the processing of your personal data, under certain
-          conditions.
-        </li>
-        <li>
-          The right to object to processing – You have the right to object to
-          our processing of your personal data, under certain conditions.
-        </li>
-        <li>
-          The right to data portability – You have the right to request that we
-          transfer the data that we have collected to another organization, or
-          directly to you, under certain conditions.
-        </li>
-      </ul>
+
+      <div class="pl-8">
+        <ul
+          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+        >
+          <li>
+            <span class="italic"> The right to access </span>
+            – You have the right to request copies of your personal data. We may
+            charge you a small fee for this service.
+          </li>
+          <li>
+            <span class="italic"> The right to rectification </span> – You have
+            the right to request that we correct any information you believe is
+            inaccurate. You also have the right to request that we complete the
+            information you believe is incomplete.
+          </li>
+          <li>
+            <span class="italic"> The right to erasure </span> – You have the
+            right to request that we erase your personal data, under certain
+            conditions.
+          </li>
+          <li>
+            <span class="italic"> The right to restrict processing </span> – You
+            have the right to request that we restrict the processing of your
+            personal data, under certain conditions.
+          </li>
+          <li>
+            <span class="italic"> The right to object to processing </span> –
+            You have the right to object to our processing of your personal
+            data, under certain conditions.
+          </li>
+          <li>
+            <span class="italic"> The right to data portability </span> – You
+            have the right to request that we transfer the data that we have
+            collected to another organization, or directly to you, under certain
+            conditions.
+          </li>
+        </ul>
+      </div>
 
       <p>
         If you make a request, we have one month to respond to you. If you would
@@ -243,7 +261,21 @@
         efforts to promptly remove such information from our records.
       </p>
 
-      <h2 class="heading">Contact Information</h2>
+      <h2 class="subheading">Privacy policy changes</h2>
+
+      <p>
+        Just as our business changes constantly, this Privacy Policy may also change from time to time. If you want to see changes made to this Privacy Policy from time to time, we invite you to access this Privacy Policy to see the changes. If we make material changes or changes that will have an impact on you (e.g. when we start processing your personal information for other purposes than set out above), we will contact you prior to commencing that processing.
+      </p>
+
+      <p>
+        Any material changes made will be notified to you via our Sites or by email, to the extent possible, three (3) business days at least before any changes come into force.
+      </p>
+
+      <h2 class="subheading">Questions and complaints</h2>
+
+      <p>
+        Please feel free to contact us if you have any questions or complaints about Fair Data Innovation Hub’s Privacy Policy or practices.
+      </p>
 
       <p>
         <strong> Address: </strong> 11107 Roselle St. Ste #211 San Diego, CA
@@ -252,14 +284,14 @@
 
       <p>
         <strong> Contact form: </strong>
-        <NuxtLink to="/contact-us" class="text-url">
+        <NuxtLink to="/contact-us" class="text-url text-base">
           https://fairdataihub.org/contact-us
         </NuxtLink>
       </p>
 
       <p>
         <strong> Email: </strong>
-        <a href="mailto:info@fairdataihub.org" class="text-url">
+        <a href="mailto:info@fairdataihub.org" class="text-url text-base">
           info@fairdataihub.org
         </a>
       </p>
@@ -279,17 +311,14 @@ export default {
 
 <style lang="postcss" scoped>
 .heading {
-  @apply my-2 font-extrabold tracking-tight text-2xl;
+  @apply mb-3 mt-4 font-extrabold tracking-tight text-4xl;
 }
 
 .subheading {
-  @apply py-2 font-bold tracking-tight text-xl;
-}
-.subsubheading {
-  @apply py-2 font-bold tracking-tight text-lg;
+  @apply mb-3 mt-6 font-bold tracking-tight text-3xl;
 }
 
 p {
-  @apply pb-2;
+  @apply my-1 text-base leading-7 text-gray-800 font-normal;
 }
 </style>
