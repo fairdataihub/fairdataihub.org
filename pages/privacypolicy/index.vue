@@ -161,9 +161,7 @@
         websites.
       </p>
 
-      <h2 class="subheading">
-        CCPA Privacy Rights
-      </h2>
+      <h2 class="subheading">CCPA Privacy Rights</h2>
 
       <p>
         Under the CCPA, among other rights, California consumers have the right
@@ -264,17 +262,26 @@
       <h2 class="subheading">Privacy policy changes</h2>
 
       <p>
-        Just as our business changes constantly, this Privacy Policy may also change from time to time. If you want to see changes made to this Privacy Policy from time to time, we invite you to access this Privacy Policy to see the changes. If we make material changes or changes that will have an impact on you (e.g. when we start processing your personal information for other purposes than set out above), we will contact you prior to commencing that processing.
+        Just as our business changes constantly, this Privacy Policy may also
+        change from time to time. If you want to see changes made to this
+        Privacy Policy from time to time, we invite you to access this Privacy
+        Policy to see the changes. If we make material changes or changes that
+        will have an impact on you (e.g. when we start processing your personal
+        information for other purposes than set out above), we will contact you
+        prior to commencing that processing.
       </p>
 
       <p>
-        Any material changes made will be notified to you via our Sites or by email, to the extent possible, three (3) business days at least before any changes come into force.
+        Any material changes made will be notified to you via our Sites or by
+        email, to the extent possible, three (3) business days at least before
+        any changes come into force.
       </p>
 
       <h2 class="subheading">Questions and complaints</h2>
 
       <p>
-        Please feel free to contact us if you have any questions or complaints about Fair Data Innovation Hub’s Privacy Policy or practices.
+        Please feel free to contact us if you have any questions or complaints
+        about Fair Data Innovation Hub’s Privacy Policy or practices.
       </p>
 
       <p>
