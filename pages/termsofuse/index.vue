@@ -135,8 +135,8 @@
         any Third-Party Links & Ads. Company provides access to these
         Third-Party Links & Ads only as a convenience to you, and does not
         review, approve, monitor, endorse, warrant, or make any representations
-        with respect to Third-Party Links & Ads. You use all Third-Party Links
-        & Ads at your own risk, and should apply a suitable level of caution and
+        with respect to Third-Party Links & Ads. You use all Third-Party Links &
+        Ads at your own risk, and should apply a suitable level of caution and
         discretion in doing so. When you click on any of the Third-Party Links &
         Ads, the applicable third party’s terms and policies apply, including
         the third party’s privacy and data gathering practices.
@@ -310,9 +310,9 @@
         substantial changes, we may notify you by sending you an e-mail to the
         last e-mail address you provided to us and/or by prominently posting
         notice of the changes on our Site. You are responsible for providing us
-        with your most current e-mail address. In the event that the last
-        e-mail address that you have provided us is not valid our dispatch of
-        the e-mail containing such notice will nonetheless constitute effective
+        with your most current e-mail address. In the event that the last e-mail
+        address that you have provided us is not valid our dispatch of the
+        e-mail containing such notice will nonetheless constitute effective
         notice of the changes described in the notice. Any changes to these
         Terms will be effective upon the earliest of thirty (30) calendar days
         following our dispatch of an e-mail notice to you or thirty (30)
@@ -333,9 +333,9 @@
         product or service provided by the Company that cannot be resolved
         informally or in small claims court shall be resolved by binding
         arbitration on an individual basis under the terms of this Arbitration
-        Agreement. Unless otherwise agreed to, all arbitration proceedings
-        shall be held in English. This Arbitration Agreement applies to you and
-        the Company, and to any subsidiaries, affiliates, agents, employees,
+        Agreement. Unless otherwise agreed to, all arbitration proceedings shall
+        be held in English. This Arbitration Agreement applies to you and the
+        Company, and to any subsidiaries, affiliates, agents, employees,
         predecessors in interest, successors, and assigns, as well as all
         authorized or unauthorized users or beneficiaries of services or goods
         provided under the Terms.
@@ -348,8 +348,8 @@
       <p>
         Before either party may seek arbitration, the party must first send to
         the other party a written Notice of Dispute describing the nature and
-        basis of the claim or dispute, and the requested relief. A Notice to
-        the Company should be sent to: 11107 Roselle St. Ste #211 San Diego, CA
+        basis of the claim or dispute, and the requested relief. A Notice to the
+        Company should be sent to: 11107 Roselle St. Ste #211 San Diego, CA
         92121. After the Notice is received, you and the Company may attempt to
         resolve the claim or dispute informally. If you and the Company do not
         resolve the claim or dispute within thirty (30) days after the Notice is
@@ -364,13 +364,13 @@
       <p>
         Arbitration shall be initiated through the American Arbitration
         Association, an established alternative dispute resolution provider that
-        offers arbitration as set forth in this section. If AAA is not
-        available to arbitrate, the parties shall agree to select an alternative
-        ADR Provider. The rules of the ADR Provider shall govern all aspects of
-        the arbitration except to the extent such rules are in conflict with the
+        offers arbitration as set forth in this section. If AAA is not available
+        to arbitrate, the parties shall agree to select an alternative ADR
+        Provider. The rules of the ADR Provider shall govern all aspects of the
+        arbitration except to the extent such rules are in conflict with the
         Terms. The AAA Consumer Arbitration Rules governing the arbitration are
-        available online at adr.org or by calling the AAA at 1-800-778-7879.
-        The arbitration shall be conducted by a single, neutral arbitrator. Any
+        available online at adr.org or by calling the AAA at 1-800-778-7879. The
+        arbitration shall be conducted by a single, neutral arbitrator. Any
         claims or disputes where the total amount of the award sought is less
         than Ten Thousand U.S. Dollars (US $10,000.00) may be resolved through
         binding non-appearance-based arbitration, at the option of the party
@@ -379,16 +379,16 @@
         right to a hearing will be determined by the Arbitration Rules. Any
         hearing will be held in a location within 100 miles of your residence,
         unless you reside outside of the United States, and unless the parties
-        agree otherwise. If you reside outside of the U.S., the arbitrator
-        shall give the parties reasonable notice of the date, time and place of
-        any oral hearings. Any judgment on the award rendered by the arbitrator
-        may be entered in any court of competent jurisdiction. If the
-        arbitrator grants you an award that is greater than the last settlement
-        offer that the Company made to you prior to the initiation of
-        arbitration, the Company will pay you the greater of the award or
-        $2,500.00. Each party shall bear its own costs and disbursements
-        arising out of the arbitration and shall pay an equal share of the fees
-        and costs of the ADR Provider.
+        agree otherwise. If you reside outside of the U.S., the arbitrator shall
+        give the parties reasonable notice of the date, time and place of any
+        oral hearings. Any judgment on the award rendered by the arbitrator may
+        be entered in any court of competent jurisdiction. If the arbitrator
+        grants you an award that is greater than the last settlement offer that
+        the Company made to you prior to the initiation of arbitration, the
+        Company will pay you the greater of the award or $2,500.00. Each party
+        shall bear its own costs and disbursements arising out of the
+        arbitration and shall pay an equal share of the fees and costs of the
+        ADR Provider.
       </p>
 
       <h3 class="subheading">
@@ -422,12 +422,12 @@
         dispositive of all or part of any claim. The arbitrator shall have the
         authority to award monetary damages, and to grant any non-monetary
         remedy or relief available to an individual under applicable law, the
-        AAA Rules, and the Terms. The arbitrator shall issue a written award
-        and statement of decision describing the essential findings and
-        conclusions on which the award is based. The arbitrator has the same
-        authority to award relief on an individual basis that a judge in a court
-        of law would have. The award of the arbitrator is final and binding
-        upon you and the Company.
+        AAA Rules, and the Terms. The arbitrator shall issue a written award and
+        statement of decision describing the essential findings and conclusions
+        on which the award is based. The arbitrator has the same authority to
+        award relief on an individual basis that a judge in a court of law would
+        have. The award of the arbitrator is final and binding upon you and the
+        Company.
       </p>
 
       <h3 class="subheading">Waiver of Jury Trial</h3>
@@ -460,10 +460,10 @@
       <p>
         All aspects of the arbitration proceeding shall be strictly
         confidential. The parties agree to maintain confidentiality unless
-        otherwise required by law. This paragraph shall not prevent a party
-        from submitting to a court of law any information necessary to enforce
-        this Agreement, to enforce an arbitration award, or to seek injunctive
-        or equitable relief.
+        otherwise required by law. This paragraph shall not prevent a party from
+        submitting to a court of law any information necessary to enforce this
+        Agreement, to enforce an arbitration award, or to seek injunctive or
+        equitable relief.
       </p>
 
       <h3 class="subheading">Severability</h3>
@@ -480,9 +480,9 @@
 
       <p>
         Any or all of the rights and limitations set forth in this Arbitration
-        Agreement may be waived by the party against whom the claim is
-        asserted. Such waiver shall not waive or affect any other portion of
-        this Arbitration Agreement.
+        Agreement may be waived by the party against whom the claim is asserted.
+        Such waiver shall not waive or affect any other portion of this
+        Arbitration Agreement.
       </p>
 
       <h3 class="subheading">Survival of Agreement</h3>
@@ -566,11 +566,11 @@
         to be invalid or unenforceable, the other provisions of these Terms will
         be unimpaired and the invalid or unenforceable provision will be deemed
         modified so that it is valid and enforceable to the maximum extent
-        permitted by law. Your relationship to Company is that of an
-        independent contractor, and neither party is an agent or partner of the
-        other. These Terms, and your rights and obligations herein, may not be
-        assigned, subcontracted, delegated, or otherwise transferred by you
-        without Company's prior written consent, and any attempted assignment,
+        permitted by law. Your relationship to Company is that of an independent
+        contractor, and neither party is an agent or partner of the other. These
+        Terms, and your rights and obligations herein, may not be assigned,
+        subcontracted, delegated, or otherwise transferred by you without
+        Company's prior written consent, and any attempted assignment,
         subcontract, delegation, or transfer in violation of the foregoing will
         be null and void. Company may freely assign these Terms. The terms and
         conditions set forth in these Terms shall be binding upon assignees.
@@ -579,7 +579,25 @@
       <h3 class="subheading">Miscellaneous</h3>
 
       <p>
-        This Agreement and any applicable Order Form constitutes the entire agreement between Fair Data Innovation Hub and you concerning the subject matter hereof, and they may only be modified by a written amendment signed by an authorized executive of Fair Data Innovation Hub, or by the posting by Fair Data Innovation Hub of a revised version. If any part of this Agreement is held invalid or unenforceable, that part will be construed to reflect the parties' original intent, and the remaining portions will remain in full force and effect. The failure of Fair Data Innovation Hub to enforce any right or provision of this Agreement will not be deemed a waiver of such right or provision. A waiver by either party of any term or condition of this Agreement or any breach thereof, in any one instance, will not waive such term or condition or any subsequent breach thereof. Subject to prior written consent of Fair Data Innovation Hub, you may assign your rights under this Agreement to any party that consents to, and agrees to be bound by, its terms and conditions; Fair Data Innovation Hub may assign its rights under this Agreement without condition. This Agreement will be binding upon and will inure to the benefit of the parties, their successors and permitted assigns.
+        This Agreement and any applicable Order Form constitutes the entire
+        agreement between Fair Data Innovation Hub and you concerning the
+        subject matter hereof, and they may only be modified by a written
+        amendment signed by an authorized executive of Fair Data Innovation Hub,
+        or by the posting by Fair Data Innovation Hub of a revised version. If
+        any part of this Agreement is held invalid or unenforceable, that part
+        will be construed to reflect the parties' original intent, and the
+        remaining portions will remain in full force and effect. The failure of
+        Fair Data Innovation Hub to enforce any right or provision of this
+        Agreement will not be deemed a waiver of such right or provision. A
+        waiver by either party of any term or condition of this Agreement or any
+        breach thereof, in any one instance, will not waive such term or
+        condition or any subsequent breach thereof. Subject to prior written
+        consent of Fair Data Innovation Hub, you may assign your rights under
+        this Agreement to any party that consents to, and agrees to be bound by,
+        its terms and conditions; Fair Data Innovation Hub may assign its rights
+        under this Agreement without condition. This Agreement will be binding
+        upon and will inure to the benefit of the parties, their successors and
+        permitted assigns.
       </p>
 
       <h3 class="subheading">Your Privacy</h3>
@@ -600,7 +618,6 @@
         prior written consent or the consent of such third party which may own
         the Marks.
       </p>
-
 
       <h2 class="subheading">Questions and complaints</h2>
 
