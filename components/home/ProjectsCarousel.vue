@@ -70,8 +70,9 @@
       :modules="modules"
       :slides-per-view="1"
       navigation
+      :setWrapperSize="true"
       :grabCursor="true"
-      :pagination="{ clickable: true }"
+      :loop="true"
       :autoplay="{
         delay: 6000,
         pauseOnMouseEnter: true,
@@ -83,7 +84,7 @@
       <swiper-slide
         v-for="project in projectsList"
         :key="project.name"
-        class="py-10 flex justify-center items-center h-full"
+        class="py-10 flex justify-center items-center h-full my-auto"
       >
         <section
           class="text-gray-600 w-4/5 h-full my-auto mx-10 px-5 py-10 flex flex-row justify-center items-center rounded-lg shadow-xl"
@@ -128,10 +129,14 @@
       :slides-per-view="5"
       watch-slides-visibility
       watch-slides-progress
-      class="hidden"
+      class="thumbs-swiper"
     >
       <swiper-slide v-for="n of projectsList.length" :virtualIndex="n" :key="n">
-        <p class="text-center">Thumbnail {{ n }}</p>
+        <div
+          class="h-[100px] w-[200px] flex justify-center items-center px-5 cursor-pointer thumbnail"
+        >
+          <img :src="thumbnails[n - 1]" alt="" />
+        </div>
       </swiper-slide>
     </swiper>
   </div>
@@ -139,7 +144,15 @@
 
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
-import { Autoplay, Navigation, Pagination, Thumbs, Mousewheel } from "swiper";
+import {
+  Autoplay,
+  Navigation,
+  Pagination,
+  Thumbs,
+  Mousewheel,
+  A11y,
+} from "swiper";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -155,11 +168,27 @@ export default {
   },
   props: ["projectsList"],
   data() {
-    return { ready: false, componentKey: 0, swiperThumbs: null };
+    return {};
   },
   setup() {
+    let swiperThumbs = ref(null);
+    const thumbnails = [
+      "https://ucarecdn.com/f218d322-4541-4506-9348-d538bdf7a5f1/",
+      "https://ucarecdn.com/125366f3-6187-4d13-94ba-05e8795399c6/",
+      "https://ucarecdn.com/9f3f8943-86e5-413a-840b-dc529a60d48b/",
+      "https://ucarecdn.com/f0b37a2d-17d3-4720-97f3-158973faa1c3/",
+      "https://ucarecdn.com/9e5823e1-79d0-4013-acba-f3c4672111ca/",
+    ];
+
+    const setThumbsSwiper = (swiper) => {
+      this.swiperThumbs = swiper;
+    };
+
     return {
-      modules: [Navigation, Pagination, Autoplay, Thumbs, Mousewheel],
+      swiperThumbs,
+      setThumbsSwiper,
+      thumbnails,
+      modules: [Navigation, Pagination, Autoplay, Thumbs, Mousewheel, A11y],
     };
   },
   methods: {
@@ -168,22 +197,14 @@ export default {
     },
   },
   computed: {},
-  created() {
-    this.ready = false;
-    this.componentKey = Math.random();
-  },
-  mounted() {
-    this.ready = true;
-    this.componentKey++;
-    console.log(process.env.NODE_ENV);
-  },
+  mounted() {},
 };
 </script>
 
 <style language="postcss">
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  @apply text-primary transition-all;
+  @apply text-pink-500 transition-all;
 }
 
 .swiper-pagination-bullet {
@@ -192,5 +213,17 @@ export default {
 
 .swiper-pagination-bullet-active {
   @apply bg-light-accent  transition-all;
+}
+
+.swiper-slide .thumbnail {
+  @apply scale-75 hover:scale-90 grayscale transition-all;
+}
+
+.thumbs-swiper .swiper-wrapper {
+  @apply divide-x divide-gray-300 divide-dashed;
+}
+
+.swiper-slide-thumb-active .thumbnail {
+  @apply scale-100 hover:scale-100 grayscale-0 bg-pink-50 rounded transition-all;
 }
 </style>
