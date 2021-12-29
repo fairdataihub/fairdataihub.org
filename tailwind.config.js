@@ -5,7 +5,6 @@ module.exports = {
     "./pages/**/*.vue",
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
-    "./node_modules/vue3-carousel/dist/carousel.css",
   ],
   darkMode: "media",
   theme: {
@@ -26,9 +25,10 @@ module.exports = {
         patternRandomized: "url('./assets/backgrounds/pattern-randomized.svg')",
       },
     },
+
     textColor: (theme) => ({
       ...theme("colors"),
-      primary: "#0077b6",
+      primary: "#CD329F",
       accent: "#CB128D",
     }),
     backgroundColor: (theme) => ({

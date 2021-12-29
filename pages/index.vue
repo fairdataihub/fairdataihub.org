@@ -27,13 +27,13 @@
       <AboutUs></AboutUs>
     </base-section>
 
+    <base-section data-aos="fade-in" class="bg-white py-10 hidden sm:block">
+      <ProjectsCarousel :projectsList="projectsList"></ProjectsCarousel>
+    </base-section>
+
     <!-- Mobile projects section -->
     <base-section data-aos="fade-in" class="bg-white py-10 block sm:hidden">
       <MobileProjects :projectsList="projectsList"></MobileProjects>
-    </base-section>
-
-    <base-section data-aos="fade-in" class="bg-white py-10 hidden sm:block">
-      <ProjectsCarousel :projectsList="projectsList"></ProjectsCarousel>
     </base-section>
 
     <base-section data-aos="fade-in" class="bg-white py-10">
