@@ -80,7 +80,7 @@
   }
 
   *::-webkit-scrollbar-track {
-    background: #ffffff;
+    @apply bg-transparent;
   }
 
   *::-webkit-scrollbar-thumb {
