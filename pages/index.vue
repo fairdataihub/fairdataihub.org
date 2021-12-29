@@ -70,7 +70,7 @@ export default {
         {
           name: "SODA for SPARC",
           imageUrl:
-            "https://raw.githubusercontent.com/fairdataihub/SODA-for-SPARC/8d20346b9312017905259079b4ac0c689423d1cd/src/assets/logo-svg/Logo-soda-with-circle.svg",
+            "https://ucarecdn.com/f218d322-4541-4506-9348-d538bdf7a5f1/sodasparc.png",
           description:
             "SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators according to the FAIR SPARC data standards.",
           page: "/sodaforsparc",
@@ -78,7 +78,7 @@ export default {
         {
           name: "KnowMore",
           imageUrl:
-            "https://github.com/SPARC-FAIR-Codeathon/KnowMore/raw/main/docs/kmlogo-with-text3.png",
+            "https://ucarecdn.com/125366f3-6187-4d13-94ba-05e8795399c6/knowmore.png",
           description:
             "KnowMore is an automated knowledge discovery tool that allows users of the portal to visualize, in just a few clicks, potential similarities, differences, and connections between multiple SPARC datasets of their choice.",
           page: "/knowmore",
@@ -86,7 +86,7 @@ export default {
         {
           name: "SPARClink",
           imageUrl:
-            "https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/logo.svg",
+            "https://ucarecdn.com/9f3f8943-86e5-413a-840b-dc529a60d48b/sparclink.png",
           description:
             "SPARClink is a system that queries publications using open source tools and platforms and create an interactable visualization that showcases the impact that SPARC and their FAIR data practices have in advancing the field of bioelectronic medicine.",
           page: "/sparclink",
@@ -94,7 +94,7 @@ export default {
         {
           name: "AQUA",
           imageUrl:
-            "https://github.com/SPARC-FAIR-Codeathon/aqua/raw/main/src/assets/images/logo_aqua-1.jpg",
+            "https://ucarecdn.com/8ad222c1-29ed-4815-9f4e-fd384e673c0d/aqua.png",
           description:
             "AQUA (Advanced QUery Architecture for the SPARC Portal) improves the SPARC Portal by making the search engine smarter at understanding user search keywords, enhancing the result display, and providing users with better result filtering and sorting options.",
           page: "/aqua",

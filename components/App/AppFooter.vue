@@ -398,6 +398,34 @@
         </div>
       </div>
     </div>
+    <transition name="slide-up">
+      <div
+        class="w-full fixed bottom-0 flex justify-center items-center bg-gray-50 z-50"
+        v-if="bannerOpen"
+      >
+        <p class="text-sm py-1">
+          By continuing to use this site you consent to the use of cookies in
+          accordance with our
+          <NuxtLink to="/cookiepolicy" class="text-url text-sm">
+            Cookie Policy</NuxtLink
+          >
+        </p>
+        <div class="px-2 cursor-pointer" @click="closeBanner">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            aria-hidden="true"
+            viewBox="0 0 32 32"
+            class="text-gray-600 hover:text-black transition-all h-[18px] w-[18px] scale-100 hover:scale-110"
+          >
+            <path
+              d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
+    </transition>
   </footer>
 </template>
 
@@ -405,9 +433,19 @@
 // from here: https://tailwindui.com/components/marketing/sections/footers
 export default {
   name: "AppFooter",
+  data() {
+    return {
+      bannerOpen: true,
+    };
+  },
   computed: {
     isDocs: function () {
       return this.$route.path.includes("sodaforsparc/docs");
+    },
+  },
+  methods: {
+    closeBanner: function () {
+      this.bannerOpen = false;
     },
   },
 };
@@ -415,7 +453,7 @@ export default {
 
 <style scoped>
 .icon-style {
-  @apply mx-2 text-gray-400  hover:text-gray-500;
+  @apply mx-2 text-gray-400 hover:text-gray-500;
 }
 
 .footer-header {
@@ -423,5 +461,15 @@ export default {
 }
 .footer-item {
   @apply text-gray-600 hover:text-gray-900 pb-2 font-medium transition-all;
+}
+
+.slide-up-enter-active,
+.slide-up-leave-active {
+  transform: translateY(0);
+  transition: all 0.3s linear;
+}
+.slide-up-enter,
+.slide-up-leave-to {
+  transform: translateY(100%);
 }
 </style>

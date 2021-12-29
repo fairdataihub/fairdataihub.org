@@ -25,6 +25,7 @@
       }"
       :thumbs="{ swiper: swiperThumbs }"
       :mousewheel="{ releaseOnEdges: true }"
+      class="h-full"
     >
       <swiper-slide
         v-for="project in projectsList"
@@ -35,10 +36,19 @@
           class="text-gray-600 w-4/5 h-full my-auto mx-10 px-5 py-10 flex flex-row justify-center items-center rounded-lg shadow-xl"
         >
           <div
-            class="container mx-auto flex flex-col-reverse justify-center items-center h-full"
+            class="container mx-auto flex flex-col justify-center items-center h-full"
           >
             <div
-              class="flex flex-col my-4 sm:mb-16 md:mb-0 items-center text-center"
+              class="lg:max-w-lg my-5 sm:py-0 flex flex-row justify-center items-center"
+            >
+              <img
+                class="object-cover object-center rounded sm:pt-20 md:pt-0 sm:h-full md:h-auto lg:h-auto sm:w-60 md:w-72 lg:w-80"
+                alt="SODA for SPARC logo"
+                :src="project.imageUrl"
+              />
+            </div>
+            <div
+              class="flex flex-col my-4 sm:mb-16 md:mb-0 items-center text-center h-full"
             >
               <p
                 class="w-full text-left sm:text-center text-base md:text-base lg:text-lg font-asap text-black"
@@ -55,15 +65,6 @@
                   </button>
                 </NuxtLink>
               </div>
-            </div>
-            <div
-              class="lg:max-w-lg my-5 sm:py-0 flex flex-row justify-center items-center"
-            >
-              <img
-                class="object-cover object-center rounded sm:pt-20 md:pt-0 sm:h-full md:h-auto lg:h-auto sm:w-60 md:w-72 lg:w-80"
-                alt="SODA for SPARC logo"
-                :src="project.imageUrl"
-              />
             </div>
           </div>
         </section>
@@ -119,7 +120,7 @@ export default {
       "https://ucarecdn.com/f218d322-4541-4506-9348-d538bdf7a5f1/",
       "https://ucarecdn.com/125366f3-6187-4d13-94ba-05e8795399c6/",
       "https://ucarecdn.com/9f3f8943-86e5-413a-840b-dc529a60d48b/",
-      "https://ucarecdn.com/f0b37a2d-17d3-4720-97f3-158973faa1c3/",
+      "https://ucarecdn.com/8ad222c1-29ed-4815-9f4e-fd384e673c0d/",
       "https://ucarecdn.com/9e5823e1-79d0-4013-acba-f3c4672111ca/",
     ];
 
