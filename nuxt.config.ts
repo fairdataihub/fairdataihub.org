@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     postcss: {
       postcssOptions: require("./postcss.config.js"),
     },
+    transpile: ["gsap"],
   },
   modules: ["@nuxtjs/dotenv"],
   publicRuntimeConfig: {
