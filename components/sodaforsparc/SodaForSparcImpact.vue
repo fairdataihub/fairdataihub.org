@@ -95,7 +95,7 @@ export default {
       const dataElement = document.getElementById("dataNum");
 
       gsap.to(zero, {
-        val: 60,
+        val: 16300,
         duration: 1,
         scrollTrigger: filesElement,
         onUpdate: () => {
@@ -104,7 +104,7 @@ export default {
       });
 
       gsap.to(zero, {
-        val: 16300,
+        val: 60,
         duration: 2,
         scrollTrigger: datasetsElement,
         onUpdate: () => {
