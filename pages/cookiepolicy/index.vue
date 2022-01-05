@@ -66,7 +66,8 @@
       <p>
         At the moment we do not have the functionality to disable cookies from
         the website. In order to prevent any tracking by third party analysis
-        measurement tools, please use the steps provided below for your browser.
+        and measurement tools we use, please follow the steps provided below for
+        your specific browser.
       </p>
 
       <h2 class="subheading">

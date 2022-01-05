@@ -11,7 +11,7 @@
     </Html>
 
     <section
-      class="text-black flex flex-col mx-auto max-w-screen-lg py-5 text-lg text-justify px-6 sm:px-6 lg:px-8"
+      class="text-black flex flex-col mx-auto max-w-screen-lg py-5 text-lg px-6 sm:px-6 lg:px-8"
     >
       <h2 class="heading">Terms of Use</h2>
 
