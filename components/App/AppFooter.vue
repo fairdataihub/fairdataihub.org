@@ -400,8 +400,8 @@
     </div>
     <transition name="slide-up">
       <div
-        class="w-full fixed bottom-0 flex justify-center items-center bg-gray-50 z-50"
-        v-if="bannerOpen"
+        class="w-full fixed bottom-0 flex justify-center items-center bg-gray-50 z-50 px-5 py-1"
+        v-if="!cookieConsent"
       >
         <p class="text-sm py-1">
           By continuing to use this site you consent to the use of cookies in
@@ -410,7 +410,7 @@
             Cookie Policy</NuxtLink
           >
         </p>
-        <div class="px-2 cursor-pointer" @click="closeBanner">
+        <div class="px-2 cursor-pointer" @click="consentToCookies">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -429,23 +429,26 @@
   </footer>
 </template>
 
+<script setup>
+const cookieConsent = useCookie("cookieConsent", {
+  maxAge: 60 * 60 * 24 * 90, // 3 months
+});
+cookieConsent.value = cookieConsent.value || false;
+
+const consentToCookies = () => {
+  cookieConsent.value = true;
+};
+</script>
+
 <script>
-// from here: https://tailwindui.com/components/marketing/sections/footers
 export default {
   name: "AppFooter",
   data() {
-    return {
-      bannerOpen: true,
-    };
+    return {};
   },
   computed: {
     isDocs: function () {
       return this.$route.path.includes("sodaforsparc/docs");
-    },
-  },
-  methods: {
-    closeBanner: function () {
-      this.bannerOpen = false;
     },
   },
 };
