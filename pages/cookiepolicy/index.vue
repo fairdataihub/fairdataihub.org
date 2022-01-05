@@ -51,7 +51,7 @@
 
       <h2 class="subheading">Disabling Cookies</h2>
 
-      <p>
+      <!-- <p>
         If you prefer to avoid the use of cookies on the Website, first you must
         disable the use of cookies in your browser and then delete the cookies
         saved in your browser associated with this website. You may use this
@@ -61,9 +61,17 @@
       <p>
         If you do not accept our cookies, you may experience some inconvenience
         in your use of the Website and some features may not function properly.
+      </p> -->
+
+      <p>
+        At the moment we do not have the functionality to disable cookies from
+        the website. In order to prevent any tracking by third party analysis
+        measurement tools, please use the steps provided below for your browser.
       </p>
 
-      <p>Find out how to manage cookies on popular browsers:</p>
+      <h2 class="subheading">
+        Find out how to manage cookies on popular browsers
+      </h2>
 
       <div class="pl-8">
         <ul
