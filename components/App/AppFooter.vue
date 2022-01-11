@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-50 pt-5" v-if="!isDocs">
+  <footer class="bg-gray-50 pt-5 z-30" v-if="!isDocs">
     <div
       class="container px-6 py-8 max-w-screen-lg w-full mx-auto flex flex-col"
     >

@@ -267,13 +267,13 @@ export default {
           name: "Bhavesh Patel",
           href: "/team/#BhaveshPatel",
           external: false,
-          image: "https://i.ibb.co/drZPXHs/Bhavesh-head.jpg",
+          image: "https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/",
         },
         {
           name: "Ryan Quey",
           href: "https://www.ryanquey.com/",
           external: true,
-          image: "https://i.ibb.co/0DNYPHt/profile-picture-centered.jpg",
+          image: "https://ucarecdn.com/c32fada1-9bf4-4e34-bce2-b52b20e338f1/",
         },
         {
           name: "Anmol Kiran",

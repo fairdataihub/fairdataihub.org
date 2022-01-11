@@ -314,50 +314,48 @@ export default {
           name: "Bhavesh Patel",
           href: "/team/#BhaveshPatel",
           external: false,
-          image: "https://i.ibb.co/drZPXHs/Bhavesh-head.jpg",
+          image: "https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/",
         },
         {
           name: "Tram Ngo",
           href: "/team/#TramNgo",
           external: false,
-          image: "https://i.ibb.co/VpYFGBv/Tram-head.jpg",
+          image: "https://ucarecdn.com/16f0920a-311b-4850-b81c-46e09604b718/",
         },
         {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
           external: false,
-          image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
+          image: "https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/",
         },
         {
           name: "Christopher Marroquin",
           href: "/team/#ChristopherMarroquin",
           external: false,
-          image: "https://i.ibb.co/42PyRHs/IMG-1231-4.jpg",
+          image: "https://ucarecdn.com/edf2c821-92b0-49c5-adc8-d60f82649e04/",
         },
         {
           name: "Jacob Clark",
           href: "/team/#JacobClark",
           external: false,
-          image: "https://i.ibb.co/Hgdr4y0/jacob-head.jpg",
+          image: "https://ucarecdn.com/944f2fec-8d84-47b7-aac6-f3d057a7ac9e/",
         },
       ],
       collaboratorsList: [
         {
           name: "Pennsieve",
           href: "https://app.pennsieve.io",
-          image:
-            "https://app.pennsieve.io/static/images/pennsieve-logo-full.svg",
+          image: "https://ucarecdn.com/5f762506-7176-4037-b388-6ba4d3964cb6/",
         },
         {
           name: "FAIR Data Informatics Lab",
           href: "https://www.fdilab.org/",
-          image: "https://i.ibb.co/tJ6PmYs/FDILab-Trans-Logo.png",
+          image: "https://ucarecdn.com/dd8fcd39-25dc-4460-a02c-402631a00c25/",
         },
         {
           name: "MBF Bioscience",
           href: "https://www.mbfbioscience.com",
-          image:
-            "https://forums.mbfbioscience.com/uploads/default/original/1X/dbc9fa6a4e9dabf5e2868ef07db73d3effaf71a7.png",
+          image: "https://ucarecdn.com/69576061-38ac-435b-9a8d-68a14662d2ee/",
         },
       ],
     };

@@ -16,31 +16,31 @@
         :clone="true"
       >
         <img
-          src="https://i.ibb.co/CKXDZzf/ucsf-logo.png"
+          src="https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/"
           alt="UCSF logo"
           width="200"
           class="mx-4 py-2"
         />
         <img
-          src="https://sparc.science/_nuxt/img/logo-sparc-wave-primary.291d1ca.svg"
+          src="https://ucarecdn.com/a4d32fd6-1b0d-4dc7-b0f4-7807ce96f76d/"
           alt="NIH SPARC logo"
           width="200"
           class="mx-4 py-2"
         />
         <img
-          src="https://i.ibb.co/tJ6PmYs/FDILab-Trans-Logo.png"
+          src="https://ucarecdn.com/dd8fcd39-25dc-4460-a02c-402631a00c25/"
           alt="FDI Lab logo"
           width="200"
           class="mx-4 py-2"
         />
         <img
-          src="https://i.ibb.co/0r83YnL/calmi-logo.png"
+          src="https://ucarecdn.com/1ece10bc-75a1-4750-b9ac-395a17e6ca2f/"
           alt="California Medical Innovations Institute logo"
           width="200"
           class="mx-4 py-2"
         />
         <img
-          src="https://i.ibb.co/t4PKtvy/UCL-logo.png"
+          src="https://ucarecdn.com/58385a01-96b0-4063-a066-f2c83b14e5d9/"
           alt="University College London"
           width="200"
           class="mx-4 py-2"

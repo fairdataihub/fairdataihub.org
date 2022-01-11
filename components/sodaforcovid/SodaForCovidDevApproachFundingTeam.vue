@@ -283,19 +283,20 @@ export default {
           name: "Bhavesh Patel",
           href: "/team/#BhaveshPatel",
           external: false,
-          image: "https://i.ibb.co/drZPXHs/Bhavesh-head.jpg",
+          image: "https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/",
         },
         {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
           external: false,
-          image: "https://i.ibb.co/FxMxdMW/IMG-9651.jpg",
+          image: "https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/",
         },
         {
           name: "Taiji Yang",
           href: "/team/#TaijiYang",
           external: false,
-          image: "https://i.ibb.co/X3Ch9JZ/photo6.jpg",
+          image:
+            "https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/400x400/smart/",
         },
       ],
       collaboratorsList: [
@@ -309,20 +310,19 @@ export default {
         {
           name: "The Butte Lab",
           href: "https://buttelab.ucsf.edu/",
-          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
+          image: "https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/",
           type: "lab",
         },
         {
           name: "The Jagannathan Lab",
           href: "https://med.stanford.edu/jagannathan-lab.html",
-          image:
-            "https://med.stanford.edu/identity/logo/_jcr_content/main/panel_builder/panel_0/panel_builder_0/panel_0/download_1/file.res/Stanford_Medicine_V-web.png",
+          image: "https://ucarecdn.com/8c3d42c3-83a9-4620-8dcd-7fdccf11ebce/",
           type: "lab",
         },
         {
           name: "Dr. Greenhouse Lab",
           href: "https://profiles.ucsf.edu/bryan.greenhouse#toc-id2",
-          image: "https://www.ucsf.edu/themes/custom/ucsf/logo.svg",
+          image: "https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/",
           type: "lab",
         },
       ],

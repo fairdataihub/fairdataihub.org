@@ -14,37 +14,25 @@
               </p>
             </dd>
           </div>
-          <div class="flex flex-col sm:flex-row justify-between items-center">
-            <dd>
-              <img
-                src="~/assets/aqua-tool-images/iconFrontEnd.png"
-                alt="html css javascript logos"
-              />
-            </dd>
-            <dd>
-              <img
-                src="~/assets/aqua-tool-images/pythonIcon.png"
-                alt="python logo"
-              />
-            </dd>
-            <dd>
-              <img
-                src="~/assets/aqua-tool-images/dockerIcon.png"
-                alt="docker logo"
-              />
-            </dd>
-            <dd>
-              <img
-                src="~/assets/aqua-tool-images/scigraphIcon.png"
-                alt="scigraph logo"
-              />
-            </dd>
-            <dd>
-              <img
-                src="~/assets/aqua-tool-images/sqliteIcon.png"
-                alt="sqlite logo"
-              />
-            </dd>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-4 gap-6 md:py-1 justify-center items-center pointer-events-none"
+          >
+            <img
+              src="https://ucarecdn.com/3d7de35c-3e69-4bdb-a524-8b84b5f766ed/"
+              alt="python logo"
+            />
+            <img
+              src="https://ucarecdn.com/014bfbd3-a502-4005-858c-c004a6ba0d33/"
+              alt="docker logo"
+            />
+            <img
+              src="https://ucarecdn.com/34a55129-dc6c-40e8-bc0d-5ad0ee58d618/"
+              alt="scigraph logo"
+            />
+            <img
+              src="https://ucarecdn.com/3de89a65-49e5-4a0b-a353-e3ffcf22deaf/"
+              alt="sqlite logo"
+            />
           </div>
         </dl>
       </div>

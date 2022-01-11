@@ -61,7 +61,7 @@
             style="width: 80%"
             data-aos="fade-in"
             class="relative rounded mx-auto z-10"
-            src="~/assets/aqua-tool-images/logoAQUA.png"
+            src="https://ucarecdn.com/e5c4a022-9a55-49b2-8af5-d5d4d8a74057/"
             alt="aqua logo"
           />
         </div>

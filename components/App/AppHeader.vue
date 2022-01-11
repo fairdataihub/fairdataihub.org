@@ -1,6 +1,9 @@
 <template>
   <nav class="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
-    <div class="flex flex-row justify-between px-5 py-3 bg-gray-50">
+    <div
+      class="flex flex-row justify-between px-5 py-3 bg-gray-50"
+      :class="{ 'debug-screens': dev }"
+    >
       <NuxtLink
         to="/"
         class="flex flex-row justify-center items-center"
