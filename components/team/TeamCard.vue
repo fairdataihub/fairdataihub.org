@@ -2,13 +2,7 @@
   <div :id="profile.id">
     <div :class="[borderClasses, `flex flex-col sm:flex-row `]">
       <div class="w-full md:w-1/2 lg:w-2/5 my-3 sm:my-2">
-        <!-- <v-lazy-image
-          :src="profile.image"
-          :src-placeholder="profile.placeholder"
-        /> -->
-        <img :src="profile.image" alt="" class="rounded-lg" />
-        <!-- <v-lazy-image src="http://lorempixel.com/400/200/" /> -->
-        <!-- <VLazyImage src="http://lorempixel.com/400/200/" /> -->
+        <img :data-blink-uuid="profile.image" alt="" class="rounded-lg" />
       </div>
       <div
         class="w-full md:w-1/2 lg:w-3/5 py-3 px-0 sm:py-4 sm:px-8 lg:ml-2 flex flex-col"

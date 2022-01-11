@@ -79,7 +79,7 @@ export default {
           title: "Founder/Lead",
           bio: "Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
           image:
-            "https://ucarecdn.com/2d49fd62-474b-4187-91be-28f72fb8d850/-/preview/-/quality/smart/",
+            "2d49fd62-474b-4187-91be-28f72fb8d850",
           borderTop: false,
           borderBottom: false,
           education: [
@@ -107,7 +107,7 @@ export default {
           title: "Software Developer",
           bio: "Tram's professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In her free time, she enjoys reading, cooking, doing pilates and yoga.",
           image:
-            "https://ucarecdn.com/ced02144-f4cc-447e-978e-00f81f5dcd86/-/preview/-/quality/smart/",
+            "ced02144-f4cc-447e-978e-00f81f5dcd86",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -132,7 +132,7 @@ export default {
           title: "Software Developer",
           bio: "Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
           image:
-            "https://ucarecdn.com/e72e3875-5ebd-4bbf-808b-fabdb91588d8/-/preview/-/quality/smart/",
+            "e72e3875-5ebd-4bbf-808b-fabdb91588d8",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -159,7 +159,7 @@ export default {
           title: "Software Developer",
           bio: "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
           image:
-            "https://ucarecdn.com/d5a58951-acc1-4ac5-aa5c-48a5fa93fb9a/-/preview/-/quality/smart/",
+            "d5a58951-acc1-4ac5-aa5c-48a5fa93fb9a",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -184,7 +184,7 @@ export default {
           title: "Software Developer",
           bio: "Jacob is a full-stack developer out of Fresno, CA that strives to create applications that are performant, easy to use, and create value for users. In his free time, Jacob enjoys reading, rock climbing, and playing basketball.",
           image:
-            "https://ucarecdn.com/91a4654b-f218-4027-8a04-91a7535313d4/-/preview/-/quality/smart/",
+            "91a4654b-f218-4027-8a04-91a7535313d4",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -209,7 +209,7 @@ export default {
           title: "Software Developer",
           bio: "Taiji Yang is a full stack software developer who's interested in web development, data analysis and visualization. In his free time, he enjoys reading and playing video games.",
           image:
-            "https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/preview/-/quality/smart/",
+            "12fea441-c679-4471-923f-dbdcd5bece51",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -234,7 +234,7 @@ export default {
           title: "Volunteer Developer",
           bio: "Dorian is a frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
           image:
-            "https://ucarecdn.com/961c98cd-1dd6-4a05-9425-8d8f74a1410d/-/preview/-/quality/smart/",
+            "961c98cd-1dd6-4a05-9425-8d8f74a1410d",
           borderTop: true,
           borderBottom: false,
           education: [
@@ -259,7 +259,7 @@ export default {
           title: "Information Technology (IT) Manager",
           bio: "Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.",
           image:
-            "https://ucarecdn.com/b2ba911f-e54c-4bd6-a82f-308ffa7ddeb8/-/preview/-/quality/smart/",
+            "b2ba911f-e54c-4bd6-a82f-308ffa7ddeb8",
           borderTop: true,
           borderBottom: false,
           education: [

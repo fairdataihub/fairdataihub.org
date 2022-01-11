@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     },
     transpile: ["gsap"],
   },
+  meta: {
+    script: [{ src: "scripts/uploadcare.js" }],
+  },
   modules: ["@nuxtjs/dotenv"],
   publicRuntimeConfig: {
     USER_ID: process.env.VUE_APP_USER_ID,
