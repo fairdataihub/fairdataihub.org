@@ -1,11 +1,11 @@
 <template>
   <div
-    class="container px-6 py-0 sm:pt-6 sm:pb-4 max-w-screen-lg mx-auto"
+    class="container max-w-screen-lg px-6 py-0 mx-auto sm:pt-6 sm:pb-4"
     :id="id"
   >
     <div class="items-center justify-center sm:flex">
       <div
-        class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2 p-8"
+        class="flex items-center justify-center w-full p-8 mt-6 lg:mt-0 lg:w-1/2"
       >
         <!-- <img
           class="w-full h-full lg:max-w-2xl"
@@ -1418,15 +1418,15 @@
         </svg>
       </div>
 
-      <div class="w-full lg:max-w-2xl h-full p-2">
+      <div class="w-full h-full p-2 lg:max-w-2xl">
         <h1
-          class="pt-6 py-4 md:py-3 w-full font-black text-4xl sm:text-3xl md:text-3xl lg:text-4xl subpixel-antialiased text-left sm:text-center"
+          class="w-full py-4 pt-6 text-4xl subpixel-antialiased font-black text-left md:py-3 sm:text-3xl md:text-3xl lg:text-4xl sm:text-center"
         >
           About Us
         </h1>
 
         <p
-          class="mt-2 mb-6 md:my-2 w-full font-asap text-left sm:text-center text-xl sm:text-base md:text-lg lg:text-xl text-black"
+          class="w-full mt-2 mb-6 text-xl text-left text-black md:my-2 font-asap sm:text-center sm:text-base md:text-lg lg:text-xl"
         >
           FAIR Data Innovations Hub is a division of the California Medical
           Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
@@ -1434,7 +1434,7 @@
           multidisciplinary team of enthusiasts about FAIR Data practices and
           software development.
         </p>
-        <div class="flex w-full justify-center py-5">
+        <div class="flex justify-center w-full py-5">
           <a
             href="https://calmi2.org/"
             target="_blank"
@@ -1445,7 +1445,7 @@
           <NuxtLink to="/team">
             <button
               type="button"
-              class="py-4 px-6 w-max-content transition ease-in-out duration-200 text-center text-base rounded-md font-semibold bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+              class="px-6 py-4 text-base font-semibold text-center text-white transition duration-200 ease-in-out bg-black rounded-md w-max-content ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
             >
               Meet our team
             </button>

@@ -15,15 +15,15 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black mb-2">
+        <p class="mb-2 text-black font-asap">
           SODA helps you prepare the
           <span class="span-content print:text-sm print:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Create-samples-xlsx"
-              class="hover:underline text-blue-600 print:text-sm print:text-black"
+              class="text-blue-600 hover:underline print:text-sm print:text-black"
             >
               <span
-                class="font-asap print:text-sm print:text-black print:text-black"
+                class="font-asap print:text-sm print:text-black"
               >
                 samples metadata file
               </span>
@@ -38,7 +38,7 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           Format: The samples file is accepted in either xlsx, csv, or json
           format. SODA generates it in the xlsx format based on the template
@@ -56,7 +56,7 @@
           "Value". The other "experimental setup" elements (highlighted in
           bold-only below) are also mandatory when available.
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               <strong>subject_id</strong>: Lab-based schema for identifying each
               subject. This field should match the primary's sub-folder names.
@@ -118,7 +118,7 @@
                 href="https://scicrunch.org/resources/Organisms/search"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 Scicrunch
               </a>
@@ -146,7 +146,7 @@
                 href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 UBERON life cycle stage
               </a>
@@ -190,7 +190,7 @@
                 href="https://www.protocols.io/developers"
                 target="_blank"
                 rel="nofollow"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 protocols.io </a
               >. An access token is required for automatic extraction of the

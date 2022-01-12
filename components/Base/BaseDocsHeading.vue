@@ -1,5 +1,5 @@
 <template>
-  <h3 class="font-semibold text-base text-black my-2 level-2-heading">
+  <h3 class="my-2 text-base font-semibold text-black level-2-heading">
     <slot></slot>
   </h3>
 </template>

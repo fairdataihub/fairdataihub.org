@@ -25,7 +25,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>Go inside a folder by double-clicking on it.</li>
         <li>
           Import files/folders inside a folder using drag-and-drop or the
@@ -57,7 +57,7 @@
         />
       </div>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           Use the "Details" option from the right-click menu to see the actual
           path of the file and include metadata (description, Additional

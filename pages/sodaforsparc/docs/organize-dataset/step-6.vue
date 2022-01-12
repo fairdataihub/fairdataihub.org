@@ -26,7 +26,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Select the desired destination to generate the dataset on your
           computer.
@@ -54,7 +54,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>Select desired Pennsieve account from the drop-down list.</li>
         <li>
           Select to generate on a new Pennsieve dataset or to use an existing
@@ -62,7 +62,7 @@
         </li>
       </ul>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           If you select to generate on a new Pennsieve dataset, specify a name
           for it.

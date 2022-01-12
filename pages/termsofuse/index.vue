@@ -11,7 +11,7 @@
     </Html>
 
     <section
-      class="text-black flex flex-col mx-auto max-w-screen-lg py-5 text-lg px-6 sm:px-6 lg:px-8"
+      class="flex flex-col max-w-screen-lg px-6 py-5 mx-auto text-lg text-black sm:px-6 lg:px-8"
     >
       <h2 class="heading">Terms of Use</h2>
 
@@ -21,7 +21,7 @@
 
       <p>
         The Fair Data Innovations Hub website located at
-        <NuxtLink to="/" class="text-url text-base">
+        <NuxtLink to="/" class="text-base text-url">
           https://fairdataihub.org/
         </NuxtLink>
         is a copyrighted work belonging to Fair Data Innovations Hub. Certain
@@ -70,7 +70,7 @@
 
       <div class="pl-8">
         <ul
-          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+          class="pb-3 my-1 text-base leading-7 text-gray-800 list-disc list-outside"
         >
           <li>
             You shall not sell, rent, lease, transfer, assign, distribute, host,
@@ -268,7 +268,7 @@
 
       <div class="pl-8">
         <ul
-          class="list-disc list-outside pb-3 my-1 text-base leading-7 text-gray-800"
+          class="pb-3 my-1 text-base leading-7 text-gray-800 list-disc list-outside"
         >
           <li>your physical or electronic signature;</li>
           <li>
@@ -604,7 +604,7 @@
 
       <p>
         Please read our
-        <NuxtLink to="/privacypolicy" class="text-url text-base">
+        <NuxtLink to="/privacypolicy" class="text-base text-url">
           Privacy Policy </NuxtLink
         >.
       </p>
@@ -633,14 +633,14 @@
 
       <p>
         <strong> Contact form: </strong>
-        <NuxtLink to="/contact-us" class="text-url text-base">
+        <NuxtLink to="/contact-us" class="text-base text-url">
           https://fairdataihub.org/contact-us
         </NuxtLink>
       </p>
 
       <p>
         <strong> Email: </strong>
-        <a href="mailto:info@fairdataihub.org" class="text-url text-base">
+        <a href="mailto:info@fairdataihub.org" class="text-base text-url">
           info@fairdataihub.org
         </a>
       </p>

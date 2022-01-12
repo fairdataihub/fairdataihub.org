@@ -19,7 +19,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           <strong> Prepare a new dataset: </strong>
           Select this option if you want to start organizing and curating a new

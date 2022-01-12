@@ -78,7 +78,7 @@
         />
       </div>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           <strong>subject id</strong>: Lab-based schema for identifying each
           subject. This field should match the primary's sub-folder names. The
@@ -92,7 +92,7 @@
         <li>
           Experimental Setup (Mandatory if available):
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               pool id: If data is collected on multiple subjects at the same
               time include the identifier of the pool where the data file will
@@ -113,7 +113,7 @@
         <li>
           Species Information (Mandatory if available):
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Sample type: This refers to the physical type of the specimen from
               which the data were extracted.
@@ -135,7 +135,7 @@
         <li>
           Protocol Information (Optional):
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               <i> Protocol title on protocols.io</i>: This field refers to the
               title of the protocol within Protocols.io once the research
@@ -148,7 +148,7 @@
                 href="https://www.protocols.io/developers"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 protocols.io</a
               >. An access token is required for automatic extraction of the
@@ -174,7 +174,7 @@
         </li>
         <li>
           Additional fields (Optional):
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               <i> Laboratory internal id</i>: Provide a mapping for groups that
               have incompatible internal identifier conventions.
@@ -225,7 +225,7 @@
 
       <base-docs-subtitle> Note </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           If you have a properly structured SPARC primary folder to import, you
           can click on

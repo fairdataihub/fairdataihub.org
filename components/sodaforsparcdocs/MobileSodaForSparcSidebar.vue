@@ -1,9 +1,9 @@
 <template>
-  <nav class="mt-4 px-6 z-0">
+  <nav class="z-0 px-6 mt-4">
     <select
       id="docs-title"
       @change="onChange()"
-      class="text-base w-full z-0"
+      class="z-0 w-full text-base"
       v-model="docsLink"
     >
       <optgroup

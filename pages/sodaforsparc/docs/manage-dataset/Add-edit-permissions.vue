@@ -21,7 +21,7 @@
             href="https://docs.pennsieve.io/docs/dataset-permissions"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
             >Pennsieve help page</a
           >.
         </p>
@@ -36,12 +36,12 @@
       <div class="flex flex-col mb-6">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div
-            class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8"
+            class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"
           >
             <div
-              class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg"
+              class="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg"
             >
-              <table class="min-w-full divide-y divide-gray-200 relative">
+              <table class="relative min-w-full divide-y divide-gray-200">
                 <thead class="bg-gray-50">
                   <tr class="divide-x divide-gray-200">
                     <th scope="col" class="">Permissions</th>
@@ -80,7 +80,7 @@
           you have not connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span>use the instructions available here</span> </NuxtLink
           >. The current permissions on the selected dataset will be displayed.
@@ -91,7 +91,7 @@
         Add/edit permissions for team members or teams
       </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>Click on "Add/edit user permissions".</li>
         <li>Select the user from the dropdown list.</li>
         <li>Select a role from the dropdown list.</li>
@@ -107,7 +107,7 @@
 
       <base-docs-subtitle> Add/edit permissions for teams </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>Click on "Add/edit team permissions".</li>
         <li>Select the team from the dropdown list.</li>
         <li>Select a role from the dropdown list.</li>

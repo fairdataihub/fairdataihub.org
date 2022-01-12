@@ -29,7 +29,7 @@
             href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             instructions provided here
           </a>
@@ -39,7 +39,7 @@
             href="https://docs.pennsieve.io/docs"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             Pennsieve Documentation page</a
           >.

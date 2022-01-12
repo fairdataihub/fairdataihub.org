@@ -1,10 +1,10 @@
 <template>
-  <footer class="bg-gray-50 pt-5 z-30" v-if="!isDocs">
+  <footer class="z-30 pt-5 bg-gray-50" v-if="!isDocs">
     <div
-      class="container px-6 py-8 max-w-screen-lg w-full mx-auto flex flex-col"
+      class="container flex flex-col w-full max-w-screen-lg px-6 py-8 mx-auto"
     >
-      <div class="flex flex-col md:flex-row justify-between pb-3 pr-3">
-        <div class="w-full md:w-4/12 flex flex-col mb-5 md:mb-0">
+      <div class="flex flex-col justify-between pb-3 pr-3 md:flex-row">
+        <div class="flex flex-col w-full mb-5 md:w-4/12 md:mb-0">
           <div class="py-3">
             <a
               href="https://calmi2.org"
@@ -251,7 +251,7 @@
               </svg>
             </a>
           </div>
-          <p class="text-gray-600 font-inter py-3 font-medium">
+          <p class="py-3 font-medium text-gray-600 font-inter">
             Helping researchers navigate the world of FAIR data sharing.
           </p>
           <div class="flex flex-row justify-start py-3">
@@ -266,7 +266,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                class="text-gray-400 hover:text-accent w-7 h-7 transition-all"
+                class="text-gray-400 transition-all hover:text-accent w-7 h-7"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -286,7 +286,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="0"
-                class="text-gray-400 hover:text-accent w-7 h-7 transition-all"
+                class="text-gray-400 transition-all hover:text-accent w-7 h-7"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -304,7 +304,7 @@
               rel="noopener"
             >
               <svg
-                class="w-7 h-7 fill-current hover:text-accent transition-all"
+                class="transition-all fill-current w-7 h-7 hover:text-accent"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -317,7 +317,7 @@
           </div>
         </div>
         <div
-          class="w-full md:w-7/12 grid grid-cols-2 md:grid-cols-3 gap-10 md:gap-6"
+          class="grid w-full grid-cols-2 gap-10 md:w-7/12 md:grid-cols-3 md:gap-6"
         >
           <div class="flex flex-col">
             <h3 class="footer-header">Company</h3>
@@ -373,16 +373,16 @@
         </div>
       </div>
 
-      <hr class="text-gray-200 pb-3" />
+      <hr class="pb-3 text-gray-200" />
 
-      <div class="flex flex-col md:flex-row justify-center items-center py-5">
-        <div class="text-gray-500 text-center">
+      <div class="flex flex-col items-center justify-center py-5 md:flex-row">
+        <div class="text-center text-gray-500">
           <p>© 2020 FAIR Data Innovations Hub.</p>
           <p>All rights reserved.</p>
         </div>
 
         <div
-          class="sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 self-center"
+          class="self-center mt-4 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0"
         >
           <a
             href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
@@ -400,13 +400,13 @@
     </div>
     <transition name="slide-up">
       <div
-        class="w-full fixed bottom-0 flex justify-center items-center bg-gray-50 z-50 px-5 py-1"
+        class="fixed bottom-0 z-50 flex items-center justify-center w-full px-5 py-1 bg-gray-50"
         v-if="!cookieConsent"
       >
-        <p class="text-sm py-1">
+        <p class="py-1 text-sm">
           By continuing to use this site you consent to the use of cookies in
           accordance with our
-          <NuxtLink to="/cookiepolicy" class="text-url text-sm">
+          <NuxtLink to="/cookiepolicy" class="text-sm text-url">
             Cookie Policy</NuxtLink
           >
         </p>

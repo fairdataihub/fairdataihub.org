@@ -1,8 +1,8 @@
 <template>
-  <section class="max-w-screen-lg mx-auto px-5 py-3">
-    <div class="w-full flex flex-col">
+  <section class="max-w-screen-lg px-5 py-3 mx-auto">
+    <div class="flex flex-col w-full">
       <h2
-        class="font-inter font-bold text-2xl sm:text-2xl md:text-3xl lg:text-4xl py-2"
+        class="py-2 text-2xl font-bold font-inter sm:text-2xl md:text-3xl lg:text-4xl"
       >
         Publications
       </h2>
@@ -10,19 +10,19 @@
 
     <div class="flex flex-col divide-y divide-gray-200">
       <div
-        class="flex flex-col mb-4 font-sans py-4"
+        class="flex flex-col py-4 mb-4 font-sans"
         v-for="item in publicationsList"
         :key="item.doi"
       >
         <a :href="item.doi" target="_blank" class="my-2" rel="noopener">
-          <p class="font-inter font-semibold text-xl">
+          <p class="text-xl font-semibold font-inter">
             {{ item.title }}
           </p>
         </a>
 
-        <div class="bg-gray-100 rounded p-3 m2-3 relative">
-          <p class="font-lato text-xs text-gray-600">Citation</p>
-          <p class="font-asap text-black text-base" v-html="item.citation"></p>
+        <div class="relative p-3 bg-gray-100 rounded m2-3">
+          <p class="text-xs text-gray-600 font-lato">Citation</p>
+          <p class="text-base text-black font-asap" v-html="item.citation"></p>
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@ export default {
             bioRxiv
           </i> (2021).
           <a href="https://doi.org/10.1101/2021.10.22.465507" target="_blank" rel="noopener">
-            <span class="hover:underline text-blue-600  break-words">
+            <span class="text-blue-600 break-words hover:underline">
               doi.org/10.1101/2021.10.22.465507
             </span>
           </a>`,

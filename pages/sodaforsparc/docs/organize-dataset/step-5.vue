@@ -18,7 +18,7 @@
           this metadata file we refer to our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-manifest-metadata-file"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span> "How to"</span>
           </NuxtLink>

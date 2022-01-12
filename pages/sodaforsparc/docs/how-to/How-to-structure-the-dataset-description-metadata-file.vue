@@ -18,15 +18,15 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black mb-2">
+        <p class="mb-2 text-black font-asap">
           SODA helps you prepare the
           <span class="span-content print:text-sm print:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Create-dataset-description-xlsx"
-              class="hover:underline text-blue-600 print:text-sm print:text-black"
+              class="text-blue-600 hover:underline print:text-sm print:text-black"
             >
               <span
-                class="font-asap print:text-sm print:text-black print:text-black"
+                class="font-asap print:text-sm print:text-black"
               >
                 dataset description metadata file
               </span>
@@ -41,7 +41,7 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           Format: The dataset description file is accepted in either xlsx, csv,
           or json format. SODA generates it in the xlsx format based on the
@@ -62,7 +62,7 @@
           multiple "Contributors") for a "Metadata Item", each subsequent value
           column must be named "Value 2", "Value 3", "Value 4", and so forth.
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               <strong>Name</strong>: Descriptive title for the dataset. This
               field should match exactly with your dataset name on Pennsieve.
@@ -99,7 +99,7 @@
                 href="https://orcid.org"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 https://orcid.org </a
               >. It must be in the format
@@ -114,7 +114,7 @@
                 href="https://ror.org/"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 ror ID
               </a>
@@ -136,7 +136,7 @@
                 href="https://schema.datacite.org/meta/kernel-4.3/"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 document here </a
               >. The role "ContactPerson" must be provided for the person marked

@@ -10,27 +10,27 @@
       </Head>
     </Html>
 
-    <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 pt-16 bg-white">
       <SodaForCovidHerosection></SodaForCovidHerosection>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-gray-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-gray-50">
       <AboutSodaForCovid></AboutSodaForCovid>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <SodaForCovidImpact></SodaForCovidImpact>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-gray-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-gray-50">
       <SodaForCovidDevApproachFundingTeam></SodaForCovidDevApproachFundingTeam>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <SodaForCovidTimeline></SodaForCovidTimeline>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <SodaForCovidPublications></SodaForCovidPublications>
     </base-section>
   </div>

@@ -10,27 +10,27 @@
       </Head>
     </Html>
 
-    <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 pt-16 bg-white">
       <SodaForSparcHerosection />
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-gray-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-gray-50">
       <AboutSodaForSparc></AboutSodaForSparc>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <SodaForSparcImpact></SodaForSparcImpact>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-gray-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-gray-50">
       <SodaForSparcDevApproachFundingTeam></SodaForSparcDevApproachFundingTeam>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <SodaForSparcTimeline></SodaForSparcTimeline>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <SodaForSparcPublications></SodaForSparcPublications>
     </base-section>
   </div>

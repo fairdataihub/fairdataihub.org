@@ -15,15 +15,15 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black mb-2">
+        <p class="mb-2 text-black font-asap">
           SODA helps you prepare the
           <span class="span-content print:text-sm print:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx"
-              class="hover:underline text-blue-600 print:text-sm print:text-black"
+              class="text-blue-600 hover:underline print:text-sm print:text-black"
             >
               <span
-                class="font-asap print:text-sm print:text-black print:text-black"
+                class="font-asap print:text-sm print:text-black"
               >
                 submission metadata file
               </span>
@@ -37,7 +37,7 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           Format: the submission file is accepted in either xlsx, csv, or json
           format. SODA generates it in the xlsx format based on the template
@@ -61,7 +61,7 @@
           "Definition" column could be kept or removed). Each of the three
           "Submission Item" element must be provided a "Value".
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>SPARC Award number: The number of your SPARC award.</li>
 
             <li>

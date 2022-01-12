@@ -1,68 +1,68 @@
 <template>
   <section class="max-w-screen-xl mx-auto">
-    <div class="w-full flex flex-col">
+    <div class="flex flex-col w-full">
       <h2
-        class="font-bold text-2xl sm:text-2xl md:text-3xl lg:text-5xl text-center py-1"
+        class="py-1 text-2xl font-bold text-center sm:text-2xl md:text-3xl lg:text-5xl"
       >
         Impact on SPARC datasets
       </h2>
 
-      <h3 class="text-lg md:text-xl lg:text-2xl text-center">
+      <h3 class="text-lg text-center md:text-xl lg:text-2xl">
         Trusted by researchers all over the world
       </h3>
     </div>
 
-    <div class="p-6 flex flex-col sm:flex-row justify-around">
-      <div class="flex flex-col m-2 lg:m-6 items-center justify-center mb-5">
+    <div class="flex flex-col justify-around p-6 sm:flex-row">
+      <div class="flex flex-col items-center justify-center m-2 mb-5 lg:m-6">
         <p
-          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center hidden"
+          class="hidden my-1 text-5xl font-bold text-center font-lato sm:text-4xl md:text-5xl lg:text-6xl"
         ></p>
 
         <p
-          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center"
+          class="my-1 text-5xl font-bold text-center font-lato sm:text-4xl md:text-5xl lg:text-6xl"
         >
           <span id="filesNum">{{ filesNum }}</span>
           <span>+</span>
         </p>
 
         <p
-          class="text-xl font-asap sm:text-lg md:text-xl lg:text-2xl text-center text-black"
+          class="text-xl text-center text-black font-asap sm:text-lg md:text-xl lg:text-2xl"
         >
           Files touched
         </p>
       </div>
-      <div class="flex flex-col m-2 lg:m-6 items-center justify-center mb-5">
+      <div class="flex flex-col items-center justify-center m-2 mb-5 lg:m-6">
         <p
-          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center hidden"
+          class="hidden my-1 text-5xl font-bold text-center font-lato sm:text-4xl md:text-5xl lg:text-6xl"
         ></p>
 
         <p
-          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center"
+          class="my-1 text-5xl font-bold text-center font-lato sm:text-4xl md:text-5xl lg:text-6xl"
         >
           <span id="datasetsNum">{{ datasetsNum }}</span>
           <span>+</span>
         </p>
 
         <p
-          class="text-xl font-asap sm:text-lg md:text-xl lg:text-2xl text-center text-black"
+          class="text-xl text-center text-black font-asap sm:text-lg md:text-xl lg:text-2xl"
         >
           Datasets modified
         </p>
       </div>
-      <div class="flex flex-col m-2 lg:m-6 items-center justify-center mb-5">
+      <div class="flex flex-col items-center justify-center m-2 mb-5 lg:m-6">
         <p
-          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center hidden"
+          class="hidden my-1 text-5xl font-bold text-center font-lato sm:text-4xl md:text-5xl lg:text-6xl"
         ></p>
 
         <p
-          class="my-1 font-lato font-bold text-5xl sm:text-4xl md:text-5xl lg:text-6xl text-center"
+          class="my-1 text-5xl font-bold text-center font-lato sm:text-4xl md:text-5xl lg:text-6xl"
         >
           <span id="dataNum">{{ dataNum }}</span>
           <span>+ TB</span>
         </p>
 
         <p
-          class="text-xl font-asap sm:text-lg md:text-xl lg:text-2xl text-center text-black"
+          class="text-xl text-center text-black font-asap sm:text-lg md:text-xl lg:text-2xl"
         >
           Data uploaded
         </p>

@@ -21,7 +21,7 @@
             href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             SPARC Airtable sheet</a
           >
@@ -40,14 +40,14 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Create an
           <a
             href="https://airtable.com/"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             Airtable account</a
           >.
@@ -58,7 +58,7 @@
             href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             SPARC Airtable sheet</a
           >
@@ -67,7 +67,7 @@
             href="mailto:chorn@pitt.edu"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             chorn@pitt.edu</a
           >).
@@ -86,7 +86,7 @@
             href="https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key"
             target="_blank"
             rel="nofollow"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             Airtable Help page</a
           >

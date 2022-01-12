@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-between items-center">
-    <div class="flex justify-start items-center relative anchorDiv">
+  <div class="flex items-center justify-between">
+    <div class="relative flex items-center justify-start anchorDiv">
       <h2
         :id="subtitleID"
-        class="font-semibold text-lg text-black mb-1 print:text-black level-1-heading"
+        class="mb-1 text-lg font-semibold text-black print:text-black level-1-heading"
         ref="slotWrapper"
       >
         <slot></slot>
@@ -24,7 +24,7 @@
     </div>
     <slot name="actionArea"></slot>
   </div>
-  <div class="w-full border-b border-grey-500 mb-2"></div>
+  <div class="w-full mb-2 border-b border-grey-500"></div>
 </template>
 
 <script>

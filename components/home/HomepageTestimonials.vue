@@ -1,44 +1,44 @@
 <template>
   <div
-    class="w-full flex flex-col gap-4 mb-8 md:mb-0 justify-between items-center p-8 max-w-screen-lg mx-auto"
+    class="flex flex-col items-center justify-between w-full max-w-screen-lg gap-4 p-8 mx-auto mb-8 md:mb-0"
   >
     <div class="flex flex-col items-center mb-4">
       <p
-        class="w-full my-2 font-extrabold tracking-tight text-4xl sm:text-4xl text-center"
+        class="w-full my-2 text-4xl font-extrabold tracking-tight text-center sm:text-4xl"
       >
         Testimonials
       </p>
-      <p class="w-full max-w-2xl text-xl font-asap text-center">
+      <p class="w-full max-w-2xl text-xl text-center font-asap">
         See what people who use our products have to say about us.
       </p>
     </div>
-    <div class="w-full flex flex-col md:flex-row">
+    <div class="flex flex-col w-full md:flex-row">
       <div
-        class="bg-white md:w-64 lg:w-72 shadow-lg mx-auto rounded-xl p-8 my-4 md:p-4"
+        class="p-8 mx-auto my-4 bg-white shadow-lg md:w-64 lg:w-72 rounded-xl md:p-4"
         v-for="item in testimonialsList"
         :key="item.name"
       >
         <p>
-          <span class="font-bold text-accent text-lg"> “ </span>
-          <span class="font-asap text-black text-lg sm:text-base">
+          <span class="text-lg font-bold text-accent"> “ </span>
+          <span class="text-lg text-black font-asap sm:text-base">
             {{ item.content }}
           </span>
-          <span class="font-bold text-accent text-lg"> ” </span>
+          <span class="text-lg font-bold text-accent"> ” </span>
         </p>
         <div class="flex items-center mt-4">
-          <a href="#" class="block relative">
+          <a href="#" class="relative block">
             <img
               alt="profile"
               :src="item.img"
-              class="mx-auto object-cover rounded-full h-16 sm:h-10 w-16 sm:w-10"
+              class="object-cover w-16 h-16 mx-auto rounded-full sm:h-10 sm:w-10"
             />
           </a>
-          <div class="flex flex-col ml-2 justify-between">
-            <span class="font-semibold text-xl sm:text-sm text-accent">
+          <div class="flex flex-col justify-between ml-2">
+            <span class="text-xl font-semibold sm:text-sm text-accent">
               {{ item.name }}
             </span>
             <span
-              class="font-semibold text-black text-base sm:text-xs flex items-center"
+              class="flex items-center text-base font-semibold text-black sm:text-xs"
             >
               {{ item.title }}
             </span>

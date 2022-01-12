@@ -27,7 +27,7 @@
         simply email/Slack it to us
       </base-docs-heading>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>Windows: C:\Users\_your_username_\AppData\Roaming\SODA\logs</li>
         <li>macOS: ~/_your_username_/Library/Logs/SODA</li>
         <li>Ubuntu: /home/_your_username_/.config/SODA/logs</li>
@@ -49,7 +49,7 @@
 
           <NuxtLink
             to="/sodaforsparc/docs/common-errors/Issues-regarding-hidden-files-or-folders"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span>please visit here</span> </NuxtLink
           >.

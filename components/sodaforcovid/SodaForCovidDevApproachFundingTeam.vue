@@ -1,16 +1,16 @@
 <template>
   <section>
-    <div class="sm:pt-10 px-5 sm:px-10 mx-auto">
-      <div class="max-w-screen-lg mx-auto flex flex-col">
+    <div class="px-5 mx-auto sm:pt-10 sm:px-10">
+      <div class="flex flex-col max-w-screen-lg mx-auto">
         <h1
-          class="md:mr-8 py-5 md:py-0 font-inter font-black text-4xl subpixel-antialiased text-left"
+          class="py-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 md:py-0 font-inter"
         >
           Development Approach
         </h1>
         <div class="w-full py-2">
-          <div class="w-full flex flex-col sm:flex-row justify-between">
-            <div class="mb-10 sm:mb-5 pr-10">
-              <p class="w-full font-asap text-lg text-black">
+          <div class="flex flex-col justify-between w-full sm:flex-row">
+            <div class="pr-10 mb-10 sm:mb-5">
+              <p class="w-full text-lg text-black font-asap">
                 SODA for COVID-19 is distributed as an open-source application
                 with an MIT License. Anyone is free to fork our GitHub
                 repository and make their own changes if they would like. If you
@@ -97,7 +97,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="-0.122 175.062 480.244 129.875"
-                  class="h-10 hover:filter hover:drop-shadow-xl transition-all"
+                  class="h-10 transition-all hover:filter hover:drop-shadow-xl"
                 >
                   <g fill="#121110">
                     <path
@@ -113,22 +113,22 @@
     </div>
   </section>
   <section>
-    <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
-      <div class="max-w-screen-lg mx-auto flex flex-col">
+    <div class="px-5 mx-auto sm:pt-2 sm:px-10">
+      <div class="flex flex-col max-w-screen-lg mx-auto">
         <h1
-          class="md:mr-8 py-5 md:py-0 font-inter font-black text-4xl subpixel-antialiased text-left"
+          class="py-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 md:py-0 font-inter"
         >
           Funding
         </h1>
         <div class="w-full py-2">
-          <div class="w-full flex flex-col sm:flex-row justify-between">
-            <div class="mb-10 sm:mb-5 pr-10">
-              <p class="w-full text-lg font-asap text-black">
+          <div class="flex flex-col justify-between w-full sm:flex-row">
+            <div class="pr-10 mb-10 sm:mb-5">
+              <p class="w-full text-lg text-black font-asap">
                 SODA for COVID-19 Research is funded through a supplemental
                 award from the National Institute of Allergy and Infectious
                 Diseases (NIAID).
               </p>
-              <div class="mt-2 md:mt-1 hidden" aria-hidden="true">
+              <div class="hidden mt-2 md:mt-1" aria-hidden="true">
                 <a
                   href="#"
                   target="_blank"
@@ -158,44 +158,44 @@
     </div>
   </section>
   <section>
-    <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
-      <div class="max-w-screen-lg mx-auto flex flex-col">
+    <div class="px-5 mx-auto sm:pt-2 sm:px-10">
+      <div class="flex flex-col max-w-screen-lg mx-auto">
         <h1
-          class="md:mr-8 pb-5 font-inter font-black text-4xl subpixel-antialiased text-left"
+          class="pb-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 font-inter"
         >
           Team Members
         </h1>
         <div class="w-full">
           <div>
-            <div class="mb-10 sm:mb-5 w-full">
+            <div class="w-full mb-10 sm:mb-5">
               <div
-                class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 py-0 md:py-1"
+                class="grid grid-cols-2 py-0 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 md:py-1"
               >
                 <div v-for="member in membersList" :key="member.name">
                   <router-link :to="member.href" v-if="!member.external">
                     <div
-                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200"
+                      class="flex flex-col items-center p-2 transition-all rounded-lg hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
-                        class="h-28 rounded-full my-2"
+                        class="my-2 rounded-full h-28"
                       />
-                      <p class="ml-2 font-asap font-normal text-lg text-center">
+                      <p class="ml-2 text-lg font-normal text-center font-asap">
                         {{ member.name }}
                       </p>
                     </div>
                   </router-link>
                   <a v-else :href="member.href" target="_blank" rel="noopener">
                     <div
-                      class="flex flex-col items-center p-2 rounded-lg transition-all hover:bg-gray-200"
+                      class="flex flex-col items-center p-2 transition-all rounded-lg hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
-                        class="h-28 rounded-full my-2"
+                        class="my-2 rounded-full h-28"
                       />
-                      <p class="ml-2 font-asap font-normal text-lg text-center">
+                      <p class="ml-2 text-lg font-normal text-center font-asap">
                         {{ member.name }}
                       </p>
                     </div>
@@ -209,17 +209,17 @@
     </div>
   </section>
   <section>
-    <div class="sm:pt-2 px-5 sm:px-10 mx-auto">
-      <div class="max-w-screen-lg mx-auto flex flex-col">
+    <div class="px-5 mx-auto sm:pt-2 sm:px-10">
+      <div class="flex flex-col max-w-screen-lg mx-auto">
         <h1
-          class="md:mr-8 pb-5 font-inter font-black text-4xl subpixel-antialiased text-left"
+          class="pb-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 font-inter"
         >
           Research Partners
         </h1>
         <div class="w-full py-2">
-          <div class="w-full flex flex-col sm:flex-row justify-between">
-            <div class="mb-10 sm:mb-5 pr-10">
-              <p class="w-full text-lg font-asap text-black">
+          <div class="flex flex-col justify-between w-full sm:flex-row">
+            <div class="pr-10 mb-10 sm:mb-5">
+              <p class="w-full text-lg text-black font-asap">
                 SODA for COVID-19 Research is developed in collaboration with
                 Dr. Zicheng Hu (UCSF) and his colleagues at University of
                 California, San Francisco and Stanford University who are
@@ -233,9 +233,9 @@
         </div>
         <div class="w-full">
           <div>
-            <div class="mb-10 sm:mb-5 w-full">
+            <div class="w-full mb-10 sm:mb-5">
               <div
-                class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 py-0 md:py-1"
+                class="grid grid-cols-2 py-0 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 md:py-1"
               >
                 <a
                   v-for="collaborator in collaboratorsList"
@@ -245,21 +245,21 @@
                   rel="noopener"
                 >
                   <div
-                    class="flex flex-col justify-between items-center h-full p-2 rounded-lg transition-all hover:bg-gray-200"
+                    class="flex flex-col items-center justify-between h-full p-2 transition-all rounded-lg hover:bg-gray-200"
                   >
                     <img
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
-                      class="h-32 w-32 rounded-full my-2"
+                      class="w-32 h-32 my-2 rounded-full"
                       v-if="collaborator.type === 'person'"
                     />
                     <img
                       v-else
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
-                      class="my-auto mx-10"
+                      class="mx-10 my-auto"
                     />
-                    <p class="mt-3 font-asap font-normal text-lg text-center">
+                    <p class="mt-3 text-lg font-normal text-center font-asap">
                       {{ collaborator.name }}
                     </p>
                   </div>

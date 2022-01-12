@@ -24,7 +24,7 @@
           in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-dataset-description-metadata-file"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span> "How to"</span>
           </NuxtLink>
@@ -33,7 +33,7 @@
       </div>
 
       <base-docs-subtitle> How to </base-docs-subtitle>
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           You can start by either Creating a dataset_description.xlsx file from
           scratch with SODA or Continue working on an existing
@@ -57,14 +57,14 @@
         Dataset Info (high-level information about your dataset):
       </base-docs-heading>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Name: Descriptive title for the dataset. Since this field should match
           exactly with your dataset on Pennsieve, SODA lets you select it from
           your list of Pennsieve datasets (see
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span>"Connect to your Pennsieve account"</span>
           </NuxtLink>
@@ -76,7 +76,7 @@
           your convenience (see
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Add-edit-description"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span> this section</span>
           </NuxtLink>
@@ -104,7 +104,7 @@
         dataset):
       </base-docs-heading>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Number of subjects: The number of unique subjects in this dataset,
           should match the subjects metadata file. Must be greater or equal to
@@ -121,7 +121,7 @@
         Study Info (high-level information about your experiment or study):
       </base-docs-heading>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Study organ system: The major organ systems related to this study.
         </li>
@@ -151,7 +151,7 @@
         contributors to your dataset):
       </base-docs-heading>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           <strong>SPARC Award associated with this dataset</strong>: You can
           either type the SPARC award number or have SODA retrieve your SPARC
@@ -159,14 +159,14 @@
           Airtable account. Instructions are provided
           <NuxtLink
             to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
             ><span>here.</span>
           </NuxtLink>
         </li>
         <li>
           Click on <strong>Add a contributor</strong> to start adding
           contributors to your dataset_description file.
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Provide information about any contributor to the dataset. Note
               that the "Contributor" list is compiled from the SPARC Airtable
@@ -203,10 +203,10 @@
         Related Information: protocol, paper, dataset, etc. :
       </base-docs-heading>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Click <strong>Add a protocol</strong> to add a protocol.
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Protocol URL or DOI: URLs (if still private) / DOIs (if public) of
               protocols from protocols.io related to this dataset
@@ -231,7 +231,7 @@
           Click <strong>Add a URL/DOI</strong> to add a link other than a
           protocol.
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               URL or DOI: Specify your actual URL (if resource is public) or DOI
               (if resource is private). This can be web links to repositories or
@@ -261,7 +261,7 @@
       </div>
 
       <base-docs-heading> Additional Information: </base-docs-heading>
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Study collection title: Title of the larger collection of to which
           this dataset belongs.
@@ -287,7 +287,7 @@
 
       <base-docs-subtitle> Note </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           In the contributors' table, you can drag and drop rows to organize
           contributors in the order that they should appear in the

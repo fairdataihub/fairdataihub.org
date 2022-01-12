@@ -30,13 +30,13 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           <a
             href="https://winaero.com/kill-process-windows-10/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             Windows</a
           >
@@ -46,7 +46,7 @@
             href="https://support.apple.com/guide/activity-monitor/quit-a-process-actmntr1002/mac"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             MAC</a
           >
@@ -56,7 +56,7 @@
             href="https://www.cyberciti.biz/faq/stop-process-ubuntu-linux-command/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             Ubuntu</a
           >

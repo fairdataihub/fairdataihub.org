@@ -24,7 +24,7 @@
 
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-subjects-metadata-file"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span> "How to"</span>
           </NuxtLink>
@@ -87,7 +87,7 @@
         />
       </div>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           <strong>subject id</strong>: Lab-based schema for identifying each
           subject. This field should match the primary's sub-folder names. The
@@ -96,7 +96,7 @@
         <li>
           Experimental Setup (Mandatory if available):
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               pool id: If data is collected on multiple subjects at the same
               time include the identifier of the pool where the data file will
@@ -112,7 +112,7 @@
         <li>
           Species Information (Mandatory if available):
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Sex: This is the sex of the subject, or if unknown, leave it
               empty. E.g: Female.
@@ -133,7 +133,7 @@
                 href="https://scicrunch.org/resources/Organisms/search"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 Scicrunch</a
               >
@@ -161,7 +161,7 @@
         <li>
           Optional details:
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               <i> Age category</i>: The age category that the subject belongs
               to. An search field with suggestions based on list derived from
@@ -169,7 +169,7 @@
                 href="http://www.ontobee.org/ontology/catalog/UBERON?iri=http://purl.obolibrary.org/obo/UBERON_0000105"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 UBERON life cycle stage</a
               >
@@ -194,7 +194,7 @@
         <li>
           Protocol Information (Optional):
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               <i> Protocol title on protocols.io</i>: This field refers to the
               title of the protocol within Protocols.io once the research
@@ -207,7 +207,7 @@
                 href="https://www.protocols.io/developers"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 protocols.io</a
               >. An access token is required for automatic extraction of the
@@ -235,7 +235,7 @@
         <li>
           Additional fields (Optional):
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               <i> Handedness</i>: This refers to the preference of the subject
               to use the right or left hand, whenever applicable.
@@ -296,7 +296,7 @@
 
       <base-docs-subtitle> Note </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           If you have a properly structured SPARC primary folder to import, you
           can click on

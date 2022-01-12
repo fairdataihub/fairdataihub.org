@@ -1,13 +1,13 @@
 <template>
   <section>
-    <div class="max-w-screen-lg mx-auto px-6 sm:px-6 lg:px-8">
+    <div class="max-w-screen-lg px-6 mx-auto sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p
-          class="my-2 font-inter font-extrabold tracking-tight text-4xl sm:text-4xl"
+          class="my-2 text-4xl font-extrabold tracking-tight font-inter sm:text-4xl"
         >
           About
         </p>
-        <p class="font-asap max-w-2xl text-xl sm:text-xl text-black lg:mx-auto">
+        <p class="max-w-2xl text-xl text-black font-asap sm:text-xl lg:mx-auto">
           KnowMore is a tool readily integrable into the SPARC Portal that
           allows to find potential relation, difference, and similarities
           between multiple SPARC datasets in just a few clicks, which can lead
@@ -23,20 +23,20 @@
           <div v-for="feature in features" :key="feature.name" class="relative">
             <dt>
               <div
-                class="absolute flex items-center justify-center h-12 w-12 rounded-md text-white bg-light-vision"
+                class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-light-vision"
               >
                 <component
                   :is="feature.icon"
-                  class="h-6 w-6"
+                  class="w-6 h-6"
                   aria-hidden="true"
                 />
               </div>
-              <p class="font-inter ml-16 text-xl sm:text-lg font-medium">
+              <p class="ml-16 text-xl font-medium font-inter sm:text-lg">
                 {{ feature.name }}
               </p>
             </dt>
             <dd
-              class="mt-2 md:mt-0 ml-16 text-lg sm:text-base text-black font-asap"
+              class="mt-2 ml-16 text-lg text-black md:mt-0 sm:text-base font-asap"
               v-html="feature.description"
             ></dd>
           </div>
@@ -70,8 +70,7 @@ const features = [
             stroke-linecap="round" 
             stroke-linejoin="round" 
             stroke-width="2" 
-            class="w-4 h-4 ml-2 
-            arrow-animate" 
+            class="w-4 h-4 ml-2 arrow-animate" 
             viewBox="0 0 24 24" data-v-6a723fb6="">
             <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
           </svg>

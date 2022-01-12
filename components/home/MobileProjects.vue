@@ -1,40 +1,40 @@
 <template>
   <div
-    class="flex flex-col justify-center items-center max-w-screen-lg mx-auto"
+    class="flex flex-col items-center justify-center max-w-screen-lg mx-auto"
   >
-    <div class="flex flex-col items-center mb-4 px-4">
+    <div class="flex flex-col items-center px-4 mb-4">
       <h2
-        class="w-full mt-2 mb-1 font-extrabold text-gray-900 text-4xl sm:text-4xl text-left"
+        class="w-full mt-2 mb-1 text-4xl font-extrabold text-left text-gray-900 sm:text-4xl"
       >
         Current Projects
       </h2>
-      <p class="w-full max-w-2xl text-xl text-black text-left pb-2">
+      <p class="w-full max-w-2xl pb-2 text-xl text-left text-black">
         These are the projects we are working on at the moment.
       </p>
     </div>
     <section
-      class="text-gray-600 w-full body-font mb-4 divide-y divide-gray-300 px-2"
+      class="w-full px-2 mb-4 text-gray-600 divide-y divide-gray-300 body-font"
     >
       <div
-        class="container mx-auto flex px-5 flex-col-reverse items-center justify-start my-4 pb-10"
+        class="container flex flex-col-reverse items-center justify-start px-5 pb-10 mx-auto my-4"
         v-for="project in projectsList"
         :key="project.name"
       >
         <!-- text div -->
-        <div class="flex flex-col my-1 items-center text-center">
+        <div class="flex flex-col items-center my-1 text-center">
           <h3
-            class="font-semibold hidden text-4xl w-full mb-4 text-left text-black"
+            class="hidden w-full mb-4 text-4xl font-semibold text-left text-black"
           >
             {{ project.name }}
           </h3>
 
-          <p class="w-full mb-8 text-left text-xl font-asap text-black">
+          <p class="w-full mb-8 text-xl text-left text-black font-asap">
             {{ project.description }}
           </p>
-          <div class="w-full flex justify-center">
+          <div class="flex justify-center w-full">
             <NuxtLink :to="project.page">
               <button
-                class="sm:ml-4 inline-flex text-white border-0 py-2 px-6 focus:outline-none rounded text-lg transition bg-button-light-background"
+                class="inline-flex px-6 py-2 text-lg text-white transition border-0 rounded sm:ml-4 focus:outline-none bg-button-light-background"
               >
                 Learn more about {{ project.name }}
               </button>
@@ -42,7 +42,7 @@
           </div>
         </div>
         <!-- image div -->
-        <div class="pt-10 pb-6 my-2 w-full">
+        <div class="w-full pt-10 pb-6 my-2">
           <img
             class="object-cover rounded"
             alt="SODA for SPARC logo"

@@ -26,7 +26,7 @@
           submission date associated with it must be included in the
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span> submission</span>
           </NuxtLink>
@@ -46,7 +46,7 @@
             href="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/src/file_templates/DataDeliverablesDocument-template.docx?raw=true"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             here</a
           >

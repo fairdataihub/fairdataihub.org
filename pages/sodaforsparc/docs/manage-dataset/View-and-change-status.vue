@@ -27,13 +27,13 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Select/confirm your Pennsieve account and dataset. If you have not
           connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span>use the instructions available here</span> </NuxtLink
           >.
@@ -61,7 +61,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           "02. Work in Progress (Investigator)": Select to indicate that you are
           working on your dataset

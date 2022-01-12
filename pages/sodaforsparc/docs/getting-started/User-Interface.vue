@@ -28,12 +28,12 @@
 
       <base-docs-subtitle> Notes </base-docs-subtitle>
 
-      <ul class="list-outside list-disc ml-4">
+      <ul class="ml-4 list-disc list-outside">
         <li
           v-for="item in notesList"
           :key="item.content"
           v-html="item.content"
-          class="font-asap text-black"
+          class="text-black font-asap"
         ></li>
       </ul>
     </div>
@@ -72,7 +72,7 @@ export default {
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          class="svg-inline--fa fa-info-circle fa-w-16 fa-3x h-4 inline-flex"
+          class="inline-flex h-4 svg-inline--fa fa-info-circle fa-w-16 fa-3x"
         >
           <path
             fill="currentColor"

@@ -162,7 +162,7 @@
       <div class="p-parent-div">
         <NuxtLink
           to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
-          class="hover:underline text-blue-600 font-asap"
+          class="text-blue-600 hover:underline font-asap"
         >
           Learn more about the types of permissions and their
           restrictions</NuxtLink
@@ -211,7 +211,7 @@
             href="https://sparc.science/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 font-asap"
+            class="text-blue-600 hover:underline font-asap"
           >
             sparc.science
           </a>
@@ -240,7 +240,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>Click on "Edit banner image"</li>
         <li>Click on "Import image" in the new pop-up window.</li>
         <li>Select the image file you want to use as a banner image.</li>
@@ -304,7 +304,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Enter your award number. We recommend connecting your Airtable account
           with SODA so you can import your award number automatically and
@@ -312,7 +312,7 @@
           handy later on when adding contributors to the dataset_description
           metadata file). To do that:
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Click on
               <span class="highlight-text">
@@ -336,7 +336,7 @@
                 href="https://airtable.com/account"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 font-asap"
+                class="text-blue-600 hover:underline font-asap"
               >
                 your account</a
               >
@@ -376,7 +376,7 @@
           to find out more). We recommend that you import your Data Deliverables
           document in SODA to automatically extract milestone information. To do
           so:
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Click on
               <span class="highlight-text">
@@ -428,7 +428,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file"
-            class="hover:underline text-blue-600 font-asap"
+            class="text-blue-600 hover:underline font-asap"
           >
             How to</NuxtLink
           >
@@ -455,11 +455,11 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Dataset information
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Dataset name: The name of the dataset you created during step A2
               should be automatically listed. If not, click on the
@@ -484,7 +484,7 @@
         </li>
         <li>
           Study information
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Keywords: Provide at least three keywords (press
               <span class="highlight-text"> Enter</span> on your keyboard after
@@ -498,7 +498,7 @@
         </li>
         <li>
           Award and contributor information
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Award number: Click on the
               <span class="highlight-text">
@@ -531,7 +531,7 @@
         </li>
         <li>
           Protocol Information
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Click on
               <span class="highlight-text"> Add a protocol</span> and enter the
@@ -554,7 +554,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-dataset-description-metadata-file"
-            class="hover:underline text-blue-600 font-asap"
+            class="text-blue-600 hover:underline font-asap"
           >
             How to</NuxtLink
           >
@@ -578,7 +578,7 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Experimental setup: Add the pool_id and experimental_group if
           applicable/available.
@@ -586,7 +586,7 @@
         <li>
           Species information
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>Sex: Select one</li>
             <li>
               Species: Type and select the applicable option from the
@@ -620,7 +620,7 @@
                 href="https://scicrunch.org/resources"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600 font-asap"
+                class="text-blue-600 hover:underline font-asap"
               >
                 Scicrunch</a
               >
@@ -681,7 +681,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-subjects-metadata-file"
-            class="hover:underline text-blue-600 font-asap"
+            class="text-blue-600 hover:underline font-asap"
           >
             How to</NuxtLink
           >
@@ -705,12 +705,12 @@
         </p>
       </div>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>Experimental setup: Enter applicable/available information.</li>
         <li>
           Specimen Information
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>Specimen type: Select one from the dropdown list</li>
             <li>Specimen anatomical location: Type the location</li>
             <li>
@@ -745,7 +745,7 @@
           is explained in our corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-samples-metadata-file"
-            class="hover:underline text-blue-600 font-asap"
+            class="text-blue-600 hover:underline font-asap"
           >
             How to</NuxtLink
           >
@@ -768,7 +768,7 @@
             href="https://docs.google.com/presentation/d/1EQPn1FmANpPsFt3CguU-JOQVMMlJsNXluQAK_gb2qVg/edit#slide=id.p1"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600 font-asap"
+            class="text-blue-600 hover:underline font-asap"
           >
             How to</a
           >. This top-level folder structure is shown in the figure below. If
@@ -844,7 +844,7 @@
       <p class="mb-1">
         These are some of the functions you can do while you are in this step:
       </p>
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>Go inside a folder by double-clicking on it.</li>
         <li>
           Import files/folders inside a folder using drag-and-drop or the
@@ -883,7 +883,7 @@
 
       <strong class="mt-4"> Adding file descriptions (optional)</strong>
       <br />
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           Use the "Details" option from the right-click menu to see the actual
           path of the file and include metadata (description, Additional

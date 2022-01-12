@@ -10,23 +10,23 @@
       </Head>
     </Html>
 
-    <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 pt-16 bg-white">
       <AquaHerosection></AquaHerosection>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-grey-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-grey-50">
       <AboutAqua></AboutAqua>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <AQUAToolsUsed></AQUAToolsUsed>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-grey-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-grey-50">
       <AquaDevApproachFundingTeam></AquaDevApproachFundingTeam>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <AquaPublications></AquaPublications>
     </base-section>
   </div>

@@ -10,19 +10,19 @@
       </Head>
     </Html>
 
-    <base-section data-aos="fade-in" class="pt-16 bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 pt-16 bg-white">
       <SparclinkHerosection></SparclinkHerosection>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-grey-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-grey-50">
       <AboutSparclink></AboutSparclink>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-grey-50 py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-grey-50">
       <SparcLinkDevApproachFundingTeam></SparcLinkDevApproachFundingTeam>
     </base-section>
 
-    <base-section data-aos="fade-in" class="bg-white py-10">
+    <base-section data-aos="fade-in" class="py-10 bg-white">
       <SparclinkPublications></SparclinkPublications>
     </base-section>
   </div>

@@ -1,11 +1,11 @@
 <template>
   <div class="relative bg-light-background">
-    <div class="hidden sm:flex flex-col sm:flex-row sm:justify-around">
+    <div class="flex-col hidden sm:flex sm:flex-row sm:justify-around">
       <div class="sm:w-52 md:w-56 lg:w-60">
-        <nav class="mt-4 px-6 lg:px-3">
+        <nav class="px-6 mt-4 lg:px-3">
           <div v-for="section in sidebarList" :key="section.title" class="pb-3">
             <p
-              class="text-black w-full border-b-2 pb-2 border-gray-200 text-md font-normal"
+              class="w-full pb-2 font-normal text-black border-b-2 border-gray-200 text-md"
             >
               {{ section.title }}
             </p>
@@ -15,9 +15,9 @@
             >
               <NuxtLink
                 :to="subsection.href"
-                class="hover:text-gray-800 font-thin text-black hover:bg-gray-200 flex items-center p-1 my-1 transition-all duration-200 justify-start rounded-lg"
+                class="flex items-center justify-start p-1 my-1 font-thin text-black transition-all duration-200 rounded-lg hover:text-gray-800 hover:bg-gray-200"
               >
-                <span class="font-asap font-normal mx-1 text-sm">
+                <span class="mx-1 text-sm font-normal font-asap">
                   {{ subsection.subtitle }}
                 </span>
               </NuxtLink>

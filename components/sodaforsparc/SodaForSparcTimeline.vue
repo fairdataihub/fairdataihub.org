@@ -1,28 +1,28 @@
 <template>
   <section>
     <div
-      class="container w-full h-full max-w-screen-lg pl-2 pr-3 sm:px-10 mx-auto"
+      class="container w-full h-full max-w-screen-lg pl-2 pr-3 mx-auto sm:px-10"
     >
-      <div class="relative wrap overflow-hidden p-2 sm:p-4 h-full">
+      <div class="relative h-full p-2 overflow-hidden wrap sm:p-4">
         <h2 class="mb-10 text-4xl font-bold text-center sm:text-5xl">
           Timeline
         </h2>
 
-        <div class="container px-1 py-5 mx-auto flex flex-wrap">
+        <div class="container flex flex-wrap px-1 py-5 mx-auto">
           <div class="flex flex-wrap w-full">
             <div
-              class="flex relative pb-8"
+              class="relative flex pb-8"
               v-for="(item, index) in timelineList"
               :key="item.longDate"
             >
               <div
-                class="h-full w-10 absolute inset-0 flex items-center justify-center"
+                class="absolute inset-0 flex items-center justify-center w-10 h-full"
                 v-if="index != timelineList.length - 1"
               >
-                <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                <div class="w-1 h-full bg-gray-200 pointer-events-none"></div>
               </div>
               <div
-                class="flex-shrink-0 w-10 h-10 rounded-full bg-light-accent inline-flex items-center justify-center text-white relative z-10"
+                class="relative z-10 inline-flex items-center justify-center flex-shrink-0 w-10 h-10 text-white rounded-full bg-light-accent"
               >
                 <svg
                   fill="none"
@@ -54,7 +54,7 @@
                 <h3 class="font-semibold">
                   {{ item.longDate }} - {{ item.title }}
                 </h3>
-                <p class="w-full text-base font-asap text-black">
+                <p class="w-full text-base text-black font-asap">
                   {{ item.content }}
                 </p>
               </div>

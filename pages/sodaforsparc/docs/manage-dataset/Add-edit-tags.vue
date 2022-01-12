@@ -23,20 +23,20 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           Select/confirm your Pennsieve account and dataset. If you have not
           connected your Pennsieve account with SODA yet,
           <NuxtLink
             to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span>use the instructions available here</span> </NuxtLink
           >.
         </li>
         <li>
           Add, edit, or delete tags:
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Enter any tags you feel capture the nature of your research in the
               textbox. Once you have text for a single tag, hit 'Enter' or click
@@ -53,7 +53,7 @@
         </li>
         <li>
           Click on the "Add Tags" button.
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               If you already had tags you will be presented with an 'Edit Tags'
               button to click on instead.

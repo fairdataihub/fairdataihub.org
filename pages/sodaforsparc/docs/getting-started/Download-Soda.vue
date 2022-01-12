@@ -19,7 +19,7 @@
             href="https://app.pennsieve.net/"
             target="_blank"
             rel="noopener"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
             >Pennsieve Agent</a
           >.
           <span v-if="current_os === 'all'">
@@ -33,13 +33,13 @@
           Windows (developed and tested on Windows 10)
         </base-docs-heading>
 
-        <ul class="docs-ul list-outside list-decimal">
+        <ul class="list-decimal list-outside docs-ul">
           <li>
             <a
               :href="windows_url"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600 cursor-pointer"
+              class="text-blue-600 cursor-pointer hover:underline"
             >
               Download the Windows installer.
             </a>
@@ -75,13 +75,13 @@
           macOS (developed and tested on macOS Catalina 10.15)
         </base-docs-heading>
 
-        <ul class="docs-ul list-outside list-decimal">
+        <ul class="list-decimal list-outside docs-ul">
           <li>
             <a
               :href="macOS_url"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600 cursor-pointer"
+              class="text-blue-600 cursor-pointer hover:underline"
             >
               Download the macOS installer.
             </a>
@@ -112,13 +112,13 @@
           Ubuntu (developed and tested on Ubuntu 20.04.2 LTS)
         </base-docs-heading>
 
-        <ul class="docs-ul list-outside list-decimal">
+        <ul class="list-decimal list-outside docs-ul">
           <li>
             <a
               :href="linux_url"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600 cursor-pointer"
+              class="text-blue-600 cursor-pointer hover:underline"
             >
               Download Linux AppImage.
             </a>
@@ -150,7 +150,7 @@
               href="https://app.pennsieve.net/"
               target="_blank"
               rel="noopener"
-              class="hover:underline text-blue-600"
+              class="text-blue-600 hover:underline"
               >AppImage Launcher</a
             >
             to organize and handle all AppImage programs for your Linux system.
@@ -193,7 +193,7 @@ export default {
           role="img"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 512 512"
-          class="svg-inline--fa fa-info-circle fa-w-16 fa-3x h-4 inline-flex"
+          class="inline-flex h-4 svg-inline--fa fa-info-circle fa-w-16 fa-3x"
         >
           <path
             fill="currentColor"

@@ -1,17 +1,17 @@
 <template>
-  <nav class="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
+  <nav class="sticky top-0 z-30 shadow-lg min-w-screen print:hidden">
     <div
       class="flex flex-row justify-between px-5 py-3 bg-gray-50"
       :class="{ 'debug-screens': dev }"
     >
       <NuxtLink
         to="/"
-        class="flex flex-row justify-center items-center"
+        class="flex flex-row items-center justify-center"
         aria-label="Homepage"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-6 md:h-6 lg:h-7 w-auto"
+          class="w-auto h-6 md:h-6 lg:h-7"
           viewBox="0 0 451.84 61.44"
         >
           <path
@@ -71,7 +71,7 @@
       </NuxtLink>
       <div class="hidden sm:block">
         <div
-          class="flex flex-row justify-center items-center h-full sm:text-sm md:text-md font-medium"
+          class="flex flex-row items-center justify-center h-full font-medium sm:text-sm md:text-md"
         >
           <NuxtLink to="/" class="nav-item hover-underline-animation">
             Home
@@ -79,18 +79,18 @@
           <NuxtLink to="/team" class="nav-item hover-underline-animation">
             Meet The Team
           </NuxtLink>
-          <div class="relative group rounded-lg">
+          <div class="relative rounded-lg group">
             <button
-              class="flex flex-row items-center sm:px-1 lg:px-3 mx-1 py-2 font-medium hover-underline-animation"
+              class="flex flex-row items-center py-2 mx-1 font-medium sm:px-1 lg:px-3 hover-underline-animation"
             >
-              <div class="flex flex-row w-max justify-center items-center">
+              <div class="flex flex-row items-center justify-center w-max">
                 Our Projects
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  class="w-4 h-4 text-lg transition-all ml-2"
+                  class="w-4 h-4 ml-2 text-lg transition-all"
                 >
                   <path
                     stroke-linecap="round"
@@ -102,10 +102,10 @@
               </div>
             </button>
             <div
-              class="absolute z-10 hidden group-hover:block py-1 right-4 w-max"
+              class="absolute z-10 hidden py-1 group-hover:block right-4 w-max"
             >
               <div
-                class="py-3 shadow-lg bg-gray-100 text-left text-md rounded-lg border-2 border-gray-200"
+                class="py-3 text-left bg-gray-100 border-2 border-gray-200 rounded-lg shadow-lg text-md"
               >
                 <div class="flex flex-col">
                   <NuxtLink
@@ -151,26 +151,26 @@
       <!-- Mobile menu hamburger -->
       <div class="block sm:hidden">
         <button
-          class="text-gray-500 w-10 h-10 relative focus:outline-none"
+          class="relative w-10 h-10 text-gray-500 focus:outline-none"
           @click="open = !open"
         >
           <span class="sr-only">Open main menu</span>
           <div
-            class="block w-5 absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+            class="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
           >
             <span
               aria-hidden="true"
-              class="block absolute h-1 w-6 bg-light-accent transform transition duration-200 ease-in-out"
+              class="absolute block w-6 h-1 transition duration-200 ease-in-out transform bg-light-accent"
               :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
             ></span>
             <span
               aria-hidden="true"
-              class="block absolute h-1 w-6 bg-light-accent transform transition duration-200 ease-in-out"
+              class="absolute block w-6 h-1 transition duration-200 ease-in-out transform bg-light-accent"
               :class="{ 'opacity-0': open }"
             ></span>
             <span
               aria-hidden="true"
-              class="block absolute h-1 w-6 bg-light-accent transform transition duration-200 ease-in-out"
+              class="absolute block w-6 h-1 transition duration-200 ease-in-out transform bg-light-accent"
               :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
             ></span>
           </div>
@@ -180,13 +180,13 @@
 
     <!-- Mobile menu -->
     <transition name="slidedown" appear>
-      <div class="fixed w-screen bg-white z-10 shadow-sm" v-if="open">
+      <div class="fixed z-10 w-screen bg-white shadow-sm" v-if="open">
         <div class="pt-2 pb-3">
           <NuxtLink
             v-for="item in mobileNavigation"
             :key="item.name"
             :to="item.href"
-            class="text-black block px-3 py-2 rounded-md text-base text-center font-medium z-20 transition-all mobile-menu hover:bg-light-accent hover:text-white"
+            class="z-20 block px-3 py-2 text-base font-medium text-center text-black transition-all rounded-md mobile-menu hover:bg-light-accent hover:text-white"
           >
             {{ item.name }}
           </NuxtLink>

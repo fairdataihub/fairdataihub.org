@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full max-w-screen-lg mx-auto h-auto pt-1 pb-3 px-4">
-    <div class="flex flex-col justify-center items-center mb-4">
+  <div class="w-full h-auto max-w-screen-lg px-4 pt-1 pb-3 mx-auto">
+    <div class="flex flex-col items-center justify-center mb-4">
       <h2
-        class="my-2 font-extrabold tracking-tight text-4xl sm:text-4xl text-center"
+        class="my-2 text-4xl font-extrabold tracking-tight text-center sm:text-4xl"
       >
         Current Projects
       </h2>
-      <p class="w-full max-w-2xl text-xl font-asap text-center">
+      <p class="w-full max-w-2xl text-xl text-center font-asap">
         These are the projects we are working on at the moment:
       </p>
     </div>
@@ -30,16 +30,16 @@
       <swiper-slide
         v-for="project in projectsList"
         :key="project.name"
-        class="py-10 flex justify-center items-center h-full my-auto"
+        class="flex items-center justify-center h-full py-10 my-auto"
       >
         <section
-          class="text-gray-600 w-4/5 h-full my-auto mx-10 px-5 py-10 flex flex-row justify-center items-center rounded-lg shadow-xl"
+          class="flex flex-row items-center justify-center w-4/5 h-full px-5 py-10 mx-10 my-auto text-gray-600 rounded-lg shadow-xl"
         >
           <div
-            class="container mx-auto flex flex-col justify-center items-center h-full"
+            class="container flex flex-col items-center justify-center h-full mx-auto"
           >
             <div
-              class="lg:max-w-lg my-5 sm:py-0 flex flex-row justify-center items-center"
+              class="flex flex-row items-center justify-center my-5 lg:max-w-lg sm:py-0"
             >
               <img
                 class="object-cover object-center rounded sm:pt-20 md:pt-0 sm:h-full md:h-auto lg:h-auto sm:w-60 md:w-72 lg:w-80"
@@ -48,18 +48,18 @@
               />
             </div>
             <div
-              class="flex flex-col my-4 sm:mb-16 md:mb-0 items-center text-center h-full"
+              class="flex flex-col items-center h-full my-4 text-center sm:mb-16 md:mb-0"
             >
               <p
-                class="w-full text-left sm:text-center text-base md:text-base lg:text-lg font-asap text-black"
+                class="w-full text-base text-left text-black sm:text-center md:text-base lg:text-lg font-asap"
               >
                 {{ project.description }}
               </p>
 
-              <div class="w-full flex justify-center py-4">
+              <div class="flex justify-center w-full py-4">
                 <NuxtLink :to="project.page">
                   <button
-                    class="sm:ml-4 inline-flex border-0 py-2 px-6 focus:outline-none rounded text-lg md:text-base lg:text-lg transition bg-black text-white ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+                    class="inline-flex px-6 py-2 text-lg text-white transition bg-black border-0 rounded sm:ml-4 focus:outline-none md:text-base lg:text-lg ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
                   >
                     Learn more about {{ project.name }}
                   </button>

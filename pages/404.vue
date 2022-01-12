@@ -1,28 +1,28 @@
 <template>
-  <main class="bg-white relative overflow-hidden h-screen">
+  <main class="relative h-screen overflow-hidden bg-white">
     <div
-      class="container mx-auto h-screen w-full pt-32 md:pt-0 px-3 z-10 flex items-center justify-between"
+      class="container z-10 flex items-center justify-between w-full h-screen px-3 pt-32 mx-auto md:pt-0"
     >
       <div
-        class="container mx-auto px-6 flex flex-col-reverse lg:flex-row justify-between items-center relative"
+        class="container relative flex flex-col-reverse items-center justify-between px-6 mx-auto lg:flex-row"
       >
-        <div class="w-full mb-16 md:mb-8 text-center lg:text-left">
+        <div class="w-full mb-16 text-center md:mb-8 lg:text-left">
           <h1
-            class="font-light font-sans text-center lg:text-left text-5xl lg:text-8xl mt-12 md:mt-0 text-gray-700"
+            class="mt-12 font-sans text-5xl font-light text-center text-gray-700 lg:text-left lg:text-8xl md:mt-0"
           >
             Sorry, this page isn't available
           </h1>
           <NuxtLink to="/">
             <button
               type="button"
-              class="bg-pink-600 hover:bg-pink-700 text-white mt-8 transition-all text-center text-3xl lg:text-5xl shadow-md rounded-lg p-4"
+              class="p-4 mt-8 text-3xl text-center text-white transition-all bg-pink-600 rounded-lg shadow-md hover:bg-pink-700 lg:text-5xl"
             >
               Go back home
             </button>
           </NuxtLink>
         </div>
         <div
-          class="block w-full mx-auto md:mt-0 relative max-w-md lg:max-w-2xl"
+          class="relative block w-full max-w-md mx-auto md:mt-0 lg:max-w-2xl"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@
             width="1032.24"
             height="832.63"
             viewBox="0 0 1032.24 832.63"
-            class="h-full w-full"
+            class="w-full h-full"
           >
             <defs>
               <linearGradient

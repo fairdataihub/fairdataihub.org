@@ -15,15 +15,15 @@
       <base-docs-subtitle> Background </base-docs-subtitle>
 
       <div class="my-2">
-        <p class="font-asap text-black mb-2">
+        <p class="mb-2 text-black font-asap">
           SODA helps you prepare the
           <span class="span-content print:text-sm print:text-black">
             <NuxtLink
               to="/sodaforsparc/docs/organize-dataset/step-5"
-              class="hover:underline text-blue-600 print:text-sm print:text-black"
+              class="text-blue-600 hover:underline print:text-sm print:text-black"
             >
               <span
-                class="font-asap print:text-sm print:text-black print:text-black"
+                class="font-asap print:text-sm print:text-black"
               >
                 manifest metadata files
               </span>
@@ -37,7 +37,7 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-disc">
+      <ul class="list-disc list-outside docs-ul">
         <li>
           Format: the manifest file is accepted in either xlsx, csv, or json
           format. SODA generates it in the xlsx format based on the template
@@ -54,7 +54,7 @@
 
         <li>
           Location in the dataset: a manifest file is required in either
-          <ul class="docs-ul list-outside">
+          <ul class="list-outside docs-ul">
             <li>each of the high-level SPARC folders</li>
             <li>OR</li>
             <li>in each of the dataset folders with at least one file.</li>
@@ -68,7 +68,7 @@
           Content: The "filename" and "timestamp" fields are mandatory and it is
           suggested to provide other fields as needed to understand each file.
 
-          <ul class="docs-ul list-outside list-disc">
+          <ul class="list-disc list-outside docs-ul">
             <li>
               Filename: This should be path to the files relative to the
               high-level SPARC folder where the manifest file is located (with a
@@ -83,7 +83,7 @@
                 href="https://en.wikipedia.org/wiki/ISO_8601"
                 target="_blank"
                 rel="noopener"
-                class="hover:underline text-blue-600"
+                class="text-blue-600 hover:underline"
               >
                 ISO 8601 format
               </a>

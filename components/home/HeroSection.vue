@@ -1,9 +1,9 @@
 <template>
-  <div class="container px-6 py-8 max-w-screen-lg mx-auto">
-    <div class="items-center md:flex justify-center">
-      <div class="w-full lg:w-1/2 lg:max-w-lg p-2">
+  <div class="container max-w-screen-lg px-6 py-8 mx-auto">
+    <div class="items-center justify-center md:flex">
+      <div class="w-full p-2 lg:w-1/2 lg:max-w-lg">
         <h1
-          class="md:py-3 w-full font-black text-4xl sm:text-3xl md:text-4xl lg:text-5xl text-left"
+          class="w-full text-4xl font-black text-left md:py-3 sm:text-3xl md:text-4xl lg:text-5xl"
         >
           Making FAIR
           <span class="text-accent"> data </span>
@@ -11,7 +11,7 @@
         </h1>
 
         <p
-          class="mt-2 sm:mt-0 w-full font-normal text-xl sm:text-base md:text-lg lg:text-xl text-black"
+          class="w-full mt-2 text-xl font-normal text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl"
         >
           <span class="font-medium">F</span>indable,
           <span class="font-medium">A</span>ccessible,
@@ -24,7 +24,7 @@
         <NuxtLink to="/contact-us">
           <button
             type="button"
-            class="my-3 p-3 transition-all text-center text-base rounded-lg font-semibold bg-transparent border-black border-2 hover:border-light-accent text-black hover:text-accent"
+            class="p-3 my-3 text-base font-semibold text-center text-black transition-all bg-transparent border-2 border-black rounded-lg hover:border-light-accent hover:text-accent"
           >
             Contact us
           </button>
@@ -32,7 +32,7 @@
       </div>
 
       <div
-        class="w-full lg:w-1/2 flex items-center justify-center mt-6 lg:mt-0 p-5 lg:p-2"
+        class="flex items-center justify-center w-full p-5 mt-6 lg:w-1/2 lg:mt-0 lg:p-2"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

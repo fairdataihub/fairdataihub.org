@@ -21,7 +21,7 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           You can start by either Creating a CHANGES file from scratch with SODA
           or Continue working on an existing CHANGES.txt file.

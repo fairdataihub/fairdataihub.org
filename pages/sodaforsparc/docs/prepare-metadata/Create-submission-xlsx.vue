@@ -20,7 +20,7 @@
           corresponding
           <NuxtLink
             to="/sodaforsparc/docs/how-to/How-to-structure-the-submission-metadata-file"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span> "How to"</span>
           </NuxtLink>
@@ -31,11 +31,11 @@
           file rapidly and without errors:
         </p>
 
-        <ul class="docs-ul list-outside list-disc">
+        <ul class="list-disc list-outside docs-ul">
           <li>
             <NuxtLink
               to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
-              class="hover:underline text-blue-600"
+              class="text-blue-600 hover:underline"
             >
               <span>The SPARC Airtable sheet</span>
             </NuxtLink>
@@ -50,7 +50,7 @@
             the SPARC award or the award manager. Learn more about your
             <NuxtLink
               to="/sodaforsparc/docs/how-to/How-to-get-your-data-deliverables-document"
-              class="hover:underline text-blue-600"
+              class="text-blue-600 hover:underline"
             >
               <span>Data Deliverables document</span> </NuxtLink
             >.
@@ -60,7 +60,7 @@
 
       <base-docs-subtitle> How to </base-docs-subtitle>
 
-      <ul class="docs-ul list-outside list-decimal">
+      <ul class="list-decimal list-outside docs-ul">
         <li>
           You can start by either Creating a submission file from scratch with
           SODA or Continue working on an existing submission.xlsx file.
@@ -78,7 +78,7 @@
           SPARC Airtable sheet.
           <NuxtLink
             to="/sodaforsparc/docs/prepare-metadata/Connect-your-Airtable-account-with-SODA"
-            class="hover:underline text-blue-600"
+            class="text-blue-600 hover:underline"
           >
             <span> Instructions are provided here.</span>
           </NuxtLink>
