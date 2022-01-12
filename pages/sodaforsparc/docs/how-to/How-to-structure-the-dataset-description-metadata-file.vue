@@ -25,9 +25,7 @@
               to="/sodaforsparc/docs/prepare-metadata/Create-dataset-description-xlsx"
               class="text-blue-600 hover:underline print:text-sm print:text-black"
             >
-              <span
-                class="font-asap print:text-sm print:text-black"
-              >
+              <span class="font-asap print:text-sm print:text-black">
                 dataset description metadata file
               </span>
             </NuxtLink>

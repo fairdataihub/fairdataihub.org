@@ -22,9 +22,7 @@
               to="/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx"
               class="text-blue-600 hover:underline print:text-sm print:text-black"
             >
-              <span
-                class="font-asap print:text-sm print:text-black"
-              >
+              <span class="font-asap print:text-sm print:text-black">
                 submission metadata file
               </span>
             </NuxtLink>

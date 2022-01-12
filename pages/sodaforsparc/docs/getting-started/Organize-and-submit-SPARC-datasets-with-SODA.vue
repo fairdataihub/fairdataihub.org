@@ -63,9 +63,7 @@
                     rel="noopener"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       SPARC requirements for organizing and sharing all SPARC
                       datasets.
                     </span>
@@ -93,8 +91,7 @@
                     rel="noopener"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="print:text-sm font-asap print:text-black"
+                    <span class="print:text-sm font-asap print:text-black"
                       >Pennsieve</span
                     >
                   </a>
@@ -109,8 +106,7 @@
                     rel="noopener"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
+                    <span class="font-asap print:text-sm print:text-black"
                       >support@pennsieve.net</span
                     >
                   </a>
@@ -142,8 +138,7 @@
                     rel="noopener"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="print:text-sm print:text-black font-asap"
+                    <span class="print:text-sm print:text-black font-asap"
                       >Pennsieve agent</span
                     >
                   </a>
@@ -197,9 +192,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="print:text-sm print:text-black font-asap"
-                    >
+                    <span class="print:text-sm print:text-black font-asap">
                       Connect your Pennsieve account with SODA.
                     </span>
                   </NuxtLink>
@@ -224,9 +217,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Create-a-new-dataset"
                     class="text-blue-600 hover:underline print:text-sm print:text-black"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Create a new dataset
                     </span>
                   </NuxtLink>
@@ -246,9 +237,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Make-PI-owner-of-dataset"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Make PI of the SPARC award the owner of the dataset
                     </span>
                   </NuxtLink>
@@ -268,9 +257,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Add-edit-permissions"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Give access to other members/teams who may need to
                       contribute to the dataset</span
                     >
@@ -296,9 +283,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Add-edit-subtitle"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Add a subtitle
                     </span>
                   </NuxtLink>
@@ -318,9 +303,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Add-edit-description"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Add a description
                     </span>
                   </NuxtLink>
@@ -340,9 +323,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Upload-a-banner-image"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Upload a banner image
                     </span>
                   </NuxtLink>
@@ -362,9 +343,7 @@
                     to="/sodaforsparc/docs/manage-dataset/Assign-a-license"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Assign a license
                     </span>
                   </NuxtLink>
@@ -401,9 +380,7 @@
                     rel="noopener"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       instructions provided here
                     </span>
                   </a>
@@ -423,9 +400,7 @@
                     to="/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Prepare submission file
                     </span>
                   </NuxtLink>
@@ -445,9 +420,7 @@
                     to="/sodaforsparc/docs/prepare-metadata/Create-description-xlsx"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Prepare dataset description file
                     </span>
                   </NuxtLink>
@@ -467,9 +440,7 @@
                     to="/sodaforsparc/docs/prepare-metadata/Create-subjects-xlsx"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Prepare subjects file
                     </span>
                   </NuxtLink>
@@ -494,9 +465,7 @@
                     to="/sodaforsparc/docs/prepare-metadata/Create-samples-xlsx"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Prepare samples file
                     </span>
                   </NuxtLink>
@@ -531,9 +500,7 @@
                     to="/sodaforsparc/docs/organize-dataset"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Specify files and metadata files to be included in your
                       dataset and generate dataset directly on Pennsieve
                     </span>
@@ -564,9 +531,7 @@
                     to="/sodaforsparc/docs/disseminate-dataset/Share-with-curation-team"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Share with the Curation Team to add your dataset to their
                       queue for review
                     </span>
@@ -604,9 +569,7 @@
                     to="/sodaforsparc/docs/disseminate-dataset/Share-with-SPARC-Consortium"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Share dataset with the SPARC Consortium as Embargoed
                       dataset
                     </span>
@@ -627,9 +590,7 @@
                     to="/sodaforsparc/docs/disseminate-dataset/Submit-for-pre-publishing-review"
                     class="text-blue-600 hover:underline"
                   >
-                    <span
-                      class="font-asap print:text-sm print:text-black"
-                    >
+                    <span class="font-asap print:text-sm print:text-black">
                       Send dataset for pre-publishing review
                     </span>
                   </NuxtLink>

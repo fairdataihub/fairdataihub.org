@@ -22,9 +22,7 @@
               to="/sodaforsparc/docs/organize-dataset/step-5"
               class="text-blue-600 hover:underline print:text-sm print:text-black"
             >
-              <span
-                class="font-asap print:text-sm print:text-black"
-              >
+              <span class="font-asap print:text-sm print:text-black">
                 manifest metadata files
               </span>
             </NuxtLink>
