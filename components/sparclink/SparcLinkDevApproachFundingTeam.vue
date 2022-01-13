@@ -266,7 +266,7 @@ export default {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
           external: false,
-          image: "https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/",
+          image: "https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/-/scale_crop/200x200/smart/",
         },
         {
           name: "Sachira Kuruppu",

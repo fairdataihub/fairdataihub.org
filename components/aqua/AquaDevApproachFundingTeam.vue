@@ -267,7 +267,7 @@ export default {
           name: "Tram Ngo",
           href: "/team/#TramNgo",
           external: false,
-          image: "https://i.ibb.co/VpYFGBv/Tram-head.jpg",
+          image: "https://ucarecdn.com/16f0920a-311b-4850-b81c-46e09604b718/-/scale_crop/200x200/smart/",
         },
         {
           name: "Laila Bekhet",

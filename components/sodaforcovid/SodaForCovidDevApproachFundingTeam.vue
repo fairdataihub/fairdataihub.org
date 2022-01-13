@@ -283,20 +283,20 @@ export default {
           name: "Bhavesh Patel",
           href: "/team/#BhaveshPatel",
           external: false,
-          image: "https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/",
+          image: "https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/",
         },
         {
           name: "Sanjay Soundarajan",
           href: "/team/#SanjaySoundarajan",
           external: false,
-          image: "https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/",
+          image: "https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52//-/scale_crop/200x200/smart/",
         },
         {
           name: "Taiji Yang",
           href: "/team/#TaijiYang",
           external: false,
           image:
-            "https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/400x400/smart/",
+            "https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/200x200/smart/",
         },
       ],
       collaboratorsList: [
