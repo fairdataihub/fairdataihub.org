@@ -340,6 +340,12 @@ export default {
           external: false,
           image: "https://ucarecdn.com/944f2fec-8d84-47b7-aac6-f3d057a7ac9e/",
         },
+        {
+          name: "Dorian Portillo",
+          href: "/team/#DorianPortillo",
+          external: false,
+          image: "https://ucarecdn.com/cfaa5b97-6ed4-4104-81c4-a6e991408b24/",
+        }
       ],
       collaboratorsList: [
         {
