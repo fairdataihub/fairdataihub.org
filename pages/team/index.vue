@@ -225,8 +225,8 @@ export default {
         {
           id: "DorianPortillo",
           name: "Dorian Portillo (they/them)",
-          title: "Volunteer Developer",
-          bio: "Dorian is a frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
+          title: "Software Developer",
+          bio: "Dorian is a Guatemalan and Salvadoran frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
           image: "961c98cd-1dd6-4a05-9425-8d8f74a1410d",
           borderTop: true,
           borderBottom: false,
