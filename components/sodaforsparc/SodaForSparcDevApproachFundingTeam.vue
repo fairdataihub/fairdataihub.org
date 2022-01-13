@@ -345,7 +345,7 @@ export default {
           href: "/team/#DorianPortillo",
           external: false,
           image: "https://ucarecdn.com/cfaa5b97-6ed4-4104-81c4-a6e991408b24/",
-        }
+        },
       ],
       collaboratorsList: [
         {
