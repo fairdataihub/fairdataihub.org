@@ -291,10 +291,9 @@ export default {
   mounted() {
     const hash = this.$route.hash;
     if (hash != "") {
-      window.scrollTo(0, 0);
-
       const id = hash.substring(1);
-      setTimeout(() => {
+
+      let interval = setInterval(() => {
         if (this.checkIfElementExists(id)) {
           const el = document.getElementById(id);
 
@@ -303,10 +302,8 @@ export default {
             block: "center",
             inline: "center",
           });
-        } else {
-          setTimeout(() => {
-            this.checkIfElementExists(id);
-          }, 100);
+
+          clearInterval(interval);
         }
       }, 100);
     } else {
