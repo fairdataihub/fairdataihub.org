@@ -33,6 +33,8 @@
     "dot-env": "^0.0.1",
     "emailjs-com": "^3.2.0",
     "gsap": "^3.9.1",
+    "lottie-web": "^5.8.1",
+    "lottie-web-vue": "^1.2.1",
     "path": "^0.12.7",
     "swiper": "^7.4.1",
     "vue-gtag-next": "^1.14.0",
