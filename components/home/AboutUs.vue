@@ -7,7 +7,7 @@
       <div
         class="flex items-center justify-center w-full p-8 mt-6 lg:mt-0 lg:w-1/2"
       >
-        <LottieComponentVue :lottieAnimationData="TeamData" />
+        <LottieComponentVue :animationData="TeamData" />
       </div>
 
       <div class="w-full h-full p-2 lg:w-1/2">

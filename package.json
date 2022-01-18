@@ -34,10 +34,10 @@
     "emailjs-com": "^3.2.0",
     "gsap": "^3.9.1",
     "lottie-web": "^5.8.1",
-    "lottie-web-vue": "^1.2.1",
     "path": "^0.12.7",
     "swiper": "^7.4.1",
     "vue-gtag-next": "^1.14.0",
+    "vue3-lottie": "^1.0.2",
     "vue3-marquee": "^2.0.1-beta"
   },
   "browserslist": [
