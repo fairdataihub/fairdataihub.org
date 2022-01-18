@@ -14,4 +14,5 @@
     webp: true,
     progressive: true,
   });
+  console.log("Loaded Blinkloader");
 });
