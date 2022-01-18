@@ -43,7 +43,7 @@
 <script>
 import LottieComponentVue from "../lottie/LottieComponent.vue";
 
-import HeroData from "./hero.json";
+import HeroData from "../../assets/lottie/hero.json";
 
 export default {
   name: "HeroSection",
