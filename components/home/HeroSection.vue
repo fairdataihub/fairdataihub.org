@@ -34,9 +34,9 @@
       <div
         class="flex items-center justify-center w-full p-5 mt-6 lg:w-1/2 lg:mt-0 lg:p-2"
       >
-        <!-- <ClientOnly>
+        <ClientOnly>
           <LottieComponentVue :animationData="HeroData" />
-        </ClientOnly> -->
+        </ClientOnly>
       </div>
     </div>
   </div>
