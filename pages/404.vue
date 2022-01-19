@@ -34,7 +34,7 @@
 <script>
 import LottieComponentVue from "~~/components/lottie/LottieComponent.vue";
 
-import ErrorData from "../assets/lottie/error.json";
+import ErrorData from "../assets/lotties/error.json";
 
 export default {
   components: {

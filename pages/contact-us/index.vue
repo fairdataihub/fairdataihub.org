@@ -90,23 +90,43 @@
           </div>
 
           <div class="flex flex-col items-center justify-center w-full">
-            <!-- <span v-if="formValid" class="text-xs text-red-500 ">
-              Please complete all the required fields.
-            </span> -->
+            <LottieComponentVue
+              v-if="showLoading"
+              :animationData="LoadingData"
+              :width="200"
+              :height="200"
+            />
+            <LottieComponentVue
+              v-if="showSuccess"
+              :animationData="EmailSuccessData"
+              :width="100"
+              :height="100"
+              :loop="1"
+            />
+            <LottieComponentVue
+              v-if="showError"
+              :animationData="EmailErrorData"
+              :width="100"
+              :height="100"
+              :loop="1"
+            />
             <button
+              v-if="!hideButton"
               @click="sendEmail"
               class="px-4 py-2 my-2 text-white transition-all bg-pink-600 rounded-lg shadow-lg cursor-pointer focus:bg-pink-500 hover:bg-pink-500"
             >
               Send
             </button>
-            <span v-if="formValid" class="text-xs text-red-500">
+            <span v-if="formErrorMessage" class="text-xs text-red-500">
               Please complete all the required fields.
             </span>
+            <span v-if="emailStatus" class="my-2 text-lg">{{
+              emailStatusMessage
+            }}</span>
           </div>
         </form>
       </div>
     </base-section>
-    <!-- <Notifications position="bottom right" /> -->
   </div>
 </template>
 
@@ -116,13 +136,18 @@ import { ref } from "vue";
 const config = useRuntimeConfig();
 
 let formName = ref("");
-let formNameRequired = ref(false);
 let formInstitute = ref("");
-let formInstituteRequired = ref(false);
 let formEmail = ref("");
-let formEmailRequired = ref(false);
 let formMessage = ref("");
-let formMessageRequired = ref(false);
+let formErrorMessage = ref(false);
+
+let showLoading = ref(false);
+let showSuccess = ref(false);
+let showError = ref(false);
+let hideButton = ref(false);
+
+let emailStatus = ref(false);
+let emailStatusMessage = ref("");
 
 function validateInput() {
   if (
@@ -131,15 +156,21 @@ function validateInput() {
     formEmail.value.trim() == "" ||
     formMessage.value.trim() == ""
   ) {
+    formErrorMessage.value = true;
     return false;
   } else {
+    formErrorMessage.value = false;
     return true;
   }
 }
 
 function sendEmail() {
+  showLoading.value = true;
+
   const formValid = validateInput();
   if (formValid) {
+    hideButton.value = true;
+
     const data = {
       service_id: config.SERVICE_ID,
       template_id: config.TEMPLATE_ID,
@@ -160,45 +191,61 @@ function sendEmail() {
     };
     fetch("https://api.emailjs.com/api/v1.0/email/send", requestOptions)
       .then(async (response) => {
-        console.log("sent");
-        console.log(response);
-
         // check for error response
         if (!response.ok) {
           // get error message from body or default to response status
-
           const error = (data && data.message) || response.status;
           return Promise.reject(error);
         }
 
-        console.log("SUCCESS!", response.status, response.text);
+        // console.log("SUCCESS!", response.status, response.text);
 
-        // Reset form field
-        formName = "";
-        formEmail = "";
-        formMessage = "";
-        formInstitute = "";
+        showLoading.value = false;
+        showSuccess.value = true;
+        emailStatus.value = true;
+        emailStatusMessage.value =
+          "Message sent successfully! We will get back to you soon.";
       })
       .catch((error) => {
+        showLoading.value = false;
+        showError.value = true;
+        emailStatus.value = true;
+        emailStatusMessage.value =
+          "Something went wrong. Please try again later.";
+
         console.error("There was an error!");
         console.log(error);
       });
-
-    //       that.$notify({
-    //         title: "Nice to meet you!",
-    //         text: "We will be in touch with you soon.",
-    //         type: "success",
-    //         duration: 10000,
-    //         speed: 1000,
-    //       });
+  } else {
+    showLoading.value = false;
   }
 }
 </script>
 
 <script>
+import LottieComponentVue from "~~/components/lottie/LottieComponent.vue";
+
+import LoadingData from "../../assets/lotties/loading.json";
+import EmailSuccessData from "../../assets/lotties/emailSuccess.json";
+import EmailErrorData from "../../assets/lotties/emailError.json";
+
 export default {
   layout: "default",
   scrollToTop: true,
+  components: {
+    LottieComponentVue,
+  },
+  data() {
+    return {
+      LoadingData,
+      EmailSuccessData,
+      EmailErrorData,
+      formNameRequired: false,
+      formInstituteRequired: false,
+      formEmailRequired: false,
+      formMessageRequired: false,
+    };
+  },
   watch: {
     formName: function (val) {
       if (val.trim() != "") {

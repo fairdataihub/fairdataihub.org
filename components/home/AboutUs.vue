@@ -45,7 +45,7 @@
 <script>
 import LottieComponentVue from "../lottie/LottieComponent.vue";
 
-import TeamData from "../../assets/lottie/team.json";
+import TeamData from "../../assets/lotties/team.json";
 
 export default {
   name: "AboutUs",

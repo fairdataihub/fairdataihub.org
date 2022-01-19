@@ -55,10 +55,18 @@ const loadLottie = async () => {
   if (LottieAnimationContainer.value) {
     const animationDataCopy = JSON.parse(JSON.stringify(props.animationData));
 
+    let loop = props.loop;
+
+    if (typeof loop === "number") {
+      if (loop > 0) {
+        loop = loop - 1;
+      }
+    }
+
     lottieAnimation = Lottie.loadAnimation({
       container: LottieAnimationContainer.value,
       renderer: "svg",
-      loop: props.loop,
+      loop: loop,
       autoplay: autoPlay,
       animationData: animationDataCopy,
     });
