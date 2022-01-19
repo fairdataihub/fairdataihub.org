@@ -81,7 +81,7 @@ export default {
       }).click();
       Object.assign(document.createElement("a"), {
         target: "_blank",
-        href: "https://docs.sodaforsparc.io/",
+        href: "https://docs.sodaforsparc.io/docs/getting-started/download-soda",
       }).click();
     },
     getOS: async function () {
