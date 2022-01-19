@@ -77,12 +77,13 @@ const getCurrentStyle: any = computed(() => {
 });
 
 const setupLottie = () => {
+  // loadLottie();
   const interval = setInterval(() => {
     if (checkIfContainerExists()) {
       clearInterval(interval);
       loadLottie();
     }
-  }, 10);
+  }, 1);
 };
 
 onMounted(async () => {
