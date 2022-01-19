@@ -106,7 +106,6 @@
         </form>
       </div>
     </base-section>
-    <!-- <Notifications position="bottom right" /> -->
   </div>
 </template>
 
@@ -183,14 +182,6 @@ function sendEmail() {
         console.error("There was an error!");
         console.log(error);
       });
-
-    //       that.$notify({
-    //         title: "Nice to meet you!",
-    //         text: "We will be in touch with you soon.",
-    //         type: "success",
-    //         duration: 10000,
-    //         speed: 1000,
-    //       });
   }
 }
 </script>
@@ -263,7 +254,7 @@ export default {
   left: 25%;
   width: 80px;
   height: 80px;
-  background: #fda4af;
+  background: #d247a9;
   animation-delay: 0s;
 }
 
@@ -271,7 +262,7 @@ export default {
   left: 10%;
   width: 120px;
   height: 120px;
-  background: #e11d48;
+  background: #b92d8f;
   animation-delay: 2s;
   animation-duration: 20s;
 }
@@ -281,7 +272,7 @@ export default {
   width: 20px;
   height: 20px;
   animation-delay: 4s;
-  background: #f43f5e;
+  background: #d75bb2;
 }
 
 .circles li:nth-child(4) {
@@ -290,7 +281,7 @@ export default {
   height: 60px;
   animation-delay: 0s;
   animation-duration: 18s;
-  background: #fce7f3;
+  background: #faebf5;
 }
 
 .circles li:nth-child(5) {
@@ -298,7 +289,7 @@ export default {
   width: 20px;
   height: 20px;
   animation-delay: 0s;
-  background: #fda4af;
+  background: #dc70bc;
 }
 
 .circles li:nth-child(6) {
@@ -306,7 +297,7 @@ export default {
   width: 110px;
   height: 110px;
   animation-delay: 3s;
-  background: #e11d48;
+  background: #e699cf;
 }
 
 .circles li:nth-child(7) {
@@ -323,7 +314,7 @@ export default {
   height: 120px;
   animation-delay: 15s;
   animation-duration: 45s;
-  background: #e11d48;
+  background: #e184c5;
 }
 
 .circles li:nth-child(9) {
@@ -332,7 +323,7 @@ export default {
   height: 80px;
   animation-delay: 2s;
   animation-duration: 35s;
-  background: #ffe4e6;
+  background: #e699cf;
 }
 
 .circles li:nth-child(10) {
@@ -341,7 +332,7 @@ export default {
   height: 150px;
   animation-delay: 0s;
   animation-duration: 11s;
-  background: #fff1f2;
+  background: #e699cf;
 }
 
 @keyframes animate {
