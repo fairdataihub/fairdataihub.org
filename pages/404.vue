@@ -7,7 +7,9 @@
         class="container flex flex-col items-center justify-end px-6 mx-auto"
       >
         <div class="block w-full max-w-md mx-auto mb-16 md:mt-0 lg:max-w-2xl">
-          <LottieComponentVue :animationData="ErrorData" />
+          <ClientOnly>
+            <LottieComponentVue :animationData="ErrorData" />
+          </ClientOnly>
         </div>
         <div
           class="flex flex-col items-center w-full text-center md:mb-8 lg:text-left"

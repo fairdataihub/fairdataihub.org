@@ -1,11 +1,9 @@
 <template>
-  <ClientOnly>
-    <div
-      ref="LottieAnimationContainer"
-      class="lottie-animation-container"
-      :style="getCurrentStyle"
-    ></div>
-  </ClientOnly>
+  <div
+    ref="LottieAnimationContainer"
+    class="lottie-animation-container"
+    :style="getCurrentStyle"
+  ></div>
 </template>
 
 <script setup lang="ts">

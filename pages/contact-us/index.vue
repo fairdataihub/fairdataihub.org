@@ -90,26 +90,34 @@
           </div>
 
           <div class="flex flex-col items-center justify-center w-full">
-            <LottieComponentVue
-              v-if="showLoading"
-              :animationData="LoadingData"
-              :width="200"
-              :height="200"
-            />
-            <LottieComponentVue
-              v-if="showSuccess"
-              :animationData="EmailSuccessData"
-              :width="100"
-              :height="100"
-              :loop="1"
-            />
-            <LottieComponentVue
-              v-if="showError"
-              :animationData="EmailErrorData"
-              :width="100"
-              :height="100"
-              :loop="1"
-            />
+            <ClientOnly>
+              <LottieComponentVue
+                v-if="showLoading"
+                :animationData="LoadingData"
+                :width="200"
+                :height="200"
+              />
+            </ClientOnly>
+
+            <ClientOnly>
+              <LottieComponentVue
+                v-if="showSuccess"
+                :animationData="EmailSuccessData"
+                :width="100"
+                :height="100"
+                :loop="1"
+              />
+            </ClientOnly>
+
+            <ClientOnly>
+              <LottieComponentVue
+                v-if="showError"
+                :animationData="EmailErrorData"
+                :width="100"
+                :height="100"
+                :loop="1"
+              />
+            </ClientOnly>
             <button
               v-if="!hideButton"
               @click="sendEmail"
