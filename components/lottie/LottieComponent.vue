@@ -7,7 +7,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, ref, onMounted, computed } from "vue";
+import { defineProps, ref, onMounted, computed, nextTick } from "vue";
 import Lottie from "lottie-web";
 
 const props = defineProps({
@@ -75,16 +75,17 @@ const getCurrentStyle: any = computed(() => {
 });
 
 const setupLottie = () => {
-  // loadLottie();
-  const interval = setInterval(() => {
-    if (checkIfContainerExists()) {
-      clearInterval(interval);
-      loadLottie();
-    }
-  }, 1);
+  loadLottie();
+  // const interval = setInterval(() => {
+  //   if (checkIfContainerExists()) {
+  //     clearInterval(interval);
+  //     loadLottie();
+  //   }
+  // }, 5);
 };
 
 onMounted(async () => {
+  await nextTick();
   setupLottie();
 });
 </script>
