@@ -117,11 +117,11 @@ export default {
   setup() {
     let swiperThumbs = ref(null);
     const thumbnails = [
-      "https://ucarecdn.com/2a8dc700-311d-4bb2-b0d3-8022970754d8/",
-      "https://ucarecdn.com/6b133fb6-b68b-413c-89a5-54a31a65c66c/",
-      "https://ucarecdn.com/3ba27e90-3ab4-418f-aa07-05c4ba2c2f55/",
-      "https://ucarecdn.com/945e1e40-b0e1-40c5-a59d-bc89296cddeb/",
-      "https://ucarecdn.com/af296ebd-726d-4234-b9ac-449ff7dac3b9/",
+      "https://ucarecdn.com/2a8dc700-311d-4bb2-b0d3-8022970754d8/-/preview/-/quality/smart/",
+      "https://ucarecdn.com/6b133fb6-b68b-413c-89a5-54a31a65c66c/-/preview/-/quality/smart/",
+      "https://ucarecdn.com/3ba27e90-3ab4-418f-aa07-05c4ba2c2f55/-/preview/-/quality/smart/",
+      "https://ucarecdn.com/945e1e40-b0e1-40c5-a59d-bc89296cddeb/-/preview/-/quality/smart/",
+      "https://ucarecdn.com/af296ebd-726d-4234-b9ac-449ff7dac3b9/-/preview/-/quality/smart/",
     ];
 
     const setThumbsSwiper = (swiper) => {
