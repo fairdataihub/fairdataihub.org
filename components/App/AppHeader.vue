@@ -180,7 +180,7 @@
 
     <!-- Mobile menu -->
     <transition name="slidedown" appear>
-      <div class="fixed z-10 w-screen bg-white shadow-sm" v-if="open">
+      <div class="fixed z-10 w-screen bg-white shadow-sm top-16" v-if="open">
         <div class="pt-2 pb-3">
           <NuxtLink
             v-for="item in mobileNavigation"
