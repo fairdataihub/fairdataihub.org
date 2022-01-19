@@ -44,7 +44,7 @@
               <img
                 class="object-cover object-center rounded sm:pt-20 md:pt-0 sm:h-full md:h-auto lg:h-auto sm:w-60 md:w-72 lg:w-80"
                 alt="SODA for SPARC logo"
-                :src="project.imageUrl"
+                :data-blink-uuid="project.imageUrl"
               />
             </div>
             <div
@@ -79,7 +79,7 @@
     >
       <swiper-slide v-for="n of projectsList.length" :virtualIndex="n" :key="n">
         <div class="thumbnail">
-          <img :src="thumbnails[n - 1]" alt="" />
+          <img :data-blink-uuid="thumbnails[n - 1]" alt="" />
         </div>
       </swiper-slide>
     </swiper>
@@ -117,11 +117,11 @@ export default {
   setup() {
     let swiperThumbs = ref(null);
     const thumbnails = [
-      "https://ucarecdn.com/2a8dc700-311d-4bb2-b0d3-8022970754d8/-/preview/-/quality/smart/",
-      "https://ucarecdn.com/6b133fb6-b68b-413c-89a5-54a31a65c66c/-/preview/-/quality/smart/",
-      "https://ucarecdn.com/3ba27e90-3ab4-418f-aa07-05c4ba2c2f55/-/preview/-/quality/smart/",
-      "https://ucarecdn.com/945e1e40-b0e1-40c5-a59d-bc89296cddeb/-/preview/-/quality/smart/",
-      "https://ucarecdn.com/af296ebd-726d-4234-b9ac-449ff7dac3b9/-/preview/-/quality/smart/",
+      "2a8dc700-311d-4bb2-b0d3-8022970754d8",
+      "6b133fb6-b68b-413c-89a5-54a31a65c66c",
+      "3ba27e90-3ab4-418f-aa07-05c4ba2c2f55",
+      "945e1e40-b0e1-40c5-a59d-bc89296cddeb",
+      "af296ebd-726d-4234-b9ac-449ff7dac3b9",
     ];
 
     const setThumbsSwiper = (swiper) => {
