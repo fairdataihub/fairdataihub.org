@@ -36,13 +36,18 @@
             >
               Download now
             </button>
-            <NuxtLink to="/sodaforsparc/docs/getting-started/User-Interface">
+            <a
+              href="https://docs.sodaforsparc.io/"
+              target="_blank"
+              aria-label="SODA for SPARC Documentation"
+              rel="noopener"
+            >
               <button
                 class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
               >
                 Explore the docs
               </button>
-            </NuxtLink>
+            </a>
           </div>
         </div>
         <!-- image div -->
@@ -52,12 +57,10 @@
           >
             <img src="~/assets/backgrounds/dot-grid-grey.svg" alt="Grey grid" />
           </div>
-          <img src="https://i.ibb.co/HCxy4JH/soda-app-macos.png" alt="" />
-          <!-- <v-lazy-image
-            alt="SODA for SPARC logo"
-            src="https://i.ibb.co/HCxy4JH/soda-app-macos.png"
-            src-placeholder="https://i.ibb.co/KXN8cqX/soda-app-macos-min.png"
-          /> -->
+          <img
+            :data-blink-uuid="`2c9abf3a-ee20-4c9a-aefc-334f4e8360e6`"
+            alt="SODA for SPARC app screenshot"
+          />
         </div>
       </div>
     </section>
@@ -76,9 +79,10 @@ export default {
         target: "_blank",
         href: downloadLink,
       }).click();
-      this.$router.push({
-        path: "/sodaforsparc/docs/getting-started/Download-Soda",
-      });
+      Object.assign(document.createElement("a"), {
+        target: "_blank",
+        href: "https://docs.sodaforsparc.io/",
+      }).click();
     },
     getOS: async function () {
       let userAgent = window.navigator.userAgent;
