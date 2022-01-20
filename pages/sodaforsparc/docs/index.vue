@@ -1,15 +1,16 @@
-<template></template>
+<template>
+  Our docs have moved. Please wait while we redirect you to the appropriate
+  page.
+</template>
 
 <script>
 export default {
-  middleware: [
-    function ({ redirect }) {
-      console.log("redirect");
-      return redirect("/sodaforsparc/docs/getting-started/User-Interface");
-    },
-  ],
   mounted() {
-    this.$router.push("/sodaforsparc/docs/getting-started/User-Interface");
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: "https://docs.sodaforsparc.io",
+      }).click();
+    }, 2000);
   },
 };
 </script>
