@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/upload-a-banner-image",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/upload-a-banner-image",
     };
   },
   mounted() {

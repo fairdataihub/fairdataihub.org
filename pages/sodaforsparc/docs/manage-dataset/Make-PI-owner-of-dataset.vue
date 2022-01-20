@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/make-pi-owner-of-dataset",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/make-pi-owner-of-dataset",
     };
   },
   mounted() {

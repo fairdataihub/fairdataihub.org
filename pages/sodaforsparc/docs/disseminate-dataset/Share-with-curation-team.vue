@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/disseminate-dataset/share-with-curation-team",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/disseminate-dataset/share-with-curation-team",
     };
   },
   mounted() {

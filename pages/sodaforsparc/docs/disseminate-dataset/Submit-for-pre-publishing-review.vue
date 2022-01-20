@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/disseminate-dataset/submit-for-pre-publishing-review",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/disseminate-dataset/submit-for-pre-publishing-review",
     };
   },
   mounted() {

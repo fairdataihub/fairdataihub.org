@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-metadata/create-changes-txt",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/prepare-metadata/create-changes-txt",
     };
   },
   mounted() {

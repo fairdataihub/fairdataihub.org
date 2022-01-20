@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/add-edit-description",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/add-edit-description",
     };
   },
   mounted() {

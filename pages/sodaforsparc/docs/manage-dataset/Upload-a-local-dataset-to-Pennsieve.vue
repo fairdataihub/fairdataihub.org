@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/upload-a-local-dataset-to-pennsieve",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/upload-a-local-dataset-to-pennsieve",
     };
   },
   mounted() {

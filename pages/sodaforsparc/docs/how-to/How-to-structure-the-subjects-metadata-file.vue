@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/how-to/how-to-structure-the-subjects-metadata-file",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/how-to/how-to-structure-the-subjects-metadata-file",
     };
   },
   mounted() {

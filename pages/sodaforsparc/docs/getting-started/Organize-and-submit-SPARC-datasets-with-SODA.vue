@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/getting-started/organize-and-submit-sparc-datasets-with-soda",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/getting-started/organize-and-submit-sparc-datasets-with-soda",
     };
   },
   mounted() {

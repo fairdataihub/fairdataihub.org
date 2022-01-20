@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-metadata/create-submission",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/prepare-metadata/create-submission",
     };
   },
   mounted() {

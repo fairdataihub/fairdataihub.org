@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/sending-log-files-to-soda-team",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/common-errors/sending-log-files-to-soda-team",
     };
   },
   mounted() {

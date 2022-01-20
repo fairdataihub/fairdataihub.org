@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/add-edit-subtitle",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/add-edit-subtitle",
     };
   },
   mounted() {

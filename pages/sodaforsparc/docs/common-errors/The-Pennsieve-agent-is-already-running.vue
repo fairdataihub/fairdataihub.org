@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/pennsieve-agent-is-already-running",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/common-errors/pennsieve-agent-is-already-running",
     };
   },
   mounted() {

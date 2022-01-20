@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-dataset/step-2",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/prepare-dataset/step-2",
     };
   },
   mounted() {

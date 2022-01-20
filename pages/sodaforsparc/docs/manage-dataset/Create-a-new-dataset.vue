@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/create-a-new-dataset",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/create-a-new-dataset",
     };
   },
   mounted() {

@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/connect-your-pennsieve-account-with-soda",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/connect-your-pennsieve-account-with-soda",
     };
   },
   mounted() {

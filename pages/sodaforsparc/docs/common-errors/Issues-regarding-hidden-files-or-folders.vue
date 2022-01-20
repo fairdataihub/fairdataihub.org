@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/issues-regarding-hidden-files-or-folders",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/common-errors/issues-regarding-hidden-files-or-folders",
     };
   },
   mounted() {

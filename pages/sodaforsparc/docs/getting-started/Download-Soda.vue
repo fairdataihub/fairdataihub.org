@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/getting-started/download-soda",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/getting-started/download-soda",
     };
   },
   mounted() {

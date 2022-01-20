@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/installing-the-pennsieve-agent",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/common-errors/installing-the-pennsieve-agent",
     };
   },
   mounted() {

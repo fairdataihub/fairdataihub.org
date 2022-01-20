@@ -45,7 +45,8 @@ export default {
   data() {
     return {
       RedirectData,
-      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-metadata/connect-your-airtable-account-with-soda",
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/prepare-metadata/connect-your-airtable-account-with-soda",
     };
   },
   mounted() {
