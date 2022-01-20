@@ -59,9 +59,8 @@
         <div class="relative z-10 py-2 lg:max-w-2xl sm:py-0">
           <img
             style="width: 80%"
-            data-aos="fade-in"
             class="relative z-10 mx-auto rounded"
-            src="https://ucarecdn.com/e5c4a022-9a55-49b2-8af5-d5d4d8a74057/"
+            :data-blink-uuid="`e5c4a022-9a55-49b2-8af5-d5d4d8a74057`"
             alt="aqua logo"
           />
         </div>
