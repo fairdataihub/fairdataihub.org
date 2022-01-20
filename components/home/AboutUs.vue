@@ -9,7 +9,7 @@
       >
         <ClientOnly>
           <!-- <LottieComponentVue :animationData="TeamData" /> -->
-          <Vue3Lottie :animationData="TeamData"  />
+          <Vue3Lottie :animationData="TeamData" />
         </ClientOnly>
       </div>
 
