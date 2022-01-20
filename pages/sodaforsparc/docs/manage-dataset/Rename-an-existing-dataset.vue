@@ -1,49 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> Rename an existing dataset - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Rename an existing dataset`"> </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          You can rename an existing dataset on Pennsieve through this feature
-          of SODA. The name of the dataset will be displayed as the title of the
-          dataset when the dataset becomes public. It is thus advised to make
-          sure that your dataset title is different than your other dataset
-          titles and that it is relatively informative.
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          Select/confirm your Pennsieve account and the dataset that you wish to
-          rename. If you have not connected your Pennsieve account with SODA
-          yet,
-          <NuxtLink
-            to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="text-blue-600 hover:underline"
-          >
-            <span>use the instructions available here</span> </NuxtLink
-          >.
-        </li>
-        <li>Enter a new name and click "Rename".</li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/rename-an-existing-dataset",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

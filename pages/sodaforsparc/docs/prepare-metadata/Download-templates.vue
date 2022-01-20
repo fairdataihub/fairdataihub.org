@@ -1,56 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> Download templates - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Download template`"> </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          The Curation Team has release templates for all the metadata files
-          required in SPARC datasets. These templates are available in SPARC
-          Dataset Structure which may be
-          <a
-            href="https://github.com/SciCrunch/sparc-curation/releases/tag/dataset-template-1.2.3"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            downloaded as a zip file</a
-          >. They are used in SODA when generating the metadata files. You can
-          also download them conveniently in this SODA feature in case you wish
-          to fill them out manually.
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          Simply click on the name of the file and select the destination folder
-          to download.
-        </p>
-      </div>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Download-templates/download-templates.PNG?raw=true"
-          alt="A screenshot of our interface for downloading templates released by the Curation Team."
-        />
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-metadata/download-templates",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

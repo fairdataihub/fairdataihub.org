@@ -1,47 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> Assign a license - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Assign a license`"> </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          All SPARC datasets must have the following metadata: subtitle,
-          description, banner image, and license. This interface allows you to
-          easily assign the Creative Commons Attribution (CC-BY) License to your
-          dataset, which is mandatory for all SPARC datasets.
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          Select/confirm your Pennsieve account and dataset. If you have not
-          connected your Pennsieve account with SODA yet,
-          <NuxtLink
-            to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="text-blue-600 hover:underline"
-          >
-            <span>use the instructions available here</span> </NuxtLink
-          >.
-        </li>
-        <li>Click on "Assign Creative Commons Attribution (CC-BY) license".</li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/assign-a-license",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

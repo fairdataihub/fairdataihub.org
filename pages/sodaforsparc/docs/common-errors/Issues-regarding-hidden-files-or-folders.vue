@@ -1,76 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Issues regarding hidden files or folders - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Issues regarding hidden files or folders`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          There are some issues related to hidden files and folders that SODA
-          users have experienced. If you get any errors caused by hidden file(s)
-          or folder(s) and do not know how to find them, it is very likely that
-          such file(s) or folder(s) are hidden on your computer.
-        </p>
-      </div>
-
-      <base-docs-subtitle> Solution </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          To learn about how to show hidden files and folders, please visit the
-          link below for your Operating system:
-        </p>
-      </div>
-
-      <ul class="list-disc list-outside docs-ul">
-        <li>
-          <a
-            href="https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-10-97fbc472-c603-9d90-91d0-1166d1d9f4b5#:~:text=Open%20File%20Explorer%20from%20the,folders%2C%20and%20drives%20and%20OK."
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            Windows users
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.ionos.com/digitalguide/server/configuration/showing-hidden-files-on-a-mac/#:~:text=Keyboard%20shortcuts%20are%20probably%20the,keys%20at%20the%20same%20time."
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            macOS users
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://help.ubuntu.com/stable/ubuntu-help/files-hidden.html.en#:~:text=If%20you%20want%20to%20see,files%20that%20are%20not%20hidden."
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            Ubuntu users
-          </a>
-        </li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/issues-regarding-hidden-files-or-folders",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

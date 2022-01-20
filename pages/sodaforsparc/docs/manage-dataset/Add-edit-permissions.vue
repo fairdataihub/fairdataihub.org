@@ -1,214 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> Add edit permissions - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Add edit permissions`"> </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          There are four roles available for a dataset: owner, manager, editor,
-          and viewer. Each of them provides different permissions for making
-          changes to a dataset. These permissions are summarized in the table
-          below. You can find out more about permissions on the associated
-          <a
-            href="https://docs.pennsieve.io/docs/dataset-permissions"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-            >Pennsieve help page</a
-          >.
-        </p>
-        <p>
-          When you create a dataset, it is private and accessible only to you
-          (you have 'owner' permissions on the dataset). You can change who can
-          access and modify your dataset by giving permissions to members or
-          entire teams.
-        </p>
-      </div>
-
-      <div class="flex flex-col mb-6">
-        <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
-          <div
-            class="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8"
-          >
-            <div
-              class="overflow-hidden border-b border-gray-200 shadow sm:rounded-lg"
-            >
-              <table class="relative min-w-full divide-y divide-gray-200">
-                <thead class="bg-gray-50">
-                  <tr class="divide-x divide-gray-200">
-                    <th scope="col" class="">Permissions</th>
-                    <th scope="col" class="">Owner</th>
-                    <th scope="col" class="">Manager</th>
-                    <th scope="col" class="">Editor</th>
-                    <th scope="col" class="">Viewer</th>
-                  </tr>
-                </thead>
-                <tbody class="bg-white divide-y divide-gray-200">
-                  <tr
-                    v-for="item in permissionsList"
-                    :key="item.permission"
-                    class="divide-x divide-gray-200"
-                  >
-                    <td class="px-6 py-4 text-black">
-                      {{ item.permission }}
-                    </td>
-                    <td class="px-6 py-4">{{ item.owner }}</td>
-                    <td class="px-6 py-4">{{ item.manager }}</td>
-                    <td class="px-6 py-4">{{ item.editor }}</td>
-                    <td class="px-6 py-4">{{ item.viewer }}</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          Start by selecting/confirming your Pennsieve account and dataset. If
-          you have not connected your Pennsieve account with SODA yet,
-          <NuxtLink
-            to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="text-blue-600 hover:underline"
-          >
-            <span>use the instructions available here</span> </NuxtLink
-          >. The current permissions on the selected dataset will be displayed.
-        </p>
-      </div>
-
-      <base-docs-subtitle>
-        Add/edit permissions for team members or teams
-      </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>Click on "Add/edit user permissions".</li>
-        <li>Select the user from the dropdown list.</li>
-        <li>Select a role from the dropdown list.</li>
-        <li>Click on "Add permission for user".</li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Manage-permissions/add-permissions.gif?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
-
-      <base-docs-subtitle> Add/edit permissions for teams </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>Click on "Add/edit team permissions".</li>
-        <li>Select the team from the dropdown list.</li>
-        <li>Select a role from the dropdown list.</li>
-        <li>Click on "Add permission for team".</li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
   data() {
     return {
-      permissionsList: [
-        {
-          permission: "View/download files",
-          owner: "✅",
-          manager: "✅",
-          editor: "✅",
-          viewer: "✅",
-        },
-        {
-          permission: "Edit name of a dataset",
-          owner: "✅",
-          manager: "✅",
-          editor: "✅",
-          viewer: "❌",
-        },
-        {
-          permission: "Upload/delete files",
-          owner: "✅",
-          manager: "✅",
-          editor: "✅",
-          viewer: "❌",
-        },
-        {
-          permission: "Add metadata",
-          owner: "✅",
-          manager: "✅",
-          editor: "❌",
-          viewer: "❌",
-        },
-        {
-          permission: "Manage permissions",
-          owner: "✅",
-          manager: "✅",
-          editor: "❌",
-          viewer: "❌",
-        },
-        {
-          permission: "Change dataset status",
-          owner: "✅",
-          manager: "✅",
-          editor: "❌",
-          viewer: "❌",
-        },
-        {
-          permission: "Share dataset with SPARC consortium (embargo)",
-          owner: "✅",
-          manager: "✅",
-          editor: "❌",
-          viewer: "❌",
-        },
-        {
-          permission: "Reserve DOI",
-          owner: "✅",
-          manager: "✅",
-          editor: "❌",
-          viewer: "❌",
-        },
-        {
-          permission: "Submit for pre-publishing review",
-          owner: "✅ (+ORCID linked)",
-          manager: "❌",
-          editor: "❌",
-          viewer: "❌",
-        },
-        {
-          permission: "Delete dataset",
-          owner: "✅",
-          manager: "❌",
-          editor: "❌",
-          viewer: "❌",
-        },
-        {
-          permission: "Change owner",
-          owner: "✅",
-          manager: "❌",
-          editor: "❌",
-          viewer: "❌",
-        },
-      ],
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/add-edit-permissions",
     };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
   },
 };
 </script>
-
-<style lang="postcss" scoped>
-th {
-  @apply px-6 py-3 text-left text-base font-medium text-black  sticky top-0 z-10;
-}
-</style>

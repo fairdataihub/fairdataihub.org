@@ -1,94 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> User Interface - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`User Interface`"> </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle>
-        Click on the image below and watch our short video to get familiarized
-        with SODA's user interface
-      </base-docs-subtitle>
-
-      <div class="flex justify-start mx-8 my-5">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/Fyn9R0Tk_pU"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-
-      <base-docs-subtitle> Notes </base-docs-subtitle>
-
-      <ul class="ml-4 list-disc list-outside">
-        <li
-          v-for="item in notesList"
-          :key="item.content"
-          v-html="item.content"
-          class="text-black font-asap"
-        ></li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  scrollToTop: true,
-  layout: "docs",
+  components: {
+    Vue3Lottie,
+  },
   data() {
     return {
-      notesList: [
-        {
-          content:
-            "The window size of the application frame can be easily adjusted to fit your screen by dragging the borders.",
-        },
-        {
-          content:
-            "Closing the interface will stop any on-going process (dataset organization, uploading, etc).",
-        },
-        {
-          content:
-            "Click on the document icon next to each feature's title to open the related documentation page in your browser.",
-        },
-        {
-          content:
-            "A pop-up message will appear when launching the app if a newer version is available for download.",
-        },
-        {
-          content: `<svg
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fas"
-          data-icon="info-circle"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          class="inline-flex h-4 svg-inline--fa fa-info-circle fa-w-16 fa-3x"
-        >
-          <path
-            fill="currentColor"
-            d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
-            class=""
-            data-darkreader-inline-fill=""
-            style="--darkreader-inline-fill: currentColor"
-          ></path>
-        </svg>
-        Tooltips are used throughout the interface to provide users with
-        additional information.`,
-        },
-      ],
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/getting-started/user-interface",
     };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
   },
 };
 </script>
-
-<style></style>

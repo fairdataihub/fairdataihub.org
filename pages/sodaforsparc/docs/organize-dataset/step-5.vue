@@ -1,54 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Organize dataset - Step 5: Request manifest files - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Organize dataset Step 5: Request manifest files`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <div class="p-parent-div">
-        <p>
-          Manifest files are mandatory for all datasets. To learn more about
-          this metadata file we refer to our corresponding
-          <NuxtLink
-            to="/sodaforsparc/docs/how-to/How-to-structure-the-manifest-metadata-file"
-            class="text-blue-600 hover:underline"
-          >
-            <span> "How to"</span>
-          </NuxtLink>
-          page.
-        </p>
-        <p>
-          To generate and include manifest files automatically, simply toggle
-          the option to "Yes". Then, when you generate the dataset (Step 6), a
-          "manifest.xlsx" file will be added to each high-level SPARC folder
-          with the "filename", "timestamp", and "file type" fields automatically
-          populated in the correct format while the "description" and
-          "Additional Metadata" fields will be filled when specified during Step
-          3. Note that any existing manifest files at the target location for
-          generating the dataset will be replaced.
-        </p>
-      </div>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/request-manifests.PNG?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-dataset/step-5",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

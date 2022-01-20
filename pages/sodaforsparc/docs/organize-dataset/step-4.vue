@@ -1,62 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Organize dataset Step 4: Specify high level metadata files - SODA for
-          SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title
-      :title="`Organize dataset Step 4: Specify high level metadata files`"
-    >
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <div class="p-parent-div">
-        <p>
-          Click on the applicable panel to include the high-level metadata files
-          of your choice. Note that submission, dataset_description, and
-          subjects files are mandatory for all datasets while the others are
-          optional.
-        </p>
-      </div>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step4-metadata-files.gif?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
-
-      <base-docs-subtitle> Code-related metadata files: </base-docs-subtitle>
-      <div class="p-parent-div">
-        <p>
-          If you specify a code high level folder at Step 2: Specify high-level
-          folders, you will be able to import the code-related metadata files:
-          code_description, inputs_metadata, and outputs_metadata.
-        </p>
-      </div>
-
-      <base-docs-subtitle> Note: </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          If you start with an existing local or Pennsieve dataset that has
-          existing SPARC metadata files, these files will be automatically
-          extracted and loaded here. Replace these existing files by uploading
-          new ones or simply remove them from this step if required.
-        </p>
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-dataset/step-4",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

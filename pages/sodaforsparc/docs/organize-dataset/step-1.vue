@@ -1,68 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Organize dataset - Step 1: Getting started - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Organize dataset Step 1: Getting started`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <div class="p-parent-div">
-        <p>
-          Select between the following 4 options to get started with your
-          dataset organization process with SODA:
-        </p>
-      </div>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          <strong> Prepare a new dataset: </strong>
-          Select this option if you want to start organizing and curating a new
-          dataset. SODA will take you step-by-step through the curation process
-          to organize your dataset, adding your metadata files, and generating
-          your dataset onto Pennsieve.
-        </li>
-        <li>
-          <strong>
-            Continue with a previously initiated dataset in SODA:
-          </strong>
-          Select this option if you previously saved your progress in SODA and
-          would like to continue working on it.
-        </li>
-        <li>
-          <strong> Continue working on an existing local dataset: </strong>
-          Select this option if you have a local dataset stored on your computer
-          that you want to continue working on. Existing high-level SPARC
-          folders and metadata files will be automatically extracted and loaded
-          into SODA so you can continue working on them.
-        </li>
-        <li>
-          <strong> Continue working on an existing Pennsieve dataset: </strong>
-          Select this option if you have an existing dataset on Pennsieve that
-          you want to continue working on. Existing high-level SPARC folders and
-          metadata files will be automatically extracted and loaded into SODA so
-          you can continue working on them.
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/getting-started.PNG?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-dataset/step-1",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

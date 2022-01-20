@@ -1,89 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Organize dataset - Step 3: Structure dataset files - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title
-      :title="`Organize dataset Step 3: Structure dataset files`"
-    >
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <div class="p-parent-div">
-        <p>
-          Virtually structure your dataset using this interface as if you were
-          organizing it on your computer but without actually modifying any
-          local files. All your requested actions (files to be included, folders
-          to be created, metadata information to be added, etc.) will be
-          registered by SODA and only implemented when the dataset is generated
-          during Step 6.
-        </p>
-      </div>
-
-      <ul class="list-disc list-outside docs-ul">
-        <li>Go inside a folder by double-clicking on it.</li>
-        <li>
-          Import files/folders inside a folder using drag-and-drop or the
-          "Import" menu located in the upper right corner.
-        </li>
-        <li>
-          reate a new folder using the "New folder" button located in the upper
-          right corner. Note that this is only possible inside a high-level
-          SPARC folder. To create a new high-level SPARC folder, go back to Step
-          2.
-        </li>
-        <li>
-          Rename files/folders using the right-click menu option "Rename".
-        </li>
-        <li>
-          Remove files/folders using the right-click menu option "Delete".
-        </li>
-        <li>Move files/folders using the right-click menu option "Move"</li>
-        <li>
-          Multiple-select files/folders by either drag-selecting items or
-          holding Ctrl and clicking items.
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part1.gif?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
-
-      <ul class="list-disc list-outside docs-ul">
-        <li>
-          Use the "Details" option from the right-click menu to see the actual
-          path of the file and include metadata (description, Additional
-          Metadata) which will be included in the manifest files if you request
-          SODA to generate them automatically for you (Step 5).
-        </li>
-        <li>
-          Use the arrow located in the upper left corner to move up a folder.
-          The current location in the dataset is indicated right next to the
-          arrow.
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/organize-step3-part2-files.gif?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-dataset/step-3",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

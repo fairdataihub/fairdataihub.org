@@ -1,120 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Connect your Airtable account with SODA - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Connect your Airtable account with SODA`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          SODA make use of the
-          <a
-            href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            SPARC Airtable sheet</a
-          >
-          to automatically get award numbers and contributors information such
-          that you don't have to enter them manually in your metadata file. To
-          enable this, you have to connect your Airtable account with SODA. You
-          will only have to do that one time, SODA will then automatically
-          connect to your Airtable account during subsequent uses.
-        </p>
-        <p>
-          We suggest keeping your group information up to date in the Airtable
-          sheet, especially contributors' names, email, affiliations, and ORCID
-          to help SODA help you!
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          Create an
-          <a
-            href="https://airtable.com/"
-            target="_blank"
-            rel="nofollow"
-            class="text-blue-600 hover:underline"
-          >
-            Airtable account</a
-          >.
-        </li>
-        <li>
-          Get access to the
-          <a
-            href="https://airtable.com/tblFGEvUoTbbG6tJy/viwWBpydzfYQsvNFz?blocks=hide"
-            target="_blank"
-            rel="nofollow"
-            class="text-blue-600 hover:underline"
-          >
-            SPARC Airtable sheet</a
-          >
-          (contact Dr. Charles Horn at
-          <a
-            href="mailto:chorn@pitt.edu"
-            target="_blank"
-            rel="nofollow"
-            class="text-blue-600 hover:underline"
-          >
-            chorn@pitt.edu</a
-          >).
-        </li>
-        <li>
-          Under the "Create submission.xlsx" feature from the "Prepare Metadata"
-          section, start by either Creating a submission file from scratch with
-          SODA or Continue working on an existing submission.xlsx file. Click on
-          "Click here to import my SPARC award from Airtable" to connect SODA
-          with your Airtable account.
-        </li>
-        <li>
-          Enter your Airtable API key in the dedicated SODA interface. Checkout
-          the
-          <a
-            href="https://support.airtable.com/hc/en-us/articles/219046777-How-do-I-get-my-API-key"
-            target="_blank"
-            rel="nofollow"
-            class="text-blue-600 hover:underline"
-          >
-            Airtable Help page</a
-          >
-          to learn how to obtain or re-generate your API key. Note that the key
-          will be stored locally on your computer and the SODA Team will not
-          have access to it.
-        </li>
-        <li>
-          Click on "Add account".
-          <strong>Note: </strong>You will have to do this only once and the
-          Airtable connection will be then remembered by SODA during subsequent
-          uses.
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Prepare-metadata/Connect-to-Airtable/connect-to-airtable-new.gif?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-metadata/connect-your-airtable-account-with-soda",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

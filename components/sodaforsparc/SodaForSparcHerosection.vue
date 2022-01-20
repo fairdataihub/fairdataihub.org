@@ -50,7 +50,7 @@
             </a>
             <NuxtLink
               to="/sodaforsparc/docs/getting-started/User-Interface"
-              class="hidden"
+              class=""
             >
               <button
                 class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"

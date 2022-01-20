@@ -1,67 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> Sending log files to SODA Team - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Sending log files to SODA Team`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          The SODA app saves all errors in several log files on your computer.
-          In order to solve user issues, the SODA Team usually needs to take a
-          look at those log files.
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to obtain the log files </base-docs-subtitle>
-
-      <base-docs-heading>
-        Send us all the files located here (you can zip that logs folder and
-        simply email/Slack it to us
-      </base-docs-heading>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>Windows: C:\Users\_your_username_\AppData\Roaming\SODA\logs</li>
-        <li>macOS: ~/_your_username_/Library/Logs/SODA</li>
-        <li>Ubuntu: /home/_your_username_/.config/SODA/logs</li>
-      </ul>
-
-      <base-docs-subtitle>
-        Common issues regarding the log files
-      </base-docs-subtitle>
-
-      <base-docs-heading>
-        Unable to find the AppData (Windows), .config (Ubuntu), or Library
-        (macOS) folder
-      </base-docs-heading>
-
-      <div class="p-parent-div">
-        <p>
-          <strong>Solution</strong>: It is very likely that the folder is hidden
-          on your computer. To learn about how to show hidden files and folders,
-
-          <NuxtLink
-            to="/sodaforsparc/docs/common-errors/Issues-regarding-hidden-files-or-folders"
-            class="text-blue-600 hover:underline"
-          >
-            <span>please visit here</span> </NuxtLink
-          >.
-        </p>
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/sending-log-files-to-soda-team",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

@@ -1,84 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> Upload a banner image - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Upload a banner image`"> </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          All SPARC datasets must have the following metadata on Pennsieve:
-          subtitle, description, banner image, and license. This interface
-          allows you to easily add a banner image to your dataset. This image
-          will be associated with the dataset and used as a thumbnail once the
-          dataset is published.
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          Select/confirm your Pennsieve account and dataset. If you have not
-          connected your Pennsieve account with SODA yet,
-          <NuxtLink
-            to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="text-blue-600 hover:underline"
-          >
-            <span>use the instructions available here</span> </NuxtLink
-          >.
-        </li>
-        <li>Click on "Edit banner image"</li>
-        <li>Click on "Import image" in the new pop-up window.</li>
-        <li>Select the image file you want to use as a banner image.</li>
-        <li>
-          Crop the file as desired. Note that all banner images must be square,
-          have a minimum display size of 512x512 px (1024x1024 px preferred),
-          and have a maximum file size of 5 MB.
-        </li>
-        <li>Click on "Save changes".</li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Add-metadata/banner-image.gif?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
-
-      <base-docs-subtitle> Note </base-docs-subtitle>
-
-      <ul class="list-disc list-outside docs-ul">
-        <li>
-          During subsequent uses, SODA will automatically connect to the
-          Pennsieve account you were connected to the last time.
-        </li>
-        <li>
-          Neither the SODA Team nor anyone else besides you will have access to
-          your Pennsieve account. The generated login information required for
-          future sessions on your Pennsieve account will be stored locally on
-          your computer only.
-        </li>
-        <li>
-          If you do not wish to provide your login details to SODA, you can
-          create a set of API keys on Pennsieve and provide it to SODA.
-          Instructions for this process can be found at Connect your Pennsieve
-          account with SODA (API Key)
-        </li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/manage-dataset/upload-a-banner-image",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

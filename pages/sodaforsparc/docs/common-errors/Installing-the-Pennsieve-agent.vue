@@ -1,57 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> Installing the Pennsieve agent - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Installing the Pennsieve agent`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Issue Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          <i> Name 'AgentInstallationError' </i>
-          issue happens when SODA detects that you have not installed the
-          Pennsieve agent. The Pennsieve agent is necessary for the dataset
-          upload process.
-        </p>
-      </div>
-
-      <base-docs-subtitle> Solution </base-docs-subtitle>
-      <div class="p-parent-div">
-        <p>
-          You can follow the
-          <a
-            href="https://docs.pennsieve.io/docs/the-pennsieve-agent"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            instructions provided here
-          </a>
-          to install the Pennsieve agent. For any other questions, please visit
-          the dedicated
-          <a
-            href="https://docs.pennsieve.io/docs"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            Pennsieve Documentation page</a
-          >.
-        </p>
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/installing-the-pennsieve-agent",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

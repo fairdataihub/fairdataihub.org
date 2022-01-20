@@ -1,82 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          How to get your Data Deliverables document - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`How to get your Data Deliverables document`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="my-2">
-        <p class="mb-2 text-black font-asap">
-          The milestones and associated datasets as agreed between awardees and
-          SPARC are summarized in a document called Data Deliverables document.
-          This documents lists, among other, the milestones of the award, the
-          expected datasets to be associated with each milestone, and the
-          tentative submission date for each of these datasets. The awardee are
-          then expected to submit each dataset by the agreed submission date.
-          When a dataset is submitted by the awardees, the milestone and
-          submission date associated with it must be included in the
-          <span class="span-content print:text-sm print:text-black">
-            <NuxtLink
-              to="/sodaforsparc/docs/prepare-metadata/Create-submission-xlsx"
-              class="text-blue-600 hover:underline print:text-sm print:text-black"
-            >
-              <span class="font-asap print:text-sm print:text-black">
-                submission
-              </span>
-            </NuxtLink>
-          </span>
-          metadata file. In SODA, we provide you the option to import your Data
-          Deliverables document such that you can easily prepare you submission
-          metadata file without errors.
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          To obtain the Data Deliverables document associated with your award,
-          simply ask your PI or grant manager.
-          <a
-            href="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/src/file_templates/DataDeliverablesDocument-template.docx?raw=true"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            Download a template
-          </a>
-          of the Data Deliverables document to see the expected format. A
-          screenshot of a sample Dataset Deliverables document is provided
-          below. Most importantly, it should be in the docx format and at least
-          one table should be included with these exact three headers: 'Related
-          milestone, aim, or task', 'Description of data', 'Expected date of
-          completion'." If any of these headers need to be modified, make sure
-          to edit them before importing the file in SODA.
-        </p>
-      </div>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/How%20to/submission/data-deliverables-doc-example.PNG?raw=true"
-          alt="screenshot of sample Dataset Deliverables document"
-        />
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/how-to/how-to-get-your-data-deliverables-document",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

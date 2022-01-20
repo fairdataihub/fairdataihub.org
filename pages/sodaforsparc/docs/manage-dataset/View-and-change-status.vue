@@ -1,99 +1,60 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> View and change status - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`View and change status`"> </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          The status of a dataset is used to allow easy communication between
-          SPARC investigators and the SPARC Dataset Curation Team regarding the
-          progress of a dataset through the curation process. There are 12
-          status options that each SPARC Dataset will go through one by one
-          during the submission and curation process. Each status indicates
-          which team is responsible for the step. The dataset status changes
-          required from the investigators are done automatically in SODA when
-          they execute the associated actions so investigators should not have
-          to use this features in most cases.
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          Select/confirm your Pennsieve account and dataset. If you have not
-          connected your Pennsieve account with SODA yet,
-          <NuxtLink
-            to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="text-blue-600 hover:underline"
-          >
-            <span>use the instructions available here</span> </NuxtLink
-          >.
-        </li>
-        <li>Select the desired option from the list.</li>
-        <li>
-          Fill in your Pennsieve "Email Address" and "Password" and click
-          "Connect to Pennsieve"
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/View-change-status/view-change-status.PNG?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
-
-      <base-docs-subtitle> Note </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          Typically, SPARC investigators should only have to change dataset
-          status to one of the following options:
-        </p>
-      </div>
-
-      <ul class="list-disc list-outside docs-ul">
-        <li>
-          "02. Work in Progress (Investigator)": Select to indicate that you are
-          working on your dataset
-        </li>
-        <li>
-          "03. Ready for Curation (Investigator)": Select to inform the SPARC
-          Dataset Curation Team that your dataset is ready to be reviewed. You
-          dataset will be added to the curation queue.
-        </li>
-        <li>
-          "11. Complete, Under Embargo (Investigator)": Select to share your
-          dataset with the SPARC Consortium. This will give viewer permissions
-          to the SPARC Embargoed Data Sharing Group and will therefore allow any
-          SPARC investigator who has signed the SPARC Non-disclosure form to see
-          your data.
-        </li>
-        <li>
-          "12. Published (Investigator)": Select this option once you have
-          published your dataset. One year after the initial upload of your
-          dataset, you must publish your dataset to Pennsieve Discover, which
-          populates the SPARC Portal. To do this, open the dataset of interest
-          on the Pennsieve webpage, click on the Settings tab on the left, and
-          select Publish Dataset.
-        </li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/view-and-change-status",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

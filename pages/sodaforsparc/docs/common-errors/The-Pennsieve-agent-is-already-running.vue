@@ -1,81 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title> The Pennsieve agent is already running - SODA for SPARC </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`The Pennsieve agent is already running`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Issue Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          "The Pennsieve agent is already running" issue happens when SODA tries
-          to initiate an upload, but an existing pennsieve_agent process is
-          already running in the background. This oftentimes is the result of an
-          interrupted and unfinished Pennsieve upload from a previous session.
-        </p>
-      </div>
-
-      <base-docs-subtitle> Solution </base-docs-subtitle>
-      <div class="p-parent-div">
-        <p>
-          A general solution for this issue is to end the pennsieve.exe process
-          that is still running. Click the below to learn about how to end a
-          task/process for your Operating system.
-        </p>
-      </div>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          <a
-            href="https://winaero.com/kill-process-windows-10/"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            Windows</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://support.apple.com/guide/activity-monitor/quit-a-process-actmntr1002/mac"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            MAC</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.cyberciti.biz/faq/stop-process-ubuntu-linux-command/"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-          >
-            Ubuntu</a
-          >
-        </li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Common-errors/blackfynn-agent-running-error.gif?raw=true"
-          alt="A GIF illustrating how to kill a process in Windows."
-        />
-      </div>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/common-errors/pennsieve-agent-is-already-running",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>

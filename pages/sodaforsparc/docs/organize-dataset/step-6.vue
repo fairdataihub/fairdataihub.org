@@ -1,100 +1,59 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Organize dataset - Step 6: Generate dataset - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title :title="`Organize dataset Step 6: Generate dataset`">
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <div class="p-parent-div">
-        <p>
-          The dataset will be generated based on the information provided during
-          the previous steps. It could be generated locally on your computer or
-          directly on Pennsieve.
-        </p>
-        <p>
-          If you select to generate your dataset locally, it will be generated
-          at the desired location on your computer. No modifications will be
-          made to the original local files/folders specified during the previous
-          steps.
-        </p>
-      </div>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          Select the desired destination to generate the dataset on your
-          computer.
-        </li>
-        <li>
-          Enter the name of the new dataset (a folder with this name will be
-          created at the selected destination).
-        </li>
-        <li>Click "Generate" to create your dataset.</li>
-      </ul>
-
-      <div class="img-parent-div">
-        <img
-          src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-1.gif?raw=true"
-          alt="screenshot of soda"
-        />
-      </div>
-
-      <div class="p-parent-div">
-        <p>
-          If you select to generate your dataset directly on Pennsieve, it will
-          be generated on the Pennsieve dataset with the specified structure. No
-          modifications will be made to the original local files/folders
-          specified during the previous step.
-        </p>
-      </div>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>Select desired Pennsieve account from the drop-down list.</li>
-        <li>
-          Select to generate on a new Pennsieve dataset or to use an existing
-          one.
-        </li>
-      </ul>
-
-      <ul class="list-disc list-outside docs-ul">
-        <li>
-          If you select to generate on a new Pennsieve dataset, specify a name
-          for it.
-
-          <div class="img-parent-div">
-            <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-21.gif?raw=true"
-              alt="screenshot of soda"
-            />
-          </div>
-        </li>
-        <li>
-          If you select to generate on an existing Pennsieve dataset, select one
-          from the drop-down list, and tell SODA how to handle any existing
-          files/folders specified in your dataset that may already exist on the
-          selected Pennsieve dataset.
-
-          <div class="img-parent-div">
-            <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Organize-dataset/generate-3.gif?raw=true"
-              alt="screenshot of soda"
-            />
-          </div>
-        </li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation: "https://docs.sodaforsparc.io/docs/prepare-dataset/step-6",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>
