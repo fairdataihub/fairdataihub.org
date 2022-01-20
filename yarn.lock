@@ -5902,10 +5902,10 @@ vue-style-loader@^4.1.3:
     hash-sum "^1.0.2"
     loader-utils "^1.0.2"
 
-vue3-lottie@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/vue3-lottie/-/vue3-lottie-1.1.0.tgz#9aa2ee751350f83846655a1c0612678797d09220"
-  integrity sha512-PBDBerxcC4XbqdkQyTHII12EQuU9/wUr1qlciHqjyg9QEuuHcxIRsuVbftRi0GvFlMZFjLwT8BPO5YaMvH4lkg==
+vue3-lottie@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/vue3-lottie/-/vue3-lottie-1.1.1.tgz#170ad18e17e87388c726bfa65083a8e3583ffcd0"
+  integrity sha512-335hM30zg8VT4NmmGGeHNIK3N9sS9PHyMUYLgHA5zgQ1PZgpdzrOOOvHR9/qbII6CP0mYP3KCng6sGlIt9GfTg==
   dependencies:
     lottie-web "^5.8.1"
     vue-class-component "^8.0.0-0"
