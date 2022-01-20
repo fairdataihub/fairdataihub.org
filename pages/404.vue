@@ -8,7 +8,8 @@
       >
         <div class="block w-full max-w-md mx-auto mb-16 md:mt-0 lg:max-w-2xl">
           <ClientOnly>
-            <LottieComponentVue :animationData="ErrorData" />
+            <!-- <LottieComponentVue :animationData="ErrorData" /> -->
+            <Vue3Lottie :animationData="ErrorData" />
           </ClientOnly>
         </div>
         <div
@@ -34,13 +35,15 @@
 </template>
 
 <script>
-import LottieComponentVue from "~~/components/lottie/LottieComponent.vue";
+// import LottieComponentVue from "~~/components/lottie/LottieComponent.vue";
+import Vue3Lottie from "vue3-lottie";
 
 import ErrorData from "../assets/lotties/error.json";
 
 export default {
   components: {
-    LottieComponentVue,
+    // LottieComponentVue,
+    Vue3Lottie,
   },
   data() {
     return {

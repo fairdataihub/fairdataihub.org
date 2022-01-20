@@ -91,7 +91,13 @@
 
           <div class="flex flex-col items-center justify-center w-full">
             <ClientOnly>
-              <LottieComponentVue
+              <!-- <LottieComponentVue
+                v-if="showLoading"
+                :animationData="LoadingData"
+                :width="200"
+                :height="200"
+              /> -->
+              <Vue3Lottie
                 v-if="showLoading"
                 :animationData="LoadingData"
                 :width="200"
@@ -100,7 +106,14 @@
             </ClientOnly>
 
             <ClientOnly>
-              <LottieComponentVue
+              <!-- <LottieComponentVue
+                v-if="showSuccess"
+                :animationData="EmailSuccessData"
+                :width="100"
+                :height="100"
+                :loop="1"
+              /> -->
+              <Vue3Lottie
                 v-if="showSuccess"
                 :animationData="EmailSuccessData"
                 :width="100"
@@ -110,7 +123,14 @@
             </ClientOnly>
 
             <ClientOnly>
-              <LottieComponentVue
+              <!-- <LottieComponentVue
+                v-if="showError"
+                :animationData="EmailErrorData"
+                :width="100"
+                :height="100"
+                :loop="1"
+              /> -->
+              <Vue3Lottie
                 v-if="showError"
                 :animationData="EmailErrorData"
                 :width="100"
@@ -231,7 +251,8 @@ function sendEmail() {
 </script>
 
 <script>
-import LottieComponentVue from "~~/components/lottie/LottieComponent.vue";
+// import LottieComponentVue from "~~/components/lottie/LottieComponent.vue";
+import Vue3Lottie from "vue3-lottie";
 
 import LoadingData from "../../assets/lotties/loading.json";
 import EmailSuccessData from "../../assets/lotties/emailSuccess.json";
@@ -241,7 +262,8 @@ export default {
   layout: "default",
   scrollToTop: true,
   components: {
-    LottieComponentVue,
+    // LottieComponentVue,
+    Vue3Lottie,
   },
   data() {
     return {

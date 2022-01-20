@@ -8,8 +8,8 @@
         class="flex items-center justify-center w-full p-8 mt-6 lg:mt-0 lg:w-1/2"
       >
         <ClientOnly>
-          <LottieComponentVue :animationData="TeamData" />
-          <Vue3Lottie :animationData="TeamData" :height="200" :width="200" />
+          <!-- <LottieComponentVue :animationData="TeamData" /> -->
+          <Vue3Lottie :animationData="TeamData"  />
         </ClientOnly>
       </div>
 
@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import LottieComponentVue from "../lottie/LottieComponent.vue";
+// import LottieComponentVue from "../lottie/LottieComponent.vue";
 import Vue3Lottie from "vue3-lottie";
 
 import TeamData from "../../assets/lotties/team.json";
@@ -55,7 +55,7 @@ export default {
   name: "AboutUs",
   props: ["id"],
   components: {
-    LottieComponentVue,
+    // LottieComponentVue,
     Vue3Lottie,
   },
   data() {

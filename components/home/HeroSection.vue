@@ -35,7 +35,8 @@
         class="flex items-center justify-center w-full p-5 mt-6 lg:w-1/2 lg:mt-0 lg:p-2"
       >
         <ClientOnly>
-          <LottieComponentVue :animationData="HeroData" />
+          <!-- <LottieComponentVue :animationData="HeroData" /> -->
+          <Vue3Lottie :animationData="HeroData" />
         </ClientOnly>
       </div>
     </div>
@@ -43,14 +44,16 @@
 </template>
 
 <script>
-import LottieComponentVue from "../lottie/LottieComponent.vue";
+// import LottieComponentVue from "../lottie/LottieComponent.vue";
+import Vue3Lottie from "vue3-lottie";
 
 import HeroData from "../../assets/lotties/hero.json";
 
 export default {
   name: "HeroSection",
   components: {
-    LottieComponentVue,
+    // LottieComponentVue,
+    Vue3Lottie,
   },
   data() {
     return {
