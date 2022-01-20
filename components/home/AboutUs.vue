@@ -9,6 +9,7 @@
       >
         <ClientOnly>
           <LottieComponentVue :animationData="TeamData" />
+          <Vue3Lottie :animationData="TeamData" :height="200" :width="200" />
         </ClientOnly>
       </div>
 
@@ -46,6 +47,7 @@
 
 <script>
 import LottieComponentVue from "../lottie/LottieComponent.vue";
+import Vue3Lottie from "vue3-lottie";
 
 import TeamData from "../../assets/lotties/team.json";
 
@@ -54,6 +56,7 @@ export default {
   props: ["id"],
   components: {
     LottieComponentVue,
+    Vue3Lottie,
   },
   data() {
     return {
