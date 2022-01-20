@@ -377,12 +377,12 @@
 
       <div class="flex flex-col items-center justify-center py-5 md:flex-row">
         <div class="text-center text-gray-500">
-          <p>© 2020 FAIR Data Innovations Hub.</p>
+          <p>© 2022 FAIR Data Innovations Hub.</p>
           <p>All rights reserved.</p>
         </div>
 
         <div
-          class="self-center mt-4 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0"
+          class="mt-4 border-l-0 md:ml-4 md:pl-4 md:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0"
         >
           <a
             href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"

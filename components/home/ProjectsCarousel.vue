@@ -24,7 +24,6 @@
         disableOnInteraction: false,
       }"
       :thumbs="{ swiper: swiperThumbs }"
-      :mousewheel="{ releaseOnEdges: true }"
       class="h-full"
     >
       <swiper-slide
@@ -75,7 +74,7 @@
       :slides-per-view="5"
       watch-slides-visibility
       watch-slides-progress
-      class="thumbs-swiper"
+      class="hidden thumbs-swiper md:block"
     >
       <swiper-slide v-for="n of projectsList.length" :virtualIndex="n" :key="n">
         <div class="thumbnail">

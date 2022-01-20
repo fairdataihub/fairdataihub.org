@@ -15,13 +15,13 @@
 
       <div class="w-full h-full p-2 lg:w-1/2">
         <h1
-          class="w-full py-4 pt-6 text-4xl subpixel-antialiased font-black text-left md:py-3 sm:text-3xl md:text-3xl lg:text-4xl sm:text-center"
+          class="w-full py-4 pt-6 text-4xl subpixel-antialiased font-black text-center md:py-3 sm:text-3xl md:text-3xl lg:text-4xl"
         >
           About Us
         </h1>
 
         <p
-          class="w-full mt-2 mb-6 text-xl text-left text-black md:my-2 font-asap sm:text-center sm:text-base md:text-lg lg:text-xl"
+          class="w-full mt-2 mb-6 text-xl text-center text-black md:my-2 font-asap sm:text-base md:text-lg lg:text-xl"
         >
           FAIR Data Innovations Hub is a division of the California Medical
           Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical

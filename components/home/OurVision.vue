@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <div class="max-w-screen-lg px-6 mx-auto sm:px-6 lg:px-8">
-    <div class="lg:text-center">
+    <div class="text-center">
       <p class="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
         Our Vision
       </p>
