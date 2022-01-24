@@ -11,7 +11,7 @@
           {{ profile.name }}
         </h1>
         <h2
-          class="text-primary pb-1 text-xl font-medium sm:text-lg lg:text-2xl"
+          class="pb-1 text-xl font-medium text-primary sm:text-lg lg:text-2xl"
         >
           {{ profile.title }}
         </h2>
@@ -20,7 +20,7 @@
         </p>
         <div class="py-2" v-if="profile.education">
           <h3
-            class="text-primary sm:text-md pb-1 text-lg font-medium lg:text-xl"
+            class="sm:text-md pb-1 text-lg font-medium text-primary lg:text-xl"
           >
             Education
           </h3>
@@ -47,7 +47,7 @@
               width="30"
               height="30"
               fill="currentColor"
-              class="hover:text-accent h-9 w-9 text-xl text-gray-700 transition-colors duration-200 sm:h-6 lg:h-6 lg:w-6"
+              class="h-9 w-9 text-xl text-gray-700 transition-colors duration-200 hover:text-accent sm:h-6 lg:h-6 lg:w-6"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -69,7 +69,7 @@
               width="30"
               height="30"
               fill="currentColor"
-              class="hover:text-accent h-9 w-9 text-xl text-gray-700 transition-colors duration-200 sm:h-6 lg:h-6 lg:w-6"
+              class="h-9 w-9 text-xl text-gray-700 transition-colors duration-200 hover:text-accent sm:h-6 lg:h-6 lg:w-6"
               viewBox="0 0 1792 1792"
             >
               <path
@@ -89,7 +89,7 @@
               width="30"
               height="30"
               fill="currentColor"
-              class="hover:text-accent h-9 w-9 text-xl text-gray-700 transition-colors duration-200 sm:h-6 lg:h-6 lg:w-6"
+              class="h-9 w-9 text-xl text-gray-700 transition-colors duration-200 hover:text-accent sm:h-6 lg:h-6 lg:w-6"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >

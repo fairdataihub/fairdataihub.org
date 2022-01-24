@@ -25,7 +25,7 @@
           <NuxtLink to="/contact-us">
             <button
               type="button"
-              class="hover:border-light-accent hover:text-accent my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all"
+              class="my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all hover:border-light-accent hover:text-accent"
             >
               Contact us
             </button>

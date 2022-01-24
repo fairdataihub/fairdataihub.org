@@ -3,11 +3,11 @@
     <div class="mx-auto max-w-screen-lg px-6 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p
-          class="font-inter my-2 text-4xl font-extrabold tracking-tight sm:text-4xl"
+          class="my-2 font-inter text-4xl font-extrabold tracking-tight sm:text-4xl"
         >
           About
         </p>
-        <p class="font-asap max-w-2xl text-xl text-black sm:text-xl lg:mx-auto">
+        <p class="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
           SODA (Sofware to Organize Data Automatically) for COVID-19 Research is
           a cross-platform desktop software that allows researchers to easily
           organize and share their COVID-19 related genomics, immunology, and
@@ -22,7 +22,7 @@
           <div v-for="feature in features" :key="feature.name" class="relative">
             <dt>
               <div
-                class="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white"
+                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white"
               >
                 <component
                   :is="feature.icon"
@@ -30,12 +30,12 @@
                   aria-hidden="true"
                 />
               </div>
-              <p class="font-inter ml-16 text-xl font-medium sm:text-lg">
+              <p class="ml-16 font-inter text-xl font-medium sm:text-lg">
                 {{ feature.name }}
               </p>
             </dt>
             <dd
-              class="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0"
+              class="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0"
               v-html="feature.description"
             ></dd>
           </div>

@@ -21,7 +21,7 @@
         </h1>
 
         <p
-          class="font-asap mt-2 mb-6 w-full text-center text-xl text-black sm:text-base md:my-2 md:text-lg lg:text-xl"
+          class="mt-2 mb-6 w-full text-center font-asap text-xl text-black sm:text-base md:my-2 md:text-lg lg:text-xl"
         >
           FAIR Data Innovations Hub is a division of the California Medical
           Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical

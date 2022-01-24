@@ -23,7 +23,7 @@
             Keep Calm and Curate!
           </h2>
           <p
-            class="font-asap mb-8 w-full text-center text-base leading-relaxed text-black"
+            class="mb-8 w-full text-center font-asap text-base leading-relaxed text-black"
           >
             Your one-stop tool for curating and submitting SPARC datasets
             <br />

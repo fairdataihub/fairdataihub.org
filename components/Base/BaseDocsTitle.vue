@@ -1,5 +1,5 @@
 <template>
-  <h1 class="text-xl text-black print:hidden lg:text-3xl">
+  <h1 class="text-xl text-black lg:text-3xl print:hidden">
     {{ title }}
   </h1>
 

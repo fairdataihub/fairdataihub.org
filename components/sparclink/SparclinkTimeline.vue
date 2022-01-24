@@ -4,7 +4,7 @@
       class="container mx-auto h-full w-full max-w-screen-lg pl-2 pr-3 sm:px-10"
     >
       <div class="wrap relative h-full overflow-hidden p-2 sm:p-4">
-        <h2 class="font-inter mb-10 text-center text-4xl font-bold sm:text-5xl">
+        <h2 class="mb-10 text-center font-inter text-4xl font-bold sm:text-5xl">
           Timeline
         </h2>
 
@@ -22,7 +22,7 @@
                 <div class="pointer-events-none h-full w-1 bg-gray-200"></div>
               </div>
               <div
-                class="bg-light-accent relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full text-white"
+                class="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-light-accent text-white"
               >
                 <svg
                   fill="none"
@@ -54,7 +54,7 @@
                 <h3 class="font-inter font-semibold">
                   {{ item.longDate }} - {{ item.title }}
                 </h3>
-                <p class="font-asap w-full text-base text-black">
+                <p class="w-full font-asap text-base text-black">
                   {{ item.content }}
                 </p>
               </div>

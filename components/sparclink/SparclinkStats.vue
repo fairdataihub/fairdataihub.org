@@ -2,12 +2,12 @@
   <section class="mx-auto max-w-screen-xl">
     <div class="flex w-full flex-col">
       <h2
-        class="font-inter py-1 text-center text-2xl font-bold sm:text-2xl md:text-3xl lg:text-5xl"
+        class="py-1 text-center font-inter text-2xl font-bold sm:text-2xl md:text-3xl lg:text-5xl"
       >
         Impact on SPARC datasets
       </h2>
 
-      <h3 class="font-inter text-center text-lg md:text-xl lg:text-2xl">
+      <h3 class="text-center font-inter text-lg md:text-xl lg:text-2xl">
         Trusted by researchers all over the world
       </h3>
     </div>
@@ -19,12 +19,12 @@
         :key="item.name"
       >
         <p
-          class="font-lato my-1 text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+          class="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
           :data-inviewport="item.class"
         ></p>
 
         <p
-          class="font-asap text-center text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
+          class="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
         >
           {{ item.name }}
         </p>

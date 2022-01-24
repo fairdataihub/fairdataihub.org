@@ -8,7 +8,7 @@
       >
         Testimonials
       </p>
-      <p class="font-asap w-full max-w-2xl text-center text-xl">
+      <p class="w-full max-w-2xl text-center font-asap text-xl">
         See what people who use our products have to say about us.
       </p>
     </div>
@@ -19,11 +19,11 @@
         :key="item.name"
       >
         <p>
-          <span class="text-accent text-lg font-bold"> “ </span>
+          <span class="text-lg font-bold text-accent"> “ </span>
           <span class="font-asap text-lg text-black sm:text-base">
             {{ item.content }}
           </span>
-          <span class="text-accent text-lg font-bold"> ” </span>
+          <span class="text-lg font-bold text-accent"> ” </span>
         </p>
         <div class="mt-4 flex items-center">
           <a href="#" class="relative block">
@@ -34,7 +34,7 @@
             />
           </a>
           <div class="ml-2 flex flex-col justify-between">
-            <span class="text-accent text-xl font-semibold sm:text-sm">
+            <span class="text-xl font-semibold text-accent sm:text-sm">
               {{ item.name }}
             </span>
             <span

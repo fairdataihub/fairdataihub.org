@@ -5,7 +5,7 @@
         <p class="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
           About
         </p>
-        <p class="font-asap max-w-2xl text-xl text-black sm:text-xl lg:mx-auto">
+        <p class="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
           SODA (Software to Organize Data Automatically) for SPARC is a
           cross-platform desktop software that allows SPARC-funded researchers
           to easily comply with the FAIR SPARC Data curation and sharing
@@ -20,7 +20,7 @@
           <div v-for="feature in features" :key="feature.name" class="relative">
             <dt>
               <div
-                class="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white"
+                class="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white"
               >
                 <component
                   :is="feature.icon"
@@ -33,7 +33,7 @@
               </p>
             </dt>
             <dd
-              class="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0"
+              class="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0"
               v-html="feature.description"
             ></dd>
           </div>

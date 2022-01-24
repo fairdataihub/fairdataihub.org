@@ -43,7 +43,7 @@
               required
               placeholder="Your Name *"
               v-model="formName"
-              class="font-asap my-2 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
+              class="my-2 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
             />
             <span v-if="formNameRequired" class="text-xs text-red-500">
               Please complete this required field.
@@ -56,7 +56,7 @@
               required
               placeholder="Your Company or Institution *"
               v-model="formInstitute"
-              class="font-asap my-2 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
+              class="my-2 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
             />
             <span v-if="formInstituteRequired" class="text-xs text-red-500">
               Please complete this required field.
@@ -69,7 +69,7 @@
               required
               placeholder="Your Email Address *"
               v-model="formEmail"
-              class="font-asap my-2 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
+              class="my-2 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
             />
             <span v-if="formEmailRequired" class="text-xs text-red-500">
               Please complete this required field.
@@ -82,7 +82,7 @@
               required
               placeholder="Tell us more about what you have in mind*"
               rows="5"
-              class="font-asap my-2 w-full resize-none rounded border border-gray-300 px-4 py-2 text-base font-normal outline-none focus:border-black sm:text-lg"
+              class="my-2 w-full resize-none rounded border border-gray-300 px-4 py-2 font-asap text-base font-normal outline-none focus:border-black sm:text-lg"
             ></textarea>
             <span v-if="formMessageRequired" class="text-xs text-red-500">
               Please complete this required field.

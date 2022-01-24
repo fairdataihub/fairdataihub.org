@@ -6,7 +6,7 @@
       >
         Current Projects
       </h2>
-      <p class="font-asap w-full max-w-2xl text-center text-xl">
+      <p class="w-full max-w-2xl text-center font-asap text-xl">
         These are the projects we are working on at the moment:
       </p>
     </div>
@@ -50,7 +50,7 @@
               class="my-4 flex h-full flex-col items-center text-center sm:mb-16 md:mb-0"
             >
               <p
-                class="font-asap w-full text-left text-base text-black sm:text-center md:text-base lg:text-lg"
+                class="w-full text-left font-asap text-base text-black sm:text-center md:text-base lg:text-lg"
               >
                 {{ project.description }}
               </p>

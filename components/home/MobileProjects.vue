@@ -36,13 +36,13 @@
             {{ project.name }}
           </h3>
 
-          <p class="font-asap mb-8 w-full text-left text-xl text-black">
+          <p class="mb-8 w-full text-left font-asap text-xl text-black">
             {{ project.description }}
           </p>
           <div class="flex w-full justify-center">
             <NuxtLink :to="project.page">
               <button
-                class="bg-button-light-background inline-flex rounded border-0 px-6 py-2 text-lg text-white transition focus:outline-none sm:ml-4"
+                class="inline-flex rounded border-0 bg-button-light-background px-6 py-2 text-lg text-white transition focus:outline-none sm:ml-4"
               >
                 Learn more about {{ project.name }}
               </button>

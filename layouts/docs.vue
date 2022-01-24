@@ -14,14 +14,14 @@
         class="relative mx-auto mb-8 flex w-full max-w-screen-xl flex-col items-center gap-4 p-0 sm:flex-row sm:justify-center md:mb-0"
       >
         <div
-          class="top-16 hidden print:hidden sm:block sm:w-4/12 md:w-3/12 lg:w-1/5"
+          class="top-16 hidden sm:block sm:w-4/12 md:w-3/12 lg:w-1/5 print:hidden"
         >
           <div class="absolute top-0 bottom-0" style="overflow-y: scroll">
             <SodaForSparcSidebar :sidebarList="sidebarList" />
           </div>
         </div>
         <div
-          class="z-0 flex w-full justify-center bg-gray-50 p-2 print:hidden sm:hidden"
+          class="z-0 flex w-full justify-center bg-gray-50 p-2 sm:hidden print:hidden"
         >
           <MobileSodaForSparcSidebar :sidebarList="sidebarList">
           </MobileSodaForSparcSidebar>

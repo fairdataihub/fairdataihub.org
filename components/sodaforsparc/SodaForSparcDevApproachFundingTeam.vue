@@ -10,14 +10,14 @@
         <div class="w-full py-2">
           <div class="flex w-full flex-col justify-between sm:flex-row">
             <div class="mb-10 pr-10 sm:mb-5">
-              <p class="font-asap w-full text-lg text-black">
+              <p class="w-full font-asap text-lg text-black">
                 SODA for SPARC is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
                 submit a feature modification, or feature suggestion, please
                 feel free to submit an issue on the repository.
               </p>
-              <div class="text-accent mt-3 flex">
+              <div class="mt-3 flex text-accent">
                 <a
                   href="https://github.com/fairdataihub/SODA-for-SPARC/graphs/contributors"
                   target="_blank"
@@ -121,7 +121,7 @@
         <div class="w-full py-2">
           <div class="flex w-full flex-col justify-between sm:flex-row">
             <div class="mb-10 pr-10 sm:mb-5">
-              <p class="font-asap w-full text-lg text-black">
+              <p class="w-full font-asap text-lg text-black">
                 SODA for SPARC is funded by the National Institutes of Health
                 (NIH)'s SPARC program. The funding was initially provided as a
                 supplement to an existing SPARC award at CalMI<sup>2</sup>
@@ -221,7 +221,7 @@
                         :alt="member.name + ` profile picture`"
                         class="my-2 h-28 rounded-full"
                       />
-                      <p class="font-asap ml-2 text-center text-lg font-normal">
+                      <p class="ml-2 text-center font-asap text-lg font-normal">
                         {{ member.name }}
                       </p>
                     </div>
@@ -235,7 +235,7 @@
                         :alt="member.name + ` profile picture`"
                         class="my-2 h-28 rounded-full"
                       />
-                      <p class="font-asap ml-2 text-center text-lg font-normal">
+                      <p class="ml-2 text-center font-asap text-lg font-normal">
                         {{ member.name }}
                       </p>
                     </div>
@@ -259,7 +259,7 @@
         <div class="w-full py-2">
           <div class="flex w-full flex-col justify-between sm:flex-row">
             <div class="mb-10 pr-10 sm:mb-5">
-              <p class="font-asap w-full text-lg text-black">
+              <p class="w-full font-asap text-lg text-black">
                 SODA for SPARC connects with several resources developed by the
                 SPARC Data Resource Center (DRC) and we therefore collaborate
                 actively with the DRC teams throughout our development process.
@@ -289,7 +289,7 @@
                       class="mx-10 my-auto"
                     />
                     <p
-                      class="font-asap mt-3 ml-2 text-center text-lg font-normal"
+                      class="mt-3 ml-2 text-center font-asap text-lg font-normal"
                     >
                       {{ collaborator.name }}
                     </p>

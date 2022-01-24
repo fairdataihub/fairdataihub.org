@@ -2,7 +2,7 @@
   <section class="mx-auto max-w-screen-lg px-10 py-3">
     <div class="flex w-full flex-col">
       <h2
-        class="font-inter py-2 text-2xl font-bold sm:text-2xl md:text-3xl lg:text-4xl"
+        class="py-2 font-inter text-2xl font-bold sm:text-2xl md:text-3xl lg:text-4xl"
       >
         Publications
       </h2>

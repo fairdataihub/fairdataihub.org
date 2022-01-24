@@ -160,17 +160,17 @@
           >
             <span
               aria-hidden="true"
-              class="bg-light-accent absolute block h-1 w-6 transform transition duration-200 ease-in-out"
+              class="absolute block h-1 w-6 transform bg-light-accent transition duration-200 ease-in-out"
               :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
             ></span>
             <span
               aria-hidden="true"
-              class="bg-light-accent absolute block h-1 w-6 transform transition duration-200 ease-in-out"
+              class="absolute block h-1 w-6 transform bg-light-accent transition duration-200 ease-in-out"
               :class="{ 'opacity-0': open }"
             ></span>
             <span
               aria-hidden="true"
-              class="bg-light-accent absolute block h-1 w-6 transform transition duration-200 ease-in-out"
+              class="absolute block h-1 w-6 transform bg-light-accent transition duration-200 ease-in-out"
               :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
             ></span>
           </div>
@@ -186,7 +186,7 @@
             v-for="item in mobileNavigation"
             :key="item.name"
             :to="item.href"
-            class="mobile-menu hover:bg-light-accent z-20 block rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
+            class="mobile-menu z-20 block rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
           >
             {{ item.name }}
           </NuxtLink>

@@ -15,54 +15,54 @@
     <div class="flex flex-col justify-around p-6 sm:flex-row">
       <div class="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
         <p
-          class="font-lato my-1 hidden text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+          class="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
         ></p>
 
         <p
-          class="font-lato my-1 text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+          class="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
         >
           <span id="filesNum">{{ filesNum }}</span>
           <span>+</span>
         </p>
 
         <p
-          class="font-asap text-center text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
+          class="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
         >
           Files touched
         </p>
       </div>
       <div class="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
         <p
-          class="font-lato my-1 hidden text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+          class="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
         ></p>
 
         <p
-          class="font-lato my-1 text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+          class="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
         >
           <span id="datasetsNum">{{ datasetsNum }}</span>
           <span>+</span>
         </p>
 
         <p
-          class="font-asap text-center text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
+          class="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
         >
           Datasets modified
         </p>
       </div>
       <div class="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
         <p
-          class="font-lato my-1 hidden text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+          class="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
         ></p>
 
         <p
-          class="font-lato my-1 text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
+          class="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
         >
           <span id="dataNum">{{ dataNum }}</span>
           <span>+ TB</span>
         </p>
 
         <p
-          class="font-asap text-center text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
+          class="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
         >
           Data uploaded
         </p>

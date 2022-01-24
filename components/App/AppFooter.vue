@@ -1,10 +1,10 @@
 <template>
-  <footer class="z-30 pt-5 bg-gray-50" v-if="!isDocs">
+  <footer class="z-30 bg-gray-50 pt-5" v-if="!isDocs">
     <div
-      class="container flex flex-col w-full max-w-screen-lg px-6 py-8 mx-auto"
+      class="container mx-auto flex w-full max-w-screen-lg flex-col px-6 py-8"
     >
       <div class="flex flex-col justify-between pb-3 pr-3 md:flex-row">
-        <div class="flex flex-col w-full mb-5 md:w-4/12 md:mb-0">
+        <div class="mb-5 flex w-full flex-col md:mb-0 md:w-4/12">
           <div class="py-3">
             <a
               href="https://calmi2.org"
@@ -251,7 +251,7 @@
               </svg>
             </a>
           </div>
-          <p class="py-3 font-medium text-gray-600 font-inter">
+          <p class="py-3 font-inter font-medium text-gray-600">
             Helping researchers navigate the world of FAIR data sharing.
           </p>
           <div class="flex flex-row justify-start py-3">
@@ -266,7 +266,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                class="text-gray-400 transition-all hover:text-accent w-7 h-7"
+                class="h-7 w-7 text-gray-400 transition-all hover:text-accent"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -286,7 +286,7 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="0"
-                class="text-gray-400 transition-all hover:text-accent w-7 h-7"
+                class="h-7 w-7 text-gray-400 transition-all hover:text-accent"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -304,7 +304,7 @@
               rel="noopener"
             >
               <svg
-                class="transition-all fill-current w-7 h-7 hover:text-accent"
+                class="h-7 w-7 fill-current transition-all hover:text-accent"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -382,7 +382,7 @@
         </div>
 
         <div
-          class="mt-4 border-l-0 md:ml-4 md:pl-4 md:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0"
+          class="mt-4 border-l-0 sm:mt-0 sm:border-gray-200 sm:py-2 md:ml-4 md:border-l-2 md:pl-4"
         >
           <a
             href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
@@ -400,23 +400,23 @@
     </div>
     <transition name="slide-up">
       <div
-        class="fixed bottom-0 z-50 flex items-center justify-center w-full px-5 py-1 bg-gray-50"
+        class="fixed bottom-0 z-50 flex w-full items-center justify-center bg-gray-50 px-5 py-1"
         v-if="!cookieConsent"
       >
         <p class="py-1 text-sm">
           By continuing to use this site you consent to the use of cookies in
           accordance with our
-          <NuxtLink to="/cookiepolicy" class="text-sm text-url">
+          <NuxtLink to="/cookiepolicy" class="text-url text-sm">
             Cookie Policy</NuxtLink
           >
         </p>
-        <div class="px-2 cursor-pointer" @click="consentToCookies">
+        <div class="cursor-pointer px-2" @click="consentToCookies">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink"
             aria-hidden="true"
             viewBox="0 0 32 32"
-            class="text-gray-600 hover:text-black transition-all h-[18px] w-[18px] scale-100 hover:scale-110"
+            class="h-[18px] w-[18px] scale-100 text-gray-600 transition-all hover:scale-110 hover:text-black"
           >
             <path
               d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"
@@ -460,10 +460,10 @@ export default {
 }
 
 .footer-header {
-  @apply uppercase text-gray-800 pb-3 font-bold text-lg;
+  @apply pb-3 text-lg font-bold uppercase text-gray-800;
 }
 .footer-item {
-  @apply text-gray-600 hover:text-gray-900 pb-2 font-medium transition-all;
+  @apply pb-2 font-medium text-gray-600 transition-all hover:text-gray-900;
 }
 
 .slide-up-enter-active,

@@ -3,21 +3,21 @@
     <div class="mx-auto px-5 sm:px-10">
       <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1
-          class="font-inter py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0"
+          class="py-5 text-left font-inter text-4xl font-black subpixel-antialiased md:mr-8 md:py-0"
         >
           Development Platform
         </h1>
         <div class="w-full py-2">
           <div class="flex w-full flex-col justify-between sm:flex-row">
             <div class="mb-10 pr-10 sm:mb-5">
-              <p class="font-asap w-full text-lg text-black">
+              <p class="w-full font-asap text-lg text-black">
                 AQUA for SPARC is distributed as an open-source application with
                 an MIT License. Anyone is free to fork our GitHub repository and
                 make their own changes if they would like. If you would like to
                 submit a feature modification, or feature suggestion, please
                 feel free to submit an issue on the repository.
               </p>
-              <div class="text-accent mt-3 flex">
+              <div class="mt-3 flex text-accent">
                 <a
                   href="https://github.com/fairdataihub/AQUA/graphs/contributors"
                   target="_blank"
@@ -115,14 +115,14 @@
     <div class="mx-auto px-5 sm:px-10 sm:pt-2">
       <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1
-          class="font-inter py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0"
+          class="py-5 text-left font-inter text-4xl font-black subpixel-antialiased md:mr-8 md:py-0"
         >
           Origin Story
         </h1>
         <div class="w-full py-2">
           <div class="flex w-full flex-col justify-between sm:flex-row">
             <div class="mb-10 pr-10 sm:mb-5">
-              <p class="font-asap w-full text-lg text-black">
+              <p class="w-full font-asap text-lg text-black">
                 The AQUA project was first born as an idea at the 2021 NIH SPARC
                 Codeathon. The idea was to improve user query understandability
                 and result display of the SPARC Portal search engine. AQUA
@@ -208,7 +208,7 @@
     <div class="mx-auto px-5 sm:px-10 sm:pt-2" style="margin-top: 50px">
       <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1
-          class="font-inter pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8"
+          class="pb-5 text-left font-inter text-4xl font-black subpixel-antialiased md:mr-8"
         >
           Team Members
         </h1>
@@ -228,7 +228,7 @@
                         :alt="member.name + ` profile picture`"
                         class="my-2 h-28 rounded-full"
                       />
-                      <p class="font-asap ml-2 text-center text-lg font-normal">
+                      <p class="ml-2 text-center font-asap text-lg font-normal">
                         {{ member.name }}
                       </p>
                     </div>
@@ -242,7 +242,7 @@
                         :alt="member.name + ` profile picture`"
                         class="my-2 h-28 rounded-full"
                       />
-                      <p class="font-asap ml-2 text-center text-lg font-normal">
+                      <p class="ml-2 text-center font-asap text-lg font-normal">
                         {{ member.name }}
                       </p>
                     </div>
