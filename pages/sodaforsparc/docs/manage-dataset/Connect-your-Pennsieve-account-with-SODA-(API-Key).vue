@@ -1,105 +1,60 @@
 <template>
-  <div>
-    <Html>
-      <Head>
-        <Title>
-          Connect your Pennsieve account with SODA (API Key) - SODA for SPARC
-        </Title>
-      </Head>
-    </Html>
-
-    <base-docs-title
-      :title="`Connect your Pennsieve account with SODA (API Key)`"
-    >
-    </base-docs-title>
-
-    <div class="flex flex-col">
-      <base-docs-subtitle> Background </base-docs-subtitle>
-
-      <div class="p-parent-div">
-        <p>
-          SPARC uses the
-          <a
-            href="https://app.pennsieve.net/"
-            target="_blank"
-            rel="noopener"
-            class="text-blue-600 hover:underline"
-            >Pennsieve</a
-          >
-          platform to store data and metadata files as well as append additional
-          metadata. All SPARC researchers must thus share their data on
-          Pennsieve. When using SODA for the first time, you will have to
-          connect your Pennsieve account with SODA to use Pennsieve related
-          functionalities implemented in SODA.
-        </p>
-        <p>
-          SODA supports connections to Pennsieve via your Pennsieve login
-          details. If you would like to use this method, please click
-          <NuxtLink
-            to="/sodaforsparc/docs/manage-dataset/Connect-your-Pennsieve-account-with-SODA"
-            class="text-blue-600 hover:underline"
-          >
-            <span> Connect your Pennsieve account with SODA </span>
-          </NuxtLink>
-        </p>
-      </div>
-
-      <base-docs-subtitle> How to </base-docs-subtitle>
-
-      <ul class="list-decimal list-outside docs-ul">
-        <li>
-          Click on any features (e.g. Create a new dataset) under Manage
-          Datasets.
-        </li>
-        <li>Click on the edit symbol next to "Current account".</li>
-        <li>
-          In the new pop-up window click on "I want to connect with an API key
-          instead" at the bottom of the pop-up.
-        </li>
-        <li>
-          Follow the instructions on the Pennsieve help page to get a key name,
-          API key, and API secret from your Pennsieve account. Make sure you are
-          under the "SPARC Consortium" organization on Pennsieve when you
-          generate the API key and secret.
-          <div class="img-parent-div">
-            <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/consortium-bf-account.PNG?raw=true"
-              alt="screenshot of soda"
-            />
-          </div>
-        </li>
-        <li>
-          Enter your key name, API key, and API secret in the corresponding
-          fields then click on "Add".
-          <div class="img-parent-div">
-            <img
-              src="https://github.com/fairdataihub/SODA-for-SPARC/blob/main/docs/documentation/Manage-datasets/Connect-to-BF/connect-to-blackfynn.gif?raw=true"
-              alt="screenshot of soda"
-            />
-          </div>
-        </li>
-      </ul>
-
-      <base-docs-subtitle> Note </base-docs-subtitle>
-
-      <ul class="list-disc list-outside docs-ul">
-        <li>
-          During subsequent uses, SODA will automatically connect to the
-          Pennsieve account you were connected to the last time.
-        </li>
-        <li>
-          The account key and secret for your Pennsieve account will be stored
-          on your computer only, so neither the SODA Team nor anyone else
-          besides you will have access to your Pennsieve account.
-        </li>
-      </ul>
+  <div
+    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+  >
+    <div class="py-10 mx-auto">
+      <ClientOnly>
+        <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
+      </ClientOnly>
     </div>
+
+    <h2 class="pt-10 text-3xl font-semibold text-center">
+      Our documentation has been moved!
+    </h2>
+
+    <h3 class="pt-6 text-center">
+      This page should automatically redirect in a few seconds.
+    </h3>
+    <h3 class="pb-6 text-center">
+      If nothing happens please use the continue button below.
+    </h3>
+
+    <a
+      :href="redirectLocation"
+      target="_blank"
+      aria-label="SODA for SPARC Documentation"
+      rel="noopener"
+    >
+      <button
+        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+      >
+        Continue
+      </button>
+    </a>
   </div>
 </template>
 
 <script>
+import Vue3Lottie from "vue3-lottie";
+import RedirectData from "../../../../assets/lotties/redirect.json";
+
 export default {
-  layout: "docs",
-  scrollToTop: true,
+  components: {
+    Vue3Lottie,
+  },
+  data() {
+    return {
+      RedirectData,
+      redirectLocation:
+        "https://docs.sodaforsparc.io/docs/manage-dataset/connect-your-pennsieve-account-with-soda",
+    };
+  },
+  mounted() {
+    setTimeout(() => {
+      Object.assign(document.createElement("a"), {
+        href: this.redirectLocation,
+      }).click();
+    }, 3000);
+  },
 };
 </script>
