@@ -11,7 +11,7 @@
     </Html>
 
     <section
-      class="flex flex-col max-w-screen-lg px-6 py-5 mx-auto text-lg text-black sm:px-6 lg:px-8"
+      class="mx-auto flex max-w-screen-lg flex-col px-6 py-5 text-lg text-black sm:px-6 lg:px-8"
     >
       <h2 class="heading">Terms of Use</h2>
 
@@ -21,7 +21,7 @@
 
       <p>
         The Fair Data Innovations Hub website located at
-        <NuxtLink to="/" class="text-base text-url">
+        <NuxtLink to="/" class="text-url text-base">
           https://fairdataihub.org/
         </NuxtLink>
         is a copyrighted work belonging to Fair Data Innovations Hub. Certain
@@ -70,7 +70,7 @@
 
       <div class="pl-8">
         <ul
-          class="pb-3 my-1 text-base leading-7 text-gray-800 list-disc list-outside"
+          class="my-1 list-outside list-disc pb-3 text-base leading-7 text-gray-800"
         >
           <li>
             You shall not sell, rent, lease, transfer, assign, distribute, host,
@@ -268,7 +268,7 @@
 
       <div class="pl-8">
         <ul
-          class="pb-3 my-1 text-base leading-7 text-gray-800 list-disc list-outside"
+          class="my-1 list-outside list-disc pb-3 text-base leading-7 text-gray-800"
         >
           <li>your physical or electronic signature;</li>
           <li>
@@ -604,7 +604,7 @@
 
       <p>
         Please read our
-        <NuxtLink to="/privacypolicy" class="text-base text-url">
+        <NuxtLink to="/privacypolicy" class="text-url text-base">
           Privacy Policy </NuxtLink
         >.
       </p>
@@ -633,14 +633,14 @@
 
       <p>
         <strong> Contact form: </strong>
-        <NuxtLink to="/contact-us" class="text-base text-url">
+        <NuxtLink to="/contact-us" class="text-url text-base">
           https://fairdataihub.org/contact-us
         </NuxtLink>
       </p>
 
       <p>
         <strong> Email: </strong>
-        <a href="mailto:info@fairdataihub.org" class="text-base text-url">
+        <a href="mailto:info@fairdataihub.org" class="text-url text-base">
           info@fairdataihub.org
         </a>
       </p>
@@ -660,14 +660,14 @@ export default {
 
 <style lang="postcss" scoped>
 .heading {
-  @apply mb-3 mt-6 font-extrabold tracking-tight text-4xl;
+  @apply mb-3 mt-6 text-4xl font-extrabold tracking-tight;
 }
 
 .subheading {
-  @apply mb-3 mt-5 font-bold tracking-tight text-3xl;
+  @apply mb-3 mt-5 text-3xl font-bold tracking-tight;
 }
 
 p {
-  @apply my-1 text-base leading-7 text-gray-800 font-normal tracking-normal;
+  @apply my-1 text-base font-normal leading-7 tracking-normal text-gray-800;
 }
 </style>

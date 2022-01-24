@@ -1,12 +1,12 @@
 <template>
-  <div class="w-full h-auto max-w-screen-lg px-4 pt-1 pb-3 mx-auto">
-    <div class="flex flex-col items-center justify-center mb-4">
+  <div class="mx-auto h-auto w-full max-w-screen-lg px-4 pt-1 pb-3">
+    <div class="mb-4 flex flex-col items-center justify-center">
       <h2
-        class="my-2 text-4xl font-extrabold tracking-tight text-center sm:text-4xl"
+        class="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl"
       >
         Current Projects
       </h2>
-      <p class="w-full max-w-2xl text-xl text-center font-asap">
+      <p class="font-asap w-full max-w-2xl text-center text-xl">
         These are the projects we are working on at the moment:
       </p>
     </div>
@@ -29,36 +29,36 @@
       <swiper-slide
         v-for="project in projectsList"
         :key="project.name"
-        class="flex items-center justify-center h-full py-10 my-auto"
+        class="my-auto flex h-full items-center justify-center py-10"
       >
         <section
-          class="flex flex-row items-center justify-center w-4/5 h-full px-5 py-10 mx-10 my-auto text-gray-600 rounded-lg shadow-xl"
+          class="mx-10 my-auto flex h-full w-4/5 flex-row items-center justify-center rounded-lg px-5 py-10 text-gray-600 shadow-xl"
         >
           <div
-            class="container flex flex-col items-center justify-center h-full mx-auto"
+            class="container mx-auto flex h-full flex-col items-center justify-center"
           >
             <div
-              class="flex flex-row items-center justify-center my-5 lg:max-w-lg sm:py-0"
+              class="my-5 flex flex-row items-center justify-center sm:py-0 lg:max-w-lg"
             >
               <img
-                class="object-cover object-center rounded sm:pt-20 md:pt-0 sm:h-full md:h-auto lg:h-auto sm:w-60 md:w-72 lg:w-80"
+                class="rounded object-cover object-center sm:h-full sm:w-60 sm:pt-20 md:h-auto md:w-72 md:pt-0 lg:h-auto lg:w-80"
                 alt="SODA for SPARC logo"
                 :data-blink-uuid="project.imageUrl"
               />
             </div>
             <div
-              class="flex flex-col items-center h-full my-4 text-center sm:mb-16 md:mb-0"
+              class="my-4 flex h-full flex-col items-center text-center sm:mb-16 md:mb-0"
             >
               <p
-                class="w-full text-base text-left text-black sm:text-center md:text-base lg:text-lg font-asap"
+                class="font-asap w-full text-left text-base text-black sm:text-center md:text-base lg:text-lg"
               >
                 {{ project.description }}
               </p>
 
-              <div class="flex justify-center w-full py-4">
+              <div class="flex w-full justify-center py-4">
                 <NuxtLink :to="project.page">
                   <button
-                    class="inline-flex px-6 py-2 text-lg text-white transition bg-black border-0 rounded sm:ml-4 focus:outline-none md:text-base lg:text-lg ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+                    class="inline-flex rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4 md:text-base lg:text-lg"
                   >
                     Learn more about {{ project.name }}
                   </button>
@@ -74,7 +74,7 @@
       :slides-per-view="5"
       watch-slides-visibility
       watch-slides-progress
-      class="hidden thumbs-swiper md:block"
+      class="thumbs-swiper hidden md:block"
     >
       <swiper-slide v-for="n of projectsList.length" :virtualIndex="n" :key="n">
         <div class="thumbnail">
@@ -151,7 +151,7 @@ export default {
 }
 
 .swiper-pagination-bullet {
-  @apply bg-pink-300 w-10 rounded hover:bg-pink-500 transition-all;
+  @apply w-10 rounded bg-pink-300 transition-all hover:bg-pink-500;
 }
 
 .swiper-pagination-bullet-active {
@@ -159,14 +159,14 @@ export default {
 }
 
 .swiper-slide .thumbnail {
-  @apply scale-75 hover:scale-90 grayscale transition-all h-[100px] w-[200px] flex justify-center items-center cursor-pointer;
+  @apply flex h-[100px] w-[200px] scale-75 cursor-pointer items-center justify-center grayscale transition-all hover:scale-90;
 }
 
 .thumbs-swiper .swiper-wrapper {
-  @apply divide-x divide-gray-300 divide-dashed;
+  @apply divide-x divide-dashed divide-gray-300;
 }
 
 .swiper-slide-thumb-active .thumbnail {
-  @apply scale-100 hover:scale-100 grayscale-0 bg-pink-50 rounded px-2 transition-all;
+  @apply scale-100 rounded bg-pink-50 px-2 grayscale-0 transition-all hover:scale-100;
 }
 </style>

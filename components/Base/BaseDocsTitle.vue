@@ -1,9 +1,9 @@
 <template>
-  <h1 class="text-xl text-black lg:text-3xl print:hidden">
+  <h1 class="text-xl text-black print:hidden lg:text-3xl">
     {{ title }}
   </h1>
 
-  <div class="w-full mb-4 border-b-2 border-grey-500 print:hidden"></div>
+  <div class="border-grey-500 mb-4 w-full border-b-2 print:hidden"></div>
 </template>
 
 <script>

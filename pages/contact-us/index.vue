@@ -1,6 +1,6 @@
 <template>
   <div
-    class="relative flex items-center justify-center bg-transparent bg-no-repeat bg-cover sm:h-screen"
+    class="relative flex items-center justify-center bg-transparent bg-cover bg-no-repeat sm:h-screen"
   >
     <Html>
       <Head>
@@ -12,7 +12,7 @@
       </Head>
     </Html>
 
-    <div class="absolute bottom-0 z-0 area">
+    <div class="area absolute bottom-0 z-0">
       <ul class="circles">
         <li></li>
         <li></li>
@@ -29,10 +29,10 @@
 
     <base-section class="z-10 py-8">
       <div
-        class="container w-screen max-w-screen-md px-6 py-8 mx-auto rounded-lg shadow-lg bg-gray-50"
+        class="container mx-auto w-screen max-w-screen-md rounded-lg bg-gray-50 px-6 py-8 shadow-lg"
       >
         <form class="flex flex-col px-5 py-5 text-3xl sm:px-10" @submit.prevent>
-          <h2 class="pt-3 text-4xl text-center">
+          <h2 class="pt-3 text-center text-4xl">
             Let us know if you have any feedback or want to collaborate
           </h2>
           <h2 class="pb-10 text-center">We'll get back to you soon</h2>
@@ -43,7 +43,7 @@
               required
               placeholder="Your Name *"
               v-model="formName"
-              class="w-full px-4 py-2 my-2 text-base border border-gray-300 rounded outline-none sm:text-lg font-asap focus:border-black"
+              class="font-asap my-2 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
             />
             <span v-if="formNameRequired" class="text-xs text-red-500">
               Please complete this required field.
@@ -56,7 +56,7 @@
               required
               placeholder="Your Company or Institution *"
               v-model="formInstitute"
-              class="w-full px-4 py-2 my-2 text-base border border-gray-300 rounded outline-none sm:text-lg font-asap focus:border-black"
+              class="font-asap my-2 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
             />
             <span v-if="formInstituteRequired" class="text-xs text-red-500">
               Please complete this required field.
@@ -69,7 +69,7 @@
               required
               placeholder="Your Email Address *"
               v-model="formEmail"
-              class="w-full px-4 py-2 my-2 text-base border border-gray-300 rounded outline-none sm:text-lg font-asap focus:border-black"
+              class="font-asap my-2 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
             />
             <span v-if="formEmailRequired" class="text-xs text-red-500">
               Please complete this required field.
@@ -82,14 +82,14 @@
               required
               placeholder="Tell us more about what you have in mind*"
               rows="5"
-              class="w-full px-4 py-2 my-2 text-base font-normal border border-gray-300 rounded outline-none resize-none sm:text-lg font-asap focus:border-black"
+              class="font-asap my-2 w-full resize-none rounded border border-gray-300 px-4 py-2 text-base font-normal outline-none focus:border-black sm:text-lg"
             ></textarea>
             <span v-if="formMessageRequired" class="text-xs text-red-500">
               Please complete this required field.
             </span>
           </div>
 
-          <div class="flex flex-col items-center justify-center w-full">
+          <div class="flex w-full flex-col items-center justify-center">
             <ClientOnly>
               <!-- <LottieComponentVue
                 v-if="showLoading"
@@ -141,7 +141,7 @@
             <button
               v-if="!hideButton"
               @click="sendEmail"
-              class="px-4 py-2 my-2 text-white transition-all bg-pink-600 rounded-lg shadow-lg cursor-pointer focus:bg-pink-500 hover:bg-pink-500"
+              class="my-2 cursor-pointer rounded-lg bg-pink-600 px-4 py-2 text-white shadow-lg transition-all hover:bg-pink-500 focus:bg-pink-500"
             >
               Send
             </button>

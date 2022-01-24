@@ -1,14 +1,14 @@
 <template>
   <div
-    class="flex flex-col items-center justify-center max-w-screen-xl mx-auto mt-40"
+    class="mx-auto mt-40 flex max-w-screen-xl flex-col items-center justify-center"
   >
-    <div class="py-10 mx-auto">
+    <div class="mx-auto py-10">
       <ClientOnly>
         <Vue3Lottie :animationData="RedirectData" :width="560" :height="160" />
       </ClientOnly>
     </div>
 
-    <h2 class="pt-10 text-3xl font-semibold text-center">
+    <h2 class="pt-10 text-center text-3xl font-semibold">
       Our documentation has been moved!
     </h2>
 
@@ -26,7 +26,7 @@
       rel="noopener"
     >
       <button
-        class="px-6 py-2 text-lg text-white transition-all bg-black rounded sm:ml-4 focus:outline-none ring-2 ring-offset-2 ring-transparent hover:ring-pink-600 focus:ring-pink-600"
+        class="rounded bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4"
       >
         Continue
       </button>

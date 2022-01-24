@@ -1,30 +1,30 @@
 <template>
-  <section class="max-w-screen-xl mx-auto">
-    <div class="flex flex-col w-full">
+  <section class="mx-auto max-w-screen-xl">
+    <div class="flex w-full flex-col">
       <h2
-        class="py-1 text-2xl font-bold text-center font-inter sm:text-2xl md:text-3xl lg:text-5xl"
+        class="font-inter py-1 text-center text-2xl font-bold sm:text-2xl md:text-3xl lg:text-5xl"
       >
         Impact on SPARC datasets
       </h2>
 
-      <h3 class="text-lg text-center font-inter md:text-xl lg:text-2xl">
+      <h3 class="font-inter text-center text-lg md:text-xl lg:text-2xl">
         Trusted by researchers all over the world
       </h3>
     </div>
 
     <div class="flex flex-col justify-around p-6 sm:flex-row">
       <div
-        class="flex flex-col items-center justify-center m-2 mb-5 lg:m-6"
+        class="m-2 mb-5 flex flex-col items-center justify-center lg:m-6"
         v-for="item in statsList"
         :key="item.name"
       >
         <p
-          class="my-1 text-5xl font-bold text-center font-lato sm:text-4xl md:text-5xl lg:text-6xl"
+          class="font-lato my-1 text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"
           :data-inviewport="item.class"
         ></p>
 
         <p
-          class="text-xl text-center text-black font-asap sm:text-lg md:text-xl lg:text-2xl"
+          class="font-asap text-center text-xl text-black sm:text-lg md:text-xl lg:text-2xl"
         >
           {{ item.name }}
         </p>

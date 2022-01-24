@@ -11,12 +11,12 @@
     </Html>
 
     <section
-      class="flex flex-col items-center justify-between gap-4 mx-auto mb-8 text-black body-font md:flex-row md:mb-0 max-w-screen-2xl"
+      class="body-font mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row"
     >
-      <div class="flex flex-col w-11/12 mx-auto lg:flex-row">
+      <div class="mx-auto flex w-11/12 flex-col lg:flex-row">
         <div class="w-full p-5 lg:w-1/3">
           <h1 class="py-2 text-4xl font-black sm:text-3xl">About Us</h1>
-          <p class="text-xl text-black font-asap sm:text-lg">
+          <p class="font-asap text-xl text-black sm:text-lg">
             FAIR Data Innovations Hub is a division of the California Medical
             Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
             research organization located in San Diego, California. We have a
@@ -37,14 +37,14 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               stroke-width="2"
-              class="w-4 h-4 ml-2 arrow-animate"
+              class="arrow-animate ml-2 h-4 w-4"
               viewBox="0 0 24 24"
             >
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
           </a>
         </div>
-        <div class="w-full p-2 lg:w-2/3 md:p-5">
+        <div class="w-full p-2 md:p-5 lg:w-2/3">
           <TeamCard
             data-aos="fade-in"
             v-for="member in teamsList"

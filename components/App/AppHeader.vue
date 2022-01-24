@@ -1,7 +1,7 @@
 <template>
-  <nav class="sticky top-0 z-30 shadow-lg min-w-screen print:hidden">
+  <nav class="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
     <div
-      class="flex flex-row justify-between px-5 py-3 bg-gray-50"
+      class="flex flex-row justify-between bg-gray-50 px-5 py-3"
       :class="{ 'debug-screens': dev }"
     >
       <NuxtLink
@@ -11,7 +11,7 @@
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="w-auto h-6 md:h-6 lg:h-7"
+          class="h-6 w-auto md:h-6 lg:h-7"
           viewBox="0 0 451.84 61.44"
         >
           <path
@@ -71,7 +71,7 @@
       </NuxtLink>
       <div class="hidden sm:block">
         <div
-          class="flex flex-row items-center justify-center h-full font-medium sm:text-sm md:text-md"
+          class="md:text-md flex h-full flex-row items-center justify-center font-medium sm:text-sm"
         >
           <NuxtLink to="/" class="nav-item hover-underline-animation">
             Home
@@ -79,18 +79,18 @@
           <NuxtLink to="/team" class="nav-item hover-underline-animation">
             Meet The Team
           </NuxtLink>
-          <div class="relative rounded-lg group">
+          <div class="group relative rounded-lg">
             <button
-              class="flex flex-row items-center py-2 mx-1 font-medium sm:px-1 lg:px-3 hover-underline-animation"
+              class="hover-underline-animation mx-1 flex flex-row items-center py-2 font-medium sm:px-1 lg:px-3"
             >
-              <div class="flex flex-row items-center justify-center w-max">
+              <div class="flex w-max flex-row items-center justify-center">
                 Our Projects
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
-                  class="w-4 h-4 ml-2 text-lg transition-all"
+                  class="ml-2 h-4 w-4 text-lg transition-all"
                 >
                   <path
                     stroke-linecap="round"
@@ -102,39 +102,39 @@
               </div>
             </button>
             <div
-              class="absolute z-10 hidden py-1 group-hover:block right-4 w-max"
+              class="absolute right-4 z-10 hidden w-max py-1 group-hover:block"
             >
               <div
-                class="py-3 text-left bg-gray-100 border-2 border-gray-200 rounded-lg shadow-lg text-md"
+                class="text-md rounded-lg border-2 border-gray-200 bg-gray-100 py-3 text-left shadow-lg"
               >
                 <div class="flex flex-col">
                   <NuxtLink
                     to="/sodaforsparc"
-                    class="my-2 nav-item hover-underline-animation"
+                    class="nav-item hover-underline-animation my-2"
                   >
                     SODA for SPARC
                   </NuxtLink>
                   <NuxtLink
                     to="/sodaforcovid"
-                    class="my-2 nav-item hover-underline-animation"
+                    class="nav-item hover-underline-animation my-2"
                   >
                     SODA for COVID-19 Research
                   </NuxtLink>
                   <NuxtLink
                     to="/knowmore"
-                    class="my-2 nav-item hover-underline-animation"
+                    class="nav-item hover-underline-animation my-2"
                   >
                     KnowMore
                   </NuxtLink>
                   <NuxtLink
                     to="/sparclink"
-                    class="my-2 nav-item hover-underline-animation"
+                    class="nav-item hover-underline-animation my-2"
                   >
                     SPARClink
                   </NuxtLink>
                   <NuxtLink
                     to="/aqua"
-                    class="my-2 nav-item hover-underline-animation"
+                    class="nav-item hover-underline-animation my-2"
                   >
                     AQUA
                   </NuxtLink>
@@ -151,26 +151,26 @@
       <!-- Mobile menu hamburger -->
       <div class="block sm:hidden">
         <button
-          class="relative w-10 h-10 text-gray-500 focus:outline-none"
+          class="relative h-10 w-10 text-gray-500 focus:outline-none"
           @click="open = !open"
         >
           <span class="sr-only">Open main menu</span>
           <div
-            class="absolute block w-5 transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+            class="absolute left-1/2 top-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform"
           >
             <span
               aria-hidden="true"
-              class="absolute block w-6 h-1 transition duration-200 ease-in-out transform bg-light-accent"
+              class="bg-light-accent absolute block h-1 w-6 transform transition duration-200 ease-in-out"
               :class="{ 'rotate-45': open, ' -translate-y-1.5': !open }"
             ></span>
             <span
               aria-hidden="true"
-              class="absolute block w-6 h-1 transition duration-200 ease-in-out transform bg-light-accent"
+              class="bg-light-accent absolute block h-1 w-6 transform transition duration-200 ease-in-out"
               :class="{ 'opacity-0': open }"
             ></span>
             <span
               aria-hidden="true"
-              class="absolute block w-6 h-1 transition duration-200 ease-in-out transform bg-light-accent"
+              class="bg-light-accent absolute block h-1 w-6 transform transition duration-200 ease-in-out"
               :class="{ '-rotate-45': open, ' translate-y-1.5': !open }"
             ></span>
           </div>
@@ -180,13 +180,13 @@
 
     <!-- Mobile menu -->
     <transition name="slidedown" appear>
-      <div class="fixed z-10 w-screen bg-white shadow-sm top-16" v-if="open">
+      <div class="fixed top-16 z-10 w-screen bg-white shadow-sm" v-if="open">
         <div class="pt-2 pb-3">
           <NuxtLink
             v-for="item in mobileNavigation"
             :key="item.name"
             :to="item.href"
-            class="z-20 block px-3 py-2 text-base font-medium text-center text-black transition-all rounded-md mobile-menu hover:bg-light-accent hover:text-white"
+            class="mobile-menu hover:bg-light-accent z-20 block rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
           >
             {{ item.name }}
           </NuxtLink>

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white divide-y divide-white">
+  <div class="divide-y divide-white bg-white">
     <Html>
       <Head>
         <Link
@@ -12,9 +12,9 @@
 
     <div
       data-aos="fade-in"
-      class="bg-top bg-no-repeat bg-cover bg-haikeiWavy 2xl:bg-contain md:bg-right-top"
+      class="bg-haikeiWavy bg-cover bg-top bg-no-repeat md:bg-right-top 2xl:bg-contain"
     >
-      <base-section class="pt-12 mb-10 sm:pt-16" data-aos="fade-in">
+      <base-section class="mb-10 pt-12 sm:pt-16" data-aos="fade-in">
         <hero-section></hero-section>
       </base-section>
 
@@ -23,20 +23,20 @@
       </base-section>
     </div>
 
-    <base-section class="py-10 bg-gray-50">
+    <base-section class="bg-gray-50 py-10">
       <AboutUs></AboutUs>
     </base-section>
 
-    <base-section data-aos="fade-in" class="hidden py-10 bg-white sm:block">
+    <base-section data-aos="fade-in" class="hidden bg-white py-10 sm:block">
       <ProjectsCarousel :projectsList="projectsList"></ProjectsCarousel>
     </base-section>
 
     <!-- Mobile projects section -->
-    <base-section data-aos="fade-in" class="block py-10 bg-white sm:hidden">
+    <base-section data-aos="fade-in" class="block bg-white py-10 sm:hidden">
       <MobileProjects :projectsList="projectsList"></MobileProjects>
     </base-section>
 
-    <base-section data-aos="fade-in" class="py-10 bg-white">
+    <base-section data-aos="fade-in" class="bg-white py-10">
       <CollaboratorsSection></CollaboratorsSection>
     </base-section>
   </div>

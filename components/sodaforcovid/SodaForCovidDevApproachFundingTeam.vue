@@ -1,16 +1,16 @@
 <template>
   <section>
-    <div class="px-5 mx-auto sm:pt-10 sm:px-10">
-      <div class="flex flex-col max-w-screen-lg mx-auto">
+    <div class="mx-auto px-5 sm:px-10 sm:pt-10">
+      <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1
-          class="py-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 md:py-0 font-inter"
+          class="font-inter py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0"
         >
           Development Approach
         </h1>
         <div class="w-full py-2">
-          <div class="flex flex-col justify-between w-full sm:flex-row">
-            <div class="pr-10 mb-10 sm:mb-5">
-              <p class="w-full text-lg text-black font-asap">
+          <div class="flex w-full flex-col justify-between sm:flex-row">
+            <div class="mb-10 pr-10 sm:mb-5">
+              <p class="font-asap w-full text-lg text-black">
                 SODA for COVID-19 is distributed as an open-source application
                 with an MIT License. Anyone is free to fork our GitHub
                 repository and make their own changes if they would like. If you
@@ -18,7 +18,7 @@
                 suggestion, please feel free to submit an issue on the
                 repository.
               </p>
-              <div class="flex mt-3 text-accent">
+              <div class="text-accent mt-3 flex">
                 <a
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/graphs/contributors"
                   target="_blank"
@@ -64,7 +64,7 @@
                   />
                 </a>
               </div>
-              <div class="flex mt-2 md:mt-1">
+              <div class="mt-2 flex md:mt-1">
                 <a
                   href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
                   target="_blank"
@@ -79,7 +79,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-2 arrow-animate"
+                    class="arrow-animate ml-2 h-4 w-4"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -97,7 +97,7 @@
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="-0.122 175.062 480.244 129.875"
-                  class="h-10 transition-all hover:filter hover:drop-shadow-xl"
+                  class="h-10 transition-all hover:drop-shadow-xl hover:filter"
                 >
                   <g fill="#121110">
                     <path
@@ -113,22 +113,22 @@
     </div>
   </section>
   <section>
-    <div class="px-5 mx-auto sm:pt-2 sm:px-10">
-      <div class="flex flex-col max-w-screen-lg mx-auto">
+    <div class="mx-auto px-5 sm:px-10 sm:pt-2">
+      <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1
-          class="py-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 md:py-0 font-inter"
+          class="font-inter py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0"
         >
           Funding
         </h1>
         <div class="w-full py-2">
-          <div class="flex flex-col justify-between w-full sm:flex-row">
-            <div class="pr-10 mb-10 sm:mb-5">
-              <p class="w-full text-lg text-black font-asap">
+          <div class="flex w-full flex-col justify-between sm:flex-row">
+            <div class="mb-10 pr-10 sm:mb-5">
+              <p class="font-asap w-full text-lg text-black">
                 SODA for COVID-19 Research is funded through a supplemental
                 award from the National Institute of Allergy and Infectious
                 Diseases (NIAID).
               </p>
-              <div class="hidden mt-2 md:mt-1" aria-hidden="true">
+              <div class="mt-2 hidden md:mt-1" aria-hidden="true">
                 <a
                   href="#"
                   target="_blank"
@@ -144,7 +144,7 @@
                     stroke-linecap="round"
                     stroke-linejoin="round"
                     stroke-width="2"
-                    class="w-4 h-4 ml-2 arrow-animate"
+                    class="arrow-animate ml-2 h-4 w-4"
                     viewBox="0 0 24 24"
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -158,44 +158,44 @@
     </div>
   </section>
   <section>
-    <div class="px-5 mx-auto sm:pt-2 sm:px-10">
-      <div class="flex flex-col max-w-screen-lg mx-auto">
+    <div class="mx-auto px-5 sm:px-10 sm:pt-2">
+      <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1
-          class="pb-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 font-inter"
+          class="font-inter pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8"
         >
           Team Members
         </h1>
         <div class="w-full">
           <div>
-            <div class="w-full mb-10 sm:mb-5">
+            <div class="mb-10 w-full sm:mb-5">
               <div
-                class="grid grid-cols-2 py-0 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 md:py-1"
+                class="grid grid-cols-2 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4"
               >
                 <div v-for="member in membersList" :key="member.name">
                   <router-link :to="member.href" v-if="!member.external">
                     <div
-                      class="flex flex-col items-center p-2 transition-all rounded-lg hover:bg-gray-200"
+                      class="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
-                        class="my-2 rounded-full h-28"
+                        class="my-2 h-28 rounded-full"
                       />
-                      <p class="ml-2 text-lg font-normal text-center font-asap">
+                      <p class="font-asap ml-2 text-center text-lg font-normal">
                         {{ member.name }}
                       </p>
                     </div>
                   </router-link>
                   <a v-else :href="member.href" target="_blank" rel="noopener">
                     <div
-                      class="flex flex-col items-center p-2 transition-all rounded-lg hover:bg-gray-200"
+                      class="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200"
                     >
                       <img
                         :src="member.image"
                         :alt="member.name + ` profile picture`"
-                        class="my-2 rounded-full h-28"
+                        class="my-2 h-28 rounded-full"
                       />
-                      <p class="ml-2 text-lg font-normal text-center font-asap">
+                      <p class="font-asap ml-2 text-center text-lg font-normal">
                         {{ member.name }}
                       </p>
                     </div>
@@ -209,17 +209,17 @@
     </div>
   </section>
   <section>
-    <div class="px-5 mx-auto sm:pt-2 sm:px-10">
-      <div class="flex flex-col max-w-screen-lg mx-auto">
+    <div class="mx-auto px-5 sm:px-10 sm:pt-2">
+      <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1
-          class="pb-5 text-4xl subpixel-antialiased font-black text-left md:mr-8 font-inter"
+          class="font-inter pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8"
         >
           Research Partners
         </h1>
         <div class="w-full py-2">
-          <div class="flex flex-col justify-between w-full sm:flex-row">
-            <div class="pr-10 mb-10 sm:mb-5">
-              <p class="w-full text-lg text-black font-asap">
+          <div class="flex w-full flex-col justify-between sm:flex-row">
+            <div class="mb-10 pr-10 sm:mb-5">
+              <p class="font-asap w-full text-lg text-black">
                 SODA for COVID-19 Research is developed in collaboration with
                 Dr. Zicheng Hu (UCSF) and his colleagues at University of
                 California, San Francisco and Stanford University who are
@@ -233,9 +233,9 @@
         </div>
         <div class="w-full">
           <div>
-            <div class="w-full mb-10 sm:mb-5">
+            <div class="mb-10 w-full sm:mb-5">
               <div
-                class="grid grid-cols-2 py-0 md:grid-cols-2 lg:grid-cols-4 md:gap-3 lg:gap-4 md:py-1"
+                class="grid grid-cols-2 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4"
               >
                 <a
                   v-for="collaborator in collaboratorsList"
@@ -245,12 +245,12 @@
                   rel="noopener"
                 >
                   <div
-                    class="flex flex-col items-center justify-between h-full p-2 transition-all rounded-lg hover:bg-gray-200"
+                    class="flex h-full flex-col items-center justify-between rounded-lg p-2 transition-all hover:bg-gray-200"
                   >
                     <img
                       :src="collaborator.image"
                       :alt="collaborator.name + ` profile picture`"
-                      class="w-32 h-32 my-2 rounded-full"
+                      class="my-2 h-32 w-32 rounded-full"
                       v-if="collaborator.type === 'person'"
                     />
                     <img
@@ -259,7 +259,7 @@
                       :alt="collaborator.name + ` profile picture`"
                       class="mx-10 my-auto"
                     />
-                    <p class="mt-3 text-lg font-normal text-center font-asap">
+                    <p class="font-asap mt-3 text-center text-lg font-normal">
                       {{ collaborator.name }}
                     </p>
                   </div>

@@ -1,13 +1,13 @@
 <template>
-  <section class="max-w-screen-xl mx-auto">
-    <div class="flex flex-col w-full">
+  <section class="mx-auto max-w-screen-xl">
+    <div class="flex w-full flex-col">
       <h2
-        class="py-1 text-2xl font-bold text-center font-inter sm:text-2xl md:text-3xl lg:text-5xl"
+        class="font-inter py-1 text-center text-2xl font-bold sm:text-2xl md:text-3xl lg:text-5xl"
       >
         Impact
       </h2>
 
-      <h3 class="text-lg text-center font-inter md:text-xl lg:text-2xl">
+      <h3 class="font-inter text-center text-lg md:text-xl lg:text-2xl">
         Coming soon...
       </h3>
     </div>

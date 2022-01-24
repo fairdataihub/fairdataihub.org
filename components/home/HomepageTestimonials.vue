@@ -1,40 +1,40 @@
 <template>
   <div
-    class="flex flex-col items-center justify-between w-full max-w-screen-lg gap-4 p-8 mx-auto mb-8 md:mb-0"
+    class="mx-auto mb-8 flex w-full max-w-screen-lg flex-col items-center justify-between gap-4 p-8 md:mb-0"
   >
-    <div class="flex flex-col items-center mb-4">
+    <div class="mb-4 flex flex-col items-center">
       <p
-        class="w-full my-2 text-4xl font-extrabold tracking-tight text-center sm:text-4xl"
+        class="my-2 w-full text-center text-4xl font-extrabold tracking-tight sm:text-4xl"
       >
         Testimonials
       </p>
-      <p class="w-full max-w-2xl text-xl text-center font-asap">
+      <p class="font-asap w-full max-w-2xl text-center text-xl">
         See what people who use our products have to say about us.
       </p>
     </div>
-    <div class="flex flex-col w-full md:flex-row">
+    <div class="flex w-full flex-col md:flex-row">
       <div
-        class="p-8 mx-auto my-4 bg-white shadow-lg md:w-64 lg:w-72 rounded-xl md:p-4"
+        class="mx-auto my-4 rounded-xl bg-white p-8 shadow-lg md:w-64 md:p-4 lg:w-72"
         v-for="item in testimonialsList"
         :key="item.name"
       >
         <p>
-          <span class="text-lg font-bold text-accent"> “ </span>
-          <span class="text-lg text-black font-asap sm:text-base">
+          <span class="text-accent text-lg font-bold"> “ </span>
+          <span class="font-asap text-lg text-black sm:text-base">
             {{ item.content }}
           </span>
-          <span class="text-lg font-bold text-accent"> ” </span>
+          <span class="text-accent text-lg font-bold"> ” </span>
         </p>
-        <div class="flex items-center mt-4">
+        <div class="mt-4 flex items-center">
           <a href="#" class="relative block">
             <img
               alt="profile"
               :src="item.img"
-              class="object-cover w-16 h-16 mx-auto rounded-full sm:h-10 sm:w-10"
+              class="mx-auto h-16 w-16 rounded-full object-cover sm:h-10 sm:w-10"
             />
           </a>
-          <div class="flex flex-col justify-between ml-2">
-            <span class="text-xl font-semibold sm:text-sm text-accent">
+          <div class="ml-2 flex flex-col justify-between">
+            <span class="text-accent text-xl font-semibold sm:text-sm">
               {{ item.name }}
             </span>
             <span

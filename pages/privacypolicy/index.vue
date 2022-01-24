@@ -11,7 +11,7 @@
     </Html>
 
     <section
-      class="flex flex-col max-w-screen-lg px-6 py-5 mx-auto text-lg text-black sm:px-6 lg:px-8"
+      class="mx-auto flex max-w-screen-lg flex-col px-6 py-5 text-lg text-black sm:px-6 lg:px-8"
     >
       <h1 class="heading">Privacy Policy for FAIR Data Innovations Hub</h1>
 
@@ -19,7 +19,7 @@
 
       <p>
         At Fair Data Innovations Hub, accessible from
-        <NuxtLink to="/" class="text-base text-url">
+        <NuxtLink to="/" class="text-url text-base">
           https://fairdataihub.org/ </NuxtLink
         >, one of our main priorities is the privacy of our visitors. This
         Privacy Policy document contains types of information that is collected
@@ -71,7 +71,7 @@
 
       <div class="pl-8">
         <ul
-          class="pb-3 my-1 text-base leading-7 text-gray-800 list-disc list-outside"
+          class="my-1 list-outside list-disc pb-3 text-base leading-7 text-gray-800"
         >
           <li>Provide, operate, and maintain our website</li>
           <li>Improve, personalize, and expand our website</li>
@@ -117,7 +117,7 @@
       <p>
         FAIR Data Innovations Hub may also collect data automatically through
         cookies. For information on how we use cookies, refer to our
-        <NuxtLink to="/cookiepolicy" class="text-base text-url">
+        <NuxtLink to="/cookiepolicy" class="text-url text-base">
           Cookie Policy </NuxtLink
         >.
       </p>
@@ -170,7 +170,7 @@
 
       <div class="pl-8">
         <ul
-          class="pb-3 my-1 text-base leading-7 text-gray-800 list-disc list-outside"
+          class="my-1 list-outside list-disc pb-3 text-base leading-7 text-gray-800"
         >
           <li>
             Request that a business that collects a consumer's personal data
@@ -201,7 +201,7 @@
 
       <div class="pl-8">
         <ul
-          class="pb-3 my-1 text-base leading-7 text-gray-800 list-disc list-outside"
+          class="my-1 list-outside list-disc pb-3 text-base leading-7 text-gray-800"
         >
           <li>
             <span class="italic"> The right to access </span>
@@ -291,14 +291,14 @@
 
       <p>
         <strong> Contact form: </strong>
-        <NuxtLink to="/contact-us" class="text-base text-url">
+        <NuxtLink to="/contact-us" class="text-url text-base">
           https://fairdataihub.org/contact-us
         </NuxtLink>
       </p>
 
       <p>
         <strong> Email: </strong>
-        <a href="mailto:info@fairdataihub.org" class="text-base text-url">
+        <a href="mailto:info@fairdataihub.org" class="text-url text-base">
           info@fairdataihub.org
         </a>
       </p>
@@ -318,14 +318,14 @@ export default {
 
 <style lang="postcss" scoped>
 .heading {
-  @apply mb-3 mt-4 font-extrabold tracking-tight text-4xl;
+  @apply mb-3 mt-4 text-4xl font-extrabold tracking-tight;
 }
 
 .subheading {
-  @apply mb-3 mt-6 font-bold tracking-tight text-3xl;
+  @apply mb-3 mt-6 text-3xl font-bold tracking-tight;
 }
 
 p {
-  @apply my-1 text-base leading-7 text-gray-800 font-normal;
+  @apply my-1 text-base font-normal leading-7 text-gray-800;
 }
 </style>

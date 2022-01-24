@@ -1,13 +1,13 @@
 <template>
   <section>
-    <div class="max-w-screen-lg px-6 mx-auto sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-screen-lg px-6 sm:px-6 lg:px-8">
       <div class="lg:text-center">
         <p
-          class="my-2 text-4xl font-extrabold tracking-tight font-inter sm:text-4xl"
+          class="font-inter my-2 text-4xl font-extrabold tracking-tight sm:text-4xl"
         >
           About
         </p>
-        <p class="max-w-2xl text-xl text-black font-asap sm:text-xl lg:mx-auto">
+        <p class="font-asap max-w-2xl text-xl text-black sm:text-xl lg:mx-auto">
           SODA (Sofware to Organize Data Automatically) for COVID-19 Research is
           a cross-platform desktop software that allows researchers to easily
           organize and share their COVID-19 related genomics, immunology, and
@@ -17,25 +17,25 @@
 
       <div class="mt-10">
         <dl
-          class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10"
+          class="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0"
         >
           <div v-for="feature in features" :key="feature.name" class="relative">
             <dt>
               <div
-                class="absolute flex items-center justify-center w-12 h-12 text-white rounded-md bg-light-vision"
+                class="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white"
               >
                 <component
                   :is="feature.icon"
-                  class="w-6 h-6"
+                  class="h-6 w-6"
                   aria-hidden="true"
                 />
               </div>
-              <p class="ml-16 text-xl font-medium font-inter sm:text-lg">
+              <p class="font-inter ml-16 text-xl font-medium sm:text-lg">
                 {{ feature.name }}
               </p>
             </dt>
             <dd
-              class="mt-2 ml-16 text-lg text-black md:mt-0 sm:text-base font-asap"
+              class="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0"
               v-html="feature.description"
             ></dd>
           </div>

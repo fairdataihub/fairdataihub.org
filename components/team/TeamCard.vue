@@ -1,26 +1,26 @@
 <template>
   <div :id="profile.id">
     <div :class="[borderClasses, `flex flex-col sm:flex-row `]">
-      <div class="w-full my-3 md:w-1/2 lg:w-2/5 sm:my-2">
+      <div class="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
         <img :data-blink-uuid="profile.image" alt="" class="rounded-lg" />
       </div>
       <div
-        class="flex flex-col w-full px-0 py-3 md:w-1/2 lg:w-3/5 sm:py-4 sm:px-8 lg:ml-2"
+        class="flex w-full flex-col px-0 py-3 sm:py-4 sm:px-8 md:w-1/2 lg:ml-2 lg:w-3/5"
       >
         <h1 class="text-2xl font-semibold sm:text-xl lg:text-3xl">
           {{ profile.name }}
         </h1>
         <h2
-          class="pb-1 text-xl font-medium text-primary sm:text-lg lg:text-2xl"
+          class="text-primary pb-1 text-xl font-medium sm:text-lg lg:text-2xl"
         >
           {{ profile.title }}
         </h2>
-        <p class="text-lg text-black font-asap sm:text-base lg:text-lg">
+        <p class="font-asap text-lg text-black sm:text-base lg:text-lg">
           {{ profile.bio }}
         </p>
         <div class="py-2" v-if="profile.education">
           <h3
-            class="pb-1 text-lg font-medium text-primary sm:text-md lg:text-xl"
+            class="text-primary sm:text-md pb-1 text-lg font-medium lg:text-xl"
           >
             Education
           </h3>
@@ -47,7 +47,7 @@
               width="30"
               height="30"
               fill="currentColor"
-              class="text-xl text-gray-700 transition-colors duration-200 hover:text-accent h-9 w-9 sm:h-6 lg:h-6 lg:w-6"
+              class="hover:text-accent h-9 w-9 text-xl text-gray-700 transition-colors duration-200 sm:h-6 lg:h-6 lg:w-6"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -69,7 +69,7 @@
               width="30"
               height="30"
               fill="currentColor"
-              class="text-xl text-gray-700 transition-colors duration-200 hover:text-accent h-9 w-9 sm:h-6 lg:h-6 lg:w-6"
+              class="hover:text-accent h-9 w-9 text-xl text-gray-700 transition-colors duration-200 sm:h-6 lg:h-6 lg:w-6"
               viewBox="0 0 1792 1792"
             >
               <path
@@ -89,7 +89,7 @@
               width="30"
               height="30"
               fill="currentColor"
-              class="text-xl text-gray-700 transition-colors duration-200 hover:text-accent h-9 w-9 sm:h-6 lg:h-6 lg:w-6"
+              class="hover:text-accent h-9 w-9 text-xl text-gray-700 transition-colors duration-200 sm:h-6 lg:h-6 lg:w-6"
               viewBox="0 0 1792 1792"
               xmlns="http://www.w3.org/2000/svg"
             >

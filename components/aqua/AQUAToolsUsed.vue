@@ -1,12 +1,12 @@
 <template>
   <section>
-    <div class="px-5 mx-auto sm:px-10">
-      <div class="flex flex-col max-w-screen-lg mx-auto">
+    <div class="mx-auto px-5 sm:px-10">
+      <div class="mx-auto flex max-w-screen-lg flex-col">
         <h1 class="py-5 text-4xl font-black md:mr-8 md:py-0">Technology</h1>
         <dl class="py-2">
           <div class="flex flex-col justify-between sm:flex-row">
             <dd class="mb-10 sm:mb-5">
-              <p class="text-lg text-black sm:text-base font-asap">
+              <p class="font-asap text-lg text-black sm:text-base">
                 AQUA for SPARC utilized 2 main tool groups to develop the User
                 interface and the Back end. The former includes the HTML-CSS-JS
                 trio using: VueJS and NuxtJS. The latter is implemented using
@@ -15,7 +15,7 @@
             </dd>
           </div>
           <div
-            class="grid items-center justify-center grid-cols-2 gap-6 pointer-events-none sm:grid-cols-4 md:py-1"
+            class="pointer-events-none grid grid-cols-2 items-center justify-center gap-6 sm:grid-cols-4 md:py-1"
           >
             <img
               src="https://ucarecdn.com/3d7de35c-3e69-4bdb-a524-8b84b5f766ed/"

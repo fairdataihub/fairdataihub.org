@@ -1,5 +1,5 @@
 <template>
-  <nav class="z-0 px-6 mt-4">
+  <nav class="z-0 mt-4 px-6">
     <select
       id="docs-title"
       @change="onChange()"

@@ -1,9 +1,9 @@
 <template>
-  <div class="container max-w-screen-lg px-6 py-8 mx-auto">
+  <div class="container mx-auto max-w-screen-lg px-6 py-8">
     <div class="items-center justify-center md:flex">
       <div class="w-full p-2 lg:w-1/2">
         <h1
-          class="w-full py-3 text-5xl font-black text-center md:text-left md:py-3"
+          class="w-full py-3 text-center text-5xl font-black md:py-3 md:text-left"
         >
           Making FAIR
           <span class="text-accent"> data </span>
@@ -11,7 +11,7 @@
         </h1>
 
         <p
-          class="w-full pb-4 mt-2 text-2xl font-normal text-center text-black md:text-left sm:mt-0 md:text-xl"
+          class="mt-2 w-full pb-4 text-center text-2xl font-normal text-black sm:mt-0 md:text-left md:text-xl"
         >
           <span class="font-semibold">F</span>indable,
           <span class="font-semibold">A</span>ccessible,
@@ -25,7 +25,7 @@
           <NuxtLink to="/contact-us">
             <button
               type="button"
-              class="p-3 my-3 text-base font-semibold text-center text-black transition-all bg-transparent border-2 border-black rounded-lg hover:border-light-accent hover:text-accent"
+              class="hover:border-light-accent hover:text-accent my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all"
             >
               Contact us
             </button>
@@ -34,7 +34,7 @@
       </div>
 
       <div
-        class="flex items-center justify-center w-full p-5 mt-6 lg:w-1/2 lg:mt-0 lg:p-2"
+        class="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2"
       >
         <ClientOnly>
           <!-- <LottieComponentVue :animationData="HeroData" /> -->
