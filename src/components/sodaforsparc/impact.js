@@ -1,9 +1,24 @@
 import Link from 'next/link';
+import ImpactNumber from './impactNumber';
 
 export default function Impact() {
-  const filesNum = 16300;
-  const datasetsNum = 60;
-  const dataNum = 3.5;
+  const ImpactList = [
+    {
+      description: 'Files touched',
+      amount: '19300',
+      unit: '',
+    },
+    {
+      description: 'Datasets Modified',
+      amount: '90',
+      unit: '',
+    },
+    {
+      description: 'Data uploaded',
+      amount: '4',
+      unit: 'TB',
+    },
+  ];
 
   return (
     <section className="mx-auto max-w-screen-xl">
@@ -18,42 +33,24 @@ export default function Impact() {
       </div>
 
       <div className="flex flex-col justify-around p-6 sm:flex-row">
-        <div className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
-          <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
-
-          <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
-            <span id="filesNum">{filesNum}</span>
-            <span>+</span>
-          </p>
-
-          <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
-            Files touched
-          </p>
-        </div>
-        <div className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
-          <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
-
-          <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
-            <span id="datasetsNum">{datasetsNum}</span>
-            <span>+</span>
-          </p>
-
-          <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
-            Datasets modified
-          </p>
-        </div>
-        <div className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
-          <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
-
-          <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
-            <span id="dataNum">{dataNum}</span>
-            <span>+ TB</span>
-          </p>
-
-          <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
-            Data uploaded
-          </p>
-        </div>
+        {ImpactList.map((impact) => {
+          return (
+            <div
+              key={impact.description}
+              className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6"
+            >
+              <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
+              <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
+                <ImpactNumber countTo={impact.amount} animationDuration="2" />
+                <span>+</span>
+                {impact.unit && <span> {impact.unit}</span>}
+              </p>
+              <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
+                {impact.description}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
