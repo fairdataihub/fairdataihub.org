@@ -3,7 +3,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const successNotify = () =>
-  toast.success(' Your message was recieved! We will get back to you soon.', {
+  toast.success(' Your message was received! We will get back to you soon.', {
     position: 'bottom-right',
     autoClose: 5000,
     hideProgressBar: false,
