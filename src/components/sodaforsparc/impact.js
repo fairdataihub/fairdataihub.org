@@ -39,7 +39,6 @@ export default function Impact() {
               key={impact.description}
               className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6"
             >
-              <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
               <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
                 <ImpactNumber countTo={impact.amount} animationDuration="2" />
                 <span>+</span>
