@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -16,7 +16,7 @@
   }
 
   .img-parent-div {
-    @apply flex justify-center mx-8 my-4;
+    @apply mx-8 my-4 flex justify-center;
   }
 
   .img-parent-div > img {
@@ -32,7 +32,7 @@
   }
 
   .highlight-text {
-    @apply bg-gray-300 px-2 rounded-md;
+    @apply rounded-md bg-gray-300 px-2;
   }
 
   .hover-underline-animation {
@@ -40,12 +40,12 @@
   }
 
   .text-url {
-    @apply text-accent  inline-flex items-center text-lg;
+    @apply inline-flex  items-center text-lg text-accent;
   }
 
   .hover-underline-animation:after {
-    @apply absolute w-full bottom-0 left-0 bg-light-accent h-[2px];
-    content: "";
+    @apply absolute bottom-0 left-0 h-[2px] w-full bg-light-accent;
+    content: '';
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -57,14 +57,14 @@
   }
 
   .nav-item {
-    @apply relative sm:px-1 lg:px-3 py-2 mx-1;
+    @apply relative mx-1 py-2 sm:px-1 lg:px-3;
   }
 
   .nav-item.router-link-active:after {
-    @apply absolute w-full bottom-0 left-0 bg-light-accent h-[2px] transition-all;
+    @apply absolute bottom-0 left-0 h-[2px] w-full bg-light-accent transition-all;
     transform: scaleX(1);
     transform-origin: bottom left;
-    content: "";
+    content: '';
   }
 
   /* ===== Scrollbar CSS ===== */
