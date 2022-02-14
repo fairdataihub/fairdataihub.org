@@ -1,14 +1,16 @@
 {
-  "name": "typescript-nextjs-starter",
-  "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
+  "name": "fairdataihub-website",
+  "description": "Homepage for the Fair Data Innovations Hub",
   "version": "2.0.0",
   "private": true,
-  "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
+  "author": "Fair Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
   "license": "MIT",
   "keywords": [
-    "nextjs",
-    "starter",
-    "typescript"
+    "fair data",
+    "fairhub",
+    "fairdataihub",
+    "calmi2",
+    "calmii"
   ],
   "scripts": {
     "dev": "next",
@@ -70,5 +72,14 @@
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
-  }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "bugs": {
+    "url": "https://github.com/fairdataihub/fairdataihub-website/issues/new/choose"
+  },
+  "homepage": "https://fairdataihub.org"
 }
