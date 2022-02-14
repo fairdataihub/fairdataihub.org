@@ -1,6 +1,9 @@
 export default function TeamCard({ profile }) {
   return (
-    <div className={'flex flex-col py-4 px-1 sm:flex-row lg:p-5'}>
+    <div
+      className={'flex flex-col py-4 px-1 sm:flex-row lg:p-5'}
+      id={profile.id}
+    >
       <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
         <img src={profile.image} className="rounded-lg" />
       </div>

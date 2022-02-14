@@ -40,7 +40,7 @@ export default function Vision() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <text className="text-url hover-underline-animation">
+                    <p className="text-url hover-underline-animation">
                       Learn more about FAIR
                       <svg
                         fill="none"
@@ -57,7 +57,7 @@ export default function Vision() {
                           data-v-6a723fb6=""
                         ></path>
                       </svg>
-                    </text>
+                    </p>
                   </a>
                 </div>
               </div>

@@ -13,8 +13,44 @@ export default function SodaForSparc() {
       <Head>
         <title>SODA for SPARC - Fair Data Innovations Hub</title>
         <meta
+          property="og:title"
+          content="SODA for SPARC - Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:title"
+          content="SODA for SPARC - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/sodaforsparc" />
+        <meta
+          property="og:url"
+          content="https://fairdataihub.org/sodaforsparc"
+        />
+        <meta
+          property="twitter:url"
+          content="https://fairdataihub.org/sodaforsparc"
+        />
+
+        <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="SODA (Software to Organize Data Automatically) for SPARC is a cross-platform desktop software that allows SPARC-funded researchers to easily comply with the FAIR SPARC Data curation and sharing guidelines"
+        />
+        <meta
+          property="og:description"
+          content="SODA (Software to Organize Data Automatically) for SPARC is a cross-platform desktop software that allows SPARC-funded researchers to easily comply with the FAIR SPARC Data curation and sharing guidelines"
+        />
+        <meta
+          property="twitter:description"
+          content="SODA (Software to Organize Data Automatically) for SPARC is a cross-platform desktop software that allows SPARC-funded researchers to easily comply with the FAIR SPARC Data curation and sharing guidelines"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 

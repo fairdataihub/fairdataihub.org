@@ -4,7 +4,7 @@ export default function Info() {
   const membersList = [
     {
       name: 'Bhavesh Patel',
-      href: '/team/#BhaveshPatel',
+      href: '/team/#Bhavesh-Patel',
       external: false,
       image:
         'https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/',

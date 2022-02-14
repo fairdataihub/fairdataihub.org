@@ -11,11 +11,34 @@ export default function Home() {
     <div>
       <Head>
         <title>Fair Data Innovations Hub</title>
+        <meta property="og:title" content="Fair Data Innovations Hub" />
+        <meta property="twitter:title" content="Fair Data Innovations Hub" />
+
+        <link rel="canonical" href="https://fairdataihub.org" />
+        <meta property="og:url" content="https://fairdataihub.org" />
+        <meta property="twitter:url" content="https://fairdataihub.org" />
+
         <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="FAIR Data Innovations Hub is an organization dedicated to building open source tools that help biomedical researchers understand and follow FAIR Data Principles when showcasing their findings"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          property="og:description"
+          content="FAIR Data Innovations Hub is an organization dedicated to building open source tools that help biomedical researchers understand and follow FAIR Data Principles when showcasing their findings"
+        />
+        <meta
+          property="twitter:description"
+          content="FAIR Data Innovations Hub is an organization dedicated to building open source tools that help biomedical researchers understand and follow FAIR Data Principles when showcasing their findings"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
       </Head>
 
       <main>

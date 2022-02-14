@@ -5,7 +5,7 @@ import TeamCard from '../components/team/teamCard';
 export default function Team() {
   const teamsList = [
     {
-      id: `BhaveshPatel`,
+      id: `Bhavesh-Patel`,
       name: `Bhavesh Patel (he/him)`,
       title: `Founder/Lead`,
       bio: `Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.`,
@@ -32,7 +32,7 @@ export default function Team() {
       },
     },
     {
-      id: `TramNgo`,
+      id: `Tram-Ngo`,
       name: `Tram Ngo (she/her)`,
       title: `Software Developer`,
       bio: `Tram's professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In her free time, she enjoys reading, cooking, doing pilates and yoga.`,
@@ -56,7 +56,7 @@ export default function Team() {
       },
     },
     {
-      id: `SanjaySoundarajan`,
+      id: `Sanjay-Soundarajan`,
       name: `Sanjay Soundarajan (he/him)`,
       title: `Software Developer`,
       bio: `Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.`,
@@ -81,7 +81,7 @@ export default function Team() {
       },
     },
     {
-      id: `ChristopherMarroquin`,
+      id: `Christopher-Marroquin`,
       name: `Christopher Marroquin (he/him)`,
       title: `Software Developer`,
       bio: `Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.`,
@@ -105,7 +105,7 @@ export default function Team() {
       },
     },
     {
-      id: `JacobClark`,
+      id: `Jacob-Clark`,
       name: `Jacob Clark (he/him)`,
       title: `Software Developer`,
       bio: `Jacob is a full-stack developer out of Fresno, CA that strives to create applications that are performant, easy to use, and create value for users. In his free time, Jacob enjoys reading, rock climbing, and playing basketball.`,
@@ -129,7 +129,7 @@ export default function Team() {
       },
     },
     {
-      id: `TaijiYang`,
+      id: `Taiji-Yang`,
       name: `Taiji Yang (he/him)`,
       title: `Software Developer`,
       bio: `Taiji Yang is a full stack software developer who's interested in web development, data analysis and visualization. In his free time, he enjoys reading and playing video games.`,
@@ -151,7 +151,7 @@ export default function Team() {
       },
     },
     {
-      id: `DorianPortillo`,
+      id: `Dorian-Portillo`,
       name: `Dorian Portillo (they/them)`,
       title: `Software Developer`,
       bio: `Dorian is a Guatemalan and Salvadoran frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.`,
@@ -206,10 +206,39 @@ export default function Team() {
       <Head>
         <title>Meet the Team - Fair Data Innovations Hub</title>
         <meta
-          name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          property="og:title"
+          content="Meet the Team - Fair Data Innovations Hub"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <meta
+          property="twitter:title"
+          content="Meet the Team - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/team" />
+        <meta property="og:url" content="https://fairdataihub.org/team" />
+        <meta property="twitter:url" content="https://fairdataihub.org/team" />
+
+        <meta
+          name="description"
+          content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
+        />
+        <meta
+          property="og:description"
+          content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:description"
+          content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
       </Head>
 
       <main className=" mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row">

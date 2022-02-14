@@ -8,8 +8,41 @@ export default function TermsOfUse() {
       <Head>
         <title>Terms of Use - Fair Data Innovations Hub</title>
         <meta
+          property="og:title"
+          content="Terms of Use - Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:title"
+          content="Terms of Use - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/termsofuse" />
+        <meta property="og:url" content="https://fairdataihub.org/termsofuse" />
+        <meta
+          property="twitter:url"
+          content="https://fairdataihub.org/termsofuse"
+        />
+
+        <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="View the Terms of Use of fairdataihub.org"
+        />
+        <meta
+          property="og:description"
+          content="View the Terms of Use of fairdataihub.org"
+        />
+        <meta
+          property="twitter:description"
+          content="View the Terms of Use of fairdataihub.org"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 

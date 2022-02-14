@@ -4,7 +4,7 @@ export default function Info() {
   const membersList = [
     {
       name: 'Sanjay Soundarajan',
-      href: '/team/#SanjaySoundarajan',
+      href: '/team/#Sanjay-Soundarajan',
       external: false,
       image:
         'https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/-/scale_crop/200x200/smart/',

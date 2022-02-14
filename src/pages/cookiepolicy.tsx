@@ -8,16 +8,50 @@ export default function CookiePolicy() {
       <Head>
         <title>Cookie Policy - Fair Data Innovations Hub</title>
         <meta
+          property="og:title"
+          content="Cookie Policy - Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:title"
+          content="Cookie Policy - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/cookiepolicy" />
+        <meta
+          property="og:url"
+          content="https://fairdataihub.org/cookiepolicy"
+        />
+        <meta
+          property="twitter:url"
+          content="https://fairdataihub.org/cookiepolicy"
+        />
+
+        <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="View the Cookie Policy of fairdataihub.org"
+        />
+        <meta
+          property="og:description"
+          content="View the Cookie Policy of fairdataihub.org"
+        />
+        <meta
+          property="twitter:description"
+          content="View the Cookie Policy of fairdataihub.org"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 
       <main>
         <section className="mx-auto flex max-w-screen-lg flex-col px-6 py-5 text-lg text-black sm:px-6 lg:px-8">
-          <h1 className="heading">
-            Cookie Policy for Fair Data Innovations Hub
-          </h1>
+          <h1 className="heading">Cookie Policy</h1>
 
           <h2 className="subheading">What Are Cookies?</h2>
 

@@ -1,7 +1,7 @@
 {
   "name": "typescript-nextjs-starter",
   "description": "A TypeScript starter for Next.js that includes all you need to build amazing projects",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "author": "João Pedro Schmitz <hey@joaopedro.dev> (@jpedroschmitz)",
   "license": "MIT",
@@ -18,7 +18,8 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
     "postinstall": "husky install",
-    "commit": "cz"
+    "commit": "cz",
+    "postbuild": "next-sitemap"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -57,6 +58,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "husky": "7.0.4",
     "lint-staged": "12.1.7",
+    "next-sitemap": "2.1.14",
     "postcss": "8.4.5",
     "prettier": "2.5.1",
     "prettier-plugin-tailwindcss": "0.1.3",

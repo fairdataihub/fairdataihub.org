@@ -13,8 +13,44 @@ export default function SodaForCovid() {
       <Head>
         <title>SODA for COVID-19 Research - Fair Data Innovations Hub</title>
         <meta
+          property="og:title"
+          content="SODA for COVID-19 Research - Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:title"
+          content="SODA for COVID-19 Research - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/sodaforcovid" />
+        <meta
+          property="og:url"
+          content="https://fairdataihub.org/sodaforcovid"
+        />
+        <meta
+          property="twitter:url"
+          content="https://fairdataihub.org/sodaforcovid"
+        />
+
+        <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines"
+        />
+        <meta
+          property="og:description"
+          content="SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines"
+        />
+        <meta
+          property="twitter:description"
+          content="SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 

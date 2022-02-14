@@ -8,16 +8,50 @@ export default function PrivacyPolicy() {
       <Head>
         <title>Privacy Policy - Fair Data Innovations Hub</title>
         <meta
+          property="og:title"
+          content="Privacy Policy - Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:title"
+          content="Privacy Policy - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/privacypolicy" />
+        <meta
+          property="og:url"
+          content="https://fairdataihub.org/privacypolicy"
+        />
+        <meta
+          property="twitter:url"
+          content="https://fairdataihub.org/privacypolicy"
+        />
+
+        <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="View the Privacy Policy of fairdataihub.org"
+        />
+        <meta
+          property="og:description"
+          content="View the Privacy Policy of fairdataihub.org"
+        />
+        <meta
+          property="twitter:description"
+          content="View the Privacy Policy of fairdataihub.org"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 
       <main>
         <section className="mx-auto flex max-w-screen-lg flex-col px-6 py-5 text-lg text-black sm:px-6 lg:px-8">
-          <h1 className="heading">
-            Privacy Policy for FAIR Data Innovations Hub
-          </h1>
+          <h1 className="heading">Privacy Policy</h1>
 
           <p className="content">Effective Date: December 01, 2021</p>
 

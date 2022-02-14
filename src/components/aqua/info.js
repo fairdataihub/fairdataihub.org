@@ -4,7 +4,7 @@ export default function Info() {
   const membersList = [
     {
       name: 'Tram Ngo',
-      href: '/team/#TramNgo',
+      href: '/team/#Tram-Ngo',
       external: false,
       image:
         'https://ucarecdn.com/16f0920a-311b-4850-b81c-46e09604b718/-/scale_crop/200x200/smart/',

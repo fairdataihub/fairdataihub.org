@@ -11,8 +11,41 @@ export default function KnowMore() {
       <Head>
         <title>KnowMore - Fair Data Innovations Hub</title>
         <meta
+          property="og:title"
+          content="KnowMore - Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:title"
+          content="KnowMore - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/knowmore" />
+        <meta property="og:url" content="https://fairdataihub.org/knowmore" />
+        <meta
+          property="twitter:url"
+          content="https://fairdataihub.org/knowmore"
+        />
+
+        <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process"
+        />
+        <meta
+          property="og:description"
+          content="KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process"
+        />
+        <meta
+          property="twitter:description"
+          content="KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 

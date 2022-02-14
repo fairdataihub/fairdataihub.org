@@ -11,9 +11,36 @@ export default function Aqua() {
     <div>
       <Head>
         <title>AQUA - Fair Data Innovations Hub</title>
+        <meta property="og:title" content="AQUA - Fair Data Innovations Hub" />
+        <meta
+          property="twitter:title"
+          content="AQUA - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/aqua" />
+        <meta property="og:url" content="https://fairdataihub.org/aqua" />
+        <meta property="twitter:url" content="https://fairdataihub.org/aqua" />
+
         <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="AQUA (Advanced Query Architecture for the SPARC Portal) an application that aims at improving the search capabilities of the SPARC Portal"
+        />
+        <meta
+          property="og:description"
+          content="AQUA (Advanced Query Architecture for the SPARC Portal) an application that aims at improving the search capabilities of the SPARC Portal"
+        />
+        <meta
+          property="twitter:description"
+          content="AQUA (Advanced Query Architecture for the SPARC Portal) an application that aims at improving the search capabilities of the SPARC Portal"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 

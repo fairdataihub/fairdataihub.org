@@ -43,7 +43,7 @@ export default function About() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <text className="text-url hover-underline-animation">
+                    <p className="text-url hover-underline-animation">
                       Learn more about SPARC
                       <svg
                         fill="none"
@@ -60,7 +60,7 @@ export default function About() {
                           data-v-6a723fb6=""
                         ></path>
                       </svg>
-                    </text>
+                    </p>
                   </a>
                 </div>
               </div>
@@ -87,7 +87,7 @@ export default function About() {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <text className="text-url hover-underline-animation">
+                    <p className="text-url hover-underline-animation">
                       Learn more about SDS
                       <svg
                         fill="none"
@@ -104,7 +104,7 @@ export default function About() {
                           data-v-6a723fb6=""
                         ></path>
                       </svg>
-                    </text>
+                    </p>
                   </a>
                 </div>
               </div>

@@ -11,8 +11,41 @@ export default function SparcLink() {
       <Head>
         <title>SPARClink - Fair Data Innovations Hub</title>
         <meta
+          property="og:title"
+          content="SPARClink - Fair Data Innovations Hub"
+        />
+        <meta
+          property="twitter:title"
+          content="SPARClink - Fair Data Innovations Hub"
+        />
+
+        <link rel="canonical" href="https://fairdataihub.org/sparclink" />
+        <meta property="og:url" content="https://fairdataihub.org/sparclink" />
+        <meta
+          property="twitter:url"
+          content="https://fairdataihub.org/sparclink"
+        />
+
+        <meta
           name="description"
-          content="TypeScript starter for Next.js that includes all you need to build amazing apps"
+          content="SPARClink provides a system that queries all external publications using open source tools and platforms to create interactable visualizations that showcases the impact that SPARC has on the overall scientific research community"
+        />
+        <meta
+          property="og:description"
+          content="SPARClink provides a system that queries all external publications using open source tools and platforms to create interactable visualizations that showcases the impact that SPARC has on the overall scientific research community"
+        />
+        <meta
+          property="twitter:description"
+          content="SPARClink provides a system that queries all external publications using open source tools and platforms to create interactable visualizations that showcases the impact that SPARC has on the overall scientific research community"
+        />
+
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
+        />
+        <meta
+          property="twitter:image"
+          content="https://i.ibb.co/svDc3xk/image.png"
         />
       </Head>
 
