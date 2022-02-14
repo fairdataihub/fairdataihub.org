@@ -47,10 +47,16 @@
     content: '';
   }
 
-  .swiper-button-next:after,
-  .swiper-button-prev:after {
-    @apply text-pink-500 transition-all;
+  div.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.h-full.swiper-backface-hidden
+    > div.swiper-button-next {
+    @apply !text-pink-500 transition-all;
   }
+
+  div.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.h-full.swiper-backface-hidden
+    > div.swiper-button-prev {
+    @apply !text-pink-500 transition-all;
+  }
+
   .swiper-pagination-bullet {
     @apply w-10 rounded bg-pink-300 transition-all hover:bg-pink-500;
   }

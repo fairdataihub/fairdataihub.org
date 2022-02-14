@@ -1357,18 +1357,6 @@ electron-to-chromium@^1.4.17:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.52.tgz#ce44c6d6cc449e7688a4356b8c261cfeafa26833"
   integrity sha512-JGkh8HEh5PnVrhU4HbpyyO0O791dVY6k7AdqfDeqbcRMeoGxtNHWT77deR2nhvbLe4dKpxjlDEvdEwrvRLGu2Q==
 
-embla-carousel-react@6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/embla-carousel-react/-/embla-carousel-react-6.1.1.tgz#9c4e1ae7e436596a461e036c99fe8f003563f0c2"
-  integrity sha512-DJbHjWNwDfZJQRj9QSQtBk2Azp7jjBRmDRennGhBeWqdrgORbQ8L9jAAH2+aiFAk+CeoEyLDnGhvoAGYx4kABg==
-  dependencies:
-    embla-carousel "6.1.1"
-
-embla-carousel@6.1.1:
-  version "6.1.1"
-  resolved "https://registry.yarnpkg.com/embla-carousel/-/embla-carousel-6.1.1.tgz#ad4e24d57650a078097ffa5818e2282199f239cd"
-  integrity sha512-viRoyGYrUALxX/2g6P4bU+Q3lQPeeUt2StcMq3Ketn6lmNOVc7q7cKwiBVqXV+aEIqe/EgCLQZNajewrRKR+Pg==
-
 emoji-regex@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-8.0.0.tgz#e818fd69ce5ccfcb404594f842963bf53164cc37"
@@ -3093,15 +3081,6 @@ prettier@2.5.1:
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.5.1.tgz#fff75fa9d519c54cf0fce328c1017d94546bc56a"
   integrity sha512-vBZcPRUR5MZJwoyi3ZoyQlc1rXeEck8KgeC9AwwOn+exuxLxq5toTRDTSaVrXHxelDMHy9zlicw8u66yxoSUFg==
 
-prop-types@*:
-  version "15.8.1"
-  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
-  integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
-  dependencies:
-    loose-envify "^1.4.0"
-    object-assign "^4.1.1"
-    react-is "^16.13.1"
-
 prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
@@ -3155,17 +3134,10 @@ react-fast-marquee@1.3.1:
   resolved "https://registry.yarnpkg.com/react-fast-marquee/-/react-fast-marquee-1.3.1.tgz#e026ecbf95e73f287c94af9233bed5886913883c"
   integrity sha512-JUlQMU+IVVNKV+D4BRfRaNEaBj+VyHcI0uupBKyeFhkSY2GBkKw7oGvpNdCkPtKd8Q3H0M5eY7PyUj7AdmKCRA==
 
-react-is@^16.13.1, react-is@^16.7.0, react-is@^16.8.1:
+react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-marquee@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/react-marquee/-/react-marquee-1.0.0.tgz#35a4760efc37995d1d8d494e4298feee6e8ecf04"
-  integrity sha512-AXHGGWdK+BBhKln/ysXD1CLV6pdv9LDm0beoyQ+RYI8FO2PzqwGqDYrS6ssH3TvYytiLCxY0pIxUGGXNn1f/gg==
-  dependencies:
-    prop-types "*"
 
 react-toastify@8.1.1:
   version "8.1.1"
