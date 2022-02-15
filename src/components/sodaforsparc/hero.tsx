@@ -1,52 +1,57 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
+interface ReleaseAsset {
+  name: string;
+  browser_download_url: string;
+}
+
 export default function Hero() {
   const getOS = async function () {
-    let userAgent = window.navigator.userAgent;
-    let platform = window.navigator.platform;
-    let macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'];
-    let windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'];
-    let iosPlatforms = ['iPhone', 'iPad', 'iPod'];
-    let os = 'null';
+    const userAgent = window.navigator.userAgent;
+    const platform = window.navigator.platform;
+    const macosPlatforms = [`Macintosh`, `MacIntel`, `MacPPC`, `Mac68K`];
+    const windowsPlatforms = [`Win32`, `Win64`, `Windows`, `WinCE`];
+    const iosPlatforms = [`iPhone`, `iPad`, `iPod`];
+    let os = `null`;
     if (macosPlatforms.indexOf(platform) !== -1) {
-      os = 'macOS';
+      os = `macOS`;
     } else if (iosPlatforms.indexOf(platform) !== -1) {
-      os = 'all';
+      os = `all`;
     } else if (windowsPlatforms.indexOf(platform) !== -1) {
-      os = 'windows';
+      os = `windows`;
     } else if (/Android/.test(userAgent)) {
-      os = 'all';
+      os = `all`;
     } else if (/Linux/.test(platform)) {
-      os = 'linux';
+      os = `linux`;
     } else {
-      os = 'all';
+      os = `all`;
     }
     return os;
   };
 
-  const getLatestVersion = async function (os) {
+  const getLatestVersion = async function (os: string) {
     const res = await fetch(
-      'https://api.github.com/repos/fairdataihub/SODA-for-SPARC/releases',
+      `https://api.github.com/repos/fairdataihub/SODA-for-SPARC/releases`,
     );
     const data = await res.json();
     const release = data[0];
-    let link = '';
-    release.assets.forEach((asset) => {
-      let file_name = asset.name;
-      let file_ext = file_name.split('.').pop();
-      if (os === 'macOS') {
-        if (file_ext === 'dmg') {
+    let link = ``;
+    release.assets.forEach((asset: ReleaseAsset) => {
+      const file_name = asset.name;
+      const file_ext = file_name.split(`.`).pop();
+      if (os === `macOS`) {
+        if (file_ext === `dmg`) {
           link = asset.browser_download_url;
         }
       }
-      if (os === 'windows') {
-        if (file_ext === 'exe') {
+      if (os === `windows`) {
+        if (file_ext === `exe`) {
           link = asset.browser_download_url;
         }
       }
-      if (os === 'linux') {
-        if (file_ext === 'AppImage') {
+      if (os === `linux`) {
+        if (file_ext === `AppImage`) {
           link = asset.browser_download_url;
         }
       }
@@ -58,13 +63,13 @@ export default function Hero() {
     const os = await getOS();
     console.log(os);
     const downloadLink = await getLatestVersion(os);
-    Object.assign(document.createElement('a'), {
-      target: '_blank',
+    Object.assign(document.createElement(`a`), {
+      target: `_blank`,
       href: downloadLink,
     }).click();
-    Object.assign(document.createElement('a'), {
-      target: '_blank',
-      href: 'https://docs.sodaforsparc.io/docs/getting-started/download-soda',
+    Object.assign(document.createElement(`a`), {
+      target: `_blank`,
+      href: `https://docs.sodaforsparc.io/docs/getting-started/download-soda`,
     }).click();
   };
 

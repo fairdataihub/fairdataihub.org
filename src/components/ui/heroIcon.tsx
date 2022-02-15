@@ -8,16 +8,16 @@ import {
 export default function HeroIcon({ icon }) {
   return (
     <div>
-      {icon == 'DesktopComputerIcon' && (
+      {icon == `DesktopComputerIcon` && (
         <DesktopComputerIcon className="h-6 w-6" aria-hidden="true" />
       )}
-      {icon == 'LightningBoltIcon' && (
+      {icon == `LightningBoltIcon` && (
         <LightningBoltIcon className="h-6 w-6" aria-hidden="true" />
       )}
-      {icon == 'ScaleIcon' && (
+      {icon == `ScaleIcon` && (
         <ScaleIcon className="h-6 w-6" aria-hidden="true" />
       )}
-      {icon == 'ExclamationCircleIcon' && (
+      {icon == `ExclamationCircleIcon` && (
         <ExclamationCircleIcon className="h-6 w-6" aria-hidden="true" />
       )}
     </div>

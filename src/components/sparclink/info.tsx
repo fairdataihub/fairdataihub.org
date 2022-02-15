@@ -3,30 +3,34 @@ import Link from 'next/link';
 export default function Info() {
   const membersList = [
     {
-      name: 'Bhavesh Patel',
-      href: '/team/#Bhavesh-Patel',
+      name: `Sanjay Soundarajan`,
+      href: `/team/#Sanjay-Soundarajan`,
       external: false,
-      image:
-        'https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/',
+      image: `https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/-/scale_crop/200x200/smart/`,
     },
     {
-      name: 'Ryan Quey',
-      href: 'https://www.ryanquey.com/',
-      external: true,
-      image:
-        'https://ucarecdn.com/c32fada1-9bf4-4e34-bce2-b52b20e338f1/-/scale_crop/200x200/smart/',
+      name: `Sachira Kuruppu`,
+      href: `/sparclink`,
+      external: false,
+      image: `https://avatars.dicebear.com/api/jdenticon/SachiraKuruppu.svg`,
     },
     {
-      name: 'Anmol Kiran',
-      href: '/knowmore',
+      name: `Ashutosh Singh`,
+      href: `/sparclink`,
       external: false,
-      image: 'https://avatars.dicebear.com/api/jdenticon/AnmolKiran.svg',
+      image: `https://avatars.dicebear.com/api/jdenticon/AshutoshSingh.svg`,
     },
     {
-      name: 'Matthew Schiefer',
-      href: '/knowmore',
+      name: `Monalisa Achalla`,
+      href: `/sparclink`,
       external: false,
-      image: 'https://avatars.dicebear.com/api/jdenticon/MatthewSchiefer.svg',
+      image: `https://avatars.dicebear.com/api/jdenticon/MonalisaAchalla.svg`,
+    },
+    {
+      name: `Jongchan Kim`,
+      href: `/sparclink`,
+      external: false,
+      image: `https://avatars.dicebear.com/api/jdenticon/JongchanKim.svg`,
     },
   ];
 
@@ -42,10 +46,8 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    KnowMore is developed as an open-source application with an
-                    MIT License. It is currently integrated into our fork of the
-                    SPARC Portal and is not available in the official SPARC
-                    Portal release. Anyone is free to fork our GitHub repository
+                    SPARClink was created as an open-source application with an
+                    MIT License. Anyone is free to fork our GitHub repository
                     and make their own changes if they would like. If you would
                     like to submit a feature modification, or feature
                     suggestion, please feel free to submit an issue on the
@@ -53,53 +55,53 @@ export default function Info() {
                   </p>
                   <div className="mt-3 flex text-accent">
                     <a
-                      href="https://github.com/fairdataihub/KnowMore/graphs/contributors"
+                      href="https://github.com/fairdataihub/SPARClink/graphs/contributors"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
+                        src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
                         alt="soda for sparc contributors"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/KnowMore/stargazers"
+                      href="https://github.com/fairdataihub/SPARClink/stargazers"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
+                        src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
                         alt="soda for sparc stars"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/KnowMore/issues"
+                      href="https://github.com/fairdataihub/SPARClink/issues"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
+                        src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
                         alt="soda for sparc issues"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/KnowMore/blob/master/LICENSE"
+                      href="https://github.com/fairdataihub/SPARClink/blob/master/LICENSE"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
+                        src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
                         alt="soda for sparc license"
                       />
                     </a>
                   </div>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
+                      href="https://github.com/fairdataihub/SPARClink"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       rel="noreferrer"
@@ -123,7 +125,7 @@ export default function Info() {
                 </div>
                 <div className="py-3">
                   <a
-                    href="https://github.com/fairdataihub/KnowMore"
+                    href="https://github.com/fairdataihub/SPARClink"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
@@ -154,10 +156,11 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    KnowMore was introduced as a project during the 2021 NIH
-                    SPARC Codeathon with the aim of leveraging the FAIR
-                    characteristics of the SPARC datasets to enable automated
-                    comparison across them. KnowMore won the Grand Prize at the
+                    The SPARClink project was first born as an idea at the 2021
+                    NIH SPARC Codeathon. The idea behind the topic was created
+                    as a method of visualizing citation data to determine the
+                    degree of use of SPARC material outside of the official
+                    channels. SPARClink received the third-place prize at the
                     Codeathon.
                   </p>
                   <div className="mt-2 flex md:mt-1">
@@ -207,7 +210,7 @@ export default function Info() {
                     <g id="primary-logo">
                       <path
                         d="M169.0691,57.0889l-60.922-1.5a2.8941,2.8941,0,0,0-2.7225,1.7374l-.0289.0665L99.327,71.3508,87.0724,4.2313l-.0045-.03a3.9867,3.9867,0,0,0-7.8393-.0051L69.6429,55.6522,1.4623,57.3835a1.5,1.5,0,0,0,.0125,3l70.6845,1.2053a2.9235,2.9235,0,0,0,2.9-2.2814l.0259-.1154L83.01,23.8779,95.2029,82.1654l.0113.0551a3,3,0,0,0,5.684.5645l9.237-21.2451,58.9339-1.451a1.5,1.5,0,0,0,0-3Z"
-                        style={{ fill: 'url(#linear-gradient)' }}
+                        style={{ fill: `url(#linear-gradient)` }}
                       />
                       <path d="M11.3962.9629c6.9756,0,11.2637,4.48,11.2637,11.583V16.77H16.0681V12.5459c0-3.2637-1.7285-5.2471-4.6719-5.2471-3.0078,0-4.7353,1.9834-4.7353,5.2471a6.6109,6.6109,0,0,0,2.4316,5.0557L17.86,25.8574c2.8154,2.6875,5.3115,5.6319,5.3115,10.56,0,7.1035-4.416,11.583-11.5195,11.583-7.167,0-11.583-4.48-11.583-11.583V32.1924H6.6609V36.417c0,3.2637,1.792,5.2471,4.9912,5.2471,3.1357,0,4.9277-1.9834,4.9277-5.2471a7.4448,7.4448,0,0,0-2.6875-5.44l-8.96-8.3828C1.3494,19.2656.0691,16.45.0691,12.3545.0691,5.4424,4.3572.9629,11.3962.9629Z" />
                       <path d="M44.2927,31.9365V47.5518H37.7009V1.4111H48.9636c7.1035,0,11.583,4.48,11.583,11.583v7.3594c0,7.168-4.4795,11.583-11.583,11.583ZM48.9,25.73c3.1993,0,5.0557-1.92,5.0557-5.1836V12.8027c0-3.2-1.8564-5.1845-5.0557-5.1845H44.2927V25.73Z" />
@@ -231,7 +234,7 @@ export default function Info() {
               <div>
                 <div className="mb-10 w-full sm:mb-5">
                   <div className="grid grid-cols-2 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
-                    {membersList.map((member, index) => (
+                    {membersList.map((member) => (
                       <div key={member.name} className="cursor-pointer">
                         {!member.external ? (
                           <Link href={member.href} passHref>
@@ -255,7 +258,7 @@ export default function Info() {
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
                               <img
                                 src={member.image}
-                                alt={member.name + ' profile picture'}
+                                alt={member.name + ` profile picture`}
                                 className="my-2 h-28 rounded-full"
                               />
                               <p className="ml-2 text-center font-asap text-lg font-normal">

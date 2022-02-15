@@ -1,11 +1,38 @@
-export default function TeamCard({ profile }) {
+type ShowLinkProps = {
+  link: string;
+  show: boolean;
+};
+
+type Profile = {
+  id: string;
+  name: string;
+  title: string;
+  bio: string;
+  image: string;
+  borderTop: boolean;
+  borderBottom: boolean;
+  education: Array<string>;
+  twitter: ShowLinkProps;
+  github: ShowLinkProps;
+  linkedin: ShowLinkProps;
+};
+
+interface TeamCardProps {
+  profile: Profile;
+}
+
+const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
   return (
     <div
-      className={'flex flex-col py-4 px-1 sm:flex-row lg:p-5'}
+      className={`flex flex-col py-4 px-1 sm:flex-row lg:p-5`}
       id={profile.id}
     >
       <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
-        <img src={profile.image} className="rounded-lg" />
+        <img
+          src={profile.image}
+          className="rounded-lg"
+          alt={`Potrait image of ${profile.name}`}
+        />
       </div>
       <div className="flex w-full flex-col px-0 py-3 sm:py-4 sm:px-8 md:w-1/2 lg:ml-2 lg:w-3/5">
         <h1 className="text-2xl font-semibold sm:text-xl lg:text-3xl">
@@ -22,7 +49,7 @@ export default function TeamCard({ profile }) {
             Education
           </h3>
           <ul>
-            {profile.education.map((degree) => (
+            {profile.education.map((degree: string) => (
               <li key={degree} className="font-asap">
                 {degree}
               </li>
@@ -94,4 +121,6 @@ export default function TeamCard({ profile }) {
       </div>
     </div>
   );
-}
+};
+
+export default TeamCard;

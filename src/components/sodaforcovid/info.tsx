@@ -3,35 +3,49 @@ import Link from 'next/link';
 export default function Info() {
   const membersList = [
     {
-      name: 'Sanjay Soundarajan',
-      href: '/team/#Sanjay-Soundarajan',
+      name: `Bhavesh Patel`,
+      href: `/team/#Bhavesh-Patel`,
       external: false,
-      image:
-        'https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/-/scale_crop/200x200/smart/',
+      image: `https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/`,
     },
     {
-      name: 'Sachira Kuruppu',
-      href: '/sparclink',
+      name: `Sanjay Soundarajan`,
+      href: `/team/#Sanjay-Soundarajan`,
       external: false,
-      image: 'https://avatars.dicebear.com/api/jdenticon/SachiraKuruppu.svg',
+      image: `https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52//-/scale_crop/200x200/smart/`,
     },
     {
-      name: 'Ashutosh Singh',
-      href: '/sparclink',
+      name: `Taiji Yang`,
+      href: `/team/#Taiji-Yang`,
       external: false,
-      image: 'https://avatars.dicebear.com/api/jdenticon/AshutoshSingh.svg',
+      image: `https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/200x200/smart/`,
+    },
+  ];
+
+  const collaboratorsList = [
+    {
+      name: `Zicheng Hu (UCSF)`,
+      href: `https://profiles.ucsf.edu/zicheng.hu`,
+      image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
+      type: `person`,
     },
     {
-      name: 'Monalisa Achalla',
-      href: '/sparclink',
-      external: false,
-      image: 'https://avatars.dicebear.com/api/jdenticon/MonalisaAchalla.svg',
+      name: `The Butte Lab`,
+      href: `https://buttelab.ucsf.edu/`,
+      image: `https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/`,
+      type: `lab`,
     },
     {
-      name: 'Jongchan Kim',
-      href: '/sparclink',
-      external: false,
-      image: 'https://avatars.dicebear.com/api/jdenticon/JongchanKim.svg',
+      name: `The Jagannathan Lab`,
+      href: `https://med.stanford.edu/jagannathan-lab.html`,
+      image: `https://ucarecdn.com/8c3d42c3-83a9-4620-8dcd-7fdccf11ebce/`,
+      type: `lab`,
+    },
+    {
+      name: `Dr. Greenhouse Lab`,
+      href: `https://profiles.ucsf.edu/bryan.greenhouse#toc-id2`,
+      image: `https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/`,
+      type: `lab`,
     },
   ];
 
@@ -47,62 +61,62 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    SPARClink was created as an open-source application with an
-                    MIT License. Anyone is free to fork our GitHub repository
-                    and make their own changes if they would like. If you would
-                    like to submit a feature modification, or feature
-                    suggestion, please feel free to submit an issue on the
-                    repository.
+                    SODA for COVID-19 is distributed as an open-source
+                    application with an MIT License. Anyone is free to fork our
+                    GitHub repository and make their own changes if they would
+                    like. If you would like to submit a feature modification, or
+                    feature suggestion, please feel free to submit an issue on
+                    the repository.
                   </p>
                   <div className="mt-3 flex text-accent">
                     <a
-                      href="https://github.com/fairdataihub/SPARClink/graphs/contributors"
+                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/graphs/contributors"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
+                        src="https://img.shields.io/github/contributors/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="soda for sparc contributors"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/SPARClink/stargazers"
+                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/stargazers"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
+                        src="https://img.shields.io/github/stars/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="soda for sparc stars"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/SPARClink/issues"
+                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/issues"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
+                        src="https://img.shields.io/github/issues/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="soda for sparc issues"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/SPARClink/blob/master/LICENSE"
+                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/blob/master/LICENSE"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       <img
-                        src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square"
+                        src="https://img.shields.io/github/license/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="soda for sparc license"
                       />
                     </a>
                   </div>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://github.com/fairdataihub/SPARClink"
+                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       rel="noreferrer"
@@ -126,7 +140,7 @@ export default function Info() {
                 </div>
                 <div className="py-3">
                   <a
-                    href="https://github.com/fairdataihub/SPARClink"
+                    href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
@@ -151,28 +165,25 @@ export default function Info() {
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0">
-              Origin Story
+              Funding
             </h1>
             <div className="w-full py-2">
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    The SPARClink project was first born as an idea at the 2021
-                    NIH SPARC Codeathon. The idea behind the topic was created
-                    as a method of visualizing citation data to determine the
-                    degree of use of SPARC material outside of the official
-                    channels. SPARClink received the third-place prize at the
-                    Codeathon.
+                    SODA for COVID-19 Research is funded through a supplemental
+                    award from the National Institute of Allergy and Infectious
+                    Diseases (NIAID).
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://sparc.science/help/2021-sparc-fair-codeathon"
+                      href="https://www.niaid.nih.gov/funding/covid19-research"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
-                        Learn more about the SPARC Codeathon
+                        Explore the award on NIH Reporter
                       </span>
                       <svg
                         fill="none"
@@ -187,38 +198,6 @@ export default function Info() {
                       </svg>
                     </a>
                   </div>
-                </div>
-                <div className="py-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlnsXlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 170.5327 84.5895"
-                    className="h-20"
-                  >
-                    <defs>
-                      <linearGradient
-                        id="linear-gradient"
-                        y1="42.7643"
-                        x2="170.5327"
-                        y2="42.7643"
-                        gradientUnits="userSpaceOnUse"
-                      >
-                        <stop offset="0" stopColor="#0b00bf" />
-                        <stop offset="1" stopColor="#bc00fc" />
-                      </linearGradient>
-                    </defs>
-                    <title>sparc-logo-primary</title>
-                    <g id="primary-logo">
-                      <path
-                        d="M169.0691,57.0889l-60.922-1.5a2.8941,2.8941,0,0,0-2.7225,1.7374l-.0289.0665L99.327,71.3508,87.0724,4.2313l-.0045-.03a3.9867,3.9867,0,0,0-7.8393-.0051L69.6429,55.6522,1.4623,57.3835a1.5,1.5,0,0,0,.0125,3l70.6845,1.2053a2.9235,2.9235,0,0,0,2.9-2.2814l.0259-.1154L83.01,23.8779,95.2029,82.1654l.0113.0551a3,3,0,0,0,5.684.5645l9.237-21.2451,58.9339-1.451a1.5,1.5,0,0,0,0-3Z"
-                        style={{ fill: 'url(#linear-gradient)' }}
-                      />
-                      <path d="M11.3962.9629c6.9756,0,11.2637,4.48,11.2637,11.583V16.77H16.0681V12.5459c0-3.2637-1.7285-5.2471-4.6719-5.2471-3.0078,0-4.7353,1.9834-4.7353,5.2471a6.6109,6.6109,0,0,0,2.4316,5.0557L17.86,25.8574c2.8154,2.6875,5.3115,5.6319,5.3115,10.56,0,7.1035-4.416,11.583-11.5195,11.583-7.167,0-11.583-4.48-11.583-11.583V32.1924H6.6609V36.417c0,3.2637,1.792,5.2471,4.9912,5.2471,3.1357,0,4.9277-1.9834,4.9277-5.2471a7.4448,7.4448,0,0,0-2.6875-5.44l-8.96-8.3828C1.3494,19.2656.0691,16.45.0691,12.3545.0691,5.4424,4.3572.9629,11.3962.9629Z" />
-                      <path d="M44.2927,31.9365V47.5518H37.7009V1.4111H48.9636c7.1035,0,11.583,4.48,11.583,11.583v7.3594c0,7.168-4.4795,11.583-11.583,11.583ZM48.9,25.73c3.1993,0,5.0557-1.92,5.0557-5.1836V12.8027c0-3.2-1.8564-5.1845-5.0557-5.1845H44.2927V25.73Z" />
-                      <path d="M116.6443,47.5518h-6.5918V1.4111h11.583c7.1035,0,11.583,4.48,11.583,11.583v6.2715a11.1941,11.1941,0,0,1-5.0557,9.8555c1.8565,5.6318,4.48,13.3115,6.1436,18.4307h-6.72l-5.5674-16.7666h-5.375Zm4.9267-22.9747c3.2,0,5.0557-1.92,5.0557-5.1191V12.8027c0-3.2-1.8555-5.1845-5.0557-5.1845h-4.9267V24.5771Z" />
-                      <path d="M170.4656,32.1924V36.417c0,7.1035-4.4151,11.583-11.5186,11.583-7.1679,0-11.583-4.48-11.583-11.583V12.5459c0-7.1035,4.4151-11.583,11.583-11.583,7.1035,0,11.5186,4.48,11.5186,11.583V16.77h-6.5908V12.5459c0-3.2637-1.792-5.2471-4.9278-5.2471-3.2,0-4.9922,1.9834-4.9922,5.2471V36.417c0,3.2637,1.792,5.2471,4.9922,5.2471,3.1358,0,4.9278-1.9834,4.9278-5.2471V32.1924Z" />
-                    </g>
-                  </svg>
                 </div>
               </div>
             </div>
@@ -235,7 +214,7 @@ export default function Info() {
               <div>
                 <div className="mb-10 w-full sm:mb-5">
                   <div className="grid grid-cols-2 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
-                    {membersList.map((member, index) => (
+                    {membersList.map((member) => (
                       <div key={member.name} className="cursor-pointer">
                         {!member.external ? (
                           <Link href={member.href} passHref>
@@ -259,7 +238,7 @@ export default function Info() {
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
                               <img
                                 src={member.image}
-                                alt={member.name + ' profile picture'}
+                                alt={member.name + ` profile picture`}
                                 className="my-2 h-28 rounded-full"
                               />
                               <p className="ml-2 text-center font-asap text-lg font-normal">
@@ -269,6 +248,66 @@ export default function Info() {
                           </a>
                         )}
                       </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="mx-auto px-5 sm:px-10 sm:pt-2">
+          <div className="mx-auto flex max-w-screen-lg flex-col">
+            <h1 className="pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8">
+              Research Partners
+            </h1>
+            <div className="w-full py-2">
+              <div className="flex w-full flex-col justify-between sm:flex-row">
+                <div className="mb-10 pr-10 sm:mb-5">
+                  <p className="w-full font-asap text-lg text-black">
+                    SODA for COVID-19 Research is developed in collaboration
+                    with Dr. Zicheng Hu (UCSF) and his colleagues at University
+                    of California, San Francisco and Stanford University who are
+                    conducting a clinical trial for a novel treatment approach
+                    for COVID-19. They will be providing overall guidance on the
+                    applicable FAIR guidelines as well as conducting beta
+                    testing of the software.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="w-full">
+              <div>
+                <div className="mb-10 w-full sm:mb-5">
+                  <div className="grid grid-cols-2 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
+                    {collaboratorsList.map((collaborator) => (
+                      <a
+                        key={collaborator.name}
+                        href={collaborator.href}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <div className="flex h-full flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
+                          {collaborator.type === `person` ? (
+                            <img
+                              src={collaborator.image}
+                              alt={collaborator.name + ` profile picture`}
+                              className="my-2 h-32 w-32 rounded-full"
+                              v-if="collaborator.type === 'person'"
+                            />
+                          ) : (
+                            <img
+                              src={collaborator.image}
+                              alt={collaborator.name + ` profile picture`}
+                              className="mx-10 my-auto"
+                            />
+                          )}
+                          <p className="mt-3 ml-2 text-center font-asap text-lg font-normal">
+                            {collaborator.name}
+                          </p>
+                        </div>
+                      </a>
                     ))}
                   </div>
                 </div>

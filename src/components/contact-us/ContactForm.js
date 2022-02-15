@@ -3,8 +3,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const successNotify = () =>
-  toast.success(' Your message was received! We will get back to you soon.', {
-    position: 'bottom-right',
+  toast.success(` Your message was received! We will get back to you soon.`, {
+    position: `bottom-right`,
     autoClose: 5000,
     hideProgressBar: false,
     closeOnClick: true,
@@ -15,9 +15,9 @@ const successNotify = () =>
 
 const errorNotify = () =>
   toast.error(
-    ' Something went wrong! Please try again later or send us an email at contact@fairdataihub.org',
+    ` Something went wrong! Please try again later or send us an email at contact@fairdataihub.org`,
     {
-      position: 'bottom-right',
+      position: `bottom-right`,
       autoClose: 5000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -31,40 +31,40 @@ const ContactForm = () => (
   <>
     <Formik
       initialValues={{
-        name: '',
-        email: '',
-        institution: '',
-        message: '',
+        name: ``,
+        email: ``,
+        institution: ``,
+        message: ``,
       }}
       validate={(values) => {
         const errors = {};
 
         if (!values.name) {
-          errors.name = 'Required';
+          errors.name = `Required`;
         }
 
         if (!values.email) {
-          errors.email = 'Required';
+          errors.email = `Required`;
         } else if (
           !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
         ) {
-          errors.email = 'Invalid email address';
+          errors.email = `Invalid email address`;
         }
 
         if (!values.institution) {
-          errors.institution = 'Required';
+          errors.institution = `Required`;
         }
 
         if (!values.message) {
-          errors.message = 'Required';
+          errors.message = `Required`;
         }
         return errors;
       }}
       onSubmit={(values, { setSubmitting }) => {
         // post data to server
 
-        fetch('/api/contact', {
-          method: 'POST',
+        fetch(`/api/contact`, {
+          method: `POST`,
           body: JSON.stringify(values),
         }).then(async (response) => {
           const res = await response.json();

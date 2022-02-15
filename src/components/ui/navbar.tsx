@@ -2,7 +2,6 @@ import Link from 'next/link';
 
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import { route } from 'next/dist/server/router';
 
 export default function Navbar() {
   const router = useRouter();
@@ -12,23 +11,10 @@ export default function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  const checkCurrentRoute = (currentRoute) => {
-    if (router.pathname === currentRoute) {
-      return ' router-link-active ';
-    } else {
-      return ' ';
-    }
-  };
-
   return (
     <nav className="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
       <div className=" flex flex-row items-center justify-between bg-gray-50 px-5 py-3">
-        <Link
-          href="/"
-          className={' flex flex-row items-center justify-center '}
-          aria-label="Homepage"
-          passHref
-        >
+        <Link href="/" aria-label="Homepage" passHref>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-auto md:h-6 lg:h-7"
@@ -94,8 +80,8 @@ export default function Navbar() {
             <Link href="/" passHref>
               <div
                 className={
-                  'nav-item hover-underline-animation' +
-                  (router.pathname === '/' ? ' router-link-active ' : ' ')
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/` ? ` router-link-active ` : ` `)
                 }
               >
                 Home
@@ -104,8 +90,8 @@ export default function Navbar() {
             <Link href="/team" passHref>
               <div
                 className={
-                  'nav-item hover-underline-animation' +
-                  (router.pathname === '/team' ? ' router-link-active ' : ' ')
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/team` ? ` router-link-active ` : ` `)
                 }
               >
                 Meet The Team
@@ -137,10 +123,10 @@ export default function Navbar() {
                     <Link href="/sodaforsparc" passHref>
                       <div
                         className={
-                          'nav-item hover-underline-animation mt-2' +
-                          (router.pathname === '/sodaforsparc'
-                            ? ' router-link-active '
-                            : ' ')
+                          `nav-item hover-underline-animation mt-2` +
+                          (router.pathname === `/sodaforsparc`
+                            ? ` router-link-active `
+                            : ` `)
                         }
                       >
                         SODA for SPARC
@@ -149,10 +135,10 @@ export default function Navbar() {
                     <Link href="/sodaforcovid" passHref>
                       <div
                         className={
-                          'nav-item hover-underline-animation mt-2' +
-                          (router.pathname === '/sodaforcovid'
-                            ? ' router-link-active '
-                            : ' ')
+                          `nav-item hover-underline-animation mt-2` +
+                          (router.pathname === `/sodaforcovid`
+                            ? ` router-link-active `
+                            : ` `)
                         }
                       >
                         SODA for COVID-19 Research
@@ -161,10 +147,10 @@ export default function Navbar() {
                     <Link href="/knowmore" passHref>
                       <div
                         className={
-                          'nav-item hover-underline-animation mt-2' +
-                          (router.pathname === '/knowmore'
-                            ? ' router-link-active '
-                            : ' ')
+                          `nav-item hover-underline-animation mt-2` +
+                          (router.pathname === `/knowmore`
+                            ? ` router-link-active `
+                            : ` `)
                         }
                       >
                         KnowMore
@@ -173,10 +159,10 @@ export default function Navbar() {
                     <Link href="/sparclink" passHref>
                       <div
                         className={
-                          'nav-item hover-underline-animation mt-2' +
-                          (router.pathname === '/sparclink'
-                            ? ' router-link-active '
-                            : ' ')
+                          `nav-item hover-underline-animation mt-2` +
+                          (router.pathname === `/sparclink`
+                            ? ` router-link-active `
+                            : ` `)
                         }
                       >
                         SPARClink
@@ -185,10 +171,10 @@ export default function Navbar() {
                     <Link href="/aqua" passHref>
                       <div
                         className={
-                          'nav-item hover-underline-animation mt-2' +
-                          (router.pathname === '/aqua'
-                            ? ' router-link-active '
-                            : ' ')
+                          `nav-item hover-underline-animation mt-2` +
+                          (router.pathname === `/aqua`
+                            ? ` router-link-active `
+                            : ` `)
                         }
                       >
                         AQUA
@@ -201,10 +187,10 @@ export default function Navbar() {
             <Link href="/contact-us" passHref>
               <div
                 className={
-                  'nav-item hover-underline-animation' +
-                  (router.pathname === '/contact-us'
-                    ? ' router-link-active '
-                    : ' ')
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/contact-us`
+                    ? ` router-link-active `
+                    : ` `)
                 }
               >
                 Contact Us
@@ -224,22 +210,22 @@ export default function Navbar() {
               <span
                 aria-hidden="true"
                 className={
-                  'absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ' +
-                  (isOpen ? 'rotate-45 ' : '-translate-y-1.5 ')
+                  `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
+                  (isOpen ? `rotate-45 ` : `-translate-y-1.5 `)
                 }
               ></span>
               <span
                 aria-hidden="true"
                 className={
-                  'absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ' +
-                  (isOpen ? 'opacity-0 ' : ' ')
+                  `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
+                  (isOpen ? `opacity-0 ` : ` `)
                 }
               ></span>
               <span
                 aria-hidden="true"
                 className={
-                  'absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ' +
-                  (isOpen ? '-rotate-45 ' : 'translate-y-1.5 ')
+                  `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
+                  (isOpen ? `-rotate-45 ` : `translate-y-1.5 `)
                 }
               ></span>
             </div>
