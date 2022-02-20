@@ -1,24 +1,39 @@
 import Marquee from 'react-fast-marquee';
+import Image from 'next/image';
 
 export default function Collaborators() {
-  // const logoImages = [
-  //   {
-  //     url: 'https://i.ibb.co/CKXDZzf/ucsf-logo.png',
-  //     alt: 'UCSF logo',
-  //   },
-  //   {
-  //     url: 'https://sparc.science/_nuxt/img/logo-sparc-wave-primary.8ed83a5.svg',
-  //     alt: 'NIH SPARC logo',
-  //   },
-  //   {
-  //     url: 'https://i.ibb.co/XLGBZvG/fdilab-inverted-logo.png',
-  //     alt: 'FDI Lab logo',
-  //   },
-  //   {
-  //     url: 'https://i.ibb.co/0r83YnL/calmi-logo.png',
-  //     alt: 'California Medical Innovations Institute logo',
-  //   },
-  // ];
+  const logoImages = [
+    {
+      src: `/images/ucsf-logo.png`,
+      alt: `UCSF logo`,
+      width: `200`,
+      height: `145`,
+    },
+    {
+      src: `/images/sparc-logo.svg`,
+      alt: `NIH SPARC logo`,
+      width: `200`,
+      height: `111`,
+    },
+    {
+      src: `/images/fdi-lab-logo.png`,
+      alt: `FDI Lab logo`,
+      width: `200`,
+      height: `79.45`,
+    },
+    {
+      src: `/images/calmi-logo.png`,
+      alt: `California Medical Innovations Institute logo`,
+      width: `200`,
+      height: `88`,
+    },
+    {
+      src: `/images/UCL-logo.png`,
+      alt: `UCL logo`,
+      width: `200`,
+      height: `85`,
+    },
+  ];
 
   return (
     <section>
@@ -28,46 +43,29 @@ export default function Collaborators() {
             Where do our tools make a difference?
           </p>
         </div>
-        <div className="block">
+        <div className="mb-2 block">
           <Marquee
             speed={60}
             gradient={true}
             gradientColor={[255, 255, 255]}
             gradientWidth="125px"
           >
-            <img
-              src="https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/"
-              alt="UCSF logo"
-              width="200"
-              className="mx-4 py-2"
-            />
-            <img
-              src="https://ucarecdn.com/a4d32fd6-1b0d-4dc7-b0f4-7807ce96f76d/"
-              alt="NIH SPARC logo"
-              width="200"
-              className="mx-4 py-2"
-            />
-            <img
-              src="https://ucarecdn.com/dd8fcd39-25dc-4460-a02c-402631a00c25/"
-              alt="FDI Lab logo"
-              width="200"
-              className="mx-4 py-2"
-            />
-            <img
-              src="https://ucarecdn.com/1ece10bc-75a1-4750-b9ac-395a17e6ca2f/"
-              alt="California Medical Innovations Institute logo"
-              width="200"
-              className="mx-4 py-2"
-            />
-            <img
-              src="https://ucarecdn.com/58385a01-96b0-4063-a066-f2c83b14e5d9/"
-              alt="University College London"
-              width="200"
-              className="mx-4 py-2"
-            />
+            {logoImages.map((logo, index) => (
+              // <div className="relative w-[200px] " key={index}>
+              <Image
+                key={index}
+                className="h-full !w-full !px-4"
+                src={logo.src}
+                alt={logo.alt}
+                width="200%"
+                height="100%"
+                objectFit="scale-down"
+              />
+              // </div>
+            ))}
           </Marquee>
         </div>
-        <span className="text-xs text-gray-400">
+        <span className=" text-xs text-gray-400">
           Disclaimer: All logos are used with adequate permissions. Opinions,
           interpretations, conclusions and recommendations are those of the FAIR
           Data Innovations Hub and are not necessarily endorsed by the other
