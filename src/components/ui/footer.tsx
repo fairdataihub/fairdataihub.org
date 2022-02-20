@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { getCookie, setCookies, checkCookies } from 'cookies-next';
 
 export default function Footer() {
@@ -12,6 +12,7 @@ export default function Footer() {
   };
 
   const [cookieConsent, setCookieConsent] = useState(checkCookie());
+  const [clientSide, setClientSide] = useState(false);
 
   const consentToCookies = () => {
     setCookies(`cookieConsent`, `true`, {
@@ -19,6 +20,10 @@ export default function Footer() {
     });
     setCookieConsent(true);
   };
+
+  useEffect(() => {
+    setClientSide(true);
+  }, []);
 
   return (
     <footer className="z-30 bg-gray-50 pt-5">
@@ -407,7 +412,8 @@ export default function Footer() {
         </div>
         {/* <span>{{ cookieConsent }}</span> */}
       </div>
-      {!cookieConsent ? (
+
+      {clientSide && !cookieConsent ? (
         <div className="fixed bottom-0 z-50 flex w-full items-center justify-center bg-gray-50 px-5 py-1">
           <p className="py-1 text-sm">
             By continuing to use this site you consent to the use of cookies in
