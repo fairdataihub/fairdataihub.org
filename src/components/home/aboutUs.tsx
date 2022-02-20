@@ -6,7 +6,7 @@ import lottieJson from './team.json';
 export default function AboutUs() {
   return (
     <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4">
-      <div className="items-center justify-center sm:flex">
+      <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
           <Lottie
             loop
