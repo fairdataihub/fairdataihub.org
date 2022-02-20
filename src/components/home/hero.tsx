@@ -2,12 +2,14 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Lottie from 'react-lottie-player';
 
-import lottieJson from './hero.json';
+// import lottieJson from './hero.json';
 
 export default function Hero() {
   const [clientSide, setClientSide] = useState(false);
+  const [lottieJson, setLottieJson] = useState({});
 
   useEffect(() => {
+    setLottieJson(require(`./hero.json`));
     setClientSide(true);
   }, []);
 
