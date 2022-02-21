@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="container mx-auto flex w-full flex-col-reverse items-center px-1 py-2 sm:py-4 md:py-10 lg:flex-row">
           <div className="mb-2 flex flex-col items-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:flex-grow lg:pr-24">
-            <h1 className="mb-1 w-full text-center font-inter text-3xl font-black sm:text-4xl">
+            <h1 className="mb-1 mt-6 w-full text-center font-inter text-3xl font-black sm:text-4xl lg:mt-0">
               KnowMore
             </h1>
             <h2 className="mb-2 w-full text-center font-inter text-2xl font-medium sm:text-2xl">
@@ -33,13 +33,14 @@ export default function Hero() {
               <br />
               <i> </i>
             </p>
-            <div className="flex w-full justify-center">
+            <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <a
                 href="https://sparc-know-more.herokuapp.com/sparc-app/"
                 target="_blank"
                 rel="noreferrer"
+                className="flex flex-row justify-center"
               >
-                <button className="flex items-center justify-center rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
+                <button className=" rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
                   Test KnowMore
                 </button>
               </a>
@@ -47,8 +48,9 @@ export default function Hero() {
                 href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
                 target="_blank"
                 rel="noreferrer"
+                className="flex flex-row justify-center"
               >
-                <button className="ml-4 rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
+                <button className=" rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
                   Documentation
                 </button>
               </a>
@@ -64,11 +66,15 @@ export default function Hero() {
                 height={500}
               />
             </div>
-            <img
-              className="pointer-events-none relative z-10 mx-auto rounded shadow-xl"
-              alt="Knowmore gif"
-              src="https://github.com/fairdataihub/KnowMore/raw/main/docs/knowmore-website.gif"
-            />
+            <div className="pointer-events-none relative z-10 mx-auto rounded shadow-xl">
+              <Image
+                src="https://github.com/fairdataihub/KnowMore/raw/main/docs/knowmore-website.gif"
+                alt="Knowmore gif"
+                width="670"
+                height="370"
+                objectFit="scale-down"
+              />
+            </div>
           </div>
         </div>
       </section>

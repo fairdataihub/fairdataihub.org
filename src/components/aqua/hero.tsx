@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -63,10 +62,14 @@ export default function Hero() {
                 height={500}
               />
             </div>
-            <img
-              className="pointer-events-none relative z-10 mx-auto w-4/5 rounded"
-              alt="Knowmore gif"
-              src="https://ucarecdn.com/e5c4a022-9a55-49b2-8af5-d5d4d8a74057/"
+
+            <Image
+              src="/images/hero/aqua-logo-full.png"
+              alt="Aqua logo"
+              width="537"
+              height="522"
+              priority={true}
+              objectFit="scale-down"
             />
           </div>
         </div>

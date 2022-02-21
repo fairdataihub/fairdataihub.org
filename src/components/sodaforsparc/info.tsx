@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Info() {
   const membersList = [
@@ -6,37 +7,37 @@ export default function Info() {
       name: `Bhavesh Patel`,
       href: `/team/#Bhavesh-Patel`,
       external: false,
-      image: `https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/`,
+      image: `/images/people/bhavesh-head.jpg`,
     },
     {
       name: `Tram Ngo`,
       href: `/team/#Tram-Ngo`,
       external: false,
-      image: `https://ucarecdn.com/16f0920a-311b-4850-b81c-46e09604b718/-/scale_crop/200x200/smart/`,
+      image: `/images/people/tram-head.jpg`,
     },
     {
       name: `Sanjay Soundarajan`,
       href: `/team/#Sanjay-Soundarajan`,
       external: false,
-      image: `https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/-/scale_crop/200x200/smart/`,
+      image: `/images/people/sanjay-head.jpg`,
     },
     {
       name: `Christopher Marroquin`,
       href: `/team/#Christopher-Marroquin`,
       external: false,
-      image: `https://ucarecdn.com/edf2c821-92b0-49c5-adc8-d60f82649e04/-/scale_crop/200x200/smart/`,
+      image: `/images/people/aaron-head.jpg`,
     },
     {
       name: `Jacob Clark`,
       href: `/team/#Jacob-Clark`,
       external: false,
-      image: `https://ucarecdn.com/944f2fec-8d84-47b7-aac6-f3d057a7ac9e/-/scale_crop/200x200/smart/`,
+      image: `/images/people/jacob-head.jpg`,
     },
     {
       name: `Dorian Portillo`,
       href: `/team/#Dorian-Portillo`,
       external: false,
-      image: `https://ucarecdn.com/cfaa5b97-6ed4-4104-81c4-a6e991408b24/-/scale_crop/200x200/smart/`,
+      image: `/images/people/dorian-head.PNG`,
     },
   ];
 
@@ -44,17 +45,17 @@ export default function Info() {
     {
       name: `Pennsieve`,
       href: `https://app.pennsieve.io`,
-      image: `https://ucarecdn.com/5f762506-7176-4037-b388-6ba4d3964cb6/`,
+      image: `/images/collaborators/pennsieve-logo.svg`,
     },
     {
       name: `FAIR Data Informatics Lab`,
       href: `https://www.fdilab.org/`,
-      image: `https://ucarecdn.com/dd8fcd39-25dc-4460-a02c-402631a00c25/`,
+      image: `/images/collaborators/fdi-lab-logo.png`,
     },
     {
       name: `MBF Bioscience`,
       href: `https://www.mbfbioscience.com`,
-      image: `https://ucarecdn.com/69576061-38ac-435b-9a8d-68a14662d2ee/`,
+      image: `/images/collaborators/mbf-logo.png`,
     },
   ];
 
@@ -84,9 +85,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc contributors"
+                        width={94}
+                        height={20}
                       />
                     </a>
                     <a
@@ -95,9 +98,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc stars"
+                        width={54}
+                        height={20}
                       />
                     </a>
                     <a
@@ -106,9 +111,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc issues"
+                        width={90}
+                        height={20}
                       />
                     </a>
                     <a
@@ -117,9 +124,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc license"
+                        width={78}
+                        height={20}
                       />
                     </a>
                   </div>
@@ -131,8 +140,7 @@ export default function Info() {
                       rel="noreferrer"
                     >
                       <span className="font-lato">
-                        {` `}
-                        Explore the GitHub repository{` `}
+                        Explore the GitHub repository
                       </span>
                       <svg
                         fill="none"
@@ -264,12 +272,14 @@ export default function Info() {
                         {!member.external ? (
                           <Link href={member.href} passHref>
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -281,12 +291,14 @@ export default function Info() {
                             rel="noreferrer"
                           >
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -331,10 +343,12 @@ export default function Info() {
                         rel="noreferrer"
                       >
                         <div className="flex h-full flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                          <img
+                          <Image
                             src={collaborator.image}
                             alt={collaborator.name + ` profile picture`}
-                            className="mx-10 my-auto"
+                            width={220}
+                            height={150}
+                            objectFit="scale-down"
                           />
                           <p className="mt-3 ml-2 text-center font-asap text-lg font-normal">
                             {collaborator.name}
