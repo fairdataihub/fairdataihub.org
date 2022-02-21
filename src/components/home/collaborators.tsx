@@ -4,31 +4,31 @@ import Image from 'next/image';
 export default function Collaborators() {
   const logoImages = [
     {
-      src: `/images/ucsf-logo.png`,
+      src: `/images/collaborators/ucsf-logo.png`,
       alt: `UCSF logo`,
       width: `200`,
       height: `145`,
     },
     {
-      src: `/images/sparc-logo.svg`,
+      src: `/images/collaborators/sparc-logo.svg`,
       alt: `NIH SPARC logo`,
       width: `200`,
       height: `111`,
     },
     {
-      src: `/images/fdi-lab-logo.png`,
+      src: `/images/collaborators/fdi-lab-logo.png`,
       alt: `FDI Lab logo`,
       width: `200`,
       height: `79.45`,
     },
     {
-      src: `/images/calmi-logo.png`,
+      src: `/images/collaborators/calmi-logo.png`,
       alt: `California Medical Innovations Institute logo`,
       width: `200`,
       height: `88`,
     },
     {
-      src: `/images/UCL-logo.png`,
+      src: `/images/collaborators/UCL-logo.png`,
       alt: `UCL logo`,
       width: `200`,
       height: `85`,

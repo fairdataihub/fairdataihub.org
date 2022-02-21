@@ -64,7 +64,7 @@ export default function Hero() {
             </div>
 
             <Image
-              src="/images/aqua-logo-full.png"
+              src="/images/hero/aqua-logo-full.png"
               alt="Aqua logo"
               width="537"
               height="522"

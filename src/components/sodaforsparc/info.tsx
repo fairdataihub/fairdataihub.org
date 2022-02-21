@@ -7,37 +7,37 @@ export default function Info() {
       name: `Bhavesh Patel`,
       href: `/team/#Bhavesh-Patel`,
       external: false,
-      image: `https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/`,
+      image: `/images/people/bhavesh-head.jpg`,
     },
     {
       name: `Tram Ngo`,
       href: `/team/#Tram-Ngo`,
       external: false,
-      image: `https://ucarecdn.com/16f0920a-311b-4850-b81c-46e09604b718/-/scale_crop/200x200/smart/`,
+      image: `/images/people/tram-head.jpg`,
     },
     {
       name: `Sanjay Soundarajan`,
       href: `/team/#Sanjay-Soundarajan`,
       external: false,
-      image: `https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/-/scale_crop/200x200/smart/`,
+      image: `/images/people/sanjay-head.jpg`,
     },
     {
       name: `Christopher Marroquin`,
       href: `/team/#Christopher-Marroquin`,
       external: false,
-      image: `https://ucarecdn.com/edf2c821-92b0-49c5-adc8-d60f82649e04/-/scale_crop/200x200/smart/`,
+      image: `/images/people/aaron-head.jpg`,
     },
     {
       name: `Jacob Clark`,
       href: `/team/#Jacob-Clark`,
       external: false,
-      image: `https://ucarecdn.com/944f2fec-8d84-47b7-aac6-f3d057a7ac9e/-/scale_crop/200x200/smart/`,
+      image: `/images/people/jacob-head.jpg`,
     },
     {
       name: `Dorian Portillo`,
       href: `/team/#Dorian-Portillo`,
       external: false,
-      image: `https://ucarecdn.com/cfaa5b97-6ed4-4104-81c4-a6e991408b24/-/scale_crop/200x200/smart/`,
+      image: `/images/people/dorian-head.PNG`,
     },
   ];
 
@@ -279,7 +279,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -298,7 +298,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>

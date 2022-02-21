@@ -7,7 +7,7 @@ export default function Info() {
       name: `Sanjay Soundarajan`,
       href: `/team/#Sanjay-Soundarajan`,
       external: false,
-      image: `https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52/-/scale_crop/200x200/smart/`,
+      image: `/images/people/sanjay-head.jpg`,
     },
     {
       name: `Sachira Kuruppu`,
@@ -255,7 +255,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 pt-1 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -274,7 +274,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 pt-1 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>

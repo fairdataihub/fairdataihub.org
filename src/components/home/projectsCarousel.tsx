@@ -13,31 +13,31 @@ import 'swiper/css/thumbs';
 export default function ProjectsCarousel() {
   const thumbnails = [
     {
-      src: `/images/sodasparc.png`,
+      src: `/images/carousel/sodasparc.png`,
       alt: `Navigate to SODA for SPARC card`,
       width: `150`,
       height: `50`,
     },
     {
-      src: `/images/knowmore.png`,
+      src: `/images/carousel/knowmore.png`,
       alt: `Navigate to Know More card`,
       width: `150`,
       height: `30`,
     },
     {
-      src: `/images/sparclink.png`,
+      src: `/images/carousel/sparclink.png`,
       alt: `Navigate to SPARClink card`,
       width: `150`,
       height: `40`,
     },
     {
-      src: `/images/aqua.png`,
+      src: `/images/carousel/aqua.png`,
       alt: `Navigate to Aqua card`,
       width: `150`,
       height: `85`,
     },
     {
-      src: `/images/sodacovid.png`,
+      src: `/images/carousel/sodacovid.png`,
       alt: `Navigate to SODA for COVID-19 card`,
       width: `150`,
       height: `50`,
@@ -47,7 +47,7 @@ export default function ProjectsCarousel() {
   const projectsList = [
     {
       name: `SODA for SPARC`,
-      imageUrl: `/images/sodasparc.png`,
+      imageUrl: `/images/carousel/sodasparc.png`,
       imageWidth: `320`,
       imageHeight: `103`,
       description: `SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators according to the FAIR SPARC data standards.`,
@@ -55,7 +55,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `KnowMore`,
-      imageUrl: `/images/knowmore.png`,
+      imageUrl: `/images/carousel/knowmore.png`,
       imageWidth: `320`,
       imageHeight: `68`,
       description: `KnowMore is an automated knowledge discovery tool that allows users of the portal to visualize, in just a few clicks, potential similarities, differences, and connections between multiple SPARC datasets of their choice.`,
@@ -63,7 +63,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `SPARClink`,
-      imageUrl: `/images/sparclink.png`,
+      imageUrl: `/images/carousel/sparclink.png`,
       imageWidth: `320`,
       imageHeight: `80`,
       description: `SPARClink is a system that queries publications using open source tools and platforms and create an interactable visualization that showcases the impact that SPARC and their FAIR data practices have in advancing the field of bioelectronic medicine.`,
@@ -71,7 +71,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `AQUA`,
-      imageUrl: `/images/aqua.png`,
+      imageUrl: `/images/carousel/aqua.png`,
       imageWidth: `320`,
       imageHeight: `177`,
       description: `AQUA (Advanced QUery Architecture for the SPARC Portal) improves the SPARC Portal by making the search engine smarter at understanding user search keywords, enhancing the result display, and providing users with better result filtering and sorting options.`,
@@ -79,7 +79,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `FAIRshare`,
-      imageUrl: `/images/sodacovid-single.png`,
+      imageUrl: `/images/carousel/sodacovid-single.png`,
       imageWidth: `320`,
       imageHeight: `100`,
       description: `SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related research data according to applicable FAIR guidelines.`,

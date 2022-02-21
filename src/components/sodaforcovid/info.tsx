@@ -7,13 +7,13 @@ export default function Info() {
       name: `Bhavesh Patel`,
       href: `/team/#Bhavesh-Patel`,
       external: false,
-      image: `https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/`,
+      image: `/images/people/bhavesh-head.jpg`,
     },
     {
       name: `Sanjay Soundarajan`,
       href: `/team/#Sanjay-Soundarajan`,
       external: false,
-      image: `https://ucarecdn.com/49cf1651-b3c7-43fd-9b21-97400c475a52//-/scale_crop/200x200/smart/`,
+      image: `/images/people/sanjay-head.jpg`,
     },
     {
       name: `Taiji Yang`,
@@ -33,19 +33,19 @@ export default function Info() {
     {
       name: `The Butte Lab`,
       href: `https://buttelab.ucsf.edu/`,
-      image: `https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/`,
+      image: `/images/collaborators/ucsf-logo.png`,
       type: `lab`,
     },
     {
       name: `The Jagannathan Lab`,
       href: `https://med.stanford.edu/jagannathan-lab.html`,
-      image: `https://ucarecdn.com/8c3d42c3-83a9-4620-8dcd-7fdccf11ebce/`,
+      image: `/images/collaborators/stanford-medicine-logo.png`,
       type: `lab`,
     },
     {
       name: `Dr. Greenhouse Lab`,
       href: `https://profiles.ucsf.edu/bryan.greenhouse#toc-id2`,
-      image: `https://ucarecdn.com/fb093e0f-5363-4710-b543-296553408fdb/`,
+      image: `/images/collaborators/ucsf-logo.png`,
       type: `lab`,
     },
   ];
@@ -235,7 +235,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -254,7 +254,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>

@@ -7,13 +7,13 @@ export default function Info() {
       name: `Bhavesh Patel`,
       href: `/team/#Bhavesh-Patel`,
       external: false,
-      image: `https://ucarecdn.com/e2fd2c14-69dc-4ee1-b245-9f9629b40299/-/scale_crop/200x200/smart/`,
+      image: `/images/people/bhavesh-head.jpg`,
     },
     {
       name: `Ryan Quey`,
       href: `https://www.ryanquey.com/`,
       external: true,
-      image: `https://ucarecdn.com/c32fada1-9bf4-4e34-bce2-b52b20e338f1/-/scale_crop/200x200/smart/`,
+      image: `/images/people/ryan-head.jpg`,
     },
     {
       name: `Anmol Kiran`,
@@ -250,7 +250,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -269,7 +269,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>

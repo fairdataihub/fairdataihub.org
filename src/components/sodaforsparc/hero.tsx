@@ -142,7 +142,7 @@ export default function Hero() {
             </div>
 
             <Image
-              src="/images/soda-app-macos.png"
+              src="/images/hero/soda-app-macos.png"
               alt="Screenshot of SODA for SPARC"
               width="672"
               height="462"
