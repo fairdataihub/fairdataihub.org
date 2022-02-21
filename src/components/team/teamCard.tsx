@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 type ShowLinkProps = {
   link: string;
   show: boolean;
@@ -9,6 +11,8 @@ type Profile = {
   title: string;
   bio: string;
   image: string;
+  width: number;
+  height: number;
   borderTop: boolean;
   borderBottom: boolean;
   education: Array<string>;
@@ -28,10 +32,13 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
       id={profile.id}
     >
       <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
-        <img
+        <Image
           src={profile.image}
-          className="rounded-lg"
           alt={`Potrait image of ${profile.name}`}
+          width={profile.width}
+          height={profile.height}
+          objectFit="scale-down"
+          className="rounded-xl"
         />
       </div>
       <div className="flex w-full flex-col px-0 py-3 sm:py-4 sm:px-8 md:w-1/2 lg:ml-2 lg:w-3/5">
