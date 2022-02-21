@@ -10,11 +10,8 @@ const Lottie: React.FC<LottieProps> = ({ id, width, height }) => {
   const ref = useRef(null);
 
   const [animationLink, setAnimationLink] = useState(``);
-  const [containerID, setContainerID] = useState(``);
 
   React.useEffect(() => {
-    setContainerID(`lottie-animation-${id}`);
-
     if (id === `home-page-hero`) {
       setAnimationLink(
         `https://assets2.lottiefiles.com/packages/lf20_gtbdf5vn.json`,
@@ -31,7 +28,7 @@ const Lottie: React.FC<LottieProps> = ({ id, width, height }) => {
     <div>
       <div>
         <lottie-player
-          id={containerID}
+          id={`lottie-animation-${id}`}
           ref={ref}
           autoplay
           loop
