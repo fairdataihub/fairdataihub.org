@@ -45,17 +45,17 @@ export default function Info() {
     {
       name: `Pennsieve`,
       href: `https://app.pennsieve.io`,
-      image: `/images/pennsieve-logo.svg`,
+      image: `/images/collaborators/pennsieve-logo.svg`,
     },
     {
       name: `FAIR Data Informatics Lab`,
       href: `https://www.fdilab.org/`,
-      image: `https://ucarecdn.com/dd8fcd39-25dc-4460-a02c-402631a00c25/`,
+      image: `/images/collaborators/fdi-lab-logo.png`,
     },
     {
       name: `MBF Bioscience`,
       href: `https://www.mbfbioscience.com`,
-      image: `https://ucarecdn.com/69576061-38ac-435b-9a8d-68a14662d2ee/`,
+      image: `/images/collaborators/mbf-logo.png`,
     },
   ];
 

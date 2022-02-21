@@ -254,7 +254,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -273,7 +273,7 @@ export default function Info() {
                                 height={112}
                                 className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
