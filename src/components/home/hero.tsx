@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 import Lottie from '@/components/lotties';
 
@@ -46,14 +45,7 @@ export default function Hero() {
             {clientSide ? (
               <Lottie id="home-page-hero" width={500} height={500} />
             ) : (
-              <Image
-                src="/images/lottie-fallback/home-page-hero.png"
-                alt="Home page hero"
-                width="500"
-                height="500"
-                priority={true}
-                objectFit="scale-down"
-              />
+              <div></div>
             )}
           </div>
         </div>

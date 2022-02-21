@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 import Link from 'next/link';
-import Image from 'next/image';
 
 import Lottie from '@/components/lotties';
 
@@ -19,14 +18,7 @@ export default function AboutUs() {
           {clientSide ? (
             <Lottie id="home-page-team" width={400} height={400} />
           ) : (
-            <Image
-              src="/images/lottie-fallback/home-page-team.png"
-              alt="team image"
-              width="400"
-              height="400"
-              priority={true}
-              objectFit="scale-down"
-            />
+            <div></div>
           )}
         </div>
 
