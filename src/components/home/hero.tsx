@@ -43,13 +43,13 @@ export default function Hero() {
 
           <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
             {clientSide ? (
-              <Lottie id="home-page-hero" width={450} height={450} />
+              <Lottie id="home-page-hero" width={500} height={500} />
             ) : (
               <Image
                 src="/images/lottie-fallback/home-page-hero.svg"
                 alt="Home page hero"
-                width="450"
-                height="450"
+                width="500"
+                height="500"
                 priority={true}
                 objectFit="scale-down"
               />
