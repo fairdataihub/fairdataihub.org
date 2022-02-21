@@ -6,7 +6,7 @@ import Lottie from 'react-lottie-player';
 
 export default function Hero() {
   const [clientSide, setClientSide] = useState(false);
-  const [lottieJson, setLottieJson] = useState(require('./hero.json'));
+  const [lottieJson, setLottieJson] = useState(require(`./hero.json`));
 
   useEffect(() => {
     setClientSide(true);
