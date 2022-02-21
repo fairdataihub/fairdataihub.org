@@ -1,4 +1,24 @@
+import Image from 'next/image';
+
 export default function Tools() {
+  const logoList = [
+    {
+      src: `https://ucarecdn.com/3d7de35c-3e69-4bdb-a524-8b84b5f766ed/`,
+      alt: `python logo`,
+    },
+    {
+      src: `https://ucarecdn.com/014bfbd3-a502-4005-858c-c004a6ba0d33/`,
+      alt: `docker logo`,
+    },
+    {
+      src: `https://ucarecdn.com/34a55129-dc6c-40e8-bc0d-5ad0ee58d618/`,
+      alt: `scigraph logo`,
+    },
+    {
+      src: `https://ucarecdn.com/3de89a65-49e5-4a0b-a353-e3ffcf22deaf/`,
+      alt: `sqlite logo`,
+    },
+  ];
   return (
     <section>
       <div className="mx-auto px-5 sm:px-10">
@@ -18,22 +38,17 @@ export default function Tools() {
               </dd>
             </div>
             <div className="pointer-events-none grid grid-cols-2 items-center justify-center gap-6 sm:grid-cols-4 md:py-1">
-              <img
-                src="https://ucarecdn.com/3d7de35c-3e69-4bdb-a524-8b84b5f766ed/"
-                alt="python logo"
-              />
-              <img
-                src="https://ucarecdn.com/014bfbd3-a502-4005-858c-c004a6ba0d33/"
-                alt="docker logo"
-              />
-              <img
-                src="https://ucarecdn.com/34a55129-dc6c-40e8-bc0d-5ad0ee58d618/"
-                alt="scigraph logo"
-              />
-              <img
-                src="https://ucarecdn.com/3de89a65-49e5-4a0b-a353-e3ffcf22deaf/"
-                alt="sqlite logo"
-              />
+              {logoList.map((logo, index) => (
+                <Image
+                  key={index}
+                  className="h-full !w-full !px-1"
+                  src={logo.src}
+                  alt={logo.alt}
+                  width="238"
+                  height="70"
+                  objectFit="scale-down"
+                />
+              ))}
             </div>
           </dl>
         </div>

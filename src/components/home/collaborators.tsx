@@ -51,7 +51,6 @@ export default function Collaborators() {
             gradientWidth="125px"
           >
             {logoImages.map((logo, index) => (
-              // <div className="relative w-[200px] " key={index}>
               <Image
                 key={index}
                 className="h-full !w-full !px-4"
@@ -61,7 +60,6 @@ export default function Collaborators() {
                 height="100%"
                 objectFit="scale-down"
               />
-              // </div>
             ))}
           </Marquee>
         </div>

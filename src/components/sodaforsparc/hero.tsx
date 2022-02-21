@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 interface ReleaseAsset {
@@ -105,31 +104,30 @@ export default function Hero() {
               <br />
               <i> By SPARC investigators, for SPARC investigators </i>
             </p>
-            <div className="flex w-full justify-center">
-              <button
-                className="hidden items-center justify-center rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
-                onClick={downloadSODA}
+            <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
+              <a
+                href="https://sparc-know-more.herokuapp.com/sparc-app/"
+                target="_blank"
+                rel="noreferrer"
+                className="flex flex-row justify-center"
               >
-                Download now
-              </button>
+                <button
+                  className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
+                  onClick={downloadSODA}
+                >
+                  Download now
+                </button>
+              </a>
               <a
                 href="https://docs.sodaforsparc.io/"
                 target="_blank"
-                aria-label="SODA for SPARC Documentation"
                 rel="noreferrer"
+                className="flex flex-row justify-center"
               >
-                <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4">
+                <button className=" rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
                   Explore the docs
                 </button>
               </a>
-              <Link
-                href="/sodaforsparc/docs/getting-started/User-Interface"
-                passHref
-              >
-                <button className="hidden rounded bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4">
-                  Explore the OLD docs
-                </button>
-              </Link>
             </div>
           </div>
 
@@ -142,9 +140,14 @@ export default function Hero() {
                 height={100}
               />
             </div>
-            <img
-              src="https://ucarecdn.com/2c9abf3a-ee20-4c9a-aefc-334f4e8360e6/"
-              alt="SODA for SPARC app screenshot"
+
+            <Image
+              src="/images/soda-app-macos.png"
+              alt="Screenshot of SODA for SPARC"
+              width="672"
+              height="462"
+              priority={true}
+              objectFit="scale-down"
             />
           </div>
         </div>

@@ -26,7 +26,13 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="z-30 bg-gray-50 pt-5">
+    <footer
+      className={
+        process.env.NODE_ENV === `development`
+          ? `debug-screens z-30 bg-gray-50 pt-5`
+          : `z-30 bg-gray-50 pt-5`
+      }
+    >
       <div className="container mx-auto flex w-full max-w-screen-lg flex-col px-6 py-8">
         <div className="flex flex-col justify-between pb-3 pr-3 md:flex-row">
           <div className="mb-5 flex w-full flex-col md:mb-0 md:w-4/12">

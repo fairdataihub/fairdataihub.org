@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Info() {
   const membersList = [
@@ -54,11 +55,13 @@ export default function Info() {
                       href="https://github.com/fairdataihub/KnowMore/graphs/contributors"
                       target="_blank"
                       className="mr-2"
-                      rel="noreferrer"
+                      rel="noreferrer relative"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                        alt="soda for sparc contributors"
+                        alt="knowmore contributors"
+                        width={94}
+                        height={20}
                       />
                     </a>
                     <a
@@ -67,9 +70,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                        alt="soda for sparc stars"
+                        alt="knowmore stars"
+                        width={54}
+                        height={20}
                       />
                     </a>
                     <a
@@ -78,9 +83,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                        alt="soda for sparc issues"
+                        alt="knowmore issues"
+                        width={90}
+                        height={20}
                       />
                     </a>
                     <a
@@ -89,9 +96,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/KnowMore.svg?style=flat-square"
-                        alt="soda for sparc license"
+                        alt="knowmore license"
+                        width={78}
+                        height={20}
                       />
                     </a>
                   </div>
@@ -234,10 +243,12 @@ export default function Info() {
                         {!member.external ? (
                           <Link href={member.href} passHref>
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
                               <p className="ml-2 text-center font-asap text-lg font-normal">
                                 {member.name}
@@ -251,10 +262,12 @@ export default function Info() {
                             rel="noreferrer"
                           >
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
                               <p className="ml-2 text-center font-asap text-lg font-normal">
                                 {member.name}

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Info() {
   const membersList = [
@@ -75,9 +76,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/contributors/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                        alt="soda for sparc contributors"
+                        alt="fairshare contributors"
+                        width={94}
+                        height={20}
                       />
                     </a>
                     <a
@@ -86,9 +89,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/stars/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                        alt="soda for sparc stars"
+                        alt="fairshare stars"
+                        width={54}
+                        height={20}
                       />
                     </a>
                     <a
@@ -97,9 +102,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/issues/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                        alt="soda for sparc issues"
+                        alt="fairshare issues"
+                        width={90}
+                        height={20}
                       />
                     </a>
                     <a
@@ -108,9 +115,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/license/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
-                        alt="soda for sparc license"
+                        alt="fairshare license"
+                        width={78}
+                        height={20}
                       />
                     </a>
                   </div>
@@ -219,10 +228,12 @@ export default function Info() {
                         {!member.external ? (
                           <Link href={member.href} passHref>
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
                               <p className="ml-2 text-center font-asap text-lg font-normal">
                                 {member.name}
@@ -236,10 +247,12 @@ export default function Info() {
                             rel="noreferrer"
                           >
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
                               <p className="ml-2 text-center font-asap text-lg font-normal">
                                 {member.name}
@@ -288,19 +301,22 @@ export default function Info() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <div className="flex h-full flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
+                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
                           {collaborator.type === `person` ? (
-                            <img
+                            <Image
                               src={collaborator.image}
                               alt={collaborator.name + ` profile picture`}
-                              className="my-2 h-32 w-32 rounded-full"
-                              v-if="collaborator.type === 'person'"
+                              width={128}
+                              height={128}
+                              className="rounded-full"
                             />
                           ) : (
-                            <img
+                            <Image
                               src={collaborator.image}
                               alt={collaborator.name + ` profile picture`}
-                              className="mx-10 my-auto"
+                              width={220}
+                              height={150}
+                              objectFit="scale-down"
                             />
                           )}
                           <p className="mt-3 ml-2 text-center font-asap text-lg font-normal">
