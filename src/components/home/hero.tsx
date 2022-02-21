@@ -1,7 +1,8 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-import Lottie from 'react-lottie-player';
 import Image from 'next/image';
+
+import Lottie from '@/components/home/Lottie';
 
 export default function Hero() {
   const [clientSide, setClientSide] = useState(false);
@@ -41,13 +42,7 @@ export default function Hero() {
           </div>
 
           <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
-            <Image
-              src="/images/oghero.gif"
-              alt="hero image"
-              width="640"
-              height="640"
-              objectFit="scale-down"
-            />
+            {clientSide ? <Lottie /> : <div></div>}
           </div>
         </div>
       </div>
