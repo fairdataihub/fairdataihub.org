@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
-import Lottie from '@/components/home/Lottie';
+import Lottie from '@/components/home/lottie';
 
 export default function Hero() {
   const [clientSide, setClientSide] = useState(false);
@@ -42,7 +42,11 @@ export default function Hero() {
           </div>
 
           <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
-            {clientSide ? <Lottie /> : <div></div>}
+            {clientSide ? (
+              <Lottie id="home-page-hero" width={500} height={500} />
+            ) : (
+              <div></div>
+            )}
           </div>
         </div>
       </div>

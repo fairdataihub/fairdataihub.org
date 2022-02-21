@@ -1,19 +1,24 @@
 import Link from 'next/link';
-import Lottie from 'react-lottie-player';
+import { useState, useEffect } from 'react';
 
-import lottieJson from './team.json';
+import Lottie from '@/components/home/lottie';
 
 export default function AboutUs() {
+  const [clientSide, setClientSide] = useState(false);
+
+  useEffect(() => {
+    setClientSide(true);
+  }, []);
+
   return (
     <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4">
       <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
-          <Lottie
-            loop
-            animationData={lottieJson}
-            play
-            style={{ width: 400, height: 400 }}
-          />
+          {clientSide ? (
+            <Lottie id="home-team" width={400} height={400} />
+          ) : (
+            <div></div>
+          )}
         </div>
 
         <div className="h-full w-full p-2 lg:max-w-2xl">
