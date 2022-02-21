@@ -19,7 +19,7 @@ const Lottie: React.FC<LottieProps> = ({ id, width, height }) => {
       setAnimationLink(
         `https://assets2.lottiefiles.com/packages/lf20_gtbdf5vn.json`,
       );
-    } else if (id === `home-team`) {
+    } else if (id === `home-page-team`) {
       setAnimationLink(
         `https://assets6.lottiefiles.com/packages/lf20_l98g20x2.json`,
       );

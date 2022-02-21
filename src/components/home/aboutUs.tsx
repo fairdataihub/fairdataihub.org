@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
-
+import Image from 'next/image';
 import Lottie from '@/components/home/lottie';
 
 export default function AboutUs() {
@@ -15,9 +15,16 @@ export default function AboutUs() {
       <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
           {clientSide ? (
-            <Lottie id="home-team" width={400} height={400} />
+            <Lottie id="home-page-team" width={400} height={400} />
           ) : (
-            <div></div>
+            <Image
+              src="/images/lottie-fallback/home-page-team.svg"
+              alt="team image"
+              width="400"
+              height="400"
+              priority={true}
+              objectFit="scale-down"
+            />
           )}
         </div>
 
