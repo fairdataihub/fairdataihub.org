@@ -76,11 +76,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/contributors/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="fairshare contributors"
-                        width={94}
-                        height={20}
                       />
                     </a>
                     <a
@@ -89,11 +88,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/stars/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="fairshare stars"
-                        width={54}
-                        height={20}
                       />
                     </a>
                     <a
@@ -102,11 +100,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/issues/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="fairshare issues"
-                        width={90}
-                        height={20}
                       />
                     </a>
                     <a
@@ -115,11 +112,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/license/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
                         alt="fairshare license"
-                        width={78}
-                        height={20}
                       />
                     </a>
                   </div>

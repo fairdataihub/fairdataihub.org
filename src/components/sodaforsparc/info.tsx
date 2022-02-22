@@ -85,11 +85,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc contributors"
-                        width={94}
-                        height={20}
                       />
                     </a>
                     <a
@@ -98,11 +97,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc stars"
-                        width={54}
-                        height={20}
                       />
                     </a>
                     <a
@@ -111,11 +109,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc issues"
-                        width={90}
-                        height={20}
                       />
                     </a>
                     <a
@@ -124,11 +121,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
                         alt="soda for sparc license"
-                        width={78}
-                        height={20}
                       />
                     </a>
                   </div>

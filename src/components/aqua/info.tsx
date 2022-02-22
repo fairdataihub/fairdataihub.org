@@ -61,11 +61,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                         alt="aqua contributors"
-                        width={94}
-                        height={20}
                       />
                     </a>
                     <a
@@ -74,11 +73,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                         alt="aqua stars"
-                        width={54}
-                        height={20}
                       />
                     </a>
                     <a
@@ -87,11 +85,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                         alt="aqua issues"
-                        width={90}
-                        height={20}
                       />
                     </a>
                     <a
@@ -100,11 +97,10 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <Image
+                      {/*  eslint-disable-next-line @next/next/no-img-element */}
+                      <img
                         src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
                         alt="aqua license"
-                        width={78}
-                        height={20}
                       />
                     </a>
                   </div>
