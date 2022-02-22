@@ -144,10 +144,7 @@ export default function Hero() {
                 height={100}
               />
             </div>
-            {/* <img
-              src="https://ucarecdn.com/2c9abf3a-ee20-4c9a-aefc-334f4e8360e6/"
-              alt="SODA for SPARC app screenshot"
-            /> */}
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-full w-full"

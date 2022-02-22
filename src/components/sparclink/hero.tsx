@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="container mx-auto flex w-full flex-col-reverse items-center px-1 py-2 sm:py-4 md:py-10 lg:flex-row">
           <div className="mb-2 flex flex-col items-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:flex-grow lg:pr-24">
-            <h1 className="mb-1 w-full text-center font-inter text-3xl font-black sm:text-4xl">
+            <h1 className="mb-1 mt-6 w-full text-center font-inter text-3xl font-black sm:text-4xl lg:mt-0">
               SPARClink
             </h1>
             <h2 className="mb-2 w-full text-center font-inter text-2xl font-medium sm:text-2xl">
@@ -54,11 +54,16 @@ export default function Hero() {
                 height={500}
               />
             </div>
-            <img
-              className="pointer-events-none relative z-10 mx-auto rounded shadow-xl"
-              alt="Knowmore gif"
-              src="https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/2021-07-25%2013-47-30.gif"
-            />
+
+            <div className="pointer-events-none relative z-10 mx-auto rounded shadow-xl">
+              <Image
+                src="https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/2021-07-25%2013-47-30.gif"
+                alt="sparclink gif"
+                width="672"
+                height="377"
+                objectFit="scale-down"
+              />
+            </div>
           </div>
         </div>
       </section>

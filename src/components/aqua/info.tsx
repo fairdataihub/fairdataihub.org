@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Info() {
   const membersList = [
@@ -6,7 +7,7 @@ export default function Info() {
       name: `Tram Ngo`,
       href: `/team/#Tram-Ngo`,
       external: false,
-      image: `https://ucarecdn.com/16f0920a-311b-4850-b81c-46e09604b718/-/scale_crop/200x200/smart/`,
+      image: `/images/people/tram-head.jpg`,
     },
     {
       name: `Laila Bekhet`,
@@ -60,9 +61,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
-                        alt="soda for sparc contributors"
+                        alt="aqua contributors"
+                        width={94}
+                        height={20}
                       />
                     </a>
                     <a
@@ -71,9 +74,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
-                        alt="soda for sparc stars"
+                        alt="aqua stars"
+                        width={54}
+                        height={20}
                       />
                     </a>
                     <a
@@ -82,9 +87,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
-                        alt="soda for sparc issues"
+                        alt="aqua issues"
+                        width={90}
+                        height={20}
                       />
                     </a>
                     <a
@@ -93,9 +100,11 @@ export default function Info() {
                       className="mr-2"
                       rel="noreferrer"
                     >
-                      <img
+                      <Image
                         src="https://img.shields.io/github/license/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square"
-                        alt="soda for sparc license"
+                        alt="aqua license"
+                        width={78}
+                        height={20}
                       />
                     </a>
                   </div>
@@ -238,12 +247,14 @@ export default function Info() {
                         {!member.external ? (
                           <Link href={member.href} passHref>
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>
@@ -255,12 +266,14 @@ export default function Info() {
                             rel="noreferrer"
                           >
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                              <img
+                              <Image
                                 src={member.image}
                                 alt={member.name + ` profile picture`}
-                                className="my-2 h-28 rounded-full"
+                                width={112}
+                                height={112}
+                                className="rounded-full"
                               />
-                              <p className="ml-2 text-center font-asap text-lg font-normal">
+                              <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
                               </p>
                             </div>

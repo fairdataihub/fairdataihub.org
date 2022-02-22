@@ -49,7 +49,6 @@ We recommend to look at the [documentation](https://nextjs.org/docs/getting-star
 - `yarn type-check` — Validate code using TypeScript compiler.
 - `yarn lint` — Runs ESLint for all files in the `src` directory.
 - `yarn format` — Runs Prettier for all files in the `src` directory.
-- `yarn commit` — Run commitizen. Alternative to `git commit`.
 
 ### Path Mapping
 
