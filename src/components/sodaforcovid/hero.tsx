@@ -107,18 +107,21 @@ export default function Hero() {
               <br />
               <i> Help the fight against the pandemic with your data </i>
             </p>
-            <div className="flex w-full justify-center">
-              <button
-                className="hidden items-center justify-center rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 "
-                onClick={downloadSODA}
-              >
-                Download now
-              </button>
+            <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
+              <div className="flex flex-row justify-center">
+                <button
+                  className=" items-center justify-center rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 "
+                  onClick={downloadSODA}
+                >
+                  Download now
+                </button>
+              </div>
               <a
                 href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
                 target="_blank"
-                aria-label="SODA for SPARC Documentation"
+                aria-label="FAIRshare Documentation"
                 rel="noreferrer"
+                className="flex flex-row justify-center"
               >
                 <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4">
                   Explore
