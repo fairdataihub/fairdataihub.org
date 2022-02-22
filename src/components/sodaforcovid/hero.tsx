@@ -64,14 +64,19 @@ export default function Hero() {
     const os = await getOS();
     console.log(os);
     const downloadLink = await getLatestVersion(os);
-    Object.assign(document.createElement(`a`), {
-      target: `_blank`,
-      href: downloadLink,
-    }).click();
-    Object.assign(document.createElement(`a`), {
-      target: `_blank`,
-      href: `https://docs.sodaforsparc.io/docs/getting-started/download-soda`,
-    }).click();
+    (async () => {
+      Object.assign(document.createElement(`a`), {
+        target: `_blank`,
+        href: downloadLink,
+      }).click();
+    })();
+    (async () => {
+      console.log(`here`);
+      Object.assign(document.createElement(`a`), {
+        target: `_blank`,
+        href: `https://docs.fairshareapp.io/docs/getting-started/download-soda`,
+      }).click();
+    })();
   };
 
   return (
