@@ -10,4 +10,13 @@ module.exports = {
       'researcherprofiles.org',
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: '/sodaforcovid',
+        destination: '/fairshare',
+        permanent: true,
+      },
+    ];
+  },
 };

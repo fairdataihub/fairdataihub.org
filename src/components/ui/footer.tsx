@@ -376,7 +376,7 @@ export default function Footer() {
                   <Link href="/sodaforsparc"> SODA for SPARC </Link>
                 </li>
                 <li className="footer-item">
-                  <Link href="/sodaforcovid">SODA for Covid-19 Research</Link>
+                  <Link href="/fairshare">FAIRshare</Link>
                 </li>
                 <li className="footer-item">
                   <Link href="/knowmore"> KnowMore </Link>

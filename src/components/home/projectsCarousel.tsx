@@ -38,7 +38,7 @@ export default function ProjectsCarousel() {
     },
     {
       src: `/images/carousel/sodacovid.png`,
-      alt: `Navigate to SODA for COVID-19 card`,
+      alt: `Navigate to FAIRshare card`,
       width: `150`,
       height: `50`,
     },
@@ -82,8 +82,8 @@ export default function ProjectsCarousel() {
       imageUrl: `/images/carousel/sodacovid-single.png`,
       imageWidth: `320`,
       imageHeight: `100`,
-      description: `SODA (Sofware to Organize Data Automatically) for COVID-19 Research is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related research data according to applicable FAIR guidelines.`,
-      page: `/sodaforcovid`,
+      description: `FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related research data according to applicable FAIR guidelines.`,
+      page: `/fairshare`,
     },
   ];
 

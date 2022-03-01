@@ -71,57 +71,57 @@ export default function Info() {
                   </p>
                   <div className="mt-3 flex text-accent">
                     <a
-                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/graphs/contributors"
+                      href="https://github.com/fairdataihub/FAIRshare/graphs/contributors"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/contributors/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
+                        src="https://img.shields.io/github/contributors/fairdataihub/FAIRshare.svg?style=flat-square"
                         alt="fairshare contributors"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/stargazers"
+                      href="https://github.com/fairdataihub/FAIRshare/stargazers"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/stars/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
+                        src="https://img.shields.io/github/stars/fairdataihub/FAIRshare.svg?style=flat-square"
                         alt="fairshare stars"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/issues"
+                      href="https://github.com/fairdataihub/FAIRshare/issues"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/issues/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
+                        src="https://img.shields.io/github/issues/fairdataihub/FAIRshare.svg?style=flat-square"
                         alt="fairshare issues"
                       />
                     </a>
                     <a
-                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research/blob/master/LICENSE"
+                      href="https://github.com/fairdataihub/FAIRshare/blob/master/LICENSE"
                       target="_blank"
                       className="mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/license/fairdataihub/SODA-for-COVID-19-Research.svg?style=flat-square"
+                        src="https://img.shields.io/github/license/fairdataihub/FAIRshare.svg?style=flat-square"
                         alt="fairshare license"
                       />
                     </a>
                   </div>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
+                      href="https://github.com/fairdataihub/FAIRshare"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       rel="noreferrer"
@@ -145,7 +145,7 @@ export default function Info() {
                 </div>
                 <div className="py-3">
                   <a
-                    href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
+                    href="https://github.com/fairdataihub/FAIRshare"
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"

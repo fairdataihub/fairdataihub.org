@@ -132,16 +132,16 @@ export default function Navbar() {
                         SODA for SPARC
                       </div>
                     </Link>
-                    <Link href="/sodaforcovid" passHref>
+                    <Link href="/fairshare" passHref>
                       <div
                         className={
-                          `nav-item hover-underline-animation mt-2` +
-                          (router.pathname === `/sodaforcovid`
+                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          (router.pathname === `/fairshare`
                             ? ` router-link-active `
                             : ` `)
                         }
                       >
-                        SODA for COVID-19 Research
+                        FAIRshare
                       </div>
                     </Link>
                     <Link href="/knowmore" passHref>
@@ -260,12 +260,12 @@ export default function Navbar() {
                   SODA for SPARC
                 </div>
               </Link>
-              <Link href="/sodaforcovid" passHref>
+              <Link href="/fairshare" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
-                  SODA for COVID-19 Research
+                  FAIRshare
                 </div>
               </Link>
               <Link href="/knowmore" passHref>

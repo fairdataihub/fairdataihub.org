@@ -32,7 +32,7 @@ export default function Hero() {
 
   const getLatestVersion = async function (os: string) {
     const res = await fetch(
-      `https://api.github.com/repos/fairdataihub/SODA-for-COVID-19-Research/releases`,
+      `https://api.github.com/repos/fairdataihub/FAIRshare/releases`,
     );
     const data = await res.json();
     const release = data[0];
@@ -122,7 +122,7 @@ export default function Hero() {
                 </button>
               </div>
               <a
-                href="https://github.com/fairdataihub/SODA-for-COVID-19-Research"
+                href="https://github.com/fairdataihub/FAIRshare"
                 target="_blank"
                 aria-label="FAIRshare Documentation"
                 rel="noreferrer"
