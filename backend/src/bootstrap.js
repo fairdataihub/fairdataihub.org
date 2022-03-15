@@ -1,44 +1,44 @@
-"use strict";
+'use strict';
 
-const fs = require("fs");
-const path = require("path");
-const mime = require("mime-types");
-const set = require("lodash.set");
+const fs = require('fs');
+const path = require('path');
+const mime = require('mime-types');
+const set = require('lodash.set');
 const {
   categories,
   homepage,
   writers,
   articles,
   global,
-} = require("../data/data.json");
+} = require('../data/data.json');
 
 async function isFirstRun() {
   const pluginStore = strapi.store({
     environment: strapi.config.environment,
-    type: "type",
-    name: "setup",
+    type: 'type',
+    name: 'setup',
   });
-  const initHasRun = await pluginStore.get({ key: "initHasRun" });
-  await pluginStore.set({ key: "initHasRun", value: true });
+  const initHasRun = await pluginStore.get({ key: 'initHasRun' });
+  await pluginStore.set({ key: 'initHasRun', value: true });
   return !initHasRun;
 }
 
 async function setPublicPermissions(newPermissions) {
   // Find the ID of the public role
   const publicRole = await strapi
-    .query("plugin::users-permissions.role")
+    .query('plugin::users-permissions.role')
     .findOne({
       where: {
-        type: "public",
+        type: 'public',
       },
     });
 
   // Create the new permissions and link them to the public role
   const allPermissionsToCreate = [];
-  Object.keys(newPermissions).map(controller => {
+  Object.keys(newPermissions).map((controller) => {
     const actions = newPermissions[controller];
-    const permissionsToCreate = actions.map(action => {
-      return strapi.query("plugin::users-permissions.permission").create({
+    const permissionsToCreate = actions.map((action) => {
+      return strapi.query('plugin::users-permissions.permission').create({
         data: {
           action: `api::${controller}.${controller}.${action}`,
           role: publicRole.id,
@@ -52,7 +52,7 @@ async function setPublicPermissions(newPermissions) {
 
 function getFileSizeInBytes(filePath) {
   const stats = fs.statSync(filePath);
-  const fileSizeInBytes = stats["size"];
+  const fileSizeInBytes = stats['size'];
   return fileSizeInBytes;
 }
 
@@ -61,7 +61,7 @@ function getFileData(fileName) {
 
   // Parse the file metadata
   const size = getFileSizeInBytes(filePath);
-  const ext = fileName.split(".").pop();
+  const ext = fileName.split('.').pop();
   const mimeType = mime.lookup(ext);
 
   return {
@@ -81,8 +81,8 @@ async function createEntry({ model, entry, files }) {
         const [fileName] = file.name.split('.');
         // Upload each individual file
         const uploadedFile = await strapi
-          .plugin("upload")
-          .service("upload")
+          .plugin('upload')
+          .service('upload')
           .upload({
             files: file,
             data: {
@@ -104,26 +104,26 @@ async function createEntry({ model, entry, files }) {
       `api::${model}.${model}`,
       {
         data: entry,
-      }
+      },
     );
   } catch (e) {
-    console.log("model", entry, e);
+    console.log('model', entry, e);
   }
 }
 
 async function importCategories() {
   return Promise.all(
     categories.map((category) => {
-      return createEntry({ model: "category", entry: category });
-    })
+      return createEntry({ model: 'category', entry: category });
+    }),
   );
 }
 
 async function importHomepage() {
   const files = {
-    "seo.shareImage": getFileData("default-image.png"),
+    'seo.shareImage': getFileData('default-image.png'),
   };
-  await createEntry({ model: "homepage", entry: homepage, files });
+  await createEntry({ model: 'homepage', entry: homepage, files });
 }
 
 async function importWriters() {
@@ -133,11 +133,11 @@ async function importWriters() {
         picture: getFileData(`${writer.email}.jpg`),
       };
       return createEntry({
-        model: "writer",
+        model: 'writer',
         entry: writer,
         files,
       });
-    })
+    }),
   );
 }
 
@@ -149,7 +149,7 @@ async function importArticles() {
       };
 
       return createEntry({
-        model: "article",
+        model: 'article',
         entry: {
           ...article,
           // Make sure it's not a draft
@@ -157,26 +157,26 @@ async function importArticles() {
         },
         files,
       });
-    })
+    }),
   );
 }
 
 async function importGlobal() {
   const files = {
-    favicon: getFileData("favicon.png"),
-    "defaultSeo.shareImage": getFileData("default-image.png"),
+    favicon: getFileData('favicon.png'),
+    'defaultSeo.shareImage': getFileData('default-image.png'),
   };
-  return createEntry({ model: "global", entry: global, files });
+  return createEntry({ model: 'global', entry: global, files });
 }
 
 async function importSeedData() {
   // Allow read of application content types
   await setPublicPermissions({
-    global: ["find"],
-    homepage: ["find"],
-    article: ["find", "findOne"],
-    category: ["find", "findOne"],
-    writer: ["find", "findOne"],
+    global: ['find'],
+    homepage: ['find'],
+    article: ['find', 'findOne'],
+    category: ['find', 'findOne'],
+    writer: ['find', 'findOne'],
   });
 
   // Create all entries
@@ -192,11 +192,11 @@ module.exports = async () => {
 
   if (shouldImportSeedData) {
     try {
-      console.log("Setting up the template...");
+      console.log('Setting up the template...');
       await importSeedData();
-      console.log("Ready to go");
+      console.log('Ready to go');
     } catch (error) {
-      console.log("Could not import seed data");
+      console.log('Could not import seed data');
       console.error(error);
     }
   }
