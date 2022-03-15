@@ -37,10 +37,10 @@ export default function ProjectsCarousel() {
       height: `85`,
     },
     {
-      src: `/images/carousel/sodacovid.png`,
+      src: `/images/carousel/FAIRshare-full.png`,
       alt: `Navigate to FAIRshare card`,
-      width: `150`,
-      height: `50`,
+      width: `200`,
+      height: `40`,
     },
   ];
 
@@ -79,9 +79,9 @@ export default function ProjectsCarousel() {
     },
     {
       name: `FAIRshare`,
-      imageUrl: `/images/carousel/sodacovid-single.png`,
+      imageUrl: `/images/carousel/FAIRshare-full.png`,
       imageWidth: `320`,
-      imageHeight: `100`,
+      imageHeight: `60`,
       description: `FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related research data according to applicable FAIR guidelines.`,
       page: `/fairshare`,
     },
