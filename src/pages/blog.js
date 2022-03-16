@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const Blog = ({ articles, error }) => {
   if (error) {
-    return <div>An error occured: {error.message}</div>;
+    return <div>An error occurred: {error.message}</div>;
   }
   return (
     <div>
