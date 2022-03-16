@@ -104,13 +104,12 @@ export default function Hero() {
               FAIRshare
             </h1>
             <h2 className="mb-2 w-full text-center text-2xl font-medium sm:text-2xl">
-              Keep Calm and Curate!
+              FAIR data sharing made easy
             </h2>
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
-              Your one-stop tool for rapidly organizing and sharing COVID-19
+              Your one-stop tool for rapidly curating and sharing COVID-19 and other infectious diseases
               research data
               <br />
-              <i> Help the fight against the pandemic with your data </i>
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <div className="flex flex-row justify-center">

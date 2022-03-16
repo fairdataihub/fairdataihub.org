@@ -25,7 +25,7 @@ export default function Timeline() {
               Niloofar Shahidi, Xuanzhi Lin, Yuda Munarko, Laila Rasmy, Tram
               Ngo. &quot;AQUA: an Advanced QUery Architecture for the SPARC
               Portal.&quot;
-              <i>F1000Research</i> (2021). &nbsp;
+              <i>F1000Research</i> (2021).&nbsp;
               <a
                 href="https://doi.org/10.12688/f1000research.73018.1"
                 target="_blank"

@@ -26,7 +26,7 @@ export default function Timeline() {
               Soundarajan, Sanjay , Sachira Kuruppu, Ashutosh Singh, Jongchan
               Kim and Monalisa Achalla. &quot;SPARClink: an interactive tool to
               visualize the impact of the SPARC program.&quot;
-              <i>bioRxiv</i> (2021).
+              <i>bioRxiv</i> (2021).&nbsp;
               <a
                 href="https://doi.org/10.1101/2021.10.22.465507"
                 target="_blank"

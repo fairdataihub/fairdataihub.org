@@ -14,8 +14,8 @@ export default function About() {
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
           FAIRshare is a cross-platform desktop software that allows researchers
-          to easily organize and share their COVID-19 related genomics,
-          immunology, and other general research data according to applicable
+          to easily organize and share their COVID-19 and other infectious diseases related genomics,
+          immunology, research software and other research data according to applicable
           FAIR guidelines.
         </p>
       </div>
@@ -139,7 +139,7 @@ export default function About() {
               <div>
                 Through intuitive user interfaces and automation, this software
                 provides a standardized tool for rapidly curating and sharing
-                COVID-19 data according to applicable FAIR guidelines.
+                COVID-19 and other infectious diseases research data according to applicable FAIR guidelines.
               </div>
             </dd>
           </div>

@@ -27,7 +27,7 @@ export default function Timeline() {
               Gillespie, Gabi Pine, Bhavesh Patel, Monique Surles-Zeiglera, and
               Maryann E. Martone. &quot;Sparc data structure: Rationale and
               design of a fair standard for biomedical research data.&quot;
-              <i>bioRxiv</i> (2021).
+              <i>bioRxiv</i> (2021).&nbsp; 
               <a
                 href="https://doi.org/10.1101/2021.02.10.430563"
                 target="_blank"
@@ -57,7 +57,7 @@ export default function Timeline() {
               Patel, Bhavesh, Harshit Srivastava, Parya Aghasafari, and Karl
               Helmer. &quot;SPARC: SODA, an interactive software for curating
               SPARC datasets.&quot;
-              <i>The FASEB Journal</i> 34, no. S1 (2020): 1-1.
+              <i>The FASEB Journal</i> 34, no. S1 (2020).&nbsp; 
               <a
                 href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
                 target="_blank"

@@ -26,7 +26,7 @@ export default function Timeline() {
               Quey, Ryan, Matthew A. Schiefer, Anmol Kiran, and Bhavesh Patel.
               &quot;KnowMore: An Automated Knowledge Discovery Tool for the FAIR
               SPARC Datasets.&quot;
-              <i>bioRxiv</i> (2021).
+              <i> F1000Research 10, no. 1132 </i> (2021).&nbsp; 
               <a
                 href="https://doi.org/10.1101/2021.08.08.455581"
                 target="_blank"

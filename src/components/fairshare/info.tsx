@@ -62,7 +62,7 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    FAIRshare is distributed as an open-source application with
+                    FAIRshare is distributed as an open-source desktop application with
                     an MIT License. Anyone is free to fork our GitHub repository
                     and make their own changes if they would like. If you would
                     like to submit a feature modification, or feature
