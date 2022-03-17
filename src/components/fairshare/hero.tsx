@@ -107,8 +107,8 @@ export default function Hero() {
               FAIR data sharing made easy
             </h2>
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
-              Your one-stop tool for rapidly curating and sharing COVID-19 and other infectious diseases
-              research data
+              Your one-stop tool for rapidly curating and sharing COVID-19 and
+              other infectious diseases research data
               <br />
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
