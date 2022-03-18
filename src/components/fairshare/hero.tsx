@@ -107,9 +107,9 @@ export default function Hero() {
               FAIR data sharing made easy
             </h2>
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
-            Your one-stop tool for rapidly curating and sharing biomedical  
-            <br />
-            research data according to applicable FAIR guidelines 
+              Your one-stop tool for rapidly curating and sharing biomedical
+              <br />
+              research data according to applicable FAIR guidelines
               <br />
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
@@ -153,7 +153,7 @@ export default function Hero() {
               />
             </div>
 
-            <Image 
+            <Image
               src="/images/hero/fairshare-macos.png"
               alt="Screenshot of FAIRshare"
               width="1342"
