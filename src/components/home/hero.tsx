@@ -43,7 +43,7 @@ export default function Hero() {
 
           <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
             {clientSide ? (
-              <Lottie id="home-page-hero" width={500} height={500} />
+              <Lottie id="home-page-hero" width={400} height={400} />
             ) : (
               <div></div>
             )}
