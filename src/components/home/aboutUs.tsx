@@ -4,15 +4,40 @@ import Link from 'next/link';
 
 import Lottie from '@/components/lotties';
 
+import { useInView } from 'react-intersection-observer';
+
+import { useAnimation, motion } from 'framer-motion';
+const aboutUsVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.75 } },
+  hidden: { opacity: 0, scale: 1 },
+};
+
 export default function AboutUs() {
   const [clientSide, setClientSide] = useState(false);
+
+  const controls = useAnimation();
+  const [aboutUsRef, inView] = useInView({
+    threshold: 0,
+  });
 
   useEffect(() => {
     setClientSide(true);
   }, []);
 
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4">
+    <motion.div
+      className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4"
+      ref={aboutUsRef}
+      animate={controls}
+      initial="hidden"
+      variants={aboutUsVariants}
+    >
       <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
           {clientSide ? (
@@ -52,6 +77,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -4,15 +4,37 @@ import Link from 'next/link';
 
 import Lottie from '@/components/lotties';
 
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
+const heroVariants = {
+  visible: { opacity: 1, scale: 1, transition: { duration: 0.75 } },
+  hidden: { opacity: 0, scale: 1 },
+};
+
 export default function Hero() {
   const [clientSide, setClientSide] = useState(false);
-
   useEffect(() => {
     setClientSide(true);
   }, []);
 
+  const controls = useAnimation();
+  const [heroRef, inView] = useInView({
+    threshold: 0,
+  });
+  useEffect(() => {
+    if (inView) {
+      controls.start('visible');
+    }
+  }, [controls, inView]);
+
   return (
-    <section className="hero">
+    <motion.section
+      className="hero"
+      ref={heroRef}
+      animate={controls}
+      initial="hidden"
+      variants={heroVariants}
+    >
       <div className="container mx-auto max-w-screen-lg px-6 py-8">
         <div className="items-center justify-center md:flex">
           <div className="w-full p-2 lg:w-1/2 lg:max-w-lg">
@@ -50,6 +72,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
