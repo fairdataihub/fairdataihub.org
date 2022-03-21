@@ -23,7 +23,7 @@ export default function Hero() {
   });
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start(`visible`);
     }
   }, [controls, inView]);
 

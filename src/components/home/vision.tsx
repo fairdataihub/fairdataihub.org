@@ -21,9 +21,10 @@ export default function Vision() {
   });
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start(`visible`);
     }
   }, [controls, inView]);
+
   return (
     <motion.div
       className="mx-auto max-w-screen-lg px-6 sm:px-6 lg:px-8"

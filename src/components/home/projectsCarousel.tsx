@@ -102,7 +102,7 @@ export default function ProjectsCarousel() {
   });
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start(`visible`);
     }
   }, [controls, inView]);
 

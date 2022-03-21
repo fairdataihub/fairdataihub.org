@@ -14,19 +14,17 @@ const aboutUsVariants = {
 
 export default function AboutUs() {
   const [clientSide, setClientSide] = useState(false);
+  useEffect(() => {
+    setClientSide(true);
+  }, []);
 
   const controls = useAnimation();
   const [aboutUsRef, inView] = useInView({
     threshold: 0,
   });
-
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
-
   useEffect(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start(`visible`);
     }
   }, [controls, inView]);
 
