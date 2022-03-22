@@ -2,6 +2,7 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx}',
     './src/components/**/*.{js,ts,jsx,tsx}',
+    './node_modules/react-toastify/dist/ReactToastify.css',
   ],
   darkMode: 'media',
   theme: {

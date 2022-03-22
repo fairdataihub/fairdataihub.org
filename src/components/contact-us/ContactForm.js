@@ -69,8 +69,8 @@ const ContactForm = () => (
         }).then(async (response) => {
           const res = await response.json();
           if (res.success) {
-            handleReset();
             successNotify();
+            handleReset();
           } else {
             errorNotify();
           }

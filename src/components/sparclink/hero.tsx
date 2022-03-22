@@ -34,7 +34,7 @@ export default function Hero() {
             </p>
             <div className="flex w-full justify-center">
               <a
-                href="https://sparclink.vercel.app/sparclink"
+                href="https://sparclink.vercel.app"
                 target="_blank"
                 rel="noreferrer"
               >
