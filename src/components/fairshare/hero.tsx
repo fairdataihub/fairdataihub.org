@@ -109,7 +109,7 @@ export default function Hero() {
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
               Your one-stop tool for rapidly curating and sharing biomedical
               <br />
-              research data according to applicable FAIR guidelines
+              research data and software according to applicable FAIR guidelines
               <br />
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
