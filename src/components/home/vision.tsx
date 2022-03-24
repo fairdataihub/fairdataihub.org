@@ -1,5 +1,5 @@
 import {
-  DesktopComputerIcon,
+  CogIcon,
   LightningBoltIcon,
   ScaleIcon,
   ExclamationCircleIcon,
@@ -14,7 +14,7 @@ export default function Vision() {
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
           Only with tools that support and assist researchers we will achieve a
-          widespread adoption of FAIR Data practices.
+          widespread adoption of FAIR data practices.
         </p>
       </div>
 
@@ -33,7 +33,7 @@ export default function Vision() {
               <div>
                 The FAIR Data Principles are a set of guidelines for curating
                 and sharing research data such that they are optimaly reusable
-                by both human and machines.
+                by both humans and machines.
                 <div className="mt-2 flex md:mt-1">
                   <a
                     href="https://doi.org/10.1038/sdata.2016.18"
@@ -94,14 +94,14 @@ export default function Vision() {
               <div>
                 Despite effort from funding agencies, industry, and researchers,
                 FAIR data practices are not widely adopted due to their complex
-                nature and lack of support.
+                nature, insufficient support for researchers, and lack of awareness.
               </div>
             </dd>
           </div>
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <DesktopComputerIcon className="h-6 w-6" aria-hidden="true" />
+                <CogIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What do we do?
@@ -109,7 +109,7 @@ export default function Vision() {
             </dt>
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                We develop open source tools that enhance FAIR data practices
+                We develop open source tools that enhance and streamline FAIR data practices
                 for biomedical researchers through automation and intuitive user
                 interfaces.
               </div>
