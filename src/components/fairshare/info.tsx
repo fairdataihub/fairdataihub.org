@@ -275,6 +275,8 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
+                    The first phase of development of FAIRshare is focused on supporting 
+                    COVID-19 and other infectious diseases data and software.
                     FAIRshare is developed in collaboration with Dr. Zicheng Hu
                     (UCSF) and his colleagues at University of California, San
                     Francisco and Stanford University who are conducting a

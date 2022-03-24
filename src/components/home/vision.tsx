@@ -26,13 +26,13 @@ export default function Vision() {
                 <ScaleIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                What is FAIR?
+                What are the FAIR Data Principles?
               </p>
             </dt>
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The FAIR Data Principles are a set of guidelines for curating
-                and sharing research data such that they are reusable by both
+                and sharing research data such that they are optimaly reusable by both
                 human and machines.
                 <div className="mt-2 flex md:mt-1">
                   <a
@@ -69,14 +69,14 @@ export default function Vision() {
                 <ExclamationCircleIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                Why is it important?
+                Why are FAIR data practices important?
               </p>
             </dt>
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 FAIR data practices are crucial for ensuring reproducibility of
-                scientific findings and enabling AI/ML-driven analysis to
-                increase the pace of new discoveries.
+                scientific findings, promoting reuse of data, and enabling AI/ML-driven analysis to
+                ultimately increase the pace of new discoveries.
               </div>
             </dd>
           </div>

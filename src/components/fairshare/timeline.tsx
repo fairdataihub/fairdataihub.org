@@ -8,7 +8,8 @@ export default function Timeline() {
     {
       longDate: `September 2021 - Aug 2022`,
       title: `Phase I development`,
-      content: `The base framework of the software will be developed and support for major genomics, immunology, and general data types will be provided.`,
+      content: `The base framework of the software will be developed and support will be provided for COVID-19 
+      and other infectious diseases related data types (genomics, immunology, etc.) and software.`,
     },
   ];
 
