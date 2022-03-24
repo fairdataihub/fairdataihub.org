@@ -94,7 +94,8 @@ export default function Vision() {
               <div>
                 Despite effort from funding agencies, industry, and researchers,
                 FAIR data practices are not widely adopted due to their complex
-                nature, insufficient support for researchers, and lack of awareness.
+                nature, insufficient support for researchers, and lack of
+                awareness.
               </div>
             </dd>
           </div>
@@ -109,9 +110,9 @@ export default function Vision() {
             </dt>
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                We develop open source tools that enhance and streamline FAIR data practices
-                for biomedical researchers through automation and intuitive user
-                interfaces.
+                We develop open source tools that enhance and streamline FAIR
+                data practices for biomedical researchers through automation and
+                intuitive user interfaces.
               </div>
             </dd>
           </div>

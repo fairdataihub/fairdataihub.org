@@ -75,7 +75,7 @@ export default function About() {
             </dt>
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-              FAIR data practices are crucial for ensuring reproducibility of
+                FAIR data practices are crucial for ensuring reproducibility of
                 scientific findings, promoting reuse of data, and enabling
                 AI/ML-driven analysis to ultimately increase the pace of new
                 discoveries.
