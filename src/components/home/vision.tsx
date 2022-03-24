@@ -32,8 +32,8 @@ export default function Vision() {
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The FAIR Data Principles are a set of guidelines for curating
-                and sharing research data such that they are optimaly reusable by both
-                human and machines.
+                and sharing research data such that they are optimaly reusable
+                by both human and machines.
                 <div className="mt-2 flex md:mt-1">
                   <a
                     href="https://doi.org/10.1038/sdata.2016.18"
@@ -75,8 +75,9 @@ export default function Vision() {
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 FAIR data practices are crucial for ensuring reproducibility of
-                scientific findings, promoting reuse of data, and enabling AI/ML-driven analysis to
-                ultimately increase the pace of new discoveries.
+                scientific findings, promoting reuse of data, and enabling
+                AI/ML-driven analysis to ultimately increase the pace of new
+                discoveries.
               </div>
             </dd>
           </div>
