@@ -15,7 +15,11 @@ export default function About() {
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
           FAIRshare is a cross-platform desktop software that allows researchers
           to easily organize and share their biomedical data and software
-          according to applicable FAIR guidelines.
+          according to applicable FAIR guidelines. The first phase of
+          development of FAIRshare is focused on supporting COVID-19 and other
+          infectious diseases related data and software. Our ultimate goal is to
+          provide support for data and software from all fields of biomedical
+          research.
         </p>
       </div>
 
