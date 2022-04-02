@@ -74,7 +74,7 @@ export default function Hero() {
       console.log(`here`);
       Object.assign(document.createElement(`a`), {
         target: `_blank`,
-        href: `https://docs.fairshareapp.io/docs/getting-started/download-soda`,
+        href: `https://docs.fairshareapp.io/docs/getting-started/download-fairshare`,
       }).click();
     })();
   };
