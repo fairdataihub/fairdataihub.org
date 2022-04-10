@@ -43,11 +43,11 @@ export default function FAIRshare() {
 
         <meta
           property="og:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/fairshare.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/fairshare.png"
         />
       </Head>
 

@@ -249,11 +249,11 @@ export default function Team() {
 
         <meta
           property="og:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/team.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/team.png"
         />
       </Head>
 

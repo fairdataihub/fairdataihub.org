@@ -46,11 +46,11 @@ export default function SodaForSparc() {
 
         <meta
           property="og:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/sodaforsparc.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/sodaforsparc.png"
         />
       </Head>
 
