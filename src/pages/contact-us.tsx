@@ -38,11 +38,11 @@ export default function ContactUs() {
 
         <meta
           property="og:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
+          content="https://fairdataihub.org/thumbnails/contact.png"
         />
         <meta
           property="twitter:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
+          content="https://fairdataihub.org/thumbnails/contact.png"
         />
       </Head>
 
