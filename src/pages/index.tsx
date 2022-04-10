@@ -33,11 +33,11 @@ export default function Home() {
 
         <meta
           property="og:image"
-          content="https://fairdataihub.org/backgrounds/dot-grid-grey.svg.png"
+          content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>
 
