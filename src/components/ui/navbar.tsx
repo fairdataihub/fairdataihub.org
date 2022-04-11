@@ -57,8 +57,8 @@ export default function Navbar() {
                 ry="1.54"
                 fill="#c5258f"
                 stroke="#c5258f"
-                stroke-miterlimit="10"
-                stroke-width=".93"
+                strokeMiterlimit="10"
+                strokeWidth=".93"
               />
               <ellipse
                 cx="19.97"
@@ -67,8 +67,8 @@ export default function Navbar() {
                 ry="1.54"
                 fill="#231f20"
                 stroke="#231f20"
-                stroke-miterlimit="10"
-                stroke-width=".93"
+                strokeMiterlimit="10"
+                strokeWidth=".93"
               />
               <ellipse
                 cx="19.97"
@@ -77,8 +77,8 @@ export default function Navbar() {
                 ry="1.54"
                 fill="#c5258f"
                 stroke="#c5258f"
-                stroke-miterlimit="10"
-                stroke-width=".93"
+                strokeMiterlimit="10"
+                strokeWidth=".93"
               />
               <ellipse
                 cx="19.97"
@@ -87,8 +87,8 @@ export default function Navbar() {
                 ry="1.54"
                 fill="#231f20"
                 stroke="#231f20"
-                stroke-miterlimit="10"
-                stroke-width=".93"
+                strokeMiterlimit="10"
+                strokeWidth=".93"
               />
             </g>
             <g>
