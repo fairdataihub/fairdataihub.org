@@ -34,7 +34,7 @@ jobs:
       #     eslint: true
           
       - name: Run Prettier
-        uses: wearerequired/lint-action@v1
+        uses: wearerequired/lint-action@v2
         with:
           prettier: true
           prettier_extensions: "css,html,js,json,jsx,md,sass,scss,ts,tsx,vue"
