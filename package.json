@@ -30,7 +30,7 @@
     ]
   },
   "dependencies": {
-    "@heroicons/react": "1.0.5",
+    "@heroicons/react": "1.0.6",
     "@lottiefiles/lottie-player": "1.5.5",
     "@sendgrid/mail": "7.6.0",
     "cookies-next": "2.0.4",
