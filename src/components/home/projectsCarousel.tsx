@@ -115,7 +115,12 @@ export default function ProjectsCarousel() {
               disableOnInteraction: false,
             }}
             mousewheel={{ releaseOnEdges: true }}
-            thumbs={{ swiper: SwiperThumbs }}
+            thumbs={{
+              swiper:
+                SwiperThumbs && !SwiperThumbs[`destroyed`]
+                  ? SwiperThumbs
+                  : null,
+            }}
             className="h-full"
           >
             {projectsList.map((project, index) => (
