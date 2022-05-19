@@ -1,6 +1,6 @@
 # [fairdataihub.org](https://fairdataihub.org)
 
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/fairdataihub/fairdataihub-website.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fairdataihub/fairdataihub-website/alerts/) 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/fairdataihub/fairdataihub-website.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fairdataihub/fairdataihub-website/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/fairdataihub/fairdataihub-website.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fairdataihub/fairdataihub-website/context:javascript)
 
 ## Project setup
