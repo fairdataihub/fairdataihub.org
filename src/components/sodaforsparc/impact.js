@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
 export default function Impact() {
-  const filesNum = 71;
-  const datasetsNum = 132;
-  const dataNum = 5.7;
+  const filesNum = 106;
+  const datasetsNum = 159;
+  const dataNum = 7.8;
 
   return (
     <section className="mx-auto max-w-screen-xl">
