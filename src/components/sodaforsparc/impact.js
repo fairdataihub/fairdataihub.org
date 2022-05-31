@@ -1,4 +1,4 @@
-export default function Publications() {
+export default function Impact() {
   const filesNum = 106;
   const datasetsNum = 159;
   const dataNum = 7.8;
