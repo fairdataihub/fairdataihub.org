@@ -9,24 +9,23 @@ interface ReleaseAsset {
 export default function Hero() {
   const getOS = async function () {
     const userAgent = window.navigator.userAgent;
-    const platform = window.navigator.platform;
-    const macosPlatforms = [`Macintosh`, `MacIntel`, `MacPPC`, `Mac68K`];
-    const windowsPlatforms = [`Win32`, `Win64`, `Windows`, `WinCE`];
-    const iosPlatforms = [`iPhone`, `iPad`, `iPod`];
-    let os = `null`;
-    if (macosPlatforms.indexOf(platform) !== -1) {
+
+    let os;
+
+    if (userAgent.indexOf(`Mac`) !== -1) {
       os = `macOS`;
-    } else if (iosPlatforms.indexOf(platform) !== -1) {
+    } else if (userAgent.indexOf(`like Mac`) !== -1) {
       os = `all`;
-    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    } else if (userAgent.indexOf(`Win`) !== -1) {
       os = `windows`;
     } else if (/Android/.test(userAgent)) {
       os = `all`;
-    } else if (/Linux/.test(platform)) {
+    } else if (userAgent.indexOf(`Linux`)) {
       os = `linux`;
     } else {
       os = `all`;
     }
+
     return os;
   };
 

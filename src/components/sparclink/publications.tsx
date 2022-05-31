@@ -1,4 +1,4 @@
-export default function Timeline() {
+export default function Publications() {
   return (
     <section className="mx-auto max-w-screen-lg px-10 py-3">
       <div className="flex w-full flex-col">

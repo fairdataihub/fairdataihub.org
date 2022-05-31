@@ -35,6 +35,12 @@ export default function handler(
       <p>Message: ${message}</p>`,
     };
 
+    function sendError(error: Error) {
+      console.error(error);
+      const response = { success: false };
+      res.status(400).json(response);
+    }
+
     sgMail
       .send(ourmsg)
       .then(() => {
@@ -46,15 +52,11 @@ export default function handler(
             res.status(200).json(response);
           })
           .catch((error: any) => {
-            console.error(error);
-            const response = { success: false };
-            res.status(400).json(response);
+            sendError(error);
           });
       })
       .catch((error: any) => {
-        console.error(error);
-        const response = { success: false };
-        res.status(400).json(response);
+        sendError(error);
       });
   }
 }

@@ -1,6 +1,4 @@
-import Link from 'next/link';
-
-export default function Impact() {
+export default function Publications() {
   const filesNum = 106;
   const datasetsNum = 159;
   const dataNum = 7.8;
