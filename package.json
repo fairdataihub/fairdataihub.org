@@ -21,7 +21,8 @@
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx)\" --write",
     "prepare": "husky install",
     "commit": "cz",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap",
+    "cypress:open": "cypress open"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -53,6 +54,7 @@
     "@typescript-eslint/parser": "5.26.0",
     "autoprefixer": "10.4.7",
     "commitizen": "4.2.4",
+    "cypress": "9.7.0",
     "cz-conventional-changelog": "3.3.0",
     "devmoji": "2.3.0",
     "eslint": "8.16.0",
