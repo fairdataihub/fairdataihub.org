@@ -1,0 +1,35 @@
+name: Create release on GitHub
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: volta-cli/action@v1
+      - run: npm ci
+
+      - name: Test
+        run: npm run test
+
+      - name: Format check
+        run: npm run format:check
+
+      - name: Lint check
+        run: npm run lint:check
+
+      - name: Spell check
+        run: npm run spell:check
+
+      - name: Build
+        run: npm run build
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.BOT_ACTIONS }}
+        run: npm run semantic-release
