@@ -10,26 +10,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: volta-cli/action@v1
-      - run: npm ci
+      - name: Check out Git repository
+        uses: actions/checkout@v3
 
-      - name: Test
-        run: npm run test
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Node.js dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Format check
-        run: npm run format:check
+        run: yarn format
 
       - name: Lint check
-        run: npm run lint:check
-
-      - name: Spell check
-        run: npm run spell:check
-
-      - name: Build
-        run: npm run build
+        run: yarn lint
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_ACTIONS }}
-        run: npm run semantic-release
+        run: yarn semantic-release

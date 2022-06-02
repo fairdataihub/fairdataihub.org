@@ -22,6 +22,7 @@
     "prepare": "husky install",
     "commit": "cz",
     "postbuild": "next-sitemap",
+    "semantic-release": "semantic-release",
     "cypress:open": "cypress open"
   },
   "lint-staged": {
@@ -47,6 +48,11 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.1",
     "@commitlint/config-conventional": "17.0.0",
+    "@semantic-release/changelog": "6.0.1",
+    "@semantic-release/commit-analyzer": "9.0.2",
+    "@semantic-release/github": "8.0.4",
+    "@semantic-release/npm": "9.0.1",
+    "@semantic-release/release-notes-generator": "10.0.3",
     "@types/node": "16.11.36",
     "@types/react": "18.0.9",
     "@types/react-dom": "18.0.5",
@@ -68,6 +74,7 @@
     "postcss": "8.4.14",
     "prettier": "2.6.2",
     "prettier-plugin-tailwindcss": "0.1.11",
+    "semantic-release": "19.0.2",
     "tailwindcss": "3.0.24",
     "tailwindcss-debug-screens": "2.2.1",
     "typescript": "4.7.2"
