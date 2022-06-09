@@ -11,8 +11,8 @@ export default function Info() {
     },
     {
       name: `Tram Ngo`,
-      href: `/team/#Tram-Ngo`,
-      external: false,
+      href: `https://www.linkedin.com/in/tramngo1603`,
+      external: true,
       image: `/images/people/tram-head.jpg`,
     },
     {

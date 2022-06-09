@@ -17,8 +17,8 @@ export default function Info() {
     },
     {
       name: `Taiji Yang`,
-      href: `/team/#Taiji-Yang`,
-      external: false,
+      href: `https://www.linkedin.com/in/taiji-yang-1b4b8620b/`,
+      external: true,
       image: `https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/200x200/smart/`,
     },
   ];
