@@ -2,7 +2,7 @@
 
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/fairdataihub/fairdataihub-website.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fairdataihub/fairdataihub-website/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/fairdataihub/fairdataihub-website.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fairdataihub/fairdataihub-website/context:javascript)
-[![CodeFactor](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub-website/badge)](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub-website)
+[![CodeFactor](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub.org/badge)](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub.org)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
