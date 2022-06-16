@@ -1,7 +1,7 @@
 export default function Impact() {
-  const filesNum = 106;
-  const datasetsNum = 159;
-  const dataNum = 7.8;
+  const filesNum = 120;
+  const datasetsNum = 167;
+  const dataNum = 11;
 
   return (
     <section className="mx-auto max-w-screen-xl">
