@@ -1,16 +1,9 @@
-import { useState, useEffect } from 'react';
-
 import Link from 'next/link';
 
-import Lottie from '@/components/lotties';
+import LottieAnimation from '@/components/lotties';
+import heroLottie from '../../assets/lotties/hero.json';
 
 export default function Hero() {
-  const [clientSide, setClientSide] = useState(false);
-
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
-
   return (
     <section className="hero">
       <div className="container mx-auto max-w-screen-lg px-6 py-8">
@@ -42,11 +35,11 @@ export default function Hero() {
           </div>
 
           <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
-            {clientSide ? (
-              <Lottie id="home-page-hero" width={400} height={400} />
-            ) : (
-              <div></div>
-            )}
+            <LottieAnimation
+              animationData={heroLottie}
+              width={400}
+              height={400}
+            />
           </div>
         </div>
       </div>

@@ -1,25 +1,19 @@
-import { useState, useEffect } from 'react';
-
 import Link from 'next/link';
 
-import Lottie from '@/components/lotties';
+import LottieAnimation from '@/components/lotties';
+
+import teamLottie from '../../assets/lotties/team.json';
 
 export default function AboutUs() {
-  const [clientSide, setClientSide] = useState(false);
-
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
-
   return (
     <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4">
       <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
-          {clientSide ? (
-            <Lottie id="home-page-team" width={400} height={400} />
-          ) : (
-            <div></div>
-          )}
+          <LottieAnimation
+            animationData={teamLottie}
+            width={400}
+            height={400}
+          />
         </div>
 
         <div className="h-full w-full p-2 lg:max-w-2xl">
