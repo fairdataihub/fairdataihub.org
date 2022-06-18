@@ -1,3 +1,10 @@
+## [2.4.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.4.2...v2.4.3) (2022-06-18)
+
+
+### Bug Fixes
+
+* 🐛 update Lottie library ([#140](https://github.com/fairdataihub/fairdataihub-website/issues/140)) ([5585171](https://github.com/fairdataihub/fairdataihub-website/commit/55851718366022cd51c7ad9210901f0a6cfd2639))
+
 ## [2.4.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.4.1...v2.4.2) (2022-06-13)
 
 ### Bug Fixes
