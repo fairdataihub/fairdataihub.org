@@ -1,17 +1,9 @@
-import { useState, useEffect } from 'react';
-
 import Link from 'next/link';
 
 import LottieAnimation from '@/components/lotties';
 import heroLottie from '../../assets/lotties/hero.json';
 
 export default function Hero() {
-  const [clientSide, setClientSide] = useState(false);
-
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
-
   return (
     <section className="hero">
       <div className="container mx-auto max-w-screen-lg px-6 py-8">
