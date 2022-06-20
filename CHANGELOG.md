@@ -1,3 +1,10 @@
+# [2.6.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.5.0...v2.6.0) (2022-06-20)
+
+
+### Features
+
+* ✨ Added the FAIR-BioRS publication in SODA for SPARC ([ac147f9](https://github.com/fairdataihub/fairdataihub-website/commit/ac147f9261fc357cae783a62eedd5aaf680b0eb4))
+
 # [2.5.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.4.4...v2.5.0) (2022-06-20)
 
 
