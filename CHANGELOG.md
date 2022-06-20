@@ -1,9 +1,8 @@
 ## [2.4.4](https://github.com/fairdataihub/fairdataihub-website/compare/v2.4.3...v2.4.4) (2022-06-18)
 
-
 ### Bug Fixes
 
-* **deps:** update react monorepo to v18.2.0 ([#139](https://github.com/fairdataihub/fairdataihub-website/issues/139)) ([ce4d028](https://github.com/fairdataihub/fairdataihub-website/commit/ce4d0282a545c8a2d08946133a4a43fd21146fe2))
+- **deps:** update react monorepo to v18.2.0 ([#139](https://github.com/fairdataihub/fairdataihub-website/issues/139)) ([ce4d028](https://github.com/fairdataihub/fairdataihub-website/commit/ce4d0282a545c8a2d08946133a4a43fd21146fe2))
 
 ## [2.4.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.4.2...v2.4.3) (2022-06-18)
 
