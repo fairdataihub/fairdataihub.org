@@ -82,7 +82,7 @@ export default function About() {
                 FAIR data practices are crucial for ensuring reproducibility of
                 scientific findings, promoting reuse of data, and enabling
                 AI/ML-driven analysis to ultimately increase the pace of new
-                discoveries.
+                discoveries. They also ensure proper credits to data generators.
               </div>
             </dd>
           </div>

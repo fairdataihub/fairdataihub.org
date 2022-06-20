@@ -103,7 +103,7 @@ export default function Hero() {
               FAIRshare
             </h1>
             <h2 className="mb-2 w-full text-center text-2xl font-medium sm:text-2xl">
-              FAIR data sharing made easy
+              FAIR data and software sharing made easy
             </h2>
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
               Your one-stop tool for rapidly curating and sharing biomedical
