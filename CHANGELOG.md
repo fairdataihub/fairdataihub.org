@@ -1,3 +1,10 @@
+# [2.5.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.4.4...v2.5.0) (2022-06-20)
+
+
+### Features
+
+* ✨ Added the FAIR-BioRS publication for FAIRshare ([8e73a31](https://github.com/fairdataihub/fairdataihub-website/commit/8e73a315a682d3edbb99b85f9d3d452848d1c5a3))
+
 ## [2.4.4](https://github.com/fairdataihub/fairdataihub-website/compare/v2.4.3...v2.4.4) (2022-06-18)
 
 ### Bug Fixes
