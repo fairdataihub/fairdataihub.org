@@ -3,7 +3,7 @@ import matter from 'gray-matter';
 
 import markdownToHtml from '@/lib/markdownToHtml';
 
-import PostBody from '@/components/blog/PostBody';
+import PostBody from '@/components/blog/postBody';
 
 // The page for each post
 export default function Post({ frontmatter, postContent }) {
