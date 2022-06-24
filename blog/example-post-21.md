@@ -3,12 +3,10 @@ title: 'This is an example post 2'
 author: 'Me'
 category: 'example'
 date: '2022-03-14'
-bannerImage: 'https://images.unsplash.com/photo-1654084787966-5bc3b02a05f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
+heroImage: 'https://images.unsplash.com/photo-1566405825201-b3452abcedce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80'
 tags:
   - example
 ---
-
-# This is an example blog post
 
 This is sample content. The section above is called Frontmatter where we can add post metadata like title and author. You can add as little or as many properties in the frontmatter using YAML syntax.
 

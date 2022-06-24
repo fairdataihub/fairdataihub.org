@@ -8,11 +8,21 @@ import dayjs from 'dayjs';
 // The Blog Page Content
 export default function Blog({ blogList }) {
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col  overflow-hidden  px-5  sm:p-4 sm:px-10 ">
+    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col  overflow-hidden  px-5   sm:py-10 sm:px-10">
+      <div className="mb-10">
+        <h1 className="mb-2 text-center text-4xl font-bold sm:text-4xl">
+          Latest Updates
+        </h1>
+        <h2 className="text-center text-xl">
+          Updates, tips & opinions from the developers at FAIR Data Innovations
+          Hub
+        </h2>
+      </div>
+
       {blogList.map((post) => {
         const { slug, frontmatter } = post;
 
-        const { title, author, category, date, bannerImage, tags, subtitle } =
+        const { title, author, category, date, heroImage, tags, subtitle } =
           frontmatter;
 
         return (
@@ -21,28 +31,41 @@ export default function Blog({ blogList }) {
             className="mb-2 flex w-full flex-col md:flex-row"
           >
             <div className="hidden w-full px-2 py-3 md:block md:w-3/12 md:px-7 md:py-5">
-              <h3 className="mb-1 text-base font-medium text-slate-600">
+              <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
                 {dayjs(date).format('MMMM D, YYYY')}
               </h3>
             </div>
 
-            <Link href={`/blog/${slug}`} passHref>
-              <div className="flex cursor-pointer flex-col rounded-lg px-2 py-3 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
-                <h3 className="mb-1  text-base font-medium text-slate-600 md:hidden">
-                  {dayjs(date).format('MMMM D, YYYY')}
-                </h3>
+            <div className="flex  flex-col rounded-lg px-2 py-3 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
+              <h3 className="mb-1  text-base font-medium text-slate-600 md:hidden">
+                {dayjs(date).format('MMMM D, YYYY')}
+              </h3>
 
-                <h1 className="mb-1 cursor-pointer text-xl font-semibold">
+              <Link href={`/blog/${slug}`} passHref>
+                <h2 className="text-url mb-1 cursor-pointer text-xl font-semibold">
                   {title}
-                </h1>
+                </h2>
+              </Link>
 
-                <p className="mt-2 mb-3 line-clamp-3">{subtitle}</p>
+              <p className="mt-2 mb-3 line-clamp-3">{subtitle}</p>
 
+              <div className="flex w-full justify-between">
+                <div className="flex flex-row items-center text-sm">
+                  <h4 className="mr-2 text-sm font-bold">Tags: </h4>
+                  {tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 transition-all hover:border-light-accent hover:text-accent"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
                 <a href={`/blog/${slug}`} className="text-url text-base">
                   Read more →
                 </a>
               </div>
-            </Link>
+            </div>
           </article>
         );
       })}

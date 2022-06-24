@@ -4,7 +4,7 @@ interface PostBodyProps {
 
 const postBody: React.FC<PostBodyProps> = ({ content }) => {
   return (
-    <div className="prose lg:prose-xl">
+    <div className="prose-a:text-url prose prose-slate max-w-none lg:prose-lg">
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
