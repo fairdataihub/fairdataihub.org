@@ -41,29 +41,27 @@ export default function Home() {
         />
       </Head>
 
-      <main>
-        <div className="bg-haikeiWavy bg-cover bg-top bg-no-repeat md:bg-right-top 2xl:bg-contain">
-          <section className="mb-10 pt-12 sm:pt-16">
-            <Hero />
-          </section>
-
-          <section className="py-10">
-            <Vision />
-          </section>
-        </div>
-
-        <section className="bg-gray-50 py-10">
-          <AboutUs />
+      <div className="bg-haikeiWavy bg-cover bg-top bg-no-repeat md:bg-right-top 2xl:bg-contain">
+        <section className="mb-10 pt-12 sm:pt-16">
+          <Hero />
         </section>
 
-        <section className="bg-white py-10">
-          <ProjectsCarousel />
+        <section className="py-10">
+          <Vision />
         </section>
+      </div>
 
-        <section className="bg-white py-10">
-          <Collaborators />
-        </section>
-      </main>
+      <section className="bg-gray-50 py-10">
+        <AboutUs />
+      </section>
+
+      <section className="bg-white py-10">
+        <ProjectsCarousel />
+      </section>
+
+      <section className="bg-white py-10">
+        <Collaborators />
+      </section>
     </div>
   );
 }

@@ -174,6 +174,16 @@ export default function Navbar() {
                 Home
               </div>
             </Link>
+            <Link href="/blog" passHref>
+              <div
+                className={
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/blog` ? ` router-link-active ` : ` `)
+                }
+              >
+                Blog
+              </div>
+            </Link>
             <Link href="/team" passHref>
               <div
                 className={
@@ -329,6 +339,14 @@ export default function Navbar() {
                   onClick={toggleMobileMenu}
                 >
                   Home
+                </div>
+              </Link>
+              <Link href="/blog" passHref>
+                <div
+                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  onClick={toggleMobileMenu}
+                >
+                  Blog
                 </div>
               </Link>
               <Link href="/team" passHref>
