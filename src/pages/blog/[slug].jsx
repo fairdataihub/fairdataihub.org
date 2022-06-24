@@ -3,7 +3,6 @@ import matter from 'gray-matter';
 
 import markdownToHtml from '@/lib/markdownToHtml';
 
-// eslint-disable-next-line import/extensions
 import PostBody from '@/components/blog/PostBody';
 
 // The page for each post
