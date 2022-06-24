@@ -1,9 +1,10 @@
 ---
-title: 'This is an example post'
-author: 'Alex Merced'
+title: 'Vue 2.7 is Now in Beta!'
+author: 'Evan You'
 category: 'example'
-date: '2022-03-13'
-bannerImage: 'https://images.unsplash.com/photo-1654084787966-5bc3b02a05f5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80'
+date: '2022-06-20'
+bannerImage: 'https://images.unsplash.com/photo-1604999565976-8913ad2ddb7c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=320&h=160&q=80'
+subtitle: 'Despite Vue 3 now being the default version, we understand that there are still many users who have to stay on Vue 2 due to dependency compatibility, browser support requirements, or simply not enough bandwidth to upgrade. In Vue 2.7, we have backported some of the most important features from Vue 3 so that Vue 2 users can benefit from them as well.'
 tags:
   - example
 ---

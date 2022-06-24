@@ -44,6 +44,7 @@ module.exports = {
   plugins: [
     require('tailwindcss-debug-screens'),
     require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
   ],
   corePlugins: {
     divideStyle: true,
