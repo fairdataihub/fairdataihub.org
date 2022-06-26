@@ -1,6 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import Image from 'next/image';
+import wordsCount from 'words-count';
 import Link from 'next/link';
 
 import dayjs from 'dayjs';
@@ -20,26 +20,36 @@ export default function Blog({ blogList }) {
       </div>
 
       {blogList.map((post) => {
-        const { slug, frontmatter } = post;
+        const { slug, frontmatter, timeToRead } = post;
 
-        const { title, author, category, date, heroImage, tags, subtitle } =
-          frontmatter;
+        const { title, date, tags, subtitle } = frontmatter;
 
         return (
           <article
             key={title}
             className="mb-2 flex w-full flex-col md:flex-row"
           >
-            <div className="hidden w-full px-2 py-3 md:block md:w-3/12 md:px-7 md:py-5">
+            {/* Left panel */}
+            <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5 ">
               <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
                 {dayjs(date).format('MMMM D, YYYY')}
               </h3>
+
+              <span className="text-sm text-gray-600">
+                {timeToRead} min read
+              </span>
             </div>
 
-            <div className="flex  flex-col rounded-lg px-2 py-3 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
-              <h3 className="mb-1  text-base font-medium text-slate-600 md:hidden">
-                {dayjs(date).format('MMMM D, YYYY')}
-              </h3>
+            <div className="flex  flex-col rounded-lg px-2 py-10 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
+              <div className="mb-1 flex flex-row items-center justify-between md:hidden ">
+                <h3 className="  text-base font-medium text-slate-600 ">
+                  {dayjs(date).format('MMMM D, YYYY')}
+                </h3>
+
+                <span className=" text-sm text-gray-600">
+                  {timeToRead} min read
+                </span>
+              </div>
 
               <Link href={`/blog/${slug}`} passHref>
                 <h2 className="text-url mb-1 cursor-pointer text-xl font-semibold">
@@ -83,11 +93,14 @@ export async function getStaticProps() {
 
     // Read the raw content of the file and parse the frontmatter
     const rawFileContent = fs.readFileSync(`blog/${fileName}`, `utf-8`);
+    const timeToRead = Math.ceil(wordsCount(rawFileContent) / 265);
+
     const { data: frontmatter } = matter(rawFileContent);
 
     return {
       slug,
       frontmatter,
+      timeToRead,
     };
   });
 
