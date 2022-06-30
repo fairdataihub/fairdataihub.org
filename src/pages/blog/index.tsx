@@ -27,9 +27,9 @@ interface BlogProps {
 
 const Blog: React.FC<BlogProps> = ({ blogList }) => {
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col  overflow-hidden  px-5   sm:py-10 sm:px-10">
+    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:py-10 sm:px-10">
       <Head>
-        <title>Fair Data Innovations Hub</title>
+        <title>Blog - Fair Data Innovations Hub</title>
         <meta property="og:title" content="Blog - Fair Data Innovations Hub " />
         <meta
           property="twitter:title"
@@ -63,15 +63,17 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
         />
       </Head>
 
-      <div className="mb-10 pt-5 sm:pt-0">
-        <h1 className="mb-2 text-center text-4xl font-bold sm:text-4xl">
+      <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
+        <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
           Latest Updates
         </h1>
-        <h2 className="text-center text-xl">
+        <h2 className="text-left text-xl">
           Updates, tips & opinions from the developers at FAIR Data Innovations
           Hub
         </h2>
       </div>
+
+      <hr className="mx-6 my-2 border-dashed border-slate-200" />
 
       {blogList.map((post) => {
         const { slug, frontMatter, timeToRead } = post;
