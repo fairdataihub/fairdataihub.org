@@ -1,7 +1,10 @@
 ---
 title: 'Vue 2.7 is Now in Beta!'
-author: 'Evan You'
-date: '2022-06-20'
+authors:
+  - 'BhaveshPatel'
+  - 'TramNgo'
+date: '2022-02-20'
+category: 'News'
 heroImage: 'https://images.unsplash.com/photo-1656004517126-6e81a181f459?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1828&q=80'
 subtitle: 'Despite Vue 3 now being the default version, we understand that there are still many users who have to stay on Vue 2 due to dependency compatibility, browser support requirements, or simply not enough bandwidth to upgrade. In Vue 2.7, we have backported some of the most important features from Vue 3 so that Vue 2 users can benefit from them as well.'
 tags:
