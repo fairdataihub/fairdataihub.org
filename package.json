@@ -47,6 +47,7 @@
     "react-lottie-player": "1.4.3",
     "react-toastify": "9.0.4",
     "rehype-document": "6.0.1",
+    "rehype-external-links": "1.0.1",
     "rehype-format": "4.0.1",
     "rehype-highlight": "5.0.2",
     "rehype-raw": "6.1.1",

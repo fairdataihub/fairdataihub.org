@@ -7,8 +7,25 @@ import Head from 'next/head';
 
 import dayjs from 'dayjs';
 
+type BlogList = {
+  slug: string;
+  timeToRead: number;
+  frontMatter: {
+    title: string;
+    date: string;
+    tags: string[];
+    subtitle: string;
+    category: string;
+  };
+};
+
+interface BlogProps {
+  blogList: BlogList[];
+}
+
 // The Blog Page Content
-export default function Blog({ blogList }) {
+
+const Blog: React.FC<BlogProps> = ({ blogList }) => {
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col  overflow-hidden  px-5   sm:py-10 sm:px-10">
       <Head>
@@ -69,7 +86,7 @@ export default function Blog({ blogList }) {
             {/* Left panel */}
             <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5 ">
               <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
-                {dayjs(date).format('MMMM D, YYYY')}
+                {dayjs(date).format(`MMMM D, YYYY`)}
               </h3>
 
               <h4 className="text-url mb-1 cursor-pointer text-base font-semibold hover:underline">
@@ -88,7 +105,7 @@ export default function Blog({ blogList }) {
 
               <div className="mb-1 flex flex-row items-center justify-between md:hidden ">
                 <h4 className="text-base font-medium text-slate-600 ">
-                  {dayjs(date).format('MMMM D, YYYY')}
+                  {dayjs(date).format(`MMMM D, YYYY`)}
                 </h4>
 
                 <span className=" text-sm text-gray-600">
@@ -128,7 +145,7 @@ export default function Blog({ blogList }) {
       })}
     </section>
   );
-}
+};
 
 export async function getStaticProps() {
   // Get the posts from the `blog` directory
@@ -153,8 +170,8 @@ export async function getStaticProps() {
 
   // sort the posts by date in descending order
   blogList.sort((a, b) => {
-    const a_date = dayjs(a.frontMatter.date, 'YYYY-MM-DD');
-    const b_date = dayjs(b.frontMatter.date, 'YYYY-MM-DD');
+    const a_date: any = dayjs(a.frontMatter.date, `YYYY-MM-DD`);
+    const b_date: any = dayjs(b.frontMatter.date, `YYYY-MM-DD`);
 
     return b_date - a_date;
   });
@@ -166,3 +183,5 @@ export async function getStaticProps() {
     },
   };
 }
+
+export default Blog;

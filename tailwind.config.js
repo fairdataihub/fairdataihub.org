@@ -19,8 +19,6 @@ module.exports = {
       },
       backgroundImage: {
         haikeiWavy: "url('/backgrounds/wavy-background.svg')",
-        haikeiCircleScatter: "url('/backgrounds/circle-scatter-haikei.svg')",
-        patternRandomized: "url('/backgrounds/pattern-randomized.svg')",
       },
     },
 

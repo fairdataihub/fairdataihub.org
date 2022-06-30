@@ -4,18 +4,33 @@ import dayjs from 'dayjs';
 
 import { Icon } from '@iconify/react';
 
+import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
 import markdownToHtml from '@/lib/markdownToHtml';
 
-import authorsList from '@/assets/data/authors.json';
+const authorsJSON = require(`../../assets/data/authors.json`);
 
 import PostBody from '@/components/blog/postBody';
 
+interface PostProps {
+  slug: string;
+  frontMatter: {
+    title: string;
+    date: string;
+    authors: string[];
+    heroImage: string;
+    tags: string[];
+    subtitle: string;
+    category: string;
+  };
+  postContent: string;
+}
+
 // The page for each post
-export default function Post({ slug, frontMatter, postContent }) {
+const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
   const { title, authors, date, heroImage, category, subtitle, tags } =
     frontMatter;
 
@@ -57,7 +72,7 @@ export default function Post({ slug, frontMatter, postContent }) {
 
         <meta
           name="keywords"
-          content={tags.map((tag) => tag.toLowerCase()).join(', ')}
+          content={tags.map((tag) => tag.toLowerCase()).join(`, `)}
         />
       </Head>
 
@@ -84,7 +99,7 @@ export default function Post({ slug, frontMatter, postContent }) {
         <div className=" ">
           <h3 className="mb-2 text-lg font-bold text-accent">{category}</h3>
           <h3 className="mb-3 text-base font-medium text-slate-500">
-            {dayjs(date).format('dddd, MMMM D, YYYY')}
+            {dayjs(date).format(`dddd, MMMM D, YYYY`)}
           </h3>
 
           <hr className="my-4 border-dashed border-slate-200" />
@@ -95,7 +110,7 @@ export default function Post({ slug, frontMatter, postContent }) {
             {authors.map((author) => (
               <li key={author} className="my-2 mr-5 flex items-center">
                 <Image
-                  src={authorsList[author].avatar}
+                  src={authorsJSON[author].avatar}
                   alt="profile picture"
                   width={50}
                   height={50}
@@ -105,15 +120,15 @@ export default function Post({ slug, frontMatter, postContent }) {
 
                 <div className="ml-3 flex flex-col justify-center">
                   <span className="text-base font-medium ">
-                    {authorsList[author].name}
+                    {authorsJSON[author].name}
                   </span>
                   <a
-                    href={'https://twitter.com/' + authorsList[author].social}
+                    href={`https://twitter.com/` + authorsJSON[author].social}
                     className="text-sm font-medium text-accent"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    @{authorsList[author].social}
+                    @{authorsJSON[author].social}
                   </a>
                 </div>
               </li>
@@ -128,7 +143,7 @@ export default function Post({ slug, frontMatter, postContent }) {
 
           <div className="mb-10 flex flex-row items-center">
             <span className="mr-2 text-base text-slate-600">
-              Share this article:{' '}
+              Share this article:{` `}
             </span>
             <a
               href={`http://twitter.com/share?text=I just read this article and think y'all need to take a look at this&url=https://fairdataihub.org/blog/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
@@ -162,14 +177,14 @@ export default function Post({ slug, frontMatter, postContent }) {
       </div>
     </div>
   );
-}
+};
 
-export async function getStaticPaths() {
-  const files = fs.readdirSync('./blog');
+export const getStaticPaths: GetStaticPaths = async () => {
+  const files = fs.readdirSync(`./blog`);
 
   const paths = files.map((fileName) => ({
     params: {
-      slug: fileName.replace('.md', ''),
+      slug: fileName.replace(`.md`, ``),
     },
   }));
 
@@ -177,13 +192,17 @@ export async function getStaticPaths() {
     paths,
     fallback: false,
   };
-}
+};
 
-export async function getStaticProps({ params: { slug } }) {
-  const fileName = fs.readFileSync(`blog/${slug}.md`, 'utf-8');
+// The page for each post
+
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const slug = (params || {}).slug;
+
+  const fileName = fs.readFileSync(`blog/${slug}.md`, `utf-8`);
   const { data: frontMatter, content: fileContent } = matter(fileName);
 
-  const postContent = await markdownToHtml(fileContent || '');
+  const postContent = await markdownToHtml(fileContent || ``);
 
   return {
     props: {
@@ -192,4 +211,6 @@ export async function getStaticProps({ params: { slug } }) {
       postContent,
     },
   };
-}
+};
+
+export default BlogPost;
