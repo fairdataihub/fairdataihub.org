@@ -78,6 +78,7 @@ export default function Post({ slug, frontMatter, postContent }) {
             height="100%"
             layout="responsive"
             objectFit="cover"
+            priority={true}
           />
         </div>
         <div className=" ">
