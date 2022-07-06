@@ -47,10 +47,6 @@ describe('My First Test', () => {
     cy.url().should('include', '/contact-us');
 
     // Get an input, type into it and verify that the value has been updated
-    cy.get('input:second')
-      .type('fake@gmail.com')
-      .should('have.value', 'fake@gmail.com');
-
     cy.get('input:first')
       .type('Testing name')
       .should('have.value', 'Testing name');
