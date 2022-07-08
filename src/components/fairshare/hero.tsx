@@ -61,7 +61,7 @@ export default function Hero() {
 
   const downloadSODA = async function () {
     const os = await getOS();
-    console.log(os);
+
     const downloadLink = await getLatestVersion(os);
     (async () => {
       Object.assign(document.createElement(`a`), {
@@ -70,7 +70,6 @@ export default function Hero() {
       }).click();
     })();
     (async () => {
-      console.log(`here`);
       Object.assign(document.createElement(`a`), {
         target: `_blank`,
         href: `https://docs.fairshareapp.io/docs/getting-started/download-fairshare`,

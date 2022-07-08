@@ -4,8 +4,20 @@ import matter from 'gray-matter';
 import Link from 'next/link';
 import Head from 'next/head';
 
+interface ListOfTags {
+  [key: string]: number;
+}
+
 interface TagsProps {
-  tagsList: string[];
+  [key: string]: ListOfTags;
+}
+interface tagEntry {
+  tag: string;
+  count: number;
+}
+
+interface AllTagsProps {
+  [key: string]: tagEntry[];
 }
 
 // The Tags Page Content
@@ -13,7 +25,7 @@ interface TagsProps {
 const Tags: React.FC<TagsProps> = ({ tagsList }) => {
   const alphabet = `abcdefghijklmnopqrstuvwxyz`.split(``);
 
-  const tagsWithLetter: any = {};
+  const tagsWithLetter: AllTagsProps = {};
 
   for (const letter of alphabet) {
     // if tag starts with letter, add to list
@@ -29,8 +41,6 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
       }
     }
   }
-
-  console.log(tagsWithLetter);
 
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col  overflow-hidden  px-5   sm:py-10 sm:px-10">
@@ -77,20 +87,22 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
         {Object.keys(tagsWithLetter).map((letter) => {
           return (
             <div className="mb-8 flex w-full flex-col" key={letter}>
-              <h2 className="mb-4 text-3xl font-bold">{letter}</h2>
+              <h2 className="mb-4 text-3xl font-medium">{letter}</h2>
 
               <div className=" flex w-full flex-row flex-wrap">
                 {tagsWithLetter[letter].map(({ tag, count }) => {
                   return (
-                    <div
-                      key={tag}
-                      className="group mr-2 flex cursor-pointer items-center rounded-lg border border-slate-300 px-2 py-1 text-sm transition-all hover:border-light-accent hover:text-accent"
-                    >
-                      <div className="mr-2 font-medium">{tag}</div>
-                      <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 p-1 transition-all group-hover:bg-light-accent/20">
-                        {count}
+                    <Link href={`/tags/${tag}`} key={tag} passHref>
+                      <div
+                        key={tag}
+                        className="group mr-2 flex cursor-pointer items-center rounded-lg border border-slate-300 px-2 py-1 text-sm transition-all hover:border-light-accent hover:text-accent"
+                      >
+                        <div className="mr-2 font-medium">{tag}</div>
+                        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 p-1 transition-all group-hover:bg-light-accent/20">
+                          {count}
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                   );
                 })}
               </div>
@@ -118,7 +130,7 @@ export async function getStaticProps() {
     };
   });
 
-  const tagsList: any = {};
+  const tagsList: ListOfTags = {};
 
   for (const post of blogList) {
     const { frontMatter } = post;
@@ -133,8 +145,6 @@ export async function getStaticProps() {
       }
     });
   }
-
-  console.log(tagsList);
 
   // Return the posts data to the page as props
   return {
