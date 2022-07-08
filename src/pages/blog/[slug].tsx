@@ -9,6 +9,9 @@ import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import markdownToHtml from '@/lib/markdownToHtml';
 
 const authorsJSON = require(`../../assets/data/authors.json`);
@@ -33,6 +36,20 @@ interface PostProps {
 const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
   const { title, authors, date, heroImage, category, subtitle, tags } =
     frontMatter;
+
+  const copyLinkToClipboard = () => {
+    navigator.clipboard.writeText(`https://fairdataihub.org/blog/${slug}`);
+
+    toast.success(`Copied to clipboard succesfully.`, {
+      position: `bottom-right`,
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
 
   return (
     <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
@@ -149,32 +166,45 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={`http://twitter.com/share?text=I just read this article and think y'all need to take a look at this&url=https://fairdataihub.org/blog/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-1 text-slate-500 transition-all hover:text-accent"
+              className="mx-2 text-slate-500 transition-all hover:text-accent"
               aria-label="Share on Twitter"
             >
-              <Icon icon="akar-icons:twitter-fill" />
+              <Icon icon="akar-icons:twitter-fill" width="20" height="20" />
             </a>
             <a
               href={`https://www.facebook.com/sharer/sharer.php?u=https://fairdataihub.org/blog/${slug}"`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-1 text-slate-500 transition-all hover:text-accent"
+              className="mx-2 text-slate-500 transition-all hover:text-accent"
               aria-label="Share on Facebook"
             >
-              <Icon icon="akar-icons:facebook-fill" />
+              <Icon icon="akar-icons:facebook-fill" width="20" height="20" />
             </a>
             <a
               href={`https://www.linkedin.com/sharing/share-offsite/?url=https://fairdataihub.org/blog/${slug}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="mx-1 text-slate-500 transition-all hover:text-accent"
+              className="mx-2 text-slate-500 transition-all hover:text-accent"
               aria-label="Share on LinkedIn"
             >
-              <Icon icon="akar-icons:linkedin-box-fill" />
+              <Icon
+                icon="akar-icons:linkedin-box-fill"
+                width="20"
+                height="20"
+              />
             </a>
+            <div
+              onClick={copyLinkToClipboard}
+              className="mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
+              aria-label="Copy to clipboard"
+            >
+              <Icon icon="akar-icons:link-chain" width="20" height="20" />
+            </div>
           </div>
         </div>
       </div>
+
+      <ToastContainer />
     </div>
   );
 };
