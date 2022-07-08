@@ -136,7 +136,10 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
                     </Link>
                   ))}
                 </div>
-                <a href={`/blog/${slug}`} className="text-url text-base">
+                <a
+                  href={`/blog/${slug}`}
+                  className="text-url text-base hover:underline"
+                >
                   Read more →
                 </a>
               </div>
