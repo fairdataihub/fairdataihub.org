@@ -111,6 +111,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             layout="responsive"
             objectFit="cover"
             priority={true}
+            className="grayscale filter "
           />
         </div>
         <div className=" ">
