@@ -8,8 +8,8 @@ import { useAnimation, motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 
 const heroVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.4 } },
-  hidden: { opacity: 0, scale: 1 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+  hidden: { opacity: 0, y: 50 },
 };
 
 export default function Hero() {

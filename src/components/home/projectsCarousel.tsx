@@ -1,8 +1,12 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Navigation, Pagination, Thumbs, A11y } from 'swiper';
-import Link from 'next/link';
-import Image from 'next/image';
+
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -10,14 +14,12 @@ import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
 import 'swiper/css/thumbs';
 
-import { useInView } from 'react-intersection-observer';
-import { useAnimation, motion } from 'framer-motion';
-const projectsCarouselVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.75 } },
-  hidden: { opacity: 0, scale: 1 },
-};
-
 export default function ProjectsCarousel() {
+  const projectsCarouselVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+    hidden: { opacity: 0, y: 100 },
+  };
+
   const thumbnails = [
     {
       src: `/images/carousel/sodasparc.png`,
