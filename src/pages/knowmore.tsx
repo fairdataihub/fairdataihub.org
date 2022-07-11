@@ -7,7 +7,7 @@ import Publications from '@/components/knowmore/publications';
 
 export default function KnowMore() {
   return (
-    <div>
+    <>
       <Head>
         <title>KnowMore - Fair Data Innovations Hub</title>
         <meta
@@ -41,15 +41,15 @@ export default function KnowMore() {
 
         <meta
           property="og:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/knowmore.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/knowmore.png"
         />
       </Head>
 
-      <main>
+      <>
         <section className="bg-gray-50 py-10 pt-16">
           <Hero />
         </section>
@@ -65,7 +65,7 @@ export default function KnowMore() {
         <section className="bg-white py-10 ">
           <Publications />
         </section>
-      </main>
-    </div>
+      </>
+    </>
   );
 }

@@ -9,24 +9,23 @@ interface ReleaseAsset {
 export default function Hero() {
   const getOS = async function () {
     const userAgent = window.navigator.userAgent;
-    const platform = window.navigator.platform;
-    const macosPlatforms = [`Macintosh`, `MacIntel`, `MacPPC`, `Mac68K`];
-    const windowsPlatforms = [`Win32`, `Win64`, `Windows`, `WinCE`];
-    const iosPlatforms = [`iPhone`, `iPad`, `iPod`];
-    let os = `null`;
-    if (macosPlatforms.indexOf(platform) !== -1) {
+
+    let os;
+
+    if (userAgent.indexOf(`Mac`) !== -1) {
       os = `macOS`;
-    } else if (iosPlatforms.indexOf(platform) !== -1) {
+    } else if (userAgent.indexOf(`like Mac`) !== -1) {
       os = `all`;
-    } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    } else if (userAgent.indexOf(`Win`) !== -1) {
       os = `windows`;
     } else if (/Android/.test(userAgent)) {
       os = `all`;
-    } else if (/Linux/.test(platform)) {
+    } else if (userAgent.indexOf(`Linux`)) {
       os = `linux`;
     } else {
       os = `all`;
     }
+
     return os;
   };
 
@@ -62,7 +61,7 @@ export default function Hero() {
 
   const downloadSODA = async function () {
     const os = await getOS();
-    console.log(os);
+
     const downloadLink = await getLatestVersion(os);
     (async () => {
       Object.assign(document.createElement(`a`), {
@@ -71,10 +70,9 @@ export default function Hero() {
       }).click();
     })();
     (async () => {
-      console.log(`here`);
       Object.assign(document.createElement(`a`), {
         target: `_blank`,
-        href: `https://docs.fairshareapp.io/docs/getting-started/download-soda`,
+        href: `https://docs.fairshareapp.io/docs/getting-started/download-fairshare`,
       }).click();
     })();
   };
@@ -104,12 +102,12 @@ export default function Hero() {
               FAIRshare
             </h1>
             <h2 className="mb-2 w-full text-center text-2xl font-medium sm:text-2xl">
-              FAIR data sharing made easy
+              FAIR data and software sharing made easy
             </h2>
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
               Your one-stop tool for rapidly curating and sharing biomedical
               <br />
-              research data according to applicable FAIR guidelines
+              research data and software according to applicable FAIR guidelines
               <br />
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">

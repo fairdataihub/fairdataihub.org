@@ -1,5 +1,17 @@
 # [fairdataihub.org](https://fairdataihub.org)
 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/fairdataihub/fairdataihub-website.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fairdataihub/fairdataihub-website/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/fairdataihub/fairdataihub-website.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/fairdataihub/fairdataihub-website/context:javascript)
+[![CodeFactor](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub.org/badge)](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub.org)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
+
 ## Project setup
 
 Make sure to install the dependencies.
@@ -70,6 +82,8 @@ This branch is a work in progress. We are actively working on improving the webs
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
 
 Note: You will not need to do anything to the hosted site. Continuous Delivery has been setup with Vercel. All you need to do is push your commit and wait for it to deploy.
+
+## Acknowledgements
 
 A special thank you to Vercel for hosting this website.
 

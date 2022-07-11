@@ -1,9 +1,7 @@
-import Link from 'next/link';
-
 export default function Impact() {
-  const filesNum = 40000;
-  const datasetsNum = 108;
-  const dataNum = 4.7;
+  const filesNum = 120;
+  const datasetsNum = 167;
+  const dataNum = 11;
 
   return (
     <section className="mx-auto max-w-screen-xl">
@@ -23,7 +21,7 @@ export default function Impact() {
 
           <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
             <span id="filesNum">{filesNum}</span>
-            <span>+</span>
+            <span>k+</span>
           </p>
 
           <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">

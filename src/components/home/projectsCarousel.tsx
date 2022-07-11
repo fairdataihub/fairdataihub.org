@@ -26,6 +26,12 @@ export default function ProjectsCarousel() {
       height: `50`,
     },
     {
+      src: `/images/carousel/FAIRshare-full.png`,
+      alt: `Navigate to FAIRshare card`,
+      width: `200`,
+      height: `40`,
+    },
+    {
       src: `/images/carousel/knowmore.png`,
       alt: `Navigate to Know More card`,
       width: `150`,
@@ -43,12 +49,6 @@ export default function ProjectsCarousel() {
       width: `150`,
       height: `85`,
     },
-    {
-      src: `/images/carousel/FAIRshare-full.png`,
-      alt: `Navigate to FAIRshare card`,
-      width: `200`,
-      height: `40`,
-    },
   ];
 
   const projectsList = [
@@ -59,6 +59,14 @@ export default function ProjectsCarousel() {
       imageHeight: `103`,
       description: `SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators according to the FAIR SPARC data standards.`,
       page: `/sodaforsparc`,
+    },
+    {
+      name: `FAIRshare`,
+      imageUrl: `/images/carousel/FAIRshare-full.png`,
+      imageWidth: `320`,
+      imageHeight: `60`,
+      description: `FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical research data and software according to applicable FAIR guidelines.`,
+      page: `/fairshare`,
     },
     {
       name: `KnowMore`,
@@ -83,14 +91,6 @@ export default function ProjectsCarousel() {
       imageHeight: `177`,
       description: `AQUA (Advanced QUery Architecture for the SPARC Portal) improves the SPARC Portal by making the search engine smarter at understanding user search keywords, enhancing the result display, and providing users with better result filtering and sorting options.`,
       page: `/aqua`,
-    },
-    {
-      name: `FAIRshare`,
-      imageUrl: `/images/carousel/FAIRshare-full.png`,
-      imageWidth: `320`,
-      imageHeight: `60`,
-      description: `FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related research data according to applicable FAIR guidelines.`,
-      page: `/fairshare`,
     },
   ];
 
@@ -137,7 +137,12 @@ export default function ProjectsCarousel() {
               disableOnInteraction: false,
             }}
             mousewheel={{ releaseOnEdges: true }}
-            thumbs={{ swiper: SwiperThumbs }}
+            thumbs={{
+              swiper:
+                SwiperThumbs && !SwiperThumbs[`destroyed`]
+                  ? SwiperThumbs
+                  : null,
+            }}
             className="h-full"
           >
             {projectsList.map((project, index) => (

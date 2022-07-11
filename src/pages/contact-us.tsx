@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import ContactForm from '@/components/contact-us/ContactForm';
+import ContactForm from '@/components/contact-us/contactForm';
 
 export default function ContactUs() {
   return (
@@ -38,11 +38,11 @@ export default function ContactUs() {
 
         <meta
           property="og:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/contact.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/contact.png"
         />
       </Head>
 

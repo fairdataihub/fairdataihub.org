@@ -30,24 +30,24 @@ export default function FAIRshare() {
 
         <meta
           name="description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
         />
         <meta
           property="og:description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
         />
         <meta
           property="twitter:description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their COVID-19 related genomics, immunology, and other general research data according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
         />
 
         <meta
           property="og:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/fairshare.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/fairshare.png"
         />
       </Head>
 

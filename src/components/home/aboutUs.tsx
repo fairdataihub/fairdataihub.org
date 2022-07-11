@@ -1,12 +1,12 @@
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 
-import Link from 'next/link';
-
-import Lottie from '@/components/lotties';
-
 import { useInView } from 'react-intersection-observer';
-
 import { useAnimation, motion } from 'framer-motion';
+
+import LottieAnimation from '@/components/lotties';
+import teamLottie from '../../assets/lotties/team.json';
+
 const aboutUsVariants = {
   visible: { opacity: 1, scale: 1, transition: { duration: 0.4 } },
   hidden: { opacity: 0, scale: 1 },
@@ -38,11 +38,11 @@ export default function AboutUs() {
     >
       <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
-          {clientSide ? (
-            <Lottie id="home-page-team" width={400} height={400} />
-          ) : (
-            <div></div>
-          )}
+          <LottieAnimation
+            animationData={teamLottie}
+            width={400}
+            height={400}
+          />
         </div>
 
         <div className="h-full w-full p-2 lg:max-w-2xl">

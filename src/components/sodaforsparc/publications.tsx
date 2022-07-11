@@ -1,4 +1,4 @@
-export default function Timeline() {
+export default function Publications() {
   return (
     <section className="mx-auto max-w-screen-lg px-10 py-3">
       <div className="flex w-full flex-col">
@@ -8,6 +8,37 @@ export default function Timeline() {
       </div>
 
       <div className="flex flex-col divide-y divide-gray-200">
+        <div className="mb-4 flex flex-col py-4 font-sans">
+          <a
+            href="https://doi.org/10.1101/2021.02.10.430563"
+            target="_blank"
+            className="my-2"
+            rel="noreferrer"
+          >
+            <p className="text-xl font-semibold">
+              Making Biomedical Research Software FAIR: Actionable Step-by-step
+              Guidelines with a User-support Tool
+            </p>
+          </a>
+          <div className="m2-3 relative rounded bg-gray-100 p-3">
+            <p className="font-lato text-xs text-gray-600">Citation</p>
+            <p className="font-asap text-base text-black">
+              Patel, Bhavesh, Sanjay Soundarajan, Zicheng Hu. &quot;Making
+              Biomedical Research Software FAIR: Actionable Step-by-step
+              Guidelines with a User-support Tool.&quot;
+              <i>bioRxiv</i> (2022).&nbsp;
+              <a
+                href="https://doi.org/10.1101/2022.04.18.488694"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="break-words text-blue-600 hover:underline">
+                  https://doi.org/10.1101/2022.04.18.488694
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
             href="https://doi.org/10.1101/2021.02.10.430563"

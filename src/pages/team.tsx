@@ -34,32 +34,6 @@ export default function Team() {
       },
     },
     {
-      id: `Tram-Ngo`,
-      name: `Tram Ngo (she/her)`,
-      title: `Software Developer`,
-      bio: `Tram's professional interests include solving problems either through pure mathematics topics such as number theory and real analysis or programming. In her free time, she enjoys reading, cooking, doing pilates and yoga.`,
-      image: `/images/people/tram-full.jpg`,
-      width: 340,
-      height: 453,
-      borderTop: true,
-      borderBottom: false,
-      education: [
-        `B.Sc. Economics and Mathematics (University of California, San Diego, 2018)`,
-      ],
-      twitter: {
-        show: true,
-        link: `https://twitter.com/tramngo41410636`,
-      },
-      github: {
-        show: true,
-        link: `https://github.com/tramngo1603`,
-      },
-      linkedin: {
-        show: true,
-        link: `https://www.linkedin.com/in/tramngo1603`,
-      },
-    },
-    {
       id: `Sanjay-Soundarajan`,
       name: `Sanjay Soundarajan (he/him)`,
       title: `Software Developer`,
@@ -136,30 +110,6 @@ export default function Team() {
       linkedin: {
         show: true,
         link: `https://www.linkedin.com/in/jacob-clarksd/`,
-      },
-    },
-    {
-      id: `Taiji-Yang`,
-      name: `Taiji Yang (he/him)`,
-      title: `Software Developer`,
-      bio: `Taiji Yang is a full stack software developer who's interested in web development, data analysis and visualization. In his free time, he enjoys reading and playing video games.`,
-      image: `/images/people/taiji-full.jpg`,
-      width: 340,
-      height: 510,
-      borderTop: true,
-      borderBottom: false,
-      education: [`B.Sc. in Computer Science (University of Minnesota, 2021)`],
-      twitter: {
-        show: false,
-        link: `https://twitter.com/`,
-      },
-      github: {
-        show: false,
-        link: `https://github.com/`,
-      },
-      linkedin: {
-        show: true,
-        link: `https://www.linkedin.com/in/taiji-yang-1b4b8620b/`,
       },
     },
     {
@@ -249,11 +199,11 @@ export default function Team() {
 
         <meta
           property="og:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/team.png"
         />
         <meta
           property="twitter:image"
-          content="https://i.ibb.co/svDc3xk/image.png"
+          content="https://fairdataihub.org/thumbnails/team.png"
         />
       </Head>
 

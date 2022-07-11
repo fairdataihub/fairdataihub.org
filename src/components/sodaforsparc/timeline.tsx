@@ -18,7 +18,7 @@ export default function Timeline() {
     {
       longDate: `Sept 2021 - Aug 2022`,
       title: `Phase III development`,
-      content: `Support will be provided for the evolving SPARC guidelines. A guided mode is to be integrated to simplify further data curation, and the workflow will be adapted for non-SPARC datasets.`,
+      content: `Support will be provided for the evolving SPARC guidelines. A guided mode will be integrated to simplify further data curation, and the integration with the SDS validator will be initiated.`,
     },
   ];
 

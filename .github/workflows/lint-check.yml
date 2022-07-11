@@ -17,10 +17,10 @@ jobs:
 
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
@@ -34,10 +34,11 @@ jobs:
       #     eslint: true
           
       - name: Run Prettier
-        uses: wearerequired/lint-action@v1
+        uses: wearerequired/lint-action@v2
         with:
           prettier: true
           prettier_extensions: "css,html,js,json,jsx,md,sass,scss,ts,tsx,vue"
+          commit_message: "style: 🎨 code style issues with ${linter}"
           auto_fix: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           git_email: "fairdataihub@gmail.com"

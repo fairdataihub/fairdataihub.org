@@ -17,8 +17,8 @@ export default function Info() {
     },
     {
       name: `Taiji Yang`,
-      href: `/team/#Taiji-Yang`,
-      external: false,
+      href: `https://www.linkedin.com/in/taiji-yang-1b4b8620b/`,
+      external: true,
       image: `https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/200x200/smart/`,
     },
   ];
@@ -275,13 +275,15 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    FAIRshare is developed in collaboration with Dr. Zicheng Hu
-                    (UCSF) and his colleagues at University of California, San
-                    Francisco and Stanford University who are conducting a
-                    clinical trial for a novel treatment approach for COVID-19.
-                    They will be providing overall guidance on the applicable
-                    FAIR guidelines as well as conducting beta testing of the
-                    software.
+                    The first phase of development of FAIRshare is focused on
+                    supporting COVID-19 and other infectious diseases data and
+                    software. FAIRshare is developed in collaboration with Dr.
+                    Zicheng Hu (UCSF) and his colleagues at University of
+                    California, San Francisco and Stanford University who are
+                    conducting a clinical trial for a novel treatment approach
+                    for COVID-19. They will be providing overall guidance on the
+                    applicable FAIR guidelines as well as conducting beta
+                    testing of the software.
                   </p>
                 </div>
               </div>

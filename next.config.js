@@ -8,15 +8,7 @@ module.exports = {
       'avatars.dicebear.com',
       'img.shields.io',
       'researcherprofiles.org',
+      'images.unsplash.com',
     ],
-  },
-  async redirects() {
-    return [
-      {
-        source: '/sodaforcovid',
-        destination: '/fairshare',
-        permanent: true,
-      },
-    ];
   },
 };
