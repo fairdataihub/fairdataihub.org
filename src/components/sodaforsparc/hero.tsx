@@ -59,7 +59,7 @@ export default function Hero() {
 
   const downloadSODA = async function () {
     const os = await getOS();
-    console.log(os);
+
     const downloadLink = await getLatestVersion(os);
     (async () => {
       Object.assign(document.createElement(`a`), {

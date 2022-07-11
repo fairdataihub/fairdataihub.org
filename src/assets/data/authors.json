@@ -1,0 +1,44 @@
+{
+  "BhaveshPatel": {
+    "name": "Bhavesh Patel",
+    "href": "/team/#Bhavesh-Patel",
+    "external": false,
+    "avatar": "/images/people/bhavesh-head.jpg",
+    "social": "bvhpatel"
+  },
+  "TramNgo": {
+    "name": "Tram Ngo",
+    "href": "https: //www.linkedin.com/in/tramngo1603",
+    "external": true,
+    "avatar": "/images/people/tram-head.jpg",
+    "social": "fairdataihub"
+  },
+  "SanjaySoundarajan": {
+    "name": "Sanjay Soundarajan",
+    "href": "/team/#Sanjay-Soundarajan",
+    "external": false,
+    "avatar": "/images/people/sanjay-head.jpg",
+    "social": "megasanjay"
+  },
+  "ChristopherMarroquin": {
+    "name": "Christopher Marroquin",
+    "href": "/team/#Christopher-Marroquin",
+    "external": false,
+    "avatar": "/images/people/aaron-head.jpg",
+    "social": "fairdataihub"
+  },
+  "JacobClark": {
+    "name": "Jacob Clark",
+    "href": "/team/#Jacob-Clark",
+    "external": false,
+    "avatar": "/images/people/jacob-head.jpg",
+    "social": "fairdataihub"
+  },
+  "DorianPortillo": {
+    "name": "Dorian Portillo",
+    "href": "/team/#Dorian-Portillo",
+    "external": false,
+    "avatar": "/images/people/dorian-head.PNG",
+    "social": "fairdataihub"
+  }
+}
