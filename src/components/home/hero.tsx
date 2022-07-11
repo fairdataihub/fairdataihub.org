@@ -13,11 +13,6 @@ const heroVariants = {
 };
 
 export default function Hero() {
-  const [clientSide, setClientSide] = useState(false);
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
-
   const controls = useAnimation();
   const [heroRef, inView] = useInView({
     threshold: 0,
