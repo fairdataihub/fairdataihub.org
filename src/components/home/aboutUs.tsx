@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { useInView } from 'react-intersection-observer';
 import { useAnimation, motion } from 'framer-motion';
@@ -13,11 +13,6 @@ const aboutUsVariants = {
 };
 
 export default function AboutUs() {
-  const [clientSide, setClientSide] = useState(false);
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
-
   const controls = useAnimation();
   const [aboutUsRef, inView] = useInView({
     threshold: 0,

@@ -5,7 +5,7 @@ import heroLottie from '../../assets/lotties/hero.json';
 
 import { useInView } from 'react-intersection-observer';
 import { useAnimation, motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 
 const heroVariants = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
