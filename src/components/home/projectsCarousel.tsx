@@ -1,8 +1,12 @@
-import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination, Thumbs, A11y } from 'swiper';
 import Link from 'next/link';
 import Image from 'next/image';
+
+import { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination, Thumbs, A11y } from 'swiper';
+
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -11,6 +15,11 @@ import 'swiper/css/autoplay';
 import 'swiper/css/thumbs';
 
 export default function ProjectsCarousel() {
+  const projectsCarouselVariants = {
+    visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+    hidden: { opacity: 0, y: 100 },
+  };
+
   const thumbnails = [
     {
       src: `/images/carousel/sodasparc.png`,
@@ -89,9 +98,24 @@ export default function ProjectsCarousel() {
 
   const [SwiperThumbs, setSwiperThumbs] = useState(null);
 
+  const controls = useAnimation();
+  const [heroRef, inView] = useInView({
+    threshold: 0,
+  });
+  useEffect(() => {
+    if (inView) {
+      controls.start(`visible`);
+    }
+  }, [controls, inView]);
+
   return (
     <>
-      <section>
+      <motion.section
+        ref={heroRef}
+        animate={controls}
+        initial="hidden"
+        variants={projectsCarouselVariants}
+      >
         <div className="mx-auto h-auto w-full max-w-screen-lg px-4 pt-1 pb-3">
           <div className="mb-4 flex flex-col items-center justify-center">
             <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
@@ -179,7 +203,7 @@ export default function ProjectsCarousel() {
             ))}
           </Swiper>
         </div>
-      </section>
+      </motion.section>
     </>
   );
 }

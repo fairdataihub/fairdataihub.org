@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import {
   CogIcon,
   LightningBoltIcon,
@@ -5,9 +7,32 @@ import {
   ExclamationCircleIcon,
 } from '@heroicons/react/outline';
 
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
+const visionVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 export default function Vision() {
+  const controls = useAnimation();
+  const [visionRef, inView] = useInView({
+    threshold: 0,
+  });
+  useEffect(() => {
+    if (inView) {
+      controls.start(`visible`);
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="mx-auto max-w-screen-lg px-6 sm:px-6 lg:px-8">
+    <motion.div
+      className="mx-auto max-w-screen-lg px-6 sm:px-6 lg:px-8"
+      ref={visionRef}
+      animate={controls}
+      initial="hidden"
+      variants={visionVariants}
+    >
       <div className="lg:text-center">
         <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
           Our Vision
@@ -118,6 +143,6 @@ export default function Vision() {
           </div>
         </dl>
       </div>
-    </div>
+    </motion.div>
   );
 }

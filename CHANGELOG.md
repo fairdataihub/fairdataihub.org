@@ -1,9 +1,8 @@
 # [2.7.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.6.0...v2.7.0) (2022-07-11)
 
-
 ### Features
 
-* ✨ added a blog page for articles ([#143](https://github.com/fairdataihub/fairdataihub-website/issues/143)) ([98e9ad1](https://github.com/fairdataihub/fairdataihub-website/commit/98e9ad12fdcbd25b71ebd2c4244aa66a4561ccff))
+- ✨ added a blog page for articles ([#143](https://github.com/fairdataihub/fairdataihub-website/issues/143)) ([98e9ad1](https://github.com/fairdataihub/fairdataihub-website/commit/98e9ad12fdcbd25b71ebd2c4244aa66a4561ccff))
 
 # [2.6.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.5.0...v2.6.0) (2022-06-20)
 

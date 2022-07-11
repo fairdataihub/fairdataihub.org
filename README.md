@@ -12,6 +12,9 @@
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
 
+![](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default)
+![](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default&responseTime=true)
+
 ## Project setup
 
 Make sure to install the dependencies.

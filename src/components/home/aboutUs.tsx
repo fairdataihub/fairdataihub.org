@@ -1,12 +1,36 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
+
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
 
 import LottieAnimation from '@/components/lotties';
-
 import teamLottie from '../../assets/lotties/team.json';
 
+const aboutUsVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+  hidden: { opacity: 0, y: 100 },
+};
+
 export default function AboutUs() {
+  const controls = useAnimation();
+  const [aboutUsRef, inView] = useInView({
+    threshold: 0,
+  });
+  useEffect(() => {
+    if (inView) {
+      controls.start(`visible`);
+    }
+  }, [controls, inView]);
+
   return (
-    <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4">
+    <motion.div
+      className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4"
+      ref={aboutUsRef}
+      animate={controls}
+      initial="hidden"
+      variants={aboutUsVariants}
+    >
       <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
           <LottieAnimation
@@ -46,6 +70,6 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

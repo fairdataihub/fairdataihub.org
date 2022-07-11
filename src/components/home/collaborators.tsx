@@ -1,5 +1,14 @@
+import { useEffect } from 'react';
 import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
+
+import { useInView } from 'react-intersection-observer';
+
+import { useAnimation, motion } from 'framer-motion';
+const collaboratorsVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+  hidden: { opacity: 0, y: 100 },
+};
 
 export default function Collaborators() {
   const logoImages = [
@@ -35,8 +44,23 @@ export default function Collaborators() {
     },
   ];
 
+  const controls = useAnimation();
+  const [collaboratorsRef, inView] = useInView({
+    threshold: 0,
+  });
+  useEffect(() => {
+    if (inView) {
+      controls.start(`visible`);
+    }
+  }, [controls, inView]);
+
   return (
-    <section>
+    <motion.section
+      ref={collaboratorsRef}
+      animate={controls}
+      initial="hidden"
+      variants={collaboratorsVariants}
+    >
       <div className="container mx-auto max-w-screen-lg px-6 pt-4 pb-0 md:p-10">
         <div className="mb-4 flex w-full flex-col items-center">
           <p className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
@@ -70,6 +94,6 @@ export default function Collaborators() {
           organizations mentioned on this website.
         </span>
       </div>
-    </section>
+    </motion.section>
   );
 }

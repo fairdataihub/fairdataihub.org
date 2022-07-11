@@ -1,4 +1,14 @@
+import { useEffect } from 'react';
+
 import Image from 'next/image';
+
+import { useInView } from 'react-intersection-observer';
+
+import { useAnimation, motion } from 'framer-motion';
+const teamCardVariants = {
+  visible: { opacity: 1, x: 0, transition: { duration: 0.4 } },
+  hidden: { opacity: 0, x: 300 },
+};
 
 type ShowLinkProps = {
   link: string;
@@ -26,10 +36,24 @@ interface TeamCardProps {
 }
 
 const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
+  const controls = useAnimation();
+  const [teamCardRef, inView] = useInView({
+    threshold: 0,
+  });
+  useEffect(() => {
+    if (inView) {
+      controls.start(`visible`);
+    }
+  }, [controls, inView]);
+
   return (
-    <div
+    <motion.div
       className={`flex flex-col py-4 px-1 sm:flex-row lg:p-5`}
       id={profile.id}
+      ref={teamCardRef}
+      animate={controls}
+      initial="hidden"
+      variants={teamCardVariants}
     >
       <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
         <Image
@@ -126,7 +150,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

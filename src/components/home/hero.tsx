@@ -3,9 +3,34 @@ import Link from 'next/link';
 import LottieAnimation from '@/components/lotties';
 import heroLottie from '../../assets/lotties/hero.json';
 
+import { useInView } from 'react-intersection-observer';
+import { useAnimation, motion } from 'framer-motion';
+import { useEffect } from 'react';
+
+const heroVariants = {
+  visible: { opacity: 1, y: 0, transition: { duration: 0.2 } },
+  hidden: { opacity: 0, y: 50 },
+};
+
 export default function Hero() {
+  const controls = useAnimation();
+  const [heroRef, inView] = useInView({
+    threshold: 0,
+  });
+  useEffect(() => {
+    if (inView) {
+      controls.start(`visible`);
+    }
+  }, [controls, inView]);
+
   return (
-    <section className="hero">
+    <motion.section
+      className="hero"
+      ref={heroRef}
+      animate={controls}
+      initial="hidden"
+      variants={heroVariants}
+    >
       <div className="container mx-auto max-w-screen-lg px-6 py-8">
         <div className="items-center justify-center md:flex">
           <div className="w-full p-2 lg:w-1/2 lg:max-w-lg">
@@ -43,6 +68,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
