@@ -1,3 +1,10 @@
+# [2.8.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.7.0...v2.8.0) (2022-07-12)
+
+
+### Features
+
+* ✨ add support for the category links ([#145](https://github.com/fairdataihub/fairdataihub-website/issues/145)) ([f192ecf](https://github.com/fairdataihub/fairdataihub-website/commit/f192ecf7e40312bb03de2aecdc765090a70ff016))
+
 # [2.7.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.6.0...v2.7.0) (2022-07-11)
 
 ### Features
