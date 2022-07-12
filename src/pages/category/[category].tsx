@@ -189,8 +189,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     return category === params?.category;
   });
 
-  console.log(filteredBlogList);
-
   // Return the posts data to the page as props
   return {
     props: {
