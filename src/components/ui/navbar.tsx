@@ -178,7 +178,9 @@ export default function Navbar() {
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/category` ? ` router-link-active ` : ` `)
+                  (router.pathname === `/category`
+                    ? ` router-link-active `
+                    : ` `)
                 }
               >
                 Categories
