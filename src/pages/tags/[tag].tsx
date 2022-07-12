@@ -106,6 +106,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
 
         return (
           <PostEntry
+            key={title}
             title={title}
             timeToRead={timeToRead}
             date={date}

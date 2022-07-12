@@ -4,7 +4,6 @@ import wordsCount from 'words-count';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
-import Link from 'next/link';
 import Head from 'next/head';
 
 import PostEntry from '@/components/blog/postEntry';
@@ -25,10 +24,6 @@ type BlogList = {
 
 interface BlogProps {
   filteredBlogList: BlogList[];
-}
-
-interface ListOfTags {
-  [key: string]: number;
 }
 
 // The Blog Page Content
@@ -101,6 +96,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
 
         return (
           <PostEntry
+            key={title}
             title={title}
             timeToRead={timeToRead}
             date={date}

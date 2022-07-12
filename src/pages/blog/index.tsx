@@ -83,6 +83,7 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
 
         return (
           <PostEntry
+            key={title}
             title={title}
             timeToRead={timeToRead}
             date={date}

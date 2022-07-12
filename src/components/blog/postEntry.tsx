@@ -2,6 +2,7 @@ import dayjs from 'dayjs';
 import Link from 'next/link';
 
 interface PostEntryProps {
+  key: any;
   title: string;
   timeToRead: number;
   date: string;
@@ -12,6 +13,7 @@ interface PostEntryProps {
 }
 
 const postEntry: React.FC<PostEntryProps> = ({
+  key,
   title,
   timeToRead,
   date,
@@ -21,14 +23,14 @@ const postEntry: React.FC<PostEntryProps> = ({
   category,
 }) => {
   return (
-    <article key={title} className="mb-2 flex w-full flex-col md:flex-row">
+    <article key={key} className="mb-2 flex w-full flex-col md:flex-row">
       {/* Left panel */}
       <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5 ">
         <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
           {dayjs(date).format(`MMMM D, YYYY`)}
         </h3>
 
-        {category !== '' && (
+        {category !== `` && (
           <Link href={`/category/${category}`} passHref>
             <h4 className="text-url mb-1 cursor-pointer text-base font-semibold hover:underline">
               {category}
@@ -40,7 +42,7 @@ const postEntry: React.FC<PostEntryProps> = ({
       </div>
 
       <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
-        {category !== '' && (
+        {category !== `` && (
           <Link href={`/category/${category}`} passHref>
             <h3 className="text-url mb-1 cursor-pointer text-base font-semibold hover:underline md:hidden">
               {category}
