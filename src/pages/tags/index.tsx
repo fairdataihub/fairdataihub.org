@@ -52,9 +52,9 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
           content="Tags - Fair Data Innovations Hub"
         />
 
-        <link rel="canonical" href="https://fairdataihub.org/blog" />
-        <meta property="og:url" content="https://fairdataihub.org/blog" />
-        <meta property="twitter:url" content="https://fairdataihub.org/blog" />
+        <link rel="canonical" href="https://fairdataihub.org/tags" />
+        <meta property="og:url" content="https://fairdataihub.org/tags" />
+        <meta property="twitter:url" content="https://fairdataihub.org/tags" />
 
         <meta
           name="description"
