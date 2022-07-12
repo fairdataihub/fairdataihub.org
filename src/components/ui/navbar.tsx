@@ -174,16 +174,6 @@ export default function Navbar() {
                 Blog
               </div>
             </Link>
-            <Link href="/category" passHref>
-              <div
-                className={
-                  `nav-item hover-underline-animation` +
-                  (router.pathname === `/category` ? ` router-link-active ` : ` `)
-                }
-              >
-                Categories
-              </div>
-            </Link>
             <Link href="/team" passHref>
               <div
                 className={
