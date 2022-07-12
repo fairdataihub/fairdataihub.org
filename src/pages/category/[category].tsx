@@ -35,42 +35,45 @@ interface ListOfTags {
 
 const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
   const router = useRouter();
-  const { tag } = router.query;
+  const { category } = router.query;
 
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:py-10 sm:px-10">
       <Head>
-        <title>{tag} - Tags | Fair Data Innovations Hub</title>
+        <title>{category} - Categories | Fair Data Innovations Hub</title>
         <meta
           property="og:title"
-          content={`${tag} - Tags | Fair Data Innovations Hub`}
+          content={`${category} - Categories | Fair Data Innovations Hub`}
         />
         <meta
           property="twitter:title"
-          content={`${tag} - Tags | Fair Data Innovations Hub`}
+          content={`${category} - Categories | Fair Data Innovations Hub`}
         />
 
-        <link rel="canonical" href={`https://fairdataihub.org/tags${tag}`} />
+        <link
+          rel="canonical"
+          href={`https://fairdataihub.org/category/${category}`}
+        />
         <meta
           property="og:url"
-          content={`https://fairdataihub.org/tags${tag}`}
+          content={`https://fairdataihub.org/category/${category}`}
         />
         <meta
           property="twitter:url"
-          content={`https://fairdataihub.org/tags${tag}`}
+          content={`https://fairdataihub.org/category/${category}`}
         />
 
         <meta
           name="description"
-          content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
+          content={`FAIR Data Innovations Hub blog posts under the '${category}' category.`}
         />
         <meta
           property="og:description"
-          content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
+          content={`FAIR Data Innovations Hub blog posts under the '${category}' category.`}
         />
         <meta
           property="twitter:description"
-          content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
+          content={`FAIR Data Innovations Hub blog posts under the '${category}' category.`}
         />
 
         <meta
@@ -83,18 +86,10 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
         />
       </Head>
 
-      <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
+      <div className="mb-5 px-2 pt-5 sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
-          {filteredBlogList.length}
-          {` `}
-          {filteredBlogList.length == 1 ? `post` : `posts`} tagged with &quot;
-          {tag} &quot;
+          {category}
         </h1>
-        <Link href={`/tags`} passHref>
-          <h2 className="text-url cursor-pointer text-left hover:underline">
-            View all tags
-          </h2>
-        </Link>
       </div>
 
       <hr className="mx-6 my-2 border-dashed border-slate-200" />
@@ -102,7 +97,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
       {filteredBlogList.map((post) => {
         const { slug, frontMatter, timeToRead } = post;
 
-        const { title, date, tags, subtitle, category } = frontMatter;
+        const { title, date, tags, subtitle } = frontMatter;
 
         return (
           <PostEntry
@@ -112,7 +107,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
             slug={slug}
             subtitle={subtitle}
             tags={tags}
-            category={category}
+            category=""
           />
         );
       })}
@@ -135,28 +130,24 @@ export const getStaticPaths: GetStaticPaths = async () => {
     };
   });
 
-  const tagsList: ListOfTags = {};
+  const categoriesList: string[] = [];
 
   for (const post of blogList) {
     const { frontMatter } = post;
 
-    const { tags } = frontMatter;
+    const { category } = frontMatter;
 
-    tags.forEach((tag: string) => {
-      if (tag in tagsList) {
-        tagsList[tag]++;
-      } else {
-        tagsList[tag] = 1;
-      }
-    });
+    if (category && !categoriesList.includes(category)) {
+      categoriesList.push(category);
+    }
   }
 
   const paths = [];
 
-  for (const tag in tagsList) {
+  for (const category of categoriesList) {
     paths.push({
       params: {
-        tag,
+        category,
       },
     });
   }
@@ -197,10 +188,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   });
 
   const filteredBlogList = blogList.filter((post) => {
-    const { tags } = post.frontMatter;
+    const { category } = post.frontMatter;
 
-    return tags.includes(`${params?.tag}`);
+    return category === params?.category;
   });
+
+  console.log(filteredBlogList);
 
   // Return the posts data to the page as props
   return {
