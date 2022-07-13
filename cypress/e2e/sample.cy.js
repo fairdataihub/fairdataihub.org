@@ -22,8 +22,8 @@ describe('Our projects pages', () => {
     cy.visit('/');
 
     cy.contains('Our Projects').click();
-  })
-})
+  });
+});
 
 //testing the contact us page
 describe('Contact Us Page', () => {
@@ -41,7 +41,7 @@ describe('Contact Us Page', () => {
       .should('have.value', 'Testing name');
 
     cy.get('input[name="email"]')
-      .type("testing@gmail.com")
+      .type('testing@gmail.com')
       .should('have.value', 'testing@gmail.com');
 
     cy.get('input[name="institution"]')
@@ -53,4 +53,3 @@ describe('Contact Us Page', () => {
       .should('have.value', 'This is a test for the contact page');
   });
 });
-
