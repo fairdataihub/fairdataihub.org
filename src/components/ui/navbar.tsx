@@ -209,6 +209,7 @@ export default function Navbar() {
                   <div className="flex flex-col">
                     <Link href="/sodaforsparc" passHref>
                       <div
+                        id="soda-page"
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/sodaforsparc`
@@ -221,6 +222,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/fairshare" passHref>
                       <div
+                        id="fairshare-page"
                         className={
                           `nav-item hover-underline-animation mt-2 w-[200px]` +
                           (router.pathname === `/fairshare`
@@ -233,6 +235,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/knowmore" passHref>
                       <div
+                        id="knowmore-page"
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/knowmore`
@@ -245,6 +248,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/sparclink" passHref>
                       <div
+                        id="sparclink-page"
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/sparclink`
@@ -257,6 +261,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/aqua" passHref>
                       <div
+                        id="aqua-page"
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/aqua`

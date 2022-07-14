@@ -16,15 +16,6 @@ describe('Meet the Team page', () => {
   });
 });
 
-//testing all project pages
-describe('Our projects pages', () => {
-  it('Navigate to SODA for SPARC page', () => {
-    cy.visit('/');
-
-    cy.contains('Our Projects').click();
-  })
-})
-
 //testing the contact us page
 describe('Contact Us Page', () => {
   it('Navigate to contact us page and verify', () => {
@@ -54,3 +45,41 @@ describe('Contact Us Page', () => {
   });
 });
 
+//testing all project pages
+describe('Our projects pages', () => {
+  it('Navigate to SODA for SPARC page', () => {
+    cy.visit('/');
+
+    cy.contains('Our Projects');
+
+    cy.get('[id^=soda-page]')
+      .contains("SODA for SPARC")
+      .click({force: true});
+
+    cy.url().should('include', '/sodaforsparc');
+
+    cy.get('[id^=fairshare-page]')
+      .contains("FAIRshare")
+      .click({force: true});
+
+    cy.url().should('include', '/fairshare');
+
+    cy.get('[id^=knowmore-page]')
+      .contains("KnowMore")
+      .click({force: true});
+
+    cy.url().should('include', '/knowmore');
+
+    cy.get('[id^=sparclink-page]')
+      .contains("SPARClink")
+      .click({force: true});
+
+    cy.url().should('include', '/sparclink');
+
+    cy.get('[id^=aqua-page]')
+      .contains("AQUA")
+      .click({force: true});
+
+    cy.url().should('include', '/aqua');
+  })
+})
