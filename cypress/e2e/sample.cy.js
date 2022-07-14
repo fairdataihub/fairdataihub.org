@@ -32,7 +32,7 @@ describe('Contact Us Page', () => {
       .should('have.value', 'Testing name');
 
     cy.get('input[name="email"]')
-      .type("testing@gmail.com")
+      .type('testing@gmail.com')
       .should('have.value', 'testing@gmail.com');
 
     cy.get('input[name="institution"]')
