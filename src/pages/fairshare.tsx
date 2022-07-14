@@ -34,11 +34,11 @@ export default function FAIRshare() {
         />
         <meta
           property="og:description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         />
         <meta
           property="twitter:description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         />
 
         <meta
