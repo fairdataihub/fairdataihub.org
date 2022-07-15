@@ -2,6 +2,8 @@
 describe('Home page testing', () => {
   it('Visits fairdata', () => {
     cy.visit('/');
+
+    cy.get('[id^=swiper-wrapper]');
   });
 });
 
@@ -50,26 +52,32 @@ describe('Our projects pages', () => {
   it('Navigate to SODA for SPARC page', () => {
     cy.visit('/');
 
-    cy.contains('Our Projects');
-
     cy.get('[id^=soda-page]').contains('SODA for SPARC').click({ force: true });
 
     cy.url().should('include', '/sodaforsparc');
+  });
+
+  it('Navigate to FAIRshare page', () => {
+    cy.visit('/');
 
     cy.get('[id^=fairshare-page]').contains('FAIRshare').click({ force: true });
 
     cy.url().should('include', '/fairshare');
+  });
+
+  it('Nagivate to the KnowMore page', () => {
+    cy.visit('/');
 
     cy.get('[id^=knowmore-page]').contains('KnowMore').click({ force: true });
 
     cy.url().should('include', '/knowmore');
+  });
+
+  it('Navigate to the SPARClink page', () => {
+    cy.visit('/');
 
     cy.get('[id^=sparclink-page]').contains('SPARClink').click({ force: true });
 
     cy.url().should('include', '/sparclink');
-
-    cy.get('[id^=aqua-page]').contains('AQUA').click({ force: true });
-
-    cy.url().should('include', '/aqua');
   });
 });
