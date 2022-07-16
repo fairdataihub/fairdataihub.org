@@ -48,14 +48,16 @@ export default function Hero() {
               <i> By SPARC investigators, for SPARC investigators </i>
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
-              <div className="flex flex-row justify-center">
-                <a
-                  href={downloadURL}
-                  className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
-                >
-                  Download now
-                </a>
-              </div>
+              {downloadURL !== `` && (
+                <div className="flex flex-row justify-center">
+                  <a
+                    href={downloadURL}
+                    className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
+                  >
+                    Download now
+                  </a>
+                </div>
+              )}
               <a
                 href="https://docs.sodaforsparc.io/"
                 target="_blank"
