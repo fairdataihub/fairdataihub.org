@@ -1,81 +1,19 @@
-import Link from 'next/link';
+import { useState, useEffect } from 'react';
+
 import Image from 'next/image';
 
-interface ReleaseAsset {
-  name: string;
-  browser_download_url: string;
-}
+import getLatestURL from '@/lib/getLatestDownloadLink';
 
 export default function Hero() {
-  const getOS = async function () {
-    const userAgent = window.navigator.userAgent;
+  const [downloadURL, setDownloadURL] = useState<string | undefined>(``);
 
-    let os;
-
-    if (userAgent.indexOf(`Mac`) !== -1) {
-      os = `macOS`;
-    } else if (userAgent.indexOf(`like Mac`) !== -1) {
-      os = `all`;
-    } else if (userAgent.indexOf(`Win`) !== -1) {
-      os = `windows`;
-    } else if (/Android/.test(userAgent)) {
-      os = `all`;
-    } else if (userAgent.indexOf(`Linux`)) {
-      os = `linux`;
-    } else {
-      os = `all`;
-    }
-
-    return os;
-  };
-
-  const getLatestVersion = async function (os: string) {
-    const res = await fetch(
-      `https://api.github.com/repos/fairdataihub/FAIRshare/releases`,
-    );
-    const data = await res.json();
-    const release = data[0];
-    let link = ``;
-
-    release.assets.forEach((asset: ReleaseAsset) => {
-      const file_name = asset.name;
-      const file_ext = file_name.split(`.`).pop();
-      if (os === `macOS`) {
-        if (file_ext === `dmg`) {
-          link = asset.browser_download_url;
-        }
-      }
-      if (os === `windows`) {
-        if (file_ext === `exe`) {
-          link = asset.browser_download_url;
-        }
-      }
-      if (os === `linux`) {
-        if (file_ext === `AppImage`) {
-          link = asset.browser_download_url;
-        }
-      }
-    });
-    return link;
-  };
-
-  const downloadSODA = async function () {
-    const os = await getOS();
-
-    const downloadLink = await getLatestVersion(os);
-    (async () => {
-      Object.assign(document.createElement(`a`), {
-        target: `_blank`,
-        href: downloadLink,
-      }).click();
-    })();
-    (async () => {
-      Object.assign(document.createElement(`a`), {
-        target: `_blank`,
-        href: `https://docs.fairshareapp.io/docs/getting-started/download-fairshare`,
-      }).click();
-    })();
-  };
+  useEffect(() => {
+    const func = async () => {
+      const url = await getLatestURL(`fairdataihub/FAIRshare`);
+      setDownloadURL(url);
+    };
+    func();
+  }, []);
 
   return (
     <div className="flex flex-col items-center justify-center">
@@ -112,12 +50,12 @@ export default function Hero() {
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <div className="flex flex-row justify-center">
-                <button
+                <a
+                  href={downloadURL}
                   className="flex items-center justify-center rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 "
-                  onClick={downloadSODA}
                 >
                   Download now
-                </button>
+                </a>
               </div>
               <a
                 href="https://docs.fairshareapp.io/"
@@ -130,14 +68,6 @@ export default function Hero() {
                   Explore the docs
                 </button>
               </a>
-              <Link
-                href="/sodaforsparc/docs/getting-started/User-Interface"
-                passHref
-              >
-                <button className="hidden rounded bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4">
-                  Explore the OLD docs
-                </button>
-              </Link>
             </div>
           </div>
 
