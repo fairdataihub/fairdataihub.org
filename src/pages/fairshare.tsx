@@ -7,7 +7,7 @@ import Info from '@/components/fairshare/info';
 import Timeline from '@/components/fairshare/timeline';
 import Publications from '@/components/fairshare/publications';
 
-export default function FAIRshare() {
+export default function Fairshare() {
   return (
     <div>
       <Head>
