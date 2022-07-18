@@ -1,3 +1,11 @@
+## [2.8.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.0...v2.8.1) (2022-07-18)
+
+
+### Bug Fixes
+
+* 🐛 update FAIRshare download link ([#148](https://github.com/fairdataihub/fairdataihub-website/issues/148)) ([70ff2eb](https://github.com/fairdataihub/fairdataihub-website/commit/70ff2ebb88bb73d38c799e8a9941717f1a576c9d)), closes [fairdataihub/FAIRshare#244](https://github.com/fairdataihub/FAIRshare/issues/244)
+* 🐛 update spelling typo ([7895524](https://github.com/fairdataihub/fairdataihub-website/commit/7895524992d2d19a6a7326299e792f0893053d40))
+
 # [2.8.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.7.0...v2.8.0) (2022-07-12)
 
 ### Features
