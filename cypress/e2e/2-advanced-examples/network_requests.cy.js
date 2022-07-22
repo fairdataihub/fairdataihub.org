@@ -19,7 +19,7 @@ context('Network Requests', () => {
           .and.be.oneOf([500, 501]);
         expect(response).to.have.property('headers');
         expect(response).to.have.property('duration');
-      }
+      },
     );
   });
 
@@ -33,7 +33,7 @@ context('Network Requests', () => {
           .to.have.property('length')
           .and.be.oneOf([500, 501]);
         expect(response).to.include.keys('headers', 'duration');
-      }
+      },
     );
   });
 
@@ -154,7 +154,7 @@ context('Network Requests', () => {
       expect(request.headers).to.have.property('content-type');
       expect(response && response.body).to.have.property(
         'name',
-        'Using POST in cy.intercept()'
+        'Using POST in cy.intercept()',
       );
     });
 
@@ -169,7 +169,7 @@ context('Network Requests', () => {
         body: { error: message },
         headers: { 'access-control-allow-origin': '*' },
         delayMs: 500,
-      }
+      },
     ).as('putComment');
 
     // we have code that puts a comment when

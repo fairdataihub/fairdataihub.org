@@ -4,7 +4,7 @@ const config = releasercConfig(
   'default',
   'fairdataihub',
   'fairdataihub.org',
-  false
+  false,
 );
 
 module.exports = config;

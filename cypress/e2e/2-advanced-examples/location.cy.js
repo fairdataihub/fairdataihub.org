@@ -15,7 +15,7 @@ context('Location', () => {
     cy.location().should((location) => {
       expect(location.hash).to.be.empty;
       expect(location.href).to.eq(
-        'https://example.cypress.io/commands/location'
+        'https://example.cypress.io/commands/location',
       );
       expect(location.host).to.eq('example.cypress.io');
       expect(location.hostname).to.eq('example.cypress.io');
