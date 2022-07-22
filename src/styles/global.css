@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,7 +25,7 @@
 
   .hover-underline-animation:after {
     @apply absolute bottom-0 left-0 h-[2px] w-full bg-light-accent;
-    content: '';
+    content: "";
     transform: scaleX(0);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -44,7 +44,7 @@
     @apply absolute bottom-0 left-0 h-[2px] w-full bg-light-accent transition-all;
     transform: scaleX(1);
     transform-origin: bottom left;
-    content: '';
+    content: "";
   }
 
   div.swiper.swiper-initialized.swiper-horizontal.swiper-pointer-events.h-full.swiper-backface-hidden

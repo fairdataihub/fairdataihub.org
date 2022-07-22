@@ -1,4 +1,4 @@
-const { devmojiConfig } = require('@fairdataihub/config');
+const { devmojiConfig } = require("@fairdataihub/config");
 
 const config = devmojiConfig();
 
