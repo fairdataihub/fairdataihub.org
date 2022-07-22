@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import { getCookie, setCookies, checkCookies } from 'cookies-next';
+import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect } from "react";
+import { getCookie, setCookies, checkCookies } from "cookies-next";
 
 export default function Footer() {
   const checkCookie = () => {
@@ -120,6 +120,9 @@ export default function Footer() {
               <ul>
                 <li className="footer-item">
                   <Link href="/team"> About </Link>
+                </li>
+                <li className="footer-item">
+                  <Link href="/blog"> Blog </Link>
                 </li>
                 <li className="footer-item">
                   <Link href="/contact-us"> Contact Us </Link>

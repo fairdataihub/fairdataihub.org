@@ -18,10 +18,10 @@
       "error",
       "ignorePackages",
       {
-        "ts": "never",
-        "tsx": "never",
         "js": "never",
-        "jsx": "never"
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
       }
     ],
     "quotes": "off",

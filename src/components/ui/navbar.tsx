@@ -1,7 +1,7 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-import { useState } from 'react';
-import { useRouter } from 'next/router';
+import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
@@ -164,14 +164,14 @@ export default function Navbar() {
         </Link>
         <div className="hidden md:block">
           <div className="md:text-md flex h-full flex-row items-center justify-center font-medium sm:text-sm">
-            <Link href="/" passHref>
+            <Link href="/blog" passHref>
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/` ? ` router-link-active ` : ` `)
+                  (router.pathname === `/blog` ? ` router-link-active ` : ` `)
                 }
               >
-                Home
+                Blog
               </div>
             </Link>
             <Link href="/team" passHref>
@@ -328,12 +328,12 @@ export default function Navbar() {
         {isOpen && (
           <div className="fixed top-16 left-0 z-10 w-screen bg-white shadow-sm">
             <div className="pt-2 pb-3">
-              <Link href="/" passHref>
+              <Link href="/blog" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
-                  Home
+                  Blog
                 </div>
               </Link>
               <Link href="/team" passHref>

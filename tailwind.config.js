@@ -19,8 +19,6 @@ module.exports = {
       },
       backgroundImage: {
         haikeiWavy: "url('/backgrounds/wavy-background.svg')",
-        haikeiCircleScatter: "url('/backgrounds/circle-scatter-haikei.svg')",
-        patternRandomized: "url('/backgrounds/pattern-randomized.svg')",
       },
     },
 
@@ -41,7 +39,11 @@ module.exports = {
       'light-accent': '#CD329F',
     }),
   },
-  plugins: [require('tailwindcss-debug-screens')],
+  plugins: [
+    require('tailwindcss-debug-screens'),
+    require('@tailwindcss/typography'),
+    require('@tailwindcss/line-clamp'),
+  ],
   corePlugins: {
     divideStyle: true,
   },

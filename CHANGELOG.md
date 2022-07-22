@@ -1,3 +1,26 @@
+## [2.8.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.0...v2.8.1) (2022-07-18)
+
+### Bug Fixes
+
+- 🐛 update FAIRshare download link ([#148](https://github.com/fairdataihub/fairdataihub-website/issues/148)) ([70ff2eb](https://github.com/fairdataihub/fairdataihub-website/commit/70ff2ebb88bb73d38c799e8a9941717f1a576c9d)), closes [fairdataihub/FAIRshare#244](https://github.com/fairdataihub/FAIRshare/issues/244)
+- 🐛 update spelling typo ([7895524](https://github.com/fairdataihub/fairdataihub-website/commit/7895524992d2d19a6a7326299e792f0893053d40))
+
+### Features
+
+- ✨ Added the FAIR-BioRS publication in SODA for SPARC ([ac147f9](https://github.com/fairdataihub/fairdataihub-website/commit/ac147f9261fc357cae783a62eedd5aaf680b0eb4))
+
+# [2.8.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.7.0...v2.8.0) (2022-07-12)
+
+### Features
+
+- ✨ add support for the category links ([#145](https://github.com/fairdataihub/fairdataihub-website/issues/145)) ([f192ecf](https://github.com/fairdataihub/fairdataihub-website/commit/f192ecf7e40312bb03de2aecdc765090a70ff016))
+
+# [2.7.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.6.0...v2.7.0) (2022-07-11)
+
+### Features
+
+- ✨ added a blog page for articles ([#143](https://github.com/fairdataihub/fairdataihub-website/issues/143)) ([98e9ad1](https://github.com/fairdataihub/fairdataihub-website/commit/98e9ad12fdcbd25b71ebd2c4244aa66a4561ccff))
+
 # [2.6.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.5.0...v2.6.0) (2022-06-20)
 
 ### Features

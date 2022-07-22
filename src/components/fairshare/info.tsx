@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Info() {
   const membersList = [
@@ -182,13 +182,13 @@ export default function Info() {
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://www.niaid.nih.gov/funding/covid19-research"
+                      href="https://reporter.nih.gov/project-details/10377989"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
-                        Explore the award on NIH Reporter
+                        Explore the parent award on NIH Reporter
                       </span>
                       <svg
                         fill="none"

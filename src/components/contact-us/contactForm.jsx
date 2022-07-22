@@ -1,6 +1,6 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const successNotify = () =>
   toast.success(` Your message was received! We will get back to you soon.`, {
@@ -24,7 +24,7 @@ const errorNotify = () =>
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-    },
+    }
   );
 
 const ContactForm = () => (
