@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation, Pagination, Thumbs, A11y } from 'swiper';
-import Link from 'next/link';
-import Image from 'next/image';
+import { useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination, Thumbs, A11y } from "swiper";
+import Link from "next/link";
+import Image from "next/image";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/autoplay';
-import 'swiper/css/thumbs';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/autoplay";
+import "swiper/css/thumbs";
 
 export default function ProjectsCarousel() {
   const thumbnails = [

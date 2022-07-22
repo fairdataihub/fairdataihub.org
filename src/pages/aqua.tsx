@@ -1,10 +1,10 @@
-import Head from 'next/head';
+import Head from "next/head";
 
-import Hero from '@/components/aqua/hero';
-import About from '@/components/aqua/about';
-import Info from '@/components/aqua/info';
-import Publications from '@/components/aqua/publications';
-import Tools from '@/components/aqua/tools';
+import Hero from "@/components/aqua/hero";
+import About from "@/components/aqua/about";
+import Info from "@/components/aqua/info";
+import Publications from "@/components/aqua/publications";
+import Tools from "@/components/aqua/tools";
 
 export default function Aqua() {
   return (

@@ -1,4 +1,4 @@
-import Lottie from 'react-lottie-player';
+import Lottie from "react-lottie-player";
 
 interface LottieProps {
   animationData: Record<string, unknown>;
