@@ -1,22 +1,22 @@
-import fs from "fs";
-import matter from "gray-matter";
-import dayjs from "dayjs";
+import fs from 'fs';
+import matter from 'gray-matter';
+import dayjs from 'dayjs';
 
-import { Icon } from "@iconify/react";
+import { Icon } from '@iconify/react';
 
-import { GetStaticPaths, GetStaticProps } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-import markdownToHtml from "@/lib/markdownToHtml";
+import markdownToHtml from '@/lib/markdownToHtml';
 
 const authorsJSON = require(`../../assets/data/authors.json`);
 
-import PostBody from "@/components/blog/postBody";
+import PostBody from '@/components/blog/postBody';
 
 interface PostProps {
   slug: string;

@@ -1,10 +1,10 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import Hero from "@/components/home/hero";
-import Vision from "@/components/home/vision";
-import AboutUs from "@/components/home/aboutUs";
-import ProjectsCarousel from "@/components/home/projectsCarousel";
-import Collaborators from "@/components/home/collaborators";
+import Hero from '@/components/home/hero';
+import Vision from '@/components/home/vision';
+import AboutUs from '@/components/home/aboutUs';
+import ProjectsCarousel from '@/components/home/projectsCarousel';
+import Collaborators from '@/components/home/collaborators';
 
 export default function Home() {
   return (

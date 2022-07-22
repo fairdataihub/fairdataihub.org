@@ -3,7 +3,7 @@ import {
   LightningBoltIcon,
   ScaleIcon,
   ExclamationCircleIcon,
-} from "@heroicons/react/outline";
+} from '@heroicons/react/outline';
 
 export default function Vision() {
   return (

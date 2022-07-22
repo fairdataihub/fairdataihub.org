@@ -1,11 +1,11 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import Hero from "@/components/fairshare/hero";
-import About from "@/components/fairshare/about";
-import Impact from "@/components/fairshare/impact";
-import Info from "@/components/fairshare/info";
-import Timeline from "@/components/fairshare/timeline";
-import Publications from "@/components/fairshare/publications";
+import Hero from '@/components/fairshare/hero';
+import About from '@/components/fairshare/about';
+import Impact from '@/components/fairshare/impact';
+import Info from '@/components/fairshare/info';
+import Timeline from '@/components/fairshare/timeline';
+import Publications from '@/components/fairshare/publications';
 
 export default function Fairshare() {
   return (

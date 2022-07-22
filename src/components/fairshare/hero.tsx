@@ -1,8 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-import Image from "next/image";
+import Image from 'next/image';
 
-import getLatestURL from "@/lib/getLatestDownloadLink";
+import getLatestURL from '@/lib/getLatestDownloadLink';
 
 export default function Hero() {
   const [downloadURL, setDownloadURL] = useState<string | undefined>(``);

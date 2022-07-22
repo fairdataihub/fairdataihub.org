@@ -1,9 +1,9 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import Hero from "@/components/knowmore/hero";
-import About from "@/components/knowmore/about";
-import Info from "@/components/knowmore/info";
-import Publications from "@/components/knowmore/publications";
+import Hero from '@/components/knowmore/hero';
+import About from '@/components/knowmore/about';
+import Info from '@/components/knowmore/info';
+import Publications from '@/components/knowmore/publications';
 
 export default function KnowMore() {
   return (

@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import { useState, useEffect } from "react";
-import { getCookie, setCookies, checkCookies } from "cookies-next";
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
+import { getCookie, setCookies, checkCookies } from 'cookies-next';
 
 export default function Footer() {
   const checkCookie = () => {

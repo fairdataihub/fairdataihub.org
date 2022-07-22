@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
-import LottieAnimation from "@/components/lotties";
+import LottieAnimation from '@/components/lotties';
 
-import teamLottie from "../../assets/lotties/team.json";
+import teamLottie from '../../assets/lotties/team.json';
 
 export default function AboutUs() {
   return (

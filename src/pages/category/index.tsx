@@ -1,8 +1,8 @@
-import fs from "fs";
-import matter from "gray-matter";
+import fs from 'fs';
+import matter from 'gray-matter';
 
-import Link from "next/link";
-import Head from "next/head";
+import Link from 'next/link';
+import Head from 'next/head';
 
 interface FuncProps {
   categoriesList: string[];

@@ -1,6 +1,6 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import TeamCard from "../components/team/teamCard";
+import TeamCard from '../components/team/teamCard';
 
 export default function Team() {
   const teamsList = [
