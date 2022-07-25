@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <nav className="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
       <div className=" flex flex-row items-center justify-between bg-gray-50 px-5 py-3">
-        <Link href="/" aria-label="Homepage" passHref>
+        <Link id="home-page-svg" href="/" aria-label="Homepage" passHref>
           <svg
             id="a"
             xmlns="http://www.w3.org/2000/svg"
@@ -166,6 +166,7 @@ export default function Navbar() {
           <div className="md:text-md flex h-full flex-row items-center justify-center font-medium sm:text-sm">
             <Link href="/blog" passHref>
               <div
+                id="blog-page"
                 className={
                   `nav-item hover-underline-animation` +
                   (router.pathname === `/blog` ? ` router-link-active ` : ` `)
@@ -176,6 +177,7 @@ export default function Navbar() {
             </Link>
             <Link href="/team" passHref>
               <div
+                id="team-page"
                 className={
                   `nav-item hover-underline-animation` +
                   (router.pathname === `/team` ? ` router-link-active ` : ` `)
