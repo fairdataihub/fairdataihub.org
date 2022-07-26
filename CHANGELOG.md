@@ -1,3 +1,10 @@
+## [2.8.4](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.3...v2.8.4) (2022-07-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rehype-external-links to v2 ([#162](https://github.com/fairdataihub/fairdataihub-website/issues/162)) ([2c6ea1e](https://github.com/fairdataihub/fairdataihub-website/commit/2c6ea1ee94bffc554d0d5891269246c4bc8c20d1))
+
 ## [2.8.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.2...v2.8.3) (2022-07-26)
 
 ### Bug Fixes
