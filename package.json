@@ -74,7 +74,7 @@
     "@tailwindcss/line-clamp": "0.4.0",
     "@tailwindcss/typography": "0.5.2",
     "@types/node": "16.11.45",
-    "@types/react": "18.0.12",
+    "@types/react": "18.0.15",
     "@types/react-dom": "18.0.5",
     "@typescript-eslint/eslint-plugin": "5.28.0",
     "@typescript-eslint/parser": "5.28.0",
