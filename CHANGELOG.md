@@ -1,3 +1,10 @@
+## [2.8.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.1...v2.8.2) (2022-07-26)
+
+
+### Bug Fixes
+
+* 🐛 update FAIRshare award link ([5d40568](https://github.com/fairdataihub/fairdataihub-website/commit/5d40568467f338659b3382acbd928d7e189a629e))
+
 ## [2.8.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.0...v2.8.1) (2022-07-18)
 
 ### Bug Fixes
