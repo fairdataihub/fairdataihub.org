@@ -1,3 +1,10 @@
+## [2.8.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.2...v2.8.3) (2022-07-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cookies-next to v2.1.1 ([#160](https://github.com/fairdataihub/fairdataihub-website/issues/160)) ([6512609](https://github.com/fairdataihub/fairdataihub-website/commit/6512609f01bc3cad51ec91b4df9b2be3c871db8b))
+
 ## [2.8.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.1...v2.8.2) (2022-07-26)
 
 ### Bug Fixes
