@@ -33,6 +33,12 @@ class MyDocument extends Document {
           `,
             }}
           />
+          <script
+            async
+            defer
+            data-website-id="cf1c4f3c-8963-4714-a553-c0ec3dbce8d0"
+            src="https://umami.fairdataihub.org/umami.js"
+          />
           <meta
             name="keywords"
             content="fair data, fairhub, fairdataihub, calmi2, calmii, soda, sparc, sparclink, aqua, know more, software"
