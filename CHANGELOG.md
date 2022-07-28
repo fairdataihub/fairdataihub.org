@@ -1,3 +1,10 @@
+## [2.8.5](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.4...v2.8.5) (2022-07-28)
+
+
+### Bug Fixes
+
+* 🐛 update function import names for cookies ([#165](https://github.com/fairdataihub/fairdataihub-website/issues/165)) ([1289017](https://github.com/fairdataihub/fairdataihub-website/commit/128901741a880944e9947034a19c03918b324fb0))
+
 ## [2.8.4](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.3...v2.8.4) (2022-07-26)
 
 ### Bug Fixes
