@@ -57,7 +57,7 @@
     "remark-html": "15.0.1",
     "remark-parse": "10.0.1",
     "remark-rehype": "10.1.0",
-    "swiper": "8.2.4",
+    "swiper": "8.3.2",
     "unified": "10.1.2",
     "words-count": "2.0.2"
   },
