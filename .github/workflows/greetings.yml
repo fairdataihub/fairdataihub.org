@@ -1,8 +1,6 @@
 name: Memer Workflow
 
-on:
-  issues: [opened, reopened]
-  pull_request: [opened, reopened]
+on: [pull_request]
 
 jobs:
   greeting:
@@ -24,8 +22,9 @@ jobs:
 
       - name: Create comment
         uses: peter-evans/create-or-update-comment@v1.3.0
-        id: couc
+        id: create_comment
         with:
+          comment-author: 'fairdataihub-bot'
           issue-number: ${{ github.event.number }}
           body: |
             🎉🎉 Thanks for opening this PR/Issue 🤗
