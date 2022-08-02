@@ -1,3 +1,52 @@
+## [2.9.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.9.0...v2.9.1) (2022-07-29)
+
+### Bug Fixes
+
+- **deps:** update dependency swiper to v8.3.2 ([#166](https://github.com/fairdataihub/fairdataihub-website/issues/166)) ([a1f74e9](https://github.com/fairdataihub/fairdataihub-website/commit/a1f74e92dab901d57fcab75d12429ec226688c96))
+
+# [2.9.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.5...v2.9.0) (2022-07-28)
+
+### Features
+
+- ✨ add umami ([c8c9625](https://github.com/fairdataihub/fairdataihub-website/commit/c8c962552a3ef25778e12fd259afb6affcba2cf5))
+
+## [2.8.5](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.4...v2.8.5) (2022-07-28)
+
+### Bug Fixes
+
+- 🐛 update function import names for cookies ([#165](https://github.com/fairdataihub/fairdataihub-website/issues/165)) ([1289017](https://github.com/fairdataihub/fairdataihub-website/commit/128901741a880944e9947034a19c03918b324fb0))
+
+## [2.8.4](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.3...v2.8.4) (2022-07-26)
+
+### Bug Fixes
+
+- **deps:** update dependency rehype-external-links to v2 ([#162](https://github.com/fairdataihub/fairdataihub-website/issues/162)) ([2c6ea1e](https://github.com/fairdataihub/fairdataihub-website/commit/2c6ea1ee94bffc554d0d5891269246c4bc8c20d1))
+
+## [2.8.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.2...v2.8.3) (2022-07-26)
+
+### Bug Fixes
+
+- **deps:** update dependency cookies-next to v2.1.1 ([#160](https://github.com/fairdataihub/fairdataihub-website/issues/160)) ([6512609](https://github.com/fairdataihub/fairdataihub-website/commit/6512609f01bc3cad51ec91b4df9b2be3c871db8b))
+
+## [2.8.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.1...v2.8.2) (2022-07-26)
+
+### Bug Fixes
+
+- 🐛 update FAIRshare award link ([5d40568](https://github.com/fairdataihub/fairdataihub-website/commit/5d40568467f338659b3382acbd928d7e189a629e))
+
+## [2.8.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.0...v2.8.1) (2022-07-18)
+
+### Bug Fixes
+
+- 🐛 update FAIRshare download link ([#148](https://github.com/fairdataihub/fairdataihub-website/issues/148)) ([70ff2eb](https://github.com/fairdataihub/fairdataihub-website/commit/70ff2ebb88bb73d38c799e8a9941717f1a576c9d)), closes [fairdataihub/FAIRshare#244](https://github.com/fairdataihub/FAIRshare/issues/244)
+- 🐛 update spelling typo ([7895524](https://github.com/fairdataihub/fairdataihub-website/commit/7895524992d2d19a6a7326299e792f0893053d40))
+
+# [2.8.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.7.0...v2.8.0) (2022-07-12)
+
+### Features
+
+- ✨ add support for the category links ([#145](https://github.com/fairdataihub/fairdataihub-website/issues/145)) ([f192ecf](https://github.com/fairdataihub/fairdataihub-website/commit/f192ecf7e40312bb03de2aecdc765090a70ff016))
+
 # [2.7.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.6.0...v2.7.0) (2022-07-11)
 
 ### Features

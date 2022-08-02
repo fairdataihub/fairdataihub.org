@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { getCookie, setCookies, checkCookies } from 'cookies-next';
+import { getCookie, setCookie, hasCookie } from 'cookies-next';
 
 export default function Footer() {
   const checkCookie = () => {
-    if (checkCookies(`cookieConsent`)) {
+    if (hasCookie(`cookieConsent`)) {
       return getCookie(`cookieConsent`);
     } else {
       return false;
@@ -16,7 +16,7 @@ export default function Footer() {
   const [clientSide, setClientSide] = useState(false);
 
   const consentToCookies = () => {
-    setCookies(`cookieConsent`, `true`, {
+    setCookie(`cookieConsent`, `true`, {
       maxAge: 60 * 60 * 24 * 90,
     });
     setCookieConsent(true);

@@ -7,7 +7,7 @@ import Info from '@/components/fairshare/info';
 import Timeline from '@/components/fairshare/timeline';
 import Publications from '@/components/fairshare/publications';
 
-export default function FAIRshare() {
+export default function Fairshare() {
   return (
     <div>
       <Head>
@@ -30,15 +30,15 @@ export default function FAIRshare() {
 
         <meta
           name="description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         />
         <meta
           property="og:description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         />
         <meta
           property="twitter:description"
-          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and shoftware according to applicable FAIR guidelines"
+          content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         />
 
         <meta
