@@ -21,7 +21,7 @@ jobs:
 
       - name: Capture Vercel preview URL
         id: vercel_preview_url
-        uses: aaimio/vercel-preview-url-action@v1.0.1
+        uses: binary-com/vercel-preview-url-action@master
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
