@@ -1,3 +1,10 @@
+# [2.10.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.9.1...v2.10.0) (2022-08-03)
+
+
+### Features
+
+* ✨ add umami events ([#170](https://github.com/fairdataihub/fairdataihub-website/issues/170)) ([65f309a](https://github.com/fairdataihub/fairdataihub-website/commit/65f309a714093edd488d962055424caba8b17c82))
+
 ## [2.9.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.9.0...v2.9.1) (2022-07-29)
 
 ### Bug Fixes
