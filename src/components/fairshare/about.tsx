@@ -44,6 +44,7 @@ export default function About() {
                     href="https://doi.org/10.1038/sdata.2016.18"
                     target="_blank"
                     rel="noreferrer"
+                    className="umami--click--learn-more-fair-link"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about FAIR

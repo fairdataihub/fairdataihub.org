@@ -47,6 +47,7 @@ export default function ProjectsCarousel() {
   const projectsList = [
     {
       name: `SODA for SPARC`,
+      id: `soda-for-sparc`,
       imageUrl: `/images/carousel/sodasparc.png`,
       imageWidth: `320`,
       imageHeight: `103`,
@@ -55,6 +56,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `FAIRshare`,
+      id: `fairshare`,
       imageUrl: `/images/carousel/FAIRshare-full.png`,
       imageWidth: `320`,
       imageHeight: `60`,
@@ -63,6 +65,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `KnowMore`,
+      id: `knowmore`,
       imageUrl: `/images/carousel/knowmore.png`,
       imageWidth: `320`,
       imageHeight: `68`,
@@ -71,6 +74,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `SPARClink`,
+      id: `sparclink`,
       imageUrl: `/images/carousel/sparclink.png`,
       imageWidth: `320`,
       imageHeight: `80`,
@@ -79,6 +83,7 @@ export default function ProjectsCarousel() {
     },
     {
       name: `AQUA`,
+      id: `aqua`,
       imageUrl: `/images/carousel/aqua.png`,
       imageWidth: `320`,
       imageHeight: `177`,
@@ -146,7 +151,12 @@ export default function ProjectsCarousel() {
 
                       <div className="flex w-full justify-center py-4">
                         <Link href={project.page} passHref>
-                          <button className="inline-flex rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4 md:text-base lg:text-lg">
+                          <button
+                            className={
+                              `inline-flex rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4 md:text-base lg:text-lg ` +
+                              `umami--click--${project.id}-button`
+                            }
+                          >
                             Learn more about {project.name}
                           </button>
                         </Link>

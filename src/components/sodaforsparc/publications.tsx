@@ -10,9 +10,9 @@ export default function Publications() {
       <div className="flex flex-col divide-y divide-gray-200">
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
-            href="https://doi.org/10.1101/2021.02.10.430563"
+            href="https://doi.org/10.1101/2022.04.18.488694"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-1101-2022-04-18-488694-link my-2"
             rel="noreferrer"
           >
             <p className="text-xl font-semibold">
@@ -31,6 +31,7 @@ export default function Publications() {
                 href="https://doi.org/10.1101/2022.04.18.488694"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-1101-2022-04-18-488694-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   https://doi.org/10.1101/2022.04.18.488694
@@ -43,7 +44,7 @@ export default function Publications() {
           <a
             href="https://doi.org/10.1101/2021.02.10.430563"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-1101-2021-02-10-430563-link my-2"
             rel="noreferrer"
           >
             <p className="text-xl font-semibold">
@@ -63,6 +64,7 @@ export default function Publications() {
                 href="https://doi.org/10.1101/2021.02.10.430563"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-1101-2021-02-10-430563-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1101/2021.02.10.430563
@@ -75,7 +77,7 @@ export default function Publications() {
           <a
             href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-1096-fasebj-2020-34-s1-02483-link my-2"
             rel="noreferrer"
           >
             <p className="text-xl font-semibold">
@@ -93,6 +95,7 @@ export default function Publications() {
                 href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-1096-fasebj-2020-34-s1-02483-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1096/fasebj.2020.34.s1.02483
