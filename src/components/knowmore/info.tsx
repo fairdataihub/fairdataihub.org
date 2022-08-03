@@ -54,7 +54,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/graphs/contributors"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--knowmore-contributors-badge mr-2"
                       rel="noreferrer relative"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -66,7 +66,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/stargazers"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--knowmore-stars-badge mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -78,7 +78,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/issues"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--knowmore-issues-badge mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -90,7 +90,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/blob/master/LICENSE"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--knowmore-license-badge mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -104,7 +104,7 @@ export default function Info() {
                     <a
                       href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
                       target="_blank"
-                      className="text-url hover-underline-animation"
+                      className="text-url hover-underline-animation umami--click--knowmore-github"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -130,6 +130,7 @@ export default function Info() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
+                    className="umami--click--knowmore-github"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -167,7 +168,7 @@ export default function Info() {
                     <a
                       href="https://sparc.science/help/2021-sparc-fair-codeathon"
                       target="_blank"
-                      className="text-url hover-underline-animation"
+                      className="text-url hover-underline-animation umami--click--sparc-fair-21-codeathon"
                       rel="noreferrer"
                     >
                       <span className="font-lato">

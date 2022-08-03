@@ -10,9 +10,9 @@ export default function Publications() {
       <div className="flex flex-col divide-y divide-gray-200">
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
-            href="https://doi.org/10.1101/2021.02.10.430563"
+            href="https://doi.org/10.1101/2021.08.08.455581"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-1101-2021-08-08-455581-link my-2"
             rel="noreferrer"
           >
             <p className="text-xl font-semibold">
@@ -31,6 +31,7 @@ export default function Publications() {
                 href="https://doi.org/10.1101/2021.08.08.455581"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-1101-2021-08-08-455581-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1101/2021.08.08.455581

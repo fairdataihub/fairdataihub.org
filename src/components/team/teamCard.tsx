@@ -69,7 +69,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
               href={profile.twitter.link}
               target="_blank"
               rel="noreferrer"
-              className="px-1"
+              className={`px-1 ` + `umami--click--${profile.id}-twitter`}
               aria-label="Twitter"
             >
               <svg
@@ -89,7 +89,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
               href={profile.github.link}
               target="_blank"
               rel="noreferrer"
-              className="px-1"
+              className={`px-1 ` + `umami--click--${profile.id}-github`}
               aria-label="Github"
             >
               <svg
@@ -109,7 +109,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
               href={profile.linkedin.link}
               target="_blank"
               rel="noreferrer"
-              className="px-1"
+              className={`px-1 ` + `umami--click--${profile.id}-linkedin`}
               aria-label="LinkedIn"
             >
               <svg

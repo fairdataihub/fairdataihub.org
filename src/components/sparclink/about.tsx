@@ -39,9 +39,10 @@ export default function About() {
                 to improve organ function.
                 <div className="mt-2 flex md:mt-1">
                   <a
-                    href="https://doi.org/10.1038/sdata.2016.18"
+                    href="https://sparc.science/"
                     target="_blank"
                     rel="noreferrer"
+                    className="umami--click--NIH-sparc-link"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about SPARC
@@ -86,6 +87,7 @@ export default function About() {
                     href="https://doi.org/10.1101/2021.02.10.430563"
                     target="_blank"
                     rel="noreferrer"
+                    className="umami--click--SDS-link"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about SDS
