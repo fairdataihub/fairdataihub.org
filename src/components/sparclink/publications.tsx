@@ -15,7 +15,7 @@ export default function Publications() {
             className="umami--click--10-12688-f1000research-75071-1-link my-2"
             rel="noreferrer"
           >
-            <p className="text-xl font-semibold">
+            <p className="text-url text-xl font-semibold">
               SPARClink: an interactive tool to visualize the impact of the
               SPARC program
             </p>

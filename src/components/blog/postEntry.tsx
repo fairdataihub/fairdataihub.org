@@ -2,7 +2,6 @@ import dayjs from 'dayjs';
 import Link from 'next/link';
 
 interface PostEntryProps {
-  key: any;
   title: string;
   timeToRead: number;
   date: string;
@@ -13,7 +12,6 @@ interface PostEntryProps {
 }
 
 const postEntry: React.FC<PostEntryProps> = ({
-  key,
   title,
   timeToRead,
   date,
@@ -23,7 +21,7 @@ const postEntry: React.FC<PostEntryProps> = ({
   category,
 }) => {
   return (
-    <article key={key} className="mb-2 flex w-full flex-col md:flex-row">
+    <article key={title} className="mb-2 flex w-full flex-col md:flex-row">
       {/* Left panel */}
       <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5 ">
         <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
