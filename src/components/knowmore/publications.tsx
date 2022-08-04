@@ -15,7 +15,7 @@ export default function Publications() {
             className="umami--click--10-1101-2021-08-08-455581-link my-2"
             rel="noreferrer"
           >
-            <p className="text-xl font-semibold">
+            <p className="text-url text-xl font-semibold">
               KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC
               Datasets
             </p>

@@ -2,14 +2,14 @@ import { useState, useEffect } from 'react';
 
 import Image from 'next/image';
 
-import getLatestURL from '@/lib/getLatestDownloadLink';
+import getLatestDownloadLink from '@/lib/getLatestDownloadLink';
 
 export default function Hero() {
   const [downloadURL, setDownloadURL] = useState<string | undefined>(``);
 
   useEffect(() => {
     const func = async () => {
-      const url = await getLatestURL(`fairdataihub/SODA-for-SPARC`);
+      const url = await getLatestDownloadLink(`fairdataihub/SODA-for-SPARC`);
       setDownloadURL(url);
     };
     func();
