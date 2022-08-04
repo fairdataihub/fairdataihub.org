@@ -1,3 +1,10 @@
+# [2.11.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.10.0...v2.11.0) (2022-08-04)
+
+
+### Features
+
+* ✨ add BOSC publications ([#171](https://github.com/fairdataihub/fairdataihub-website/issues/171)) ([f4a79c3](https://github.com/fairdataihub/fairdataihub-website/commit/f4a79c384e5da0f22dd6762fc31849b7a8004d19))
+
 # [2.10.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.9.1...v2.10.0) (2022-08-03)
 
 ### Features
