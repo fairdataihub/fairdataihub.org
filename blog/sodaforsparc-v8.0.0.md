@@ -11,14 +11,16 @@ tags:
   - releases
 ---
 
-SODA for SPARC is an open source software by the Fair Data Innovations Hub that is simplifying data curation for researchers funded by the [NIH SPARC initiative](https://sparc.science/). 
+SODA for SPARC is an open source software by the Fair Data Innovations Hub that is simplifying data curation for researchers funded by the [NIH SPARC initiative](https://sparc.science/).
 
-If you don't have SODA for SPARC you can download it [here](https://docs.sodaforsparc.io/docs/getting-started/download-soda). If you do have SODA for SPARC your application will auto-update to the latest version for you. 
+If you don't have SODA for SPARC you can download it [here](https://docs.sodaforsparc.io/docs/getting-started/download-soda). If you do have SODA for SPARC your application will auto-update to the latest version for you.
 
-### Features: 
+### Features:
+
 - Updated Electron to version 19.0.0.
 
 ### Known Issues:
+
 - There is a bug with removing dataset permissions using both SODA and Pennsieve. If you want to remove your own permission from a dataset, another user with either 'Manager' or 'Owner' permissions must remove you from the dataset. This is an issue with Pennsieve's backend system and will be updated soon.
 - When uploading a dataset through Upload Local Dataset or Organize Dataset feature to Pennsieve the upload will sometimes freeze. When this occurs it is best to reset the upload and ensure the Pennsieve Agent has been stopped before attempting to upload again. It is also necessary to verify the integrity of uploaded files up to that point. This can be done by simply ensuring all files from folders that have been uploaded are included in the Pennsieve dataset.
 - The Organize Datasets option to upload duplicate files to Pennsieve uploads some duplicates but does not upload all.
