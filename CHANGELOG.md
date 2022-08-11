@@ -1,9 +1,8 @@
 ## [2.11.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.0...v2.11.1) (2022-08-11)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency react-fast-marquee to v1.3.5 ([#178](https://github.com/fairdataihub/fairdataihub-website/issues/178)) ([3b277c5](https://github.com/fairdataihub/fairdataihub-website/commit/3b277c573fd5ae1b2e4fab0f42abbc3f28d13531))
+- **deps:** update dependency react-fast-marquee to v1.3.5 ([#178](https://github.com/fairdataihub/fairdataihub-website/issues/178)) ([3b277c5](https://github.com/fairdataihub/fairdataihub-website/commit/3b277c573fd5ae1b2e4fab0f42abbc3f28d13531))
 
 # [2.11.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.10.0...v2.11.0) (2022-08-04)
 
