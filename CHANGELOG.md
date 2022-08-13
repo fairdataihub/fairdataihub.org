@@ -1,3 +1,10 @@
+## [2.11.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.1...v2.11.2) (2022-08-13)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-toastify to v9.0.8 ([#183](https://github.com/fairdataihub/fairdataihub-website/issues/183)) ([0ccd05b](https://github.com/fairdataihub/fairdataihub-website/commit/0ccd05bedeb3079ea8cc8437f77db16439dc2e29))
+
 ## [2.11.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.0...v2.11.1) (2022-08-11)
 
 ### Bug Fixes
