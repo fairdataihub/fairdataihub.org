@@ -79,7 +79,7 @@
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "5.31.0",
     "@typescript-eslint/parser": "5.31.0",
-    "autoprefixer": "10.4.7",
+    "autoprefixer": "10.4.8",
     "commitizen": "4.2.5",
     "cypress": "10.1.0",
     "cz-conventional-changelog": "3.3.0",
