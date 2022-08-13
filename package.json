@@ -91,7 +91,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
-    "next-sitemap": "3.0.5",
+    "next-sitemap": "3.1.17",
     "postcss": "8.4.16",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13",
