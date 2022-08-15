@@ -36,7 +36,7 @@
     "@lottiefiles/lottie-player": "1.5.7",
     "@sendgrid/mail": "7.7.0",
     "cookies-next": "2.1.1",
-    "dayjs": "1.11.3",
+    "dayjs": "1.11.5",
     "formik": "2.2.9",
     "gray-matter": "4.0.3",
     "markdown-it": "13.0.1",
