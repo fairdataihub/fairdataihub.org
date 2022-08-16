@@ -1,9 +1,8 @@
 ## [2.11.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.2...v2.11.3) (2022-08-15)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency dayjs to v1.11.5 ([#193](https://github.com/fairdataihub/fairdataihub-website/issues/193)) ([33d576e](https://github.com/fairdataihub/fairdataihub-website/commit/33d576e4d00da4461a866d3b00a2c0314eb7a094))
+- **deps:** update dependency dayjs to v1.11.5 ([#193](https://github.com/fairdataihub/fairdataihub-website/issues/193)) ([33d576e](https://github.com/fairdataihub/fairdataihub-website/commit/33d576e4d00da4461a866d3b00a2c0314eb7a094))
 
 ## [2.11.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.1...v2.11.2) (2022-08-13)
 
