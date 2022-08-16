@@ -3,7 +3,7 @@ const { releasercConfig } = require('@fairdataihub/config');
 const config = releasercConfig(
   'default',
   'fairdataihub',
-  'fairdataihub-website',
+  'fairdataihub.org',
   false,
 );
 
