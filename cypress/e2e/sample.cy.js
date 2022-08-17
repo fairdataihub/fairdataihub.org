@@ -4,10 +4,6 @@ describe('Home page testing', () => {
     cy.visit('/');
 
     cy.get('[id^=swiper-wrapper]');
-    let svg = cy.get('[id^=a]');
-    console.log(svg);
-    cy.log(svg);
-    cy.url('include', '/');
   });
 });
 
@@ -53,24 +49,6 @@ describe('Contact Us Page', () => {
 
 //testing all project pages
 describe('Our projects pages', () => {
-  it('Navigate to the Blog page', () => {
-    let articleCount = 0;
-    cy.visit('/');
-
-    cy.get('[id^=blog-page]').contains('Blog').click();
-
-    cy.url().should('include', '/blog');
-
-    cy.get('article').each((item, index, list) => {
-      let articleTitleContainer = item.children();
-      let articleTitleBox = articleTitleContainer.children();
-      let articleLink = articleTitleBox[6];
-      cy.log('Article title: ' + articleLink.innerText);
-      articleLink.click();
-      cy.log('Number of articles: ' + list.length);
-    });
-  });
-
   it('Navigate to SODA for SPARC page', () => {
     cy.visit('/');
 
