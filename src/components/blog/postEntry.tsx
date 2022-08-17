@@ -2,7 +2,6 @@ import dayjs from 'dayjs';
 import Link from 'next/link';
 
 interface PostEntryProps {
-  key: any;
   title: string;
   timeToRead: number;
   date: string;
@@ -13,7 +12,6 @@ interface PostEntryProps {
 }
 
 const postEntry: React.FC<PostEntryProps> = ({
-  key,
   title,
   timeToRead,
   date,
@@ -23,7 +21,7 @@ const postEntry: React.FC<PostEntryProps> = ({
   category,
 }) => {
   return (
-    <article key={key} className="mb-2 flex w-full flex-col md:flex-row">
+    <article key={title} className="mb-2 flex w-full flex-col md:flex-row">
       {/* Left panel */}
       <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5 ">
         <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
@@ -44,7 +42,7 @@ const postEntry: React.FC<PostEntryProps> = ({
       <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
         {category !== `` && (
           <Link href={`/category/${category}`} passHref>
-            <h3 className="text-url mb-1 cursor-pointer text-base font-semibold hover:underline md:hidden">
+            <h3 className="text-url umami--click--blog-article-category mb-1 cursor-pointer text-base font-semibold hover:underline md:hidden">
               {category}
             </h3>
           </Link>
@@ -73,18 +71,17 @@ const postEntry: React.FC<PostEntryProps> = ({
             <h3 className="mr-2 text-sm font-bold">Tags: </h3>
             {tags.map((tag) => (
               <Link href={`/tags/${tag}`} key={tag}>
-                <span className="mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 transition-all hover:border-light-accent hover:text-accent">
+                <span className="umami--click--blog-article-tag mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 transition-all hover:border-light-accent hover:text-accent">
                   {tag}
                 </span>
               </Link>
             ))}
           </div>
-          <a
-            href={`/blog/${slug}`}
-            className="text-url text-base hover:underline"
-          >
-            Read more →
-          </a>
+          <Link href={`/blog/${slug}`} passHref>
+            <span className="text-url cursor-pointer text-base hover:underline">
+              Read more →
+            </span>
+          </Link>
         </div>
       </div>
     </article>

@@ -10,12 +10,12 @@ export default function Publications() {
       <div className="flex flex-col divide-y divide-gray-200">
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
-            href="https://doi.org/10.1101/2021.02.10.430563"
+            href="https://doi.org/10.12688/f1000research.73018.1"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-12688-f1000research-73018-1-link my-2"
             rel="noreferrer"
           >
-            <p className="text-xl font-semibold">
+            <p className="text-url text-xl font-semibold">
               AQUA: an Advanced QUery Architecture for the SPARC Portal
             </p>
           </a>
@@ -30,6 +30,7 @@ export default function Publications() {
                 href="https://doi.org/10.12688/f1000research.73018.1"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-12688-f1000research-73018-1-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.12688/f1000research.73018.1

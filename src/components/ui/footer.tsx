@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { getCookie, setCookies, checkCookies } from 'cookies-next';
+import { getCookie, setCookie, hasCookie } from 'cookies-next';
 
 export default function Footer() {
   const checkCookie = () => {
-    if (checkCookies(`cookieConsent`)) {
+    if (hasCookie(`cookieConsent`)) {
       return getCookie(`cookieConsent`);
     } else {
       return false;
@@ -16,7 +16,7 @@ export default function Footer() {
   const [clientSide, setClientSide] = useState(false);
 
   const consentToCookies = () => {
-    setCookies(`cookieConsent`, `true`, {
+    setCookie(`cookieConsent`, `true`, {
       maxAge: 60 * 60 * 24 * 90,
     });
     setCookieConsent(true);
@@ -38,20 +38,16 @@ export default function Footer() {
         <div className="flex flex-col justify-between pb-3 pr-3 md:flex-row">
           <div className="mb-5 flex w-full flex-col md:mb-0 md:w-4/12">
             <div className="py-3">
-              <a
-                href="https://calmi2.org"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="View California Medical Innovations Institute website"
-              >
+              <Link href="/" aria-label="Homepage" passHref>
                 <Image
                   src="/logo.svg"
                   width="250"
                   height="80"
                   objectFit="scale-down"
                   alt="FAIR Data Innovations Hub logo"
+                  className="cursor-pointer"
                 />
-              </a>
+              </Link>
             </div>
             <p className="py-3 font-inter font-medium text-gray-600">
               Helping researchers navigate the world of FAIR data sharing.
@@ -59,7 +55,7 @@ export default function Footer() {
             <div className="flex flex-row justify-start py-3">
               <a
                 href="https://www.twitter.com/fairdataihub"
-                className="icon-style"
+                className="icon-style umami--click--twitter-profile"
                 aria-label="Twitter"
                 rel="noopener"
               >
@@ -76,7 +72,7 @@ export default function Footer() {
               </a>
               <a
                 href="https://www.linkedin.com/company/california-medical-innovations-institute"
-                className="icon-style"
+                className="icon-style umami--click--linkedin-profile"
                 aria-label="Linked In"
                 rel="noopener"
               >
@@ -99,7 +95,7 @@ export default function Footer() {
               <a
                 href="https://github.com/fairdataihub"
                 target="_blank"
-                className="icon-style"
+                className="icon-style umami--click--github-profile"
                 aria-label="Github"
                 rel="noreferrer"
               >
@@ -118,13 +114,13 @@ export default function Footer() {
             <div className="flex flex-col">
               <h3 className="footer-header">Company</h3>
               <ul>
-                <li className="footer-item">
+                <li className="footer-item umami--click--about-footer">
                   <Link href="/team"> About </Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item umami--click--blog-footer">
                   <Link href="/blog"> Blog </Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item  umami--click--contact-us-footer">
                   <Link href="/contact-us"> Contact Us </Link>
                 </li>
               </ul>
@@ -132,13 +128,13 @@ export default function Footer() {
             <div className="flex flex-col">
               <h3 className="footer-header">Legal</h3>
               <ul>
-                <li className="footer-item">
+                <li className="footer-item umami--click--terms-of-use-footer">
                   <Link href="/termsofuse"> Terms of Use </Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item umami--click--privacy-policy-footer">
                   <Link href="/privacypolicy"> Privacy Policy </Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item umami--click--cookie-policy-footer">
                   <Link href="/cookiepolicy"> Cookie Policy </Link>
                 </li>
               </ul>
@@ -146,19 +142,19 @@ export default function Footer() {
             <div className="flex flex-col font-inter">
               <h3 className="footer-header">Products</h3>
               <ul>
-                <li className="footer-item">
+                <li className="footer-item umami--click--soda-for-sparc-footer">
                   <Link href="/sodaforsparc"> SODA for SPARC </Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item umami--click--fairshare-footer">
                   <Link href="/fairshare">FAIRshare</Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item umami--click--knowmore-footer">
                   <Link href="/knowmore"> KnowMore </Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item umami--click--sparclink-footer">
                   <Link href="/sparclink"> SPARClink </Link>
                 </li>
-                <li className="footer-item">
+                <li className="footer-item umami--click--aqua-footer">
                   <Link href="/aqua"> AQUA </Link>
                 </li>
               </ul>
@@ -179,7 +175,7 @@ export default function Footer() {
               href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
               target="_blank"
               rel="noreferrer"
-              className="mx-0 md:mx-4"
+              className="umami--click--vercel-footer mx-0 md:mx-4"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img

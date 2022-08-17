@@ -10,12 +10,12 @@ export default function Publications() {
       <div className="flex flex-col divide-y divide-gray-200">
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
-            href="https://doi.org/10.1101/2021.02.10.430563"
+            href="https://doi.org/10.12688/f1000research.75071.1"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-12688-f1000research-75071-1-link my-2"
             rel="noreferrer"
           >
-            <p className="text-xl font-semibold">
+            <p className="text-url text-xl font-semibold">
               SPARClink: an interactive tool to visualize the impact of the
               SPARC program
             </p>
@@ -26,14 +26,15 @@ export default function Publications() {
               Soundarajan, Sanjay , Sachira Kuruppu, Ashutosh Singh, Jongchan
               Kim and Monalisa Achalla. &quot;SPARClink: an interactive tool to
               visualize the impact of the SPARC program.&quot;
-              <i>bioRxiv</i> (2021).&nbsp;
+              <i>F1000Research</i> (2022).&nbsp;
               <a
-                href="https://doi.org/10.1101/2021.10.22.465507"
+                href="https://doi.org/10.12688/f1000research.75071.1"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-12688-f1000research-75071-1-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
-                  https://doi.org/10.1101/2021.10.22.465507
+                  https://doi.org/10.12688/f1000research.75071.1
                 </span>
               </a>
             </p>

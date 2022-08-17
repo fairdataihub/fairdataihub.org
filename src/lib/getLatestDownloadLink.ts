@@ -54,10 +54,8 @@ const getLatestVersion = async function (repo: string, os: string) {
   return link;
 };
 
-export default async function getLatestURL(repo: string) {
+export default async function getLatestDownloadLink(repo: string) {
   const os = await getOS();
 
-  const downloadLink = await getLatestVersion(repo, os);
-
-  return downloadLink;
+  return getLatestVersion(repo, os);
 }

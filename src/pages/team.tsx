@@ -223,7 +223,10 @@ export default function Team() {
               href="https://calmi2.org"
               target="_blank"
               rel="noreferrer"
-              className="text-url hover-underline-animation"
+              className={
+                `text-url hover-underline-animation ` +
+                `umami--click--calmii-link`
+              }
             >
               <span className="font-asap">
                 Learn more about CALMI<sup>2</sup>

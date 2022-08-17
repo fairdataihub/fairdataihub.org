@@ -12,41 +12,10 @@ export default function Publications() {
           <a
             href="https://doi.org/10.1101/2021.02.10.430563"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-1101-2021-02-10-430563-link my-2"
             rel="noreferrer"
           >
-            <p className="text-xl font-semibold">
-              Making Biomedical Research Software FAIR: Actionable Step-by-step
-              Guidelines with a User-support Tool
-            </p>
-          </a>
-          <div className="m2-3 relative rounded bg-gray-100 p-3">
-            <p className="font-lato text-xs text-gray-600">Citation</p>
-            <p className="font-asap text-base text-black">
-              Patel, Bhavesh, Sanjay Soundarajan, Zicheng Hu. &quot;Making
-              Biomedical Research Software FAIR: Actionable Step-by-step
-              Guidelines with a User-support Tool.&quot;
-              <i>bioRxiv</i> (2022).&nbsp;
-              <a
-                href="https://doi.org/10.1101/2022.04.18.488694"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="break-words text-blue-600 hover:underline">
-                  https://doi.org/10.1101/2022.04.18.488694
-                </span>
-              </a>
-            </p>
-          </div>
-        </div>
-        <div className="mb-4 flex flex-col py-4 font-sans">
-          <a
-            href="https://doi.org/10.1101/2021.02.10.430563"
-            target="_blank"
-            className="my-2"
-            rel="noreferrer"
-          >
-            <p className="text-xl font-semibold">
+            <p className="text-url text-xl font-semibold">
               SPARC Data Structure: Rationale and Design of a FAIR Standard for
               Biomedical Research Data
             </p>
@@ -63,6 +32,7 @@ export default function Publications() {
                 href="https://doi.org/10.1101/2021.02.10.430563"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-1101-2021-02-10-430563-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1101/2021.02.10.430563
@@ -75,10 +45,10 @@ export default function Publications() {
           <a
             href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-1096-fasebj-2020-34-s1-02483-link my-2"
             rel="noreferrer"
           >
-            <p className="text-xl font-semibold">
+            <p className="text-url text-xl font-semibold">
               SPARC: SODA, an interactive software for curating SPARC datasets
             </p>
           </a>
@@ -93,6 +63,7 @@ export default function Publications() {
                 href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-1096-fasebj-2020-34-s1-02483-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1096/fasebj.2020.34.s1.02483

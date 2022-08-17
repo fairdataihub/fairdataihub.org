@@ -26,24 +26,28 @@ export default function Info() {
   const collaboratorsList = [
     {
       name: `Zicheng Hu (UCSF)`,
+      id: `Zicheng-Hu-UCSF`,
       href: `https://profiles.ucsf.edu/zicheng.hu`,
       image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
       type: `person`,
     },
     {
       name: `The Butte Lab`,
+      id: `The-Butte-Lab`,
       href: `https://buttelab.ucsf.edu/`,
       image: `/images/collaborators/ucsf-logo.png`,
       type: `lab`,
     },
     {
       name: `The Jagannathan Lab`,
+      id: `The-Jagannathan-Lab`,
       href: `https://med.stanford.edu/jagannathan-lab.html`,
       image: `/images/collaborators/stanford-medicine-logo.png`,
       type: `lab`,
     },
     {
       name: `Dr. Greenhouse Lab`,
+      id: `Dr-Greenhouse-Lab`,
       href: `https://profiles.ucsf.edu/bryan.greenhouse#toc-id2`,
       image: `/images/collaborators/ucsf-logo.png`,
       type: `lab`,
@@ -73,7 +77,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/FAIRshare/graphs/contributors"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--fairshare-contributors-badge mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -85,7 +89,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/FAIRshare/stargazers"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--fairshare-stars-badge mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -97,7 +101,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/FAIRshare/issues"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--fairshare-issues-badge mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -109,7 +113,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/FAIRshare/blob/master/LICENSE"
                       target="_blank"
-                      className="mr-2"
+                      className="umami--click--fairshare-license-badge mr-2"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -123,7 +127,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/FAIRshare"
                       target="_blank"
-                      className="text-url hover-underline-animation"
+                      className="text-url hover-underline-animation umami--click--fairshare-github"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -149,6 +153,7 @@ export default function Info() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
+                    className="umami--click--fairshare-github"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -184,7 +189,7 @@ export default function Info() {
                     <a
                       href="https://reporter.nih.gov/project-details/10377989"
                       target="_blank"
-                      className="text-url hover-underline-animation"
+                      className="text-url hover-underline-animation umami--click--fairshare-funding"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -298,6 +303,7 @@ export default function Info() {
                         href={collaborator.href}
                         target="_blank"
                         rel="noreferrer"
+                        className={`umami--click--${collaborator.id}-link`}
                       >
                         <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
                           {collaborator.type === `person` ? (

@@ -11,13 +11,13 @@ interface ListOfTags {
 interface TagsProps {
   [key: string]: ListOfTags;
 }
-interface tagEntry {
+interface TagEntry {
   tag: string;
   count: number;
 }
 
 interface AllTagsProps {
-  [key: string]: tagEntry[];
+  [key: string]: TagEntry[];
 }
 
 // The Tags Page Content

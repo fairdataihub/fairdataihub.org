@@ -1,3 +1,69 @@
+## [2.11.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.2...v2.11.3) (2022-08-15)
+
+### Bug Fixes
+
+- **deps:** update dependency dayjs to v1.11.5 ([#193](https://github.com/fairdataihub/fairdataihub-website/issues/193)) ([33d576e](https://github.com/fairdataihub/fairdataihub-website/commit/33d576e4d00da4461a866d3b00a2c0314eb7a094))
+
+## [2.11.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.1...v2.11.2) (2022-08-13)
+
+### Bug Fixes
+
+- **deps:** update dependency react-toastify to v9.0.8 ([#183](https://github.com/fairdataihub/fairdataihub-website/issues/183)) ([0ccd05b](https://github.com/fairdataihub/fairdataihub-website/commit/0ccd05bedeb3079ea8cc8437f77db16439dc2e29))
+
+## [2.11.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.0...v2.11.1) (2022-08-11)
+
+### Bug Fixes
+
+- **deps:** update dependency react-fast-marquee to v1.3.5 ([#178](https://github.com/fairdataihub/fairdataihub-website/issues/178)) ([3b277c5](https://github.com/fairdataihub/fairdataihub-website/commit/3b277c573fd5ae1b2e4fab0f42abbc3f28d13531))
+
+# [2.11.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.10.0...v2.11.0) (2022-08-04)
+
+### Features
+
+- ✨ add BOSC publications ([#171](https://github.com/fairdataihub/fairdataihub-website/issues/171)) ([f4a79c3](https://github.com/fairdataihub/fairdataihub-website/commit/f4a79c384e5da0f22dd6762fc31849b7a8004d19))
+
+# [2.10.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.9.1...v2.10.0) (2022-08-03)
+
+### Features
+
+- ✨ add umami events ([#170](https://github.com/fairdataihub/fairdataihub-website/issues/170)) ([65f309a](https://github.com/fairdataihub/fairdataihub-website/commit/65f309a714093edd488d962055424caba8b17c82))
+
+## [2.9.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.9.0...v2.9.1) (2022-07-29)
+
+### Bug Fixes
+
+- **deps:** update dependency swiper to v8.3.2 ([#166](https://github.com/fairdataihub/fairdataihub-website/issues/166)) ([a1f74e9](https://github.com/fairdataihub/fairdataihub-website/commit/a1f74e92dab901d57fcab75d12429ec226688c96))
+
+# [2.9.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.5...v2.9.0) (2022-07-28)
+
+### Features
+
+- ✨ add umami ([c8c9625](https://github.com/fairdataihub/fairdataihub-website/commit/c8c962552a3ef25778e12fd259afb6affcba2cf5))
+
+## [2.8.5](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.4...v2.8.5) (2022-07-28)
+
+### Bug Fixes
+
+- 🐛 update function import names for cookies ([#165](https://github.com/fairdataihub/fairdataihub-website/issues/165)) ([1289017](https://github.com/fairdataihub/fairdataihub-website/commit/128901741a880944e9947034a19c03918b324fb0))
+
+## [2.8.4](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.3...v2.8.4) (2022-07-26)
+
+### Bug Fixes
+
+- **deps:** update dependency rehype-external-links to v2 ([#162](https://github.com/fairdataihub/fairdataihub-website/issues/162)) ([2c6ea1e](https://github.com/fairdataihub/fairdataihub-website/commit/2c6ea1ee94bffc554d0d5891269246c4bc8c20d1))
+
+## [2.8.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.2...v2.8.3) (2022-07-26)
+
+### Bug Fixes
+
+- **deps:** update dependency cookies-next to v2.1.1 ([#160](https://github.com/fairdataihub/fairdataihub-website/issues/160)) ([6512609](https://github.com/fairdataihub/fairdataihub-website/commit/6512609f01bc3cad51ec91b4df9b2be3c871db8b))
+
+## [2.8.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.1...v2.8.2) (2022-07-26)
+
+### Bug Fixes
+
+- 🐛 update FAIRshare award link ([5d40568](https://github.com/fairdataihub/fairdataihub-website/commit/5d40568467f338659b3382acbd928d7e189a629e))
+
 ## [2.8.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.8.0...v2.8.1) (2022-07-18)
 
 ### Bug Fixes

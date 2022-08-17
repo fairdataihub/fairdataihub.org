@@ -33,6 +33,12 @@ class MyDocument extends Document {
           `,
             }}
           />
+          <script
+            async
+            defer
+            data-website-id="fb499873-d5d5-41b0-8375-785e9d505a7b"
+            src="https://umami.fairdataihub.org/mushroom.js"
+          />
           <meta
             name="keywords"
             content="fair data, fairhub, fairdataihub, calmi2, calmii, soda, sparc, sparclink, aqua, know more, software"

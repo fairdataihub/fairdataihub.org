@@ -10,12 +10,12 @@ export default function Publications() {
       <div className="flex flex-col divide-y divide-gray-200">
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
-            href="https://doi.org/10.1101/2021.02.10.430563"
+            href="https://doi.org/10.1101/2022.04.18.488694"
             target="_blank"
-            className="my-2"
+            className="umami--click--10-1101-2022-04-18-488694-link my-2"
             rel="noreferrer"
           >
-            <p className="text-xl font-semibold">
+            <p className="text-url text-xl font-semibold">
               Making Biomedical Research Software FAIR: Actionable Step-by-step
               Guidelines with a User-support Tool
             </p>
@@ -31,9 +31,81 @@ export default function Publications() {
                 href="https://doi.org/10.1101/2022.04.18.488694"
                 target="_blank"
                 rel="noreferrer"
+                className="umami--click--10-1101-2022-04-18-488694-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   https://doi.org/10.1101/2022.04.18.488694
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="mb-4 flex flex-col py-4 font-sans">
+          <a
+            href="https://doi.org/10.7490/f1000research.1119054.1"
+            target="_blank"
+            className="umami--click--10-7490-f1000research-1119054-1-link my-2"
+            rel="noreferrer"
+          >
+            <p className="text-url text-xl font-semibold ">
+              Making biomedical research software FAIR with FAIRshare
+            </p>
+            <span className="text-url text-sm font-medium ">
+              Poster presented at Intelligent Systems for Molecular Biology
+              (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022
+            </span>
+          </a>
+          <div className="m2-3 relative rounded bg-gray-100 p-3">
+            <p className="font-lato text-xs text-gray-600">Citation</p>
+            <p className="font-asap text-base text-black">
+              Patel B and Soundarajan S. &quot;Making biomedical research
+              software FAIR with FAIRshare.&quot;
+              <i>F1000Research </i> (2022).&nbsp; <strong>11</strong>:835
+              (poster).&nbsp;
+              <a
+                href="https://doi.org/10.7490/f1000research.1119054.1"
+                target="_blank"
+                rel="noreferrer"
+                className="umami--click--10-7490-f1000research-1119054-1-link"
+              >
+                <span className="break-words text-blue-600 hover:underline">
+                  https://doi.org/10.7490/f1000research.1119054.1
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="mb-4 flex flex-col py-4 font-sans">
+          <a
+            href="https://doi.org/10.7490/f1000research.1119055.1"
+            target="_blank"
+            className="umami--click--10.7490-f1000research-1119055-1-link my-2"
+            rel="noreferrer"
+          >
+            <p className="text-url text-xl font-semibold ">
+              Making biomedical research software findable, accessible,
+              interoperable, reusable (FAIR) with FAIRshare
+            </p>
+            <span className="text-url text-sm font-medium ">
+              Slides presented at Intelligent Systems for Molecular Biology
+              (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022
+            </span>
+          </a>
+          <div className="m2-3 relative rounded bg-gray-100 p-3">
+            <p className="font-lato text-xs text-gray-600">Citation</p>
+            <p className="font-asap text-base text-black">
+              Patel B and Soundarajan S. &quot;Making biomedical research
+              software FAIR with FAIRshare.&quot;
+              <i>F1000Research </i> (2022).&nbsp; <strong>11</strong>:836
+              (poster).&nbsp;
+              <a
+                href="https://doi.org/10.7490/f1000research.1119055.1"
+                target="_blank"
+                rel="noreferrer"
+                className="umami--click--10.7490-f1000research-1119055-1-link"
+              >
+                <span className="break-words text-blue-600 hover:underline">
+                  https://doi.org/10.7490/f1000research.1119055.1
                 </span>
               </a>
             </p>

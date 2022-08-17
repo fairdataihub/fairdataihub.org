@@ -168,7 +168,7 @@ export default function Navbar() {
               <div
                 id="blog-page"
                 className={
-                  `nav-item hover-underline-animation` +
+                  `nav-item hover-underline-animation umami--click--blog-header` +
                   (router.pathname === `/blog` ? ` router-link-active ` : ` `)
                 }
               >
@@ -179,7 +179,7 @@ export default function Navbar() {
               <div
                 id="team-page"
                 className={
-                  `nav-item hover-underline-animation` +
+                  `nav-item hover-underline-animation umami--click--meet-the-team-header` +
                   (router.pathname === `/team` ? ` router-link-active ` : ` `)
                 }
               >
@@ -213,7 +213,7 @@ export default function Navbar() {
                       <div
                         id="soda-page"
                         className={
-                          `nav-item hover-underline-animation mt-2` +
+                          `nav-item hover-underline-animation umami--click--soda-for-sparc-header mt-2` +
                           (router.pathname === `/sodaforsparc`
                             ? ` router-link-active `
                             : ` `)
@@ -226,7 +226,7 @@ export default function Navbar() {
                       <div
                         id="fairshare-page"
                         className={
-                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          `nav-item hover-underline-animation umami--click--fairshare-header mt-2 w-[200px]` +
                           (router.pathname === `/fairshare`
                             ? ` router-link-active `
                             : ` `)
@@ -239,7 +239,7 @@ export default function Navbar() {
                       <div
                         id="knowmore-page"
                         className={
-                          `nav-item hover-underline-animation mt-2` +
+                          `nav-item hover-underline-animation umami--click--knowmore-header mt-2` +
                           (router.pathname === `/knowmore`
                             ? ` router-link-active `
                             : ` `)
@@ -252,7 +252,7 @@ export default function Navbar() {
                       <div
                         id="sparclink-page"
                         className={
-                          `nav-item hover-underline-animation mt-2` +
+                          `nav-item hover-underline-animation umami--click--sparclink-header mt-2` +
                           (router.pathname === `/sparclink`
                             ? ` router-link-active `
                             : ` `)
@@ -265,7 +265,7 @@ export default function Navbar() {
                       <div
                         id="aqua-page"
                         className={
-                          `nav-item hover-underline-animation mt-2` +
+                          `nav-item hover-underline-animation umami--click--aqua-header mt-2` +
                           (router.pathname === `/aqua`
                             ? ` router-link-active `
                             : ` `)
@@ -281,7 +281,7 @@ export default function Navbar() {
             <Link href="/contact-us" passHref>
               <div
                 className={
-                  `nav-item hover-underline-animation` +
+                  `nav-item hover-underline-animation umami--click--contact-us-header` +
                   (router.pathname === `/contact-us`
                     ? ` router-link-active `
                     : ` `)
@@ -332,7 +332,7 @@ export default function Navbar() {
             <div className="pt-2 pb-3">
               <Link href="/blog" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--blog-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   Blog
@@ -340,7 +340,7 @@ export default function Navbar() {
               </Link>
               <Link href="/team" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--meet-the-team-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   Meet The Team
@@ -348,7 +348,7 @@ export default function Navbar() {
               </Link>
               <Link href="/sodaforsparc" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--soda-for-sparc-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   SODA for SPARC
@@ -356,7 +356,7 @@ export default function Navbar() {
               </Link>
               <Link href="/fairshare" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--fairshare-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   FAIRshare
@@ -364,7 +364,7 @@ export default function Navbar() {
               </Link>
               <Link href="/knowmore" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--knowmore-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   KnowMore
@@ -372,7 +372,7 @@ export default function Navbar() {
               </Link>
               <Link href="/sparclink" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--sparclink-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   SPARClink
@@ -380,7 +380,7 @@ export default function Navbar() {
               </Link>
               <Link href="/aqua" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--aqua-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   AQUA
@@ -388,7 +388,7 @@ export default function Navbar() {
               </Link>
               <Link href="/contact-us" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu umami--click--contact-us-header z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   onClick={toggleMobileMenu}
                 >
                   Contact Us
