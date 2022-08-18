@@ -80,7 +80,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
 
         <meta
           property="og:image"
-          content={`https://og.fairdataihub.org/api/ogimage?title=${encodeURIComponent(
+          content={`https://og.fairdataihub.org/api/ogimage?app=fairdataihub&title=${encodeURIComponent(
             title,
           )}&description=${encodeURIComponent(subtitle)}`}
         />
