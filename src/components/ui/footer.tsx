@@ -28,6 +28,7 @@ export default function Footer() {
 
   return (
     <footer
+      id="fairdata-footer"
       className={
         process.env.NODE_ENV === `development`
           ? `debug-screens z-30 bg-gray-50 pt-5`

@@ -10,6 +10,14 @@ describe('Home page testing', () => {
     }
     cy.get('.marquee').should('have.css', 'animation');
   });
+
+  it('Checks footer links', () => {
+    cy.visit('/');
+    cy.wait(200);
+
+    cy.get('#fairdata-footer').scrollIntoView();
+    cy.wait(200);
+  });
 });
 
 //testing on the team page
@@ -107,5 +115,28 @@ describe('Our projects pages', () => {
     cy.wait(150);
 
     cy.url().should('include', '/aqua');
+  });
+});
+
+//testing on the team page
+describe('Blog page', () => {
+  it('Navigate to the blog page and check articles', () => {
+    cy.visit('/');
+
+    cy.contains('Blog').click();
+
+    cy.url().should('include', '/blog');
+
+    //gather all blogs and go through each page
+    cy.get('article').then((elem) => {
+      for (let i = 0; i < elem.length; i++) {
+        let articleLink = elem[i].children[1].children[3];
+        cy.log(articleLink);
+        articleLink.click();
+        cy.wait(2000);
+        cy.visit('/blog');
+      }
+    });
+    cy.log(cy.get('article'));
   });
 });
