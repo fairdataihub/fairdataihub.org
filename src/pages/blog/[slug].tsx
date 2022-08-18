@@ -102,7 +102,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
       </Link>
 
       <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden py-5 px-5 sm:py-20 sm:px-10 ">
-        <div className="mb-10">
+        <div className="relative mb-10  before:absolute before:bottom-0 before:z-50 before:block before:h-full before:w-full before:bg-gradient-to-r before:from-pink-400  before:to-fuchsia-700 before:opacity-60 before:content-['']">
           <Image
             src={heroImage}
             alt={title}
@@ -111,7 +111,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             layout="responsive"
             objectFit="cover"
             priority={true}
-            className="grayscale filter "
+            className="grayscale"
           />
         </div>
         <div className=" ">
@@ -196,7 +196,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             </a>
             <div
               onClick={copyLinkToClipboard}
-              className="umanmi--click--copy-url-button mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
+              className="umami--click--copy-url-button mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
               aria-label="Copy to clipboard"
             >
               <Icon icon="akar-icons:link-chain" width="20" height="20" />
