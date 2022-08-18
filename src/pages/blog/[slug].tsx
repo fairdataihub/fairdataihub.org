@@ -80,11 +80,15 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
 
         <meta
           property="og:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
+          content={`https://og.fairdataihub.org/api/ogimage?title=${encodeURIComponent(
+            title,
+          )}&description=${encodeURIComponent(subtitle)}`}
         />
         <meta
           property="twitter:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
+          content={`https://og.fairdataihub.org/api/ogimage?title=${encodeURIComponent(
+            title,
+          )}&description=${encodeURIComponent(subtitle)}`}
         />
 
         <meta
