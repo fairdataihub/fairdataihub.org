@@ -1,9 +1,8 @@
 # [2.12.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.3...v2.12.0) (2022-08-18)
 
-
 ### Features
 
-* ✨ add og images to blog articles ([22c9ede](https://github.com/fairdataihub/fairdataihub-website/commit/22c9edefab3a2e916c6e8a4f4890dcc228b3a511))
+- ✨ add og images to blog articles ([22c9ede](https://github.com/fairdataihub/fairdataihub-website/commit/22c9edefab3a2e916c6e8a4f4890dcc228b3a511))
 
 ## [2.11.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.2...v2.11.3) (2022-08-15)
 
