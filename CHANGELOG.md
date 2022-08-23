@@ -1,9 +1,8 @@
 ## [2.12.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.12.0...v2.12.1) (2022-08-23)
 
-
 ### Bug Fixes
 
-* 🐛 adjust z index of coloe overlay for blogs ([8ed6314](https://github.com/fairdataihub/fairdataihub-website/commit/8ed6314c54da5375c0b55d9cba5566092004ee17))
+- 🐛 adjust z index of coloe overlay for blogs ([8ed6314](https://github.com/fairdataihub/fairdataihub-website/commit/8ed6314c54da5375c0b55d9cba5566092004ee17))
 
 # [2.12.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.3...v2.12.0) (2022-08-18)
 
