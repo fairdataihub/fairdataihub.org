@@ -106,7 +106,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
       </Link>
 
       <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden py-5 px-5 sm:py-20 sm:px-10 ">
-        <div className="relative mb-10  before:absolute before:bottom-0 before:z-50 before:block before:h-full before:w-full before:bg-gradient-to-r before:from-pink-400  before:to-fuchsia-700 before:opacity-60 before:content-['']">
+        <div className="relative mb-10  before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r before:from-pink-400  before:to-fuchsia-700 before:opacity-60 before:content-['']">
           <Image
             src={heroImage}
             alt={title}
