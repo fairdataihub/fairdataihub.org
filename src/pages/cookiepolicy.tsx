@@ -56,13 +56,10 @@ export default function CookiePolicy() {
           <h2 className="subheading">What Are Cookies?</h2>
 
           <p className="content">
-            As is common practice with almost all professional websites this
-            site uses cookies, which are tiny files that are downloaded to your
-            computer, to improve your experience. This page describes what
-            information they gather, how we use it and why we sometimes need to
-            store these cookies. We will also share how you can prevent these
-            cookies from being stored however this may downgrade or
-            &apos;break&apos; certain elements of the sites functionality.
+            Cookies are small files that websites send to your device that the
+            sites then use to monitor you and remember certain information about
+            you — like what&apos;s in your shopping cart on an e-commerce site,
+            or your login information.
           </p>
 
           <p className="content">
@@ -81,26 +78,34 @@ export default function CookiePolicy() {
           <h2 className="subheading">How We Use Cookies</h2>
 
           <p className="content">
-            We use cookies for a variety of reasons detailed below.
-            Unfortunately in most cases there are no industry standard options
-            for disabling cookies without completely disabling the functionality
-            and features they add to this site. It is recommended that you leave
-            on all cookies if you are not sure whether you need them or not in
-            case they are used to provide a service that you use.
+            As part of our web analytics overhaul, we have stopped using Google
+            Analytics and switched to using Umami instead. Umami is an open
+            source, privacy-focused alternative to Google Analytics. and
+            provides a powerful web analytics solution that does not violate the
+            privacy of our users. Additionally, we self-host Umami so that an
+            unrelated third party is not in complete control of your data. This
+            also means that we are completely open and transparent about how we
+            use your data. If you would like to see exactly what we track, you
+            can view our analytics at the following link:{` `}
+            <a
+              href="https://umami.fairdataihub.org/share/wrAncmco/fairdataihub.org"
+              rel="noreferrer"
+              target="_blank"
+              className="text-url text-base"
+            >
+              Umami Analytics for fairdataihub.org
+            </a>
+            .
+          </p>
+
+          <p className="content">
+            All the site measurement is carried out absolutely anonymously.
+            Cookies are not used and no personal data is collected. There are no
+            persistent identifiers. No cross-site or cross-device tracking
+            either. Your site data is not used for any other purposes.
           </p>
 
           <h2 className="subheading">Disabling Cookies</h2>
-
-          {/* <p className='content'>
-        If you prefer to avoid the use of cookies on the Website, first you must
-        disable the use of cookies in your browser and then delete the cookies
-        saved in your browser associated with this website. You may use this
-        option for preventing the use of cookies at any time.
-      </p>
-      <p className='content'>
-        If you do not accept our cookies, you may experience some inconvenience
-        in your use of the Website and some features may not function properly.
-      </p>  */}
 
           <p className="content">
             At the moment we do not have the functionality to disable cookies
@@ -184,19 +189,6 @@ export default function CookiePolicy() {
           </p>
 
           <p className="content">
-            To opt-out of being tracked by Google Analytics across all websites,
-            visit
-            <a
-              href="https://tools.google.com/dlpage/gaoptout"
-              rel="noreferrer"
-              target="_blank"
-              className="text-url text-base"
-            >
-              &nbsp;https://tools.google.com/dlpage/gaoptout
-            </a>
-          </p>
-
-          <p className="content">
             You can also visit the trade body representing these advertising
             platforms for more information:
             <a
@@ -223,53 +215,18 @@ export default function CookiePolicy() {
             sites concerning their use of cookies.
           </p>
 
-          <h2 className="subheading">The Cookies We Set</h2>
-
-          <div className="pl-8">
-            <ul className="my-1 list-outside list-disc pb-3 text-base leading-7 text-gray-800">
-              <li>
-                <span className="italic"> Site preferences cookies </span> - In
-                order to provide you with a great experience on this site we
-                provide the functionality to set your preferences for how this
-                site runs when you use it. In order to remember your preferences
-                we need to set cookies so that this information can be called
-                whenever you interact with a page is affected by your
-                preferences.
-              </li>
-            </ul>
-          </div>
-
           <h2 className="subheading">Third Party Cookies</h2>
 
           <p className="content">
-            In some special cases we also use cookies provided by trusted third
-            parties. The following section details which third party cookies you
-            might encounter through this site.
+            In some special cases we may also use cookies provided by trusted
+            third parties. The following section details which third party
+            cookies you might encounter through this site.
           </p>
 
           <div className="pl-8">
             <ul className="my-1 list-outside list-disc pb-3 text-base leading-7 text-gray-800">
               <li>
-                This site uses Google Analytics which is one of the most
-                widespread and trusted analytics solution on the web for helping
-                us to understand how you use the site and ways that we can
-                improve your experience. These cookies may track things such as
-                how long you spend on the site and the pages that you visit so
-                we can continue to produce engaging content. For more
-                information on Google Analytics cookies, see the official
-                <a
-                  href="https://policies.google.com/privacy?hl=en-US"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-url text-base"
-                >
-                  &nbsp;Google Analytics page
-                </a>
-                .
-              </li>
-
-              <li>
-                Third party analytics are used to track and measure usage of
+                Third party analytics may be used to track and measure usage of
                 this site so that we can continue to produce engaging content.
                 These cookies may track things such as how long you spend on the
                 site or pages you visit which helps us to understand how we can
@@ -277,26 +234,16 @@ export default function CookiePolicy() {
               </li>
 
               <li>
-                From time to time we test new features and make subtle changes
-                to the way that the site is delivered. When we are still testing
-                new features these cookies may be used to ensure that you
-                receive a consistent experience whilst on the site whilst
-                ensuring we understand which optimisations our users appreciate
+                From time to time we may test new features and make subtle
+                changes to the way that the site is delivered. When we are still
+                testing new features these cookies may be used to ensure that
+                you receive a consistent experience whilst on the site whilst
+                ensuring we understand which optimizations our users appreciate
                 the most.
               </li>
 
               <li>
-                As we sell products it&apos;s important for us to understand
-                statistics about how many of the visitors to our site actually
-                make a purchase and as such this is the kind of data that these
-                cookies will track. This is important to you as it means that we
-                can accurately make business predictions that allow us to
-                monitor our advertising and product costs to ensure the best
-                possible price.
-              </li>
-
-              <li>
-                We also use social media buttons and/or plugins on this site
+                We may also use social media buttons and/or plugins on this site
                 that allow you to connect with your social network in various
                 ways. For these to work the following social media sites
                 including Twitter, Facebook, Instagram, etc., will set cookies

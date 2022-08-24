@@ -101,11 +101,6 @@ export default function PrivacyPolicy() {
             contents of the message and/or attachments you may send us, and any
             other information you may choose to provide.
           </p>
-          <p className="content">
-            When you register for an Account, we may ask for your contact
-            information, including items such as name, company name, address,
-            email address, and telephone number.
-          </p>
 
           <h2 className="subheading">How we use your information</h2>
 
