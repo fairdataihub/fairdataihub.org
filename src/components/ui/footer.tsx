@@ -1,30 +1,30 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import { getCookie, setCookie, hasCookie } from 'cookies-next';
+// import { useState, useEffect } from 'react';
+// import { getCookie, setCookie, hasCookie } from 'cookies-next';
 
 export default function Footer() {
-  const checkCookie = () => {
-    if (hasCookie(`cookieConsent`)) {
-      return getCookie(`cookieConsent`);
-    } else {
-      return false;
-    }
-  };
+  // const checkCookie = () => {
+  //   if (hasCookie(`cookieConsent`)) {
+  //     return getCookie(`cookieConsent`);
+  //   } else {
+  //     return false;
+  //   }
+  // };
 
-  const [cookieConsent, setCookieConsent] = useState(checkCookie());
-  const [clientSide, setClientSide] = useState(false);
+  // const [cookieConsent, setCookieConsent] = useState(checkCookie());
+  // const [clientSide, setClientSide] = useState(false);
 
-  const consentToCookies = () => {
-    setCookie(`cookieConsent`, `true`, {
-      maxAge: 60 * 60 * 24 * 90,
-    });
-    setCookieConsent(true);
-  };
+  // const consentToCookies = () => {
+  //   setCookie(`cookieConsent`, `true`, {
+  //     maxAge: 60 * 60 * 24 * 90,
+  //   });
+  //   setCookieConsent(true);
+  // };
 
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
+  // useEffect(() => {
+  //   setClientSide(true);
+  // }, []);
 
   return (
     <footer
@@ -189,7 +189,7 @@ export default function Footer() {
         {/* <span>{{ cookieConsent }}</span> */}
       </div>
 
-      {clientSide && !cookieConsent ? (
+      {/* {clientSide && !cookieConsent ? (
         <div className="fixed bottom-0 z-50 flex w-full items-center justify-center bg-gray-50 px-5 py-1">
           <p className="py-1 text-sm">
             By continuing to use this site you consent to the use of cookies in
@@ -217,7 +217,7 @@ export default function Footer() {
         </div>
       ) : (
         <div></div>
-      )}
+      )} */}
     </footer>
   );
 }
