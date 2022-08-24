@@ -1,3 +1,10 @@
+# [2.13.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.12.1...v2.13.0) (2022-08-24)
+
+
+### Features
+
+* ✨ remove google analytics and its mentions ([#200](https://github.com/fairdataihub/fairdataihub-website/issues/200)) ([f120d32](https://github.com/fairdataihub/fairdataihub-website/commit/f120d3279575b5a1595b164ff9f8d897c76ceb28))
+
 ## [2.12.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.12.0...v2.12.1) (2022-08-23)
 
 ### Bug Fixes
