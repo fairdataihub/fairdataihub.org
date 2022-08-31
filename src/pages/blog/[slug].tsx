@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import dayjs from 'dayjs';
 
+import Giscus from '@giscus/react';
 import { Icon } from '@iconify/react';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -205,6 +206,24 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             >
               <Icon icon="akar-icons:link-chain" width="20" height="20" />
             </div>
+          </div>
+
+          <div className="mb-10 mt-10">
+            <Giscus
+              key={slug}
+              id="comments"
+              repo="fairdataihub/fairdataihub.org"
+              repoId="MDEwOlJlcG9zaXRvcnkzODAzNDg2NjE="
+              category="Blog"
+              categoryId="DIC_kwDOFquo9c4CRKKU"
+              mapping="pathname"
+              term="Welcome to @giscus/react component!"
+              reactionsEnabled="1"
+              inputPosition="top"
+              theme="light_protanopia"
+              lang="en"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
