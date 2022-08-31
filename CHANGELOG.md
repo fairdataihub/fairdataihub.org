@@ -1,3 +1,11 @@
+# [2.14.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.13.0...v2.14.0) (2022-08-31)
+
+
+### Features
+
+* ✨ add fairshare v2 blog bost ([7266fa8](https://github.com/fairdataihub/fairdataihub-website/commit/7266fa8a608937bf362811dbc31d1c0527ab450c))
+* ✨ add support for Giscus comments on blog posts ([#204](https://github.com/fairdataihub/fairdataihub-website/issues/204)) ([5029493](https://github.com/fairdataihub/fairdataihub-website/commit/50294933d049fbe1a5e804b960c4542e8b789d94))
+
 # [2.13.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.12.1...v2.13.0) (2022-08-24)
 
 ### Features
