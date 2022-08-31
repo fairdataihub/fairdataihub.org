@@ -1,6 +1,6 @@
 export default function Impact() {
-  const filesNum = 120;
-  const datasetsNum = 167;
+  const filesNum = 137;
+  const datasetsNum = 178;
   const dataNum = 11;
 
   return (
