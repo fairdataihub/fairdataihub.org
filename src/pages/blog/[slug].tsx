@@ -137,6 +137,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
                   alt="profile picture"
                   width={50}
                   height={50}
+                  priority={true}
                   className=" flex items-center rounded-full"
                   objectFit="cover"
                 />
