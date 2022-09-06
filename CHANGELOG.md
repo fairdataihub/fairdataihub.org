@@ -1,9 +1,8 @@
 ## [2.14.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.14.0...v2.14.1) (2022-09-02)
 
-
 ### Bug Fixes
 
-* 🐛 update blog author image priority ([94cfb46](https://github.com/fairdataihub/fairdataihub-website/commit/94cfb46f582a87e7574803dd3ad0eb2582d759cd))
+- 🐛 update blog author image priority ([94cfb46](https://github.com/fairdataihub/fairdataihub-website/commit/94cfb46f582a87e7574803dd3ad0eb2582d759cd))
 
 # [2.14.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.13.0...v2.14.0) (2022-08-31)
 

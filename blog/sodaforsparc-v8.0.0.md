@@ -5,6 +5,8 @@ authors:
 date: '2022-08-08'
 category: 'Product'
 heroImage: 'https://images.unsplash.com/photo-1566933883366-5125a3414299?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
+imageAuthor: 'Marjan Blan'
+imageAuthorLink: 'https://unsplash.com/@marjan_blan'
 subtitle: 'SODA for SPARC v8.0.0 release is now available.'
 tags:
   - sodaforsparc

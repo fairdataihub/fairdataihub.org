@@ -26,6 +26,8 @@ interface PostProps {
     date: string;
     authors: string[];
     heroImage: string;
+    imageAuthor: string;
+    imageAuthorLink: string;
     tags: string[];
     subtitle: string;
     category: string;
@@ -35,8 +37,17 @@ interface PostProps {
 
 // The page for each post
 const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
-  const { title, authors, date, heroImage, category, subtitle, tags } =
-    frontMatter;
+  const {
+    title,
+    authors,
+    date,
+    heroImage,
+    imageAuthor,
+    imageAuthorLink,
+    category,
+    subtitle,
+    tags,
+  } = frontMatter;
 
   const copyLinkToClipboard = () => {
     navigator.clipboard.writeText(`https://fairdataihub.org/blog/${slug}`);
@@ -106,8 +117,8 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
         </div>
       </Link>
 
-      <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden py-5 px-5 sm:py-20 sm:px-10 ">
-        <div className="relative mb-10  before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r before:from-pink-400  before:to-fuchsia-700 before:opacity-60 before:content-['']">
+      <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden py-5 px-5 sm:py-20 sm:px-10">
+        <div className="group relative mb-10 before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r before:from-pink-400  before:to-fuchsia-700 before:opacity-60 before:content-['']">
           <Image
             src={heroImage}
             alt={title}
@@ -118,6 +129,22 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             priority={true}
             className="grayscale"
           />
+
+          {imageAuthorLink && (
+            <a
+              href={imageAuthorLink}
+              aria-label="Image author"
+              target="_blank"
+              rel="noreferrer"
+              className="absolute bottom-1 right-1 z-20 flex flex-row justify-center opacity-0 transition-all group-hover:opacity-100"
+            >
+              <div className="glass-container flex items-center justify-center rounded-md px-1 py-[2px] text-slate-700 transition-all hover:text-black">
+                <Icon icon="ic:baseline-photo-camera-front" />
+                {` `}
+                <span className="ml-1 text-xs">{imageAuthor}</span>
+              </div>
+            </a>
+          )}
         </div>
         <div className=" ">
           <h3 className="mb-2 text-lg font-bold text-accent">{category}</h3>
