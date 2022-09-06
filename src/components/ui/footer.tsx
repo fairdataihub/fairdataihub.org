@@ -111,17 +111,29 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="grid w-full grid-cols-2 gap-10 md:w-7/12 md:grid-cols-3 md:gap-6">
+          <div
+            id="footer-links-container"
+            className="grid w-full grid-cols-2 gap-10 md:w-7/12 md:grid-cols-3 md:gap-6"
+          >
             <div className="flex flex-col">
               <h3 className="footer-header">Company</h3>
               <ul>
-                <li className="footer-item umami--click--about-footer">
+                <li
+                  id="footer-team"
+                  className="footer-item umami--click--about-footer"
+                >
                   <Link href="/team"> About </Link>
                 </li>
-                <li className="footer-item umami--click--blog-footer">
+                <li
+                  id="footer-blog"
+                  className="footer-item umami--click--blog-footer"
+                >
                   <Link href="/blog"> Blog </Link>
                 </li>
-                <li className="footer-item  umami--click--contact-us-footer">
+                <li
+                  id="footer-contact-us"
+                  className="footer-item  umami--click--contact-us-footer"
+                >
                   <Link href="/contact-us"> Contact Us </Link>
                 </li>
               </ul>
@@ -130,13 +142,19 @@ export default function Footer() {
               <h3 className="footer-header">Legal</h3>
               <ul>
                 <li className="footer-item umami--click--terms-of-use-footer">
-                  <Link href="/termsofuse"> Terms of Use </Link>
+                  <Link id="footer-termsofuser" href="/termsofuse">
+                    Terms of Use
+                  </Link>
                 </li>
                 <li className="footer-item umami--click--privacy-policy-footer">
-                  <Link href="/privacypolicy"> Privacy Policy </Link>
+                  <Link id="footer-privacy-policy" href="/privacypolicy">
+                    Privacy Policy
+                  </Link>
                 </li>
                 <li className="footer-item umami--click--cookie-policy-footer">
-                  <Link href="/cookiepolicy"> Cookie Policy </Link>
+                  <Link id="footer-cookie-policy" href="/cookiepolicy">
+                    Cookie Policy
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -144,19 +162,29 @@ export default function Footer() {
               <h3 className="footer-header">Products</h3>
               <ul>
                 <li className="footer-item umami--click--soda-for-sparc-footer">
-                  <Link href="/sodaforsparc"> SODA for SPARC </Link>
+                  <Link id="footer-soda" href="/sodaforsparc">
+                    SODA for SPARC
+                  </Link>
                 </li>
                 <li className="footer-item umami--click--fairshare-footer">
-                  <Link href="/fairshare">FAIRshare</Link>
+                  <Link id="footer-fairshare" href="/fairshare">
+                    FAIRshare
+                  </Link>
                 </li>
                 <li className="footer-item umami--click--knowmore-footer">
-                  <Link href="/knowmore"> KnowMore </Link>
+                  <Link id="footer-knowmore" href="/knowmore">
+                    KnowMore
+                  </Link>
                 </li>
                 <li className="footer-item umami--click--sparclink-footer">
-                  <Link href="/sparclink"> SPARClink </Link>
+                  <Link id="footer-sparclink" href="/sparclink">
+                    SPARClink
+                  </Link>
                 </li>
                 <li className="footer-item umami--click--aqua-footer">
-                  <Link href="/aqua"> AQUA </Link>
+                  <Link id="footer-aqua" href="/aqua">
+                    AQUA
+                  </Link>
                 </li>
               </ul>
             </div>
