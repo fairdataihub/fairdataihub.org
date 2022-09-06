@@ -19,42 +19,43 @@ describe('Home page testing', () => {
 
     cy.get('#fairdata-footer').scrollIntoView();
     //check links within the footer page
-    cy.log(cy.get('#footer-team'));
+    let test = cy.get('#footer-team');
+    cy.log(test.children);
 
-    cy.get('#footer-team')
-      .children[0].invoke('attr', 'href')
-      .then((href) => {
-        cy.visit(href);
-      });
+    // cy.get('#footer-team')
+    //   .children[0].invoke('attr', 'href')
+    //   .then((href) => {
+    //     cy.visit(href);
+    //   });
 
-    cy.visit('/');
-    cy.wait(200);
+    // cy.visit('/');
+    // cy.wait(200);
 
-    cy.get('#footer-blog')
-      .children[0].invoke('attr', 'href')
-      .then((href) => {
-        cy.visit(href);
-      });
+    // cy.get('#footer-blog')
+    //   .children[0].invoke('attr', 'href')
+    //   .then((href) => {
+    //     cy.visit(href);
+    //   });
 
-    cy.visit('/');
-    cy.wait(200);
+    // cy.visit('/');
+    // cy.wait(200);
 
-    cy.get('#footer-contact-us')
-      .children[0].invoke('attr', 'href')
-      .then((href) => {
-        cy.visit(href);
-      });
+    // cy.get('#footer-contact-us')
+    //   .children[0].invoke('attr', 'href')
+    //   .then((href) => {
+    //     cy.visit(href);
+    //   });
 
-    cy.visit('/');
-    cy.wait(200);
+    // cy.visit('/');
+    // cy.wait(200);
 
-    cy.get('#footer-contact-us')
-      .children[0].invoke('attr', 'href')
-      .then((href) => {
-        cy.visit(href);
-      });
-    cy.visit('/');
-    cy.wait(200);
+    // cy.get('#footer-contact-us')
+    //   .children[0].invoke('attr', 'href')
+    //   .then((href) => {
+    //     cy.visit(href);
+    //   });
+    // cy.visit('/');
+    // cy.wait(200);
   });
 });
 
