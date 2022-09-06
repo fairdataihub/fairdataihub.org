@@ -1,3 +1,10 @@
+# [2.15.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.14.1...v2.15.0) (2022-09-06)
+
+
+### Features
+
+* ✨ add support for crediting image authors in blog posts ([#211](https://github.com/fairdataihub/fairdataihub-website/issues/211)) ([9ad0bf0](https://github.com/fairdataihub/fairdataihub-website/commit/9ad0bf0c15ec3e00e548a5bfac53085619076d7a))
+
 ## [2.14.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.14.0...v2.14.1) (2022-09-02)
 
 ### Bug Fixes
