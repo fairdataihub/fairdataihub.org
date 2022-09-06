@@ -2,7 +2,9 @@
 describe('Home page testing', () => {
   it('Visits fairdata', () => {
     cy.visit('/');
+  });
 
+  it('Checks for swiper wrapper and marquee', () => {
     cy.get('[id^=swiper-wrapper]').scrollIntoView();
     for (let i = 0; i < 5; i++) {
       cy.get('.swiper-button-next').click();
