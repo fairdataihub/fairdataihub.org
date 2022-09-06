@@ -11,6 +11,14 @@
     @apply font-inter text-base;
   }
 
+  .glass-container {
+    backdrop-filter: blur(2px) saturate(200%);
+    -webkit-backdrop-filter: blur(2px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.81);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+  }
+
   .highlight-text {
     @apply rounded-md bg-gray-300 px-2;
   }
