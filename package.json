@@ -73,7 +73,7 @@
     "@semantic-release/github": "8.0.5",
     "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
-    "@tailwindcss/line-clamp": "0.4.0",
+    "@tailwindcss/line-clamp": "0.4.2",
     "@tailwindcss/typography": "0.5.4",
     "@types/node": "16.11.48",
     "@types/react": "18.0.18",
