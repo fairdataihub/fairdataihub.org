@@ -19,11 +19,41 @@ describe('Home page testing', () => {
 
     cy.get('#fairdata-footer').scrollIntoView();
     //check links within the footer page
+    cy.log(cy.get('#footer-team'));
+
     cy.get('#footer-team')
-      .invoke('attr', 'href')
+      .children[0].invoke('attr', 'href')
       .then((href) => {
         cy.visit(href);
       });
+
+    cy.visit('/');
+    cy.wait(200);
+
+    cy.get('#footer-blog')
+      .children[0].invoke('attr', 'href')
+      .then((href) => {
+        cy.visit(href);
+      });
+
+    cy.visit('/');
+    cy.wait(200);
+
+    cy.get('#footer-contact-us')
+      .children[0].invoke('attr', 'href')
+      .then((href) => {
+        cy.visit(href);
+      });
+
+    cy.visit('/');
+    cy.wait(200);
+
+    cy.get('#footer-contact-us')
+      .children[0].invoke('attr', 'href')
+      .then((href) => {
+        cy.visit(href);
+      });
+    cy.visit('/');
     cy.wait(200);
   });
 });
