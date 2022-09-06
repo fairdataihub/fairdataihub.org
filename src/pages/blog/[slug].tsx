@@ -130,19 +130,21 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             className="grayscale"
           />
 
-          <a
-            href={imageAuthorLink}
-            aria-label="Image author"
-            target="_blank"
-            rel="noreferrer"
-            className="absolute bottom-1 right-1 z-20 flex flex-row justify-center opacity-0 transition-all group-hover:opacity-100"
-          >
-            <div className="glass-container flex items-center justify-center rounded-md px-1 py-[2px] text-slate-700 transition-all hover:text-black">
-              <Icon icon="ic:baseline-photo-camera-front" />
-              {` `}
-              <span className="ml-1 text-xs">{imageAuthor}</span>
-            </div>
-          </a>
+          {imageAuthorLink && (
+            <a
+              href={imageAuthorLink}
+              aria-label="Image author"
+              target="_blank"
+              rel="noreferrer"
+              className="absolute bottom-1 right-1 z-20 flex flex-row justify-center opacity-0 transition-all group-hover:opacity-100"
+            >
+              <div className="glass-container flex items-center justify-center rounded-md px-1 py-[2px] text-slate-700 transition-all hover:text-black">
+                <Icon icon="ic:baseline-photo-camera-front" />
+                {` `}
+                <span className="ml-1 text-xs">{imageAuthor}</span>
+              </div>
+            </a>
+          )}
         </div>
         <div className=" ">
           <h3 className="mb-2 text-lg font-bold text-accent">{category}</h3>
