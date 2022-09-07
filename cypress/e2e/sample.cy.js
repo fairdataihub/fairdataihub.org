@@ -8,7 +8,7 @@ describe('Home page testing', () => {
     cy.get('[id^=swiper-wrapper]').scrollIntoView();
     for (let i = 0; i < 5; i++) {
       cy.get('.swiper-button-next').click();
-      cy.wait(150);
+      cy.wait(200);
     }
     cy.get('.marquee').should('have.css', 'animation');
   });
@@ -46,6 +46,10 @@ describe('Home page testing', () => {
 });
 
 //testing on the team page
+/**
+ * Possible check:
+ * check if images have loaded
+ */
 describe('Meet the Team page', () => {
   it('Navigate to the team page', () => {
     cy.visit('/');
@@ -58,6 +62,7 @@ describe('Meet the Team page', () => {
 });
 
 //testing the contact us page
+//Possible check: make sure background animation is happening
 describe('Contact Us Page', () => {
   it('Navigate to contact us page and verify', () => {
     cy.visit('/');
@@ -87,6 +92,10 @@ describe('Contact Us Page', () => {
 });
 
 // testing all project pages
+/*
+Possible checks:
+Test team icons on webpage, check if any animations are playing
+*/
 describe('Our projects pages', () => {
   it('Navigate to SODA for SPARC page', () => {
     cy.visit('/');
@@ -94,7 +103,7 @@ describe('Our projects pages', () => {
     cy.get('#project-container').invoke('show');
     cy.get('#soda-page').click();
 
-    cy.wait(150);
+    cy.wait(200);
 
     cy.url().should('include', '/sodaforsparc');
   });
@@ -105,7 +114,7 @@ describe('Our projects pages', () => {
     cy.get('#project-container').invoke('show');
     cy.get('#fairshare-page').click();
 
-    cy.wait(150);
+    cy.wait(200);
 
     cy.url().should('include', '/fairshare');
   });
@@ -116,7 +125,7 @@ describe('Our projects pages', () => {
     cy.get('#project-container').invoke('show');
     cy.get('#knowmore-page').click();
 
-    cy.wait(150);
+    cy.wait(200);
 
     cy.url().should('include', '/knowmore');
   });
@@ -127,7 +136,7 @@ describe('Our projects pages', () => {
     cy.get('#project-container').invoke('show');
     cy.get('#sparclink-page').click();
 
-    cy.wait(150);
+    cy.wait(200);
 
     cy.url().should('include', '/sparclink');
   });
@@ -138,7 +147,7 @@ describe('Our projects pages', () => {
     cy.get('#project-container').invoke('show');
     cy.get('#aqua-page').click();
 
-    cy.wait(150);
+    cy.wait(200);
 
     cy.url().should('include', '/aqua');
   });
@@ -164,6 +173,10 @@ describe('Blog page', () => {
             cy.log(href);
             cy.visit(href);
             //what do after visiting
+            /*
+            possible checks:
+            Check blog content, check file source with nofs/fs
+            */
             cy.wait(300);
           });
         //reset and return to blog page
