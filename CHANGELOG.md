@@ -1,3 +1,10 @@
+## [2.15.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.15.0...v2.15.1) (2022-09-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rehype-document to v6.1.0 ([#220](https://github.com/fairdataihub/fairdataihub-website/issues/220)) ([d5ece44](https://github.com/fairdataihub/fairdataihub-website/commit/d5ece44aa37d81a7d493ac6a4a1fb573dafaefdd))
+
 # [2.15.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.14.1...v2.15.0) (2022-09-06)
 
 ### Features
