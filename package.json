@@ -82,7 +82,7 @@
     "@typescript-eslint/parser": "5.36.1",
     "autoprefixer": "10.4.8",
     "commitizen": "4.2.5",
-    "cypress": "10.6.0",
+    "cypress": "10.7.0",
     "cz-conventional-changelog": "3.3.0",
     "devmoji": "2.3.0",
     "eslint": "8.23.1",
