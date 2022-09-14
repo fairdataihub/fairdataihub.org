@@ -1,3 +1,53 @@
+## [2.15.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.15.1...v2.15.2) (2022-09-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rehype-external-links to v2.0.1 ([#215](https://github.com/fairdataihub/fairdataihub-website/issues/215)) ([70b70bb](https://github.com/fairdataihub/fairdataihub-website/commit/70b70bb5f7b831d2e338cdd17d27b9230cb8d365))
+
+## [2.15.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.15.0...v2.15.1) (2022-09-12)
+
+### Bug Fixes
+
+- **deps:** update dependency rehype-document to v6.1.0 ([#220](https://github.com/fairdataihub/fairdataihub-website/issues/220)) ([d5ece44](https://github.com/fairdataihub/fairdataihub-website/commit/d5ece44aa37d81a7d493ac6a4a1fb573dafaefdd))
+
+# [2.15.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.14.1...v2.15.0) (2022-09-06)
+
+### Features
+
+- ✨ add support for crediting image authors in blog posts ([#211](https://github.com/fairdataihub/fairdataihub-website/issues/211)) ([9ad0bf0](https://github.com/fairdataihub/fairdataihub-website/commit/9ad0bf0c15ec3e00e548a5bfac53085619076d7a))
+
+## [2.14.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.14.0...v2.14.1) (2022-09-02)
+
+### Bug Fixes
+
+- 🐛 update blog author image priority ([94cfb46](https://github.com/fairdataihub/fairdataihub-website/commit/94cfb46f582a87e7574803dd3ad0eb2582d759cd))
+
+# [2.14.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.13.0...v2.14.0) (2022-08-31)
+
+### Features
+
+- ✨ add fairshare v2 blog bost ([7266fa8](https://github.com/fairdataihub/fairdataihub-website/commit/7266fa8a608937bf362811dbc31d1c0527ab450c))
+- ✨ add support for Giscus comments on blog posts ([#204](https://github.com/fairdataihub/fairdataihub-website/issues/204)) ([5029493](https://github.com/fairdataihub/fairdataihub-website/commit/50294933d049fbe1a5e804b960c4542e8b789d94))
+
+# [2.13.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.12.1...v2.13.0) (2022-08-24)
+
+### Features
+
+- ✨ remove google analytics and its mentions ([#200](https://github.com/fairdataihub/fairdataihub-website/issues/200)) ([f120d32](https://github.com/fairdataihub/fairdataihub-website/commit/f120d3279575b5a1595b164ff9f8d897c76ceb28))
+
+## [2.12.1](https://github.com/fairdataihub/fairdataihub-website/compare/v2.12.0...v2.12.1) (2022-08-23)
+
+### Bug Fixes
+
+- 🐛 adjust z index of coloe overlay for blogs ([8ed6314](https://github.com/fairdataihub/fairdataihub-website/commit/8ed6314c54da5375c0b55d9cba5566092004ee17))
+
+# [2.12.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.3...v2.12.0) (2022-08-18)
+
+### Features
+
+- ✨ add og images to blog articles ([22c9ede](https://github.com/fairdataihub/fairdataihub-website/commit/22c9edefab3a2e916c6e8a4f4890dcc228b3a511))
+
 ## [2.11.3](https://github.com/fairdataihub/fairdataihub-website/compare/v2.11.2...v2.11.3) (2022-08-15)
 
 ### Bug Fixes

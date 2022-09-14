@@ -1,31 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
-import { getCookie, setCookie, hasCookie } from 'cookies-next';
 
 export default function Footer() {
-  const checkCookie = () => {
-    if (hasCookie(`cookieConsent`)) {
-      return getCookie(`cookieConsent`);
-    } else {
-      return false;
-    }
-  };
-
-  const [cookieConsent, setCookieConsent] = useState(checkCookie());
-  const [clientSide, setClientSide] = useState(false);
-
-  const consentToCookies = () => {
-    setCookie(`cookieConsent`, `true`, {
-      maxAge: 60 * 60 * 24 * 90,
-    });
-    setCookieConsent(true);
-  };
-
-  useEffect(() => {
-    setClientSide(true);
-  }, []);
-
   return (
     <footer
       id="fairdata-footer"
@@ -190,38 +166,7 @@ export default function Footer() {
             </a>
           </div>
         </div>
-        {/* <span>{{ cookieConsent }}</span> */}
       </div>
-
-      {clientSide && !cookieConsent ? (
-        <div className="fixed bottom-0 z-50 flex w-full items-center justify-center bg-gray-50 px-5 py-1">
-          <p className="py-1 text-sm">
-            By continuing to use this site you consent to the use of cookies in
-            accordance with our
-            <Link href="/cookiepolicy" passHref>
-              <span className="text-url cursor-pointer text-sm">
-                &nbsp;Cookie Policy
-              </span>
-            </Link>
-          </p>
-          <div className="cursor-pointer px-2" onClick={consentToCookies}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              aria-hidden="true"
-              viewBox="0 0 32 32"
-              className="h-[18px] w-[18px] scale-100 text-gray-600 transition-all hover:scale-110 hover:text-black"
-            >
-              <path
-                d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"
-                fill="currentColor"
-              />
-            </svg>
-          </div>
-        </div>
-      ) : (
-        <div></div>
-      )}
     </footer>
   );
 }

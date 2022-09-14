@@ -5,6 +5,8 @@ authors:
 date: '2022-06-03'
 category: 'Product'
 heroImage: 'https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80'
+imageAuthor: 'Gabriel Heinzer'
+imageAuthorLink: 'https://unsplash.com/@6heinz3r'
 subtitle: 'FAIRshare now supports Figshare as a data repository. This should be a quick and easy way to share data with the community.'
 tags:
   - fairshare

@@ -2,6 +2,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import dayjs from 'dayjs';
 
+import Giscus from '@giscus/react';
 import { Icon } from '@iconify/react';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -25,6 +26,8 @@ interface PostProps {
     date: string;
     authors: string[];
     heroImage: string;
+    imageAuthor: string;
+    imageAuthorLink: string;
     tags: string[];
     subtitle: string;
     category: string;
@@ -34,8 +37,17 @@ interface PostProps {
 
 // The page for each post
 const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
-  const { title, authors, date, heroImage, category, subtitle, tags } =
-    frontMatter;
+  const {
+    title,
+    authors,
+    date,
+    heroImage,
+    imageAuthor,
+    imageAuthorLink,
+    category,
+    subtitle,
+    tags,
+  } = frontMatter;
 
   const copyLinkToClipboard = () => {
     navigator.clipboard.writeText(`https://fairdataihub.org/blog/${slug}`);
@@ -80,11 +92,15 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
 
         <meta
           property="og:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
+          content={`https://og.fairdataihub.org/api/ogimage?app=fairdataihub&title=${encodeURIComponent(
+            title,
+          )}&description=${encodeURIComponent(subtitle)}`}
         />
         <meta
           property="twitter:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
+          content={`https://og.fairdataihub.org/api/ogimage?title=${encodeURIComponent(
+            title,
+          )}&description=${encodeURIComponent(subtitle)}`}
         />
 
         <meta
@@ -101,8 +117,8 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
         </div>
       </Link>
 
-      <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden py-5 px-5 sm:py-20 sm:px-10 ">
-        <div className="mb-10">
+      <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden py-5 px-5 sm:py-20 sm:px-10">
+        <div className="group relative mb-10 before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r before:from-pink-400  before:to-fuchsia-700 before:opacity-60 before:content-['']">
           <Image
             src={heroImage}
             alt={title}
@@ -111,8 +127,24 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             layout="responsive"
             objectFit="cover"
             priority={true}
-            className="grayscale filter "
+            className="grayscale"
           />
+
+          {imageAuthorLink && (
+            <a
+              href={imageAuthorLink}
+              aria-label="Image author"
+              target="_blank"
+              rel="noreferrer"
+              className="absolute bottom-1 right-1 z-20 flex flex-row justify-center opacity-0 transition-all group-hover:opacity-100"
+            >
+              <div className="glass-container flex items-center justify-center rounded-md px-1 py-[2px] text-slate-700 transition-all hover:text-black">
+                <Icon icon="ic:baseline-photo-camera-front" />
+                {` `}
+                <span className="ml-1 text-xs">{imageAuthor}</span>
+              </div>
+            </a>
+          )}
         </div>
         <div className=" ">
           <h3 className="mb-2 text-lg font-bold text-accent">{category}</h3>
@@ -132,6 +164,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
                   alt="profile picture"
                   width={50}
                   height={50}
+                  priority={true}
                   className=" flex items-center rounded-full"
                   objectFit="cover"
                 />
@@ -196,11 +229,29 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             </a>
             <div
               onClick={copyLinkToClipboard}
-              className="umanmi--click--copy-url-button mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
+              className="umami--click--copy-url-button mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
               aria-label="Copy to clipboard"
             >
               <Icon icon="akar-icons:link-chain" width="20" height="20" />
             </div>
+          </div>
+
+          <div className="mb-10 mt-10">
+            <Giscus
+              key={slug}
+              id="comments"
+              repo="fairdataihub/fairdataihub.org"
+              repoId="MDEwOlJlcG9zaXRvcnkzODAzNDg2NjE="
+              category="Blog"
+              categoryId="DIC_kwDOFquo9c4CRKKU"
+              mapping="pathname"
+              term="Welcome to @giscus/react component!"
+              reactionsEnabled="1"
+              inputPosition="top"
+              theme="light_protanopia"
+              lang="en"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
