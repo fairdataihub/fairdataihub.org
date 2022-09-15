@@ -139,6 +139,30 @@ export default function Team() {
       },
     },
     {
+      id: `Krista-Scrivner`,
+      name: `Krista Scrivner (she/her)`,
+      title: `Contract and Grant Manager`,
+      bio: `Krista hails from North, South, East and West in the United States. She has been with Calmi2 for 8 years and assists the FAIR Data Innovations Hub with grant preparation, submission, and management. In her free time, she loves experimenting in the kitchen.`,
+      image: `/images/people/krista-full.jpg`,
+      borderTop: true,
+      width: 340,
+      height: 453,
+      borderBottom: false,
+      education: [`B.A. in Sociology (UC Davis, 2006)`],
+      twitter: {
+        show: false,
+        link: `https://twitter.com/`,
+      },
+      github: {
+        show: false,
+        link: `https://github.com/`,
+      },
+      linkedin: {
+        show: false,
+        link: `https://www.linkedin.com/`,
+      },
+    },
+    {
       id: `Ismail-Qaddoura`,
       name: `Ismail Qaddoura (he/him)`,
       title: `Information Technology (IT) Manager`,
