@@ -17,8 +17,8 @@
     "build": "next build",
     "start": "next start",
     "type-check": "tsc",
-    "lint": "eslint --ignore-path .gitignore \"./**/*.+(ts|js|tsx|jsx)\"",
-    "format": "prettier --ignore-path .gitignore \"./**/*.+(ts|js|tsx|jsx)\" --write",
+    "lint": "eslint --ignore-path .gitignore \"(src|cypress)/**/*.+(ts|js|tsx|jsx)\"",
+    "format": "prettier --ignore-path .gitignore \"(src|cypress)/**/*.+(ts|js|tsx|jsx)\" --write",
     "prepare": "husky install",
     "commit": "cz",
     "postbuild": "next-sitemap",
@@ -27,7 +27,7 @@
     "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\""
   },
   "lint-staged": {
-    "./**/*.{ts,js,jsx,tsx}": [
+    "./(src|cypress)/**/*.{ts,js,jsx,tsx}": [
       "yarn cypress:run",
       "yarn lint --fix",
       "yarn format"
