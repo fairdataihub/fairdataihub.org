@@ -1,18 +1,12 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "semanticCommits": true,
   "stabilityDays": 4,
   "prCreation": "not-pending",
-  "labels": [
-    "type: dependencies"
-  ],
+  "labels": ["type: dependencies"],
   "packageRules": [
     {
-      "packageNames": [
-        "node"
-      ],
+      "packageNames": ["node"],
       "enabled": false
     }
   ]
