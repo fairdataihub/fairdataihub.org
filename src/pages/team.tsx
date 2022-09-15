@@ -118,9 +118,9 @@ export default function Team() {
       title: `Software Developer`,
       bio: `Dorian is a Guatemalan and Salvadoran frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.`,
       image: `/images/people/dorian-full.jpg`,
-      borderTop: true,
       width: 340,
       height: 515,
+      borderTop: true,
       borderBottom: false,
       education: [
         `B.Sc in Computer Science (Cal State University, San Bernardino, 2020)`,
@@ -144,9 +144,9 @@ export default function Team() {
       title: `Contract and Grant Manager`,
       bio: `Krista hails from North, South, East and West in the United States. She has been with Calmi2 for 8 years and assists the FAIR Data Innovations Hub with grant preparation, submission, and management. In her free time, she loves experimenting in the kitchen.`,
       image: `/images/people/krista-full.jpg`,
-      borderTop: true,
       width: 340,
       height: 453,
+      borderTop: true,
       borderBottom: false,
       education: [`B.A. in Sociology (UC Davis, 2006)`],
       twitter: {
