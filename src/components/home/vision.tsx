@@ -1,9 +1,9 @@
 import {
   CogIcon,
-  LightningBoltIcon,
+  BoltIcon,
   ScaleIcon,
   ExclamationCircleIcon,
-} from '@heroicons/react/outline';
+} from '@heroicons/react/24/outline';
 
 export default function Vision() {
   return (
@@ -84,7 +84,7 @@ export default function Vision() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <LightningBoltIcon className="h-6 w-6" aria-hidden="true" />
+                <BoltIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What are the challenges?
