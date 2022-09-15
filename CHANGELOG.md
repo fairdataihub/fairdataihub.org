@@ -1,9 +1,8 @@
 ## [2.16.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.16.0...v2.16.1) (2022-09-15)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @heroicons/react to v2 ([#222](https://github.com/fairdataihub/fairdataihub.org/issues/222)) ([8a6aec5](https://github.com/fairdataihub/fairdataihub.org/commit/8a6aec52f181c6e5a96c71a0854d684cd57ca4d4))
+- **deps:** update dependency @heroicons/react to v2 ([#222](https://github.com/fairdataihub/fairdataihub.org/issues/222)) ([8a6aec5](https://github.com/fairdataihub/fairdataihub.org/commit/8a6aec52f181c6e5a96c71a0854d684cd57ca4d4))
 
 # [2.16.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.15.2...v2.16.0) (2022-09-15)
 
