@@ -20,7 +20,7 @@ jobs:
       - name: Run Cypress tests on Chrome
         uses: cypress-io/github-action@v4
         with:
-          start: yarn build && yarn start
+          start: yarn dev
           browser: chrome
 
   firefox:
@@ -45,7 +45,7 @@ jobs:
       - name: Run Cypress tests on Firefox
         uses: cypress-io/github-action@v4
         with:
-          start: yarn build && yarn start
+          start: yarn dev
           browser: firefox
 
   edge:
