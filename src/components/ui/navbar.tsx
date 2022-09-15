@@ -184,7 +184,10 @@ export default function Navbar() {
                 Meet The Team
               </div>
             </Link>
-            <div className="group relative rounded-lg">
+            <div
+              id="our-projects-container"
+              className="group relative rounded-lg"
+            >
               <button className=" mx-1 flex flex-row items-center border-none py-2 font-medium sm:px-1 lg:px-3">
                 <div className="flex w-max flex-row items-center justify-center">
                   Our Projects
@@ -204,11 +207,15 @@ export default function Navbar() {
                   </svg>
                 </div>
               </button>
-              <div className="absolute right-4 z-10 hidden w-max py-1 group-hover:block">
+              <div
+                id="project-container"
+                className="absolute right-4 z-10 hidden w-max py-1 group-hover:block"
+              >
                 <div className="text-md rounded-lg border-2 border-gray-200 bg-gray-100 py-4 text-left shadow-lg">
                   <div className="flex flex-col">
                     <Link href="/sodaforsparc" passHref>
                       <div
+                        id="soda-page"
                         className={
                           `nav-item hover-underline-animation umami--click--soda-for-sparc-header mt-2` +
                           (router.pathname === `/sodaforsparc`
@@ -221,6 +228,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/fairshare" passHref>
                       <div
+                        id="fairshare-page"
                         className={
                           `nav-item hover-underline-animation umami--click--fairshare-header mt-2 w-[200px]` +
                           (router.pathname === `/fairshare`
@@ -233,6 +241,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/knowmore" passHref>
                       <div
+                        id="knowmore-page"
                         className={
                           `nav-item hover-underline-animation umami--click--knowmore-header mt-2` +
                           (router.pathname === `/knowmore`
@@ -245,6 +254,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/sparclink" passHref>
                       <div
+                        id="sparclink-page"
                         className={
                           `nav-item hover-underline-animation umami--click--sparclink-header mt-2` +
                           (router.pathname === `/sparclink`
@@ -257,6 +267,7 @@ export default function Navbar() {
                     </Link>
                     <Link href="/aqua" passHref>
                       <div
+                        id="aqua-page"
                         className={
                           `nav-item hover-underline-animation umami--click--aqua-header mt-2` +
                           (router.pathname === `/aqua`

@@ -4,6 +4,7 @@ import Image from 'next/image';
 export default function Footer() {
   return (
     <footer
+      id="fairdata-footer"
       className={
         process.env.NODE_ENV === `development`
           ? `debug-screens z-30 bg-gray-50 pt-5`
@@ -86,7 +87,10 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="grid w-full grid-cols-2 gap-10 md:w-7/12 md:grid-cols-3 md:gap-6">
+          <div
+            id="footer-links-container"
+            className="grid w-full grid-cols-2 gap-10 md:w-7/12 md:grid-cols-3 md:gap-6"
+          >
             <div className="flex flex-col">
               <h3 className="footer-header">Company</h3>
               <ul>

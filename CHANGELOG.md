@@ -1,3 +1,9 @@
+# [2.16.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.15.2...v2.16.0) (2022-09-15)
+
+### Features
+
+- ✨ added Krista to the team ([024efe0](https://github.com/fairdataihub/fairdataihub.org/commit/024efe03765a973b24049212644c5f60b14359ed))
+
 ## [2.15.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.15.1...v2.15.2) (2022-09-12)
 
 ### Bug Fixes
@@ -119,6 +125,10 @@
 
 - 🐛 update FAIRshare download link ([#148](https://github.com/fairdataihub/fairdataihub-website/issues/148)) ([70ff2eb](https://github.com/fairdataihub/fairdataihub-website/commit/70ff2ebb88bb73d38c799e8a9941717f1a576c9d)), closes [fairdataihub/FAIRshare#244](https://github.com/fairdataihub/FAIRshare/issues/244)
 - 🐛 update spelling typo ([7895524](https://github.com/fairdataihub/fairdataihub-website/commit/7895524992d2d19a6a7326299e792f0893053d40))
+
+### Features
+
+- ✨ Added the FAIR-BioRS publication in SODA for SPARC ([ac147f9](https://github.com/fairdataihub/fairdataihub-website/commit/ac147f9261fc357cae783a62eedd5aaf680b0eb4))
 
 # [2.8.0](https://github.com/fairdataihub/fairdataihub-website/compare/v2.7.0...v2.8.0) (2022-07-12)
 

@@ -54,6 +54,7 @@ We recommend to look at the [documentation](https://nextjs.org/docs/getting-star
 - [`.husky`](.husky) — Husky configuration and hooks.<br>
 - [`public`](./public) — Static assets such as robots.txt, images, and favicon.<br>
 - [`src`](./src) — Application source code, including pages, components, styles.
+- [`cypress`](./cypress) — End-to-end tests.
 
 ### Scripts
 
@@ -63,6 +64,8 @@ We recommend to look at the [documentation](https://nextjs.org/docs/getting-star
 - `yarn type-check` — Validate code using TypeScript compiler.
 - `yarn lint` — Runs ESLint for all files in the `src` directory.
 - `yarn format` — Runs Prettier for all files in the `src` directory.
+- `yarn cypress:run` — Runs Cypress tests in headless mode.
+- `yarn cypress:open` — Opens Cypress in interactive mode.
 
 ### Path Mapping
 
