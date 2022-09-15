@@ -23,10 +23,12 @@
     "commit": "cz",
     "postbuild": "next-sitemap",
     "semantic-release": "semantic-release",
-    "cypress:open": "cypress open"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\""
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
+      "yarn cypress:run",
       "yarn lint --fix",
       "yarn format"
     ]
