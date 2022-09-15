@@ -1,9 +1,9 @@
 import {
-  DesktopComputerIcon,
-  LightningBoltIcon,
+  ComputerDesktopIcon,
+  BoltIcon,
   ScaleIcon,
   ExclamationCircleIcon,
-} from '@heroicons/react/outline';
+} from '@heroicons/react/24/outline';
 
 export default function About() {
   return (
@@ -113,7 +113,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <LightningBoltIcon className="h-6 w-6" aria-hidden="true" />
+                <BoltIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What are the challenges?
@@ -131,7 +131,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <DesktopComputerIcon className="h-6 w-6" aria-hidden="true" />
+                <ComputerDesktopIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What does AQUA do?
