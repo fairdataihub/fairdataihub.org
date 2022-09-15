@@ -1,0 +1,70 @@
+name: End-to-end tests
+on: [push]
+jobs:
+  chrome:
+    runs-on: ubuntu-20.04
+
+    name: E2E on Chrome
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Node.js dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run Cypress tests on Chrome
+        uses: cypress-io/github-action@v4
+        with:
+          start: yarn build && yarn start
+          browser: chrome
+
+  firefox:
+    runs-on: ubuntu-latest
+
+    container:
+      image: cypress/browsers:node12.16.1-chrome80-ff73
+      options: --user 1001
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Node.js dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run Cypress tests on Firefox
+        uses: cypress-io/github-action@v4
+        with:
+          start: yarn build && yarn start
+          browser: firefox
+
+  edge:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install Node.js dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Run Cypress tests on Edge
+        uses: cypress-io/github-action@v4
+        with:
+          start: yarn dev
+          browser: edge
