@@ -20,15 +20,14 @@ describe('Home page testing', () => {
     cy.get('#fairdata-footer').scrollIntoView();
     //check links within the footer page
 
-    // cy.log(elem);
     cy.get('#footer-links-container')
       .children()
       .then((elem) => {
-        //three footer containers holding links
-        for (let i = 0; i < elem.length; i++) {
+        // three footer containers holding links
+        for (const item of elem) {
           //footer element containers
-          cy.get(elem[i].children[1]).then((element) => {
-            element.children().each((index, link) => {
+          cy.get(item.children[1]).then((element) => {
+            element.children().each((_index, link) => {
               //a tag is found here
               cy.log(link.children[0]);
               cy.get(link.children[0])
@@ -165,14 +164,15 @@ describe('Blog page', () => {
     //gather all blogs and go through each page
     cy.get('article').then((elem) => {
       cy.log(elem);
-      for (let i = 0; i < elem.length; i++) {
+
+      for (const item of elem) {
         cy.wait(200);
-        cy.get(elem[i].children[1].children[3])
+        cy.get(item.children[1].children[3])
           .invoke('attr', 'href')
           .then((href) => {
             cy.log(href);
             cy.visit(href);
-            //what do after visiting
+            // what do after visiting
             /*
             possible checks:
             Check blog content, check file source with nofs/fs
