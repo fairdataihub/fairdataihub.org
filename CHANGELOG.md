@@ -1,9 +1,8 @@
 # [2.16.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.15.2...v2.16.0) (2022-09-15)
 
-
 ### Features
 
-* ✨ added Krista to the team ([024efe0](https://github.com/fairdataihub/fairdataihub.org/commit/024efe03765a973b24049212644c5f60b14359ed))
+- ✨ added Krista to the team ([024efe0](https://github.com/fairdataihub/fairdataihub.org/commit/024efe03765a973b24049212644c5f60b14359ed))
 
 ## [2.15.2](https://github.com/fairdataihub/fairdataihub-website/compare/v2.15.1...v2.15.2) (2022-09-12)
 
