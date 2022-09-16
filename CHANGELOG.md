@@ -1,3 +1,15 @@
+# [2.17.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.16.1...v2.17.0) (2022-09-16)
+
+
+### Bug Fixes
+
+* 🐛 fixed date on the blog post about Bridge2AI ([de1f271](https://github.com/fairdataihub/fairdataihub.org/commit/de1f2716a88f5c55e2a79dce838a13706ab4d87f))
+
+
+### Features
+
+* ✨ added blog post about Bridge2AI ([e712656](https://github.com/fairdataihub/fairdataihub.org/commit/e71265643bac4d415c1abf6b5af2af36d2eb49f6))
+
 ## [2.16.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.16.0...v2.16.1) (2022-09-15)
 
 ### Bug Fixes
