@@ -1,3 +1,10 @@
+# [2.18.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.17.1...v2.18.0) (2022-09-20)
+
+
+### Features
+
+* ✨ added Martha to the team page ([#236](https://github.com/fairdataihub/fairdataihub.org/issues/236)) ([741b359](https://github.com/fairdataihub/fairdataihub.org/commit/741b3599e7b6a25385255160ac6c13a2b78c2dcc))
+
 ## [2.17.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.17.0...v2.17.1) (2022-09-19)
 
 ### Bug Fixes
