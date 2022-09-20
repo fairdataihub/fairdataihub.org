@@ -163,6 +163,30 @@ export default function Team() {
       },
     },
     {
+      id: `Martha-Llona`,
+      name: `Martha Llona (she/her)`,
+      title: `Human Resources Coordinator`,
+      bio: `Martha is a native of San Diego. She has been with Calmi2 for 5 years and assisting the FAIR Data Innovations Hub with all administrative needs since the beginning. Her hobbies are cooking, watching movies, reading and exploring new restaurants in San Diego.`,
+      image: `/images/people/martha-full.jpg`,
+      width: 340,
+      height: 532,
+      borderTop: true,
+      borderBottom: false,
+      education: [],
+      twitter: {
+        show: false,
+        link: `https://twitter.com/`,
+      },
+      github: {
+        show: false,
+        link: `https://github.com/`,
+      },
+      linkedin: {
+        show: false,
+        link: `https://www.linkedin.com/`,
+      },
+    },
+    {
       id: `Ismail-Qaddoura`,
       name: `Ismail Qaddoura (he/him)`,
       title: `Information Technology (IT) Manager`,

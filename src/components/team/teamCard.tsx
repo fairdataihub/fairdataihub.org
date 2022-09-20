@@ -51,18 +51,20 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
         <p className="font-asap text-lg text-black sm:text-base lg:text-lg">
           {profile.bio}
         </p>
-        <div className="py-2" v-if="profile.education">
-          <h3 className="sm:text-md pb-1 text-lg font-medium text-primary lg:text-xl">
-            Education
-          </h3>
-          <ul>
-            {profile.education.map((degree: string) => (
-              <li key={degree} className="font-asap">
-                {degree}
-              </li>
-            ))}
-          </ul>
-        </div>
+        {profile.education.length > 0 && (
+          <div className="py-2">
+            <h3 className="sm:text-md pb-1 text-lg font-medium text-primary lg:text-xl">
+              Education
+            </h3>
+            <ul>
+              {profile.education.map((degree: string) => (
+                <li key={degree} className="font-asap">
+                  {degree}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         <div className="flex py-3">
           {profile.twitter.show && (
             <a
