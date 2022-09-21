@@ -32,14 +32,11 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
       <Head>
         <title>Blog - Fair Data Innovations Hub</title>
         <meta property="og:title" content="Blog - Fair Data Innovations Hub " />
-        <meta
-          property="twitter:title"
-          content="Blog - Fair Data Innovations Hub"
-        />
+        <meta name="twitter:title" content="Blog - Fair Data Innovations Hub" />
 
         <link rel="canonical" href="https://fairdataihub.org/blog" />
         <meta property="og:url" content="https://fairdataihub.org/blog" />
-        <meta property="twitter:url" content="https://fairdataihub.org/blog" />
+        <meta name="twitter:url" content="https://fairdataihub.org/blog" />
 
         <meta
           name="description"
@@ -50,7 +47,7 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
           content="Updates from FAIR Data Innovations Hub and its team."
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="Updates from FAIR Data Innovations Hub and its team."
         />
 
@@ -59,7 +56,7 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
           content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>

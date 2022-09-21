@@ -47,14 +47,11 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
       <Head>
         <title>Tags - Fair Data Innovations Hub</title>
         <meta property="og:title" content="Tags - Fair Data Innovations Hub " />
-        <meta
-          property="twitter:title"
-          content="Tags - Fair Data Innovations Hub"
-        />
+        <meta name="twitter:title" content="Tags - Fair Data Innovations Hub" />
 
         <link rel="canonical" href="https://fairdataihub.org/tags" />
         <meta property="og:url" content="https://fairdataihub.org/tags" />
-        <meta property="twitter:url" content="https://fairdataihub.org/tags" />
+        <meta name="twitter:url" content="https://fairdataihub.org/tags" />
 
         <meta
           name="description"
@@ -65,7 +62,7 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
           content="Updates from FAIR Data Innovations Hub and its team."
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="Updates from FAIR Data Innovations Hub and its team."
         />
 
@@ -74,7 +71,7 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
           content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>

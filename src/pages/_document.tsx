@@ -32,8 +32,8 @@ class MyDocument extends Document {
 
           <meta property="og:type" content="website" />
 
-          <meta property="twitter:card" content="summary_large_image" />
-          <meta property="twitter:domain" content="fairdataihub.org" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:domain" content="fairdataihub.org" />
 
           <link rel="icon" href="/favicon.ico" />
 

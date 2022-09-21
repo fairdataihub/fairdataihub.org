@@ -15,16 +15,13 @@ export default function SparcLink() {
           content="SPARClink - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="SPARClink - Fair Data Innovations Hub"
         />
 
         <link rel="canonical" href="https://fairdataihub.org/sparclink" />
         <meta property="og:url" content="https://fairdataihub.org/sparclink" />
-        <meta
-          property="twitter:url"
-          content="https://fairdataihub.org/sparclink"
-        />
+        <meta name="twitter:url" content="https://fairdataihub.org/sparclink" />
 
         <meta
           name="description"
@@ -35,7 +32,7 @@ export default function SparcLink() {
           content="SPARClink provides a system that queries all external publications using open source tools and platforms to create interactable visualizations that showcases the impact that SPARC has on the overall scientific research community"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="SPARClink provides a system that queries all external publications using open source tools and platforms to create interactable visualizations that showcases the impact that SPARC has on the overall scientific research community"
         />
 
@@ -44,7 +41,7 @@ export default function SparcLink() {
           content="https://fairdataihub.org/thumbnails/sparclink.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/sparclink.png"
         />
       </Head>

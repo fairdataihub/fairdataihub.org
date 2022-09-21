@@ -17,7 +17,7 @@ export default function SodaForSparc() {
           content="SODA for SPARC - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="SODA for SPARC - Fair Data Innovations Hub"
         />
 
@@ -27,7 +27,7 @@ export default function SodaForSparc() {
           content="https://fairdataihub.org/sodaforsparc"
         />
         <meta
-          property="twitter:url"
+          name="twitter:url"
           content="https://fairdataihub.org/sodaforsparc"
         />
 
@@ -40,7 +40,7 @@ export default function SodaForSparc() {
           content="SODA (Software to Organize Data Automatically) for SPARC is a cross-platform desktop software that allows SPARC-funded researchers to easily comply with the FAIR SPARC Data curation and sharing guidelines"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="SODA (Software to Organize Data Automatically) for SPARC is a cross-platform desktop software that allows SPARC-funded researchers to easily comply with the FAIR SPARC Data curation and sharing guidelines"
         />
 
@@ -49,7 +49,7 @@ export default function SodaForSparc() {
           content="https://fairdataihub.org/thumbnails/sodaforsparc.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/sodaforsparc.png"
         />
       </Head>

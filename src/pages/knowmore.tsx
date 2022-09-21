@@ -15,16 +15,13 @@ export default function KnowMore() {
           content="KnowMore - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="KnowMore - Fair Data Innovations Hub"
         />
 
         <link rel="canonical" href="https://fairdataihub.org/knowmore" />
         <meta property="og:url" content="https://fairdataihub.org/knowmore" />
-        <meta
-          property="twitter:url"
-          content="https://fairdataihub.org/knowmore"
-        />
+        <meta name="twitter:url" content="https://fairdataihub.org/knowmore" />
 
         <meta
           name="description"
@@ -35,7 +32,7 @@ export default function KnowMore() {
           content="KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="KnowMore is a tool readily integrable into the SPARC Portal that allows to find potential relation, difference, and similarities between multiple SPARC datasets in just a few clicks, which can lead to a new discovery, new hypothesis, or simply guide the user to the next logical step in their discovery process"
         />
 
@@ -44,7 +41,7 @@ export default function KnowMore() {
           content="https://fairdataihub.org/thumbnails/knowmore.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/knowmore.png"
         />
       </Head>

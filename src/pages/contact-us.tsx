@@ -12,14 +12,14 @@ export default function ContactUs() {
           content="Contact Us - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Contact Us - Fair Data Innovations Hub"
         />
 
         <link rel="canonical" href="https://fairdataihub.org/contact-us" />
         <meta property="og:url" content="https://fairdataihub.org/contact-us" />
         <meta
-          property="twitter:url"
+          name="twitter:url"
           content="https://fairdataihub.org/contact-us"
         />
 
@@ -32,7 +32,7 @@ export default function ContactUs() {
           content="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
         />
 
@@ -41,7 +41,7 @@ export default function ContactUs() {
           content="https://fairdataihub.org/thumbnails/contact.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/contact.png"
         />
       </Head>

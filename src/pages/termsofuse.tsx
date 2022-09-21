@@ -12,14 +12,14 @@ export default function TermsOfUse() {
           content="Terms of Use - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Terms of Use - Fair Data Innovations Hub"
         />
 
         <link rel="canonical" href="https://fairdataihub.org/termsofuse" />
         <meta property="og:url" content="https://fairdataihub.org/termsofuse" />
         <meta
-          property="twitter:url"
+          name="twitter:url"
           content="https://fairdataihub.org/termsofuse"
         />
 
@@ -32,7 +32,7 @@ export default function TermsOfUse() {
           content="View the Terms of Use of fairdataihub.org"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="View the Terms of Use of fairdataihub.org"
         />
 
@@ -41,7 +41,7 @@ export default function TermsOfUse() {
           content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>

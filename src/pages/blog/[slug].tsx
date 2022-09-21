@@ -72,7 +72,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
           content={`${title} - Blog | Fair Data Innovations Hub`}
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content={`${title} - Blog | Fair Data Innovations Hub`}
         />
 
@@ -82,13 +82,13 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
           content={`https://fairdataihub.org/blog/${slug}`}
         />
         <meta
-          property="twitter:url"
+          name="twitter:url"
           content={`https://fairdataihub.org/blog/${slug}`}
         />
 
         <meta name="description" content={subtitle} />
         <meta property="og:description" content={subtitle} />
-        <meta property="twitter:description" content={subtitle} />
+        <meta name="twitter:description" content={subtitle} />
 
         <meta
           property="og:image"
@@ -97,7 +97,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
           )}&description=${encodeURIComponent(subtitle)}`}
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content={`https://og.fairdataihub.org/api/ogimage?title=${encodeURIComponent(
             title,
           )}&description=${encodeURIComponent(subtitle)}`}

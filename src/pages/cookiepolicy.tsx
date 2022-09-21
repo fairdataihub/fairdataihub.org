@@ -12,7 +12,7 @@ export default function CookiePolicy() {
           content="Cookie Policy - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Cookie Policy - Fair Data Innovations Hub"
         />
 
@@ -22,7 +22,7 @@ export default function CookiePolicy() {
           content="https://fairdataihub.org/cookiepolicy"
         />
         <meta
-          property="twitter:url"
+          name="twitter:url"
           content="https://fairdataihub.org/cookiepolicy"
         />
 
@@ -35,7 +35,7 @@ export default function CookiePolicy() {
           content="View the Cookie Policy of fairdataihub.org"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="View the Cookie Policy of fairdataihub.org"
         />
 
@@ -44,7 +44,7 @@ export default function CookiePolicy() {
           content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>

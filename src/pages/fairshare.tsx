@@ -17,16 +17,13 @@ export default function Fairshare() {
           content="FAIRshare - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="FAIRshare - Fair Data Innovations Hub"
         />
 
         <link rel="canonical" href="https://fairdataihub.org/fairshare" />
         <meta property="og:url" content="https://fairdataihub.org/fairshare" />
-        <meta
-          property="twitter:url"
-          content="https://fairdataihub.org/fairshare"
-        />
+        <meta name="twitter:url" content="https://fairdataihub.org/fairshare" />
 
         <meta
           name="description"
@@ -37,7 +34,7 @@ export default function Fairshare() {
           content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         />
 
@@ -46,7 +43,7 @@ export default function Fairshare() {
           content="https://fairdataihub.org/thumbnails/fairshare.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/fairshare.png"
         />
       </Head>

@@ -46,7 +46,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
           content={`${tag} - Tags | Fair Data Innovations Hub`}
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content={`${tag} - Tags | Fair Data Innovations Hub`}
         />
 
@@ -56,7 +56,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
           content={`https://fairdataihub.org/tags${tag}`}
         />
         <meta
-          property="twitter:url"
+          name="twitter:url"
           content={`https://fairdataihub.org/tags${tag}`}
         />
 
@@ -69,7 +69,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
           content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
         />
 
@@ -78,7 +78,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
           content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>

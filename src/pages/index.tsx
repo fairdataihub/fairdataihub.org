@@ -12,11 +12,11 @@ export default function Home() {
       <Head>
         <title>Fair Data Innovations Hub</title>
         <meta property="og:title" content="Fair Data Innovations Hub" />
-        <meta property="twitter:title" content="Fair Data Innovations Hub" />
+        <meta name="twitter:title" content="Fair Data Innovations Hub" />
 
         <link rel="canonical" href="https://fairdataihub.org" />
         <meta property="og:url" content="https://fairdataihub.org" />
-        <meta property="twitter:url" content="https://fairdataihub.org" />
+        <meta name="twitter:url" content="https://fairdataihub.org" />
 
         <meta
           name="description"
@@ -27,7 +27,7 @@ export default function Home() {
           content="FAIR Data Innovations Hub is an organization dedicated to building open source tools that help biomedical researchers understand and follow FAIR Data Principles when showcasing their findings"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="FAIR Data Innovations Hub is an organization dedicated to building open source tools that help biomedical researchers understand and follow FAIR Data Principles when showcasing their findings"
         />
 
@@ -36,7 +36,7 @@ export default function Home() {
           content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>

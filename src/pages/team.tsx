@@ -224,13 +224,13 @@ export default function Team() {
           content="Meet the Team - Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Meet the Team - Fair Data Innovations Hub"
         />
 
         <link rel="canonical" href="https://fairdataihub.org/team" />
         <meta property="og:url" content="https://fairdataihub.org/team" />
-        <meta property="twitter:url" content="https://fairdataihub.org/team" />
+        <meta name="twitter:url" content="https://fairdataihub.org/team" />
 
         <meta
           name="description"
@@ -241,7 +241,7 @@ export default function Team() {
           content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
         />
 
@@ -250,7 +250,7 @@ export default function Team() {
           content="https://fairdataihub.org/thumbnails/team.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/team.png"
         />
       </Head>

@@ -18,16 +18,13 @@ const Categories: React.FC<FuncProps> = ({ categoriesList }) => {
           content="Categories - Fair Data Innovations Hub "
         />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Categories - Fair Data Innovations Hub"
         />
 
         <link rel="canonical" href="https://fairdataihub.org/category" />
         <meta property="og:url" content="https://fairdataihub.org/category" />
-        <meta
-          property="twitter:url"
-          content="https://fairdataihub.org/category"
-        />
+        <meta name="twitter:url" content="https://fairdataihub.org/category" />
 
         <meta
           name="description"
@@ -38,7 +35,7 @@ const Categories: React.FC<FuncProps> = ({ categoriesList }) => {
           content="Updates from FAIR Data Innovations Hub and its team."
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="Updates from FAIR Data Innovations Hub and its team."
         />
 
@@ -47,7 +44,7 @@ const Categories: React.FC<FuncProps> = ({ categoriesList }) => {
           content="https://fairdataihub.org/thumbnails/index.png"
         />
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://fairdataihub.org/thumbnails/index.png"
         />
       </Head>
