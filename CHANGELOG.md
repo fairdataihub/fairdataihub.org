@@ -1,3 +1,10 @@
+# [2.19.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.18.0...v2.19.0) (2022-09-21)
+
+
+### Features
+
+* posts for 9.2.0 and 9.1.0 releases ([#237](https://github.com/fairdataihub/fairdataihub.org/issues/237)) ([bf344c9](https://github.com/fairdataihub/fairdataihub.org/commit/bf344c91465d31fe0a03d1778d294fc5a43a1eaf))
+
 # [2.18.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.17.1...v2.18.0) (2022-09-20)
 
 ### Features
