@@ -9,6 +9,7 @@ module.exports = {
       'img.shields.io',
       'researcherprofiles.org',
       'images.unsplash.com',
+      'raw.githubusercontent.com',
     ],
   },
 };
