@@ -112,7 +112,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
       <Link href="/blog" passHref>
         <div className="text-url top-0 left-0 my-4 mx-4 cursor-pointer py-1 text-[14px] font-semibold hover:underline sm:absolute sm:text-base">
           <div className="flex items-center justify-center">
-            <Icon icon="eva:arrow-ios-back-fill" /> Go back
+            <Icon icon="eva:arrow-ios-back-fill" /> All Blog Posts
           </div>
         </div>
       </Link>
@@ -147,7 +147,11 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
           )}
         </div>
         <div className=" ">
-          <h3 className="mb-2 text-lg font-bold text-accent">{category}</h3>
+          <Link href={`/category/${category}`} passHref>
+            <h3 className="mb-2 cursor-pointer text-lg font-bold text-accent hover:underline">
+              {category}
+            </h3>
+          </Link>
           <h3 className="mb-3 text-base font-medium text-slate-500">
             {dayjs(date).format(`dddd, MMMM D, YYYY`)}
           </h3>
