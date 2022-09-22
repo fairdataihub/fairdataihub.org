@@ -1,9 +1,8 @@
 ## [2.19.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.19.0...v2.19.1) (2022-09-22)
 
-
 ### Bug Fixes
 
-* 🐛 update twitter meta tag property ([c27c686](https://github.com/fairdataihub/fairdataihub.org/commit/c27c686ed6019edb4e18ab66eb7ce556f6368588))
+- 🐛 update twitter meta tag property ([c27c686](https://github.com/fairdataihub/fairdataihub.org/commit/c27c686ed6019edb4e18ab66eb7ce556f6368588))
 
 # [2.19.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.18.0...v2.19.0) (2022-09-21)
 
