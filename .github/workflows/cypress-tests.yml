@@ -30,17 +30,12 @@ jobs:
     name: E2E on Firefox
 
     container:
-      image: cypress/browsers:node12.18.3-chrome87-ff82
+      image: cypress/browsers:node12.16.1-chrome80-ff73
       options: --user 1001
 
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16
 
       - name: Install Node.js dependencies
         run: yarn install --frozen-lockfile
@@ -67,9 +62,6 @@ jobs:
 
       - name: Install Node.js dependencies
         run: yarn install --frozen-lockfile
-
-      - name: Install cypress
-        run: cypress install
 
       - name: Run Cypress tests on Edge
         uses: cypress-io/github-action@v4
