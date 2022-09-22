@@ -52,9 +52,12 @@ jobs:
           browser: firefox
 
   edge:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     name: E2E on Edge
+    
+    container: 
+      image: cypress/browsers:node14.10.1-edge88
 
     steps:
       - name: Check out Git repository
@@ -67,9 +70,6 @@ jobs:
 
       - name: Install Node.js dependencies
         run: yarn install --frozen-lockfile
-        
-      - name: Install cypress
-        run: cypress install
 
       - name: Run Cypress tests on Edge
         uses: cypress-io/github-action@v4
