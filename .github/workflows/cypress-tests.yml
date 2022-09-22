@@ -36,6 +36,11 @@ jobs:
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
+        
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
 
       - name: Install Node.js dependencies
         run: yarn install --frozen-lockfile
