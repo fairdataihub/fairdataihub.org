@@ -10,9 +10,21 @@ export default defineConfig({
 
     setupNodeEvents: (on, _config) => {
       on(`task`, {
-        readdirSync({ path }) {
-          console.log(`readdirSync ${path}`);
-          return fs.readdirSync(path);
+        async projectRootFolder() {
+          return fs.realpathSync(__dirname);
+        },
+        readdirSync(path) {
+          return new Promise((resolve, _reject) => {
+            const filesObj = fs.readdirSync(path, { withFileTypes: true });
+
+            const filesArray: string[] = [];
+
+            filesObj.forEach((item) => {
+              filesArray.push(item.name);
+            });
+
+            resolve(filesArray);
+          });
         },
       });
     },
