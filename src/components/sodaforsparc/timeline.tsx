@@ -3,7 +3,7 @@ export default function Timeline() {
     {
       longDate: `December 2018`,
       title: `Birth of SODA for SPARC`,
-      content: `The first prototype of SODA for SPARC is developed during the 2018 NIH SPARC Hackathon where it won the Public's Choice Award.`,
+      content: `The first prototype of SODA for SPARC is developed during the 2018 NIH SPARC Hackathon where it won the People's Choice Award.`,
     },
     {
       longDate: `May 2019 - Aug 2020`,
