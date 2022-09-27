@@ -101,6 +101,10 @@
     @apply my-1 text-base font-normal leading-7 text-gray-800;
   }
 
+  .prose > div > figure > figcaption {
+    @apply flex justify-center;
+  }
+
   .arrow-animate {
     animation: bounce ease-in-out 2s 5 alternate-reverse;
   }

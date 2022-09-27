@@ -29,7 +29,12 @@ A major aim of the SPARC program is to maximize discoveries from data generated 
 
 While supportive of this data-sharing initiative, SPARC-funded researchers expressed difficulties mainly due to a lack of time for learning and implementing these complex and extensive guidelines. I experienced these difficulties firsthand when I was put in charge of curating and sharing data from the SPARC awards received by the California Medical Innovations Institute. To address these difficulties, I had the idea of developing a tool that would guide me step-by-step into making my data compliant with the SPARC guidelines and would automatically perform tasks that could be accomplished by a computer, such as creating some of the metadata files. With a team of other SPARC researchers, we built a prototype of such a tool during the 2018 SPARC Hackathon where it received the People's Choice Award. Presenting to researchers a tool that will save them time and effort turned out to be a winning formula. While the winning prize at the Hackathon was only a “SPARC” branded mug, the NIH expressed great interest in funding further development of this software. This is how we started in May 2019 the development of [SODA (Software to Organize Data Automatically)](https://fairdataihub.org/sodaforsparc), a cross-platform and open-source desktop software. The goal of SODA is to simplify data curation and sharing for SPARC researchers through a software that combines an intuitive user interface and automation. Various evaluations throughout the development have shown that SODA reduces researchers' time, complexity, and human errors in the SPARC data curation and sharing process.
 
-![The SPARC 2018 People's Choice Award certificate (left) along with the famous winning “trophy” (right).](https://fairdataihub.org/images/blog/certificate-mug-hackathon.png)
+<figure>
+  <img
+  src="https://fairdataihub.org/images/blog/certificate-mug-hackathon.png"
+  alt="The SPARC 2018 People's Choice Award certificate (left) along with the famous winning “trophy” (right).">
+  <figcaption>The SPARC 2018 People's Choice Award certificate (left) along with the famous winning “trophy” (right)</figcaption>
+</figure>
 
 ## Plans for the upcoming year
 
@@ -45,7 +50,12 @@ The SODA application is now in its fourth year of funding. During this Phase 4 (
 
 Our long-term goal is to reduce as much as possible the time and effort required to curate and share data according to the SPARC guidelines. We believe that the rapid dissemination of well-curated SPARC data through SODA will continue to enhance SPARC's mission of accelerating the development of neuromodulation devices. As the SPARC guidelines are adopted outside of SPARC, we believe that SODA will similarly benefit these projects as well.
 
-![Screenshot of the starting user interface of SODA.](https://fairdataihub.org/images/hero/soda-app-macos.png)
+<figure>
+  <img
+  src="https://fairdataihub.org/images/hero/soda-app-macos.png"
+  alt="Screenshot of the starting user interface of SODA.">
+  <figcaption>Screenshot of the starting user interface of SODA</figcaption>
+</figure>
 
 ## Funding and collaborators
 
