@@ -1,5 +1,5 @@
 ---
-title: 'FAIRshare meets Figshare'
+title: 'FAIRshare Meets Figshare'
 authors:
   - 'SanjaySoundarajan'
 date: '2022-06-03'

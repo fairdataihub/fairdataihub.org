@@ -1,5 +1,5 @@
 ---
-title: 'The FAIR Data Innovations Hub is a part of a new national Artificial Intelligence (AI) initiative!'
+title: 'The FAIR Data Innovations Hub Is a Part of a New National Artificial Intelligence (AI) Initiative!'
 authors:
   - 'BhaveshPatel'
 date: '2022-09-16'

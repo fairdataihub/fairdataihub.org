@@ -1,5 +1,5 @@
 ---
-title: 'An expanded GitHub workflow'
+title: 'An Expanded GitHub Workflow'
 authors:
   - 'SanjaySoundarajan'
 date: '2022-08-31'
