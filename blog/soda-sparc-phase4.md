@@ -52,7 +52,7 @@ Our long-term goal is to reduce as much as possible the time and effort required
 
 <figure>
   <img
-  src="https://fairdataihub.org/images/hero/soda-app-macos.png"
+  src="https://fairdataihub.org/images/blog/soda-app-macos.png"
   alt="Screenshot of the starting user interface of SODA.">
   <figcaption>Screenshot of the starting user interface of SODA</figcaption>
 </figure>
