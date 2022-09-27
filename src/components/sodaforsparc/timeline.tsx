@@ -18,7 +18,12 @@ export default function Timeline() {
     {
       longDate: `Sept 2021 - Aug 2022`,
       title: `Phase III development`,
-      content: `Support will be provided for the evolving SPARC guidelines. A guided mode will be integrated to simplify further data curation, and the integration with the SDS validator will be initiated.`,
+      content: `Support is provided for the evolving SPARC guidelines. A Guided Mode is implement to further streamline data curation and sharing. Integration with the SDS validator is initiated.`,
+    },
+    {
+      longDate: `Sept 2022 - Aug 2023`,
+      title: `Phase IV development`,
+      content: `The SPARC data curation and sharing worflows will be further streamlined. Full integration will be achieved with the SDS validator and the new Pennsieve upload method. Support will be provided for the submission of non-SPARC data.`,
     },
   ];
 
