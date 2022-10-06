@@ -1,16 +1,21 @@
 import { defineConfig } from 'cypress';
 import fs from 'fs';
 import fm from 'front-matter';
+import path from 'path';
 // Cypress configuration options
 
 interface returnObjectType {
   name: string;
   title: string;
+  slug: string;
+  subtitle: string;
 }
 
 interface FrontMatter {
   attributes: {
     title: string;
+    slug: string;
+    subtitle: string;
   };
 }
 
@@ -26,37 +31,36 @@ export default defineConfig({
             resolve(fs.realpathSync(__dirname));
           });
         },
-        readFrontMatter(path) {
+        readFrontMatter(folderPath) {
           return new Promise((resolve, _reject) => {
             const combinePath = (rp: string, sp: string) => {
               return `${rp}${process.platform === `win32` ? `\\` : `/`}${sp}`;
             };
 
-            const filesObj = fs.readdirSync(path, {
+            const filesObj = fs.readdirSync(folderPath, {
               withFileTypes: true,
             });
 
             const filesArray: any = [];
 
-            filesObj.forEach((item) => {
+            filesObj.forEach(async (item) => {
               const fileObject: returnObjectType = {
                 name: item.name,
                 title: ``,
+                slug: ``,
+                subtitle: ``,
               };
 
-              fs.readFile(
-                combinePath(path, item.name),
+              const data = fs.readFileSync(
+                combinePath(folderPath, item.name),
                 `utf8`,
-                function (err, data) {
-                  if (err) throw err;
-
-                  const content: FrontMatter = fm(data);
-
-                  fileObject.title = content.attributes.title;
-                },
               );
 
-              console.log(fileObject);
+              const content: FrontMatter = fm(data);
+
+              fileObject.title = content.attributes.title;
+              fileObject.slug = path.parse(item.name).name;
+              fileObject.subtitle = content.attributes.subtitle;
 
               filesArray.push(fileObject);
             });

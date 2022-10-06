@@ -19,38 +19,41 @@ describe('Blog page', () => {
 
             cy.wait(200);
 
+            console.log(file);
+
             cy.contains(file.title);
+            cy.contains(file.subtitle);
           });
         },
       );
     });
   });
 
-  // it('Navigate through each article', () => {
-  //   cy.visit('/blog');
+  it('Navigate through each article', () => {
+    cy.visit('/blog');
 
-  //   //gather all blogs and go through each page
-  //   cy.get('article').then((elem) => {
-  //     cy.log(elem);
+    //gather all blogs and go through each page
+    cy.get('article').then((elem) => {
+      cy.log(elem);
 
-  //     for (const item of elem) {
-  //       cy.wait(200);
-  //       cy.get(item.children[1].children[3])
-  //         .invoke('attr', 'href')
-  //         .then((href) => {
-  //           cy.log(href);
-  //           cy.visit(href);
-  //           // what do after visiting
-  //           /*
-  //               possible checks:
-  //               Check blog content, check file source with nofs/fs
-  //               */
-  //           cy.wait(300);
-  //         });
-  //       //reset and return to blog page
-  //       cy.visit('/blog');
-  //       cy.wait(300);
-  //     }
-  //   });
-  // });
+      for (const item of elem) {
+        cy.wait(200);
+        cy.get(item.children[1].children[3])
+          .invoke('attr', 'href')
+          .then((href) => {
+            cy.log(href);
+            cy.visit(href);
+            // what do after visiting
+            /*
+                possible checks:
+                Check blog content, check file source with nofs/fs
+                */
+            cy.wait(300);
+          });
+        //reset and return to blog page
+        cy.visit('/blog');
+        cy.wait(300);
+      }
+    });
+  });
 });
