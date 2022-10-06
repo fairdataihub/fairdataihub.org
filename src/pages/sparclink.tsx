@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
-import Hero from '@/components/sparclink/hero';
 import About from '@/components/sparclink/about';
+import Hero from '@/components/sparclink/hero';
 import Info from '@/components/sparclink/info';
 import Publications from '@/components/sparclink/publications';
 

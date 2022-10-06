@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 import LottieAnimation from '@/components/lotties';
+
 import heroLottie from '../../assets/lotties/hero.json';
 
 export default function Hero() {

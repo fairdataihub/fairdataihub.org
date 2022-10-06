@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
-import Hero from '@/components/aqua/hero';
 import About from '@/components/aqua/about';
+import Hero from '@/components/aqua/hero';
 import Info from '@/components/aqua/info';
 import Publications from '@/components/aqua/publications';
 import Tools from '@/components/aqua/tools';

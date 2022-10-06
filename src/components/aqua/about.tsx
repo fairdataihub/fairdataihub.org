@@ -1,8 +1,8 @@
 import {
-  ComputerDesktopIcon,
   BoltIcon,
-  ScaleIcon,
+  ComputerDesktopIcon,
   ExclamationCircleIcon,
+  ScaleIcon,
 } from '@heroicons/react/24/outline';
 
 export default function About() {
