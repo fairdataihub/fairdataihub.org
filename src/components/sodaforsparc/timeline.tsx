@@ -3,7 +3,7 @@ export default function Timeline() {
     {
       longDate: `December 2018`,
       title: `Birth of SODA for SPARC`,
-      content: `The first prototype of SODA for SPARC is developed during the 2018 NIH SPARC Hackathon where it won the Public's Choice Award.`,
+      content: `The first prototype of SODA for SPARC is developed during the 2018 NIH SPARC Hackathon where it won the People's Choice Award.`,
     },
     {
       longDate: `May 2019 - Aug 2020`,
@@ -18,7 +18,12 @@ export default function Timeline() {
     {
       longDate: `Sept 2021 - Aug 2022`,
       title: `Phase III development`,
-      content: `Support will be provided for the evolving SPARC guidelines. A guided mode will be integrated to simplify further data curation, and the integration with the SDS validator will be initiated.`,
+      content: `Support is provided for the evolving SPARC guidelines. A Guided Mode is implement to further streamline data curation and sharing. Integration with the SDS validator is initiated.`,
+    },
+    {
+      longDate: `Sept 2022 - Aug 2023`,
+      title: `Phase IV development`,
+      content: `The SPARC data curation and sharing worflows will be further streamlined. Full integration will be achieved with the SDS validator and the new Pennsieve upload method. Support will be provided for the submission of non-SPARC data.`,
     },
   ];
 

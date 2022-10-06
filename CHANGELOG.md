@@ -1,3 +1,15 @@
+# [2.21.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.20.0...v2.21.0) (2022-09-27)
+
+### Features
+
+- ✨ soda phase 4 blog post ([53cbafc](https://github.com/fairdataihub/fairdataihub.org/commit/53cbafcff2b516ab983056aac7e4ca9cf0363e8a))
+
+# [2.20.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.19.1...v2.20.0) (2022-09-27)
+
+### Features
+
+- ✨ added Phase 4 details to the SODA timeline ([91e9bbe](https://github.com/fairdataihub/fairdataihub.org/commit/91e9bbe9aa65a10c006b6ef39665dac1971ac843))
+
 ## [2.19.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.19.0...v2.19.1) (2022-09-22)
 
 ### Bug Fixes

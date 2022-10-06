@@ -90,7 +90,7 @@ export default function Info() {
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/contributors/bvhpatel/SODA.svg?style=flat-square"
+                        src="https://img.shields.io/github/contributors/fairdataihub/SODA-for-SPARC.svg?style=flat-square"
                         alt="soda for sparc contributors"
                       />
                     </a>
@@ -102,7 +102,7 @@ export default function Info() {
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/stars/bvhpatel/SODA.svg?style=flat-square"
+                        src="https://img.shields.io/github/stars/fairdataihub/SODA-for-SPARC.svg?style=flat-square"
                         alt="soda for sparc stars"
                       />
                     </a>
@@ -114,7 +114,7 @@ export default function Info() {
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/issues/bvhpatel/SODA.svg?style=flat-square"
+                        src="https://img.shields.io/github/issues/fairdataihub/SODA-for-SPARC.svg?style=flat-square"
                         alt="soda for sparc issues"
                       />
                     </a>
@@ -126,7 +126,7 @@ export default function Info() {
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
-                        src="https://img.shields.io/github/license/bvhpatel/SODA.svg?style=flat-square"
+                        src="https://img.shields.io/github/license/fairdataihub/SODA-for-SPARC.svg?style=flat-square"
                         alt="soda for sparc license"
                       />
                     </a>

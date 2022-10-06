@@ -101,6 +101,10 @@
     @apply my-1 text-base font-normal leading-7 text-gray-800;
   }
 
+  .prose > div > figure > figcaption {
+    @apply pt-1 text-center text-sm sm:pt-2;
+  }
+
   .arrow-animate {
     animation: bounce ease-in-out 2s 5 alternate-reverse;
   }
