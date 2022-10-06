@@ -1,11 +1,11 @@
 import Head from 'next/head';
 
-import Hero from '@/components/sodaforsparc/hero';
 import About from '@/components/sodaforsparc/about';
+import Hero from '@/components/sodaforsparc/hero';
 import Impact from '@/components/sodaforsparc/impact';
 import Info from '@/components/sodaforsparc/info';
-import Timeline from '@/components/sodaforsparc/timeline';
 import Publications from '@/components/sodaforsparc/publications';
+import Timeline from '@/components/sodaforsparc/timeline';
 
 export default function SodaForSparc() {
   return (

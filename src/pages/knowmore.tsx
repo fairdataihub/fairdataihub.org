@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
-import Hero from '@/components/knowmore/hero';
 import About from '@/components/knowmore/about';
+import Hero from '@/components/knowmore/hero';
 import Info from '@/components/knowmore/info';
 import Publications from '@/components/knowmore/publications';
 

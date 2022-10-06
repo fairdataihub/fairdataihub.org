@@ -50,6 +50,7 @@ describe('Blog page', () => {
                 */
             cy.wait(300);
           });
+
         //reset and return to blog page
         cy.visit('/blog');
         cy.wait(300);

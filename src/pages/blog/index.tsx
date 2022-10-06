@@ -1,12 +1,10 @@
+import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
+import Head from 'next/head';
 import wordsCount from 'words-count';
 
-import Head from 'next/head';
-
 import PostEntry from '@/components/blog/postEntry';
-
-import dayjs from 'dayjs';
 
 type BlogList = {
   slug: string;

@@ -1,8 +1,8 @@
 import {
-  CogIcon,
   BoltIcon,
-  ScaleIcon,
+  CogIcon,
   ExclamationCircleIcon,
+  ScaleIcon,
 } from '@heroicons/react/24/outline';
 
 export default function Vision() {

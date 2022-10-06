@@ -1,14 +1,12 @@
+import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Head from 'next/head';
+import { useRouter } from 'next/router';
 import wordsCount from 'words-count';
 
-import { GetStaticPaths, GetStaticProps } from 'next';
-import { useRouter } from 'next/router';
-import Head from 'next/head';
-
 import PostEntry from '@/components/blog/postEntry';
-
-import dayjs from 'dayjs';
 
 type BlogList = {
   slug: string;
