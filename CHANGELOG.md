@@ -1,3 +1,11 @@
+## [2.21.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.0...v2.21.1) (2022-10-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @heroicons/react to v2.0.12 ([#257](https://github.com/fairdataihub/fairdataihub.org/issues/257)) ([2f3985b](https://github.com/fairdataihub/fairdataihub.org/commit/2f3985b1df8c7e97aaaa0e191a52ce00a1a0e802))
+* **deps:** update dependency swiper to v8.4.3 ([#258](https://github.com/fairdataihub/fairdataihub.org/issues/258)) ([2d11cf1](https://github.com/fairdataihub/fairdataihub.org/commit/2d11cf10bd5c5e56389632d5971d6278754713f5))
+
 # [2.21.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.20.0...v2.21.0) (2022-09-27)
 
 ### Features
