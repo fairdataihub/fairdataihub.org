@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@master
 
       - name: Create comment
-        uses: peter-evans/create-or-update-comment@v2.0.0
+        uses: peter-evans/create-or-update-comment@v2.1.0
         id: create_comment
         with:
           comment-author: 'fairdataihub-bot'
