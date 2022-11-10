@@ -1,3 +1,14 @@
+## [2.21.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.1...v2.21.2) (2022-11-10)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @giscus/react to v2.2.2 ([#262](https://github.com/fairdataihub/fairdataihub.org/issues/262)) ([be7c6e1](https://github.com/fairdataihub/fairdataihub.org/commit/be7c6e181f983d787e881a5b5d6b674b048d9487))
+* **deps:** update dependency @heroicons/react to v2.0.13 ([#263](https://github.com/fairdataihub/fairdataihub.org/issues/263)) ([a61f810](https://github.com/fairdataihub/fairdataihub.org/commit/a61f8101ec2ca6099ec3dd953020b4810aa83b50))
+* **deps:** update dependency @lottiefiles/lottie-player to v1.6.0 ([#268](https://github.com/fairdataihub/fairdataihub.org/issues/268)) ([6ab7835](https://github.com/fairdataihub/fairdataihub.org/commit/6ab7835f34746323cc213bbcc91275be3dbce101))
+* **deps:** update dependency react-lottie-player to v1.5.0 ([#270](https://github.com/fairdataihub/fairdataihub.org/issues/270)) ([a0f2582](https://github.com/fairdataihub/fairdataihub.org/commit/a0f25828c8234277e1cb886492906d138fd5160b))
+* **deps:** update dependency react-toastify to v9.1.1 ([#271](https://github.com/fairdataihub/fairdataihub.org/issues/271)) ([dd581ed](https://github.com/fairdataihub/fairdataihub.org/commit/dd581ede26fe1e994703a7f563e2308203952562))
+
 ## [2.21.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.0...v2.21.1) (2022-10-10)
 
 ### Bug Fixes
