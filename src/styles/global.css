@@ -88,7 +88,7 @@
     @apply pb-3 text-lg font-bold uppercase text-gray-800;
   }
   .footer-item {
-    @apply pb-2 font-medium text-gray-600 transition-all hover:text-gray-900;
+    @apply cursor-pointer pb-2 font-medium text-gray-600 transition-all hover:text-accent;
   }
 
   .heading {
