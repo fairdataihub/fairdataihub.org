@@ -1,3 +1,10 @@
+## [2.21.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.2...v2.21.3) (2022-11-17)
+
+
+### Bug Fixes
+
+* 🐛 update team photos ([#281](https://github.com/fairdataihub/fairdataihub.org/issues/281)) ([f948796](https://github.com/fairdataihub/fairdataihub.org/commit/f948796114e73b4da28e156b8ed6586412af227e))
+
 ## [2.21.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.1...v2.21.2) (2022-11-10)
 
 ### Bug Fixes
