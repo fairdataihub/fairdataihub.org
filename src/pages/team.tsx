@@ -191,7 +191,7 @@ export default function Team() {
       name: `Ismail Qaddoura (he/him)`,
       title: `Information Technology (IT) Manager`,
       bio: `Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.`,
-      image: `/images/people/ismail-full.JPG`,
+      image: `/images/people/ismail-full.jpg`,
       width: 2515,
       height: 3354,
       borderTop: true,
