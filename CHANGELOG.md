@@ -1,3 +1,10 @@
+## [2.21.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.3...v2.21.4) (2022-11-21)
+
+
+### Bug Fixes
+
+* 🐛 update image path ([8a905c1](https://github.com/fairdataihub/fairdataihub.org/commit/8a905c17c1c22a4c6c7275d1da8dc24fe0242c30))
+
 ## [2.21.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.2...v2.21.3) (2022-11-17)
 
 ### Bug Fixes
