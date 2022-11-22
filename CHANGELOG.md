@@ -1,3 +1,10 @@
+## [2.21.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.4...v2.21.5) (2022-11-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency rehype-highlight to v6 ([#277](https://github.com/fairdataihub/fairdataihub.org/issues/277)) ([43cfe9d](https://github.com/fairdataihub/fairdataihub.org/commit/43cfe9d32a949c57b66c3feb127d2a235c714142))
+
 ## [2.21.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.3...v2.21.4) (2022-11-21)
 
 ### Bug Fixes
