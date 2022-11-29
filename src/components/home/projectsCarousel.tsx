@@ -18,10 +18,10 @@ export default function ProjectsCarousel() {
       height: `50`,
     },
     {
-      src: `/images/carousel/sodasparc.png`,
+      src: `/images/carousel/aireadi-logo-2.png`,
       alt: `Navigate to AI-READI card`,
       width: `150`,
-      height: `50`,
+      height: `80`,
     },
     {
       src: `/images/carousel/FAIRshare-full.png`,
@@ -62,10 +62,10 @@ export default function ProjectsCarousel() {
     {
       name: `AI-READI`,
       id: `ai-readi`,
-      imageUrl: `/images/carousel/sodasparc.png`,
+      imageUrl: `/images/carousel/aireadi-logo-2.png`,
       imageWidth: `320`,
-      imageHeight: `103`,
-      description: `The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset that will enable future AI/ML driven research project to provide critical insights into type 2 diabetes mellitus (T2DM), including salutogenic pathways to return to health`,
+      imageHeight: `150`,
+      description: `The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset that will support future AI-drive research projects to provide critical insights into type 2 diabetes.`,
       page: `/aireadi`,
     },
     {

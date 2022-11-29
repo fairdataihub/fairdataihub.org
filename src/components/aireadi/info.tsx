@@ -123,7 +123,7 @@ export default function Info() {
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
                     The AI-READI project is funded by the National Institutes of
-                    Health (NIH)&apos;s Bridge2AI program. (NIAID).
+                    Health (NIH)&apos;s Bridge2AI program.
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a

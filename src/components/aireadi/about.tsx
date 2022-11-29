@@ -18,7 +18,7 @@ export default function About() {
           project is structured into six modules: Data Acquisition, Ethics,
           Standards, Teaming, Tools, and Skills & Workforce Development. The
           FAIR Data Innovations Hub is leading the Tools module.
-          <div className="mt-2 flex md:mt-1">
+          <div className="mt-2 flex w-full justify-center md:mt-1">
             <a
               href="https://doi.org/10.1038/sdata.2016.18"
               target="_blank"
@@ -99,6 +99,27 @@ export default function About() {
                 <ExclamationCircleIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
+                What data will be collected?
+              </p>
+            </dt>
+            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+              <div>
+                The project will aim to collect data from 4,000 participants. To
+                ensure the data is population-representative, the participants
+                will be balanced for three factors: disease severity,
+                race/ethnicity, and sex. Various data types will be collected
+                from each participant, including vitals, electrocardiogram,
+                glucose monitoring, physical activity, ophthalmic evaluation,
+                etc.
+              </div>
+            </dd>
+          </div>
+          <div className="relative">
+            <dt>
+              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
+                <BoltIcon className="h-6 w-6" aria-hidden="true" />
+              </div>
+              <p className="ml-16 text-xl font-medium sm:text-lg">
                 How will the project data be made AI-ready?
               </p>
             </dt>
@@ -141,29 +162,10 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <BoltIcon className="h-6 w-6" aria-hidden="true" />
-              </div>
-              <p className="ml-16 text-xl font-medium sm:text-lg">
-                What are the challenges?
-              </p>
-            </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
-              <div>
-                Support is lacking to educate and assist researchers in
-                preparing and sharing FAIR and ethically sourced datasets.
-                Manual curation approaches exist but are not suitable to manage
-                the large amount of data typically required for training AI/ML
-                models.
-              </div>
-            </dd>
-          </div>
-          <div className="relative">
-            <dt>
-              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
                 <ComputerDesktopIcon className="h-6 w-6" aria-hidden="true" />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                How will we tackle this challenge?
+                What is the fairdataihub`&apos;`s role in the project?
               </p>
             </dt>
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
