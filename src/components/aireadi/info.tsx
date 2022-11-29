@@ -17,36 +17,15 @@ export default function Info() {
     },
   ];
 
-  const collaboratorsList = [
-    {
-      name: `Zicheng Hu (UCSF)`,
-      id: `Zicheng-Hu-UCSF`,
-      href: `https://profiles.ucsf.edu/zicheng.hu`,
-      image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
-      type: `person`,
-    },
-    {
-      name: `The Butte Lab`,
-      id: `The-Butte-Lab`,
-      href: `https://buttelab.ucsf.edu/`,
-      image: `/images/collaborators/ucsf-logo.png`,
-      type: `lab`,
-    },
-    {
-      name: `The Jagannathan Lab`,
-      id: `The-Jagannathan-Lab`,
-      href: `https://med.stanford.edu/jagannathan-lab.html`,
-      image: `/images/collaborators/stanford-medicine-logo.png`,
-      type: `lab`,
-    },
-    {
-      name: `Dr. Greenhouse Lab`,
-      id: `Dr-Greenhouse-Lab`,
-      href: `https://profiles.ucsf.edu/bryan.greenhouse#toc-id2`,
-      image: `/images/collaborators/ucsf-logo.png`,
-      type: `lab`,
-    },
-  ];
+  // const collaboratorsList = [
+  //   {
+  //     name: `Zicheng Hu (UCSF)`,
+  //     id: `Zicheng-Hu-UCSF`,
+  //     href: `https://profiles.ucsf.edu/zicheng.hu`,
+  //     image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
+  //     type: `person`,
+  //   },
+  // ];
 
   return (
     <div>
@@ -232,6 +211,46 @@ export default function Info() {
                 </div>
               </div>
             </div>
+            {/* <div className="w-full">
+              <div>
+                <div className="mb-10 w-full sm:mb-5">
+                  <div className="grid grid-cols-2 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
+                    {collaboratorsList.map((collaborator) => (
+                      <a
+                        key={collaborator.name}
+                        href={collaborator.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`umami--click--${collaborator.id}-link`}
+                      >
+                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
+                          {collaborator.type === `person` ? (
+                            <Image
+                              src={collaborator.image}
+                              alt={collaborator.name + ` profile picture`}
+                              width={128}
+                              height={128}
+                              className="rounded-full"
+                            />
+                          ) : (
+                            <Image
+                              src={collaborator.image}
+                              alt={collaborator.name + ` profile picture`}
+                              width={220}
+                              height={150}
+                              objectFit="scale-down"
+                            />
+                          )}
+                          <p className="mt-3 ml-2 text-center font-asap text-lg font-normal">
+                            {collaborator.name}
+                          </p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
