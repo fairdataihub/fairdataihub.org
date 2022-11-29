@@ -9,7 +9,7 @@ import Timeline from '@/components/sodaforsparc/timeline';
 
 export default function SodaForSparc() {
   return (
-    <div>
+    <>
       <Head>
         <title>SODA for SPARC - Fair Data Innovations Hub</title>
         <meta
@@ -54,26 +54,24 @@ export default function SodaForSparc() {
         />
       </Head>
 
-      <main>
-        <section className="bg-white py-10 pt-16">
-          <Hero />
-        </section>
-        <section className="bg-gray-50 py-10 pt-16">
-          <About />
-        </section>
-        <section className="bg-white py-10 pt-16">
-          <Impact />
-        </section>
-        <section className="bg-gray-50 py-10 pt-16">
-          <Info />
-        </section>
-        <section className="bg-white py-10 pt-16">
-          <Timeline />
-        </section>
-        <section className="bg-white py-10 ">
-          <Publications />
-        </section>
-      </main>
-    </div>
+      <section className="bg-white py-10 pt-16">
+        <Hero />
+      </section>
+      <section className="bg-gray-50 py-10 pt-16">
+        <About />
+      </section>
+      <section className="bg-white py-10 pt-16">
+        <Impact />
+      </section>
+      <section className="bg-gray-50 py-10 pt-16">
+        <Info />
+      </section>
+      <section className="bg-white py-10 pt-16">
+        <Timeline />
+      </section>
+      <section className="bg-white py-10 ">
+        <Publications />
+      </section>
+    </>
   );
 }

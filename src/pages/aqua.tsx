@@ -8,7 +8,7 @@ import Tools from '@/components/aqua/tools';
 
 export default function Aqua() {
   return (
-    <div>
+    <>
       <Head>
         <title>AQUA - Fair Data Innovations Hub</title>
         <meta property="og:title" content="AQUA - Fair Data Innovations Hub" />
@@ -41,27 +41,25 @@ export default function Aqua() {
         />
       </Head>
 
-      <main>
-        <section className="bg-white py-10 pt-16">
-          <Hero />
-        </section>
+      <section className="bg-white py-10 pt-16">
+        <Hero />
+      </section>
 
-        <section className="bg-gray-50 py-10">
-          <About />
-        </section>
+      <section className="bg-gray-50 py-10">
+        <About />
+      </section>
 
-        <section className="bg-white py-10">
-          <Tools />
-        </section>
+      <section className="bg-white py-10">
+        <Tools />
+      </section>
 
-        <section className="bg-gray-50 py-10 ">
-          <Info />
-        </section>
+      <section className="bg-gray-50 py-10 ">
+        <Info />
+      </section>
 
-        <section className="bg-white py-10 ">
-          <Publications />
-        </section>
-      </main>
-    </div>
+      <section className="bg-white py-10 ">
+        <Publications />
+      </section>
+    </>
   );
 }
