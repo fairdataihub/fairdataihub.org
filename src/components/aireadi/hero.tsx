@@ -21,20 +21,18 @@ export default function Hero() {
           />
         </div>
         <div className="container mx-auto flex w-full flex-col-reverse items-center px-1 py-2 sm:py-4 md:py-10 lg:flex-row">
-          <div className="mb-2 flex flex-col items-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:flex-grow lg:pr-24">
+          <div className="mb-2 flex flex-col items-center justify-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:flex-grow lg:pr-24">
             <h1 className="mb-1 w-full text-center text-3xl font-black sm:text-4xl">
               AI-READI
             </h1>
-            <h2 className="mb-2 w-full text-center text-2xl font-medium sm:text-2xl">
+            <h2 className="mb-2 w-full max-w-xl text-center text-2xl font-medium sm:text-2xl">
               Artificial Intelligence Ready and Equitable Atlas for Diabetes
               Insights
             </h2>
-            <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
-              Generating a flagship AI-ready and ethically-sourced dataset
-              <br />
-              to boost future AI-driven discoveries in type 2 diabetes mellitus
+            <p className="mx-auto mb-8 max-w-lg text-center font-asap text-base leading-relaxed text-black">
+              Generating a flagship AI-ready and ethically-sourced dataset to
+              boost future AI-driven discoveries in type 2 diabetes mellitus
               (T2DM)
-              <br />
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <a

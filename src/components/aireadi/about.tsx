@@ -1,9 +1,4 @@
-import {
-  BoltIcon,
-  ComputerDesktopIcon,
-  ExclamationCircleIcon,
-  ScaleIcon,
-} from '@heroicons/react/24/outline';
+import { Icon } from '@iconify/react';
 
 export default function About() {
   return (
@@ -12,7 +7,7 @@ export default function About() {
         <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
           About
         </p>
-        <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
+        <p className="max-w-3xl font-asap text-xl text-black lg:mx-auto">
           AI-READI is one of the data generation projects funded by the National
           Institutes of Health (NIH)&apos;s Bridge2AI Program. The AI-READI
           project is structured into six modules: Data Acquisition, Ethics,
@@ -50,7 +45,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ScaleIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="mdi:target-arrow" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What is the goal of AI-READI project?
@@ -96,7 +91,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ExclamationCircleIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="mdi:files" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What data will be collected?
@@ -117,7 +112,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <BoltIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="eos-icons:ai" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 How will the project data be made AI-ready?
@@ -162,10 +157,10 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ComputerDesktopIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="carbon:cloud-app" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                What is the fairdataihub`&apos;`s role in the project?
+                What is the fairdataihub&apos;s role in the project?
               </p>
             </dt>
             <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
