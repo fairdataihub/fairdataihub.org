@@ -2,7 +2,7 @@ import Head from 'next/head';
 
 import About from '@/components/aireadi/about';
 import Hero from '@/components/aireadi/hero';
-import Impact from '@/components/aireadi/impact';
+// import Impact from '@/components/aireadi/impact';
 import Info from '@/components/aireadi/info';
 import Publications from '@/components/aireadi/publications';
 import Timeline from '@/components/aireadi/timeline';
@@ -55,13 +55,13 @@ export default function Aireadi() {
         <section className="bg-gray-50 py-10 pt-16">
           <About />
         </section>
-        <section className="bg-white py-10 pt-16">
+        {/* <section className="bg-white py-10 pt-16">
           <Impact />
-        </section>
-        <section className="bg-gray-50 py-10 pt-16">
+        </section> */}
+        <section className="bg-white py-10 pt-16">
           <Info />
         </section>
-        <section className="bg-white py-10 pt-16">
+        <section className="bg-gray-50 py-10 pt-16">
           <Timeline />
         </section>
         <section className="bg-white py-10 ">

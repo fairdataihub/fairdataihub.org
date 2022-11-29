@@ -13,31 +13,31 @@ export default function About() {
           project is structured into six modules: Data Acquisition, Ethics,
           Standards, Teaming, Tools, and Skills & Workforce Development. The
           FAIR Data Innovations Hub is leading the Tools module.
-          <div className="mt-2 flex w-full justify-center md:mt-1">
-            <a
-              href="https://doi.org/10.1038/sdata.2016.18"
-              target="_blank"
-              rel="noreferrer"
-              className="umami--click--learn-more-bridge2ai-link"
-            >
-              <p className="text-url hover-underline-animation">
-                Learn more about the NIH&apos;s Bridge2AI Program
-                <svg
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  className="arrow-animate ml-2 h-4 w-4"
-                  viewBox="0 0 24 24"
-                  data-v-6a723fb6=""
-                >
-                  <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
-                </svg>
-              </p>
-            </a>
-          </div>
         </p>
+        <div className="mt-2 flex w-full justify-center font-asap md:mt-1">
+          <a
+            href="https://doi.org/10.1038/sdata.2016.18"
+            target="_blank"
+            rel="noreferrer"
+            className="umami--click--learn-more-bridge2ai-link"
+          >
+            <p className="text-url hover-underline-animation">
+              Learn more about the NIH&apos;s Bridge2AI Program
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                className="arrow-animate ml-2 h-4 w-4"
+                viewBox="0 0 24 24"
+                data-v-6a723fb6=""
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" data-v-6a723fb6=""></path>
+              </svg>
+            </p>
+          </a>
+        </div>
       </div>
 
       <div className="mt-10">
