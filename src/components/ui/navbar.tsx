@@ -225,6 +225,19 @@ export default function Navbar() {
                         SODA for SPARC
                       </div>
                     </Link>
+                    <Link href="/aireadi" passHref>
+                      <div
+                        id="aireadi-page"
+                        className={
+                          `nav-item hover-underline-animation umami--click--aireadi-header mt-2 w-[200px]` +
+                          (router.pathname === `/aireadi`
+                            ? ` router-link-active `
+                            : ` `)
+                        }
+                      >
+                        AI-READI
+                      </div>
+                    </Link>
                     <Link href="/fairshare" passHref>
                       <div
                         id="fairshare-page"

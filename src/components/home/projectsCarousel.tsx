@@ -18,6 +18,12 @@ export default function ProjectsCarousel() {
       height: `50`,
     },
     {
+      src: `/images/carousel/aireadi-logo-2.png`,
+      alt: `Navigate to AI-READI card`,
+      width: `150`,
+      height: `80`,
+    },
+    {
       src: `/images/carousel/FAIRshare-full.png`,
       alt: `Navigate to FAIRshare card`,
       width: `200`,
@@ -52,6 +58,15 @@ export default function ProjectsCarousel() {
       imageHeight: `103`,
       description: `SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators according to the FAIR SPARC data standards.`,
       page: `/sodaforsparc`,
+    },
+    {
+      name: `AI-READI`,
+      id: `ai-readi`,
+      imageUrl: `/images/carousel/aireadi-logo-2.png`,
+      imageWidth: `320`,
+      imageHeight: `150`,
+      description: `The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset that will support future AI-drive research projects to provide critical insights into type 2 diabetes.`,
+      page: `/aireadi`,
     },
     {
       name: `FAIRshare`,

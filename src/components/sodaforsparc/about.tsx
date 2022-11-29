@@ -1,9 +1,4 @@
-import {
-  BoltIcon,
-  ComputerDesktopIcon,
-  ExclamationCircleIcon,
-  ScaleIcon,
-} from '@heroicons/react/24/outline';
+import { Icon } from '@iconify/react';
 
 export default function About() {
   return (
@@ -25,7 +20,11 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ScaleIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon
+                  icon="material-symbols:linear-scale"
+                  width={24}
+                  height={24}
+                />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What is SPARC?
@@ -70,7 +69,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ExclamationCircleIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="mdi:axis-arrow-info" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What are the FAIR SPARC Data Guidelines?
@@ -115,7 +114,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <BoltIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="mdi:account-hard-hat" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What are the challenges?
@@ -132,7 +131,7 @@ export default function About() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ComputerDesktopIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="ep:guide" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What does SODA for SPARC do?

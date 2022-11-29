@@ -1,9 +1,4 @@
-import {
-  BoltIcon,
-  CogIcon,
-  ExclamationCircleIcon,
-  ScaleIcon,
-} from '@heroicons/react/24/outline';
+import { Icon } from '@iconify/react';
 
 export default function Vision() {
   return (
@@ -23,7 +18,11 @@ export default function Vision() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ScaleIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon
+                  icon="material-symbols:linear-scale"
+                  width={24}
+                  height={24}
+                />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What are the FAIR Data Principles?
@@ -66,7 +65,11 @@ export default function Vision() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <ExclamationCircleIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon
+                  icon="fluent:important-12-filled"
+                  width={24}
+                  height={24}
+                />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 Why are FAIR data practices important?
@@ -84,7 +87,7 @@ export default function Vision() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <BoltIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon icon="mdi:account-hard-hat" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What are the challenges?
@@ -102,7 +105,11 @@ export default function Vision() {
           <div className="relative">
             <dt>
               <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <CogIcon className="h-6 w-6" aria-hidden="true" />
+                <Icon
+                  icon="material-symbols:auto-mode"
+                  width={24}
+                  height={24}
+                />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What do we do?
