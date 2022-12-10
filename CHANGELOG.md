@@ -1,9 +1,8 @@
 # [2.22.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.5...v2.22.0) (2022-11-29)
 
-
 ### Features
 
-* ✨ add AI-READI project ([#283](https://github.com/fairdataihub/fairdataihub.org/issues/283)) ([ab3caf8](https://github.com/fairdataihub/fairdataihub.org/commit/ab3caf8c2967ee0a9e9601d671698e1d7601aea2))
+- ✨ add AI-READI project ([#283](https://github.com/fairdataihub/fairdataihub.org/issues/283)) ([ab3caf8](https://github.com/fairdataihub/fairdataihub.org/commit/ab3caf8c2967ee0a9e9601d671698e1d7601aea2))
 
 ## [2.21.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.4...v2.21.5) (2022-11-22)
 
