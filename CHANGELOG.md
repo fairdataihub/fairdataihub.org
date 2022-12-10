@@ -1,3 +1,11 @@
+# [2.23.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.22.0...v2.23.0) (2022-12-10)
+
+
+### Features
+
+* ✨ added Ligia to the team page ([ea6dc25](https://github.com/fairdataihub/fairdataihub.org/commit/ea6dc252a32ef0330e4c7b25a04ba2fb1872cda9))
+* ✨ added Ligia to the team page ([d533322](https://github.com/fairdataihub/fairdataihub.org/commit/d5333220996dfad8dcf2d27e4d7dffb6bb824dfb))
+
 # [2.22.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.21.5...v2.22.0) (2022-11-29)
 
 ### Features
