@@ -142,15 +142,15 @@ export default function Team() {
       id: `Ligia-Amezcua`,
       name: `Ligia Amezcua (she/her)`,
       title: `Director of Finance and Administration`,
-      bio: `Ligia Amezcua joined Calmi2 in September of 2014. She is responsible for financial management, accounting, budgeting, internal controls, and federal compliance. Ligia’s primary focus is to mentor the administrative staff, to work proudly, and professionally to support the research.`,
+      bio: `Ligia Amezcua is a native of San Diego. She joined Calmi2 in September of 2014 and is responsible for financial management, accounting, budgeting, internal controls, and federal compliance. Ligia’s primary focus is to mentor the administrative staff, to work proudly, and professionally to support the research.`,
       image: `/images/people/ligia-full.jpg`,
       width: 960,
       height: 1280,
       borderTop: true,
       borderBottom: false,
       education: [
-        `M.B.A in Global Management (University of Phoenix)`,
-        `B.A. in Management (University of Redlands)`,
+        `M.B.A in Global Management (University of Phoenix, 2012)`,
+        `B.B.A. in Management (University of Redlands, 2000)`,
       ],
       twitter: {
         show: false,
