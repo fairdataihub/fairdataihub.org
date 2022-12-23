@@ -1,21 +1,18 @@
 # [2.25.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.24.0...v2.25.0) (2022-12-23)
 
-
 ### Features
 
-* ✨ add custom css for uptime status page ([8f56670](https://github.com/fairdataihub/fairdataihub.org/commit/8f56670e9a8120d3de22a6da0eb0f0a610addb5c))
+- ✨ add custom css for uptime status page ([8f56670](https://github.com/fairdataihub/fairdataihub.org/commit/8f56670e9a8120d3de22a6da0eb0f0a610addb5c))
 
 # [2.24.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.23.0...v2.24.0) (2022-12-10)
 
-
 ### Bug Fixes
 
-* 🐛 edits to Ligia profile ([cae37d8](https://github.com/fairdataihub/fairdataihub.org/commit/cae37d824303e454de2dd96a56cc224d6d33cefb))
-
+- 🐛 edits to Ligia profile ([cae37d8](https://github.com/fairdataihub/fairdataihub.org/commit/cae37d824303e454de2dd96a56cc224d6d33cefb))
 
 ### Features
 
-* ✨ edits to Ligia profile ([08b3b89](https://github.com/fairdataihub/fairdataihub.org/commit/08b3b895c5232a376f4d2002015badfdc077a0d0))
+- ✨ edits to Ligia profile ([08b3b89](https://github.com/fairdataihub/fairdataihub.org/commit/08b3b895c5232a376f4d2002015badfdc077a0d0))
 
 # [2.23.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.22.0...v2.23.0) (2022-12-10)
 
