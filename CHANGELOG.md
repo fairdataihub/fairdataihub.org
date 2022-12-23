@@ -1,3 +1,10 @@
+# [2.25.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.24.0...v2.25.0) (2022-12-23)
+
+
+### Features
+
+* ✨ add custom css for uptime status page ([8f56670](https://github.com/fairdataihub/fairdataihub.org/commit/8f56670e9a8120d3de22a6da0eb0f0a610addb5c))
+
 # [2.24.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.23.0...v2.24.0) (2022-12-10)
 
 
