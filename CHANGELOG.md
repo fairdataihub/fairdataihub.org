@@ -1,9 +1,8 @@
 # [2.26.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.25.0...v2.26.0) (2022-12-23)
 
-
 ### Features
 
-* ✨ added small logo ([f365e0e](https://github.com/fairdataihub/fairdataihub.org/commit/f365e0e0dacafbe771bbff664b11d81d48d9397e))
+- ✨ added small logo ([f365e0e](https://github.com/fairdataihub/fairdataihub.org/commit/f365e0e0dacafbe771bbff664b11d81d48d9397e))
 
 # [2.25.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.24.0...v2.25.0) (2022-12-23)
 
