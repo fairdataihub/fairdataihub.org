@@ -1,3 +1,10 @@
+# [2.27.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.26.1...v2.27.0) (2023-01-12)
+
+
+### Features
+
+* ✨ add team member ([#307](https://github.com/fairdataihub/fairdataihub.org/issues/307)) ([ab3ae9b](https://github.com/fairdataihub/fairdataihub.org/commit/ab3ae9bbee0acc3953260a6179162029ce753c90))
+
 ## [2.26.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.26.0...v2.26.1) (2023-01-12)
 
 
