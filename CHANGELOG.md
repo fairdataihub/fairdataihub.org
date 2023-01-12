@@ -1,3 +1,14 @@
+## [2.26.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.26.0...v2.26.1) (2023-01-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @giscus/react to v2.2.6 ([#300](https://github.com/fairdataihub/fairdataihub.org/issues/300)) ([04b44e6](https://github.com/fairdataihub/fairdataihub.org/commit/04b44e67683737362eb1a62b0b9cb97bc286f7a2))
+* **deps:** update dependency @lottiefiles/lottie-player to v1.6.2 ([#301](https://github.com/fairdataihub/fairdataihub.org/issues/301)) ([bb3739e](https://github.com/fairdataihub/fairdataihub.org/commit/bb3739eb43b8f221d46868343cfd9fe7abf392ff))
+* **deps:** update dependency dayjs to v1.11.7 ([#302](https://github.com/fairdataihub/fairdataihub.org/issues/302)) ([1f98f8a](https://github.com/fairdataihub/fairdataihub.org/commit/1f98f8a2b060b363a1e8c03d81b98df58df233e7))
+* **deps:** update dependency react-lottie-player to v1.5.4 ([#303](https://github.com/fairdataihub/fairdataihub.org/issues/303)) ([95c0590](https://github.com/fairdataihub/fairdataihub.org/commit/95c0590dea32b6af38abd431b1fd49c64556df14))
+* **deps:** update dependency swiper to v8.4.5 ([#304](https://github.com/fairdataihub/fairdataihub.org/issues/304)) ([6d722bb](https://github.com/fairdataihub/fairdataihub.org/commit/6d722bbda71f571e44b5d3dda07cb0a4d6d17364))
+
 # [2.26.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.25.0...v2.26.0) (2022-12-23)
 
 ### Features
