@@ -401,14 +401,14 @@
   resolved "https://registry.yarnpkg.com/@lit/reactive-element/-/reactive-element-1.4.1.tgz#3f587eec5708692135bc9e94cf396130604979f3"
   integrity sha512-qDv4851VFSaBWzpS02cXHclo40jsbAjRXnebNXpm0uVg32kCneZPo9RYVQtrTNICtZ+1wAYHu1ZtxWSWMbKrBw==
 
-"@lottiefiles/lottie-player@1.6.0":
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/@lottiefiles/lottie-player/-/lottie-player-1.6.0.tgz#37cec0fe4f38bc328257542dcda38ab0d251fc85"
-  integrity sha512-003iDtGHrPfB1zkxpK9ZrCtVH2zMe59mriM69UlZ7DpxiqupGEMSo/3qmZ5t7QCMuCfG0NKXFBq2tZPeWRQfrA==
+"@lottiefiles/lottie-player@1.6.2":
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/@lottiefiles/lottie-player/-/lottie-player-1.6.2.tgz#a6da2972439199c6cf3b755e5592e1cef090f87d"
+  integrity sha512-MKsiTBE86ut0SgKCZDCr6bnxeSUz6rtwO28qu14Vfsp3pOjmFXh3yGdxZjrIE1pV067D6SjaB6JlIwIwWqgYSw==
   dependencies:
     "@types/pako" "^1.0.1"
     lit "^2.1.2"
-    lottie-web "^5.9.6"
+    lottie-web "^5.10.0"
     pako "^2.0.4"
     resize-observer-polyfill "^1.5.1"
 
@@ -5329,15 +5329,15 @@ loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
+lottie-web@^5.10.0:
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.10.1.tgz#fde8e6be374afc3906f78b4152ada9be44ce3ccf"
+  integrity sha512-u17bVNf/vA3oK9Wkyb1Vpo83WUIEQwaT0GeEN0qcvaExizyJ/RjmcbjSDj0CnwQCtpGqTgYhqprCC7cTWuXMNw==
+
 lottie-web@^5.7.6:
   version "5.8.1"
   resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.8.1.tgz#807e0af0ad22b59bf867d964eb684cb3368da0ef"
   integrity sha512-9gIizWADlaHC2GCt+D+yNpk5l2clZQFqnVWWIVdY0LnxC/uLa39dYltAe3fcmC/hrZ2IUQ8dLlY0O934Npjs7Q==
-
-lottie-web@^5.9.6:
-  version "5.9.6"
-  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.9.6.tgz#62ae68563355d3e04aa75d53dec3dd4bea0e57c9"
-  integrity sha512-JFs7KsHwflugH5qIXBpB4905yC1Sub2MZWtl/elvO/QC6qj1ApqbUZJyjzJseJUtVpgiDaXQLjBlIJGS7UUUXA==
 
 lowlight@^2.0.0:
   version "2.6.1"
