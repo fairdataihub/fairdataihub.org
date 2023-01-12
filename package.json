@@ -33,7 +33,7 @@
     ]
   },
   "dependencies": {
-    "@giscus/react": "2.2.2",
+    "@giscus/react": "2.2.6",
     "@lottiefiles/lottie-player": "1.6.2",
     "@sendgrid/mail": "7.7.0",
     "cookies-next": "2.1.1",
