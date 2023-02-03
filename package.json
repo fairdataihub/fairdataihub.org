@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "@giscus/react": "2.2.6",
-    "@lottiefiles/lottie-player": "1.6.3",
+    "@lottiefiles/lottie-player": "1.7.0",
     "@sendgrid/mail": "7.7.0",
     "cookies-next": "2.1.1",
     "dayjs": "1.11.7",
