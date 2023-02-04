@@ -1,3 +1,10 @@
+## [2.27.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.3...v2.27.4) (2023-02-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @lottiefiles/lottie-player to v1.7.1 ([#344](https://github.com/fairdataihub/fairdataihub.org/issues/344)) ([0979b7e](https://github.com/fairdataihub/fairdataihub.org/commit/0979b7e72f52ac9c989950d1a348caea91fecdb4))
+
 ## [2.27.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.2...v2.27.3) (2023-02-03)
 
 
