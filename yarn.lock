@@ -8182,10 +8182,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swiper@9.0.1:
-  version "9.0.1"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.0.1.tgz#5ce88babe72bbedf181ba9648c8e7a8982440f7f"
-  integrity sha512-qSxZcfBSUJPAIYuYQu9XNI9b5bHeOXhA5ezlnHGeoKRGr4e8CH0TXvO/zN0bMf0M2DcUX5a/UxYQqgYvjmjmWw==
+swiper@9.0.3:
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.0.3.tgz#9a8131b297c6cdc1957255ed7e1d4bdba584b0f0"
+  integrity sha512-hHYI6CeUHcDyv6IakzAQrUv6nS5BMRn6KOkui16nhtdgYBlWgUdlaMbcdT0o4RJxpwSktCTLgpBtCm+WwwVYRw==
   dependencies:
     ssr-window "^4.0.2"
 
