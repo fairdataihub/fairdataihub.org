@@ -1,3 +1,10 @@
+## [2.27.7](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.6...v2.27.7) (2023-02-08)
+
+
+### Bug Fixes
+
+* 🐛 update ai-readi project image ([6f8e5bf](https://github.com/fairdataihub/fairdataihub.org/commit/6f8e5bf7daf2d7dc4c88dac31c63c72bab809530))
+
 ## [2.27.6](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.5...v2.27.6) (2023-02-06)
 
 
