@@ -18,10 +18,10 @@ export default function ProjectsCarousel() {
       height: `50`,
     },
     {
-      src: `/images/carousel/aireadi-logo-2.png`,
+      src: `/images/carousel/aireadi-logo.png`,
       alt: `Navigate to AI-READI card`,
-      width: `150`,
-      height: `80`,
+      width: 555 / 6,
+      height: 569 / 6,
     },
     {
       src: `/images/carousel/FAIRshare-full.png`,
@@ -62,9 +62,9 @@ export default function ProjectsCarousel() {
     {
       name: `AI-READI`,
       id: `ai-readi`,
-      imageUrl: `/images/carousel/aireadi-logo-2.png`,
-      imageWidth: `320`,
-      imageHeight: `150`,
+      imageUrl: `/images/carousel/aireadi-logo.png`,
+      imageWidth: 555 / 4.5,
+      imageHeight: 569 / 4.5,
       description: `The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset that will support future AI-drive research projects to provide critical insights into type 2 diabetes.`,
       page: `/aireadi`,
     },
@@ -99,8 +99,8 @@ export default function ProjectsCarousel() {
       name: `AQUA`,
       id: `aqua`,
       imageUrl: `/images/carousel/aqua.png`,
-      imageWidth: `320`,
-      imageHeight: `177`,
+      imageWidth: 3577 / 14,
+      imageHeight: 1985 / 14,
       description: `AQUA (Advanced QUery Architecture for the SPARC Portal) improves the SPARC Portal by making the search engine smarter at understanding user search keywords, enhancing the result display, and providing users with better result filtering and sorting options.`,
       page: `/aqua`,
     },
@@ -147,7 +147,7 @@ export default function ProjectsCarousel() {
                 key={index}
                 className="my-auto flex h-full items-center justify-center py-10"
               >
-                <section className="mx-10 my-auto flex h-full w-4/5 flex-row items-center justify-center rounded-lg px-5 py-10 text-gray-600 shadow-xl">
+                <section className="mx-auto my-auto flex h-full w-4/5 flex-row items-center justify-center rounded-lg px-5 py-10 text-gray-600 shadow-xl">
                   <div className="container mx-auto flex h-full flex-col items-center justify-center">
                     <div className="relative my-5 flex flex-row items-center justify-center sm:py-0 lg:max-w-lg">
                       <Image
