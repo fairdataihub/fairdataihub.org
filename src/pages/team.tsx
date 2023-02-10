@@ -139,6 +139,34 @@ export default function Team() {
       },
     },
     {
+      id: `Aydan-Gasimova`,
+      name: `Aydan Gasimova (she/her)`,
+      title: `Software developer`,
+      bio: `Aydan is from Azerbaijan and pursued her M.S degree in Computer Science. She has experience in web development with a focus on building scalable dynamic front-end web applications. She enjoys bike riding, sightseeing, and exploring new places.
+      `,
+      image: `/images/people/aydan-head.jpg`,
+      width: 1378,
+      height: 2012,
+      borderTop: true,
+      borderBottom: false,
+      education: [
+        `B.S in Information technologies and system engineering (Azerbaijan State Economic University, 2017)`,
+        `M.S. in Computer Science (University of North Dakota, 2022)`,
+      ],
+      twitter: {
+        show: false,
+        link: `https://twitter.com/`,
+      },
+      github: {
+        show: true,
+        link: `https://github.com/Aydawka`,
+      },
+      linkedin: {
+        show: true,
+        link: `https://www.linkedin.com/in/aydan-gasimova-a98b7521b/`,
+      },
+    },
+    {
       id: `Ligia-Amezcua`,
       name: `Ligia Amezcua (she/her)`,
       title: `Director of Finance and Administration`,

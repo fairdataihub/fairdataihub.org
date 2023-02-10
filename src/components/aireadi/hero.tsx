@@ -62,10 +62,11 @@ export default function Hero() {
             <Image
               src="/images/hero/aireadi-logo.png"
               alt="Logo of the AI-READI"
-              width="1200"
-              height="872"
+              width={555 / 2}
+              height={569 / 2}
               priority={true}
               objectFit="scale-down"
+              className="bg-white"
             />
           </div>
         </div>
