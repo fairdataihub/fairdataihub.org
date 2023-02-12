@@ -96,7 +96,7 @@
     "megasanjay-devmoji": "^1.2.1",
     "next-sitemap": "3.1.52",
     "postcss": "8.4.21",
-    "prettier": "2.8.3",
+    "prettier": "2.8.4",
     "prettier-plugin-tailwindcss": "0.2.2",
     "semantic-release": "20.1.0",
     "tailwindcss": "3.2.4",
