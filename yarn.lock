@@ -6981,10 +6981,10 @@ prettier-plugin-tailwindcss@0.2.2:
   resolved "https://registry.yarnpkg.com/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.2.2.tgz#61f4437936c79c8cc2915f31b4bd512605177239"
   integrity sha512-5RjUbWRe305pUpc48MosoIp6uxZvZxrM6GyOgsbGLTce+ehePKNm7ziW2dLG2air9aXbGuXlHVSQQw4Lbosq3w==
 
-prettier@2.8.3:
-  version "2.8.3"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.3.tgz#ab697b1d3dd46fb4626fbe2f543afe0cc98d8632"
-  integrity sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==
+prettier@2.8.4:
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
+  integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
 
 pretty-bytes@^5.6.0:
   version "5.6.0"
@@ -8181,10 +8181,10 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-swiper@9.0.3:
-  version "9.0.3"
-  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.0.3.tgz#9a8131b297c6cdc1957255ed7e1d4bdba584b0f0"
-  integrity sha512-hHYI6CeUHcDyv6IakzAQrUv6nS5BMRn6KOkui16nhtdgYBlWgUdlaMbcdT0o4RJxpwSktCTLgpBtCm+WwwVYRw==
+swiper@9.0.4:
+  version "9.0.4"
+  resolved "https://registry.yarnpkg.com/swiper/-/swiper-9.0.4.tgz#46a08b40e99cc95c787ef0898daf87d20c91a868"
+  integrity sha512-YH4sUh68DYw7vcoBZQ+DeBV6/wLZIRf8dZ4CzkvRTcvDPkIF6oweBdOjKnsXtoPCSUQbtqbZcLRghkfOtd5UYA==
   dependencies:
     ssr-window "^4.0.2"
 
