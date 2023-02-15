@@ -1,7 +1,7 @@
 {
   "name": "fairdataihub-website",
   "description": "Homepage for the Fair Data Innovations Hub",
-  "version": "2.27.8",
+  "version": "2.27.9",
   "private": true,
   "author": "Fair Data Innovations Hub <info@fairdataihub.org> (https://fairdataihub.org)",
   "license": "MIT",
