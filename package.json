@@ -62,8 +62,8 @@
     "words-count": "2.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.3",
-    "@commitlint/config-conventional": "17.4.3",
+    "@commitlint/cli": "17.4.4",
+    "@commitlint/config-conventional": "17.4.4",
     "@fairdataihub/config": "2.2.1",
     "@iconify/react": "4.1.0",
     "@semantic-release/changelog": "6.0.2",
