@@ -94,7 +94,7 @@
     "husky": "8.0.3",
     "lint-staged": "13.1.2",
     "megasanjay-devmoji": "^1.2.1",
-    "next-sitemap": "3.1.52",
+    "next-sitemap": "3.1.54",
     "postcss": "8.4.21",
     "prettier": "2.8.4",
     "prettier-plugin-tailwindcss": "0.2.3",
