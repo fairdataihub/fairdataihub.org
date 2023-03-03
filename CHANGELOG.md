@@ -1,3 +1,10 @@
+## [2.27.10](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.9...v2.27.10) (2023-03-03)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @giscus/react to v2.2.8 ([#374](https://github.com/fairdataihub/fairdataihub.org/issues/374)) ([975a756](https://github.com/fairdataihub/fairdataihub.org/commit/975a7562f7fb35e0cf0eb599c62a1ff7caaa96d2))
+
 ## [2.27.9](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.8...v2.27.9) (2023-02-15)
 
 
