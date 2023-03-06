@@ -150,8 +150,8 @@ export default function Team() {
       borderTop: true,
       borderBottom: false,
       education: [
-        `B.S in Information technologies and system engineering (Azerbaijan State Economic University, 2017)`,
         `M.S. in Computer Science (University of North Dakota, 2022)`,
+        `B.S in Information technologies and system engineering (Azerbaijan State Economic University, 2017)`,
       ],
       twitter: {
         show: false,
@@ -313,40 +313,43 @@ export default function Team() {
       <section className=" mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row">
         <div className="mx-auto flex w-11/12 flex-col lg:flex-row">
           <div className="w-full p-5 lg:w-1/3">
-            <h1 className="py-2 text-4xl font-black sm:text-3xl">About Us</h1>
-            <p className="font-asap text-xl text-black sm:text-lg">
-              FAIR Data Innovations Hub is a division of the California Medical
-              Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
-              research organization located in San Diego, California. We have a
-              multidisciplinary team of enthusiasts about FAIR Data practices
-              and software development.
-            </p>
+            <div className="sticky top-[80px]">
+              <h1 className="py-2 text-4xl font-black sm:text-3xl">About Us</h1>
+              <p className=" font-asap text-xl text-black sm:text-lg">
+                FAIR Data Innovations Hub is a division of the California
+                Medical Innovations Institute (CalMI<sup>2</sup>), a non profit
+                biomedical research organization located in San Diego,
+                California. We have a multidisciplinary team of enthusiasts
+                about FAIR Data practices and software development.
+              </p>
 
-            <a
-              href="https://calmi2.org"
-              target="_blank"
-              rel="noreferrer"
-              className={
-                `text-url hover-underline-animation ` +
-                `umami--click--calmii-link`
-              }
-            >
-              <span className="font-asap">
-                Learn more about CALMI<sup>2</sup>
-              </span>
-              <svg
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                className="arrow-animate ml-2 h-4 w-4"
-                viewBox="0 0 24 24"
+              <a
+                href="https://calmi2.org"
+                target="_blank"
+                rel="noreferrer"
+                className={
+                  `text-url hover-underline-animation ` +
+                  `umami--click--calmii-link`
+                }
               >
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-              </svg>
-            </a>
+                <span className="font-asap">
+                  Learn more about CALMI<sup>2</sup>
+                </span>
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  className="arrow-animate ml-2 h-4 w-4"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+              </a>
+            </div>
           </div>
+
           <div className="flex w-full flex-col divide-y divide-gray-200 p-2 md:p-5 lg:w-2/3">
             {teamsList.map((team) => (
               <TeamCard profile={team} key={team.id} />
