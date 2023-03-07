@@ -1,3 +1,10 @@
+## [2.27.12](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.11...v2.27.12) (2023-03-07)
+
+
+### Bug Fixes
+
+* 🐛 update positioning of description ([aee00c1](https://github.com/fairdataihub/fairdataihub.org/commit/aee00c15ed9d9fe38b27ac43226cef130638db9c))
+
 ## [2.27.11](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.10...v2.27.11) (2023-03-06)
 
 
