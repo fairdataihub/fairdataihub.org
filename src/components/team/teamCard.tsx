@@ -11,6 +11,7 @@ type Profile = {
   title: string;
   bio: string;
   image: string;
+  blurDataURL: string;
   width: number;
   height: number;
   borderTop: boolean;
@@ -34,7 +35,10 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
       <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
         <Image
           src={profile.image}
+          placeholder="blur"
+          blurDataURL={profile.blurDataURL}
           alt={`Potrait image of ${profile.name}`}
+          sizes="(max-width: 768px) 100vw, 50vw"
           width={profile.width}
           height={profile.height}
           objectFit="scale-down"
