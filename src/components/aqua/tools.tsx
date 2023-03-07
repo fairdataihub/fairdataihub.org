@@ -41,12 +41,11 @@ export default function Tools() {
               {logoList.map((logo, index) => (
                 <Image
                   key={index}
-                  className="h-full !w-full !px-1"
+                  className="h-auto !w-full object-scale-down !px-1"
                   src={logo.src}
                   alt={logo.alt}
-                  width="238"
-                  height="70"
-                  objectFit="scale-down"
+                  width={238}
+                  height={70}
                 />
               ))}
             </div>

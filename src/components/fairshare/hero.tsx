@@ -85,10 +85,10 @@ export default function Hero() {
             <Image
               src="/images/hero/fairshare-macos.png"
               alt="Screenshot of FAIRshare"
-              width="1342"
-              height="975"
+              width={1342}
+              height={975}
               priority={true}
-              objectFit="scale-down"
+              className="h-auto w-auto object-scale-down"
             />
           </div>
         </div>

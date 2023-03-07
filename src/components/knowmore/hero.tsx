@@ -70,9 +70,13 @@ export default function Hero() {
               <Image
                 src="https://github.com/fairdataihub/KnowMore/raw/main/docs/knowmore-website.gif"
                 alt="Knowmore gif"
-                width="670"
-                height="370"
-                objectFit="scale-down"
+                width={670}
+                height={370}
+                priority
+                style={{
+                  height: `auto`,
+                  width: `auto`,
+                }}
               />
             </div>
           </div>

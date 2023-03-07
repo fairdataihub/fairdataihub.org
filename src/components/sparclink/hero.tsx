@@ -59,9 +59,10 @@ export default function Hero() {
               <Image
                 src="https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/2021-07-25%2013-47-30.gif"
                 alt="sparclink gif"
-                width="672"
-                height="377"
-                objectFit="scale-down"
+                width={672}
+                height={377}
+                className="h-auto w-auto object-scale-down"
+                priority
               />
             </div>
           </div>
