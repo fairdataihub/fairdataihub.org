@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import { useEffect, useState } from 'react';
 
 import getLatestDownloadLink from '@/lib/getLatestDownloadLink';
@@ -83,10 +83,13 @@ export default function Hero() {
             <Image
               src="/images/hero/soda-app-macos.png"
               alt="Screenshot of SODA for SPARC"
-              width="672"
-              height="462"
+              width={672}
+              height={462}
               priority={true}
-              objectFit="scale-down"
+              style={{
+                height: `auto`,
+                width: `auto`,
+              }}
             />
           </div>
         </div>

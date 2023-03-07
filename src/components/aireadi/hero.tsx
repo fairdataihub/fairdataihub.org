@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -65,8 +65,7 @@ export default function Hero() {
               width={555 / 2}
               height={569 / 2}
               priority={true}
-              objectFit="scale-down"
-              className="bg-white"
+              className="h-auto w-auto bg-white object-scale-down"
             />
           </div>
         </div>

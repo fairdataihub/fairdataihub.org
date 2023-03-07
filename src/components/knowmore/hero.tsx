@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -70,9 +70,13 @@ export default function Hero() {
               <Image
                 src="https://github.com/fairdataihub/KnowMore/raw/main/docs/knowmore-website.gif"
                 alt="Knowmore gif"
-                width="670"
-                height="370"
-                objectFit="scale-down"
+                width={670}
+                height={370}
+                priority
+                style={{
+                  height: `auto`,
+                  width: `auto`,
+                }}
               />
             </div>
           </div>

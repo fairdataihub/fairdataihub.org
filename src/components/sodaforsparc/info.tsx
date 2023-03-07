@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export default function Info() {
@@ -278,6 +278,10 @@ export default function Info() {
                                 width={112}
                                 height={112}
                                 className="rounded-full"
+                                style={{
+                                  height: `auto`,
+                                  width: `auto`,
+                                }}
                               />
                               <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
@@ -297,6 +301,10 @@ export default function Info() {
                                 width={112}
                                 height={112}
                                 className="rounded-full"
+                                style={{
+                                  height: `auto`,
+                                  width: `auto`,
+                                }}
                               />
                               <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
                                 {member.name}
@@ -349,7 +357,11 @@ export default function Info() {
                             alt={collaborator.name + ` profile picture`}
                             width={220}
                             height={150}
-                            objectFit="scale-down"
+                            className="my-auto"
+                            style={{
+                              height: `auto`,
+                              width: `auto`,
+                            }}
                           />
                           <p className="mt-3 ml-2 text-center font-asap text-lg font-normal">
                             {collaborator.name}

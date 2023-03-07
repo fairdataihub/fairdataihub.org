@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
 export default function Collaborators() {
@@ -58,7 +58,6 @@ export default function Collaborators() {
                 alt={logo.alt}
                 width={logo.width}
                 height={logo.height}
-                objectFit="scale-down"
               />
             ))}
           </Marquee>

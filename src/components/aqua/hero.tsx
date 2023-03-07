@@ -1,4 +1,4 @@
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 
 export default function Hero() {
   return (
@@ -66,10 +66,10 @@ export default function Hero() {
             <Image
               src="/images/hero/aqua-logo-full.png"
               alt="Aqua logo"
-              width="537"
-              height="522"
+              width={537}
+              height={522}
               priority={true}
-              objectFit="scale-down"
+              className="h-auto w-auto object-scale-down"
             />
           </div>
         </div>
