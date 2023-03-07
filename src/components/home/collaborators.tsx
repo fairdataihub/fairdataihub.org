@@ -6,32 +6,32 @@ export default function Collaborators() {
     {
       src: `/images/collaborators/ucsf-logo.png`,
       alt: `UCSF logo`,
-      width: `200`,
-      height: `145`,
+      width: 200,
+      height: 145,
     },
     {
       src: `/images/collaborators/sparc-logo.svg`,
       alt: `NIH SPARC logo`,
-      width: `200`,
-      height: `111`,
+      width: 200,
+      height: 111,
     },
     {
       src: `/images/collaborators/fdi-lab-logo.png`,
       alt: `FDI Lab logo`,
-      width: `200`,
-      height: `79.45`,
+      width: 200,
+      height: 79.45,
     },
     {
       src: `/images/collaborators/calmi-logo.png`,
       alt: `California Medical Innovations Institute logo`,
-      width: `200`,
-      height: `88`,
+      width: 200,
+      height: 88,
     },
     {
       src: `/images/collaborators/UCL-logo.png`,
       alt: `UCL logo`,
-      width: `200`,
-      height: `85`,
+      width: 200,
+      height: 85,
     },
   ];
 
@@ -48,7 +48,7 @@ export default function Collaborators() {
             speed={60}
             gradient={true}
             gradientColor={[255, 255, 255]}
-            gradientWidth="125px"
+            gradientWidth="25p"
           >
             {logoImages.map((logo, index) => (
               <Image
@@ -56,8 +56,8 @@ export default function Collaborators() {
                 className="h-full !w-full !px-4"
                 src={logo.src}
                 alt={logo.alt}
-                width="200%"
-                height="100%"
+                width={logo.width}
+                height={logo.height}
                 objectFit="scale-down"
               />
             ))}

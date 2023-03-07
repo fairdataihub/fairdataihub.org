@@ -5,7 +5,7 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import Head from 'next/head';
-import Image from 'next/legacy/image';
+import Image from 'next/image';
 import Link from 'next/link';
 import { toast, ToastContainer } from 'react-toastify';
 
@@ -116,17 +116,16 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
       </Link>
 
       <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden py-5 px-5 sm:py-20 sm:px-10">
-        <div className="group relative mb-10 before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r before:from-pink-400  before:to-fuchsia-700 before:opacity-60 before:content-['']">
-          <Image
-            src={heroImage}
-            alt={title}
-            width="200%"
-            height="100%"
-            layout="responsive"
-            objectFit="cover"
-            priority={true}
-            className="grayscale"
-          />
+        <div className="group relative mb-10 h-full w-full before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r  before:from-pink-400 before:to-fuchsia-700 before:opacity-60 before:content-['']">
+          <div className="relative h-auto min-h-[200px] w-full sm:min-h-[300px] md:min-h-[450px]">
+            <Image
+              src={heroImage}
+              alt={title}
+              fill
+              className="h-full w-full object-cover object-top md:object-center"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
 
           {imageAuthorLink && (
             <a
@@ -168,7 +167,6 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
                   height={50}
                   priority={true}
                   className=" flex items-center rounded-full"
-                  objectFit="cover"
                 />
 
                 <div className="ml-3 flex flex-col justify-center">

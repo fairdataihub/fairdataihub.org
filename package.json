@@ -43,6 +43,7 @@
     "markdown-it": "13.0.1",
     "next": "13.2.3",
     "plaiceholder": "^2.5.0",
+    "probe-image-size": "^7.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-fast-marquee": "1.3.5",
