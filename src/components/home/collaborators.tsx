@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Marquee from 'react-fast-marquee';
 
 export default function Collaborators() {
