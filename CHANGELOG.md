@@ -1,3 +1,10 @@
+# [2.28.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.12...v2.28.0) (2023-03-07)
+
+
+### Features
+
+* ✨ add placeholder images for team page ([#382](https://github.com/fairdataihub/fairdataihub.org/issues/382)) ([ee5b5dd](https://github.com/fairdataihub/fairdataihub.org/commit/ee5b5dd078849ab9bd9d2c43b031176df62d227f))
+
 ## [2.27.12](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.11...v2.27.12) (2023-03-07)
 
 
