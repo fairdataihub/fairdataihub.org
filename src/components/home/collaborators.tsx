@@ -53,7 +53,7 @@ export default function Collaborators() {
             {logoImages.map((logo, index) => (
               <Image
                 key={index}
-                className="h-full !w-full !px-4"
+                className="!px-4"
                 src={logo.src}
                 alt={logo.alt}
                 width={logo.width}

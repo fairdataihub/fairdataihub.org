@@ -147,7 +147,7 @@ export default function ProjectsCarousel() {
                 key={index}
                 className="my-auto flex h-full items-center justify-center py-10"
               >
-                <section className="mx-auto my-auto flex h-full w-4/5 flex-row items-center justify-center rounded-lg px-5 py-10 text-gray-600 shadow-xl">
+                <section className="mx-auto my-auto flex h-full w-4/5 flex-row items-center justify-center rounded-lg border border-slate-200 px-5 py-10 text-gray-600 shadow-xl">
                   <div className="container mx-auto flex h-full flex-col items-center justify-center">
                     <div className="relative my-5 flex flex-row items-center justify-center sm:py-0 lg:max-w-lg">
                       <Image
