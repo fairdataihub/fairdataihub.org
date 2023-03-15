@@ -1,3 +1,10 @@
+## [2.28.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.0...v2.28.1) (2023-03-15)
+
+
+### Bug Fixes
+
+* 🐛 update marquee image classes ([da746cd](https://github.com/fairdataihub/fairdataihub.org/commit/da746cd6af7f43f4fc3fa6b3134c506ff95cc8c7))
+
 # [2.28.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.12...v2.28.0) (2023-03-07)
 
 
