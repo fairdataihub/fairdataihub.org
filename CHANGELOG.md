@@ -1,3 +1,10 @@
+## [2.28.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.1...v2.28.2) (2023-03-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency swiper to v9.1.1 ([#395](https://github.com/fairdataihub/fairdataihub.org/issues/395)) ([65af1d2](https://github.com/fairdataihub/fairdataihub.org/commit/65af1d2dc73998fdd724853803ac4f70d4692b0d))
+
 ## [2.28.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.0...v2.28.1) (2023-03-15)
 
 
