@@ -1,101 +1,87 @@
 ## [2.28.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.1...v2.28.2) (2023-03-20)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency swiper to v9.1.1 ([#395](https://github.com/fairdataihub/fairdataihub.org/issues/395)) ([65af1d2](https://github.com/fairdataihub/fairdataihub.org/commit/65af1d2dc73998fdd724853803ac4f70d4692b0d))
+- **deps:** update dependency swiper to v9.1.1 ([#395](https://github.com/fairdataihub/fairdataihub.org/issues/395)) ([65af1d2](https://github.com/fairdataihub/fairdataihub.org/commit/65af1d2dc73998fdd724853803ac4f70d4692b0d))
 
 ## [2.28.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.0...v2.28.1) (2023-03-15)
 
-
 ### Bug Fixes
 
-* 🐛 update marquee image classes ([da746cd](https://github.com/fairdataihub/fairdataihub.org/commit/da746cd6af7f43f4fc3fa6b3134c506ff95cc8c7))
+- 🐛 update marquee image classes ([da746cd](https://github.com/fairdataihub/fairdataihub.org/commit/da746cd6af7f43f4fc3fa6b3134c506ff95cc8c7))
 
 # [2.28.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.12...v2.28.0) (2023-03-07)
 
-
 ### Features
 
-* ✨ add placeholder images for team page ([#382](https://github.com/fairdataihub/fairdataihub.org/issues/382)) ([ee5b5dd](https://github.com/fairdataihub/fairdataihub.org/commit/ee5b5dd078849ab9bd9d2c43b031176df62d227f))
+- ✨ add placeholder images for team page ([#382](https://github.com/fairdataihub/fairdataihub.org/issues/382)) ([ee5b5dd](https://github.com/fairdataihub/fairdataihub.org/commit/ee5b5dd078849ab9bd9d2c43b031176df62d227f))
 
 ## [2.27.12](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.11...v2.27.12) (2023-03-07)
 
-
 ### Bug Fixes
 
-* 🐛 update positioning of description ([aee00c1](https://github.com/fairdataihub/fairdataihub.org/commit/aee00c15ed9d9fe38b27ac43226cef130638db9c))
+- 🐛 update positioning of description ([aee00c1](https://github.com/fairdataihub/fairdataihub.org/commit/aee00c15ed9d9fe38b27ac43226cef130638db9c))
 
 ## [2.27.11](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.10...v2.27.11) (2023-03-06)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency swiper to v9.1.0 ([#377](https://github.com/fairdataihub/fairdataihub.org/issues/377)) ([b330f62](https://github.com/fairdataihub/fairdataihub.org/commit/b330f62043ef61be2b939fc26a0b4774c02a4eeb))
+- **deps:** update dependency swiper to v9.1.0 ([#377](https://github.com/fairdataihub/fairdataihub.org/issues/377)) ([b330f62](https://github.com/fairdataihub/fairdataihub.org/commit/b330f62043ef61be2b939fc26a0b4774c02a4eeb))
 
 ## [2.27.10](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.9...v2.27.10) (2023-03-03)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @giscus/react to v2.2.8 ([#374](https://github.com/fairdataihub/fairdataihub.org/issues/374)) ([975a756](https://github.com/fairdataihub/fairdataihub.org/commit/975a7562f7fb35e0cf0eb599c62a1ff7caaa96d2))
+- **deps:** update dependency @giscus/react to v2.2.8 ([#374](https://github.com/fairdataihub/fairdataihub.org/issues/374)) ([975a756](https://github.com/fairdataihub/fairdataihub.org/commit/975a7562f7fb35e0cf0eb599c62a1ff7caaa96d2))
 
 ## [2.27.9](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.8...v2.27.9) (2023-02-15)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency swiper to v9.0.5 ([#358](https://github.com/fairdataihub/fairdataihub.org/issues/358)) ([6fc26ac](https://github.com/fairdataihub/fairdataihub.org/commit/6fc26ac53138e7d4383fc2ab37bb2e252f2333b7))
+- **deps:** update dependency swiper to v9.0.5 ([#358](https://github.com/fairdataihub/fairdataihub.org/issues/358)) ([6fc26ac](https://github.com/fairdataihub/fairdataihub.org/commit/6fc26ac53138e7d4383fc2ab37bb2e252f2333b7))
 
 ## [2.27.8](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.7...v2.27.8) (2023-02-14)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency swiper to v9.0.4 ([#357](https://github.com/fairdataihub/fairdataihub.org/issues/357)) ([3ed92ad](https://github.com/fairdataihub/fairdataihub.org/commit/3ed92ad09b2f7aec798ecd749a0936d01dc4ec71))
+- **deps:** update dependency swiper to v9.0.4 ([#357](https://github.com/fairdataihub/fairdataihub.org/issues/357)) ([3ed92ad](https://github.com/fairdataihub/fairdataihub.org/commit/3ed92ad09b2f7aec798ecd749a0936d01dc4ec71))
 
 ## [2.27.7](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.6...v2.27.7) (2023-02-08)
 
-
 ### Bug Fixes
 
-* 🐛 update ai-readi project image ([6f8e5bf](https://github.com/fairdataihub/fairdataihub.org/commit/6f8e5bf7daf2d7dc4c88dac31c63c72bab809530))
+- 🐛 update ai-readi project image ([6f8e5bf](https://github.com/fairdataihub/fairdataihub.org/commit/6f8e5bf7daf2d7dc4c88dac31c63c72bab809530))
 
 ## [2.27.6](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.5...v2.27.6) (2023-02-06)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency swiper to v9.0.3 ([#349](https://github.com/fairdataihub/fairdataihub.org/issues/349)) ([333dd82](https://github.com/fairdataihub/fairdataihub.org/commit/333dd820bacaf6775e73e265c8398d090ced9323))
+- **deps:** update dependency swiper to v9.0.3 ([#349](https://github.com/fairdataihub/fairdataihub.org/issues/349)) ([333dd82](https://github.com/fairdataihub/fairdataihub.org/commit/333dd820bacaf6775e73e265c8398d090ced9323))
 
 ## [2.27.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.4...v2.27.5) (2023-02-06)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency swiper to v9 ([#348](https://github.com/fairdataihub/fairdataihub.org/issues/348)) ([5691ad9](https://github.com/fairdataihub/fairdataihub.org/commit/5691ad9ac9d8f71d60db6a4336c9d5d23e07daf3))
+- **deps:** update dependency swiper to v9 ([#348](https://github.com/fairdataihub/fairdataihub.org/issues/348)) ([5691ad9](https://github.com/fairdataihub/fairdataihub.org/commit/5691ad9ac9d8f71d60db6a4336c9d5d23e07daf3))
 
 ## [2.27.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.3...v2.27.4) (2023-02-04)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @lottiefiles/lottie-player to v1.7.1 ([#344](https://github.com/fairdataihub/fairdataihub.org/issues/344)) ([0979b7e](https://github.com/fairdataihub/fairdataihub.org/commit/0979b7e72f52ac9c989950d1a348caea91fecdb4))
+- **deps:** update dependency @lottiefiles/lottie-player to v1.7.1 ([#344](https://github.com/fairdataihub/fairdataihub.org/issues/344)) ([0979b7e](https://github.com/fairdataihub/fairdataihub.org/commit/0979b7e72f52ac9c989950d1a348caea91fecdb4))
 
 ## [2.27.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.2...v2.27.3) (2023-02-03)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @lottiefiles/lottie-player to v1.7.0 ([#343](https://github.com/fairdataihub/fairdataihub.org/issues/343)) ([b9ee890](https://github.com/fairdataihub/fairdataihub.org/commit/b9ee89055a01fd262664c489429d24f7b2b45a9a))
-* **deps:** update dependency swiper to v8.4.7 ([#342](https://github.com/fairdataihub/fairdataihub.org/issues/342)) ([9175394](https://github.com/fairdataihub/fairdataihub.org/commit/9175394db0d3a45702cde475bdce515fd2e3aaaf))
+- **deps:** update dependency @lottiefiles/lottie-player to v1.7.0 ([#343](https://github.com/fairdataihub/fairdataihub.org/issues/343)) ([b9ee890](https://github.com/fairdataihub/fairdataihub.org/commit/b9ee89055a01fd262664c489429d24f7b2b45a9a))
+- **deps:** update dependency swiper to v8.4.7 ([#342](https://github.com/fairdataihub/fairdataihub.org/issues/342)) ([9175394](https://github.com/fairdataihub/fairdataihub.org/commit/9175394db0d3a45702cde475bdce515fd2e3aaaf))
 
 ## [2.27.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.1...v2.27.2) (2023-02-01)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency swiper to v8.4.6 ([#325](https://github.com/fairdataihub/fairdataihub.org/issues/325)) ([363185e](https://github.com/fairdataihub/fairdataihub.org/commit/363185e3ff3b7d321b0b250362922d92d5feaf44))
+- **deps:** update dependency swiper to v8.4.6 ([#325](https://github.com/fairdataihub/fairdataihub.org/issues/325)) ([363185e](https://github.com/fairdataihub/fairdataihub.org/commit/363185e3ff3b7d321b0b250362922d92d5feaf44))
 
 ## [2.27.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.27.0...v2.27.1) (2023-01-13)
 
