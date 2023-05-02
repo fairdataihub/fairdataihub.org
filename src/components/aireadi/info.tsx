@@ -15,6 +15,12 @@ export default function Info() {
       external: false,
       image: `/images/people/sanjay-head.jpg`,
     },
+    {
+      name: `Aydan Gasimova`,
+      href: `/team/#Aydan-Gasimova`,
+      external: false,
+      image: `/images/people/aydan-head.jpg`,
+    },
   ];
 
   // const collaboratorsList = [
