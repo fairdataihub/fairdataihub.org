@@ -37,7 +37,10 @@ export default function Hero() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="umami--click--aqua-demo-button flex items-center justify-center rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
+                <button
+                  className="flex items-center justify-center rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+                  data-umami-event="AQUA Demo button"
+                >
                   Explore AQUA
                 </button>
               </a>
@@ -46,7 +49,10 @@ export default function Hero() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="umami--click--aqua-docs-button ml-4 rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
+                <button
+                  className="ml-4 rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+                  data-umami-event="AQUA Docs button"
+                >
                   Documentation
                 </button>
               </a>

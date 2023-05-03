@@ -12,7 +12,8 @@ export default function Publications() {
           <a
             href="https://doi.org/10.12688/f1000research.73018.1"
             target="_blank"
-            className="umami--click--10-12688-f1000research-73018-1-link my-2"
+            className="my-2"
+            data-umami-event="10.12688/f1000research.73018.1 Link"
             rel="noreferrer"
           >
             <p className="text-url text-xl font-semibold">
@@ -30,7 +31,7 @@ export default function Publications() {
                 href="https://doi.org/10.12688/f1000research.73018.1"
                 target="_blank"
                 rel="noreferrer"
-                className="umami--click--10-12688-f1000research-73018-1-link"
+                data-umami-event="10.12688/f1000research.73018.1 Link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.12688/f1000research.73018.1

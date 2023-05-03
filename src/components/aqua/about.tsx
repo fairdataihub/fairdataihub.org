@@ -39,7 +39,7 @@ export default function About() {
                     href="https://sparc.science/"
                     target="_blank"
                     rel="noreferrer"
-                    className="umami--click--NIH-sparc-link"
+                    data-umami-event="NIH-sparc-link"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about SPARC
@@ -85,7 +85,7 @@ export default function About() {
                     href="https://doi.org/10.1101/2021.02.10.430563"
                     target="_blank"
                     rel="noreferrer"
-                    className="umami--click--SDS-link"
+                    data-umami-event="SDS-link"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about SDS

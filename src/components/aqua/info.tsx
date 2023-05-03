@@ -58,7 +58,8 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/AQUA/graphs/contributors"
                       target="_blank"
-                      className="umami--click--aqua-contributors-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Aqua Contributors Badge"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -70,7 +71,8 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/AQUA/stargazers"
                       target="_blank"
-                      className="umami--click--aqua-stars-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Aqua Stars Badge"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -82,7 +84,8 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/AQUA/issues"
                       target="_blank"
-                      className="umami--click--aqua-issues-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Aqua Issues Badge"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -94,7 +97,8 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/AQUA/blob/master/LICENSE"
                       target="_blank"
-                      className="umami--click--aqua-license-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Aqua License Badge"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -108,7 +112,8 @@ export default function Info() {
                     <a
                       href="https://github.com/SPARC-FAIR-Codeathon/AQUA"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--aqua-github"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="Aqua GitHub Link"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -134,7 +139,7 @@ export default function Info() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
-                    className="umami--click--aqua-github"
+                    data-umami-event="Aqua GitHub Link"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -172,7 +177,8 @@ export default function Info() {
                     <a
                       href="https://sparc.science/help/2021-sparc-fair-codeathon"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--sparc-fair-21-codeathon"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="SPARC FAIR 2021 Codeathon link"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
