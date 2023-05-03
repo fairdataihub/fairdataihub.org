@@ -47,7 +47,8 @@ export default function Info() {
                     <a
                       href="https://github.com/AI-READI"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--fairshare-github"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="FAIRshare GitHub link"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -73,7 +74,7 @@ export default function Info() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
-                    className="umami--click--fairshare-github"
+                    data-umami-event="FAIRshare GitHub link"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +109,8 @@ export default function Info() {
                     <a
                       href="https://reporter.nih.gov/project-details/10471118"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--aireadi-funding"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="AI-READI funding link"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -222,6 +224,7 @@ export default function Info() {
                         target="_blank"
                         rel="noreferrer"
                         className={`umami--click--${collaborator.id}-link`}
+                        data-umami-event="AI-READI collaborator link"
                       >
                         <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
                           {collaborator.type === `person` ? (

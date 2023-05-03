@@ -14,6 +14,7 @@ export default function Publications() {
             href="https://doi.org/10.1101/2022.04.18.488694"
             target="_blank"
             className="umami--click--10-1101-2022-04-18-488694-link my-2"
+            data-umami-event="10-1101-2022-04-18-488694-link"
             rel="noreferrer"
           >
             <p className="text-url text-xl font-semibold">
@@ -33,6 +34,7 @@ export default function Publications() {
                 target="_blank"
                 rel="noreferrer"
                 className="umami--click--10-1101-2022-04-18-488694-link"
+                data-umami-event="10-1101-2022-04-18-488694-link"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   https://doi.org/10.1101/2022.04.18.488694
