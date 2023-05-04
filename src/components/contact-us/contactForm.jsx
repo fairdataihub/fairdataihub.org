@@ -67,15 +67,19 @@ const ContactForm = () => (
         fetch(`/api/contact`, {
           method: `POST`,
           body: JSON.stringify(values),
-        }).then(async (response) => {
-          const res = await response.json();
-          if (res.success) {
-            successNotify();
-            handleReset();
-          } else {
+        })
+          .then(async (response) => {
+            const res = await response.json();
+            if (res.success) {
+              successNotify();
+              handleReset();
+            } else {
+              errorNotify();
+            }
+          })
+          .catch((_error) => {
             errorNotify();
-          }
-        });
+          });
 
         setSubmitting(false);
       }}

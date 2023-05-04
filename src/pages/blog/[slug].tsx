@@ -48,17 +48,30 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
   } = frontMatter;
 
   const copyLinkToClipboard = () => {
-    navigator.clipboard.writeText(`https://fairdataihub.org/blog/${slug}`);
-
-    toast.success(`Copied to clipboard succesfully.`, {
-      position: `bottom-right`,
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
+    navigator.clipboard
+      .writeText(`https://fairdataihub.org/blog/${slug}`)
+      .then(() => {
+        toast.success(`Copied to clipboard succesfully.`, {
+          position: `bottom-right`,
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      })
+      .catch((_error) => {
+        toast.error(`Failed to copy to clipboard.`, {
+          position: `bottom-right`,
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      });
   };
 
   return (

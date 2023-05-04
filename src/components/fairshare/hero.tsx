@@ -11,7 +11,10 @@ export default function Hero() {
       const url = await getLatestDownloadLink(`fairdataihub/FAIRshare`);
       setDownloadURL(url);
     };
-    func();
+
+    func().catch((e) => {
+      console.error(e);
+    });
   }, []);
 
   return (
