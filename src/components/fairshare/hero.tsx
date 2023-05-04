@@ -52,7 +52,9 @@ export default function Hero() {
                 <div className="flex flex-row justify-center">
                   <a
                     href={downloadURL}
-                    className="umami--click--fairshare-download-button rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
+                    className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
+                    data-umami-event="Hero button"
+                    data-umami-event-text="Download FAIRshare"
                   >
                     Download now
                   </a>
@@ -63,7 +65,9 @@ export default function Hero() {
                 target="_blank"
                 aria-label="FAIRshare Documentation"
                 rel="noreferrer"
-                className="umami--click--fairshare-docs-button flex flex-row justify-center"
+                className="flex flex-row justify-center"
+                data-umami-event="Hero button"
+                data-umami-event-text="FAIRshare Documentation"
               >
                 <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 ">
                   Explore the docs
