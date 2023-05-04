@@ -12,7 +12,9 @@ export default function Publications() {
           <a
             href="https://doi.org/10.1101/2021.08.08.455581"
             target="_blank"
-            className="umami--click--10-1101-2021-08-08-455581-link my-2"
+            className="my-2"
+            data-umami-event="Publication DOI link"
+            data-umami-event-doi="10.1101/2021.08.08.455581"
             rel="noreferrer"
           >
             <p className="text-url text-xl font-semibold">
@@ -31,7 +33,8 @@ export default function Publications() {
                 href="https://doi.org/10.1101/2021.08.08.455581"
                 target="_blank"
                 rel="noreferrer"
-                className="umami--click--10-1101-2021-08-08-455581-link"
+                data-umami-event="Publication DOI link"
+                data-umami-event-doi="10.1101/2021.08.08.455581"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1101/2021.08.08.455581

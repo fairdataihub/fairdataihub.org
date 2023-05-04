@@ -12,7 +12,9 @@ export default function Publications() {
           <a
             href="https://doi.org/10.1101/2021.02.10.430563"
             target="_blank"
-            className="umami--click--10-1101-2021-02-10-430563-link my-2"
+            className="my-2"
+            data-umami-event="Publication DOI link"
+            data-umami-event-doi="10.1101/2021.02.10.430563"
             rel="noreferrer"
           >
             <p className="text-url text-xl font-semibold">
@@ -32,7 +34,8 @@ export default function Publications() {
                 href="https://doi.org/10.1101/2021.02.10.430563"
                 target="_blank"
                 rel="noreferrer"
-                className="umami--click--10-1101-2021-02-10-430563-link"
+                data-umami-event="Publication DOI link"
+                data-umami-event-doi="10.1101/2021.02.10.430563"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1101/2021.02.10.430563
@@ -45,7 +48,9 @@ export default function Publications() {
           <a
             href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
             target="_blank"
-            className="umami--click--10-1096-fasebj-2020-34-s1-02483-link my-2"
+            className="my-2"
+            data-umami-event="Publication DOI link"
+            data-umami-event-doi="10.1096/fasebj.2020.34.s1.02483"
             rel="noreferrer"
           >
             <p className="text-url text-xl font-semibold">
@@ -63,7 +68,8 @@ export default function Publications() {
                 href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
                 target="_blank"
                 rel="noreferrer"
-                className="umami--click--10-1096-fasebj-2020-34-s1-02483-link"
+                data-umami-event="Publication DOI link"
+                data-umami-event-doi="10.1096/fasebj.2020.34.s1.02483"
               >
                 <span className="break-words text-blue-600 hover:underline">
                   doi.org/10.1096/fasebj.2020.34.s1.02483

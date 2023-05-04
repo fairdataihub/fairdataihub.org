@@ -43,7 +43,8 @@ export default function About() {
                     href="https://doi.org/10.1038/sdata.2016.18"
                     target="_blank"
                     rel="noreferrer"
-                    className="umami--click--learn-more-fair-link"
+                    data-umami-event="About section link"
+                    data-umami-event-text="Learn more about FAIR"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about FAIR

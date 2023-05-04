@@ -166,10 +166,9 @@ export default function ProjectsCarousel() {
                       <div className="flex w-full justify-center py-4">
                         <Link href={project.page} passHref>
                           <button
-                            className={
-                              `inline-flex rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4 md:text-base lg:text-lg ` +
-                              `umami--click--${project.id}-button`
-                            }
+                            className="inline-flex rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4 md:text-base lg:text-lg"
+                            data-umami-event="Projects Carousel link"
+                            data-umami-value={project.id}
                           >
                             Learn more about {project.name}
                           </button>

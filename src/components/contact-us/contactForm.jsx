@@ -67,15 +67,19 @@ const ContactForm = () => (
         fetch(`/api/contact`, {
           method: `POST`,
           body: JSON.stringify(values),
-        }).then(async (response) => {
-          const res = await response.json();
-          if (res.success) {
-            successNotify();
-            handleReset();
-          } else {
+        })
+          .then(async (response) => {
+            const res = await response.json();
+            if (res.success) {
+              successNotify();
+              handleReset();
+            } else {
+              errorNotify();
+            }
+          })
+          .catch((_error) => {
             errorNotify();
-          }
-        });
+          });
 
         setSubmitting(false);
       }}
@@ -159,7 +163,8 @@ const ContactForm = () => (
             <button
               type="submit"
               disabled={isSubmitting}
-              className="umami--click--contact-us-submit-button cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+              className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+              data-umami-event="Contact Us Submit button"
             >
               Submit
             </button>

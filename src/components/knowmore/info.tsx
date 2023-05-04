@@ -54,7 +54,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/graphs/contributors"
                       target="_blank"
-                      className="umami--click--knowmore-contributors-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="KnowMore"
+                      data-umami-event-type="Contributors"
                       rel="noreferrer relative"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -66,7 +69,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/stargazers"
                       target="_blank"
-                      className="umami--click--knowmore-stars-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="KnowMore"
+                      data-umami-event-type="Stars"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -78,7 +84,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/issues"
                       target="_blank"
-                      className="umami--click--knowmore-issues-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="KnowMore"
+                      data-umami-event-type="Issues"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -90,7 +99,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/KnowMore/blob/master/LICENSE"
                       target="_blank"
-                      className="umami--click--knowmore-license-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="KnowMore"
+                      data-umami-event-type="License"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -104,7 +116,9 @@ export default function Info() {
                     <a
                       href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--knowmore-github"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="GitHub link"
+                      data-umami-event-project="KnowMore"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -130,7 +144,8 @@ export default function Info() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
-                    className="umami--click--knowmore-github"
+                    data-umami-event="GitHub link"
+                    data-umami-event-project="KnowMore"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +183,9 @@ export default function Info() {
                     <a
                       href="https://sparc.science/help/2021-sparc-fair-codeathon"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--sparc-fair-21-codeathon"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="Info section link"
+                      data-umami-event-text="Learn more about the SPARC Codeathon"
                       rel="noreferrer"
                     >
                       <span className="font-lato">

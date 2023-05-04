@@ -28,7 +28,9 @@ export default function Hero() {
             <Link href="/contact-us" passHref>
               <button
                 type="button"
-                className="umami--click--contact-us-button my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all hover:border-light-accent hover:text-accent"
+                className="my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all hover:border-light-accent hover:text-accent"
+                data-umami-event="Home page link"
+                data-umami-event-value="Contact us"
               >
                 Contact us
               </button>
