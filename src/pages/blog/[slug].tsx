@@ -302,7 +302,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 // The page for each post
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const slug = (params || {}).slug;
+  const slug = params?.slug;
 
   const fileName = fs.readFileSync(`blog/${slug}.md`, `utf-8`);
   const { data: frontMatter, content: fileContent } = matter(fileName);
