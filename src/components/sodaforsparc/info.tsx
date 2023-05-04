@@ -85,7 +85,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/SODA-for-SPARC/graphs/contributors"
                       target="_blank"
-                      className="umami--click--soda-sparc-contributors-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="SODA for SPARC"
+                      data-umami-event-type="Contributors"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -97,7 +100,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/SODA-for-SPARC/stargazers"
                       target="_blank"
-                      className="umami--click--soda-sparc-stars-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="SODA for SPARC"
+                      data-umami-event-type="Stars"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -109,7 +115,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/SODA-for-SPARC/issues"
                       target="_blank"
-                      className="umami--click--soda-sparc-issues-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="SODA for SPARC"
+                      data-umami-event-type="Issues"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -121,7 +130,10 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/SODA-for-SPARC/blob/master/LICENSE"
                       target="_blank"
-                      className="umami--click--soda-sparc-license-badge mr-2"
+                      className="mr-2"
+                      data-umami-event="Badge"
+                      data-umami-event-project="SODA for SPARC"
+                      data-umami-event-type="License"
                       rel="noreferrer"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
@@ -135,7 +147,9 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/SODA-for-SPARC"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--soda-sparc-github"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="GitHub link"
+                      data-umami-event-project="SODA for SPARC"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -161,7 +175,8 @@ export default function Info() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
-                    className="umami--click--soda-sparc-github"
+                    data-umami-event="GitHub link"
+                    data-umami-event-project="SODA for SPARC"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -200,7 +215,9 @@ export default function Info() {
                     <a
                       href="https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565"
                       target="_blank"
-                      className="text-url hover-underline-animation umami--click--soda-sparc-funding"
+                      className="text-url hover-underline-animation"
+                      data-umami-event="Funding link"
+                      data-umami-event-project="SODA for SPARC"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -349,7 +366,8 @@ export default function Info() {
                         href={collaborator.href}
                         target="_blank"
                         rel="noreferrer"
-                        className={`umami--click--${collaborator.id}-link`}
+                        data-umami-event="Collaborator link"
+                        data-umami-event-value={collaborator.id}
                       >
                         <div className="flex h-full flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
                           <Image
