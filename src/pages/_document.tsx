@@ -20,7 +20,7 @@ class MyDocument extends Document {
             async
             defer
             data-website-id="fb499873-d5d5-41b0-8375-785e9d505a7b"
-            src="https://umami.fairdataihub.org/mushroom.js"
+            src="https://umami.fairdataihub.org/mushroom"
           />
           <meta
             name="keywords"
