@@ -1,3 +1,10 @@
+## [2.28.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.2...v2.28.3) (2023-05-04)
+
+
+### Bug Fixes
+
+* 🐛 update umami events ([#403](https://github.com/fairdataihub/fairdataihub.org/issues/403)) ([25a8f2c](https://github.com/fairdataihub/fairdataihub.org/commit/25a8f2ca551ad8b19d1cbfc61f0335c56b05dcdf))
+
 ## [2.28.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.1...v2.28.2) (2023-03-20)
 
 ### Bug Fixes
