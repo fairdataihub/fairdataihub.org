@@ -41,7 +41,8 @@ export default function Hero() {
                 aria-label="AI-READI website"
                 rel="noreferrer"
                 className="flex flex-row justify-center"
-                data-umami-event="AI-READI Learn More button"
+                data-umami-event="Hero button"
+                data-umami-event-text="AI-READI website"
               >
                 <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 ">
                   Learn more

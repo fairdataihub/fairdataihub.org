@@ -48,7 +48,8 @@ export default function Info() {
                       href="https://github.com/AI-READI"
                       target="_blank"
                       className="text-url hover-underline-animation"
-                      data-umami-event="FAIRshare GitHub link"
+                      data-umami-event="GitHub link"
+                      data-umami-event-project="AI-READI"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -74,7 +75,8 @@ export default function Info() {
                     target="_blank"
                     rel="noreferrer"
                     aria-label="Github"
-                    data-umami-event="FAIRshare GitHub link"
+                    data-umami-event="GitHub link"
+                    data-umami-event-project="AI-READI"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -110,7 +112,8 @@ export default function Info() {
                       href="https://reporter.nih.gov/project-details/10471118"
                       target="_blank"
                       className="text-url hover-underline-animation"
-                      data-umami-event="AI-READI funding link"
+                      data-umami-event="Funding link"
+                      data-umami-event-project="AI-READI"
                       rel="noreferrer"
                     >
                       <span className="font-lato">
@@ -206,9 +209,9 @@ export default function Info() {
                     institutions collaborating on the AI-READI project include:
                     University of Washington, Oregon Health & Science
                     University, Johns Hopkins University, University of
-                    California at San Diego, University of Pennsylvania,
-                    Stanford University, Native BioData Consortium, University
-                    of Alabama at Birmingham, and Microsoft.
+                    California at San Diego, Stanford University, Native BioData
+                    Consortium, University of Alabama at Birmingham, and
+                    Microsoft.
                   </p>
                 </div>
               </div>

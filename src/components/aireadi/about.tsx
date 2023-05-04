@@ -19,7 +19,8 @@ export default function About() {
             href="https://doi.org/10.1038/sdata.2016.18"
             target="_blank"
             rel="noreferrer"
-            data-umami-event="learn more bridge2ai link"
+            data-umami-event="About section link"
+            data-umami-event-text="Learn more about the NIH's Bridge2AI Program"
           >
             <p className="text-url hover-underline-animation">
               Learn more about the NIH&apos;s Bridge2AI Program
@@ -63,7 +64,8 @@ export default function About() {
                     href="https://aireadi.org"
                     target="_blank"
                     rel="noreferrer"
-                    data-umami-event="Learn more aireadi link"
+                    data-umami-event="About section link"
+                    data-umami-event-text="Learn more about the AI-READI project"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about the AI-READI project
@@ -129,7 +131,8 @@ export default function About() {
                     href="https://doi.org/10.1038/sdata.2016.18"
                     target="_blank"
                     rel="noreferrer"
-                    data-umami-event="Learn more FAIR link"
+                    data-umami-event="About section link"
+                    data-umami-event-text="Learn more about FAIR"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about FAIR
