@@ -40,7 +40,11 @@ export default function Hero() {
                 rel="noreferrer"
                 className="flex flex-row justify-center"
               >
-                <button className="umami--click--knowmore-demo-button rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
+                <button
+                  className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+                  data-umami-event="Hero button"
+                  data-umami-event-text="Test KnowMore"
+                >
                   Test KnowMore
                 </button>
               </a>
@@ -50,7 +54,11 @@ export default function Hero() {
                 rel="noreferrer"
                 className="flex flex-row justify-center"
               >
-                <button className="umami--click--knowmore-docs-button rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
+                <button
+                  className=" rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+                  data-umami-event="Hero button"
+                  data-umami-event-text="KnowMore Documentation"
+                >
                   Documentation
                 </button>
               </a>
