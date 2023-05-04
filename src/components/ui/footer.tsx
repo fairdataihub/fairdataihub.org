@@ -35,7 +35,10 @@ export default function Footer() {
             <div className="flex flex-row justify-start py-3">
               <a
                 href="https://www.twitter.com/fairdataihub"
-                className="icon-style umami--click--twitter-profile"
+                className="icon-style"
+                data-umami-event="Navigation link"
+                data-umami-event-location="Footer"
+                data-umami-event-value="Twitter"
                 aria-label="Twitter"
                 rel="noopener"
               >
@@ -52,7 +55,10 @@ export default function Footer() {
               </a>
               <a
                 href="https://www.linkedin.com/company/california-medical-innovations-institute"
-                className="icon-style umami--click--linkedin-profile"
+                className="icon-style"
+                data-umami-event="Navigation link"
+                data-umami-event-location="Footer"
+                data-umami-event-value="LinkedIn"
                 aria-label="Linked In"
                 rel="noopener"
               >
@@ -75,7 +81,10 @@ export default function Footer() {
               <a
                 href="https://github.com/fairdataihub"
                 target="_blank"
-                className="icon-style umami--click--github-profile"
+                className="icon-style"
+                data-umami-event="Navigation link"
+                data-umami-event-location="Footer"
+                data-umami-event-value="GitHub"
                 aria-label="Github"
                 rel="noreferrer"
               >
@@ -95,49 +104,112 @@ export default function Footer() {
             className="grid w-full grid-cols-2 gap-10 md:w-7/12 md:grid-cols-3 md:gap-6"
           >
             <div className="flex flex-col">
-              <h3 className="footer-header">Company</h3>
+              <h3 className="footer-header"> Company </h3>
               <ul>
-                <li className="footer-item umami--click--about-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="About"
+                >
                   <Link href="/team"> About </Link>
                 </li>
-                <li className="footer-item umami--click--blog-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="Blog"
+                >
                   <Link href="/blog"> Blog </Link>
                 </li>
-                <li className="footer-item  umami--click--contact-us-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="Contact Us"
+                >
                   <Link href="/contact-us"> Contact Us </Link>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col">
-              <h3 className="footer-header">Legal</h3>
+              <h3 className="footer-header"> Legal </h3>
               <ul>
-                <li className="footer-item umami--click--terms-of-use-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="Terms of Use"
+                >
                   <Link href="/termsofuse"> Terms of Use </Link>
                 </li>
-                <li className="footer-item umami--click--privacy-policy-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="Privacy Policy"
+                >
                   <Link href="/privacypolicy"> Privacy Policy </Link>
                 </li>
-                <li className="footer-item umami--click--cookie-policy-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="Cookie Policy"
+                >
                   <Link href="/cookiepolicy"> Cookie Policy </Link>
                 </li>
               </ul>
             </div>
             <div className="flex flex-col font-inter">
-              <h3 className="footer-header">Products</h3>
+              <h3 className="footer-header"> Products </h3>
               <ul>
-                <li className="footer-item umami--click--soda-for-sparc-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="SODA for SPARC"
+                >
                   <Link href="/sodaforsparc"> SODA for SPARC </Link>
                 </li>
-                <li className="footer-item umami--click--fairshare-footer">
-                  <Link href="/fairshare">FAIRshare</Link>
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="AI-READI"
+                >
+                  <Link href="/aireadi"> AI-READI </Link>
                 </li>
-                <li className="footer-item umami--click--knowmore-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="FAIRshare"
+                >
+                  <Link href="/fairshare"> FAIRshare </Link>
+                </li>
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="KnowMore"
+                >
                   <Link href="/knowmore"> KnowMore </Link>
                 </li>
-                <li className="footer-item umami--click--sparclink-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="SPARClink"
+                >
                   <Link href="/sparclink"> SPARClink </Link>
                 </li>
-                <li className="footer-item umami--click--aqua-footer">
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="AQUA"
+                >
                   <Link href="/aqua"> AQUA </Link>
                 </li>
               </ul>
@@ -149,8 +221,8 @@ export default function Footer() {
 
         <div className="mt-3 flex h-full flex-col items-center justify-center space-y-4 space-x-0 divide-x-2 divide-none divide-gray-200 py-5 md:flex-row md:space-y-0 md:space-x-4 md:divide-solid">
           <div className="text-center text-gray-500">
-            <p>© 2022 FAIR Data Innovations Hub.</p>
-            <p>All rights reserved.</p>
+            <p> © 2022 FAIR Data Innovations Hub. </p>
+            <p> All rights reserved. </p>
           </div>
 
           <div className=" mt-0  flex flex-row items-center justify-center">
@@ -158,7 +230,10 @@ export default function Footer() {
               href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
               target="_blank"
               rel="noreferrer"
-              className="umami--click--vercel-footer mx-0 md:mx-4"
+              className="mx-0 md:mx-4"
+              data-umami-event="Navigation link"
+              data-umami-event-location="Footer"
+              data-umami-event-value="Vercel"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
