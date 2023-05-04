@@ -38,7 +38,9 @@ export default function AboutUs() {
             <Link href="/team" passHref>
               <button
                 type="button"
-                className="umami--click--meet-the-team-button w-max rounded-md border-none bg-black px-6 py-4 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+                className="w-max rounded-md border-none bg-black px-6 py-4 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+                data-umami-event="Home page link"
+                data-umami-event-value="Meet our team"
               >
                 Meet our team
               </button>
