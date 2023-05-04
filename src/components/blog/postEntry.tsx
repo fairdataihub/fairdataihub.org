@@ -42,7 +42,12 @@ const postEntry: React.FC<PostEntryProps> = ({
       <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
         {category !== `` && (
           <Link href={`/category/${category}`} passHref>
-            <h3 className="text-url umami--click--blog-article-category mb-1 cursor-pointer text-base font-semibold hover:underline md:hidden">
+            <h3
+              className="text-url mb-1 cursor-pointer text-base font-semibold hover:underline md:hidden"
+              data-umami-event="Blog"
+              data-umami-event-action="Category"
+              data-umami-event-value={category}
+            >
               {category}
             </h3>
           </Link>
@@ -71,7 +76,12 @@ const postEntry: React.FC<PostEntryProps> = ({
             <h3 className="mr-2 text-sm font-bold">Tags: </h3>
             {tags.map((tag) => (
               <Link href={`/tags/${tag}`} key={tag}>
-                <span className="umami--click--blog-article-tag mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 transition-all hover:border-light-accent hover:text-accent">
+                <span
+                  className="mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 transition-all hover:border-light-accent hover:text-accent"
+                  data-umami-event="Blog"
+                  data-umami-event-action="Tag"
+                  data-umami-event-value={tag}
+                >
                   {tag}
                 </span>
               </Link>

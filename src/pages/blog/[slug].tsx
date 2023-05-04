@@ -175,7 +175,9 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
                   </span>
                   <a
                     href={`https://twitter.com/` + authorsJSON[author].social}
-                    className="umami--click--blog-author-social text-sm font-medium text-accent"
+                    className="text-sm font-medium text-accent"
+                    data-umami-event="Blog Author Social Media"
+                    data-umami-eventvalue={authorsJSON[author].social}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -200,7 +202,9 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={`http://twitter.com/share?text=I just read this article and think y'all need to take a look at this&url=https://fairdataihub.org/blog/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
               target="_blank"
               rel="noopener noreferrer"
-              className="umami--click--twitter-share-button mx-2 text-slate-500 transition-all hover:text-accent"
+              className="mx-2 text-slate-500 transition-all hover:text-accent"
+              data-umami-event="Share article"
+              data-umami-event-type="Twitter"
               aria-label="Share on Twitter"
             >
               <Icon icon="akar-icons:twitter-fill" width="20" height="20" />
@@ -209,7 +213,9 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={`https://www.facebook.com/sharer/sharer.php?u=https://fairdataihub.org/blog/${slug}"`}
               target="_blank"
               rel="noopener noreferrer"
-              className="umami--click--facebook-share-button mx-2 text-slate-500 transition-all hover:text-accent"
+              className="mx-2 text-slate-500 transition-all hover:text-accent"
+              data-umami-event="Share article"
+              data-umami-event-type="Facebook"
               aria-label="Share on Facebook"
             >
               <Icon icon="akar-icons:facebook-fill" width="20" height="20" />
@@ -218,7 +224,9 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={`https://www.linkedin.com/sharing/share-offsite/?url=https://fairdataihub.org/blog/${slug}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="umami--click--linkedin-share-button mx-2 text-slate-500 transition-all hover:text-accent"
+              className="mx-2 text-slate-500 transition-all hover:text-accent"
+              data-umami-event="Share article"
+              data-umami-event-type="LinkedIn"
               aria-label="Share on LinkedIn"
             >
               <Icon
@@ -229,7 +237,9 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             </a>
             <div
               onClick={copyLinkToClipboard}
-              className="umami--click--copy-url-button mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
+              className="mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
+              data-umami-event="Share article"
+              data-umami-event-type="Copy URL"
               aria-label="Copy to clipboard"
             >
               <Icon icon="akar-icons:link-chain" width="20" height="20" />
