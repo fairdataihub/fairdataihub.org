@@ -1,3 +1,11 @@
+## [2.28.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.3...v2.28.4) (2023-05-05)
+
+
+### Bug Fixes
+
+* 🐛 update profile images ([d85b681](https://github.com/fairdataihub/fairdataihub.org/commit/d85b681ca342d73c2262676653378a3ea0ac6905))
+* 🐛 update umami script url ([9697020](https://github.com/fairdataihub/fairdataihub.org/commit/96970203490273b7827f48294d972f72b6011938))
+
 ## [2.28.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.2...v2.28.3) (2023-05-04)
 
 ### Bug Fixes
