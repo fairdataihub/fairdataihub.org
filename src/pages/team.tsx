@@ -145,7 +145,7 @@ const TEAM_JSON = [
     title: `Software developer`,
     bio: `Aydan is from Azerbaijan and pursued her M.S degree in Computer Science. She has experience in web development with a focus on building scalable dynamic front-end web applications. She enjoys bike riding, sightseeing, and exploring new places.
     `,
-    image: `/images/people/aydan-head.jpg`,
+    image: `/images/people/aydan-full.jpg`,
     width: 1378,
     height: 2012,
     borderTop: true,
