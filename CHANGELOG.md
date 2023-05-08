@@ -1,5 +1,18 @@
 ## [2.28.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.4...v2.28.5) (2023-05-08)
 
+
+### Bug Fixes
+
+* **deps:** update dependency react-toastify to v9.1.2 ([#413](https://github.com/fairdataihub/fairdataihub.org/issues/413)) ([64d047b](https://github.com/fairdataihub/fairdataihub.org/commit/64d047bb7ff0f60d1e39e2a3dca04b94914fcf9f))
+
+
+### Reverts
+
+* Revert "chore(deps): update react monorepo (#417)" (#420) ([3199014](https://github.com/fairdataihub/fairdataihub.org/commit/319901440b7a7db7db97ee94bf3e3fd0aad81987)), closes [#417](https://github.com/fairdataihub/fairdataihub.org/issues/417) [#420](https://github.com/fairdataihub/fairdataihub.org/issues/420)
+* Revert "chore(deps): update nextjs monorepo to v13.3.4 (#416)" (#421) ([bb9e49a](https://github.com/fairdataihub/fairdataihub.org/commit/bb9e49a213967575d52b0e48da7c819cfddb2d4d)), closes [#416](https://github.com/fairdataihub/fairdataihub.org/issues/416) [#421](https://github.com/fairdataihub/fairdataihub.org/issues/421)
+
+## [2.28.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.4...v2.28.5) (2023-05-08)
+
 ### Bug Fixes
 
 - **deps:** update dependency react-toastify to v9.1.2 ([#413](https://github.com/fairdataihub/fairdataihub.org/issues/413)) ([64d047b](https://github.com/fairdataihub/fairdataihub.org/commit/64d047bb7ff0f60d1e39e2a3dca04b94914fcf9f))
