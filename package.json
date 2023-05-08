@@ -98,7 +98,7 @@
     "lint-staged": "13.2.0",
     "megasanjay-devmoji": "^1.2.1",
     "next-sitemap": "4.0.9",
-    "postcss": "8.4.21",
+    "postcss": "8.4.23",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "0.2.4",
     "semantic-release": "20.1.3",
