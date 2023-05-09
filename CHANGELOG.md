@@ -1,11 +1,10 @@
 ## [2.28.6](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.5...v2.28.6) (2023-05-09)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency react-fast-marquee to v1.5.2 ([#428](https://github.com/fairdataihub/fairdataihub.org/issues/428)) ([fd2e8ec](https://github.com/fairdataihub/fairdataihub.org/commit/fd2e8ec25f2d2a1512e18ea26a95e78cda99a6c4))
-* **deps:** update dependency rehype-external-links to v2.1.0 ([#429](https://github.com/fairdataihub/fairdataihub.org/issues/429)) ([efddb10](https://github.com/fairdataihub/fairdataihub.org/commit/efddb10c6f2b965cfa939455534170471eefa38c))
-* **deps:** update dependency swiper to v9.2.4 ([#433](https://github.com/fairdataihub/fairdataihub.org/issues/433)) ([e32f892](https://github.com/fairdataihub/fairdataihub.org/commit/e32f8928f06b7877401008d83a5cd5adab9289fd))
+- **deps:** update dependency react-fast-marquee to v1.5.2 ([#428](https://github.com/fairdataihub/fairdataihub.org/issues/428)) ([fd2e8ec](https://github.com/fairdataihub/fairdataihub.org/commit/fd2e8ec25f2d2a1512e18ea26a95e78cda99a6c4))
+- **deps:** update dependency rehype-external-links to v2.1.0 ([#429](https://github.com/fairdataihub/fairdataihub.org/issues/429)) ([efddb10](https://github.com/fairdataihub/fairdataihub.org/commit/efddb10c6f2b965cfa939455534170471eefa38c))
+- **deps:** update dependency swiper to v9.2.4 ([#433](https://github.com/fairdataihub/fairdataihub.org/issues/433)) ([e32f892](https://github.com/fairdataihub/fairdataihub.org/commit/e32f8928f06b7877401008d83a5cd5adab9289fd))
 
 ## [2.28.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.4...v2.28.5) (2023-05-08)
 
