@@ -31,7 +31,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
   const { category } = router.query;
 
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:py-10 sm:px-10">
+    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Head>
         <title>{category} - Categories | Fair Data Innovations Hub</title>
         <meta

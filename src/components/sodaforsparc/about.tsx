@@ -30,7 +30,7 @@ export default function About() {
                 What is SPARC?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The NIH&apos;s Stimulating Peripheral Activity to Relieve
                 Conditions (SPARC) program seeks to accelerate development of
@@ -76,7 +76,7 @@ export default function About() {
                 What are the FAIR SPARC Data Guidelines?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 All SPARC-funded researchers must curate their datasets
                 following the SPARC Data Standards (SDS) and share them openly
@@ -122,7 +122,7 @@ export default function About() {
                 What are the challenges?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The guidelines are very exhaustive to maximize FAIRness of SPARC
                 datasets but are challenging and time-consuming for researchers
@@ -139,7 +139,7 @@ export default function About() {
                 What does SODA for SPARC do?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 SODA for SPARC combines intuitive user interfaces and automation
                 such that researchers can efficiently and accurately curate

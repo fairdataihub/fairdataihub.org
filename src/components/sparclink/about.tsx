@@ -30,7 +30,7 @@ export default function About() {
                 What is SPARC?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The NIH&apos;s Stimulating Peripheral Activity to Relieve
                 Conditions (SPARC) program seeks to accelerate development of
@@ -76,7 +76,7 @@ export default function About() {
                 What are the FAIR SPARC Data Guidelines?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 All SPARC-funded researchers must curate their datasets
                 following the SPARC Data Standards (SDS) and share them openly
@@ -122,7 +122,7 @@ export default function About() {
                 What does Impact mean?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The SPARC program provides datasets, maps and computational
                 studies that follow FAIR principles and is used by researchers
@@ -141,7 +141,7 @@ export default function About() {
                 What does SPARClink do?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 SPARClink uses data from existing SPARC publications, datasets
                 and protocols to create an interactive visualization that you

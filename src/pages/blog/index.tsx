@@ -26,7 +26,7 @@ interface BlogProps {
 
 const Blog: React.FC<BlogProps> = ({ blogList }) => {
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:py-10 sm:px-10">
+    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Head>
         <title>Blog - Fair Data Innovations Hub</title>
         <meta property="og:title" content="Blog - Fair Data Innovations Hub " />

@@ -6,7 +6,7 @@ import teamLottie from '../../assets/lotties/team.json';
 
 export default function AboutUs() {
   return (
-    <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pt-6 sm:pb-4">
+    <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pb-4 sm:pt-6">
       <div className="items-center justify-center md:flex">
         <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
           <LottieAnimation
@@ -21,7 +21,7 @@ export default function AboutUs() {
             About Us
           </h1>
 
-          <p className=" mt-2 mb-6 w-full text-left font-asap text-xl text-black sm:text-center  md:my-2 md:text-lg">
+          <p className=" mb-6 mt-2 w-full text-left font-asap text-xl text-black sm:text-center  md:my-2 md:text-lg">
             FAIR Data Innovations Hub is a division of the California Medical
             Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
             research organization located in San Diego, California. We have a

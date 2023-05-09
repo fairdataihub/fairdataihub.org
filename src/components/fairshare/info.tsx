@@ -355,7 +355,7 @@ export default function Info() {
                             />
                           )}
 
-                          <p className="mt-3 ml-2 text-center font-asap text-lg font-normal">
+                          <p className="ml-2 mt-3 text-center font-asap text-lg font-normal">
                             {collaborator.name}
                           </p>
                         </div>

@@ -28,7 +28,7 @@
   }
 
   .docs-ul {
-    @apply ml-4 mb-2 font-asap text-black;
+    @apply mb-2 ml-4 font-asap text-black;
   }
 
   .highlight-text {
