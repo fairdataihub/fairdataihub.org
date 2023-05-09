@@ -42,7 +42,7 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
   }
 
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col  overflow-hidden  px-5   sm:py-10 sm:px-10">
+    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col  overflow-hidden  px-5   sm:px-10 sm:py-10">
       <Head>
         <title>Tags - Fair Data Innovations Hub</title>
         <meta property="og:title" content="Tags - Fair Data Innovations Hub " />
@@ -102,7 +102,7 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
                   );
                 })}
               </div>
-              <hr className="mt-8 mb-2 border-slate-200" />
+              <hr className="mb-2 mt-8 border-slate-200" />
             </div>
           );
         })}

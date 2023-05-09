@@ -39,7 +39,7 @@ const postEntry: React.FC<PostEntryProps> = ({
         <span className="text-sm text-gray-600">{timeToRead} min read</span>
       </div>
 
-      <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:py-5 md:px-7">
+      <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:px-7 md:py-5">
         {category !== `` && (
           <Link href={`/category/${category}`} passHref>
             <h3
@@ -69,7 +69,7 @@ const postEntry: React.FC<PostEntryProps> = ({
           </h2>
         </Link>
 
-        <p className="mt-2 mb-3 ">{subtitle}</p>
+        <p className="mb-3 mt-2 ">{subtitle}</p>
 
         <div className="flex w-full flex-col justify-between md:flex-row">
           <div className="mb-2 flex flex-row items-center text-sm md:mb-0">

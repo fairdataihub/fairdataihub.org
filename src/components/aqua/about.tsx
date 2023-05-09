@@ -28,7 +28,7 @@ export default function About() {
                 What is SPARC?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The NIH&apos;s Stimulating Peripheral Activity to Relieve
                 Conditions (SPARC) program seeks to accelerate development of
@@ -75,7 +75,7 @@ export default function About() {
                 What are the FAIR SPARC Data Guidelines?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 All SPARC-funded researchers must curate their datasets
                 following the SPARC Data Standards (SDS) and share them openly
@@ -122,7 +122,7 @@ export default function About() {
                 What are the challenges?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 Currently, the search feature of the SPARC Portal is very
                 limited. It does not recognize nearby words (typos and
@@ -145,7 +145,7 @@ export default function About() {
                 What does AQUA do?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 AQUA makes the current SPARC Portal search engine smarter at
                 understanding user query and improve search result display. The
