@@ -111,7 +111,7 @@ export default function ProjectsCarousel() {
   return (
     <>
       <section>
-        <div className="mx-auto h-auto w-full max-w-screen-lg px-4 pt-1 pb-3">
+        <div className="mx-auto h-auto w-full max-w-screen-lg px-4 pb-3 pt-1">
           <div className="mb-4 flex flex-col items-center justify-center">
             <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
               Current Projects

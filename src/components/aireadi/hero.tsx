@@ -52,7 +52,7 @@ export default function Hero() {
           </div>
 
           <div className="relative z-10 py-2 sm:py-0 lg:max-w-2xl">
-            <div className="absolute left-0 bottom-1 z-0 w-40 opacity-60 sm:bottom-0 lg:hidden">
+            <div className="absolute bottom-1 left-0 z-0 w-40 opacity-60 sm:bottom-0 lg:hidden">
               <Image
                 src="/backgrounds/dot-grid-grey.svg"
                 alt="Grey grid"

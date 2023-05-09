@@ -29,7 +29,7 @@ interface TeamCardProps {
 const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
   return (
     <div
-      className={`flex flex-col py-4 px-1 sm:flex-row lg:p-5`}
+      className={`flex flex-col px-1 py-4 sm:flex-row lg:p-5`}
       id={profile.id}
     >
       <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
@@ -45,7 +45,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
           className="rounded-xl"
         />
       </div>
-      <div className="flex w-full flex-col px-0 py-3 sm:py-4 sm:px-8 md:w-1/2 lg:ml-2 lg:w-3/5">
+      <div className="flex w-full flex-col px-0 py-3 sm:px-8 sm:py-4 md:w-1/2 lg:ml-2 lg:w-3/5">
         <h1 className="text-2xl font-semibold sm:text-xl lg:text-3xl">
           {profile.name}
         </h1>

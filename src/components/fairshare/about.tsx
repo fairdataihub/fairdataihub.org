@@ -33,7 +33,7 @@ export default function About() {
                 What are the FAIR Data Principles?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The FAIR Data Principles are a set of guidelines for curating
                 and sharing research data such that they are optimaly reusable
@@ -78,7 +78,7 @@ export default function About() {
                 Why are FAIR data practices important?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 FAIR data practices are crucial for ensuring reproducibility of
                 scientific findings, promoting reuse of data, and enabling
@@ -96,7 +96,7 @@ export default function About() {
                 What are the challenges?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 Support is lacking to educate and assist the researchers, manual
                 curation is not suitable to manage the amount of data being
@@ -114,7 +114,7 @@ export default function About() {
                 What does FAIRshare do?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 FAIRshare is a desktop software that streamlines the process of
                 making biomedical research data and software FAIR by combining

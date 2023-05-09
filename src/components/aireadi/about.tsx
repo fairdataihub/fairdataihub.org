@@ -52,7 +52,7 @@ export default function About() {
                 What is the goal of AI-READI project?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The AI-READI project seeks to create a flagship AI-ready and
                 ethically-sourced dataset that will support future AI-drive
@@ -99,7 +99,7 @@ export default function About() {
                 What data will be collected?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The project will aim to collect data from 4,000 participants. To
                 ensure the data is population-representative, the participants
@@ -120,7 +120,7 @@ export default function About() {
                 How will the project data be made AI-ready?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The AI-READI project data will be made FAIR to optimize reuse by
                 humans and machines (i.e., AI/ML program). The data will
@@ -166,7 +166,7 @@ export default function About() {
                 What is the fairdataihub&apos;s role in the project?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 Our team will lead the development of fairhub.io, a web platform
                 with intuitive user interfaces and automation tools that will

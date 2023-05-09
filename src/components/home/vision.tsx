@@ -28,7 +28,7 @@ export default function Vision() {
                 What are the FAIR Data Principles?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 The FAIR Data Principles are a set of guidelines for curating
                 and sharing research data such that they are optimaly reusable
@@ -75,7 +75,7 @@ export default function Vision() {
                 Why are FAIR data practices important?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 FAIR data practices are crucial for ensuring reproducibility of
                 scientific findings, promoting reuse of data, and enabling
@@ -93,7 +93,7 @@ export default function Vision() {
                 What are the challenges?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 Despite effort from funding agencies, industry, and researchers,
                 FAIR data practices are not widely adopted due to their complex
@@ -115,7 +115,7 @@ export default function Vision() {
                 What do we do?
               </p>
             </dt>
-            <dd className="mt-2 ml-16 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
                 We develop open source tools that enhance and streamline FAIR
                 data practices for biomedical researchers through automation and
