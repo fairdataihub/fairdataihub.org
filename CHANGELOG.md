@@ -1,3 +1,10 @@
+## [2.28.8](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.7...v2.28.8) (2023-05-16)
+
+
+### Bug Fixes
+
+* update logo to include white border text ([add5b77](https://github.com/fairdataihub/fairdataihub.org/commit/add5b77b844beadf2e1ffe1d1c2be2a5644b6d1e))
+
 ## [2.28.7](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.6...v2.28.7) (2023-05-10)
 
 ### Bug Fixes
