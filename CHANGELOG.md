@@ -1,3 +1,11 @@
+## [2.28.9](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.8...v2.28.9) (2023-05-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-toastify to v9.1.3 ([#449](https://github.com/fairdataihub/fairdataihub.org/issues/449)) ([8a2df5f](https://github.com/fairdataihub/fairdataihub.org/commit/8a2df5ff3e09194bf136d4ca5fdde5f7b6a368bd))
+* **deps:** update dependency swiper to v9.3.2 ([#450](https://github.com/fairdataihub/fairdataihub.org/issues/450)) ([d1198fa](https://github.com/fairdataihub/fairdataihub.org/commit/d1198fa8224a15934eab7478e57b1f86f187cd29))
+
 ## [2.28.8](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.7...v2.28.8) (2023-05-16)
 
 ### Bug Fixes
