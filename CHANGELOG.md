@@ -1,3 +1,10 @@
+## [2.28.10](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.9...v2.28.10) (2023-05-22)
+
+
+### Bug Fixes
+
+* **deps:** update remark monorepo ([#452](https://github.com/fairdataihub/fairdataihub.org/issues/452)) ([f583c0a](https://github.com/fairdataihub/fairdataihub.org/commit/f583c0afe06c09be8a0b7775962b81d41464b5c3))
+
 ## [2.28.9](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.8...v2.28.9) (2023-05-19)
 
 ### Bug Fixes
