@@ -909,20 +909,7 @@
     fs-extra "^11.0.0"
     lodash "^4.17.4"
 
-"@semantic-release/commit-analyzer@10.0.0":
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-10.0.0.tgz#e9c1fc01faaa5ad9011e0507cafe72e87511eafc"
-  integrity sha512-/Uolz2+G+VRjP0eudAn0ldnC/VkSHzlctUdeEXL7ys7E6mLSFZdwdsR5pKDlTIgDJq4eYlshOZpwBNrmqrNajg==
-  dependencies:
-    conventional-changelog-angular "^5.0.0"
-    conventional-commits-filter "^2.0.0"
-    conventional-commits-parser "^3.2.3"
-    debug "^4.0.0"
-    import-from "^4.0.0"
-    lodash-es "^4.17.21"
-    micromatch "^4.0.2"
-
-"@semantic-release/commit-analyzer@^10.0.0":
+"@semantic-release/commit-analyzer@10.0.1", "@semantic-release/commit-analyzer@^10.0.0":
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/commit-analyzer/-/commit-analyzer-10.0.1.tgz#be6fcc1703459294c394ede41b37fd9a21d39807"
   integrity sha512-9ejHzTAijYs9z246sY/dKBatmOPcd0GQ7lH4MgLCkv1q4GCiDZRkjHJkaQZXZVaK7mJybS+sH3Ng6G8i3pYMGQ==
@@ -940,6 +927,11 @@
   resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-3.0.0.tgz#30a3b97bbb5844d695eb22f9d3aa40f6a92770c2"
   integrity sha512-5hiM4Un+tpl4cKw3lV4UgzJj+SmfNIDCLLw0TepzQxz9ZGV5ixnqkzIVF+3tp0ZHgcMKE+VNGHJjEeyFG2dcSw==
 
+"@semantic-release/error@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@semantic-release/error/-/error-4.0.0.tgz#692810288239637f74396976a9340fbc0aa9f6f9"
+  integrity sha512-mgdxrHTLOjOddRVYIYDo0fR3/v61GNN1YGkfbrjuIKg/uMgCd+Qzo3UAXJ+woLQQpos4pl5Esuw5A7AoNlzjUQ==
+
 "@semantic-release/git@10.0.1", "@semantic-release/git@^10.0.1":
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/@semantic-release/git/-/git-10.0.1.tgz#c646e55d67fae623875bf3a06a634dd434904498"
@@ -954,7 +946,29 @@
     micromatch "^4.0.0"
     p-reduce "^2.0.0"
 
-"@semantic-release/github@9.0.2", "@semantic-release/github@^9.0.0":
+"@semantic-release/github@9.0.3":
+  version "9.0.3"
+  resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-9.0.3.tgz#2559da9bcedeacb572f240469270a281c2a83615"
+  integrity sha512-X6gq4USKVlCxPwIIyXb99jU7gwVWlnsKOevs+OyABRdoqc+OIRITbFmrrYU3eE1vGMGk+Qu/GAoLUQQQwC3YOA==
+  dependencies:
+    "@octokit/core" "^4.2.1"
+    "@octokit/plugin-paginate-rest" "^7.0.0"
+    "@octokit/plugin-retry" "^5.0.0"
+    "@octokit/plugin-throttling" "^6.0.0"
+    "@semantic-release/error" "^4.0.0"
+    aggregate-error "^4.0.1"
+    debug "^4.3.4"
+    dir-glob "^3.0.1"
+    globby "^13.1.4"
+    http-proxy-agent "^7.0.0"
+    https-proxy-agent "^7.0.0"
+    issue-parser "^6.0.0"
+    lodash-es "^4.17.21"
+    mime "^3.0.0"
+    p-filter "^3.0.0"
+    url-join "^5.0.0"
+
+"@semantic-release/github@^9.0.0":
   version "9.0.2"
   resolved "https://registry.yarnpkg.com/@semantic-release/github/-/github-9.0.2.tgz#2e1c7cbaa15ba2009ae0607e55354aa5e4cacc77"
   integrity sha512-FDwR9Tkz14MR/HF6srbHDuqLPUI0GmPgn4tkjfPi45/1oZedqEXC3TqSHK3+ykJmWj1sXgs94zwGI10VR5o6kg==
@@ -995,15 +1009,15 @@
     semver "^7.1.2"
     tempy "^3.0.0"
 
-"@semantic-release/release-notes-generator@11.0.2":
-  version "11.0.2"
-  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-11.0.2.tgz#2ed08da9d6e3f14df0f48fa1d632136628549d55"
-  integrity sha512-B+Aa82uciufoaoJulnzq7ezqH36nrHOO15ubJmg2hZitzCpPAa6X0pOtkffG+30HLdck5Ky2uJC4uAm/YylbOw==
+"@semantic-release/release-notes-generator@11.0.3":
+  version "11.0.3"
+  resolved "https://registry.yarnpkg.com/@semantic-release/release-notes-generator/-/release-notes-generator-11.0.3.tgz#9d7d94e305441d3b31385e29aa5a79ce3f6a21ae"
+  integrity sha512-NU77dWKQf+QcZrv/Hcp3DPeSxglPu8hYKCipGxAPpeaneLkg6S0zfTVug4tg4mfDhZHC6RtoI7ljQDK8VoJ2Dw==
   dependencies:
-    conventional-changelog-angular "^5.0.0"
-    conventional-changelog-writer "^5.0.0"
-    conventional-commits-filter "^2.0.0"
-    conventional-commits-parser "^3.2.3"
+    conventional-changelog-angular "^6.0.0"
+    conventional-changelog-writer "^6.0.0"
+    conventional-commits-filter "^3.0.0"
+    conventional-commits-parser "^4.0.0"
     debug "^4.0.0"
     get-stream "^7.0.0"
     import-from "^4.0.0"
@@ -2474,6 +2488,19 @@ conventional-changelog-writer@^5.0.0:
     split "^1.0.0"
     through2 "^4.0.0"
 
+conventional-changelog-writer@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-writer/-/conventional-changelog-writer-6.0.0.tgz#8c8dea0441c6e648c9b25bb784e750d02f8002d5"
+  integrity sha512-8PyWTnn7zBIt9l4hj4UusFs1TyG+9Ulu1zlOAc72L7Sdv9Hsc8E86ot7htY3HXCVhXHB/NO0pVGvZpwsyJvFfw==
+  dependencies:
+    conventional-commits-filter "^3.0.0"
+    dateformat "^3.0.3"
+    handlebars "^4.7.7"
+    json-stringify-safe "^5.0.1"
+    meow "^8.1.2"
+    semver "^6.3.0"
+    split "^1.0.1"
+
 conventional-commit-types@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/conventional-commit-types/-/conventional-commit-types-3.0.0.tgz#7c9214e58eae93e85dd66dbfbafe7e4fffa2365b"
@@ -2708,7 +2735,7 @@ dashdash@^1.12.0:
   dependencies:
     assert-plus "^1.0.0"
 
-dateformat@^3.0.0:
+dateformat@^3.0.0, dateformat@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/dateformat/-/dateformat-3.0.3.tgz#a6e37499a4d9a9cf85ef5872044d62901c9889ae"
   integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
@@ -8292,7 +8319,7 @@ split2@~1.0.0:
   dependencies:
     through2 "~2.0.0"
 
-split@^1.0.0:
+split@^1.0.0, split@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/split/-/split-1.0.1.tgz#605bd9be303aa59fb35f9229fbea0ddec9ea07d9"
   integrity sha512-mTyOoPbrivtXnwnIxZRFYRrPNtEFKlpB2fvjSnCQUiAA6qAZzqwna5envK4uk6OIeP17CsdF3rSBGYVBsU0Tkg==
