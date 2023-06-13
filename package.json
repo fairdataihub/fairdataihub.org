@@ -42,7 +42,7 @@
     "gray-matter": "4.0.3",
     "markdown-it": "13.0.1",
     "next": "13.4.2",
-    "plaiceholder": "^2.5.0",
+    "plaiceholder": "^3.0.0",
     "probe-image-size": "^7.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
