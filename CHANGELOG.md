@@ -1,10 +1,9 @@
 ## [2.28.18](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.17...v2.28.18) (2023-06-16)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency cookies-next to v2.1.2 ([#482](https://github.com/fairdataihub/fairdataihub.org/issues/482)) ([3b7d56e](https://github.com/fairdataihub/fairdataihub.org/commit/3b7d56e8964f003967477cc0e11848dff8426ca8))
-* **deps:** update dependency swiper to v9.4.0 ([#481](https://github.com/fairdataihub/fairdataihub.org/issues/481)) ([b53619f](https://github.com/fairdataihub/fairdataihub.org/commit/b53619f173a26e398409cade1f1582f3296754e2))
+- **deps:** update dependency cookies-next to v2.1.2 ([#482](https://github.com/fairdataihub/fairdataihub.org/issues/482)) ([3b7d56e](https://github.com/fairdataihub/fairdataihub.org/commit/3b7d56e8964f003967477cc0e11848dff8426ca8))
+- **deps:** update dependency swiper to v9.4.0 ([#481](https://github.com/fairdataihub/fairdataihub.org/issues/481)) ([b53619f](https://github.com/fairdataihub/fairdataihub.org/commit/b53619f173a26e398409cade1f1582f3296754e2))
 
 ## [2.28.17](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.16...v2.28.17) (2023-06-14)
 
