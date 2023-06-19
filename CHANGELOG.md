@@ -1,3 +1,11 @@
+## [2.28.19](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.18...v2.28.19) (2023-06-19)
+
+
+### Bug Fixes
+
+* **deps:** update dependency formik to v2.4.2 ([#487](https://github.com/fairdataihub/fairdataihub.org/issues/487)) ([1cab8bb](https://github.com/fairdataihub/fairdataihub.org/commit/1cab8bbebe15779511430e68000faff389e9080a))
+* **deps:** update dependency swiper to v9.4.1 ([#483](https://github.com/fairdataihub/fairdataihub.org/issues/483)) ([feae76e](https://github.com/fairdataihub/fairdataihub.org/commit/feae76ed399be27e12755d5c5f8c79e7c302ae84))
+
 ## [2.28.18](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.17...v2.28.18) (2023-06-16)
 
 ### Bug Fixes
