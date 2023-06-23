@@ -38,48 +38,50 @@ export default function Collaborators() {
   ];
 
   return (
-    <section>
-      <div className="container mx-auto max-w-screen-lg px-6 pb-0 pt-4 md:p-10">
+    <section className="mx-auto max-w-screen-lg px-6 pb-0 pt-4 md:p-10">
+      <div className="container relative mx-auto max-w-screen-lg">
         <div className="mb-4 flex w-full flex-col items-center">
           <p className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             Where do our tools make a difference?
           </p>
         </div>
 
-        <div className="my-4">
+        <div className="">
           <Cobe />
         </div>
 
-        <div className="mb-2 block">
-          <Marquee
-            speed={60}
-            gradient={true}
-            gradientColor={[255, 255, 255]}
-            gradientWidth="25p"
-          >
-            {logoImages.map((logo, index) => (
-              <div
-                key={index}
-                className=" flex h-full w-full items-center justify-center"
-              >
-                <Image
-                  className=" !px-4"
-                  src={logo.src}
-                  alt={logo.alt}
-                  width={logo.width}
-                  height={logo.height}
-                />
-              </div>
-            ))}
-          </Marquee>
+        <div className="md:logo-overlay md:absolute md:bottom-0">
+          <div className="relative mb-2 block">
+            <Marquee
+              speed={60}
+              gradient={true}
+              gradientColor={[255, 255, 255]}
+              gradientWidth="25p"
+            >
+              {logoImages.map((logo, index) => (
+                <div
+                  key={index}
+                  className=" flex h-full w-full items-center justify-center"
+                >
+                  <Image
+                    className=" !px-4"
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={logo.width}
+                    height={logo.height}
+                  />
+                </div>
+              ))}
+            </Marquee>
+          </div>
         </div>
-        <span className=" text-xs text-gray-400">
-          Disclaimer: All logos are used with adequate permissions. Opinions,
-          interpretations, conclusions and recommendations are those of the FAIR
-          Data Innovations Hub and are not necessarily endorsed by the other
-          organizations mentioned on this website.
-        </span>
       </div>
+      <span className="text-xs text-gray-400">
+        Disclaimer: All logos are used with adequate permissions. Opinions,
+        interpretations, conclusions and recommendations are those of the FAIR
+        Data Innovations Hub and are not necessarily endorsed by the other
+        organizations mentioned on this website.
+      </span>
     </section>
   );
 }

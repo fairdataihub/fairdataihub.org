@@ -44,6 +44,10 @@
     transform-origin: bottom left;
   }
 
+  .logo-overlay {
+    background: linear-gradient(0deg, white, white 80%, transparent);
+  }
+
   .nav-item {
     @apply relative mx-1 cursor-pointer py-2 sm:px-1 lg:px-3;
   }

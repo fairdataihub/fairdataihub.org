@@ -10,6 +10,21 @@ export default function Cobe() {
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
 
+  const genrateRandomMarkers = () => {
+    const markers = [];
+
+    for (let i = 0; i < 10000; i++) {
+      markers.push({
+        location: [Math.random() * 180 - 90, Math.random() * 360 - 180],
+        size: Math.random() * 0.1,
+      });
+    }
+
+    return markers;
+  };
+
+  const randomMarkers = genrateRandomMarkers();
+
   const [{ r }, api] = useSpring(() => ({
     r: 0,
     config: {
@@ -36,27 +51,18 @@ export default function Cobe() {
       width: width * 2,
       height: width * 2 * 0,
       phi: 0,
-      theta: 0.3,
+      theta: 0.1,
       dark: 0,
-      diffuse: 3,
+      diffuse: 1,
       mapSamples: 16000,
-      mapBrightness: 1.5,
+      mapBrightness: 5,
       baseColor: [1, 1, 1],
       markerColor: [205 / 255, 50 / 255, 159 / 255],
       glowColor: [1.0, 1.0, 1.0],
 
-      markers: [
-        { location: [37.76287113425228, -122.45710387756455], size: 0.1 },
-        { location: [32.90624745109368, -117.23087138885114], size: 0.1 },
-        { location: [51.52433224067322, -0.13393281164228948], size: 0.1 },
-        { location: [44.97397482024652, -93.22858680686167], size: 0.1 },
-        { location: [40.022892556266406, -75.19345382382448], size: 0.1 },
-        { location: [40.423315229673406, -86.92065745957946], size: 0.1 },
-        { location: [47.37543582743389, 8.530733699460093], size: 0.1 },
-        { location: [37.428469826175125, -122.17294210084522], size: 0.1 },
-      ],
+      markers: randomMarkers,
 
-      scale: 2.9,
+      scale: width > 800 ? 2.0 : 1.2,
       offset: [0, width * 2 * 0.2 * 0.3],
 
       onRender: (state) => {
