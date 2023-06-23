@@ -59,7 +59,7 @@ export default function Home() {
         <ProjectsCarousel />
       </section>
 
-      <section className="bg-white py-10">
+      <section className="bg-white pt-10">
         <Collaborators />
       </section>
     </div>

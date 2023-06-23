@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
+import Cobe from '@/components/home/cobe';
+
 export default function Collaborators() {
   const logoImages = [
     {
@@ -43,6 +45,11 @@ export default function Collaborators() {
             Where do our tools make a difference?
           </p>
         </div>
+
+        <div className="my-4">
+          <Cobe />
+        </div>
+
         <div className="mb-2 block">
           <Marquee
             speed={60}
@@ -51,14 +58,18 @@ export default function Collaborators() {
             gradientWidth="25p"
           >
             {logoImages.map((logo, index) => (
-              <Image
+              <div
                 key={index}
-                className="!px-4"
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.width}
-                height={logo.height}
-              />
+                className=" flex h-full w-full items-center justify-center"
+              >
+                <Image
+                  className=" !px-4"
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.width}
+                  height={logo.height}
+                />
+              </div>
             ))}
           </Marquee>
         </div>

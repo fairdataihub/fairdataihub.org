@@ -28,5 +28,5 @@
     "**/*.tsx",
     "src/components/layout/layout.js",
     "src/pages/blog/blog.jsx"
-  ]
+, "src/components/home/cobe.jsx"  ]
 }
