@@ -95,7 +95,7 @@
     "eslint-plugin-unused-imports": "^2.0.0",
     "front-matter": "^4.0.2",
     "husky": "8.0.3",
-    "lint-staged": "13.2.2",
+    "lint-staged": "13.2.3",
     "megasanjay-devmoji": "^1.2.1",
     "next-sitemap": "4.1.8",
     "postcss": "8.4.24",
