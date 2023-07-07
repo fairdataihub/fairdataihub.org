@@ -60,7 +60,7 @@
     "remark-parse": "10.0.2",
     "remark-rehype": "10.1.0",
     "sharp": "^0.31.3",
-    "swiper": "9.4.1",
+    "swiper": "10.0.2",
     "unified": "10.1.2",
     "words-count": "2.0.2"
   },
