@@ -92,7 +92,7 @@
     "eslint-import-resolver-typescript": "3.5.5",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-unused-imports": "^2.0.0",
+    "eslint-plugin-unused-imports": "^3.0.0",
     "front-matter": "^4.0.2",
     "husky": "8.0.3",
     "lint-staged": "13.2.3",
