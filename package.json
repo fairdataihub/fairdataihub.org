@@ -86,7 +86,7 @@
     "commitizen": "4.3.0",
     "cypress": "12.17.0",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.45.0",
+    "eslint": "8.46.0",
     "eslint-config-next": "13.4.2",
     "eslint-config-prettier": "8.9.0",
     "eslint-import-resolver-typescript": "3.5.5",
