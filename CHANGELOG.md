@@ -1,9 +1,8 @@
 ## [2.28.22](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.21...v2.28.22) (2023-08-03)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency formik to v2.4.3 ([#527](https://github.com/fairdataihub/fairdataihub.org/issues/527)) ([0e0236f](https://github.com/fairdataihub/fairdataihub.org/commit/0e0236f85f480a567d5d538b539d94fdf7b7c22e))
+- **deps:** update dependency formik to v2.4.3 ([#527](https://github.com/fairdataihub/fairdataihub.org/issues/527)) ([0e0236f](https://github.com/fairdataihub/fairdataihub.org/commit/0e0236f85f480a567d5d538b539d94fdf7b7c22e))
 
 ## [2.28.21](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.20...v2.28.21) (2023-07-06)
 
