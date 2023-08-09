@@ -2,7 +2,7 @@ name: End-to-end tests
 on: [push]
 jobs:
   chrome:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
 
     name: E2E on Chrome
 
