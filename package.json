@@ -20,6 +20,7 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|jsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|jsx)\" --write",
     "prepare": "husky install",
+    "postinstall": "husky install",
     "commit": "cz",
     "postbuild": "next-sitemap",
     "semantic-release": "semantic-release",
