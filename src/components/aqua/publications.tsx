@@ -15,7 +15,7 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.12688/f1000research.73018.1"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold">
               AQUA: an Advanced QUery Architecture for the SPARC Portal
@@ -31,7 +31,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.12688/f1000research.73018.1"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.12688/f1000research.73018.1"
               >

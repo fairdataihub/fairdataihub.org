@@ -33,7 +33,7 @@ export default function AboutUs() {
               href="https://calmi2.org/"
               target="_blank"
               className="hidden"
-              rel="noreferrer"
+              rel="noopener"
             ></a>
             <Link href="/team" passHref>
               <button

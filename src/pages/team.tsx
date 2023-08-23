@@ -329,7 +329,7 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <a
               href="https://calmi2.org"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="text-url hover-underline-animation"
               data-umami-event="Team Page - Learn more about CALMI2"
             >

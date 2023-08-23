@@ -39,7 +39,7 @@ export default function Hero() {
                 href="https://aireadi.org"
                 target="_blank"
                 aria-label="AI-READI website"
-                rel="noreferrer"
+                rel="noopener"
                 className="flex flex-row justify-center"
                 data-umami-event="Hero button"
                 data-umami-event-text="AI-READI website"

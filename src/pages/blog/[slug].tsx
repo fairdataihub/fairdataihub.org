@@ -145,7 +145,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={imageAuthorLink}
               aria-label="Image author"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="absolute bottom-1 right-1 z-20 flex flex-row justify-center opacity-0 transition-all group-hover:opacity-100"
             >
               <div className="glass-container flex items-center justify-center rounded-md px-1 py-[2px] text-slate-700 transition-all hover:text-black">
@@ -192,7 +192,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
                     data-umami-event="Blog Author Social Media"
                     data-umami-eventvalue={authorsJSON[author].social}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener"
                   >
                     @{authorsJSON[author].social}
                   </a>
@@ -214,7 +214,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             <a
               href={`http://twitter.com/share?text=I just read this article and think y'all need to take a look at this&url=https://fairdataihub.org/blog/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="mx-2 text-slate-500 transition-all hover:text-accent"
               data-umami-event="Share article"
               data-umami-event-type="Twitter"
@@ -225,7 +225,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             <a
               href={`https://www.facebook.com/sharer/sharer.php?u=https://fairdataihub.org/blog/${slug}"`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="mx-2 text-slate-500 transition-all hover:text-accent"
               data-umami-event="Share article"
               data-umami-event-type="Facebook"
@@ -236,7 +236,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             <a
               href={`https://www.linkedin.com/sharing/share-offsite/?url=https://fairdataihub.org/blog/${slug}`}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               className="mx-2 text-slate-500 transition-all hover:text-accent"
               data-umami-event="Share article"
               data-umami-event-type="LinkedIn"

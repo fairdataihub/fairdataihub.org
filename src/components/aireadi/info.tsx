@@ -56,7 +56,7 @@ export default function Info() {
                       className="text-url hover-underline-animation"
                       data-umami-event="GitHub link"
                       data-umami-event-project="AI-READI"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       <span className="font-lato">
                         Explore the AI-READI GitHub organization
@@ -79,7 +79,7 @@ export default function Info() {
                   <a
                     href="https://github.com/AI-READI"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                     aria-label="Github"
                     data-umami-event="GitHub link"
                     data-umami-event-project="AI-READI"
@@ -120,7 +120,7 @@ export default function Info() {
                       className="text-url hover-underline-animation"
                       data-umami-event="Funding link"
                       data-umami-event-project="AI-READI"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       <span className="font-lato">
                         Explore the award on NIH Reporter
@@ -172,11 +172,7 @@ export default function Info() {
                             </div>
                           </Link>
                         ) : (
-                          <a
-                            href={member.href}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <a href={member.href} target="_blank" rel="noopener">
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
                               <Image
                                 src={member.image}
@@ -231,7 +227,7 @@ export default function Info() {
                         key={collaborator.name}
                         href={collaborator.href}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener"
                         className={`umami--click--${collaborator.id}-link`}
                         data-umami-event="AI-READI collaborator link"
                       >

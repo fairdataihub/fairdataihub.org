@@ -67,7 +67,7 @@ export default function Hero() {
                 href="https://docs.fairshareapp.io/"
                 target="_blank"
                 aria-label="FAIRshare Documentation"
-                rel="noreferrer"
+                rel="noopener"
                 className="flex flex-row justify-center"
                 data-umami-event="Hero button"
                 data-umami-event-text="FAIRshare Documentation"

@@ -86,7 +86,7 @@ export default function Footer() {
                 data-umami-event-location="Footer"
                 data-umami-event-value="GitHub"
                 aria-label="Github"
-                rel="noreferrer"
+                rel="noopener"
               >
                 <svg
                   className="h-7 w-7 fill-current transition-all hover:text-accent"
@@ -229,7 +229,7 @@ export default function Footer() {
             <a
               href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="mx-0 md:mx-4"
               data-umami-event="Navigation link"
               data-umami-event-location="Footer"

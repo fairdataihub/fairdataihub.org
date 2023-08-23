@@ -64,7 +64,7 @@ export default function CookiePolicy() {
           For more information, please visit
           <a
             href="https://www.allaboutcookies.org/"
-            rel="noreferrer"
+            rel="noopener"
             target="_blank"
             className="text-url text-base"
           >
@@ -87,7 +87,7 @@ export default function CookiePolicy() {
           the following link:{` `}
           <a
             href="https://umami.fairdataihub.org/share/wrAncmco/fairdataihub.org"
-            rel="noreferrer"
+            rel="noopener"
             target="_blank"
             className="text-url text-base"
           >
@@ -121,7 +121,7 @@ export default function CookiePolicy() {
             <li>
               <a
                 href="https://support.google.com/accounts/answer/61416"
-                rel="noreferrer"
+                rel="noopener"
                 target="_blank"
                 className="text-url text-base"
               >
@@ -131,7 +131,7 @@ export default function CookiePolicy() {
             <li>
               <a
                 href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences"
-                rel="noreferrer"
+                rel="noopener"
                 target="_blank"
                 className="text-url text-base"
               >
@@ -141,7 +141,7 @@ export default function CookiePolicy() {
             <li>
               <a
                 href="https://support.apple.com/en-gb/guide/safari/sfri11471/mac"
-                rel="noreferrer"
+                rel="noopener"
                 target="_blank"
                 className="text-url text-base"
               >
@@ -151,7 +151,7 @@ export default function CookiePolicy() {
             <li>
               <a
                 href="https://support.microsoft.com/sr-latn-rs/help/4468242/microsoft-edge-browsing-data-and-privacy-microsoft-privacy"
-                rel="noreferrer"
+                rel="noopener"
                 target="_blank"
                 className="text-url text-base"
               >
@@ -161,7 +161,7 @@ export default function CookiePolicy() {
             <li>
               <a
                 href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies"
-                rel="noreferrer"
+                rel="noopener"
                 target="_blank"
                 className="text-url text-base"
               >
@@ -171,7 +171,7 @@ export default function CookiePolicy() {
             <li>
               <a
                 href="https://help.opera.com/en/latest/web-preferences/#cookies"
-                rel="noreferrer"
+                rel="noopener"
                 target="_blank"
                 className="text-url text-base"
               >
@@ -191,7 +191,7 @@ export default function CookiePolicy() {
           platforms for more information:
           <a
             href="https://www.networkadvertising.org/choices/;"
-            rel="noreferrer"
+            rel="noopener"
             target="_blank"
             className="text-url text-base"
           >

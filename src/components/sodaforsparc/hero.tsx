@@ -65,7 +65,7 @@ export default function Hero() {
               <a
                 href="https://docs.sodaforsparc.io/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 className="flex flex-row justify-center"
                 data-umami-event="Hero button"
                 data-umami-event-text="SODA for SPARC Docs"

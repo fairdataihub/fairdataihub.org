@@ -15,7 +15,7 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.12688/f1000research.75071.1"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold">
               SPARClink: an interactive tool to visualize the impact of the
@@ -32,7 +32,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.12688/f1000research.75071.1"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.12688/f1000research.75071.1"
               >

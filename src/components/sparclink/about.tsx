@@ -40,7 +40,7 @@ export default function About() {
                   <a
                     href="https://sparc.science/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                     data-umami-event="About section link"
                     data-umami-event-text="Learn more about SPARC"
                   >
@@ -86,7 +86,7 @@ export default function About() {
                   <a
                     href="https://doi.org/10.1101/2021.02.10.430563"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                     data-umami-event="About section link"
                     data-umami-event-text="Learn more about the SDS"
                   >

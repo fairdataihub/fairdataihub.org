@@ -62,7 +62,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="AQUA"
                       data-umami-event-type="Contributors"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -77,7 +77,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="AQUA"
                       data-umami-event-type="Stars"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -92,7 +92,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="AQUA"
                       data-umami-event-type="Issues"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -107,7 +107,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="AQUA"
                       data-umami-event-type="License"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -123,7 +123,7 @@ export default function Info() {
                       className="text-url hover-underline-animation"
                       data-umami-event="GitHub link"
                       data-umami-event-project="AQUA"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       <span className="font-lato">
                         Explore the GitHub repository
@@ -146,7 +146,7 @@ export default function Info() {
                   <a
                     href="https://github.com/fairdataihub/AQUA"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                     aria-label="Github"
                     data-umami-event="GitHub link"
                     data-umami-event-project="AQUA"
@@ -190,7 +190,7 @@ export default function Info() {
                       className="text-url hover-underline-animation"
                       data-umami-event="Info section link"
                       data-umami-event-text="Learn more about the SPARC Codeathon"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       <span className="font-lato">
                         Learn more about the SPARC Codeathon
@@ -274,11 +274,7 @@ export default function Info() {
                             </div>
                           </Link>
                         ) : (
-                          <a
-                            href={member.href}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <a href={member.href} target="_blank" rel="noopener">
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
                               <Image
                                 src={member.image}

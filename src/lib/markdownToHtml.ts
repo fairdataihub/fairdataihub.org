@@ -19,7 +19,7 @@ export default async function markdownToHtml(markdown: string) {
     .use(rehypeStringify)
     .use(rehypeExternalLinks, {
       target: `_blank`,
-      rel: [`noopener`, `noreferrer`, `nofollow`],
+      rel: [`noopener`, `nofollow`],
     })
     .process(markdown);
 

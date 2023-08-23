@@ -37,7 +37,7 @@ export default function Vision() {
                   <a
                     href="https://doi.org/10.1038/sdata.2016.18"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                   >
                     <p className="text-url hover-underline-animation">
                       Learn more about FAIR

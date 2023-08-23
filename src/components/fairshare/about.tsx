@@ -42,7 +42,7 @@ export default function About() {
                   <a
                     href="https://doi.org/10.1038/sdata.2016.18"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                     data-umami-event="About section link"
                     data-umami-event-text="Learn more about FAIR"
                   >

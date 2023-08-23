@@ -15,7 +15,7 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.1101/2021.08.08.455581"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold">
               KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC
@@ -32,7 +32,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.1101/2021.08.08.455581"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.1101/2021.08.08.455581"
               >

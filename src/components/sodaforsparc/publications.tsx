@@ -15,7 +15,7 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.1101/2021.02.10.430563"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold">
               SPARC Data Structure: Rationale and Design of a FAIR Standard for
@@ -33,7 +33,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.1101/2021.02.10.430563"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.1101/2021.02.10.430563"
               >
@@ -51,7 +51,7 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.1096/fasebj.2020.34.s1.02483"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold">
               SPARC: SODA, an interactive software for curating SPARC datasets
@@ -67,7 +67,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.1096/fasebj.2020.34.s1.02483"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.1096/fasebj.2020.34.s1.02483"
               >

@@ -16,7 +16,7 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.1101/2022.04.18.488694"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold">
               Making Biomedical Research Software FAIR: Actionable Step-by-step
@@ -33,7 +33,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.1101/2022.04.18.488694"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.1101/2022.04.18.488694"
               >

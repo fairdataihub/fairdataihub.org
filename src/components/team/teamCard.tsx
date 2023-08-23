@@ -74,7 +74,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
             <a
               href={profile.twitter.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="px-1"
               data-umami-event="Team Member Social Media"
               data-umami-event-id={`${profile.id}`}
@@ -97,7 +97,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
             <a
               href={profile.github.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="px-1"
               data-umami-event="Team Member Social Media"
               data-umami-event-id={`${profile.id}`}
@@ -120,7 +120,7 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
             <a
               href={profile.linkedin.link}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener"
               className="px-1"
               data-umami-event="Team Member Social Media"
               data-umami-event-id={`${profile.id}`}

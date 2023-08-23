@@ -81,7 +81,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="FAIRshare"
                       data-umami-event-type="Contributors"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -96,7 +96,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="FAIRshare"
                       data-umami-event-type="Stars"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -111,7 +111,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="FAIRshare"
                       data-umami-event-type="Issues"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -126,7 +126,7 @@ export default function Info() {
                       data-umami-event="Badge"
                       data-umami-event-project="FAIRshare"
                       data-umami-event-type="License"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       {/*  eslint-disable-next-line @next/next/no-img-element */}
                       <img
@@ -142,7 +142,7 @@ export default function Info() {
                       className="text-url hover-underline-animation"
                       data-umami-event="GitHub link"
                       data-umami-event-project="FAIRshare"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       <span className="font-lato">
                         Explore the GitHub repository
@@ -165,7 +165,7 @@ export default function Info() {
                   <a
                     href="https://github.com/fairdataihub/FAIRshare"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener"
                     aria-label="Github"
                     data-umami-event="GitHub link"
                     data-umami-event-project="FAIRshare"
@@ -207,7 +207,7 @@ export default function Info() {
                       className="text-url hover-underline-animation"
                       data-umami-event="Funding link"
                       data-umami-event-project="FAIRshare"
-                      rel="noreferrer"
+                      rel="noopener"
                     >
                       <span className="font-lato">
                         Explore the parent award on NIH Reporter
@@ -263,11 +263,7 @@ export default function Info() {
                             </div>
                           </Link>
                         ) : (
-                          <a
-                            href={member.href}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <a href={member.href} target="_blank" rel="noopener">
                             <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
                               <Image
                                 src={member.image}
@@ -327,7 +323,7 @@ export default function Info() {
                         key={collaborator.name}
                         href={collaborator.href}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener"
                         data-umami-event="Collaborator link"
                         data-umami-event-value={collaborator.id}
                       >

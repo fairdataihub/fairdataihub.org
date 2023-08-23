@@ -37,7 +37,7 @@ export default function Hero() {
               <a
                 href="https://sparc-know-more.herokuapp.com/sparc-app/"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 className="flex flex-row justify-center"
               >
                 <button
@@ -51,7 +51,7 @@ export default function Hero() {
               <a
                 href="https://github.com/SPARC-FAIR-Codeathon/KnowMore"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 className="flex flex-row justify-center"
               >
                 <button
