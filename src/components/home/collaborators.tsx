@@ -38,7 +38,7 @@ export default function Collaborators() {
   return (
     <section>
       <div className="container mx-auto max-w-screen-lg px-6 pb-0 pt-4 md:p-10">
-        <div className="mb-4 flex w-full flex-col items-center">
+        <div className="mb-8 flex w-full flex-col items-center">
           <p className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             Where do our tools make a difference?
           </p>
@@ -51,18 +51,22 @@ export default function Collaborators() {
             gradientWidth="25p"
           >
             {logoImages.map((logo, index) => (
-              <Image
+              <div
                 key={index}
-                className="!px-4"
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.width}
-                height={logo.height}
-              />
+                className="flex justify-center items-center w-full h-full mx-2"
+              >
+                <Image
+                  className="!px-4 "
+                  src={logo.src}
+                  alt={logo.alt}
+                  width={logo.width}
+                  height={logo.height}
+                />
+              </div>
             ))}
           </Marquee>
         </div>
-        <span className=" text-xs text-gray-400">
+        <span className=" text-xs font-medium text-gray-500">
           Disclaimer: All logos are used with adequate permissions. Opinions,
           interpretations, conclusions and recommendations are those of the FAIR
           Data Innovations Hub and are not necessarily endorsed by the other
