@@ -10,20 +10,60 @@ export default function Publications() {
       <div className="flex flex-col divide-y divide-gray-200">
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
-            href="https://doi.org/10.1101/2022.04.18.488694"
+            href="https://doi.org/10.1038/s41597-023-02463-x"
             target="_blank"
             className="my-2"
             data-umami-event="Publication DOI link"
-            data-umami-event-doi="10.1101/2022.04.18.488694"
-            rel="noreferrer"
+            data-umami-event-doi="10.1038/s41597-023-02463-x"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold">
               Making Biomedical Research Software FAIR: Actionable Step-by-step
               Guidelines with a User-support Tool
             </p>
           </a>
+
           <div className="m2-3 relative rounded bg-gray-100 p-3">
             <p className="font-lato text-xs text-gray-600">Citation</p>
+
+            <p className="font-asap text-base text-black">
+              Patel, B., Soundarajan, S., Ménager, H. <i>et al</i>. &quot;Making
+              Biomedical Research Software FAIR: Actionable Step-by-step
+              Guidelines with a User-support Tool.&quot;
+              <i> Sci Data</i> <strong>11</strong>, 557 (2023).&nbsp;
+              <a
+                href="https://doi.org/10.1038/s41597-023-02463-x"
+                target="_blank"
+                rel="noopener"
+                data-umami-event="Publication DOI link"
+                data-umami-event-doi="10.1038/s41597-023-02463-x"
+              >
+                <span className="break-words text-blue-600 hover:underline">
+                  https://doi.org/10.1038/s41597-023-02463-x
+                </span>
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div className="mb-4 flex flex-col py-4 font-sans">
+          <a
+            href="https://doi.org/10.1101/2022.04.18.488694"
+            target="_blank"
+            className="my-2"
+            data-umami-event="Publication DOI link"
+            data-umami-event-doi="10.1101/2022.04.18.488694"
+            rel="noopener"
+          >
+            <p className="text-url text-xl font-semibold">
+              Making Biomedical Research Software FAIR: Actionable Step-by-step
+              Guidelines with a User-support Tool
+            </p>
+          </a>
+
+          <div className="m2-3 relative rounded bg-gray-100 p-3">
+            <p className="font-lato text-xs text-gray-600">Citation</p>
+
             <p className="font-asap text-base text-black">
               Patel, Bhavesh, Sanjay Soundarajan, Zicheng Hu. &quot;Making
               Biomedical Research Software FAIR: Actionable Step-by-step
@@ -32,7 +72,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.1101/2022.04.18.488694"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.1101/2022.04.18.488694"
               >
@@ -43,6 +83,7 @@ export default function Publications() {
             </p>
           </div>
         </div>
+
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
             href="https://doi.org/10.7490/f1000research.1119054.1"
@@ -50,18 +91,21 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.7490/f1000research.1119054.1"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold ">
               Making biomedical research software FAIR with FAIRshare
             </p>
+
             <span className="text-url text-sm font-medium ">
               Poster presented at Intelligent Systems for Molecular Biology
               (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022
             </span>
           </a>
+
           <div className="m2-3 relative rounded bg-gray-100 p-3">
             <p className="font-lato text-xs text-gray-600">Citation</p>
+
             <p className="font-asap text-base text-black">
               Patel B and Soundarajan S. &quot;Making biomedical research
               software FAIR with FAIRshare.&quot;
@@ -70,7 +114,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.7490/f1000research.1119054.1"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.7490/f1000research.1119054.1"
               >
@@ -81,6 +125,7 @@ export default function Publications() {
             </p>
           </div>
         </div>
+
         <div className="mb-4 flex flex-col py-4 font-sans">
           <a
             href="https://doi.org/10.7490/f1000research.1119055.1"
@@ -88,19 +133,22 @@ export default function Publications() {
             className="my-2"
             data-umami-event="Publication DOI link"
             data-umami-event-doi="10.7490/f1000research.1119055.1"
-            rel="noreferrer"
+            rel="noopener"
           >
             <p className="text-url text-xl font-semibold ">
               Making biomedical research software findable, accessible,
               interoperable, reusable (FAIR) with FAIRshare
             </p>
+
             <span className="text-url text-sm font-medium ">
               Slides presented at Intelligent Systems for Molecular Biology
               (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022
             </span>
           </a>
+
           <div className="m2-3 relative rounded bg-gray-100 p-3">
             <p className="font-lato text-xs text-gray-600">Citation</p>
+
             <p className="font-asap text-base text-black">
               Patel B and Soundarajan S. &quot;Making biomedical research
               software FAIR with FAIRshare.&quot;
@@ -109,7 +157,7 @@ export default function Publications() {
               <a
                 href="https://doi.org/10.7490/f1000research.1119055.1"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener"
                 data-umami-event="Publication DOI link"
                 data-umami-event-doi="10.7490/f1000research.1119055.1"
               >
