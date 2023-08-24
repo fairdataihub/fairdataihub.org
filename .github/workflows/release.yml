@@ -19,7 +19,7 @@ jobs:
           node-version: 18
 
       - name: Install Node.js dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --pure-lockfile
 
       - name: Format check
         run: yarn format

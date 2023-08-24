@@ -16,7 +16,7 @@ jobs:
           node-version: 16
 
       - name: Install Node.js dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --pure-lockfile
 
       - name: Run Cypress tests on Chrome
         uses: cypress-io/github-action@v4
@@ -43,7 +43,7 @@ jobs:
           node-version: 16
 
       - name: Install Node.js dependencies
-        run: yarn install --frozen-lockfile
+        run: yarn install --pure-lockfile
 
       - name: Run Cypress tests on Firefox
         uses: cypress-io/github-action@v4
