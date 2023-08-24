@@ -1,15 +1,13 @@
 # [2.29.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.22...v2.29.0) (2023-08-24)
 
-
 ### Bug Fixes
 
-* 🐛 fix marquee image jumping ([9e0208a](https://github.com/fairdataihub/fairdataihub.org/commit/9e0208ae36b97076fc75a45836b11746c92563f4))
-* 🐛 update link relations to noopener ([642911d](https://github.com/fairdataihub/fairdataihub.org/commit/642911d2f20628bec9c23687e115c99abc948367))
-
+- 🐛 fix marquee image jumping ([9e0208a](https://github.com/fairdataihub/fairdataihub.org/commit/9e0208ae36b97076fc75a45836b11746c92563f4))
+- 🐛 update link relations to noopener ([642911d](https://github.com/fairdataihub/fairdataihub.org/commit/642911d2f20628bec9c23687e115c99abc948367))
 
 ### Features
 
-* ✨ add journal article ([fd6c718](https://github.com/fairdataihub/fairdataihub.org/commit/fd6c718adec0577e81261ffd53ac79c08d842ea1))
+- ✨ add journal article ([fd6c718](https://github.com/fairdataihub/fairdataihub.org/commit/fd6c718adec0577e81261ffd53ac79c08d842ea1))
 
 ## [2.28.22](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.21...v2.28.22) (2023-08-03)
 
