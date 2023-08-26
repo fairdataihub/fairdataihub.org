@@ -37,7 +37,7 @@
     "@giscus/react": "2.3.0",
     "@lottiefiles/lottie-player": "2.0.2",
     "@sendgrid/mail": "7.7.0",
-    "cookies-next": "2.1.2",
+    "cookies-next": "3.0.0",
     "dayjs": "1.11.9",
     "formik": "2.4.3",
     "gray-matter": "4.0.3",
