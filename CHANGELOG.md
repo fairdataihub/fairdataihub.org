@@ -1,9 +1,8 @@
 ## [2.29.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.29.0...v2.29.1) (2023-08-25)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency rehype-stringify to v9.0.4 ([#550](https://github.com/fairdataihub/fairdataihub.org/issues/550)) ([8b60b3c](https://github.com/fairdataihub/fairdataihub.org/commit/8b60b3c7ceb6bb11bd42aba77f19cadff6203602))
+- **deps:** update dependency rehype-stringify to v9.0.4 ([#550](https://github.com/fairdataihub/fairdataihub.org/issues/550)) ([8b60b3c](https://github.com/fairdataihub/fairdataihub.org/commit/8b60b3c7ceb6bb11bd42aba77f19cadff6203602))
 
 # [2.29.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.28.22...v2.29.0) (2023-08-24)
 
