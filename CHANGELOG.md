@@ -1,9 +1,8 @@
 ## [2.29.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.29.1...v2.29.2) (2023-08-27)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency react-lottie-player to v1.5.5 ([#560](https://github.com/fairdataihub/fairdataihub.org/issues/560)) ([10af878](https://github.com/fairdataihub/fairdataihub.org/commit/10af87881ce134e5d906a7a5bd7cce091ee59c99))
+- **deps:** update dependency react-lottie-player to v1.5.5 ([#560](https://github.com/fairdataihub/fairdataihub.org/issues/560)) ([10af878](https://github.com/fairdataihub/fairdataihub.org/commit/10af87881ce134e5d906a7a5bd7cce091ee59c99))
 
 ## [2.29.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.29.0...v2.29.1) (2023-08-25)
 
