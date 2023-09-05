@@ -9,8 +9,9 @@
 [![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
 [![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-![Checkly Status](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default)
-![Checkly Response Time](https://api.checklyhq.com/v1/badges/checks/831d3a70-086d-445f-bdf6-509e48ebc18b?style=flat&theme=default&responseTime=true)
+![Status](https://status.fairdataihub.org/api/badge/1/status)
+![Ping](https://status.fairdataihub.org/api/badge/1/ping/24)
+![Average Response](https://status.fairdataihub.org/api/badge/1/avg-response/24)
 
 ## Project setup
 
