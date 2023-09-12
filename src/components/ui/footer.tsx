@@ -130,6 +130,14 @@ export default function Footer() {
                 >
                   <Link href="/contact-us"> Contact Us </Link>
                 </li>
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
+                  data-umami-event-value="Careers"
+                >
+                  <Link href="/careers"> Careers </Link>
+                </li>
               </ul>
             </div>
             <div className="flex flex-col">
