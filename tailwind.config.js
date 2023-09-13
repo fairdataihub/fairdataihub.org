@@ -15,6 +15,7 @@ module.exports = {
       },
       screens: {
         print: { raw: 'print' },
+        xs: '428px',
         '3xl': '2400px',
       },
       backgroundImage: {
