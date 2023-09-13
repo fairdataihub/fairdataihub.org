@@ -126,17 +126,17 @@ export default function Footer() {
                   className="footer-item"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Footer"
-                  data-umami-event-value="Contact Us"
+                  data-umami-event-value="Careers"
                 >
-                  <Link href="/contact-us"> Contact Us </Link>
+                  <Link href="/careers"> Careers </Link>
                 </li>
                 <li
                   className="footer-item"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Footer"
-                  data-umami-event-value="Careers"
+                  data-umami-event-value="Contact Us"
                 >
-                  <Link href="/careers"> Careers </Link>
+                  <Link href="/contact-us"> Contact Us </Link>
                 </li>
               </ul>
             </div>
