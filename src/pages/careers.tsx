@@ -53,7 +53,7 @@ export default function CookiePolicy() {
                   </h1>
                 </div>
 
-                <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2 xs:hidden">
+                <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
                   <LottieAnimation
                     animationData={careerLottie}
                     width={400}
@@ -65,16 +65,32 @@ export default function CookiePolicy() {
           </section>
         </section>
 
-        <section className="py-10">
-          <div>
-            <h1 className="w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
-              Open Positions
-            </h1>
+        <section className="bg-gray-50 py-10">
+          <div className="mx-2 max-w-screen-lg px-6 sm:px-6 lg:px-6">
+            <div className="lg:text-left">
+              <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
+                Open Positions
+              </p>
+
+              <p className="border-b-4 my-3 max-w-xs font-asap text-xl text-black sm:text-xl">
+                Discover Your FAIR Future Here
+              </p>
+            </div>
           </div>
         </section>
 
-        <section className="bg-gray-50 py-10">
-          <div>Internship Opportunities</div>
+        <section className="bg-white py-10">
+          <div className="mx-2 max-w-screen-lg px-6 sm:px-6 lg:px-6">
+            <div className="lg:text-left">
+              <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
+                Internship Opportunities
+              </p>
+
+              <p className="border-b-4 my-3 max-w-xs font-asap text-xl text-black sm:text-xl">
+                Dive into Internship Possibilities
+              </p>
+            </div>
+          </div>
         </section>
       </div>
     </>
