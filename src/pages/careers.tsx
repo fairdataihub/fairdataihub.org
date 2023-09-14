@@ -42,57 +42,94 @@ export default function CookiePolicy() {
         />
       </Head>
 
-      <div className="bg-haikeiWavy bg-cover bg-top bg-no-repeat md:bg-right-top 2xl:bg-contain">
-        <section className="mb-10 pt-12 sm:pt-16">
-          <section className="careers-hero">
-            <div className="container mx-auto max-w-screen-lg px-6 py-8">
-              <div className="items-center justify-center md:flex">
-                <div className="w-full p-2 lg:w-1/2 lg:max-w-lg">
-                  <h1 className="w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
-                    Join our wonderful team!
-                  </h1>
-                </div>
+      <section>
+        <div className="bg-haikeiWavy bg-cover bg-top bg-no-repeat md:bg-right-top 2xl:bg-contain">
+          <div className="mb-10 pt-12 sm:pt-16">
+            <div className="careers-hero">
+              <div className="mx-auto max-w-screen-lg px-6 py-8">
+                <div className="items-center justify-center md:flex">
+                  <div className="w-full p-2 lg:w-1/2 lg:max-w-lg">
+                    <h1 className="w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
+                      Join our wonderful team!
+                    </h1>
+                  </div>
 
-                <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
-                  <LottieAnimation
-                    animationData={careerLottie}
-                    width={400}
-                    height={400}
-                  />
+                  <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-1/2 lg:p-2">
+                    <LottieAnimation
+                      animationData={careerLottie}
+                      width={400}
+                      height={400}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-          </section>
-        </section>
+          </div>
+        </div>
 
-        <section className="bg-gray-50 py-10">
-          <div className="mx-2 max-w-screen-lg px-6 sm:px-6 lg:px-6">
-            <div className="lg:text-left">
+        <div className="pt-10">
+          <div className="bg-gray-50 px-6 sm:px-6 lg:px-6 lg:h-40 p-6">
+            <div className="text-center lg:text-lg lg:text-left mx-12">
               <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
                 Open Positions
               </p>
 
-              <p className="border-b-4 my-3 max-w-xs font-asap text-xl text-black sm:text-xl">
+              <p className="border-b-4 w-fit my-2 max-w-xs font-asap text-xl text-black sm:text-xl border-b-light-accent">
                 Discover Your FAIR Future Here
               </p>
             </div>
           </div>
-        </section>
+          <div className="bg-white px-6 sm:px-6 lg:px-6 lg:h-40 p-7">
+            <div className="text-center lg:text-left lg:mx-12">
+              <p className="font-asap text-lg h-32">
+                No open positions at the moment.
+              </p>
+            </div>
+          </div>
+        </div>
 
-        <section className="bg-white py-10">
-          <div className="mx-2 max-w-screen-lg px-6 sm:px-6 lg:px-6">
-            <div className="lg:text-left">
+        <div className="pb-10">
+          <div className="bg-gray-50 px-6 sm:px-6 lg:px-6 lg:h-40 p-6">
+            <div className="text-center lg:text-lg lg:text-left mx-12">
               <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
                 Internship Opportunities
               </p>
 
-              <p className="border-b-4 my-3 max-w-xs font-asap text-xl text-black sm:text-xl">
+              <p className="border-b-4 w-fit my-2 max-w-xs font-asap text-xl text-black sm:text-xl border-b-light-accent">
                 Dive into Internship Possibilities
               </p>
             </div>
           </div>
-        </section>
-      </div>
+
+          <div className="bg-white px-6 sm:px-6 lg:px-6 lg:h-40 p-7">
+            <div className="text-center lg:text-left">
+              <p className="font-asap text-lg lg:h-32 lg:mx-12">
+                We are always eager to welcome fresh perspectives. If
+                you&apos;re interested in interning with us, whether on-site or
+                remotely, please take a moment to complete the form below. By
+                joining our team, you&apos;ll have the chance to make a
+                meaningful impact on our projects, especially in the realm of
+                improving human health. In return, our experienced team is
+                committed to helping you expand and refine your knowledge in
+                software development best practices, web development, and more.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex w-full flex-row items-center justify-center space-x-4 py-5">
+            <button
+              type="submit"
+              onClick={() => {
+                console.log(`clicked`);
+              }}
+              className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+              data-umami-event="Intership form link"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
