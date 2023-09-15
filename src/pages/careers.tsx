@@ -43,8 +43,8 @@ export default function CookiePolicy() {
       </Head>
 
       <section>
-        <div className="bg-haikeiWavy bg-cover bg-top bg-no-repeat md:bg-right-top 2xl:bg-contain">
-          <div className="mb-10 pt-12 sm:pt-16">
+        <div className="bg-[#f9f1f3] bg-cover bg-top bg-no-repeat md:bg-right-top 2xl:bg-contain">
+          <div className="pt-12 sm:pt-16">
             <div className="careers-hero">
               <div className="mx-auto max-w-screen-lg px-6 py-8">
                 <div className="items-center justify-center md:flex">
@@ -67,30 +67,37 @@ export default function CookiePolicy() {
           </div>
         </div>
 
-        <div className="pt-10">
-          <div className="bg-gray-50 px-6 sm:px-6 lg:px-6 lg:h-40 p-6">
-            <div className="text-center lg:text-lg lg:text-left mx-12">
-              <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
-                Open Positions
-              </p>
+        <div className="bg-gray-50">
+          <div className="max-w-screen-lg flex flex-col mx-auto">
+            <div className="px-6 sm:px-6 lg:px-6 lg:h-40 p-6">
+              <div className="text-center lg:text-lg lg:text-left mx-12 ">
+                <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
+                  Open Positions
+                </p>
 
-              <p className="border-b-4 w-fit my-2 max-w-xs font-asap text-xl text-black sm:text-xl border-b-light-accent">
-                Discover Your FAIR Future Here
-              </p>
+                <p className="border-b-4 w-fit my-2 max-w-xs font-asap text-xl text-black sm:text-xl border-b-light-accent">
+                  Discover Your FAIR Future Here
+                </p>
+              </div>
             </div>
           </div>
-          <div className="bg-white px-6 sm:px-6 lg:px-6 lg:h-40 p-7">
-            <div className="text-center lg:text-left lg:mx-12">
-              <p className="font-asap text-lg h-32">
-                No open positions at the moment.
-              </p>
+        </div>
+
+        <div className="bg-white">
+          <div className="max-w-screen-lg flex flex-col mx-auto">
+            <div className="bg-white px-6 sm:px-6 lg:px-6 lg:h-40 p-7">
+              <div className="text-center lg:text-left lg:mx-12">
+                <p className="font-asap text-lg h-32">
+                  No open positions at the moment.
+                </p>
+              </div>
             </div>
           </div>
         </div>
 
         <div className="pb-10">
           <div className="bg-gray-50 px-6 sm:px-6 lg:px-6 lg:h-40 p-6">
-            <div className="text-center lg:text-lg lg:text-left mx-12">
+            <div className="text-center lg:text-lg lg:text-left mx-12 max-w-screen-lg">
               <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
                 Internship Opportunities
               </p>
