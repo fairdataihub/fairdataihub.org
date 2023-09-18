@@ -276,7 +276,7 @@ const TEAM_JSON = [
     name: `Nada Haboudal(she/her)`,
     title: `Data Scientist`,
     bio: `Nada relocated from Saudi Arabia to the United States to further her education. She became a part of the team in 2023. She has a strong passion for Health Technology, particularly Fem-tech and wearables. In her leisure time, she loves visiting the beach and playing the piano.`,
-    image: `/images/people/ismail-full.jpg`,
+    image: `/images/people/nada-head.jpg`,
     width: 2515,
     height: 3354,
     borderTop: true,
