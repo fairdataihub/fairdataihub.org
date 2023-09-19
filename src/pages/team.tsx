@@ -269,8 +269,6 @@ const TEAM_JSON = [
       link: `https://www.linkedin.com/in/ismail-qaddoura-76664754`,
     },
   },
-
-
   {
     id: `Nada Haboudal`,
     name: `Nada Haboudal(she/her)`,
@@ -298,8 +296,6 @@ const TEAM_JSON = [
       link: `https://www.linkedin.com/in/nada-haboudal/`,
     },
   },
-
-
 ];
 
 const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
