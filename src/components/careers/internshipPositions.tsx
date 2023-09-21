@@ -22,7 +22,7 @@ const InternshipPositions = () => {
       </div>
 
       <div className="bg-white">
-        <div className="max-w-screen-lg flex flex-col mx-auto">
+        <div className="max-w-screen-lg flex flex-col mx-auto items-center">
           <div className="bg-white px-6 sm:px-6 lg:px-6 p-7">
             <div className="text-center lg:text-left lg:mx-12 flex flex-col items-center">
               <p className="font-asap text-lg">
