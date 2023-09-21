@@ -56,9 +56,11 @@ export function DatePickerWithRange({
             mode="range"
             defaultMonth={date?.from}
             selected={date}
-            onSelect={setDate}
-            numberOfMonths={2}
-            className=""
+            onSelect={(date) => {
+              setDate(date);
+            }}
+            numberOfMonths={1}
+            className="bg-white"
           />
         </PopoverContent>
       </Popover>
