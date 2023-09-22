@@ -1,3 +1,28 @@
+# [2.31.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.30.1...v2.31.0) (2023-09-22)
+
+
+### Features
+
+* ✨ abstract careers section page as component ([058f109](https://github.com/fairdataihub/fairdataihub.org/commit/058f10929c4ecbcbf8609fa0cb7ad2ba3722af11))
+* ✨ add calendar component, shadcn ([3469cce](https://github.com/fairdataihub/fairdataihub.org/commit/3469ccef89fe94788be2031cbd79bf2b90e2c7db))
+* ✨ add careers link to footer ([2dcbd0a](https://github.com/fairdataihub/fairdataihub.org/commit/2dcbd0af5a81ec9507b27058aa9e38271ab98cd8))
+* ✨ add dialog component, shadcn ([88bf213](https://github.com/fairdataihub/fairdataihub.org/commit/88bf2135794a427e6d0df582d202caa413ff49e1))
+* ✨ add endpoint for internship form ([bd69b06](https://github.com/fairdataihub/fairdataihub.org/commit/bd69b06adb9276debbc60aee02ba01764ad6ef9a))
+* ✨ add lottie for careers page ([4d96bfe](https://github.com/fairdataihub/fairdataihub.org/commit/4d96bfe21c8c6957c1661a0ed31b296f4b6a6d72))
+* ✨ add popover for date range picker ([9816e33](https://github.com/fairdataihub/fairdataihub.org/commit/9816e33ebc63c8d70f1beb6a6612d53e2c762d92))
+* ✨ add shadcn button ([ae386f4](https://github.com/fairdataihub/fairdataihub.org/commit/ae386f45ef735d53284255620b826349d725965c))
+* ✨ add xs screen in config for tailwind ([1c7d9ea](https://github.com/fairdataihub/fairdataihub.org/commit/1c7d9eafe130548e7d669d3719813275100c75c9))
+* ✨ careers page converted to tsx file from jsx ([32fd650](https://github.com/fairdataihub/fairdataihub.org/commit/32fd650ab54a103fc9468081d51bb2c78b0b7cf1))
+* ✨ create base for careers page ([1aee6be](https://github.com/fairdataihub/fairdataihub.org/commit/1aee6be5b3c4fea0b1fca9bbb4947defd3d60056))
+* ✨ create date range picker for form ([47bb1c6](https://github.com/fairdataihub/fairdataihub.org/commit/47bb1c64818f0c6067906bb10b6e4b81c700a81b))
+* ✨ file attachments send to uploadcare, availability gets saved ([fe84831](https://github.com/fairdataihub/fairdataihub.org/commit/fe8483106df172587b1fcdde534a8c58b55485f8))
+* ✨ internship endpoints sends message to slack ([db76f97](https://github.com/fairdataihub/fairdataihub.org/commit/db76f97c8e8449d4e6f2a509783f4f075e9dd13f))
+* ✨ internship position as component ([007bf19](https://github.com/fairdataihub/fairdataihub.org/commit/007bf19fc5d6f6be8f6541e35fa1d32fe2cb6b74))
+* ✨ internshipform added as modal component ([b5adbd4](https://github.com/fairdataihub/fairdataihub.org/commit/b5adbd4eaa0a579bb6421653a1f33a2f5b0253bc))
+* ✨ shadcn for ui components ([c6185b8](https://github.com/fairdataihub/fairdataihub.org/commit/c6185b86ff097ffc05b257d11fb2187dd7cdb765))
+* ✨ update Intership and Position sections for career page ([2af6566](https://github.com/fairdataihub/fairdataihub.org/commit/2af65664a883808b2e7b0f8476cc4ce377b1d85e))
+* ✨ work positions abstracted as component ([02c4aad](https://github.com/fairdataihub/fairdataihub.org/commit/02c4aadac0b8858dc81b7a2a1cc0ff0d74573273))
+
 ## [2.30.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.30.0...v2.30.1) (2023-09-20)
 
 ### Bug Fixes
