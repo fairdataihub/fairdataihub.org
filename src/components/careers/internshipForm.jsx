@@ -1,3 +1,4 @@
+import { uploadDirect } from '@uploadcare/upload-client';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import React from 'react';
 import { toast, ToastContainer } from 'react-toastify';
@@ -42,28 +43,41 @@ const errorNotify = () =>
 
 const IntershipForm = () => {
   const [open, setOpen] = React.useState(false);
+  const [formValues, setFormValues] = React.useState({
+    name: '',
+    email: '',
+    work_study_status: '',
+    availability: '',
+    github_link: '',
+    resume_link: '',
+    brief_intro: '',
+  });
+
+  // Callback function to receive data from the child component.
+  const handleDateRangeChange = (newDateRange) => {
+    const formattedFrom = newDateRange?.from?.toLocaleDateString();
+    const formattedTo = newDateRange?.to?.toLocaleDateString();
+    const formattedDateRange = `${formattedFrom} - ${formattedTo}`;
+    setFormValues({
+      ...formValues,
+      availability: formattedDateRange,
+    });
+  };
   return (
-    <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none">
-        Apply
-      </DialogTrigger>
-      <DialogContent className="bg-white max-w-screen-lg">
-        <DialogHeader>
-          <DialogTitle>Internship Form</DialogTitle>
-          <DialogDescription>
-            <div>
+    <>
+      <Dialog open={open} onOpenChange={setOpen}>
+        <DialogTrigger className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none">
+          Apply
+        </DialogTrigger>
+        <DialogContent className="bg-white max-w-screen-lg">
+          <DialogHeader>
+            <DialogTitle>Internship Form</DialogTitle>
+            <DialogDescription>
               <Formik
-                initialValues={{
-                  name: ``,
-                  email: ``,
-                  work_study_status: ``,
-                  availabilities: ``,
-                  github_link: ``,
-                  resume_link: ``,
-                  brief_intro: ``,
-                }}
+                initialValues={formValues}
                 validate={(values) => {
                   const errors = {};
+                  values.availability = formValues.availability;
 
                   if (!values.name) {
                     errors.name = `Required`;
@@ -83,6 +97,13 @@ const IntershipForm = () => {
                     errors.work_study_status = `Required`;
                   }
 
+                  if (
+                    !values.availability ||
+                    values.availability.includes(`undefined`)
+                  ) {
+                    errors.availability = `Required`;
+                  }
+
                   if (!values.github_link) {
                     errors.github_link = `Required`;
                   }
@@ -96,9 +117,19 @@ const IntershipForm = () => {
                   }
                   return errors;
                 }}
-                onSubmit={(values, { setSubmitting }) => {
+                onSubmit={async (values, { setSubmitting }) => {
                   // post data to server
-                  console.log(values);
+                  values.availability = formValues.availability;
+
+                  const result = await uploadDirect(values.resume_link, {
+                    publicKey: process.env.NEXT_PUBLIC_UPLOADCARE_PUBLIC_KEY,
+                    store: 'auto',
+                  });
+
+                  values.resume_link = result.cdnUrl;
+
+                  console.log(result);
+
                   fetch(`/api/internship`, {
                     method: `POST`,
                     body: JSON.stringify(values),
@@ -109,7 +140,7 @@ const IntershipForm = () => {
                       if (res.success) {
                         console.log('success');
                         successNotify();
-                        handleReset();
+                        setOpen(false);
                       } else {
                         errorNotify();
                       }
@@ -207,18 +238,18 @@ const IntershipForm = () => {
                     <div className="flex flex-row py-3 w-full justify-between">
                       <div className="flex flex-col py-3 items-center lg:items-start w-full">
                         <label
-                          htmlFor="availabilities"
+                          htmlFor="availability"
                           className="pb-2 text-base font-medium"
                         >
                           Availability
                         </label>
                         <DatePickerWithRange
-                          setDate={setDate}
                           className="w-full pr-4"
-                          name="availabilities"
+                          onDateRangeChange={handleDateRangeChange}
+                          selectedDateRange={formValues.availability}
                         />
                         <ErrorMessage
-                          name="availabilities"
+                          name="availability"
                           component="span"
                           className="pt-1 text-sm text-red-500"
                         />
@@ -235,7 +266,22 @@ const IntershipForm = () => {
                           type="file"
                           name="resume_link"
                           className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
-                        />
+                        >
+                          {({ field, form }) => {
+                            return (
+                              <input
+                                type="file"
+                                onChange={(event) => {
+                                  form.setFieldValue(
+                                    field.name,
+                                    event.currentTarget.files[0],
+                                  );
+                                }}
+                                className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                              />
+                            );
+                          }}
+                        </Field>
                         <ErrorMessage
                           name="resume_link"
                           component="span"
@@ -269,7 +315,6 @@ const IntershipForm = () => {
                         type="button"
                         onClick={() => {
                           setOpen(false);
-                          handleReset();
                         }}
                         disabled={!dirty || isSubmitting}
                       >
@@ -280,9 +325,6 @@ const IntershipForm = () => {
                         className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                         disabled={isSubmitting}
                         data-umami-event="Internship Form Submit button"
-                        onClick={() => {
-                          setOpen(false);
-                        }}
                       >
                         Submit
                       </button>
@@ -290,22 +332,22 @@ const IntershipForm = () => {
                   </Form>
                 )}
               </Formik>
-            </div>
-            <ToastContainer
-              position="bottom-right"
-              autoClose={5000}
-              hideProgressBar={false}
-              newestOnTop={false}
-              closeOnClick
-              rtl={false}
-              pauseOnFocusLoss
-              draggable
-              pauseOnHover
-            />
-          </DialogDescription>
-        </DialogHeader>
-      </DialogContent>
-    </Dialog>
+            </DialogDescription>
+          </DialogHeader>
+        </DialogContent>
+      </Dialog>
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+    </>
   );
 };
 
