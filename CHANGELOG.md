@@ -1,3 +1,15 @@
+## [2.30.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.30.0...v2.30.1) (2023-09-20)
+
+### Bug Fixes
+
+- 🐛 restructure team member's info ([69a5820](https://github.com/fairdataihub/fairdataihub.org/commit/69a58209e9b588135ab77f32e2c290e657e79f95))
+
+# [2.30.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.29.2...v2.30.0) (2023-09-19)
+
+### Features
+
+- add Nada to team page ([#574](https://github.com/fairdataihub/fairdataihub.org/issues/574)) ([9e7119e](https://github.com/fairdataihub/fairdataihub.org/commit/9e7119ef0e6f28eab26c4e14753034f5c4dd0991))
+
 ## [2.29.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.29.1...v2.29.2) (2023-08-27)
 
 ### Bug Fixes

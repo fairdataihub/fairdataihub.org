@@ -37,7 +37,7 @@ const TEAM_JSON = [
   {
     id: `Sanjay-Soundarajan`,
     name: `Sanjay Soundarajan (he/him)`,
-    title: `Software Developer`,
+    title: `Research Software Engineer`,
     bio: `Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.`,
     image: `/images/people/sanjay-full.jpg`,
     width: 2132,
@@ -165,6 +165,33 @@ const TEAM_JSON = [
     linkedin: {
       show: true,
       link: `https://www.linkedin.com/in/aydan-gasimova-a98b7521b/`,
+    },
+  },
+  {
+    id: `Nada Haboudal`,
+    name: `Nada Haboudal(she/her)`,
+    title: `Data Scientist`,
+    bio: `Nada relocated from Saudi Arabia to the United States to further her education. She became a part of the team in 2023. She has a strong passion for Health Technology, particularly Fem-tech and wearables. In her leisure time, she loves visiting the beach and playing the piano.`,
+    image: `/images/people/nada-head.jpg`,
+    width: 2515,
+    height: 3354,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `M.Sc. in Engineering Technology (University of Houston, Houston, 2023)`,
+      `B.Sc. in Industrial Engineering (Al Faisal University, Riyadh, 2016)`,
+    ],
+    twitter: {
+      show: false,
+      link: `https://twitter.com`,
+    },
+    github: {
+      show: true,
+      link: `https://github.com/nhaboudal`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/nada-haboudal/`,
     },
   },
   {
