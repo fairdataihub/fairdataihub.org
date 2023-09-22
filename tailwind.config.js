@@ -15,6 +15,7 @@ module.exports = {
       },
       screens: {
         print: { raw: 'print' },
+        xs: '428px',
         '3xl': '2400px',
       },
       backgroundImage: {
@@ -40,6 +41,7 @@ module.exports = {
     }),
   },
   plugins: [
+    require('tailwindcss-animate'),
     require('tailwindcss-debug-screens'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/line-clamp'),
