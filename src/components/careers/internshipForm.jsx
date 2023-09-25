@@ -104,10 +104,6 @@ const IntershipForm = () => {
                     errors.availability = `Required`;
                   }
 
-                  if (!values.github_link) {
-                    errors.github_link = `Required`;
-                  }
-
                   if (!values.resume_link) {
                     errors.resume_link = `Required`;
                   }
@@ -159,7 +155,7 @@ const IntershipForm = () => {
                       <div className="flex flex-col w-full mr-4">
                         <label
                           htmlFor="name"
-                          className="pb-2 text-base font-medium"
+                          className="pb-2 text-base font-medium required-field"
                         >
                           Your Name
                         </label>
@@ -178,7 +174,7 @@ const IntershipForm = () => {
                       <div className="flex flex-col w-full">
                         <label
                           htmlFor="email"
-                          className="pb-2 text-base font-medium"
+                          className="pb-2 text-base font-medium required-field"
                         >
                           Your Email Address
                         </label>
@@ -199,7 +195,7 @@ const IntershipForm = () => {
                       <div className="flex flex-col w-full mr-4">
                         <label
                           htmlFor="work_study_status"
-                          className="pb-2 text-base font-medium"
+                          className="pb-2 text-base font-medium required-field"
                         >
                           Company or Institution
                         </label>
@@ -239,7 +235,7 @@ const IntershipForm = () => {
                       <div className="flex flex-col py-3 items-center lg:items-start w-full">
                         <label
                           htmlFor="availability"
-                          className="pb-2 text-base font-medium"
+                          className="pb-2 text-base font-medium required-field"
                         >
                           Availability
                         </label>
@@ -258,7 +254,7 @@ const IntershipForm = () => {
                       <div className="flex flex-col py-3 w-full">
                         <label
                           htmlFor="resume_link"
-                          className="pb-2 text-base font-medium"
+                          className="pb-2 text-base font-medium required-field"
                         >
                           Resume
                         </label>
@@ -293,7 +289,7 @@ const IntershipForm = () => {
                     <div className="flex flex-col py-3">
                       <label
                         htmlFor="brief_intro"
-                        className="pb-2 text-base font-medium"
+                        className="pb-2 text-base font-medium required-field"
                       >
                         Tell us a little about yourself!
                       </label>

@@ -72,6 +72,12 @@
     @apply font-inter text-base;
   }
 
+  .required-field::after {
+    content: "*";
+    color: red;
+    margin-left: 3px;
+}
+
   .glass-container {
     backdrop-filter: blur(2px) saturate(200%);
     -webkit-backdrop-filter: blur(2px) saturate(200%);
