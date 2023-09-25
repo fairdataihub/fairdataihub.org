@@ -33,7 +33,8 @@ const InternshipPositions = () => {
                 meaningful impact on our projects, especially in the realm of
                 improving human health. In return, our experienced team is
                 committed to helping you expand and refine your knowledge in
-                software development best practices, web development, and more.
+                software development best practices, web development, data
+                management and more.
               </p>
             </div>
           </div>
