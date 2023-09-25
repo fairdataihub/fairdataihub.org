@@ -1,3 +1,10 @@
+# [2.32.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.31.0...v2.32.0) (2023-09-25)
+
+
+### Features
+
+* ✨ red asterisk for required fields in internship form ([c7d9148](https://github.com/fairdataihub/fairdataihub.org/commit/c7d91487f67ed6a2f4e574543d6d5f25b4e0e1e6))
+
 # [2.31.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.30.1...v2.31.0) (2023-09-22)
 
 ### Features
