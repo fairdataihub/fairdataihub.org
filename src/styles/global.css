@@ -73,10 +73,10 @@
   }
 
   .required-field::after {
-    content: "*";
+    content: '*';
     color: red;
     margin-left: 3px;
-}
+  }
 
   .glass-container {
     backdrop-filter: blur(2px) saturate(200%);
