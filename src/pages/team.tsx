@@ -37,7 +37,7 @@ const TEAM_JSON = [
   {
     id: `Sanjay-Soundarajan`,
     name: `Sanjay Soundarajan (he/him)`,
-    title: `Research Software Engineer`,
+    title: `Software Developer`,
     bio: `Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.`,
     image: `/images/people/sanjay-full.jpg`,
     width: 2132,
