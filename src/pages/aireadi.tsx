@@ -40,11 +40,11 @@ export default function Aireadi() {
 
         <meta
           property="og:image"
-          content="https://og.fairdataihub.org/api/ogimage?app=fairdataihub&title=AI-READI&description=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20boost%20future%20AI-driven%20discoveries%20in%20type%202%20diabetes%20mellitus"
+          content="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=AI-READI&org=fairdataihub&description=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20support%20future%20AI-driven%20discoveries%20in%20diabetes"
         />
         <meta
           name="twitter:image"
-          content="https://og.fairdataihub.org/api/ogimage?app=fairdataihub&title=AI-READI&description=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20boost%20future%20AI-driven%20discoveries%20in%20type%202%20diabetes%20mellitus"
+          content="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=AI-READI&org=fairdataihub&description=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20support%20future%20AI-driven%20discoveries%20in%20diabetes"
         />
       </Head>
 
