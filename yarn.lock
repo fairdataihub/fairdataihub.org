@@ -1398,10 +1398,12 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.6.3.tgz#5b763b321cd3b80f6b8dde7a37e1a77ff9358dd9"
   integrity sha512-HksnYH4Ljr4VQgEy2lTStbCKv/P590tmPe5HqOnv9Gprffgv5WXAY+Y5Gqniu0GGqeTCUdBnzC3QSrzPkBkAMA==
 
-"@types/node@18.18.1":
-  version "18.18.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.18.1.tgz#80b22f3df719f15c9736207980e95f35d01ec1aa"
-  integrity sha512-3G42sxmm0fF2+Vtb9TJQpnjmP+uKlWvFa8KoEGquh4gqRmoUG/N0ufuhikw6HEsdG2G2oIKhog1GCTfz9v5NdQ==
+"@types/node@18.18.7":
+  version "18.18.7"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.18.7.tgz#bb3a7068dc4ba421b6968f2a259298b3a4e129e8"
+  integrity sha512-bw+lEsxis6eqJYW8Ql6+yTqkE6RuFtsQPSe5JxXbqYRFQEER5aJA9a5UH9igqDWm3X4iLHIKOHlnAXLM4mi7uQ==
+  dependencies:
+    undici-types "~5.26.4"
 
 "@types/node@20.4.7":
   version "20.4.7"
@@ -9107,6 +9109,11 @@ unbox-primitive@^1.0.2:
     has-bigints "^1.0.2"
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
+
+undici-types@~5.26.4:
+  version "5.26.5"
+  resolved "https://registry.yarnpkg.com/undici-types/-/undici-types-5.26.5.tgz#bcd539893d00b56e964fd2657a4866b221a65617"
+  integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
 unified@10.1.2, unified@^10.0.0:
   version "10.1.2"
