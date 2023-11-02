@@ -1,9 +1,8 @@
 ## [2.32.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.0...v2.32.1) (2023-10-29)
 
-
 ### Bug Fixes
 
-* 🐛 update og images ([0d34b8c](https://github.com/fairdataihub/fairdataihub.org/commit/0d34b8c40f4f9b38df809b61e5381dad4319b836))
+- 🐛 update og images ([0d34b8c](https://github.com/fairdataihub/fairdataihub.org/commit/0d34b8c40f4f9b38df809b61e5381dad4319b836))
 
 # [2.32.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.31.0...v2.32.0) (2023-09-25)
 
