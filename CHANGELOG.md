@@ -1,3 +1,10 @@
+## [2.32.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.1...v2.32.2) (2023-11-06)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @radix-ui/react-popover to v1.0.7 ([#597](https://github.com/fairdataihub/fairdataihub.org/issues/597)) ([e462039](https://github.com/fairdataihub/fairdataihub.org/commit/e4620393d767382130382cffa3c43b312d544d46))
+
 ## [2.32.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.0...v2.32.1) (2023-10-29)
 
 ### Bug Fixes
