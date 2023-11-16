@@ -1,3 +1,10 @@
+## [2.32.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.4...v2.32.5) (2023-11-16)
+
+
+### Bug Fixes
+
+* **deps:** update dependency markdown-it to v13.0.2 ([#601](https://github.com/fairdataihub/fairdataihub.org/issues/601)) ([cb2ecc2](https://github.com/fairdataihub/fairdataihub.org/commit/cb2ecc211328bb6d9fd6ca41f260b314e39a2fe2))
+
 ## [2.32.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.3...v2.32.4) (2023-11-09)
 
 ### Bug Fixes
