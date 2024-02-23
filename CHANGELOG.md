@@ -1,3 +1,10 @@
+## [2.32.6](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.5...v2.32.6) (2024-02-23)
+
+
+### Bug Fixes
+
+* 🐛 update dicebear avatars ([156335f](https://github.com/fairdataihub/fairdataihub.org/commit/156335f370a6271084a84add56d6bb4f71128086))
+
 ## [2.32.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.4...v2.32.5) (2023-11-16)
 
 ### Bug Fixes
