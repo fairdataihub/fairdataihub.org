@@ -21,6 +21,18 @@ export default function Info() {
       external: false,
       image: `/images/people/aydan-head.jpg`,
     },
+    {
+      name: `Dorian Portillo`,
+      href: `/team/#Dorian-Portillo`,
+      external: false,
+      image: `/images/people/dorian-head.PNG`,
+    },
+    {
+      name: `Nada Haboudal`,
+      href: `/team/#Nada-Haboudal`,
+      external: false,
+      image: `/images/people/nada-head.jpg`,
+    },
   ];
 
   // const collaboratorsList = [
