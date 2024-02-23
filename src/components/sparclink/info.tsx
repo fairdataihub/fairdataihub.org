@@ -13,25 +13,25 @@ export default function Info() {
       name: `Sachira Kuruppu`,
       href: `https://www.linkedin.com/in/sachirakuruppu/`,
       external: true,
-      image: `https://avatars.dicebear.com/api/jdenticon/SachiraKuruppu.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=SachiraKuruppu`,
     },
     {
       name: `Ashutosh Singh`,
       href: `/sparclink`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/AshutoshSingh.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=AshutoshSingh`,
     },
     {
       name: `Monalisa Achalla`,
       href: `/sparclink`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/MonalisaAchalla.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=MonalisaAchalla`,
     },
     {
       name: `Jongchan Kim`,
       href: `/sparclink`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/JongchanKim.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=JongchanKim`,
     },
   ];
 

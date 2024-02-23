@@ -13,25 +13,25 @@ export default function Info() {
       name: `Laila Bekhet`,
       href: `/aqua`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/LailaBekhet.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=LailaBekhet`,
     },
     {
       name: `Yuda Munarko`,
       href: `/aqua`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/YudaMunarko.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=YudaMunarko1`,
     },
     {
       name: `Niloofar Shahidi`,
       href: `/aqua`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/NiloofarShahidi.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=NiloofarShahidi`,
     },
     {
       name: `Xuanzhi `,
       href: `/aqua`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/Xuanzhi.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=Xuanzhi`,
     },
   ];
 

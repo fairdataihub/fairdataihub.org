@@ -19,13 +19,13 @@ export default function Info() {
       name: `Anmol Kiran`,
       href: `/knowmore`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/AnmolKiran.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=AnmolKiran`,
     },
     {
       name: `Matthew Schiefer`,
       href: `/knowmore`,
       external: false,
-      image: `https://avatars.dicebear.com/api/jdenticon/MatthewSchiefer.svg`,
+      image: `https://api.dicebear.com/7.x/thumbs/svg?seed=MatthewSchiefer`,
     },
   ];
 

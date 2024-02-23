@@ -1,11 +1,12 @@
 module.exports = {
   reactStrictMode: true,
   images: {
+    dangerouslyAllowSVG: true,
     domains: [
       'www.datocms-assets.com',
       'github.com',
       'ucarecdn.com',
-      'avatars.dicebear.com',
+      'api.dicebear.com',
       'img.shields.io',
       'researcherprofiles.org',
       'images.unsplash.com',
