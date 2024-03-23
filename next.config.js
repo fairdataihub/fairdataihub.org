@@ -7,6 +7,7 @@ module.exports = {
       'github.com',
       'ucarecdn.com',
       'api.dicebear.com',
+      'i.imgur.com',
       'img.shields.io',
       'researcherprofiles.org',
       'images.unsplash.com',
