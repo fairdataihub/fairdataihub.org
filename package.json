@@ -90,7 +90,7 @@
     "@semantic-release/npm": "11.0.0",
     "@semantic-release/release-notes-generator": "11.0.7",
     "@tailwindcss/line-clamp": "0.4.4",
-    "@tailwindcss/typography": "0.5.10",
+    "@tailwindcss/typography": "0.5.11",
     "@types/node": "18.18.9",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
