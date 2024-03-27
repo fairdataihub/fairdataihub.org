@@ -189,6 +189,20 @@ export default function Navbar() {
                 Meet The Team
               </div>
             </Link>
+            <Link href="/events" passHref>
+              <div
+                className={
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/events` ? ` router-link-active ` : ` `)
+                }
+                data-umami-event="Navigation link"
+                data-umami-event-location="Header"
+                data-umami-event-value="Events"
+              >
+                Events
+              </div>
+            </Link>
+
             <div
               id="our-projects-container"
               className="group relative rounded-lg"

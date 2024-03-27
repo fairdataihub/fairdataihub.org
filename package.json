@@ -34,6 +34,8 @@
     ]
   },
   "dependencies": {
+    "@citation-js/core": "^0.7.9",
+    "@citation-js/plugin-csl": "^0.7.9",
     "@giscus/react": "2.3.0",
     "@lottiefiles/lottie-player": "2.0.2",
     "@radix-ui/react-dialog": "^1.0.4",
@@ -43,6 +45,7 @@
     "@sendgrid/mail": "7.7.0",
     "@slack/webhook": "^6.1.0",
     "@uploadcare/upload-client": "^6.6.1",
+    "citation-js": "^0.7.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "cookies-next": "2.1.2",
