@@ -82,11 +82,11 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
 
 export async function getStaticProps() {
   // Filter the publications with the `sodaforsparc` tag
-  const sodaforsparcPublications = PublicationsJSON.filter(
+  const Publications = PublicationsJSON.filter(
     (publication) => publication.project === `sodaforsparc`,
   );
 
-  const publications = sodaforsparcPublications.map((publication) => {
+  const publications = Publications.map((publication) => {
     const cite = new Cite(publication.doi);
 
     const citation: string = cite.format(`bibliography`, {
