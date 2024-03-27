@@ -1,13 +1,16 @@
+import Cite from 'citation-js';
 import Head from 'next/head';
 
 import About from '@/components/aireadi/about';
 import Hero from '@/components/aireadi/hero';
 // import Impact from '@/components/aireadi/impact';
 import Info from '@/components/aireadi/info';
-import Publications from '@/components/aireadi/publications';
 import Timeline from '@/components/aireadi/timeline';
+import PublicationsList from '@/components/publications/publicationsList';
 
-export default function Aireadi() {
+import PublicationsJSON from '@/assets/data/publications.json';
+
+const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <div>
       <Head>
@@ -48,26 +51,55 @@ export default function Aireadi() {
         />
       </Head>
 
-      <main>
-        <section className="bg-white py-10 pt-16">
-          <Hero />
-        </section>
-        <section className="bg-gray-50 py-10 pt-16">
-          <About />
-        </section>
-        {/* <section className="bg-white py-10 pt-16">
+      <section className="bg-white py-10 pt-16">
+        <Hero />
+      </section>
+      <section className="bg-gray-50 py-10 pt-16">
+        <About />
+      </section>
+      {/* <section className="bg-white py-10 pt-16">
           <Impact />
         </section> */}
-        <section className="bg-white py-10 pt-16">
-          <Info />
-        </section>
-        <section className="bg-gray-50 py-10 pt-16">
-          <Timeline />
-        </section>
-        <section className="bg-white py-10 ">
-          <Publications />
-        </section>
-      </main>
+      <section className="bg-white py-10 pt-16">
+        <Info />
+      </section>
+      <section className="bg-gray-50 py-10 pt-16">
+        <Timeline />
+      </section>
+
+      <section className="bg-white py-10 ">
+        <PublicationsList publications={publications} />
+      </section>
     </div>
   );
+};
+
+export async function getStaticProps() {
+  // Filter the publications with the `sodaforsparc` tag
+  const sodaforsparcPublications = PublicationsJSON.filter(
+    (publication) => publication.project === `aireadi`,
+  );
+
+  const publications = sodaforsparcPublications.map((publication) => {
+    const cite = new Cite(publication.doi);
+
+    const citation: string = cite.format(`bibliography`, {
+      template: `apa`,
+    });
+
+    return {
+      title: publication.title,
+      doi: publication.doi,
+      citation,
+      subtitle: publication.subtitle || ``,
+    };
+  });
+
+  return {
+    props: {
+      publications,
+    },
+  };
 }
+
+export default Aireadi;
