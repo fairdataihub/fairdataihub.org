@@ -1,13 +1,15 @@
+import Cite from 'citation-js';
 import Head from 'next/head';
 
 import About from '@/components/fairshare/about';
 import Hero from '@/components/fairshare/hero';
 // import Impact from '@/components/fairshare/impact';
 import Info from '@/components/fairshare/info';
-import Publications from '@/components/fairshare/publications';
 import Timeline from '@/components/fairshare/timeline';
+import PublicationsList from '@/components/publications/publicationsList';
 
-export default function Fairshare() {
+import PublicationsJSON from '@/assets/data/publications.json';
+const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <>
       <Head>
@@ -63,9 +65,40 @@ export default function Fairshare() {
       <section className="bg-gray-50 py-10 pt-16">
         <Timeline />
       </section>
+
       <section className="bg-white py-10 ">
-        <Publications />
+        <PublicationsList publications={publications} />
       </section>
     </>
   );
+};
+
+export async function getStaticProps() {
+  // Filter the publications with the `sodaforsparc` tag
+  const Publications = PublicationsJSON.filter(
+    (publication) => publication.project === `fairshare`,
+  );
+
+  const publications = Publications.map((publication) => {
+    const cite = new Cite(publication.doi);
+
+    const citation: string = cite.format(`bibliography`, {
+      template: `apa`,
+    });
+
+    return {
+      title: publication.title,
+      doi: publication.doi,
+      citation,
+      subtitle: publication.subtitle || ``,
+    };
+  });
+
+  return {
+    props: {
+      publications,
+    },
+  };
 }
+
+export default FAIRshare;

@@ -1,0 +1,74 @@
+[
+  {
+    "project": "sodaforsparc",
+    "doi": "10.1101/2021.02.10.430563",
+    "title": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
+    "subtitle": ""
+  },
+  {
+    "project": "sodaforsparc",
+    "doi": "10.1096/fasebj.2020.34.s1.02483",
+    "title": "SPARC: SODA, an interactive software for curating SPARC datasets",
+    "subtitle": ""
+  },
+  {
+    "project": "fairshare",
+    "doi": "10.1038/s41597-023-02463-x",
+    "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
+    "subtitle": ""
+  },
+  {
+    "project": "fairshare",
+    "doi": "10.1101/2022.04.18.488694",
+    "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
+    "subtitle": ""
+  },
+  {
+    "project": "fairshare",
+    "doi": "10.7490/f1000research.1119054.1",
+    "title": "Making biomedical research software FAIR with FAIRshare",
+    "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022"
+  },
+  {
+    "project": "fairshare",
+    "doi": "10.7490/f1000research.1119055.1",
+    "title": "Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare",
+    "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022"
+  },
+  {
+    "project": "knowmore",
+    "doi": "10.1101/2021.08.08.455581",
+    "title": "KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC Datasets",
+    "subtitle": ""
+  },
+  {
+    "project": "aqua",
+    "doi": "10.12688/f1000research.73018.1",
+    "title": "AQUA: an Advanced QUery Architecture for the SPARC Portal",
+    "subtitle": ""
+  },
+  {
+    "project": "sparclink",
+    "doi": "10.12688/f1000research.75071.1",
+    "title": "SPARClink: an interactive tool to visualize the impact of the SPARC program",
+    "subtitle": ""
+  },
+  {
+    "project": "aireadi",
+    "doi": "10.5281/zenodo.7363102",
+    "title": "Software Development Best Practices of the AI-READI Project",
+    "subtitle": ""
+  },
+  {
+    "project": "aireadi",
+    "doi": "10.5281/zenodo.7641650",
+    "title": "AI-READI Code of Conduct",
+    "subtitle": ""
+  },
+  {
+    "project": "aireadi",
+    "doi": "10.5281/zenodo.7641684",
+    "title": "AI-READI Steering Committee Charter",
+    "subtitle": ""
+  }
+]
