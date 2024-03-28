@@ -3,7 +3,6 @@ import { Icon } from '@iconify/react';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { toast, ToastContainer } from 'react-toastify';
@@ -14,6 +13,7 @@ import markdownToHtml from '@/lib/markdownToHtml';
 
 import PostBody from '@/components/blog/postBody';
 import EventDates from '@/components/events/EventDates';
+import Seo from '@/components/seo/seo';
 
 interface PostProps {
   slug: string;
@@ -72,44 +72,14 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
 
   return (
     <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
-      <Head>
-        <title>{`${title} - Blog | Fair Data Innovations Hub`}</title>
-        <meta
-          property="og:title"
-          content={`${title} - Blog | Fair Data Innovations Hub`}
-        />
-        <meta
-          name="twitter:title"
-          content={`${title} - Blog | Fair Data Innovations Hub`}
-        />
-
-        <link rel="canonical" href={`https://fairdataihub.org/blog/${slug}`} />
-        <meta
-          property="og:url"
-          content={`https://fairdataihub.org/blog/${slug}`}
-        />
-        <meta
-          name="twitter:url"
-          content={`https://fairdataihub.org/blog/${slug}`}
-        />
-
-        <meta name="description" content={subtitle} />
-        <meta property="og:description" content={subtitle} />
-        <meta name="twitter:description" content={subtitle} />
-
-        <meta
-          property="og:image"
-          content={`https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
-            title,
-          )}&org=fairdataihub&description=${encodeURIComponent(subtitle)}`}
-        />
-        <meta
-          name="twitter:image"
-          content={`https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
-            title,
-          )}&org=fairdataihub&description=${encodeURIComponent(subtitle)}`}
-        />
-      </Head>
+      <Seo
+        templateTitle={`${title} - Events`}
+        templateDescription={subtitle}
+        templateUrl={`https://fairdataihub.org/events/${slug}`}
+        templateImage={`https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
+          title,
+        )}&org=fairdataihub&description=${encodeURIComponent(subtitle)}`}
+      />
 
       <Link href="/events" passHref>
         <div className="text-url left-0 top-0 mx-4 my-4 cursor-pointer py-1 text-[14px] font-semibold hover:underline sm:absolute sm:text-base">

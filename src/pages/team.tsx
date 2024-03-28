@@ -1,6 +1,7 @@
 import { InferGetStaticPropsType } from 'next';
-import Head from 'next/head';
 import { getPlaiceholder } from 'plaiceholder';
+
+import Seo from '@/components/seo/seo';
 
 import TeamCard from '../components/team/teamCard';
 
@@ -302,43 +303,12 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   TeamMembers,
 }) => (
   <>
-    <Head>
-      <title>Meet the Team - Fair Data Innovations Hub</title>
-      <meta
-        property="og:title"
-        content="Meet the Team - Fair Data Innovations Hub"
-      />
-      <meta
-        name="twitter:title"
-        content="Meet the Team - Fair Data Innovations Hub"
-      />
-
-      <link rel="canonical" href="https://fairdataihub.org/team" />
-      <meta property="og:url" content="https://fairdataihub.org/team" />
-      <meta name="twitter:url" content="https://fairdataihub.org/team" />
-
-      <meta
-        name="description"
-        content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
-      />
-      <meta
-        property="og:description"
-        content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
-      />
-      <meta
-        name="twitter:description"
-        content="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
-      />
-
-      <meta
-        property="og:image"
-        content="https://fairdataihub.org/thumbnails/team.png"
-      />
-      <meta
-        name="twitter:image"
-        content="https://fairdataihub.org/thumbnails/team.png"
-      />
-    </Head>
+    <Seo
+      templateTitle="Meet the Team"
+      templateDescription="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
+      templateImage="https://fairdataihub.org/thumbnails/team.png"
+      templateUrl="https://fairdataihub.org/team"
+    />
 
     <section className=" mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row">
       <div className="mx-auto flex w-11/12 flex-col lg:flex-row">

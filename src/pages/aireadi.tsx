@@ -1,5 +1,4 @@
 import Cite from 'citation-js';
-import Head from 'next/head';
 
 import About from '@/components/aireadi/about';
 import Hero from '@/components/aireadi/hero';
@@ -7,49 +6,19 @@ import Hero from '@/components/aireadi/hero';
 import Info from '@/components/aireadi/info';
 import Timeline from '@/components/aireadi/timeline';
 import PublicationsList from '@/components/publications/publicationsList';
+import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
 
 const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <div>
-      <Head>
-        <title>AI-READI - Fair Data Innovations Hub</title>
-        <meta
-          property="og:title"
-          content="AI-READI - Fair Data Innovations Hub"
-        />
-        <meta
-          name="twitter:title"
-          content="AI-READI - Fair Data Innovations Hub"
-        />
-
-        <link rel="canonical" href="https://fairdataihub.org/aireadi" />
-        <meta property="og:url" content="https://fairdataihub.org/aireadi" />
-        <meta name="twitter:url" content="https://fairdataihub.org/aireadi" />
-
-        <meta
-          name="description"
-          content="The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset to provide critical insights into type 2 diabetes mellitus (T2DM), including salutogenic pathways to return to health"
-        />
-        <meta
-          property="og:description"
-          content="The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset to provide critical insights into type 2 diabetes mellitus (T2DM), including salutogenic pathways to return to health"
-        />
-        <meta
-          name="twitter:description"
-          content="The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset to provide critical insights into type 2 diabetes mellitus (T2DM), including salutogenic pathways to return to health"
-        />
-
-        <meta
-          property="og:image"
-          content="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=AI-READI&org=fairdataihub&description=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20support%20future%20AI-driven%20discoveries%20in%20diabetes"
-        />
-        <meta
-          name="twitter:image"
-          content="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=AI-READI&org=fairdataihub&description=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20support%20future%20AI-driven%20discoveries%20in%20diabetes"
-        />
-      </Head>
+      <Seo
+        templateTitle="AI-READI"
+        templateUrl="https://fairdataihub.org/aireadi"
+        templateDescription="The AI-READI project seeks to create a flagship AI-ready and ethically-sourced dataset to provide critical insights into type 2 diabetes mellitus (T2DM), including salutogenic pathways to return to health"
+        templateImage="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=AI-READI&org=fairdataihub&description=Generating%20a%20flagship%20AI-ready%20and%20ethically-sourced%20dataset%20to%20support%20future%20AI-driven%20discoveries%20in%20diabetes"
+      />
 
       <section className="bg-white py-10 pt-16">
         <Hero />

@@ -27,22 +27,22 @@ interface BlogProps {
 // The Blog Page Content
 
 const Events: React.FC<BlogProps> = ({ eventsList }) => {
+  const description = `Resources created by the FAIR Data Innovations`;
+
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
-        templateTitle="Events"
-        templateUrl="https://fairdataihub.org/events"
-        templateDescription="Stay up to date with our upcoming events."
-        templateImage="https://fairdataihub.org/thumbnails/index.png"
+        templateTitle="Impact"
+        templateDescription={description}
+        templateUrl="https://fairdataihub.org/impact"
+        templateImage="https://kalai.fairdataihub.org/api/generate?title=Impact&description=Resources%20created%20by%20the%20FAIR%20Data%20Innovations&app=fairdataihub&org=fairdataihub"
       />
 
       <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
-          Events
+          Impact
         </h1>
-        <h2 className="text-left text-xl">
-          Stay up to date with our upcoming events.
-        </h2>
+        <h2 className="text-left text-xl">{description}</h2>
       </div>
 
       <hr className="mx-6 my-2 border-dashed border-slate-200" />

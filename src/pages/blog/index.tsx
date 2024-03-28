@@ -1,10 +1,10 @@
 import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
-import Head from 'next/head';
 import wordsCount from 'words-count';
 
 import PostEntry from '@/components/blog/postEntry';
+import Seo from '@/components/seo/seo';
 
 type BlogList = {
   slug: string;
@@ -27,37 +27,12 @@ interface BlogProps {
 const Blog: React.FC<BlogProps> = ({ blogList }) => {
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
-      <Head>
-        <title>Blog - Fair Data Innovations Hub</title>
-        <meta property="og:title" content="Blog - Fair Data Innovations Hub " />
-        <meta name="twitter:title" content="Blog - Fair Data Innovations Hub" />
-
-        <link rel="canonical" href="https://fairdataihub.org/blog" />
-        <meta property="og:url" content="https://fairdataihub.org/blog" />
-        <meta name="twitter:url" content="https://fairdataihub.org/blog" />
-
-        <meta
-          name="description"
-          content="Updates from FAIR Data Innovations Hub and its team."
-        />
-        <meta
-          property="og:description"
-          content="Updates from FAIR Data Innovations Hub and its team."
-        />
-        <meta
-          name="twitter:description"
-          content="Updates from FAIR Data Innovations Hub and its team."
-        />
-
-        <meta
-          property="og:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-        <meta
-          name="twitter:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-      </Head>
+      <Seo
+        templateTitle="Blog"
+        templateUrl="https://fairdataihub.org/blog"
+        templateDescription="Updates from FAIR Data Innovations Hub and its team."
+        templateImage="https://fairdataihub.org/thumbnails/index.png"
+      />
 
       <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">

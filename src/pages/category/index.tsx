@@ -1,7 +1,8 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import Head from 'next/head';
 import Link from 'next/link';
+
+import Seo from '@/components/seo/seo';
 
 interface FuncProps {
   categoriesList: string[];
@@ -10,43 +11,12 @@ interface FuncProps {
 const Categories: React.FC<FuncProps> = ({ categoriesList }) => {
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col  overflow-hidden  px-5   sm:px-10 sm:py-10">
-      <Head>
-        <title>Categories - Fair Data Innovations Hub</title>
-        <meta
-          property="og:title"
-          content="Categories - Fair Data Innovations Hub "
-        />
-        <meta
-          name="twitter:title"
-          content="Categories - Fair Data Innovations Hub"
-        />
-
-        <link rel="canonical" href="https://fairdataihub.org/category" />
-        <meta property="og:url" content="https://fairdataihub.org/category" />
-        <meta name="twitter:url" content="https://fairdataihub.org/category" />
-
-        <meta
-          name="description"
-          content="Updates from FAIR Data Innovations Hub and its team."
-        />
-        <meta
-          property="og:description"
-          content="Updates from FAIR Data Innovations Hub and its team."
-        />
-        <meta
-          name="twitter:description"
-          content="Updates from FAIR Data Innovations Hub and its team."
-        />
-
-        <meta
-          property="og:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-        <meta
-          name="twitter:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-      </Head>
+      <Seo
+        templateTitle="Categories"
+        templateUrl="https://fairdataihub.org/category"
+        templateDescription="Updates from FAIR Data Innovations Hub and its team."
+        templateImage="https://fairdataihub.org/thumbnails/index.png"
+      />
 
       <div className="mb-5 w-full px-2 pt-5 sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
