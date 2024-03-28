@@ -34,7 +34,7 @@ export default function Seo(props: SeoProps) {
 
   meta[
     `image`
-  ] = `https://kalai.fairdataihub.org/api/generate?app=ai-readi&title=${encodeURIComponent(
+  ] = `https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
     meta.title,
   )}&org=ai-readi&description=${encodeURIComponent(meta.description)}`;
 
