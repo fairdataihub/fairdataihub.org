@@ -1,50 +1,15 @@
-import Head from 'next/head';
-
 import ContactForm from '@/components/contact-us/contactForm';
+import Seo from '@/components/seo/seo';
 
 export default function ContactUs() {
   return (
     <>
-      <Head>
-        <title>Contact Us - Fair Data Innovations Hub</title>
-        <meta
-          property="og:title"
-          content="Contact Us - Fair Data Innovations Hub"
-        />
-        <meta
-          name="twitter:title"
-          content="Contact Us - Fair Data Innovations Hub"
-        />
-
-        <link rel="canonical" href="https://fairdataihub.org/contact-us" />
-        <meta property="og:url" content="https://fairdataihub.org/contact-us" />
-        <meta
-          name="twitter:url"
-          content="https://fairdataihub.org/contact-us"
-        />
-
-        <meta
-          name="description"
-          content="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
-        />
-        <meta
-          property="og:description"
-          content="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
-        />
-        <meta
-          name="twitter:description"
-          content="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
-        />
-
-        <meta
-          property="og:image"
-          content="https://fairdataihub.org/thumbnails/contact.png"
-        />
-        <meta
-          name="twitter:image"
-          content="https://fairdataihub.org/thumbnails/contact.png"
-        />
-      </Head>
+      <Seo
+        templateTitle="Contact Us"
+        templateDescription="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
+        templateImage="https://fairdataihub.org/thumbnails/contact.png"
+        templateUrl="https://fairdataihub.org/contact-us"
+      />
 
       <div className="relative flex items-center justify-center bg-transparent bg-cover bg-no-repeat ">
         <div className="area absolute bottom-0 z-0">

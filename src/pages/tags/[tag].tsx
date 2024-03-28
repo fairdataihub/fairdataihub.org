@@ -2,12 +2,12 @@ import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import wordsCount from 'words-count';
 
 import PostEntry from '@/components/blog/postEntry';
+import Seo from '@/components/seo/seo';
 
 type BlogList = {
   slug: string;
@@ -37,49 +37,12 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
 
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
-      <Head>
-        <title>{tag} - Tags | Fair Data Innovations Hub</title>
-        <meta
-          property="og:title"
-          content={`${tag} - Tags | Fair Data Innovations Hub`}
-        />
-        <meta
-          name="twitter:title"
-          content={`${tag} - Tags | Fair Data Innovations Hub`}
-        />
-
-        <link rel="canonical" href={`https://fairdataihub.org/tags${tag}`} />
-        <meta
-          property="og:url"
-          content={`https://fairdataihub.org/tags${tag}`}
-        />
-        <meta
-          name="twitter:url"
-          content={`https://fairdataihub.org/tags${tag}`}
-        />
-
-        <meta
-          name="description"
-          content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
-        />
-        <meta
-          property="og:description"
-          content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
-        />
-        <meta
-          name="twitter:description"
-          content={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
-        />
-
-        <meta
-          property="og:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-        <meta
-          name="twitter:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-      </Head>
+      <Seo
+        templateTitle={`${tag} - Tags`}
+        templateUrl={`https://fairdataihub.org/tags/${tag}`}
+        templateDescription={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
+        templateImage="https://fairdataihub.org/thumbnails/index.png"
+      />
 
       <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">

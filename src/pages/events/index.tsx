@@ -1,11 +1,11 @@
 import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
-import Head from 'next/head';
 import Link from 'next/link';
 import wordsCount from 'words-count';
 
 import EventDates from '@/components/events/EventDates';
+import Seo from '@/components/seo/seo';
 
 type EventsList = {
   slug: string;
@@ -29,43 +29,12 @@ interface BlogProps {
 const Events: React.FC<BlogProps> = ({ eventsList }) => {
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
-      <Head>
-        <title>Events - Fair Data Innovations Hub</title>
-        <meta
-          property="og:title"
-          content="Events - Fair Data Innovations Hub "
-        />
-        <meta
-          name="twitter:title"
-          content="Events - Fair Data Innovations Hub"
-        />
-
-        <link rel="canonical" href="https://fairdataihub.org/events" />
-        <meta property="og:url" content="https://fairdataihub.org/events" />
-        <meta name="twitter:url" content="https://fairdataihub.org/events" />
-
-        <meta
-          name="description"
-          content="Events that the FAIR Data Innovations Hub team is in."
-        />
-        <meta
-          property="og:description"
-          content="Events that the FAIR Data Innovations Hub team is in"
-        />
-        <meta
-          name="twitter:description"
-          content="Events that the FAIR Data Innovations Hub team is in"
-        />
-
-        <meta
-          property="og:image"
-          content="https://kalai.fairdataihub.org/api/generate?title=Events&description=Stay%20up%20to%20date%20with%20our%20upcoming%20events&app=fairdataihub&org=fairdataihub"
-        />
-        <meta
-          name="twitter:image"
-          content="https://kalai.fairdataihub.org/api/generate?title=Events&description=Stay%20up%20to%20date%20with%20our%20upcoming%20events&app=fairdataihub&org=fairdataihub"
-        />
-      </Head>
+      <Seo
+        templateTitle="Events"
+        templateUrl="https://fairdataihub.org/events"
+        templateDescription="Stay up to date with our upcoming events."
+        templateImage="https://fairdataihub.org/thumbnails/index.png"
+      />
 
       <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">

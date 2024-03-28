@@ -16,6 +16,7 @@ import markdownToHtml from '@/lib/markdownToHtml';
 const authorsJSON = require(`../../assets/data/authors.json`);
 
 import PostBody from '@/components/blog/postBody';
+import Seo from '@/components/seo/seo';
 
 interface PostProps {
   slug: string;
@@ -76,44 +77,16 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
 
   return (
     <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
+      <Seo
+        templateTitle={`${title} - Blog`}
+        templateDescription={subtitle}
+        templateImage={`https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
+          title,
+        )}&org=fairdataihub&description=${encodeURIComponent(subtitle)}`}
+        templateUrl={`https://fairdataihub.org/blog/${slug}`}
+      />
+
       <Head>
-        <title>{`${title} - Blog | Fair Data Innovations Hub`}</title>
-        <meta
-          property="og:title"
-          content={`${title} - Blog | Fair Data Innovations Hub`}
-        />
-        <meta
-          name="twitter:title"
-          content={`${title} - Blog | Fair Data Innovations Hub`}
-        />
-
-        <link rel="canonical" href={`https://fairdataihub.org/blog/${slug}`} />
-        <meta
-          property="og:url"
-          content={`https://fairdataihub.org/blog/${slug}`}
-        />
-        <meta
-          name="twitter:url"
-          content={`https://fairdataihub.org/blog/${slug}`}
-        />
-
-        <meta name="description" content={subtitle} />
-        <meta property="og:description" content={subtitle} />
-        <meta name="twitter:description" content={subtitle} />
-
-        <meta
-          property="og:image"
-          content={`https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
-            title,
-          )}&org=fairdataihub&description=${encodeURIComponent(subtitle)}`}
-        />
-        <meta
-          name="twitter:image"
-          content={`https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
-            title,
-          )}&org=fairdataihub&description=${encodeURIComponent(subtitle)}`}
-        />
-
         <meta
           name="keywords"
           content={tags.map((tag) => tag.toLowerCase()).join(`, `)}
