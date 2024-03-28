@@ -38,7 +38,12 @@ const Impact: React.FC<Props> = ({ publications }) => {
               key={group.key as unknown as string}
               className="flex flex-col pb-4"
             >
-              <h2 className="text-left text-2xl font-bold mb-3">{group.key}</h2>
+              <div className="flex items-center mb-3">
+                <h2 className="text-left text-2xl font-bold">{group.key}</h2>
+                <span className="text-base ml-1 font-medium">
+                  ({group.value.length})
+                </span>
+              </div>
 
               <ul className="list-inside">
                 {group.value.map((item) => {
