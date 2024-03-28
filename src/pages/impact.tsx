@@ -1,3 +1,5 @@
+import Cite from 'citation-js';
+
 import Seo from '@/components/seo/seo';
 
 type GroupedItems = { [key: string]: any[] };
@@ -36,22 +38,28 @@ const Impact: React.FC<Props> = ({ publications }) => {
               key={group.key as unknown as string}
               className="flex flex-col pb-4"
             >
-              <h2 className="text-left text-2xl font-bold mb-1">{group.key}</h2>
+              <h2 className="text-left text-2xl font-bold mb-3">{group.key}</h2>
 
-              <ul className="list-disc list-inside">
+              <ul className="list-inside">
                 {group.value.map((item) => {
                   return (
                     <li key={item.doi}>
-                      <a
-                        href={`https://doi.org/${item.doi}`}
-                        target="_blank"
-                        className="mb-1 text-url font-medium text-base"
-                        data-umami-event="Publication DOI link"
-                        data-umami-event-doi={item.doi}
-                        rel="noopener"
-                      >
-                        {item.title}
-                      </a>
+                      <div className="flex-col flex mb-4">
+                        <a
+                          href={`https://doi.org/${item.doi}`}
+                          target="_blank"
+                          className="text-url font-medium text-base"
+                          data-umami-event="Publication DOI link"
+                          data-umami-event-doi={item.doi}
+                          rel="noopener"
+                        >
+                          {item.title}
+                        </a>
+
+                        <p className="text-sm bg-slate-50 px-3 py-2">
+                          {item.citation}
+                        </p>
+                      </div>
                     </li>
                   );
                 })}
@@ -68,11 +76,22 @@ export async function getStaticProps() {
   const grouped: { [key: string]: any[] } = {};
 
   for (const resource of PublicationsJSON) {
+    const cite = new Cite(resource.doi);
+
+    const citation: string = cite.format(`bibliography`, {
+      template: `apa`,
+    });
+
+    const resourceWithCitation = {
+      ...resource,
+      citation,
+    };
+
     if (resource.type) {
       if (resource.type in grouped) {
-        grouped[resource.type].push(resource);
+        grouped[resource.type].push(resourceWithCitation);
       } else {
-        grouped[resource.type] = [resource];
+        grouped[resource.type] = [resourceWithCitation];
       }
     }
   }
