@@ -1,32 +1,14 @@
-import dayjs from 'dayjs';
-import fs from 'fs';
-import matter from 'gray-matter';
-import Link from 'next/link';
-import wordsCount from 'words-count';
-
-import EventDates from '@/components/events/EventDates';
 import Seo from '@/components/seo/seo';
 
-type EventsList = {
-  slug: string;
-  timeToRead: number;
-  frontMatter: {
-    title: string;
-    startDateTime: string;
-    endDateTime: string;
-    tags: string[];
-    subtitle: string;
-    type: string;
-  };
-};
+type GroupedItems = { [key: string]: any[] };
 
-interface BlogProps {
-  eventsList: EventsList[];
+interface Props {
+  publications: GroupedItems[];
 }
 
-// The Blog Page Content
+import PublicationsJSON from '@/assets/data/publications.json';
 
-const Events: React.FC<BlogProps> = ({ eventsList }) => {
+const Impact: React.FC<Props> = ({ publications }) => {
   const description = `Resources created by the FAIR Data Innovations`;
 
   return (
@@ -38,7 +20,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
         templateImage="https://kalai.fairdataihub.org/api/generate?title=Impact&description=Resources%20created%20by%20the%20FAIR%20Data%20Innovations&app=fairdataihub&org=fairdataihub"
       />
 
-      <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
+      <div className="mb-5 px-2 pt-5 sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
           Impact
         </h1>
@@ -47,101 +29,101 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
 
       <hr className="mx-6 my-2 border-dashed border-slate-200" />
 
-      {eventsList.map((post) => {
-        const { slug, frontMatter, timeToRead } = post;
+      <div className="px-2 pt-5 md:px-7">
+        {publications.map((group) => {
+          return (
+            <div
+              key={group.key as unknown as string}
+              className="flex flex-col pb-4"
+            >
+              <h2 className="text-left text-2xl font-bold mb-1">{group.key}</h2>
 
-        const { title, startDateTime, endDateTime, subtitle, type } =
-          frontMatter;
-
-        return (
-          <article
-            key={title}
-            className="mb-2 flex w-full flex-col md:flex-row"
-          >
-            <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm  md:px-7 md:py-5">
-              <div className="mb-1 flex flex-row items-center justify-between md:hidden ">
-                <div className="bg-pink-200 px-1 py-1 rounded-md text-sm font-medium">
-                  {type}
-                </div>
-
-                <span className=" text-sm text-gray-600">
-                  {timeToRead} min read
-                </span>
-              </div>
-
-              <hr className="my-1 border-dashed border-slate-200 md:hidden" />
-
-              <Link href={`/events/${slug}`} passHref>
-                <h2 className="text-url mb-1 mt-4 cursor-pointer text-2xl font-semibold hover:underline md:mt-0 md:text-xl">
-                  {title}
-                </h2>
-              </Link>
-
-              <div className="flex justify-between items-center">
-                <EventDates
-                  startDateTime={startDateTime}
-                  endDateTime={endDateTime}
-                />
-
-                <div className="bg-pink-200 px-1 py-1 rounded-md text-sm font-medium w-max md:block hidden">
-                  {type}
-                </div>
-              </div>
-
-              <p className="mb-3 mt-2 border-t pt-2 border-slate-200">
-                {subtitle}
-              </p>
-
-              <div className="flex w-full flex-col justify-end md:flex-row">
-                <Link href={`/events/${slug}`} passHref>
-                  <span className="text-url cursor-pointer text-base hover:underline">
-                    Read more →
-                  </span>
-                </Link>
-              </div>
+              <ul className="list-disc list-inside">
+                {group.value.map((item) => {
+                  return (
+                    <li key={item.doi}>
+                      <a
+                        href={`https://doi.org/${item.doi}`}
+                        target="_blank"
+                        className="mb-1 text-url font-medium text-base"
+                        data-umami-event="Publication DOI link"
+                        data-umami-event-doi={item.doi}
+                        rel="noopener"
+                      >
+                        {item.title}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
             </div>
-          </article>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 };
 
 export async function getStaticProps() {
-  // Get the posts from the `blog` directory
-  const files = fs.readdirSync(`./events`);
+  const grouped: { [key: string]: any[] } = {};
 
-  const eventsList = files.map((fileName) => {
-    // Remove the .md extension and use the file name as the slug
-    const slug = fileName.replace(`.md`, ``);
+  for (const resource of PublicationsJSON) {
+    if (resource.type) {
+      if (resource.type in grouped) {
+        grouped[resource.type].push(resource);
+      } else {
+        grouped[resource.type] = [resource];
+      }
+    }
+  }
 
-    // Read the raw content of the file and parse the frontMatter
-    const rawFileContent = fs.readFileSync(`events/${fileName}`, `utf-8`);
-    const timeToRead = Math.ceil(wordsCount(rawFileContent) / 265);
+  Object.keys(grouped).forEach((key) => {
+    const group = grouped[key];
 
-    const { data: frontMatter } = matter(rawFileContent);
+    if (group) {
+      group.sort((a, b) => {
+        if (a.title.toLowerCase() < b.title.toLowerCase()) {
+          return -1;
+        }
 
-    return {
-      slug,
-      frontMatter,
-      timeToRead,
+        if (a.title.toLowerCase() > b.title.toLowerCase()) {
+          return 1;
+        }
+
+        return 0;
+      });
+    }
+  });
+
+  // Sort the keys
+  const sortedKeys = Object.keys(grouped).sort((a, b) => {
+    if (a.toLowerCase() < b.toLowerCase()) {
+      return -1;
+    }
+
+    if (a.toLowerCase() > b.toLowerCase()) {
+      return 1;
+    }
+
+    return 0;
+  });
+
+  const sortedGrouped = [];
+
+  for (const key of sortedKeys) {
+    const item = {
+      key,
+      value: grouped[key],
     };
-  });
 
-  // sort the posts by date in descending order
-  eventsList.sort((a, b) => {
-    const a_date: any = dayjs(a.frontMatter.startDateTime, `YYYY-MM-DD`);
-    const b_date: any = dayjs(b.frontMatter.startDateTime, `YYYY-MM-DD`);
+    sortedGrouped.push(item);
+  }
 
-    return b_date - a_date;
-  });
-
-  // Return the posts data to the page as props
   return {
     props: {
-      eventsList,
+      publications: sortedGrouped,
     },
   };
 }
 
-export default Events;
+export default Impact;
