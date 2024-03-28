@@ -3,7 +3,7 @@ const publicationsList: React.FC<PublicationsItemList> = ({ publications }) => {
     <section className="mx-auto max-w-screen-lg px-10 py-3">
       <div className="flex w-full flex-col">
         <h2 className="py-2 text-2xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-          Publications
+          Impact
         </h2>
       </div>
 
