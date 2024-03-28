@@ -11,14 +11,14 @@ const publicationsList: React.FC<PublicationsItemList> = ({ publications }) => {
         {publications.map((publication) => (
           <div
             className="mb-4 flex flex-col py-4 font-sans"
-            key={publication.doi}
+            key={publication.url}
           >
             <a
-              href={`https://doi.org/${publication.doi}`}
+              href={publication.url}
               target="_blank"
               className="my-2"
-              data-umami-event="Publication DOI link"
-              data-umami-event-doi={publication.doi}
+              data-umami-event="Publication link"
+              data-umami-event-url={publication.url}
               rel="noopener"
             >
               <p className="text-url text-xl font-semibold">

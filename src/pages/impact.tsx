@@ -1,5 +1,3 @@
-import Cite from 'citation-js';
-
 import Seo from '@/components/seo/seo';
 
 type GroupedItems = { [key: string]: any[] };
@@ -11,13 +9,11 @@ interface Props {
 import PublicationsJSON from '@/assets/data/publications.json';
 
 const Impact: React.FC<Props> = ({ publications }) => {
-  const description = `Resources created by the FAIR Data Innovations`;
-
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
         templateTitle="Impact"
-        templateDescription={description}
+        templateDescription="Resources created by the FAIR Data Innovations"
         templateUrl="https://fairdataihub.org/impact"
         templateImage="https://kalai.fairdataihub.org/api/generate?title=Impact&description=Resources%20created%20by%20the%20FAIR%20Data%20Innovations&app=fairdataihub&org=fairdataihub"
       />
@@ -26,7 +22,9 @@ const Impact: React.FC<Props> = ({ publications }) => {
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
           Impact
         </h1>
-        <h2 className="text-left text-xl">{description}</h2>
+        <h2 className="text-left text-xl">
+          Resources created by the FAIR Data Innovations
+        </h2>
       </div>
 
       <hr className="mx-6 my-2 border-dashed border-slate-200" />
@@ -48,14 +46,14 @@ const Impact: React.FC<Props> = ({ publications }) => {
               <ul className="list-inside">
                 {group.value.map((item) => {
                   return (
-                    <li key={item.doi}>
+                    <li key={item.url}>
                       <div className="flex-col flex mb-4">
                         <a
-                          href={`https://doi.org/${item.doi}`}
+                          href={item.url}
                           target="_blank"
                           className="text-url font-medium text-base"
-                          data-umami-event="Publication DOI link"
-                          data-umami-event-doi={item.doi}
+                          data-umami-event="Publication link"
+                          data-umami-event-url={item.url}
                           rel="noopener"
                         >
                           {item.title}
@@ -81,15 +79,8 @@ export async function getStaticProps() {
   const grouped: { [key: string]: any[] } = {};
 
   for (const resource of PublicationsJSON) {
-    const cite = new Cite(resource.doi);
-
-    const citation: string = cite.format(`bibliography`, {
-      template: `apa`,
-    });
-
     const resourceWithCitation = {
       ...resource,
-      citation,
     };
 
     if (resource.type) {
@@ -101,40 +92,23 @@ export async function getStaticProps() {
     }
   }
 
-  Object.keys(grouped).forEach((key) => {
-    const group = grouped[key];
-
-    if (group) {
-      group.sort((a, b) => {
-        if (a.title.toLowerCase() < b.title.toLowerCase()) {
-          return -1;
-        }
-
-        if (a.title.toLowerCase() > b.title.toLowerCase()) {
-          return 1;
-        }
-
-        return 0;
-      });
-    }
-  });
-
-  // Sort the keys
-  const sortedKeys = Object.keys(grouped).sort((a, b) => {
-    if (a.toLowerCase() < b.toLowerCase()) {
-      return -1;
-    }
-
-    if (a.toLowerCase() > b.toLowerCase()) {
-      return 1;
-    }
-
-    return 0;
-  });
+  const sortingOrder = [
+    `Journal Article`,
+    `Preprint`,
+    `Software (Zenodo citation of our software)`,
+    `Report`,
+    `Conference Presentation`,
+    `Poster`,
+    `Web Article`,
+  ];
 
   const sortedGrouped = [];
 
-  for (const key of sortedKeys) {
+  for (const key of sortingOrder) {
+    if (!grouped[key]) {
+      continue;
+    }
+
     const item = {
       key,
       value: grouped[key],

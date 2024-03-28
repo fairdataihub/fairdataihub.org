@@ -1,6 +1,7 @@
 interface PublicationsItem {
   title: string;
-  doi: string;
+  url: string;
+  type: string;
   citation: string;
   subtitle: string;
 }

@@ -1,5 +1,3 @@
-import Cite from 'citation-js';
-
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import About from '@/components/sodaforsparc/about';
@@ -45,24 +43,9 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
 
 export async function getStaticProps() {
   // Filter the publications with the `sodaforsparc` tag
-  const Publications = PublicationsJSON.filter(
+  const publications = PublicationsJSON.filter(
     (publication) => publication.project === `sodaforsparc`,
   );
-
-  const publications = Publications.map((publication) => {
-    const cite = new Cite(publication.doi);
-
-    const citation: string = cite.format(`bibliography`, {
-      template: `apa`,
-    });
-
-    return {
-      title: publication.title,
-      doi: publication.doi,
-      citation,
-      subtitle: publication.subtitle || ``,
-    };
-  });
 
   return {
     props: {
