@@ -90,13 +90,13 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
       </Link>
 
       <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 py-5 sm:px-10 sm:py-20">
-        <div className="group relative mb-10 h-full w-full before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r  before:from-pink-400 before:to-fuchsia-700 before:opacity-60 before:content-['']">
+        <div className="group relative mb-10 h-full w-full before:absolute before:bottom-0 before:z-10 before:block before:h-0 before:w-full before:bg-gradient-to-r  before:from-pink-400 before:to-fuchsia-700 before:opacity-60 before:content-[''] before:pointer-events-none">
           <div className="relative h-auto min-h-[200px] w-full sm:min-h-[300px] md:min-h-[450px]">
             <Image
               src={heroImage}
               alt={title}
               fill
-              className="h-full w-full object-cover object-top md:object-center"
+              className="h-full w-full object-cover object-top md:object-contain"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
