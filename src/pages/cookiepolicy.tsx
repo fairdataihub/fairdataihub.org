@@ -1,52 +1,16 @@
-import Head from 'next/head';
 import Link from 'next/link';
+
+import Seo from '@/components/seo/seo';
 
 export default function CookiePolicy() {
   return (
     <>
-      <Head>
-        <title>Cookie Policy - Fair Data Innovations Hub</title>
-        <meta
-          property="og:title"
-          content="Cookie Policy - Fair Data Innovations Hub"
-        />
-        <meta
-          name="twitter:title"
-          content="Cookie Policy - Fair Data Innovations Hub"
-        />
-
-        <link rel="canonical" href="https://fairdataihub.org/cookiepolicy" />
-        <meta
-          property="og:url"
-          content="https://fairdataihub.org/cookiepolicy"
-        />
-        <meta
-          name="twitter:url"
-          content="https://fairdataihub.org/cookiepolicy"
-        />
-
-        <meta
-          name="description"
-          content="View the Cookie Policy of fairdataihub.org"
-        />
-        <meta
-          property="og:description"
-          content="View the Cookie Policy of fairdataihub.org"
-        />
-        <meta
-          name="twitter:description"
-          content="View the Cookie Policy of fairdataihub.org"
-        />
-
-        <meta
-          property="og:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-        <meta
-          name="twitter:image"
-          content="https://fairdataihub.org/thumbnails/index.png"
-        />
-      </Head>
+      <Seo
+        templateTitle="Cookie Policy"
+        templateDescription="View the Cookie Policy of fairdataihub.org"
+        templateImage="https://fairdataihub.org/thumbnails/index.png"
+        templateUrl="https://fairdataihub.org/cookiepolicy"
+      />
 
       <section className="mx-auto flex max-w-screen-lg flex-col px-6 py-5 text-lg text-black sm:px-6 lg:px-8">
         <h1 className="heading">Cookie Policy</h1>

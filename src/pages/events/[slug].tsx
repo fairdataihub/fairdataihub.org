@@ -1,10 +1,8 @@
 import Giscus from '@giscus/react';
 import { Icon } from '@iconify/react';
-import dayjs from 'dayjs';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import { toast, ToastContainer } from 'react-toastify';
@@ -13,21 +11,19 @@ import 'react-toastify/dist/ReactToastify.css';
 
 import markdownToHtml from '@/lib/markdownToHtml';
 
-const authorsJSON = require(`../../assets/data/authors.json`);
-
 import PostBody from '@/components/blog/postBody';
+import EventDates from '@/components/events/EventDates';
 import Seo from '@/components/seo/seo';
 
 interface PostProps {
   slug: string;
   frontMatter: {
     title: string;
-    date: string;
-    authors: string[];
+    startDateTime: string;
+    endDateTime: string;
     heroImage: string;
     imageAuthor: string;
     imageAuthorLink: string;
-    tags: string[];
     subtitle: string;
     category: string;
   };
@@ -35,22 +31,21 @@ interface PostProps {
 }
 
 // The page for each post
-const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
+const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
   const {
     title,
-    authors,
-    date,
+    startDateTime,
+    endDateTime,
     heroImage,
     imageAuthor,
     imageAuthorLink,
     category,
     subtitle,
-    tags,
   } = frontMatter;
 
   const copyLinkToClipboard = () => {
     navigator.clipboard
-      .writeText(`https://fairdataihub.org/blog/${slug}`)
+      .writeText(`https://fairdataihub.org/events/${slug}`)
       .then(() => {
         toast.success(`Copied to clipboard succesfully.`, {
           position: `bottom-right`,
@@ -78,37 +73,30 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
   return (
     <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
       <Seo
-        templateTitle={`${title} - Blog`}
+        templateTitle={`${title} - Events`}
         templateDescription={subtitle}
+        templateUrl={`https://fairdataihub.org/events/${slug}`}
         templateImage={`https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
           title,
         )}&org=fairdataihub&description=${encodeURIComponent(subtitle)}`}
-        templateUrl={`https://fairdataihub.org/blog/${slug}`}
       />
 
-      <Head>
-        <meta
-          name="keywords"
-          content={tags.map((tag) => tag.toLowerCase()).join(`, `)}
-        />
-      </Head>
-
-      <Link href="/blog" passHref>
+      <Link href="/events" passHref>
         <div className="text-url left-0 top-0 mx-4 my-4 cursor-pointer py-1 text-[14px] font-semibold hover:underline sm:absolute sm:text-base">
           <div className="flex items-center justify-center">
-            <Icon icon="eva:arrow-ios-back-fill" /> All Blog Posts
+            <Icon icon="eva:arrow-ios-back-fill" /> All Events
           </div>
         </div>
       </Link>
 
       <div className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 py-5 sm:px-10 sm:py-20">
-        <div className="group relative mb-10 h-full w-full before:absolute before:bottom-0 before:z-10 before:block before:h-full before:w-full before:bg-gradient-to-r  before:from-pink-400 before:to-fuchsia-700 before:opacity-60 before:content-['']">
+        <div className="group relative mb-10 h-full w-full before:absolute before:bottom-0 before:z-10 before:block before:h-0 before:w-full before:bg-gradient-to-r  before:from-pink-400 before:to-fuchsia-700 before:opacity-60 before:content-[''] before:pointer-events-none">
           <div className="relative h-auto min-h-[200px] w-full sm:min-h-[300px] md:min-h-[450px]">
             <Image
               src={heroImage}
               alt={title}
               fill
-              className="h-full w-full object-cover object-top md:object-center"
+              className="h-full w-full object-cover object-top md:object-contain"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
@@ -135,44 +123,14 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               {category}
             </h3>
           </Link>
-          <h3 className="mb-3 text-base font-medium text-slate-500">
-            {dayjs(date).format(`dddd, MMMM D, YYYY`)}
-          </h3>
+
+          <EventDates startDateTime={startDateTime} endDateTime={endDateTime} />
 
           <hr className="my-4 border-dashed border-slate-200" />
 
-          <h1 className="text-5xl font-extrabold text-slate-700">{title}</h1>
-
-          <ul className="flex flex-wrap pb-3 pt-6 text-sm leading-6 ">
-            {authors.map((author) => (
-              <li key={author} className="my-2 mr-5 flex items-center">
-                <Image
-                  src={authorsJSON[author].avatar}
-                  alt="profile picture"
-                  width={50}
-                  height={50}
-                  priority={true}
-                  className=" flex items-center rounded-full"
-                />
-
-                <div className="ml-3 flex flex-col justify-center">
-                  <span className="text-base font-medium ">
-                    {authorsJSON[author].name}
-                  </span>
-                  <a
-                    href={`https://twitter.com/` + authorsJSON[author].social}
-                    className="text-sm font-medium text-accent"
-                    data-umami-event="Blog Author Social Media"
-                    data-umami-eventvalue={authorsJSON[author].social}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    @{authorsJSON[author].social}
-                  </a>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <h1 className="text-5xl font-extrabold text-slate-700 mb-6">
+            {title}
+          </h1>
 
           <hr className="my-2 border-slate-300" />
 
@@ -185,7 +143,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               Share this article:{` `}
             </span>
             <a
-              href={`http://twitter.com/share?text=I just read this article and think y'all need to take a look at this&url=https://fairdataihub.org/blog/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
+              href={`http://twitter.com/share?text=I just read this article and think y'all need to take a look at this&url=https://fairdataihub.org/events/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
               target="_blank"
               rel="noopener"
               className="mx-2 text-slate-500 transition-all hover:text-accent"
@@ -196,7 +154,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               <Icon icon="akar-icons:twitter-fill" width="20" height="20" />
             </a>
             <a
-              href={`https://www.facebook.com/sharer/sharer.php?u=https://fairdataihub.org/blog/${slug}"`}
+              href={`https://www.facebook.com/sharer/sharer.php?u=https://fairdataihub.org/events/${slug}"`}
               target="_blank"
               rel="noopener"
               className="mx-2 text-slate-500 transition-all hover:text-accent"
@@ -207,7 +165,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               <Icon icon="akar-icons:facebook-fill" width="20" height="20" />
             </a>
             <a
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://fairdataihub.org/blog/${slug}`}
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://fairdataihub.org/events/${slug}`}
               target="_blank"
               rel="noopener"
               className="mx-2 text-slate-500 transition-all hover:text-accent"
@@ -258,7 +216,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const files = fs.readdirSync(`./blog`);
+  const files = fs.readdirSync(`./events`);
 
   const paths = files.map((fileName) => ({
     params: {
@@ -277,7 +235,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const slug = params?.slug;
 
-  const fileName = fs.readFileSync(`blog/${slug}.md`, `utf-8`);
+  const fileName = fs.readFileSync(`events/${slug}.md`, `utf-8`);
   const { data: frontMatter, content: fileContent } = matter(fileName);
 
   const postContent = await markdownToHtml(fileContent || ``);
@@ -291,4 +249,4 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   };
 };
 
-export default BlogPost;
+export default EventPost;

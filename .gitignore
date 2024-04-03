@@ -38,5 +38,4 @@ yarn-error.log*
 # vercel
 .vercel
 .env
-.vscode/settings.json
 cypress/videos
