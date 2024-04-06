@@ -68,7 +68,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="py-10 mx-auto max-w-screen-xl relative">
+      <section className="py-20 mx-auto max-w-screen-xl relative">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             What are we working on?
@@ -81,7 +81,7 @@ export default function Home() {
               <img
                 src="https://i.imgur.com/ZYVW3Sh.png"
                 alt="image"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover object-top"
               />
               <div
                 className="absolute inset-0 bg-white"
@@ -110,7 +110,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-md border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer p-1">
+          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-md border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer ">
             <div className="h-[280px] relative">
               <img
                 src="https://i.imgur.com/OYy0ZiU.png"
@@ -123,12 +123,12 @@ export default function Home() {
                   background: `linear-gradient(180deg, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%)`,
                 }}
               ></div>
-              <div
+              {/* <div
                 className="absolute inset-0 bg-white"
                 style={{
                   background: `linear-gradient(270deg, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%)`,
                 }}
-              ></div>
+              ></div> */}
               <div
                 className="absolute inset-0 bg-white"
                 style={{
@@ -168,7 +168,7 @@ export default function Home() {
             Sharing is caring... but also daunting?
           </h2>
 
-          <div className="grid grid-cols-2 gap-10 font-asap">
+          <div className="grid grid-cols-2 gap-10 font-asap pt-8">
             <p className="text-xl">
               Sharing biomedical data is essential for accelerating discoveries
               in human health. However, it&apos;s not as simple as uploading
@@ -192,7 +192,7 @@ export default function Home() {
           </div>
         </div>
 
-        <hr class="mx-auto max-w-screen-lg h-0.5 border-t-0 bg-stone-800 " />
+        <hr className="mx-auto max-w-screen-lg h-0.5 border-t-0 bg-stone-800 " />
 
         <div className="mx-auto max-w-screen-xl py-20">
           <h2 className="mb-10 text-left text-4xl font-extrabold sm:text-4xl">
@@ -200,7 +200,7 @@ export default function Home() {
           </h2>
 
           <div className="gap-16 items-start lg:grid lg:grid-cols-2">
-            <div className="pt-8">
+            <div className="pt-8 font-asap">
               <p className="mb-4 text-xl">
                 We believe that researchers already have enough work and
                 responsibilities on their hands. Therefore, sharing data,
@@ -260,7 +260,7 @@ export default function Home() {
 
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="my-10 text-center text-4xl font-extrabold sm:text-4xl">
-                About Us
+                A little bit about us
               </h2>
 
               <p className="mb-6 mt-2 w-full text-left font-asap sm:text-center md:my-2 text-xl">
