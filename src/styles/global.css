@@ -111,6 +111,10 @@
     transform-origin: bottom left;
   }
 
+  .header-gradient-background {
+    @apply bg-gradient-to-t from-pink-600 to-rose-400 inline-block text-transparent bg-clip-text;
+  }
+
   .nav-item {
     @apply relative mx-1 cursor-pointer py-2 sm:px-1 lg:px-3;
   }
