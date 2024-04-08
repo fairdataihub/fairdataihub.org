@@ -27,9 +27,73 @@ export default function Home() {
             </div>
 
             <div className="flex w-full flex-col gap-5 ">
+              <Link href="/aireadi">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Platform
+                      </span>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        Artificial Intelligence Ready and Equitable Atlas for
+                        Diabetes Insights
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg  text-black">
+                      AI-READI is one of the data generation projects funded by
+                      the National Institutes of Health (NIH)&apos;s Bridge2AI
+                      Program. The AI-READI project is structured into six
+                      modules: Data Acquisition, Ethics, Standards, Teaming,
+                      Tools, and Skills & Workforce Development. The FAIR Data
+                      Innovations Hub is leading the Tools module.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="/images/hero/aireadi-logo.png"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="https://fair-biors.org/" target="__blank">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Guidelines
+                      </span>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        FAIR Biomedical Research Software Guidelines
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg  text-black">
+                      Minimal and actionable step-by-step guidelines for making
+                      biomedical research software reusable in line with the
+                      FAIR4RS principles.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="https://fair-biors.org/img/logo.svg"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
               <Link href="/sodaforsparc">
-                <div className="group grid w-full cursor-pointer grid-cols-12 rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg">
-                  <div className="col-span-10 flex flex-col pr-5">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
                     <div>
                       <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
                         Software
@@ -40,7 +104,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="m w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg  text-black">
                       SODA (Software to Organize Data Automatically) for SPARC
                       is a cross-platform desktop software that allows
                       SPARC-funded researchers to easily comply with the FAIR
@@ -48,7 +112,7 @@ export default function Home() {
                     </p>
                   </div>
 
-                  <div className="relative col-span-2 h-full w-full overflow-hidden transition-all group-hover:scale-[1.02]">
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
                     <img
                       src="/images/hero/soda-app-macos.png"
                       alt="Screenshot of SODA for SPARC"
@@ -58,38 +122,135 @@ export default function Home() {
                 </div>
               </Link>
 
-              <div className="group grid w-full cursor-pointer grid-cols-12 rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg">
-                <div className="col-span-10 flex flex-col pr-5">
-                  <div>
-                    <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
-                      Software
-                    </span>
+              <Link href="/fairshare">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Software
+                      </span>
 
-                    <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
-                      FAIRshare
-                    </h2>
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        FAIRshare
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg  text-black">
+                      FAIRshare is a cross-platform desktop software that allows
+                      researchers to easily organize and share their biomedical
+                      data and software according to applicable FAIR guidelines.
+                      The first phase of development of FAIRshare is focused on
+                      supporting COVID-19 and other infectious diseases related
+                      data and software. Our ultimate goal is to provide support
+                      for data and software from all fields of biomedical
+                      research.
+                    </p>
                   </div>
 
-                  <p className="m w-full font-asap text-lg  text-black">
-                    FAIRshare is a cross-platform desktop software that allows
-                    researchers to easily organize and share their biomedical
-                    data and software according to applicable FAIR guidelines.
-                    The first phase of development of FAIRshare is focused on
-                    supporting COVID-19 and other infectious diseases related
-                    data and software. Our ultimate goal is to provide support
-                    for data and software from all fields of biomedical
-                    research.
-                  </p>
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="/images/hero/fairshare-macos.png"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
                 </div>
+              </Link>
 
-                <div className="relative col-span-2 h-full w-full overflow-hidden transition-all group-hover:scale-[1.02]">
-                  <img
-                    src="/images/hero/fairshare-macos.png"
-                    alt="Screenshot of SODA for SPARC"
-                    className="h-full w-full rounded-md object-contain"
-                  />
+              <Link href="/knowmore">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Software
+                      </span>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        KnowMore
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg  text-black">
+                      KnowMore is a tool readily integrable into the SPARC
+                      Portal that allows to find potential relation, difference,
+                      and similarities between multiple SPARC datasets in just a
+                      few clicks, which can lead to a new discovery, new
+                      hypothesis, or simply guide the user to the next logical
+                      step in their discovery process.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="https://github.com/SPARC-FAIR-Codeathon/KnowMore/raw/main/docs/kmlogo-with-text3.png"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
                 </div>
-              </div>
+              </Link>
+
+              <Link href="/sparclink">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Software
+                      </span>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        SPARClink
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg  text-black">
+                      SPARClink provides a system that queries all external
+                      publications using open source tools and platforms to
+                      create interactable visualizations that showcases the
+                      impact that SPARC has on the overall scientific research
+                      community.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/logo.svg"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/aqua">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Software
+                      </span>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        Advanced Query Architecture for the SPARC Portal
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg  text-black">
+                      AQUA (Advanced Query Architecture for the SPARC Portal) an
+                      application that aims at improving the search capabilities
+                      of the SPARC Portal.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="/images/hero/aqua-logo-full.png"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
