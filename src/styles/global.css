@@ -112,7 +112,7 @@
   }
 
   .header-gradient-background {
-    @apply bg-gradient-to-t from-pink-600 to-rose-400 inline-block text-transparent bg-clip-text;
+    @apply inline-block bg-gradient-to-t from-pink-600 to-rose-400 bg-clip-text text-transparent;
   }
 
   .img-hover-zoom {
