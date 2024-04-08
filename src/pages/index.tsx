@@ -244,10 +244,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section className="py-10">
-        <Vision />
-      </section> */}
-
       <section className="relative mt-10 hidden w-full py-20">
         <div className="mx-auto w-full max-w-screen-xl">
           <h2 className="header-gradient-background mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl">
@@ -314,7 +310,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+          className="absolute inset-0 -z-10 hidden transform-gpu overflow-hidden blur-3xl"
           aria-hidden="true"
         >
           <div
@@ -326,11 +322,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-10">
+      <section className="hidden py-10">
         <ProjectsCarousel />
       </section>
 
-      <section className="bg-[#f9f1f3] py-10">
+      <section className="py-10">
         <Collaborators />
       </section>
     </div>

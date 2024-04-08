@@ -61,7 +61,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href="https://fair-biors.org/" target="__blank">
+              <Link href="/fair-biors">
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
                     <div>

@@ -39,8 +39,8 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
 
 export async function getStaticProps() {
   // Filter the publications with the `sodaforsparc` tag
-  const publications = PublicationsJSON.filter(
-    (publication) => publication.project === `knowmore`,
+  const publications = PublicationsJSON.filter((publication) =>
+    publication.project.includes(`knowmore`),
   );
 
   return {
