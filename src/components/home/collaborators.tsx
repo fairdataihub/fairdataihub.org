@@ -53,7 +53,7 @@ export default function Collaborators() {
             {logoImages.map((logo, index) => (
               <div
                 key={index}
-                className="flex justify-center items-center w-full h-full mx-2"
+                className="mx-2 flex h-full w-full items-center justify-center"
               >
                 <Image
                   className="!px-4 "

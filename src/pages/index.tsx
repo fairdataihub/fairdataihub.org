@@ -21,14 +21,14 @@ export default function Home() {
 
       <div className="relative">
         <section className="mb-10 pt-12 sm:pt-16">
-          <div className="hero container mx-auto max-w-screen-xl px-2 py-8 items-center justify-center md:flex">
+          <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
             <div className="w-full p-2 lg:w-7/12 ">
-              <h1 className="w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl header-gradient-background">
+              <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
                 Empowering AI driven discoveries through simplified FAIR data
                 practices.
               </h1>
 
-              <p className="mt-2 w-full text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl max-w-lg">
+              <p className="mt-2 w-full max-w-lg text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">
                 Discover how FAIR data practices are revolutionizing biomedical
                 research. Explore our open-source tools designed to guide
                 researchers through this transformative journey
@@ -69,20 +69,20 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="py-20 mx-auto max-w-screen-xl relative">
+      <section className="relative mx-auto max-w-screen-xl py-20">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             What are we working on?
           </h2>
         </div>
 
-        <div className="flex gap-3 h-full items-center justify-center  flex-col md:flex-row">
-          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-lg border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer p-1 relative">
-            <div className="h-[280px] relative">
+        <div className="flex h-full flex-col items-center justify-center  gap-3 md:flex-row">
+          <div className="relative flex h-[450px] w-6/12 cursor-pointer flex-col rounded-lg border border-slate-200 bg-white p-1 shadow-md transition-all hover:border-slate-300 hover:shadow-lg">
+            <div className="relative h-[280px]">
               <img
                 src="https://i.imgur.com/ZYVW3Sh.png"
                 alt="image"
-                className="w-full h-full object-cover object-top"
+                className="h-full w-full object-cover object-top"
               />
               <div
                 className="absolute inset-0 bg-white"
@@ -99,11 +99,11 @@ export default function Home() {
             </div>
 
             <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold header-gradient-background">
+              <h3 className="header-gradient-background mb-2 text-2xl font-bold">
                 SODA for SPARC
               </h3>
 
-              <p className="text-lg font-asap">
+              <p className="font-asap text-lg">
                 Easily make bioelectronic, neurophysiology, and other similar
                 research data and computational models FAIR following the NIH
                 SPARC guidelines
@@ -111,12 +111,12 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-lg border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer ">
-            <div className="h-[280px] relative">
+          <div className="flex h-[450px] w-6/12 cursor-pointer flex-col rounded-lg border border-slate-200 bg-white shadow-md transition-all hover:border-slate-300 hover:shadow-lg ">
+            <div className="relative h-[280px]">
               <img
                 src="https://i.imgur.com/OYy0ZiU.png"
                 alt="image"
-                className="w-full h-full object-cover object-top"
+                className="h-full w-full object-cover object-top"
               />
               <div
                 className="absolute inset-0 bg-white"
@@ -139,11 +139,11 @@ export default function Home() {
             </div>
 
             <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold header-gradient-background">
+              <h3 className="header-gradient-background mb-2 text-2xl font-bold">
                 AI-READI
               </h3>
 
-              <p className="text-lg font-asap">
+              <p className="font-asap text-lg">
                 Generating a flagship AI-ready and ethically-sourced dataset to
                 support future AI-driven discoveries in diabetes
               </p>
@@ -152,7 +152,7 @@ export default function Home() {
         </div>
         <div></div>
 
-        <p className="text-xl text-center mt-6">
+        <p className="mt-6 text-center text-xl">
           There is a lot more in the pipeline. To learn more about all our work
           in this area, please visit our{` `}
           <Link href="/projects" passHref>
@@ -163,13 +163,13 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="py-20 relative bg-stone-900 text-white px-4">
+      <section className="relative bg-stone-900 px-4 py-20 text-white">
         <div className="mx-auto max-w-screen-xl py-20 ">
-          <h2 className="mb-10 text-left text-4xl font-extrabold sm:text-4xl header-gradient-background">
+          <h2 className="header-gradient-background mb-10 text-left text-4xl font-extrabold sm:text-4xl">
             Sharing is caring... but also daunting?
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-10 font-asap pt-8">
+          <div className="grid gap-10 pt-8 font-asap md:grid-cols-2">
             <p className="text-xl">
               Sharing biomedical data is essential for accelerating discoveries
               in human health. However, it&apos;s not as simple as uploading
@@ -193,14 +193,14 @@ export default function Home() {
           </div>
         </div>
 
-        <hr className="mx-auto max-w-screen-lg h-0.5 border-t-0 bg-stone-800 " />
+        <hr className="mx-auto h-0.5 max-w-screen-lg border-t-0 bg-stone-800 " />
 
         <div className="mx-auto max-w-screen-xl py-20">
-          <h2 className="mb-10 text-left text-4xl font-extrabold sm:text-4xl header-gradient-background">
+          <h2 className="header-gradient-background mb-10 text-left text-4xl font-extrabold sm:text-4xl">
             Simple guidelines and open-source tools for the win!
           </h2>
 
-          <div className="gap-16 items-start lg:grid lg:grid-cols-2">
+          <div className="items-start gap-16 lg:grid lg:grid-cols-2">
             <div className="pt-8 font-asap">
               <p className="mb-4 text-xl">
                 We believe that researchers already have enough work and
@@ -248,21 +248,21 @@ export default function Home() {
         <Vision />
       </section> */}
 
-      <section className="py-20 mt-10 relative w-full">
-        <div className="mx-auto max-w-screen-xl w-full">
-          <h2 className="mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl header-gradient-background">
+      <section className="relative mt-10 w-full py-20">
+        <div className="mx-auto w-full max-w-screen-xl">
+          <h2 className="header-gradient-background mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl">
             Our solutions are making a difference worldwide
           </h2>
-          <div className="flex items-center justify-center max-w-screen-md mx-auto">
+          <div className="mx-auto flex max-w-screen-md items-center justify-center">
             <div className="pt-8 font-asap">
-              <p className="mb-4 text-xl max-w-md">
+              <p className="mb-4 max-w-md text-xl">
                 Our solution are helping researchers all over the world with
                 managing, curating, and sharing their data, software, and other
                 research outcomes.
               </p>
             </div>
 
-            <div className="relative h-[350px] w-[350px] mx-auto">
+            <div className="relative mx-auto h-[350px] w-[350px]">
               <Cobe className={{}} />
             </div>
           </div>
@@ -285,7 +285,7 @@ export default function Home() {
                 A little bit about us
               </h2>
 
-              <p className="mb-6 mt-2 w-full text-left font-asap sm:text-center md:my-2 text-xl">
+              <p className="mb-6 mt-2 w-full text-left font-asap text-xl sm:text-center md:my-2">
                 FAIR Data Innovations Hub is a division of the California
                 Medical Innovations Institute (CalMI<sup>2</sup>), a non profit
                 biomedical research organization located in San Diego,

@@ -69,7 +69,7 @@ const IntershipForm = () => {
         <DialogTrigger className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none">
           Apply
         </DialogTrigger>
-        <DialogContent className="bg-white max-w-screen-lg">
+        <DialogContent className="max-w-screen-lg bg-white">
           <DialogHeader>
             <DialogTitle>Internship Form</DialogTitle>
             <DialogDescription>
@@ -151,11 +151,11 @@ const IntershipForm = () => {
               >
                 {({ isSubmitting, dirty }) => (
                   <Form>
-                    <div className="flex flex-row py-3 w-full">
-                      <div className="flex flex-col w-full mr-4">
+                    <div className="flex w-full flex-row py-3">
+                      <div className="mr-4 flex w-full flex-col">
                         <label
                           htmlFor="name"
-                          className="pb-2 text-base font-medium required-field"
+                          className="required-field pb-2 text-base font-medium"
                         >
                           Your Name
                         </label>
@@ -171,10 +171,10 @@ const IntershipForm = () => {
                         />
                       </div>
 
-                      <div className="flex flex-col w-full">
+                      <div className="flex w-full flex-col">
                         <label
                           htmlFor="email"
-                          className="pb-2 text-base font-medium required-field"
+                          className="required-field pb-2 text-base font-medium"
                         >
                           Your Email Address
                         </label>
@@ -191,11 +191,11 @@ const IntershipForm = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-row py-3 w-full">
-                      <div className="flex flex-col w-full mr-4">
+                    <div className="flex w-full flex-row py-3">
+                      <div className="mr-4 flex w-full flex-col">
                         <label
                           htmlFor="work_study_status"
-                          className="pb-2 text-base font-medium required-field"
+                          className="required-field pb-2 text-base font-medium"
                         >
                           Company or Institution
                         </label>
@@ -211,7 +211,7 @@ const IntershipForm = () => {
                         />
                       </div>
 
-                      <div className="flex flex-col w-full">
+                      <div className="flex w-full flex-col">
                         <label
                           htmlFor="github_link"
                           className="pb-2 text-base font-medium"
@@ -231,11 +231,11 @@ const IntershipForm = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-row py-3 w-full justify-between">
-                      <div className="flex flex-col py-3 items-center lg:items-start w-full">
+                    <div className="flex w-full flex-row justify-between py-3">
+                      <div className="flex w-full flex-col items-center py-3 lg:items-start">
                         <label
                           htmlFor="availability"
-                          className="pb-2 text-base font-medium required-field"
+                          className="required-field pb-2 text-base font-medium"
                         >
                           Availability
                         </label>
@@ -251,10 +251,10 @@ const IntershipForm = () => {
                         />
                       </div>
 
-                      <div className="flex flex-col py-3 w-full">
+                      <div className="flex w-full flex-col py-3">
                         <label
                           htmlFor="resume_link"
-                          className="pb-2 text-base font-medium required-field"
+                          className="required-field pb-2 text-base font-medium"
                         >
                           Resume
                         </label>
@@ -289,7 +289,7 @@ const IntershipForm = () => {
                     <div className="flex flex-col py-3">
                       <label
                         htmlFor="brief_intro"
-                        className="pb-2 text-base font-medium required-field"
+                        className="required-field pb-2 text-base font-medium"
                       >
                         Tell us a little about yourself!
                       </label>
@@ -305,9 +305,9 @@ const IntershipForm = () => {
                         className="pt-1 text-sm text-red-500"
                       />
                     </div>
-                    <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
+                    <div className="flex items-center justify-end rounded-b border-t border-solid border-slate-200 p-6">
                       <button
-                        className="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        className="background-transparent mb-1 mr-1 px-6 py-2 text-sm font-bold uppercase text-red-500 outline-none transition-all duration-150 ease-linear focus:outline-none"
                         type="button"
                         onClick={() => {
                           setOpen(false);
@@ -318,7 +318,7 @@ const IntershipForm = () => {
                       </button>
                       <button
                         type="submit"
-                        className="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                        className="mb-1 mr-1 rounded bg-emerald-500 px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:shadow-lg focus:outline-none active:bg-emerald-600"
                         disabled={isSubmitting}
                         data-umami-event="Internship Form Submit button"
                       >

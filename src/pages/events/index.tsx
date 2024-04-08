@@ -60,7 +60,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
           >
             <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm  md:px-7 md:py-5">
               <div className="mb-1 flex flex-row items-center justify-between md:hidden ">
-                <div className="bg-pink-200 px-1 py-1 rounded-md text-sm font-medium">
+                <div className="rounded-md bg-pink-200 px-1 py-1 text-sm font-medium">
                   {type}
                 </div>
 
@@ -77,18 +77,18 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
                 </h2>
               </Link>
 
-              <div className="flex justify-between items-center">
+              <div className="flex items-center justify-between">
                 <EventDates
                   startDateTime={startDateTime}
                   endDateTime={endDateTime}
                 />
 
-                <div className="bg-pink-200 px-1 py-1 rounded-md text-sm font-medium w-max md:block hidden">
+                <div className="hidden w-max rounded-md bg-pink-200 px-1 py-1 text-sm font-medium md:block">
                   {type}
                 </div>
               </div>
 
-              <p className="mb-3 mt-2 border-t pt-2 border-slate-200">
+              <p className="mb-3 mt-2 border-t border-slate-200 pt-2">
                 {subtitle}
               </p>
 

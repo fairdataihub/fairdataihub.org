@@ -219,6 +219,22 @@ export default function Navbar() {
               </div>
             </Link>
 
+            <Link href="/projects" passHref>
+              <div
+                className={
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/projects`
+                    ? ` router-link-active `
+                    : ` `)
+                }
+                data-umami-event="Navigation link"
+                data-umami-event-location="Header"
+                data-umami-event-value="Our Projects"
+              >
+                Our Projects
+              </div>
+            </Link>
+
             <div
               id="our-projects-container"
               className="group relative rounded-lg"
