@@ -237,7 +237,7 @@ export default function Navbar() {
 
             <div
               id="our-projects-container"
-              className="group relative rounded-lg"
+              className="group relative hidden rounded-lg"
             >
               <button className=" mx-1 flex flex-row items-center border-none py-2 font-medium sm:px-1 lg:px-3">
                 <div className="flex w-max flex-row items-center justify-center">
@@ -470,7 +470,18 @@ export default function Navbar() {
                   Meet the Team
                 </div>
               </Link>
-              <Link href="/sodaforsparc" passHref>
+              <Link href="/team" passHref>
+                <div
+                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Header"
+                  data-umami-event-value="Our Projects"
+                  onClick={toggleMobileMenu}
+                >
+                  Our Projects
+                </div>
+              </Link>
+              <Link href="/sodaforsparc" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
@@ -481,7 +492,7 @@ export default function Navbar() {
                   SODA for SPARC
                 </div>
               </Link>
-              <Link href="/aireadi" passHref>
+              <Link href="/aireadi" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
@@ -492,7 +503,7 @@ export default function Navbar() {
                   AI-READI
                 </div>
               </Link>
-              <Link href="/fairshare" passHref>
+              <Link href="/fairshare" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
@@ -503,7 +514,7 @@ export default function Navbar() {
                   FAIRshare
                 </div>
               </Link>
-              <Link href="/knowmore" passHref>
+              <Link href="/knowmore" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
@@ -514,7 +525,7 @@ export default function Navbar() {
                   KnowMore
                 </div>
               </Link>
-              <Link href="/sparclink" passHref>
+              <Link href="/sparclink" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
@@ -525,7 +536,7 @@ export default function Navbar() {
                   SPARClink
                 </div>
               </Link>
-              <Link href="/aqua" passHref>
+              <Link href="/aqua" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"

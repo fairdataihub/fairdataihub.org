@@ -39,7 +39,7 @@ export default function Collaborators() {
     <section>
       <div className="container mx-auto max-w-screen-lg px-6 pb-0 pt-4 md:p-10">
         <div className="mb-8 flex w-full flex-col items-center">
-          <p className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
+          <p className="header-gradient-background my-2 text-center text-4xl font-extrabold sm:text-4xl">
             Where do our tools make a difference?
           </p>
         </div>

@@ -112,7 +112,7 @@ export default function ProjectsCarousel() {
     <>
       <div className="mx-auto h-auto w-full max-w-screen-lg px-4 pb-3 pt-1">
         <div className="mb-4 flex flex-col items-center justify-center">
-          <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
+          <h2 className="header-gradient-background my-2 text-center text-4xl font-extrabold sm:text-4xl">
             Current Projects
           </h2>
           <p className="w-full max-w-2xl text-center font-asap text-xl">

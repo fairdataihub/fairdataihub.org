@@ -69,7 +69,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative mx-auto max-w-screen-xl py-20">
+      <section className="relative mx-auto hidden max-w-screen-xl py-20">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             What are we working on?
@@ -163,9 +163,9 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="relative bg-stone-900 px-4 py-20 text-white">
-        <div className="mx-auto max-w-screen-xl py-20 ">
-          <h2 className="header-gradient-background mb-10 text-left text-4xl font-extrabold sm:text-4xl">
+      <section className="relative px-4 py-20">
+        <div className="mx-auto max-w-screen-xl">
+          <h2 className="header-gradient-background mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl">
             Sharing is caring... but also daunting?
           </h2>
 
@@ -193,10 +193,10 @@ export default function Home() {
           </div>
         </div>
 
-        <hr className="mx-auto h-0.5 max-w-screen-lg border-t-0 bg-stone-800 " />
+        <hr className="mx-auto h-0.5 max-w-screen-lg border-t-0 bg-stone-50 " />
 
-        <div className="mx-auto max-w-screen-xl py-20">
-          <h2 className="header-gradient-background mb-10 text-left text-4xl font-extrabold sm:text-4xl">
+        <div className="mx-auto max-w-screen-xl pt-20">
+          <h2 className="header-gradient-background mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl">
             Simple guidelines and open-source tools for the win!
           </h2>
 
@@ -230,25 +230,25 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
 
-      {/* <div
-        className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
-        aria-hidden="true"
-      >
         <div
-          className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-blue-300 to-green-500 opacity-50"
-          style={{
-            clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
-          }}
-        ></div>
-      </div> */}
+          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+          aria-hidden="true"
+        >
+          <div
+            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-100 opacity-50"
+            style={{
+              clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
+            }}
+          ></div>
+        </div>
+      </section>
 
       {/* <section className="py-10">
         <Vision />
       </section> */}
 
-      <section className="relative mt-10 w-full py-20">
+      <section className="relative mt-10 hidden w-full py-20">
         <div className="mx-auto w-full max-w-screen-xl">
           <h2 className="header-gradient-background mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl">
             Our solutions are making a difference worldwide
@@ -281,7 +281,7 @@ export default function Home() {
             </div>
 
             <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="my-10 text-center text-4xl font-extrabold sm:text-4xl">
+              <h2 className="header-gradient-background my-10 text-center text-4xl font-extrabold sm:text-4xl">
                 A little bit about us
               </h2>
 
