@@ -2,9 +2,9 @@ const publicationsList: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <section className="mx-auto max-w-screen-lg px-10 py-3">
       <div className="flex w-full flex-col">
-        <h2 className="py-2 text-2xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+        <h1 className="py-5 text-center text-4xl font-bold md:mr-8 md:py-0">
           Impact
-        </h2>
+        </h1>
       </div>
 
       <div className="flex flex-col divide-y divide-gray-200">

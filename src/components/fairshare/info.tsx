@@ -59,7 +59,7 @@ export default function Info() {
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-10">
           <div className="mx-auto flex max-w-screen-lg flex-col">
-            <h1 className="py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0">
+            <h1 className="py-5 text-left text-4xl font-black md:mr-8 md:py-0">
               Development Approach
             </h1>
             <div className="w-full py-2">
@@ -189,7 +189,7 @@ export default function Info() {
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
-            <h1 className="py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0">
+            <h1 className="py-5 text-left text-4xl font-black  md:mr-8 md:py-0">
               Funding
             </h1>
             <div className="w-full py-2">
@@ -234,7 +234,7 @@ export default function Info() {
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
-            <h1 className="pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8">
+            <h1 className="pb-5 text-left text-4xl font-black  md:mr-8">
               Team Members
             </h1>
             <div className="w-full">
@@ -294,7 +294,7 @@ export default function Info() {
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
-            <h1 className="pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8">
+            <h1 className="pb-5 text-left text-4xl font-black  md:mr-8">
               Research Partners
             </h1>
             <div className="w-full py-2">
