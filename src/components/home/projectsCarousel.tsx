@@ -110,99 +110,95 @@ export default function ProjectsCarousel() {
 
   return (
     <>
-      <section>
-        <div className="mx-auto h-auto w-full max-w-screen-lg px-4 pb-3 pt-1">
-          <div className="mb-4 flex flex-col items-center justify-center">
-            <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
-              Current Projects
-            </h2>
-            <p className="w-full max-w-2xl text-center font-asap text-xl">
-              These are the projects we are working on at the moment:
-            </p>
-          </div>
+      <div className="mx-auto h-auto w-full max-w-screen-lg px-4 pb-3 pt-1">
+        <div className="mb-4 flex flex-col items-center justify-center">
+          <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
+            Current Projects
+          </h2>
+          <p className="w-full max-w-2xl text-center font-asap text-xl">
+            These are the projects we are working on at the moment:
+          </p>
+        </div>
 
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay, Thumbs, A11y]}
-            slidesPerView={1}
-            navigation
-            setWrapperSize={true}
-            grabCursor={true}
-            loop={true}
-            autoplay={{
-              delay: 6000,
-              pauseOnMouseEnter: true,
-              disableOnInteraction: false,
-            }}
-            mousewheel={{ releaseOnEdges: true }}
-            thumbs={{
-              swiper:
-                SwiperThumbs && !SwiperThumbs[`destroyed`]
-                  ? SwiperThumbs
-                  : null,
-            }}
-            className="h-full"
-          >
-            {projectsList.map((project, index) => (
-              <SwiperSlide
-                key={index}
-                className="my-auto flex h-full items-center justify-center py-10"
-              >
-                <section className="mx-auto my-auto flex h-full w-4/5 flex-row items-center justify-center rounded-lg border border-slate-200 px-5 py-10 text-gray-600 shadow-xl">
-                  <div className="container mx-auto flex h-full flex-col items-center justify-center">
-                    <div className="relative my-5 flex flex-row items-center justify-center sm:py-0 lg:max-w-lg">
-                      <Image
-                        className="relative"
-                        src={project.imageUrl}
-                        alt={project.name + ` logo`}
-                        width={project.imageWidth}
-                        height={project.imageHeight}
-                      />
-                    </div>
-                    <div className="my-4 flex h-full flex-col items-center text-center sm:mb-16 md:mb-0">
-                      <p className="w-full text-left font-asap text-base text-black sm:text-center md:text-base lg:text-lg">
-                        {project.description}
-                      </p>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay, Thumbs, A11y]}
+          slidesPerView={1}
+          navigation
+          setWrapperSize={true}
+          grabCursor={true}
+          loop={true}
+          autoplay={{
+            delay: 6000,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false,
+          }}
+          mousewheel={{ releaseOnEdges: true }}
+          thumbs={{
+            swiper:
+              SwiperThumbs && !SwiperThumbs[`destroyed`] ? SwiperThumbs : null,
+          }}
+          className="h-full"
+        >
+          {projectsList.map((project, index) => (
+            <SwiperSlide
+              key={index}
+              className="my-auto flex h-full items-center justify-center py-10"
+            >
+              <section className="mx-auto my-auto flex h-full w-4/5 flex-row items-center justify-center rounded-lg border border-slate-200 px-5 py-10 text-gray-600 shadow-xl">
+                <div className="container mx-auto flex h-full flex-col items-center justify-center">
+                  <div className="relative my-5 flex flex-row items-center justify-center sm:py-0 lg:max-w-lg">
+                    <Image
+                      className="relative"
+                      src={project.imageUrl}
+                      alt={project.name + ` logo`}
+                      width={project.imageWidth}
+                      height={project.imageHeight}
+                    />
+                  </div>
+                  <div className="my-4 flex h-full flex-col items-center text-center sm:mb-16 md:mb-0">
+                    <p className="w-full text-left font-asap text-base text-black sm:text-center md:text-base lg:text-lg">
+                      {project.description}
+                    </p>
 
-                      <div className="flex w-full justify-center py-4">
-                        <Link href={project.page} passHref>
-                          <button
-                            className="inline-flex rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4 md:text-base lg:text-lg"
-                            data-umami-event="Projects Carousel link"
-                            data-umami-value={project.id}
-                          >
-                            Learn more about {project.name}
-                          </button>
-                        </Link>
-                      </div>
+                    <div className="flex w-full justify-center py-4">
+                      <Link href={project.page} passHref>
+                        <button
+                          className="inline-flex rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:ml-4 md:text-base lg:text-lg"
+                          data-umami-event="Projects Carousel link"
+                          data-umami-value={project.id}
+                        >
+                          Learn more about {project.name}
+                        </button>
+                      </Link>
                     </div>
                   </div>
-                </section>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-          <Swiper
-            slidesPerView={5}
-            watchSlidesProgress={true}
-            className="thumbs-swiper hidden sm:block"
-            // @ts-expect-error will fix this later
-            onSwiper={(swiper) => setSwiperThumbs(swiper)}
-          >
-            {thumbnails.map((thumbnail, index) => (
-              <SwiperSlide virtualIndex={index} key={index}>
-                <div className="thumbnail relative h-max w-max">
-                  <Image
-                    className="px-3 py-2"
-                    src={thumbnail.src}
-                    alt={thumbnail.alt}
-                    width={thumbnail.width}
-                    height={thumbnail.height}
-                  />
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section>
+              </section>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <Swiper
+          slidesPerView={5}
+          watchSlidesProgress={true}
+          className="thumbs-swiper hidden sm:block"
+          // @ts-expect-error will fix this later
+          onSwiper={(swiper) => setSwiperThumbs(swiper)}
+        >
+          {thumbnails.map((thumbnail, index) => (
+            <SwiperSlide virtualIndex={index} key={index}>
+              <div className="thumbnail relative h-max w-max">
+                <Image
+                  className="px-3 py-2"
+                  src={thumbnail.src}
+                  alt={thumbnail.alt}
+                  width={thumbnail.width}
+                  height={thumbnail.height}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </>
   );
 }

@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 
+import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
 import ProjectsCarousel from '@/components/home/projectsCarousel';
 import LottieAnimation from '@/components/lotties';
@@ -75,8 +76,8 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="flex gap-3 h-full">
-          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-md border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer p-1 relative">
+        <div className="flex gap-3 h-full items-center justify-center  flex-col md:flex-row">
+          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-lg border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer p-1 relative">
             <div className="h-[280px] relative">
               <img
                 src="https://i.imgur.com/ZYVW3Sh.png"
@@ -110,7 +111,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-md border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer ">
+          <div className="bg-white w-6/12 flex h-[450px] flex-col border rounded-lg border-slate-200 hover:shadow-lg shadow-md hover:border-slate-300 transition-all cursor-pointer ">
             <div className="h-[280px] relative">
               <img
                 src="https://i.imgur.com/OYy0ZiU.png"
@@ -162,13 +163,13 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="py-20 relative bg-stone-900 text-white">
+      <section className="py-20 relative bg-stone-900 text-white px-4">
         <div className="mx-auto max-w-screen-xl py-20 ">
-          <h2 className="mb-10 text-left text-4xl font-extrabold sm:text-4xl">
+          <h2 className="mb-10 text-left text-4xl font-extrabold sm:text-4xl header-gradient-background">
             Sharing is caring... but also daunting?
           </h2>
 
-          <div className="grid grid-cols-2 gap-10 font-asap pt-8">
+          <div className="grid md:grid-cols-2 gap-10 font-asap pt-8">
             <p className="text-xl">
               Sharing biomedical data is essential for accelerating discoveries
               in human health. However, it&apos;s not as simple as uploading
@@ -195,7 +196,7 @@ export default function Home() {
         <hr className="mx-auto max-w-screen-lg h-0.5 border-t-0 bg-stone-800 " />
 
         <div className="mx-auto max-w-screen-xl py-20">
-          <h2 className="mb-10 text-left text-4xl font-extrabold sm:text-4xl">
+          <h2 className="mb-10 text-left text-4xl font-extrabold sm:text-4xl header-gradient-background">
             Simple guidelines and open-source tools for the win!
           </h2>
 
@@ -246,6 +247,27 @@ export default function Home() {
       {/* <section className="py-10">
         <Vision />
       </section> */}
+
+      <section className="py-20 mt-10 relative w-full">
+        <div className="mx-auto max-w-screen-xl w-full">
+          <h2 className="mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl header-gradient-background">
+            Our solutions are making a difference worldwide
+          </h2>
+          <div className="flex items-center justify-center max-w-screen-md mx-auto">
+            <div className="pt-8 font-asap">
+              <p className="mb-4 text-xl max-w-md">
+                Our solution are helping researchers all over the world with
+                managing, curating, and sharing their data, software, and other
+                research outcomes.
+              </p>
+            </div>
+
+            <div className="relative h-[350px] w-[350px] mx-auto">
+              <Cobe className={{}} />
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pb-4 sm:pt-6">
@@ -304,7 +326,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className=" py-10">
+      <section className="py-10">
         <ProjectsCarousel />
       </section>
 
