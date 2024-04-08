@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 
 // import Vision from '@/components/home/vision';
+import Link from 'next/link';
+
 import Seo from '@/components/seo/seo';
 
 export default function Home() {
@@ -24,8 +26,70 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex w-full flex-col gap-10 rounded-md border border-slate-300 bg-white px-3 py-5">
-              <div>SODA for SPARC</div>
+            <div className="flex w-full flex-col gap-5 ">
+              <Link href="/sodaforsparc">
+                <div className="group grid w-full cursor-pointer grid-cols-12 rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg">
+                  <div className="col-span-10 flex flex-col pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Software
+                      </span>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        SODA for SPARC
+                      </h2>
+                    </div>
+
+                    <p className="m w-full font-asap text-lg  text-black">
+                      SODA (Software to Organize Data Automatically) for SPARC
+                      is a cross-platform desktop software that allows
+                      SPARC-funded researchers to easily comply with the FAIR
+                      SPARC Data curation and sharing guidelines.
+                    </p>
+                  </div>
+
+                  <div className="relative col-span-2 h-full w-full overflow-hidden transition-all group-hover:scale-[1.02]">
+                    <img
+                      src="/images/hero/soda-app-macos.png"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
+              <div className="group grid w-full cursor-pointer grid-cols-12 rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg">
+                <div className="col-span-10 flex flex-col pr-5">
+                  <div>
+                    <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                      Software
+                    </span>
+
+                    <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      FAIRshare
+                    </h2>
+                  </div>
+
+                  <p className="m w-full font-asap text-lg  text-black">
+                    FAIRshare is a cross-platform desktop software that allows
+                    researchers to easily organize and share their biomedical
+                    data and software according to applicable FAIR guidelines.
+                    The first phase of development of FAIRshare is focused on
+                    supporting COVID-19 and other infectious diseases related
+                    data and software. Our ultimate goal is to provide support
+                    for data and software from all fields of biomedical
+                    research.
+                  </p>
+                </div>
+
+                <div className="relative col-span-2 h-full w-full overflow-hidden transition-all group-hover:scale-[1.02]">
+                  <img
+                    src="/images/hero/fairshare-macos.png"
+                    alt="Screenshot of SODA for SPARC"
+                    className="h-full w-full rounded-md object-contain"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
