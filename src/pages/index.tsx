@@ -163,8 +163,8 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="relative px-4 py-20">
-        <div className="mx-auto max-w-screen-xl">
+      <section className="relative py-20">
+        <div className="mx-auto max-w-screen-xl px-4">
           <h2 className="header-gradient-background w-full pb-10 text-center text-4xl font-extrabold sm:text-4xl">
             Sharing is caring... but also daunting?
           </h2>
@@ -193,14 +193,12 @@ export default function Home() {
           </div>
         </div>
 
-        <hr className="mx-auto h-0.5 max-w-screen-lg border-t-0 bg-stone-50 " />
-
         <div className="mx-auto max-w-screen-xl pt-20">
-          <h2 className="header-gradient-background w-full pb-10 text-center text-4xl font-extrabold sm:text-4xl">
+          <h2 className="header-gradient-background w-full px-4 pb-10 text-center text-4xl font-extrabold sm:text-4xl">
             Simple guidelines and open-source tools for the win!
           </h2>
 
-          <div className="items-start gap-16 lg:grid lg:grid-cols-2">
+          <div className="items-start gap-16 px-4 lg:grid lg:grid-cols-2">
             <div className="pt-8 font-asap">
               <p className="mb-4 text-xl">
                 We believe that researchers already have enough work and
@@ -266,7 +264,7 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-lg px-6 py-0 sm:pb-4 sm:pt-6">
+        <div className="container mx-auto max-w-screen-xl px-6 py-0 sm:pb-4 sm:pt-6">
           <div className="items-center justify-center md:flex">
             <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <LottieAnimation
