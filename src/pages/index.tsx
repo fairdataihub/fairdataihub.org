@@ -170,7 +170,7 @@ export default function Home() {
           </h2>
 
           <div className="grid gap-10 pt-8 font-asap md:grid-cols-2">
-            <p className="text-xl">
+            <p className="text-center text-xl md:text-left">
               Sharing biomedical data is essential for accelerating discoveries
               in human health. However, it&apos;s not as simple as uploading
               data anywhere. Adherence to FAIR (Findable, Accessible,
@@ -180,7 +180,7 @@ export default function Home() {
               finding appropriate platforms for sharing.
             </p>
 
-            <p className="text-xl">
+            <p className="text-center text-xl md:text-left">
               Unfortunately, many researchers lack the training and support
               needed for these tasks, leading to inadequate or non-existent data
               sharing practices. It&apos;s imperative to equip researchers with
@@ -200,19 +200,19 @@ export default function Home() {
 
           <div className="items-start gap-16 px-4 lg:grid lg:grid-cols-2">
             <div className="pt-8 font-asap">
-              <p className="mb-4 text-xl">
+              <p className="mb-4 text-center text-xl md:text-left">
                 We believe that researchers already have enough work and
                 responsibilities on their hands. Therefore, sharing data,
                 software, and other research outcomes should be made very easy
                 and quick for them. We are trying to achieve that through two
                 main approaches
               </p>
-              <p className="mb-4 text-xl">
+              <p className="mb-4 text-center text-xl md:text-left">
                 Developing minimal, step-by-step, and actionable guidelines for
                 preparing and sharing datasets, software, and other research
                 outcomes such that they are FAIR and AI-Ready
               </p>
-              <p className="text-xl">
+              <p className="text-center text-xl md:text-left">
                 Developing open-source and free tools that streamline these
                 tasks and minimize researchers’ time and effort through a
                 combination of intuitive user interfaces, AI, and automation.
@@ -249,7 +249,7 @@ export default function Home() {
           </h2>
           <div className="mx-auto flex max-w-screen-md items-center justify-center">
             <div className="pt-8 font-asap">
-              <p className="mb-4 max-w-md text-xl">
+              <p className="mb-4 max-w-md text-center text-xl md:text-left">
                 Our solution are helping researchers all over the world with
                 managing, curating, and sharing their data, software, and other
                 research outcomes.
@@ -279,7 +279,7 @@ export default function Home() {
                 A little bit about us
               </h2>
 
-              <p className="mb-6 mt-2 w-full text-left font-asap text-xl sm:text-center md:my-2">
+              <p className="mb-6 mt-2 w-full text-center font-asap text-xl md:my-2">
                 FAIR Data Innovations Hub is a division of the California
                 Medical Innovations Institute (CalMI<sup>2</sup>), a non profit
                 biomedical research organization located in San Diego,
