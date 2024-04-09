@@ -24,17 +24,17 @@ export default function Home() {
           <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
             <div className="w-full p-2 lg:w-7/12 ">
               <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
-                Empowering AI driven discoveries through simplified FAIR data
-                practices.
+                Simplifying FAIR data practices to empower AI-driven discoveries
               </h1>
 
-              <p className="mt-2 w-full max-w-lg text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">
-                Discover how FAIR data practices are revolutionizing biomedical
-                research. Explore our open-source tools designed to guide
-                researchers through this transformative journey
+              <p className="mt-2 w-full max-w-2xl text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">
+                We develop open source tools, standards, and guidelines that
+                support biomedical researchers in preparing and sharing data,
+                software, and other research outcomes such that they are FAIR,
+                i.e. optimally reusable by both humans and machines
               </p>
 
-              <Link href="/contact-us" passHref>
+              <Link href="/contact-us" passHref className="hidden">
                 <button
                   type="button"
                   className="my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all hover:border-light-accent hover:text-accent"
@@ -99,7 +99,7 @@ export default function Home() {
             </div>
 
             <div className="px-8 py-4">
-              <h3 className="header-gradient-background mb-2 text-2xl font-bold">
+              <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 SODA for SPARC
               </h3>
 
@@ -139,7 +139,7 @@ export default function Home() {
             </div>
 
             <div className="px-8 py-4">
-              <h3 className="header-gradient-background mb-2 text-2xl font-bold">
+              <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 AI-READI
               </h3>
 
@@ -163,65 +163,66 @@ export default function Home() {
         </p>
       </section>
 
-      <section className="relative py-20">
-        <div className="mx-auto max-w-screen-xl px-4">
-          <h2 className="header-gradient-background w-full text-center text-4xl font-extrabold sm:text-4xl">
-            Sharing is caring... but also daunting?
-          </h2>
+      <section className="relative py-10">
+        <div className="container mx-auto max-w-screen-xl px-6 ">
+          <div className="items-center justify-center md:flex">
+            <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
+              <img
+                className="w-[400px] rounded-lg"
+                src="/images/home/difficult.svg"
+                alt="office content 1"
+              />
+            </div>
 
-          <div className="grid gap-10 pt-8 font-asap md:grid-cols-2">
-            <p className="text-center text-xl md:text-left">
-              Sharing biomedical data is essential for accelerating discoveries
-              in human health. However, it&apos;s not as simple as uploading
-              data anywhere. Adherence to FAIR (Findable, Accessible,
-              Interoperable, Reusable) Principles and ethical guidelines is
-              crucial to ensure data reusability. This involves formatting and
-              organizing data according to standards, including metadata, and
-              finding appropriate platforms for sharing.
-            </p>
+            <div className="h-full w-full p-2 lg:max-w-2xl">
+              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+                Sharing is caring... but also daunting?
+              </h2>
 
-            <p className="text-center text-xl md:text-left">
-              Unfortunately, many researchers lack the training and support
-              needed for these tasks, leading to inadequate or non-existent data
-              sharing practices. It&apos;s imperative to equip researchers with
-              the necessary tools and resources to navigate these challenges
-              effectively. By empowering researchers, we can foster a culture of
-              responsible and impactful data sharing in biomedical research,
-              ultimately advancing the pace of discoveries for improving human
-              health.
-            </p>
+              <p className="mb-6 mt-8 w-full text-center font-asap text-xl ">
+                However, sharing FAIR data is not trivial as this involves
+                formatting data into specific file format, organizing data files
+                consistently, including metadata according to applicable
+                standards, uploading data to a suitable repository, and more.
+                This adds significant burden on researchers who are neither
+                trained nor supported to do these. As result, they are either
+                not sharing making data FAIR or not doing it properly. health.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="relative py-20">
-        <div className="mx-auto max-w-screen-xl">
-          <h2 className="header-gradient-background w-full px-4 pb-10 text-center text-4xl font-extrabold sm:text-4xl">
-            Simple guidelines and open-source tools for the win!
-          </h2>
+      <section className="relative py-10">
+        <div className="container mx-auto max-w-screen-xl px-6 ">
+          <div className="items-center justify-center md:flex">
+            <div className="h-full w-full p-2 lg:max-w-2xl">
+              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+                Simple guidelines and open-source tools for the win!
+              </h2>
 
-          <div className="items-start gap-16 px-4 lg:grid lg:grid-cols-2">
-            <div className="pt-8 font-asap">
-              <p className="mb-4 text-center text-xl md:text-left">
-                We believe that researchers already have enough work and
-                responsibilities on their hands. Therefore, sharing data,
-                software, and other research outcomes should be made very easy
-                and quick for them. We are trying to achieve that through two
-                main approaches
-              </p>
-              <p className="mb-4 text-center text-xl md:text-left">
-                Developing minimal, step-by-step, and actionable guidelines for
-                preparing and sharing datasets, software, and other research
-                outcomes such that they are FAIR and AI-Ready
-              </p>
-              <p className="text-center text-xl md:text-left">
-                Developing open-source and free tools that streamline these
-                tasks and minimize researchers&apos; time and effort through a
-                combination of intuitive user interfaces, AI, and automation.
-              </p>
+              <div className="pt-8 font-asap">
+                <p className="mb-4 text-center text-xl md:text-left">
+                  We believe that researchers already have enough work and
+                  responsibilities on their hands. Therefore, sharing data,
+                  software, and other research outcomes should be made very easy
+                  and quick for them. We are trying to achieve that through two
+                  main approaches
+                </p>
+                <p className="mb-4 text-center text-xl md:text-left">
+                  Developing minimal, step-by-step, and actionable guidelines
+                  for preparing and sharing datasets, software, and other
+                  research outcomes such that they are FAIR and AI-Ready
+                </p>
+                <p className="text-center text-xl md:text-left">
+                  Developing open-source and free tools that streamline these
+                  tasks and minimize researchers&apos; time and effort through a
+                  combination of intuitive user interfaces, AI, and automation.
+                </p>
+              </div>
             </div>
 
-            <div className="flex items-center justify-center">
+            <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
                 className="w-[400px] rounded-lg"
                 src="/images/home/high-five.svg"
@@ -244,9 +245,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative mt-10 hidden w-full py-20">
+      <section className="relative hidden w-full py-20">
         <div className="mx-auto w-full max-w-screen-xl">
-          <h2 className="header-gradient-background mb-10 w-full text-center text-4xl font-extrabold sm:text-4xl">
+          <h2 className="mb-10 w-full text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
             Our solutions are making a difference worldwide
           </h2>
           <div className="mx-auto flex max-w-screen-md items-center justify-center">
@@ -266,7 +267,7 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6 py-0 sm:pb-4 sm:pt-6">
+        <div className="container mx-auto max-w-screen-xl px-4">
           <div className="items-center justify-center md:flex">
             <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <LottieAnimation
@@ -277,7 +278,7 @@ export default function Home() {
             </div>
 
             <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="header-gradient-background my-10 text-center text-4xl font-extrabold sm:text-4xl">
+              <h2 className="my-10 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 A little bit about us
               </h2>
 
