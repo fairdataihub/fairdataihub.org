@@ -163,7 +163,7 @@ export default function Home() {
         <div className="container mx-auto max-w-screen-xl px-6 ">
           <div className="items-center justify-center md:flex">
             <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+              <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 FAIR Data Practices
               </h2>
 
@@ -178,7 +178,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex w-full justify-center py-5">
+              <div className="flex w-full justify-start py-5">
                 <Link href="https://doi.org/10.1038/sdata.2016.18" passHref>
                   <button
                     type="button"
@@ -215,11 +215,11 @@ export default function Home() {
             </div>
 
             <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+              <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 Sharing is caring... but also daunting?
               </h2>
 
-              <p className="mb-6 mt-8 w-full text-center font-asap text-xl ">
+              <p className="mb-6 mt-8 w-full text-left font-asap text-xl ">
                 However, sharing FAIR data is not trivial as this involves
                 formatting data into specific file format, organizing data files
                 consistently, including metadata according to applicable
@@ -249,7 +249,7 @@ export default function Home() {
         <div className="container mx-auto max-w-screen-xl px-6 ">
           <div className="items-center justify-center md:flex">
             <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+              <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 Simple guidelines and open-source tools for the win!
               </h2>
 
@@ -318,11 +318,11 @@ export default function Home() {
             </div>
 
             <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="my-10 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+              <h2 className="my-10 text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 A little bit about us
               </h2>
 
-              <p className="mb-6 mt-2 w-full text-center font-asap text-xl md:my-2">
+              <p className="mb-6 mt-2 w-full text-left font-asap text-xl md:my-2">
                 FAIR Data Innovations Hub is a division of the California
                 Medical Innovations Institute (CalMI<sup>2</sup>), a non profit
                 biomedical research organization located in San Diego,
@@ -349,7 +349,7 @@ export default function Home() {
         <div className="container mx-auto max-w-screen-xl px-6 ">
           <div className="items-center justify-center md:flex">
             <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+              <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 Our Impact
               </h2>
 
@@ -360,7 +360,7 @@ export default function Home() {
                   guidelines, conference presentations, and much more.
                 </p>
 
-                <div className="flex w-full justify-center py-5">
+                <div className="flex w-full justify-start py-5">
                   <Link href="/impact" passHref>
                     <button
                       type="button"
