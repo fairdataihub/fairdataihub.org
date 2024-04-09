@@ -112,7 +112,7 @@
   }
 
   .header-gradient-background {
-    @apply from-primary to-primaryLight bg-gradient-to-tl bg-clip-text text-transparent;
+    @apply bg-gradient-to-tl from-primary to-primaryLight bg-clip-text text-transparent;
   }
 
   .img-hover-zoom {
