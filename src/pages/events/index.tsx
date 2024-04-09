@@ -58,7 +58,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
             key={title}
             className="mb-2 flex w-full flex-col md:flex-row"
           >
-            <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm  md:px-7 md:py-5">
+            <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm  md:px-7 md:py-5">
               <div className="mb-1 flex flex-row items-center justify-between md:hidden ">
                 <div className="rounded-md bg-pink-200 px-1 py-1 text-sm font-medium">
                   {type}

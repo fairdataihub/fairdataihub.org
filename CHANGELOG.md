@@ -1,3 +1,21 @@
+# [2.34.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.33.0...v2.34.0) (2024-04-09)
+
+
+### Bug Fixes
+
+* 🐛 add event ([f8fdc1b](https://github.com/fairdataihub/fairdataihub.org/commit/f8fdc1b8b711f6a3d6d5e83e14aeb1d5a2352829))
+
+
+### Features
+
+* ✨ add events ([164df33](https://github.com/fairdataihub/fairdataihub.org/commit/164df333fbdb047d47d2f3c8da6543f00d8b8e25))
+
+# [2.33.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.6...v2.33.0) (2024-04-03)
+
+### Features
+
+- ✨ add support for events ([#613](https://github.com/fairdataihub/fairdataihub.org/issues/613)) ([03c0540](https://github.com/fairdataihub/fairdataihub.org/commit/03c054000b351beb8bd63169d4d9abd30d1e2224)), closes [#612](https://github.com/fairdataihub/fairdataihub.org/issues/612) [#614](https://github.com/fairdataihub/fairdataihub.org/issues/614)
+
 ## [2.32.6](https://github.com/fairdataihub/fairdataihub.org/compare/v2.32.5...v2.32.6) (2024-02-23)
 
 ### Bug Fixes

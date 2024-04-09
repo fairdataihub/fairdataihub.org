@@ -33,6 +33,6 @@ The FAIR Data Innovations Hub will co-lead tools development for one of the Data
 
 This project is supported by the National Institutes of Health ([OT2OD032644](https://reporter.nih.gov/search/bGu3ScO-FEqUMkvbQmZiNg/project-details/10471118)). The AI-READI team will receive $7.8 million in funding for the first year, distributed across collaborating institutions, to kick off the project. In addition to the FAIR Data Innovations Hub, other institutions collaborating on the AI-READI Data Generation project include: [University of Washington](https://newsroom.uw.edu/news/uw-medicine-will-lead-study-arm-national-ai-initiative), [Oregon Health & Science University](https://news.ohsu.edu/2022/09/13/ohsu-experts-tapped-for-national-artificial-intelligence-initiative), Johns Hopkins University, [University of California at San Diego](https://ucsdnews.ucsd.edu/pressrelease/uc-san-diego-joins-nih-bridge-to-artificial-intelligence-program), University of Pennsylvania, Stanford University, Native BioData Consortium, [University of Alabama at Birmingham](https://www.uab.edu/news/research/item/13092-owsley-and-mcgwin-receive-2-million-one-year-grant-from-nih-s-bridge2ai-program), and Microsoft.
 
-## We are excited!
+## We are excited
 
 The FAIR Data Innovations Hub is delighted to be part of this new NIH initiative where we will continue our mission of building open source tools that make it easier for researchers to prepare and share FAIR data.
