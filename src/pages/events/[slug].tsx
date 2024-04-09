@@ -129,10 +129,10 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
           </Link>
 
           <div className="my-2 flex items-center space-x-2">
-            <span class="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">
+            <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">
               {type}
             </span>
-            <span class="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-sm font-medium text-pink-800">
+            <span className="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-sm font-medium text-pink-800">
               {location}
             </span>
           </div>

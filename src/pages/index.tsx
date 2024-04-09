@@ -214,15 +214,15 @@ export default function Home() {
               </p>
               <p className="text-center text-xl md:text-left">
                 Developing open-source and free tools that streamline these
-                tasks and minimize researchers’ time and effort through a
+                tasks and minimize researchers&apos; time and effort through a
                 combination of intuitive user interfaces, AI, and automation.
               </p>
             </div>
 
-            <div>
+            <div className="flex items-center justify-center">
               <img
-                className="w-full rounded-lg"
-                src="https://assets-global.website-files.com/59ace8427353c50001765cbd/64a87a6d7dba1d15881be545_Property%201%3DDefault.svg"
+                className="w-[400px] rounded-lg"
+                src="/images/home/high-five.svg"
                 alt="office content 1"
               />
             </div>

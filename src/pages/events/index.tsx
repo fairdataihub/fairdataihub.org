@@ -62,10 +62,10 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
             <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm  md:px-7 md:py-5">
               <div className="mb-1 flex flex-row items-center justify-between md:hidden">
                 <div className="my-2 flex items-center space-x-2">
-                  <span class="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">
+                  <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">
                     {type}
                   </span>
-                  <span class="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-sm font-medium text-pink-800">
+                  <span className="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-sm font-medium text-pink-800">
                     {location}
                   </span>
                 </div>
@@ -90,10 +90,10 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
                 />
 
                 <div className="hidden items-center space-x-2 md:flex">
-                  <span class="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800">
+                  <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800">
                     {type}
                   </span>
-                  <span class="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-xs font-medium text-pink-800">
+                  <span className="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-xs font-medium text-pink-800">
                     {location}
                   </span>
                 </div>
