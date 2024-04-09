@@ -73,7 +73,11 @@ export default function Home() {
         </div>
 
         <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
-          <div className="relative flex h-[150px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg">
+          <Link
+            href="/sodaforsparc"
+            passHref
+            className="relative flex h-[150px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+          >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 SODA for SPARC
@@ -85,9 +89,13 @@ export default function Home() {
                 SPARC guidelines
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex h-[150px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white shadow-md transition-all hover:border-pink-400 hover:shadow-lg ">
+          <Link
+            href="/aireadi"
+            passHref
+            className="relative flex h-[150px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+          >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 AI-READI
@@ -98,11 +106,15 @@ export default function Home() {
                 support future AI-driven discoveries in diabetes
               </p>
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
-          <div className="relative flex h-[200px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg">
+          <Link
+            href="/codefair"
+            passHref
+            className="relative flex h-[200px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+          >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 Codefair
@@ -115,9 +127,13 @@ export default function Home() {
                 for Research Software.
               </p>
             </div>
-          </div>
+          </Link>
 
-          <div className="flex h-[200px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white shadow-md transition-all hover:border-pink-400 hover:shadow-lg ">
+          <Link
+            href="/fair-biors"
+            passHref
+            className="relative flex h-[200px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+          >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 FAIR Biomedical Research Software (FAIR-BioRS) guidelines
@@ -129,7 +145,7 @@ export default function Home() {
                 software FAIR
               </p>
             </div>
-          </div>
+          </Link>
         </div>
 
         <p className="mt-6 text-center font-asap text-xl">
@@ -156,9 +172,9 @@ export default function Home() {
                   The FAIR (Findable, Accessible, Interoperable, Reusable)
                   Principles are a set of instructions for sharing data and
                   other research outcomes such that they are optimally reusable.
-                  They have been promoted and adopted by a large amount of
-                  stakeholders in research data including the National
-                  Institutes of Health (NIH).
+                  Since their publication in 2016, they have been promoted and
+                  adopted by a large amount of stakeholders in research data
+                  including the National Institutes of Health (NIH).
                 </p>
               </div>
 
@@ -210,7 +226,7 @@ export default function Home() {
                 standards, uploading data to a suitable repository, and more.
                 This adds significant burden on researchers who are neither
                 trained nor supported to do these. As result, they are either
-                not sharing making data FAIR or not doing it properly. health.
+                not sharing making data FAIR or not doing it properly.
               </p>
             </div>
           </div>
@@ -240,10 +256,10 @@ export default function Home() {
               <div className="pt-8 font-asap">
                 <p className="mb-4 text-center text-xl md:text-left">
                   We believe that researchers already have enough work and
-                  responsibilities on their hands. Therefore, sharing data,
-                  software, and other research outcomes should be made very easy
-                  and quick for them. We are trying to achieve that through two
-                  main approaches.
+                  responsibilities on their hands. Therefore, making data,
+                  software, and other research outcomes FAIR should be made very
+                  easy for them. We are trying to achieve that through two main
+                  approaches:
                 </p>
                 <p className="mb-4 text-center text-xl md:text-left">
                   Developing minimal, step-by-step, and actionable guidelines
@@ -310,9 +326,23 @@ export default function Home() {
                 FAIR Data Innovations Hub is a division of the California
                 Medical Innovations Institute (CalMI<sup>2</sup>), a non profit
                 biomedical research organization located in San Diego,
-                California. We have a multidisciplinary team of enthusiasts
-                about FAIR Data practices and software development.
+                California. We started this division in 2019 and now have a
+                multidisciplinary team of enthusiasts about FAIR Data practices
+                and software development.
               </p>
+
+              <div className="flex w-full justify-start py-5">
+                <Link href="/team" passHref>
+                  <button
+                    type="button"
+                    className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+                    data-umami-event="Home page link"
+                    data-umami-event-value="Team"
+                  >
+                    Meet our team
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
