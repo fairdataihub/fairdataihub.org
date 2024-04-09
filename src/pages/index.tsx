@@ -166,6 +166,49 @@ export default function Home() {
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6 ">
           <div className="items-center justify-center md:flex">
+            <div className="h-full w-full p-2 lg:max-w-2xl">
+              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+                FAIR Data Practices
+              </h2>
+
+              <div className="pt-8 font-asap">
+                <p className="mb-4 text-center text-xl md:text-left">
+                  The FAIR (Findable, Accessible, Interoperable, Reusable)
+                  Principles are a set of instructions for sharing data and
+                  other research outcomes such that they are optimally reusable.
+                  They have been promoted and adopted by a large amount of
+                  stakeholders in research data including the National
+                  Institutes of Health (NIH).
+                </p>
+              </div>
+            </div>
+
+            <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
+              <img
+                className="w-[400px] rounded-lg"
+                src="/images/home/collaboration.svg"
+                alt="office content 1"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+          aria-hidden="true"
+        >
+          <div
+            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-100 opacity-50"
+            style={{
+              clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
+            }}
+          ></div>
+        </div>
+      </section>
+
+      <section className="relative py-10">
+        <div className="container mx-auto max-w-screen-xl px-6 ">
+          <div className="items-center justify-center md:flex">
             <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
                 className="w-[400px] rounded-lg"
@@ -207,7 +250,7 @@ export default function Home() {
                   responsibilities on their hands. Therefore, sharing data,
                   software, and other research outcomes should be made very easy
                   and quick for them. We are trying to achieve that through two
-                  main approaches
+                  main approaches.
                 </p>
                 <p className="mb-4 text-center text-xl md:text-left">
                   Developing minimal, step-by-step, and actionable guidelines
