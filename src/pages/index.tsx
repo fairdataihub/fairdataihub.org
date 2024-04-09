@@ -165,7 +165,7 @@ export default function Home() {
 
       <section className="relative py-20">
         <div className="mx-auto max-w-screen-xl px-4">
-          <h2 className="header-gradient-background w-full pb-10 text-center text-4xl font-extrabold sm:text-4xl">
+          <h2 className="header-gradient-background w-full text-center text-4xl font-extrabold sm:text-4xl">
             Sharing is caring... but also daunting?
           </h2>
 
@@ -192,8 +192,10 @@ export default function Home() {
             </p>
           </div>
         </div>
+      </section>
 
-        <div className="mx-auto max-w-screen-xl pt-20">
+      <section className="relative py-20">
+        <div className="mx-auto max-w-screen-xl">
           <h2 className="header-gradient-background w-full px-4 pb-10 text-center text-4xl font-extrabold sm:text-4xl">
             Simple guidelines and open-source tools for the win!
           </h2>

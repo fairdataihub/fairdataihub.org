@@ -163,17 +163,19 @@ export default function Navbar() {
         </Link>
         <div className="hidden md:block">
           <div className="md:text-md flex h-full flex-row items-center justify-center font-medium sm:text-sm">
-            <Link href="/blog" passHref>
+            <Link href="/projects" passHref>
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/blog` ? ` router-link-active ` : ` `)
+                  (router.pathname === `/projects`
+                    ? ` router-link-active `
+                    : ` `)
                 }
                 data-umami-event="Navigation link"
                 data-umami-event-location="Header"
-                data-umami-event-value="Blog"
+                data-umami-event-value="Our Projects"
               >
-                Blog
+                Projects
               </div>
             </Link>
 
@@ -185,23 +187,9 @@ export default function Navbar() {
                 }
                 data-umami-event="Navigation link"
                 data-umami-event-location="Header"
-                data-umami-event-value="Meet the team"
+                data-umami-event-value="Team"
               >
-                Meet the Team
-              </div>
-            </Link>
-
-            <Link href="/events" passHref>
-              <div
-                className={
-                  `nav-item hover-underline-animation` +
-                  (router.pathname === `/events` ? ` router-link-active ` : ` `)
-                }
-                data-umami-event="Navigation link"
-                data-umami-event-location="Header"
-                data-umami-event-value="Events"
-              >
-                Events
+                Team
               </div>
             </Link>
 
@@ -219,19 +207,31 @@ export default function Navbar() {
               </div>
             </Link>
 
-            <Link href="/projects" passHref>
+            <Link href="/blog" passHref>
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/projects`
-                    ? ` router-link-active `
-                    : ` `)
+                  (router.pathname === `/blog` ? ` router-link-active ` : ` `)
                 }
                 data-umami-event="Navigation link"
                 data-umami-event-location="Header"
-                data-umami-event-value="Our Projects"
+                data-umami-event-value="Blog"
               >
-                Our Projects
+                Blog
+              </div>
+            </Link>
+
+            <Link href="/events" passHref>
+              <div
+                className={
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/events` ? ` router-link-active ` : ` `)
+                }
+                data-umami-event="Navigation link"
+                data-umami-event-location="Header"
+                data-umami-event-value="Events"
+              >
+                Events
               </div>
             </Link>
 
@@ -426,28 +426,30 @@ export default function Navbar() {
         {isOpen && (
           <div className="fixed left-0 top-16 z-10 w-screen bg-white shadow-sm">
             <div className="pb-3 pt-2">
-              <Link href="/blog" passHref>
+              <Link href="/team" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
-                  data-umami-event-value="Blog"
+                  data-umami-event-value="Our Projects"
                   onClick={toggleMobileMenu}
                 >
-                  Blog
+                  Projects
                 </div>
               </Link>
-              <Link href="/events" passHref>
+
+              <Link href="/team" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
-                  data-umami-event-value="Events"
+                  data-umami-event-value="Team"
                   onClick={toggleMobileMenu}
                 >
-                  Events
+                  Team
                 </div>
               </Link>
+
               <Link href="/impact" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
@@ -459,28 +461,31 @@ export default function Navbar() {
                   Impact
                 </div>
               </Link>
-              <Link href="/team" passHref>
+
+              <Link href="/blog" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
-                  data-umami-event-value="Meet The Team"
+                  data-umami-event-value="Blog"
                   onClick={toggleMobileMenu}
                 >
-                  Meet the Team
+                  Blog
                 </div>
               </Link>
-              <Link href="/team" passHref>
+
+              <Link href="/events" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
-                  data-umami-event-value="Our Projects"
+                  data-umami-event-value="Events"
                   onClick={toggleMobileMenu}
                 >
-                  Our Projects
+                  Events
                 </div>
               </Link>
+
               <Link href="/sodaforsparc" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
@@ -492,6 +497,7 @@ export default function Navbar() {
                   SODA for SPARC
                 </div>
               </Link>
+
               <Link href="/aireadi" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
@@ -503,6 +509,7 @@ export default function Navbar() {
                   AI-READI
                 </div>
               </Link>
+
               <Link href="/fairshare" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
@@ -514,6 +521,7 @@ export default function Navbar() {
                   FAIRshare
                 </div>
               </Link>
+
               <Link href="/knowmore" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
@@ -525,6 +533,7 @@ export default function Navbar() {
                   KnowMore
                 </div>
               </Link>
+
               <Link href="/sparclink" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
@@ -536,6 +545,7 @@ export default function Navbar() {
                   SPARClink
                 </div>
               </Link>
+
               <Link href="/aqua" passHref className="hidden">
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
@@ -547,6 +557,7 @@ export default function Navbar() {
                   AQUA
                 </div>
               </Link>
+
               <Link href="/contact-us" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
