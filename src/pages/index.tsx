@@ -65,35 +65,15 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative mx-auto hidden max-w-screen-xl py-20">
+      <section className="relative mx-auto  max-w-screen-xl py-20">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             What are we working on?
           </h2>
         </div>
 
-        <div className="flex h-full flex-col items-center justify-center  gap-3 md:flex-row">
-          <div className="relative flex h-[450px] w-6/12 cursor-pointer flex-col rounded-lg border border-slate-200 bg-white p-1 shadow-md transition-all hover:border-slate-300 hover:shadow-lg">
-            <div className="relative h-[280px]">
-              <img
-                src="https://i.imgur.com/ZYVW3Sh.png"
-                alt="image"
-                className="h-full w-full object-cover object-top"
-              />
-              <div
-                className="absolute inset-0 bg-white"
-                style={{
-                  background: `linear-gradient(180deg, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%)`,
-                }}
-              ></div>
-              <div
-                className="absolute inset-0 bg-white"
-                style={{
-                  background: `linear-gradient(90deg, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%)`,
-                }}
-              ></div>
-            </div>
-
+        <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
+          <div className="relative flex h-[150px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg">
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 SODA for SPARC
@@ -107,33 +87,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="flex h-[450px] w-6/12 cursor-pointer flex-col rounded-lg border border-slate-200 bg-white shadow-md transition-all hover:border-slate-300 hover:shadow-lg ">
-            <div className="relative h-[280px]">
-              <img
-                src="https://i.imgur.com/OYy0ZiU.png"
-                alt="image"
-                className="h-full w-full object-cover object-top"
-              />
-              <div
-                className="absolute inset-0 bg-white"
-                style={{
-                  background: `linear-gradient(180deg, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%)`,
-                }}
-              ></div>
-              {/* <div
-                className="absolute inset-0 bg-white"
-                style={{
-                  background: `linear-gradient(270deg, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%)`,
-                }}
-              ></div> */}
-              <div
-                className="absolute inset-0 bg-white"
-                style={{
-                  background: `linear-gradient(90deg, rgba(255,255,255,0) 75%, rgba(255,255,255,1) 100%)`,
-                }}
-              ></div>
-            </div>
-
+          <div className="flex h-[150px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white shadow-md transition-all hover:border-pink-400 hover:shadow-lg ">
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
                 AI-READI
@@ -146,9 +100,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div></div>
 
-        <p className="mt-6 text-center text-xl">
+        <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
+          <div className="relative flex h-[200px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg">
+            <div className="px-8 py-4">
+              <h3 className="mb-2 text-2xl font-bold text-stone-900">
+                Codefair
+              </h3>
+
+              <p className="font-asap text-lg">
+                codefair is your personal assistant when it comes to making your
+                research software reusable and especially complying with the
+                Findable, Accessible, Interoperable, Reusable (FAIR) Principles
+                for Research Software.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex h-[200px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white shadow-md transition-all hover:border-pink-400 hover:shadow-lg ">
+            <div className="px-8 py-4">
+              <h3 className="mb-2 text-2xl font-bold text-stone-900">
+                FAIR Biomedical Research Software (FAIR-BioRS) guidelines
+              </h3>
+
+              <p className="font-asap text-lg">
+                The FAIR-BioRS guidelines are a set of minimal and actionable
+                step-by-step instructions for making biomedical research
+                software FAIR
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <p className="mt-6 text-center font-asap text-xl">
           There is a lot more in the pipeline. To learn more about all our work
           in this area, please visit our{` `}
           <Link href="/projects" passHref>
@@ -164,7 +148,7 @@ export default function Home() {
           <div className="items-center justify-center md:flex">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
-                FAIR Data Practices
+                The wave of FAIR Data practices
               </h2>
 
               <div className="pt-8 font-asap">
@@ -350,7 +334,7 @@ export default function Home() {
           <div className="items-center justify-center md:flex">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
-                Our Impact
+                We are making a difference
               </h2>
 
               <div className="pt-8 font-asap">
