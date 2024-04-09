@@ -181,6 +181,19 @@ export default function Home() {
                   Institutes of Health (NIH).
                 </p>
               </div>
+
+              <div className="flex w-full justify-center py-5">
+                <Link href="https://doi.org/10.1038/sdata.2016.18" passHref>
+                  <button
+                    type="button"
+                    className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+                    data-umami-event="Home page link"
+                    data-umami-event-value="Learn more about the FAIR Principles"
+                  >
+                    Learn more about the FAIR Principles
+                  </button>
+                </Link>
+              </div>
             </div>
 
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
@@ -191,18 +204,6 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
-
-        <div
-          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
-          aria-hidden="true"
-        >
-          <div
-            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-100 opacity-50"
-            style={{
-              clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
-            }}
-          ></div>
         </div>
       </section>
 
@@ -233,6 +234,18 @@ export default function Home() {
               </p>
             </div>
           </div>
+        </div>
+
+        <div
+          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+          aria-hidden="true"
+        >
+          <div
+            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-100 opacity-50"
+            style={{
+              clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
+            }}
+          ></div>
         </div>
       </section>
 
@@ -273,18 +286,6 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
-
-        <div
-          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
-          aria-hidden="true"
-        >
-          <div
-            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-100 opacity-50"
-            style={{
-              clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
-            }}
-          ></div>
         </div>
       </section>
 
@@ -333,12 +334,6 @@ export default function Home() {
                 about FAIR Data practices and software development.
               </p>
               <div className="flex w-full justify-center py-5">
-                <a
-                  href="https://calmi2.org/"
-                  target="_blank"
-                  className="hidden"
-                  rel="noopener"
-                ></a>
                 <Link href="/team" passHref>
                   <button
                     type="button"
@@ -354,7 +349,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="absolute inset-0 -z-10 hidden transform-gpu overflow-hidden blur-3xl"
+          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
           aria-hidden="true"
         >
           <div
@@ -363,6 +358,47 @@ export default function Home() {
               clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
             }}
           ></div>
+        </div>
+      </section>
+
+      <section className="relative py-10">
+        <div className="container mx-auto max-w-screen-xl px-6 ">
+          <div className="items-center justify-center md:flex">
+            <div className="h-full w-full p-2 lg:max-w-2xl">
+              <h2 className="text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+                Our Impact
+              </h2>
+
+              <div className="pt-8 font-asap">
+                <p className="mb-4 text-center text-xl md:text-left">
+                  Our work has led to peer-reviewed publications, development of
+                  open-source software, establishment of new standards and
+                  guidelines, conference presentations, and much more.
+                </p>
+
+                <div className="flex w-full justify-center py-5">
+                  <Link href="/impact" passHref>
+                    <button
+                      type="button"
+                      className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+                      data-umami-event="Home page link"
+                      data-umami-event-value="See our impact"
+                    >
+                      See our impact
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
+              <img
+                className="w-[400px] rounded-lg"
+                src="/images/home/impact.svg"
+                alt="office content 1"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
