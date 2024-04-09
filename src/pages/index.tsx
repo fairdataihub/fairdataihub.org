@@ -4,12 +4,8 @@ import Link from 'next/link';
 import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
 import ProjectsCarousel from '@/components/home/projectsCarousel';
-import LottieAnimation from '@/components/lotties';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
-
-import heroLottie from '../assets/lotties/hero.json';
-import teamLottie from '../assets/lotties/team.json';
 
 export default function Home() {
   return (
@@ -47,10 +43,10 @@ export default function Home() {
             </div>
 
             <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-5/12 lg:p-2">
-              <LottieAnimation
-                animationData={heroLottie}
-                width={400}
-                height={400}
+              <img
+                className="w-[400px] rounded-lg"
+                src="/images/home/hero.svg"
+                alt="office content 1"
               />
             </div>
           </div>
@@ -313,11 +309,11 @@ export default function Home() {
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-4">
           <div className="items-center justify-center md:flex">
-            <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
-              <LottieAnimation
-                animationData={teamLottie}
-                width={400}
-                height={400}
+            <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
+              <img
+                className="w-[400px] rounded-lg"
+                src="/images/home/team.svg"
+                alt="office content 1"
               />
             </div>
 
@@ -333,18 +329,6 @@ export default function Home() {
                 California. We have a multidisciplinary team of enthusiasts
                 about FAIR Data practices and software development.
               </p>
-              <div className="flex w-full justify-center py-5">
-                <Link href="/team" passHref>
-                  <button
-                    type="button"
-                    className="w-max rounded-md border-none bg-black px-6 py-4 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
-                    data-umami-event="Home page link"
-                    data-umami-event-value="Meet our team"
-                  >
-                    Meet our team
-                  </button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
