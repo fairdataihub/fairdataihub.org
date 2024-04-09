@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative mx-auto  max-w-screen-xl py-20">
+      <section className="relative mx-auto  max-w-screen-xl px-4 py-20">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             What are we working on?
@@ -76,7 +76,7 @@ export default function Home() {
           <Link
             href="/sodaforsparc"
             passHref
-            className="relative flex h-[150px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[150px] md:w-7/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
@@ -94,7 +94,7 @@ export default function Home() {
           <Link
             href="/aireadi"
             passHref
-            className="relative flex h-[150px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[150px] md:w-5/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
@@ -113,7 +113,7 @@ export default function Home() {
           <Link
             href="/codefair"
             passHref
-            className="relative flex h-[200px] w-5/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-5/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
@@ -132,7 +132,7 @@ export default function Home() {
           <Link
             href="/fair-biors"
             passHref
-            className="relative flex h-[200px] w-7/12 cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg"
+            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-7/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
@@ -161,14 +161,14 @@ export default function Home() {
 
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6 ">
-          <div className="items-center justify-center md:flex">
+          <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 The wave of FAIR Data practices
               </h2>
 
               <div className="pt-8 font-asap">
-                <p className="mb-4 text-center text-xl md:text-left">
+                <p className="mb-4 text-left text-xl">
                   The FAIR (Findable, Accessible, Interoperable, Reusable)
                   Principles are a set of instructions for sharing data and
                   other research outcomes such that they are optimally reusable.
@@ -247,26 +247,26 @@ export default function Home() {
 
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6 ">
-          <div className="items-center justify-center md:flex">
+          <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 Simple guidelines and open-source tools for the win!
               </h2>
 
               <div className="pt-8 font-asap">
-                <p className="mb-4 text-center text-xl md:text-left">
+                <p className="mb-4 text-left text-xl">
                   We believe that researchers already have enough work and
                   responsibilities on their hands. Therefore, making data,
                   software, and other research outcomes FAIR should be made very
                   easy for them. We are trying to achieve that through two main
                   approaches:
                 </p>
-                <p className="mb-4 text-center text-xl md:text-left">
+                <p className="mb-4 text-left text-xl">
                   Developing minimal, step-by-step, and actionable guidelines
                   for preparing and sharing datasets, software, and other
                   research outcomes such that they are FAIR and AI-Ready
                 </p>
-                <p className="text-center text-xl md:text-left">
+                <p className="text-left text-xl">
                   Developing open-source and free tools that streamline these
                   tasks and minimize researchers&apos; time and effort through a
                   combination of intuitive user interfaces, AI, and automation.
@@ -361,14 +361,14 @@ export default function Home() {
 
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6 ">
-          <div className="items-center justify-center md:flex">
+          <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
                 We are making a difference
               </h2>
 
               <div className="pt-8 font-asap">
-                <p className="mb-4 text-center text-xl md:text-left">
+                <p className="mb-4 text-left text-xl">
                   Our work has led to peer-reviewed publications, development of
                   open-source software, establishment of new standards and
                   guidelines, conference presentations, and much more.

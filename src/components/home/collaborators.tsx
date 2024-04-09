@@ -103,7 +103,7 @@ export default function Collaborators() {
               className="mx-2 flex h-full w-full items-center justify-center"
             >
               <Image
-                className="!px-4 grayscale transition-all duration-100 hover:grayscale-0"
+                className="!px-4 transition-all duration-100 hover:grayscale-0 sm:grayscale"
                 src={logo.src}
                 alt={logo.alt}
                 width={logo.width}
