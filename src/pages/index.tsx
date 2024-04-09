@@ -404,7 +404,57 @@ export default function Home() {
         <ProjectsCarousel />
       </section>
 
-      <section className="py-10">
+      <section className="relative py-10">
+        <div className="container mx-auto max-w-screen-xl px-4">
+          <div className="items-center justify-center md:flex">
+            <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
+              <img
+                className="w-[400px] rounded-lg"
+                src="/images/home/contact.svg"
+                alt="office content 1"
+              />
+            </div>
+
+            <div className="h-full w-full p-2 lg:max-w-2xl">
+              <h2 className="my-10 text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
+                Let&apos;s get in touch
+              </h2>
+
+              <p className="mb-6 mt-2 w-full text-left font-asap text-xl md:my-2">
+                Need help with sharing data or research software? Want to
+                collaborate on a cool new project or grant proposal? Have
+                feedback or suggestions? Reach out to us!
+              </p>
+
+              <div className="flex w-full justify-start py-5">
+                <Link href="/contact-us" passHref>
+                  <button
+                    type="button"
+                    className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+                    data-umami-event="Home page link"
+                    data-umami-event-value="Team"
+                  >
+                    Contact us
+                  </button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+          aria-hidden="true"
+        >
+          <div
+            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-300 opacity-50"
+            style={{
+              clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
+            }}
+          ></div>
+        </div>
+      </section>
+
+      <section className="py-20">
         <Collaborators />
       </section>
     </div>
