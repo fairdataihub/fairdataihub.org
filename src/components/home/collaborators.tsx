@@ -40,6 +40,18 @@ export default function Collaborators() {
       height: 200,
     },
     {
+      src: `/images/collaborators/ucsd-logo.png`,
+      alt: `UCSD logo`,
+      width: 200,
+      height: 218,
+    },
+    {
+      src: `/images/collaborators/university-michigan.png`,
+      alt: `UCSD logo`,
+      width: 200,
+      height: 113,
+    },
+    {
       src: `/images/collaborators/ucsf-logo.png`,
       alt: `UCSF logo`,
       width: 200,
@@ -74,6 +86,12 @@ export default function Collaborators() {
       alt: `Bridge2AI logo`,
       width: 200,
       height: 200,
+    },
+    {
+      src: `/images/collaborators/ucsd-logo.png`,
+      alt: `UCSD logo`,
+      width: 200,
+      height: 113,
     },
   ];
 
