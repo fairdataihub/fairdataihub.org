@@ -17,8 +17,8 @@ export default function Home() {
         <section className="mb-10 px-2 pt-12 sm:pt-16">
           <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8">
             <div className="mb-10 w-full">
-              <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
-                We are woking on lots of things
+              <h1 className="w-full text-left text-4xl font-black text-stone-900 sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
+                We are cooking lots of cool stuff!
               </h1>
 
               <p className="mt-2 w-full text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">
@@ -27,12 +27,49 @@ export default function Home() {
             </div>
 
             <div className="flex w-full flex-col gap-5 ">
+              <Link href="/sodaforsparc">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Software
+                      </span>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        SODA for SPARC
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg  text-black">
+                      SODA (Software to Organize Data Automatically) for SPARC
+                      is a cross-platform desktop software that allows
+                      SPARC-funded researchers to easily comply with the FAIR
+                      SPARC Data curation and sharing guidelines.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="/images/hero/soda-app-macos.png"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
               <Link href="/aireadi">
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
                     <div>
                       <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
                         Platform
+                      </span>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Standards
+                      </span>
+                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                        Guidelines
                       </span>
 
                       <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
@@ -91,7 +128,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href="/sodaforsparc">
+              <Link href="/codefair">
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
                     <div>
@@ -100,21 +137,21 @@ export default function Home() {
                       </span>
 
                       <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
-                        SODA for SPARC
+                        Codefair
                       </h2>
                     </div>
 
                     <p className="w-full font-asap text-lg  text-black">
-                      SODA (Software to Organize Data Automatically) for SPARC
-                      is a cross-platform desktop software that allows
-                      SPARC-funded researchers to easily comply with the FAIR
-                      SPARC Data curation and sharing guidelines.
+                      Codefair is a automated GitHub app that helps you make
+                      your research software reusable and especially complying
+                      with the Findable, Accessible, Interoperable, Reusable
+                      (FAIR) Principles for Research Software.
                     </p>
                   </div>
 
                   <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
                     <img
-                      src="/images/hero/soda-app-macos.png"
+                      src="/images/hero/codefair-logo.png"
                       alt="Screenshot of SODA for SPARC"
                       className="h-full w-full rounded-md object-contain"
                     />
@@ -150,37 +187,6 @@ export default function Home() {
                   <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
                     <img
                       src="/images/hero/fairshare-macos.png"
-                      alt="Screenshot of SODA for SPARC"
-                      className="h-full w-full rounded-md object-contain"
-                    />
-                  </div>
-                </div>
-              </Link>
-
-              <Link href="/codefair">
-                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
-                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
-                    <div>
-                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
-                        Software
-                      </span>
-
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
-                        Codefair
-                      </h2>
-                    </div>
-
-                    <p className="w-full font-asap text-lg  text-black">
-                      Codefair is a automated GitHub app that helps you make
-                      your research software reusable and especially complying
-                      with the Findable, Accessible, Interoperable, Reusable
-                      (FAIR) Principles for Research Software.
-                    </p>
-                  </div>
-
-                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
-                    <img
-                      src="/images/hero/codefair-logo.png"
                       alt="Screenshot of SODA for SPARC"
                       className="h-full w-full rounded-md object-contain"
                     />

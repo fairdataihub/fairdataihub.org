@@ -68,7 +68,7 @@ export default function Home() {
       <section className="relative mx-auto  max-w-screen-xl px-4 py-20">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
-            What are we working on?
+            What are we cooking?
           </h2>
         </div>
 
@@ -148,15 +148,24 @@ export default function Home() {
           </Link>
         </div>
 
-        <p className="mt-6 text-center font-asap text-xl">
-          There is a lot more in the pipeline. To learn more about all our work
-          in this area, please visit our{` `}
-          <Link href="/projects" passHref>
-            <span className="text-accent hover:underline">Projects</span>
-          </Link>
-          {` `}
-          page.
-        </p>
+        <div className="flex flex-col items-center justify-center space-x-4 py-5">
+          <p className="py-3 text-center font-asap text-xl">
+            There is a lot more in the pipeline!
+          </p>
+
+          <div className="flex">
+            <Link href="/projects" passHref>
+              <button
+                type="button"
+                className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+                data-umami-event="Home page link"
+                data-umami-event-value="Learn more about the FAIR Principles"
+              >
+                See all our projects
+              </button>
+            </Link>
+          </div>
+        </div>
       </section>
 
       <section className="relative py-10">
@@ -261,16 +270,19 @@ export default function Home() {
                   easy for them. We are trying to achieve that through two main
                   approaches:
                 </p>
-                <p className="mb-4 text-left text-xl">
-                  Developing minimal, step-by-step, and actionable guidelines
-                  for preparing and sharing datasets, software, and other
-                  research outcomes such that they are FAIR and AI-Ready
-                </p>
-                <p className="text-left text-xl">
-                  Developing open-source and free tools that streamline these
-                  tasks and minimize researchers&apos; time and effort through a
-                  combination of intuitive user interfaces, AI, and automation.
-                </p>
+                <ul className="list list-outside list-decimal px-5">
+                  <li className="mb-4 text-left text-xl">
+                    Developing minimal, step-by-step, and actionable guidelines
+                    for preparing and sharing datasets, software, and other
+                    research outcomes such that they are FAIR and AI-Ready
+                  </li>
+                  <li className="text-left text-xl">
+                    Developing open-source and free tools that streamline these
+                    tasks and minimize researchers&apos; time and effort through
+                    a combination of intuitive user interfaces, AI, and
+                    automation.
+                  </li>
+                </ul>
               </div>
             </div>
 
