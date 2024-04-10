@@ -68,7 +68,7 @@ export default function Home() {
       <section className="relative mx-auto  max-w-screen-xl px-4 py-20">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
-            What are we cooking?
+            What we are cooking
           </h2>
         </div>
 

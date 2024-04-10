@@ -63,60 +63,6 @@ export default function Collaborators() {
       width: 200,
       height: 140,
     },
-    {
-      src: `/images/collaborators/ucsf-logo.png`,
-      alt: `UCSF logo`,
-      width: 200,
-      height: 145,
-    },
-    {
-      src: `/images/collaborators/sparc-logo.svg`,
-      alt: `NIH SPARC logo`,
-      width: 200,
-      height: 111,
-    },
-    {
-      src: `/images/collaborators/fdi-lab-logo.png`,
-      alt: `FDI Lab logo`,
-      width: 200,
-      height: 79.45,
-    },
-    {
-      src: `/images/collaborators/calmi-logo.png`,
-      alt: `California Medical Innovations Institute logo`,
-      width: 200,
-      height: 88,
-    },
-    {
-      src: `/images/collaborators/UCL-logo.png`,
-      alt: `UCL logo`,
-      width: 200,
-      height: 85,
-    },
-    {
-      src: `/images/collaborators/bridge2ai.png`,
-      alt: `Bridge2AI logo`,
-      width: 200,
-      height: 200,
-    },
-    {
-      src: `/images/collaborators/ucsd-logo.png`,
-      alt: `UCSD logo`,
-      width: 200,
-      height: 113,
-    },
-    {
-      src: `/images/collaborators/pennsieve-logo.svg`,
-      alt: `Pennsieve logo`,
-      width: 200,
-      height: 145,
-    },
-    {
-      src: `/images/collaborators/mbf-logo.png`,
-      alt: `MBF logo`,
-      width: 200,
-      height: 140,
-    },
   ];
 
   return (
@@ -139,7 +85,8 @@ export default function Collaborators() {
           gradientColor={[255, 255, 255]}
           gradientWidth="25p"
         >
-          {logoImages.map((logo, index) => (
+          {/* Duplicate the logos to make the marquee longer */}
+          {[...logoImages, ...logoImages].map((logo, index) => (
             <div
               key={index}
               className="mx-2 flex h-full w-full items-center justify-center"
