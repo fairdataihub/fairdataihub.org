@@ -1,7 +1,6 @@
 import React from 'react';
 
 import InternshipPositions from '@/components/careers/internshipPositions';
-import WorkPositions from '@/components/careers/workPositions';
 import LottieAnimation from '@/components/lotties';
 import Seo from '@/components/seo/seo';
 
@@ -55,11 +54,31 @@ export default function Careers() {
         </div>
       </div>
 
-      <section className="pb-10">
-        <WorkPositions />
+      <section className="relative py-20">
+        <div className="container mx-auto max-w-screen-xl px-6 ">
+          <div className="h-full w-full p-2">
+            <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
+              Open Positions
+            </h2>
 
-        <InternshipPositions />
+            <p className="mb-4 mt-2 text-left font-asap text-lg">
+              Discover your potential at the FAIR Data Innovations Hub.
+            </p>
+          </div>
+
+          <div className="mx-auto flex max-w-screen-lg flex-col">
+            <div className="bg-white p-7 px-6 sm:px-6 lg:h-40 lg:px-6">
+              <div className="flex flex-col items-center text-center lg:mx-12 lg:text-left">
+                <p className="h-32 font-asap text-lg">
+                  No open positions at the moment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
+
+      <InternshipPositions />
     </>
   );
 }

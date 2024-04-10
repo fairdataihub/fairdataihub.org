@@ -69,9 +69,15 @@ const IntershipForm = () => {
         <DialogTrigger className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none">
           Apply
         </DialogTrigger>
+
         <DialogContent className="max-w-screen-lg bg-white">
           <DialogHeader>
-            <DialogTitle>Internship Form</DialogTitle>
+            <DialogTitle>
+              <span className="text-left text-xl font-extrabold text-stone-900">
+                Internship Form
+              </span>
+            </DialogTitle>
+
             <DialogDescription>
               <Formik
                 initialValues={formValues}
@@ -159,11 +165,14 @@ const IntershipForm = () => {
                         >
                           Your Name
                         </label>
+
                         <Field
                           type="text"
                           name="name"
+                          placeholder="Me Myself"
                           className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
                         />
+
                         <ErrorMessage
                           name="name"
                           component="span"
@@ -178,11 +187,14 @@ const IntershipForm = () => {
                         >
                           Your Email Address
                         </label>
+
                         <Field
                           type="email"
                           name="email"
-                          className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                          placeholder="me@fairdataihub.org"
+                          className="mb-1w -full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
                         />
+
                         <ErrorMessage
                           name="email"
                           component="span"
@@ -199,11 +211,14 @@ const IntershipForm = () => {
                         >
                           Company or Institution
                         </label>
+
                         <Field
                           type="text"
                           name="work_study_status"
+                          placeholder="FAIR Data Innovations Hub"
                           className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
                         />
+
                         <ErrorMessage
                           name="work_study_status"
                           component="span"
@@ -216,13 +231,16 @@ const IntershipForm = () => {
                           htmlFor="github_link"
                           className="pb-2 text-base font-medium"
                         >
-                          Github Link
+                          Your GitHub profile URL
                         </label>
+
                         <Field
                           type="text"
                           name="github_link"
+                          placeholder="https://github.com/fairdataihub"
                           className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
                         />
+
                         <ErrorMessage
                           name="github_link"
                           component="span"
@@ -239,11 +257,13 @@ const IntershipForm = () => {
                         >
                           Availability
                         </label>
+
                         <DatePickerWithRange
                           className="w-full pr-4"
                           onDateRangeChange={handleDateRangeChange}
                           selectedDateRange={formValues.availability}
                         />
+
                         <ErrorMessage
                           name="availability"
                           component="span"
@@ -258,6 +278,7 @@ const IntershipForm = () => {
                         >
                           Resume
                         </label>
+
                         <Field
                           type="file"
                           name="resume_link"
@@ -278,6 +299,7 @@ const IntershipForm = () => {
                             );
                           }}
                         </Field>
+
                         <ErrorMessage
                           name="resume_link"
                           component="span"
@@ -293,21 +315,25 @@ const IntershipForm = () => {
                       >
                         Tell us a little about yourself!
                       </label>
+
                       <Field
                         as="textarea"
                         name="brief_intro"
                         rows="4"
+                        placeholder="I am a student at FAIR Data Innovations Hub..."
                         className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
                       />
+
                       <ErrorMessage
                         name="brief_intro"
                         component="span"
                         className="pt-1 text-sm text-red-500"
                       />
                     </div>
-                    <div className="flex items-center justify-end rounded-b border-t border-solid border-slate-200 p-6">
+
+                    <div className="flex items-center justify-end gap-3 rounded-b border-t border-solid border-slate-200 pt-3">
                       <button
-                        className="background-transparent mb-1 mr-1 px-6 py-2 text-sm font-bold uppercase text-red-500 outline-none transition-all duration-150 ease-linear focus:outline-none"
+                        className="w-max rounded-md border-none bg-white px-5 py-3 text-center text-base font-semibold ring-2 ring-pink-100 ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
                         type="button"
                         onClick={() => {
                           setOpen(false);
@@ -316,11 +342,13 @@ const IntershipForm = () => {
                       >
                         Close
                       </button>
+
                       <button
                         type="submit"
-                        className="mb-1 mr-1 rounded bg-emerald-500 px-6 py-3 text-sm font-bold uppercase text-white shadow outline-none transition-all duration-150 ease-linear hover:shadow-lg focus:outline-none active:bg-emerald-600"
+                        className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
                         disabled={isSubmitting}
-                        data-umami-event="Internship Form Submit button"
+                        data-umami-event="Home page link"
+                        data-umami-event-value="Team"
                       >
                         Submit
                       </button>
@@ -332,6 +360,7 @@ const IntershipForm = () => {
           </DialogHeader>
         </DialogContent>
       </Dialog>
+
       <ToastContainer
         position="bottom-right"
         autoClose={5000}
