@@ -9,9 +9,10 @@ export default function About() {
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
           The FAIR Biomedical Research Software (FAIR-BioRS) guidelines are a
-          set of minimal and actionable step-by-step instructions for making
+          set of minimal and actionable step-by-step guidelines for making
           biomedical research software FAIR (Findable, Accessible,
-          Interoperable, Reusable), i.e., optimizing their reusability.
+          Interoperable, Reusable), in line with the FAIR Principles for
+          Research Software (FAIR4RS Principles).
         </p>
       </div>
 
@@ -27,24 +28,27 @@ export default function About() {
                 />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                What are the FAIR Data Principles?
+                What are research software?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                The FAIR Data Principles are a set of guidelines for curating
-                and sharing research data such that they are optimaly reusable
-                by both humans and machines.
+                Research software is any software created during the research
+                process or for a research purpose. It can come in many format
+                such as artificial intelligence (AI) models as Python scripts or
+                data visualization tools as Jupyter notebooks. They are an
+                essential aspects of biomedical research and therefore making
+                them FAIR, i.e. optimally reusable is critical just like data.
                 <div className="mt-2 flex md:mt-1">
                   <a
-                    href="https://doi.org/10.1038/sdata.2016.18"
+                    href="https://www.researchsoft.org/"
                     target="_blank"
                     rel="noopener"
                     data-umami-event="About section link"
-                    data-umami-event-text="Learn more about FAIR"
+                    data-umami-event-text="Learn more research software"
                   >
                     <p className="text-url hover-underline-animation">
-                      Learn more about FAIR
+                      Learn more about research software
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -72,15 +76,43 @@ export default function About() {
                 <Icon icon="mdi:axis-arrow-info" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                When to use the FAIR-BioRS guidelines?
+                How to make research software FAIR?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                Developing biomedical research software according to FAIR-BioRS
-                guidelines ensures compliance with FAIR Principles, facilitating
-                recognition, impact, collaboration, and meeting funding agency
-                requirements for FAIR research outcomes.
+                The FAIR Principles for Research Software (FAIR4RS Principles)
+                are reformulated versions of the FAIR Principles developed by
+                the research software community specifically to make research
+                software reusable.
+                <div className="mt-2 flex md:mt-1">
+                  <a
+                    href="https://doi.org/10.1038/s41597-022-01710-x"
+                    target="_blank"
+                    rel="noopener"
+                    data-umami-event="About section link"
+                    data-umami-event-text="Learn more about the FAIR4RS Principles"
+                  >
+                    <p className="text-url hover-underline-animation">
+                      Learn more about the FAIR4RS Principles
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="arrow-animate ml-2 h-4 w-4"
+                        viewBox="0 0 24 24"
+                        data-v-6a723fb6=""
+                      >
+                        <path
+                          d="M5 12h14M12 5l7 7-7 7"
+                          data-v-6a723fb6=""
+                        ></path>
+                      </svg>
+                    </p>
+                  </a>
+                </div>
               </div>
             </dd>
           </div>
@@ -90,18 +122,16 @@ export default function About() {
                 <Icon icon="mdi:account-hard-hat" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                Why were these guidelines needed?
+                What are the challenges?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                The increasing importance of research software in biomedical
-                research necessitates its reusability for reproducibility and
-                accelerating discoveries, with FAIR principles serving as a
-                foundation. However, adaptations specific to software, like
-                those proposed by the RDA FAIR for Research Software (FAIR4RS)
-                Working Group, are essential due to the unique traits of
-                software, yet actionable guidelines for researchers are lacking.
+                By design, the FAIR4RS Principles only provide a high-level
+                framework for making software FAIR but do not provide practical
+                instructions to do so. Therefore, making software FAIR requires
+                an in-depth understanding of each of the FAIR4RS Principles, and
+                finding out how to practically comply with them.
               </div>
             </dd>
           </div>
@@ -111,14 +141,45 @@ export default function About() {
                 <Icon icon="ep:guide" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                How does FAIRshare help?
+                How do the FAIR-BioRS guidelines help?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                FAIRshare is a cross-platform desktop software that allows
-                researchers to easily organize and share their biomedical data
-                and software according to applicable FAIR guidelines.
+                We established the FAIR Biomedical Research Software
+                (FAIR-BioRS) guideline, which are clear, actionable, and
+                step-by-step guidelines for making biomedical research software
+                FAIR. Researchers can simply follow and implement the guidelines
+                as they are developing their software to make it compliant with
+                the FAIR4RS principles.
+                <div className="mt-2 flex md:mt-1">
+                  <a
+                    href="https://doi.org/10.1038/s41597-022-01710-x"
+                    target="_blank"
+                    rel="noopener"
+                    data-umami-event="About section link"
+                    data-umami-event-text="Learn more about the FAIR-BioRS guidelines"
+                  >
+                    <p className="text-url hover-underline-animation">
+                      Learn more about the FAIR-BioRS guidelines
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="arrow-animate ml-2 h-4 w-4"
+                        viewBox="0 0 24 24"
+                        data-v-6a723fb6=""
+                      >
+                        <path
+                          d="M5 12h14M12 5l7 7-7 7"
+                          data-v-6a723fb6=""
+                        ></path>
+                      </svg>
+                    </p>
+                  </a>
+                </div>
               </div>
             </dd>
           </div>

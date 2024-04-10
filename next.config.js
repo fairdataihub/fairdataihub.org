@@ -12,6 +12,7 @@ module.exports = {
       'researcherprofiles.org',
       'images.unsplash.com',
       'raw.githubusercontent.com',
+      'elixir-europe.org',
     ],
   },
 };
