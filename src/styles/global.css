@@ -111,6 +111,15 @@
     transform-origin: bottom left;
   }
 
+  .header-gradient-background {
+    @apply bg-gradient-to-tl from-primary to-primaryLight bg-clip-text text-transparent;
+  }
+
+  .img-hover-zoom {
+    height: 300px;
+    overflow: hidden;
+  }
+
   .nav-item {
     @apply relative mx-1 cursor-pointer py-2 sm:px-1 lg:px-3;
   }

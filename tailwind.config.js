@@ -21,8 +21,12 @@ module.exports = {
       backgroundImage: {
         haikeiWavy: "url('/backgrounds/wavy-background.svg')",
       },
+      colors: {
+        primary: '#CD329F',
+        primaryLight: '#d75bb2',
+        accent: '#CB128D',
+      },
     },
-
     textColor: (theme) => ({
       ...theme('colors'),
       primary: '#CD329F',

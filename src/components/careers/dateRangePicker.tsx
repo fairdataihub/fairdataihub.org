@@ -45,7 +45,7 @@ export function DatePickerWithRange({
             id="date"
             variant={`outline`}
             className={cn(
-              `w-full justify-start text-left font-normal mr-4`,
+              `mr-4 w-full justify-start text-left font-normal`,
               !date && `text-muted-foreground`,
             )}
           >
@@ -64,6 +64,7 @@ export function DatePickerWithRange({
             )}
           </Button>
         </PopoverTrigger>
+
         <PopoverContent className="w-auto p-0" align="start">
           <Calendar
             initialFocus

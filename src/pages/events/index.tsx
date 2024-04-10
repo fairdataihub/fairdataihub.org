@@ -16,6 +16,7 @@ type EventsList = {
     endDateTime: string;
     tags: string[];
     subtitle: string;
+    location: string;
     type: string;
   };
 };
@@ -50,7 +51,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
       {eventsList.map((post) => {
         const { slug, frontMatter, timeToRead } = post;
 
-        const { title, startDateTime, endDateTime, subtitle, type } =
+        const { title, startDateTime, endDateTime, subtitle, type, location } =
           frontMatter;
 
         return (
@@ -59,12 +60,17 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
             className="mb-2 flex w-full flex-col md:flex-row"
           >
             <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm  md:px-7 md:py-5">
-              <div className="mb-1 flex flex-row items-center justify-between md:hidden ">
-                <div className="rounded-md bg-pink-200 px-1 py-1 text-sm font-medium">
-                  {type}
+              <div className="mb-1 flex flex-row items-center justify-between md:hidden">
+                <div className="my-2 flex items-center space-x-2">
+                  <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">
+                    {type}
+                  </span>
+                  <span className="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-sm font-medium text-pink-800">
+                    {location}
+                  </span>
                 </div>
 
-                <span className=" text-sm text-gray-600">
+                <span className="text-sm text-gray-600">
                   {timeToRead} min read
                 </span>
               </div>
@@ -83,8 +89,13 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
                   endDateTime={endDateTime}
                 />
 
-                <div className="hidden w-max rounded-md bg-pink-200 px-1 py-1 text-sm font-medium md:block">
-                  {type}
+                <div className="hidden items-center space-x-2 md:flex">
+                  <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800">
+                    {type}
+                  </span>
+                  <span className="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-xs font-medium text-pink-800">
+                    {location}
+                  </span>
                 </div>
               </div>
 

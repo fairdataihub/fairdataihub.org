@@ -1,6 +1,6 @@
 [
   {
-    "project": "sodaforsparc",
+    "project": ["sodaforsparc"],
     "url": "https://doi.org/10.1101/2021.02.10.430563",
     "title": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
     "subtitle": "",
@@ -8,7 +8,7 @@
     "type": "Preprint"
   },
   {
-    "project": "sodaforsparc",
+    "project": ["sodaforsparc"],
     "url": "https://doi.org/10.1096/fasebj.2020.34.s1.02483",
     "title": "SPARC: SODA, an interactive software for curating SPARC datasets",
     "subtitle": "",
@@ -16,7 +16,7 @@
     "type": "Abstract"
   },
   {
-    "project": "fairshare",
+    "project": ["fairshare", "fairbiors"],
     "url": "https://doi.org/10.1038/s41597-023-02463-x",
     "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
     "subtitle": "",
@@ -24,7 +24,7 @@
     "type": "Journal Article"
   },
   {
-    "project": "fairshare",
+    "project": ["fairshare"],
     "url": "https://doi.org/10.1101/2022.04.18.488694",
     "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
     "subtitle": "",
@@ -32,7 +32,7 @@
     "type": "Preprint"
   },
   {
-    "project": "fairshare",
+    "project": ["fairshare"],
     "url": "https://doi.org/10.7490/f1000research.1119054.1",
     "title": "Making biomedical research software FAIR with FAIRshare",
     "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
@@ -40,15 +40,31 @@
     "type": "Poster"
   },
   {
-    "project": "fairshare",
+    "project": ["fairbiors"],
+    "url": "https://doi.org/10.7490/f1000research.1119608.1",
+    "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
+    "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
+    "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119608.1",
+    "type": "Poster"
+  },
+  {
+    "project": ["fairshare"],
     "url": "https://doi.org/10.7490/f1000research.1119055.1",
     "title": "Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
     "citation": "Bhavesh Patel, & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
-    "type": "Presentation"
+    "type": "Conference Presentation"
   },
   {
-    "project": "knowmore",
+    "project": ["fairbiors"],
+    "url": "https://doi.org/10.7490/f1000research.1119609.1",
+    "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
+    "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
+    "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119609.1",
+    "type": "Conference Presentation"
+  },
+  {
+    "project": ["knowmore"],
     "url": "https://doi.org/10.1101/2021.08.08.455581",
     "title": "KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC Datasets",
     "subtitle": "",
@@ -56,7 +72,7 @@
     "type": "Preprint"
   },
   {
-    "project": "aqua",
+    "project": ["aqua"],
     "url": "https://doi.org/10.12688/f1000research.73018.1",
     "title": "AQUA: an Advanced QUery Architecture for the SPARC Portal",
     "subtitle": "",
@@ -64,7 +80,7 @@
     "type": "Journal Article"
   },
   {
-    "project": "sparclink",
+    "project": ["sparclink"],
     "url": "https://doi.org/10.12688/f1000research.75071.1",
     "title": "SPARClink: an interactive tool to visualize the impact of the SPARC program",
     "subtitle": "",
@@ -72,7 +88,7 @@
     "type": "Journal Article"
   },
   {
-    "project": "aireadi",
+    "project": ["aireadi"],
     "url": "https://doi.org/10.5281/zenodo.7363102",
     "title": "Software Development Best Practices of the AI-READI Project",
     "subtitle": "",
@@ -80,7 +96,7 @@
     "type": "Report"
   },
   {
-    "project": "aireadi",
+    "project": ["aireadi"],
     "url": "https://doi.org/10.5281/zenodo.7641650",
     "title": "AI-READI Code of Conduct",
     "subtitle": "",
@@ -88,7 +104,7 @@
     "type": "Report"
   },
   {
-    "project": "aireadi",
+    "project": ["aireadi"],
     "url": "https://doi.org/10.5281/zenodo.7641684",
     "title": "AI-READI Steering Committee Charter",
     "subtitle": "",
@@ -96,11 +112,59 @@
     "type": "Report"
   },
   {
-    "project": "sodaforsparc",
+    "project": ["sodaforsparc"],
     "url": "https://sparc.science/news-and-events/community-spotlight/success-stories/sharing-is-caring-making-sparc-data-fair-with-soda",
     "title": "Sharing is Caring - Making SPARC data FAIR with SODA",
     "subtitle": "",
     "citation": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. (2021). SPARC. https://sparc.science/news-and-events/community-spotlight/success-stories/sharing-is-caring-making-sparc-data-fair-with-soda",
     "type": "Web Article"
+  },
+  {
+    "project": ["sodaforsparc"],
+    "url": "https://github.com/fairdataihub/SODA-for-SPARC",
+    "title": "SODA (Software to Organize Data Automatically) for SPARC",
+    "subtitle": "",
+    "citation": "Patel, B., Soundarajan, S., Marroquin, A., Clark, J., & Portillo, D. (2024). SODA (Software to Organize Data Automatically) for SPARC (Version 14.1.0). Zenodo. https://doi.org/10.5281/zenodo.8368612",
+    "type": "Software"
+  },
+  {
+    "project": ["fairshare"],
+    "url": "https://github.com/fairdataihub/FAIRshare",
+    "title": "FAIRshare",
+    "subtitle": "",
+    "citation": "Soundarajan, S., & Patel, B. (2023). FAIRshare: FAIR data and software sharing made easy (2.1.0). Zenodo. https://doi.org/10.5281/zenodo.8112716",
+    "type": "Software"
+  },
+  {
+    "project": ["codefair"],
+    "url": "https://github.com/fairdataihub/codefair-app",
+    "title": "CodeFair",
+    "subtitle": "",
+    "citation": "CodeFair. (2024). https://github.com/fairdataihub/codefair-app",
+    "type": "Software"
+  },
+  {
+    "project": ["aireadi"],
+    "url": "https://github.com/AI-READI/fairhub-app",
+    "title": "FAIRhub Study Management Platform",
+    "subtitle": "",
+    "citation": "FAIRhub. (2024). https://github.com/AI-READI/fairhub-app",
+    "type": "Software"
+  },
+  {
+    "project": ["aireadi"],
+    "url": "https://github.com/AI-READI/fairhub-portal",
+    "title": "FAIRhub Data Portal",
+    "subtitle": "",
+    "citation": "FAIRhub. (2024). https://github.com/AI-READI/fairhub-portal",
+    "type": "Software"
+  },
+  {
+    "project": ["aireadi"],
+    "url": "https://github.com/AI-READI/pyfairdatatools",
+    "title": "pyfairdatatools",
+    "subtitle": "",
+    "citation": "pyfairdatatools. (2024). https://github.com/AI-READI/pyfairdatatools",
+    "type": "Software"
   }
 ]

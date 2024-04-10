@@ -36,9 +36,9 @@ const Impact: React.FC<Props> = ({ publications }) => {
               key={group.key as unknown as string}
               className="flex flex-col pb-4"
             >
-              <div className="flex items-center mb-3">
+              <div className="mb-3 flex items-center">
                 <h2 className="text-left text-2xl font-bold">{group.key}</h2>
-                <span className="text-base ml-1 font-medium">
+                <span className="ml-1 text-base font-medium">
                   ({group.value.length})
                 </span>
               </div>
@@ -47,11 +47,11 @@ const Impact: React.FC<Props> = ({ publications }) => {
                 {group.value.map((item) => {
                   return (
                     <li key={item.url}>
-                      <div className="flex-col flex mb-4">
+                      <div className="mb-4 flex flex-col">
                         <a
                           href={item.url}
                           target="_blank"
-                          className="text-url font-medium text-base"
+                          className="text-url text-base font-medium"
                           data-umami-event="Publication link"
                           data-umami-event-url={item.url}
                           rel="noopener"
@@ -59,7 +59,7 @@ const Impact: React.FC<Props> = ({ publications }) => {
                           {item.title}
                         </a>
 
-                        <p className="text-sm bg-slate-50 px-3 py-2">
+                        <p className="bg-slate-50 px-3 py-2 text-sm">
                           {item.citation}
                         </p>
                       </div>
@@ -95,10 +95,10 @@ export async function getStaticProps() {
   const sortingOrder = [
     `Journal Article`,
     `Preprint`,
-    `Software (Zenodo citation of our software)`,
+    `Software`,
+    `Poster`,
     `Report`,
     `Conference Presentation`,
-    `Poster`,
     `Web Article`,
   ];
 

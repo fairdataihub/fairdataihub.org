@@ -43,8 +43,8 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
 
 export async function getStaticProps() {
   // Filter the publications with the `sodaforsparc` tag
-  const publications = PublicationsJSON.filter(
-    (publication) => publication.project === `aireadi`,
+  const publications = PublicationsJSON.filter((publication) =>
+    publication.project.includes(`aireadi`),
   );
 
   return {
