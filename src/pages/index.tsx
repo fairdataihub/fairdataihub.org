@@ -76,7 +76,7 @@ export default function Home() {
           <Link
             href="/sodaforsparc"
             passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[150px] md:w-7/12"
+            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[180px] md:w-7/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
@@ -94,7 +94,7 @@ export default function Home() {
           <Link
             href="/aireadi"
             passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[150px] md:w-5/12"
+            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[180px] md:w-5/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
