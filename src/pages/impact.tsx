@@ -95,10 +95,10 @@ export async function getStaticProps() {
   const sortingOrder = [
     `Journal Article`,
     `Preprint`,
-    `Software (Zenodo citation of our software)`,
+    `Software`,
+    `Poster`,
     `Report`,
     `Conference Presentation`,
-    `Poster`,
     `Web Article`,
   ];
 

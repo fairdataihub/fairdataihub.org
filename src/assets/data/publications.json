@@ -40,12 +40,28 @@
     "type": "Poster"
   },
   {
+    "project": ["fairbiors"],
+    "url": "https://doi.org/10.7490/f1000research.1119608.1",
+    "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
+    "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
+    "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119608.1",
+    "type": "Poster"
+  },
+  {
     "project": ["fairshare"],
     "url": "https://doi.org/10.7490/f1000research.1119055.1",
     "title": "Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
     "citation": "Bhavesh Patel, & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
-    "type": "Presentation"
+    "type": "Conference Presentation"
+  },
+  {
+    "project": ["fairbiors"],
+    "url": "https://doi.org/10.7490/f1000research.1119609.1",
+    "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
+    "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
+    "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119609.1",
+    "type": "Conference Presentation"
   },
   {
     "project": ["knowmore"],
@@ -102,5 +118,53 @@
     "subtitle": "",
     "citation": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. (2021). SPARC. https://sparc.science/news-and-events/community-spotlight/success-stories/sharing-is-caring-making-sparc-data-fair-with-soda",
     "type": "Web Article"
+  },
+  {
+    "project": ["sodaforsparc"],
+    "url": "https://github.com/fairdataihub/SODA-for-SPARC",
+    "title": "SODA (Software to Organize Data Automatically) for SPARC",
+    "subtitle": "",
+    "citation": "Patel, B., Soundarajan, S., Marroquin, A., Clark, J., & Portillo, D. (2024). SODA (Software to Organize Data Automatically) for SPARC (Version 14.1.0). Zenodo. https://doi.org/10.5281/zenodo.8368612",
+    "type": "Software"
+  },
+  {
+    "project": ["fairshare"],
+    "url": "https://github.com/fairdataihub/FAIRshare",
+    "title": "FAIRshare",
+    "subtitle": "",
+    "citation": "Soundarajan, S., & Patel, B. (2023). FAIRshare: FAIR data and software sharing made easy (2.1.0). Zenodo. https://doi.org/10.5281/zenodo.8112716",
+    "type": "Software"
+  },
+  {
+    "project": ["codefair"],
+    "url": "https://github.com/fairdataihub/codefair-app",
+    "title": "CodeFair",
+    "subtitle": "",
+    "citation": "CodeFair. (2024). https://github.com/fairdataihub/codefair-app",
+    "type": "Software"
+  },
+  {
+    "project": ["aireadi"],
+    "url": "https://github.com/AI-READI/fairhub-app",
+    "title": "FAIRhub Study Management Platform",
+    "subtitle": "",
+    "citation": "FAIRhub. (2024). https://github.com/AI-READI/fairhub-app",
+    "type": "Software"
+  },
+  {
+    "project": ["aireadi"],
+    "url": "https://github.com/AI-READI/fairhub-portal",
+    "title": "FAIRhub Data Portal",
+    "subtitle": "",
+    "citation": "FAIRhub. (2024). https://github.com/AI-READI/fairhub-portal",
+    "type": "Software"
+  },
+  {
+    "project": ["aireadi"],
+    "url": "https://github.com/AI-READI/pyfairdatatools",
+    "title": "pyfairdatatools",
+    "subtitle": "",
+    "citation": "pyfairdatatools. (2024). https://github.com/AI-READI/pyfairdatatools",
+    "type": "Software"
   }
 ]
