@@ -1,3 +1,10 @@
+# [2.35.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.34.0...v2.35.0) (2024-04-10)
+
+
+### Features
+
+* ✨ rework all pages ([#615](https://github.com/fairdataihub/fairdataihub.org/issues/615)) ([f859532](https://github.com/fairdataihub/fairdataihub.org/commit/f8595320fb235c504a0791885692a11ad1d7477c)), closes [#612](https://github.com/fairdataihub/fairdataihub.org/issues/612) [#614](https://github.com/fairdataihub/fairdataihub.org/issues/614) [#618](https://github.com/fairdataihub/fairdataihub.org/issues/618)
+
 # [2.34.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.33.0...v2.34.0) (2024-04-09)
 
 ### Bug Fixes
