@@ -52,6 +52,18 @@ export default function Collaborators() {
       height: 113,
     },
     {
+      src: `/images/collaborators/pennsieve-logo.svg`,
+      alt: `Pennsieve logo`,
+      width: 200,
+      height: 145,
+    },
+    {
+      src: `/images/collaborators/mbf-logo.png`,
+      alt: `MBF logo`,
+      width: 200,
+      height: 140,
+    },
+    {
       src: `/images/collaborators/ucsf-logo.png`,
       alt: `UCSF logo`,
       width: 200,
@@ -92,6 +104,18 @@ export default function Collaborators() {
       alt: `UCSD logo`,
       width: 200,
       height: 113,
+    },
+    {
+      src: `/images/collaborators/pennsieve-logo.svg`,
+      alt: `Pennsieve logo`,
+      width: 200,
+      height: 145,
+    },
+    {
+      src: `/images/collaborators/mbf-logo.png`,
+      alt: `MBF logo`,
+      width: 200,
+      height: 140,
     },
   ];
 
