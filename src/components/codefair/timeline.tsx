@@ -1,15 +1,9 @@
 export default function Timeline() {
   const timelineList = [
     {
-      longDate: `November 2020`,
-      title: `Birth of FAIRshare`,
-      content: `The first prototype of FAIRshare is developed for demo purpose by the FAIR Data Innovations Hub.`,
-    },
-    {
-      longDate: `September 2021 - Aug 2022`,
-      title: `Phase I development`,
-      content: `The base framework of the software will be developed and support will be provided for COVID-19
-      and other infectious diseases related data types (genomics, immunology, etc.) and software.`,
+      longDate: `April 2024`,
+      title: `Birth of Codefair`,
+      content: `The first prototype of Codefair is developed for demo purpose by the FAIR Data Innovations Hub.`,
     },
   ];
 

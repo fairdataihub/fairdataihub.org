@@ -11,10 +11,11 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <>
       <Seo
-        templateTitle="FAIRshare"
+        templateTitle="FAIR-BioRS"
         templateUrl="https://fairdataihub.org/fair-biors"
-        templateDescription="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
-        templateImage="/images/og/fairshare.png"
+        templateDescription="Minimal and actionable step-by-step guidelines for making
+        biomedical research software reusable in line with the FAIR4RS principles"
+        templateImage="https://kalai.fairdataihub.org/api/generate?title=FAIR-BioRS&description=Minimal%20and%20actionable%20step-by-step%20guidelines%20for%20making%20biomedical%20research%20software%20reusable%20in%20line%20with%20the%20FAIR4RS%20principles&app=fairdataihub&org=fairdataihub"
       />
 
       <section className="bg-white py-10 pt-16">

@@ -35,13 +35,10 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    The FAIR-BioRS guidelines are maintained in a GitHub
+                    The codefair application is maintained in a GitHub
                     repository and are developed in an open and transparent
-                    manner. The guidelines are developed in collaboration with
-                    the FAIR4RS community and are open for contributions from
-                    the community. The guidelines are developed in a modular
-                    manner and are versioned to ensure that the guidelines are
-                    stable and can be referenced in publications.
+                    manner. We are always open for contributions from the
+                    community.
                   </p>
                   <div className="mt-3 flex text-accent">
                     <a
@@ -141,7 +138,7 @@ export default function Info() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="hidden">
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="py-5 text-left text-4xl font-black subpixel-antialiased md:mr-8 md:py-0">

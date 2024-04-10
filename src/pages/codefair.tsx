@@ -7,14 +7,14 @@ import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
 
-const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
+const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <>
       <Seo
-        templateTitle="FAIRshare"
-        templateUrl="https://fairdataihub.org/fair-biors"
-        templateDescription="FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
-        templateImage="/images/og/fairshare.png"
+        templateTitle="Codefair"
+        templateUrl="https://fairdataihub.org/codefair"
+        templateDescription="Make your research software reusable without breaking a sweat! Codefair is a platform that helps you make your research software FAIR."
+        templateImage="https://kalai.fairdataihub.org/api/generate?title=Codefair&description=Make%20your%20research%20software%20reusable%20without%20breaking%20a%20sweat!%20Codefair%20is%20a%20platform%20that%20helps%20you%20make%20your%20research%20software%20FAIR&app=fairdataihub&org=fairdataihub"
       />
 
       <section className="bg-white py-10 pt-16">
@@ -30,7 +30,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
         <Timeline />
       </section>
 
-      <section className="hidden bg-white py-10">
+      <section className="bg-white py-10">
         <PublicationsList publications={publications} />
       </section>
     </>
@@ -50,4 +50,4 @@ export async function getStaticProps() {
   };
 }
 
-export default FAIRshare;
+export default Codefair;

@@ -60,8 +60,8 @@ export default function Hero() {
             <Image
               src="/images/hero/codefair-logo.png"
               alt="Codefair logo"
-              width={270}
-              height={270}
+              width={150}
+              height={150}
               priority={true}
               className="h-auto w-auto object-scale-down"
             />
