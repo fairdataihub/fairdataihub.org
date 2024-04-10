@@ -62,15 +62,17 @@ export default function Home() {
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
                     <div>
-                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
-                        Platform
-                      </span>
-                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
-                        Standards
-                      </span>
-                      <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
-                        Guidelines
-                      </span>
+                      <div className="flex space-x-2">
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Platform
+                        </span>
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Standards
+                        </span>
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Guidelines
+                        </span>
+                      </div>
 
                       <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
                         Artificial Intelligence Ready and Equitable Atlas for

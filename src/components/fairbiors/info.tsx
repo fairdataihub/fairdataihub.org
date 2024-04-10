@@ -29,8 +29,8 @@ export default function Info() {
       name: `Hervé Ménager`,
       id: `Herve-Menager`,
       href: `https://research.pasteur.fr/en/member/herve-menager/`,
-      image: `https://elixir-europe.org/sites/default/files/images/herve-menager.jpg`,
-      type: `lab`,
+      image: `/images/people/herve-head.jpg`,
+      type: `person`,
     },
   ];
 
@@ -48,7 +48,7 @@ export default function Info() {
                   <p className="w-full font-asap text-lg text-black">
                     The FAIR-BioRS guidelines were developed in collaboration
                     with researchers from UCSF and ELIXIR (E.U.). We first
-                    establihsed a list of outstanding questions we identified
+                    established a list of outstanding questions we identified
                     for practically implementing the FAIR4RS Principles (e.g.,
                     How to obtain a unique identifier for software? How to
                     include metadata? and so on). Then we combined literature
