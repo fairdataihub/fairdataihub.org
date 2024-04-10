@@ -18,7 +18,7 @@ export default function Home() {
           <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8">
             <div className="mb-10 w-full">
               <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
-                We are woking on lots of things
+                We are working on lots of things
               </h1>
 
               <p className="mt-2 w-full text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">

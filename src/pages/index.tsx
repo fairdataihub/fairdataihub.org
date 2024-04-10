@@ -164,7 +164,7 @@ export default function Home() {
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
-                The wave of FAIR Data practices
+                The FAIR Data wave
               </h2>
 
               <div className="pt-8 font-asap">
@@ -173,7 +173,7 @@ export default function Home() {
                   Principles are a set of instructions for sharing data and
                   other research outcomes such that they are optimally reusable.
                   Since their publication in 2016, they have been promoted and
-                  adopted by a large amount of stakeholders in research data
+                  adopted by a large number of stakeholders in research data
                   including the National Institutes of Health (NIH).
                 </p>
               </div>
@@ -216,17 +216,17 @@ export default function Home() {
 
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
-                Sharing is caring... but also daunting?
+                Sharing is caring... but also daunting
               </h2>
 
               <p className="mb-6 mt-8 w-full text-left font-asap text-xl ">
-                However, sharing FAIR data is not trivial as this involves
-                formatting data into specific file format, organizing data files
+                Sharing FAIR data is not trivial as this involves formatting
+                data into specific file format, organizing data files
                 consistently, including metadata according to applicable
                 standards, uploading data to a suitable repository, and more.
-                This adds significant burden on researchers who are neither
-                trained nor supported to do these. As result, they are either
-                not sharing making data FAIR or not doing it properly.
+                This adds significant burden on researchers who are typically
+                not trained or supported to do this. As result, they are either
+                not making data FAIR or not doing it properly.
               </p>
             </div>
           </div>
@@ -263,13 +263,15 @@ export default function Home() {
                 </p>
                 <p className="mb-4 text-left text-xl">
                   Developing minimal, step-by-step, and actionable guidelines
-                  for preparing and sharing datasets, software, and other
-                  research outcomes such that they are FAIR and AI-Ready
+                  for preparing and sharing FAIR datasets, software, and other
+                  research outcomes such that researchers can easily follow and
+                  implement them
                 </p>
                 <p className="text-left text-xl">
-                  Developing open-source and free tools that streamline these
-                  tasks and minimize researchers&apos; time and effort through a
-                  combination of intuitive user interfaces, AI, and automation.
+                  Developing open-source and free tools that streamline the
+                  implementation of these guidelines and minimize
+                  researchers&apos; time and effort through a combination of
+                  intuitive user interfaces, AI, and automation.
                 </p>
               </div>
             </div>

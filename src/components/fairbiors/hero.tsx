@@ -23,7 +23,7 @@ export default function Hero() {
         <div className="container mx-auto flex w-full flex-col-reverse items-center px-1 py-2 sm:py-4 md:py-10 lg:flex-row">
           <div className="mb-2 flex flex-col items-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:flex-grow lg:pr-24">
             <h1 className="mb-1 w-full text-center text-3xl font-black sm:text-4xl">
-              Biomedical Research Software Guidelines
+              FAIR Biomedical Research Software Guidelines
             </h1>
 
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
