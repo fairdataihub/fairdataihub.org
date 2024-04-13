@@ -3,7 +3,7 @@ export default function Timeline() {
     {
       longDate: `December 2022`,
       title: `Birth of codefair`,
-      content: `The concept of codefair of is mapped out by the FAIR Data Innovations Hub.`,
+      content: `The concept of codefair is mapped out by the FAIR Data Innovations Hub.`,
     },
     {
       longDate: `March 2024`,
