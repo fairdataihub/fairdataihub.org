@@ -96,7 +96,7 @@ export default function About() {
                     data-umami-event-text="Learn more research software"
                   >
                     <p className="text-url hover-underline-animation">
-                      Learn more about the FAIR4RS principles
+                      Learn more about the FAIR4RS Principles
                       <svg
                         fill="none"
                         stroke="currentColor"
@@ -124,18 +124,44 @@ export default function About() {
                 <Icon icon="mdi:account-hard-hat" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                How does codefair work?
+                What are the challenges?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                Just install codefair from the GitHub marketplace on your
-                software’s GitHub repository. By communicating with you through
-                GitHub issues and submitting pull requests, codefair will then
-                make sure that your software follows best coding practices,
-                provides metadata in standard format, includes a license file,
-                is archived on Zenodo, and much more to align with the FAIR4RS
-                principles.
+                We developed the FAIR-Biomedical Research Software (FAIR-BioRS)
+                guidelines so it is easier for researchers to make their
+                software compliant with the FAIR4RS Principles. However, it
+                still requires time and effort to do so, especially when
+                software is frequently updated and has multiple contributors
+                <div className="mt-2 flex md:mt-1">
+                  <a
+                    href="https://fairdataihub.org/fair-biors"
+                    target="_blank"
+                    rel="noopener"
+                    data-umami-event="About section link"
+                    data-umami-event-text="Learn more FAIR-BioRS guidelines"
+                  >
+                    <p className="text-url hover-underline-animation">
+                      Learn more about the FAIR-BioRS guidelines
+                      <svg
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        className="arrow-animate ml-2 h-4 w-4"
+                        viewBox="0 0 24 24"
+                        data-v-6a723fb6=""
+                      >
+                        <path
+                          d="M5 12h14M12 5l7 7-7 7"
+                          data-v-6a723fb6=""
+                        ></path>
+                      </svg>
+                    </p>
+                  </a>
+                </div>
               </div>
             </dd>
           </div>
@@ -145,18 +171,17 @@ export default function About() {
                 <Icon icon="ep:guide" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                Who should use codefair?
+                How does codefair help?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                Currently, codefair helps make software FAIR by following the
-                FAIR Biomedical Research software (FAIR-BioRS) guidelines.
-                Therefore it is design mainly for biomedical research software.
-                However, most of the steps of the FAIR-BioRS guidelines are
-                applicable to any research software irrespective of the field of
-                research. Therefore, anyone developing a research software can
-                use codefair.
+                Just install codefair from the GitHub marketplace on your
+                software’s GitHub repository. By communicating with you through
+                GitHub issues and submitting pull requests, codefair will then
+                make sure that your software follows best coding practices,
+                provides metadata in standard format, includes a license file,
+                and much more to align with the FAIR4RS principles.
               </div>
             </dd>
           </div>

@@ -36,9 +36,10 @@ export default function Info() {
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
                     The codefair application is maintained in a GitHub
-                    repository and are developed in an open and transparent
-                    manner. We are always open for contributions from the
-                    community.
+                    repository and is developed in an open and transparent
+                    manner. It ingenuily combines Probot, a serverless
+                    environment on Vercel, and the Octokit library. We are
+                    always open for contributions from the community.
                   </p>
                   <div className="mt-3 flex text-accent">
                     <a

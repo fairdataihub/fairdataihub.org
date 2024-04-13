@@ -144,7 +144,7 @@ export default function About() {
                 How do the FAIR-BioRS guidelines help?
               </p>
             </dt>
-            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="https://doi.org/10.1038/s41597-022-01710-xtext-black ml-16 mt-2 font-asap text-lg sm:text-base md:mt-0">
               <div>
                 We established the FAIR Biomedical Research Software
                 (FAIR-BioRS) guideline, which are clear, actionable, and
