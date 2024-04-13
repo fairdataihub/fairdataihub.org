@@ -1,9 +1,8 @@
 ## [2.35.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.0...v2.35.1) (2024-04-13)
 
-
 ### Bug Fixes
 
-* 🐛 codefair project page ([f6d06f9](https://github.com/fairdataihub/fairdataihub.org/commit/f6d06f9debf6456841711d722486463b4e41da40))
+- 🐛 codefair project page ([f6d06f9](https://github.com/fairdataihub/fairdataihub.org/commit/f6d06f9debf6456841711d722486463b4e41da40))
 
 # [2.35.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.34.0...v2.35.0) (2024-04-10)
 
