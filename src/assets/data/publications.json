@@ -138,9 +138,9 @@
   {
     "project": ["codefair"],
     "url": "https://github.com/fairdataihub/codefair-app",
-    "title": "CodeFair",
+    "title": "codefair",
     "subtitle": "",
-    "citation": "CodeFair. (2024). https://github.com/fairdataihub/codefair-app",
+    "citation": "codefair. (2024). https://github.com/fairdataihub/codefair-app",
     "type": "Software"
   },
   {

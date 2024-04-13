@@ -1,9 +1,19 @@
 export default function Timeline() {
   const timelineList = [
     {
-      longDate: `April 2024`,
-      title: `Birth of Codefair`,
-      content: `The first prototype of Codefair is developed for demo purpose by the FAIR Data Innovations Hub.`,
+      longDate: `December 2022`,
+      title: `Birth of codefair`,
+      content: `The concept of codefair of is mapped out by the FAIR Data Innovations Hub.`,
+    },
+    {
+      longDate: `March 2024`,
+      title: `First version released`,
+      content: `The first version of codefair is publicly released on the GitHub marketplace.`,
+    },
+    {
+      longDate: `April 2024 - Present`,
+      title: `Continued development`,
+      content: `Features are added to codefair for helping researchers with all requirements of making software FAIR.`,
     },
   ];
 
