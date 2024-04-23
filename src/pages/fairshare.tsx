@@ -2,11 +2,25 @@ import About from '@/components/fairshare/about';
 import Hero from '@/components/fairshare/hero';
 // import Impact from '@/components/fairshare/impact';
 import Info from '@/components/fairshare/info';
-import Timeline from '@/components/fairshare/timeline';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
+import Timeline from '@/components/ui/timeline';
 
 import PublicationsJSON from '@/assets/data/publications.json';
+
+const timelineList = [
+  {
+    longDate: `November 2020`,
+    title: `Birth of FAIRshare`,
+    content: `The first prototype of FAIRshare is developed for demo purpose by the FAIR Data Innovations Hub.`,
+  },
+  {
+    longDate: `September 2021 - Aug 2022`,
+    title: `Phase I development`,
+    content: `The base framework of the software will be developed and support will be provided for COVID-19
+    and other infectious diseases related data types (genomics, immunology, etc.) and software.`,
+  },
+];
 
 const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
@@ -21,17 +35,21 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       <section className="bg-white py-10 pt-16">
         <Hero />
       </section>
+
       <section className="bg-gray-50 py-10 pt-16">
         <About />
       </section>
+
       {/* <section className="bg-white py-10 pt-16">
         <Impact />
       </section> */}
+
       <section className="bg-white py-10 pt-16">
         <Info />
       </section>
+
       <section className="bg-gray-50 py-10 pt-16">
-        <Timeline />
+        <Timeline timelineList={timelineList} />
       </section>
 
       <section className="bg-white py-10 ">

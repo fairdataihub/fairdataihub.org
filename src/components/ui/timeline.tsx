@@ -1,12 +1,6 @@
-export default function Timeline() {
-  const timelineList = [
-    {
-      longDate: `September 2022 - Aug 2023`,
-      title: `Year 1 development`,
-      content: `The base framework of fairhub.io will be developed and support will be provided uploading data, structuring high-level data and metadata, and sharing data.`,
-    },
-  ];
+import { Icon } from '@iconify/react';
 
+const Timeline: React.FC<TimelineItemList> = ({ timelineList }) => {
   return (
     <section>
       <div className="container mx-auto h-full w-full max-w-screen-lg pl-2 pr-3 sm:px-10">
@@ -26,32 +20,17 @@ export default function Timeline() {
                   )}
                   <div className="relative z-10 inline-flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-light-accent text-white">
                     {index != timelineList.length - 1 ? (
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        className="h-5 w-5"
-                        viewBox="0 0 24 24"
-                        v-if="index != timelineList.length - 1"
-                      >
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                      </svg>
+                      <Icon
+                        icon="pepicons-pencil:checkmark-outlined"
+                        width="1.5rem"
+                        height="1.5rem"
+                      />
                     ) : (
-                      <svg
-                        fill="none"
-                        stroke="currentColor"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        className="h-5 w-5"
-                        viewBox="0 0 24 24"
-                        v-if="index == timelineList.length - 1"
-                      >
-                        <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
-                        <path d="M22 4L12 14.01l-3-3"></path>
-                      </svg>
+                      <Icon
+                        icon="f7:waveform-path-ecg"
+                        width="1.5rem"
+                        height="1.5rem"
+                      />
                     )}
                   </div>
                   <div className="flex-grow pl-4">
@@ -70,4 +49,6 @@ export default function Timeline() {
       </div>
     </section>
   );
-}
+};
+
+export default Timeline;
