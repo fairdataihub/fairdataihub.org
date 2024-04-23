@@ -9,3 +9,13 @@ interface PublicationsItem {
 interface PublicationsItemList {
   publications: PublicationsItem[];
 }
+
+interface TimelineItem {
+  longDate: string;
+  title: string;
+  content: string;
+}
+
+interface TimelineItemList {
+  timelineList: TimelineItem[];
+}
