@@ -196,33 +196,6 @@ const TEAM_JSON = [
     },
   },
   {
-    id: `Ligia-Amezcua`,
-    name: `Ligia Amezcua (she/her)`,
-    title: `Director of Finance and Administration`,
-    bio: `Ligia is a native of San Diego. She joined Calmi2 in September of 2014 and is responsible for financial management, accounting, budgeting, internal controls, and federal compliance. Ligia’s primary focus is to mentor the administrative staff, to work proudly, and professionally to support the research.`,
-    image: `/images/people/ligia-full.jpg`,
-    width: 960,
-    height: 1280,
-    borderTop: true,
-    borderBottom: false,
-    education: [
-      `M.B.A in Global Management (University of Phoenix, 2012)`,
-      `B.B.A. in Management (University of Redlands, 2000)`,
-    ],
-    twitter: {
-      show: false,
-      link: `https://twitter.com/`,
-    },
-    github: {
-      show: false,
-      link: `https://github.com/`,
-    },
-    linkedin: {
-      show: true,
-      link: `https://www.linkedin.com/in/ligia-amezcua-82a43267/`,
-    },
-  },
-  {
     id: `Krista-Scrivner`,
     name: `Krista Scrivner (she/her)`,
     title: `Contract and Grant Manager`,
