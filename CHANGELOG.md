@@ -1,3 +1,11 @@
+## [2.35.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.1...v2.35.2) (2024-04-27)
+
+
+### Bug Fixes
+
+* 🐛 codefair page typo ([f333113](https://github.com/fairdataihub/fairdataihub.org/commit/f333113aad38ad4146f6df2234b80a8106b106f6))
+* 🐛 remove Ligia's profile ([8e982ca](https://github.com/fairdataihub/fairdataihub.org/commit/8e982ca6c529f8bc5cb1d5c954fc7b0f3859018e))
+
 ## [2.35.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.0...v2.35.1) (2024-04-13)
 
 ### Bug Fixes
