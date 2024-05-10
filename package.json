@@ -52,7 +52,7 @@
     "cookies-next": "2.1.2",
     "date-fns": "^2.30.0",
     "dayjs": "1.11.10",
-    "formik": "2.4.5",
+    "formik": "2.4.6",
     "gray-matter": "4.0.3",
     "lucide-react": "^0.279.0",
     "markdown-it": "13.0.2",
