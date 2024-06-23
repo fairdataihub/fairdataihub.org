@@ -1,9 +1,8 @@
 ## [2.35.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.3...v2.35.4) (2024-06-18)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency next to v14 [security] ([#626](https://github.com/fairdataihub/fairdataihub.org/issues/626)) ([bac29ab](https://github.com/fairdataihub/fairdataihub.org/commit/bac29abfd939bc0279fc197d81098d6033d95180))
+- **deps:** update dependency next to v14 [security] ([#626](https://github.com/fairdataihub/fairdataihub.org/issues/626)) ([bac29ab](https://github.com/fairdataihub/fairdataihub.org/commit/bac29abfd939bc0279fc197d81098d6033d95180))
 
 ## [2.35.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.2...v2.35.3) (2024-05-10)
 
