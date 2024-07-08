@@ -62,10 +62,20 @@
     "@citation-js/plugin-wikidata" "^0.7.10"
     commander "^11.0.0"
 
-"@citation-js/core@0.7.9", "@citation-js/core@^0.7.9":
+"@citation-js/core@0.7.9":
   version "0.7.9"
   resolved "https://registry.yarnpkg.com/@citation-js/core/-/core-0.7.9.tgz#9c6ff98de766502d23ade38a21de2794a242b80a"
   integrity sha512-fSbkB32JayDChZnAYC/kB+sWHRvxxL7ibVetyBOyzOc+5aCnjb6UVsbcfhnkOIEyAMoRRvWDyFmakEoTtA5ttQ==
+  dependencies:
+    "@citation-js/date" "^0.5.0"
+    "@citation-js/name" "^0.4.2"
+    fetch-ponyfill "^7.1.0"
+    sync-fetch "^0.4.1"
+
+"@citation-js/core@^0.7.9":
+  version "0.7.14"
+  resolved "https://registry.yarnpkg.com/@citation-js/core/-/core-0.7.14.tgz#769e6734ed0c470ff2258f8682ccdd7f5cf94913"
+  integrity sha512-dgeGqYDSQmn2MtnWZkwPGpJQPh43yr1lAAr9jl1NJ9pIY1RXUQxtlAUZVur0V9PHdbfQC+kkvB1KC3VpgVV3MA==
   dependencies:
     "@citation-js/date" "^0.5.0"
     "@citation-js/name" "^0.4.2"
@@ -99,10 +109,18 @@
     "@citation-js/name" "^0.4.2"
     moo "^0.5.1"
 
-"@citation-js/plugin-csl@0.7.9", "@citation-js/plugin-csl@^0.7.9":
+"@citation-js/plugin-csl@0.7.9":
   version "0.7.9"
   resolved "https://registry.yarnpkg.com/@citation-js/plugin-csl/-/plugin-csl-0.7.9.tgz#e2f82b02e8ef0266a42da659d2bbe5a3898af80c"
   integrity sha512-mbD7CnUiPOuVnjeJwo+d0RGUcY0PE8n01gHyjq0qpTeS42EGmQ9+LzqfsTUVWWBndTwc6zLRuIF1qFAUHKE4oA==
+  dependencies:
+    "@citation-js/date" "^0.5.0"
+    citeproc "^2.4.6"
+
+"@citation-js/plugin-csl@^0.7.9":
+  version "0.7.14"
+  resolved "https://registry.yarnpkg.com/@citation-js/plugin-csl/-/plugin-csl-0.7.14.tgz#1ec58aea858e7981539220a7c92d3f68fff8f98c"
+  integrity sha512-7AKB8lMz1IqdtoE33NnWIpteLYMuSl3xqT+Cax7sQKwAIJEoq2HBmb43Ja8xQQ36nREAupQJv1V6XksIAmYnCg==
   dependencies:
     "@citation-js/date" "^0.5.0"
     citeproc "^2.4.6"
