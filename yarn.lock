@@ -534,14 +534,14 @@
   dependencies:
     "@lit-labs/ssr-dom-shim" "^1.0.0"
 
-"@lottiefiles/lottie-player@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@lottiefiles/lottie-player/-/lottie-player-2.0.2.tgz#1c882b2c6b99c2a94e81773bb0fc0f163cefd674"
-  integrity sha512-R9WF2/gFboZ0GW3QjqtbZF94JQq8oI1t5XWZPtTypvk2xTizphybZu+c08QFQbqY6rnkazHIyRBj2MK0qr6Hrw==
+"@lottiefiles/lottie-player@2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@lottiefiles/lottie-player/-/lottie-player-2.0.4.tgz#8dc825bbf83c9a5e3f232c019746c71818532df1"
+  integrity sha512-OU3HxAt7noWr+kzf59paS7/f4+IT1EupJIsf4h3RxsbljDaRtCunanIjchprNFYHdG+SobnyxwWKtvTDxjI5jg==
   dependencies:
     "@types/pako" "^1.0.1"
     lit "^2.1.2"
-    lottie-web "^5.10.0"
+    lottie-web "^5.12.2"
     pako "^2.0.4"
     resize-observer-polyfill "^1.5.1"
 
@@ -6120,7 +6120,7 @@ loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.4.0:
   dependencies:
     js-tokens "^3.0.0 || ^4.0.0"
 
-lottie-web@^5.10.0, lottie-web@^5.7.6:
+lottie-web@^5.12.2, lottie-web@^5.7.6:
   version "5.12.2"
   resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.12.2.tgz#579ca9fe6d3fd9e352571edd3c0be162492f68e5"
   integrity sha512-uvhvYPC8kGPjXT3MyKMrL3JitEAmDMp30lVkuq/590Mw9ok6pWcFCwXJveo0t5uqYw1UREQHofD+jVpdjBv8wg==
