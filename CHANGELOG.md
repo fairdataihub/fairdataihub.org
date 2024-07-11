@@ -1,9 +1,8 @@
 ## [2.35.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.4...v2.35.5) (2024-07-09)
 
-
 ### Bug Fixes
 
-* **deps:** update citation-js monorepo to v0.7.14 ([#632](https://github.com/fairdataihub/fairdataihub.org/issues/632)) ([140faa3](https://github.com/fairdataihub/fairdataihub.org/commit/140faa38e24694f9c4d59944e2aaa4414072ced0))
+- **deps:** update citation-js monorepo to v0.7.14 ([#632](https://github.com/fairdataihub/fairdataihub.org/issues/632)) ([140faa3](https://github.com/fairdataihub/fairdataihub.org/commit/140faa38e24694f9c4d59944e2aaa4414072ced0))
 
 ## [2.35.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.3...v2.35.4) (2024-06-18)
 
