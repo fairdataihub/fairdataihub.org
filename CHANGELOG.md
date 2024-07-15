@@ -1,3 +1,11 @@
+## [2.35.7](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.6...v2.35.7) (2024-07-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency citation-js to v0.7.14 ([#634](https://github.com/fairdataihub/fairdataihub.org/issues/634)) ([15997d3](https://github.com/fairdataihub/fairdataihub.org/commit/15997d38bd48d73ef2d9d7159487eb6420e69495))
+* **deps:** update dependency clsx to v2.1.1 ([#635](https://github.com/fairdataihub/fairdataihub.org/issues/635)) ([3b15ffc](https://github.com/fairdataihub/fairdataihub.org/commit/3b15ffc98e86c5e9ae4e73dc72dbf099d62b5d8e))
+
 ## [2.35.6](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.5...v2.35.6) (2024-07-11)
 
 ### Bug Fixes
