@@ -1,9 +1,8 @@
 ## [2.35.10](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.9...v2.35.10) (2024-07-25)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency react-spring to v9.7.4 ([#642](https://github.com/fairdataihub/fairdataihub.org/issues/642)) ([6f96057](https://github.com/fairdataihub/fairdataihub.org/commit/6f960577c7d31fa4d68ef9f686116ca67ad36988))
+- **deps:** update dependency react-spring to v9.7.4 ([#642](https://github.com/fairdataihub/fairdataihub.org/issues/642)) ([6f96057](https://github.com/fairdataihub/fairdataihub.org/commit/6f960577c7d31fa4d68ef9f686116ca67ad36988))
 
 ## [2.35.9](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.8...v2.35.9) (2024-07-23)
 
