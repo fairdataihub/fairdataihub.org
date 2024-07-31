@@ -32,11 +32,10 @@ export default function Seo(props: SeoProps) {
 
   meta[`url`] = props.templateUrl || meta.url;
 
-  meta[
-    `image`
-  ] = `https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
-    meta.title,
-  )}&org=fairdataihub&description=${encodeURIComponent(meta.description)}`;
+  meta[`image`] =
+    `https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=${encodeURIComponent(
+      meta.title,
+    )}&org=fairdataihub&description=${encodeURIComponent(meta.description)}`;
 
   return (
     <Head>
