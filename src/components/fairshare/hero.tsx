@@ -72,7 +72,7 @@ export default function Hero() {
                 data-umami-event="Hero button"
                 data-umami-event-text="FAIRshare Documentation"
               >
-                <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 ">
+                <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600">
                   Explore the docs
                 </button>
               </a>

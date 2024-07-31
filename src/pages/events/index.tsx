@@ -37,7 +37,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
-      <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
+      <div className="mb-5 px-2 pt-5 sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
           Events
         </h1>
@@ -59,7 +59,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
             key={title}
             className="mb-2 flex w-full flex-col md:flex-row"
           >
-            <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm  md:px-7 md:py-5">
+            <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:px-7 md:py-5">
               <div className="mb-1 flex flex-row items-center justify-between md:hidden">
                 <div className="my-2 flex items-center space-x-2">
                   <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">

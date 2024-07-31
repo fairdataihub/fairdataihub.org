@@ -26,7 +26,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="flex w-full flex-col gap-5 ">
+            <div className="flex w-full flex-col gap-5">
               <Link href="/sodaforsparc">
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
@@ -40,7 +40,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       SODA (Software to Organize Data Automatically) for SPARC
                       is a cross-platform desktop software that allows
                       SPARC-funded researchers to easily comply with the FAIR
@@ -80,7 +80,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       AI-READI is one of the data generation projects funded by
                       the National Institutes of Health (NIH)&apos;s Bridge2AI
                       Program. The AI-READI project is structured into six
@@ -113,7 +113,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       Minimal and actionable step-by-step guidelines for making
                       biomedical research software reusable in line with the
                       FAIR4RS principles.
@@ -143,7 +143,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       Codefair is a automated GitHub app that helps you make
                       your research software reusable and especially complying
                       with the Findable, Accessible, Interoperable, Reusable
@@ -174,7 +174,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       FAIRshare is a cross-platform desktop software that allows
                       researchers to easily organize and share their biomedical
                       data and software according to applicable FAIR guidelines.
@@ -209,7 +209,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       KnowMore is a tool readily integrable into the SPARC
                       Portal that allows to find potential relation, difference,
                       and similarities between multiple SPARC datasets in just a
@@ -242,7 +242,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       SPARClink provides a system that queries all external
                       publications using open source tools and platforms to
                       create interactable visualizations that showcases the
@@ -274,7 +274,7 @@ export default function Home() {
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg  text-black">
+                    <p className="w-full font-asap text-lg text-black">
                       AQUA (Advanced Query Architecture for the SPARC Portal) an
                       application that aims at improving the search capabilities
                       of the SPARC Portal.

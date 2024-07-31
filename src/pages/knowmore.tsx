@@ -25,11 +25,11 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
           <About />
         </section>
 
-        <section className="bg-gray-50 py-10 ">
+        <section className="bg-gray-50 py-10">
           <Info />
         </section>
 
-        <section className="bg-white py-10 ">
+        <section className="bg-white py-10">
           <PublicationsList publications={publications} />
         </section>
       </>

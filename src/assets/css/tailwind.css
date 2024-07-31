@@ -40,7 +40,7 @@
   }
 
   .text-url {
-    @apply inline-flex  items-center text-lg text-accent;
+    @apply inline-flex items-center text-lg text-accent;
   }
 
   .hover-underline-animation:after {

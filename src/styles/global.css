@@ -95,7 +95,7 @@
   }
 
   .text-url {
-    @apply inline-flex  items-center text-lg text-accent;
+    @apply inline-flex items-center text-lg text-accent;
   }
 
   .hover-underline-animation:after {
@@ -145,7 +145,7 @@
     @apply w-10 rounded bg-pink-300 transition-all hover:bg-pink-500;
   }
   .swiper-pagination-bullet-active {
-    @apply bg-light-accent  transition-all;
+    @apply bg-light-accent transition-all;
   }
   .swiper-slide .thumbnail {
     @apply flex h-[100px] w-[200px] scale-75 cursor-pointer items-center justify-center grayscale transition-all hover:scale-90;

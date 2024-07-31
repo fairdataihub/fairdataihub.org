@@ -34,7 +34,7 @@ const Blog: React.FC<BlogProps> = ({ blogList }) => {
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
-      <div className="mb-5 px-2 pt-5  sm:pt-0 md:px-7">
+      <div className="mb-5 px-2 pt-5 sm:pt-0 md:px-7">
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
           Latest Updates
         </h1>

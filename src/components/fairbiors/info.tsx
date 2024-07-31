@@ -230,7 +230,7 @@ export default function Info() {
                         data-umami-event="Collaborator link"
                         data-umami-event-value={collaborator.id}
                       >
-                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200 ">
+                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
                           {collaborator.type === `person` ? (
                             <div className="relative h-[135px] w-[135px]">
                               <Image
