@@ -62,7 +62,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
         <Timeline timelineList={timelineList} />
       </section>
 
-      <section className="bg-white py-10 ">
+      <section className="bg-white py-10">
         <PublicationsList publications={publications} />
       </section>
     </>

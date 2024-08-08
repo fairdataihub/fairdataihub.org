@@ -189,7 +189,7 @@ export default function Info() {
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
-            <h1 className="py-5 text-left text-4xl font-black  md:mr-8 md:py-0">
+            <h1 className="py-5 text-left text-4xl font-black md:mr-8 md:py-0">
               Funding
             </h1>
             <div className="w-full py-2">
@@ -234,7 +234,7 @@ export default function Info() {
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
-            <h1 className="pb-5 text-left text-4xl font-black  md:mr-8">
+            <h1 className="pb-5 text-left text-4xl font-black md:mr-8">
               Team Members
             </h1>
             <div className="w-full">
@@ -294,7 +294,7 @@ export default function Info() {
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
-            <h1 className="pb-5 text-left text-4xl font-black  md:mr-8">
+            <h1 className="pb-5 text-left text-4xl font-black md:mr-8">
               Research Partners
             </h1>
             <div className="w-full py-2">
@@ -327,7 +327,7 @@ export default function Info() {
                         data-umami-event="Collaborator link"
                         data-umami-event-value={collaborator.id}
                       >
-                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200 ">
+                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
                           {collaborator.type === `person` ? (
                             <div className="relative h-[135px] w-[135px]">
                               <Image

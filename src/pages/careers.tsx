@@ -19,7 +19,7 @@ export default function Careers() {
       <div className="relative">
         <section className="mb-10 pt-12 sm:pt-16">
           <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
-            <div className="w-full p-2 lg:w-7/12 ">
+            <div className="w-full p-2 lg:w-7/12">
               <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
                 Join our wonderful team!
               </h1>
@@ -55,7 +55,7 @@ export default function Careers() {
       </div>
 
       <section className="relative py-20">
-        <div className="container mx-auto max-w-screen-xl px-6 ">
+        <div className="container mx-auto max-w-screen-xl px-6">
           <div className="h-full w-full p-2">
             <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
               Open Positions

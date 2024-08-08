@@ -225,7 +225,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <hr className=" h-[1px] border-none border-gray-200 bg-gray-200 text-gray-200" />
+        <hr className="h-[1px] border-none border-gray-200 bg-gray-200 text-gray-200" />
 
         <div className="mt-3 flex h-full flex-col items-center justify-center space-x-0 space-y-4 divide-x-2 divide-none divide-gray-200 py-5 md:flex-row md:space-x-4 md:space-y-0 md:divide-solid">
           <div className="text-center text-gray-500">
@@ -233,7 +233,7 @@ export default function Footer() {
             <p> All rights reserved. </p>
           </div>
 
-          <div className=" mt-0  flex flex-row items-center justify-center">
+          <div className="mt-0 flex flex-row items-center justify-center">
             <a
               href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
               target="_blank"

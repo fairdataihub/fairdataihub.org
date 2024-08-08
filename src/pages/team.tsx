@@ -283,12 +283,12 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       templateUrl="https://fairdataihub.org/team"
     />
 
-    <section className=" mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row">
+    <section className="mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row">
       <div className="mx-auto flex w-11/12 flex-col lg:flex-row">
         <div className="w-full p-5 lg:w-1/3">
           <div className="sticky top-[80px]">
             <h1 className="py-2 text-4xl font-black sm:text-3xl">About Us</h1>
-            <p className=" font-asap text-xl text-black sm:text-lg">
+            <p className="font-asap text-xl text-black sm:text-lg">
               FAIR Data Innovations Hub is a division of the California Medical
               Innovations Institute (CalMI<sup>2</sup>), a non profit biomedical
               research organization located in San Diego, California. We have a

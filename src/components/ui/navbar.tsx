@@ -12,7 +12,7 @@ export default function Navbar() {
 
   return (
     <nav className="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
-      <div className=" flex flex-row items-center justify-between bg-gray-50 px-5 py-3">
+      <div className="flex flex-row items-center justify-between bg-gray-50 px-5 py-3">
         <Link href="/" aria-label="Homepage" passHref>
           <svg
             id="a"
@@ -168,7 +168,7 @@ export default function Navbar() {
                 className={
                   `nav-item hover-underline-animation` +
                   (router.pathname === `/projects`
-                    ? ` router-link-active `
+                    ? ` router-link-active`
                     : ` `)
                 }
                 data-umami-event="Navigation link"
@@ -183,7 +183,7 @@ export default function Navbar() {
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/team` ? ` router-link-active ` : ` `)
+                  (router.pathname === `/team` ? ` router-link-active` : ` `)
                 }
                 data-umami-event="Navigation link"
                 data-umami-event-location="Header"
@@ -197,7 +197,7 @@ export default function Navbar() {
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/impact` ? ` router-link-active ` : ` `)
+                  (router.pathname === `/impact` ? ` router-link-active` : ` `)
                 }
                 data-umami-event="Navigation link"
                 data-umami-event-location="Header"
@@ -211,7 +211,7 @@ export default function Navbar() {
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/blog` ? ` router-link-active ` : ` `)
+                  (router.pathname === `/blog` ? ` router-link-active` : ` `)
                 }
                 data-umami-event="Navigation link"
                 data-umami-event-location="Header"
@@ -225,7 +225,7 @@ export default function Navbar() {
               <div
                 className={
                   `nav-item hover-underline-animation` +
-                  (router.pathname === `/events` ? ` router-link-active ` : ` `)
+                  (router.pathname === `/events` ? ` router-link-active` : ` `)
                 }
                 data-umami-event="Navigation link"
                 data-umami-event-location="Header"
@@ -239,7 +239,7 @@ export default function Navbar() {
               id="our-projects-container"
               className="group relative hidden rounded-lg"
             >
-              <button className=" mx-1 flex flex-row items-center border-none py-2 font-medium sm:px-1 lg:px-3">
+              <button className="mx-1 flex flex-row items-center border-none py-2 font-medium sm:px-1 lg:px-3">
                 <div className="flex w-max flex-row items-center justify-center">
                   Our Projects
                   <svg
@@ -271,7 +271,7 @@ export default function Navbar() {
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/sodaforsparc`
-                            ? ` router-link-active `
+                            ? ` router-link-active`
                             : ` `)
                         }
                         data-umami-event="Navigation link"
@@ -288,7 +288,7 @@ export default function Navbar() {
                         className={
                           `nav-item hover-underline-animation mt-2 w-[200px]` +
                           (router.pathname === `/aireadi`
-                            ? ` router-link-active `
+                            ? ` router-link-active`
                             : ` `)
                         }
                         data-umami-event="Navigation link"
@@ -305,7 +305,7 @@ export default function Navbar() {
                         className={
                           `nav-item hover-underline-animation mt-2 w-[200px]` +
                           (router.pathname === `/fairshare`
-                            ? ` router-link-active `
+                            ? ` router-link-active`
                             : ` `)
                         }
                         data-umami-event="Navigation link"
@@ -322,7 +322,7 @@ export default function Navbar() {
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/knowmore`
-                            ? ` router-link-active `
+                            ? ` router-link-active`
                             : ` `)
                         }
                         data-umami-event="Navigation link"
@@ -339,7 +339,7 @@ export default function Navbar() {
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/sparclink`
-                            ? ` router-link-active `
+                            ? ` router-link-active`
                             : ` `)
                         }
                         data-umami-event="Navigation link"
@@ -356,7 +356,7 @@ export default function Navbar() {
                         className={
                           `nav-item hover-underline-animation mt-2` +
                           (router.pathname === `/aqua`
-                            ? ` router-link-active `
+                            ? ` router-link-active`
                             : ` `)
                         }
                         data-umami-event="Navigation link"
@@ -376,7 +376,7 @@ export default function Navbar() {
                 className={
                   `nav-item hover-underline-animation` +
                   (router.pathname === `/contact-us`
-                    ? ` router-link-active `
+                    ? ` router-link-active`
                     : ` `)
                 }
                 data-umami-event="Navigation link"
@@ -401,21 +401,21 @@ export default function Navbar() {
                 aria-hidden="true"
                 className={
                   `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
-                  (isOpen ? `rotate-45 ` : `-translate-y-1.5 `)
+                  (isOpen ? `rotate-45` : `-translate-y-1.5`)
                 }
               ></span>
               <span
                 aria-hidden="true"
                 className={
                   `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
-                  (isOpen ? `opacity-0 ` : ` `)
+                  (isOpen ? `opacity-0` : ` `)
                 }
               ></span>
               <span
                 aria-hidden="true"
                 className={
                   `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
-                  (isOpen ? `-rotate-45 ` : `translate-y-1.5 `)
+                  (isOpen ? `-rotate-45` : `translate-y-1.5`)
                 }
               ></span>
             </div>

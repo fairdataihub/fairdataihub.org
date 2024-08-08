@@ -23,7 +23,7 @@ const postEntry: React.FC<PostEntryProps> = ({
   return (
     <article key={title} className="mb-2 flex w-full flex-col md:flex-row">
       {/* Left panel */}
-      <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5 ">
+      <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5">
         <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
           {dayjs(date).format(`MMMM D, YYYY`)}
         </h3>
@@ -53,12 +53,12 @@ const postEntry: React.FC<PostEntryProps> = ({
           </Link>
         )}
 
-        <div className="mb-1 flex flex-row items-center justify-between md:hidden ">
-          <h4 className="text-base font-medium text-slate-600 ">
+        <div className="mb-1 flex flex-row items-center justify-between md:hidden">
+          <h4 className="text-base font-medium text-slate-600">
             {dayjs(date).format(`MMMM D, YYYY`)}
           </h4>
 
-          <span className=" text-sm text-gray-600">{timeToRead} min read</span>
+          <span className="text-sm text-gray-600">{timeToRead} min read</span>
         </div>
 
         <hr className="my-1 border-dashed border-slate-200 md:hidden" />
@@ -69,7 +69,7 @@ const postEntry: React.FC<PostEntryProps> = ({
           </h2>
         </Link>
 
-        <p className="mb-3 mt-2 ">{subtitle}</p>
+        <p className="mb-3 mt-2">{subtitle}</p>
 
         <div className="flex w-full flex-col justify-between md:flex-row">
           <div className="mb-2 flex flex-row items-center text-sm md:mb-0">

@@ -10,7 +10,7 @@ interface FuncProps {
 
 const Categories: React.FC<FuncProps> = ({ categoriesList }) => {
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col  overflow-hidden  px-5   sm:px-10 sm:py-10">
+    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
         templateTitle="Categories"
         templateUrl="https://fairdataihub.org/category"
@@ -25,7 +25,7 @@ const Categories: React.FC<FuncProps> = ({ categoriesList }) => {
         <h2>All topics published by the FAIR Data Innovations Hub</h2>
       </div>
 
-      <div className="mb-2 flex w-full flex-col px-2 py-3  md:px-7 md:py-5 ">
+      <div className="mb-2 flex w-full flex-col px-2 py-3 md:px-7 md:py-5">
         <ul className="flex flex-col">
           {categoriesList.map((category) => {
             return (

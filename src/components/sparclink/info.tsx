@@ -103,7 +103,7 @@ export default function Info() {
                     <a
                       href="https://github.com/fairdataihub/SPARClink/blob/master/LICENSE"
                       target="_blank"
-                      className=" mr-2"
+                      className="mr-2"
                       data-umami-event="Badge"
                       data-umami-event-project="SPARClink"
                       data-umami-event-type="License"

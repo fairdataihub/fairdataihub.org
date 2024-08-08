@@ -12,7 +12,7 @@ export default function Hero() {
             height={500}
           />
         </div>
-        <div className="absolute bottom-1 right-5 z-0 hidden w-40 opacity-60 sm:bottom-12 ">
+        <div className="absolute bottom-1 right-5 z-0 hidden w-40 opacity-60 sm:bottom-12">
           <Image
             src="/backgrounds/dot-grid-grey.svg"
             alt="Grey grid"

@@ -26,7 +26,7 @@ const publicationsList: React.FC<PublicationsItemList> = ({ publications }) => {
               </p>
 
               {publication.subtitle && (
-                <span className="text-url text-sm font-medium ">
+                <span className="text-url text-sm font-medium">
                   {publication.subtitle}
                 </span>
               )}

@@ -11,7 +11,7 @@ export default function ContactUs() {
         templateUrl="https://fairdataihub.org/contact-us"
       />
 
-      <div className="relative flex items-center justify-center bg-transparent bg-cover bg-no-repeat ">
+      <div className="relative flex items-center justify-center bg-transparent bg-cover bg-no-repeat">
         <div className="area absolute bottom-0 z-0">
           <ul className="circles">
             <li></li>

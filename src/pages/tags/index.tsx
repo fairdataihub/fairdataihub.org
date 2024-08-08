@@ -55,13 +55,13 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">Tags</h1>
       </div>
 
-      <div className="mb-2 flex w-full flex-col px-2 py-3  md:px-7 md:py-5 ">
+      <div className="mb-2 flex w-full flex-col px-2 py-3 md:px-7 md:py-5">
         {Object.keys(tagsWithLetter).map((letter) => {
           return (
             <div className="mb-8 flex w-full flex-col" key={letter}>
               <h2 className="mb-4 text-3xl font-medium">{letter}</h2>
 
-              <div className=" flex w-full flex-row flex-wrap">
+              <div className="flex w-full flex-row flex-wrap">
                 {tagsWithLetter[letter].map(({ tag, count }) => {
                   return (
                     <Link href={`/tags/${tag}`} key={tag} passHref>

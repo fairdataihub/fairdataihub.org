@@ -18,7 +18,7 @@ export default function Home() {
       <div className="relative">
         <section className="mb-10 pt-12 sm:pt-16">
           <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
-            <div className="w-full p-2 lg:w-7/12 ">
+            <div className="w-full p-2 lg:w-7/12">
               <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
                 Simplifying FAIR data practices to empower AI-driven discoveries
               </h1>
@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative mx-auto  max-w-screen-xl px-4 py-20">
+      <section className="relative mx-auto max-w-screen-xl px-4 py-20">
         <div className="mb-8 flex w-full flex-col items-center">
           <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
             What we are cooking
@@ -169,7 +169,7 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6 ">
+        <div className="container mx-auto max-w-screen-xl px-6">
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
@@ -213,7 +213,7 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6 ">
+        <div className="container mx-auto max-w-screen-xl px-6">
           <div className="items-center justify-center md:flex">
             <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
@@ -228,7 +228,7 @@ export default function Home() {
                 Sharing is caring... but also daunting
               </h2>
 
-              <p className="mb-6 mt-8 w-full text-left font-asap text-xl ">
+              <p className="mb-6 mt-8 w-full text-left font-asap text-xl">
                 Sharing FAIR data is not trivial as this involves formatting
                 data into specific file format, organizing data files
                 consistently, including metadata according to applicable
@@ -255,7 +255,7 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6 ">
+        <div className="container mx-auto max-w-screen-xl px-6">
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
@@ -373,7 +373,7 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6 ">
+        <div className="container mx-auto max-w-screen-xl px-6">
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
