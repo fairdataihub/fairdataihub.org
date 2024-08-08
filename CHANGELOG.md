@@ -1,9 +1,8 @@
 # [2.36.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.10...v2.36.0) (2024-08-08)
 
-
 ### Features
 
-* ✨ add additional events ([#651](https://github.com/fairdataihub/fairdataihub.org/issues/651)) ([359b1b1](https://github.com/fairdataihub/fairdataihub.org/commit/359b1b13459443733d6579b50448e80faf14079a))
+- ✨ add additional events ([#651](https://github.com/fairdataihub/fairdataihub.org/issues/651)) ([359b1b1](https://github.com/fairdataihub/fairdataihub.org/commit/359b1b13459443733d6579b50448e80faf14079a))
 
 ## [2.35.10](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.9...v2.35.10) (2024-07-25)
 
