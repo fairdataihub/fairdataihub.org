@@ -16,7 +16,7 @@ const publicationsList: React.FC<PublicationsItemList> = ({ publications }) => {
             <a
               href={publication.url}
               target="_blank"
-              className="my-2"
+              className="my-2 flex flex-col"
               data-umami-event="Publication link"
               data-umami-event-url={publication.url}
               rel="noopener"

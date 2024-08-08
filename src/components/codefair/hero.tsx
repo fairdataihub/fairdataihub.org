@@ -39,9 +39,9 @@ export default function Hero() {
                   rel="noopener"
                   className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
                   data-umami-event="Hero button"
-                  data-umami-event-text="Get codefair"
+                  data-umami-event-text="Get Codefair"
                 >
-                  Get codefair
+                  Get Codefair
                 </a>
               </div>
               <div className="flex flex-row justify-center">

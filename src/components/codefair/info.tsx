@@ -35,7 +35,7 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    The codefair application is maintained in a GitHub
+                    The Codefair application is maintained in a GitHub
                     repository and is developed in an open and transparent
                     manner. It ingenuily combines Probot, a serverless
                     environment on Vercel, and the Octokit library. We are

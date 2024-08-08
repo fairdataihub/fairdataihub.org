@@ -23,7 +23,7 @@ const Impact: React.FC<Props> = ({ publications }) => {
           Impact
         </h1>
         <h2 className="text-left text-xl">
-          Resources created by the FAIR Data Innovations
+          Resources created by the FAIR Data Innovations Hub team
         </h2>
       </div>
 
@@ -51,7 +51,7 @@ const Impact: React.FC<Props> = ({ publications }) => {
                         <a
                           href={item.url}
                           target="_blank"
-                          className="text-url text-base font-medium"
+                          className="text-url w-max text-base font-medium"
                           data-umami-event="Publication link"
                           data-umami-event-url={item.url}
                           rel="noopener"

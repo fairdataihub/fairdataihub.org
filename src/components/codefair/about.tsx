@@ -8,7 +8,7 @@ export default function About() {
           About
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
-          codefair is a free and open source GitHub app that acts as your
+          Codefair is a free and open source GitHub app that acts as your
           personal assistant when it comes to making your research software
           reusable and especially complying with the Findable, Accessible,
           Interoperable, Reusable (FAIR) Principles for Research Software
@@ -171,17 +171,18 @@ export default function About() {
                 <Icon icon="ep:guide" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                How does codefair help?
+                How does Codefair help?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                Just install codefair from the GitHub marketplace on your
-                software’s GitHub repository. By communicating with you through
-                GitHub issues and submitting pull requests, codefair will then
-                make sure that your software follows best coding practices,
-                provides metadata in standard format, includes a license file,
-                and much more to align with the FAIR4RS principles.
+                Just install Codefair from the GitHub marketplace on your
+                software&apos;s GitHub repository. By communicating with you
+                through GitHub issues and submitting pull requests, Codefair
+                will then make sure that your software follows best coding
+                practices, provides metadata in standard format, includes a
+                license file, and much more to align with the FAIR4RS
+                principles.
               </div>
             </dd>
           </div>
