@@ -1,14 +1,6 @@
 [
   {
     "project": ["sodaforsparc"],
-    "url": "https://doi.org/10.21105/joss.06140",
-    "title": "SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data",
-    "subtitle": "",
-    "citation": "Marroquin et al., (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140, https://doi.org/10.21105/joss.06140",
-    "type": "Journal Article"
-  },
-  {
-    "project": ["sodaforsparc"],
     "url": "https://doi.org/10.1101/2021.02.10.430563",
     "title": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
     "subtitle": "",
@@ -80,19 +72,19 @@
     "type": "Preprint"
   },
   {
-    "project": ["sparclink"],
-    "url": "https://doi.org/10.12688/f1000research.75071.1",
-    "title": "SPARClink: an interactive tool to visualize the impact of the SPARC program",
-    "subtitle": "",
-    "citation": "Soundarajan, S., Kuruppu, S., Singh, A., Kim, J., & Achalla, M. (2022). SPARClink: an interactive tool to visualize the impact of the SPARC program. F1000Research, 11, 124. https://doi.org/10.12688/f1000research.75071.1",
-    "type": "Journal Article"
-  },
-  {
     "project": ["aqua"],
     "url": "https://doi.org/10.12688/f1000research.73018.1",
     "title": "AQUA: an Advanced QUery Architecture for the SPARC Portal",
     "subtitle": "",
     "citation": "Shahidi, N., Lin, X., Munarko, Y., Rasmy, L., & Ngo, T. (2021). AQUA: an Advanced QUery Architecture for the SPARC Portal. F1000Research, 10, 930. https://doi.org/10.12688/f1000research.73018.1",
+    "type": "Journal Article"
+  },
+  {
+    "project": ["sparclink"],
+    "url": "https://doi.org/10.12688/f1000research.75071.1",
+    "title": "SPARClink: an interactive tool to visualize the impact of the SPARC program",
+    "subtitle": "",
+    "citation": "Soundarajan, S., Kuruppu, S., Singh, A., Kim, J., & Achalla, M. (2022). SPARClink: an interactive tool to visualize the impact of the SPARC program. F1000Research, 11, 124. https://doi.org/10.12688/f1000research.75071.1",
     "type": "Journal Article"
   },
   {
@@ -176,11 +168,19 @@
     "type": "Software"
   },
   {
-    "project": ["codefair", "sodaforsparc"],
-    "url": "https://doi.org/10.5281/zenodo.13159874",
-    "title": "Making FAIR Fair to the Researchers",
-    "subtitle": "Presented at Force11 Conference - Force2024",
-    "citation": "Patel, B. (2024, August 2). Presentation - Making FAIR Fair to the Researchers (Force11 Conference - Force2024). FORCE11 Annual Conference (FORCE2024), Charles E. Young Research Library, University of California Los Angeles, CA, USA. Zenodo.",
+    "project": ["codefair"],
+    "url": "https://doi.org/10.7490/f1000research.1119824.1",
+    "title": "Codefair: Make biomedical research software FAIR without breaking a sweat",
+    "subtitle": "Slides presented at Bioinformatics Open Source Conference (BOSC), 2024",
+    "citation": "Portillo D, Soundarajan S, Clark J and Patel B. Codefair: Make biomedical research software FAIR without breaking a sweat. F1000Research 2024, 13:912",
     "type": "Conference Presentation"
+  },
+  {
+    "project": ["codefair"],
+    "url": "https://doi.org/10.7490/f1000research.1119823.1",
+    "title": "Codefair - Make biomedical research software FAIR without breaking a sweat",
+    "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
+    "citation": "Portillo D, Soundarajan S, Clark J and Patel B. Codefair - Make biomedical research software FAIR without breaking a sweat. F1000Research 2024, 13:911",
+    "type": "Poster"
   }
 ]
