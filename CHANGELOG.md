@@ -1,9 +1,8 @@
 ## [2.36.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.36.0...v2.36.1) (2024-08-13)
 
-
 ### Bug Fixes
 
-* 🐛 add impact publications ([85ac1fb](https://github.com/fairdataihub/fairdataihub.org/commit/85ac1fbe59c32b8cc41f19d42c4ca0a3dd8a9d6f))
+- 🐛 add impact publications ([85ac1fb](https://github.com/fairdataihub/fairdataihub.org/commit/85ac1fbe59c32b8cc41f19d42c4ca0a3dd8a9d6f))
 
 # [2.36.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.35.10...v2.36.0) (2024-08-08)
 
