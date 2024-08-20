@@ -1,3 +1,11 @@
+## [2.36.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.36.1...v2.36.2) (2024-08-20)
+
+
+### Bug Fixes
+
+* 🐛 add publications ([b72a6c8](https://github.com/fairdataihub/fairdataihub.org/commit/b72a6c805e1afeff42f02bc4feb574b0b41bdddb))
+* add publication ([9e8fbaf](https://github.com/fairdataihub/fairdataihub.org/commit/9e8fbafdb71cdd1c218c5969861c40f709945338))
+
 ## [2.36.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.36.0...v2.36.1) (2024-08-13)
 
 ### Bug Fixes
