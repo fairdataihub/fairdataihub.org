@@ -202,7 +202,7 @@ const TEAM_JSON = [
     bio: `Paapa is originally from Ghana where he had his Pharmacy and Master's degree. He also holds a PhD degree in pharmacology and neuroscience from UNTHSC, Texas. He became a part of the team in 2024. His interest lies in pharmacometrics and computational pharmacology. In his leisure time, he watches soccer (REAL MADRID) and swim.`,
     image: `/images/people/paapa-full.jpg`,
     width: 900,
-    height: 1400,
+    height: 1303,
     borderTop: true,
     borderBottom: false,
     education: [
