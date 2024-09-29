@@ -96,7 +96,7 @@
     "@semantic-release/release-notes-generator": "11.0.7",
     "@tailwindcss/line-clamp": "0.4.4",
     "@tailwindcss/typography": "0.5.14",
-    "@types/node": "18.19.45",
+    "@types/node": "18.19.51",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
     "@typescript-eslint/eslint-plugin": "7.0.1",
