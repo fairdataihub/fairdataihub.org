@@ -5,7 +5,7 @@ endDateTime: '2024-10-10T15:00:00'
 heroImage: 'https://i.imgur.com/KO3ZmU4.jpeg'
 subtitle: 'This lecture, in collaboration with the Grand Challenges (GCs) at Bridge2AI, the Bridge Center Training, Recruitment, and Mentorship Working Group introduces a new education module: “Introduction to the Bridge2AI GC Datasets".'
 type: 'Lecture'
-timeZone: 'Eastern Time'
+timeZone: 'America/New_York'
 location: 'Online'
 ---
 
