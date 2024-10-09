@@ -1,3 +1,10 @@
+# [2.38.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.37.0...v2.38.0) (2024-10-09)
+
+
+### Features
+
+* ✨ added events ([#662](https://github.com/fairdataihub/fairdataihub.org/issues/662)) ([70bdb55](https://github.com/fairdataihub/fairdataihub.org/commit/70bdb55b2d5ff21531dc2be9659b2cc4504cdab0))
+
 # [2.37.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.36.3...v2.37.0) (2024-09-19)
 
 ### Features
