@@ -1,9 +1,8 @@
 # [2.37.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.36.3...v2.37.0) (2024-09-19)
 
-
 ### Features
 
-* ✨ add team member ([#660](https://github.com/fairdataihub/fairdataihub.org/issues/660)) ([6b383e5](https://github.com/fairdataihub/fairdataihub.org/commit/6b383e5a4b5b2fd148c45ff7b1f3afd37dd72f24)), closes [#657](https://github.com/fairdataihub/fairdataihub.org/issues/657)
+- ✨ add team member ([#660](https://github.com/fairdataihub/fairdataihub.org/issues/660)) ([6b383e5](https://github.com/fairdataihub/fairdataihub.org/commit/6b383e5a4b5b2fd148c45ff7b1f3afd37dd72f24)), closes [#657](https://github.com/fairdataihub/fairdataihub.org/issues/657)
 
 ## [2.36.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.36.2...v2.36.3) (2024-09-19)
 
