@@ -1,5 +1,4 @@
 [
-
   {
     "url": "https://doi.org/10.1101/2024.07.29.24310315",
     "title": "Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data",
@@ -168,8 +167,6 @@
     "citation": "Bhavesh Patel, & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
     "type": "Conference Presentations"
   },
-
-
 
   {
     "project": ["aireadi"],
