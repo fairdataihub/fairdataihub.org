@@ -62,7 +62,7 @@
     "citation": "Quey, R., Schiefer, M. A., Kiran, A., & Patel, B. (2021). KnowMore: an automated knowledge discovery tool for the FAIR SPARC datasets. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2021.08.08.455581",
     "type": "Preprints"
   },
-    {
+  {
     "project": ["codefair"],
     "url": "https://github.com/fairdataihub/codefair-app",
     "title": "Codefair",
