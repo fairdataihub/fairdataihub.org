@@ -35,7 +35,7 @@
     "url": "https://doi.org/10.1101/2024.07.29.24310315",
     "title": "Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data",
     "subtitle": "",
-    "citation": "Alavi, A., Cha, K., Esfarjani, D. P., Patel, B., Than, J. L. P., Lee, A. Y., ... & Bahmani, A. (2024). Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data. medRxiv, 2024-07.https://doi.org/10.1101/2024.07.29.24310315",
+    "citation": "Alavi, A., Cha, K., Esfarjani, D. P., Patel, B., Than, J. L. P., Lee, A. Y., ... & Bahmani, A. (2024). Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data. MedRxiv. https://doi.org/10.1101/2024.07.29.24310315",
     "type": "Preprints"
   },
   {
@@ -43,7 +43,7 @@
     "url": "https://doi.org/10.1101/2022.04.18.488694",
     "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
     "subtitle": "",
-    "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2022). Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool. Cold Spring Harbor Laboratory. https://doi.org/10.1101/2022.04.18.488694",
+    "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2022). Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2022.04.18.488694",
     "type": "Preprints"
   },
   {
@@ -51,16 +51,15 @@
     "url": "https://doi.org/10.1101/2021.02.10.430563",
     "title": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
     "subtitle": "",
-    "citation": "Bandrowski, A., Grethe, J. S., Pilko, A., Gillespie, T., Pine, G., Patel, B., Surles-Zeigler, M., & Martone, M. E. (2021). SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. Cold Spring Harbor Laboratory. https://doi.org/10.1101/2021.02.10.430563",
+    "citation": "Bandrowski, A., Grethe, J. S., Pilko, A., Gillespie, T., Pine, G., Patel, B., Surles-Zeigler, M., & Martone, M. E. (2021). SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2021.02.10.430563",
     "type": "Preprints"
   },
-
   {
     "project": ["knowmore"],
     "url": "https://doi.org/10.1101/2021.08.08.455581",
     "title": "KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC Datasets",
     "subtitle": "",
-    "citation": "Quey, R., Schiefer, M. A., Kiran, A., & Patel, B. (2021). KnowMore: an automated knowledge discovery tool for the FAIR SPARC datasets. Cold Spring Harbor Laboratory. https://doi.org/10.1101/2021.08.08.455581",
+    "citation": "Quey, R., Schiefer, M. A., Kiran, A., & Patel, B. (2021). KnowMore: an automated knowledge discovery tool for the FAIR SPARC datasets. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2021.08.08.455581",
     "type": "Preprints"
   },
     {
@@ -90,7 +89,7 @@
   {
     "project": ["aireadi"],
     "url": "https://github.com/AI-READI/pyfairdatatools",
-    "title": "pyfairdatatools",
+    "title": "Pyfairdatatools",
     "subtitle": "",
     "citation": "pyfairdatatools. (started 2022). https://github.com/AI-READI/pyfairdatatools (Development status: Active)",
     "type": "Software"
@@ -116,7 +115,7 @@
     "url": "https://github.com/fairdataihub/SODA-for-SPARC",
     "title": "SODA (Software to Organize Data Automatically) for SPARC",
     "subtitle": "",
-    "citation": "SODA for SPARC. (started 2019). https://github.com/fairdataihub/SODA-for-SPARC (Development status: Active)",
+    "citation": "SODA. (started 2019). https://github.com/fairdataihub/SODA-for-SPARC (Development status: Active)",
     "type": "Software"
   },
   {
@@ -148,7 +147,7 @@
     "url": "https://doi.org/10.7490/f1000research.1119824.1",
     "title": "Codefair: Make biomedical research software FAIR without breaking a sweat",
     "subtitle": "Slides presented at Bioinformatics Open Source Conference (BOSC), 2024",
-    "citation": "Portillo, D., Soundarajan, S., Clark, J., & Patel, B. Codefair: Make biomedical research software FAIR without breaking a sweat. F1000Research 2024, 13:912",
+    "citation": "Portillo, D., Soundarajan, S., Clark, J., & Patel, B. (2024). Codefair: Make biomedical research software FAIR without breaking a sweat (13:912). F1000 Research. https://doi.org/10.7490/f1000research.1119824.1",
     "type": "Conference Presentations"
   },
 
@@ -181,7 +180,7 @@
     "url": "https://doi.org/10.5281/zenodo.13948350",
     "title": "Codefair - Your Personal Assistant for Developing FAIR Software (Poster)",
     "subtitle": "",
-    "citation": "Portillo, D, Soundarajan, S, Clark, J and Patel, B. (2024). Codefair - Your Personal Assistant for Developing FAIR Software (Poster) (1.0.0). Zenodo. https://zenodo.org/records/13948350",
+    "citation": "Portillo, D, Soundarajan, S, Clark, J & Patel, B. (2024). Codefair - Your Personal Assistant for Developing FAIR Software (Poster) (1.0.0). Zenodo. https://zenodo.org/records/13948350",
     "type": "Posters"
   },
   {
@@ -189,7 +188,7 @@
     "url": "https://doi.org/10.7490/f1000research.1119823.1",
     "title": "Codefair - Make biomedical research software FAIR without breaking a sweat",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
-    "citation": "Portillo, D, Soundarajan, S, Clark, J and Patel, B. Codefair - Make biomedical research software FAIR without breaking a sweat. F1000Research 2024, 13:911",
+    "citation": "Portillo, D, Soundarajan, S, Clark, J & Patel, B. (2024). Codefair - Make biomedical research software FAIR without breaking a sweat (13:911). F1000Research. https://doi.org/10.7490/f1000research.1119823.1",
     "type": "Posters"
   },
   {
