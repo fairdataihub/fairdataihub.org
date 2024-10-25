@@ -71,13 +71,12 @@
     "citation": "Shahidi, N., Lin, X., Munarko, Y., Rasmy, L., & Ngo, T. (2021). AQUA: an Advanced QUery Architecture for the SPARC Portal. F1000Research, 10, 930. https://doi.org/10.12688/f1000research.73018.1",
     "type": "Journal Articles"
   },
-
   {
     "project": ["aireadi"],
     "url": "https://doi.org/10.5281/zenodo.13984769",
     "title": "Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster)",
     "subtitle": "",
-    "citation": "Patel, Bhavesh, Soundarajan, Sanjay,Gasimova, Aydan, Gim, Nayoon, Shaffer, Jamie, & Lee, Aaron. (2024). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984769",
+    "citation": "Patel, B., Soundarajan, S.,Gasimova, A., Gim, N., Shaffer,J., & Lee, A. (2024). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984769",
     "type": "Posters"
   },
   {
@@ -85,7 +84,7 @@
     "url": "https://doi.org/10.5281/zenodo.13948350",
     "title": "Codefair - Your Personal Assistant for Developing FAIR Software (Poster)",
     "subtitle": "",
-    "citation": "Portillo, Dorian, Soundarajan, Sanjay, Clark, Jacob, Patel, Bhavesh. (2024). Codefair - Your Personal Assistant for Developing FAIR Software (Poster) (1.0.0). Zenodo. https://zenodo.org/records/13948350",
+    "citation": "Portillo, D, Soundarajan, S, Clark, J and Patel, B. (2024). Codefair - Your Personal Assistant for Developing FAIR Software (Poster) (1.0.0). Zenodo. https://zenodo.org/records/13948350",
     "type": "Posters"
   },
   {
@@ -93,7 +92,7 @@
     "url": "https://doi.org/10.7490/f1000research.1119823.1",
     "title": "Codefair - Make biomedical research software FAIR without breaking a sweat",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
-    "citation": "Portillo D, Soundarajan S, Clark J and Patel B. Codefair - Make biomedical research software FAIR without breaking a sweat. F1000Research 2024, 13:911",
+    "citation": "Portillo, D, Soundarajan, S, Clark, J and Patel, B. Codefair - Make biomedical research software FAIR without breaking a sweat. F1000Research 2024, 13:911",
     "type": "Posters"
   },
   {
@@ -109,7 +108,7 @@
     "url": "https://doi.org/10.7490/f1000research.1119054.1",
     "title": "Making biomedical research software FAIR with FAIRshare",
     "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
-    "citation": "Bhavesh Patel, & Soundarajan, S. (2022). Making biomedical research software FAIR with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119054.1",
+    "citation": "Patel, B., & Soundarajan, S. (2022). Making biomedical research software FAIR with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119054.1",
     "type": "Posters"
   },
   {
@@ -117,7 +116,7 @@
     "url": "https://doi.org/10.5281/zenodo.13984710",
     "title": "Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation)",
     "subtitle": "",
-    "citation": "Lee, Cecilia, Patel, Bhavesh, & Baxter, Sally. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984710",
+    "citation": "Lee, C., Patel, B., & Baxter, S. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984710",
     "type": "Webinars/Lectures"
   },
   {
@@ -125,7 +124,7 @@
     "url": "https://doi.org/10.5281/zenodo.13984755",
     "title": "Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series)",
     "subtitle": "",
-    "citation": "Lee, Cecilia, Patel, Bhavesh, & Baxter, Sally. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984755",
+    "citation": "Lee, C., Patel, B., & Baxter, S. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984755",
     "type": "Webinars/Lectures"
   },
   {
@@ -166,7 +165,7 @@
     "url": "https://doi.org/10.7490/f1000research.1119055.1",
     "title": "Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
-    "citation": "Bhavesh Patel, & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
+    "citation": "Patel, B., & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
     "type": "Conference Presentations"
   },
 
@@ -175,7 +174,7 @@
     "url": "https://zenodo.org/records/13328255",
     "title": "AI-READI Code of Conduct",
     "subtitle": "",
-    "citation": "Lee, Aaron, Owen, Julia, Patel, Bhavesh, Nebeker, Camille, Lee, Cecilia, Zangwill, Linda, Hurst, Samm, Singer, Sara, Li-Pook-Than, Jennifer, & Matthews, Debra. (2024). AI-READI Code of Conduct (2.0). Zenodo. https://zenodo.org/records/13328255",
+    "citation": "Lee, A., Owen, J., Patel, B., Nebeker, C., Lee, C., Zangwill, L., Hurst, S., Singer, S., Li-Pook-Than, J., & Matthews, D. (2024). AI-READI Code of Conduct (2.0). Zenodo. https://zenodo.org/records/13328255",
     "type": "Reports"
   },
   {
@@ -183,7 +182,7 @@
     "url": "https://doi.org/10.5281/zenodo.10642459",
     "title": "License terms for reusing the AI-READI dataset",
     "subtitle": "",
-    "citation": "Contreras, Jorge, Evans, Barbara, Hurst, Samm, Patel, Bhavesh, Mcweeney, Shannon, Lee, Cecilia, & Lee, Aaron (2024).License terms for reusing the AI-READI dataset (1.0). Zenodo. https://doi.org/10.5281/zenodo.10642459",
+    "citation": "Contreras, J., Evans, B., Hurst, S., Patel, B., Mcweeney, S., Lee, C., & Lee, A. (2024). License terms for reusing the AI-READI dataset (1.0). Zenodo. https://doi.org/10.5281/zenodo.10642459",
     "type": "Reports"
   },
   {
@@ -191,7 +190,7 @@
     "url": "https://doi.org/10.5281/zenodo.7641684",
     "title": "AI-READI Steering Committee Charter",
     "subtitle": "",
-    "citation": "Lee, Aaron, Owen, Julia, Patel, Bhavesh, Nebeker, Camille, Lee, Cecilia, Zangwill, Linda, Hurst, Samm, & Singer, Sara. (2023). AI-READI Steering Committee Charter (1.0). Zenodo. https://doi.org/10.5281/zenodo.7641684",
+    "citation": "Lee, A., Owen, J., Patel, B., Nebeker, C., Lee, C., Zangwill, L., Hurst, S., & Singer, S. (2023). AI-READI Steering Committee Charter (1.0). Zenodo. https://doi.org/10.5281/zenodo.7641684",
     "type": "Reports"
   },
   {
@@ -199,7 +198,7 @@
     "url": "https://doi.org/10.5281/zenodo.7363102",
     "title": "Software Development Best Practices of the AI-READI Project",
     "subtitle": "",
-    "citation": "Patel, Bhavesh, Soundarajan, Sanjay, McWeeney, Shannon, Cordier, Benjamin A., & Benton, Erik S. (2022). Software Development Best Practices of the AI-READI Project (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.7363102",
+    "citation": "Patel, B., Soundarajan, S., McWeeney, S., Cordier, B. A., & Benton, E. S. (2022). Software Development Best Practices of the AI-READI Project (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.7363102",
     "type": "Reports"
   },
   {
