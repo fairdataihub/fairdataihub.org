@@ -1,5 +1,6 @@
 [
   {
+    "project": ["aireadi"],
     "url": "https://doi.org/10.1101/2024.07.29.24310315",
     "title": "Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data",
     "subtitle": "",
@@ -40,9 +41,9 @@
     "type": "Abstract"
   },
   {
+    "project": ["sodaforsparc"],
     "title": "SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data",
     "url": "https://doi.org/10.21105/joss.06140",
-    "project": ["sodaforsparc"],
     "citation": "Marroquin et al., (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140, https://doi.org/10.21105/joss.06140",
     "type": "Journal Articles"
   },
@@ -136,6 +137,7 @@
     "type": "Conference Presentations"
   },
   {
+    "project": [],
     "url": "https://zenodo.org/records/13159874",
     "title": "Presentation - Making FAIR Fair to the Researchers (Force11 Conference - Force2024)",
     "subtitle": "",
