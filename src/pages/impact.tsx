@@ -96,6 +96,7 @@ export async function getStaticProps() {
     `Journal Articles`,
     `Preprints`,
     `Software`,
+    `Datasets`,
     `Conference Presentations`,
     `Posters`,
     `Webinars/Lectures`,
