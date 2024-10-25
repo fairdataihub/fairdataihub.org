@@ -32,6 +32,14 @@
   },
   {
     "project": ["aireadi"],
+    "url": "https://doi.org/10.1101/2024.10.23.619844",
+    "title": "AI-readiness for Biomedical Data: Bridge2AI Recommendations",
+    "subtitle": "",
+    "citation": "Clark, T., Caufield, H., Mohan, J. A., Al, S. M., Amorim, E., Eddy, J., Gim, N., ... Patel, B., Williams, A., & Munoz-Torres, M. C. (2024). AI-readiness for Biomedical Data: Bridge2AI Recommendations. BioRxiv. https://doi.org/10.1101/2024.10.23.619844",
+    "type": "Preprints"
+  },
+  {
+    "project": ["aireadi"],
     "url": "https://doi.org/10.1101/2024.07.29.24310315",
     "title": "Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data",
     "subtitle": "",
