@@ -93,13 +93,15 @@ export async function getStaticProps() {
   }
 
   const sortingOrder = [
-    `Journal Article`,
-    `Preprint`,
+    `Journal Articles`,
+    `Preprints`,
     `Software`,
-    `Poster`,
-    `Report`,
-    `Conference Presentation`,
-    `Web Article`,
+    `Datasets`,
+    `Conference Presentations`,
+    `Posters`,
+    `Webinars/Lectures`,
+    `Reports`,
+    `Web Articles`,
   ];
 
   const sortedGrouped = [];
