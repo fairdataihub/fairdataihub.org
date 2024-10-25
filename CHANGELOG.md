@@ -1,3 +1,10 @@
+## [2.38.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.38.0...v2.38.1) (2024-10-25)
+
+
+### Bug Fixes
+
+* 🐛 edit & add headers on Impact page ([#663](https://github.com/fairdataihub/fairdataihub.org/issues/663)) ([c47255c](https://github.com/fairdataihub/fairdataihub.org/commit/c47255cd3aa54af1e2027abcc34fe69d0f1761b2))
+
 # [2.38.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.37.0...v2.38.0) (2024-10-09)
 
 ### Features
