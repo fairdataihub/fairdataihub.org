@@ -75,7 +75,7 @@
     "url": "https://github.com/AI-READI/fairhub-app",
     "title": "FAIRhub Study Management Platform",
     "subtitle": "",
-    "citation": "FAIRhub. (started 2022). https://github.com/AI-READI/fairhub-app (Development status: Active)",
+    "citation": "FAIRhub study management platform. (started 2022). https://github.com/AI-READI/fairhub-app (Development status: Active)",
     "type": "Software"
   },
   {
@@ -83,7 +83,7 @@
     "url": "https://github.com/AI-READI/fairhub-portal",
     "title": "FAIRhub Data Portal",
     "subtitle": "",
-    "citation": "FAIRhub. (started 2022). https://github.com/AI-READI/fairhub-portal (Development status: Active)",
+    "citation": "FAIRhub data portal. (started 2022). https://github.com/AI-READI/fairhub-portal (Development status: Active)",
     "type": "Software"
   },
   {
@@ -172,7 +172,7 @@
     "url": "https://doi.org/10.5281/zenodo.13984769",
     "title": "Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster)",
     "subtitle": "",
-    "citation": "Patel, B., Soundarajan, S.,Gasimova, A., Gim, N., Shaffer,J., & Lee, A. (2024). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984769",
+    "citation": "Patel, B., Soundarajan, S., Gasimova, A., Gim, N., Shaffer, J., & Lee, A. (2024). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984769",
     "type": "Posters"
   },
   {
