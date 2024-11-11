@@ -1,3 +1,10 @@
+# [2.39.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.38.2...v2.39.0) (2024-11-11)
+
+
+### Features
+
+* ✨ Added SODA phase 6 blog post ([#665](https://github.com/fairdataihub/fairdataihub.org/issues/665)) ([fa42d85](https://github.com/fairdataihub/fairdataihub.org/commit/fa42d850e9e5a25e2333dd6d8e25c1913caff46b))
+
 ## [2.38.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.38.1...v2.38.2) (2024-11-11)
 
 ### Bug Fixes
