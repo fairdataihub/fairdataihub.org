@@ -1,3 +1,10 @@
+## [2.39.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.39.0...v2.39.1) (2024-11-11)
+
+
+### Bug Fixes
+
+* 🐛 remove prettier ci and add  tag spacing ([4a07a31](https://github.com/fairdataihub/fairdataihub.org/commit/4a07a31d3f81b2a47d07d86b8422cc192aeeabf2))
+
 # [2.39.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.38.2...v2.39.0) (2024-11-11)
 
 
