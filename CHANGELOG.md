@@ -1,3 +1,10 @@
+# [2.40.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.39.1...v2.40.0) (2024-11-11)
+
+
+### Features
+
+* ✨ version 2 for AIREADI blog post ([fb75faa](https://github.com/fairdataihub/fairdataihub.org/commit/fb75faa2f3b5eb7ac2728dbf29bed7afc7e5b253))
+
 ## [2.39.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.39.0...v2.39.1) (2024-11-11)
 
 
