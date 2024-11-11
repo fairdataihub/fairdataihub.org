@@ -1,9 +1,8 @@
 ## [2.38.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.38.1...v2.38.2) (2024-11-11)
 
-
 ### Bug Fixes
 
-* 🐛 convert style of citation in impact page ([3c11447](https://github.com/fairdataihub/fairdataihub.org/commit/3c1144745102304becba8ec6a93a76198192d26a))
+- 🐛 convert style of citation in impact page ([3c11447](https://github.com/fairdataihub/fairdataihub.org/commit/3c1144745102304becba8ec6a93a76198192d26a))
 
 ## [2.38.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.38.0...v2.38.1) (2024-10-25)
 
