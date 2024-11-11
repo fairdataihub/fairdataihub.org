@@ -72,12 +72,12 @@ const postEntry: React.FC<PostEntryProps> = ({
         <p className="mb-3 mt-2">{subtitle}</p>
 
         <div className="flex w-full flex-col justify-between md:flex-row">
-          <div className="mb-2 flex flex-row items-center text-sm md:mb-0">
+          <div className="mb-2 flex flex-row flex-wrap items-center text-sm md:mb-0">
             <h3 className="mr-2 text-sm font-bold">Tags: </h3>
             {tags.map((tag) => (
-              <Link href={`/tags/${tag}`} key={tag}>
+              <Link href={`/tags/${tag}`} key={tag} className="my-2">
                 <span
-                  className="mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 transition-all hover:border-light-accent hover:text-accent"
+                  className="mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 py-1 transition-all hover:border-light-accent hover:text-accent"
                   data-umami-event="Blog"
                   data-umami-event-action="Tag"
                   data-umami-event-value={tag}
@@ -88,7 +88,7 @@ const postEntry: React.FC<PostEntryProps> = ({
             ))}
           </div>
           <Link href={`/blog/${slug}`} passHref>
-            <span className="text-url cursor-pointer text-base hover:underline">
+            <span className="text-url w-max cursor-pointer text-base hover:underline">
               Read more →
             </span>
           </Link>
