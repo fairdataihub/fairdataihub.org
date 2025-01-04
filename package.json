@@ -56,7 +56,7 @@
     "gray-matter": "4.0.3",
     "lucide-react": "^0.279.0",
     "markdown-it": "13.0.2",
-    "next": "14.2.10",
+    "next": "14.2.21",
     "plaiceholder": "^2.5.0",
     "probe-image-size": "^7.2.3",
     "react": "18.2.0",
