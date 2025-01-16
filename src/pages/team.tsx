@@ -169,6 +169,34 @@ const TEAM_JSON = [
     },
   },
   {
+    id: `Xuebin-Dong`,
+    name: `Xuebin Dong (he/him)`,
+    title: `Software Developer`,
+    bio: `Xuebin Dong is a passionate software developer with a strong background in full-stack development, data pipelines, and DevOps. He holds a Master's degree in Computer Science and enjoys solving complex technical problems. In his free time, He loves working out, playing video games, and exploring new technologies.
+    `,
+    image: `/images/people/xuebin-full.jpg`,
+    width: 1378,
+    height: 2012,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `M.S. in Computer Science (University of Alabama at Birmingham, GPA: 4.0, 2021)`,
+      `B.S. in Computer Network Engineering (Yunnan University, 2019)`,
+    ],
+    twitter: {
+      show: false,
+      link: `https://twitter.com/`,
+    },
+    github: {
+      show: true,
+      link: `https://github.com/dxb2306`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/dxb2306`,
+    },
+  },
+  {
     id: `Nada-Haboudal`,
     name: `Nada Haboudal (she/her)`,
     title: `Data Scientist`,
