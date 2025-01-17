@@ -100,6 +100,48 @@ export default function Home() {
                 </div>
               </Link>
 
+              <Link href="/eyeact">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <div className="flex space-x-2">
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Platform
+                        </span>
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Standards
+                        </span>
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Guidelines
+                        </span>
+                      </div>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        Envision Portal
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg text-black">
+                      The Envision Portal is a data management and sharing
+                      platform developed as part of the EyeACT project. It
+                      streamlines workflows for uploading, preparing, and
+                      sharing clinical research data, with a focus on eye
+                      imaging. By adhering to FAIR data principles the portal
+                      ensures that datasets are organized, AI-ready, and
+                      optimized for collaboration.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="/images/hero/eye-act-logo.png"
+                      alt="Screenshot of SODA for SPARC"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
               <Link href="/fair-biors">
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
