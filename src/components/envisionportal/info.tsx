@@ -16,43 +16,43 @@ export default function Info() {
       image: `/images/people/sanjay-head.jpg`,
     },
     {
-      name: `Taiji Yang`,
-      href: `https://www.linkedin.com/in/taiji-yang-1b4b8620b/`,
-      external: true,
-      image: `https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/200x200/smart/`,
+      name: `Dorian Portillo`,
+      href: `/team/#Dorian-Portillo`,
+      external: false,
+      image: `/images/people/dorian-head.PNG`,
     },
   ];
 
-  const collaboratorsList = [
-    {
-      name: `Zicheng Hu (UCSF)`,
-      id: `Zicheng-Hu-UCSF`,
-      href: `https://profiles.ucsf.edu/zicheng.hu`,
-      image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
-      type: `person`,
-    },
-    {
-      name: `The Butte Lab`,
-      id: `The-Butte-Lab`,
-      href: `https://buttelab.ucsf.edu/`,
-      image: `/images/collaborators/ucsf-logo.png`,
-      type: `lab`,
-    },
-    {
-      name: `The Jagannathan Lab`,
-      id: `The-Jagannathan-Lab`,
-      href: `https://med.stanford.edu/jagannathan-lab.html`,
-      image: `/images/collaborators/stanford-medicine-logo.png`,
-      type: `lab`,
-    },
-    {
-      name: `Dr. Greenhouse Lab`,
-      id: `Dr-Greenhouse-Lab`,
-      href: `https://profiles.ucsf.edu/bryan.greenhouse#toc-id2`,
-      image: `/images/collaborators/ucsf-logo.png`,
-      type: `lab`,
-    },
-  ];
+  // const collaboratorsList = [
+  //   {
+  //     name: `Zicheng Hu (UCSF)`,
+  //     id: `Zicheng-Hu-UCSF`,
+  //     href: `https://profiles.ucsf.edu/zicheng.hu`,
+  //     image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
+  //     type: `person`,
+  //   },
+  //   {
+  //     name: `The Butte Lab`,
+  //     id: `The-Butte-Lab`,
+  //     href: `https://buttelab.ucsf.edu/`,
+  //     image: `/images/collaborators/ucsf-logo.png`,
+  //     type: `lab`,
+  //   },
+  //   {
+  //     name: `The Jagannathan Lab`,
+  //     id: `The-Jagannathan-Lab`,
+  //     href: `https://med.stanford.edu/jagannathan-lab.html`,
+  //     image: `/images/collaborators/stanford-medicine-logo.png`,
+  //     type: `lab`,
+  //   },
+  //   {
+  //     name: `Dr. Greenhouse Lab`,
+  //     id: `Dr-Greenhouse-Lab`,
+  //     href: `https://profiles.ucsf.edu/bryan.greenhouse#toc-id2`,
+  //     image: `/images/collaborators/ucsf-logo.png`,
+  //     type: `lab`,
+  //   },
+  // ];
 
   return (
     <div>
@@ -66,82 +66,20 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    FAIRshare is distributed as an open-source desktop
-                    application with an MIT License. Anyone is free to fork our
-                    GitHub repository and make their own changes if they would
-                    like. If you would like to submit a feature modification, or
-                    feature suggestion, please feel free to submit an issue on
-                    the repository.
+                    The EyeACT&apos;s ENvision Portal is distributed as a web
+                    application and open-source desktop application with an MIT
+                    License. Anyone is free to fork our GitHub repository and
+                    make their own changes if they would like. If you would like
+                    to submit a feature modification, or feature suggestion,
+                    please feel free to submit an issue on the repository.
                   </p>
-                  <div className="mt-3 flex text-accent">
-                    <a
-                      href="https://github.com/fairdataihub/FAIRshare/graphs/contributors"
-                      target="_blank"
-                      className="mr-2"
-                      data-umami-event="Badge"
-                      data-umami-event-project="FAIRshare"
-                      data-umami-event-type="Contributors"
-                      rel="noopener"
-                    >
-                      {/*  eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src="https://img.shields.io/github/contributors/fairdataihub/FAIRshare.svg?style=flat-square"
-                        alt="fairshare contributors"
-                      />
-                    </a>
-                    <a
-                      href="https://github.com/fairdataihub/FAIRshare/stargazers"
-                      target="_blank"
-                      className="mr-2"
-                      data-umami-event="Badge"
-                      data-umami-event-project="FAIRshare"
-                      data-umami-event-type="Stars"
-                      rel="noopener"
-                    >
-                      {/*  eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src="https://img.shields.io/github/stars/fairdataihub/FAIRshare.svg?style=flat-square"
-                        alt="fairshare stars"
-                      />
-                    </a>
-                    <a
-                      href="https://github.com/fairdataihub/FAIRshare/issues"
-                      target="_blank"
-                      className="mr-2"
-                      data-umami-event="Badge"
-                      data-umami-event-project="FAIRshare"
-                      data-umami-event-type="Issues"
-                      rel="noopener"
-                    >
-                      {/*  eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src="https://img.shields.io/github/issues/fairdataihub/FAIRshare.svg?style=flat-square"
-                        alt="fairshare issues"
-                      />
-                    </a>
-                    <a
-                      href="https://github.com/fairdataihub/FAIRshare/blob/master/LICENSE"
-                      target="_blank"
-                      className="mr-2"
-                      data-umami-event="Badge"
-                      data-umami-event-project="FAIRshare"
-                      data-umami-event-type="License"
-                      rel="noopener"
-                    >
-                      {/*  eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src="https://img.shields.io/github/license/fairdataihub/FAIRshare.svg?style=flat-square"
-                        alt="fairshare license"
-                      />
-                    </a>
-                  </div>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://github.com/fairdataihub/FAIRshare"
+                      href="https://github.com/EyeACT/"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       data-umami-event="GitHub link"
-                      data-umami-event-project="FAIRshare"
+                      data-umami-event-project="EyeACT"
                       rel="noopener"
                     >
                       <span className="font-lato">
@@ -163,12 +101,12 @@ export default function Info() {
                 </div>
                 <div className="py-3">
                   <a
-                    href="https://github.com/fairdataihub/FAIRshare"
+                    href="https://github.com/EyeACT/"
                     target="_blank"
                     rel="noopener"
                     aria-label="Github"
                     data-umami-event="GitHub link"
-                    data-umami-event-project="FAIRshare"
+                    data-umami-event-project="EyeACT"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -186,7 +124,7 @@ export default function Info() {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="py-5 text-left text-4xl font-black md:mr-8 md:py-0">
@@ -230,7 +168,7 @@ export default function Info() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
@@ -291,7 +229,7 @@ export default function Info() {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="pb-5 text-left text-4xl font-black md:mr-8">
@@ -363,7 +301,7 @@ export default function Info() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

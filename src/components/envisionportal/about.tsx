@@ -95,7 +95,7 @@ export default function About() {
                 preparing, and sharing clinical research data. It ensures
                 compliance with FAIR principles, supports AI-ready datasets, and
                 fosters interdisciplinary collaboration to advance discoveries
-                in eye and vision science.
+                in eye and Alzheimer&apos;s research.
               </div>
             </dd>
           </div>
