@@ -8,13 +8,11 @@ export default function About() {
           About
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
-          The Envision Portal is a data management and sharing platform
-          developed as part of the EyeACT project. It enables researchers to
-          efficiently upload, prepare, and share eye imaging data while ensuring
-          compliance with FAIR (Findable, Accessible, Interoperable, and
-          Reusable) data principles. Designed to advance vision and brain health
-          research, the Envision Portal facilitates collaborative efforts and
-          supports cutting-edge discoveries.
+          The Envision Portal is developed for the EyeACT project to streamline
+          the uploading, preparation, and sharing of eye imaging research and
+          data while adhering to FAIR principles. It is designed to foster
+          collaboration, support discoveries and advance research at the
+          intersection of vision and brain health.
         </p>
       </div>
 
