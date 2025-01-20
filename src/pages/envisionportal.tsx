@@ -10,18 +10,11 @@ import PublicationsJSON from '@/assets/data/publications.json';
 
 const timelineList = [
   {
-    longDate: `November 2020`,
-    title: `Birth of FAIRshare`,
-    content: `The first prototype of FAIRshare is developed for demo purpose by the FAIR Data Innovations Hub.`,
-  },
-  {
-    longDate: `September 2021 - Aug 2022`,
-    title: `Phase I development`,
-    content: `The base framework of the software will be developed and support will be provided for COVID-19
-    and other infectious diseases related data types (genomics, immunology, etc.) and software.`,
+    longDate: `January 2025`,
+    title: `Development of Envision Portal`,
+    content: `The development of the Envision Portal begins as part of the EyeACT project.`,
   },
 ];
-
 const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <>
