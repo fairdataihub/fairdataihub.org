@@ -8,11 +8,14 @@ export default function About() {
           About
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
-          The Envision Portal is developed for the EyeACT project to streamline
-          the uploading, preparation, and sharing of eye imaging research and
-          data while adhering to FAIR principles. It is designed to foster
-          collaboration, support discoveries and advance research at the
-          intersection of vision and brain health.
+          The Eye ACT project is advancing vision and brain health research by
+          studying the connection between ophthalmic conditions and
+          neurodegenerative disease. As part of this effort, the Envision Portal
+          is being developed to streamline data management, sharing and analysis
+          of eye imaging research while adhering to FAIR principles.
+          Fairdataihub leads the development of the Envision Portal, ensuring
+          researchers have access to intuitive tools for curation and sharing
+          high-quality, AI-ready datasets.
         </p>
       </div>
 
@@ -28,6 +31,24 @@ export default function About() {
                 />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
+                What is the Eye ACT Project?
+              </p>
+            </dt>
+            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
+              <div>
+                The Eye ACT investigates the relationship between eye health and
+                cognitive decline. It aims to identify biomarkers in the eye
+                that can predict the onset of Alzheimer&apos;s disease and other
+                neurodegenerative conditions.
+              </div>
+            </dd>
+          </div>
+          <div className="relative">
+            <dt>
+              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
+                <Icon icon="mdi:axis-arrow-info" width={24} height={24} />
+              </div>
+              <p className="ml-16 text-xl font-medium sm:text-lg">
                 What is the Envision Portal?
               </p>
             </dt>
@@ -38,25 +59,6 @@ export default function About() {
                 datasets are organized, curated, and shared following FAIR
                 principles, making them ready for AI-driven analysis and
                 collaborative studies.
-              </div>
-            </dd>
-          </div>
-          <div className="relative">
-            <dt>
-              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
-                <Icon icon="mdi:axis-arrow-info" width={24} height={24} />
-              </div>
-              <p className="ml-16 text-xl font-medium sm:text-lg">
-                Why is the Envision Portal important?
-              </p>
-            </dt>
-            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
-              <div>
-                The portal supports the EyeACT project and beyond by providing
-                tools to streamline workflows, ensure data reusability, and
-                enable efficient sharing. It promotes collaboration across
-                disciplines while driving advancements in vision and brain
-                health research.
               </div>
             </dd>
           </div>
@@ -84,16 +86,17 @@ export default function About() {
                 <Icon icon="ep:guide" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                What does the Envision Portal offer?
+                Why is this important?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                The portal provides a comprehensive solution for uploading,
-                preparing, and sharing clinical research data. It ensures
-                compliance with FAIR principles, supports AI-ready datasets, and
-                fosters interdisciplinary collaboration to advance discoveries
-                in eye and Alzheimer&apos;s research.
+                Creating FAIR and AI-ready datasets is crucial for advancing
+                research in vision and brain health. By ensuring data is
+                Findable, Accessible, Interoperable, and Reusable, researchers
+                can collaborate more effectively, leverage AI technologies, and
+                accelerate discoveries that could lead to better diagnostic
+                tools and treatments for neurodegenerative diseases.
               </div>
             </dd>
           </div>

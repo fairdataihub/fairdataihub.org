@@ -1,7 +1,7 @@
-import About from '@/components/envisionportal/about';
-import Hero from '@/components/envisionportal/hero';
+import About from '@/components/eyeact/about';
+import Hero from '@/components/eyeact/hero';
 // import Impact from '@/components/fairshare/impact';
-import Info from '@/components/envisionportal/info';
+import Info from '@/components/eyeact/info';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -15,12 +15,12 @@ const timelineList = [
     content: `The development of the Envision Portal begins as part of the EyeACT project.`,
   },
 ];
-const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
+const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <>
       <Seo
-        templateTitle="Envision Portal"
-        templateUrl="https://fairdataihub.org/envisionportal"
+        templateTitle="Eye ACT"
+        templateUrl="https://fairdataihub.org/eyeact"
         templateDescription="Envision is a web application and cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
         templateImage="https://kalai.fairdataihub.org/api/generate?title=Envision%20Portal&description=Seeing%20the%20Future%20of%20Brain%20Health%20Through%20the%20Eyes&app=eyeact&org=fairdataihub"
       />
@@ -55,7 +55,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 export async function getStaticProps() {
   // Filter the publications with the `sodaforsparc` tag
   const publications = PublicationsJSON.filter((publication) =>
-    publication.project.includes(`envisionportal`),
+    publication.project.includes(`eyeact`),
   );
 
   return {
@@ -65,4 +65,4 @@ export async function getStaticProps() {
   };
 }
 
-export default FAIRshare;
+export default EyeAct;

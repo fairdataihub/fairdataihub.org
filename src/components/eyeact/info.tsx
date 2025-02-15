@@ -21,6 +21,12 @@ export default function Info() {
       external: false,
       image: `/images/people/dorian-head.PNG`,
     },
+    {
+      name: `Xuebin Dong`,
+      href: `/team/#Xuebin-Dong`,
+      external: false,
+      image: `/images/people/xuebin-full.jpg`,
+    },
   ];
 
   // const collaboratorsList = [
@@ -66,12 +72,10 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    The EyeACT&apos;s Envision Portal is distributed as a web
-                    application and open-source desktop application with an MIT
-                    License. Anyone is free to fork our GitHub repository and
-                    make their own changes if they would like. If you would like
-                    to submit a feature modification, or feature suggestion,
-                    please feel free to submit an issue on the repository.
+                    All software and tools from the Eye ACT&apos; project,
+                    including the Envision Portal, are developed using an
+                    open-source approach. This allows for transparency and
+                    collaboration with the open source community.
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a

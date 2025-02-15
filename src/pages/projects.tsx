@@ -100,7 +100,7 @@ export default function Home() {
                 </div>
               </Link>
 
-              <Link href="/envisionportal">
+              <Link href="/eyeact">
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
                     <div>
@@ -117,18 +117,19 @@ export default function Home() {
                       </div>
 
                       <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
-                        Envision Portal
+                        Eye ACT
                       </h2>
                     </div>
 
                     <p className="w-full font-asap text-lg text-black">
-                      The Envision Portal is a data management and sharing
-                      platform developed as part of the EyeACT project. It
-                      streamlines workflows for uploading, preparing, and
-                      sharing clinical research data, with a focus on eye
-                      imaging. By adhering to FAIR data principles the portal
-                      ensures that datasets are organized, AI-ready, and
-                      optimized for collaboration.
+                      The Eye ACT is a research initiative that investigates the
+                      link between eye health and neurodegenerative diseases. By
+                      leveraging advanced imaging and AI-driven analysis, the
+                      project aims to identify early biomarkers of cognitive
+                      decline using non-invasive and preventaive interventions.
+                      Through collaborative efforts, the Eye ACT is enhancing
+                      the accessibility and utility of eye imaging data to
+                      support discoveries in vision and health.
                     </p>
                   </div>
 
