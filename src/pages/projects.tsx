@@ -123,9 +123,8 @@ export default function Home() {
 
                     <p className="w-full font-asap text-lg text-black">
                       The Eye ACT is a research initiative that investigates the
-                      link between eye health and neurodegenerative diseases. By
-                      leveraging advanced imaging and AI-driven analysis, the
-                      project aims to identify early biomarkers of cognitive
+                      link between eye health and neurodegenerative diseases.
+                      The project aims to identify early biomarkers of cognitive
                       decline using non-invasive and preventaive interventions.
                       Through collaborative efforts, the Eye ACT is enhancing
                       the accessibility and utility of eye imaging data to

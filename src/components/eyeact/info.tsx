@@ -72,7 +72,7 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    All software and tools from the Eye ACT&apos; project,
+                    All software and tools from the Eye ACT&apos;s project,
                     including the Envision Portal, are developed using an
                     open-source approach. This allows for transparency and
                     collaboration with the open source community.

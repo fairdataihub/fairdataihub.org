@@ -25,14 +25,9 @@ export default function Hero() {
             <h1 className="mb-1 w-full text-center text-3xl font-black sm:text-4xl">
               Eye ACT
             </h1>
-            <h2 className="mb-2 w-full text-center text-2xl font-medium sm:text-2xl">
+            <h2 className="mb-4 mt-2 w-full text-center text-2xl font-medium sm:text-2xl">
               Seeing the Future of Brain Health Through the Eyes
             </h2>
-
-            <p className="mb-5 w-full text-center font-asap text-base leading-relaxed text-black">
-              We aim to drive advancements in early detection and prevention of
-              neurodegenerative diseases.
-            </p>
 
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <div className="flex flex-row justify-center">

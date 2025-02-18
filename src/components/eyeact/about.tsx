@@ -8,14 +8,14 @@ export default function About() {
           About
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
-          The Eye ACT project is advancing vision and brain health research by
-          studying the connection between ophthalmic conditions and
+          The Eye ACT project is pushing vision and brain health research
+          forward by studying the connection between ophthalmic conditions and
           neurodegenerative disease. As part of this effort, the Envision Portal
-          is being developed to streamline data management, sharing and analysis
-          of eye imaging research while adhering to FAIR principles.
-          Fairdataihub leads the development of the Envision Portal, ensuring
-          researchers have access to intuitive tools for curation and sharing
-          high-quality, AI-ready datasets.
+          is being developed to streamline data management, sharing and curating
+          eye imaging research while adhering to FAIR principles. Fairdataihub
+          leads the development of the Envision Portal, ensuring researchers
+          have access to intuitive tools for curation and sharing high-quality,
+          AI-ready datasets.
         </p>
       </div>
 
