@@ -53,7 +53,7 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
 };
 
 export async function getStaticProps() {
-  // Filter the publications with the `sodaforsparc` tag
+  // Filter the publications with the `eyeact` tag
   const publications = PublicationsJSON.filter((publication) =>
     publication.project.includes(`eyeact`),
   );

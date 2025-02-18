@@ -25,7 +25,7 @@ export default function Info() {
       name: `Xuebin Dong`,
       href: `/team/#Xuebin-Dong`,
       external: false,
-      image: `/images/people/xuebin-full.jpg`,
+      image: `/images/people/xuebin-head.jpg`,
     },
   ];
 
