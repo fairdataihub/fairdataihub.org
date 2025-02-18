@@ -202,8 +202,8 @@ const TEAM_JSON = [
     title: `AI Research Scientist`,
     bio: `Nahid Zeinali is an AI Research Scientist from Isfahan, Iran. She specializes in AI, NLP, and deep learning in healthcare and focuses on developing AI-driven healthcare solutions. She enjoys yoga, hiking, tennis, road trips, and Persian poetry in her free time.`,
     image: `/images/people/nahid-full.jpg`,
-    width: 1378,
-    height: 2012,
+    width: 922,
+    height: 1280,
     borderTop: true,
     borderBottom: false,
     education: [
