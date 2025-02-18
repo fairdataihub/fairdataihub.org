@@ -197,6 +197,35 @@ const TEAM_JSON = [
     },
   },
   {
+    "id": "Nahid-Zeinali",
+    "name": "Nahid Zeinali (she/her)",
+    "title": "AI Research Scientist",
+    "bio": "Nahid Zeinali is a Data Scientist with 9+ years of hands-on experience and a solid foundation in software engineering and medical/health informatics. She specializes in AI techniques, with expertise in natural language processing (NLP), large language models (LLMs), and deep learning. With a strong track record of collaborating with multidisciplinary teams, Nahid has successfully developed AI-driven healthcare systems and led impactful research in clinical settings. Her work optimizes model efficiency, enhances clinical decision support, and drives data-driven innovations. Beyond her professional pursuits, she enjoys yoga, hiking, playing tennis, and exploring nature. She is also passionate about road trips, psychology books, and Persian poetry."
+
+    "width": 1378,
+    "height": 2012,
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+        "Ph.D. in Informatics (University of Iowa, January 2025)",
+        "M.S. in Informatics (University of Iowa, May 2023)",
+        "M.S. in Informatics (Tarbiat Modares University,Tehran, Iran, May 2016)
+        "B.S. in Software Engineering (University of Azad Najafabad Isfahan, Isfahan, Iran, May 2010)"
+    ],
+    "twitter": {
+        "show": false,
+        "link": "https://x.com/ZeinaliNahid"
+    },
+    "github": {
+        "show": true,
+        "link": "https://github.com/Nahidzeinali-web"
+    },
+    "linkedin": {
+        "show": true,
+        "link": "https://www.linkedin.com/in/nahid-zeinali-ph-d-15440910b/"
+    },
+},
+  {
     id: `Nada-Haboudal`,
     name: `Nada Haboudal (she/her)`,
     title: `Data Scientist`,
