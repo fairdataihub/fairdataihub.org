@@ -215,7 +215,7 @@ const TEAM_JSON = [
     ],
     twitter: {
       show: false,
-      link: `"https://x.com/ZeinaliNahid`,
+      link: `https://x.com/ZeinaliNahid`,
     },
     github: {
       show: true,
