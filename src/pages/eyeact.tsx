@@ -21,8 +21,8 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
       <Seo
         templateTitle="Eye ACT"
         templateUrl="https://fairdataihub.org/eyeact"
-        templateDescription="Envision is a web application and cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines"
-        templateImage="https://kalai.fairdataihub.org/api/generate?title=Envision%20Portal&description=Seeing%20the%20Future%20of%20Brain%20Health%20Through%20the%20Eyes&app=eyeact&org=fairdataihub"
+        templateDescription="Seeing the Future of Brain Health Through the Eyes"
+        templateImage="https://kalai.fairdataihub.org/api/generate?title=Eye%20ACT&description=Seeing%20the%20Future%20of%20Brain%20Health%20Through%20the%20Eyes&app=eyeact&org=fairdataihub"
       />
 
       <section className="bg-white py-10 pt-16">
