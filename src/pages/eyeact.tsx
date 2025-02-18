@@ -12,7 +12,7 @@ const timelineList = [
   {
     longDate: `January 2025`,
     title: `Development of Envision Portal`,
-    content: `The development of the Envision Portal begins as part of the EyeACT project.`,
+    content: `The development of the Envision Portal begins as part of the Eye ACT project.`,
   },
 ];
 const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
