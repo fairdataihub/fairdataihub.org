@@ -197,6 +197,36 @@ const TEAM_JSON = [
     },
   },
   {
+    id: `Nahid-Zeinali`,
+    name: `Nahid Zeinali (she/her)`,
+    title: `AI Research Scientist`,
+    bio: `Nahid Zeinali is an AI Research Scientist from Isfahan, Iran. She specializes in AI, NLP, and deep learning in healthcare and focuses on developing AI-driven healthcare solutions. She enjoys yoga, hiking, tennis, road trips, and Persian poetry in her free time.`,
+    image: `/images/people/nahid-full.jpg`,
+    width: 922,
+    height: 1280,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `Ph.D. in Informatics (University of Iowa, January 2025)`,
+      `M.S. in Informatics (University of Iowa, May 2023)`,
+      `M.S. in Informatics (Tarbiat Modares University,Tehran, Iran May 2016`,
+      `B.S. in Software Engineering (University of Azad Najafabad Isfahan, Isfahan, Iran, May 2010)`,
+    ],
+    twitter: {
+      show: false,
+      link: `https://x.com/ZeinaliNahid`,
+    },
+    github: {
+      show: true,
+      link: `https://github.com/Nahidzeinali-web`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/nahid-zeinali-ph-d-15440910b/6`,
+    },
+  },
+
+  {
     id: `Nada-Haboudal`,
     name: `Nada Haboudal (she/her)`,
     title: `Data Scientist`,
