@@ -122,13 +122,13 @@ export default function Home() {
                     </div>
 
                     <p className="w-full font-asap text-lg text-black">
-                      The Eye ACT is a research initiative that investigates the
-                      link between eye health and neurodegenerative diseases.
-                      The project aims to identify early biomarkers of cognitive
-                      decline using non-invasive and preventaive interventions.
-                      Through collaborative efforts, the Eye ACT is enhancing
-                      the accessibility and utility of eye imaging data to
-                      support discoveries in vision and health.
+                      The Eye ACT study aims to provide insights on how
+                      ophtalmic conditions such as glaucoma and diabetic
+                      retinopathy can provide early indicators to
+                      Alzheimer&apos;s disease. By leveraging the Envision
+                      Portal, it enhances data management, sharing, and
+                      AI-driven research under FAIR principles to accelerate
+                      discoveries in vision and brain health.
                     </p>
                   </div>
 

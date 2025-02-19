@@ -280,66 +280,10 @@
   },
   {
     "project": ["eyeact"],
-    "url": "",
-    "title": "Associations between Dementia and Exposure to Topical Glaucoma Medications",
+    "url": "https://github.com/EyeACT/envision-portal",
+    "title": "Envision Portal",
     "subtitle": "",
-    "citation": "Davidson O., Lee M.L., Kam J.P., Brush M., Rajesh A., Blazes M., Arterburn D., Duerr E., Gibbons L.E., Crane P.K., Lee C.S., Eye ACT Study Group. (2024). Associations between Dementia and Exposure to Topical Glaucoma Medications. J Alzheimer’s Dis. Accepted for publication.",
-    "type": "Journal Articles"
-  },
-  {
-    "project": ["eyeact"],
-    "url": "https://doi.org/10.3233/JAD-240203",
-    "title": "Eye Adult Changes in Thought (Eye ACT) Study: Design and Report on the Inaugural Cohort",
-    "subtitle": "",
-    "citation": "Lee C.S., Ferguson A.N., Gibbons L.E., Walker R., Su Y.R., Krakauer C., Brush M., Kam J., Larson E.B., Arterburn D.E., Crane P.K., Eye ACT Study Group. (2024). Eye Adult Changes in Thought (Eye ACT) Study: Design and Report on the Inaugural Cohort. J Alzheimers Dis. 100(1):309-320. https://doi.org/10.3233/JAD-240203. PMID: 38875039.",
-    "type": "Journal Articles"
-  },
-  {
-    "project": ["eyeact"],
-    "url": "https://doi.org/10.3233/JAD-240247",
-    "title": "How Generalizable Are Findings from a Community-Based Prospective Cohort Study?",
-    "subtitle": "",
-    "citation": "Gibbons L.E., Mobley T., Mayeda E.R., Lee C.S., Gatto N.M., LaCroix A.Z., McEvoy L.K., Crane P.K., Hayes-Larson E. (2024). How Generalizable Are Findings from a Community-Based Prospective Cohort Study? J Alzheimers Dis. 100(1):163-174. https://doi.org/10.3233/JAD-240247. PMID: 38848188; PMCID: PMC11423796.",
-    "type": "Journal Articles"
-  },
-  {
-    "project": ["eyeact"],
-    "url": "https://doi.org/10.1016/j.ajo.2022.12.003",
-    "title": "Diabetic Retinopathy and Dementia Association, Beyond Diabetes Severity",
-    "subtitle": "",
-    "citation": "Lee C.S., Krakauer C., Su Y.R., Walker R.L., Blazes M., McCurry S.M., Bowen J.D., McCormick W.C., Lee A.Y., Boyko E.J., O'Hare A.M., Larson E.B., Crane P.K. (2023). Diabetic Retinopathy and Dementia Association, Beyond Diabetes Severity. Am J Ophthalmol. 249:90-98. https://doi.org/10.1016/j.ajo.2022.12.003. PMID: 36513155; PMCID: PMC10106379.",
-    "type": "Journal Articles"
-  },
-  {
-    "project": ["eyeact"],
-    "url": "https://doi.org/10.1097/WNO.0000000000001786",
-    "title": "Imaging Amyloid and Tau in the Retina: Current Research and Future Directions",
-    "subtitle": "",
-    "citation": "Tang M.Y., Blazes M.S., Lee C.S. (2023). Imaging Amyloid and Tau in the Retina: Current Research and Future Directions. J Neuroophthalmol. 43(2):168-179. https://doi.org/10.1097/WNO.0000000000001786. PMID: 36705970; PMCID: PMC10191872.",
-    "type": "Journal Articles"
-  },
-  {
-    "project": ["eyeact"],
-    "url": "https://doi.org/10.1097/APO.0000000000000505",
-    "title": "Retinal Biomarkers for Alzheimer Disease: The Facts and the Future",
-    "subtitle": "",
-    "citation": "Yuan A., Lee C.S. (2022). Retinal Biomarkers for Alzheimer Disease: The Facts and the Future. Asia Pac J Ophthalmol (Phila). 11(2):140-148. https://doi.org/10.1097/APO.0000000000000505. PMID: 35533333; PMCID: PMC9889204.",
-    "type": "Journal Articles"
-  },
-  {
-    "project": ["eyeact"],
-    "url": "https://doi.org/10.1001/jamainternmed.2021.6990",
-    "title": "Association Between Cataract Extraction and Development of Dementia",
-    "subtitle": "",
-    "citation": "Lee C.S., Gibbons L.E., Lee A.Y., Yanagihara R.T., Blazes M.S., Lee M.L., McCurry S.M., Bowen J.D., McCormick W.C., Crane P.K., Larson E.B. (2021). Association Between Cataract Extraction and Development of Dementia. JAMA Intern Med. https://doi.org/10.1001/jamainternmed.2021.6990. PMID: 34870676; PMCID: PMC8649913.",
-    "type": "Journal Articles"
-  },
-  {
-    "project": ["eyeact"],
-    "url": "https://doi.org/10.1111/bpa.12974",
-    "title": "Application of deep learning to understand resilience to Alzheimer's disease pathology",
-    "subtitle": "",
-    "citation": "Lee C.S., Latimer C.S., Henriksen J.C., Blazes M., Larson E.B., Crane P.K., Keene C.D., Lee A.Y. (2021). Application of deep learning to understand resilience to Alzheimer's disease pathology. Brain Pathol. 31(6):e12974. https://doi.org/10.1111/bpa.12974. PMID: 34009663; PMCID: PMC8549025.",
-    "type": "Journal Articles"
+    "citation": "Envision Portal (started 2024). https://github.com/EyeACT/envision-portal (Development status: Active)",
+    "type": "Software"
   }
 ]

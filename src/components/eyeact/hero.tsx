@@ -32,19 +32,6 @@ export default function Hero() {
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <div className="flex flex-row justify-center">
                 <a
-                  href="/#"
-                  target="_blank"
-                  aria-label="Visit Envision Portal"
-                  rel="noopener"
-                  className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
-                  data-umami-event="Hero button"
-                  data-umami-event-text="Visit Envision Portal"
-                >
-                  Visit Envision Portal
-                </a>
-              </div>
-              <div className="flex flex-row justify-center">
-                <a
                   href="https://eyeactstudy-org.vercel.app/"
                   target="_blank"
                   aria-label="EyeACT Study website"
@@ -54,6 +41,19 @@ export default function Hero() {
                   data-umami-event-text="Codefair website"
                 >
                   Learn more
+                </a>
+              </div>
+              <div className="flex flex-row justify-center">
+                <a
+                  href="/#"
+                  target="_blank"
+                  aria-label="Visit Envision Portal"
+                  rel="noopener"
+                  className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
+                  data-umami-event="Hero button"
+                  data-umami-event-text="Visit Envision Portal"
+                >
+                  Visit the Envision Portal
                 </a>
               </div>
             </div>
