@@ -207,10 +207,10 @@ const TEAM_JSON = [
     borderTop: true,
     borderBottom: false,
     education: [
-      `Ph.D. in Informatics (University of Iowa, January 2025)`,
-      `M.S. in Informatics (University of Iowa, May 2023)`,
-      `M.S. in Informatics (Tarbiat Modares University,Tehran, Iran May 2016`,
-      `B.S. in Software Engineering (University of Azad Najafabad Isfahan, Isfahan, Iran, May 2010)`,
+      `Ph.D. in Informatics (University of Iowa, 2025)`,
+      `M.Sc. in Informatics (University of Iowa, 2023)`,
+      `M.Sc. in Informatics (Tarbiat Modares University,Iran, 2016)`,
+      `B.S. in Software Engineering (University of Azad Najafabad Isfahan, Iran,2010)`,
     ],
     twitter: {
       show: false,
