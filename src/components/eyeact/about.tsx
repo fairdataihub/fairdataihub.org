@@ -88,10 +88,10 @@ export default function About() {
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                Creating FAIR and AI-ready datasets is crucial for advancing
-                collaborating more effectively, leverage AI technologies and
-                accelerate discoveries that could lead to better diagnostic
-                tools and treatments for neurodegenerative diseases.
+                Creating FAIR and AI-ready datasets is crucial for collaborating
+                more effectively, leverage AI technologies and accelerate
+                discoveries that could lead to better diagnostic tools and
+                treatments for neurodegenerative diseases.
               </div>
             </dd>
           </div>

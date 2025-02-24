@@ -285,5 +285,13 @@
     "subtitle": "",
     "citation": "Envision Portal (started 2024). https://github.com/EyeACT/envision-portal (Development status: Active)",
     "type": "Software"
+  },
+  {
+    "project": ["eyeact"],
+    "url": "https://eyeactstudy-org.vercel.app/",
+    "title": "Eye ACT Home Page",
+    "subtitle": "",
+    "citation": "Eye ACT Home Page (started 2025). https://github.com/EyeACT/eyeactstudy.org (Development status: Active)",
+    "type": "Software"
   }
 ]
