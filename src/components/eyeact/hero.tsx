@@ -1,5 +1,7 @@
 import Image from 'next/image';
 
+import Tooltip from '@/components/ui/tooltip';
+
 export default function Hero() {
   return (
     <div className="flex flex-col items-center justify-center">
@@ -30,29 +32,27 @@ export default function Hero() {
             </h2>
 
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
-              <div className="relative z-20 flex flex-row justify-center">
-                <button
-                  disabled
-                  aria-label="EyeACT Study website - Coming Soon"
-                  className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
-                >
-                  Learn More
-                  <span className="absolute right-5 top-0 -translate-y-1/2 translate-x-1/2 rounded bg-pink-600 px-2 py-0.5 text-xs text-white">
-                    Coming soon
-                  </span>
-                </button>
+              <div className="relative flex flex-row justify-center">
+                <Tooltip tooltipContent="Coming soon" placement="bottom">
+                  <button
+                    disabled
+                    aria-label="EyeACT Study website - Coming Soon"
+                    className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
+                  >
+                    Learn More
+                  </button>
+                </Tooltip>
               </div>
-              <div className="relative z-10 flex flex-row justify-center">
-                <button
-                  disabled
-                  aria-label="EyeACT Study website - Coming Soon"
-                  className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
-                >
-                  Visit the Envision Portal
-                  <span className="absolute right-2 top-0 -translate-y-1/2 translate-x-1/2 rounded bg-pink-600 px-2 py-0.5 text-xs text-white">
-                    Coming soon
-                  </span>
-                </button>
+              <div className="relative flex flex-row justify-center">
+                <Tooltip tooltipContent="Coming soon" placement="bottom">
+                  <button
+                    disabled
+                    aria-label="EyeACT Study website - Coming Soon"
+                    className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
+                  >
+                    Visit the Envision Portal
+                  </button>
+                </Tooltip>
               </div>
             </div>
           </div>
