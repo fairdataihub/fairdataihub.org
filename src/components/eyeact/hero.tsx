@@ -30,31 +30,29 @@ export default function Hero() {
             </h2>
 
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
-              <div className="flex flex-row justify-center">
-                <a
-                  href="https://eyeactstudy-org.vercel.app/"
-                  target="_blank"
-                  aria-label="EyeACT Study website"
-                  rel="noopener"
-                  className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
-                  data-umami-event="Hero button"
-                  data-umami-event-text="Codefair website"
+              <div className="relative z-20 flex flex-row justify-center">
+                <button
+                  disabled
+                  aria-label="EyeACT Study website - Coming Soon"
+                  className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
                 >
-                  Learn more
-                </a>
+                  Learn More
+                  <span className="absolute right-5 top-0 -translate-y-1/2 translate-x-1/2 rounded bg-pink-600 px-2 py-0.5 text-xs text-white">
+                    Coming soon
+                  </span>
+                </button>
               </div>
-              <div className="flex flex-row justify-center">
-                <a
-                  href="/#"
-                  target="_blank"
-                  aria-label="Visit Envision Portal"
-                  rel="noopener"
-                  className="rounded border-0 border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600 sm:block"
-                  data-umami-event="Hero button"
-                  data-umami-event-text="Visit Envision Portal"
+              <div className="relative z-10 flex flex-row justify-center">
+                <button
+                  disabled
+                  aria-label="EyeACT Study website - Coming Soon"
+                  className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
                 >
                   Visit the Envision Portal
-                </a>
+                  <span className="absolute right-2 top-0 -translate-y-1/2 translate-x-1/2 rounded bg-pink-600 px-2 py-0.5 text-xs text-white">
+                    Coming soon
+                  </span>
+                </button>
               </div>
             </div>
           </div>
