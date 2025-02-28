@@ -27,6 +27,12 @@ export default function Info() {
       external: false,
       image: `/images/people/xuebin-head.jpg`,
     },
+    {
+      name: `Nahid Zeinali`,
+      href: `/team/#Nahid-Zeinali`,
+      external: false,
+      image: `/images/people/nahid-head.jpg`,
+    },
   ];
 
   // const collaboratorsList = [

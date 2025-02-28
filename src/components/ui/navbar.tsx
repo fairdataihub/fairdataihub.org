@@ -304,7 +304,7 @@ export default function Navbar() {
                         id="eyeact-page"
                         className={
                           `nav-item hover-underline-animation mt-2 w-[200px]` +
-                          (router.pathname === `/fairshare`
+                          (router.pathname === `/eyeact`
                             ? ` router-link-active`
                             : ` `)
                         }
@@ -321,7 +321,7 @@ export default function Navbar() {
                         id="codefair-page"
                         className={
                           `nav-item hover-underline-animation mt-2 w-[200px]` +
-                          (router.pathname === `/fairshare`
+                          (router.pathname === `/codefair`
                             ? ` router-link-active`
                             : ` `)
                         }

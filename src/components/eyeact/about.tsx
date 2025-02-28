@@ -8,7 +8,7 @@ export default function About() {
           About
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
-          The Eye ACT study aims to provide insights on how ophtalmic conditions
+          The Eye ACT study aims to provide insights on how opthalmic conditions
           such as glaucoma and diabetic retinopathy can provide early indicators
           to Alzheimer&apos;s disease. As part of this project, the FAIR Data
           Innovations Hub is leading the development of the Envision Portal.

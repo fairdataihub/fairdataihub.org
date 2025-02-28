@@ -23,7 +23,7 @@ const Tooltip: React.FC<TooltipProps> = ({
         {placement === `bottom` && (
           <div className="-mb-2 h-3 w-3 rotate-45 bg-black"></div>
         )}
-        <span className="whitespace-no-wrap relative z-10 rounded-md bg-black p-4 text-xs leading-none text-white shadow-lg">
+        <span className="relative z-10 whitespace-nowrap rounded-md bg-black p-4 text-xs leading-none text-white shadow-lg">
           {tooltipContent}
         </span>
         {placement === `top` && (
