@@ -277,5 +277,21 @@
     "subtitle": "",
     "citation": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. (2021). SPARC. https://sparc.science/news-and-events/community-spotlight/success-stories/sharing-is-caring-making-sparc-data-fair-with-soda",
     "type": "Web Articles"
+  },
+  {
+    "project": ["eyeact"],
+    "url": "https://github.com/EyeACT/envision-portal",
+    "title": "Envision Portal",
+    "subtitle": "",
+    "citation": "Envision Portal (started 2024). https://github.com/EyeACT/envision-portal (Development status: Active)",
+    "type": "Software"
+  },
+  {
+    "project": ["eyeact"],
+    "url": "https://github.com/EyeACT/eyeactstudy.org",
+    "title": "Eye ACT Home Page",
+    "subtitle": "",
+    "citation": "Eye ACT Home Page (started 2025). https://github.com/EyeACT/eyeactstudy.org (Development status: Active)",
+    "type": "Software"
   }
 ]
