@@ -15,6 +15,9 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy",
     "start": "next start",
     "type-check": "tsc",
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|jsx)\"",
@@ -84,6 +87,7 @@
     "words-count": "2.0.2"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.10",
     "@commitlint/cli": "17.8.1",
     "@commitlint/config-conventional": "17.8.1",
     "@fairdataihub/config": "2.2.3",
