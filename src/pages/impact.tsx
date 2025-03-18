@@ -119,6 +119,11 @@ export async function getStaticProps() {
     sortedGrouped.push(item);
   }
 
+  // sort each group by year
+  for (const group of sortedGrouped) {
+    group.value.sort((a, b) => b.year - a.year);
+  }
+
   return {
     props: {
       publications: sortedGrouped,

@@ -52,10 +52,10 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
 };
 
 export async function getStaticProps() {
-  // Filter the publications with the `eyeact` tag
+  // Filter the publications with the `eyeact` tag and sort by the "year" key
   const publications = PublicationsJSON.filter((publication) =>
     publication.project.includes(`eyeact`),
-  );
+  ).sort((a, b) => b.year - a.year);
 
   return {
     props: {
