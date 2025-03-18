@@ -51,7 +51,7 @@ const Impact: React.FC<Props> = ({ publications }) => {
                         <a
                           href={item.url}
                           target="_blank"
-                          className="text-url w-max text-base font-medium"
+                          className="text-url max-w-screen-xl text-base font-medium"
                           data-umami-event="Publication link"
                           data-umami-event-url={item.url}
                           rel="noopener"
