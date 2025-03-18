@@ -1,3 +1,10 @@
+## [2.44.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.44.0...v2.44.1) (2025-03-18)
+
+
+### Bug Fixes
+
+* 🐛 correct publication date and url ([a7d41f6](https://github.com/fairdataihub/fairdataihub.org/commit/a7d41f60a04be40b3e220d08dce1618887abeb40))
+
 # [2.44.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.43.0...v2.44.0) (2025-03-18)
 
 
