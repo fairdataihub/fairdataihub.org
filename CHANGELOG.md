@@ -1,3 +1,18 @@
+# [2.43.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.42.0...v2.43.0) (2025-03-18)
+
+
+### Bug Fixes
+
+* 🐛 typo ([1d47ee0](https://github.com/fairdataihub/fairdataihub.org/commit/1d47ee0b7adcd02366681f05b3b55452fe2395b8))
+
+
+### Features
+
+* ✨ create tooltip component ([207e9fc](https://github.com/fairdataihub/fairdataihub.org/commit/207e9fc40a95824e0372efce02f6d3d5baa67883))
+* ✨ disabled eyeact buttons (coming soon) ([e41d15b](https://github.com/fairdataihub/fairdataihub.org/commit/e41d15bc4a6c240b160e64551149c7e68e05687b))
+* ✨ envision portal project page ([bb940a5](https://github.com/fairdataihub/fairdataihub.org/commit/bb940a52ee2b1bc2db06934dbdefee69eee53a1e))
+* ✨ update timeline list ([61beb56](https://github.com/fairdataihub/fairdataihub.org/commit/61beb563e15b2960272c5936b7f01e79d7733aad))
+
 # [2.42.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.41.0...v2.42.0) (2025-02-18)
 
 
