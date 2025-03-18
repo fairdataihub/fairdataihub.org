@@ -1,3 +1,11 @@
+# [2.44.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.43.0...v2.44.0) (2025-03-18)
+
+
+### Features
+
+* ✨ publication added to json + max width on citation titles ([b04ee2a](https://github.com/fairdataihub/fairdataihub.org/commit/b04ee2a3f01d3601638cfa5a864a0fef5bfacef9))
+* ✨ sort publications by year ([eb0b4f0](https://github.com/fairdataihub/fairdataihub.org/commit/eb0b4f02a0878158baef3ffd064c38141bf5f974))
+
 # [2.43.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.42.0...v2.43.0) (2025-03-18)
 
 
