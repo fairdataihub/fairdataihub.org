@@ -100,6 +100,48 @@ export default function Home() {
                 </div>
               </Link>
 
+              <Link href="/eyeact">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <div className="flex space-x-2">
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Platform
+                        </span>
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Standards
+                        </span>
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Guidelines
+                        </span>
+                      </div>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        Eye ACT
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg text-black">
+                      The Eye ACT study aims to provide insights on how
+                      opthalmic conditions such as glaucoma and diabetic
+                      retinopathy can provide early indicators to
+                      Alzheimer&apos;s disease. By leveraging the Envision
+                      Portal, it enhances data management, sharing, and
+                      AI-driven research under FAIR principles to accelerate
+                      discoveries in vision and brain health.
+                    </p>
+                  </div>
+
+                  <div className="relative h-full w-full overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <img
+                      src="/images/hero/eye-act-logo.png"
+                      alt="Screenshot of Eye ACT"
+                      className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
               <Link href="/fair-biors">
                 <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
                   <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">

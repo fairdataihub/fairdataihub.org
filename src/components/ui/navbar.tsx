@@ -299,6 +299,40 @@ export default function Navbar() {
                       </div>
                     </Link>
 
+                    <Link href="/eyeact" passHref>
+                      <div
+                        id="eyeact-page"
+                        className={
+                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          (router.pathname === `/eyeact`
+                            ? ` router-link-active`
+                            : ` `)
+                        }
+                        data-umami-event="Navigation link"
+                        data-umami-event-location="Header"
+                        data-umami-event-value="Eye ACT"
+                      >
+                        Eye ACT
+                      </div>
+                    </Link>
+
+                    <Link href="/codefair" passHref>
+                      <div
+                        id="codefair-page"
+                        className={
+                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          (router.pathname === `/codefair`
+                            ? ` router-link-active`
+                            : ` `)
+                        }
+                        data-umami-event="Navigation link"
+                        data-umami-event-location="Header"
+                        data-umami-event-value="CodeFair"
+                      >
+                        Codefair
+                      </div>
+                    </Link>
+
                     <Link href="/fairshare" passHref>
                       <div
                         id="fairshare-page"
