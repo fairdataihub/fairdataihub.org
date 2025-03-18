@@ -51,7 +51,7 @@ const Impact: React.FC<Props> = ({ publications }) => {
                         <a
                           href={item.url}
                           target="_blank"
-                          className="text-url w-max text-base font-medium"
+                          className="text-url max-w-screen-xl text-base font-medium"
                           data-umami-event="Publication link"
                           data-umami-event-url={item.url}
                           rel="noopener"
@@ -117,6 +117,11 @@ export async function getStaticProps() {
     };
 
     sortedGrouped.push(item);
+  }
+
+  // sort each group by year
+  for (const group of sortedGrouped) {
+    group.value.sort((a, b) => b.year - a.year);
   }
 
   return {

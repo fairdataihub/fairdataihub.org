@@ -4,14 +4,16 @@
     "title": "AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond",
     "url": "https://doi.org/10.1038/s42255-024-01165-x",
     "citation": "AI-READI Consortium. (2024). AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond. Nature Metabolism. https://doi.org/10.1038/s42255-024-01165-x",
-    "type": "Journal Articles"
+    "type": "Journal Articles",
+    "year": 2024
   },
   {
     "project": ["sodaforsparc"],
     "title": "SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data",
     "url": "https://doi.org/10.21105/joss.06140",
     "citation": "Marroquin, C., Clark, J., Portillo, D., Soundarajan, S., Ngo, T., & Patel, B. (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140, https://doi.org/10.21105/joss.06140",
-    "type": "Journal Articles"
+    "type": "Journal Articles",
+    "year": 2024
   },
   {
     "project": ["fairshare", "fairbiors"],
@@ -19,7 +21,17 @@
     "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
     "subtitle": "",
     "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool. Scientific Data, 10(1). https://doi.org/10.1038/s41597-023-02463-x",
-    "type": "Journal Articles"
+    "type": "Journal Articles",
+    "year": 2023
+  },
+  {
+    "project": ["eyeact"],
+    "url": "https://doi.org/10.1016/j.exer.2025.110342",
+    "title": "Publicly Available Imaging Datasets for Age-related Macular Degeneration: Evaluation according to the Findable, Accessible, Interoperable, Reusable (FAIR) Principles",
+    "subtitle": "",
+    "citation": "Gim, N., Ferguson, A., Blazes, M., Soundarajan, S., Gasimova, A., Jiang, Y., Sanchez Gutiérrez, C., Zalunardo, L., Corradetti, G., Elze, T., Honda, N., Waheed, N., Cairns, A. M., C., Lee, A. Y., Sadda, S. R., Keenan, T. D. L., Patel, B., & Lee, C. S., on behalf of the Ryan Initiative For Macular Research (RIMR) Consortium. (2024). Publicly available ophthalmic imaging datasets assessed according to the FAIR principles. Ophthalmology Science, 4(1), 100353. https://doi.org/10.1016/j.exer.2023.110941",
+    "type": "Journal Articles",
+    "year": 2024
   },
   {
     "project": ["sparclink"],
@@ -27,7 +39,8 @@
     "title": "SPARClink: an interactive tool to visualize the impact of the SPARC program",
     "subtitle": "",
     "citation": "Soundarajan, S., Kuruppu, S., Singh, A., Kim, J., & Achalla, M. (2022). SPARClink: an interactive tool to visualize the impact of the SPARC program. F1000Research, 11, 124. https://doi.org/10.12688/f1000research.75071.1",
-    "type": "Journal Articles"
+    "type": "Journal Articles",
+    "year": 2022
   },
   {
     "project": ["aqua"],
@@ -35,7 +48,8 @@
     "title": "AQUA: an Advanced QUery Architecture for the SPARC Portal",
     "subtitle": "",
     "citation": "Shahidi, N., Lin, X., Munarko, Y., Rasmy, L., & Ngo, T. (2021). AQUA: an Advanced QUery Architecture for the SPARC Portal. F1000Research, 10, 930. https://doi.org/10.12688/f1000research.73018.1",
-    "type": "Journal Articles"
+    "type": "Journal Articles",
+    "year": 2021
   },
   {
     "project": ["aireadi"],
@@ -43,7 +57,8 @@
     "title": "AI-readiness for Biomedical Data: Bridge2AI Recommendations",
     "subtitle": "",
     "citation": "Clark, T., Caufield, H., Mohan, J. A., Al, S. M., Amorim, E., Eddy, J., Gim, N., ... Patel, B., Williams, A., & Munoz-Torres, M. C. (2024). AI-readiness for Biomedical Data: Bridge2AI Recommendations. BioRxiv. https://doi.org/10.1101/2024.10.23.619844",
-    "type": "Preprints"
+    "type": "Preprints",
+    "year": 2024
   },
   {
     "project": ["aireadi"],
@@ -51,7 +66,8 @@
     "title": "Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data",
     "subtitle": "",
     "citation": "Alavi, A., Cha, K., Esfarjani, D. P., Patel, B., Than, J. L. P., Lee, A. Y., Nebeker, C., Snyder, M. & Bahmani, A. (2024). Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data. MedRxiv. https://doi.org/10.1101/2024.07.29.24310315",
-    "type": "Preprints"
+    "type": "Preprints",
+    "year": 2024
   },
   {
     "project": ["fairshare"],
@@ -59,7 +75,8 @@
     "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
     "subtitle": "",
     "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2022). Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2022.04.18.488694",
-    "type": "Preprints"
+    "type": "Preprints",
+    "year": 2022
   },
   {
     "project": ["sodaforsparc"],
@@ -67,7 +84,8 @@
     "title": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
     "subtitle": "",
     "citation": "Bandrowski, A., Grethe, J. S., Pilko, A., Gillespie, T., Pine, G., Patel, B., Surles-Zeigler, M., & Martone, M. E. (2021). SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2021.02.10.430563",
-    "type": "Preprints"
+    "type": "Preprints",
+    "year": 2021
   },
   {
     "project": ["knowmore"],
@@ -75,7 +93,8 @@
     "title": "KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC Datasets",
     "subtitle": "",
     "citation": "Quey, R., Schiefer, M. A., Kiran, A., & Patel, B. (2021). KnowMore: an automated knowledge discovery tool for the FAIR SPARC datasets. Cold Spring Harbor Laboratory. BioRxiv. https://doi.org/10.1101/2021.08.08.455581",
-    "type": "Preprints"
+    "type": "Preprints",
+    "year": 2021
   },
   {
     "project": ["codefair"],
@@ -83,7 +102,8 @@
     "title": "Codefair",
     "subtitle": "",
     "citation": "Codefair. (started 2024). https://github.com/fairdataihub/codefair-app (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2024
   },
   {
     "project": ["aireadi"],
@@ -91,7 +111,8 @@
     "title": "FAIRhub Study Management Platform",
     "subtitle": "",
     "citation": "FAIRhub study management platform. (started 2022). https://github.com/AI-READI/fairhub-app (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2022
   },
   {
     "project": ["aireadi"],
@@ -99,7 +120,8 @@
     "title": "FAIRhub Data Portal",
     "subtitle": "",
     "citation": "FAIRhub data portal. (started 2022). https://github.com/AI-READI/fairhub-portal (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2022
   },
   {
     "project": ["aireadi"],
@@ -107,7 +129,8 @@
     "title": "Pyfairdatatools",
     "subtitle": "",
     "citation": "pyfairdatatools. (started 2022). https://github.com/AI-READI/pyfairdatatools (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2022
   },
   {
     "project": ["aireadi"],
@@ -115,7 +138,8 @@
     "title": "Flagship Dataset of Type 2 Diabetes from the AI-READI Project",
     "subtitle": "",
     "citation": "AI-READI Consortium. (2022). Flagship Dataset of Type 2 Diabetes from the AI-READI Project (1.0.0). FAIRhub. https://doi.org/10.60775/fairhub.1",
-    "type": "Datasets"
+    "type": "Datasets",
+    "year": 2022
   },
   {
     "project": ["fairshare"],
@@ -123,7 +147,8 @@
     "title": "FAIRshare",
     "subtitle": "",
     "citation": "FAIRshare. (started 2021). https://github.com/fairdataihub/FAIRshare (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2021
   },
   {
     "project": ["sodaforsparc"],
@@ -131,7 +156,8 @@
     "title": "SODA (Software to Organize Data Automatically) for SPARC",
     "subtitle": "",
     "citation": "SODA. (started 2019). https://github.com/fairdataihub/SODA-for-SPARC (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2019
   },
   {
     "project": ["sodaforsparc"],
@@ -139,7 +165,8 @@
     "title": "SPARC: SODA, an interactive software for curating SPARC datasets",
     "subtitle": "",
     "citation": "Patel, B., Srivastava, H., Aghasafari, P., & Helmer, K. (2020). SPARC: SODA, an interactive software for curating SPARC datasets. The FASEB Journal, 34(S1), 1–1. https://doi.org/10.1096/fasebj.2020.34.s1.02483",
-    "type": "Abstract"
+    "type": "Abstract",
+    "year": 2020
   },
   {
     "project": ["codefair"],
@@ -147,7 +174,8 @@
     "title": "Codefair: Your Personal Assistant for Developing FAIR Software (Presentation)",
     "subtitle": "",
     "citation": "Portillo, D., Soundarajan, S., Clark, J., & Patel, B. (2024). Codefair: Your Personal Assistant for Developing FAIR Software (Presentation) (1.0.0). Zenodo. https://zenodo.org/records/13948381",
-    "type": "Conference Presentations"
+    "type": "Conference Presentations",
+    "year": 2024
   },
   {
     "project": [],
@@ -155,7 +183,8 @@
     "title": "Presentation - Making FAIR Fair to the Researchers (Force11 Conference - Force2024)",
     "subtitle": "",
     "citation": "Patel, B. (2024). Presentation - Making FAIR Fair to the Researchers (Force11 Conference - Force2024) (1.0.0). Zenodo. https://zenodo.org/records/13159874",
-    "type": "Conference Presentations"
+    "type": "Conference Presentations",
+    "year": 2024
   },
   {
     "project": ["codefair"],
@@ -163,16 +192,17 @@
     "title": "Codefair: Make biomedical research software FAIR without breaking a sweat",
     "subtitle": "Slides presented at Bioinformatics Open Source Conference (BOSC), 2024",
     "citation": "Portillo, D., Soundarajan, S., Clark, J., & Patel, B. (2024). Codefair: Make biomedical research software FAIR without breaking a sweat (13:912). F1000 Research. https://doi.org/10.7490/f1000research.1119824.1",
-    "type": "Conference Presentations"
+    "type": "Conference Presentations",
+    "year": 2024
   },
-
   {
     "project": ["fairbiors"],
     "url": "https://doi.org/10.7490/f1000research.1119609.1",
     "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
     "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119609.1",
-    "type": "Conference Presentations"
+    "type": "Conference Presentations",
+    "year": 2023
   },
   {
     "project": ["fairshare"],
@@ -180,7 +210,8 @@
     "title": "Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
     "citation": "Patel, B., & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
-    "type": "Conference Presentations"
+    "type": "Conference Presentations",
+    "year": 2022
   },
   {
     "project": ["aireadi"],
@@ -188,7 +219,8 @@
     "title": "Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster)",
     "subtitle": "",
     "citation": "Patel, B., Soundarajan, S., Gasimova, A., Gim, N., Shaffer, J., & Lee, A. (2024). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984769",
-    "type": "Posters"
+    "type": "Posters",
+    "year": 2024
   },
   {
     "project": ["codefair"],
@@ -196,7 +228,8 @@
     "title": "Codefair - Your Personal Assistant for Developing FAIR Software (Poster)",
     "subtitle": "",
     "citation": "Portillo, D, Soundarajan, S, Clark, J & Patel, B. (2024). Codefair - Your Personal Assistant for Developing FAIR Software (Poster) (1.0.0). Zenodo. https://zenodo.org/records/13948350",
-    "type": "Posters"
+    "type": "Posters",
+    "year": 2024
   },
   {
     "project": ["codefair"],
@@ -204,7 +237,8 @@
     "title": "Codefair - Make biomedical research software FAIR without breaking a sweat",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
     "citation": "Portillo, D, Soundarajan, S, Clark, J & Patel, B. (2024). Codefair - Make biomedical research software FAIR without breaking a sweat (13:911). F1000Research. https://doi.org/10.7490/f1000research.1119823.1",
-    "type": "Posters"
+    "type": "Posters",
+    "year": 2024
   },
   {
     "project": ["fairbiors"],
@@ -212,7 +246,8 @@
     "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
     "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
     "citation": "Patel, B., Soundarajan, S., Ménager, H., & Hu, Z. (2023). FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR. F1000 Research Limited. https://doi.org/10.7490/f1000research.1119608.1",
-    "type": "Posters"
+    "type": "Posters",
+    "year": 2023
   },
   {
     "project": ["fairshare"],
@@ -220,7 +255,8 @@
     "title": "Making biomedical research software FAIR with FAIRshare",
     "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
     "citation": "Patel, B., & Soundarajan, S. (2022). Making biomedical research software FAIR with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119054.1",
-    "type": "Posters"
+    "type": "Posters",
+    "year": 2022
   },
   {
     "project": ["aireadi"],
@@ -228,7 +264,8 @@
     "title": "Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation)",
     "subtitle": "",
     "citation": "Lee, C., Patel, B., & Baxter, S. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984710",
-    "type": "Webinars/Lectures"
+    "type": "Webinars/Lectures",
+    "year": 2024
   },
   {
     "project": ["aireadi"],
@@ -236,7 +273,8 @@
     "title": "Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series)",
     "subtitle": "",
     "citation": "Lee, C., Patel, B., & Baxter, S. (2024). Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series) (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.13984755",
-    "type": "Webinars/Lectures"
+    "type": "Webinars/Lectures",
+    "year": 2024
   },
   {
     "project": ["aireadi"],
@@ -244,7 +282,8 @@
     "title": "AI-READI Code of Conduct",
     "subtitle": "",
     "citation": "Lee, A., Owen, J., Patel, B., Nebeker, C., Lee, C., Zangwill, L., Hurst, S., Singer, S., Li-Pook-Than, J., & Matthews, D. (2024). AI-READI Code of Conduct (2.0). Zenodo. https://zenodo.org/records/13328255",
-    "type": "Reports"
+    "type": "Reports",
+    "year": 2024
   },
   {
     "project": ["aireadi"],
@@ -252,7 +291,8 @@
     "title": "License terms for reusing the AI-READI dataset",
     "subtitle": "",
     "citation": "Contreras, J., Evans, B., Hurst, S., Patel, B., Mcweeney, S., Lee, C., & Lee, A. (2024). License terms for reusing the AI-READI dataset (1.0). Zenodo. https://doi.org/10.5281/zenodo.10642459",
-    "type": "Reports"
+    "type": "Reports",
+    "year": 2024
   },
   {
     "project": ["aireadi"],
@@ -260,7 +300,8 @@
     "title": "AI-READI Steering Committee Charter",
     "subtitle": "",
     "citation": "Lee, A., Owen, J., Patel, B., Nebeker, C., Lee, C., Zangwill, L., Hurst, S., & Singer, S. (2023). AI-READI Steering Committee Charter (1.0). Zenodo. https://doi.org/10.5281/zenodo.7641684",
-    "type": "Reports"
+    "type": "Reports",
+    "year": 2023
   },
   {
     "project": ["aireadi"],
@@ -268,7 +309,8 @@
     "title": "Software Development Best Practices of the AI-READI Project",
     "subtitle": "",
     "citation": "Patel, B., Soundarajan, S., McWeeney, S., Cordier, B. A., & Benton, E. S. (2022). Software Development Best Practices of the AI-READI Project (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.7363102",
-    "type": "Reports"
+    "type": "Reports",
+    "year": 2022
   },
   {
     "project": ["sodaforsparc"],
@@ -276,7 +318,8 @@
     "title": "Sharing is Caring - Making SPARC data FAIR with SODA",
     "subtitle": "",
     "citation": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. (2021). SPARC. https://sparc.science/news-and-events/community-spotlight/success-stories/sharing-is-caring-making-sparc-data-fair-with-soda",
-    "type": "Web Articles"
+    "type": "Web Articles",
+    "year": 2021
   },
   {
     "project": ["eyeact"],
@@ -284,7 +327,8 @@
     "title": "Envision Portal",
     "subtitle": "",
     "citation": "Envision Portal (started 2024). https://github.com/EyeACT/envision-portal (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2024
   },
   {
     "project": ["eyeact"],
@@ -292,6 +336,7 @@
     "title": "Eye ACT Home Page",
     "subtitle": "",
     "citation": "Eye ACT Home Page (started 2025). https://github.com/EyeACT/eyeactstudy.org (Development status: Active)",
-    "type": "Software"
+    "type": "Software",
+    "year": 2025
   }
 ]

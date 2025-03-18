@@ -73,7 +73,7 @@ export async function getStaticProps() {
   // Filter the publications with the `sodaforsparc` tag
   const publications = PublicationsJSON.filter((publication) =>
     publication.project.includes(`fairbiors`),
-  );
+  ).sort((a, b) => b.year - a.year);
 
   return {
     props: {
