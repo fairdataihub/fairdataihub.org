@@ -35,17 +35,6 @@ export default function Info() {
     },
   ];
 
-  const collaboratorsList = [
-    {
-      image: `/images/collaborators/uw.png`,
-      href: `https://www.washington.edu/`,
-      caption: `University of Washington`,
-      type: `organization`,
-      name: `University of Washington`,
-      id: `UW`,
-    },
-  ];
-
   return (
     <div>
       <section>
@@ -130,7 +119,7 @@ export default function Info() {
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://reporter.nih.gov/search/r6rgy87TCUSjNLj7AgSDsg/project-details/10976376"
+                      href="https://reporter.nih.gov/project-details/10976376"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       data-umami-event="Funding link"
@@ -230,13 +219,20 @@ export default function Info() {
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
                     We are collaborating on this project with Dr. Cecilia
-                    Lee&apos;s team at the Computational Ophthalmology Lab
+                    Lee&apos;s team at the&nbsp;
+                    <Link
+                      target="_blank"
+                      className="text-url hover-underline-animation"
+                      href="https://comp.ophthalmology.uw.edu/"
+                    >
+                      Computational Ophthalmology Lab&nbsp;
+                    </Link>
                     (University of Washington).
                   </p>
                 </div>
               </div>
             </div>
-            <div className="w-full">
+            {/* <div className="w-full">
               <div>
                 <div className="mb-10 w-full sm:mb-5">
                   <div className="grid grid-cols-2 gap-4 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
@@ -282,7 +278,7 @@ export default function Info() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
