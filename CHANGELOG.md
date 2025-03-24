@@ -1,3 +1,10 @@
+# [2.45.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.44.1...v2.45.0) (2025-03-24)
+
+
+### Features
+
+* ✨ add funding, collaborators to eyeact project ([cfc3cb8](https://github.com/fairdataihub/fairdataihub.org/commit/cfc3cb8913de5ce029972c2b3bfbe40313b1f75e))
+
 ## [2.44.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.44.0...v2.44.1) (2025-03-18)
 
 
