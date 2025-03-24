@@ -35,36 +35,16 @@ export default function Info() {
     },
   ];
 
-  // const collaboratorsList = [
-  //   {
-  //     name: `Zicheng Hu (UCSF)`,
-  //     id: `Zicheng-Hu-UCSF`,
-  //     href: `https://profiles.ucsf.edu/zicheng.hu`,
-  //     image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
-  //     type: `person`,
-  //   },
-  //   {
-  //     name: `The Butte Lab`,
-  //     id: `The-Butte-Lab`,
-  //     href: `https://buttelab.ucsf.edu/`,
-  //     image: `/images/collaborators/ucsf-logo.png`,
-  //     type: `lab`,
-  //   },
-  //   {
-  //     name: `The Jagannathan Lab`,
-  //     id: `The-Jagannathan-Lab`,
-  //     href: `https://med.stanford.edu/jagannathan-lab.html`,
-  //     image: `/images/collaborators/stanford-medicine-logo.png`,
-  //     type: `lab`,
-  //   },
-  //   {
-  //     name: `Dr. Greenhouse Lab`,
-  //     id: `Dr-Greenhouse-Lab`,
-  //     href: `https://profiles.ucsf.edu/bryan.greenhouse#toc-id2`,
-  //     image: `/images/collaborators/ucsf-logo.png`,
-  //     type: `lab`,
-  //   },
-  // ];
+  const collaboratorsList = [
+    {
+      image: `/images/collaborators/uw.png`,
+      href: `https://www.washington.edu/`,
+      caption: `University of Washington`,
+      type: `organization`,
+      name: `University of Washington`,
+      id: `UW`,
+    },
+  ];
 
   return (
     <div>
@@ -78,9 +58,9 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    All software and tools from the Eye ACT&apos;s project,
-                    including the Envision Portal, are developed using an
-                    open-source approach. This allows for transparency and
+                    All software and tools developed by our team for the Eye ACT
+                    project, including the Envision Portal, are developed using
+                    an open-source approach. This allows for transparency and
                     collaboration with the open source community.
                   </p>
                   <div className="mt-2 flex md:mt-1">
@@ -134,7 +114,7 @@ export default function Info() {
           </div>
         </div>
       </section>
-      {/* <section>
+      <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="py-5 text-left text-4xl font-black md:mr-8 md:py-0">
@@ -144,13 +124,13 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    FAIRshare is funded through a supplemental award from the
-                    National Institute of Allergy and Infectious Diseases
-                    (NIAID).
+                    Our contribution to this project is funded through a subward
+                    from the National Institute of Aging (NIA) grant
+                    R01AG060942.
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://reporter.nih.gov/project-details/10377989"
+                      href="https://reporter.nih.gov/search/r6rgy87TCUSjNLj7AgSDsg/project-details/10976376"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       data-umami-event="Funding link"
@@ -178,7 +158,7 @@ export default function Info() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
@@ -239,7 +219,7 @@ export default function Info() {
           </div>
         </div>
       </section>
-      {/* <section>
+      <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="pb-5 text-left text-4xl font-black md:mr-8">
@@ -249,15 +229,9 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    The first phase of development of FAIRshare is focused on
-                    supporting COVID-19 and other infectious diseases data and
-                    software. FAIRshare is developed in collaboration with Dr.
-                    Zicheng Hu (UCSF) and his colleagues at University of
-                    California, San Francisco and Stanford University who are
-                    conducting a clinical trial for a novel treatment approach
-                    for COVID-19. They will be providing overall guidance on the
-                    applicable FAIR guidelines as well as conducting beta
-                    testing of the software.
+                    We are collaborating on this project with Dr. Cecilia
+                    Lee&apos;s team at the Computational Ophthalmology Lab
+                    (University of Washington).
                   </p>
                 </div>
               </div>
@@ -311,7 +285,7 @@ export default function Info() {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
