@@ -13,7 +13,7 @@
     "calmii"
   ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p ${PORT:-3000}",
     "build": "next build",
     "pages:build": "npx @cloudflare/next-on-pages",
     "preview": "npm run pages:build && wrangler pages dev",
