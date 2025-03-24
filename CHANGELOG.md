@@ -1,3 +1,10 @@
+# [2.46.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.45.0...v2.46.0) (2025-03-24)
+
+
+### Features
+
+* ✨ sparkles: allow port configuration ([880e366](https://github.com/fairdataihub/fairdataihub.org/commit/880e366aa035fd8dad87ec3e115aa67d0c56d3f7))
+
 # [2.45.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.44.1...v2.45.0) (2025-03-24)
 
 
