@@ -1,3 +1,10 @@
+# [2.47.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.46.0...v2.47.0) (2025-04-01)
+
+
+### Features
+
+* ✨ add a webinar to the events ([1082fdd](https://github.com/fairdataihub/fairdataihub.org/commit/1082fddbe13a295177829bb86c2ba265aba9eb43))
+
 # [2.46.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.45.0...v2.46.0) (2025-03-24)
 
 
