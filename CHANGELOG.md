@@ -1,3 +1,10 @@
+## [2.47.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.47.0...v2.47.1) (2025-04-04)
+
+
+### Bug Fixes
+
+* 🐛 update aireadi logo ([7239f35](https://github.com/fairdataihub/fairdataihub.org/commit/7239f356d0e87dabf48b1de1a23c41fee14ea842))
+
 # [2.47.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.46.0...v2.47.0) (2025-04-01)
 
 
