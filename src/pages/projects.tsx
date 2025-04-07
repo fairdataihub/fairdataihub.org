@@ -75,7 +75,7 @@ export default function Home() {
                       </div>
 
                       <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
-                        Artificial Intelligence Ready and Equitable Atlas for
+                        Artificial Intelligence Ready and Exploratory Atlas for
                         Diabetes Insights
                       </h2>
                     </div>

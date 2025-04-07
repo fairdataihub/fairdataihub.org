@@ -26,7 +26,7 @@ export default function Hero() {
               AI-READI
             </h1>
             <h2 className="mb-2 w-full max-w-xl text-center text-2xl font-medium sm:text-2xl">
-              Artificial Intelligence Ready and Equitable Atlas for Diabetes
+              Artificial Intelligence Ready and Exploratory Atlas for Diabetes
               Insights
             </h2>
             <p className="mx-auto mb-8 max-w-lg text-center font-asap text-base leading-relaxed text-black">
