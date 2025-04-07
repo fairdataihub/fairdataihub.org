@@ -1,3 +1,10 @@
+## [2.47.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.47.1...v2.47.2) (2025-04-07)
+
+
+### Bug Fixes
+
+* 🐛 update AIREADI project header ([35756e2](https://github.com/fairdataihub/fairdataihub.org/commit/35756e2a125b123522a5ebc38ef733c295f49e96))
+
 ## [2.47.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.47.0...v2.47.1) (2025-04-04)
 
 
