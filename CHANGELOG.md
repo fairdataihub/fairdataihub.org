@@ -1,3 +1,10 @@
+# [2.49.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.48.0...v2.49.0) (2025-04-19)
+
+
+### Features
+
+* ✨ blog post Actionable FAIR4RS ([b09eefe](https://github.com/fairdataihub/fairdataihub.org/commit/b09eefe857372fafa7002a051ca2d2287a3f2a75))
+
 # [2.48.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.47.2...v2.48.0) (2025-04-19)
 
 
