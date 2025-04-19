@@ -1,3 +1,10 @@
+# [2.48.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.47.2...v2.48.0) (2025-04-19)
+
+
+### Features
+
+* ✨ blog post COMET ([48c6a6e](https://github.com/fairdataihub/fairdataihub.org/commit/48c6a6e66e999690437606479df0b3b66c9fbeab))
+
 ## [2.47.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.47.1...v2.47.2) (2025-04-07)
 
 
