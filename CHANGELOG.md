@@ -1,3 +1,10 @@
+# [2.50.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.49.0...v2.50.0) (2025-05-07)
+
+
+### Features
+
+* ✨ add conference events ([e9a08fa](https://github.com/fairdataihub/fairdataihub.org/commit/e9a08fa9cdd82b9406d459aba0e132fde3fc3cfb))
+
 # [2.49.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.48.0...v2.49.0) (2025-04-19)
 
 
