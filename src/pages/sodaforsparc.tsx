@@ -42,7 +42,7 @@ const timelineList = [
   {
     longDate: `Sept 2024 - Aug 2025`,
     title: `Phase VI development`,
-    content: `In the final phase of development the SODA team is focusing on bringing the SDS 3.0 to SODA and overall enhancing the user experience by simmplifying UIs and presentation.`,
+    content: `In the final phase of development the SODA team is focusing on bringing the SDS 3.0 to SODA and overall enhancing the user experience by simplifying UIs and presentation.`,
   },
 ];
 
