@@ -36,15 +36,15 @@ export default function Home() {
                       </span>
 
                       <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
-                        SODA for SPARC
+                        SODA
                       </h2>
                     </div>
 
                     <p className="w-full font-asap text-lg text-black">
-                      SODA (Software to Organize Data Automatically) for SPARC
-                      is a cross-platform desktop software that allows
-                      SPARC-funded researchers to easily comply with the FAIR
-                      SPARC Data curation and sharing guidelines.
+                      SODA is a cross-platform desktop software that helps
+                      researchers prepare and share FAIR peripheral nervous
+                      system (PNS) related data and models using the SPARC Data
+                      Structure (SDS) and the SPARC Portal.
                     </p>
                   </div>
 

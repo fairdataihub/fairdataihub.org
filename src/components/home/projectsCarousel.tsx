@@ -56,7 +56,7 @@ export default function ProjectsCarousel() {
       imageUrl: `/images/carousel/sodasparc.png`,
       imageWidth: 320,
       imageHeight: 103,
-      description: `SODA (Software to Organize Data Automatically) for SPARC is a desktop software intended to facilitate the data organization and submission process for SPARC investigators according to the FAIR SPARC data standards.`,
+      description: `SODA (Software to Organize Data Automatically) is a desktop software intended to facilitate the data organization and submission process according to the FAIR SPARC data standards.`,
       page: `/sodaforsparc`,
     },
     {

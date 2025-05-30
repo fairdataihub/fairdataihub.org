@@ -79,14 +79,13 @@ export default function Home() {
             className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[180px] md:w-7/12"
           >
             <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                SODA for SPARC
-              </h3>
+              <h3 className="mb-2 text-2xl font-bold text-stone-900">SODA</h3>
 
               <p className="font-asap text-lg">
-                Easily make bioelectronic, neurophysiology, and other similar
-                research data and computational models FAIR following the NIH
-                SPARC guidelines
+                SODA is a cross-platform desktop software that helps researchers
+                prepare and share FAIR peripheral nervous system (PNS) related
+                data and models using the SPARC Data Structure (SDS) and the
+                SPARC Portal.
               </p>
             </div>
           </Link>

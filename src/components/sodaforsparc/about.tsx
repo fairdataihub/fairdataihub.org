@@ -8,10 +8,11 @@ export default function About() {
           About
         </p>
         <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
-          SODA (Software to Organize Data Automatically) for SPARC is a
-          cross-platform desktop software that allows SPARC-funded researchers
-          to easily comply with the FAIR SPARC Data curation and sharing
-          guidelines.
+          SODA is a cross-platform desktop software that helps researchers
+          prepare and share FAIR peripheral nervous system (PNS) related data
+          and models using the SPARC Data Structure (SDS) and the SPARC Portal.
+          Since 2021, SODA has been installed on over 1300 computers, empowering
+          researchers worldwide.
         </p>
       </div>
 
@@ -136,14 +137,14 @@ export default function About() {
                 <Icon icon="ep:guide" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
-                What does SODA for SPARC do?
+                What does SODA do?
               </p>
             </dt>
             <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
               <div>
-                SODA for SPARC combines intuitive user interfaces and automation
-                such that researchers can efficiently and accurately curate
-                their SPARC datasets.
+                SODA combines intuitive user interfaces and automation such that
+                researchers can efficiently and accurately curate their SPARC
+                datasets.
               </div>
             </dd>
           </div>
