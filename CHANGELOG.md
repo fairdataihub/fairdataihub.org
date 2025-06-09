@@ -1,3 +1,10 @@
+# [2.51.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.50.0...v2.51.0) (2025-06-09)
+
+
+### Features
+
+* add asset downloads + change soda for sparc -> SODA ([#683](https://github.com/fairdataihub/fairdataihub.org/issues/683)) ([d8d2568](https://github.com/fairdataihub/fairdataihub.org/commit/d8d25685d5646bb7e66ee51ee3b4e133fe4c05de))
+
 # [2.50.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.49.0...v2.50.0) (2025-05-07)
 
 
