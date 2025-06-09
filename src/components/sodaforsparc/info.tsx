@@ -74,10 +74,10 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    SODA for SPARC is distributed as an open-source application
-                    with an MIT License. Anyone is free to fork our GitHub
-                    repository and make their own changes if they would like. If
-                    you would like to submit a feature modification, or feature
+                    SODA is distributed as an open-source application with an
+                    MIT License. Anyone is free to fork our GitHub repository
+                    and make their own changes if they would like. If you would
+                    like to submit a feature modification, or feature
                     suggestion, please feel free to submit an issue on the
                     repository.
                   </p>
@@ -204,8 +204,8 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    SODA for SPARC is funded by the National Institutes of
-                    Health (NIH)&apos;s SPARC program. The funding was initially
+                    SODA is funded by the National Institutes of Health
+                    (NIH)&apos;s SPARC program. The funding was initially
                     provided as a supplement to an existing SPARC award at CalMI
                     <sup>2</sup>
                     during the first phase of development before now having a

@@ -11,7 +11,7 @@ import PublicationsJSON from '@/assets/data/publications.json';
 const timelineList = [
   {
     longDate: `December 2018`,
-    title: `Birth of SODA for SPARC`,
+    title: `Birth of SODA`,
     content: `The first prototype of SODA for SPARC is developed during the 2018 NIH SPARC Hackathon where it won the People's Choice Award.`,
   },
   {
@@ -34,6 +34,16 @@ const timelineList = [
     title: `Phase IV development`,
     content: `The SPARC data curation and sharing worflows will be further streamlined. Full integration will be achieved with the SDS validator and the new Pennsieve upload method. Support will be provided for the submission of non-SPARC data.`,
   },
+  {
+    longDate: `Sept 2023 - Aug 2024`,
+    title: `Phase V development`,
+    content: `The SODA team improved the user interfaces of SODA and enhanced workflows to further simplify data submission for non-SPARC users and worked with the MBF team for integrated MicroFile+ and Biolucida with SODA (and more).`,
+  },
+  {
+    longDate: `Sept 2024 - Aug 2025`,
+    title: `Phase VI development`,
+    content: `In the final phase of development the SODA team is focusing on bringing the SDS 3.0 to SODA and overall enhancing the user experience by simplifying UIs and presentation.`,
+  },
 ];
 
 const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
@@ -42,7 +52,9 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
       <Seo
         templateTitle="SODA for SPARC"
         templateUrl="https://fairdataihub.org/sodaforsparc"
-        templateDescription="SODA (Software to Organize Data Automatically) for SPARC is a cross-platform desktop software that allows SPARC-funded researchers to easily comply with the FAIR SPARC Data curation and sharing guidelines"
+        templateDescription="SODA is a cross-platform desktop software that helps researchers
+          prepare and share FAIR peripheral nervous system (PNS) related data
+          and models using the SPARC Data Structure (SDS) and the SPARC Portal."
         templateImage="https://fairdataihub.org/thumbnails/sodaforsparc.png"
       />
 

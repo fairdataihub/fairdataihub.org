@@ -39,15 +39,14 @@ export default function Hero() {
         <div className="container mx-auto flex w-full flex-col-reverse items-center px-1 py-2 sm:py-4 md:py-10 lg:flex-row">
           <div className="mb-2 flex flex-col items-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:flex-grow lg:pr-24">
             <h1 className="mb-1 w-full text-center text-3xl font-black sm:text-4xl">
-              SODA for SPARC
+              SODA
             </h1>
             <h2 className="mb-2 w-full text-center text-2xl font-medium sm:text-2xl">
-              Keep Calm and Curate!
+              Software to organize data automatically
             </h2>
             <p className="mb-8 w-full text-center font-asap text-base leading-relaxed text-black">
-              Your one-stop tool for curating and submitting SPARC datasets
+              Streamlining FAIR data sharing
               <br />
-              <i> By SPARC investigators, for SPARC investigators </i>
             </p>
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               {downloadURL !== `` && (

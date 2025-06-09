@@ -1,7 +1,8 @@
 export default function Impact() {
-  const filesNum = 169;
-  const datasetsNum = 206;
-  const dataNum = 14;
+  const filesNum = 432;
+  const datasetsNum = 234;
+  const dataNum = 35;
+  const assetDownloads = 2158;
 
   return (
     <section className="mx-auto max-w-screen-xl">
@@ -20,12 +21,24 @@ export default function Impact() {
           <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
 
           <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
+            <span id="dataNum">{dataNum}</span>
+            <span>+ TB</span>
+          </p>
+
+          <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
+            Data Curated and Shared
+          </p>
+        </div>
+        <div className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
+          <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
+
+          <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
             <span id="filesNum">{filesNum}</span>
             <span>k+</span>
           </p>
 
           <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
-            Files touched
+            Files Curated and Shared
           </p>
         </div>
         <div className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
@@ -33,23 +46,22 @@ export default function Impact() {
 
           <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
             <span id="datasetsNum">{datasetsNum}</span>
-            <span>+</span>
           </p>
 
           <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
-            Datasets modified
+            Datasets Published to Sparc.Science
           </p>
         </div>
+
         <div className="m-2 mb-5 flex flex-col items-center justify-center lg:m-6">
           <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
 
           <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
-            <span id="dataNum">{dataNum}</span>
-            <span>+ TB</span>
+            <span id="datasetsNum">{assetDownloads}</span>
           </p>
 
           <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
-            Data uploaded
+            Downloads
           </p>
         </div>
       </div>
