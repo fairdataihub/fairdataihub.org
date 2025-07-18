@@ -348,3 +348,39 @@
   border-radius: 15px;
   border: 3px solid #ffffff;
 }
+
+.tally-page {
+  max-width: 1000px;
+}
+
+input[type='email']::placeholder {
+  text-align: center;
+}
+
+input[type='text']::placeholder {
+  text-align: center;
+}
+
+div[class*=' tally-block-input'] > div > div {
+  min-width: 100%;
+}
+
+.tally-submit-button {
+  display: flex;
+  justify-content: center;
+}
+
+.tally-block-multiple-choice-option {
+  display: flex;
+  justify-content: center;
+}
+
+.tally-block-label {
+  display: flex;
+  justify-content: center;
+}
+
+.tally-block-text {
+  display: flex;
+  justify-content: center;
+}
