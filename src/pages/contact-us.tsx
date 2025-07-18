@@ -1,9 +1,14 @@
-import ContactForm from '@/components/contact-us/contactForm';
+import Head from 'next/head';
+
 import Seo from '@/components/seo/seo';
 
 export default function ContactUs() {
   return (
     <>
+      <Head>
+        <script async src="https://tally.so/widgets/embed.js"></script>
+      </Head>
+
       <Seo
         templateTitle="Contact Us"
         templateDescription="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
@@ -28,12 +33,18 @@ export default function ContactUs() {
         </div>
 
         <section className="z-10 py-8">
-          <div className="container mx-auto w-screen max-w-screen-md rounded-lg bg-gray-50 px-10 py-12 shadow-lg">
+          <div className="container mx-auto w-screen max-w-screen-md rounded-lg bg-gray-50 px-10 pb-8 pt-12 shadow-lg">
             <h2 className="pb-5 pt-3 text-center text-3xl font-semibold sm:text-4xl">
               Let us know if you have any feedback or want to collaborate
             </h2>
 
-            <ContactForm />
+            <iframe
+              data-tally-src="https://tally.so/embed/mRqBLd?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              loading="lazy"
+              width="100%"
+              height="276"
+              title="AI-READI Contact Form"
+            />
           </div>
         </section>
       </div>
