@@ -229,7 +229,7 @@ export default function Footer() {
 
         <div className="mt-3 flex h-full flex-col items-center justify-center space-x-0 space-y-4 divide-x-2 divide-none divide-gray-200 py-5 md:flex-row md:space-x-4 md:space-y-0 md:divide-solid">
           <div className="text-center text-gray-500">
-            <p> © 2022 FAIR Data Innovations Hub. </p>
+            <p> © {new Date().getFullYear()} FAIR Data Innovations Hub. </p>
             <p> All rights reserved. </p>
           </div>
 
