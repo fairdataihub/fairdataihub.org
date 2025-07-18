@@ -145,5 +145,8 @@
   "bugs": {
     "url": "https://github.com/fairdataihub/fairdataihub-website/issues/new/choose"
   },
-  "homepage": "https://fairdataihub.org"
+  "homepage": "https://fairdataihub.org", "volta": {
+    "node": "20.19.0",
+    "yarn": "1.22.22"
+  }
 }
