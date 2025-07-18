@@ -46,8 +46,17 @@ export default function ContactUs() {
               title="AI-READI Contact Form"
               aria-label="Contact form for feedback or collaboration"
             >
-              Your browser does not support iframes, or iframes are disabled. 
-              Please visit <a href="https://tally.so/r/mRqBLd" target="_blank" rel="noopener noreferrer">this link</a> to access the contact form.
+              Your browser does not support iframes, or iframes are disabled.
+              Please visit{` `}
+              <a
+                href="https://tally.so/r/mRqBLd"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                this link
+              </a>
+              {` `}
+              to access the contact form.
             </iframe>
           </div>
         </section>
