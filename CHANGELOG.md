@@ -1,3 +1,10 @@
+# [2.52.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.51.0...v2.52.0) (2025-07-18)
+
+
+### Features
+
+* ✨ add a tally contact form ([#684](https://github.com/fairdataihub/fairdataihub.org/issues/684)) ([848d2f8](https://github.com/fairdataihub/fairdataihub.org/commit/848d2f8b4d3a6c41c97015976441d0fe6d4012a2))
+
 # [2.51.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.50.0...v2.51.0) (2025-06-09)
 
 
