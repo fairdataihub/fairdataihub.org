@@ -1,5 +1,5 @@
 ---
-title: 'Talk: Making Data AI-Ready at SABPA OC/LA AI for Biotechnology Seminar Series'
+title: 'SABPA OC/LA AI for Biotechnology Seminar Series'
 startDateTime: '2025-08-02T13:30:00'
 endDateTime: '2025-08-02T19:00:00'
 heroImage: 'https://images.unsplash.com/photo-1675627453057-c56dc0502ffd?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
@@ -33,4 +33,4 @@ The event starts at 1:30 PT. Our talk is part of the keynote presentations and s
 
 ## 🔗 Link to Materials
 
-Presetation slides and all related resources are available in this [GitHub repository](https://github.com/fairdataihub/ai-ready-SABPA-2025).
+Slides of the presentation and all related resources are available in this [GitHub repository](https://github.com/fairdataihub/ai-ready-SABPA-2025).
