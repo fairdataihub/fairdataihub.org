@@ -1,3 +1,10 @@
+# [2.53.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.52.0...v2.53.0) (2025-07-30)
+
+
+### Features
+
+* ✨ sabpa event ([#685](https://github.com/fairdataihub/fairdataihub.org/issues/685)) ([2c9c7d4](https://github.com/fairdataihub/fairdataihub.org/commit/2c9c7d4cf195e88b6c11341635f62d257461b2e1))
+
 # [2.52.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.51.0...v2.52.0) (2025-07-18)
 
 
