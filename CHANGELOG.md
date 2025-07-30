@@ -1,3 +1,10 @@
+# [2.54.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.53.0...v2.54.0) (2025-07-30)
+
+
+### Features
+
+* ✨ usrse25  event ([2c36899](https://github.com/fairdataihub/fairdataihub.org/commit/2c368998400d152f9dcd19dd58b2f9a00427e061))
+
 # [2.53.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.52.0...v2.53.0) (2025-07-30)
 
 
