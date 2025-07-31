@@ -1,3 +1,16 @@
+# [2.55.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.54.0...v2.55.0) (2025-07-31)
+
+
+### Bug Fixes
+
+* 🐛 new line between date and details ([1d70f97](https://github.com/fairdataihub/fairdataihub.org/commit/1d70f975d0ff5119e9bd8c5631b46ee734e89cbc))
+
+
+### Features
+
+* ✨ add more details on roles at BOSC ([c612ebc](https://github.com/fairdataihub/fairdataihub.org/commit/c612ebc51077e62ab9a246965bd36d18e19743a4))
+* ✨ bosc 2025 event details ([f5aba20](https://github.com/fairdataihub/fairdataihub.org/commit/f5aba202e9ec7dcc0c50935a7551729fbc1278e3))
+
 # [2.54.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.53.0...v2.54.0) (2025-07-30)
 
 
