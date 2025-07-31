@@ -28,7 +28,8 @@
     "postbuild": "next-sitemap",
     "semantic-release": "semantic-release",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\""
+    "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\"",
+    "reset": "rimraf .next node_modules && yarn install"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
@@ -79,6 +80,7 @@
     "remark": "14.0.3",
     "remark-parse": "10.0.2",
     "remark-rehype": "10.1.0",
+    "rimraf": "^6.0.1",
     "sharp": "^0.32.6",
     "swiper": "9.4.1",
     "tailwind-merge": "^1.14.0",
