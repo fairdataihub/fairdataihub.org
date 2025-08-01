@@ -6,7 +6,7 @@ heroImage: 'https://images.unsplash.com/photo-1594729095022-e2f6d2eece9c?q=80&w=
 subtitle: 'The third annual conference from the United States Research Software Engineer Association (US-RSE).'
 type: 'Conference'
 timeZone: 'America/Los_Angeles'
-location: 'Philadelphia, CA'
+location: 'Philadelphia, PA'
 ---
 
 ## 📝 Event Description

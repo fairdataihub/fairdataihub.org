@@ -1,19 +1,34 @@
 ---
-title: 'Making Research Software FAIR: Background and Practical Steps'
-startDateTime: '2025-05-07T13:00:00'
-endDateTime: '2025-05-07T14:00:00'
-heroImage: 'https://images.unsplash.com/photo-1527698266440-12104e498b76?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+title: 'HPC Best Practices Webinar Series May 2025'
+startDateTime: '2025-05-07T16:00:00'
+endDateTime: '2025-05-07T17:00:00'
+heroImage: 'https://images.unsplash.com/photo-1526925539332-aa3b66e35444?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 subtitle: 'Applying FAIR principles to research software with practical guidelines and tools.'
 type: 'Webinar'
 timeZone: 'America/Los_Angeles'
 location: 'Online'
 ---
 
-## Overview
+## 📝 Event Description
 
-Research software refers to any software created during the research process or for a research purpose. Research software comes in various formats, such as Python scripts, desktop software, or web applications, and is developed for various purposes, including data visualization, data analysis, computational modeling, or artificial intelligence (AI) development. Research software has become a critical element of scientific research, and making it reusable is therefore critical to enable the reproducibility of research results, prevent duplicate efforts, and ultimately increase the pace of discoveries. In this webinar, we will introduce the FAIR (Findable, Accessible, Interoperable, Reusable) principles for Research Software (or FAIR4RS principles), which are adaptations of the FAIR data principles but tailored specifically for research software. These principles provide a set of aspirational instructions for optimizing the reusability of research software. We will then present the FAIR Biomedical Research Software (FAIR-BioRS) guidelines, which are a set of minimal, actionable, step-by-step instructions we have established to easily make biomedical research software compliant with the FAIR4RS Principles. We will also introduce a new task force started under the Research Software Alliance (ReSA) that aims to build upon the work of the FAIR-BioRS guidelines to establish actionable guidelines for making any research software FAIR. Finally, we will provide simple instructions that anyone can follow to start making their software FAIR and also present a tool called Codefair that helps to make research software FAIR without breaking a sweat.
+The HPC Best Practices Webinar Series is designed for developers of computational science and engineering (CSE) software working on high-performance computing (HPC) systems. Each session is independent and focuses on practical issues and solutions relevant to the HPC research software community.
 
-## Presenter
-- [Bhavesh Patel](/team#Bhavesh-Patel), (FAIR Data Innovations Hub, California Medical Innovations Institute)
+More details about the Webinar Series are available on [this page](https://ideas-productivity.org/resources/series/hpc-best-practices-webinars/).
 
-[Register for the event](https://www.zoomgov.com/meeting/register/OUOlBppNRqyv9iZDpdfCgQ#/registration)
+## 💡 Our Role / Contribution
+
+Bhavesh Patel will give a talk titled "Making Research Software FAIR: Background and Practical Steps" at the May 2025 Webinar. This talk will introduce the FAIR Principles (Findable, Accessible, Interoperable, Reusable) in the context of research software and explore why making software FAIR is important for reproducibility, reuse, and sustainability—especially. The session will provide practical steps for developers and researchers, using concrete tools and examples, to help make their software FAIR. It will also include updates from Actionable Guidelines for FAIR Research Software (Actionable FAIR4RS) Task Force.
+
+## 📍 Location
+
+Online
+
+The Zoom link is available in the [event registration page](https://www.zoomgov.com/meeting/register/OUOlBppNRqyv9iZDpdfCgQ#/registration).
+
+## 🗓 Date and Time
+
+Wednesday, May 7, 2025, 1 pm - 2 pm ET
+
+## 🔗 Link to Materials
+
+Slides of the presentation and all related resources are available in this [GitHub repository](https://github.com/fairdataihub/FAIR-Software-HPC-Webinar) and also on [this webinar page](https://ideas-productivity.org/events/hpcbp-090-fair-software).
