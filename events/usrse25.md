@@ -1,7 +1,7 @@
 ---
 title: 'USRSE 2025'
-startDateTime: '2025-10-06T11:00:00'
-endDateTime: '2025-10-08T18:30:00'
+startDateTime: '2025-10-06'
+endDateTime: '2025-10-08'
 heroImage: 'https://images.unsplash.com/photo-1594729095022-e2f6d2eece9c?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 subtitle: 'The third annual conference from the United States Research Software Engineer Association (US-RSE).'
 type: 'Conference'

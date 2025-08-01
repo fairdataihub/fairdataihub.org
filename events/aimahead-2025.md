@@ -1,7 +1,7 @@
 ---
 title: '2025 AIM-AHEAD Annual Meeting'
-startDateTime: '2025-07-07T20:00:00'
-endDateTime: '2025-07-09T22:00:00'
+startDateTime: '2025-07-07'
+endDateTime: '2025-07-09'
 heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 subtitle: 'Annual meeting of the NIH AIM-AHEAD Program'
 type: 'Conference'
