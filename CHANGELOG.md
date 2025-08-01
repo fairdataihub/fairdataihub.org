@@ -1,3 +1,10 @@
+# [2.56.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.55.0...v2.56.0) (2025-08-01)
+
+
+### Features
+
+* ✨ all 2025 events added and standardized ([5c47679](https://github.com/fairdataihub/fairdataihub.org/commit/5c476791d4e72dff5890d8b03f148176977623e5))
+
 # [2.55.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.54.0...v2.55.0) (2025-07-31)
 
 
