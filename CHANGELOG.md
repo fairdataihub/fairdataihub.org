@@ -1,3 +1,10 @@
+## [2.56.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.0...v2.56.1) (2025-08-01)
+
+
+### Bug Fixes
+
+* 🐛 events time ([0e02529](https://github.com/fairdataihub/fairdataihub.org/commit/0e02529bb6bddc22755381995de6b53766602887))
+
 # [2.56.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.55.0...v2.56.0) (2025-08-01)
 
 
