@@ -1,7 +1,7 @@
 ---
 title: 'HPC Best Practices Webinar Series May 2025'
-startDateTime: '2025-05-07T16:00:00'
-endDateTime: '2025-05-07T17:00:00'
+startDateTime: '2025-05-07T10:00:00'
+endDateTime: '2025-05-07T11:00:00'
 heroImage: 'https://images.unsplash.com/photo-1526925539332-aa3b66e35444?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 subtitle: 'Applying FAIR principles to research software with practical guidelines and tools.'
 type: 'Webinar'
