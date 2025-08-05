@@ -26,7 +26,7 @@ Every year, millions of scientific posters are presented at conferences around t
 
 ## 🗑️ Vanishing Knowledge
 
-Despite their value, most posters quietly vanish into trash cans or hard drives after the conference ends (Table 1). They’re rarely preserved, indexed, or cited. Some researchers share their posters on platforms like Zenodo, Figshare, and F1000Research. But after conducting an in-depth investigation (work in progress - results will be presented in an upcoming paper), we found fewer than 100k posters online. That’s a tiny fraction compared to the tens of millions likely presented over the past decade.
+Despite their value, most posters quietly vanish into trash cans or hard drives after the conference ends (Table 1). They’re rarely preserved, indexed, or cited. Some researchers share their posters on platforms like Zenodo, Figshare, and F1000Research. But after conducting an in-depth investigation (work in progress - results will be presented in an upcoming paper), we found fewer than 100k posters online. That’s a tiny fraction compared to the tens of millions likely presented over the past decade. Even when shared, essential metadata like conference name or keywords are missing, making posters difficult to find and reuse by the intended audience.
 
 **Table 1**. Key metrics about posters
 
@@ -41,7 +41,7 @@ Despite their value, most posters quietly vanish into trash cans or hard drives 
 
 That’s where [posters.science](https://posters.science/) comes in. We’re building a free and open-source platform that lets researchers easily share and discover posters that are Findable, Accessible, Interoperable, and Reusable (FAIR). The platform will streamline sharing to trusted repositories like Zenodo and Figshare, while using AI-powered tools to automatically extract rich metadata and generate a machine-friendly version of each poster (what we are calling poster.json) to minimize effort of the researchers.
 
-But we’re not stopping at here. Posters.science will also include smart-search capabilities to help researchers find posters and make discoveries by directly asking complex, meaningful questions like: “What new discoveries were presented at ARVO 2025 regarding the connection between the eye and Alzheimer’s disease?”.
+But we’re not stopping at here. Posters.science will also include smart-search capabilities to help researchers find posters and make discoveries by directly asking complex, meaningful questions like: “What new discoveries were presented at ARVO 2025 regarding the connection between the eye and Alzheimer’s disease?”. We will register not only posters shared through posters.science in our database but also all openly available posters on the net to create the largest registry of posters.
 
 By facilitating the preservation, indexing, and reuse of posters, we aim to unlock their untapped potential and turn these once-temporary artifacts into enduring research assets.
 
