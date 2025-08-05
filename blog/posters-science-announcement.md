@@ -22,7 +22,7 @@ We are developing posters.science through a new grant from the [Navigation Fund]
 
 ## ✨ Why Posters Matter
 
-Every year, millions of scientific posters are presented at conferences around the world. These visual summaries often mark the first public disclosure of new research ideas and results, from novel methods and fresh datasets to early hypotheses and unpublished findings. Posters spark hallway conversations, form collaborations, and surface insights well before papers are published.
+Every year, millions of scientific posters are presented at conferences around the world. They often mark the first public disclosure of new research ideas and results, from novel methods and fresh datasets to early hypotheses and unpublished findings. Posters spark hallway conversations and surface insights well before papers are published.
 
 ## 🗑️ Vanishing Knowledge
 
@@ -49,8 +49,8 @@ By facilitating the preservation, indexing, and reuse of posters, we aim to unlo
 
 We’re just getting started on building posters.science. Over the next 10 months, we’ll be designing and developing the platform, building and validating our metadata extraction and smart search tools, and working closely with researchers to conduct beta testing. Our goal is to release a public version by Summer 2026.
 
-Want to stay in the loop? Visit [](http://posters.science)[posters.science](https://posters.science/) and leave your email to get notified when we launch!
+Want to stay in the loop? Visit [posters.science](https://posters.science/) and leave your email to get notified when we launch!
 
 ## 📢 Disclosures
 
-The development of posters.science is supported by a grant from the [Navigation Fund](https://www.navigation.org/).
+The development of posters.science is supported by a grant from the [Navigation Fund](https://www.navigation.org/). This post was written with help from ChatGPT.
