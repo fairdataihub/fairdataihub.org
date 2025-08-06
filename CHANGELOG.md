@@ -1,3 +1,10 @@
+## [2.56.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.1...v2.56.2) (2025-08-06)
+
+
+### Bug Fixes
+
+* 🐛 Update focusing between Dialog and Popover component ([#691](https://github.com/fairdataihub/fairdataihub.org/issues/691)) ([3f60c02](https://github.com/fairdataihub/fairdataihub.org/commit/3f60c02350854a3d357e547e62d14370d593ac9c))
+
 ## [2.56.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.0...v2.56.1) (2025-08-01)
 
 
