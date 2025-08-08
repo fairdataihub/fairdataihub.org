@@ -1,3 +1,10 @@
+# [2.59.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.58.0...v2.59.0) (2025-08-08)
+
+
+### Features
+
+* ✨ ISMB 2025 Blog Post ([#693](https://github.com/fairdataihub/fairdataihub.org/issues/693)) ([1a88dc0](https://github.com/fairdataihub/fairdataihub.org/commit/1a88dc01fe64d1107a8768943c9c8a630ac3b32e))
+
 # [2.58.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.57.0...v2.58.0) (2025-08-08)
 
 
