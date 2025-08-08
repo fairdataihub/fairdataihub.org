@@ -1,3 +1,10 @@
+# [2.58.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.57.0...v2.58.0) (2025-08-08)
+
+
+### Features
+
+* ✨ add preprint ([2d04bd6](https://github.com/fairdataihub/fairdataihub.org/commit/2d04bd632ad108d16fb5cacb9ae8234fc66bd5d5))
+
 # [2.57.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.2...v2.57.0) (2025-08-08)
 
 
