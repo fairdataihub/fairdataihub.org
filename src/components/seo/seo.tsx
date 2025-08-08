@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router';
 
 const defaultMeta = {
-  title: `Fair Data Innovations Hub`,
+  title: `FAIR Data Innovations Hub`,
   siteName: `FAIR Data Innovations Hub`,
   description: `FAIR Data Innovations Hub is an organization dedicated to building open source tools that help biomedical researchers understand and follow FAIR Data Principles when showcasing their findings`,
   url: `https://fairdataihub.org`,

@@ -16,7 +16,7 @@ tags:
   - metadata
 ---
 
-SODA for SPARC is an open source software by the Fair Data Innovations Hub that is simplifying data curation for researchers funded by the [NIH SPARC initiative](https://sparc.science/).
+SODA for SPARC is an open source software by the FAIR Data Innovations Hub that is simplifying data curation for researchers funded by the [NIH SPARC initiative](https://sparc.science/).
 
 In order to make this software as useful as possible for SPARC researchers we keep up to date with the ever evolving SPARC SDS standard. Recently the standard has evolved to require that README.txt metadata files be included in all SPARC datasets. As a result, users of SODA for SPARC v7.0.0 will receive a warning when curating a dataset that does not have a `README.txt` file.
 

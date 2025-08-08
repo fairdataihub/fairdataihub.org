@@ -28,7 +28,7 @@ class MyDocument extends Document {
           />
           <meta name="robots" content="index, follow" />
           <meta name="language" content="English" />
-          <meta name="author" content="Fair Data Innovations Hub" />
+          <meta name="author" content="FAIR Data Innovations Hub" />
 
           <meta property="og:type" content="website" />
 

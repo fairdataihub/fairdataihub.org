@@ -20,13 +20,13 @@ export default function TermsOfUse() {
         <p className="content">Effective Date: December 01, 2021</p>
 
         <p className="content">
-          The Fair Data Innovations Hub website located at
+          The FAIR Data Innovations Hub website located at
           <Link href="/" passHref>
             <span className="text-url cursor-pointer text-base">
               &nbsp;https://fairdataihub.org/&nbsp;
             </span>
           </Link>
-          is a copyrighted work belonging to Fair Data Innovations Hub. Certain
+          is a copyrighted work belonging to FAIR Data Innovations Hub. Certain
           features of the Site may be subject to additional guidelines, terms,
           or rules, which will be posted on the Site in connection with such
           features.
@@ -36,9 +36,9 @@ export default function TermsOfUse() {
           The Website and Services are offered subject to your acceptance
           without modification of all of the terms and conditions contained
           herein and all other operating rules, policies (including, without
-          limitation, Fair Data Innovations Hub&apos;s Privacy Policy) and
+          limitation, FAIR Data Innovations Hub&apos;s Privacy Policy) and
           procedures that may be published from time to time on this Site by
-          Fair Data Innovations Hub (collectively, the “Agreement”).
+          FAIR Data Innovations Hub (collectively, the “Agreement”).
         </p>
 
         <p className="content">
@@ -47,7 +47,7 @@ export default function TermsOfUse() {
           become bound by the terms and conditions of this Agreement. If you do
           not agree to all the terms and conditions of this Agreement, then you
           may not access the Website or use any Services. If these terms and
-          conditions are considered an offer by Fair Data Innovations Hub,
+          conditions are considered an offer by FAIR Data Innovations Hub,
           acceptance is expressly limited to these terms. The Services is
           available only to individuals who are at least 13 years old (16 years
           for individuals from EU).
@@ -101,7 +101,7 @@ export default function TermsOfUse() {
         </p>
 
         <p className="content">
-          Fair Data Innovations Hub reserves the right to change, suspend, or
+          FAIR Data Innovations Hub reserves the right to change, suspend, or
           cease the Site with or without notice to you. You approved that Fair
           Data Innovations Hub will not be held liable to you or any third-party
           for any change, interruption, or termination of the Site or any part.
@@ -110,7 +110,7 @@ export default function TermsOfUse() {
         <h3 className="subheading">No Support or Maintenance</h3>
 
         <p className="content">
-          You agree that Fair Data Innovations Hub will have no obligation to
+          You agree that FAIR Data Innovations Hub will have no obligation to
           provide you with any support in connection with the Site.
         </p>
 
@@ -118,7 +118,7 @@ export default function TermsOfUse() {
           Excluding any User Content that you may provide, you are aware that
           all the intellectual property rights, including copyrights, patents,
           trademarks, and trade secrets, in the Site and its content are owned
-          by Fair Data Innovations Hub or its suppliers. Note that these Terms
+          by FAIR Data Innovations Hub or its suppliers. Note that these Terms
           and access to the Site do not give you any rights, title or interest
           in or to any intellectual property rights, except for the limited
           access rights expressed in Section 2.1. Company and its suppliers
@@ -174,7 +174,7 @@ export default function TermsOfUse() {
         <h3 className="subheading">Cookies and Web Beacons</h3>
 
         <p className="content">
-          Like any other website, Fair Data Innovations Hub uses
+          Like any other website, FAIR Data Innovations Hub uses
           &apos;cookies&apos;. These cookies are used to store information
           including visitors&apos; preferences, and the pages on the website
           that the visitor accessed or visited. The information is used to

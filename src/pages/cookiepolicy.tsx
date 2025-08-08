@@ -168,9 +168,9 @@ export default function CookiePolicy() {
           When you access third party sites on our Sites, or when you are
           reading integration or social media links, cookies can be created by
           the companies disseminating these links. These third parties may be
-          able to use cookies in the context of Fair Data Innovations Hub&apos;s
+          able to use cookies in the context of FAIR Data Innovations Hub&apos;s
           Services (partners or other third parties supplying content or
-          services available on the Fair Data Innovations Hub site) and are
+          services available on the FAIR Data Innovations Hub site) and are
           responsible for the cookies they install, and it is their conditions
           on cookies which apply. For more information, you are advised to check
           the cookie policy directly on these third-party sites concerning their
