@@ -11,7 +11,7 @@ export default function ContactUs() {
 
       <Seo
         templateTitle="Contact Us"
-        templateDescription="Contact us for any questions, collobaration requests or comments about the Fair Data Innovations Hub"
+        templateDescription="Contact us for any questions, collobaration requests or comments about the FAIR Data Innovations Hub"
         templateImage="https://fairdataihub.org/thumbnails/contact.png"
         templateUrl="https://fairdataihub.org/contact-us"
       />

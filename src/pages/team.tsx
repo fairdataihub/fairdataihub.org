@@ -364,7 +364,7 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   <>
     <Seo
       templateTitle="Meet the Team"
-      templateDescription="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the Fair Data Innovations Hub"
+      templateDescription="Meet the multidisciplinary team of FAIR Data enthusiasts and Software Developers at the FAIR Data Innovations Hub"
       templateImage="https://fairdataihub.org/thumbnails/team.png"
       templateUrl="https://fairdataihub.org/team"
     />

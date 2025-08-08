@@ -30,7 +30,7 @@ export default function Footer() {
               </Link>
             </div>
             <p className="py-3 font-inter font-medium text-gray-600">
-              Helping researchers navigate the world of FAIR data sharing.
+              Helping researchers navigate the world of FAIR practices.
             </p>
             <div className="flex flex-row justify-start py-3">
               <a
@@ -170,7 +170,7 @@ export default function Footer() {
               </ul>
             </div>
             <div className="flex flex-col font-inter">
-              <h3 className="footer-header"> Products </h3>
+              <h3 className="footer-header"> Projects </h3>
               <ul>
                 <li
                   className="footer-item"
@@ -192,33 +192,33 @@ export default function Footer() {
                   className="footer-item"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Footer"
-                  data-umami-event-value="FAIRshare"
+                  data-umami-event-value="EyeACT"
                 >
-                  <Link href="/fairshare"> FAIRshare </Link>
+                  <Link href="/eyeact"> Eye ACT </Link>
                 </li>
                 <li
                   className="footer-item"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Footer"
-                  data-umami-event-value="KnowMore"
+                  data-umami-event-value="posters-science"
                 >
-                  <Link href="/knowmore"> KnowMore </Link>
+                  <Link href="/posters-science"> Posters.science </Link>
                 </li>
                 <li
                   className="footer-item"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Footer"
-                  data-umami-event-value="SPARClink"
+                  data-umami-event-value="DMPChef"
                 >
-                  <Link href="/sparclink"> SPARClink </Link>
+                  <Link href="/dmpchef"> DMPChef </Link>
                 </li>
                 <li
                   className="footer-item"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Footer"
-                  data-umami-event-value="AQUA"
+                  data-umami-event-value="actionable-fair4rs"
                 >
-                  <Link href="/aqua"> AQUA </Link>
+                  <Link href="/actionable-fair4rs"> Actionable FAIR4RS </Link>
                 </li>
               </ul>
             </div>
