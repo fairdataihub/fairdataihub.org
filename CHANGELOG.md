@@ -1,3 +1,10 @@
+# [2.57.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.2...v2.57.0) (2025-08-08)
+
+
+### Features
+
+* ✨ posters.science project page ([51d178f](https://github.com/fairdataihub/fairdataihub.org/commit/51d178fc8008e9fcc13ae1ea57bc96ec0714ac09))
+
 ## [2.56.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.1...v2.56.2) (2025-08-06)
 
 
