@@ -53,6 +53,15 @@
   },
   {
     "project": ["aireadi"],
+    "url": "https://doi.org/10.48550/arXiv.2508.01140",
+    "title": "Open Data Sharing in Clinical Research and Participants Privacy: Challenges and Opportunities in the Era of Artificial Intelligence",
+    "subtitle": "",
+    "citation": "Hallaj, S., Heinke, A., Kalaw, F. G. P., Gim, N., Blazes, M., Owen, J., Dysinger, E., Benton, E. S., Cordier, B. A., Evans, N. G., Li-Pook-Than, J., Snyder, M. P., Nebeker, C., Zangwill, L. M., Baxter, S. L., McWeeney, S., Lee, C. S., Lee, A. Y., Patel, B., & on behalf of the AI-READI Consortium. (2025). Open Data Sharing in Clinical Research and Participants Privacy: Challenges and Opportunities in the Era of Artificial Intelligence. ArXiv. https://doi.org/10.48550/arXiv.2508.01140",
+    "type": "Preprints",
+    "year": 2025
+  },
+  {
+    "project": ["aireadi"],
     "url": "https://doi.org/10.1101/2024.10.23.619844",
     "title": "AI-readiness for Biomedical Data: Bridge2AI Recommendations",
     "subtitle": "",
@@ -65,7 +74,7 @@
     "url": "https://doi.org/10.1101/2024.07.29.24310315",
     "title": "Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data",
     "subtitle": "",
-    "citation": "Alavi, A., Cha, K., Esfarjani, D. P., Patel, B., Than, J. L. P., Lee, A. Y., Nebeker, C., Snyder, M. & Bahmani, A. (2024). Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data. MedRxiv. https://doi.org/10.1101/2024.07.29.24310315",
+    "citation": "Alavi, A., Cha, K., Esfarjani, D. P., Patel, B., Than, J. L. P., Lee, A. Y., Nebeker, C., Snyder, M., & Bahmani, A. (2024). Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data. MedRxiv. https://doi.org/10.1101/2024.07.29.24310315",
     "type": "Preprints",
     "year": 2024
   },
