@@ -18,7 +18,7 @@ export default function PrivacyPolicy() {
         <p className="content">Effective Date: December 01, 2021</p>
 
         <p className="content">
-          At Fair Data Innovations Hub, accessible from
+          At FAIR Data Innovations Hub, accessible from
           <Link href="/" passHref>
             <span className="text-url cursor-pointer text-base">
               &nbsp;https://fairdataihub.org/
@@ -26,7 +26,7 @@ export default function PrivacyPolicy() {
           </Link>
           , one of our main priorities is the privacy of our visitors. This
           Privacy Policy document contains types of information that is
-          collected and recorded by Fair Data Innovations Hub and how we use it.
+          collected and recorded by FAIR Data Innovations Hub and how we use it.
         </p>
 
         <p className="content">
@@ -37,7 +37,7 @@ export default function PrivacyPolicy() {
         <p className="content">
           This Privacy Policy applies only to our online activities and is valid
           for visitors to our website with regards to the information that they
-          shared and/or collect in Fair Data Innovations Hub. This policy is not
+          shared and/or collect in FAIR Data Innovations Hub. This policy is not
           applicable to any information collected offline or via channels other
           than this website.
         </p>
@@ -89,7 +89,7 @@ export default function PrivacyPolicy() {
         <h2 className="subheading">Log Files</h2>
 
         <p className="content">
-          Fair Data Innovations Hub follows a standard procedure of using log
+          FAIR Data Innovations Hub follows a standard procedure of using log
           files. These files log visitors when they visit websites. All hosting
           companies do this and a part of hosting services&apos; analytics. The
           information collected by log files include internet protocol (IP)
@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
         <h2 className="subheading">Cookies and Web Beacons</h2>
 
         <p className="content">
-          Like any other website, Fair Data Innovations Hub uses
+          Like any other website, FAIR Data Innovations Hub uses
           &apos;cookies&apos;. These cookies are used to store information
           including visitors&apos; preferences, and the pages on the website
           that the visitor accessed or visited. The information is used to
@@ -127,13 +127,13 @@ export default function PrivacyPolicy() {
 
         <p className="content">
           You may consult this list to find the Privacy Policy for each of the
-          advertising partners of Fair Data Innovations Hub.
+          advertising partners of FAIR Data Innovations Hub.
         </p>
 
         <p className="content">
           Third-party ad servers or ad networks uses technologies like cookies,
           JavaScript, or Web Beacons that are used in their respective
-          advertisements and links that appear on Fair Data Innovations Hub,
+          advertisements and links that appear on FAIR Data Innovations Hub,
           which are sent directly to users&apos; browser. They automatically
           receive your IP address when this occurs. These technologies are used
           to measure the effectiveness of their advertising campaigns and/or to
@@ -142,14 +142,14 @@ export default function PrivacyPolicy() {
         </p>
 
         <p className="content">
-          Note that Fair Data Innovations Hub has no access to or control over
+          Note that FAIR Data Innovations Hub has no access to or control over
           these cookies that are used by third-party advertisers.
         </p>
 
         <h2 className="subheading">Third Party Privacy Policies</h2>
 
         <p className="content">
-          Fair Data Innovations Hub&apos;s Privacy Policy does not apply to
+          FAIR Data Innovations Hub&apos;s Privacy Policy does not apply to
           other advertisers or websites. Thus, we are advising you to consult
           the respective Privacy Policies of these third-party ad servers for
           more detailed information. It may include their practices and
@@ -256,7 +256,7 @@ export default function PrivacyPolicy() {
         </p>
 
         <p className="content">
-          Fair Data Innovations Hub does not knowingly collect any Personal
+          FAIR Data Innovations Hub does not knowingly collect any Personal
           Identifiable Information from children under the age of 13. If you
           think that your child provided this kind of information on our
           website, we strongly encourage you to contact us immediately and we

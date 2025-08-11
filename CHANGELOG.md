@@ -1,3 +1,24 @@
+# [2.59.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.58.0...v2.59.0) (2025-08-08)
+
+
+### Features
+
+* ✨ ISMB 2025 Blog Post ([#693](https://github.com/fairdataihub/fairdataihub.org/issues/693)) ([1a88dc0](https://github.com/fairdataihub/fairdataihub.org/commit/1a88dc01fe64d1107a8768943c9c8a630ac3b32e))
+
+# [2.58.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.57.0...v2.58.0) (2025-08-08)
+
+
+### Features
+
+* ✨ add preprint ([2d04bd6](https://github.com/fairdataihub/fairdataihub.org/commit/2d04bd632ad108d16fb5cacb9ae8234fc66bd5d5))
+
+# [2.57.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.2...v2.57.0) (2025-08-08)
+
+
+### Features
+
+* ✨ posters.science project page ([51d178f](https://github.com/fairdataihub/fairdataihub.org/commit/51d178fc8008e9fcc13ae1ea57bc96ec0714ac09))
+
 ## [2.56.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.56.1...v2.56.2) (2025-08-06)
 
 

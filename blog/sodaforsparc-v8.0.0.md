@@ -13,7 +13,7 @@ tags:
   - releases
 ---
 
-SODA for SPARC is an open source software by the Fair Data Innovations Hub that is simplifying data curation for researchers funded by the [NIH SPARC initiative](https://sparc.science/).
+SODA for SPARC is an open source software by the FAIR Data Innovations Hub that is simplifying data curation for researchers funded by the [NIH SPARC initiative](https://sparc.science/).
 
 If you don't have SODA for SPARC you can download it [here](https://docs.sodaforsparc.io/docs/getting-started/download-soda). If you do have SODA for SPARC your application will auto-update to the latest version for you.
 

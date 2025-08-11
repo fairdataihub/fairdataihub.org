@@ -10,7 +10,7 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <>
       <Seo
-        templateTitle="SPARClink - Fair Data Innovations Hub"
+        templateTitle="SPARClink - FAIR Data Innovations Hub"
         templateUrl="https://fairdataihub.org/sparclink"
         templateDescription="SPARClink provides a system that queries all external publications using open source tools and platforms to create interactable visualizations that showcases the impact that SPARC has on the overall scientific research community"
         templateImage="https://fairdataihub.org/thumbnails/sparclink.png"

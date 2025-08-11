@@ -14,8 +14,8 @@ const InternshipPositions = () => {
           <p className="mb-4 mt-2 text-left font-asap text-lg">
             We are always eager to welcome fresh perspectives. If you&apos;re
             interested in interning with us, whether on-site or remotely, please
-            take a moment to complete the form below. <br /> By joining our
-            team, you&apos;ll have the chance to make a meaningful impact on our
+            take a moment to complete the form below. By joining our team,
+            you&apos;ll have the chance to make a meaningful impact on our
             projects, especially in the realm of improving human health. In
             return, our experienced team is committed to helping you expand and
             refine your knowledge in software development best practices, web
