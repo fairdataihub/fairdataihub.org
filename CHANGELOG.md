@@ -1,3 +1,10 @@
+# [2.60.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.59.0...v2.60.0) (2025-08-11)
+
+
+### Features
+
+* ✨ Logo update + What we are cooking details update ([#694](https://github.com/fairdataihub/fairdataihub.org/issues/694)) ([925be03](https://github.com/fairdataihub/fairdataihub.org/commit/925be03d365f859e79c8ca9e3f1d9b4a284aea38))
+
 # [2.59.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.58.0...v2.59.0) (2025-08-08)
 
 
