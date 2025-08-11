@@ -13,6 +13,7 @@ module.exports = {
       'images.unsplash.com',
       'raw.githubusercontent.com',
       'elixir-europe.org',
+      'cdn.jsdelivr.net',
     ],
   },
 };
