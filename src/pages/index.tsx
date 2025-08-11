@@ -110,38 +110,38 @@ export default function Home() {
 
         <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
           <Link
-            href="/codefair"
+            href="/posters-science"
             passHref
             className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-5/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                Codefair
+                Posters.science
               </h3>
 
               <p className="font-asap text-lg">
-                codefair is your personal assistant when it comes to making your
-                research software reusable and especially complying with the
-                Findable, Accessible, Interoperable, Reusable (FAIR) Principles
-                for Research Software.
+                Posters.science is a free and open-source platform for sharing
+                and discovering scientific posters, promoting collaboration and
+                turning them into enduring research assets.
               </p>
             </div>
           </Link>
 
           <Link
-            href="/fair-biors"
+            href="/eyeact"
             passHref
             className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-7/12"
           >
             <div className="px-8 py-4">
               <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                FAIR Biomedical Research Software (FAIR-BioRS) guidelines
+                Eye ACT
               </h3>
 
               <p className="font-asap text-lg">
-                The FAIR-BioRS guidelines are a set of minimal and actionable
-                step-by-step instructions for making biomedical research
-                software FAIR
+                Eye ACT uses the Envision Portal to study how eye diseases like
+                glaucoma and diabetic retinopathy may signal early
+                Alzheimer&apos;s, advancing AI-driven research under FAIR
+                principles.
               </p>
             </div>
           </Link>
