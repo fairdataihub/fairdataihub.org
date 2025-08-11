@@ -22,14 +22,16 @@ export default function Footer() {
                     width={70}
                     height={70}
                     alt="FAIR Data Innovations Hub logo"
+                    priority={true}
                     className="cursor-pointer"
                   />
                   <Image
                     src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/logo.svg"
                     width={250}
                     height={80}
-                    alt="FAIR Data Innovations Hub logo"
+                    alt="FAIR Data Innovations Hub logo text"
                     className="cursor-pointer"
+                    priority={true}
                     style={{
                       height: `auto`,
                       width: `auto`,
