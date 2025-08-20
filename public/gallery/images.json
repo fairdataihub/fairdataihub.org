@@ -1,0 +1,11 @@
+[
+  {
+    "uuid": "sample-uuid",
+    "public_id": "sample-public-id",
+    "format": "jpg",
+    "description": "Sample image description",
+    "date": "2022-01-01",
+    "width": 800,
+    "height": 600
+  }
+]
