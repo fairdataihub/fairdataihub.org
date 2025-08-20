@@ -18,7 +18,7 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
         templateTitle="DMP Chef"
         templateUrl="https://fairdataihub.org/dmp"
         templateDescription="Draft funder-compliant Data Management Plans with AI"
-        templateImage="https://kalai.fairddataihub.org/api/generate?title=DMP%20Chef&description=Draft%20funder-compliant%20Data%20Management%20Plans%20with%20AI&app=dmp-chef&org=fairdataihub-cdl"
+        templateImage="https://kalai.fairdataihub.org/api/generate?title=DMP%20Chef&description=Draft%20funder-compliant%20Data%20Management%20Plans%20with%20AI&app=dmp&org=fairdataihub"
       />
 
       <section className="bg-white py-10 pt-16">
