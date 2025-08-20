@@ -47,18 +47,18 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    All software and tools developed by our team for the Eye ACT
-                    project, including the Envision Portal, are developed using
-                    an open-source approach. This allows for transparency and
-                    collaboration with the open source community.
+                    DMP chief is developed using an open-source approach. This
+                    allows for transparency and collaboration with the open
+                    source community. The GitHub repository will be linked here
+                    as we develop the platform.
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a
-                      href="https://github.com/EyeACT/"
+                      href="https://github.com/fairdataihub/dmp"
                       target="_blank"
                       className="text-url hover-underline-animation"
                       data-umami-event="GitHub link"
-                      data-umami-event-project="EyeACT"
+                      data-umami-event-project="DMP-repo"
                       rel="noopener"
                     >
                       <span className="font-lato">
@@ -80,12 +80,12 @@ export default function Info() {
                 </div>
                 <div className="py-3">
                   <a
-                    href="https://github.com/EyeACT/"
+                    href="https://github.com/fairdataihub/dmp"
                     target="_blank"
                     rel="noopener"
                     aria-label="Github"
                     data-umami-event="GitHub link"
-                    data-umami-event-project="EyeACT"
+                    data-umami-event-project="DMP-repo"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +103,7 @@ export default function Info() {
           </div>
         </div>
       </section>
-      <section>
+      {/* <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="py-5 text-left text-4xl font-black md:mr-8 md:py-0">
@@ -147,7 +147,7 @@ export default function Info() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section>
         <div className="mx-auto px-5 sm:px-10 sm:pt-2">
           <div className="mx-auto flex max-w-screen-lg flex-col">
@@ -218,16 +218,17 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    We are collaborating on this project with Dr. Cecilia
-                    Lee&apos;s team at the&nbsp;
+                    We are collaborating on this project with the developers and
+                    maintainers of the&nbsp;
                     <Link
                       target="_blank"
                       className="text-url hover-underline-animation"
-                      href="https://comp.ophthalmology.uw.edu/"
+                      href="https://cdlib.org/services/uc3/dmptool/"
                     >
-                      Computational Ophthalmology Lab&nbsp;
+                      DMPTool
                     </Link>
-                    (University of Washington).
+                    &nbsp;at the California Digital Library (University of
+                    California).
                   </p>
                 </div>
               </div>
