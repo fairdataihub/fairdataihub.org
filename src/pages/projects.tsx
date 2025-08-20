@@ -149,10 +149,7 @@ export default function Home() {
                     <div>
                       <div className="flex space-x-2">
                         <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
-                          Standards
-                        </span>
-                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
-                          Guidelines
+                          Platform
                         </span>
                       </div>
 
@@ -172,7 +169,7 @@ export default function Home() {
 
                   <div className="relative flex items-center justify-center overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
                     <Image
-                      src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/02_Main_Logo_Transparent/Fair_logo_05_Main_Transparent.svg"
+                      src="/images/dmp/dmp-chef-logo-transparent.svg"
                       alt="Screenshot of DMP project"
                       className="rounded-md object-contain"
                       width={150}

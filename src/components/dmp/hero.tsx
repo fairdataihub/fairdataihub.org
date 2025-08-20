@@ -1,6 +1,5 @@
 import Image from 'next/image';
-
-import Tooltip from '@/components/ui/tooltip';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
@@ -25,34 +24,22 @@ export default function Hero() {
         <div className="container mx-auto flex w-full flex-col-reverse items-center px-1 py-2 sm:py-4 md:py-10 lg:flex-row">
           <div className="mb-2 flex flex-col items-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:flex-grow lg:pr-24">
             <h1 className="mb-1 w-full text-center text-3xl font-black sm:text-4xl">
-              Eye ACT
+              DMP Chef
             </h1>
             <h2 className="mb-4 mt-2 w-full text-center text-2xl font-medium sm:text-2xl">
-              Seeing the Future of Brain Health Through the Eyes
+              Draft funder-compliant Data Management Plans with AI
             </h2>
 
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <div className="relative flex flex-row justify-center">
-                <Tooltip tooltipContent="Coming soon" placement="bottom">
+                <Link href="https://survey.dmpchef.org/">
                   <button
-                    disabled
-                    aria-label="EyeACT Study website - Coming Soon"
-                    className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
+                    aria-label="DMP Chef website"
+                    className="relative cursor-pointer rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
                   >
-                    Learn More
+                    Visit DMP Chef
                   </button>
-                </Tooltip>
-              </div>
-              <div className="relative flex flex-row justify-center">
-                <Tooltip tooltipContent="Coming soon" placement="bottom">
-                  <button
-                    disabled
-                    aria-label="EyeACT Study website - Coming Soon"
-                    className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
-                  >
-                    Visit the Envision Portal
-                  </button>
-                </Tooltip>
+                </Link>
               </div>
             </div>
           </div>
@@ -68,12 +55,12 @@ export default function Hero() {
             </div>
 
             <Image
-              src="/images/hero/eye-act-logo.png"
-              alt="Eye Act logo"
-              width={150}
-              height={150}
+              src="/images/dmp/dmp-chef-logo-transparent.svg"
+              alt="DMP logo"
+              width={200}
+              height={200}
               priority={true}
-              className="h-auto w-auto object-scale-down"
+              className="object-scale-down"
             />
           </div>
         </div>

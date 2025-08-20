@@ -1,6 +1,6 @@
-import About from '@/components/eyeact/about';
-import Hero from '@/components/eyeact/hero';
-import Info from '@/components/eyeact/info';
+import About from '@/components/dmp/about';
+import Hero from '@/components/dmp/hero';
+import Info from '@/components/dmp/info';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
 
@@ -25,7 +25,7 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
         <Hero />
       </section>
 
-      <section className="bg-gray-50 py-10 pt-16">
+      <section className="bg-gray-50 py-10 pt-10">
         <About />
       </section>
 
@@ -33,11 +33,11 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
         <Impact />
       </section> */}
 
-      <section className="bg-white py-10 pt-16">
+      <section className="pt-16">
         <Info />
       </section>
 
-      <section className="bg-gray-50 py-10 pt-16">
+      <section className="bg-white py-10 pt-16">
         <Timeline timelineList={timelineList} />
       </section>
 
