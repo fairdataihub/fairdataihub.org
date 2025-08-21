@@ -16,7 +16,7 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
     <>
       <Seo
         templateTitle="DMP Chef"
-        templateUrl="https://fairdataihub.org/dmp"
+        templateUrl="https://fairdataihub.org/dmp-chef"
         templateDescription="Draft funder-compliant Data Management Plans with AI"
         templateImage="https://kalai.fairdataihub.org/api/generate?title=DMP%20Chef&description=Draft%20funder-compliant%20Data%20Management%20Plans%20with%20AI&app=dmp&org=fairdataihub"
       />

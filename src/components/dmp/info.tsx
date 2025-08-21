@@ -35,6 +35,15 @@ export default function Info() {
     },
   ];
 
+  const collaboratorsList = [
+    {
+      name: `California Digital Library (CDL)`,
+      id: `california-digital-library`,
+      href: `https://cdlib.org`,
+      image: `/images/dmp/logo-cdl.svg`,
+    },
+  ];
+
   return (
     <div>
       <section className="bg-white pb-10">
@@ -47,7 +56,7 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    DMP chief is developed using an open-source approach. This
+                    DMP Chef is developed using an open-source approach. This
                     allows for transparency and collaboration with the open
                     source community. The GitHub repository will be linked here
                     as we develop the platform.
@@ -230,27 +239,10 @@ export default function Info() {
                     &nbsp;at the California Digital Library (University of
                     California).
                   </p>
-                  <div className="mt-10">
-                    <a
-                      href="https://cdlib.org"
-                      target="_blank"
-                      rel="noopener"
-                      aria-label="California Digital Library"
-                      className="inline-block transform cursor-pointer rounded transition-transform hover:scale-105 hover:opacity-95 hover:drop-shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    >
-                      <Image
-                        src="/images/dmp/logo-cdl.svg"
-                        alt="California Digital Library logo"
-                        width={220}
-                        height={60}
-                        className="h-auto w-auto transition-all"
-                      />
-                    </a>
-                  </div>
                 </div>
               </div>
             </div>
-            {/* <div className="w-full">
+            <div className="w-full">
               <div>
                 <div className="mb-10 w-full sm:mb-5">
                   <div className="grid grid-cols-2 gap-4 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
@@ -263,30 +255,18 @@ export default function Info() {
                         data-umami-event="Collaborator link"
                         data-umami-event-value={collaborator.id}
                       >
-                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
-                          {collaborator.type === `person` ? (
-                            <div className="relative h-[135px] w-[135px]">
-                              <Image
-                                src={collaborator.image}
-                                alt={collaborator.name + ` profile picture`}
-                                fill
-                                className="my-auto rounded-full"
-                              />
-                            </div>
-                          ) : (
-                            <Image
-                              src={collaborator.image}
-                              alt={collaborator.name + ` profile picture`}
-                              width={220}
-                              height={150}
-                              className="my-auto"
-                              style={{
-                                height: `auto`,
-                                width: `auto`,
-                              }}
-                            />
-                          )}
-
+                        <div className="flex h-full flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
+                          <Image
+                            src={collaborator.image}
+                            alt={collaborator.name + ` profile picture`}
+                            width={220}
+                            height={150}
+                            className="my-auto"
+                            style={{
+                              height: `auto`,
+                              width: `auto`,
+                            }}
+                          />
                           <p className="ml-2 mt-3 text-center font-asap text-lg font-normal">
                             {collaborator.name}
                           </p>
@@ -296,7 +276,7 @@ export default function Info() {
                   </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
