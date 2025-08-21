@@ -1,3 +1,10 @@
+# [2.61.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.60.0...v2.61.0) (2025-08-21)
+
+
+### Features
+
+* ✨ DMP Chef project added to list of projects ([#695](https://github.com/fairdataihub/fairdataihub.org/issues/695)) ([cb91036](https://github.com/fairdataihub/fairdataihub.org/commit/cb9103678ceb6628cf8b446bdc44acd32685e08e))
+
 # [2.60.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.59.0...v2.60.0) (2025-08-11)
 
 
