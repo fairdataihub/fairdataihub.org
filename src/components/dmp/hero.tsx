@@ -32,7 +32,11 @@ export default function Hero() {
 
             <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-x-4 xl:space-y-0">
               <div className="relative flex flex-row justify-center">
-                <Link href="https://survey.dmpchef.org/">
+                <Link
+                  href="https://survey.dmpchef.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <button
                     aria-label="DMP Chef website"
                     className="relative cursor-pointer rounded border-0 bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
