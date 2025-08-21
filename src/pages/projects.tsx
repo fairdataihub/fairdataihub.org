@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 // import Vision from '@/components/home/vision';
+import Image from 'next/image';
 import Link from 'next/link';
 
 import Seo from '@/components/seo/seo';
@@ -137,6 +138,42 @@ export default function Home() {
                       src="/images/hero/eye-act-logo.png"
                       alt="Screenshot of Eye ACT"
                       className="h-full w-full rounded-md object-contain"
+                    />
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/dmp-chef">
+                <div className="group grid w-full cursor-pointer rounded-md border border-slate-200 bg-white/90 px-7 py-5 shadow-md transition-all hover:border-slate-300 hover:bg-white hover:shadow-lg sm:grid-cols-12">
+                  <div className="flex flex-col pb-5 sm:col-span-10 sm:pr-5">
+                    <div>
+                      <div className="flex space-x-2">
+                        <span className="rounded bg-blue-100 px-2.5 py-0.5 text-base font-medium text-blue-800">
+                          Platform
+                        </span>
+                      </div>
+
+                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                        DMP Chef
+                      </h2>
+                    </div>
+
+                    <p className="w-full font-asap text-lg text-black">
+                      DMP Chef is an open-source AI-powered platform that helps
+                      researchers draft funder-compliant Data Management Plans
+                      with ease. By answering a few simple questions,
+                      researchers can generate tailored DMPs that meet funding
+                      requirements and support FAIR data practices.
+                    </p>
+                  </div>
+
+                  <div className="relative flex items-center justify-center overflow-hidden transition-all group-hover:scale-[1.02] sm:col-span-2">
+                    <Image
+                      src="/images/dmp/dmp-chef-logo-transparent.svg"
+                      alt="Screenshot of DMP project"
+                      className="rounded-md object-contain"
+                      width={150}
+                      height={150}
                     />
                   </div>
                 </div>
