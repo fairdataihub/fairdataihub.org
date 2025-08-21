@@ -211,6 +211,14 @@ export default function Footer() {
                   className="footer-item"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Footer"
+                  data-umami-event-value="codefair"
+                >
+                  <Link href="/codefair"> Codefair </Link>
+                </li>
+                <li
+                  className="footer-item"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Footer"
                   data-umami-event-value="posters-science"
                 >
                   <Link href="/posters-science"> Posters.science </Link>
@@ -221,7 +229,7 @@ export default function Footer() {
                   data-umami-event-location="Footer"
                   data-umami-event-value="DMPChef"
                 >
-                  <Link href="/dmpchef"> DMPChef </Link>
+                  <Link href="/dmp-chef"> DMP Chef </Link>
                 </li>
                 <li
                   className="footer-item"
