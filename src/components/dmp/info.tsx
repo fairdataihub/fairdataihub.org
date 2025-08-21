@@ -35,14 +35,14 @@ export default function Info() {
     },
   ];
 
-  const collaboratorsList = [
-    {
-      name: `California Digital Library (CDL)`,
-      id: `california-digital-library`,
-      href: `https://cdlib.org`,
-      image: `/images/dmp/logo-cdl.svg`,
-    },
-  ];
+  // const collaboratorsList = [
+  //   {
+  //     name: `California Digital Library (CDL)`,
+  //     id: `california-digital-library`,
+  //     href: `https://cdlib.org`,
+  //     image: `/images/dmp/logo-cdl.svg`,
+  //   },
+  // ];
 
   return (
     <div>
@@ -243,7 +243,7 @@ export default function Info() {
               </div>
             </div>
             <div className="w-full">
-              <div>
+              {/* <div>
                 <div className="mb-10 w-full sm:mb-5">
                   <div className="grid grid-cols-2 gap-4 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
                     {collaboratorsList.map((collaborator) => (
@@ -275,7 +275,7 @@ export default function Info() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

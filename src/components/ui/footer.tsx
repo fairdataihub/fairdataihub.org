@@ -16,26 +16,14 @@ export default function Footer() {
           <div className="mb-5 flex w-full flex-col md:mb-0 md:w-4/12">
             <div className="py-3">
               <Link href="/" aria-label="Homepage" passHref>
-                <div className="flex w-[16rem] flex-row gap-4">
+                <div className="flex w-[20rem] flex-row gap-4">
                   <Image
-                    src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/01_W_Background/Fair_logo_01_Main.svg"
-                    width={70}
-                    height={70}
+                    src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/05_Main_Logo_W_Stacked_Text/Main-Logo-Black-Stroke-Transparent.svg"
+                    width={400}
+                    height={400}
                     alt="FAIR Data Innovations Hub logo"
                     priority={true}
                     className="cursor-pointer"
-                  />
-                  <Image
-                    src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/logo.svg"
-                    width={250}
-                    height={80}
-                    alt="FAIR Data Innovations Hub logo text"
-                    className="cursor-pointer"
-                    priority={true}
-                    style={{
-                      height: `auto`,
-                      width: `auto`,
-                    }}
                   />
                 </div>
               </Link>

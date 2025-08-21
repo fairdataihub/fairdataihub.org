@@ -17,17 +17,8 @@ export default function Navbar() {
         <Link href="/" aria-label="Homepage" passHref>
           <div className="flex flex-row">
             <Image
-              src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/01_W_Background/Fair_logo_01_Main.svg"
+              src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/04_Main_Logo_W_Horizontal_Text/Main-Logo-Black-Stroke-Transparent.svg"
               alt="FAIR Data Innovations Hub Logo"
-              width={40}
-              height={40}
-              className="h-10 w-auto"
-              priority={true}
-            />
-
-            <Image
-              src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/fairdataihub-text.svg"
-              alt="FAIR Data Innovations Hub Logo text"
               width={300}
               height={300}
               priority={true}
