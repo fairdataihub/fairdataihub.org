@@ -1,3 +1,10 @@
+# [2.62.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.61.0...v2.62.0) (2025-08-22)
+
+
+### Features
+
+* add interns section to team ([#696](https://github.com/fairdataihub/fairdataihub.org/issues/696)) ([026ad59](https://github.com/fairdataihub/fairdataihub.org/commit/026ad590abb376e0c7254b453717a94017d3f98b))
+
 # [2.61.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.60.0...v2.61.0) (2025-08-21)
 
 
