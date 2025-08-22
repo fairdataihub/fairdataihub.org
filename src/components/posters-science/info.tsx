@@ -27,6 +27,24 @@ export default function Info() {
       external: false,
       image: `/images/people/nahid-head.jpg`,
     },
+    {
+      name: `Paapa Mensah-Kane`,
+      href: `/team/#Paapa-Mensah-Kane`,
+      external: false,
+      image: `/images/people/paapa-head.jpg`,
+    },
+    {
+      name: `Gerard Blake`,
+      href: `/team/#Gerard-Blake`,
+      external: false,
+      image: `/images/people/gerard-head.jpg`,
+    },
+    {
+      name: `Aydan Gasimova`,
+      href: `/team/#Aydan-Gasimova`,
+      external: false,
+      image: `/images/people/aydan-head.jpg`,
+    },
   ];
 
   return (
