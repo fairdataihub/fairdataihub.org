@@ -225,62 +225,6 @@ const TEAM_JSON = [
       link: `https://www.linkedin.com/in/nahid-zeinali-ph-d-15440910b/6`,
     },
   },
-
-  {
-    id: `Nada-Haboudal`,
-    name: `Nada Haboudal (she/her)`,
-    title: `Data Scientist`,
-    bio: `Nada relocated from Saudi Arabia to the United States to further her education. She became a part of the team in 2023. She has a strong passion for Health Technology, particularly Fem-tech and wearables. In her leisure time, she loves visiting the beach and playing the piano.`,
-    image: `/images/people/nada-full.jpg`,
-    width: 2515,
-    height: 3354,
-    borderTop: true,
-    borderBottom: false,
-    education: [
-      `M.Sc. in Engineering Technology (University of Houston, Houston, 2023)`,
-      `B.Sc. in Industrial Engineering (Al Faisal University, Riyadh, 2016)`,
-    ],
-    twitter: {
-      show: false,
-      link: `https://twitter.com`,
-    },
-    github: {
-      show: true,
-      link: `https://github.com/nhaboudal`,
-    },
-    linkedin: {
-      show: true,
-      link: `https://www.linkedin.com/in/nada-haboudal/`,
-    },
-  },
-  {
-    id: `Paapa-Mensah-Kane`,
-    name: `Paapa Mensah-Kane (he/him)`,
-    title: `Pharmacologist`,
-    bio: `Paapa is originally from Ghana where he had his Pharmacy and Master's degree. He also holds a PhD degree in pharmacology and neuroscience from UNTHSC, Texas. He became a part of the team in 2024. His interest lies in pharmacometrics and computational pharmacology. In his leisure time, he watches soccer (REAL MADRID) and swim.`,
-    image: `/images/people/paapa-full.jpg`,
-    width: 900,
-    height: 1303,
-    borderTop: true,
-    borderBottom: false,
-    education: [
-      `Ph.D. in Pharmacology and Neuroscience (University of North Texas Health Science Center, Fort Worth, 2024)`,
-      `M.Sc. in Natural Products Pharmacology (Kwame Nkrumah University of Science and Technology, Kumasi, 2015)`,
-      `B.Pharm. (Kwame Nkrumah University of Science and Technology, Kumasi, 2011)`,
-    ],
-    github: {
-      show: true,
-      link: `https://github.com/Paapakane`,
-    },
-    linkedin: {
-      show: true,
-      link: `https://www.linkedin.com/in/paapa-mensah-kane-bpharm-mphil-ph-d-a58765133/`,
-    },
-    twitter: {
-      show: false,
-      link: `https://twitter.com`,
-    },
-  },
   {
     id: `Krista-Scrivner`,
     name: `Krista Scrivner (she/her)`,
@@ -358,8 +302,93 @@ const TEAM_JSON = [
   },
 ];
 
+const INTERNS_JSON = [
+  {
+    id: `Paapa-Mensah-Kane`,
+    name: `Paapa Mensah-Kane (he/him)`,
+    title: `Pharmacologist`,
+    bio: `Paapa is originally from Ghana where he had his Pharmacy and Master's degree. He also holds a PhD degree in pharmacology and neuroscience from UNTHSC, Texas. He became a part of the team in 2024. His interest lies in pharmacometrics and computational pharmacology. In his leisure time, he watches soccer (REAL MADRID) and swim.`,
+    image: `/images/people/paapa-full.jpg`,
+    width: 900,
+    height: 1303,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `Ph.D. in Pharmacology and Neuroscience (University of North Texas Health Science Center, Fort Worth, 2024)`,
+      `M.Sc. in Natural Products Pharmacology (Kwame Nkrumah University of Science and Technology, Kumasi, 2015)`,
+      `B.Pharm. (Kwame Nkrumah University of Science and Technology, Kumasi, 2011)`,
+    ],
+    github: {
+      show: true,
+      link: `https://github.com/Paapakane`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/paapa-mensah-kane-bpharm-mphil-ph-d-a58765133/`,
+    },
+    twitter: {
+      show: false,
+      link: `https://twitter.com`,
+    },
+  },
+  {
+    id: `Gerard-Blake`,
+    name: `Gerard Blake (he/him)`,
+    title: `Undergraduate Intern`,
+    bio: `Gerard is an undergraduate at the University of Chicago studying Public Policy and Biology. His interests lie at the intersection of science, health, and policy, with a particular focus on sustainable technologies and biomedical research. He has previous experience in laboratory research, including work on renewable battery storage technologies, cancer-fighting molecules, and flow battery chemistry, as well as applied policy research on housing, immigration, and public health. Outside of academics, Gerard is passionate about debate, writing, and community outreach, and he has led initiatives that bring science engagement to local schools.`,
+    image: `/images/people/gerard-full.jpg`,
+    width: 2016,
+    height: 3024,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `B.A. in Public Policy, Minor in Biology (University of Chicago)`,
+    ],
+    twitter: {
+      show: false,
+      link: `https://twitter.com`,
+    },
+    github: {
+      show: false,
+      link: `https://github.com`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/gerard-blake-048216206/`,
+    },
+  },
+  {
+    id: `Nada-Haboudal`,
+    name: `Nada Haboudal (she/her)`,
+    title: `Data Scientist`,
+    bio: `Nada relocated from Saudi Arabia to the United States to further her education. She became a part of the team in 2023. She has a strong passion for Health Technology, particularly Fem-tech and wearables. In her leisure time, she loves visiting the beach and playing the piano.`,
+    image: `/images/people/nada-full.jpg`,
+    width: 2515,
+    height: 3354,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `M.Sc. in Engineering Technology (University of Houston, Houston, 2023)`,
+      `B.Sc. in Industrial Engineering (Al Faisal University, Riyadh, 2016)`,
+    ],
+    twitter: {
+      show: false,
+      link: `https://twitter.com`,
+    },
+    github: {
+      show: true,
+      link: `https://github.com/nhaboudal`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/nada-haboudal/`,
+    },
+  },
+];
+
 const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
   TeamMembers,
+  Interns,
 }) => (
   <>
     <Seo
@@ -407,10 +436,22 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
           </div>
         </div>
 
-        <div className="flex w-full flex-col divide-y divide-gray-200 p-2 md:p-5 lg:w-2/3">
-          {TeamMembers.map((team) => (
-            <TeamCard profile={team} key={team.id} />
-          ))}
+        <div className="flex w-full flex-col lg:w-2/3">
+          <div className="flex w-full flex-col divide-y divide-gray-200 p-2 md:p-5">
+            {TeamMembers.map((team) => (
+              <TeamCard profile={team} key={team.id} />
+            ))}
+          </div>
+
+          <h2 className="px-2 pt-10 text-2xl font-black sm:text-4xl md:px-10">
+            Our Interns
+          </h2>
+
+          <div className="flex w-full flex-col divide-y divide-gray-200 p-2 md:p-5">
+            {Interns.map((intern) => (
+              <TeamCard profile={intern} key={intern.id} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
@@ -434,9 +475,26 @@ export const getStaticProps = async () => {
     }),
   ).then((values) => values);
 
+  const Interns = await Promise.all(
+    INTERNS_JSON.map(async (member) => {
+      const {
+        base64,
+        // eslint-disable-next-line unused-imports/no-unused-vars, @typescript-eslint/no-unused-vars
+        img: { width, height, ...img },
+      } = await getPlaiceholder(member.image);
+
+      return {
+        ...img,
+        ...member,
+        blurDataURL: base64,
+      };
+    }),
+  ).then((values) => values);
+
   return {
     props: {
       TeamMembers,
+      Interns,
     },
   };
 };
