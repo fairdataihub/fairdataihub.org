@@ -132,18 +132,20 @@ export default function Info() {
             <div className="w-full py-2">
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
-                  <p className="w-full font-asap text-lg text-black">
+                  <p className="mb-4 w-full font-asap text-lg text-black">
                     This project is funded through a grant from The Navigation
-                    Fund. Additional details about the grant are available{` `}
+                    Fund. Additional details about the grant can be found in the
+                    {` `}
                     <Link
                       target="_blank"
                       className="text-url hover-underline-animation"
                       href="https://commons.datacite.org/doi.org/10.71707/rk36-9x79"
                     >
-                      here
+                      DataCite Commons grant record
                     </Link>
+                    .
                   </p>
-                  <div className="mt-2 flex md:mt-1">
+                  <div className="mt-10 flex md:mt-1">
                     <a
                       href="https://www.navigation.org/"
                       target="_blank"

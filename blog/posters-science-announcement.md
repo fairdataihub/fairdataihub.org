@@ -53,4 +53,4 @@ Want to stay in the loop? Visit [posters.science](https://posters.science/) and 
 
 ## 📢 Disclosures
 
-The development of posters.science is supported by a grant from [The Navigation Fund](https://www.navigation.org/) (Additional details about the grant can be found in the [DataCite Commons grant record](https://commons.datacite.org/doi.org/10.71707/rk36-9x79)). This post was written with help from ChatGPT.
+The development of posters.science is supported by a grant from [The Navigation Fund](https://www.navigation.org/) (additional details about the grant can be found in the [DataCite Commons grant record](https://commons.datacite.org/doi.org/10.71707/rk36-9x79)). This post was written with help from ChatGPT.
