@@ -135,7 +135,11 @@ export default function Info() {
                   <p className="w-full font-asap text-lg text-black">
                     This project is funded through a grant from The Navigation
                     Fund. Additional details about the grant are available{` `}
-                    <Link href="https://commons.datacite.org/doi.org/10.71707/rk36-9x79">
+                    <Link
+                      target="_blank"
+                      className="text-url hover-underline-animation"
+                      href="https://commons.datacite.org/doi.org/10.71707/rk36-9x79"
+                    >
                       here
                     </Link>
                   </p>
