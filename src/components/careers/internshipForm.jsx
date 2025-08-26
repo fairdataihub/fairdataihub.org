@@ -338,7 +338,7 @@ const IntershipForm = () => {
                         onClick={() => {
                           setOpen(false);
                         }}
-                        disabled={!dirty || isSubmitting}
+                        disabled={isSubmitting}
                       >
                         Close
                       </button>
