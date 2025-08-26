@@ -42,65 +42,66 @@ const Gallery: NextPage<Props> = ({ images }) => {
       />
       <section className="py-10 pt-16">
         {photoId && (
-          <Modal images={images} onClose={() => setLastViewedPhoto(photoId)} />
+          <Modal
+            images={images}
+            onClose={() => {
+              setLastViewedPhoto(photoId);
+            }}
+          />
         )}
 
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
-          <div className="relative">
-            <div className="-mt-4 mb-8 rounded-2xl bg-white/50 px-6 py-10 shadow-xl ring-1 ring-black/5 backdrop-blur sm:px-8">
-              <h1 className="text-center text-2xl font-extrabold uppercase tracking-widest text-gray-900">
-                FAIRDATAIHUB&apos;S PHOTO GALLERY
-              </h1>
-              <p className="mx-auto mt-3 max-w-prose text-center text-gray-700">
-                If you would like a photo removed, please send us a message with
-                the link of the photo through our contact form.
-              </p>
-            </div>
-
-            <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
-              {images.map(
-                ({
-                  id,
-                  folder,
-                  name,
-                  width,
-                  height,
-                  blurDataUrl,
-                  alt,
-                  description,
-                }) => {
-                  const imageUrl = encodeURI(`${BUNNY_BASE}/${folder}/${name}`);
-                  return (
-                    <Link
-                      key={id}
-                      href={`gallery/?photoId=${id}`}
-                      as={`gallery/p/${id}`}
-                      ref={
-                        id === Number(lastViewedPhoto)
-                          ? lastViewedPhotoRef
-                          : null
-                      }
-                      shallow
-                      className="group relative mb-5 block w-full"
-                    >
-                      <Image
-                        alt={alt || description || `Gallery photo`}
-                        placeholder={blurDataUrl ? `blur` : `empty`}
-                        blurDataURL={blurDataUrl}
-                        src={imageUrl}
-                        width={720}
-                        height={Math.round((height / width) * 720)}
-                        sizes="(max-width: 640px) 100vw,
-                       (max-width: 1280px) 50vw,
-                       (max-width: 1536px) 33vw,
-                       25vw"
-                        className="rounded-lg brightness-90 transition [content-visibility:auto] group-hover:brightness-110"
-                      />
-                    </Link>
-                  );
-                },
-              )}
-            </div>
+          <div className="-mt-4 mb-8 rounded-2xl bg-white/50 px-6 py-10 shadow-xl ring-1 ring-black/5 backdrop-blur sm:px-8">
+            <h1 className="text-center text-2xl font-extrabold uppercase tracking-widest text-gray-900">
+              FAIRDATAIHUB&apos;S PHOTO GALLERY
+            </h1>
+            <p className="mx-auto mt-3 max-w-prose text-center text-gray-700">
+              If you would like a photo removed, please send us a message with
+              the link of the photo through our contact form.
+            </p>
+          </div>
+          <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
+            {images.map(
+              ({
+                id,
+                folder,
+                name,
+                width,
+                height,
+                blurDataUrl,
+                alt,
+                description,
+              }) => {
+                const imageUrl = encodeURI(`${BUNNY_BASE}/${folder}/${name}`);
+                return (
+                  <Link
+                    key={id}
+                    href={`gallery/?photoId=${id}`}
+                    as={`gallery/p/${id}`}
+                    ref={
+                      id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null
+                    }
+                    shallow
+                    className="after:content after:shadow-highlight group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg"
+                  >
+                    <Image
+                      alt={alt || description || `Gallery photo`}
+                      className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
+                      style={{ transform: `translate3d(0, 0, 0)` }}
+                      placeholder="blur"
+                      blurDataURL={blurDataUrl}
+                      src={imageUrl}
+                      width={720}
+                      height={Math.round((height / width) * 720)}
+                      sizes="(max-width: 640px) 100vw,
+                         (max-width: 1280px) 50vw,
+                         (max-width: 1536px) 33vw,
+                         25vw"
+                    />
+                  </Link>
+                );
+              },
+            )}
           </div>
         </div>
       </section>
@@ -110,7 +111,6 @@ const Gallery: NextPage<Props> = ({ images }) => {
 
 export default Gallery;
 
-// Currently fetching all images, will improve performance
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const reducedResults: ImageProps[] = [];
   let i = 0;
