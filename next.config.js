@@ -14,7 +14,7 @@ module.exports = {
       'raw.githubusercontent.com',
       'elixir-europe.org',
       'cdn.jsdelivr.net',
-      'ucarecdn.com',
+      'fairdataihub-gallery-s.b-cdn.net',
     ],
   },
 };

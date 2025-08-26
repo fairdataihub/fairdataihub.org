@@ -1,7 +1,7 @@
-import { Dialog } from '@headlessui/react';
+import { Dialog, DialogBackdrop } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import useKeypress from 'react-use-keypress';
 
 import type { ImageProps } from '@/utils/types';
@@ -15,57 +15,57 @@ export default function Modal({
   images: ImageProps[];
   onClose?: () => void;
 }) {
-  const overlayRef = useRef();
+  const overlayRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
 
-  const { photoId } = router.query;
-  const index = Number(photoId);
+  const initial = Number.isFinite(Number(router.query.photoId))
+    ? Number(router.query.photoId)
+    : 0;
 
   const [direction, setDirection] = useState(0);
-  const [curIndex, setCurIndex] = useState(index);
+  const [curIndex, setCurIndex] = useState(initial);
+
+  // Keep local state in sync with URL changes (back/forward)
+  useEffect(() => {
+    const next = Number(router.query.photoId);
+    if (Number.isFinite(next) && next !== curIndex) {
+      setCurIndex(next);
+    }
+  }, [router.query.photoId, curIndex]);
 
   function handleClose() {
-    router.push(`/`, undefined, { shallow: true });
-    onClose();
+    router.push(`/gallery`, undefined, { shallow: true });
+    onClose?.();
   }
 
   function changePhotoId(newVal: number) {
-    if (newVal > index) {
-      setDirection(1);
-    } else {
-      setDirection(-1);
-    }
+    setDirection(newVal > curIndex ? 1 : -1);
     setCurIndex(newVal);
-    router.push(
-      {
-        query: { photoId: newVal },
-      },
-      `/p/${newVal}`,
-      { shallow: true },
-    );
+    router.push({ query: { photoId: newVal } }, `gallery/p/${newVal}`, {
+      shallow: true,
+    });
   }
 
   useKeypress(`ArrowRight`, () => {
-    if (index + 1 < images.length) {
-      changePhotoId(index + 1);
+    if (curIndex + 1 < images.length) {
+      changePhotoId(curIndex + 1);
     }
   });
-
   useKeypress(`ArrowLeft`, () => {
-    if (index > 0) {
-      changePhotoId(index - 1);
+    if (curIndex > 0) {
+      changePhotoId(curIndex - 1);
     }
   });
 
   return (
     <Dialog
       static
-      open={true}
-      onClose={handleClose}
+      open
+      onClose={() => handleClose()}
       initialFocus={overlayRef}
       className="fixed inset-0 z-10 flex items-center justify-center"
     >
-      <Dialog.Overlay
+      <DialogBackdrop
         ref={overlayRef}
         as={motion.div}
         key="backdrop"
@@ -79,7 +79,7 @@ export default function Modal({
         images={images}
         changePhotoId={changePhotoId}
         closeModal={handleClose}
-        navigation={true}
+        navigation
       />
     </Dialog>
   );

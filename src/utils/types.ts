@@ -1,10 +1,10 @@
-// utils/types.ts
-
 export interface ImageProps {
   id: number;
   width: number;
   height: number;
-  uuid: string;
+  folder: string;
+  name: string;
+  alt?: string;
   description?: string;
   date?: string;
   blurDataUrl?: string;

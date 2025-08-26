@@ -6,23 +6,33 @@
     "images": [
       {
         "name": "20220403_113647.jpg",
-        "alt": "Experimental Biology EB 2022 Conference"
+        "alt": "Experimental Biology EB 2022 Conference",
+        "width": 1960,
+        "height": 4032
       },
       {
         "name": "20220403_143556.jpg",
-        "alt": "Experimental Biology EB 2022 Conference"
+        "alt": "Experimental Biology EB 2022 Conference",
+        "width": 3000,
+        "height": 4000
       },
       {
         "name": "20220404_095138.jpg",
-        "alt": "Experimental Biology EB 2022 Conference"
+        "alt": "Experimental Biology EB 2022 Conference",
+        "width": 4000,
+        "height": 3000
       },
       {
         "name": "img_1002.jpg",
-        "alt": "Experimental Biology EB 2022 Conference"
+        "alt": "Experimental Biology EB 2022 Conference",
+        "width": 3024,
+        "height": 4032
       },
       {
         "name": "IMG_20220404_171048.jpg",
-        "alt": "Experimental Biology EB 2022 Conference"
+        "alt": "Experimental Biology EB 2022 Conference",
+        "width": 1906,
+        "height": 1147
       }
     ],
     "tags": ["general"],
@@ -35,23 +45,33 @@
     "images": [
       {
         "name": "image_from_ios-3 (1).jpg",
-        "alt": "BOSC 2022 Conference"
+        "alt": "BOSC 2022 Conference",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "image_from_ios-7 (1).jpg",
-        "alt": "BOSC 2022 Conference"
+        "alt": "BOSC 2022 Conference",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "image_from_ios-8 (1).jpg",
-        "alt": "BOSC 2022 Conference"
+        "alt": "BOSC 2022 Conference",
+        "width": 3024,
+        "height": 4032
       },
       {
         "name": "image_from_ios-9 (1).jpg",
-        "alt": "BOSC 2022 Conference"
+        "alt": "BOSC 2022 Conference",
+        "width": 3024,
+        "height": 4032
       },
       {
         "name": "pxl_20220715_154216562.mp (1).jpg",
-        "alt": "BOSC 2022 Conference"
+        "alt": "BOSC 2022 Conference",
+        "width": 3264,
+        "height": 2448
       }
     ],
     "tags": ["conference", "bosc"],
@@ -64,11 +84,15 @@
     "images": [
       {
         "name": "aqx0xkxg 1.jpeg",
-        "alt": "PMWC 2023 Conference"
+        "alt": "PMWC 2023 Conference",
+        "width": 4128,
+        "height": 2752
       },
       {
         "name": "fsfhnyfa 1.jpeg",
-        "alt": "PMWC 2023 Conference"
+        "alt": "PMWC 2023 Conference",
+        "width": 4176,
+        "height": 2784
       }
     ],
     "tags": ["conference", "pmwc"],
@@ -81,7 +105,9 @@
     "images": [
       {
         "name": "77c115c4-ad01-4496-b296-f50ca38e2094_1_105_c (1).jpeg",
-        "alt": "Bridge2AI Annual PIs Meeting"
+        "alt": "Bridge2AI Annual PIs Meeting",
+        "width": 769,
+        "height": 1024
       }
     ],
     "tags": ["meeting", "bridge2ai"],
@@ -94,7 +120,9 @@
     "images": [
       {
         "name": "img_3302 2.jpg",
-        "alt": "SPARC 2 PIs Meeting"
+        "alt": "SPARC 2 PIs Meeting",
+        "width": 4032,
+        "height": 3024
       }
     ],
     "tags": ["meeting", "sparc"],
@@ -107,11 +135,15 @@
     "images": [
       {
         "name": "pxl_20230722_113109984 (1).jpg",
-        "alt": "BOSC 2023 Conference"
+        "alt": "BOSC 2023 Conference",
+        "width": 2268,
+        "height": 4032
       },
       {
         "name": "pxl_20230725_131002620 (1)~2.jpg",
-        "alt": "BOSC 2023 Conference"
+        "alt": "BOSC 2023 Conference",
+        "width": 2268,
+        "height": 4032
       }
     ],
     "tags": ["conference", "bosc"],
@@ -124,7 +156,9 @@
     "images": [
       {
         "name": "IMG_0516 (1).jpeg",
-        "alt": "Bridge2AI Annual PIs Meeting"
+        "alt": "Bridge2AI Annual PIs Meeting",
+        "width": 4032,
+        "height": 3024
       }
     ],
     "tags": ["meeting", "bridge2ai"],
@@ -137,15 +171,21 @@
     "images": [
       {
         "name": "9a114c73-ffdd-4706-94bb-28527d3096b.jpg",
-        "alt": "SfN 2023 Conference"
+        "alt": "SfN 2023 Conference",
+        "width": 1002,
+        "height": 1365
       },
       {
         "name": "IMG_20231115_162316.jpg",
-        "alt": "SfN 2023 Conference"
+        "alt": "SfN 2023 Conference",
+        "width": 768,
+        "height": 1024
       },
       {
         "name": "img_3420.jpg",
-        "alt": "SfN 2023 Conference"
+        "alt": "SfN 2023 Conference",
+        "width": 4032,
+        "height": 3024
       }
     ],
     "tags": ["conference", "sfn"],
@@ -158,19 +198,27 @@
     "images": [
       {
         "name": "1000034610 (1).jpg",
-        "alt": "Bridge2AI All Hands Meeting and Open House"
+        "alt": "Bridge2AI All Hands Meeting and Open House",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "img_1172 (1).jpg",
-        "alt": "Bridge2AI All Hands Meeting and Open House"
+        "alt": "Bridge2AI All Hands Meeting and Open House",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "IMG_1793.jpg",
-        "alt": "Bridge2AI All Hands Meeting and Open House"
+        "alt": "Bridge2AI All Hands Meeting and Open House",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "PXL_20240419_004355563.MP (1)~2.jpg",
-        "alt": "Bridge2AI All Hands Meeting and Open House"
+        "alt": "Bridge2AI All Hands Meeting and Open House",
+        "width": 3072,
+        "height": 4080
       }
     ],
     "tags": ["meeting", "bridge2ai", "open-house"],
@@ -183,15 +231,21 @@
     "images": [
       {
         "name": "image (1).jpg",
-        "alt": "ARVO 2024 Conference"
+        "alt": "ARVO 2024 Conference",
+        "width": 3118,
+        "height": 2730
       },
       {
         "name": "IMG_2203 (1).jpeg",
-        "alt": "ARVO 2024 Conference"
+        "alt": "ARVO 2024 Conference",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "IMG_2219.jpeg",
-        "alt": "ARVO 2024 Conference"
+        "alt": "ARVO 2024 Conference",
+        "width": 3024,
+        "height": 4032
       }
     ],
     "tags": ["conference", "arvo"],
@@ -204,27 +258,39 @@
     "images": [
       {
         "name": "FuXXueOaEAEx7fS.jpg",
-        "alt": "APS 2024 Conference"
+        "alt": "APS 2024 Conference",
+        "width": 2048,
+        "height": 1131
       },
       {
         "name": "img_3426.jpg",
-        "alt": "APS 2024 Conference"
+        "alt": "APS 2024 Conference",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "img_6523.jpg",
-        "alt": "APS 2024 Conference"
+        "alt": "APS 2024 Conference",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "img_6562.jpg",
-        "alt": "APS 2024 Conference"
+        "alt": "APS 2024 Conference",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "img_6565.jpg",
-        "alt": "APS 2024 Conference"
+        "alt": "APS 2024 Conference",
+        "width": 3024,
+        "height": 4032
       },
       {
         "name": "img_6580.jpg",
-        "alt": "APS 2024 Conference"
+        "alt": "APS 2024 Conference",
+        "width": 4032,
+        "height": 3024
       }
     ],
     "tags": ["conference", "aps"],
@@ -237,35 +303,51 @@
     "images": [
       {
         "name": "img_1793 (1).jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 4032,
+        "height": 2268
       },
       {
         "name": "img_1840 (1).jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 4032,
+        "height": 2268
       },
       {
         "name": "img_7959 (1).jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 4032,
+        "height": 2268
       },
       {
         "name": "img_7987 (1).jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 4032,
+        "height": 2268
       },
       {
         "name": "PXL_20230724_170941285.jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 4080,
+        "height": 3072
       },
       {
         "name": "PXL_20240715_164739648.MP.jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 4080,
+        "height": 3072
       },
       {
         "name": "PXL_20240717_150110096.MP (1).jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 4080,
+        "height": 3072
       },
       {
         "name": "PXL_20240718_171808350.MP.jpg",
-        "alt": "BOSC 2024 Conference"
+        "alt": "BOSC 2024 Conference",
+        "width": 3072,
+        "height": 4080
       }
     ],
     "tags": ["conference", "bosc"],
@@ -278,7 +360,9 @@
     "images": [
       {
         "name": "IMG_4489~2 (1).jpeg",
-        "alt": "FORCE11 Annual Conference"
+        "alt": "FORCE11 Annual Conference",
+        "width": 3788,
+        "height": 2726
       }
     ],
     "tags": ["conference", "force11"],
@@ -291,27 +375,39 @@
     "images": [
       {
         "name": "copy_of_rse_conference_2024_0282.jpg",
-        "alt": "USRSE24 Conference"
+        "alt": "USRSE24 Conference",
+        "width": 4000,
+        "height": 2667
       },
       {
         "name": "copy_of_rse_conference_2024_0321.jpg",
-        "alt": "USRSE24 Conference"
+        "alt": "USRSE24 Conference",
+        "width": 4000,
+        "height": 2667
       },
       {
         "name": "group_long.jpg",
-        "alt": "USRSE24 Conference"
+        "alt": "USRSE24 Conference",
+        "width": 1800,
+        "height": 565
       },
       {
         "name": "img_0152.jpg",
-        "alt": "USRSE24 Conference"
+        "alt": "USRSE24 Conference",
+        "width": 3024,
+        "height": 4032
       },
       {
         "name": "img_0156 (1).jpg",
-        "alt": "USRSE24 Conference"
+        "alt": "USRSE24 Conference",
+        "width": 8064,
+        "height": 6048
       },
       {
         "name": "img_0158 (1)~2.jpg",
-        "alt": "USRSE24 Conference"
+        "alt": "USRSE24 Conference",
+        "width": 4032,
+        "height": 3024
       }
     ],
     "tags": ["conference", "usrse"],
@@ -324,11 +420,15 @@
     "images": [
       {
         "name": "457220c6-7210-874b-f2b5-398ebc146221.jpg",
-        "alt": "Bridge2AI Annual PIs Meeting"
+        "alt": "Bridge2AI Annual PIs Meeting",
+        "width": 1431,
+        "height": 1072
       },
       {
         "name": "PXL_20241205_180543212.MP.jpg",
-        "alt": "Bridge2AI Annual PIs Meeting"
+        "alt": "Bridge2AI Annual PIs Meeting",
+        "width": 4080,
+        "height": 3072
       }
     ],
     "tags": ["meeting", "bridge2ai"],
@@ -341,7 +441,9 @@
     "images": [
       {
         "name": "group.jpg",
-        "alt": "Metadata Rx Hackathon"
+        "alt": "Metadata Rx Hackathon",
+        "width": 1600,
+        "height": 1200
       }
     ],
     "tags": ["hackathon", "metadata"],
@@ -354,7 +456,9 @@
     "images": [
       {
         "name": "img_0604 (1).jpg",
-        "alt": "CalMI2 monthly dinner"
+        "alt": "CalMI2 monthly dinner",
+        "width": 6048,
+        "height": 8064
       }
     ],
     "tags": ["dinner", "calmi2"],
@@ -367,7 +471,9 @@
     "images": [
       {
         "name": "IMG_0043.jpeg",
-        "alt": "CalMI2 monthly dinner"
+        "alt": "CalMI2 monthly dinner",
+        "width": 5712,
+        "height": 4284
       }
     ],
     "tags": ["dinner", "calmi2"],
@@ -380,15 +486,21 @@
     "images": [
       {
         "name": "1000070530.jpg",
-        "alt": "ARVO 2025 Conference"
+        "alt": "ARVO 2025 Conference",
+        "width": 1600,
+        "height": 1200
       },
       {
         "name": "IMG_5053 (1).jpeg",
-        "alt": "ARVO 2025 Conference"
+        "alt": "ARVO 2025 Conference",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "IMG_5055 (1).jpeg",
-        "alt": "ARVO 2025 Conference"
+        "alt": "ARVO 2025 Conference",
+        "width": 4032,
+        "height": 3024
       }
     ],
     "tags": ["conference", "arvo"],
@@ -401,31 +513,45 @@
     "images": [
       {
         "name": "copy_of_img_2663 (1)~2.jpeg",
-        "alt": "B2AI All Hands Meeting and Open House"
+        "alt": "B2AI All Hands Meeting and Open House",
+        "width": 5712,
+        "height": 4284
       },
       {
         "name": "copy_of_img_2677 (1)~2.jpeg",
-        "alt": "B2AI All Hands Meeting and Open House"
+        "alt": "B2AI All Hands Meeting and Open House",
+        "width": 5712,
+        "height": 4284
       },
       {
         "name": "img_5170 (1).jpg",
-        "alt": "B2AI All Hands Meeting and Open House"
+        "alt": "B2AI All Hands Meeting and Open House",
+        "width": 3024,
+        "height": 4032
       },
       {
         "name": "IMG_5339 (1).JPG",
-        "alt": "B2AI All Hands Meeting and Open House"
+        "alt": "B2AI All Hands Meeting and Open House",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "img_5574.jpg",
-        "alt": "B2AI All Hands Meeting and Open House"
+        "alt": "B2AI All Hands Meeting and Open House",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "img_5589 (1)~2.jpg",
-        "alt": "B2AI All Hands Meeting and Open House"
+        "alt": "B2AI All Hands Meeting and Open House",
+        "width": 4284,
+        "height": 5712
       },
       {
         "name": "img_5594 (1)~2.jpg",
-        "alt": "B2AI All Hands Meeting and Open House"
+        "alt": "B2AI All Hands Meeting and Open House",
+        "width": 4284,
+        "height": 5712
       }
     ],
     "tags": ["meeting", "bridge2ai", "open-house"],
@@ -455,7 +581,9 @@
     "images": [
       {
         "name": "IMG_20250811_144326.jpg",
-        "alt": "CalMI2 monthly dinner"
+        "alt": "CalMI2 monthly dinner",
+        "width": 3024,
+        "height": 4032
       }
     ],
     "tags": ["dinner", "calmi2"],
@@ -468,15 +596,21 @@
     "images": [
       {
         "name": "893f61b2158752f9467db970d4d67157.jpeg",
-        "alt": "SABPA OCLA AI for Biotechnology Seminar Series"
+        "alt": "SABPA OCLA AI for Biotechnology Seminar Series",
+        "width": 1707,
+        "height": 1280
       },
       {
         "name": "IMG_2854.jpeg",
-        "alt": "SABPA OCLA AI for Biotechnology Seminar Series"
+        "alt": "SABPA OCLA AI for Biotechnology Seminar Series",
+        "width": 4032,
+        "height": 3024
       },
       {
         "name": "IMG_4368.jpg",
-        "alt": "SABPA OCLA AI for Biotechnology Seminar Series"
+        "alt": "SABPA OCLA AI for Biotechnology Seminar Series",
+        "width": 3024,
+        "height": 4032
       }
     ],
     "tags": ["seminar", "sabpa", "ai", "biotechnology"],
@@ -489,11 +623,15 @@
     "images": [
       {
         "name": "IMG_20250815_155025.jpg",
-        "alt": "CalMI2 summer BBQ"
+        "alt": "CalMI2 summer BBQ",
+        "width": 5712,
+        "height": 4284
       },
       {
         "name": "IMG_20250815_155103.jpg",
-        "alt": "CalMI2 summer BBQ"
+        "alt": "CalMI2 summer BBQ",
+        "width": 5712,
+        "height": 4284
       }
     ],
     "tags": ["bbq", "calmi2", "summer"],

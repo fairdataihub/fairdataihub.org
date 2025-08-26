@@ -19,16 +19,10 @@ export default function Carousel({
 
   function closeModal() {
     setLastViewedPhoto(currentPhoto.id);
-    router.push(`/`, undefined, { shallow: true });
+    router.push(`/gallery`, undefined, { shallow: true });
   }
 
-  function changePhotoId(newVal: number) {
-    return newVal;
-  }
-
-  useKeypress(`Escape`, () => {
-    closeModal();
-  });
+  useKeypress(`Escape`, closeModal);
 
   return (
     <div className="fixed inset-0 flex items-center justify-center">
@@ -36,17 +30,19 @@ export default function Carousel({
         className="absolute inset-0 z-30 cursor-default bg-black backdrop-blur-2xl"
         onClick={closeModal}
       >
-        <Image
-          src={currentPhoto.blurDataUrl}
-          className="pointer-events-none h-full w-full"
-          alt="blurred background"
-          fill
-          priority={true}
-        />
+        {currentPhoto.blurDataUrl && (
+          <Image
+            src={currentPhoto.blurDataUrl}
+            className="pointer-events-none h-full w-full"
+            alt="blurred background"
+            fill
+            priority
+          />
+        )}
       </button>
       <SharedModal
         index={index}
-        changePhotoId={changePhotoId}
+        changePhotoId={() => {}}
         currentPhoto={currentPhoto}
         closeModal={closeModal}
         navigation={false}
