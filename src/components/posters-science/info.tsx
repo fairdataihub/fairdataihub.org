@@ -47,6 +47,15 @@ export default function Info() {
     },
   ];
 
+  const collaboratorsList = [
+    {
+      name: `The Navigation Fund`,
+      id: `the-navigation-fund`,
+      href: `https://www.navigation.org/`,
+      image: `https://os.nav.fund/acknowledge/logos/TNF_Stacked_Logos/stacked_color.svg`,
+    },
+  ];
+
   return (
     <div>
       <section>
@@ -124,8 +133,11 @@ export default function Info() {
               <div className="flex w-full flex-col justify-between sm:flex-row">
                 <div className="mb-10 pr-10 sm:mb-5">
                   <p className="w-full font-asap text-lg text-black">
-                    This project is funded through a grant from the Navigation
-                    Fund.
+                    This project is funded through a grant from The Navigation
+                    Fund. Additional details about the grant are available{` `}
+                    <Link href="https://commons.datacite.org/doi.org/10.71707/rk36-9x79">
+                      here
+                    </Link>
                   </p>
                   <div className="mt-2 flex md:mt-1">
                     <a
@@ -137,7 +149,7 @@ export default function Info() {
                       rel="noopener"
                     >
                       <span className="font-lato">
-                        Learn more about the Navigation Fund
+                        Learn more about The Navigation Fund
                       </span>
                       <svg
                         fill="none"
@@ -152,6 +164,39 @@ export default function Info() {
                       </svg>
                     </a>
                   </div>
+                  <div>
+                    <div className="mt-6 w-full sm:mb-5">
+                      <div className="grid grid-cols-2 gap-4 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
+                        {collaboratorsList.map((collaborator) => (
+                          <a
+                            key={collaborator.name}
+                            href={collaborator.href}
+                            target="_blank"
+                            rel="noopener"
+                            data-umami-event="Collaborator link"
+                            data-umami-event-value={collaborator.id}
+                          >
+                            <div className="flex h-full flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
+                              <Image
+                                src={collaborator.image}
+                                alt={collaborator.name + ` profile picture`}
+                                width={220}
+                                height={150}
+                                className="my-auto"
+                                style={{
+                                  height: `auto`,
+                                  width: `auto`,
+                                }}
+                              />
+                              <p className="ml-2 mt-3 text-center font-asap text-lg font-normal">
+                                {collaborator.name}
+                              </p>
+                            </div>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -159,7 +204,7 @@ export default function Info() {
         </div>
       </section>
       <section>
-        <div className="mx-auto px-5 sm:px-10 sm:pt-2">
+        <div className="mx-auto bg-gray-50 px-5 sm:px-10 sm:py-10">
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <h1 className="pb-5 text-left text-4xl font-black md:mr-8">
               Team Members

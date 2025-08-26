@@ -7,7 +7,7 @@ category: 'News'
 heroImage: 'https://images.unsplash.com/photo-1649881927251-46644283751a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 imageAuthor: 'Bernd Dittrichs'
 imageAuthorLink: 'https://unsplash.com/@hdbernd'
-subtitle: 'We are developing posters.science through a new grant from the Navigation Fund.'
+subtitle: 'We are developing posters.science through a new grant from The Navigation Fund.'
 tags:
   - funding
   - grant
@@ -18,7 +18,7 @@ tags:
   - Large Language Models (LLMs)
 ---
 
-We are developing posters.science through a new grant from the [Navigation Fund](https://www.navigation.org/).
+We are developing posters.science through a new grant from [The Navigation Fund](https://www.navigation.org/).
 
 ## ✨ Why Posters Matter
 
@@ -53,4 +53,4 @@ Want to stay in the loop? Visit [posters.science](https://posters.science/) and 
 
 ## 📢 Disclosures
 
-The development of posters.science is supported by a grant from the [Navigation Fund](https://www.navigation.org/). This post was written with help from ChatGPT.
+The development of posters.science is supported by a grant from [The Navigation Fund](https://www.navigation.org/) (Additional details about the grant can be found in the [DataCite Commons grant record](https://commons.datacite.org/doi.org/10.71707/rk36-9x79)). This post was written with help from ChatGPT.

@@ -17,10 +17,10 @@ export default function Navbar() {
         <Link href="/" aria-label="Homepage" passHref>
           <div className="flex flex-row">
             <Image
-              src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/04_Main_Logo_W_Horizontal_Text/Main-Logo-Black-Stroke-Transparent.svg"
+              src="https://raw.githubusercontent.com/fairdataihub/logo/refs/heads/main/SVG/04_Main_Logo_W_Horizontal_Text/Main-Logo-Black-Stroke-Transparent-Copy.svg"
               alt="FAIR Data Innovations Hub Logo"
               width={300}
-              height={300}
+              height={10}
               priority={true}
             />
           </div>

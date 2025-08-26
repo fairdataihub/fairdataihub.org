@@ -1,6 +1,5 @@
 import About from '@/components/posters-science/about';
 import Hero from '@/components/posters-science/hero';
-import Impact from '@/components/posters-science/impact';
 import Info from '@/components/posters-science/info';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
@@ -36,19 +35,19 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
         <About />
       </section>
 
-      <section className="bg-white py-10 pt-16">
+      {/* <section className="bg-white py-10 pt-16">
         <Impact />
-      </section>
+      </section> */}
 
-      <section className="bg-gray-50 py-10 pt-16">
+      <section className="py-10 pt-16">
         <Info />
       </section>
 
-      <section className="bg-white py-10 pt-16">
+      <section className="bg-white py-10">
         <Timeline timelineList={timelineList} />
       </section>
 
-      <section className="bg-white py-10">
+      <section className="bg-white pb-12">
         <PublicationsList publications={publications} />
         <div
           style={{
@@ -57,7 +56,7 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
             alignItems: `center`,
           }}
         >
-          Coming soon...
+          <span>Coming soon...</span>
         </div>
       </section>
     </>

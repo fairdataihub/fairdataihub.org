@@ -63,6 +63,12 @@ export default function Collaborators() {
       width: 200,
       height: 140,
     },
+    {
+      src: `https://os.nav.fund/acknowledge/logos/TNF_Stacked_Logos/stacked_color.svg`,
+      alt: `The Navigation Fund logo`,
+      width: 250,
+      height: 200,
+    },
   ];
 
   return (
@@ -73,8 +79,8 @@ export default function Collaborators() {
         </h2>
 
         <p className="my-2 text-center text-xl md:text-left">
-          Our work would not be possible without our incredible collaborators at
-          various institutions all over the world.
+          Our work would not be possible without our incredible collaborators
+          and funders
         </p>
       </div>
 
