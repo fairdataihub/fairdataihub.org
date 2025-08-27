@@ -2,20 +2,59 @@ module.exports = {
   reactStrictMode: true,
   images: {
     dangerouslyAllowSVG: true,
-    domains: [
-      'www.datocms-assets.com',
-      'github.com',
-      'ucarecdn.com',
-      'api.dicebear.com',
-      'i.imgur.com',
-      'img.shields.io',
-      'researcherprofiles.org',
-      'images.unsplash.com',
-      'raw.githubusercontent.com',
-      'elixir-europe.org',
-      'cdn.jsdelivr.net',
-      'fairdataihub-gallery-s.b-cdn.net',
-      'os.nav.fund',
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'www.datocms-assets.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'github.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ucarecdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.dicebear.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'i.imgur.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img.shields.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'researcherprofiles.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'raw.githubusercontent.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'elixir-europe.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.jsdelivr.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'fairdataihub-gallery-s.b-cdn.net',
+      },
+      {
+        protocol: 'https',
+        hostname: 'os.nav.fund',
+      },
     ],
   },
 };
