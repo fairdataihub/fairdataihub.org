@@ -2,13 +2,14 @@ import type { GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { getPlaiceholder } from 'plaiceholder';
+import probe from 'probe-image-size';
 import { useEffect, useRef } from 'react';
 
 import Modal from '@/components/gallery/Modal';
 import Seo from '@/components/seo/seo';
 
-import updatedGallery from '@/public/gallery/updated_gallery.json';
-import getBase64ImageUrl from '@/utils/generateBlurPlaceholder';
+import GALLERY_JSON from '@/public/gallery/images.json';
 import type { ImageProps } from '@/utils/types';
 import { useLastViewedPhoto } from '@/utils/useLastViewedPhoto';
 
@@ -37,8 +38,8 @@ const Gallery: NextPage<Props> = ({ images }) => {
       <Seo
         templateTitle="Gallery"
         templateUrl="https://fairdataihub.org/gallery"
-        templateDescription="Welcome to the fairdataihub gallery"
-        templateImage="https://kalai.fairdataihub.org/api/generate?title=Gallery&description=Welcome%20to%20the%20fairdataihub%20gallery!&app=fairdataihub&org=fairdataihub"
+        templateDescription="A collection of photos from the FAIR Data Innovations Hub"
+        templateImage="https://kalai.fairdataihub.org/api/generate?title=Gallery&description=A%20collection%20of%20photos%20from%20the%20FAIR%20Data%20Innovations%20Hub&app=fairdataihub&org=fairdataihub"
       />
       <section className="py-10 pt-16">
         {photoId && (
@@ -91,12 +92,8 @@ const Gallery: NextPage<Props> = ({ images }) => {
                       placeholder="blur"
                       blurDataURL={blurDataUrl}
                       src={imageUrl}
-                      width={720}
-                      height={Math.round((height / width) * 720)}
-                      sizes="(max-width: 640px) 100vw,
-                         (max-width: 1280px) 50vw,
-                         (max-width: 1536px) 33vw,
-                         25vw"
+                      width={width}
+                      height={height}
                     />
                   </Link>
                 );
@@ -112,38 +109,44 @@ const Gallery: NextPage<Props> = ({ images }) => {
 export default Gallery;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  const reducedResults: ImageProps[] = [];
   let i = 0;
 
-  (
-    updatedGallery as Array<{
-      folder: string;
-      date?: string;
-      description?: string;
-      images: Array<{ name: string; alt?: string }>;
-    }>
-  ).forEach((event) => {
-    event.images.forEach((img) => {
-      reducedResults.push({
-        id: i++,
-        folder: event.folder,
-        name: img.name,
-        alt: img.alt,
-        description: event.description,
-        date: event.date,
-        width: 1920,
-        height: 1080,
-      });
-    });
+  // Sort the images by date
+  const sortedImages = GALLERY_JSON.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
   });
 
-  const blurImagePromises = reducedResults.map((image) =>
-    getBase64ImageUrl(image),
-  );
-  const imagesWithBlurDataUrls = await Promise.all(blurImagePromises);
-  for (let j = 0; j < reducedResults.length; j++) {
-    reducedResults[j].blurDataUrl = imagesWithBlurDataUrls[j];
-  }
+  // Process all events and their images concurrently
+  const imagePromises = sortedImages.flatMap(async (event) => {
+    return Promise.all(
+      event.images.map(async (img) => {
+        const imageUrl = encodeURI(`${BUNNY_BASE}/${event.folder}/${img.name}`);
 
-  return { props: { images: reducedResults } };
+        const { width, height } = await probe(imageUrl);
+
+        const buffer = await fetch(imageUrl).then(async (res) =>
+          Buffer.from(await res.arrayBuffer()),
+        );
+
+        const { base64 } = await getPlaiceholder(buffer);
+
+        return {
+          id: i++,
+          folder: event.folder,
+          name: img.name,
+          alt: img.alt,
+          description: event.description,
+          date: event.date,
+          width,
+          height,
+          blurDataUrl: base64,
+        };
+      }),
+    );
+  });
+
+  const reducedResults = await Promise.all(imagePromises);
+  const flattenedResults = reducedResults.flat();
+
+  return { props: { images: flattenedResults } };
 };
