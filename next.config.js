@@ -15,6 +15,7 @@ module.exports = {
       'elixir-europe.org',
       'cdn.jsdelivr.net',
       'fairdataihub-gallery-s.b-cdn.net',
+      'os.nav.fund',
     ],
   },
 };
