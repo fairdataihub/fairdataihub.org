@@ -8,11 +8,6 @@ import { variants } from '@/utils/animationVariants';
 import downloadPhoto from '@/utils/downloadPhoto';
 import { range } from '@/utils/range';
 import type { ImageProps, SharedModalProps } from '@/utils/types';
-import { bunnyUrl } from '@/utils/url';
-
-const _BUNNY_BASE =
-  process.env.NEXT_PUBLIC_BUNNY_BASE ||
-  `https://fairdataihub-gallery-s.b-cdn.net`;
 
 export default function SharedModal({
   index,
@@ -44,10 +39,7 @@ export default function SharedModal({
   });
 
   const currentImage = images ? images[index] : currentPhoto;
-  const mainUrl = bunnyUrl(
-    currentImage?.folder || ``,
-    currentImage?.name || ``,
-  );
+  const mainUrl = `https://fairdataihub-gallery-s.b-cdn.net/${currentImage?.folder}/${currentImage?.name}`;
 
   return (
     <MotionConfig
@@ -160,7 +152,7 @@ export default function SharedModal({
               >
                 <AnimatePresence initial={false}>
                   {filteredImages?.map(({ folder, name, id }) => {
-                    const thumbUrl = bunnyUrl(folder, name);
+                    const thumbUrl = `https://fairdataihub-gallery-s.b-cdn.net/${folder}/${name}`;
                     return (
                       <motion.button
                         key={id}

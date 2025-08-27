@@ -13,8 +13,6 @@ import GALLERY_JSON from '@/public/gallery/images.json';
 import type { ImageProps } from '@/utils/types';
 import { useLastViewedPhoto } from '@/utils/useLastViewedPhoto';
 
-const BUNNY_BASE = `https://fairdataihub-gallery-s.b-cdn.net`;
-
 type Props = {
   images: ImageProps[];
 };
@@ -73,7 +71,9 @@ const Gallery: NextPage<Props> = ({ images }) => {
                 alt,
                 description,
               }) => {
-                const imageUrl = encodeURI(`${BUNNY_BASE}/${folder}/${name}`);
+                const imageUrl = encodeURI(
+                  `https://fairdataihub-gallery-s.b-cdn.net/${folder}/${name}`,
+                );
                 return (
                   <Link
                     key={id}
@@ -111,16 +111,13 @@ export default Gallery;
 export const getStaticProps: GetStaticProps<Props> = async () => {
   let i = 0;
 
-  // Sort the images by date
-  const sortedImages = GALLERY_JSON.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
-  });
-
   // Process all events and their images concurrently
-  const imagePromises = sortedImages.flatMap(async (event) => {
+  const imagePromises = GALLERY_JSON.flatMap(async (event) => {
     return Promise.all(
       event.images.map(async (img) => {
-        const imageUrl = encodeURI(`${BUNNY_BASE}/${event.folder}/${img.name}`);
+        const imageUrl = encodeURI(
+          `https://fairdataihub-gallery-s.b-cdn.net/${event.folder}/${img.name}`,
+        );
 
         const { width, height } = await probe(imageUrl);
 
@@ -147,6 +144,11 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
 
   const reducedResults = await Promise.all(imagePromises);
   const flattenedResults = reducedResults.flat();
+
+  //reassign the id to the images
+  flattenedResults.forEach((image, index) => {
+    image.id = index;
+  });
 
   return { props: { images: flattenedResults } };
 };

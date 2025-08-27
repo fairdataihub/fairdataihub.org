@@ -1,11 +1,12 @@
 import type { GetStaticProps, NextPage } from 'next';
 import { useRouter } from 'next/router';
+import { getPlaiceholder } from 'plaiceholder';
+import probe from 'probe-image-size';
 
 import Carousel from '@/components/gallery/Carousal';
 import Seo from '@/components/seo/seo';
 
-import updatedGallery from '@/public/gallery/updated_gallery.json';
-import getBase64ImageUrl from '@/utils/generateBlurPlaceholder';
+import GALLERY_JSON from '@/public/gallery/images.json';
 import type { ImageProps } from '@/utils/types';
 
 type Props = { currentPhoto: ImageProps };
@@ -20,8 +21,8 @@ const PhotoPage: NextPage<Props> = ({ currentPhoto }) => {
   return (
     <>
       <Seo
-        templateTitle="Fairdataihub Photo Gallery"
-        templateDescription="A collection of photos from the Fairdataihub Organization"
+        templateTitle="Gallery"
+        templateDescription="A collection of photos from the FAIR Data Innovations Hub"
         templateUrl={`https://fairdataihub.org/gallery/p/${index}`}
         templateImage="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=GalleryI&org=fairdataihub"
       />
@@ -38,19 +39,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   const flat: ImageProps[] = [];
   let i = 0;
 
-  (
-    updatedGallery as Array<{
-      folder: string;
-      date?: string;
-      description?: string;
-      images: Array<{
-        name: string;
-        alt?: string;
-        width?: number;
-        height?: number;
-      }>;
-    }>
-  ).forEach((event) => {
+  GALLERY_JSON.forEach((event) => {
     event.images.forEach((img) => {
       flat.push({
         id: i++,
@@ -59,8 +48,9 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
         alt: img.alt,
         description: event.description,
         date: event.date,
-        width: img.width ?? 1920,
-        height: img.height ?? 1080,
+        width: 0,
+        height: 0,
+        blurDataUrl: ``,
       });
     });
   });
@@ -72,8 +62,21 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
     return { notFound: true };
   }
 
+  const imageUrl = encodeURI(
+    `https://fairdataihub-gallery-s.b-cdn.net/${currentPhoto.folder}/${currentPhoto.name}`,
+  );
+
+  const { width, height } = await probe(imageUrl);
+
+  currentPhoto.width = width;
+  currentPhoto.height = height;
+
+  const buffer = await fetch(imageUrl).then(async (res) =>
+    Buffer.from(await res.arrayBuffer()),
+  );
+
   // LQIP for this single photo so the modal background looks nice
-  currentPhoto.blurDataUrl = await getBase64ImageUrl(currentPhoto);
+  currentPhoto.blurDataUrl = (await getPlaiceholder(buffer)).base64;
 
   return { props: { currentPhoto } };
 };
@@ -82,9 +85,8 @@ export async function getStaticPaths() {
   const paths: { params: { photoId: string } }[] = [];
   let i = 0;
 
-  (
-    updatedGallery as Array<{ folder: string; images: Array<{ name: string }> }>
-  ).forEach((event) => {
+  // Process all events and their images concurrently
+  GALLERY_JSON.forEach((event) => {
     event.images.forEach(() => {
       paths.push({ params: { photoId: i.toString() } });
       i++;
