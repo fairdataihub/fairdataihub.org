@@ -38,8 +38,6 @@
     ]
   },
   "dependencies": {
-    "@citation-js/core": "^0.7.9",
-    "@citation-js/plugin-csl": "^0.7.9",
     "@giscus/react": "2.3.0",
     "@headlessui/react": "^2.2.7",
     "@lottiefiles/lottie-player": "2.0.4",
@@ -50,7 +48,6 @@
     "@sendgrid/mail": "7.7.0",
     "@slack/webhook": "^6.1.0",
     "@uploadcare/upload-client": "^6.6.1",
-    "citation-js": "^0.7.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cobe": "^0.6.3",
@@ -60,8 +57,6 @@
     "formik": "2.4.6",
     "framer-motion": "^12.23.12",
     "gray-matter": "4.0.3",
-    "imagemin": "^9.0.1",
-    "imagemin-jpegtran": "^8.0.0",
     "lucide-react": "^0.279.0",
     "markdown-it": "13.0.2",
     "next": "14.2.10",
@@ -98,8 +93,8 @@
   },
   "devDependencies": {
     "@cloudflare/next-on-pages": "^1.13.10",
-    "@commitlint/cli": "17.8.1",
-    "@commitlint/config-conventional": "17.8.1",
+    "@commitlint/cli": "19.6.0",
+    "@commitlint/config-conventional": "19.6.0",
     "@fairdataihub/config": "2.2.3",
     "@iconify/react": "4.1.1",
     "@semantic-release/changelog": "6.0.3",
@@ -110,8 +105,6 @@
     "@semantic-release/release-notes-generator": "11.0.7",
     "@tailwindcss/line-clamp": "0.4.4",
     "@tailwindcss/typography": "0.5.14",
-    "@types/imagemin": "^9.0.1",
-    "@types/imagemin-jpegtran": "^5.0.4",
     "@types/node": "18.19.45",
     "@types/probe-image-size": "^7.2.5",
     "@types/react": "18.0.31",
@@ -152,15 +145,12 @@
     "last 2 versions",
     "not dead"
   ],
-  "engines": {
-    "node": ">=20.0.0 "
-  },
   "bugs": {
     "url": "https://github.com/fairdataihub/fairdataihub-website/issues/new/choose"
   },
   "homepage": "https://fairdataihub.org",
   "volta": {
-    "node": "20.19.0",
+    "node": "22.18.0",
     "yarn": "1.22.22"
   }
 }

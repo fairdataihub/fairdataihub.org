@@ -49,8 +49,6 @@ export default function SharedModal({
     currentImage?.name || ``,
   );
 
-  console.log(mainUrl);
-
   return (
     <MotionConfig
       transition={{
