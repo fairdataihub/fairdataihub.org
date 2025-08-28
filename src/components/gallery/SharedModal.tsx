@@ -68,6 +68,8 @@ export default function SharedModal({
                 width={currentImage?.width}
                 height={currentImage?.height}
                 priority
+                placeholder="blur"
+                blurDataURL={currentImage?.blurDataUrl}
                 className="max-h-[90vh] max-w-[90vw] object-contain"
                 alt={
                   currentImage?.alt ||
