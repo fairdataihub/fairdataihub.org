@@ -54,14 +54,12 @@ const Gallery: NextPage<Props> = ({ images }) => {
           />
         )}
 
+        {/* gradient glow layer */}
+        <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
+          <div className="absolute left-1/2 top-0 h-[720px] w-[1400px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
+        </div>
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
           <div className="relative">
-            {/* gradient glow layer */}
-            <div className="pointer-events-none absolute inset-0 -z-10">
-              {/* centered ellipse that fades out */}
-              <div className="absolute left-1/2 top-0 h-[420px] w-[900px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.28),rgba(211,75,171,0.12)_35%,transparent_70%)] blur-2xl" />
-            </div>
-
             <div className="-mt-4 mb-8 overflow-hidden rounded-2xl bg-white/60 shadow-md backdrop-blur">
               <div className="mx-0 my-0 rounded-[1.05rem]">
                 <div className="px-6 py-10 sm:px-8">
@@ -122,7 +120,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
                         <div className="flex items-center">
                           {/* horizontal line divider */}
                           <div className="h-px flex-1 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400" />
-                          {/* year label on the right */}
+
                           <div className="ml-4 select-none text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
                             {year}
                           </div>
@@ -143,36 +141,38 @@ const Gallery: NextPage<Props> = ({ images }) => {
                           : null
                       }
                       shallow
-                      className="after:content after:shadow-highlight group relative mb-5 block w-full cursor-zoom-in break-inside-avoid after:pointer-events-none after:absolute after:inset-0 after:rounded-lg"
+                      className="group relative mb-5 block w-full cursor-pointer break-inside-avoid"
                     >
-                      <Image
-                        alt={alt || description || `Gallery photo`}
-                        className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
-                        style={{ transform: `translate3d(0, 0, 0)` }}
-                        placeholder="blur"
-                        blurDataURL={blurDataUrl}
-                        src={imageUrl}
-                        width={width}
-                        height={height}
-                      />
+                      {/* container grows on hover */}
+                      <div className="relative transform-gpu overflow-hidden rounded-lg shadow-sm transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl group-hover:shadow-black/10">
+                        <Image
+                          alt={alt || description || `Gallery photo`}
+                          src={imageUrl}
+                          width={width}
+                          height={height}
+                          placeholder="blur"
+                          blurDataURL={blurDataUrl}
+                          className="rounded-lg object-cover"
+                        />
 
-                      {/* hover overlay */}
-                      <div className="pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                        {/* hover overlay */}
+                        <div className="pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                      {/* caption */}
-                      <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                        <p className="text-[11px] font-medium tracking-wide text-white/80">
-                          {date
-                            ? new Date(date).toLocaleDateString(`en-US`, {
-                                year: `numeric`,
-                                month: `short`,
-                                day: `numeric`,
-                              })
-                            : null}
-                        </p>
-                        <p className="line-clamp-2 text-sm font-semibold text-white">
-                          {description || alt || ` `}
-                        </p>
+                        {/* caption */}
+                        <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                          <p className="text-[11px] font-medium tracking-wide text-white/80">
+                            {date
+                              ? new Date(date).toLocaleDateString(`en-US`, {
+                                  year: `numeric`,
+                                  month: `short`,
+                                  day: `numeric`,
+                                })
+                              : null}
+                          </p>
+                          <p className="line-clamp-2 text-sm font-semibold text-white">
+                            {description || alt || ` `}
+                          </p>
+                        </div>
                       </div>
                     </Link>,
                   );
