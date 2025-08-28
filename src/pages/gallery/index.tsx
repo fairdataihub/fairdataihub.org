@@ -31,6 +31,11 @@ const Gallery: NextPage<Props> = ({ images }) => {
     }
   }, [photoId, lastViewedPhoto, setLastViewedPhoto]);
 
+  const getYear = (img: ImageProps) =>
+    img.date
+      ? new Date(img.date).getFullYear()
+      : Number(img.folder.match(/^\d{4}/)?.[0]) || 0;
+
   return (
     <>
       <Seo
@@ -72,63 +77,110 @@ const Gallery: NextPage<Props> = ({ images }) => {
             </div>
           </div>
           <div className="columns-1 gap-4 sm:columns-2 xl:columns-3 2xl:columns-4">
-            {images.map(
-              ({
-                id,
-                folder,
-                name,
-                width,
-                height,
-                blurDataUrl,
-                alt,
-                date,
-                description,
-              }) => {
-                const imageUrl = encodeURI(
-                  `https://fairdataihub-gallery-s.b-cdn.net/${folder}/${name}`,
-                );
-                return (
-                  <Link
-                    key={id}
-                    href={`gallery/?photoId=${id}`}
-                    as={`gallery/p/${id}`}
-                    ref={
-                      id === Number(lastViewedPhoto) ? lastViewedPhotoRef : null
-                    }
-                    shallow
-                    className="after:content after:shadow-highlight group relative mb-5 block w-full cursor-zoom-in after:pointer-events-none after:absolute after:inset-0 after:rounded-lg"
-                  >
-                    <Image
-                      alt={alt || description || `Gallery photo`}
-                      className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
-                      style={{ transform: `translate3d(0, 0, 0)` }}
-                      placeholder="blur"
-                      blurDataURL={blurDataUrl}
-                      src={imageUrl}
-                      width={width}
-                      height={height}
-                    />
+            {(() => {
+              let lastYear: number | null = null;
 
-                    <div className="pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              return images.flatMap(
+                (
+                  {
+                    id,
+                    folder,
+                    name,
+                    width,
+                    height,
+                    blurDataUrl,
+                    alt,
+                    date,
+                    description,
+                  },
+                  idx,
+                ) => {
+                  const imageUrl = encodeURI(
+                    `https://fairdataihub-gallery-s.b-cdn.net/${folder}/${name}`,
+                  );
+                  const year = getYear({
+                    id,
+                    folder,
+                    name,
+                    width,
+                    height,
+                    blurDataUrl,
+                    alt,
+                    date,
+                    description,
+                  });
 
-                    <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      <p className="text-[11px] font-medium tracking-wide text-white/80">
-                        {date
-                          ? new Date(date).toLocaleDateString(`en-US`, {
-                              year: `numeric`,
-                              month: `short`,
-                              day: `numeric`,
-                            })
-                          : null}
-                      </p>
-                      <p className="line-clamp-2 text-sm font-semibold text-white">
-                        {description || alt || ` `}
-                      </p>
-                    </div>
-                  </Link>
-                );
-              },
-            )}
+                  const pieces: JSX.Element[] = [];
+
+                  if (year && year !== lastYear) {
+                    lastYear = year;
+                    pieces.push(
+                      <div
+                        key={`year-${year}-${idx}`}
+                        className="my-8 w-full [column-span:all]"
+                      >
+                        <div className="flex items-center">
+                          {/* horizontal line divider */}
+                          <div className="h-px flex-1 bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400" />
+                          {/* year label on the right */}
+                          <div className="ml-4 select-none text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                            {year}
+                          </div>
+                        </div>
+                      </div>,
+                    );
+                  }
+
+                  // the card itself
+                  pieces.push(
+                    <Link
+                      key={id}
+                      href={`gallery/?photoId=${id}`}
+                      as={`gallery/p/${id}`}
+                      ref={
+                        id === Number(lastViewedPhoto)
+                          ? lastViewedPhotoRef
+                          : null
+                      }
+                      shallow
+                      className="after:content after:shadow-highlight group relative mb-5 block w-full cursor-zoom-in break-inside-avoid after:pointer-events-none after:absolute after:inset-0 after:rounded-lg"
+                    >
+                      <Image
+                        alt={alt || description || `Gallery photo`}
+                        className="transform rounded-lg brightness-90 transition will-change-auto group-hover:brightness-110"
+                        style={{ transform: `translate3d(0, 0, 0)` }}
+                        placeholder="blur"
+                        blurDataURL={blurDataUrl}
+                        src={imageUrl}
+                        width={width}
+                        height={height}
+                      />
+
+                      {/* hover overlay */}
+                      <div className="pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
+                      {/* caption */}
+                      <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <p className="text-[11px] font-medium tracking-wide text-white/80">
+                          {date
+                            ? new Date(date).toLocaleDateString(`en-US`, {
+                                year: `numeric`,
+                                month: `short`,
+                                day: `numeric`,
+                              })
+                            : null}
+                        </p>
+                        <p className="line-clamp-2 text-sm font-semibold text-white">
+                          {description || alt || ` `}
+                        </p>
+                      </div>
+                    </Link>,
+                  );
+
+                  return pieces;
+                },
+              );
+            })()}
           </div>
         </div>
       </section>
