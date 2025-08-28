@@ -182,7 +182,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   let i = 0;
 
   //reverse the GALLERY_JSON
-  const reversed_GALLERY_JSON = GALLERY_JSON.reverse();
+  const reversed_GALLERY_JSON = [...GALLERY_JSON].reverse();
 
   // Process all events and their images concurrently
   const imagePromises = reversed_GALLERY_JSON.flatMap((event) =>
