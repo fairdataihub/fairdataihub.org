@@ -80,6 +80,24 @@ export default function SharedModal({
               />
             </motion.div>
           </AnimatePresence>
+
+          {loaded && (
+            <div className="pointer-events-none absolute inset-x-0 top-[80px] z-40 flex justify-center px-4">
+              <div className="bg-black/55 max-w-[80ch] rounded-full px-4 py-2 text-white shadow-lg backdrop-blur">
+                <span className="text-xs opacity-80 sm:text-sm">
+                  {currentImage?.date || ``}
+                </span>
+                {(currentImage?.description || currentImage?.alt) && (
+                  <>
+                    <span className="mx-2 opacity-40">•</span>
+                    <span className="text-xs sm:text-sm">
+                      {currentImage?.description || currentImage?.alt}
+                    </span>
+                  </>
+                )}
+              </div>
+            </div>
+          )}
         </div>
 
         {loaded && (
