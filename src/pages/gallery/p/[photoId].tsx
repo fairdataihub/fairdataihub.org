@@ -39,7 +39,9 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   const flat: ImageProps[] = [];
   let i = 0;
 
-  GALLERY_JSON.forEach((event) => {
+  const reversed_GALLERY_JSON = GALLERY_JSON.reverse();
+
+  reversed_GALLERY_JSON.forEach((event) => {
     event.images.forEach((img) => {
       flat.push({
         id: i++,
@@ -86,7 +88,9 @@ export async function getStaticPaths() {
   let i = 0;
 
   // Process all events and their images concurrently
-  GALLERY_JSON.forEach((event) => {
+  const reversed_GALLERY_JSON = GALLERY_JSON.reverse();
+
+  reversed_GALLERY_JSON.forEach((event) => {
     event.images.forEach(() => {
       paths.push({ params: { photoId: i.toString() } });
       i++;

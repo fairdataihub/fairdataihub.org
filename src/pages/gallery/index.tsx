@@ -102,8 +102,11 @@ export default Gallery;
 export const getStaticProps: GetStaticProps<Props> = async () => {
   let i = 0;
 
+  //reverse the GALLERY_JSON
+  const reversed_GALLERY_JSON = GALLERY_JSON.reverse();
+
   // Process all events and their images concurrently
-  const imagePromises = GALLERY_JSON.flatMap(async (event) => {
+  const imagePromises = reversed_GALLERY_JSON.flatMap(async (event) => {
     return Promise.all(
       event.images.map(async (img) => {
         const imageUrl = encodeURI(
