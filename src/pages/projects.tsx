@@ -15,14 +15,13 @@ export default function Home() {
       />
 
       <div className="relative">
-        <section className="mb-10 px-2 pt-12 sm:pt-16">
-          <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8">
+        <section className="mb-10 px-2 pt-4">
+          <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 pb-8">
             <div className="mb-10 w-full">
-              <h1 className="w-full text-left text-4xl font-black text-stone-900 sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
+              <h1 className="py-2 text-4xl font-black">
                 We are cooking a lot of cool stuff!
               </h1>
-
-              <p className="mt-2 w-full text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">
+              <p className="font-asap text-xl text-black sm:text-lg">
                 See what we are up to below
               </p>
             </div>

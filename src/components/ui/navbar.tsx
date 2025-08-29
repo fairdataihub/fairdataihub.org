@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <nav className="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
-      <div className="flex flex-row items-center justify-between bg-gray-50 px-5 py-3">
+      <div className="flex flex-row items-center justify-between bg-gray-50 px-5 py-2">
         <Link href="/" aria-label="Homepage" passHref>
           <div className="flex flex-row">
             <Image
@@ -68,6 +68,17 @@ export default function Navbar() {
                 data-umami-event-value="Impact"
               >
                 Impact
+              </div>
+            </Link>
+
+            <Link href="/gallery" passHref>
+              <div
+                className={
+                  `nav-item hover-underline-animation` +
+                  (router.pathname === `/gallery` ? ` router-link-active` : ` `)
+                }
+              >
+                Gallery
               </div>
             </Link>
 
