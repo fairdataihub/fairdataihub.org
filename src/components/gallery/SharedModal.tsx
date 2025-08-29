@@ -49,7 +49,7 @@ export default function SharedModal({
       }}
     >
       <div
-        className="relative z-50 flex h-full w-full max-w-7xl items-center justify-center"
+        className="relative z-50 flex h-full w-full items-center justify-center"
         {...handlers}
       >
         <div className="relative h-full w-full overflow-hidden">
