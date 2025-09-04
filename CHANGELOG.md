@@ -1,3 +1,10 @@
+# [2.63.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.62.0...v2.63.0) (2025-09-04)
+
+
+### Features
+
+* ✨ add a gallery page ([#701](https://github.com/fairdataihub/fairdataihub.org/issues/701)) ([795e59e](https://github.com/fairdataihub/fairdataihub.org/commit/795e59e25e534c0972fac62ff898fcd0ece11ac3))
+
 # [2.62.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.61.0...v2.62.0) (2025-08-22)
 
 
