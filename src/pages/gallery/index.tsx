@@ -2,8 +2,6 @@ import type { GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { getPlaiceholder } from 'plaiceholder';
-import probe from 'probe-image-size';
 import { useEffect, useRef } from 'react';
 
 import Modal from '@/components/gallery/Modal';
@@ -11,6 +9,7 @@ import Seo from '@/components/seo/seo';
 
 import GALLERY_JSON from '@/public/gallery/images.json';
 import { groupByYear, toBuckets } from '@/utils/galleryLayout';
+import { safeLqip, safeProbe } from '@/utils/imageFetch';
 import type { ImageProps } from '@/utils/types';
 import { useLastViewedPhoto } from '@/utils/useLastViewedPhoto';
 import { useMediaColumns } from '@/utils/useMediaColumns';
@@ -190,14 +189,8 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       const imageUrl = encodeURI(
         `https://fairdataihub-gallery-s.b-cdn.net/${event.folder}/${img.name}`,
       );
-
-      const { width, height } = await probe(imageUrl);
-
-      const buffer = await fetch(imageUrl).then(async (res) =>
-        Buffer.from(await res.arrayBuffer()),
-      );
-
-      const { base64 } = await getPlaiceholder(buffer);
+      const { width, height } = await safeProbe(imageUrl);
+      const blurDataUrl = await safeLqip(imageUrl);
 
       return {
         id: i++,
@@ -208,7 +201,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         date: event.date,
         width,
         height,
-        blurDataUrl: base64,
+        blurDataUrl,
       };
     }),
   );
