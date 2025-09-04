@@ -1,0 +1,502 @@
+[
+  {
+    "event": "2022 Experimental Biology Conference",
+    "folder": "2022-04-03 - Experimental Biology EB 2022 Conference",
+    "date": "2022-04-03",
+    "images": [
+      {
+        "name": "20220403_113647.jpg",
+        "alt": "Experimental Biology EB 2022 Conference"
+      },
+      {
+        "name": "20220403_143556.jpg",
+        "alt": "Experimental Biology EB 2022 Conference"
+      },
+      {
+        "name": "20220404_095138.jpg",
+        "alt": "Experimental Biology EB 2022 Conference"
+      },
+      {
+        "name": "img_1002.avif",
+        "alt": "Experimental Biology EB 2022 Conference"
+      },
+      {
+        "name": "IMG_20220404_171048.jpg",
+        "alt": "Experimental Biology EB 2022 Conference"
+      }
+    ],
+    "tags": ["general"],
+    "description": "Experimental Biology EB 2022 Conference"
+  },
+  {
+    "event": "BOSC 2022 Conference",
+    "folder": "2022-07-10 - BOSC 2022 Conference",
+    "date": "2022-07-10",
+    "images": [
+      {
+        "name": "image_from_ios-3 (1).jpg",
+        "alt": "BOSC 2022 Conference"
+      },
+      {
+        "name": "image_from_ios-7 (1).jpg",
+        "alt": "BOSC 2022 Conference"
+      },
+      {
+        "name": "image_from_ios-8 (1).jpg",
+        "alt": "BOSC 2022 Conference"
+      },
+      {
+        "name": "image_from_ios-9 (1).jpg",
+        "alt": "BOSC 2022 Conference"
+      },
+      {
+        "name": "pxl_20220715_154216562.mp (1).jpg",
+        "alt": "BOSC 2022 Conference"
+      }
+    ],
+    "tags": ["conference", "bosc"],
+    "description": "BOSC 2022 Conference"
+  },
+  {
+    "event": "PMWC 2023 Conference",
+    "folder": "2023-01 - PMWC 2023 Conference",
+    "date": "2023-01",
+    "images": [
+      {
+        "name": "aqx0xkxg 1.jpeg",
+        "alt": "PMWC 2023 Conference"
+      },
+      {
+        "name": "fsfhnyfa 1.jpeg",
+        "alt": "PMWC 2023 Conference"
+      }
+    ],
+    "tags": ["conference", "pmwc"],
+    "description": "PMWC 2023 Conference"
+  },
+  {
+    "event": "Bridge2AI Annual PIs Meeting",
+    "folder": "2023-04-20 - Bridge2AI Annual PIs Meeting",
+    "date": "2023-04-20",
+    "images": [
+      {
+        "name": "77c115c4-ad01-4496-b296-f50ca38e2094_1_105_c (1).jpeg",
+        "alt": "Bridge2AI Annual PIs Meeting"
+      }
+    ],
+    "tags": ["meeting", "bridge2ai"],
+    "description": "Bridge2AI Annual PIs Meeting"
+  },
+  {
+    "event": "SPARC 2 PIs Meeting",
+    "folder": "2023-06-14 - SPARC 2 PIs Meeting",
+    "date": "2023-06-14",
+    "images": [
+      {
+        "name": "img_3302 2.jpg",
+        "alt": "SPARC 2 PIs Meeting"
+      }
+    ],
+    "tags": ["meeting", "sparc"],
+    "description": "SPARC 2 PIs Meeting"
+  },
+  {
+    "event": "BOSC 2023 Conference",
+    "folder": "2023-07-02 - BOSC 2023 Conference",
+    "date": "2023-07-02",
+    "images": [
+      {
+        "name": "pxl_20230722_113109984 (1).jpg",
+        "alt": "BOSC 2023 Conference"
+      },
+      {
+        "name": "pxl_20230725_131002620 (1)~2.jpg",
+        "alt": "BOSC 2023 Conference"
+      }
+    ],
+    "tags": ["conference", "bosc"],
+    "description": "BOSC 2023 Conference"
+  },
+  {
+    "event": "Bridge2AI Annual PIs Meeting",
+    "folder": "2023-11-06 - Bridge2AI Annual PIs Meeting",
+    "date": "2023-11-06",
+    "images": [
+      {
+        "name": "IMG_0516 (1).jpeg",
+        "alt": "Bridge2AI Annual PIs Meeting"
+      }
+    ],
+    "tags": ["meeting", "bridge2ai"],
+    "description": "Bridge2AI Annual PIs Meeting"
+  },
+  {
+    "event": "SfN 2023 Conference",
+    "folder": "2023-11-12 - SfN 2023 Conference",
+    "date": "2023-11-12",
+    "images": [
+      {
+        "name": "9a114c73-ffdd-4706-94bb-28527d3096b.jpg",
+        "alt": "SfN 2023 Conference"
+      },
+      {
+        "name": "IMG_20231115_162316.jpg",
+        "alt": "SfN 2023 Conference"
+      },
+      {
+        "name": "img_3420.jpg",
+        "alt": "SfN 2023 Conference"
+      }
+    ],
+    "tags": ["conference", "sfn"],
+    "description": "SfN 2023 Conference"
+  },
+  {
+    "event": "Bridge2AI All Hands Meeting and Open House",
+    "folder": "2024-04-18 Bridge2AI All Hands Meeting and Open House",
+    "date": "2024-04-18",
+    "images": [
+      {
+        "name": "1000034610 (1).jpg",
+        "alt": "Bridge2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "img_1172 (1).jpg",
+        "alt": "Bridge2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "IMG_1793.jpg",
+        "alt": "Bridge2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "PXL_20240419_004355563.MP (1)~2.jpg",
+        "alt": "Bridge2AI All Hands Meeting and Open House"
+      }
+    ],
+    "tags": ["meeting", "bridge2ai", "open-house"],
+    "description": "Bridge2AI All Hands Meeting and Open House"
+  },
+  {
+    "event": "ARVO 2024 Conference",
+    "folder": "2024-05-05 - ARVO 2024 Conference",
+    "date": "2024-05-05",
+    "images": [
+      {
+        "name": "image (1).jpg",
+        "alt": "ARVO 2024 Conference"
+      },
+      {
+        "name": "IMG_2203 (1).jpeg",
+        "alt": "ARVO 2024 Conference"
+      },
+      {
+        "name": "IMG_2219.jpeg",
+        "alt": "ARVO 2024 Conference"
+      }
+    ],
+    "tags": ["conference", "arvo"],
+    "description": "ARVO 2024 Conference"
+  },
+  {
+    "event": "APS 2024 Conference",
+    "folder": "2024-06-04 - APS 2024 Conference",
+    "date": "2024-06-04",
+    "images": [
+      {
+        "name": "FuXXueOaEAEx7fS.jpg",
+        "alt": "APS 2024 Conference"
+      },
+      {
+        "name": "img_3426.jpg",
+        "alt": "APS 2024 Conference"
+      },
+      {
+        "name": "img_6523.jpg",
+        "alt": "APS 2024 Conference"
+      },
+      {
+        "name": "img_6562.jpg",
+        "alt": "APS 2024 Conference"
+      },
+      {
+        "name": "img_6565.jpg",
+        "alt": "APS 2024 Conference"
+      },
+      {
+        "name": "img_6580.jpg",
+        "alt": "APS 2024 Conference"
+      }
+    ],
+    "tags": ["conference", "aps"],
+    "description": "APS 2024 Conference"
+  },
+  {
+    "event": "BOSC 2024 Conference",
+    "folder": "2024-07-14 - BOSC 2024 Conference",
+    "date": "2024-07-14",
+    "images": [
+      {
+        "name": "img_1793 (1).jpg",
+        "alt": "BOSC 2024 Conference"
+      },
+      {
+        "name": "img_1840 (1).jpg",
+        "alt": "BOSC 2024 Conference"
+      },
+      {
+        "name": "img_7959 (1).jpg",
+        "alt": "BOSC 2024 Conference"
+      },
+      {
+        "name": "img_7987 (1).jpg",
+        "alt": "BOSC 2024 Conference"
+      },
+      {
+        "name": "PXL_20230724_170941285.jpg",
+        "alt": "BOSC 2024 Conference"
+      },
+      {
+        "name": "PXL_20240715_164739648.MP.jpg",
+        "alt": "BOSC 2024 Conference"
+      },
+      {
+        "name": "PXL_20240717_150110096.MP (1).jpg",
+        "alt": "BOSC 2024 Conference"
+      },
+      {
+        "name": "PXL_20240718_171808350.MP.jpg",
+        "alt": "BOSC 2024 Conference"
+      }
+    ],
+    "tags": ["conference", "bosc"],
+    "description": "BOSC 2024 Conference"
+  },
+  {
+    "event": "FORCE11 Annual Conference",
+    "folder": "2024-08-01 - FORCE11 Annual Conference",
+    "date": "2024-08-01",
+    "images": [
+      {
+        "name": "IMG_4489~2 (1).jpeg",
+        "alt": "FORCE11 Annual Conference"
+      }
+    ],
+    "tags": ["conference", "force11"],
+    "description": "FORCE11 Annual Conference"
+  },
+  {
+    "event": "USRSE24 Conference",
+    "folder": "2024-10-15 - USRSE24 Conference",
+    "date": "2024-10-15",
+    "images": [
+      {
+        "name": "copy_of_rse_conference_2024_0282.jpg",
+        "alt": "USRSE24 Conference"
+      },
+      {
+        "name": "copy_of_rse_conference_2024_0321.jpg",
+        "alt": "USRSE24 Conference"
+      },
+      {
+        "name": "group_long.jpg",
+        "alt": "USRSE24 Conference"
+      },
+      {
+        "name": "img_0152.jpg",
+        "alt": "USRSE24 Conference"
+      },
+      {
+        "name": "img_0156 (1).jpg",
+        "alt": "USRSE24 Conference"
+      },
+      {
+        "name": "img_0158 (1)~2.jpg",
+        "alt": "USRSE24 Conference"
+      }
+    ],
+    "tags": ["conference", "usrse"],
+    "description": "USRSE24 Conference"
+  },
+  {
+    "event": "Bridge2AI Annual PIs Meeting",
+    "folder": "2024-12-05 - Bridge2AI Annual PIs Meeting",
+    "date": "2024-12-05",
+    "images": [
+      {
+        "name": "457220c6-7210-874b-f2b5-398ebc146221.jpg",
+        "alt": "Bridge2AI Annual PIs Meeting"
+      },
+      {
+        "name": "PXL_20241205_180543212.MP.jpg",
+        "alt": "Bridge2AI Annual PIs Meeting"
+      }
+    ],
+    "tags": ["meeting", "bridge2ai"],
+    "description": "Bridge2AI Annual PIs Meeting"
+  },
+  {
+    "event": "Metadata Rx Hackathon",
+    "folder": "2025-02-03 - Metadata Rx Hackathon",
+    "date": "2025-02-03",
+    "images": [
+      {
+        "name": "group.jpg",
+        "alt": "Metadata Rx Hackathon"
+      }
+    ],
+    "tags": ["hackathon", "metadata"],
+    "description": "Metadata Rx Hackathon"
+  },
+  {
+    "event": "CalMI2 Monthly Dinner",
+    "folder": "2025-02-20 - CalMI2 monthly dinner",
+    "date": "2025-02-20",
+    "images": [
+      {
+        "name": "img_0604.avif",
+        "alt": "CalMI2 monthly dinner"
+      }
+    ],
+    "tags": ["dinner", "calmi2"],
+    "description": "CalMI2 monthly dinner"
+  },
+  {
+    "event": "CalMI2 Monthly Dinner",
+    "folder": "2025-04-23 - CalMI2 monthly dinner",
+    "date": "2025-04-23",
+    "images": [
+      {
+        "name": "IMG_0043.jpeg",
+        "alt": "CalMI2 monthly dinner"
+      }
+    ],
+    "tags": ["dinner", "calmi2"],
+    "description": "CalMI2 monthly dinner"
+  },
+  {
+    "event": "ARVO 2025 Conference",
+    "folder": "2025-05-03 - ARVO 2025 Conference",
+    "date": "2025-05-03",
+    "images": [
+      {
+        "name": "1000070530.jpg",
+        "alt": "ARVO 2025 Conference"
+      },
+      {
+        "name": "IMG_5053 (1).jpeg",
+        "alt": "ARVO 2025 Conference"
+      },
+      {
+        "name": "IMG_5055 (1).jpeg",
+        "alt": "ARVO 2025 Conference"
+      }
+    ],
+    "tags": ["conference", "arvo"],
+    "description": "ARVO 2025 Conference"
+  },
+  {
+    "event": "B2AI All Hands Meeting and Open House",
+    "folder": "2025-05-20 - B2AI-All Hands Meeting and Open House",
+    "date": "2025-05-20",
+    "images": [
+      {
+        "name": "copy_of_img_2663 (1)~2.jpeg",
+        "alt": "B2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "copy_of_img_2677 (1)~2.jpeg",
+        "alt": "B2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "img_5170 (1).jpg",
+        "alt": "B2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "IMG_5339 (1).JPG",
+        "alt": "B2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "img_5574.jpg",
+        "alt": "B2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "img_5589 (1)~2.jpg",
+        "alt": "B2AI All Hands Meeting and Open House"
+      },
+      {
+        "name": "img_5594 (1)~2.jpg",
+        "alt": "B2AI All Hands Meeting and Open House"
+      }
+    ],
+    "tags": ["meeting", "bridge2ai", "open-house"],
+    "description": "B2AI All Hands Meeting and Open House"
+  },
+  {
+    "event": "CalMI2 Monthly Dinner",
+    "folder": "2025-06-27 - CalMI2 monthly dinner",
+    "date": "2025-06-27",
+    "images": [
+      {
+        "name": "IMG_20250627_205405.jpg",
+        "alt": "CalMI2 monthly dinner"
+      },
+      {
+        "name": "IMG_20250627_205421.jpg",
+        "alt": "CalMI2 monthly dinner"
+      }
+    ],
+    "tags": ["dinner", "calmi2"],
+    "description": "CalMI2 monthly dinner"
+  },
+  {
+    "event": "CalMI2 Monthly Dinner",
+    "folder": "2025-07-24- CalMI2 monthly dinner",
+    "date": "2025-07-24",
+    "images": [
+      {
+        "name": "IMG_20250811_144326.jpg",
+        "alt": "CalMI2 monthly dinner"
+      }
+    ],
+    "tags": ["dinner", "calmi2"],
+    "description": "CalMI2 monthly dinner"
+  },
+  {
+    "event": "SABPA OCLA AI for Biotechnology Seminar Series",
+    "folder": "2025-08-02 - SABPA OCLA AI for Biotechnology Seminar Series",
+    "date": "2025-08-02",
+    "images": [
+      {
+        "name": "893f61b2158752f9467db970d4d67157.jpeg",
+        "alt": "SABPA OCLA AI for Biotechnology Seminar Series"
+      },
+      {
+        "name": "IMG_2854.jpeg",
+        "alt": "SABPA OCLA AI for Biotechnology Seminar Series"
+      },
+      {
+        "name": "IMG_4368.jpg",
+        "alt": "SABPA OCLA AI for Biotechnology Seminar Series"
+      }
+    ],
+    "tags": ["seminar", "sabpa", "ai", "biotechnology"],
+    "description": "SABPA OCLA AI for Biotechnology Seminar Series"
+  },
+  {
+    "event": "CalMI2 Summer BBQ",
+    "folder": "2025-08-15 - CalMI2 summer BBQ",
+    "date": "2025-08-15",
+    "images": [
+      {
+        "name": "IMG_20250815_155025.jpg",
+        "alt": "CalMI2 summer BBQ"
+      },
+      {
+        "name": "IMG_20250815_155103.jpg",
+        "alt": "CalMI2 summer BBQ"
+      }
+    ],
+    "tags": ["bbq", "calmi2", "summer"],
+    "description": "CalMI2 summer BBQ"
+  }
+]

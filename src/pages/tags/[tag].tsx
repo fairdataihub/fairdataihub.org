@@ -38,7 +38,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
   return (
     <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
-        templateTitle={`${tag} - Tags`}
+        templateTitle={`${typeof tag === `string` && tag.toLowerCase() === `metadata-tag` ? `Metadata` : tag} - Tags`}
         templateUrl={`https://fairdataihub.org/tags/${tag}`}
         templateDescription={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
         templateImage="https://fairdataihub.org/thumbnails/index.png"
@@ -49,7 +49,10 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
           {filteredBlogList.length}
           {` `}
           {filteredBlogList.length == 1 ? `post` : `posts`} tagged with &quot;
-          {tag} &quot;
+          {typeof tag === `string` && tag.toLowerCase() === `metadata-tag`
+            ? `Metadata`
+            : tag}
+          &quot;
         </h1>
         <Link href={`/tags`} passHref>
           <h2 className="text-url cursor-pointer text-left hover:underline">
@@ -118,7 +121,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
   for (const tag in tagsList) {
     paths.push({
       params: {
-        tag,
+        // /metadata is a reserved tag within nextjs
+        tag: tag.toLowerCase() === `metadata` ? `metadata-tag` : tag,
       },
     });
   }
@@ -161,7 +165,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const filteredBlogList = blogList.filter((post) => {
     const { tags } = post.frontMatter;
 
-    return tags.includes(`${params?.tag}`);
+    const t = params?.tag || ``;
+
+    if (typeof t === `string`) {
+      return tags.includes(
+        `${t.toLowerCase() === `metadata-tag` ? `metadata` : t}`,
+      );
+    }
+
+    return false;
   });
 
   // Return the posts data to the page as props

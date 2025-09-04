@@ -1,5 +1,6 @@
 import { InferGetStaticPropsType } from 'next';
 import { getPlaiceholder } from 'plaiceholder';
+import probe from 'probe-image-size';
 
 import Seo from '@/components/seo/seo';
 
@@ -12,8 +13,6 @@ const TEAM_JSON = [
     title: `Founder/Lead`,
     bio: `Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.`,
     image: `/images/people/bhavesh-full.jpg`,
-    width: 2225,
-    height: 2966,
     borderTop: false,
     borderBottom: false,
     education: [
@@ -41,8 +40,6 @@ const TEAM_JSON = [
     title: `Research Software Engineer`,
     bio: `Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.`,
     image: `/images/people/sanjay-full.jpg`,
-    width: 2132,
-    height: 2843,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -68,8 +65,6 @@ const TEAM_JSON = [
     title: `Software Developer`,
     bio: `Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.`,
     image: `/images/people/aaron-full.jpg`,
-    width: 3024,
-    height: 4032,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -94,8 +89,6 @@ const TEAM_JSON = [
     title: `Software Developer`,
     bio: `Jacob is a full-stack developer out of Fresno, CA that strives to create applications that are performant, easy to use, and create value for users. In his free time, Jacob enjoys reading, rock climbing, and playing basketball.`,
     image: `/images/people/jacob-full.jpg`,
-    width: 2399,
-    height: 3199,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -120,8 +113,6 @@ const TEAM_JSON = [
     title: `Software Developer`,
     bio: `Dorian is a Guatemalan and Salvadoran frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.`,
     image: `/images/people/dorian-full.jpg`,
-    width: 2754,
-    height: 3673,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -147,8 +138,6 @@ const TEAM_JSON = [
     bio: `Aydan is from Azerbaijan and pursued her M.S degree in Computer Science. She has experience in web development with a focus on building scalable dynamic front-end web applications. She enjoys bike riding, sightseeing, and exploring new places.
     `,
     image: `/images/people/aydan-full.jpg`,
-    width: 1378,
-    height: 2012,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -175,8 +164,6 @@ const TEAM_JSON = [
     bio: `Xuebin Dong is a passionate software developer with a strong background in full-stack development, data pipelines, and DevOps. He holds a Master's degree in Computer Science and enjoys solving complex technical problems. In his free time, He loves working out, playing video games, and exploring new technologies.
     `,
     image: `/images/people/xuebin-full.jpg`,
-    width: 1378,
-    height: 2012,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -202,8 +189,6 @@ const TEAM_JSON = [
     title: `AI Research Scientist`,
     bio: `Nahid Zeinali is an AI Research Scientist from Isfahan, Iran. She specializes in AI, NLP, and deep learning in healthcare and focuses on developing AI-driven healthcare solutions. She enjoys yoga, hiking, tennis, road trips, and Persian poetry in her free time.`,
     image: `/images/people/nahid-full.jpg`,
-    width: 922,
-    height: 1280,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -231,8 +216,6 @@ const TEAM_JSON = [
     title: `Contract and Grant Manager`,
     bio: `Krista hails from North, South, East and West in the United States. She has been with Calmi2 for 8 years and assists the FAIR Data Innovations Hub with grant preparation, submission, and management. In her free time, she loves experimenting in the kitchen.`,
     image: `/images/people/krista-full.jpg`,
-    width: 960,
-    height: 1280,
     borderTop: true,
     borderBottom: false,
     education: [`B.A. in Sociology (UC Davis, 2006)`],
@@ -255,8 +238,6 @@ const TEAM_JSON = [
     title: `Human Resources Coordinator`,
     bio: `Martha is a native of San Diego. She has been with Calmi2 for 5 years and assisting the FAIR Data Innovations Hub with all administrative needs since the beginning. Her hobbies are cooking, watching movies, reading and exploring new restaurants in San Diego.`,
     image: `/images/people/martha-full.jpeg`,
-    width: 1816,
-    height: 2420,
     borderTop: true,
     borderBottom: false,
     education: [],
@@ -279,8 +260,6 @@ const TEAM_JSON = [
     title: `Information Technology (IT) Manager`,
     bio: `Ismail moved from Jordan to the United States to pursue his IT education. He joined the team in 2020 after running a successful IT company for 25 years. In his free time, he loves to spend time with his family and watch soccer.`,
     image: `/images/people/ismail-full.jpg`,
-    width: 2515,
-    height: 3354,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -309,8 +288,6 @@ const INTERNS_JSON = [
     title: `Pharmacologist`,
     bio: `Paapa is originally from Ghana where he had his Pharmacy and Master's degree. He also holds a PhD degree in pharmacology and neuroscience from UNTHSC, Texas. He became a part of the team in 2024. His interest lies in pharmacometrics and computational pharmacology. In his leisure time, he watches soccer (REAL MADRID) and swim.`,
     image: `/images/people/paapa-full.jpg`,
-    width: 900,
-    height: 1303,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -337,8 +314,6 @@ const INTERNS_JSON = [
     title: `Undergraduate Intern`,
     bio: `Gerard is an undergraduate at the University of Chicago studying Public Policy and Biology. His interests lie at the intersection of science, health, and policy, with a particular focus on sustainable technologies and biomedical research. He has previous experience in laboratory research, including work on renewable battery storage technologies, cancer-fighting molecules, and flow battery chemistry, as well as applied policy research on housing, immigration, and public health. Outside of academics, Gerard is passionate about debate, writing, and community outreach, and he has led initiatives that bring science engagement to local schools.`,
     image: `/images/people/gerard-full.jpg`,
-    width: 2016,
-    height: 3024,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -363,8 +338,6 @@ const INTERNS_JSON = [
     title: `Data Scientist`,
     bio: `Nada relocated from Saudi Arabia to the United States to further her education. She became a part of the team in 2023. She has a strong passion for Health Technology, particularly Fem-tech and wearables. In her leisure time, she loves visiting the beach and playing the piano.`,
     image: `/images/people/nada-full.jpg`,
-    width: 2515,
-    height: 3354,
     borderTop: true,
     borderBottom: false,
     education: [
@@ -401,7 +374,7 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
     <section className="mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row">
       <div className="mx-auto flex w-11/12 flex-col lg:flex-row">
         <div className="w-full p-5 lg:w-1/3">
-          <div className="sticky top-[80px]">
+          <div className="sticky">
             <h1 className="py-2 text-4xl font-black sm:text-3xl">About Us</h1>
             <p className="font-asap text-xl text-black sm:text-lg">
               FAIR Data Innovations Hub is a division of the California Medical
@@ -461,15 +434,23 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
 export const getStaticProps = async () => {
   const TeamMembers = await Promise.all(
     TEAM_JSON.map(async (member) => {
-      const {
-        base64,
-        // eslint-disable-next-line unused-imports/no-unused-vars, @typescript-eslint/no-unused-vars
-        img: { width, height, ...img },
-      } = await getPlaiceholder(member.image);
+      let imageUrl = `https://fairdataihub.org${member.image}`;
+      if (process.env.NODE_ENV === `development`) {
+        imageUrl = `http://localhost:3000${member.image}`;
+      }
+
+      const { width, height } = await probe(imageUrl);
+
+      const buffer = await fetch(imageUrl).then(async (res) =>
+        Buffer.from(await res.arrayBuffer()),
+      );
+
+      const { base64 } = await getPlaiceholder(buffer);
 
       return {
-        ...img,
         ...member,
+        width,
+        height,
         blurDataURL: base64,
       };
     }),
@@ -477,15 +458,23 @@ export const getStaticProps = async () => {
 
   const Interns = await Promise.all(
     INTERNS_JSON.map(async (member) => {
-      const {
-        base64,
-        // eslint-disable-next-line unused-imports/no-unused-vars, @typescript-eslint/no-unused-vars
-        img: { width, height, ...img },
-      } = await getPlaiceholder(member.image);
+      let imageUrl = `https://fairdataihub.org${member.image}`;
+      if (process.env.NODE_ENV === `development`) {
+        imageUrl = `http://localhost:3000${member.image}`;
+      }
+
+      const { width, height } = await probe(imageUrl);
+
+      const buffer = await fetch(imageUrl).then(async (res) =>
+        Buffer.from(await res.arrayBuffer()),
+      );
+
+      const { base64 } = await getPlaiceholder(buffer);
 
       return {
-        ...img,
         ...member,
+        width,
+        height,
         blurDataURL: base64,
       };
     }),

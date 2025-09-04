@@ -75,7 +75,11 @@ const postEntry: React.FC<PostEntryProps> = ({
           <div className="mb-2 flex flex-row flex-wrap items-center text-sm md:mb-0">
             <h3 className="mr-2 text-sm font-bold">Tags: </h3>
             {tags.map((tag) => (
-              <Link href={`/tags/${tag}`} key={tag} className="my-2">
+              <Link
+                href={`/tags/${tag.toLowerCase() === `metadata` ? `metadata-tag` : tag}`}
+                key={tag}
+                className="my-2"
+              >
                 <span
                   className="mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 py-1 transition-all hover:border-light-accent hover:text-accent"
                   data-umami-event="Blog"
