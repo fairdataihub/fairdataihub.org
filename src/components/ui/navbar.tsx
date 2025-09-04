@@ -371,6 +371,18 @@ export default function Navbar() {
                 </div>
               </Link>
 
+              <Link href="/gallery" passHref>
+                <div
+                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  data-umami-event="Navigation link"
+                  data-umami-event-location="Header"
+                  data-umami-event-value="Gallery"
+                  onClick={toggleMobileMenu}
+                >
+                  Gallery
+                </div>
+              </Link>
+
               <Link href="/blog" passHref>
                 <div
                   className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
