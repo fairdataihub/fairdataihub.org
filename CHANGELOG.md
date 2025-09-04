@@ -1,3 +1,10 @@
+# [2.64.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.63.0...v2.64.0) (2025-09-04)
+
+
+### Features
+
+* ✨ add gallery to mobile menu ([2028c0e](https://github.com/fairdataihub/fairdataihub.org/commit/2028c0e4b0b716c341f98b8a50aa7d3beeca854c))
+
 # [2.63.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.62.0...v2.63.0) (2025-09-04)
 
 
