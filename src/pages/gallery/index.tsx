@@ -144,14 +144,24 @@ const Gallery: NextPage<Props> = ({ images }) => {
                                 <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                                   <p className="text-[11px] font-medium tracking-wide text-white/80">
                                     {date
-                                      ? new Date(date).toLocaleDateString(
-                                          `en-US`,
-                                          {
-                                            year: `numeric`,
-                                            month: `short`,
-                                            day: `numeric`,
-                                          },
-                                        )
+                                      ? (() => {
+                                          const [y, m, d] = (date || ``).split(
+                                            `-`,
+                                          );
+                                          const local = new Date(
+                                            Number(y),
+                                            Number(m) - 1,
+                                            Number(d),
+                                          );
+                                          return local.toLocaleDateString(
+                                            `en-US`,
+                                            {
+                                              year: `numeric`,
+                                              month: `short`,
+                                              day: `numeric`,
+                                            },
+                                          );
+                                        })()
                                       : null}
                                   </p>
                                   <p className="line-clamp-2 text-sm font-semibold text-white">
