@@ -1501,18 +1501,6 @@
   dependencies:
     tslib "^2.8.0"
 
-"@tabler/icons-react@^3.34.1":
-  version "3.34.1"
-  resolved "https://registry.yarnpkg.com/@tabler/icons-react/-/icons-react-3.34.1.tgz#852b8efcab5382e44cc0f09b3de7d25ef3cba6f9"
-  integrity sha512-Ld6g0NqOO05kyyHsfU8h787PdHBm7cFmOycQSIrGp45XcXYDuOK2Bs0VC4T2FWSKZ6bx5g04imfzazf/nqtk1A==
-  dependencies:
-    "@tabler/icons" "3.34.1"
-
-"@tabler/icons@3.34.1":
-  version "3.34.1"
-  resolved "https://registry.yarnpkg.com/@tabler/icons/-/icons-3.34.1.tgz#a04a8cf79a5ebdcc44796dfa3de51d04811d2f9f"
-  integrity sha512-9gTnUvd7Fd/DmQgr3MKY+oJLa1RfNsQo8c/ir3TJAWghOuZXodbtbVp0QBY2DxWuuvrSZFys0HEbv1CoiI5y6A==
-
 "@tailwindcss/line-clamp@0.4.4":
   version "0.4.4"
   resolved "https://registry.yarnpkg.com/@tailwindcss/line-clamp/-/line-clamp-0.4.4.tgz#767cf8e5d528a5d90c9740ca66eb079f5e87d423"
