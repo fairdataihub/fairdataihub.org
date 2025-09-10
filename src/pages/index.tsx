@@ -2,10 +2,10 @@
 import Link from 'next/link';
 import React from 'react';
 
+import BentoProjects from '@/components/home/bentoProjects';
 import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
 import ProjectsCarousel from '@/components/home/projectsCarousel';
-import WhatWeAreCooking from '@/components/home/WhatWeAreCooking';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
 
@@ -67,7 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <WhatWeAreCooking />
+      <BentoProjects />
 
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6">

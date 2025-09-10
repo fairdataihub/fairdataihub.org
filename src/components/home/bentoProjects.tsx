@@ -42,7 +42,7 @@ const cardBase = `h-full flex flex-col justify-between rounded-2xl border border
 // Type to make the size explicit, helps with padding layout to prevent overflow
 type ItemSize = 'wide' | 'narrow';
 
-export default function WhatWeAreCooking() {
+export default function BentoProjects() {
   const items: Array<{
     title: React.ReactNode; // Can include icon just a react node
     description: React.ReactNode; // Can include buttons, links, etc
@@ -159,7 +159,7 @@ export default function WhatWeAreCooking() {
   return (
     <section className="py-20">
       <h2 className="mb-6 text-center text-3xl font-extrabold tracking-tight md:text-4xl">
-        What we are cooking
+        What we are building
       </h2>
 
       <BentoGrid className="duration-[2s] mx-auto max-w-screen-xl grid-cols-1 gap-4 px-4 transition-all md:grid-flow-dense md:auto-rows-[minmax(18rem,auto)] md:grid-cols-6 xl:px-0">
