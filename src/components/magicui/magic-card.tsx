@@ -40,34 +40,41 @@ export function MagicCard({
     [mouseX, mouseY],
   );
 
-  const handleMouseOut = useCallback(
-    (e: MouseEvent) => {
-      if (!e.relatedTarget) {
-        document.removeEventListener(`mousemove`, handleMouseMove);
-        mouseX.set(-gradientSize);
-        mouseY.set(-gradientSize);
-      }
-    },
-    [handleMouseMove, mouseX, gradientSize, mouseY],
-  );
-
-  const handleMouseEnter = useCallback(() => {
-    document.addEventListener(`mousemove`, handleMouseMove);
+  // Reset on re-enter so we don't show a stale glow
+  const handleMouseOut = useCallback(() => {
     mouseX.set(-gradientSize);
     mouseY.set(-gradientSize);
-  }, [handleMouseMove, mouseX, gradientSize, mouseY]);
+  }, [gradientSize, mouseX, mouseY]);
+
+  const handleMouseEnter = useCallback(() => {
+    mouseX.set(-gradientSize);
+    mouseY.set(-gradientSize);
+  }, [gradientSize, mouseX, mouseY]);
 
   useEffect(() => {
-    document.addEventListener(`mousemove`, handleMouseMove);
-    document.addEventListener(`mouseout`, handleMouseOut);
-    document.addEventListener(`mouseenter`, handleMouseEnter);
+    // Listeners on window rather than document
+    window.addEventListener(`mousemove`, handleMouseMove, { passive: true });
+    window.addEventListener(`mouseleave`, handleMouseOut);
+    window.addEventListener(`mouseenter`, handleMouseEnter);
+
+    // Also reset when the window/tab is not active
+    const handleWindowBlur = () => handleMouseOut();
+    const handleVisibility = () => {
+      if (document.visibilityState !== `visible`) {
+        handleMouseOut();
+      }
+    };
+    window.addEventListener(`blur`, handleWindowBlur);
+    document.addEventListener(`visibilitychange`, handleVisibility);
 
     return () => {
-      document.removeEventListener(`mousemove`, handleMouseMove);
-      document.removeEventListener(`mouseout`, handleMouseOut);
-      document.removeEventListener(`mouseenter`, handleMouseEnter);
+      window.removeEventListener(`mousemove`, handleMouseMove);
+      window.removeEventListener(`mouseleave`, handleMouseOut);
+      window.removeEventListener(`mouseenter`, handleMouseEnter);
+      window.removeEventListener(`blur`, handleWindowBlur);
+      document.removeEventListener(`visibilitychange`, handleVisibility);
     };
-  }, [handleMouseEnter, handleMouseMove, handleMouseOut]);
+  }, [handleMouseMove, handleMouseOut, handleMouseEnter]);
 
   useEffect(() => {
     mouseX.set(-gradientSize);
