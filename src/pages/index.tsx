@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
+import React from 'react';
 
 import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
 import ProjectsCarousel from '@/components/home/projectsCarousel';
+import WhatWeAreCooking from '@/components/home/WhatWeAreCooking';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
 
@@ -65,107 +67,7 @@ export default function Home() {
         </div>
       </div>
 
-      <section className="relative mx-auto max-w-screen-xl px-4 py-20">
-        <div className="mb-8 flex w-full flex-col items-center">
-          <h2 className="my-2 text-center text-4xl font-extrabold tracking-tight sm:text-4xl">
-            What we are cooking
-          </h2>
-        </div>
-
-        <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
-          <Link
-            href="/sodaforsparc"
-            passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[180px] md:w-7/12"
-          >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">SODA</h3>
-
-              <p className="font-asap text-lg">
-                SODA is a cross-platform desktop software that helps researchers
-                prepare and share FAIR peripheral nervous system (PNS) related
-                data and models using the SPARC Data Structure (SDS) and the
-                SPARC Portal.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            href="/aireadi"
-            passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[180px] md:w-5/12"
-          >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                AI-READI
-              </h3>
-
-              <p className="font-asap text-lg">
-                Generating a flagship AI-ready and ethically-sourced dataset to
-                support future AI-driven discoveries in diabetes
-              </p>
-            </div>
-          </Link>
-        </div>
-
-        <div className="flex h-full flex-col items-center justify-center gap-3 py-3 md:flex-row">
-          <Link
-            href="/posters-science"
-            passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-5/12"
-          >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                Posters.science
-              </h3>
-
-              <p className="font-asap text-lg">
-                Posters.science is a free and open-source platform for sharing
-                and discovering scientific posters, promoting collaboration and
-                turning them into enduring research assets.
-              </p>
-            </div>
-          </Link>
-
-          <Link
-            href="/eyeact"
-            passHref
-            className="relative flex cursor-pointer flex-col rounded-lg border border-pink-300 bg-white p-1 shadow-md transition-all hover:border-pink-400 hover:shadow-lg md:h-[200px] md:w-7/12"
-          >
-            <div className="px-8 py-4">
-              <h3 className="mb-2 text-2xl font-bold text-stone-900">
-                Eye ACT
-              </h3>
-
-              <p className="font-asap text-lg">
-                Eye ACT uses the Envision Portal to study how eye diseases like
-                glaucoma and diabetic retinopathy may signal early
-                Alzheimer&apos;s, advancing AI-driven research under FAIR
-                principles.
-              </p>
-            </div>
-          </Link>
-        </div>
-
-        <div className="flex flex-col items-center justify-center space-x-4 py-5">
-          <p className="py-3 text-center font-asap text-xl">
-            There is a lot more in the pipeline!
-          </p>
-
-          <div className="flex">
-            <Link href="/projects" passHref>
-              <button
-                type="button"
-                className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
-                data-umami-event="Home page link"
-                data-umami-event-value="Learn more about the FAIR Principles"
-              >
-                See all our projects
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      <WhatWeAreCooking />
 
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6">
