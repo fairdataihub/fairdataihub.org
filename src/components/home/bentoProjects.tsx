@@ -162,7 +162,7 @@ export default function BentoProjects() {
         What we are building
       </h2>
 
-      <BentoGrid className="duration-[2s] mx-auto max-w-screen-xl grid-cols-1 gap-4 px-4 transition-all md:grid-flow-dense md:auto-rows-[minmax(18rem,auto)] md:grid-cols-6 xl:px-0">
+      <BentoGrid className="mx-auto max-w-screen-xl grid-cols-1 gap-4 px-4 transition-all md:grid-flow-dense md:auto-rows-[minmax(18rem,auto)] md:grid-cols-6 xl:px-0">
         {items.map((item, i) => {
           const cardPadding =
             item.size === `narrow` ? `p-6 md:p-7` : `p-7 md:p-8`;
