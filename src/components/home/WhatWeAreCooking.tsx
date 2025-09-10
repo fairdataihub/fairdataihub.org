@@ -70,7 +70,7 @@ export default function WhatWeAreCooking() {
             and models using the SPARC Data Structure (SDS) and the SPARC
             Portal.
           </p>
-          <Badges tags={[`Desktop`, `FAIR`, `SDS`, `Software`]} />
+          <Badges tags={[`Desktop`, `FAIR`, `SDS`]} />
         </>
       ),
       href: `/sodaforsparc`,
@@ -95,7 +95,7 @@ export default function WhatWeAreCooking() {
             Generating a flagship AI-ready and ethically-sourced dataset to
             support future AI-driven discoveries in diabetes.
           </p>
-          <Badges tags={[`Platform`, `Guidelines`, `Standards`]} />
+          <Badges tags={[`Platform`, `Guidelines`, `Standards`, `FAIR`]} />
         </>
       ),
       href: `/aireadi`,
