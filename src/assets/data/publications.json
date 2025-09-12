@@ -233,6 +233,15 @@
   },
   {
     "project": ["codefair"],
+    "url": "https://f1000research.com/posters/14-745",
+    "title": "Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) (Poster)",
+    "subtitle": "",
+    "citation": " Portillo D, Soundarajan S and Patel B. Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) [version 1; not peer reviewed]. F1000Research 2025, 14:745 (poster) (https://doi.org/10.7490/f1000research.1120251.1)",
+    "type": "Posters",
+    "year": 2025
+  },
+  {
+    "project": ["codefair"],
     "url": "https://doi.org/10.5281/zenodo.13948350",
     "title": "Codefair - Your Personal Assistant for Developing FAIR Software (Poster)",
     "subtitle": "",
