@@ -69,7 +69,7 @@ At its core, Kalai is just an API route that:
 3. Converts the SVG output to PNG using Resvg
 4. Returns it as a `Content-Type: image/png` response
 
-Here is a minimal example using `satori` directly with Next.js. This keeps the code short and easy to follow. In Kalai’s production setup we use [@vercel/og](https://vercel.com/docs/functions/og-image-generation/og-image-examples), which builds on top of satori and makes it easier to integrate with Vercel.
+Here is a minimal example using `satori` directly with Next.js. This keeps the code short and easy to follow. In Kalai’s production setup we use [@vercel/og](https://www.npmjs.com/package/@vercel/og), which builds on top of satori and makes it easier to integrate with Vercel.
 
 ```ts
 // pages/api/og.ts
@@ -115,8 +115,8 @@ export default async function handler(req, res) {
 
 With this in place, you can now hit:
 
-```bash
-https://kalai.fairdataihub.org/api/generate?title=Hello%20from%20Kalai&description=This%20is%20a%20sample%20image%20generated%20just%20for%20you!&app=fairdataihub&org=fairdataihub
+```js
+`https://kalai.fairdataihub.org/api/generate?title=${encodeURIComponent('Hello from Kalai')}&description=${encodeURIComponent('This is a sample image generated just for you!')}&app=fairdataihub&org=fairdataihub`;
 ```
 
 and get a freshly generated OG image.
