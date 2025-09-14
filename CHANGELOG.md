@@ -1,3 +1,10 @@
+# [2.65.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.64.0...v2.65.0) (2025-09-14)
+
+
+### Features
+
+* add og image blog post ([#705](https://github.com/fairdataihub/fairdataihub.org/issues/705)) ([47f4841](https://github.com/fairdataihub/fairdataihub.org/commit/47f48413db1729657b17b2b2d48368c44e474fcd))
+
 # [2.64.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.63.0...v2.64.0) (2025-09-04)
 
 
