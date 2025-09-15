@@ -4,7 +4,6 @@ import React from 'react';
 
 import { MagicCard } from '@/components/magicui/magic-card';
 import { BentoGrid, BentoGridItem } from '@/components/ui/bento-grid';
-import { LinkPreview } from '@/components/ui/link-preview';
 
 // Icon + title
 const TitleWithIcon: React.FC<{ icon: React.ReactNode; text: string }> = ({
@@ -189,22 +188,16 @@ export default function BentoProjects() {
         <p className="font-asap text-xl">
           There is a lot more in the pipeline!
         </p>
-        <LinkPreview
-          url="https://fairdataihub.org/projects"
-          className="my-4"
-          side="bottom"
-        >
-          <Link href="/projects">
-            <button
-              type="button"
-              className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
-              data-umami-event="Home page link"
-              data-umami-event-value="Explore our projects button"
-            >
-              Explore our projects
-            </button>
-          </Link>
-        </LinkPreview>
+        <Link href="/projects" className="my-4" passHref>
+          <button
+            type="button"
+            className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
+            data-umami-event="Home page link"
+            data-umami-event-value="Explore our projects button"
+          >
+            Explore our projects
+          </button>
+        </Link>
       </div>
     </section>
   );
