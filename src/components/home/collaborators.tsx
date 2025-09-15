@@ -103,7 +103,8 @@ export default function Collaborators() {
           gradient={true}
           gradientColor={[255, 255, 255]}
           gradientWidth="25p"
-          // pauseOnHover={true}
+          pauseOnHover={true}
+          className="overflow-x-visible"
         >
           {/* Duplicate the logos to make the marquee longer */}
           {[...logoImages, ...logoImages].map((logo, index) => (
