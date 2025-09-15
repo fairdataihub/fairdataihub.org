@@ -53,6 +53,15 @@
   },
   {
     "project": ["aireadi"],
+    "url": "https://doi.org/10.48550/arXiv.2508.01141",
+    "title": "Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective",
+    "subtitle": "",
+    "citation": "Caufield, H., Ghosh, S., Kong, S. W., Parker, J., Sheffield, N., Patel, B., Williams, A., Clark, T., & Munoz-Torres, M. C. (2025). Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective. arXiv. https://doi.org/10.48550/arXiv.2508.01141",
+    "type": "Preprints",
+    "year": 2025
+  },
+  {
+    "project": ["aireadi"],
     "url": "https://doi.org/10.48550/arXiv.2508.01140",
     "title": "Open Data Sharing in Clinical Research and Participants Privacy: Challenges and Opportunities in the Era of Artificial Intelligence",
     "subtitle": "",
