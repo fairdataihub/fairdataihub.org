@@ -5,7 +5,6 @@ import React from 'react';
 import BentoProjects from '@/components/home/bentoProjects';
 import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
-import ProjectsCarousel from '@/components/home/projectsCarousel';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
 
@@ -68,6 +67,10 @@ export default function Home() {
       </div>
 
       <BentoProjects />
+
+      <section className="pb-20 pt-4">
+        <Collaborators />
+      </section>
 
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6">
@@ -314,10 +317,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="hidden py-10">
-        <ProjectsCarousel />
-      </section>
-
       <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-4">
           <div className="items-center justify-center md:flex">
@@ -366,10 +365,6 @@ export default function Home() {
             }}
           ></div>
         </div>
-      </section>
-
-      <section className="py-20">
-        <Collaborators />
       </section>
     </div>
   );
