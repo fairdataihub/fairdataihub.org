@@ -55,6 +55,10 @@ module.exports = {
         protocol: 'https',
         hostname: 'os.nav.fund',
       },
+      {
+        protocol: 'https',
+        hostname: 'api.microlink.io',
+      },
     ],
   },
 };

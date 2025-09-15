@@ -43,13 +43,13 @@ export default function Home() {
               </Link>
             </div>
 
-            <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-5/12 lg:p-2">
+            {/* <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-5/12 lg:p-2">
               <img
                 className="w-[400px] rounded-lg"
                 src="/images/home/hero.svg"
                 alt="office content 1"
               />
-            </div>
+            </div> */}
           </div>
         </section>
 
