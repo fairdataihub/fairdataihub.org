@@ -24,7 +24,7 @@ export default function Collaborators() {
       alt: `FDI Lab logo`,
       width: 200,
       height: 79.45,
-      href: `https://fdi.ucsf.edu`,
+      href: `https://www.fdilab.org/`,
     },
     {
       src: `/images/collaborators/calmi-logo.png`,
@@ -82,6 +82,13 @@ export default function Collaborators() {
       height: 200,
       href: `https://www.navigation.org/grants/open-science`,
     },
+    {
+      src: `/images/dmp/logo-cdl.svg`,
+      alt: `California Digital Library (CDL) logo`,
+      width: 200,
+      height: 60,
+      href: `https://cdlib.org`,
+    },
   ];
 
   return (
@@ -104,7 +111,7 @@ export default function Collaborators() {
           gradientColor={[255, 255, 255]}
           gradientWidth="25p"
           pauseOnHover={true}
-          className="overflow-x-visible"
+          className="marquee-override"
         >
           {/* Duplicate the logos to make the marquee longer */}
           {[...logoImages, ...logoImages].map((logo, index) => (
