@@ -1,11 +1,15 @@
+import { imageSize } from 'image-size';
 import { getPlaiceholder } from 'plaiceholder';
-import probe from 'probe-image-size';
 
 const TRANSPARENT_1PX = `data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==`;
 
 export async function safeProbe(url: string) {
   try {
-    return await probe(url);
+    const buffer = await fetch(url).then(async (res) =>
+      Buffer.from(await res.arrayBuffer()),
+    );
+
+    return imageSize(new Uint8Array(buffer));
   } catch (e) {
     console.warn(`[probe] failed:`, url, e);
     return { width: 1200, height: 800 }; // sensible fallback
