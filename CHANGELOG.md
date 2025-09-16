@@ -1,3 +1,10 @@
+## [2.66.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.0...v2.66.1) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 update image format ([e904f45](https://github.com/fairdataihub/fairdataihub.org/commit/e904f45cc16f164d749233634e2a763fd2484968))
+
 # [2.66.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.65.0...v2.66.0) (2025-09-15)
 
 
