@@ -210,33 +210,33 @@ const TEAM_JSON = [
       link: `https://www.linkedin.com/in/nahid-zeinali-ph-d-15440910b/6`,
     },
   },
-  // {
-  //   id: `James-ONeill`,
-  //   name: `James ONeill (he/they)`,
-  //   title: `Research Scientist in AI`,
-  //   bio: `James completed his PhD in Bioengineering through the SDSU-UCSD Joint Doctoral Program, focusing on AI-driven approaches for biomedical literature analysis. He developed large-scale AI-based frameworks including CarD-T and PubVerse for analyzing scientific literature and mapping research landscapes. In his free time, he enjoys cars, cats, cooking, and coding.`,
-  //   image: `/images/people/james-full.jpg`,
-  //   borderTop: true,
-  //   borderBottom: false,
-  //   education: [
-  //     `Ph.D. in Bioengineering (SDSU-UCSD Joint Doctoral Program, 2025)`,
-  //     `M.S. in Biological & Medical Informatics (San Diego State University, 2020)`,
-  //     `B.S. in Biochemistry & Molecular Biology (University of California Davis, 2016)`,
-  //     `A.A. in English (Pasadena City College)`,
-  //   ],
-  //   twitter: {
-  //     show: false,
-  //     link: `https://twitter.com/`,
-  //   },
-  //   github: {
-  //     show: true,
-  //     link: `https://github.com/jimnoneill`,
-  //   },
-  //   linkedin: {
-  //     show: true,
-  //     link: `https://www.linkedin.com/in/jimnoneill/`,
-  //   },
-  // },
+  {
+    id: `James-ONeill`,
+    name: `James ONeill (he/they)`,
+    title: `Research Scientist in AI`,
+    bio: `James completed his PhD in Bioengineering through the SDSU-UCSD Joint Doctoral Program, focusing on AI-driven approaches for biomedical literature analysis. He developed large-scale AI-based frameworks including CarD-T and PubVerse for analyzing scientific literature and mapping research landscapes. In his free time, he enjoys cars, cats, cooking, and coding.`,
+    image: `/images/people/james-full.jpg`,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `Ph.D. in Bioengineering (SDSU-UCSD Joint Doctoral Program, 2025)`,
+      `M.S. in Biological & Medical Informatics (San Diego State University, 2020)`,
+      `B.S. in Biochemistry & Molecular Biology (University of California Davis, 2016)`,
+      `A.A. in English (Pasadena City College)`,
+    ],
+    twitter: {
+      show: false,
+      link: `https://twitter.com/`,
+    },
+    github: {
+      show: true,
+      link: `https://github.com/jimnoneill`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/jimnoneill/`,
+    },
+  },
   {
     id: `Krista-Scrivner`,
     name: `Krista Scrivner (she/her)`,
@@ -469,8 +469,6 @@ export const getStaticProps = async () => {
       const buffer = await fetch(imageUrl).then(async (res) =>
         Buffer.from(await res.arrayBuffer()),
       );
-
-      console.debug(`Scanning dimensions for ${imageUrl}`);
 
       const { width, height } = imageSize(new Uint8Array(buffer));
 
