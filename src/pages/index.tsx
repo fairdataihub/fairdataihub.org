@@ -7,8 +7,16 @@ import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
+import { FlipWords } from '@/components/ui/flip-words';
+import { SparklesCore } from '@/components/ui/sparkles';
 
 export default function Home() {
+  const wordsFlips = [
+    `Simplifying`,
+    `Streamlining`,
+    `Automating`,
+    `Empowering`,
+  ];
   return (
     <div>
       <Seo
@@ -17,39 +25,42 @@ export default function Home() {
       />
 
       <div className="relative">
-        <section className="mb-10 pt-12 sm:pt-16">
-          <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
-            <div className="w-full p-2 lg:w-7/12">
-              <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
-                Simplifying FAIR data practices to empower AI-driven discoveries
+        <section className="relative isolate mb-10 h-[60vh] min-h-[600px] overflow-hidden pt-12 sm:pt-16">
+          <SparklesCore
+            background="transparent"
+            minSize={1.5}
+            maxSize={3.5}
+            particleDensity={40}
+            className="pointer-events-none absolute inset-0 z-0 h-full w-full"
+            particleColor="#d141a6"
+          />
+
+          <div className="hero container relative z-10 mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
+            <div className="flex w-full flex-col items-center justify-center p-2">
+              <h1 className="header-gradient-background w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:w-3/4 lg:text-5xl">
+                <FlipWords words={wordsFlips} /> FAIR data practices to empower
+                AI-driven discoveries
               </h1>
 
-              <p className="mt-2 w-full max-w-2xl text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">
-                We develop open source tools, standards, and guidelines that
-                support biomedical researchers in preparing and sharing data,
-                software, and other research outcomes such that they are FAIR,
-                i.e. optimally reusable by both humans and machines
-              </p>
+              <div className="relative mx-auto mt-2 h-48 w-full sm:h-40">
+                <div className="absolute inset-x-20 top-0 z-10 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
+                <div className="absolute inset-x-20 top-0 z-10 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+                <div className="absolute inset-x-60 top-0 z-10 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm" />
+                <div className="absolute inset-x-60 top-0 z-10 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
 
-              <Link href="/contact-us" passHref className="hidden">
-                <button
-                  type="button"
-                  className="my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all hover:border-light-accent hover:text-accent"
-                  data-umami-event="Home page link"
-                  data-umami-event-value="Contact us"
-                >
-                  Contact us
-                </button>
-              </Link>
+                <div className="absolute inset-0 z-10 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
+
+                <div className="absolute inset-0 z-20 flex items-end justify-center">
+                  <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
+                    We develop open source tools, standards, and guidelines that
+                    support biomedical researchers in preparing and sharing
+                    data, software, and other research outcomes such that they
+                    are FAIR, i.e. optimally reusable by both humans and
+                    machines
+                  </p>
+                </div>
+              </div>
             </div>
-
-            {/* <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-5/12 lg:p-2">
-              <img
-                className="w-[400px] rounded-lg"
-                src="/images/home/hero.svg"
-                alt="office content 1"
-              />
-            </div> */}
           </div>
         </section>
 
