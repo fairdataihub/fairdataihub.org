@@ -4,6 +4,8 @@ import { getPlaiceholder } from 'plaiceholder';
 
 import Seo from '@/components/seo/seo';
 
+import { safeLqip, safeProbe } from '@/utils/imageFetch';
+
 import TeamCard from '../components/team/teamCard';
 
 const TEAM_JSON = [
@@ -490,19 +492,15 @@ export const getStaticProps = async () => {
         imageUrl = `http://localhost:3000${member.image}`;
       }
 
-      const buffer = await fetch(imageUrl).then(async (res) =>
-        Buffer.from(await res.arrayBuffer()),
-      );
+      const { width, height } = await safeProbe(imageUrl);
 
-      const { width, height } = imageSize(new Uint8Array(buffer));
-
-      const { base64 } = await getPlaiceholder(buffer);
+      const blurDataURL = await safeLqip(imageUrl);
 
       return {
         ...member,
         width,
         height,
-        blurDataURL: base64,
+        blurDataURL,
       };
     }),
   ).then((values) => values);

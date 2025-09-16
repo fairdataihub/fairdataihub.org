@@ -1,12 +1,11 @@
-import { imageSize } from 'image-size';
 import type { GetStaticProps, NextPage } from 'next';
 import { useRouter } from 'next/router';
-import { getPlaiceholder } from 'plaiceholder';
 
 import Carousel from '@/components/gallery/Carousal';
 import Seo from '@/components/seo/seo';
 
 import GALLERY_JSON from '@/public/gallery/images.json';
+import { safeLqip, safeProbe } from '@/utils/imageFetch';
 import type { ImageProps } from '@/utils/types';
 
 type Props = { currentPhoto: ImageProps };
@@ -68,18 +67,13 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
     `https://fairdataihub-gallery-s.b-cdn.net/${currentPhoto.folder}/${currentPhoto.name}`,
   );
 
-  const buffer = await fetch(imageUrl).then(async (res) =>
-    Buffer.from(await res.arrayBuffer()),
-  );
+  const { width, height } = await safeProbe(imageUrl);
 
-  const { width, height } = imageSize(new Uint8Array(buffer));
-
-  const blurDataUrl = await getPlaiceholder(buffer);
+  const blurDataUrl = await safeLqip(imageUrl);
 
   currentPhoto.width = width;
   currentPhoto.height = height;
-  currentPhoto.blurDataUrl = blurDataUrl.base64;
-
+  currentPhoto.blurDataUrl = blurDataUrl;
   return { props: { currentPhoto } };
 };
 
