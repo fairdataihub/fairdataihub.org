@@ -1,3 +1,10 @@
+## [2.66.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.1...v2.66.2) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 enable team ([b3f3edd](https://github.com/fairdataihub/fairdataihub.org/commit/b3f3edd13cb44e41d67bef09d142b366a81c87af))
+
 ## [2.66.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.0...v2.66.1) (2025-09-16)
 
 
