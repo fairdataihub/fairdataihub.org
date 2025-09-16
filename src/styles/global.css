@@ -72,6 +72,10 @@
     @apply font-inter text-base;
   }
 
+  .marquee-override.marquee-container {
+    overflow-x: visible !important;
+  }
+
   .required-field::after {
     content: '*';
     color: red;
