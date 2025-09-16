@@ -211,6 +211,33 @@ const TEAM_JSON = [
     },
   },
   {
+    id: `James-ONeill`,
+    name: `James ONeill (he/they)`,
+    title: `Research Scientist in AI`,
+    bio: `James completed his PhD in Bioengineering through the SDSU-UCSD Joint Doctoral Program, focusing on AI-driven approaches for biomedical literature analysis. He developed large-scale AI-based frameworks including CarD-T and PubVerse for analyzing scientific literature and mapping research landscapes. In his free time, he enjoys cars, cats, cooking, and coding.`,
+    image: `/images/people/james-full.jpeg`,
+    borderTop: true,
+    borderBottom: false,
+    education: [
+      `Ph.D. in Bioengineering (SDSU-UCSD Joint Doctoral Program, 2025)`,
+      `M.S. in Biological & Medical Informatics (San Diego State University, 2020)`,
+      `B.S. in Biochemistry & Molecular Biology (University of California Davis, 2016)`,
+      `A.A. in English (Pasadena City College)`,
+    ],
+    twitter: {
+      show: false,
+      link: `https://twitter.com/`,
+    },
+    github: {
+      show: true,
+      link: `https://github.com/jimnoneill`,
+    },
+    linkedin: {
+      show: true,
+      link: `https://www.linkedin.com/in/jimnoneill/`,
+    },
+  },
+  {
     id: `Krista-Scrivner`,
     name: `Krista Scrivner (she/her)`,
     title: `Contract and Grant Manager`,
