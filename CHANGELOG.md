@@ -1,3 +1,24 @@
+## [2.66.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.1...v2.66.2) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 enable team ([b3f3edd](https://github.com/fairdataihub/fairdataihub.org/commit/b3f3edd13cb44e41d67bef09d142b366a81c87af))
+
+## [2.66.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.0...v2.66.1) (2025-09-16)
+
+
+### Bug Fixes
+
+* 🐛 update image format ([e904f45](https://github.com/fairdataihub/fairdataihub.org/commit/e904f45cc16f164d749233634e2a763fd2484968))
+
+# [2.66.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.65.0...v2.66.0) (2025-09-15)
+
+
+### Features
+
+* ✨ add preprint ([074581d](https://github.com/fairdataihub/fairdataihub.org/commit/074581da13cb718facd78cc1b5de072018e38eed))
+
 # [2.65.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.64.0...v2.65.0) (2025-09-14)
 
 
