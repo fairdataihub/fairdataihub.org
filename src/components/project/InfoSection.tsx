@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Icon } from '@iconify/react';
+import Image from 'next/image';
 import React from 'react';
 
 interface GitHubBadge {
@@ -7,6 +8,13 @@ interface GitHubBadge {
   href: string;
   alt: string;
   src: string;
+}
+
+interface Funder {
+  name: string;
+  id: string;
+  href: string;
+  image: string;
 }
 
 interface InfoSectionProps {
@@ -22,6 +30,7 @@ interface InfoSectionProps {
   };
   sideImageAlt?: string;
   sideImageUrl?: string;
+  funders?: Funder[];
 }
 
 const ProjectInfoSection: React.FC<InfoSectionProps> = ({
@@ -32,6 +41,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
   sideImageUrl,
   githubBadges,
   additionalLink,
+  funders,
 }) => {
   return (
     <section>
@@ -46,8 +56,9 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                 <p className="w-full font-asap text-lg text-black">
                   {description}
                 </p>
+
                 {githubBadges && (
-                  <div className="mt-3 flex text-accent">
+                  <div className="my-3 flex text-accent">
                     {githubBadges.map((badge) => (
                       <a
                         key={badge.type}
@@ -67,7 +78,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                 )}
 
                 {additionalLink && (
-                  <div className="mt-2 flex">
+                  <div className="mt-1 flex">
                     <a
                       href={additionalLink.href}
                       target={additionalLink.target || `_blank`}
@@ -99,6 +110,43 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
               )}
             </div>
           </div>
+
+          {funders && funders.length > 0 && (
+            <div className="w-full">
+              <div>
+                <div className="mb-10 w-full sm:mb-5">
+                  <div className="grid grid-cols-2 gap-4 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
+                    {funders.map((funder) => (
+                      <a
+                        key={funder.name}
+                        href={funder.href}
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <div className="flex h-full flex-col items-center justify-end rounded-lg p-2 transition-all hover:bg-gray-200">
+                          <Image
+                            src={funder.image}
+                            alt={funder.name + ` logo`}
+                            width={220}
+                            height={150}
+                            className="my-auto"
+                            style={{
+                              maxWidth: `220px`,
+                              maxHeight: `150px`,
+                            }}
+                          />
+
+                          <p className="ml-2 mt-3 text-center font-asap text-lg font-normal">
+                            {funder.name}
+                          </p>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>

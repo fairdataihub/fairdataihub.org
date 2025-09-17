@@ -1,7 +1,6 @@
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
-import ResearchPartners from '@/components/project/researchPartners';
 import TeamMembers from '@/components/project/teamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
@@ -83,6 +82,7 @@ const infoData = {
       rel: `noopener`,
     },
   },
+
   funding: {
     title: `Funding`,
     description: `This project is funded through a grant from The Navigation
@@ -94,7 +94,16 @@ const infoData = {
       target: `_blank`,
       rel: `noopener`,
     },
+    funders: [
+      {
+        name: `The Navigation Fund`,
+        id: `the-navigation-fund`,
+        href: `https://www.navigation.org/`,
+        image: `https://os.nav.fund/acknowledge/logos/TNF_Stacked_Logos/stacked_color.svg`,
+      },
+    ],
   },
+
   teamMembers: [
     {
       name: `Bhavesh Patel`,
@@ -139,17 +148,6 @@ const infoData = {
       image: `/images/people/aydan-head.jpg`,
     },
   ],
-  researchPartners: {
-    description: `This project is funded through a grant from The Navigation Fund.`,
-    collaborators: [
-      {
-        name: `The Navigation Fund`,
-        id: `the-navigation-fund`,
-        href: `https://www.navigation.org/`,
-        image: `https://os.nav.fund/acknowledge/logos/TNF_Stacked_Logos/stacked_color.svg`,
-      },
-    ],
-  },
 };
 
 const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
@@ -200,9 +198,12 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="py-10 pt-16">
         <ProjectInfoSection {...infoData.developmentApproach} />
+
         <ProjectInfoSection {...infoData.funding} />
+      </section>
+
+      <section className="bg-gray-50 py-10 pt-16">
         <TeamMembers teamMembers={infoData.teamMembers} />
-        <ResearchPartners researchPartners={infoData.researchPartners} />
       </section>
 
       <section className="bg-white py-10">

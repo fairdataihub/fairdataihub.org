@@ -39,6 +39,7 @@ const ResearchPartners: React.FC<ResearchPartnersProps> = ({
               </div>
             </div>
           </div>
+
           {researchPartners.collaborators &&
             researchPartners.collaborators.length > 0 && (
               <div className="w-full">
