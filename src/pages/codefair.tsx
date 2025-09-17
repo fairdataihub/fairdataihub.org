@@ -1,7 +1,7 @@
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
-import ProjectInfoSection from '@/components/project/InfoSection';
-import TeamMembers from '@/components/project/TeamMembers';
+import ProjectInfoSection from '@/components/project/infoSection';
+import TeamMembers from '@/components/project/teamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -108,7 +108,9 @@ const infoData = {
       manner. It ingenuily combines Probot, a serverless
       environment on Vercel, and the Octokit library. We are
       always open for contributions from the community.`,
-    githubUrl: `https://github.com/fairdataihub/codefair-app`,
+    sideImageSrc: `/images/github-logo.svg`,
+    sideImageUrl: `https://github.com/fairdataihub/codefair-app`,
+    sideImageAlt: `GitHub logo`,
     githubBadges: [
       {
         type: `contributors` as const,

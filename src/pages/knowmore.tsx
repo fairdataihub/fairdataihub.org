@@ -1,7 +1,7 @@
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
-import ProjectInfoSection from '@/components/project/InfoSection';
-import TeamMembers from '@/components/project/TeamMembers';
+import ProjectInfoSection from '@/components/project/infoSection';
+import TeamMembers from '@/components/project/teamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 
@@ -71,7 +71,9 @@ const infoData = {
       like to submit a feature modification, or feature
       suggestion, please feel free to submit an issue on the
       repository.`,
-    githubUrl: `https://github.com/fairdataihub/KnowMore`,
+    sideImageSrc: `/images/github-logo.svg`,
+    sideImageUrl: `https://github.com/fairdataihub/KnowMore`,
+    sideImageAlt: `GitHub logo`,
     githubBadges: [
       {
         type: `contributors` as const,
@@ -112,6 +114,8 @@ const infoData = {
       characteristics of the SPARC datasets to enable automated
       comparison across them. KnowMore won the Grand Prize at the
       Codeathon.`,
+    sideImageSrc: `/images/collaborators/sparc-logo.svg`,
+    sideImageAlt: `SPARC logo`,
     additionalLink: {
       text: `Learn more about the SPARC Codeathon`,
       href: `https://sparc.science/help/2021-sparc-fair-codeathon`,

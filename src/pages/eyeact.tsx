@@ -1,8 +1,8 @@
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
-import ProjectInfoSection from '@/components/project/InfoSection';
-import ResearchPartners from '@/components/project/ResearchPartners';
-import TeamMembers from '@/components/project/TeamMembers';
+import ProjectInfoSection from '@/components/project/infoSection';
+import ResearchPartners from '@/components/project/researchPartners';
+import TeamMembers from '@/components/project/teamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -119,7 +119,9 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
         <ProjectInfoSection
           title="Development Approach"
           description="All software and tools developed by our team for the Eye ACT project, including the Envision Portal, are developed using an open-source approach. This allows for transparency and collaboration with the open source community."
-          githubUrl="https://github.com/EyeACT/"
+          sideImageSrc="/images/github-logo.svg"
+          sideImageUrl="https://github.com/EyeACT/"
+          sideImageAlt="GitHub logo"
           additionalLink={{
             text: `Explore the GitHub repository`,
             href: `https://github.com/EyeACT/`,

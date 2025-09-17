@@ -5,9 +5,9 @@ import getLatestDownloadLink from '@/lib/getLatestDownloadLink';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 // import Impact from '@/components/fairshare/impact';
-import ProjectInfoSection from '@/components/project/InfoSection';
-import ResearchPartners from '@/components/project/ResearchPartners';
-import TeamMembers from '@/components/project/TeamMembers';
+import ProjectInfoSection from '@/components/project/infoSection';
+import ResearchPartners from '@/components/project/researchPartners';
+import TeamMembers from '@/components/project/teamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -153,7 +153,9 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
             like. If you would like to submit a feature modification, or
             feature suggestion, please feel free to submit an issue on
             the repository.`}
-          githubUrl="https://github.com/fairdataihub/FAIRshare"
+          sideImageSrc="/images/github-logo.svg"
+          sideImageUrl="https://github.com/fairdataihub/FAIRshare"
+          sideImageAlt="GitHub logo"
           githubBadges={[
             {
               type: `contributors`,

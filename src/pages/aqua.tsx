@@ -2,72 +2,12 @@ import Image from 'next/image';
 
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
-import ProjectInfoSection from '@/components/project/InfoSection';
-import TeamMembers from '@/components/project/TeamMembers';
+import ProjectInfoSection from '@/components/project/infoSection';
+import TeamMembers from '@/components/project/teamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
-
-const aboutData = {
-  description: `AQUA (Advanced Query Architecture for the SPARC Portal) an application
-    that aims at improving the search capabilities of the SPARC Portal.`,
-  features: [
-    {
-      icon: `material-symbols:linear-scale`,
-      title: `What is SPARC?`,
-      description: `The NIH's Stimulating Peripheral Activity to Relieve
-        Conditions (SPARC) program seeks to accelerate development of
-        therapeutic devices that modulate electrical activity in nerves
-        to improve organ function.`,
-      link: {
-        text: `Learn more about SPARC`,
-        href: `https://sparc.science/`,
-        target: `_blank`,
-        rel: `noopener`,
-      },
-    },
-    {
-      icon: `mdi:axis-arrow-info`,
-      title: `What are the FAIR SPARC Data Guidelines?`,
-      description: `All SPARC-funded researchers must curate their datasets
-        following the SPARC Data Standards (SDS) and share them openly
-        on the Pennsieve data platform as per their funding agreement
-        with SPARC.`,
-      link: {
-        text: `Learn more about SDS`,
-        href: `https://doi.org/10.1101/2021.02.10.430563`,
-        target: `_blank`,
-        rel: `noopener`,
-      },
-    },
-    {
-      icon: `mdi:account-hard-hat`,
-      title: `What are the challenges?`,
-      description: `Currently, the search feature of the SPARC Portal is very
-        limited. It does not recognize nearby words (typos and
-        close-matches) or synonyms and provides limited result
-        information.`,
-    },
-    {
-      icon: `mdi:lightbulb-on`,
-      title: `How does AQUA solve this?`,
-      description: `AQUA provides an advanced search interface that includes
-        fuzzy matching, synonym recognition, and enhanced result
-        display to improve the user experience when searching for
-        SPARC data.`,
-    },
-  ],
-};
-
-const heroButtons = [
-  {
-    text: `Try AQUA`,
-    href: `https://aqua.fairdataihub.org/`,
-    target: `_blank`,
-    rel: `noopener`,
-  },
-];
 
 const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
   return (
@@ -88,14 +28,67 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
           imageAlt="Aqua logo"
           imageWidth={537}
           imageHeight={522}
-          buttons={heroButtons}
+          buttons={[
+            {
+              text: `Try AQUA`,
+              href: `https://aqua.fairdataihub.org/`,
+              target: `_blank`,
+              rel: `noopener`,
+            },
+          ]}
         />
       </section>
 
       <section className="bg-gray-50 py-10">
         <ProjectAbout
-          description={aboutData.description}
-          features={aboutData.features}
+          description={`AQUA (Advanced Query Architecture for the SPARC Portal) an application
+    that aims at improving the search capabilities of the SPARC Portal.`}
+          features={[
+            {
+              icon: `material-symbols:linear-scale`,
+              title: `What is SPARC?`,
+              description: `The NIH's Stimulating Peripheral Activity to Relieve
+                Conditions (SPARC) program seeks to accelerate development of
+                therapeutic devices that modulate electrical activity in nerves
+                to improve organ function.`,
+              link: {
+                text: `Learn more about SPARC`,
+                href: `https://sparc.science/`,
+                target: `_blank`,
+                rel: `noopener`,
+              },
+            },
+            {
+              icon: `mdi:axis-arrow-info`,
+              title: `What are the FAIR SPARC Data Guidelines?`,
+              description: `All SPARC-funded researchers must curate their datasets
+                following the SPARC Data Standards (SDS) and share them openly
+                on the Pennsieve data platform as per their funding agreement
+                with SPARC.`,
+              link: {
+                text: `Learn more about SDS`,
+                href: `https://doi.org/10.1101/2021.02.10.430563`,
+                target: `_blank`,
+                rel: `noopener`,
+              },
+            },
+            {
+              icon: `mdi:account-hard-hat`,
+              title: `What are the challenges?`,
+              description: `Currently, the search feature of the SPARC Portal is very
+                limited. It does not recognize nearby words (typos and
+                close-matches) or synonyms and provides limited result
+                information.`,
+            },
+            {
+              icon: `mdi:lightbulb-on`,
+              title: `How does AQUA solve this?`,
+              description: `AQUA provides an advanced search interface that includes
+                fuzzy matching, synonym recognition, and enhanced result
+                display to improve the user experience when searching for
+                SPARC data.`,
+            },
+          ]}
         />
       </section>
 
@@ -149,7 +142,9 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
         <ProjectInfoSection
           title={`Development Approach`}
           description={`AQUA for SPARC is distributed as an open-source application with an MIT License. Anyone is free to fork our GitHub repository and make their own changes if they would like. If you would like to submit a feature modification, or feature suggestion, please feel free to submit an issue on the repository.`}
-          githubUrl={`https://github.com/fairdataihub/AQUA`}
+          sideImageSrc="/images/github-logo.svg"
+          sideImageUrl="https://github.com/fairdataihub/AQUA"
+          sideImageAlt="GitHub logo"
           githubBadges={[
             {
               type: `contributors`,
@@ -185,6 +180,8 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
         <ProjectInfoSection
           title={`Origin Story`}
           description={`The AQUA project was first born as an idea at the 2021 NIH SPARC Codeathon. The idea was to improve user query understandability and result display of the SPARC Portal search engine. AQUA received the fourth-place prize at the Codeathon.`}
+          sideImageSrc="/images/collaborators/sparc-logo.svg"
+          sideImageAlt="SPARC logo"
           additionalLink={{
             text: `Learn more about the 2021 SPARC FAIR Codeathon`,
             href: `https://sparc.science/help/2021-sparc-fair-codeathon`,
