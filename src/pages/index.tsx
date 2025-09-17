@@ -53,7 +53,10 @@ export default function Home() {
                 <div className="absolute inset-0 z-20 flex items-end justify-center">
                   <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
                     We develop open source tools, standards, and guidelines that
-                    support biomedical researchers...
+                    support biomedical researchers in preparing and sharing
+                    data, software, and other research outcomes such that they
+                    are FAIR, i.e. optimally reusable by both humans and
+                    machines.
                   </p>
                 </div>
               </div>
