@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react';
 
 import getLatestDownloadLink from '@/lib/getLatestDownloadLink';
 
+import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
-import About from '@/components/sodaforsparc/about';
 import Impact from '@/components/sodaforsparc/impact';
 import Info from '@/components/sodaforsparc/info';
 import Timeline from '@/components/ui/timeline';
@@ -49,6 +49,62 @@ const timelineList = [
     content: `In the final phase of development the SODA team is focusing on bringing the SDS 3.0 to SODA and overall enhancing the user experience by simplifying UIs and presentation.`,
   },
 ];
+
+const aboutData = {
+  description: `SODA is a cross-platform desktop software that helps researchers
+    prepare and share FAIR peripheral nervous system (PNS) related data
+    and models using the SPARC Data Structure (SDS) and the SPARC Portal.
+    Since 2021, SODA has been installed on over 1300 computers, empowering
+    researchers worldwide.`,
+  features: [
+    {
+      icon: `material-symbols:linear-scale`,
+      title: `What is SPARC?`,
+      description: `The NIH's Stimulating Peripheral Activity to Relieve
+        Conditions (SPARC) program seeks to accelerate development of
+        therapeutic devices that modulate electrical activity in nerves
+        to improve organ function.`,
+      link: {
+        text: `Learn more about SPARC`,
+        href: `https://sparc.science/`,
+        target: `_blank`,
+        rel: `noopener`,
+        umamiEvent: `About section link`,
+        umamiEventText: `Learn more about SPARC`,
+      },
+    },
+    {
+      icon: `mdi:axis-arrow-info`,
+      title: `What are the FAIR SPARC Data Guidelines?`,
+      description: `All SPARC-funded researchers must curate their datasets
+        following the SPARC Data Standards (SDS) and share them openly
+        on the Pennsieve data platform as per their funding agreement
+        with SPARC.`,
+      link: {
+        text: `Learn more about SDS`,
+        href: `https://doi.org/10.1038/sdata.2016.18`,
+        target: `_blank`,
+        rel: `noopener`,
+        umamiEvent: `About section link`,
+        umamiEventText: `Learn more about SPARC`,
+      },
+    },
+    {
+      icon: `mdi:account-hard-hat`,
+      title: `What are the challenges?`,
+      description: `The guidelines are very exhaustive to maximize FAIRness of SPARC
+        datasets but are challenging and time-consuming for researchers
+        to implement.`,
+    },
+    {
+      icon: `ep:guide`,
+      title: `What does SODA do?`,
+      description: `SODA combines intuitive user interfaces and automation such that
+        researchers can efficiently and accurately curate their SPARC
+        datasets.`,
+    },
+  ],
+};
 
 const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
   const [downloadURL, setDownloadURL] = useState<string | undefined>(``);
@@ -106,7 +162,10 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
-        <About />
+        <ProjectAbout
+          description={aboutData.description}
+          features={aboutData.features}
+        />
       </section>
 
       <section className="bg-white py-10 pt-16">

@@ -1,5 +1,5 @@
-import About from '@/components/fairbiors/about';
 import Info from '@/components/fairbiors/info';
+import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
@@ -35,6 +35,77 @@ const timelineList = [
   },
 ];
 
+const aboutData = {
+  description: `The FAIR Biomedical Research Software (FAIR-BioRS) guidelines are a
+    set of minimal and actionable step-by-step guidelines for making
+    biomedical research software FAIR (Findable, Accessible,
+    Interoperable, Reusable), in line with the FAIR Principles for
+    Research Software (FAIR4RS Principles).`,
+  features: [
+    {
+      icon: `material-symbols:linear-scale`,
+      title: `What are research software?`,
+      description: `Research software is any software created during the research
+        process or for a research purpose. It can come in many format
+        such as artificial intelligence (AI) models as Python scripts or
+        data visualization tools as Jupyter notebooks. They are an
+        essential aspects of biomedical research and therefore making
+        them FAIR, i.e. optimally reusable is critical just like data.`,
+      link: {
+        text: `Learn more about research software`,
+        href: `https://www.researchsoft.org/`,
+        target: `_blank`,
+        rel: `noopener`,
+        umamiEvent: `About section link`,
+        umamiEventText: `Learn more research software`,
+      },
+    },
+    {
+      icon: `mdi:axis-arrow-info`,
+      title: `How to make research software FAIR?`,
+      description: `The FAIR Principles for Research Software (FAIR4RS Principles)
+        are reformulated versions of the FAIR Principles developed by
+        the research software community specifically to make research
+        software reusable.`,
+      link: {
+        text: `Learn more about the FAIR4RS Principles`,
+        href: `https://doi.org/10.1038/s41597-022-01710-x`,
+        target: `_blank`,
+        rel: `noopener`,
+        umamiEvent: `About section link`,
+        umamiEventText: `Learn more about the FAIR4RS Principles`,
+      },
+    },
+    {
+      icon: `mdi:account-hard-hat`,
+      title: `What are the challenges?`,
+      description: `By design, the FAIR4RS Principles only provide a high-level
+        framework for making software FAIR but do not provide practical
+        instructions to do so. Therefore, making software FAIR requires
+        an in-depth understanding of each of the FAIR4RS Principles, and
+        finding out how to practically comply with them.`,
+    },
+    {
+      icon: `ep:guide`,
+      title: `How do the FAIR-BioRS guidelines help?`,
+      description: `We established the FAIR Biomedical Research Software
+        (FAIR-BioRS) guideline, which are clear, actionable, and
+        step-by-step guidelines for making biomedical research software
+        FAIR. Researchers can simply follow and implement the guidelines
+        as they are developing their software to make it compliant with
+        the FAIR4RS principles.`,
+      link: {
+        text: `Learn more about the FAIR-BioRS guidelines`,
+        href: `https://doi.org/10.1038/s41597-022-01710-x`,
+        target: `_blank`,
+        rel: `noopener`,
+        umamiEvent: `About section link`,
+        umamiEventText: `Learn more about the FAIR-BioRS guidelines`,
+      },
+    },
+  ],
+};
+
 const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
   return (
     <>
@@ -68,7 +139,10 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
-        <About />
+        <ProjectAbout
+          description={aboutData.description}
+          features={aboutData.features}
+        />
       </section>
 
       <section className="bg-white py-10 pt-16">
