@@ -36,7 +36,7 @@ export default function Home() {
               <div className="relative mx-auto mt-2 h-48 w-full sm:h-40">
                 <div
                   aria-hidden
-                  className="spotlight [--spot-bleed:28rem] [--spot-bottom-left:2%] [--spot-bottom-right:98%] [--spot-end:90%] [--spot-h:860px] [--spot-mid:34%] [--spot-top-left:40%] [--spot-top-right:60%] [--spot-w:2000px] md:[--spot-end:92%] md:[--spot-top-left:32%] md:[--spot-top-right:66%]"
+                  className="spotlight [--spot-bleed:28rem] [--spot-bottom-left:2%] [--spot-bottom-right:98%] [--spot-end:90%] [--spot-h:860px] [--spot-mid:34%] [--spot-top-left:20%] [--spot-top-right:90%] [--spot-w:2000px] md:[--spot-end:92%] md:[--spot-top-left:32%] md:[--spot-top-right:66%]"
                 >
                   <SparklesCore
                     background="transparent"
