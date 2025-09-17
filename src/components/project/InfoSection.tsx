@@ -84,8 +84,9 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                       target={additionalLink.target || `_blank`}
                       rel={additionalLink.rel || `noopener`}
                     >
-                      <p className="text-url hover-underline-animation">
+                      <p className="text-url hover-underline-animation flex items-center gap-1">
                         {additionalLink.text}
+
                         <Icon
                           icon="solar:arrow-right-broken"
                           width={20}

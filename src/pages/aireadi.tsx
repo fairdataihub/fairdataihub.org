@@ -10,14 +10,6 @@ import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
 
-const timelineList = [
-  {
-    longDate: `September 2022 - Aug 2023`,
-    title: `Year 1 development`,
-    content: `The base framework of fairhub.io will be developed and support will be provided uploading data, structuring high-level data and metadata, and sharing data.`,
-  },
-];
-
 const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
   const heroButtons = [
     {
@@ -180,7 +172,15 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
-        <Timeline timelineList={timelineList} />
+        <Timeline
+          timelineList={[
+            {
+              longDate: `September 2022 - Aug 2023`,
+              title: `Year 1 development`,
+              content: `The base framework of fairhub.io will be developed and support will be provided uploading data, structuring high-level data and metadata, and sharing data.`,
+            },
+          ]}
+        />
       </section>
 
       <section className="bg-white py-10">
