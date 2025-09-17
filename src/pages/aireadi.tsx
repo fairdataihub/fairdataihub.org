@@ -1,7 +1,7 @@
 import About from '@/components/aireadi/about';
-import Hero from '@/components/aireadi/hero';
 // import Impact from '@/components/aireadi/impact';
 import Info from '@/components/aireadi/info';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -17,6 +17,15 @@ const timelineList = [
 ];
 
 const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
+  const heroButtons = [
+    {
+      text: `Learn more`,
+      href: `https://docs.sodaforsparc.io/`,
+      target: `_blank`,
+      ariaLabel: `SODA for SPARC Documentation`,
+      rel: `noopener`,
+    },
+  ];
   return (
     <div>
       <Seo
@@ -27,7 +36,16 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title="AI-READI"
+          subtitle="Artificial Intelligence Ready and Exploratory Atlas for Diabetes Insights"
+          description="Generating a flagship AI-ready and ethically-sourced dataset to boost future AI-driven discoveries in type 2 diabetes mellitus (T2DM)"
+          imageSrc="/images/hero/aireadi-logo.png"
+          imageAlt="AI-READI logo"
+          imageWidth={555 / 2}
+          imageHeight={569 / 2}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">

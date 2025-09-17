@@ -1,7 +1,11 @@
+import { useEffect, useState } from 'react';
+
+import getLatestDownloadLink from '@/lib/getLatestDownloadLink';
+
 import About from '@/components/fairshare/about';
-import Hero from '@/components/fairshare/hero';
 // import Impact from '@/components/fairshare/impact';
 import Info from '@/components/fairshare/info';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -23,6 +27,40 @@ const timelineList = [
 ];
 
 const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
+  const [downloadURL, setDownloadURL] = useState<string | undefined>(``);
+
+  useEffect(() => {
+    const func = async () => {
+      const url = await getLatestDownloadLink(`fairdataihub/FAIRshare`);
+      setDownloadURL(url);
+    };
+
+    func().catch((e) => {
+      console.error(e);
+    });
+  }, []);
+
+  const heroButtons = [
+    ...(downloadURL && downloadURL !== ``
+      ? [
+          {
+            text: `Download now`,
+            href: downloadURL,
+            target: `_blank`,
+            ariaLabel: `Download FAIRshare`,
+            rel: `noopener`,
+          },
+        ]
+      : []),
+    {
+      text: `Explore the docs`,
+      href: `https://docs.fairshareapp.io/`,
+      target: `_blank`,
+      ariaLabel: `FAIRshare Documentation`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -33,7 +71,16 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title="FAIRshare"
+          subtitle="FAIR data and software sharing made easy"
+          description="Your one-stop tool for rapidly curating and sharing biomedical research data and software according to applicable FAIR guidelines"
+          imageSrc="/images/hero/fairshare-macos.png"
+          imageAlt="Screenshot of FAIRshare"
+          imageWidth={1342}
+          imageHeight={975}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">

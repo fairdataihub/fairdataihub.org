@@ -1,6 +1,6 @@
 import About from '@/components/eyeact/about';
-import Hero from '@/components/eyeact/hero';
 import Info from '@/components/eyeact/info';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -15,6 +15,27 @@ const timelineList = [
   },
 ];
 const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
+  const heroButtons = [
+    {
+      text: `Learn more`,
+      href: `https://eyeactstudy.org/`,
+      target: `_blank`,
+      ariaLabel: `Eye ACT Documentation`,
+      rel: `noopener`,
+      disabled: true,
+      tooltipContent: `Coming soon`,
+    },
+    {
+      text: `Visit the Envision Portal`,
+      href: `https://envisionportal.io/`,
+      target: `_blank`,
+      ariaLabel: `Envision Portal`,
+      rel: `noopener`,
+      disabled: true,
+      tooltipContent: `Coming soon`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -25,7 +46,16 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title="Eye ACT"
+          subtitle="Seeing the Future of Brain Health Through the Eyes"
+          description=""
+          imageSrc="/images/hero/eye-act-logo.png"
+          imageAlt="Eye ACT logo"
+          imageWidth={150}
+          imageHeight={150}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
