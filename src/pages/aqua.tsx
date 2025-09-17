@@ -3,8 +3,8 @@ import Image from 'next/image';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
+import PublicationsList from '@/components/project/publicationsList';
 import TeamMembers from '@/components/project/teamMembers';
-import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
@@ -98,11 +98,13 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
             <h1 className="pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8">
               Technology Stack
             </h1>
+
             <p className="mb-10 w-full font-asap text-lg text-black">
               AQUA utilized the main tool groups to develop the User Back end
               former includes the HTML, JS trio, VueJS, and NuxtJS. The latter
               is implemented with Python, Docker, SciGraph, and SQLite.
             </p>
+
             <dl>
               <div className="grid grid-cols-2 items-center justify-center gap-4 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
                 {[

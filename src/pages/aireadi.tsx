@@ -2,11 +2,11 @@
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
+import PublicationsList from '@/components/project/publicationsList';
 import ResearchPartners from '@/components/project/researchPartners';
 import TeamMembers from '@/components/project/teamMembers';
-import PublicationsList from '@/components/publications/publicationsList';
+import Timeline from '@/components/project/timeline';
 import Seo from '@/components/seo/seo';
-import Timeline from '@/components/ui/timeline';
 
 import PublicationsJSON from '@/assets/data/publications.json';
 

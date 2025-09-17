@@ -1,8 +1,8 @@
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
+import PublicationsList from '@/components/project/publicationsList';
 import TeamMembers from '@/components/project/teamMembers';
-import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';

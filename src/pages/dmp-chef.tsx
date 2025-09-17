@@ -3,8 +3,8 @@ import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
 import ResearchPartners from '@/components/project/researchPartners';
 import TeamMembers from '@/components/project/teamMembers';
+import Timeline from '@/components/project/timeline';
 import Seo from '@/components/seo/seo';
-import Timeline from '@/components/ui/timeline';
 
 const aboutData = {
   description: `Data Management Plans (DMPs) are now commonly required by funders with
