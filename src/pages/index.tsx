@@ -25,16 +25,20 @@ export default function Home() {
       />
 
       <div className="relative">
-        <section className="relative isolate mb-10 overflow-hidden pt-12 sm:pt-16">
-          <SparklesCore
-            background="transparent"
-            minSize={1.5}
-            maxSize={3.5}
-            particleDensity={40}
-            className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-            particleColor="#F098D4"
-          />
-
+        <section className="relative isolate mb-10 overflow-visible pt-12 sm:pt-16">
+          <div
+            aria-hidden
+            className="[mask-image:linear-gradient(to_bottom,black 0%,black 68%,transparent 100%)] [-webkit-mask-image:linear-gradient(to_bottom,black 0%,black 68%,transparent 100%)] pointer-events-none absolute left-1/2 top-0 z-0 h-[calc(100%+24rem)] w-[100vw] -translate-x-1/2"
+          >
+            <SparklesCore
+              background="transparent"
+              minSize={1.5}
+              maxSize={3.5}
+              particleDensity={30}
+              className="absolute inset-0"
+              particleColor="#F098D4"
+            />
+          </div>
           <div className="hero container relative z-10 mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
             <div className="flex w-full flex-col items-center justify-center p-2">
               <h1 className="header-gradient-background w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:w-3/4 lg:text-5xl">
