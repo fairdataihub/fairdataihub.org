@@ -25,16 +25,7 @@ export default function Home() {
       />
 
       <div className="relative">
-        <section className="relative isolate mb-10 overflow-hidden pt-12 sm:pt-16">
-          <SparklesCore
-            background="transparent"
-            minSize={1.5}
-            maxSize={3.5}
-            particleDensity={40}
-            className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-            particleColor="#F098D4"
-          />
-
+        <section className="relative isolate mb-10 overflow-visible pt-12 sm:pt-16">
           <div className="hero container relative z-10 mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
             <div className="flex w-full flex-col items-center justify-center p-2">
               <h1 className="header-gradient-background w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:w-3/4 lg:text-5xl">
@@ -43,11 +34,24 @@ export default function Home() {
               </h1>
 
               <div className="relative mx-auto mt-2 h-48 w-full sm:h-40">
-                <div className="absolute left-1/2 top-0 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent blur-sm" />
-                <div className="absolute left-1/2 top-0 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
+                <div
+                  aria-hidden
+                  className="spotlight [--spot-bleed:28rem] [--spot-bottom-left:2%] [--spot-bottom-right:98%] [--spot-end:90%] [--spot-h:860px] [--spot-mid:34%] [--spot-top-left:40%] [--spot-top-right:60%] [--spot-w:2000px] md:[--spot-end:92%] md:[--spot-top-left:32%] md:[--spot-top-right:66%]"
+                >
+                  <SparklesCore
+                    background="transparent"
+                    minSize={1.5}
+                    maxSize={4.5}
+                    particleDensity={100}
+                    className="absolute inset-0"
+                    particleColor="#F098D4"
+                  />
+                </div>
 
-                <div className="absolute left-1/2 top-0 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent blur-sm" />
-                <div className="absolute left-1/2 top-0 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
+                <div className="absolute left-1/2 top-0 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
+                <div className="absolute left-1/2 top-0 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
+                <div className="absolute left-1/2 top-0 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
+                <div className="absolute left-1/2 top-0 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
 
                 <div className="absolute inset-0 z-10 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
                 <div className="absolute inset-0 z-20 flex items-end justify-center">
