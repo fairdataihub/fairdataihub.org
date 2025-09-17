@@ -31,14 +31,12 @@ export default function ProjectStatistics({
         </h3>
       </div>
 
-      <div className="flex flex-col justify-around p-6 sm:flex-row">
+      <div className="grid grid-cols-1 items-start justify-center gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {metrics.map((metric, index) => (
           <div
             key={metric.id || index}
             className="m-2 mb-5 flex flex-col items-center justify-start lg:m-6"
           >
-            <p className="my-1 hidden text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl"></p>
-
             <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
               <span id={metric.id}>{metric.value}</span>
               {metric.unit && <span> {metric.unit}</span>}
