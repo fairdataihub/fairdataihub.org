@@ -25,14 +25,14 @@ export default function Home() {
       />
 
       <div className="relative">
-        <section className="relative isolate mb-10 h-[60vh] min-h-[600px] overflow-hidden pt-12 sm:pt-16">
+        <section className="relative isolate mb-10 overflow-hidden pt-12 sm:pt-16">
           <SparklesCore
             background="transparent"
             minSize={1.5}
             maxSize={3.5}
             particleDensity={40}
             className="pointer-events-none absolute inset-0 z-0 h-full w-full"
-            particleColor="#d141a6"
+            particleColor="#F098D4"
           />
 
           <div className="hero container relative z-10 mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
@@ -43,20 +43,17 @@ export default function Home() {
               </h1>
 
               <div className="relative mx-auto mt-2 h-48 w-full sm:h-40">
-                <div className="absolute inset-x-20 top-0 z-10 h-[2px] w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent blur-sm" />
-                <div className="absolute inset-x-20 top-0 z-10 h-px w-3/4 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
-                <div className="absolute inset-x-60 top-0 z-10 h-[5px] w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent blur-sm" />
-                <div className="absolute inset-x-60 top-0 z-10 h-px w-1/4 bg-gradient-to-r from-transparent via-sky-500 to-transparent" />
+                <div className="absolute left-1/2 top-0 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent blur-sm" />
+                <div className="absolute left-1/2 top-0 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
+
+                <div className="absolute left-1/2 top-0 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent blur-sm" />
+                <div className="absolute left-1/2 top-0 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-500 to-transparent" />
 
                 <div className="absolute inset-0 z-10 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
-
                 <div className="absolute inset-0 z-20 flex items-end justify-center">
                   <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
                     We develop open source tools, standards, and guidelines that
-                    support biomedical researchers in preparing and sharing
-                    data, software, and other research outcomes such that they
-                    are FAIR, i.e. optimally reusable by both humans and
-                    machines
+                    support biomedical researchers...
                   </p>
                 </div>
               </div>
