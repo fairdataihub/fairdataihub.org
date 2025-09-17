@@ -1,6 +1,8 @@
-import Info from '@/components/fairbiors/info';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectInfoSection from '@/components/project/InfoSection';
+import ResearchPartners from '@/components/project/ResearchPartners';
+import TeamMembers from '@/components/project/TeamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -146,7 +148,82 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-white py-10 pt-16">
-        <Info />
+        <ProjectInfoSection
+          title="Development Approach"
+          description={`The FAIR-BioRS guidelines were developed in collaboration
+            with researchers from UCSF and ELIXIR (E.U.). We first
+            established a list of outstanding questions we identified
+            for practically implementing the FAIR4RS Principles (e.g.,
+            How to obtain a unique identifier for software? How to
+            include metadata? and so on). Then we combined literature
+            review, community feedback, and our own assessment as
+            developers of research software to established answers for
+            these questions. Finally, we organized these answers as a
+            set of step-by-step instructions that follow the typical
+            sofware development process which became the FAIR-BioRS
+            guidelines.`}
+          additionalLink={{
+            text: `Explore the FAIR-BioRS documentation`,
+            href: `https://fair-biors.org`,
+          }}
+        />
+
+        <ProjectInfoSection
+          title="Funding"
+          description={`The FAIR-BioRS guidelines where conceived while working on a
+            project funded through a supplemental award from the
+            National Institute of Allergy and Infectious Diseases
+            (NIAID). Besides some initial effort through this project
+            for the first few months, the development of the guidelines
+            has been done without any support, through the sole will of
+            the project members to make it easier for our peers wanting
+            to develop and share FAIR software.`}
+          additionalLink={{
+            text: `Explore the parent award on NIH Reporter`,
+            href: `https://reporter.nih.gov/project-details/10377989`,
+          }}
+        />
+
+        <TeamMembers
+          teamMembers={[
+            {
+              name: `Bhavesh Patel`,
+              href: `/team/#Bhavesh-Patel`,
+              external: false,
+              image: `/images/people/bhavesh-head.jpg`,
+            },
+            {
+              name: `Sanjay Soundarajan`,
+              href: `/team/#Sanjay-Soundarajan`,
+              external: false,
+              image: `/images/people/sanjay-head.jpg`,
+            },
+          ]}
+        />
+
+        <ResearchPartners
+          researchPartners={{
+            description: `The FAIR-BioRS guidelines were developed in collaboration
+              with Dr. Zicheng Hu (UCSF) and Dr. Hervé Ménager (Institut
+              Pasteur, ELIXIR).`,
+            collaborators: [
+              {
+                name: `Zicheng Hu (UCSF)`,
+                id: `Zicheng-Hu-UCSF`,
+                href: `https://profiles.ucsf.edu/zicheng.hu`,
+                image: `https://researcherprofiles.org/profile/Modules/CustomViewPersonGeneralInfo/PhotoHandler.ashx?NodeID=189905&cachekey=d77aea77-c8d0-4a86-be9a-12da9da39113`,
+                type: `person`,
+              },
+              {
+                name: `Hervé Ménager`,
+                id: `Herve-Menager`,
+                href: `https://research.pasteur.fr/en/member/herve-menager/`,
+                image: `/images/people/herve-head.jpg`,
+                type: `person`,
+              },
+            ],
+          }}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">

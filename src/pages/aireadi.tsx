@@ -1,7 +1,9 @@
 // import Impact from '@/components/aireadi/impact';
-import Info from '@/components/aireadi/info';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectInfoSection from '@/components/project/InfoSection';
+import ResearchPartners from '@/components/project/ResearchPartners';
+import TeamMembers from '@/components/project/TeamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -120,7 +122,65 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
         </section> */}
 
       <section className="bg-white py-10 pt-16">
-        <Info />
+        <ProjectInfoSection
+          title="Development Approach"
+          description="All software and tools from the AI-READI project, including
+            fairhub.io, are developed under an MIT License from the
+            AI-READI organization on GitHub."
+          githubUrl="https://github.com/AI-READI"
+          additionalLink={{
+            text: `Explore the AI-READI GitHub organization`,
+            href: `https://github.com/AI-READI`,
+          }}
+        />
+        <ProjectInfoSection
+          title="Funding"
+          description="The AI-READI project is funded by the National Institutes of
+            Health (NIH)'s Bridge2AI program."
+          additionalLink={{
+            text: `Explore the award on NIH Reporter`,
+            href: `https://reporter.nih.gov/project-details/10471118`,
+          }}
+        />
+        <TeamMembers
+          teamMembers={[
+            {
+              name: `Bhavesh Patel`,
+              href: `/team/#Bhavesh-Patel`,
+              external: false,
+              image: `/images/people/bhavesh-head.jpg`,
+            },
+            {
+              name: `Sanjay Soundarajan`,
+              href: `/team/#Sanjay-Soundarajan`,
+              external: false,
+              image: `/images/people/sanjay-head.jpg`,
+            },
+            {
+              name: `Aydan Gasimova`,
+              href: `/team/#Aydan-Gasimova`,
+              external: false,
+              image: `/images/people/aydan-head.jpg`,
+            },
+            {
+              name: `Dorian Portillo`,
+              href: `/team/#Dorian-Portillo`,
+              external: false,
+              image: `/images/people/dorian-head.PNG`,
+            },
+            {
+              name: `Nada Haboudal`,
+              href: `/team/#Nada-Haboudal`,
+              external: false,
+              image: `/images/people/nada-head.jpg`,
+            },
+          ]}
+        />
+        <ResearchPartners
+          researchPartners={{
+            description: `The AI-READI project is lead by multiple institutions. In addition to the FAIR Data Innovations Hub, other institutions collaborating on the AI-READI project include: University of Washington, Oregon Health & Science University, Johns Hopkins University, University of California at San Diego, Stanford University, Native BioData Consortium, University of Alabama at Birmingham, and Microsoft.`,
+          }}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">

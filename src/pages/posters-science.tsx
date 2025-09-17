@@ -1,6 +1,8 @@
-import Info from '@/components/posters-science/info';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectInfoSection from '@/components/project/InfoSection';
+import ResearchPartners from '@/components/project/ResearchPartners';
+import TeamMembers from '@/components/project/TeamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -65,6 +67,89 @@ const timelineList = [
   },
 ];
 
+const infoData = {
+  developmentApproach: {
+    title: `Development Approach`,
+    description: `Posters.science is developed using an open-source approach.
+      This allows for transparency and collaboration with the open
+      source community.`,
+    githubUrl: `https://github.com/fairdataihub/posters-science`,
+    additionalLink: {
+      text: `Explore the GitHub repository`,
+      href: `https://github.com/fairdataihub/posters-science`,
+      target: `_blank`,
+      rel: `noopener`,
+    },
+  },
+  funding: {
+    title: `Funding`,
+    description: `This project is funded through a grant from The Navigation
+      Fund. Additional details about the grant can be found in the
+      DataCite Commons grant record.`,
+    additionalLink: {
+      text: `Learn more about The Navigation Fund`,
+      href: `https://www.navigation.org/`,
+      target: `_blank`,
+      rel: `noopener`,
+    },
+  },
+  teamMembers: [
+    {
+      name: `Bhavesh Patel`,
+      href: `/team/#Bhavesh-Patel`,
+      external: false,
+      image: `/images/people/bhavesh-head.jpg`,
+    },
+    {
+      name: `Sanjay Soundarajan`,
+      href: `/team/#Sanjay-Soundarajan`,
+      external: false,
+      image: `/images/people/sanjay-head.jpg`,
+    },
+    {
+      name: `Dorian Portillo`,
+      href: `/team/#Dorian-Portillo`,
+      external: false,
+      image: `/images/people/dorian-head.PNG`,
+    },
+    {
+      name: `Nahid Zeinali`,
+      href: `/team/#Nahid-Zeinali`,
+      external: false,
+      image: `/images/people/nahid-head.jpg`,
+    },
+    {
+      name: `Paapa Mensah-Kane`,
+      href: `/team/#Paapa-Mensah-Kane`,
+      external: false,
+      image: `/images/people/paapa-head.jpg`,
+    },
+    {
+      name: `Gerard Blake`,
+      href: `/team/#Gerard-Blake`,
+      external: false,
+      image: `/images/people/gerard-head.jpg`,
+    },
+    {
+      name: `Aydan Gasimova`,
+      href: `/team/#Aydan-Gasimova`,
+      external: false,
+      image: `/images/people/aydan-head.jpg`,
+    },
+  ],
+  researchPartners: {
+    description: `This project is funded through a grant from The Navigation Fund.`,
+    collaborators: [
+      {
+        name: `The Navigation Fund`,
+        id: `the-navigation-fund`,
+        href: `https://www.navigation.org/`,
+        image: `https://os.nav.fund/acknowledge/logos/TNF_Stacked_Logos/stacked_color.svg`,
+      },
+    ],
+  },
+};
+
 const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
   const heroButtons = [
     {
@@ -112,7 +197,10 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
       </section> */}
 
       <section className="py-10 pt-16">
-        <Info />
+        <ProjectInfoSection {...infoData.developmentApproach} />
+        <ProjectInfoSection {...infoData.funding} />
+        <TeamMembers teamMembers={infoData.teamMembers} />
+        <ResearchPartners researchPartners={infoData.researchPartners} />
       </section>
 
       <section className="bg-white py-10">

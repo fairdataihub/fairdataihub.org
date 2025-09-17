@@ -1,7 +1,9 @@
-import Info from '@/components/aqua/info';
-import Tools from '@/components/aqua/tools';
+import Image from 'next/image';
+
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectInfoSection from '@/components/project/InfoSection';
+import TeamMembers from '@/components/project/TeamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 
@@ -48,34 +50,26 @@ const aboutData = {
         information.`,
     },
     {
-      icon: `material-symbols:manage-search`,
-      title: `What does AQUA do?`,
-      description: `AQUA makes the current SPARC Portal search engine smarter at
-        understanding user query and improve search result display. The
-        end goal is to improve exponentially the visibility of the SPARC
-        datasets.`,
+      icon: `mdi:lightbulb-on`,
+      title: `How does AQUA solve this?`,
+      description: `AQUA provides an advanced search interface that includes
+        fuzzy matching, synonym recognition, and enhanced result
+        display to improve the user experience when searching for
+        SPARC data.`,
     },
   ],
 };
 
-const Aqua: React.FC<PublicationsItemList> = ({ publications }) => {
-  const heroButtons = [
-    {
-      text: `Explore AQUA`,
-      href: `https://github.com/fairdataihub/aqua`,
-      target: `_blank`,
-      ariaLabel: `AQUA GitHub repository`,
-      rel: `noopener`,
-    },
-    {
-      text: `Documentation`,
-      href: `https://github.com/fairdataihub/aqua/blob/main/Documentation/Documentation.md`,
-      target: `_blank`,
-      ariaLabel: `AQUA Documentation`,
-      rel: `noopener`,
-    },
-  ];
+const heroButtons = [
+  {
+    text: `Try AQUA`,
+    href: `https://aqua.fairdataihub.org/`,
+    target: `_blank`,
+    rel: `noopener`,
+  },
+];
 
+const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
   return (
     <>
       <Seo
@@ -87,11 +81,11 @@ const Aqua: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="bg-white py-10 pt-16">
         <ProjectHero
-          title={`AQUA`}
-          subtitle={`Advanced Query Architecture for the SPARC Portal`}
-          description={`Level up your SPARC search with AQUA`}
-          imageSrc={`/images/hero/aqua-logo-full.png`}
-          imageAlt={`Aqua logo`}
+          title="AQUA"
+          subtitle="Advanced Query Architecture for the SPARC Portal"
+          description="Level up your SPARC search with AQUA"
+          imageSrc="/images/hero/aqua-logo-full.png"
+          imageAlt="Aqua logo"
           imageWidth={537}
           imageHeight={522}
           buttons={heroButtons}
@@ -106,11 +100,131 @@ const Aqua: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-white py-10">
-        <Tools />
+        <div className="mx-auto px-5 sm:px-10">
+          <div className="mx-auto flex max-w-screen-lg flex-col">
+            <h1 className="pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8">
+              Technology Stack
+            </h1>
+            <p className="mb-10 w-full font-asap text-lg text-black">
+              AQUA utilized the main tool groups to develop the User Back end
+              former includes the HTML, JS trio, VueJS, and NuxtJS. The latter
+              is implemented with Python, Docker, SciGraph, and SQLite.
+            </p>
+            <dl>
+              <div className="grid grid-cols-2 items-center justify-center gap-4 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
+                {[
+                  {
+                    src: `/images/aqua/python-logo.png`,
+                    alt: `Python logo`,
+                  },
+                  {
+                    src: `/images/aqua/docker-logo.png`,
+                    alt: `Docker logo`,
+                  },
+                  {
+                    src: `/images/aqua/scigraph-logo.png`,
+                    alt: `SciGraph logo`,
+                  },
+                  {
+                    src: `/images/aqua/sqlite-logo.png`,
+                    alt: `SQLite logo`,
+                  },
+                ].map((logo, index) => (
+                  <Image
+                    key={index}
+                    className="h-auto !w-full object-scale-down !px-1"
+                    src={logo.src}
+                    alt={logo.alt}
+                    width={238}
+                    height={70}
+                  />
+                ))}
+              </div>
+            </dl>
+          </div>
+        </div>
       </section>
 
       <section className="bg-gray-50 py-10">
-        <Info />
+        <ProjectInfoSection
+          title={`Development Approach`}
+          description={`AQUA for SPARC is distributed as an open-source application with an MIT License. Anyone is free to fork our GitHub repository and make their own changes if they would like. If you would like to submit a feature modification, or feature suggestion, please feel free to submit an issue on the repository.`}
+          githubUrl={`https://github.com/fairdataihub/AQUA`}
+          githubBadges={[
+            {
+              type: `contributors`,
+              href: `https://github.com/fairdataihub/AQUA/graphs/contributors`,
+              alt: `aqua contributors`,
+              src: `https://img.shields.io/github/contributors/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square`,
+            },
+            {
+              type: `stars`,
+              href: `https://github.com/fairdataihub/AQUA/stargazers`,
+              alt: `aqua stars`,
+              src: `https://img.shields.io/github/stars/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square`,
+            },
+            {
+              type: `issues`,
+              href: `https://github.com/fairdataihub/AQUA/issues`,
+              alt: `aqua issues`,
+              src: `https://img.shields.io/github/issues/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square`,
+            },
+            {
+              type: `license`,
+              href: `https://github.com/fairdataihub/AQUA/blob/main/LICENSE`,
+              alt: `aqua license`,
+              src: `https://img.shields.io/github/license/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square`,
+            },
+          ]}
+          additionalLink={{
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/AQUA`,
+          }}
+        />
+
+        <ProjectInfoSection
+          title={`Origin Story`}
+          description={`The AQUA project was first born as an idea at the 2021 NIH SPARC Codeathon. The idea was to improve user query understandability and result display of the SPARC Portal search engine. AQUA received the fourth-place prize at the Codeathon.`}
+          additionalLink={{
+            text: `Learn more about the 2021 SPARC FAIR Codeathon`,
+            href: `https://sparc.science/help/2021-sparc-fair-codeathon`,
+          }}
+        />
+
+        <TeamMembers
+          teamMembers={[
+            {
+              name: `Tram Ngo`,
+              href: `https://www.linkedin.com/in/tramngo1603`,
+              external: true,
+              image: `/images/people/tram-head.jpg`,
+            },
+            {
+              name: `Laila Bekhet`,
+              href: `/aqua`,
+              external: false,
+              image: `https://api.dicebear.com/7.x/thumbs/svg?seed=LailaBekhet`,
+            },
+            {
+              name: `Yuda Munarko`,
+              href: `/aqua`,
+              external: false,
+              image: `https://api.dicebear.com/7.x/thumbs/svg?seed=YudaMunarko1`,
+            },
+            {
+              name: `Niloofar Shahidi`,
+              href: `/aqua`,
+              external: false,
+              image: `https://api.dicebear.com/7.x/thumbs/svg?seed=NiloofarShahidi`,
+            },
+            {
+              name: `Xuanzhi `,
+              href: `/aqua`,
+              external: false,
+              image: `https://api.dicebear.com/7.x/thumbs/svg?seed=Xuanzhi`,
+            },
+          ]}
+        />
       </section>
 
       <section className="bg-white py-10">
@@ -121,7 +235,7 @@ const Aqua: React.FC<PublicationsItemList> = ({ publications }) => {
 };
 
 export async function getStaticProps() {
-  // Filter the publications with the `sodaforsparc` tag
+  // Filter the publications with the `aqua` tag
   const publications = PublicationsJSON.filter((publication) =>
     publication.project.includes(`aqua`),
   ).sort((a, b) => b.year - a.year);

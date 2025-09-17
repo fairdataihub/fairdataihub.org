@@ -1,6 +1,8 @@
-import Info from '@/components/dmp/info';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectInfoSection from '@/components/project/InfoSection';
+import ResearchPartners from '@/components/project/ResearchPartners';
+import TeamMembers from '@/components/project/TeamMembers';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
 
@@ -45,6 +47,60 @@ const aboutData = {
         funder policies and maximize the long-term impact of their data.`,
     },
   ],
+};
+
+const infoData = {
+  developmentApproach: {
+    title: `Development Approach`,
+    description: `DMP Chef is developed using an open-source approach. This
+      allows for transparency and collaboration with the open
+      source community. The GitHub repository will be linked here
+      as we develop the platform.`,
+    githubUrl: `https://github.com/fairdataihub/dmp`,
+    additionalLink: {
+      text: `Explore the GitHub repository`,
+      href: `https://github.com/fairdataihub/dmp`,
+      target: `_blank`,
+      rel: `noopener`,
+    },
+  },
+  teamMembers: [
+    {
+      name: `Bhavesh Patel`,
+      href: `/team/#Bhavesh-Patel`,
+      external: false,
+      image: `/images/people/bhavesh-head.jpg`,
+    },
+    {
+      name: `Sanjay Soundarajan`,
+      href: `/team/#Sanjay-Soundarajan`,
+      external: false,
+      image: `/images/people/sanjay-head.jpg`,
+    },
+    {
+      name: `Dorian Portillo`,
+      href: `/team/#Dorian-Portillo`,
+      external: false,
+      image: `/images/people/dorian-head.PNG`,
+    },
+    {
+      name: `Xuebin Dong`,
+      href: `/team/#Xuebin-Dong`,
+      external: false,
+      image: `/images/people/xuebin-head.jpg`,
+    },
+    {
+      name: `Nahid Zeinali`,
+      href: `/team/#Nahid-Zeinali`,
+      external: false,
+      image: `/images/people/nahid-head.jpg`,
+    },
+  ],
+  researchPartners: {
+    description: `We are collaborating on this project with the developers and
+      maintainers of the DMPTool at the California Digital Library (University of
+      California).`,
+  },
 };
 
 const timelineList = [
@@ -99,7 +155,9 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
       </section> */}
 
       <section className="pt-16">
-        <Info />
+        <ProjectInfoSection {...infoData.developmentApproach} />
+        <TeamMembers teamMembers={infoData.teamMembers} />
+        <ResearchPartners researchPartners={infoData.researchPartners} />
       </section>
 
       <section className="bg-white py-10 pt-16">

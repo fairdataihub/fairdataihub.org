@@ -1,6 +1,7 @@
-import Info from '@/components/codefair/info';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectInfoSection from '@/components/project/InfoSection';
+import TeamMembers from '@/components/project/TeamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -99,6 +100,64 @@ const aboutData = {
   ],
 };
 
+const infoData = {
+  developmentApproach: {
+    title: `Development Approach`,
+    description: `The Codefair application is maintained in a GitHub
+      repository and is developed in an open and transparent
+      manner. It ingenuily combines Probot, a serverless
+      environment on Vercel, and the Octokit library. We are
+      always open for contributions from the community.`,
+    githubUrl: `https://github.com/fairdataihub/codefair-app`,
+    githubBadges: [
+      {
+        type: `contributors` as const,
+        href: `https://github.com/fairdataihub/codefair-app/graphs/contributors`,
+        alt: `codefair contributors`,
+        src: `https://img.shields.io/github/contributors/fairdataihub/codefair-app.svg?style=flat-square`,
+      },
+      {
+        type: `stars` as const,
+        href: `https://github.com/fairdataihub/codefair-app/stargazers`,
+        alt: `codefair stars`,
+        src: `https://img.shields.io/github/stars/fairdataihub/codefair-app.svg?style=flat-square`,
+      },
+      {
+        type: `issues` as const,
+        href: `https://github.com/fairdataihub/codefair-app/issues`,
+        alt: `codefair issues`,
+        src: `https://img.shields.io/github/issues/fairdataihub/codefair-app.svg?style=flat-square`,
+      },
+    ],
+    additionalLink: {
+      text: `Explore the GitHub repository`,
+      href: `https://github.com/fairdataihub/codefair-app`,
+      target: `_blank`,
+      rel: `noopener`,
+    },
+  },
+  teamMembers: [
+    {
+      name: `Bhavesh Patel`,
+      href: `/team/#Bhavesh-Patel`,
+      external: false,
+      image: `/images/people/bhavesh-head.jpg`,
+    },
+    {
+      name: `Dorian Portillo`,
+      href: `/team/#Dorian-Portillo`,
+      external: false,
+      image: `/images/people/dorian-head.PNG`,
+    },
+    {
+      name: `Sanjay Soundarajan`,
+      href: `/team/#Sanjay-Soundarajan`,
+      external: false,
+      image: `/images/people/sanjay-head.jpg`,
+    },
+  ],
+};
+
 const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
   const heroButtons = [
     {
@@ -146,7 +205,8 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-white py-10 pt-16">
-        <Info />
+        <ProjectInfoSection {...infoData.developmentApproach} />
+        <TeamMembers teamMembers={infoData.teamMembers} />
       </section>
 
       <section className="bg-white py-10 pt-16">

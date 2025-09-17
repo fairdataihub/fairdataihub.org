@@ -1,6 +1,8 @@
-import Info from '@/components/eyeact/info';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectInfoSection from '@/components/project/InfoSection';
+import ResearchPartners from '@/components/project/ResearchPartners';
+import TeamMembers from '@/components/project/TeamMembers';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -114,7 +116,56 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
       </section> */}
 
       <section className="bg-white py-10 pt-16">
-        <Info />
+        <ProjectInfoSection
+          title="Development Approach"
+          description="All software and tools developed by our team for the Eye ACT project, including the Envision Portal, are developed using an open-source approach. This allows for transparency and collaboration with the open source community."
+          githubUrl="https://github.com/EyeACT/"
+          additionalLink={{
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/EyeACT/`,
+          }}
+        />
+        <ProjectInfoSection
+          title="Funding"
+          description="Our contribution to this project is funded through a subward from the National Institute of Aging (NIA) grant R01AG060942."
+          additionalLink={{
+            text: `Explore the award on NIH Reporter`,
+            href: `https://reporter.nih.gov/project-details/10471118`,
+          }}
+        />
+        <TeamMembers
+          teamMembers={[
+            {
+              name: `Bhavesh Patel`,
+              href: `/team/#Bhavesh-Patel`,
+              external: false,
+              image: `/images/people/bhavesh-head.jpg`,
+            },
+            {
+              name: `Sanjay Soundarajan`,
+              href: `/team/#Sanjay-Soundarajan`,
+              external: false,
+              image: `/images/people/sanjay-head.jpg`,
+            },
+            {
+              name: `Aydan Gasimova`,
+              href: `/team/#Aydan-Gasimova`,
+              external: false,
+              image: `/images/people/aydan-head.jpg`,
+            },
+            {
+              name: `Nahid Zeinali`,
+              href: `/team/#Nahid-Zeinali`,
+              external: false,
+              image: `/images/people/nahid-head.jpg`,
+            },
+          ]}
+        />
+        <ResearchPartners
+          researchPartners={{
+            description: `We are collaborating on this project with Dr. Cecilia Lee's team at the Computational Ophthalmology Lab (University of Washington).`,
+          }}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
