@@ -4,9 +4,9 @@ import getLatestDownloadLink from '@/lib/getLatestDownloadLink';
 
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
+import ProjectStatistics from '@/components/project/statistics';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
-import Impact from '@/components/sodaforsparc/impact';
 import Info from '@/components/sodaforsparc/info';
 import Timeline from '@/components/ui/timeline';
 
@@ -106,6 +106,36 @@ const aboutData = {
   ],
 };
 
+const statisticsData = {
+  title: `Impact on SPARC datasets`,
+  subtitle: `Trusted by researchers all over the world`,
+  metrics: [
+    {
+      value: 35,
+      unit: `TB`,
+      suffix: `+`,
+      description: `Data Curated and Shared`,
+      id: `dataNum`,
+    },
+    {
+      value: 432,
+      suffix: `k+`,
+      description: `Files Curated and Shared`,
+      id: `filesNum`,
+    },
+    {
+      value: 234,
+      description: `Datasets Published to Sparc.Science`,
+      id: `datasetsNum`,
+    },
+    {
+      value: 2158,
+      description: `Downloads`,
+      id: `assetDownloads`,
+    },
+  ],
+};
+
 const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
   const [downloadURL, setDownloadURL] = useState<string | undefined>(``);
 
@@ -169,7 +199,11 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-white py-10 pt-16">
-        <Impact />
+        <ProjectStatistics
+          title={statisticsData.title}
+          subtitle={statisticsData.subtitle}
+          metrics={statisticsData.metrics}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
