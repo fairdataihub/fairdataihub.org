@@ -1,6 +1,6 @@
 import About from '@/components/dmp/about';
-import Hero from '@/components/dmp/hero';
 import Info from '@/components/dmp/info';
+import ProjectHero from '@/components/project/hero';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
 
@@ -12,6 +12,16 @@ const timelineList = [
   },
 ];
 const DmpChef: React.FC<PublicationsItemList> = ({}) => {
+  const heroButtons = [
+    {
+      text: `Visit DMP Chef`,
+      href: `https://survey.dmpchef.org/`,
+      target: `_blank`,
+      ariaLabel: `DMP Chef website`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -22,7 +32,16 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title="DMP Chef"
+          subtitle="Draft funder-compliant Data Management Plans with AI"
+          description=""
+          imageSrc="/images/hero/dmp-chef-logo-transparent.png"
+          imageAlt="DMP Chef logo"
+          imageWidth={200}
+          imageHeight={200}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-10">

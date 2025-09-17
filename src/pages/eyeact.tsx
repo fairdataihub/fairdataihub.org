@@ -17,7 +17,7 @@ const timelineList = [
 const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
   const heroButtons = [
     {
-      text: `Learn more`,
+      text: `Learn More`,
       href: `https://eyeactstudy.org/`,
       target: `_blank`,
       ariaLabel: `Eye ACT Documentation`,

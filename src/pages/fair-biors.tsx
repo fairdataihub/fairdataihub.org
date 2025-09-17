@@ -1,6 +1,6 @@
 import About from '@/components/fairbiors/about';
-import Hero from '@/components/fairbiors/hero';
 import Info from '@/components/fairbiors/info';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -47,7 +47,24 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title="FAIR Biomedical Research Software Guidelines"
+          subtitle=""
+          description="Minimal and actionable step-by-step guidelines for making biomedical research software reusable in line with the FAIR4RS principles"
+          imageSrc="/images/hero/fairbiors.svg"
+          imageAlt="Screenshot of FAIRshare"
+          imageWidth={1342}
+          imageHeight={975}
+          buttons={[
+            {
+              text: `Explore the guidelines`,
+              href: `https://fair-biors.org/`,
+              target: `_blank`,
+              ariaLabel: `FAIRbiors Guidelines`,
+              rel: `noopener`,
+            },
+          ]}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">

@@ -26,6 +26,7 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
       rel: `noopener`,
     },
   ];
+
   return (
     <div>
       <Seo

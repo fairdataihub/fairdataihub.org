@@ -1,13 +1,30 @@
 import About from '@/components/aqua/about';
-import Hero from '@/components/aqua/hero';
 import Info from '@/components/aqua/info';
 import Tools from '@/components/aqua/tools';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
 
 const Aqua: React.FC<PublicationsItemList> = ({ publications }) => {
+  const heroButtons = [
+    {
+      text: `Explore AQUA`,
+      href: `https://github.com/fairdataihub/aqua`,
+      target: `_blank`,
+      ariaLabel: `AQUA GitHub repository`,
+      rel: `noopener`,
+    },
+    {
+      text: `Documentation`,
+      href: `https://github.com/fairdataihub/aqua/blob/main/Documentation/Documentation.md`,
+      target: `_blank`,
+      ariaLabel: `AQUA Documentation`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -18,7 +35,16 @@ const Aqua: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title={`AQUA`}
+          subtitle={`Advanced Query Architecture for the SPARC Portal`}
+          description={`Level up your SPARC search with AQUA`}
+          imageSrc={`/images/hero/aqua-logo-full.png`}
+          imageAlt={`Aqua logo`}
+          imageWidth={537}
+          imageHeight={522}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10">

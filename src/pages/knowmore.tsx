@@ -1,12 +1,29 @@
 import About from '@/components/knowmore/about';
-import Hero from '@/components/knowmore/hero';
 import Info from '@/components/knowmore/info';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
 
 const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
+  const heroButtons = [
+    {
+      text: `Test KnowMore`,
+      href: `https://sparc-know-more.herokuapp.com/sparc-app/`,
+      target: `_blank`,
+      ariaLabel: `KnowMore application`,
+      rel: `noopener`,
+    },
+    {
+      text: `Documentation`,
+      href: `https://github.com/SPARC-FAIR-Codeathon/KnowMore`,
+      target: `_blank`,
+      ariaLabel: `KnowMore Documentation`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -18,7 +35,16 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <>
         <section className="bg-gray-50 py-10 pt-16">
-          <Hero />
+          <ProjectHero
+            title={`KnowMore`}
+            subtitle={`Say &quot;no more&quot; to manual discovery`}
+            description={`Automated Knowledge Discovery Tool for SPARC Datasets`}
+            imageSrc={`https://github.com/fairdataihub/KnowMore/raw/main/docs/knowmore-website.gif`}
+            imageAlt={`Knowmore gif`}
+            imageWidth={670}
+            imageHeight={370}
+            buttons={heroButtons}
+          />
         </section>
 
         <section className="bg-white py-10">

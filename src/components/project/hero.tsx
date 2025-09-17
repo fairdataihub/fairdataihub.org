@@ -42,7 +42,7 @@ export default function ProjectHero({
               {title}
             </h1>
             {subtitle && (
-              <h2 className="mb-2 w-full text-center text-2xl font-medium sm:text-2xl">
+              <h2 className="mb-4 mt-2 w-full text-center text-2xl font-medium sm:text-2xl">
                 {subtitle}
               </h2>
             )}

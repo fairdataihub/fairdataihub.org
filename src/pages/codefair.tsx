@@ -1,6 +1,6 @@
 import About from '@/components/codefair/about';
-import Hero from '@/components/codefair/hero';
 import Info from '@/components/codefair/info';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -26,6 +26,23 @@ const timelineList = [
 ];
 
 const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
+  const heroButtons = [
+    {
+      text: `Get Codefair`,
+      href: `https://github.com/marketplace/codefair-app`,
+      target: `_blank`,
+      ariaLabel: `Codefair app marketplace`,
+      rel: `noopener`,
+    },
+    {
+      text: `Learn more`,
+      href: `https://codefair.io`,
+      target: `_blank`,
+      ariaLabel: `Codefair website`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -35,7 +52,16 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
         templateImage="https://kalai.fairdataihub.org/api/generate?title=Codefair&description=Make%20your%20research%20software%20reusable%20without%20breaking%20a%20sweat!%20Codefair%20is%20a%20platform%20that%20helps%20you%20make%20your%20research%20software%20FAIR&app=fairdataihub&org=fairdataihub"
       />
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title={`Codefair`}
+          subtitle={`Make your research software reusable without breaking a sweat!`}
+          description={``}
+          imageSrc={`/images/hero/codefair-logo.png`}
+          imageAlt={`Codefair logo`}
+          imageWidth={150}
+          imageHeight={150}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
