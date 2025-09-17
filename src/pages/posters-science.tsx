@@ -1,6 +1,6 @@
 import About from '@/components/posters-science/about';
-import Hero from '@/components/posters-science/hero';
 import Info from '@/components/posters-science/info';
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import Timeline from '@/components/ui/timeline';
@@ -16,6 +16,16 @@ const timelineList = [
 ];
 
 const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
+  const heroButtons = [
+    {
+      text: `Learn more`,
+      href: `https://posters.science/`,
+      target: `_blank`,
+      ariaLabel: `Posters.science website`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -28,7 +38,16 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title="Posters.science"
+          subtitle="Share Posters, Make Discoveries"
+          description=""
+          imageSrc="/images/hero/posters-science-process.png"
+          imageAlt="DMP Chef logo"
+          imageWidth={600}
+          imageHeight={600}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">

@@ -1,12 +1,22 @@
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import About from '@/components/sparclink/about';
-import Hero from '@/components/sparclink/hero';
 import Info from '@/components/sparclink/info';
 
 import PublicationsJSON from '@/assets/data/publications.json';
 
 const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
+  const heroButtons = [
+    {
+      text: `Explore SPARClink`,
+      href: `https://sparclink.vercel.app`,
+      target: `_blank`,
+      ariaLabel: `SPARClink website`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -17,7 +27,16 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-gray-50 py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title={`SPARClink`}
+          subtitle={`Visualizing the Impact of SPARC`}
+          description={`A tool to understand the impact that SPARC and the SPARC Data Standard have on the scientfic community`}
+          imageSrc={`https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/2021-07-25%2013-47-30.gif`}
+          imageAlt={`sparclink gif`}
+          imageWidth={672}
+          imageHeight={377}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-white py-10">

@@ -1,7 +1,11 @@
+import { useEffect, useState } from 'react';
+
+import getLatestDownloadLink from '@/lib/getLatestDownloadLink';
+
+import ProjectHero from '@/components/project/hero';
 import PublicationsList from '@/components/publications/publicationsList';
 import Seo from '@/components/seo/seo';
 import About from '@/components/sodaforsparc/about';
-import Hero from '@/components/sodaforsparc/hero';
 import Impact from '@/components/sodaforsparc/impact';
 import Info from '@/components/sodaforsparc/info';
 import Timeline from '@/components/ui/timeline';
@@ -47,6 +51,36 @@ const timelineList = [
 ];
 
 const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
+  const [downloadURL, setDownloadURL] = useState<string | undefined>(``);
+
+  useEffect(() => {
+    const func = async () => {
+      const url = await getLatestDownloadLink(`fairdataihub/SODA-for-SPARC`);
+      setDownloadURL(url);
+    };
+
+    func().catch((e) => {
+      console.error(e);
+    });
+  }, []);
+
+  const heroButtons = [
+    {
+      text: `Download now`,
+      href: downloadURL,
+      target: `_blank`,
+      ariaLabel: `Download SODA for SPARC`,
+      rel: `noopener`,
+    },
+    {
+      text: `Explore the docs`,
+      href: `https://docs.sodaforsparc.io/`,
+      target: `_blank`,
+      ariaLabel: `SODA for SPARC Documentation`,
+      rel: `noopener`,
+    },
+  ];
+
   return (
     <>
       <Seo
@@ -59,7 +93,16 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
       />
 
       <section className="bg-white py-10 pt-16">
-        <Hero />
+        <ProjectHero
+          title="SODA"
+          subtitle="Software to organize data automatically"
+          description="Streamlining FAIR data sharing"
+          imageSrc="/images/hero/soda-app-macos.png"
+          imageAlt="Screenshot of SODA for SPARC"
+          imageWidth={1342}
+          imageHeight={975}
+          buttons={heroButtons}
+        />
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">

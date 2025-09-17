@@ -5,8 +5,8 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
-      }
+        "endOfLine": "auto",
+      },
     ],
     "camelcase": "off",
     "no-unused-vars": "off",
@@ -15,8 +15,8 @@
       {
         "argsIgnorePattern": "^_",
         "varsIgnorePattern": "^_",
-        "caughtErrorsIgnorePattern": "^_"
-      }
+        "caughtErrorsIgnorePattern": "^_",
+      },
     ],
     "import/prefer-default-export": "off",
     "react/jsx-filename-extension": "off",
@@ -30,8 +30,8 @@
         "js": "never",
         "jsx": "never",
         "ts": "never",
-        "tsx": "never"
-      }
+        "tsx": "never",
+      },
     ],
     "quotes": "off",
     "jsx-a11y/anchor-is-valid": [
@@ -39,8 +39,8 @@
       {
         "components": ["Link"],
         "specialLink": ["hrefLeft", "hrefRight"],
-        "aspects": ["invalidHref", "preferButton"]
-      }
+        "aspects": ["invalidHref", "preferButton"],
+      },
     ],
     "unused-imports/no-unused-imports": "warn",
     "unused-imports/no-unused-vars": [
@@ -49,8 +49,8 @@
         "vars": "all",
         "varsIgnorePattern": "^_",
         "args": "after-used",
-        "argsIgnorePattern": "^_"
-      }
+        "argsIgnorePattern": "^_",
+      },
     ],
     "simple-import-sort/exports": "warn",
     "simple-import-sort/imports": [
@@ -72,13 +72,14 @@
             "^\\.\\./\\.\\./?$",
             "^\\.\\./\\.\\.(?!/?$)",
             "^\\.\\./\\.\\./\\.\\./?$",
-            "^\\.\\./\\.\\./\\.\\.(?!/?$)"
+            "^\\.\\./\\.\\./\\.\\.(?!/?$)",
           ],
           ["^@/types"],
-          ["^"]
-        ]
-      }
-    ]
+          ["^"],
+        ],
+      },
+    ],
+    "react/jsx-newline": ["error"],
   },
   "overrides": [
     {
@@ -97,10 +98,10 @@
           2,
           "backtick",
           {
-            "avoidEscape": true
-          }
-        ]
-      }
-    }
-  ]
+            "avoidEscape": true,
+          },
+        ],
+      },
+    },
+  ],
 }
