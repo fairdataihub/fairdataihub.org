@@ -98,7 +98,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ProjectInfoSection
           title="Funding"
-          description={`The FAIR-BioRS guidelines where conceived while working on a project funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID). Besides some initial effort through this project for the first few months, the development of the guidelines has been done without any support, through the sole will of the project members to make it easier for our peers wanting to develop and share FAIR software.`}
+          description={`The FAIR-BioRS guidelines were conceived while working on a project funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID). Besides some initial effort through this project for the first few months, the development of the guidelines has been done without any support, through the sole will of the project members to make it easier for our peers wanting to develop and share FAIR software.`}
           additionalLink={{
             text: `Explore the parent award on NIH Reporter`,
             href: `https://reporter.nih.gov/project-details/10377989`,

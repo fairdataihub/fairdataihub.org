@@ -95,7 +95,7 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
       <section className="bg-white py-10 pt-16">
         <ProjectInfoSection
           title="Development Approach"
-          description={`The Codefair application is maintained in a GitHub repository and is developed in an open and transparent manner. It ingenuily combines Probot, a serverless environment on Vercel, and the Octokit library. We are always open for contributions from the community.`}
+          description={`The Codefair application is maintained in a GitHub repository and is developed in an open and transparent manner. It ingeniously combines Probot, a serverless environment on Vercel, and the Octokit library. We are always open for contributions from the community.`}
           sideImageSrc="/images/github-logo.svg"
           sideImageUrl="https://github.com/fairdataihub/codefair-app"
           sideImageAlt="GitHub logo"

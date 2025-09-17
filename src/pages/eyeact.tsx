@@ -53,7 +53,7 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="bg-gray-50 py-10 pt-16">
         <ProjectAbout
-          description={`The Eye ACT study, led by Dr. Cecilia Lee at the University of Washington, aims to provide insights on how opthalmic conditions such as glaucoma and diabetic retinopathy can provide early indicators to Alzheimer's disease. As part of this project, the FAIR Data Innovations Hub is leading the development of the Envision Portal.`}
+          description={`The Eye ACT study, led by Dr. Cecilia Lee at the University of Washington, aims to provide insights on how ophthalmic conditions such as glaucoma and diabetic retinopathy can provide early indicators to Alzheimer's disease. As part of this project, the FAIR Data Innovations Hub is leading the development of the Envision Portal.`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
@@ -97,7 +97,7 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
         />
         <ProjectInfoSection
           title="Funding"
-          description="Our contribution to this project is funded through a subward from the National Institute of Aging (NIA) grant R01AG060942."
+          description="Our contribution to this project is funded through a subaward from the National Institute of Aging (NIA) grant R01AG060942."
           additionalLink={{
             text: `Explore the award on NIH Reporter`,
             href: `https://reporter.nih.gov/project-details/10471118`,
