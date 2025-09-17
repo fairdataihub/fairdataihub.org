@@ -72,20 +72,12 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="bg-gray-50 py-10 pt-16">
         <ProjectAbout
-          description={`FAIRshare is a cross-platform desktop software that allows researchers
-    to easily organize and share their biomedical data and software
-    according to applicable FAIR guidelines. The first phase of
-    development of FAIRshare is focused on supporting COVID-19 and other
-    infectious diseases related data and software. Our ultimate goal is to
-    provide support for data and software from all fields of biomedical
-    research.`}
+          description={`FAIRshare is a cross-platform desktop software that allows researchers to easily organize and share their biomedical data and software according to applicable FAIR guidelines. The first phase of development of FAIRshare is focused on supporting COVID-19 and other infectious diseases related data and software. Our ultimate goal is to provide support for data and software from all fields of biomedical research.`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
               title: `What are the FAIR Data Principles?`,
-              description: `The FAIR Data Principles are a set of guidelines for curating
-                and sharing research data such that they are optimaly reusable
-                by both humans and machines.`,
+              description: `The FAIR Data Principles are a set of guidelines for curating and sharing research data such that they are optimaly reusable by both humans and machines.`,
               link: {
                 text: `Learn more about FAIR`,
                 href: `https://doi.org/10.1038/sdata.2016.18`,
@@ -96,25 +88,17 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:axis-arrow-info`,
               title: `Why are FAIR data practices important?`,
-              description: `FAIR data practices are crucial for ensuring reproducibility of
-                scientific findings, promoting reuse of data, and enabling
-                AI/ML-driven analysis to ultimately increase the pace of new
-                discoveries. They also ensure proper credits to data generators.`,
+              description: `FAIR data practices are crucial for ensuring reproducibility of scientific findings, promoting reuse of data, and enabling AI/ML-driven analysis to ultimately increase the pace of new discoveries. They also ensure proper credits to data generators.`,
             },
             {
               icon: `mdi:account-hard-hat`,
               title: `What are the challenges?`,
-              description: `Support is lacking to educate and assist the researchers, manual
-                curation is not suitable to manage the amount of data being
-                generated, and there is a lack of standard approach across
-                research labs.`,
+              description: `Support is lacking to educate and assist the researchers, manual curation is not suitable to manage the amount of data being generated, and there is a lack of standard approach across research labs.`,
             },
             {
               icon: `ep:guide`,
               title: `What does FAIRshare do?`,
-              description: `FAIRshare is a desktop software that streamlines the process of
-                making biomedical research data and software FAIR by combining
-                intuitive user interface and automation.`,
+              description: `FAIRshare is a desktop software that streamlines the process of making biomedical research data and software FAIR by combining intuitive user interface and automation.`,
             },
           ]}
         />
@@ -123,12 +107,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       <section className="bg-white py-10 pt-16">
         <ProjectInfoSection
           title="Development Approach"
-          description={`FAIRshare is distributed as an open-source desktop
-            application with an MIT License. Anyone is free to fork our
-            GitHub repository and make their own changes if they would
-            like. If you would like to submit a feature modification, or
-            feature suggestion, please feel free to submit an issue on
-            the repository.`}
+          description={`FAIRshare is distributed as an open-source desktop application with an MIT License. Anyone is free to fork our GitHub repository and make their own changes if they would like. If you would like to submit a feature modification, or feature suggestion, please feel free to submit an issue on the repository.`}
           sideImageSrc="/images/github-logo.svg"
           sideImageUrl="https://github.com/fairdataihub/FAIRshare"
           sideImageAlt="GitHub logo"
@@ -166,9 +145,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ProjectInfoSection
           title="Funding"
-          description={`FAIRshare is funded through a supplemental award from the
-            National Institute of Allergy and Infectious Diseases
-            (NIAID).`}
+          description={`FAIRshare is funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID).`}
           additionalLink={{
             text: `Explore the parent award on NIH Reporter`,
             href: `https://reporter.nih.gov/project-details/10377989`,
@@ -200,15 +177,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ResearchPartners
           researchPartners={{
-            description: `The first phase of development of FAIRshare is focused on
-              supporting COVID-19 and other infectious diseases data and
-              software. FAIRshare is developed in collaboration with Dr.
-              Zicheng Hu (UCSF) and his colleagues at University of
-              California, San Francisco and Stanford University who are
-              conducting a clinical trial for a novel treatment approach
-              for COVID-19. They will be providing overall guidance on the
-              applicable FAIR guidelines as well as conducting beta
-              testing of the software.`,
+            description: `The first phase of development of FAIRshare is focused on supporting COVID-19 and other infectious diseases data and software. FAIRshare is developed in collaboration with Dr. Zicheng Hu (UCSF) and his colleagues at University of California, San Francisco and Stanford University who are conducting a clinical trial for a novel treatment approach for COVID-19. They will be providing overall guidance on the applicable FAIR guidelines as well as conducting beta testing of the software.`,
             collaborators: [
               {
                 name: `Zicheng Hu (UCSF)`,
@@ -254,8 +223,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               longDate: `September 2021 - Aug 2022`,
               title: `Phase I development`,
-              content: `The base framework of the software will be developed and support will be provided for COVID-19
-    and other infectious diseases related data types (genomics, immunology, etc.) and software.`,
+              content: `The base framework of the software will be developed and support will be provided for COVID-19 and other infectious diseases related data types (genomics, immunology, etc.) and software.`,
             },
           ]}
         />

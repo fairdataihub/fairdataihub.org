@@ -39,44 +39,27 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
 
       <section className="bg-gray-50 py-10 pt-10">
         <ProjectAbout
-          description={`Data Management Plans (DMPs) are now commonly required by funders with
-    all grant proposals. Researchers often struggle to prepare them due to
-    the lack of training, the lack of support, the complexity of data, and
-    the wide range of best practices, repositories, and metadata choices
-    available. DMP Chef is a free and open-source AI-based tool designed
-    to assist researchers with drafting funder-compliant DMPs.`}
+          description={`Data Management Plans (DMPs) are now commonly required by funders with all grant proposals. Researchers often struggle to prepare them due to the lack of training, the lack of support, the complexity of data, and the wide range of best practices, repositories, and metadata choices available. DMP Chef is a free and open-source AI-based tool designed to assist researchers with drafting funder-compliant DMPs.`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
               title: `What is DMP Chef?`,
-              description: `DMP Chef is a web tool where researchers can easily generate
-                drafts of funder-compliant DMPs tailored to their grant
-                proposals and even create machine-actionable versions.`,
+              description: `DMP Chef is a web tool where researchers can easily generate drafts of funder-compliant DMPs tailored to their grant proposals and even create machine-actionable versions.`,
             },
             {
               icon: `mdi:axis-arrow-info`,
               title: `How does it work?`,
-              description: `Researchers only need to answer a few questions about their
-                grant proposal (target funding organization, data to be
-                collected, etc.) and DMP Chef will generate a draft of the
-                entire DMP in line with the requirements of the target funder.`,
+              description: `Researchers only need to answer a few questions about their grant proposal (target funding organization, data to be collected, etc.) and DMP Chef will generate a draft of the entire DMP in line with the requirements of the target funder.`,
             },
             {
               icon: `mdi:account-hard-hat`,
               title: `What challenges does it address?`,
-              description: `Writing a DMP is overwhelming, with each funder having its own
-                policies, formats, and compliance criteria. Researchers often
-                struggle to prepare a compliant DMP due to lack of training and
-                support, and technical complexity.`,
+              description: `Writing a DMP is overwhelming, with each funder having its own policies, formats, and compliance criteria. Researchers often struggle to prepare a compliant DMP due to lack of training and support, and technical complexity.`,
             },
             {
               icon: `ep:guide`,
               title: `Why is this important?`,
-              description: `A strong DMP is often a requirement not only for securing
-                research funds but, as the first point of data documentation,
-                also critical for adopting FAIR data practices. DMP Chef helps
-                researchers create high-quality DMPs that ensure compliance with
-                funder policies and maximize the long-term impact of their data.`,
+              description: `A strong DMP is often a requirement not only for securing research funds but, as the first point of data documentation, also critical for adopting FAIR data practices. DMP Chef helps researchers create high-quality DMPs that ensure compliance with funder policies and maximize the long-term impact of their data.`,
             },
           ]}
         />
@@ -85,10 +68,7 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
       <section className="bg-white pt-16">
         <ProjectInfoSection
           title="Development Approach"
-          description={`DMP Chef is developed using an open-source approach. This
-      allows for transparency and collaboration with the open
-      source community. The GitHub repository will be linked here
-      as we develop the platform.`}
+          description={`DMP Chef is developed using an open-source approach. This allows for transparency and collaboration with the open source community. The GitHub repository will be linked here as we develop the platform.`}
           sideImageSrc={`/images/github-logo.svg`}
           sideImageUrl={`https://github.com/fairdataihub/dmp`}
           sideImageAlt={`GitHub logo`}
@@ -137,9 +117,7 @@ const DmpChef: React.FC<PublicationsItemList> = ({}) => {
 
         <ResearchPartners
           researchPartners={{
-            description: `We are collaborating on this project with the developers and
-      maintainers of the DMPTool at the California Digital Library (University of
-      California).`,
+            description: `We are collaborating on this project with the developers and maintainers of the DMPTool at the California Digital Library (University of California).`,
           }}
         />
       </section>

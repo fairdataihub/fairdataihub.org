@@ -64,10 +64,7 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
               {
                 icon: `mdi:axis-arrow-info`,
                 title: `What are the FAIR SPARC Data Guidelines?`,
-                description: `All SPARC-funded researchers must curate their datasets
-        following the SPARC Data Standards (SDS) and share them openly
-        on the Pennsieve data platform as per their funding agreement
-        with SPARC.`,
+                description: `All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.`,
                 link: {
                   text: `Learn more about SDS`,
                   href: `https://doi.org/10.1101/2021.02.10.430563`,
@@ -78,17 +75,12 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
               {
                 icon: `mdi:account-hard-hat`,
                 title: `What are the challenges?`,
-                description: `The guidelines are very exhaustive to maximize FAIRness of SPARC
-        datasets but are challenging and time-consuming for researchers
-        to implement.`,
+                description: `The guidelines are very exhaustive to maximize FAIRness of SPARC datasets but are challenging and time-consuming for researchers to implement.`,
               },
               {
                 icon: `eos-icons:ai-healing`,
                 title: `What does KnowMore do?`,
-                description: `KnowMore uses several SPARC resources, data science methods, and
-        knowledge of the SDS to generate various visualizations to help
-        the user identify potential relations across datasets of
-        interests.`,
+                description: `KnowMore uses several SPARC resources, data science methods, and knowledge of the SDS to generate various visualizations to help the user identify potential relations across datasets of interests.`,
               },
             ]}
           />
@@ -97,14 +89,7 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
         <section className="bg-gray-50 py-10">
           <ProjectInfoSection
             title="Development Approach"
-            description={`KnowMore is developed as an open-source application with an
-      MIT License. It is currently integrated into our fork of the
-      SPARC Portal and is not available in the official SPARC
-      Portal release. Anyone is free to fork our GitHub repository
-      and make their own changes if they would like. If you would
-      like to submit a feature modification, or feature
-      suggestion, please feel free to submit an issue on the
-      repository.`}
+            description={`KnowMore is developed as an open-source application with an MIT License. It is currently integrated into our fork of the SPARC Portal and is not available in the official SPARC Portal release. Anyone is free to fork our GitHub repository and make their own changes if they would like. If you would like to submit a feature modification, or feature suggestion, please feel free to submit an issue on the repository.`}
             sideImageSrc="/images/github-logo.svg"
             sideImageUrl="https://github.com/fairdataihub/KnowMore"
             sideImageAlt="GitHub logo"
@@ -144,7 +129,7 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
 
           <ProjectInfoSection
             title="Origin Story"
-            description={`KnowMore was introduced as a project during the 2021 NIH SPARC Codeathon with the aim of leveraging the FAIR characteristics of the SPARC datasets to enable automated comparison across them. KnowMore won the Grand Prize at the       Codeathon.`}
+            description={`KnowMore was introduced as a project during the 2021 NIH SPARC Codeathon with the aim of leveraging the FAIR characteristics of the SPARC datasets to enable automated comparison across them. KnowMore won the Grand Prize at the Codeathon.`}
             sideImageSrc="/images/collaborators/sparc-logo.svg"
             sideImageAlt="SPARC logo"
             additionalLink={{

@@ -41,16 +41,12 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
 
       <section className="bg-gray-50 py-10">
         <ProjectAbout
-          description={`AQUA (Advanced Query Architecture for the SPARC Portal) an application
-    that aims at improving the search capabilities of the SPARC Portal.`}
+          description={`AQUA (Advanced Query Architecture for the SPARC Portal) an application that aims at improving the search capabilities of the SPARC Portal.`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
               title: `What is SPARC?`,
-              description: `The NIH's Stimulating Peripheral Activity to Relieve
-                Conditions (SPARC) program seeks to accelerate development of
-                therapeutic devices that modulate electrical activity in nerves
-                to improve organ function.`,
+              description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function.`,
               link: {
                 text: `Learn more about SPARC`,
                 href: `https://sparc.science/`,
@@ -61,10 +57,7 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
             {
               icon: `mdi:axis-arrow-info`,
               title: `What are the FAIR SPARC Data Guidelines?`,
-              description: `All SPARC-funded researchers must curate their datasets
-                following the SPARC Data Standards (SDS) and share them openly
-                on the Pennsieve data platform as per their funding agreement
-                with SPARC.`,
+              description: `All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.`,
               link: {
                 text: `Learn more about SDS`,
                 href: `https://doi.org/10.1101/2021.02.10.430563`,
@@ -75,18 +68,12 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
             {
               icon: `mdi:account-hard-hat`,
               title: `What are the challenges?`,
-              description: `Currently, the search feature of the SPARC Portal is very
-                limited. It does not recognize nearby words (typos and
-                close-matches) or synonyms and provides limited result
-                information.`,
+              description: `Currently, the search feature of the SPARC Portal is very limited. It does not recognize nearby words (typos and close-matches) or synonyms and provides limited result information.`,
             },
             {
               icon: `mdi:lightbulb-on`,
               title: `How does AQUA solve this?`,
-              description: `AQUA provides an advanced search interface that includes
-                fuzzy matching, synonym recognition, and enhanced result
-                display to improve the user experience when searching for
-                SPARC data.`,
+              description: `AQUA provides an advanced search interface that includes fuzzy matching, synonym recognition, and enhanced result display to improve the user experience when searching for SPARC data.`,
             },
           ]}
         />

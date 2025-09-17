@@ -50,9 +50,7 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
       <Seo
         templateTitle="SODA for SPARC"
         templateUrl="https://fairdataihub.org/sodaforsparc"
-        templateDescription="SODA is a cross-platform desktop software that helps researchers
-          prepare and share FAIR peripheral nervous system (PNS) related data
-          and models using the SPARC Data Structure (SDS) and the SPARC Portal."
+        templateDescription="SODA is a cross-platform desktop software that helps researchers prepare and share FAIR peripheral nervous system (PNS) related data and models using the SPARC Data Structure (SDS) and the SPARC Portal."
         templateImage="https://fairdataihub.org/thumbnails/sodaforsparc.png"
       />
 
@@ -71,19 +69,12 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="bg-gray-50 py-10 pt-16">
         <ProjectAbout
-          description={`SODA is a cross-platform desktop software that helps researchers
-    prepare and share FAIR peripheral nervous system (PNS) related data
-    and models using the SPARC Data Structure (SDS) and the SPARC Portal.
-    Since 2021, SODA has been installed on over 1300 computers, empowering
-    researchers worldwide.`}
+          description={`SODA is a cross-platform desktop software that helps researchers prepare and share FAIR peripheral nervous system (PNS) related data and models using the SPARC Data Structure (SDS) and the SPARC Portal. Since 2021, SODA has been installed on over 1300 computers, empowering researchers worldwide.`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
               title: `What is SPARC?`,
-              description: `The NIH's Stimulating Peripheral Activity to Relieve
-        Conditions (SPARC) program seeks to accelerate development of
-        therapeutic devices that modulate electrical activity in nerves
-        to improve organ function.`,
+              description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function.`,
               link: {
                 text: `Learn more about SPARC`,
                 href: `https://sparc.science/`,
@@ -94,10 +85,7 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:axis-arrow-info`,
               title: `What are the FAIR SPARC Data Guidelines?`,
-              description: `All SPARC-funded researchers must curate their datasets
-        following the SPARC Data Standards (SDS) and share them openly
-        on the Pennsieve data platform as per their funding agreement
-        with SPARC.`,
+              description: `All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.`,
               link: {
                 text: `Learn more about SDS`,
                 href: `https://doi.org/10.1038/sdata.2016.18`,
@@ -108,16 +96,12 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:account-hard-hat`,
               title: `What are the challenges?`,
-              description: `The guidelines are very exhaustive to maximize FAIRness of SPARC
-        datasets but are challenging and time-consuming for researchers
-        to implement.`,
+              description: `The guidelines are very exhaustive to maximize FAIRness of SPARC datasets but are challenging and time-consuming for researchers to implement.`,
             },
             {
               icon: `ep:guide`,
               title: `What does SODA do?`,
-              description: `SODA combines intuitive user interfaces and automation such that
-        researchers can efficiently and accurately curate their SPARC
-        datasets.`,
+              description: `SODA combines intuitive user interfaces and automation such that researchers can efficiently and accurately curate their SPARC datasets.`,
             },
           ]}
         />
@@ -158,12 +142,7 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
       <section className="bg-gray-50 py-10 pt-16">
         <ProjectInfoSection
           title={`Development Approach`}
-          description={`SODA is distributed as an open-source application with an
-            MIT License. Anyone is free to fork our GitHub repository
-            and make their own changes if they would like. If you would
-            like to submit a feature modification, or feature
-            suggestion, please feel free to submit an issue on the
-            repository.`}
+          description={`SODA is distributed as an open-source application with an MIT License. Anyone is free to fork our GitHub repository and make their own changes if they would like. If you would like to submit a feature modification, or feature suggestion, please feel free to submit an issue on the repository.`}
           sideImageSrc="/images/github-logo.svg"
           sideImageUrl="https://github.com/fairdataihub/SODA-for-SPARC"
           sideImageAlt="GitHub logo"
@@ -201,11 +180,7 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ProjectInfoSection
           title={`Funding`}
-          description={`SODA is funded by the National Institutes of Health
-            (NIH)'s SPARC program. The funding was initially
-            provided as a supplement to an existing SPARC award at CalMI
-            during the first phase of development before now having a
-            standalone award.`}
+          description={`SODA is funded by the National Institutes of Health (NIH)'s SPARC program. The funding was initially provided as a supplement to an existing SPARC award at CalMI during the first phase of development before now having a standalone award.`}
           additionalLink={{
             text: `Explore the award on NIH Reporter`,
             href: `https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565`,
@@ -257,10 +232,7 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ResearchPartners
           researchPartners={{
-            description: `SODA for SPARC connects with several resources developed by
-              the SPARC Data Resource Center (DRC) and we therefore
-              collaborate actively with the DRC teams throughout our
-              development process.`,
+            description: `SODA for SPARC connects with several resources developed by the SPARC Data Resource Center (DRC) and we therefore collaborate actively with the DRC teams throughout our development process.`,
             collaborators: [
               {
                 name: `Pennsieve`,

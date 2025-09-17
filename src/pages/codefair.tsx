@@ -48,22 +48,12 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="bg-gray-50 py-10 pt-16">
         <ProjectAbout
-          description={`Codefair is a free and open source GitHub app that acts as your
-    personal assistant when it comes to making your research software
-    reusable and especially complying with the Findable, Accessible,
-    Interoperable, Reusable (FAIR) Principles for Research Software
-    (FAIR4RS Principles).`}
+          description={`Codefair is a free and open source GitHub app that acts as your personal assistant when it comes to making your research software reusable and especially complying with the Findable, Accessible, Interoperable, Reusable (FAIR) Principles for Research Software (FAIR4RS Principles).`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
               title: `What is a research software?`,
-              description: `The commonly accepted definition of research software is
-                "Any software created during the research process or for a
-                research purpose". It can come in many format and could be
-                developed for different applications such as artificial
-                intelligence (AI)/machine learning (ML) models with Python, data
-                visualization tools with Jupyter notebook, or data analysis code
-                with R.`,
+              description: `The commonly accepted definition of research software is "Any software created during the research process or for a research purpose". It can come in many format and could be developed for different applications such as artificial intelligence (AI)/machine learning (ML) models with Python, data visualization tools with Jupyter notebook, or data analysis code with R.`,
               link: {
                 text: `Learn more about research software`,
                 href: `https://doi.org/10.5281/zenodo.5504016`,
@@ -74,11 +64,7 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:axis-arrow-info`,
               title: `What does making a research software FAIR means?`,
-              description: `The FAIR (Findable, Accessible, Interoperable, Reusable)
-                Principles for Research Software (FAIR4RS Principles) are a set
-                of high-level instructions established by the research software
-                community to make software reusable. Making research software
-                FAIR means complying with each of the 17 FAIR principles.`,
+              description: `The FAIR (Findable, Accessible, Interoperable, Reusable) Principles for Research Software (FAIR4RS Principles) are a set of high-level instructions established by the research software community to make software reusable. Making research software FAIR means complying with each of the 17 FAIR principles.`,
               link: {
                 text: `Learn more about the FAIR4RS Principles`,
                 href: `https://doi.org/10.1038/s41597-022-01710-x`,
@@ -89,11 +75,7 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:account-hard-hat`,
               title: `What are the challenges?`,
-              description: `We developed the FAIR-Biomedical Research Software (FAIR-BioRS)
-                guidelines so it is easier for researchers to make their
-                software compliant with the FAIR4RS Principles. However, it
-                still requires time and effort to do so, especially when
-                software is frequently updated and has multiple contributors`,
+              description: `We developed the FAIR-Biomedical Research Software (FAIR-BioRS) guidelines so it is easier for researchers to make their software compliant with the FAIR4RS Principles. However, it still requires time and effort to do so, especially when software is frequently updated and has multiple contributors`,
               link: {
                 text: `Learn more about the FAIR-BioRS guidelines`,
                 href: `https://fairdataihub.org/fair-biors`,
@@ -104,13 +86,7 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `ep:guide`,
               title: `How does Codefair help?`,
-              description: `Just install Codefair from the GitHub marketplace on your
-                software's GitHub repository. By communicating with you
-                through GitHub issues and submitting pull requests, Codefair
-                will then make sure that your software follows best coding
-                practices, provides metadata in standard format, includes a
-                license file, and much more to align with the FAIR4RS
-                principles.`,
+              description: `Just install Codefair from the GitHub marketplace on your software's GitHub repository. By communicating with you through GitHub issues and submitting pull requests, Codefair will then make sure that your software follows best coding practices, provides metadata in standard format, includes a license file, and much more to align with the FAIR4RS principles.`,
             },
           ]}
         />
@@ -119,11 +95,7 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
       <section className="bg-white py-10 pt-16">
         <ProjectInfoSection
           title="Development Approach"
-          description={`The Codefair application is maintained in a GitHub
-      repository and is developed in an open and transparent
-      manner. It ingenuily combines Probot, a serverless
-      environment on Vercel, and the Octokit library. We are
-      always open for contributions from the community.`}
+          description={`The Codefair application is maintained in a GitHub repository and is developed in an open and transparent manner. It ingenuily combines Probot, a serverless environment on Vercel, and the Octokit library. We are always open for contributions from the community.`}
           sideImageSrc="/images/github-logo.svg"
           sideImageUrl="https://github.com/fairdataihub/codefair-app"
           sideImageAlt="GitHub logo"

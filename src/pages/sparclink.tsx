@@ -40,18 +40,12 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="bg-white py-10">
         <ProjectAbout
-          description={`SPARClink provides a system that queries all external publications
-    using open source tools and platforms to create interactable
-    visualizations that showcases the impact that SPARC has on the overall
-    scientific research community.`}
+          description={`SPARClink provides a system that queries all external publications using open source tools and platforms to create interactable visualizations that showcases the impact that SPARC has on the overall scientific research community.`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
               title: `What is SPARC?`,
-              description: `The NIH's Stimulating Peripheral Activity to Relieve
-                Conditions (SPARC) program seeks to accelerate development of
-                therapeutic devices that modulate electrical activity in nerves
-                to improve organ function.`,
+              description: `The NIH's Stimulating Peripheral Activity to Relieve Conditions (SPARC) program seeks to accelerate development of therapeutic devices that modulate electrical activity in nerves to improve organ function.`,
               link: {
                 text: `Learn more about SPARC`,
                 href: `https://sparc.science/`,
@@ -62,10 +56,7 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:axis-arrow-info`,
               title: `What are the FAIR SPARC Data Guidelines?`,
-              description: `All SPARC-funded researchers must curate their datasets
-                following the SPARC Data Standards (SDS) and share them openly
-                on the Pennsieve data platform as per their funding agreement
-                with SPARC.`,
+              description: `All SPARC-funded researchers must curate their datasets following the SPARC Data Standards (SDS) and share them openly on the Pennsieve data platform as per their funding agreement with SPARC.`,
               link: {
                 text: `Learn more about SDS`,
                 href: `https://doi.org/10.1101/2021.02.10.430563`,
@@ -76,18 +67,12 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `game-icons:impact-point`,
               title: `What does Impact mean?`,
-              description: `The SPARC program provides datasets, maps and computational
-                studies that follow FAIR principles and is used by researchers
-                all around the world. The usage of SPARC resouces by platforms
-                and programs ouside SPARC is what we view as the meaning of the
-                term 'Impact'.`,
+              description: `The SPARC program provides datasets, maps and computational studies that follow FAIR principles and is used by researchers all around the world. The usage of SPARC resouces by platforms and programs ouside SPARC is what we view as the meaning of the term 'Impact'.`,
             },
             {
               icon: `ph:graph-fill`,
               title: `What does SPARClink do?`,
-              description: `SPARClink uses data from existing SPARC publications, datasets
-                and protocols to create an interactive visualization that you
-                can use to view the impact of SPARC.`,
+              description: `SPARClink uses data from existing SPARC publications, datasets and protocols to create an interactive visualization that you can use to view the impact of SPARC.`,
             },
           ]}
         />
@@ -96,12 +81,7 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
       <section className="bg-gray-50 py-10">
         <ProjectInfoSection
           title="Development Approach"
-          description={`SPARClink was created as an open-source application with an
-            MIT License. Anyone is free to fork our GitHub repository
-            and make their own changes if they would like. If you would
-            like to submit a feature modification, or feature
-            suggestion, please feel free to submit an issue on the
-            repository.`}
+          description={`SPARClink was created as an open-source application with an MIT License. Anyone is free to fork our GitHub repository and make their own changes if they would like. If you would like to submit a feature modification, or feature suggestion, please feel free to submit an issue on the repository.`}
           sideImageSrc="/images/github-logo.svg"
           sideImageUrl="https://github.com/fairdataihub/SPARClink"
           sideImageAlt="GitHub logo"
@@ -139,12 +119,7 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ProjectInfoSection
           title="Origin Story"
-          description={`The SPARClink project was first born as an idea at the 2021
-            NIH SPARC Codeathon. The idea behind the topic was created
-            as a method of visualizing citation data to determine the
-            degree of use of SPARC material outside of the official
-            channels. SPARClink received the third-place prize at the
-            Codeathon.`}
+          description={`The SPARClink project was first born as an idea at the 2021 NIH SPARC Codeathon. The idea behind the topic was created as a method of visualizing citation data to determine the degree of use of SPARC material outside of the official channels. SPARClink received the third-place prize at the Codeathon.`}
           additionalLink={{
             text: `Learn more about the SPARC Codeathon`,
             href: `https://sparc.science/help/2021-sparc-fair-codeathon`,

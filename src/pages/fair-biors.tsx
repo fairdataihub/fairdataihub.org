@@ -15,8 +15,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       <Seo
         templateTitle="FAIR-BioRS"
         templateUrl="https://fairdataihub.org/fair-biors"
-        templateDescription="Minimal and actionable step-by-step guidelines for making
-        biomedical research software reusable in line with the FAIR4RS principles"
+        templateDescription="Minimal and actionable step-by-step guidelines for making biomedical research software reusable in line with the FAIR4RS principles"
         templateImage="https://kalai.fairdataihub.org/api/generate?title=FAIR-BioRS&description=Minimal%20and%20actionable%20step-by-step%20guidelines%20for%20making%20biomedical%20research%20software%20reusable%20in%20line%20with%20the%20FAIR4RS%20principles&app=fairdataihub&org=fairdataihub"
       />
 
@@ -43,21 +42,12 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <section className="bg-gray-50 py-10 pt-16">
         <ProjectAbout
-          description={`The FAIR Biomedical Research Software (FAIR-BioRS) guidelines are a
-    set of minimal and actionable step-by-step guidelines for making
-    biomedical research software FAIR (Findable, Accessible,
-    Interoperable, Reusable), in line with the FAIR Principles for
-    Research Software (FAIR4RS Principles).`}
+          description={`The FAIR Biomedical Research Software (FAIR-BioRS) guidelines are a set of minimal and actionable step-by-step guidelines for making biomedical research software FAIR (Findable, Accessible, Interoperable, Reusable), in line with the FAIR Principles for Research Software (FAIR4RS Principles).`}
           features={[
             {
               icon: `material-symbols:linear-scale`,
               title: `What are research software?`,
-              description: `Research software is any software created during the research
-                process or for a research purpose. It can come in many format
-                such as artificial intelligence (AI) models as Python scripts or
-                data visualization tools as Jupyter notebooks. They are an
-                essential aspects of biomedical research and therefore making
-                them FAIR, i.e. optimally reusable is critical just like data.`,
+              description: `Research software is any software created during the research process or for a research purpose. It can come in many format such as artificial intelligence (AI) models as Python scripts or data visualization tools as Jupyter notebooks. They are an essential aspects of biomedical research and therefore making them FAIR, i.e. optimally reusable is critical just like data.`,
               link: {
                 text: `Learn more about research software`,
                 href: `https://www.researchsoft.org/`,
@@ -68,10 +58,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:axis-arrow-info`,
               title: `How to make research software FAIR?`,
-              description: `The FAIR Principles for Research Software (FAIR4RS Principles)
-                are reformulated versions of the FAIR Principles developed by
-                the research software community specifically to make research
-                software reusable.`,
+              description: `The FAIR Principles for Research Software (FAIR4RS Principles) are reformulated versions of the FAIR Principles developed by the research software community specifically to make research software reusable.`,
               link: {
                 text: `Learn more about the FAIR4RS Principles`,
                 href: `https://doi.org/10.1038/s41597-022-01710-x`,
@@ -82,21 +69,12 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
             {
               icon: `mdi:account-hard-hat`,
               title: `What are the challenges?`,
-              description: `By design, the FAIR4RS Principles only provide a high-level
-                framework for making software FAIR but do not provide practical
-                instructions to do so. Therefore, making software FAIR requires
-                an in-depth understanding of each of the FAIR4RS Principles, and
-                finding out how to practically comply with them.`,
+              description: `By design, the FAIR4RS Principles only provide a high-level framework for making software FAIR but do not provide practical instructions to do so. Therefore, making software FAIR requires an in-depth understanding of each of the FAIR4RS Principles, and finding out how to practically comply with them.`,
             },
             {
               icon: `ep:guide`,
               title: `How do the FAIR-BioRS guidelines help?`,
-              description: `We established the FAIR Biomedical Research Software
-                (FAIR-BioRS) guideline, which are clear, actionable, and
-                step-by-step guidelines for making biomedical research software
-                FAIR. Researchers can simply follow and implement the guidelines
-                as they are developing their software to make it compliant with
-                the FAIR4RS principles.`,
+              description: `We established the FAIR Biomedical Research Software (FAIR-BioRS) guideline, which are clear, actionable, and step-by-step guidelines for making biomedical research software FAIR. Researchers can simply follow and implement the guidelines as they are developing their software to make it compliant with the FAIR4RS principles.`,
               link: {
                 text: `Learn more about the FAIR-BioRS guidelines`,
                 href: `https://doi.org/10.1038/s41597-022-01710-x`,
@@ -111,18 +89,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       <section className="bg-white py-10 pt-16">
         <ProjectInfoSection
           title="Development Approach"
-          description={`The FAIR-BioRS guidelines were developed in collaboration
-            with researchers from UCSF and ELIXIR (E.U.). We first
-            established a list of outstanding questions we identified
-            for practically implementing the FAIR4RS Principles (e.g.,
-            How to obtain a unique identifier for software? How to
-            include metadata? and so on). Then we combined literature
-            review, community feedback, and our own assessment as
-            developers of research software to established answers for
-            these questions. Finally, we organized these answers as a
-            set of step-by-step instructions that follow the typical
-            sofware development process which became the FAIR-BioRS
-            guidelines.`}
+          description={`The FAIR-BioRS guidelines were developed in collaboration with researchers from UCSF and ELIXIR (E.U.). We first established a list of outstanding questions we identified for practically implementing the FAIR4RS Principles (e.g., How to obtain a unique identifier for software? How to include metadata? and so on). Then we combined literature review, community feedback, and our own assessment as developers of research software to established answers for these questions. Finally, we organized these answers as a set of step-by-step instructions that follow the typical sofware development process which became the FAIR-BioRS guidelines.`}
           additionalLink={{
             text: `Explore the FAIR-BioRS documentation`,
             href: `https://fair-biors.org`,
@@ -131,14 +98,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ProjectInfoSection
           title="Funding"
-          description={`The FAIR-BioRS guidelines where conceived while working on a
-            project funded through a supplemental award from the
-            National Institute of Allergy and Infectious Diseases
-            (NIAID). Besides some initial effort through this project
-            for the first few months, the development of the guidelines
-            has been done without any support, through the sole will of
-            the project members to make it easier for our peers wanting
-            to develop and share FAIR software.`}
+          description={`The FAIR-BioRS guidelines where conceived while working on a project funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID). Besides some initial effort through this project for the first few months, the development of the guidelines has been done without any support, through the sole will of the project members to make it easier for our peers wanting to develop and share FAIR software.`}
           additionalLink={{
             text: `Explore the parent award on NIH Reporter`,
             href: `https://reporter.nih.gov/project-details/10377989`,
@@ -164,9 +124,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
 
         <ResearchPartners
           researchPartners={{
-            description: `The FAIR-BioRS guidelines were developed in collaboration
-              with Dr. Zicheng Hu (UCSF) and Dr. Hervé Ménager (Institut
-              Pasteur, ELIXIR).`,
+            description: `The FAIR-BioRS guidelines were developed in collaboration with Dr. Zicheng Hu (UCSF) and Dr. Hervé Ménager (Institut Pasteur, ELIXIR).`,
             collaborators: [
               {
                 name: `Zicheng Hu (UCSF)`,
