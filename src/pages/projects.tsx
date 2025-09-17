@@ -123,7 +123,7 @@ export default function Home() {
 
                     <p className="w-full font-asap text-lg text-black">
                       The Eye ACT study aims to provide insights on how
-                      opthalmic conditions such as glaucoma and diabetic
+                      ophthalmic conditions such as glaucoma and diabetic
                       retinopathy can provide early indicators to
                       Alzheimer&apos;s disease. By leveraging the Envision
                       Portal, it enhances data management, sharing, and
