@@ -45,7 +45,7 @@ export default function Collaborators() {
       alt: `Bridge2AI logo`,
       width: 200,
       height: 200,
-      href: `https://bridge2ai.org/`,
+      href: `https://bridge2ai.org/about-page/`,
     },
     {
       src: `/images/collaborators/ucsd-logo.png`,
