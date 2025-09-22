@@ -17,11 +17,11 @@ tags:
   - OG images
 ---
 
-Stop manually designing Open Graph images. If you share blog posts, projects, or docs on Twitter, LinkedIn, or Slack, you know how important OG images are for engagement. They are the preview cards that make links stand out, grab attention, and reinforce your brand. If you care about how your work appears on social media, OG images aren’t just nice-to-have, they’re the difference between someone scrolling past and someone clicking through.
+Stop manually designing Open Graph (OG) images. If you share blog posts, projects, or docs on Twitter, LinkedIn, or Slack, you know how important OG images are for engagement. They are the preview cards that make links stand out, grab attention, and reinforce your brand. If you care about how your work appears on social media, OG images aren’t just nice-to-have, they’re the difference between someone scrolling past and someone clicking through.
 
-With a small team, design tasks often landed on whoever had time, which usually meant me. Every new post or docs page meant tweaking a layout, exporting a PNG, and uploading it. It quickly became a chore on top of development work.
+With a small team, design tasks often landed on whoever had time. Every new post or docs page meant tweaking a layout, exporting a PNG, and uploading it. It quickly became a chore on top of development work.
 
-That is why we built [Kalai](https://kalai.fairdataihub.org), a flexible, dynamic OG image generation service powered by Vercel’s [Satori](https://github.com/vercel/satori). It is the same service we use across all of our apps and services at Fair Data Innovations Hub. In this post I will walk you through how it works and how you can build your own.
+That is why we built [Kalai](https://kalai.fairdataihub.org), a flexible, dynamic OG image generation service powered by Vercel’s [Satori](https://github.com/vercel/satori). It is the same service we use across all of our apps and services at the FAIR Data Innovations Hub. In this post I will walk you through how it works and how you can build your own.
 
 ## Why Generate OG Images Dynamically?
 
@@ -125,7 +125,7 @@ and get a freshly generated OG image.
 
 ## Real-World Usage
 
-At Fair Data Innovations Hub, we use Kalai across all of our projects. Since we don’t have a dedicated design team, developers, myself included, often end up wearing the designer hat too. That meant every blog post or docs page came with an extra mental load: “ugh, time to make another image.”
+At the FAIR Data Innovations Hub, we use Kalai across all of our projects. Since we don’t have a dedicated design team, developers, myself included, often end up wearing the designer hat too. That meant every blog post or docs page came with an extra mental load: “ugh, time to make another image.”
 
 Kalai lifted that weight off our shoulders. Now, instead of bouncing between code and design tools, we can focus on building, and still get clean, branded previews for free.
 
@@ -165,7 +165,7 @@ The overall idea is the same: generate OG images dynamically instead of maintain
 
 ## Conclusion
 
-Open Graph images are a small detail that make a big impact. With Satori, generating them dynamically is finally fast, flexible, and serverless-friendly.
+Including an Open Graph image in your project is a small detail that makes a big impact. With Satori, generating them dynamically is finally fast, flexible, and serverless-friendly.
 
 If you want to try it out, check out [Kalai on GitHub](https://github.com/fairdataihub/kalai). Fork it, deploy it, and start giving your projects the polished social previews they deserve. We built Kalai to scratch our own itch, but it’s been a game changer for our workflow. I hope it saves you the same time (and headaches) it saved us.
 
