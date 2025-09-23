@@ -1,3 +1,10 @@
+# [2.67.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.3...v2.67.0) (2025-09-23)
+
+
+### Features
+
+* ✨ add author links to blog posts ([dcc47f5](https://github.com/fairdataihub/fairdataihub.org/commit/dcc47f5ad1f7d9533b2538954c98a8a3140f96a9))
+
 ## [2.66.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.2...v2.66.3) (2025-09-23)
 
 
