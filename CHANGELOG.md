@@ -1,3 +1,10 @@
+## [2.66.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.2...v2.66.3) (2025-09-23)
+
+
+### Bug Fixes
+
+* 🐛 update image captions in blog posts ([952ab1b](https://github.com/fairdataihub/fairdataihub.org/commit/952ab1b871661e4fa8870032159afa0ef4d0fc60))
+
 ## [2.66.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.1...v2.66.2) (2025-09-16)
 
 
