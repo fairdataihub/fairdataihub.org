@@ -40,5 +40,33 @@
     "external": false,
     "avatar": "/images/people/dorian-head.PNG",
     "social": "fairdataihub"
+  },
+  "AydanGasimova": {
+    "name": "Aydan Gasimova",
+    "href": "/team/#Aydan-Gasimova",
+    "external": false,
+    "avatar": "/images/people/aydan-head.jpg",
+    "social": "fairdataihub"
+  },
+  "XuebinDong": {
+    "name": "Xuebin Dong",
+    "href": "/team/#Xuebin-Dong",
+    "external": false,
+    "avatar": "/images/people/xuebin-head.jpg",
+    "social": "fairdataihub"
+  },
+  "NahidZeinali": {
+    "name": "Nahid Zeinali",
+    "href": "/team/#Nahid-Zeinali",
+    "external": false,
+    "avatar": "/images/people/nahid-head.jpg",
+    "social": "fairdataihub"
+  },
+  "JamesONeill": {
+    "name": "James ONeill",
+    "href": "/team/#James-ONeill",
+    "external": false,
+    "avatar": "/images/people/james-head.jpg",
+    "social": "fairdataihub"
   }
 }
