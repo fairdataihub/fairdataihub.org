@@ -1,3 +1,10 @@
+## [2.67.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.0...v2.67.1) (2025-09-23)
+
+
+### Bug Fixes
+
+* 🐛 update favicon spacing ([a01100f](https://github.com/fairdataihub/fairdataihub.org/commit/a01100f28d55f40083d55322115fc73597c486a3))
+
 # [2.67.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.3...v2.67.0) (2025-09-23)
 
 
