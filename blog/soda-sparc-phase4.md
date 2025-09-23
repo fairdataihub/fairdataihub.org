@@ -32,7 +32,7 @@ While supportive of this data-sharing initiative, SPARC-funded researchers expre
 <figure>
   <img
   src="https://fairdataihub.org/images/blog/certificate-mug-hackathon.png"
-  alt="The SPARC 2018 People's Choice Award certificate (left) along with the famous winning “trophy” (right).">
+  alt="The SPARC 2018 People's Choice Award certificate (left) along with the famous winning “trophy” (right)." width="70%">
   <figcaption>The SPARC 2018 People's Choice Award certificate (left) along with the famous winning “trophy” (right).</figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Our long-term goal is to reduce as much as possible the time and effort required
 <figure>
   <img
   src="https://fairdataihub.org/images/blog/soda-app-macos.png"
-  alt="Screenshot of the starting user interface of SODA.">
+  alt="Screenshot of the starting user interface of SODA." width="70%">
   <figcaption>Screenshot of the starting user interface of SODA.</figcaption>
 </figure>
 
