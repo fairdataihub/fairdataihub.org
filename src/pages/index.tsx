@@ -35,7 +35,7 @@ export default function Home() {
               <Link href="/contact-us" passHref className="hidden">
                 <button
                   type="button"
-                  className="my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all hover:border-light-accent hover:text-accent"
+                  className="hover:border-light-accent hover:text-accent my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all"
                   data-umami-event="Home page link"
                   data-umami-event-value="Contact us"
                 >
@@ -77,7 +77,7 @@ export default function Home() {
                 The FAIR Data wave
               </h2>
 
-              <div className="pt-8 font-asap">
+              <div className="font-asap pt-8">
                 <p className="mb-4 text-left text-xl">
                   The FAIR (Findable, Accessible, Interoperable, Reusable)
                   Principles are a set of instructions for sharing data and
@@ -129,7 +129,7 @@ export default function Home() {
                 Sharing is caring... but also daunting
               </h2>
 
-              <p className="mb-6 mt-8 w-full text-left font-asap text-xl">
+              <p className="font-asap mt-8 mb-6 w-full text-left text-xl">
                 Sharing FAIR data is not trivial as this involves formatting
                 data into specific file format, organizing data files
                 consistently, including metadata according to applicable
@@ -163,7 +163,7 @@ export default function Home() {
                 Simple guidelines and open-source tools for the win!
               </h2>
 
-              <div className="pt-8 font-asap">
+              <div className="font-asap pt-8">
                 <p className="mb-4 text-left text-xl">
                   We believe that researchers already have enough work and
                   responsibilities on their hands. Therefore, making data,
@@ -205,7 +205,7 @@ export default function Home() {
             Our solutions are making a difference worldwide
           </h2>
           <div className="mx-auto flex max-w-screen-md items-center justify-center">
-            <div className="pt-8 font-asap">
+            <div className="font-asap pt-8">
               <p className="mb-4 max-w-md text-center text-xl md:text-left">
                 Our solution are helping researchers all over the world with
                 managing, curating, and sharing their data, software, and other
@@ -236,7 +236,7 @@ export default function Home() {
                 A little bit about us
               </h2>
 
-              <p className="mb-6 mt-2 w-full text-left font-asap text-xl md:my-2">
+              <p className="font-asap mt-2 mb-6 w-full text-left text-xl md:my-2">
                 FAIR Data Innovations Hub is a division of the California
                 Medical Innovations Institute (CalMI<sup>2</sup>), a non profit
                 biomedical research organization located in San Diego,
@@ -281,7 +281,7 @@ export default function Home() {
                 We are making a difference
               </h2>
 
-              <div className="pt-8 font-asap">
+              <div className="font-asap pt-8">
                 <p className="mb-4 text-left text-xl">
                   Our work has led to peer-reviewed publications, development of
                   open-source software, establishment of new standards and
@@ -334,7 +334,7 @@ export default function Home() {
                 Let&apos;s get in touch
               </h2>
 
-              <p className="mb-6 mt-2 w-full text-left font-asap text-xl md:my-2">
+              <p className="font-asap mt-2 mb-6 w-full text-left text-xl md:my-2">
                 Need help with sharing data or research software? Want to
                 collaborate on a cool new project or grant proposal? Have
                 feedback or suggestions? Reach out to us!

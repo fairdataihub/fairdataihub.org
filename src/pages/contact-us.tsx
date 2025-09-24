@@ -33,8 +33,8 @@ export default function ContactUs() {
         </div>
 
         <section className="z-10 py-8">
-          <div className="container mx-auto w-screen max-w-screen-md rounded-lg bg-gray-50 px-10 pb-8 pt-12 shadow-lg">
-            <h2 className="pb-5 pt-3 text-center text-3xl font-semibold sm:text-4xl">
+          <div className="container mx-auto w-screen max-w-screen-md rounded-lg bg-gray-50 px-10 pt-12 pb-8 shadow-lg">
+            <h2 className="pt-3 pb-5 text-center text-3xl font-semibold sm:text-4xl">
               Let us know if you have any feedback or want to collaborate
             </h2>
 

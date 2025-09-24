@@ -29,24 +29,24 @@ export default function ProjectAbout({
         <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
           {title}
         </p>
-        <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
+        <p className="font-asap max-w-2xl text-xl text-black sm:text-xl lg:mx-auto">
           {description}
         </p>
       </div>
 
       <div className="mt-10">
-        <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+        <dl className="space-y-10 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-8 md:gap-y-10">
           {features.map((feature, index) => (
             <div key={index} className="relative">
               <dt>
-                <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
+                <div className="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white">
                   <Icon icon={feature.icon} width={24} height={24} />
                 </div>
                 <p className="ml-16 text-xl font-medium sm:text-lg">
                   {feature.title}
                 </p>
               </dt>
-              <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
+              <dd className="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0">
                 <div>
                   {feature.description}
                   {feature.link && (

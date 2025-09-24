@@ -86,7 +86,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
       />
 
       <Link href="/events" passHref>
-        <div className="text-url left-0 top-0 mx-4 my-4 cursor-pointer py-1 text-[14px] font-semibold hover:underline sm:absolute sm:text-base">
+        <div className="text-url top-0 left-0 mx-4 my-4 cursor-pointer py-1 text-[14px] font-semibold hover:underline sm:absolute sm:text-base">
           <div className="flex items-center justify-center">
             <Icon icon="eva:arrow-ios-back-fill" /> All Events
           </div>
@@ -111,7 +111,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               aria-label="Image author"
               target="_blank"
               rel="noopener"
-              className="absolute bottom-1 right-1 z-20 flex flex-row justify-center opacity-0 transition-all group-hover:opacity-100"
+              className="absolute right-1 bottom-1 z-20 flex flex-row justify-center opacity-0 transition-all group-hover:opacity-100"
             >
               <div className="glass-container flex items-center justify-center rounded-md px-1 py-[2px] text-slate-700 transition-all hover:text-black">
                 <Icon icon="ic:baseline-photo-camera-front" />
@@ -123,7 +123,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
         </div>
         <div className=" ">
           <Link href={`/category/${category}`} passHref>
-            <h3 className="mb-2 cursor-pointer text-lg font-bold text-accent hover:underline">
+            <h3 className="text-accent mb-2 cursor-pointer text-lg font-bold hover:underline">
               {category}
             </h3>
           </Link>
@@ -159,7 +159,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={`http://twitter.com/share?text=I just read this article and think y'all need to take a look at this&url=https://fairdataihub.org/events/${slug}&hashtags=FAIRData,OpenScience,OpenSource`}
               target="_blank"
               rel="noopener"
-              className="mx-2 text-slate-500 transition-all hover:text-accent"
+              className="hover:text-accent mx-2 text-slate-500 transition-all"
               data-umami-event="Share article"
               data-umami-event-type="Twitter"
               aria-label="Share on Twitter"
@@ -170,7 +170,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={`https://www.facebook.com/sharer/sharer.php?u=https://fairdataihub.org/events/${slug}"`}
               target="_blank"
               rel="noopener"
-              className="mx-2 text-slate-500 transition-all hover:text-accent"
+              className="hover:text-accent mx-2 text-slate-500 transition-all"
               data-umami-event="Share article"
               data-umami-event-type="Facebook"
               aria-label="Share on Facebook"
@@ -181,7 +181,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               href={`https://www.linkedin.com/sharing/share-offsite/?url=https://fairdataihub.org/events/${slug}`}
               target="_blank"
               rel="noopener"
-              className="mx-2 text-slate-500 transition-all hover:text-accent"
+              className="hover:text-accent mx-2 text-slate-500 transition-all"
               data-umami-event="Share article"
               data-umami-event-type="LinkedIn"
               aria-label="Share on LinkedIn"
@@ -194,7 +194,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             </a>
             <div
               onClick={copyLinkToClipboard}
-              className="mx-2 cursor-pointer text-slate-500 transition-all hover:text-accent"
+              className="hover:text-accent mx-2 cursor-pointer text-slate-500 transition-all"
               data-umami-event="Share article"
               data-umami-event-type="Copy URL"
               aria-label="Copy to clipboard"
@@ -203,7 +203,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             </div>
           </div>
 
-          <div className="mb-10 mt-10">
+          <div className="mt-10 mb-10">
             <Giscus
               key={slug}
               id="comments"

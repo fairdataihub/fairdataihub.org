@@ -53,12 +53,12 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
           <div className="w-full py-2">
             <div className="flex w-full flex-col justify-between sm:flex-row">
               <div className="mb-10 flex-1 pr-10 sm:mb-5">
-                <p className="w-full font-asap text-lg text-black">
+                <p className="font-asap w-full text-lg text-black">
                   {description}
                 </p>
 
                 {githubBadges && (
-                  <div className="my-3 flex text-accent">
+                  <div className="text-accent my-3 flex">
                     {githubBadges.map((badge) => (
                       <a
                         key={badge.type}
@@ -137,7 +137,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                             }}
                           />
 
-                          <p className="ml-2 mt-3 text-center font-asap text-lg font-normal">
+                          <p className="font-asap mt-3 ml-2 text-center text-lg font-normal">
                             {funder.name}
                           </p>
                         </div>

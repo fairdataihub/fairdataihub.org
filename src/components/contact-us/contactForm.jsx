@@ -94,7 +94,7 @@ const ContactForm = () => (
             <Field
               type="text"
               name="name"
-              className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+              className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
             />
 
             <ErrorMessage
@@ -112,7 +112,7 @@ const ContactForm = () => (
             <Field
               type="email"
               name="email"
-              className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+              className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
             />
 
             <ErrorMessage
@@ -130,7 +130,7 @@ const ContactForm = () => (
             <Field
               type="text"
               name="institution"
-              className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+              className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
             />
 
             <ErrorMessage
@@ -149,7 +149,7 @@ const ContactForm = () => (
               as="textarea"
               name="message"
               rows="4"
-              className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+              className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
             />
 
             <ErrorMessage
@@ -164,7 +164,7 @@ const ContactForm = () => (
               type="button"
               onClick={handleReset}
               disabled={!dirty || isSubmitting}
-              className="hidden cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+              className="hidden cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:ring-pink-600 focus:outline-none"
             >
               Reset
             </button>
@@ -172,7 +172,7 @@ const ContactForm = () => (
             <button
               type="submit"
               disabled={isSubmitting}
-              className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:outline-none focus:ring-pink-600"
+              className="cursor-pointer rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:ring-pink-600 focus:outline-none"
               data-umami-event="Contact Us Submit button"
             >
               Submit
