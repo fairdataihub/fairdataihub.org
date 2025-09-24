@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1343)"><rect width="1000" height="1000" fill="#ffffff"></rect><g transform="matrix(3.03905181583346,0,0,3.03905181583346,149.32381097097704,100)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="230.78" height="263.24"><svg id="Calque_2" data-name="Calque 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.78 263.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d042a7;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-5 {
+        stroke: #000;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 3.81px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-5 {
+        stroke-width: 4.44px;
+      }
+
+      .cls-4 {
+        stroke: #d042a7;
+        stroke-width: 15.54px;
+      }
+
+      .cls-4, .cls-5 {
+        fill: none;
+      }
+    </style>
+  <clipPath id="SvgjsClipPath1343"><rect width="1000" height="1000" x="0" y="0" rx="200" ry="200"></rect></clipPath></defs>
+  <g id="Calque_1-2" data-name="Calque 1">
+    <g>
+      <g>
+        <polyline class="cls-2" points="168.5 196.26 168.5 237.27 142.56 261.02 90.56 261.02 63.39 237.27 63.39 196.26"></polyline>
+        <polygon class="cls-2" points="168.53 14.19 63.36 14.19 10.78 105.26 63.36 196.33 168.53 196.33 221.11 105.26 168.53 14.19"></polygon>
+        <line class="cls-5" x1="63.39" y1="237.27" x2="168.5" y2="237.27"></line>
+        <line class="cls-5" x1="115.99" y1="105.18" x2="168.56" y2="14.11"></line>
+        <line class="cls-5" x1="221.14" y1="105.18" x2="115.99" y2="105.18"></line>
+        <line class="cls-5" x1="168.56" y1="196.26" x2="63.36" y2="14.19"></line>
+        <line class="cls-5" x1="115.99" y1="105.18" x2="63.39" y2="196.26"></line>
+      </g>
+      <g>
+        <polyline class="cls-4" points="168.56 14.11 63.39 14.11 10.81 105.18 63.39 196.26"></polyline>
+        <line class="cls-4" x1="115.94" y1="105.26" x2="10.8" y2="105.18"></line>
+      </g>
+      <circle class="cls-1" cx="63.39" cy="14.11" r="12.21"></circle>
+      <circle class="cls-1" cx="63.39" cy="196.26" r="12.21"></circle>
+      <circle class="cls-3" cx="168.5" cy="196.26" r="12.21"></circle>
+      <circle class="cls-1" cx="168.5" cy="14.11" r="12.21"></circle>
+      <circle class="cls-3" cx="216.67" cy="105.18" r="12.21"></circle>
+      <circle class="cls-1" cx="14.11" cy="105.18" r="12.21"></circle>
+      <circle class="cls-1" cx="115.94" cy="105.18" r="12.21"></circle>
+    </g>
+  </g>
+</svg></svg></g></g></svg>

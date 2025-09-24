@@ -1,3 +1,24 @@
+## [2.67.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.0...v2.67.1) (2025-09-23)
+
+
+### Bug Fixes
+
+* 🐛 update favicon spacing ([a01100f](https://github.com/fairdataihub/fairdataihub.org/commit/a01100f28d55f40083d55322115fc73597c486a3))
+
+# [2.67.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.3...v2.67.0) (2025-09-23)
+
+
+### Features
+
+* ✨ add author links to blog posts ([dcc47f5](https://github.com/fairdataihub/fairdataihub.org/commit/dcc47f5ad1f7d9533b2538954c98a8a3140f96a9))
+
+## [2.66.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.2...v2.66.3) (2025-09-23)
+
+
+### Bug Fixes
+
+* 🐛 update image captions in blog posts ([952ab1b](https://github.com/fairdataihub/fairdataihub.org/commit/952ab1b871661e4fa8870032159afa0ef4d0fc60))
+
 ## [2.66.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.66.1...v2.66.2) (2025-09-16)
 
 

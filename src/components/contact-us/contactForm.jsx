@@ -90,11 +90,13 @@ const ContactForm = () => (
             <label htmlFor="name" className="pb-2 text-base font-medium">
               Your Name
             </label>
+
             <Field
               type="text"
               name="name"
               className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
             />
+
             <ErrorMessage
               name="name"
               component="span"
@@ -106,11 +108,13 @@ const ContactForm = () => (
             <label htmlFor="email" className="pb-2 text-base font-medium">
               Your Email Address
             </label>
+
             <Field
               type="email"
               name="email"
               className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
             />
+
             <ErrorMessage
               name="email"
               component="span"
@@ -122,11 +126,13 @@ const ContactForm = () => (
             <label htmlFor="institution" className="pb-2 text-base font-medium">
               Your Company or Institution
             </label>
+
             <Field
               type="text"
               name="institution"
               className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
             />
+
             <ErrorMessage
               name="institution"
               component="span"
@@ -138,12 +144,14 @@ const ContactForm = () => (
             <label htmlFor="message" className="pb-2 text-base font-medium">
               Tell us more about what you have in mind
             </label>
+
             <Field
               as="textarea"
               name="message"
               rows="4"
               className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
             />
+
             <ErrorMessage
               name="message"
               component="span"
@@ -160,6 +168,7 @@ const ContactForm = () => (
             >
               Reset
             </button>
+
             <button
               type="submit"
               disabled={isSubmitting}
@@ -172,6 +181,7 @@ const ContactForm = () => (
         </Form>
       )}
     </Formik>
+
     <ToastContainer
       position="bottom-right"
       autoClose={5000}

@@ -144,34 +144,44 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
           <h1 className="text-5xl font-extrabold text-slate-700">{title}</h1>
 
           <ul className="flex flex-wrap pb-3 pt-6 text-sm leading-6">
-            {authors.map((author) => (
-              <li key={author} className="my-2 mr-5 flex items-center">
-                <Image
-                  src={authorsJSON[author].avatar}
-                  alt="profile picture"
-                  width={50}
-                  height={50}
-                  priority={true}
-                  className="flex items-center rounded-full"
-                />
+            {authors.map((author) => {
+              const a = authorsJSON[author];
 
-                <div className="ml-3 flex flex-col justify-center">
-                  <span className="text-base font-medium">
-                    {authorsJSON[author].name}
-                  </span>
-                  <a
-                    href={`https://twitter.com/` + authorsJSON[author].social}
-                    className="text-sm font-medium text-accent"
-                    data-umami-event="Blog Author Social Media"
-                    data-umami-eventvalue={authorsJSON[author].social}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    @{authorsJSON[author].social}
-                  </a>
-                </div>
-              </li>
-            ))}
+              return (
+                <li key={author} className="my-2 mr-5 flex items-center">
+                  <Link href={`/authors/${author}`}>
+                    <Image
+                      src={a.avatar}
+                      alt={`${a.name} profile picture`}
+                      width={50}
+                      height={50}
+                      priority
+                      className="shrink-0 rounded-full"
+                    />
+                  </Link>
+
+                  <div className="ml-3 flex min-w-0 flex-col">
+                    <Link
+                      href={`/authors/${author}`}
+                      className="text-base font-medium"
+                    >
+                      {a.name}
+                    </Link>
+
+                    <a
+                      href={`https://twitter.com/${a.social}`}
+                      className="w-max text-sm font-medium text-accent"
+                      data-umami-event="Blog Author Social Media"
+                      data-umami-eventvalue={a.social}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      @{a.social}
+                    </a>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
 
           <hr className="my-2 border-slate-300" />
