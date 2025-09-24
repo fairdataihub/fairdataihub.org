@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="min-w-screen sticky top-0 z-30 shadow-lg print:hidden">
+    <nav className="sticky top-0 z-30 min-w-screen shadow-lg print:hidden">
       <div className="flex flex-row items-center justify-between bg-gray-50 px-5 py-2">
         <Link href="/" aria-label="Homepage" passHref>
           <div className="flex flex-row">
@@ -305,25 +305,25 @@ export default function Navbar() {
             onClick={toggleMobileMenu}
           >
             <span className="sr-only">Open main menu</span>
-            <div className="absolute left-1/2 top-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform">
+            <div className="absolute top-1/2 left-1/2 block w-5 -translate-x-1/2 -translate-y-1/2 transform">
               <span
                 aria-hidden="true"
                 className={
-                  `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
+                  `bg-light-accent absolute block h-[3px] w-6 transform transition duration-200 ease-in-out ` +
                   (isOpen ? `rotate-45` : `-translate-y-1.5`)
                 }
               ></span>
               <span
                 aria-hidden="true"
                 className={
-                  `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
+                  `bg-light-accent absolute block h-[3px] w-6 transform transition duration-200 ease-in-out ` +
                   (isOpen ? `opacity-0` : ` `)
                 }
               ></span>
               <span
                 aria-hidden="true"
                 className={
-                  `absolute block h-[3px] w-6 transform bg-light-accent transition duration-200 ease-in-out ` +
+                  `bg-light-accent absolute block h-[3px] w-6 transform transition duration-200 ease-in-out ` +
                   (isOpen ? `-rotate-45` : `translate-y-1.5`)
                 }
               ></span>
@@ -333,11 +333,11 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         {isOpen && (
-          <div className="fixed left-0 top-16 z-10 w-screen bg-white shadow-sm">
-            <div className="pb-3 pt-2">
+          <div className="fixed top-16 left-0 z-10 w-screen bg-white shadow-xs">
+            <div className="pt-2 pb-3">
               <Link href="/projects" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="Our Projects"
@@ -349,7 +349,7 @@ export default function Navbar() {
 
               <Link href="/team" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="Team"
@@ -361,7 +361,7 @@ export default function Navbar() {
 
               <Link href="/impact" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="Impact"
@@ -373,7 +373,7 @@ export default function Navbar() {
 
               <Link href="/gallery" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="Gallery"
@@ -385,7 +385,7 @@ export default function Navbar() {
 
               <Link href="/blog" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="Blog"
@@ -397,7 +397,7 @@ export default function Navbar() {
 
               <Link href="/events" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="Events"
@@ -409,7 +409,7 @@ export default function Navbar() {
 
               <Link href="/sodaforsparc" passHref className="hidden">
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="SODA for SPARC"
@@ -421,7 +421,7 @@ export default function Navbar() {
 
               <Link href="/aireadi" passHref className="hidden">
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="AI-READI"
@@ -433,7 +433,7 @@ export default function Navbar() {
 
               <Link href="/fairshare" passHref className="hidden">
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="FAIRshare"
@@ -445,7 +445,7 @@ export default function Navbar() {
 
               <Link href="/knowmore" passHref className="hidden">
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="KnowMore"
@@ -457,7 +457,7 @@ export default function Navbar() {
 
               <Link href="/sparclink" passHref className="hidden">
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="SPARClink"
@@ -469,7 +469,7 @@ export default function Navbar() {
 
               <Link href="/aqua" passHref className="hidden">
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="AQUA"
@@ -481,7 +481,7 @@ export default function Navbar() {
 
               <Link href="/contact-us" passHref>
                 <div
-                  className="mobile-menu z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:bg-light-accent hover:text-white"
+                  className="mobile-menu hover:bg-light-accent z-20 block cursor-pointer rounded-md px-3 py-2 text-center text-base font-medium text-black transition-all hover:text-white"
                   data-umami-event="Navigation link"
                   data-umami-event-location="Header"
                   data-umami-event-value="Contact Us"
