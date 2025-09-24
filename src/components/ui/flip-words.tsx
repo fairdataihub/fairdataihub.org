@@ -1,94 +1,152 @@
 'use client';
-import { AnimatePresence, motion } from 'motion/react';
-import React, { useCallback, useEffect, useState } from 'react';
+
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from 'react';
 
 import { cn } from '@/lib/utils';
+
+type FlipWordsProps = {
+  words: string[];
+  duration?: number;
+  className?: string;
+  intensity?: 'subtle' | 'minimal' | 'none';
+};
 
 export const FlipWords = ({
   words,
   duration = 3000,
   className,
-}: {
-  words: string[];
-  duration?: number;
-  className?: string;
-}) => {
-  const [currentWord, setCurrentWord] = useState(words[0]);
-  const [isAnimating, setIsAnimating] = useState<boolean>(false);
+  intensity = `subtle`,
+}: FlipWordsProps) => {
+  const prefersReducedMotion = useReducedMotion();
+  const [current, setCurrent] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const timerRef = useRef<number | null>(null);
 
-  // thanks for the fix Julian - https://github.com/Julian-AT
+  const currentWord = words[current];
+
   const startAnimation = useCallback(() => {
-    const word = words[words.indexOf(currentWord) + 1] || words[0];
-    setCurrentWord(word);
+    setCurrent((i) => (i + 1) % words.length);
     setIsAnimating(true);
-  }, [currentWord, words]);
+  }, [words.length]);
 
+  // schedule flips, clean up on unmount/change
   useEffect(() => {
     if (!isAnimating) {
-      setTimeout(() => {
-        startAnimation();
-      }, duration);
+      timerRef.current = window.setTimeout(startAnimation, duration);
     }
+    return () => {
+      if (timerRef.current) {
+        window.clearTimeout(timerRef.current);
+        timerRef.current = null;
+      }
+    };
   }, [isAnimating, duration, startAnimation]);
+
+  // gentler variants
+  const variants = useMemo(() => {
+    if (prefersReducedMotion || intensity === `none`) {
+      return {
+        container: {
+          initial: { opacity: 1 },
+          animate: { opacity: 1 },
+          exit: { opacity: 1 },
+          transition: { duration: 0 },
+        },
+        word: {
+          initial: { opacity: 1, y: 0, filter: `blur(0px)` },
+          animate: { opacity: 1, y: 0, filter: `blur(0px)` },
+          exit: { opacity: 1, y: 0, filter: `blur(0px)` },
+          transition: { duration: 0 },
+        },
+        letter: {
+          initial: { opacity: 1, y: 0, filter: `blur(0px)` },
+          animate: { opacity: 1, y: 0, filter: `blur(0px)` },
+        },
+        wordDelay: 0,
+        letterDelay: 0,
+      };
+    }
+
+    const minimal = intensity === `minimal`;
+
+    return {
+      container: {
+        initial: { opacity: 0, y: 6 },
+        animate: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: -6 },
+        transition: {
+          type: `tween`,
+          ease: `easeOut`,
+          duration: minimal ? 0.25 : 0.35,
+        },
+      },
+      word: {
+        initial: { opacity: 0, y: 6, filter: `blur(0px)` },
+        animate: { opacity: 1, y: 0, filter: `blur(0px)` },
+        exit: { opacity: 0, y: -6, filter: `blur(2px)` },
+        transition: {
+          type: `tween`,
+          ease: `easeOut`,
+          duration: minimal ? 0.25 : 0.35,
+        },
+      },
+      letter: {
+        initial: { opacity: 0, y: 4, filter: `blur(2px)` },
+        animate: { opacity: 1, y: 0, filter: `blur(0px)` },
+      },
+      wordDelay: minimal ? 0.12 : 0.18,
+      letterDelay: minimal ? 0.02 : 0.035,
+    };
+  }, [prefersReducedMotion, intensity]);
 
   return (
     <AnimatePresence
-      onExitComplete={() => {
-        setIsAnimating(false);
-      }}
+      mode="wait" // ensures exit finishes before the next enters (prevents visual clash)
+      onExitComplete={() => setIsAnimating(false)}
     >
       <motion.div
-        initial={{
-          opacity: 0,
-          y: 10,
-        }}
-        animate={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          type: `spring`,
-          stiffness: 100,
-          damping: 10,
-        }}
-        exit={{
-          opacity: 0,
-          y: -40,
-          x: 40,
-          filter: `blur(8px)`,
-          scale: 2,
-          position: `absolute`,
-        }}
+        key={currentWord}
+        initial={variants.container.initial}
+        animate={variants.container.animate}
+        exit={variants.container.exit}
+        transition={variants.container.transition}
         className={cn(
-          `relative z-10 -mr-2 inline-block pb-4 text-left text-[#D141A6] dark:text-neutral-100`,
+          `relative z-10 -mr-2 inline-block pb-2 text-left text-[#D141A6] dark:text-neutral-100`,
           className,
         )}
-        key={currentWord}
+        aria-live="polite"
       >
-        {/* edit suggested by Sajal: https://x.com/DewanganSajal */}
-        {currentWord.split(` `).map((word, wordIndex) => (
+        {currentWord.split(` `).map((w, wi) => (
           <motion.span
-            key={word + wordIndex}
-            initial={{ opacity: 0, y: 10, filter: `blur(8px)` }}
-            animate={{ opacity: 1, y: 0, filter: `blur(0px)` }}
+            key={`${w}-${wi}`}
+            initial={variants.word.initial}
+            animate={variants.word.animate}
+            exit={variants.word.exit}
             transition={{
-              delay: wordIndex * 0.3,
-              duration: 0.3,
+              ...variants.word.transition,
+              delay: wi * variants.wordDelay,
             }}
             className="inline-block whitespace-nowrap"
           >
-            {word.split(``).map((letter, letterIndex) => (
+            {w.split(``).map((ch, ci) => (
               <motion.span
-                key={word + letterIndex}
-                initial={{ opacity: 0, y: 10, filter: `blur(8px)` }}
-                animate={{ opacity: 1, y: 0, filter: `blur(0px)` }}
+                key={`${w}-${ci}`}
+                initial={variants.letter.initial}
+                animate={variants.letter.animate}
                 transition={{
-                  delay: wordIndex * 0.3 + letterIndex * 0.05,
-                  duration: 0.2,
+                  duration: 0.18,
+                  delay: wi * variants.wordDelay + ci * variants.letterDelay,
                 }}
                 className="inline-block"
               >
-                {letter}
+                {ch}
               </motion.span>
             ))}
             <span className="inline-block">&nbsp;</span>
