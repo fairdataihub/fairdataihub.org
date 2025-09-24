@@ -46,7 +46,7 @@ export default function Home() {
 
             <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-5/12 lg:p-2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-full max-w-[400px] rounded-lg"
                 src="/images/home/hero.svg"
                 alt="office content 1"
               />
@@ -104,7 +104,7 @@ export default function Home() {
 
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-full max-w-[400px] rounded-lg"
                 src="/images/home/collaboration.svg"
                 alt="office content 1"
               />
@@ -118,7 +118,7 @@ export default function Home() {
           <div className="items-center justify-center md:flex">
             <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-full max-w-[400px] rounded-lg"
                 src="/images/home/difficult.svg"
                 alt="office content 1"
               />
@@ -190,7 +190,7 @@ export default function Home() {
 
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-full max-w-[400px] rounded-lg"
                 src="/images/home/high-five.svg"
                 alt="office content 1"
               />
@@ -225,7 +225,7 @@ export default function Home() {
           <div className="items-center justify-center md:flex">
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-full max-w-[400px] rounded-lg"
                 src="/images/home/team.svg"
                 alt="office content 1"
               />
@@ -305,7 +305,7 @@ export default function Home() {
 
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-full max-w-[400px] rounded-lg"
                 src="/images/home/impact.svg"
                 alt="office content 1"
               />
@@ -323,7 +323,7 @@ export default function Home() {
           <div className="items-center justify-center md:flex">
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-full max-w-[400px] rounded-lg"
                 src="/images/home/contact.svg"
                 alt="office content 1"
               />

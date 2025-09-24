@@ -37,7 +37,7 @@ const Badges: React.FC<{ tags: string[] }> = ({ tags }) => {
 };
 
 // Shared card design
-const cardBase = `h-full flex flex-col justify-between rounded-2xl border border-pink-300/70 bg-white/90 shadow-xs ring-1 ring-transparent hover:border-pink-400 hover:shadow-lg hover:ring-pink-300/40 dark:border-pink-400/40 dark:bg-neutral-900/70`;
+const cardBase = `h-full flex flex-col justify-between rounded-2xl border border-red-300/70 bg-white/90 shadow-xs ring-1 ring-transparent hover:border-red-400 hover:shadow-lg hover:ring-red-300/40 dark:border-red-400/40 dark:bg-neutral-900/70`;
 
 // Type to make the size explicit, helps with padding layout to prevent overflow
 type ItemSize = 'wide' | 'narrow';

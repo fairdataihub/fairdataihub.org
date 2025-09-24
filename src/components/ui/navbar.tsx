@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-30 min-w-screen shadow-lg print:hidden">
+    <nav className="sticky top-0 z-30 min-w-screen px-2 shadow-lg print:hidden">
       <div className="flex flex-row items-center justify-between bg-gray-50 px-5 py-2">
         <Link href="/" aria-label="Homepage" passHref>
           <div className="flex flex-row">
@@ -161,7 +161,7 @@ export default function Navbar() {
                       <div
                         id="aireadi-page"
                         className={
-                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          `nav-item hover-underline-animation mt-2 w-full max-w-[200px]` +
                           (router.pathname === `/aireadi`
                             ? ` router-link-active`
                             : ` `)
@@ -178,7 +178,7 @@ export default function Navbar() {
                       <div
                         id="eyeact-page"
                         className={
-                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          `nav-item hover-underline-animation mt-2 w-full max-w-[200px]` +
                           (router.pathname === `/eyeact`
                             ? ` router-link-active`
                             : ` `)
@@ -195,7 +195,7 @@ export default function Navbar() {
                       <div
                         id="codefair-page"
                         className={
-                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          `nav-item hover-underline-animation mt-2 w-full max-w-[200px]` +
                           (router.pathname === `/codefair`
                             ? ` router-link-active`
                             : ` `)
@@ -212,7 +212,7 @@ export default function Navbar() {
                       <div
                         id="fairshare-page"
                         className={
-                          `nav-item hover-underline-animation mt-2 w-[200px]` +
+                          `nav-item hover-underline-animation mt-2 w-full max-w-[200px]` +
                           (router.pathname === `/fairshare`
                             ? ` router-link-active`
                             : ` `)

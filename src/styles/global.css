@@ -5,6 +5,8 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-inter: 'Inter', sans-serif;
   --font-lato: 'Lato', sans-serif;
@@ -92,8 +94,13 @@
     --ring: 212.7 26.8% 83.9%;
   }
 
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     @apply font-inter text-base;
+    overflow-x: hidden;
   }
 
   .required-field::after {

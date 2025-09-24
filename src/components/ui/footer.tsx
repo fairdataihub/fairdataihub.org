@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="mb-5 flex w-full flex-col md:mb-0 md:w-4/12">
             <div className="py-3">
               <Link href="/" aria-label="Homepage" passHref>
-                <div className="flex w-[20rem] flex-row gap-4">
+                <div className="flex w-full max-w-[20rem] flex-row gap-4">
                   <Image
                     src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/05_Main_Logo_W_Stacked_Text/Main-Logo-Black-Stroke-Transparent.svg"
                     width={400}
