@@ -361,8 +361,10 @@
 *,
 ::before,
 ::after {
+  /* removed to fix borders on bento grid 
   border-width: 0;
   border-style: solid;
+  */
 }
 
 /* Chrome, Edge, and Safari */
