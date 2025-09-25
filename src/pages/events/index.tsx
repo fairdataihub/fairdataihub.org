@@ -59,7 +59,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
             key={title}
             className="mb-2 flex w-full flex-col md:flex-row"
           >
-            <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:px-7 md:py-5">
+            <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-xs md:px-7 md:py-5">
               <div className="mb-1 flex flex-row items-center justify-between md:hidden">
                 <div className="my-2 flex items-center space-x-2">
                   <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">
@@ -78,7 +78,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
               <hr className="my-1 border-dashed border-slate-200 md:hidden" />
 
               <Link href={`/events/${slug}`} passHref>
-                <h2 className="text-url mb-1 mt-4 cursor-pointer text-2xl font-semibold hover:underline md:mt-0 md:text-xl">
+                <h2 className="text-url mt-4 mb-1 cursor-pointer text-2xl font-semibold hover:underline md:mt-0 md:text-xl">
                   {title}
                 </h2>
               </Link>
@@ -99,7 +99,7 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
                 </div>
               </div>
 
-              <p className="mb-3 mt-2 border-t border-slate-200 pt-2">
+              <p className="mt-2 mb-3 border-t border-slate-200 pt-2">
                 {subtitle}
               </p>
 

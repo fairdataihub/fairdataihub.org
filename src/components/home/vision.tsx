@@ -7,17 +7,17 @@ export default function Vision() {
         <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
           Our Vision
         </p>
-        <p className="max-w-2xl font-asap text-xl text-black sm:text-xl lg:mx-auto">
+        <p className="font-asap max-w-2xl text-xl text-black sm:text-xl lg:mx-auto">
           Only with tools that support and assist researchers we will achieve a
           widespread adoption of FAIR data practices.
         </p>
       </div>
 
       <div className="mt-10">
-        <dl className="space-y-10 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10 md:space-y-0">
+        <dl className="space-y-10 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-8 md:gap-y-10">
           <div className="relative">
             <dt>
-              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
+              <div className="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white">
                 <Icon
                   icon="material-symbols:linear-scale"
                   width={24}
@@ -28,7 +28,7 @@ export default function Vision() {
                 What are the FAIR Data Principles?
               </p>
             </dt>
-            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0">
               <div>
                 The FAIR Data Principles are a set of guidelines for curating
                 and sharing research data such that they are optimaly reusable
@@ -64,7 +64,7 @@ export default function Vision() {
           </div>
           <div className="relative">
             <dt>
-              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
+              <div className="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white">
                 <Icon
                   icon="fluent:important-12-filled"
                   width={24}
@@ -75,7 +75,7 @@ export default function Vision() {
                 Why are FAIR data practices important?
               </p>
             </dt>
-            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0">
               <div>
                 FAIR data practices are crucial for ensuring reproducibility of
                 scientific findings, promoting reuse of data, and enabling
@@ -86,14 +86,14 @@ export default function Vision() {
           </div>
           <div className="relative">
             <dt>
-              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
+              <div className="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white">
                 <Icon icon="mdi:account-hard-hat" width={24} height={24} />
               </div>
               <p className="ml-16 text-xl font-medium sm:text-lg">
                 What are the challenges?
               </p>
             </dt>
-            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0">
               <div>
                 Despite effort from funding agencies, industry, and researchers,
                 FAIR data practices are not widely adopted due to their complex
@@ -104,7 +104,7 @@ export default function Vision() {
           </div>
           <div className="relative">
             <dt>
-              <div className="absolute flex h-12 w-12 items-center justify-center rounded-md bg-light-vision text-white">
+              <div className="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white">
                 <Icon
                   icon="material-symbols:auto-mode"
                   width={24}
@@ -115,7 +115,7 @@ export default function Vision() {
                 What do we do?
               </p>
             </dt>
-            <dd className="ml-16 mt-2 font-asap text-lg text-black sm:text-base md:mt-0">
+            <dd className="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0">
               <div>
                 We develop open source tools that enhance and streamline FAIR
                 data practices for biomedical researchers through automation and

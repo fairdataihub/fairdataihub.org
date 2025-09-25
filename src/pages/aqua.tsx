@@ -86,7 +86,7 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
               Technology Stack
             </h1>
 
-            <p className="mb-10 w-full font-asap text-lg text-black">
+            <p className="font-asap mb-10 w-full text-lg text-black">
               AQUA utilized the main tool groups to develop the User Back end
               former includes the HTML, JS trio, VueJS, and NuxtJS. The latter
               is implemented with Python, Docker, SciGraph, and SQLite.

@@ -11,7 +11,7 @@ const InternshipPositions = () => {
             Internship Opportunities
           </h2>
 
-          <p className="mb-4 mt-2 text-left font-asap text-lg">
+          <p className="font-asap mt-2 mb-4 text-left text-lg">
             We are always eager to welcome fresh perspectives. If you&apos;re
             interested in interning with us, whether on-site or remotely, please
             take a moment to complete the form below. By joining our team,

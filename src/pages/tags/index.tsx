@@ -67,10 +67,10 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
                     <Link href={`/tags/${tag}`} key={tag} passHref>
                       <div
                         key={tag}
-                        className="group mr-2 flex cursor-pointer items-center rounded-lg border border-slate-300 px-2 py-1 text-sm transition-all hover:border-light-accent hover:text-accent"
+                        className="group hover:border-light-accent hover:text-accent mr-2 flex cursor-pointer items-center rounded-lg border border-slate-300 px-2 py-1 text-sm transition-all"
                       >
                         <div className="mr-2 font-medium">{tag}</div>
-                        <div className="flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 p-1 transition-all group-hover:bg-light-accent/20">
+                        <div className="group-hover:bg-light-accent/20 flex h-6 w-6 items-center justify-center rounded-full bg-slate-200 p-1 transition-all">
                           {count}
                         </div>
                       </div>
@@ -78,7 +78,7 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
                   );
                 })}
               </div>
-              <hr className="mb-2 mt-8 border-slate-200" />
+              <hr className="mt-8 mb-2 border-slate-200" />
             </div>
           );
         })}

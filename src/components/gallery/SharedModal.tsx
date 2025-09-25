@@ -83,7 +83,7 @@ export default function SharedModal({
 
           {loaded && (
             <div className="pointer-events-none absolute inset-x-0 top-[80px] z-40 flex justify-center px-4">
-              <div className="bg-black/55 max-w-[80ch] rounded-full px-4 py-2 text-white shadow-lg backdrop-blur">
+              <div className="max-w-[80ch] rounded-full bg-black/55 px-4 py-2 text-white shadow-lg backdrop-blur">
                 <span className="text-xs opacity-80 sm:text-sm">
                   {currentImage?.date || ``}
                 </span>
@@ -106,7 +106,7 @@ export default function SharedModal({
               <>
                 {index > 0 && (
                   <button
-                    className="pointer-events-auto absolute left-3 top-[calc(50%-16px)] rounded-full bg-black/50 p-3 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white focus:outline-none"
+                    className="pointer-events-auto absolute top-[calc(50%-16px)] left-3 rounded-full bg-black/50 p-3 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white focus:outline-none"
                     style={{ transform: `translate3d(0, 0, 0)` }}
                     onClick={() => changePhotoId(index - 1)}
                   >
@@ -115,7 +115,7 @@ export default function SharedModal({
                 )}
                 {images && index + 1 < images.length && (
                   <button
-                    className="pointer-events-auto absolute right-3 top-[calc(50%-16px)] rounded-full bg-black/50 p-3 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white focus:outline-none"
+                    className="pointer-events-auto absolute top-[calc(50%-16px)] right-3 rounded-full bg-black/50 p-3 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white focus:outline-none"
                     style={{ transform: `translate3d(0, 0, 0)` }}
                     onClick={() => changePhotoId(index + 1)}
                   >
@@ -125,7 +125,7 @@ export default function SharedModal({
               </>
             )}
 
-            <div className="pointer-events-auto absolute right-0 top-[80px] flex items-center gap-2 p-3 text-white">
+            <div className="pointer-events-auto absolute top-[80px] right-0 flex items-center gap-2 p-3 text-white">
               {
                 <a
                   href={mainUrl}
@@ -146,7 +146,7 @@ export default function SharedModal({
               </button>
             </div>
 
-            <div className="pointer-events-auto absolute left-0 top-[80px] flex items-center gap-2 p-3 text-white">
+            <div className="pointer-events-auto absolute top-[80px] left-0 flex items-center gap-2 p-3 text-white">
               <button
                 onClick={() => closeModal()}
                 className="rounded-full bg-black/50 p-2 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white"
@@ -165,7 +165,7 @@ export default function SharedModal({
           <div className="fixed inset-x-0 bottom-0 z-40 overflow-hidden bg-gradient-to-b from-black/0 to-black/60">
             <motion.div
               initial={false}
-              className="mx-auto mb-6 mt-6 flex aspect-[3/2] h-14"
+              className="mx-auto mt-6 mb-6 flex aspect-[3/2] h-14"
             >
               <AnimatePresence initial={false}>
                 {filteredImages?.map(({ folder, name, id }) => {
@@ -186,7 +186,7 @@ export default function SharedModal({
                       onClick={() => changePhotoId(id)}
                       className={`${
                         id === index
-                          ? `z-20 rounded-md shadow shadow-black/50`
+                          ? `z-20 rounded-md shadow-sm shadow-black/50`
                           : `z-10`
                       } ${id === 0 ? `rounded-l-md` : ``} ${
                         id === images.length - 1 ? `rounded-r-md` : ``
