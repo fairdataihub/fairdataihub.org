@@ -37,7 +37,7 @@ const Badges: React.FC<{ tags: string[] }> = ({ tags }) => {
 };
 
 // Shared card design
-const cardBase = `h-full flex flex-col justify-between rounded-2xl border border-red-300/70 bg-white/90 shadow-xs ring-1 ring-transparent hover:border-red-400 hover:shadow-lg hover:ring-red-300/40 dark:border-red-400/40 dark:bg-neutral-900/70`;
+const cardBase = `h-full flex flex-col justify-between rounded-2xl border border-red-300/70 bg-white/90 shadow-xs ring-1 ring-transparent hover:shadow-lg hover:ring-red-300/40 dark:border-red-400/40 dark:bg-neutral-900/70`;
 
 // Type to make the size explicit, helps with padding layout to prevent overflow
 type ItemSize = 'wide' | 'narrow';
@@ -170,8 +170,8 @@ export default function BentoProjects() {
           return (
             <Link key={i} href={item.href} className={`${item.colSpan} group`}>
               <MagicCard
-                className="flex h-full rounded-2xl p-0"
-                gradientColor="oklch(71.8% 0.202 349.761)"
+                className="flex h-full rounded-2xl p-[1.5px]"
+                gradientColor="oklch(0.6549 0.202 349.761)"
               >
                 <BentoGridItem
                   className={cardClass}
