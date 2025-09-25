@@ -26,7 +26,7 @@ export default function Home() {
 
       <div className="relative">
         <section className="relative isolate mb-10 overflow-visible pt-12 sm:pt-16">
-          <div className="hero container relative z-10 mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
+          <div className="hero relative z-10 container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
             <div className="flex w-full flex-col items-center justify-center p-2">
               <h1 className="header-gradient-background w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:w-3/4 lg:text-5xl">
                 <FlipWords words={wordsFlips} /> FAIR data practices to empower
@@ -48,10 +48,10 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="absolute left-1/2 top-0 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
-                <div className="absolute left-1/2 top-0 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
-                <div className="absolute left-1/2 top-0 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
-                <div className="absolute left-1/2 top-0 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
+                <div className="absolute top-0 left-1/2 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
+                <div className="absolute top-0 left-1/2 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
+                <div className="absolute top-0 left-1/2 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
+                <div className="absolute top-0 left-1/2 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
 
                 <div className="absolute inset-0 z-10 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
                 <div className="absolute inset-0 z-20 flex items-end justify-center">
@@ -83,7 +83,7 @@ export default function Home() {
 
       <BentoProjects />
 
-      <section className="pb-20 pt-4">
+      <section className="pt-4 pb-20">
         <Collaborators />
       </section>
 
@@ -95,7 +95,7 @@ export default function Home() {
                 The FAIR Data wave
               </h2>
 
-              <div className="pt-8 font-asap">
+              <div className="font-asap pt-8">
                 <p className="mb-4 text-left text-xl">
                   The FAIR (Findable, Accessible, Interoperable, Reusable)
                   Principles are a set of instructions for sharing data and
@@ -147,7 +147,7 @@ export default function Home() {
                 Sharing is caring... but also daunting
               </h2>
 
-              <p className="mb-6 mt-8 w-full text-left font-asap text-xl">
+              <p className="font-asap mt-8 mb-6 w-full text-left text-xl">
                 Sharing FAIR data is not trivial as this involves formatting
                 data into specific file format, organizing data files
                 consistently, including metadata according to applicable
@@ -181,7 +181,7 @@ export default function Home() {
                 Simple guidelines and open-source tools for the win!
               </h2>
 
-              <div className="pt-8 font-asap">
+              <div className="font-asap pt-8">
                 <p className="mb-4 text-left text-xl">
                   We believe that researchers already have enough work and
                   responsibilities on their hands. Therefore, making data,
@@ -223,7 +223,7 @@ export default function Home() {
             Our solutions are making a difference worldwide
           </h2>
           <div className="mx-auto flex max-w-screen-md items-center justify-center">
-            <div className="pt-8 font-asap">
+            <div className="font-asap pt-8">
               <p className="mb-4 max-w-md text-center text-xl md:text-left">
                 Our solution are helping researchers all over the world with
                 managing, curating, and sharing their data, software, and other
@@ -254,7 +254,7 @@ export default function Home() {
                 A little bit about us
               </h2>
 
-              <p className="mb-6 mt-2 w-full text-left font-asap text-xl md:my-2">
+              <p className="font-asap mt-2 mb-6 w-full text-left text-xl md:my-2">
                 FAIR Data Innovations Hub is a division of the California
                 Medical Innovations Institute (CalMI<sup>2</sup>), a non profit
                 biomedical research organization located in San Diego,
@@ -299,7 +299,7 @@ export default function Home() {
                 We are making a difference
               </h2>
 
-              <div className="pt-8 font-asap">
+              <div className="font-asap pt-8">
                 <p className="mb-4 text-left text-xl">
                   Our work has led to peer-reviewed publications, development of
                   open-source software, establishment of new standards and
@@ -348,7 +348,7 @@ export default function Home() {
                 Let&apos;s get in touch
               </h2>
 
-              <p className="mb-6 mt-2 w-full text-left font-asap text-xl md:my-2">
+              <p className="font-asap mt-2 mb-6 w-full text-left text-xl md:my-2">
                 Need help with sharing data or research software? Want to
                 collaborate on a cool new project or grant proposal? Have
                 feedback or suggestions? Reach out to us!
