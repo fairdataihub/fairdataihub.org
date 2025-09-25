@@ -170,7 +170,7 @@ const IntershipForm = () => {
                           type="text"
                           name="name"
                           placeholder="Me Myself"
-                          className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                          className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
                         />
 
                         <ErrorMessage
@@ -192,7 +192,7 @@ const IntershipForm = () => {
                           type="email"
                           name="email"
                           placeholder="me@fairdataihub.org"
-                          className="mb-1w -full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                          className="mb-1w -full font-asap rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
                         />
 
                         <ErrorMessage
@@ -216,7 +216,7 @@ const IntershipForm = () => {
                           type="text"
                           name="work_study_status"
                           placeholder="FAIR Data Innovations Hub"
-                          className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                          className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
                         />
 
                         <ErrorMessage
@@ -238,7 +238,7 @@ const IntershipForm = () => {
                           type="text"
                           name="github_link"
                           placeholder="https://github.com/fairdataihub"
-                          className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                          className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
                         />
 
                         <ErrorMessage
@@ -282,7 +282,7 @@ const IntershipForm = () => {
                         <Field
                           type="file"
                           name="resume_link"
-                          className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                          className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
                         >
                           {({ field, form }) => {
                             return (
@@ -294,7 +294,7 @@ const IntershipForm = () => {
                                     event.currentTarget.files[0],
                                   );
                                 }}
-                                className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                                className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
                               />
                             );
                           }}
@@ -321,7 +321,7 @@ const IntershipForm = () => {
                         name="brief_intro"
                         rows="4"
                         placeholder="I am a student at FAIR Data Innovations Hub..."
-                        className="mb-1 w-full rounded border border-gray-300 px-4 py-2 font-asap text-base outline-none focus:border-black sm:text-lg"
+                        className="font-asap mb-1 w-full rounded border border-gray-300 px-4 py-2 text-base outline-none focus:border-black sm:text-lg"
                       />
 
                       <ErrorMessage

@@ -37,13 +37,13 @@ export default function ProjectStatistics({
             key={metric.id || index}
             className="m-2 mb-5 flex flex-col items-center justify-start lg:m-6"
           >
-            <p className="my-1 text-center font-lato text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
+            <p className="font-lato my-1 text-center text-5xl font-bold sm:text-4xl md:text-5xl lg:text-6xl">
               <span id={metric.id}>{metric.value}</span>
               {metric.unit && <span> {metric.unit}</span>}
               {metric.suffix && <span>{metric.suffix}</span>}
             </p>
 
-            <p className="text-center font-asap text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
+            <p className="font-asap text-center text-xl text-black sm:text-lg md:text-xl lg:text-2xl">
               {metric.description}
             </p>
           </div>

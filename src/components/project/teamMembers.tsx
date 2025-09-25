@@ -43,7 +43,7 @@ const TeamMembers: React.FC<TeamMembersProps> = ({ teamMembers }) => {
                         }}
                       />
 
-                      <p className="ml-2 pt-2 text-center font-asap text-lg font-normal">
+                      <p className="font-asap ml-2 pt-2 text-center text-lg font-normal">
                         {member.name}
                       </p>
                     </div>

@@ -61,7 +61,7 @@ export default function Careers() {
               Open Positions
             </h2>
 
-            <p className="mb-4 mt-2 text-left font-asap text-lg">
+            <p className="font-asap mt-2 mb-4 text-left text-lg">
               Discover your potential at the FAIR Data Innovations Hub.
             </p>
           </div>
@@ -69,7 +69,7 @@ export default function Careers() {
           <div className="mx-auto flex max-w-screen-lg flex-col">
             <div className="bg-white p-7 px-6 sm:px-6 lg:h-40 lg:px-6">
               <div className="flex flex-col items-center text-center lg:mx-12 lg:text-left">
-                <p className="h-32 font-asap text-lg">
+                <p className="font-asap h-32 text-lg">
                   No open positions at the moment.
                 </p>
               </div>

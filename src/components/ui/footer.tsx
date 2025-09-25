@@ -12,11 +12,11 @@ export default function Footer() {
       }
     >
       <div className="container mx-auto flex w-full max-w-screen-lg flex-col px-6 py-8">
-        <div className="flex flex-col justify-between pb-3 pr-3 md:flex-row">
+        <div className="flex flex-col justify-between pr-3 pb-3 md:flex-row">
           <div className="mb-5 flex w-full flex-col md:mb-0 md:w-4/12">
             <div className="py-3">
               <Link href="/" aria-label="Homepage" passHref>
-                <div className="flex w-[20rem] flex-row gap-4">
+                <div className="flex w-full max-w-[20rem] flex-row gap-4">
                   <Image
                     src="https://cdn.jsdelivr.net/gh/fairdataihub/logo@refs/heads/main/SVG/05_Main_Logo_W_Stacked_Text/Main-Logo-Black-Stroke-Transparent.svg"
                     width={400}
@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
               </Link>
             </div>
-            <p className="py-3 font-inter font-medium text-gray-600">
+            <p className="font-inter py-3 font-medium text-gray-600">
               Helping researchers navigate the world of FAIR practices.
             </p>
             <div className="flex flex-row justify-start py-3">
@@ -46,7 +46,7 @@ export default function Footer() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  className="h-7 w-7 text-gray-400 transition-all hover:text-accent"
+                  className="hover:text-accent h-7 w-7 text-gray-400 transition-all"
                   viewBox="0 0 24 24"
                 >
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
@@ -67,7 +67,7 @@ export default function Footer() {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="0"
-                  className="h-7 w-7 text-gray-400 transition-all hover:text-accent"
+                  className="hover:text-accent h-7 w-7 text-gray-400 transition-all"
                   viewBox="0 0 24 24"
                 >
                   <path
@@ -88,7 +88,7 @@ export default function Footer() {
                 rel="noopener"
               >
                 <svg
-                  className="h-7 w-7 fill-current transition-all hover:text-accent"
+                  className="hover:text-accent h-7 w-7 fill-current transition-all"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -168,7 +168,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-col font-inter">
+            <div className="font-inter flex flex-col">
               <h3 className="footer-header"> Projects </h3>
               <ul>
                 <li
@@ -234,7 +234,7 @@ export default function Footer() {
 
         <hr className="h-[1px] border-none border-gray-200 bg-gray-200 text-gray-200" />
 
-        <div className="mt-3 flex h-full flex-col items-center justify-center space-x-0 space-y-4 divide-x-2 divide-none divide-gray-200 py-5 md:flex-row md:space-x-4 md:space-y-0 md:divide-solid">
+        <div className="mt-3 flex h-full flex-col items-center justify-center space-y-4 space-x-0 divide-x-2 divide-none divide-gray-200 py-5 md:flex-row md:space-y-0 md:space-x-4 md:divide-solid">
           <div className="text-center text-gray-500">
             <p> © {new Date().getFullYear()} FAIR Data Innovations Hub. </p>
             <p> All rights reserved. </p>

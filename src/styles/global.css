@@ -2,9 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-inter: 'Inter', sans-serif;
+  --font-lato: 'Lato', sans-serif;
+  --font-asap: 'Asap', sans-serif;
+
+  --color-primary: #cd329f;
+  --color-primaryLight: #d75bb2;
+  --color-accent: #cb128d;
+
+  --color-light-accent: #cd329f;
+  --color-light-vision: #000;
+  --color-light-background: #f5f5f5;
+  --color-button-light-background: #000;
+
+  --color-destructive: 0 84.2% 60.2%;
+  --color-destructive-foreground: 210 40% 98%;
+
+  --color-border: 214.3 31.8% 91.4%;
+  --color-input: 214.3 31.8% 91.4%;
+  --color-ring: 222.2 84% 4.9%;
+
+  --color-radius: 0.5rem;
+}
 
 @layer base {
   :root {
@@ -68,8 +93,14 @@
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
   }
+
+  html {
+    overflow-x: hidden;
+  }
+
   body {
     @apply font-inter text-base;
+    overflow-x: hidden;
   }
 
   .marquee-override.marquee-container {
@@ -99,11 +130,11 @@
   }
 
   .text-url {
-    @apply inline-flex items-center text-lg text-accent;
+    @apply text-accent inline-flex items-center text-lg;
   }
 
   .hover-underline-animation:after {
-    @apply absolute bottom-0 left-0 h-[2px] w-full bg-light-accent;
+    @apply bg-light-accent absolute bottom-0 left-0 h-[2px] w-full;
     content: '';
     transform: scaleX(0);
     transform-origin: bottom right;
@@ -116,7 +147,7 @@
   }
 
   .header-gradient-background {
-    @apply bg-gradient-to-tl from-primary to-primaryLight bg-clip-text text-transparent;
+    @apply from-primary to-primaryLight bg-gradient-to-tl bg-clip-text text-transparent;
   }
 
   .img-hover-zoom {
@@ -129,7 +160,7 @@
   }
 
   .nav-item.router-link-active:after {
-    @apply absolute bottom-0 left-0 h-[2px] w-full bg-light-accent transition-all;
+    @apply bg-light-accent absolute bottom-0 left-0 h-[2px] w-full transition-all;
     transform: scaleX(1);
     transform-origin: bottom left;
     content: '';
@@ -165,20 +196,20 @@
     @apply mx-2 text-gray-400 hover:text-gray-500;
   }
   .footer-header {
-    @apply pb-3 text-lg font-bold uppercase text-gray-800;
+    @apply pb-3 text-lg font-bold text-gray-800 uppercase;
   }
   .footer-item {
-    @apply cursor-pointer pb-2 font-medium text-gray-600 transition-all hover:text-accent;
+    @apply hover:text-accent cursor-pointer pb-2 font-medium text-gray-600 transition-all;
   }
 
   .heading {
-    @apply mb-3 mt-4 text-4xl font-extrabold tracking-tight;
+    @apply mt-4 mb-3 text-4xl font-extrabold tracking-tight;
   }
   .subheading {
-    @apply mb-3 mt-6 text-3xl font-bold tracking-tight;
+    @apply mt-6 mb-3 text-3xl font-bold tracking-tight;
   }
   .content {
-    @apply my-1 text-base font-normal leading-7 text-gray-800;
+    @apply my-1 text-base leading-7 font-normal text-gray-800;
   }
 
   .prose > div > figure > figcaption {
@@ -385,8 +416,10 @@
 *,
 ::before,
 ::after {
+  /* removed to fix borders on bento grid 
   border-width: 0;
   border-style: solid;
+  */
 }
 
 /* Chrome, Edge, and Safari */
