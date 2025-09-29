@@ -33,7 +33,7 @@ const ResearchPartners: React.FC<ResearchPartnersProps> = ({
           <div className="w-full py-2">
             <div className="flex w-full flex-col justify-between sm:flex-row">
               <div className="mb-10 pr-10 sm:mb-5">
-                <p className="w-full font-asap text-lg text-black">
+                <p className="font-asap w-full text-lg text-black">
                   {researchPartners.description}
                 </p>
               </div>
@@ -76,7 +76,7 @@ const ResearchPartners: React.FC<ResearchPartnersProps> = ({
                                 }}
                               />
                             )}
-                            <p className="ml-2 mt-3 text-center font-asap text-lg font-normal">
+                            <p className="font-asap mt-3 ml-2 text-center text-lg font-normal">
                               {collaborator.name}
                             </p>
                           </div>

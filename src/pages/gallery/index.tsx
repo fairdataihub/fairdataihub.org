@@ -54,7 +54,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
 
         {/* gradient glow parallax layer */}
         <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-          <div className="absolute left-1/2 top-0 h-[720px] w-[1400px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
+          <div className="absolute top-0 left-1/2 h-[720px] w-[1400px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
         </div>
 
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
@@ -85,7 +85,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
                   <div className="flex items-center">
                     <div className="h-px flex-1 rounded-lg bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400" />
 
-                    <span className="mx-6 select-none text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+                    <span className="mx-6 text-4xl font-extrabold tracking-tight text-gray-900 select-none sm:text-5xl">
                       {year}
                     </span>
 
@@ -127,7 +127,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
                               shallow
                               className="group relative block cursor-pointer"
                             >
-                              <div className="relative transform-gpu overflow-hidden rounded-lg shadow-sm transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl group-hover:shadow-black/10">
+                              <div className="relative transform-gpu overflow-hidden rounded-lg shadow-xs transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl group-hover:shadow-black/10">
                                 <Image
                                   alt={alt || description || `Gallery photo`}
                                   src={imageUrl}

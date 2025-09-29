@@ -35,12 +35,12 @@ export default function Home() {
                         Software
                       </span>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         SODA
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       SODA is a cross-platform desktop software that helps
                       researchers prepare and share FAIR peripheral nervous
                       system (PNS) related data and models using the SPARC Data
@@ -74,13 +74,13 @@ export default function Home() {
                         </span>
                       </div>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         Artificial Intelligence Ready and Exploratory Atlas for
                         Diabetes Insights
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       AI-READI is one of the data generation projects funded by
                       the National Institutes of Health (NIH)&apos;s Bridge2AI
                       Program. The AI-READI project is structured into six
@@ -116,12 +116,12 @@ export default function Home() {
                         </span>
                       </div>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         Eye ACT
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       The Eye ACT study aims to provide insights on how
                       ophthalmic conditions such as glaucoma and diabetic
                       retinopathy can provide early indicators to
@@ -152,12 +152,12 @@ export default function Home() {
                         </span>
                       </div>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         DMP Chef
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       DMP Chef is an open-source AI-powered platform that helps
                       researchers draft funder-compliant Data Management Plans
                       with ease. By answering a few simple questions,
@@ -188,12 +188,12 @@ export default function Home() {
                         </span>
                       </div>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         Posters.science
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       Posters.science is a free and open-source platform that
                       makes it easier for researchers to share and discover
                       posters, turning them into enduring research assets.
@@ -218,12 +218,12 @@ export default function Home() {
                         Guidelines
                       </span>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         FAIR Biomedical Research Software Guidelines
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       Minimal and actionable step-by-step guidelines for making
                       biomedical research software reusable in line with the
                       FAIR4RS principles.
@@ -248,12 +248,12 @@ export default function Home() {
                         Software
                       </span>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         Codefair
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       Codefair is a automated GitHub app that helps you make
                       your research software reusable and especially complying
                       with the Findable, Accessible, Interoperable, Reusable
@@ -279,12 +279,12 @@ export default function Home() {
                         Software
                       </span>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         FAIRshare
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       FAIRshare is a cross-platform desktop software that allows
                       researchers to easily organize and share their biomedical
                       data and software according to applicable FAIR guidelines.
@@ -314,12 +314,12 @@ export default function Home() {
                         Software
                       </span>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         KnowMore
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       KnowMore is a tool readily integrable into the SPARC
                       Portal that allows to find potential relation, difference,
                       and similarities between multiple SPARC datasets in just a
@@ -347,12 +347,12 @@ export default function Home() {
                         Software
                       </span>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         SPARClink
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       SPARClink provides a system that queries all external
                       publications using open source tools and platforms to
                       create interactable visualizations that showcases the
@@ -379,12 +379,12 @@ export default function Home() {
                         Software
                       </span>
 
-                      <h2 className="mb-2 mt-2 w-full text-2xl font-semibold sm:text-2xl">
+                      <h2 className="mt-2 mb-2 w-full text-2xl font-semibold sm:text-2xl">
                         Advanced Query Architecture for the SPARC Portal
                       </h2>
                     </div>
 
-                    <p className="w-full font-asap text-lg text-black">
+                    <p className="font-asap w-full text-lg text-black">
                       AQUA (Advanced Query Architecture for the SPARC Portal) an
                       application that aims at improving the search capabilities
                       of the SPARC Portal.

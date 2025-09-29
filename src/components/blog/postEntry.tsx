@@ -24,7 +24,7 @@ const postEntry: React.FC<PostEntryProps> = ({
     <article key={title} className="mb-2 flex w-full flex-col md:flex-row">
       {/* Left panel */}
       <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5">
-        <h3 className="mb-1 mt-1 text-base font-medium text-slate-600">
+        <h3 className="mt-1 mb-1 text-base font-medium text-slate-600">
           {dayjs(date).format(`MMMM D, YYYY`)}
         </h3>
 
@@ -39,7 +39,7 @@ const postEntry: React.FC<PostEntryProps> = ({
         <span className="text-sm text-gray-600">{timeToRead} min read</span>
       </div>
 
-      <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-sm md:w-8/12 md:px-7 md:py-5">
+      <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-xs md:w-8/12 md:px-7 md:py-5">
         {category !== `` && (
           <Link href={`/category/${category}`} passHref>
             <h3
@@ -64,12 +64,12 @@ const postEntry: React.FC<PostEntryProps> = ({
         <hr className="my-1 border-dashed border-slate-200 md:hidden" />
 
         <Link href={`/blog/${slug}`} passHref>
-          <h2 className="text-url mb-1 mt-4 cursor-pointer text-2xl font-semibold hover:underline md:mt-0 md:text-xl">
+          <h2 className="text-url mt-4 mb-1 cursor-pointer text-2xl font-semibold hover:underline md:mt-0 md:text-xl">
             {title}
           </h2>
         </Link>
 
-        <p className="mb-3 mt-2">{subtitle}</p>
+        <p className="mt-2 mb-3">{subtitle}</p>
 
         <div className="flex w-full flex-col justify-between md:flex-row">
           <div className="mb-2 flex flex-row flex-wrap items-center text-sm md:mb-0">
@@ -81,7 +81,7 @@ const postEntry: React.FC<PostEntryProps> = ({
                 className="my-2"
               >
                 <span
-                  className="mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 py-1 transition-all hover:border-light-accent hover:text-accent"
+                  className="hover:border-light-accent hover:text-accent mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 py-1 transition-all"
                   data-umami-event="Blog"
                   data-umami-event-action="Tag"
                   data-umami-event-value={tag}

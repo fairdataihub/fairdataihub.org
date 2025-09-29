@@ -11,10 +11,10 @@ const TitleWithIcon: React.FC<{ icon: React.ReactNode; text: string }> = ({
   text,
 }) => (
   <div className="flex items-center gap-3">
-    <div className="bg-white/85 inline-flex h-12 w-12 items-center justify-center rounded-xl shadow-sm ring-1 ring-black/5 dark:bg-black/50">
+    <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-white/85 shadow-xs ring-1 ring-black/5 dark:bg-black/50">
       {icon}
     </div>
-    <span className="text-2xl font-extrabold tracking-tight text-black dark:text-white md:text-2xl">
+    <span className="text-2xl font-extrabold tracking-tight text-black md:text-2xl dark:text-white">
       {text}
     </span>
   </div>
@@ -37,7 +37,7 @@ const Badges: React.FC<{ tags: string[] }> = ({ tags }) => {
 };
 
 // Shared card design
-const cardBase = `h-full flex flex-col justify-between rounded-2xl border border-pink-300/70 bg-white/90 shadow-sm ring-1 ring-transparent hover:border-pink-400 hover:shadow-lg hover:ring-pink-300/40 dark:border-pink-400/40 dark:bg-neutral-900/70`;
+const cardBase = `h-full flex flex-col justify-between rounded-2xl border border-red-300/70 bg-white/90 shadow-xs ring-1 ring-transparent hover:shadow-lg hover:ring-red-300/40 dark:border-red-400/40 dark:bg-neutral-900/70`;
 
 // Type to make the size explicit, helps with padding layout to prevent overflow
 type ItemSize = 'wide' | 'narrow';
@@ -64,7 +64,7 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="text-balance mt-3 text-lg leading-relaxed md:text-xl">
+          <p className="mt-3 text-lg leading-relaxed text-balance md:text-xl">
             SODA is a cross-platform desktop software that helps researchers
             prepare and share FAIR peripheral nervous system (PNS) related data
             and models using the SPARC Data Structure (SDS) and the SPARC
@@ -91,7 +91,7 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="text-balance mt-3 line-clamp-4 text-base leading-relaxed md:text-lg">
+          <p className="mt-3 line-clamp-4 text-base leading-relaxed text-balance md:text-lg">
             Generating a flagship AI-ready and ethically-sourced dataset to
             support future AI-driven discoveries in diabetes.
           </p>
@@ -116,7 +116,7 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="text-balance mt-3 line-clamp-4 text-base leading-relaxed md:text-lg">
+          <p className="mt-3 line-clamp-4 text-base leading-relaxed text-balance md:text-lg">
             A free, open-source platform for sharing and discovering scientific
             posters, promoting collaboration and turning them into enduring
             research assets.
@@ -142,7 +142,7 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="text-balance mt-3 text-lg leading-relaxed md:text-xl">
+          <p className="mt-3 text-lg leading-relaxed text-balance md:text-xl">
             Eye ACT uses the Envision Portal to study how eye diseases like
             glaucoma and diabetic retinopathy may signal early Alzheimer&apos;s,
             advancing AI-driven research under FAIR principles.
@@ -170,8 +170,8 @@ export default function BentoProjects() {
           return (
             <Link key={i} href={item.href} className={`${item.colSpan} group`}>
               <MagicCard
-                className="flex h-full rounded-2xl p-0"
-                gradientColor="oklch(71.8% 0.202 349.761)"
+                className="flex h-full rounded-2xl p-[2px]"
+                gradientColor="oklch(0.592 0.2157 349.761)"
               >
                 <BentoGridItem
                   className={cardClass}
