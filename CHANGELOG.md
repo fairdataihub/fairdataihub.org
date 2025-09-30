@@ -1,3 +1,10 @@
+## [2.67.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.1...v2.67.2) (2025-09-30)
+
+
+### Bug Fixes
+
+* 🐛 update usrse conference links ([5da253a](https://github.com/fairdataihub/fairdataihub.org/commit/5da253a736e3e41e62f3176d231d07be10b30cd5))
+
 ## [2.67.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.0...v2.67.1) (2025-09-23)
 
 
