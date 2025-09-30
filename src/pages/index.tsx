@@ -5,6 +5,7 @@ import React from 'react';
 import BentoProjects from '@/components/home/bentoProjects';
 import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
+import SimpleGuidelines from '@/components/home/simpleGuidelines';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
 import { FlipWords } from '@/components/ui/flip-words';
@@ -87,8 +88,8 @@ export default function Home() {
         <Collaborators />
       </section>
 
-      <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6">
+      <section className="relative pb-10">
+        <div className="container mx-auto max-w-screen-xl border-t border-pink-300/50 px-6">
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
@@ -173,7 +174,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative py-10">
+      {/* <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6">
           <div className="flex w-full flex-col items-center justify-center">
             <h2 className="mb-6 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
@@ -206,7 +207,8 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <SimpleGuidelines />
 
       <section className="relative hidden w-full py-20">
         <div className="mx-auto w-full max-w-screen-xl">
@@ -235,7 +237,7 @@ export default function Home() {
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
                 className="w-[400px] rounded-lg"
-                src="/images/home/team.svg"
+                src="/images/home/3d-team.png"
                 alt="office content 1"
               />
             </div>
@@ -315,7 +317,7 @@ export default function Home() {
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
                 className="w-[400px] rounded-lg"
-                src="/images/home/impact.svg"
+                src="/images/home/3d-impact.png"
                 alt="office content 1"
               />
             </div>
@@ -329,7 +331,7 @@ export default function Home() {
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
                 className="w-[400px] rounded-lg"
-                src="/images/home/contact.svg"
+                src="/images/home/3d-contact.png"
                 alt="office content 1"
               />
             </div>
