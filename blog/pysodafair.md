@@ -31,7 +31,7 @@ This is why we compiled the backed functions of SODA into a standalone Python pa
 - Programmatically verify your files comply with file and folder naming conventions
 - Upload datasets to Pennsieve with our upload functions that help verify SDS compliance (alerting of empty folders, non-allowed files) + help with updating datasets with existing data that are on Pennsieve.
 
-## Why Use pysodafair?
+## Why use pysodafair?
 
 While creating SDS metadata templates and helping with data organization for our users, we found that adding a simple validation layer before running the official SDS validator helped catch mistakes early and prevented errors from spreading across a dataset. All pysodafair functions have been thoroughly tested in SODA and have supported the publication of terabytes of data to the SPARC Portal, so you don’t have to reinvent the wheel. With pysodafair, you can easily integrate FAIR data compliance into your Python workflows, saving time and reducing errors.
 
