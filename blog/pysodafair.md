@@ -22,8 +22,10 @@ If you work with scientific datasets, you’ve probably heard about the importan
 ## What is pysodafair?
 
 pysodafair is a Python tool designed to help you create FAIR peripheral nervous system (PNS) related data and models that follow the SPARC Dataset Structure (SDS). Pysodafair does this by focusing on providing a programmatic way to structure a dataset according to the latest version of the SDS. But we’re not stopping there! Future versions will support other standards such as BIDS. This will make pysodafair a versatile solution for a wide variety of research domains.
-The Origins: From SODA Desktop to Python Automation
-pysodafair comes from SODA, a desktop application that simplifies organizing and sharing data in compliance with the SDS. While SODA’s interface is perfect for many investigators, we have found that those with coding experience often prefer the flexibility of using their own automated workflows.
+
+### The Origins: From SODA Desktop to Python Automation
+
+pysodafair comes from [SODA](https://docs.sodaforsparc.io/), our desktop application that simplifies organizing and sharing data in compliance with the SDS. While SODA’s interface is perfect for many investigators, we have found that those with coding experience often prefer the flexibility of using their own automated workflows.
 
 This is why we compiled the backed functions of SODA into a standalone Python package we called pysodafair. By exposing the backend functions of SODA, pysodafair allows you to integrate the following into your own workflows:
 
@@ -39,4 +41,4 @@ This approach is similar to our pyfairdatatools Python package, developed for th
 
 ## Ready to make your data FAIR?
 
-Give pysodafair a try and see how easy compliance can be. In our experience the toolset has helped users who are organizing their first dataset or automating a complex workflow. To get started look for more details in our repository README here.
+Give pysodafair a try and see how easy compliance can be. In our experience the toolset has helped users who are organizing their first dataset or automating a complex workflow. To get started look for more details in our repository README [here](https://github.com/fairdataihub/pysodafair).
