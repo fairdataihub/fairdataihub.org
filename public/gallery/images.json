@@ -25,10 +25,29 @@
         "alt": "Experimental Biology EB 2022 Conference"
       }
     ],
-    "tags": [
-      "general"
-    ],
+    "tags": ["general"],
     "description": "Experimental Biology EB 2022 Conference"
+  },
+  {
+    "event": "USRSE25 Conference",
+    "folder": "2025-10-06 - USRSE25",
+    "date": "2025-10-06",
+    "images": [
+      {
+        "name": "1000009272.jpg",
+        "alt": "USRSE25 Conference"
+      },
+      {
+        "name": "1000009269.jpg",
+        "alt": "USRSE25 Conference"
+      },
+      {
+        "name": "thumbnail_IMG_7180.jpg",
+        "alt": "USRSE25 Conference"
+      }
+    ],
+    "tags": ["conference", "usrse"],
+    "description": "USRSE25 Conference"
   },
   {
     "event": "BOSC 2022 Conference",
@@ -56,10 +75,7 @@
         "alt": "BOSC 2022 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "bosc"
-    ],
+    "tags": ["conference", "bosc"],
     "description": "BOSC 2022 Conference"
   },
   {
@@ -76,10 +92,7 @@
         "alt": "PMWC 2023 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "pmwc"
-    ],
+    "tags": ["conference", "pmwc"],
     "description": "PMWC 2023 Conference"
   },
   {
@@ -92,10 +105,7 @@
         "alt": "Bridge2AI Annual PIs Meeting"
       }
     ],
-    "tags": [
-      "meeting",
-      "bridge2ai"
-    ],
+    "tags": ["meeting", "bridge2ai"],
     "description": "Bridge2AI Annual PIs Meeting"
   },
   {
@@ -108,10 +118,7 @@
         "alt": "SPARC 2 PIs Meeting"
       }
     ],
-    "tags": [
-      "meeting",
-      "sparc"
-    ],
+    "tags": ["meeting", "sparc"],
     "description": "SPARC 2 PIs Meeting"
   },
   {
@@ -128,10 +135,7 @@
         "alt": "BOSC 2023 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "bosc"
-    ],
+    "tags": ["conference", "bosc"],
     "description": "BOSC 2023 Conference"
   },
   {
@@ -144,10 +148,7 @@
         "alt": "Bridge2AI Annual PIs Meeting"
       }
     ],
-    "tags": [
-      "meeting",
-      "bridge2ai"
-    ],
+    "tags": ["meeting", "bridge2ai"],
     "description": "Bridge2AI Annual PIs Meeting"
   },
   {
@@ -168,10 +169,7 @@
         "alt": "SfN 2023 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "sfn"
-    ],
+    "tags": ["conference", "sfn"],
     "description": "SfN 2023 Conference"
   },
   {
@@ -196,11 +194,7 @@
         "alt": "Bridge2AI All Hands Meeting and Open House"
       }
     ],
-    "tags": [
-      "meeting",
-      "bridge2ai",
-      "open-house"
-    ],
+    "tags": ["meeting", "bridge2ai", "open-house"],
     "description": "Bridge2AI All Hands Meeting and Open House"
   },
   {
@@ -221,10 +215,7 @@
         "alt": "ARVO 2024 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "arvo"
-    ],
+    "tags": ["conference", "arvo"],
     "description": "ARVO 2024 Conference"
   },
   {
@@ -257,10 +248,7 @@
         "alt": "APS 2024 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "aps"
-    ],
+    "tags": ["conference", "aps"],
     "description": "APS 2024 Conference"
   },
   {
@@ -301,10 +289,7 @@
         "alt": "BOSC 2024 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "bosc"
-    ],
+    "tags": ["conference", "bosc"],
     "description": "BOSC 2024 Conference"
   },
   {
@@ -317,10 +302,7 @@
         "alt": "FORCE11 Annual Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "force11"
-    ],
+    "tags": ["conference", "force11"],
     "description": "FORCE11 Annual Conference"
   },
   {
@@ -353,10 +335,7 @@
         "alt": "USRSE24 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "usrse"
-    ],
+    "tags": ["conference", "usrse"],
     "description": "USRSE24 Conference"
   },
   {
@@ -373,10 +352,7 @@
         "alt": "Bridge2AI Annual PIs Meeting"
       }
     ],
-    "tags": [
-      "meeting",
-      "bridge2ai"
-    ],
+    "tags": ["meeting", "bridge2ai"],
     "description": "Bridge2AI Annual PIs Meeting"
   },
   {
@@ -389,10 +365,7 @@
         "alt": "Metadata Rx Hackathon"
       }
     ],
-    "tags": [
-      "hackathon",
-      "metadata"
-    ],
+    "tags": ["hackathon", "metadata"],
     "description": "Metadata Rx Hackathon"
   },
   {
@@ -405,10 +378,7 @@
         "alt": "CalMI2 monthly dinner"
       }
     ],
-    "tags": [
-      "dinner",
-      "calmi2"
-    ],
+    "tags": ["dinner", "calmi2"],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -421,10 +391,7 @@
         "alt": "CalMI2 monthly dinner"
       }
     ],
-    "tags": [
-      "dinner",
-      "calmi2"
-    ],
+    "tags": ["dinner", "calmi2"],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -445,10 +412,7 @@
         "alt": "ARVO 2025 Conference"
       }
     ],
-    "tags": [
-      "conference",
-      "arvo"
-    ],
+    "tags": ["conference", "arvo"],
     "description": "ARVO 2025 Conference"
   },
   {
@@ -485,11 +449,7 @@
         "alt": "B2AI All Hands Meeting and Open House"
       }
     ],
-    "tags": [
-      "meeting",
-      "bridge2ai",
-      "open-house"
-    ],
+    "tags": ["meeting", "bridge2ai", "open-house"],
     "description": "B2AI All Hands Meeting and Open House"
   },
   {
@@ -506,10 +466,7 @@
         "alt": "CalMI2 monthly dinner"
       }
     ],
-    "tags": [
-      "dinner",
-      "calmi2"
-    ],
+    "tags": ["dinner", "calmi2"],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -522,10 +479,7 @@
         "alt": "CalMI2 monthly dinner"
       }
     ],
-    "tags": [
-      "dinner",
-      "calmi2"
-    ],
+    "tags": ["dinner", "calmi2"],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -546,12 +500,7 @@
         "alt": "SABPA OCLA AI for Biotechnology Seminar Series"
       }
     ],
-    "tags": [
-      "seminar",
-      "sabpa",
-      "ai",
-      "biotechnology"
-    ],
+    "tags": ["seminar", "sabpa", "ai", "biotechnology"],
     "description": "SABPA OCLA AI for Biotechnology Seminar Series"
   },
   {
@@ -568,11 +517,7 @@
         "alt": "CalMI2 summer BBQ"
       }
     ],
-    "tags": [
-      "bbq",
-      "calmi2",
-      "summer"
-    ],
+    "tags": ["bbq", "calmi2", "summer"],
     "description": "CalMI2 summer BBQ"
   },
   {
@@ -589,10 +534,7 @@
         "alt": "CalMI2 monthly dinner"
       }
     ],
-    "tags": [
-      "dinner",
-      "calmi2"
-    ],
+    "tags": ["dinner", "calmi2"],
     "description": "CalMI2 monthly dinner"
   }
 ]

@@ -205,6 +205,25 @@
     "year": 2024
   },
   {
+    "project": [],
+    "url": "https://doi.org/10.5281/zenodo.17268673",
+    "title": "Presenting the Actionable Guidelines for FAIR Research Software Task Force (Presentation)",
+    "subtitle": "",
+    "citation": "Patel, B., Garijo, D., & Actionable FAIR4RS Task Force. (2025, October 5). Presenting the Actionable Guidelines for FAIR Research Software Task Force (Presentation). US Research Software Engineering Conference 2025 (USRSE'25), Philadelphia, PA. Zenodo. https://doi.org/10.5281/zenodo.17268673",
+    "type": "Conference Presentations",
+    "year": 2025
+  },
+
+  {
+    "project": ["codefair"],
+    "url": "https://doi.org/10.5281/zenodo.17268745",
+    "title": "Making Research Software Findable, Accessible, Interoperable, Reusable (FAIR) with Codefair",
+    "subtitle": "",
+    "citation": "Patel, B., Portillo, D., & Soundarajan, S. (2025, October 5). Making Research Software Findable, Accessible, Interoperable, Reusable (FAIR) with Codefair. US Research Software Engineering Conference 2025 (USRSE'25), Philadelphia, PA. Zenodo. https://doi.org/10.5281/zenodo.17268745",
+    "type": "Conference Presentations",
+    "year": 2025
+  },
+  {
     "project": ["codefair"],
     "url": "https://doi.org/10.7490/f1000research.1119824.1",
     "title": "Codefair: Make biomedical research software FAIR without breaking a sweat",
@@ -230,6 +249,15 @@
     "citation": "Patel, B., & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
     "type": "Conference Presentations",
     "year": 2022
+  },
+  {
+    "project": [],
+    "url": "https://doi.org/10.5281/zenodo.13984769",
+    "title": "Presenting the Actionable Guidelines for FAIR Research Software Task Force (Poster)",
+    "subtitle": "",
+    "citation": "Patel, B., Garijo, D., & Actionable FAIR4RS Task Force. (2025). Presenting the Actionable Guidelines for FAIR Research Software Task Force (Poster) (1.0.0). US Research Software Engineering Conference 2025 (USRSE'25), Philadelphia, PA. Zenodo. https://doi.org/10.5281/zenodo.17268692",
+    "type": "Posters",
+    "year": 2025
   },
   {
     "project": ["aireadi"],
