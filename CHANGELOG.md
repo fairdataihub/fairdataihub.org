@@ -1,3 +1,10 @@
+# [2.70.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.69.0...v2.70.0) (2025-10-08)
+
+
+### Features
+
+* ✨ update publications and gallery ([8e803e1](https://github.com/fairdataihub/fairdataihub.org/commit/8e803e1b695231ce3f55716a4ee59232207f42e0))
+
 # [2.69.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.68.0...v2.69.0) (2025-10-02)
 
 
