@@ -64,7 +64,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   }
 
   const imageUrl = encodeURI(
-    `https://fairdataihub-gallery-s.b-cdn.net/${currentPhoto.folder}/${currentPhoto.name}`,
+    `https://cdn.fairdataihub.org/gallery/${currentPhoto.folder}/${currentPhoto.name}`,
   );
 
   const { width, height } = await safeProbe(imageUrl);

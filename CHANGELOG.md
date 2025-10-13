@@ -1,3 +1,38 @@
+## [2.70.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.70.0...v2.70.1) (2025-10-13)
+
+
+### Bug Fixes
+
+* 🐛 update cdn urls ([7d3bdad](https://github.com/fairdataihub/fairdataihub.org/commit/7d3bdadf8bf54480dda202403f637d422da1596b))
+
+# [2.70.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.69.0...v2.70.0) (2025-10-08)
+
+
+### Features
+
+* ✨ update publications and gallery ([8e803e1](https://github.com/fairdataihub/fairdataihub.org/commit/8e803e1b695231ce3f55716a4ee59232207f42e0))
+
+# [2.69.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.68.0...v2.69.0) (2025-10-02)
+
+
+### Features
+
+* pysodafair blog post ([#711](https://github.com/fairdataihub/fairdataihub.org/issues/711)) ([25dea42](https://github.com/fairdataihub/fairdataihub.org/commit/25dea42b50aabce5e5ed8287cac7dcc99db05f73))
+
+# [2.68.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.2...v2.68.0) (2025-10-02)
+
+
+### Features
+
+* pysodafair blog post ([#710](https://github.com/fairdataihub/fairdataihub.org/issues/710)) ([8327d00](https://github.com/fairdataihub/fairdataihub.org/commit/8327d004d4d98c7270a40299d9b44724338b6d95))
+
+## [2.67.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.1...v2.67.2) (2025-09-30)
+
+
+### Bug Fixes
+
+* 🐛 update usrse conference links ([5da253a](https://github.com/fairdataihub/fairdataihub.org/commit/5da253a736e3e41e62f3176d231d07be10b30cd5))
+
 ## [2.67.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.0...v2.67.1) (2025-09-23)
 
 

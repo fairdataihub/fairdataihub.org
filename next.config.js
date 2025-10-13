@@ -49,7 +49,7 @@ module.exports = {
       },
       {
         protocol: 'https',
-        hostname: 'fairdataihub-gallery-s.b-cdn.net',
+        hostname: 'cdn.fairdataihub.org',
       },
       {
         protocol: 'https',

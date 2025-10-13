@@ -21,7 +21,7 @@ Bhavesh Patel will deliver two presentations at USRSE’25 focused on advancing 
 
 ## 📍 Location
 
-Philadelphia, Pennsylvania  
+Philadelphia, Pennsylvania
 [Conference Website](https://us-rse.org/usrse25)
 
 ## 🗓 Date and Time
@@ -31,6 +31,6 @@ October 6–8, 2025
 
 ## 🔗 Link to Materials
 
-Material of the Actionable FAIR4RS Task Force presentation: coming soon.
+Material of the Actionable FAIR4RS Task Force presentation can be found in this [GitHub repository](https://github.com/fairdataihub/actionableFAIR4RS-USRSE-2025).
 
-Material of the Codefair presentation: coming soon.
+Material of the Codefair presentation can be found in this [GitHub repository](https://github.com/fairdataihub/codefair-USRSE-2025).
