@@ -39,7 +39,7 @@ export default function SharedModal({
   });
 
   const currentImage = images ? images[index] : currentPhoto;
-  const mainUrl = `https://fairdataihub-gallery-s.b-cdn.net/${currentImage?.folder}/${currentImage?.name}`;
+  const mainUrl = `https://cdn.fairdataihub.org/gallery/${currentImage?.folder}/${currentImage?.name}`;
 
   return (
     <MotionConfig
@@ -169,7 +169,7 @@ export default function SharedModal({
             >
               <AnimatePresence initial={false}>
                 {filteredImages?.map(({ folder, name, id }) => {
-                  const thumbUrl = `https://fairdataihub-gallery-s.b-cdn.net/${folder}/${name}`;
+                  const thumbUrl = `https://cdn.fairdataihub.org/gallery/${folder}/${name}`;
                   return (
                     <motion.button
                       key={id}

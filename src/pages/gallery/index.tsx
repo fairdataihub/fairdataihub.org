@@ -112,7 +112,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
                           description,
                         }) => {
                           const imageUrl = encodeURI(
-                            `https://fairdataihub-gallery-s.b-cdn.net/${folder}/${name}`,
+                            `https://cdn.fairdataihub.org/gallery/${folder}/${name}`,
                           );
                           return (
                             <Link
@@ -200,7 +200,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const imagePromises = reversed_GALLERY_JSON.flatMap((event) =>
     event.images.map(async (img) => {
       const imageUrl = encodeURI(
-        `https://fairdataihub-gallery-s.b-cdn.net/${event.folder}/${img.name}`,
+        `https://cdn.fairdataihub.org/gallery/${event.folder}/${img.name}`,
       );
 
       const buffer = await fetch(imageUrl).then(async (res) =>
