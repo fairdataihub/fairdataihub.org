@@ -17,10 +17,12 @@ export default function SimpleGuidelines() {
   }> = [
     {
       title: (
-        <h3 className="text-lg font-semibold">Clear step-by-step guidelines</h3>
+        <h3 className="text-2xl font-extrabold tracking-tight text-black md:text-2xl dark:text-white">
+          Clear step-by-step guidelines
+        </h3>
       ),
       description: (
-        <p className="mt-2 text-sm text-gray-600">
+        <p className="mt-3 text-base leading-relaxed text-balance md:text-lg">
           Minimal, actionable checklists for preparing and sharing FAIR data and
           software so anyone can do the right thing, in the right order, without
           guesswork.
@@ -30,9 +32,13 @@ export default function SimpleGuidelines() {
       size: `wide`,
     },
     {
-      title: <h3 className="text-lg font-semibold">Free, open-source tools</h3>,
+      title: (
+        <h3 className="text-2xl font-extrabold tracking-tight text-black md:text-2xl dark:text-white">
+          Free, open-source tools
+        </h3>
+      ),
       description: (
-        <p className="mt-2 text-sm text-gray-600">
+        <p className="mt-3 text-base leading-relaxed text-balance md:text-lg">
           Developing open-source and free tools that streamline the
           implementation of these guidelines and minimize researchers&apos; time
           and effort through a combination of intuitive user interfaces, AI, and
@@ -46,45 +52,39 @@ export default function SimpleGuidelines() {
 
   return (
     <section className="relative py-10">
-      <div className="container mx-auto max-w-screen-xl px-6">
-        <div className="flex w-full flex-col items-center justify-center">
-          <h2 className="mb-6 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
-            Simple guides + open tools, so FAIR is effortless
-          </h2>
+      <h2 className="mb-6 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+        Simple guides + open tools, so FAIR is effortless
+      </h2>
 
-          <div className="font-asap max-w-4xl">
-            <p className="mb-8 text-center text-xl">
-              We believe that researchers already have enough work and
-              responsibilities on their hands. Therefore, making data, software,
-              and other research outcomes FAIR should be made very easy for
-              them. We are trying to achieve that through two main approaches:
-            </p>
+      <div className="font-asap mx-auto max-w-screen-xl">
+        <p className="mb-8 text-center text-xl">
+          We believe that researchers already have enough work and
+          responsibilities on their hands. Therefore, making data, software, and
+          other research outcomes FAIR should be made very easy for them. We are
+          trying to achieve that through two main approaches:
+        </p>
 
-            <div className="">
-              <BentoGrid className="mx-auto max-w-screen-xl grid-cols-1 gap-4 px-4 transition-all md:grid-flow-dense md:auto-rows-[minmax(18rem,auto)] md:grid-cols-6 xl:px-0">
-                {items.map((item, i) => {
-                  const cardPadding =
-                    item.size === `narrow` ? `p-6 md:p-7` : `p-7 md:p-8`;
-                  const cardClass = `${cardBase} ${cardPadding}`;
-                  return (
-                    <MagicCard
-                      key={i}
-                      className={`${item.colSpan} group flex h-full rounded-2xl p-[2px]`}
-                      gradientColor="oklch(0.592 0.2157 349.761)"
-                    >
-                      <BentoGridItem
-                        className={cardClass}
-                        title={item.title}
-                        animated={false}
-                        description={item.description}
-                      />
-                    </MagicCard>
-                  );
-                })}
-              </BentoGrid>
-            </div>
-          </div>
-        </div>
+        <BentoGrid className="mx-auto max-w-screen-xl grid-cols-1 gap-4 px-4 transition-all md:grid-flow-dense md:auto-rows-[minmax(18rem,auto)] md:grid-cols-6 xl:px-0">
+          {items.map((item, i) => {
+            const cardPadding =
+              item.size === `narrow` ? `p-6 md:p-7` : `p-7 md:p-8`;
+            const cardClass = `${cardBase} ${cardPadding}`;
+            return (
+              <MagicCard
+                key={i}
+                className={`${item.colSpan} group flex h-full rounded-2xl p-[2px]`}
+                gradientColor="oklch(0.592 0.2157 349.761)"
+              >
+                <BentoGridItem
+                  className={cardClass}
+                  title={item.title}
+                  animated={false}
+                  description={item.description}
+                />
+              </MagicCard>
+            );
+          })}
+        </BentoGrid>
       </div>
     </section>
   );

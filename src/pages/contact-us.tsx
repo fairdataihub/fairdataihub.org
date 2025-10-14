@@ -1,3 +1,5 @@
+'use client';
+
 import Head from 'next/head';
 
 import Seo from '@/components/seo/seo';
@@ -45,6 +47,7 @@ export default function ContactUs() {
               height="276"
               title="AI-READI Contact Form"
               aria-label="Contact form for feedback or collaboration"
+              suppressHydrationWarning={true}
             >
               Your browser does not support iframes, or iframes are disabled.
               Please visit{` `}
