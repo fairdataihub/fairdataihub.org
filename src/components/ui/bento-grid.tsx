@@ -70,16 +70,14 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        `group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-white p-4`,
+        `group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl p-4`,
         // Base transition classes when animations are enabled
-        animated ? `transition-all duration-300 ease-out` : ``,
-        // Hover effects for desktop
-        animated ? `hover:scale-[1.02] hover:shadow-xl` : ``,
+        animated ? `transition-all duration-600 ease-out` : ``,
         // Touch/pressed effects for mobile
-        animated && isPressed ? `scale-[0.98] shadow-lg` : ``,
+        animated && isPressed ? `shadow-lg` : ``,
         animated && isTouched ? `shadow-xl` : ``,
         // Dark mode styles
-        `dark:border-white/[0.2] dark:bg-black dark:shadow-none`,
+        `dark:bg-black dark:shadow-none`,
         className,
       )}
       onTouchStart={handleTouchStart}
