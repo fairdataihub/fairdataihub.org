@@ -10,7 +10,7 @@ import PublicationsJSON from '@/assets/data/publications.json';
 
 const Impact: React.FC<Props> = ({ publications }) => {
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <section className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-5 pt-0 sm:px-10 sm:py-10">
       <Seo
         templateTitle="Impact"
         templateDescription="Resources created by the FAIR Data Innovations"

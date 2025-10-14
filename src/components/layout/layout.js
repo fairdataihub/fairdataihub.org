@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     <>
       <NavMenu />
 
-      <main className="mt-16">{children}</main>
+      <main className="pt-20">{children}</main>
 
       <Footer />
     </>

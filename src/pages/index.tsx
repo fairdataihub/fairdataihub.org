@@ -34,7 +34,7 @@ export default function Home() {
                 AI-driven discoveries
               </h1>
 
-              <div className="relative mx-auto mt-2 h-48 w-full sm:h-40">
+              <div className="relative mx-auto mt-8 h-48 w-full sm:h-40 md:mt-2">
                 <div
                   aria-hidden
                   className="spotlight [--spot-bleed:28rem] [--spot-bottom-left:2%] [--spot-bottom-right:98%] [--spot-end:90%] [--spot-h:860px] [--spot-mid:34%] [--spot-top-left:20%] [--spot-top-right:90%] [--spot-w:2000px] md:[--spot-end:92%] md:[--spot-top-left:32%] md:[--spot-top-right:66%]"
@@ -49,12 +49,12 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="absolute top-0 left-1/2 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
-                <div className="absolute top-0 left-1/2 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
-                <div className="absolute top-0 left-1/2 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm" />
-                <div className="absolute top-0 left-1/2 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent" />
+                <div className="absolute -top-4 left-1/2 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent md:top-0" />
 
-                <div className="absolute inset-0 z-10 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]" />
+                <div className="absolute inset-0 z-10 mt-4 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)] md:mt-0" />
                 <div className="absolute inset-0 z-20 flex items-end justify-center">
                   <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
                     We develop open source tools, standards, and guidelines that

@@ -170,7 +170,7 @@ export default function BentoProjects() {
           return (
             <Link key={i} href={item.href} className={`${item.colSpan} group`}>
               <MagicCard
-                className="flex h-full rounded-2xl p-[2px]"
+                className="flex h-full rounded-2xl p-[1px] md:p-[2px]"
                 gradientColor="oklch(0.592 0.2157 349.761)"
               >
                 <BentoGridItem
