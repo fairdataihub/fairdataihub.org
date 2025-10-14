@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { cn } from '@/lib/utils';
 
 export const BentoGrid = ({
@@ -34,22 +36,66 @@ export const BentoGridItem = ({
   icon?: React.ReactNode;
   animated?: boolean;
 }) => {
+  const [isPressed, setIsPressed] = useState(false);
+  const [isTouched, setIsTouched] = useState(false);
+
+  const handleTouchStart = () => {
+    if (animated) {
+      setIsPressed(true);
+      setIsTouched(true);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (animated) {
+      setIsPressed(false);
+      // Keep touched state for a brief moment to show the effect
+      setTimeout(() => setIsTouched(false), 200);
+    }
+  };
+
+  const handleMouseEnter = () => {
+    if (animated) {
+      setIsTouched(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (animated) {
+      setIsTouched(false);
+      setIsPressed(false);
+    }
+  };
+
   return (
     <div
       className={cn(
         `group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-white p-4`,
-        // only include transition/hover classes when animations are enabled
-        animated ? `transition duration-600 hover:shadow-xl` : ``,
+        // Base transition classes when animations are enabled
+        animated ? `transition-all duration-300 ease-out` : ``,
+        // Hover effects for desktop
+        animated ? `hover:scale-[1.02] hover:shadow-xl` : ``,
+        // Touch/pressed effects for mobile
+        animated && isPressed ? `scale-[0.98] shadow-lg` : ``,
+        animated && isTouched ? `shadow-xl` : ``,
+        // Dark mode styles
         `dark:border-white/[0.2] dark:bg-black dark:shadow-none`,
         className,
       )}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={handleTouchEnd}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       {header}
       <div
         className={cn(
-          // only include the translate/transition on the inner block when enabled
-          animated
-            ? `transition-all duration-600 group-hover/bento:translate-x-1`
+          // Base transition when animations are enabled
+          animated ? `transition-all duration-300 ease-out` : ``,
+          // Transform effects for both hover and touch
+          animated && (isTouched || isPressed)
+            ? `translate-x-1 translate-y-[-2px]`
             : ``,
         )}
       >
