@@ -1,5 +1,5 @@
 ---
-title: 'Building a performant file-explorer in the browser with React'
+title: 'Building a performant File Explorer in the browser with React'
 authors:
   - 'JacobClark'
 date: '2025-10-15'
@@ -16,7 +16,7 @@ tags:
   - File Explorer
 ---
 
-# Why build your own file explorer?
+# Why build your own File Explorer?
 
 Existing file explorer libraries often lack scalability and flexibility. Adapting them to your data can be more work than building a custom solution, especially if you need features beyond a basic nested folder view. This guide provides the essential knowledge and code examples to help get you on your way to building a great file explorer!
 
@@ -28,7 +28,7 @@ This guide uses the libraries listed below. These are the ones we use, but you c
 - Tabler Icons
 - TanStack Virtual
 
-## Deciding on a Data Model for Your Explorer
+## Deciding on a Data Model for Your File Explorer
 
 Before writing any UI code, it's a good idea to determine the data structure you will use to render your file structure. In many cases, your data source will be hierarchical, such as a nested folder tree (for example, JSON). However, most browser virtualization libraries operate on arrays, so you will often need to maintain a flattened version of your data for efficient rendering.
 
@@ -354,7 +354,7 @@ The code above will render a styled file explorer with icons like the one below:
 
 When your application needs to display hundreds or even thousands of files, rendering all of them in the DOM at once can drastically slow down the performance of your file explorer. TanStack Virtual solves this by rendering only the items currently visible in the viewport (plus a small buffer that you can tweak depending on the needs of your UI), which means you might only be rendering 40–60 items at a time even if your explorer contains thousands of folders and files.
 
-Below is a simple example of how to use TanStack Virtual to virtualize your file explorer ()
+Below is a simple example of how to use TanStack Virtual to virtualize your file explorer.
 
 ```jsx
 import React, { useRef } from 'react';
