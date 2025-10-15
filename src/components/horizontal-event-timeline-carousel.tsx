@@ -125,7 +125,7 @@ export default function HorizontalEventTimelineCarousel() {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-12">
+    <div className="mx-auto max-w-7xl px-4 pt-4 pb-12">
       <div className="relative">
         <div
           ref={carouselRef}
