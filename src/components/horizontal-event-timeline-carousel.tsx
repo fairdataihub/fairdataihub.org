@@ -190,10 +190,7 @@ export default function HorizontalEventTimelineCarousel() {
                         ref={index === 0 ? headerRef : null}
                         className="flex flex-col items-center p-6 text-center"
                       >
-                        <Badge
-                          variant="outline"
-                          className="bg-primary/5 border-primary/20 mb-2 px-3 py-1 text-sm"
-                        >
+                        <Badge className="mb-2 border-pink-300/70 bg-pink-50 px-3 py-1 text-sm text-pink-700 dark:border-pink-400/40 dark:bg-pink-400/10 dark:text-pink-200">
                           <Icon icon="mdi:calendar" className="mr-1 h-4 w-4" />
                           {formatPeriod(item)}
                         </Badge>
