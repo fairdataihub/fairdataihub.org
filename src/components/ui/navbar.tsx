@@ -31,7 +31,7 @@ export default function NavMenu() {
   ];
 
   return (
-    <div className="relative top-0 z-30 w-full print:hidden">
+    <div className="relative top-0 z-90 w-full print:hidden">
       <Navbar>
         <NavBody className="hidden lg:flex">
           <NavbarLogo />

@@ -84,13 +84,13 @@ const Gallery: NextPage<Props> = ({ images }) => {
               <div key={`year-section-${year}`} className="mb-10">
                 <div className="my-8 w-full">
                   <div className="flex items-center">
-                    <div className="h-px flex-1 rounded-lg bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400" />
+                    <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-r" />
 
                     <span className="mx-6 text-4xl font-extrabold tracking-tight text-gray-900 select-none sm:text-5xl">
                       {year}
                     </span>
 
-                    <div className="h-px flex-1 rounded-lg bg-gradient-to-l from-gray-200 via-gray-300 to-gray-400" />
+                    <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-l" />
                   </div>
                 </div>
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">

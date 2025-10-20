@@ -27,7 +27,7 @@ export default function ImpactSection() {
                 aria-label="See our full impact"
               >
                 <span>See our full impact</span>
-                <Icon icon="mdi:arrow-right" className="h-4 w-4" />
+                <Icon icon="solar:arrow-right-broken" className="h-4 w-4" />
               </Link>
             </div>
           </div>

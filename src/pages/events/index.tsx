@@ -1,10 +1,11 @@
 import dayjs from 'dayjs';
+import { motion } from 'framer-motion';
 import fs from 'fs';
 import matter from 'gray-matter';
-import Link from 'next/link';
 import wordsCount from 'words-count';
 
-import EventDates from '@/components/events/EventDates';
+import EventFeatured from '@/components/events/EventFeatured';
+import EventListItem from '@/components/events/EventListItem';
 import Seo from '@/components/seo/seo';
 
 type EventsList = {
@@ -18,18 +19,50 @@ type EventsList = {
     subtitle: string;
     location: string;
     type: string;
+    heroImage: string;
   };
 };
 
-interface BlogProps {
+interface EventsProps {
   eventsList: EventsList[];
 }
 
-// The Blog Page Content
+export default function Events({ eventsList }: EventsProps) {
+  const today = dayjs().startOf(`day`);
 
-const Events: React.FC<BlogProps> = ({ eventsList }) => {
+  // Helper: robustly parse startDateTime
+  const parseStart = (s?: string) => {
+    if (!s) return null;
+    const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(s);
+    const d = isDateOnly ? dayjs(s, `YYYY-MM-DD`).startOf(`day`) : dayjs(s);
+    return d.isValid() ? d : null;
+  };
+
+  // Upcoming: start >= today
+  const upcoming = eventsList
+    .map((e) => ({ e, d: parseStart(e.frontMatter.startDateTime) }))
+    .filter(({ d }) => d && d.valueOf() >= today.valueOf())
+    .sort((a, b) => a.d!.valueOf() - b.d!.valueOf())
+    .map(({ e }) => e);
+
+  // Past: start < today
+  const past = eventsList
+    .map((e) => ({ e, d: parseStart(e.frontMatter.startDateTime) }))
+    .filter(({ d }) => d && d.valueOf() < today.valueOf())
+    .sort((a, b) => b.d!.valueOf() - a.d!.valueOf())
+    .map(({ e }) => e);
+
+  const pastByYear = past.reduce<Record<string, EventsList[]>>((acc, ev) => {
+    const y = dayjs(ev.frontMatter.startDateTime).format(`YYYY`);
+    (acc[y] ||= []).push(ev); // order within each year remains newest → oldest
+    return acc;
+  }, {});
+
+  // Featured is the soonest upcoming
+  const [featured, ...upcomingRest] = upcoming;
+
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <div className="relative pt-20">
       <Seo
         templateTitle="Events"
         templateUrl="https://fairdataihub.org/events"
@@ -37,122 +70,133 @@ const Events: React.FC<BlogProps> = ({ eventsList }) => {
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
-      <div className="mb-5 px-2 pt-5 sm:pt-0 md:px-7">
-        <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
-          Events
-        </h1>
-        <h2 className="text-left text-xl">
-          Stay up to date with our upcoming events.
-        </h2>
+      {/* Background glow */}
+      <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
+        <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
 
-      <hr className="mx-6 my-2 border-dashed border-slate-200" />
+      {/* Page container with XL min width */}
+      <section className="container mx-auto w-full max-w-screen-xl px-4 pt-8 pb-16 xl:min-w-[1280px]">
+        <motion.header
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35, ease: `easeOut` }}
+          className="mb-8 sm:mb-10"
+        >
+          <h1 className="text-4xl font-black tracking-tight text-pretty text-stone-900 sm:text-5xl dark:text-stone-100">
+            Events
+          </h1>
+          <p className="font-asap my-2 max-w-2xl text-lg text-stone-700 dark:text-stone-300">
+            Join our talks, workshops, and community sessions on FAIR practices.
+          </p>
+          <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+        </motion.header>
 
-      {eventsList.map((post) => {
-        const { slug, frontMatter, timeToRead } = post;
+        {/* UPCOMING */}
+        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+          Upcoming Events
+        </h2>
 
-        const { title, startDateTime, endDateTime, subtitle, type, location } =
-          frontMatter;
+        {featured ? (
+          <div className="mb-8">
+            <EventFeatured
+              slug={featured.slug}
+              title={featured.frontMatter.title}
+              subtitle={featured.frontMatter.subtitle}
+              startDateTime={featured.frontMatter.startDateTime}
+              endDateTime={featured.frontMatter.endDateTime}
+              type={featured.frontMatter.type}
+              location={featured.frontMatter.location}
+              heroImage={featured.frontMatter.heroImage}
+            />
+          </div>
+        ) : (
+          <p className="mb-8 rounded-xl border border-slate-200 bg-white p-4 text-slate-700">
+            No upcoming events at the moment, check back soon.
+          </p>
+        )}
 
-        return (
-          <article
-            key={title}
-            className="mb-2 flex w-full flex-col md:flex-row"
-          >
-            <div className="flex w-full flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-xs md:px-7 md:py-5">
-              <div className="mb-1 flex flex-row items-center justify-between md:hidden">
-                <div className="my-2 flex items-center space-x-2">
-                  <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-sm font-medium text-purple-800">
-                    {type}
-                  </span>
-                  <span className="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-sm font-medium text-pink-800">
-                    {location}
-                  </span>
+        {upcomingRest.length > 0 && (
+          <ul className="mx-auto w-full max-w-5xl space-y-3">
+            {upcomingRest.map(({ slug, frontMatter }) => (
+              <EventListItem
+                key={slug}
+                slug={slug}
+                title={frontMatter.title}
+                subtitle={frontMatter.subtitle}
+                startDateTime={frontMatter.startDateTime}
+                endDateTime={frontMatter.endDateTime}
+                type={frontMatter.type}
+                location={frontMatter.location}
+                isPast={false}
+                heroImage={frontMatter.heroImage}
+              />
+            ))}
+          </ul>
+        )}
+
+        <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+
+        {/* PAST */}
+        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+          Past Events
+        </h2>
+
+        {Object.keys(pastByYear).length === 0 ? (
+          <p className="rounded-xl border border-slate-200 bg-white p-4 text-slate-700">
+            No past events yet.
+          </p>
+        ) : (
+          <div className="mx-auto w-full max-w-5xl">
+            {Object.entries(pastByYear)
+              .sort(([a], [b]) => Number(b) - Number(a)) // years: desc
+              .map(([year, items]) => (
+                <div key={year} className="mb-6">
+                  <h3 className="mb-2 text-sm font-semibold tracking-wide text-slate-500">
+                    {year}
+                  </h3>
+                  <ul className="space-y-3">
+                    {items.map(({ slug, frontMatter }) => (
+                      <EventListItem
+                        key={slug}
+                        slug={slug}
+                        title={frontMatter.title}
+                        subtitle={frontMatter.subtitle}
+                        startDateTime={frontMatter.startDateTime}
+                        endDateTime={frontMatter.endDateTime}
+                        type={frontMatter.type}
+                        location={frontMatter.location}
+                        heroImage={frontMatter.heroImage}
+                        isPast
+                      />
+                    ))}
+                  </ul>
                 </div>
-
-                <span className="text-sm text-gray-600">
-                  {timeToRead} min read
-                </span>
-              </div>
-
-              <hr className="my-1 border-dashed border-slate-200 md:hidden" />
-
-              <Link href={`/events/${slug}`} passHref>
-                <h2 className="text-url mt-4 mb-1 cursor-pointer text-2xl font-semibold hover:underline md:mt-0 md:text-xl">
-                  {title}
-                </h2>
-              </Link>
-
-              <div className="flex items-center justify-between">
-                <EventDates
-                  startDateTime={startDateTime}
-                  endDateTime={endDateTime}
-                />
-
-                <div className="hidden items-center space-x-2 md:flex">
-                  <span className="me-2 rounded bg-purple-100 px-2.5 py-0.5 text-xs font-medium text-purple-800">
-                    {type}
-                  </span>
-                  <span className="me-2 rounded bg-pink-100 px-2.5 py-0.5 text-xs font-medium text-pink-800">
-                    {location}
-                  </span>
-                </div>
-              </div>
-
-              <p className="mt-2 mb-3 border-t border-slate-200 pt-2">
-                {subtitle}
-              </p>
-
-              <div className="flex w-full flex-col justify-end md:flex-row">
-                <Link href={`/events/${slug}`} passHref>
-                  <span className="text-url cursor-pointer text-base hover:underline">
-                    Read more →
-                  </span>
-                </Link>
-              </div>
-            </div>
-          </article>
-        );
-      })}
-    </section>
+              ))}
+          </div>
+        )}
+      </section>
+    </div>
   );
-};
+}
 
 export async function getStaticProps() {
-  // Get the posts from the `blog` directory
   const files = fs.readdirSync(`./events`);
 
   const eventsList = files.map((fileName) => {
-    // Remove the .md extension and use the file name as the slug
     const slug = fileName.replace(`.md`, ``);
-
-    // Read the raw content of the file and parse the frontMatter
-    const rawFileContent = fs.readFileSync(`events/${fileName}`, `utf-8`);
-    const timeToRead = Math.ceil(wordsCount(rawFileContent) / 265);
-
-    const { data: frontMatter } = matter(rawFileContent);
-
-    return {
-      slug,
-      frontMatter,
-      timeToRead,
-    };
+    const raw = fs.readFileSync(`events/${fileName}`, `utf-8`);
+    const timeToRead = Math.ceil(wordsCount(raw) / 265);
+    const { data: frontMatter } = matter(raw);
+    return { slug, frontMatter, timeToRead };
   });
 
-  // sort the posts by date in descending order
+  // keep sort by start date desc (latest first)
   eventsList.sort((a, b) => {
-    const a_date: any = dayjs(a.frontMatter.startDateTime, `YYYY-MM-DD`);
-    const b_date: any = dayjs(b.frontMatter.startDateTime, `YYYY-MM-DD`);
-
-    return b_date - a_date;
+    const aDate: any = dayjs(a.frontMatter.startDateTime, `YYYY-MM-DD`);
+    const bDate: any = dayjs(b.frontMatter.startDateTime, `YYYY-MM-DD`);
+    return bDate - aDate;
   });
 
-  // Return the posts data to the page as props
-  return {
-    props: {
-      eventsList,
-    },
-  };
+  return { props: { eventsList } };
 }
-
-export default Events;

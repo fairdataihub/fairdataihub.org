@@ -1,244 +1,239 @@
 'use client';
 
 import { Icon } from '@iconify/react';
-import { motion, PanInfo } from 'framer-motion';
-import { useLayoutEffect, useRef, useState } from 'react';
+import {
+  animate,
+  motion,
+  MotionValue,
+  useMotionValue,
+  useTransform,
+} from 'framer-motion';
+import { useCallback, useMemo, useRef, useState } from 'react';
 
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
 import events from '@/public/home/events.json';
 
-const height = `34rem`;
+const HEIGHT_REM = 34;
+
+type EventItem = (typeof events)[number];
+
+function formatPeriod(item: EventItem) {
+  if (item.periodType === `Q`) return `Q${item.periodNumber} ${item.year}`;
+  if (item.periodType === `H`) return `H${item.periodNumber} ${item.year}`;
+  return `${item.year}`;
+}
+
+const snapAnimate = (mv: MotionValue<any>, to: number) =>
+  animate(mv, to, { type: `spring`, stiffness: 260, damping: 32 });
 
 export default function HorizontalEventTimelineCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [expandedHeight, setExpandedHeight] = useState<number>(140);
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const headerRef = useRef<HTMLDivElement>(null);
+  const [active, setActive] = useState(0);
 
-  // Calculate available height for the "expanded" section (now always visible)
-  useLayoutEffect(() => {
-    const measure = () => {
-      const carouselEl = carouselRef.current;
-      const headerEl = headerRef.current;
-      if (!carouselEl || !headerEl) {
-        return;
-      }
+  // Geometry
+  const diameter = 1000;
+  const degrees = 22;
+  const slideWidth = useMemo(
+    () => diameter / events.length,
+    [diameter, events.length],
+  );
+  const lastIndex = events.length - 1;
+  const minX = useMemo(() => -lastIndex * slideWidth, [lastIndex, slideWidth]);
+  const maxX = 0;
 
-      // Prefer getBoundingClientRect but fall back to offsetHeight if needed
-      const totalHeight =
-        carouselEl.getBoundingClientRect().height || carouselEl.offsetHeight;
-      const headerHeight =
-        headerEl.getBoundingClientRect().height || headerEl.offsetHeight;
+  // Shared motion value for x position (drives rotation only)
+  const xMv = useMotionValue(0);
 
-      const availableHeight = totalHeight - headerHeight - 110; // padding/borders
-      setExpandedHeight(Math.max(availableHeight, 80));
-    };
+  const targetForIndex = useCallback(
+    (idx: number) => -idx * slideWidth,
+    [slideWidth],
+  );
 
-    // Initial measurement
-    window.requestAnimationFrame(measure);
+  const snapToNearest = useCallback(() => {
+    const current = xMv.get();
+    const snapped = Math.round(current / slideWidth) * slideWidth;
+    const clampedIdx = Math.min(
+      Math.max(Number(-snapped / slideWidth), 0),
+      lastIndex,
+    );
+    setActive(clampedIdx);
+    snapAnimate(xMv, targetForIndex(clampedIdx));
+  }, [lastIndex, slideWidth, targetForIndex, xMv]);
 
-    // Observe size changes for both elements when available
-    let ro: ResizeObserver | null = null;
-    if (typeof ResizeObserver !== `undefined`) {
-      ro = new ResizeObserver(() => {
-        window.requestAnimationFrame(measure);
-      });
-      if (carouselRef.current) {
-        ro.observe(carouselRef.current);
-      }
-      if (headerRef.current) {
-        ro.observe(headerRef.current);
-      }
-    }
-
-    // Also update on window resize/load as a fallback
-    const onResize = () => window.requestAnimationFrame(measure);
-    window.addEventListener(`resize`, onResize);
-    window.addEventListener(`load`, onResize);
-
-    return () => {
-      window.removeEventListener(`resize`, onResize);
-      window.removeEventListener(`load`, onResize);
-      if (ro) {
-        ro.disconnect();
-      }
-    };
-  }, []);
-
-  const formatPeriod = (item: (typeof events)[0]) => {
-    if (item.periodType === `Q`) {
-      return `Q${item.periodNumber} ${item.year}`;
-    }
-    if (item.periodType === `H`) {
-      return `H${item.periodNumber} ${item.year}`;
-    }
-    return `${item.year}`;
-  };
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev === events.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? events.length - 1 : prev - 1));
-  };
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
-
-  const handleDragEnd = (
-    _event: MouseEvent | TouchEvent | PointerEvent,
-    info: PanInfo,
-    index: number,
-  ) => {
-    const SWIPE_THRESHOLD = 50;
-    if (info.offset.x > SWIPE_THRESHOLD && index === currentIndex) {
-      prevSlide();
-    } else if (info.offset.x < -SWIPE_THRESHOLD && index === currentIndex) {
-      nextSlide();
-    }
-  };
-
-  const handleCardClick = (index: number) => {
-    if (index !== currentIndex) {
-      goToSlide(index);
-    }
-  };
-
-  const cardVariants = {
-    active: {
-      x: 0,
-      scale: 1,
-      opacity: 1,
-      zIndex: 10,
-      transition: { duration: 0.3, ease: `easeInOut` },
+  const goTo = useCallback(
+    (idx: number) => {
+      const clamped = Math.min(Math.max(idx, 0), lastIndex);
+      setActive(clamped);
+      snapAnimate(xMv, targetForIndex(clamped));
     },
-    inactive: {
-      scale: 0.9,
-      opacity: 0.7,
-      zIndex: 0,
-      transition: { duration: 0.3, ease: `easeInOut` },
-    },
-  };
+    [lastIndex, targetForIndex, xMv],
+  );
+
+  const prev = () => goTo(active - 1);
+  const next = () => goTo(active + 1);
+
+  // z-index helper: active on top
+  const zFor = (i: number) => (i === active ? 60 : 30 - Math.abs(i - active));
+
+  // Click vs drag threshold
+  const panAccumRef = useRef(0);
 
   return (
     <div className="mx-auto max-w-7xl px-4 pt-4 pb-12">
       <div className="relative">
+        {/* Stage */}
         <div
-          ref={carouselRef}
-          className="relative touch-pan-x overflow-hidden"
-          style={{ height }}
+          className="relative mx-5 w-full overflow-hidden rounded-2xl bg-white shadow-lg"
+          style={{ height: `${HEIGHT_REM}rem` }}
+          aria-roledescription="carousel"
         >
-          <button
-            onClick={prevSlide}
-            className="absolute top-1/2 left-0 z-20 hidden -translate-y-1/2 rounded-full bg-black/50 p-2 text-white shadow-md transition-colors hover:bg-black/65 md:block"
-          >
-            <Icon icon="mdi:chevron-left" className="h-6 w-6" />
-          </button>
-          <button
-            onClick={nextSlide}
-            className="absolute top-1/2 right-0 z-20 hidden -translate-y-1/2 rounded-full bg-black/50 p-2 text-white shadow-md transition-colors hover:bg-black/65 md:block"
-          >
-            <Icon icon="mdi:chevron-right" className="h-6 w-6" />
-          </button>
+          {/* Arrows (highest z) */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 z-[999] hidden items-center md:flex">
+            <button
+              className="pointer-events-auto ml-2 rounded-full bg-black/50 p-2 text-white shadow-md transition hover:bg-black/65"
+              onClick={prev}
+              aria-label="Previous"
+              type="button"
+            >
+              <Icon icon="mdi:chevron-left" className="h-6 w-6" />
+            </button>
+          </div>
+          <div className="pointer-events-none absolute inset-y-0 right-0 z-[999] hidden items-center md:flex">
+            <button
+              className="pointer-events-auto mr-2 rounded-full bg-black/50 p-2 text-white shadow-md transition hover:bg-black/65"
+              onClick={next}
+              aria-label="Next"
+              type="button"
+            >
+              <Icon icon="mdi:chevron-right" className="h-6 w-6" />
+            </button>
+          </div>
 
-          <div className="flex h-full items-center justify-center">
-            {events.map((item, index) => (
-              <motion.div
-                key={index}
-                className="absolute mx-10 w-80"
-                variants={cardVariants}
-                initial="inactive"
-                animate={index === currentIndex ? `active` : `inactive`}
-                style={{
-                  x: `${Math.round((index - currentIndex) * 350)}px`,
-                  willChange: `transform`,
-                }}
-                drag="x"
-                dragConstraints={{ left: -50, right: 50 }}
-                dragElastic={0.1}
-                onDragEnd={(e: any, info: any) => handleDragEnd(e, info, index)}
-              >
-                <motion.div
-                  variants={cardVariants}
-                  initial="inactive"
-                  animate={index === currentIndex ? `active` : `inactive`}
-                  className={`absolute top-[-1rem] left-1/2 z-10 h-6 w-6 -translate-x-1/2 transform rounded-full ${
-                    index === currentIndex
-                      ? `bg-primary`
-                      : `border-primary border-2 bg-transparent`
-                  }`}
-                  style={{
-                    willChange: `transform`,
-                    transform: `translateZ(0)`,
-                  }}
-                />
+          {/* Wheel */}
+          <div className="relative h-full">
+            <div className="flex h-full items-center justify-center">
+              {events.map((item, index) => {
+                const baseRotate = index * degrees;
+                // eslint-disable-next-line react-hooks/rules-of-hooks
+                const rotate = useTransform(
+                  xMv,
+                  (v) => v / ((slideWidth / degrees) * 1) + baseRotate,
+                );
+                const isActive = active === index;
 
-                <motion.div
-                  layout
-                  className="w-full cursor-pointer"
-                  transition={{ duration: 0.3, ease: `easeInOut` }}
-                  onClick={() => handleCardClick(index)}
-                >
-                  <Card className="border-primary/10 overflow-hidden shadow-lg transition-shadow duration-300 hover:shadow-xl">
-                    <CardContent className="p-0">
-                      {/* header */}
-                      <div
-                        ref={index === 0 ? headerRef : null}
-                        className="flex flex-col items-center p-6 text-center"
-                      >
-                        <Badge className="mb-2 border-pink-300/70 bg-pink-50 px-3 py-1 text-sm text-pink-700 dark:border-pink-400/40 dark:bg-pink-400/10 dark:text-pink-200">
-                          <Icon icon="mdi:calendar" className="mr-1 h-4 w-4" />
-                          {formatPeriod(item)}
-                        </Badge>
-                        <h3 className="text-primary text-xl font-bold">
-                          {item.year} Milestones
-                        </h3>
-                        <p className="text-lg font-medium">
-                          {item.periodType === `Q`
-                            ? `Quarter ${item.periodNumber}`
-                            : `Half ${item.periodNumber}`}
-                        </p>
-                      </div>
+                return (
+                  <motion.div
+                    key={index}
+                    className="absolute flex h-full items-center justify-center select-none"
+                    style={{
+                      rotate,
+                      transformOrigin: `50% ${diameter}px`,
+                      willChange: `transform`,
+                      zIndex: zFor(index),
+                    }}
+                  >
+                    {/* Card (handles its own pan + click) */}
+                    <motion.div
+                      onPanStart={() => {
+                        xMv.stop();
+                        panAccumRef.current = 0;
+                      }}
+                      onPan={(e: any, info: any) => {
+                        const overscroll = slideWidth * 0.6;
+                        panAccumRef.current += info.delta.x;
+                        const next = xMv.get() + info.delta.x;
+                        const clamped = Math.min(
+                          Math.max(next, minX - overscroll),
+                          maxX + overscroll,
+                        );
+                        xMv.set(clamped);
+                      }}
+                      onPanEnd={() => {
+                        if (Math.abs(panAccumRef.current) < 4) {
+                          goTo(index); // treat tap as click
+                        } else {
+                          snapToNearest();
+                        }
+                      }}
+                      onClick={() => goTo(index)} // click-to-center
+                      role="button"
+                      tabIndex={0}
+                      onKeyDown={(e: any) => {
+                        if (e.key === `Enter` || e.key === ` `) {
+                          e.preventDefault();
+                          goTo(index);
+                        }
+                      }}
+                      className={[
+                        `relative w-80 max-w-[22rem]`,
+                        `h-[26rem]`, // FIXED card height
+                        `overflow-hidden rounded-2xl`,
+                        `transition-all duration-500`,
+                        isActive
+                          ? `ring-primary/40 scale-110 ring-4`
+                          : `scale-95 border border-pink-300/10 ring-0`,
+                        `bg-white shadow-lg hover:shadow-xl`,
+                        `cursor-pointer`,
+                        isActive ? `z-60` : `z-10`,
+                      ].join(` `)}
+                    >
+                      <Card className="h-full border-0 shadow-none">
+                        <CardContent className="flex h-full flex-col p-0">
+                          {/* header (fixed) */}
+                          <div className="flex flex-none flex-col items-center p-6 text-center">
+                            <Badge className="mb-2 border-pink-300/70 bg-pink-50 px-3 py-1 text-sm text-pink-700 dark:border-pink-400/40 dark:bg-pink-400/10 dark:text-pink-200">
+                              <Icon
+                                icon="mdi:calendar"
+                                className="mr-1 h-4 w-4"
+                              />
+                              {formatPeriod(item)}
+                            </Badge>
+                            <h3 className="text-primary text-xl font-bold">
+                              {item.year} Milestones
+                            </h3>
+                            <p className="text-lg font-medium">
+                              {item.periodType === `Q`
+                                ? `Quarter ${item.periodNumber}`
+                                : item.periodType === `H`
+                                  ? `Half ${item.periodNumber}`
+                                  : ``}
+                            </p>
+                          </div>
 
-                      <div
-                        className="border-primary/50 overflow-y-auto border-t px-6 pt-2 pb-6"
-                        style={{ height: expandedHeight }}
-                      >
-                        <h4 className="my-2 flex items-center justify-center text-sm font-semibold">
-                          Events
-                        </h4>
-                        <div className="flex items-center justify-center">
-                          <motion.p
-                            className="text-left text-sm leading-relaxed whitespace-pre-line"
-                            initial={{ opacity: 0, y: 6 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.25, ease: `easeOut` }}
+                          {/* body (fills remaining height; scrolls) */}
+                          <div
+                            className="border-primary/50 flex-1 overflow-y-auto border-t px-6 pt-2 pb-6"
+                            onPointerDown={(e) => e.stopPropagation()} // allow scrolling text without rotating the wheel
                           >
-                            {item.events}
-                          </motion.p>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              </motion.div>
-            ))}
+                            <h4 className="my-2 flex items-center justify-center text-sm font-semibold">
+                              Events
+                            </h4>
+                            <p className="text-left text-sm leading-relaxed whitespace-pre-line">
+                              {item.events}
+                            </p>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    </motion.div>
+                  </motion.div>
+                );
+              })}
+            </div>
           </div>
         </div>
 
+        {/* Dots */}
         <div className="mt-8 flex justify-center gap-2">
-          {events.map((_, index) => (
+          {events.map((_, i) => (
             <button
-              key={index}
-              onClick={() => goToSlide(index)}
-              className={`h-3 w-3 rounded-full transition-colors ${
-                index === currentIndex ? `bg-primary` : `bg-primary/20`
-              }`}
-              aria-label={`Go to slide ${index + 1}`}
+              key={i}
+              onClick={() => goTo(i)}
+              className={[
+                `h-3 w-3 rounded-full transition-colors`,
+                i === active ? `bg-primary` : `bg-primary/20`,
+              ].join(` `)}
+              aria-label={`Go to slide ${i + 1}`}
             />
           ))}
         </div>

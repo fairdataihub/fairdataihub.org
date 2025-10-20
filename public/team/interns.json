@@ -1,0 +1,101 @@
+[
+  {
+    "id": "Paapa-Mensah-Kane",
+    "name": "Paapa Mensah-Kane (he/him)",
+    "title": "Pharmacologist",
+    "bio": "Paapa is originally from Ghana where he had his Pharmacy and Master's degree. He also holds a PhD degree in pharmacology and neuroscience from UNTHSC, Texas. He became a part of the team in 2024. His interest lies in pharmacometrics and computational pharmacology. In his leisure time, he watches soccer (REAL MADRID) and swim.",
+    "image": "/images/people/paapa-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "Ph.D. in Pharmacology and Neuroscience",
+        "institution": "University of North Texas Health Science Center, Fort Worth",
+        "year": "2024"
+      },
+      {
+        "degree": "M.Sc. in Natural Products Pharmacology",
+        "institution": "Kwame Nkrumah University of Science and Technology, Kumasi",
+        "year": "2015"
+      },
+      {
+        "degree": "B.Pharm.",
+        "institution": "Kwame Nkrumah University of Science and Technology, Kumasi",
+        "year": "2011"
+      }
+    ],
+    "github": {
+      "show": true,
+      "link": "https://github.com/Paapakane"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/paapa-mensah-kane-bpharm-mphil-ph-d-a58765133/"
+    },
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com"
+    }
+  },
+  {
+    "id": "Gerard-Blake",
+    "name": "Gerard Blake (he/him)",
+    "title": "Undergraduate Intern",
+    "bio": "Gerard is an undergraduate at the University of Chicago studying Public Policy and Biology. His interests lie at the intersection of science, health, and policy, with a particular focus on sustainable technologies and biomedical research. He has previous experience in laboratory research, including work on renewable battery storage technologies, cancer-fighting molecules, and flow battery chemistry, as well as applied policy research on housing, immigration, and public health. Outside of academics, Gerard is passionate about debate, writing, and community outreach, and he has led initiatives that bring science engagement to local schools.",
+    "image": "/images/people/gerard-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "B.A. in Public Policy, Minor in Biology",
+        "institution": "University of Chicago",
+        "year": ""
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com"
+    },
+    "github": {
+      "show": false,
+      "link": "https://github.com"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/gerard-blake-048216206/"
+    }
+  },
+  {
+    "id": "Nada-Haboudal",
+    "name": "Nada Haboudal (she/her)",
+    "title": "Data Scientist",
+    "bio": "Nada relocated from Saudi Arabia to the United States to further her education. She became a part of the team in 2023. She has a strong passion for Health Technology, particularly Fem-tech and wearables. In her leisure time, she loves visiting the beach and playing the piano.",
+    "image": "/images/people/nada-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "M.Sc. in Engineering Technology",
+        "institution": "University of Houston, Houston",
+        "year": "2023"
+      },
+      {
+        "degree": "B.Sc. in Industrial Engineering",
+        "institution": "Al Faisal University, Riyadh",
+        "year": "2016"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/nhaboudal"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/nada-haboudal/"
+    }
+  }
+]

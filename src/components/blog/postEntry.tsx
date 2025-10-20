@@ -1,7 +1,10 @@
+import { Icon } from '@iconify/react';
 import dayjs from 'dayjs';
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 import Link from 'next/link';
 
-interface PostEntryProps {
+interface PostCardProps {
   title: string;
   timeToRead: number;
   date: string;
@@ -9,9 +12,11 @@ interface PostEntryProps {
   subtitle: string;
   tags: string[];
   category: string;
+  heroImage: string;
+  imageAuthor: string;
 }
 
-const postEntry: React.FC<PostEntryProps> = ({
+export default function PostCard({
   title,
   timeToRead,
   date,
@@ -19,87 +24,110 @@ const postEntry: React.FC<PostEntryProps> = ({
   subtitle,
   tags,
   category,
-}) => {
+  heroImage,
+  imageAuthor,
+}: PostCardProps) {
   return (
-    <article key={title} className="mb-2 flex w-full flex-col md:flex-row">
-      {/* Left panel */}
-      <div className="hidden w-full flex-col px-2 py-3 md:flex md:w-3/12 md:px-7 md:py-5">
-        <h3 className="mt-1 mb-1 text-base font-medium text-slate-600">
-          {dayjs(date).format(`MMMM D, YYYY`)}
-        </h3>
+    <motion.article
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.25 }}
+      transition={{ type: `spring`, stiffness: 120, damping: 18, mass: 0.6 }}
+      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-colors focus-within:border-slate-300 hover:border-slate-300 hover:shadow-md"
+      itemScope
+      itemType="https://schema.org/BlogPosting"
+    >
+      <Link
+        href={`/blog/${slug}`}
+        className="relative block"
+        aria-label={title}
+      >
+        <div className="relative aspect-[16/9] w-full overflow-hidden bg-slate-100">
+          <Image
+            src={heroImage}
+            alt={imageAuthor || title}
+            fill
+            sizes="(min-width: 1280px) 400px, (min-width: 768px) 33vw, 100vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+            priority={false}
+          />
+        </div>
+      </Link>
 
-        {category !== `` && (
-          <Link href={`/category/${category}`} passHref>
-            <h4 className="text-url mb-1 cursor-pointer text-base font-semibold hover:underline">
-              {category}
-            </h4>
-          </Link>
-        )}
-
-        <span className="text-sm text-gray-600">{timeToRead} min read</span>
-      </div>
-
-      <div className="flex flex-col rounded-lg px-2 py-7 transition-all hover:bg-stone-100 hover:shadow-xs md:w-8/12 md:px-7 md:py-5">
-        {category !== `` && (
-          <Link href={`/category/${category}`} passHref>
-            <h3
-              className="text-url mb-1 cursor-pointer text-base font-semibold hover:underline md:hidden"
-              data-umami-event="Blog"
-              data-umami-event-action="Category"
-              data-umami-event-value={category}
-            >
-              {category}
-            </h3>
-          </Link>
-        )}
-
-        <div className="mb-1 flex flex-row items-center justify-between md:hidden">
-          <h4 className="text-base font-medium text-slate-600">
+      <div className="flex flex-1 flex-col gap-3 p-5">
+        <div className="flex flex-wrap items-center gap-2 text-sm text-slate-600">
+          <time
+            dateTime={date}
+            itemProp="datePublished"
+            className="whitespace-nowrap"
+          >
             {dayjs(date).format(`MMMM D, YYYY`)}
-          </h4>
+          </time>
+          <span className="mx-1 text-slate-300 select-none">•</span>
+          <span className="whitespace-nowrap">{timeToRead} min read</span>
 
-          <span className="text-sm text-gray-600">{timeToRead} min read</span>
+          {category ? (
+            <>
+              <span className="mx-1 hidden text-slate-300 select-none sm:inline">
+                •
+              </span>
+              <Link
+                href={`/category/${category}`}
+                className="inline-flex items-center rounded-full border border-slate-300 px-2 py-0.5 text-xs font-medium text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+              >
+                {category}
+              </Link>
+            </>
+          ) : null}
         </div>
 
-        <hr className="my-1 border-dashed border-slate-200 md:hidden" />
-
-        <Link href={`/blog/${slug}`} passHref>
-          <h2 className="text-url mt-4 mb-1 cursor-pointer text-2xl font-semibold hover:underline md:mt-0 md:text-xl">
+        <Link href={`/blog/${slug}`} className="focus:outline-none">
+          <h2
+            itemProp="headline"
+            className="line-clamp-2 text-xl leading-tight font-semibold text-slate-900 transition-colors group-hover:text-slate-950"
+          >
             {title}
           </h2>
         </Link>
 
-        <p className="mt-2 mb-3">{subtitle}</p>
+        {subtitle ? (
+          <p className="line-clamp-3 text-slate-700" itemProp="description">
+            {subtitle}
+          </p>
+        ) : null}
 
-        <div className="flex w-full flex-col justify-between md:flex-row">
-          <div className="mb-2 flex flex-row flex-wrap items-center text-sm md:mb-0">
-            <h3 className="mr-2 text-sm font-bold">Tags: </h3>
-            {tags.map((tag) => (
-              <Link
-                href={`/tags/${tag.toLowerCase() === `metadata` ? `metadata-tag` : tag}`}
-                key={tag}
-                className="my-2"
-              >
-                <span
-                  className="hover:border-light-accent hover:text-accent mr-2 cursor-pointer rounded-lg border border-slate-300 px-1 py-1 transition-all"
-                  data-umami-event="Blog"
-                  data-umami-event-action="Tag"
-                  data-umami-event-value={tag}
+        {tags?.length ? (
+          <div className="mt-auto flex flex-wrap gap-2 pt-2">
+            {tags.map((tag) => {
+              const target =
+                tag.toLowerCase() === `metadata` ? `metadata-tag` : tag;
+              return (
+                <Link
+                  key={tag}
+                  href={`/tags/${target}`}
+                  className="inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+                  aria-label={`Tag: ${tag}`}
                 >
                   {tag}
-                </span>
-              </Link>
-            ))}
+                </Link>
+              );
+            })}
           </div>
-          <Link href={`/blog/${slug}`} passHref>
-            <span className="text-url w-max cursor-pointer text-base hover:underline">
-              Read more →
-            </span>
+        ) : null}
+
+        <div className="pt-1">
+          <Link
+            href={`/blog/${slug}`}
+            className="group-hover:text-primary focus-visible:ring-primary inline-flex items-center text-sm font-medium underline-offset-4 hover:underline focus:outline-none focus-visible:ring-2"
+          >
+            <span>Read more</span>
+            <Icon
+              icon="solar:arrow-right-broken"
+              className="ml-1 inline-block h-4 w-4"
+            />
           </Link>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
-};
-
-export default postEntry;
+}

@@ -252,7 +252,7 @@
     list-style: none;
     width: 160px;
     height: 160px;
-    animation: animate 25s linear infinite;
+    animation: animate 20s linear infinite;
     bottom: -150px;
   }
 

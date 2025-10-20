@@ -25,6 +25,14 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'berkeleybop.github.io',
+      },
+      {
+        protocol: 'https',
         hostname: 'img.shields.io',
       },
       {

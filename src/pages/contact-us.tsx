@@ -31,10 +31,12 @@ export default function ContactUs() {
             <li></li>
             <li></li>
             <li></li>
+            <li></li>
+            <li></li>
           </ul>
         </div>
 
-        <section className="z-10 py-8">
+        <section className="z-10 py-60">
           <div className="container mx-auto w-screen max-w-screen-md rounded-lg bg-gray-50 px-10 pt-12 pb-8 shadow-lg">
             <h2 className="pt-3 pb-5 text-center text-3xl font-semibold sm:text-4xl">
               Let us know if you have any feedback or want to collaborate

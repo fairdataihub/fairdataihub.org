@@ -1,12 +1,13 @@
 import dayjs from 'dayjs';
+import { motion } from 'framer-motion';
 import fs from 'fs';
 import matter from 'gray-matter';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import type { GetStaticPaths, GetStaticProps } from 'next';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import wordsCount from 'words-count';
 
-import PostEntry from '@/components/blog/postEntry';
+import BlogListItem from '@/components/blog/BlogListItem';
 import Seo from '@/components/seo/seo';
 
 type BlogList = {
@@ -18,6 +19,8 @@ type BlogList = {
     tags: string[];
     subtitle: string;
     category: string;
+    heroImage: string;
+    imageAuthor: string;
   };
 };
 
@@ -25,22 +28,32 @@ interface BlogProps {
   filteredBlogList: BlogList[];
 }
 
-interface ListOfTags {
-  [key: string]: number;
-}
+const slugifyTag = (tag: string) => {
+  const base = tag.trim().toLowerCase().replace(/\s+/g, `-`);
+  return base === `metadata` ? `metadata-tag` : base;
+};
 
-// The Blog Page Content
+const isTagMatch = (raw: string, desiredSlug: string) =>
+  slugifyTag(raw) === desiredSlug;
+
+const labelFromSlug = (slug?: string | string[]) => {
+  if (typeof slug !== `string`) return ``;
+  if (slug === `metadata-tag`) return `Metadata`;
+  return slug.replace(/-/g, ` `);
+};
 
 const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
   const router = useRouter();
   const { tag } = router.query;
 
+  const niceLabel = labelFromSlug(tag);
+
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <section className="relative mx-auto mt-20 flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
-        templateTitle={`${typeof tag === `string` && tag.toLowerCase() === `metadata-tag` ? `Metadata` : tag} - Tags`}
+        templateTitle={`${niceLabel} - Tags`}
         templateUrl={`https://fairdataihub.org/tags/${tag}`}
-        templateDescription={`FAIR Data Innovations Hub blog posts tagged with '${tag}'`}
+        templateDescription={`FAIR Data Innovations Hub blog posts tagged with '${niceLabel}'`}
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
@@ -48,13 +61,10 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
         <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
           {filteredBlogList.length}
           {` `}
-          {filteredBlogList.length == 1 ? `post` : `posts`} tagged with &quot;
-          {typeof tag === `string` && tag.toLowerCase() === `metadata-tag`
-            ? `Metadata`
-            : tag}
-          &quot;
+          {filteredBlogList.length === 1 ? `post` : `posts`} tagged with &quot;
+          {niceLabel}&quot;
         </h1>
-        <Link href={`/tags`} passHref>
+        <Link href="/tags" passHref>
           <h2 className="text-url cursor-pointer text-left hover:underline">
             View all tags
           </h2>
@@ -63,22 +73,36 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
 
       <hr className="mx-6 my-2 border-dashed border-slate-200" />
 
-      {filteredBlogList.map((post) => {
+      {filteredBlogList.map((post, idx) => {
         const { slug, frontMatter, timeToRead } = post;
 
-        const { title, date, tags, subtitle, category } = frontMatter;
-
         return (
-          <PostEntry
-            key={title}
-            title={title}
-            timeToRead={timeToRead}
-            date={date}
-            slug={slug}
-            subtitle={subtitle}
-            tags={tags}
-            category={category}
-          />
+          <motion.div
+            key={slug}
+            layout
+            className="my-2"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: { duration: 0.2, delay: idx * 0.02, ease: `easeOut` },
+            }}
+            viewport={{ once: true, amount: 0.1, margin: `0px 0px 150px 0px` }}
+            exit={{ opacity: 0, y: 10, scale: 0.98 }}
+          >
+            <BlogListItem
+              slug={slug}
+              title={frontMatter.title}
+              subtitle={frontMatter.subtitle}
+              date={frontMatter.date}
+              timeToRead={timeToRead}
+              heroImage={frontMatter.heroImage}
+              imageAuthor={frontMatter.imageAuthor}
+              tags={frontMatter.tags}
+              category={frontMatter.category}
+            />
+          </motion.div>
         );
       })}
     </section>
@@ -86,102 +110,56 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Get the posts from the `blog` directory
   const files = fs.readdirSync(`./blog`);
 
-  const blogList = files.map((fileName) => {
-    // Read the raw content of the file and parse the frontMatter
-    const rawFileContent = fs.readFileSync(`blog/${fileName}`, `utf-8`);
+  // Accumulate slugified tags (stable across case/spacing)
+  const tagCount: Record<string, number> = {};
 
-    const { data: frontMatter } = matter(rawFileContent);
-
-    return {
-      frontMatter,
-    };
-  });
-
-  const tagsList: ListOfTags = {};
-
-  for (const post of blogList) {
-    const { frontMatter } = post;
-
-    const { tags } = frontMatter;
-
-    tags.forEach((tag: string) => {
-      if (tag in tagsList) {
-        tagsList[tag]++;
-      } else {
-        tagsList[tag] = 1;
-      }
-    });
+  for (const fileName of files) {
+    const raw = fs.readFileSync(`blog/${fileName}`, `utf-8`);
+    const { data } = matter(raw);
+    const tags: string[] = Array.isArray(data?.tags) ? data.tags : [];
+    for (const t of tags) {
+      const slug = slugifyTag(t);
+      tagCount[slug] = (tagCount[slug] ?? 0) + 1;
+    }
   }
 
-  const paths = [];
+  const paths = Object.keys(tagCount).map((slug) => ({
+    params: { tag: slug },
+  }));
 
-  for (const tag in tagsList) {
-    paths.push({
-      params: {
-        // /metadata is a reserved tag within nextjs
-        tag: tag.toLowerCase() === `metadata` ? `metadata-tag` : tag,
-      },
-    });
-  }
-
-  return {
-    paths,
-    fallback: false,
-  };
+  return { paths, fallback: false };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  // Get the posts from the `blog` directory
   const files = fs.readdirSync(`./blog`);
 
-  const blogList = files.map((fileName) => {
-    // Remove the .md extension and use the file name as the slug
+  const blogList: BlogList[] = files.map((fileName) => {
     const slug = fileName.replace(`.md`, ``);
+    const raw = fs.readFileSync(`blog/${fileName}`, `utf-8`);
+    const timeToRead = Math.ceil(wordsCount(raw) / 265);
+    const { data: frontMatter } = matter(raw);
 
-    // Read the raw content of the file and parse the frontMatter
-    const rawFileContent = fs.readFileSync(`blog/${fileName}`, `utf-8`);
-    const timeToRead = Math.ceil(wordsCount(rawFileContent) / 265);
-
-    const { data: frontMatter } = matter(rawFileContent);
-
-    return {
-      slug,
-      frontMatter,
-      timeToRead,
-    };
+    return { slug, frontMatter, timeToRead } as BlogList;
   });
 
-  // sort the posts by date in descending order
   blogList.sort((a, b) => {
-    const a_date: any = dayjs(a.frontMatter.date, `YYYY-MM-DD`);
-    const b_date: any = dayjs(b.frontMatter.date, `YYYY-MM-DD`);
-
-    return b_date - a_date;
+    const aDate: any = dayjs(a.frontMatter.date, `YYYY-MM-DD`);
+    const bDate: any = dayjs(b.frontMatter.date, `YYYY-MM-DD`);
+    return bDate - aDate;
   });
+
+  const desired = typeof params?.tag === `string` ? params.tag : ``;
 
   const filteredBlogList = blogList.filter((post) => {
-    const { tags } = post.frontMatter;
-
-    const t = params?.tag || ``;
-
-    if (typeof t === `string`) {
-      return tags.includes(
-        `${t.toLowerCase() === `metadata-tag` ? `metadata` : t}`,
-      );
-    }
-
-    return false;
+    const tags: string[] = Array.isArray(post.frontMatter?.tags)
+      ? post.frontMatter.tags
+      : [];
+    return tags.some((t) => isTagMatch(t, desired));
   });
 
-  // Return the posts data to the page as props
-  return {
-    props: {
-      filteredBlogList,
-    },
-  };
+  return { props: { filteredBlogList } };
 };
 
 export default Blog;
