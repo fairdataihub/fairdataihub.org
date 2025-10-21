@@ -1,3 +1,6 @@
+// components/events/EventListItem.tsx
+'use client';
+
 import { Icon } from '@iconify/react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
@@ -40,7 +43,12 @@ export default function EventListItem({
       transition={{ type: `spring`, stiffness: 240, damping: 26 }}
       className="group rounded-2xl border border-slate-200 bg-white p-3 sm:p-4"
     >
-      <Link href={`/events/${slug}`}>
+      {/* ✅ Single outer Link for the whole card */}
+      <Link
+        href={`/events/${slug}`}
+        className="block rounded-xl focus:outline-none"
+        aria-label={`Open event: ${title}`}
+      >
         <div className="flex items-start gap-4 sm:gap-5">
           <div className="w-28 shrink-0 sm:w-36">
             <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-slate-100 ring-1 ring-slate-200/60">
@@ -59,7 +67,6 @@ export default function EventListItem({
             </div>
           </div>
 
-          {/* Text */}
           <div className="min-w-0 flex-1">
             <motion.h3
               variants={titleV}
@@ -78,12 +85,11 @@ export default function EventListItem({
             )}
 
             <div className="mt-2 flex flex-wrap items-center gap-2 text-[11px] text-slate-700">
-              <span className="inline-flex rounded-full border border-slate-300 px-2 py-0.5 font-semibold text-slate-700">
+              <span className="inline-flex rounded-full border border-slate-300 px-2 py-0.5 font-semibold">
                 {isPast ? `Past` : `Upcoming`}
               </span>
 
               <span className="bg-primary inline-flex items-center rounded-lg border-2 border-white px-2 py-0.5">
-                {/* EventDates now inline instead of the old left rail */}
                 <EventDates
                   startDateTime={startDateTime}
                   endDateTime={endDateTime}
@@ -102,18 +108,14 @@ export default function EventListItem({
               )}
             </div>
 
-            <div className="mt-3">
-              <Link
-                href={`/events/${slug}`}
-                className="group-hover:text-primary text-sm font-medium underline-offset-4"
-              >
-                <span>{isPast ? `View recap` : `Learn more`}</span>
-                <Icon
-                  icon="solar:arrow-right-broken"
-                  className="ml-1 inline h-4 w-4"
-                />
-              </Link>
-            </div>
+            <span className="group-hover:text-primary mt-3 inline-flex items-center text-sm font-medium underline-offset-4 group-hover:underline">
+              {isPast ? `View recap` : `Learn more`}
+              <Icon
+                icon="solar:arrow-right-broken"
+                className="ml-1 inline h-4 w-4"
+                aria-hidden
+              />
+            </span>
           </div>
         </div>
       </Link>

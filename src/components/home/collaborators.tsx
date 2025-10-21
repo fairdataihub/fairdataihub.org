@@ -89,6 +89,13 @@ export default function Collaborators() {
       height: 60,
       href: `https://cdlib.org`,
     },
+    {
+      src: `/images/collaborators/nih-text.png`,
+      alt: `National Institutes of Health (NIH)`,
+      width: 200,
+      height: 60,
+      href: `https://www.nih.gov`,
+    },
   ];
 
   return (

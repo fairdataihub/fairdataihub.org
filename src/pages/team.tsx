@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import imageSize from 'image-size';
 import { InferGetStaticPropsType } from 'next';
 import { getPlaiceholder } from 'plaiceholder';
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 
 import Seo from '@/components/seo/seo';
 import ProfileModal from '@/components/team/ProfileModal';
@@ -12,6 +12,7 @@ import TeamCardOverlay, {
 } from '@/components/team/TeamCardOverlay';
 
 import INTERNS_JSON from '@/public/team/interns.json';
+import SUPPORT_JSON from '@/public/team/support.json';
 import TEAM_JSON from '@/public/team/team.json';
 import { safeLqip, safeProbe } from '@/utils/imageFetch';
 
@@ -28,11 +29,6 @@ export default function TeamPage({
   };
   const closeProfile = () => setOpen(false);
   const clearSelected = () => setSelected(null);
-
-  const _all = useMemo(
-    () => [...TeamMembers, ...Interns],
-    [TeamMembers, Interns],
-  );
 
   return (
     <>
@@ -88,6 +84,31 @@ export default function TeamPage({
             <TeamCardOverlay key={p.id} profile={p} onOpen={openProfile} />
           ))}
         </motion.div>
+
+        {/* Support grid */}
+        {SUPPORT_JSON.length > 0 && (
+          <>
+            <div className="my-12 w-full">
+              <div className="flex items-center">
+                <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-r" />
+
+                <span className="mx-6 text-4xl font-extrabold tracking-tight text-gray-900 select-none sm:text-5xl">
+                  Support
+                </span>
+
+                <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-l" />
+              </div>
+            </div>
+            <motion.div
+              layout
+              className="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              {SUPPORT_JSON.map((p) => (
+                <TeamCardOverlay key={p.id} profile={p} onOpen={openProfile} />
+              ))}
+            </motion.div>
+          </>
+        )}
 
         {/* Interns grid */}
         {Interns.length > 0 && (

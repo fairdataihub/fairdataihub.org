@@ -9,6 +9,10 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'fair-biors.org',
+      },
+      {
+        protocol: 'https',
         hostname: 'github.com',
       },
       {

@@ -30,7 +30,6 @@ interface EventsProps {
 export default function Events({ eventsList }: EventsProps) {
   const today = dayjs().startOf(`day`);
 
-  // Helper: robustly parse startDateTime
   const parseStart = (s?: string) => {
     if (!s) return null;
     const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(s);
@@ -54,11 +53,11 @@ export default function Events({ eventsList }: EventsProps) {
 
   const pastByYear = past.reduce<Record<string, EventsList[]>>((acc, ev) => {
     const y = dayjs(ev.frontMatter.startDateTime).format(`YYYY`);
-    (acc[y] ||= []).push(ev); // order within each year remains newest → oldest
+    (acc[y] ||= []).push(ev);
     return acc;
   }, {});
 
-  // Featured is the soonest upcoming
+  // Featured is the soonest upcoming event
   const [featured, ...upcomingRest] = upcoming;
 
   return (
@@ -70,12 +69,10 @@ export default function Events({ eventsList }: EventsProps) {
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
-      {/* Background glow */}
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
 
-      {/* Page container with XL min width */}
       <section className="container mx-auto w-full max-w-screen-xl px-4 pt-8 pb-16 xl:min-w-[1280px]">
         <motion.header
           initial={{ opacity: 0, y: 8 }}
@@ -92,7 +89,6 @@ export default function Events({ eventsList }: EventsProps) {
           <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
         </motion.header>
 
-        {/* UPCOMING */}
         <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
           Upcoming Events
         </h2>
@@ -137,7 +133,6 @@ export default function Events({ eventsList }: EventsProps) {
 
         <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
 
-        {/* PAST */}
         <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
           Past Events
         </h2>
@@ -149,7 +144,7 @@ export default function Events({ eventsList }: EventsProps) {
         ) : (
           <div className="mx-auto w-full max-w-5xl">
             {Object.entries(pastByYear)
-              .sort(([a], [b]) => Number(b) - Number(a)) // years: desc
+              .sort(([a], [b]) => Number(b) - Number(a))
               .map(([year, items]) => (
                 <div key={year} className="mb-6">
                   <h3 className="mb-2 text-sm font-semibold tracking-wide text-slate-500">
@@ -191,7 +186,6 @@ export async function getStaticProps() {
     return { slug, frontMatter, timeToRead };
   });
 
-  // keep sort by start date desc (latest first)
   eventsList.sort((a, b) => {
     const aDate: any = dayjs(a.frontMatter.startDateTime, `YYYY-MM-DD`);
     const bDate: any = dayjs(b.frontMatter.startDateTime, `YYYY-MM-DD`);

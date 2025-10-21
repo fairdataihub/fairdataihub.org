@@ -13,12 +13,7 @@ import { FlipWords } from '@/components/ui/flip-words';
 import { SparklesCore } from '@/components/ui/sparkles';
 
 export default function Home() {
-  const wordsFlips = [
-    `Simplifying`,
-    `Streamlining`,
-    `Automating`,
-    `Empowering`,
-  ];
+  const wordsFlips = [`reusable`, `FAIR`, `AI-ready`];
   return (
     <div>
       <Seo
@@ -27,12 +22,15 @@ export default function Home() {
       />
 
       <div className="relative">
-        <section className="relative isolate mb-10 overflow-visible pt-12 sm:pt-16">
+        <section className="relative isolate mb-10 overflow-visible pt-12 sm:pt-30">
           <div className="hero relative z-10 container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
             <div className="flex w-full flex-col items-center justify-center p-2">
               <h1 className="header-gradient-background w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:w-3/4 lg:text-5xl">
-                <FlipWords words={wordsFlips} /> FAIR data practices to empower
-                AI-driven discoveries
+                Streamlining the creation of <FlipWords words={wordsFlips} />
+                {` `}
+                <br />
+                {` `}
+                data to empower AI driven discoveries
               </h1>
 
               <div className="relative mx-auto mt-8 h-48 w-full sm:h-40 md:mt-2">
@@ -59,10 +57,10 @@ export default function Home() {
                 <div className="absolute inset-0 z-20 flex items-end justify-center">
                   <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
                     We develop open source tools, standards, and guidelines that
-                    support biomedical researchers in preparing and sharing
-                    data, software, and other research outcomes such that they
-                    are FAIR, i.e. optimally reusable by both humans and
-                    machines.
+                    support researchers in preparing and sharing data, software,
+                    and other research outcomes such that they are preserved
+                    over the long term and readily reusable particularly for AI
+                    applications.
                   </p>
                 </div>
               </div>
@@ -85,7 +83,7 @@ export default function Home() {
 
       <BentoProjects />
 
-      <section className="pt-4 pb-20">
+      <section className="relative pt-4 pb-20">
         <Collaborators />
       </section>
 

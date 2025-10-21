@@ -1,6 +1,6 @@
+import { Icon } from '@iconify/react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Check, Copy, ExternalLink, Filter, Search, X } from 'lucide-react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 import Seo from '@/components/seo/seo';
 
@@ -26,7 +26,7 @@ const sortingOrder = [
   `Webinars/Lectures`,
   `Reports`,
   `Web Articles`,
-];
+] as const;
 
 // --- utils ---
 const slugify = (s: string) =>
@@ -45,7 +45,7 @@ export default function Impact() {
     [],
   );
 
-  // counts and projects
+  // projects + years universe
   const projectCounts = useMemo(() => {
     const c: Record<string, number> = {};
     for (const p of all)
@@ -63,34 +63,71 @@ export default function Impact() {
     [projectCounts],
   );
 
-  // ---------- UI state ----------
+  const allYears = useMemo(
+    () => Array.from(new Set(all.map((p) => p.year))).sort((a, b) => b - a),
+    [all],
+  );
+
   const [query, setQuery] = useState(``);
   const [selectedProjects, setSelectedProjects] = useState<Set<string>>(
     new Set(),
   );
-  const [openFilters, setOpenFilters] = useState(false);
+  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set());
+  const [selectedYears, setSelectedYears] = useState<Set<number>>(new Set());
+  const [filtersOpen, setFiltersOpen] = useState(false);
   const [copiedUrl, setCopiedUrl] = useState<string | null>(null);
 
-  const [selectedTypes, setSelectedTypes] = useState<Set<string>>(new Set());
-  const toggleType = (t: string) => {
-    const next = new Set(selectedTypes);
-    next.has(t) ? next.delete(t) : next.add(t);
-    setSelectedTypes(next);
-  };
-  const clearTypes = () => setSelectedTypes(new Set());
+  // click-outside for dropdown
+  const dropdownRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    const onDocClick = (e: MouseEvent) => {
+      if (!filtersOpen) return;
+      const t = e.target as Node;
+      if (dropdownRef.current && !dropdownRef.current.contains(t)) {
+        setFiltersOpen(false);
+      }
+    };
+    const onEsc = (e: KeyboardEvent) => {
+      if (e.key === `Escape`) setFiltersOpen(false);
+    };
+    document.addEventListener(`mousedown`, onDocClick);
+    document.addEventListener(`keydown`, onEsc);
+    return () => {
+      document.removeEventListener(`mousedown`, onDocClick);
+      document.removeEventListener(`keydown`, onEsc);
+    };
+  }, [filtersOpen]);
 
+  // copy state toast timeout
   useEffect(() => {
     if (!copiedUrl) return;
     const t = setTimeout(() => setCopiedUrl(null), 1200);
     return () => clearTimeout(t);
   }, [copiedUrl]);
 
-  const toggleProject = (p: string) => {
-    const next = new Set(selectedProjects);
-    next.has(p) ? next.delete(p) : next.add(p);
-    setSelectedProjects(next);
+  // toggles
+  const toggleSet = <T,>(s: Set<T>, v: T) => {
+    const next = new Set(s);
+    next.has(v) ? next.delete(v) : next.add(v);
+    return next;
   };
+  const toggleProject = (p: string) =>
+    setSelectedProjects((s) => toggleSet(s, p));
+  const toggleType = (t: string) => setSelectedTypes((s) => toggleSet(s, t));
+  const toggleYear = (y: number) => setSelectedYears((s) => toggleSet(s, y));
+
   const clearProjects = () => setSelectedProjects(new Set());
+  const clearTypes = () => setSelectedTypes(new Set());
+  const clearYears = () => setSelectedYears(new Set());
+  const clearAllFilters = () => {
+    clearProjects();
+    clearTypes();
+    clearYears();
+  };
+
+  const activeFiltersCount =
+    selectedProjects.size + selectedTypes.size + selectedYears.size;
+
   const copyCitation = async (citation: string, url: string) => {
     try {
       await navigator.clipboard.writeText(citation);
@@ -98,7 +135,7 @@ export default function Impact() {
     } catch {}
   };
 
-  // ---------- filtering ----------
+  // filtering
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     let list = all;
@@ -109,6 +146,14 @@ export default function Impact() {
           p.project &&
           [...selectedProjects].every((s) => p.project.includes(s)),
       );
+    }
+
+    if (selectedTypes.size) {
+      list = list.filter((p) => selectedTypes.has(p.type));
+    }
+
+    if (selectedYears.size) {
+      list = list.filter((p) => selectedYears.has(p.year));
     }
 
     if (q) {
@@ -128,16 +173,13 @@ export default function Impact() {
     }
 
     return list;
-  }, [all, selectedProjects, query]);
+  }, [all, selectedProjects, selectedTypes, selectedYears, query]);
 
-  // group by sortingOrder (preserving order)
+  // group by sortingOrder
   const grouped = useMemo(() => {
     const byType: Record<string, Pub[]> = {};
     for (const t of sortingOrder) byType[t] = [];
-    for (const p of filtered) {
-      if (byType[p.type]) byType[p.type].push(p);
-    }
-    // sort within group: newest first, then title
+    for (const p of filtered) if (byType[p.type]) byType[p.type].push(p);
     for (const t of sortingOrder) {
       byType[t].sort(
         (a, b) => b.year - a.year || a.title.localeCompare(b.title),
@@ -148,9 +190,8 @@ export default function Impact() {
 
   const totalResults = filtered.length;
 
-  // ---------- UI ----------
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-5 pt-0 sm:px-10 sm:py-20">
+    <section className="relative mx-auto flex h-full min-h-[80vh] w-full max-w-screen-xl flex-col overflow-hidden px-5 pt-0 sm:px-10 sm:py-20">
       <Seo
         templateTitle="Impact"
         templateDescription="Resources created by the FAIR Data Innovations"
@@ -158,12 +199,10 @@ export default function Impact() {
         templateImage="https://kalai.fairdataihub.org/api/generate?title=Impact&description=Resources%20created%20by%20the%20FAIR%20Data%20Innovations&app=fairdataihub&org=fairdataihub"
       />
 
-      {/* subtle brand glow */}
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
         <div className="absolute top-0 left-1/2 h-[560px] w-[900px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(205,50,159,0.16),rgba(205,50,159,0.07)_45%,transparent_70%)] blur-3xl" />
       </div>
 
-      {/* header */}
       <motion.div
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
@@ -175,90 +214,234 @@ export default function Impact() {
             Impact
           </h1>
           <p className="font-asap max-w-2xl text-lg text-stone-700 dark:text-stone-300">
-            Resources created by the FAIR Data Innovations Hub team
+            Resources generated by the FAIR Data Innovations Hub team
           </p>
         </div>
         <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
       </motion.div>
 
-      {/* controls */}
       <div className="mt-4 grid gap-3 px-2 md:grid-cols-12 md:px-7">
-        {/* search */}
-        <div className="md:col-span-6">
+        <div className="md:col-span-8">
           <label className="sr-only" htmlFor="impact-search">
             Search Impact
           </label>
           <div className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2">
-            <Search className="h-4 w-4 shrink-0 opacity-70" aria-hidden />
+            <Icon
+              icon="mdi:magnify"
+              className="h-5 w-5 opacity-70"
+              aria-hidden
+            />
             <input
               id="impact-search"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search title, citation, project, year…"
+              placeholder="Search title, citation, project, type, year…"
               className="w-full bg-transparent text-sm outline-none placeholder:text-slate-400"
               type="text"
             />
           </div>
         </div>
 
-        {/* filters toggle (mobile) */}
-        <div className="md:hidden">
+        <div className="relative md:col-span-4" ref={dropdownRef}>
           <button
             type="button"
-            onClick={() => setOpenFilters((v) => !v)}
-            className="flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium"
+            onClick={() => setFiltersOpen((v) => !v)}
+            className={[
+              `flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium`,
+              filtersOpen ? `ring-primary/30 ring-2` : ``,
+            ].join(` `)}
+            aria-expanded={filtersOpen}
+            aria-haspopup="dialog"
           >
-            <Filter className="h-4 w-4" /> Filters
+            <Icon icon="mdi:filter" className="h-4 w-4" />
+            Filters{` `}
+            {activeFiltersCount > 0 && (
+              <span className="ml-1 inline-flex items-center rounded-full bg-slate-100 px-2 py-0.5 text-xs text-slate-700">
+                {activeFiltersCount}
+              </span>
+            )}
+            {filtersOpen ? (
+              <Icon icon="mdi:chevron-up" className="h-4 w-4" />
+            ) : (
+              <Icon icon="mdi:chevron-down" className="h-4 w-4" />
+            )}
           </button>
-        </div>
-      </div>
 
-      {/* project filters */}
-      <div
-        className={[
-          `mt-3 px-2 md:px-7`,
-          openFilters ? `block` : `hidden md:block`,
-        ].join(` `)}
-      >
-        <div className="flex flex-wrap items-center gap-2 rounded-xl border border-slate-200 bg-white p-3">
-          <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
-            Projects
-          </span>
-          {projects.map((p) => {
-            const active = selectedProjects.has(p);
-            return (
-              <button
-                key={p}
-                type="button"
-                onClick={() => toggleProject(p)}
-                className={[
-                  `rounded-full px-3 py-1 text-sm transition`,
-                  active
-                    ? `bg-slate-900 text-white`
-                    : `bg-slate-100 text-slate-800 hover:bg-slate-200`,
-                ].join(` `)}
-                aria-pressed={active}
+          <AnimatePresence>
+            {filtersOpen && (
+              <motion.div
+                role="dialog"
+                aria-label="Filters"
+                initial={{ opacity: 0, y: 6, scale: 0.99 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                exit={{ opacity: 0, y: 6, scale: 0.99 }}
+                transition={{ duration: 0.18 }}
+                className="absolute right-0 z-20 mt-2 w-[min(92vw,720px)] rounded-xl border border-slate-200 bg-white p-3 shadow-lg"
               >
-                {p}
-                {` `}
-                <span className="ml-1 opacity-70">({projectCounts[p]})</span>
-              </button>
-            );
-          })}
-          {selectedProjects.size > 0 && (
-            <button
-              type="button"
-              onClick={clearProjects}
-              className="ml-auto inline-flex items-center gap-1 rounded-full bg-white px-3 py-1 text-sm text-slate-700 hover:bg-slate-50"
-              title="Clear project filters"
-            >
-              <X className="h-3.5 w-3.5" /> Clear
-            </button>
-          )}
+                <div className="mb-2 flex items-center justify-between">
+                  <span className="text-xs font-semibold tracking-wide text-slate-500 uppercase">
+                    Filters
+                  </span>
+                  <div className="flex items-center gap-2">
+                    {activeFiltersCount > 0 && (
+                      <button
+                        type="button"
+                        onClick={clearAllFilters}
+                        className="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-800 hover:bg-slate-50"
+                        title="Clear all"
+                      >
+                        <Icon icon="mdi:clear" className="h-3.5 w-3.5" /> Clear
+                        all
+                      </button>
+                    )}
+                    <button
+                      type="button"
+                      onClick={() => setFiltersOpen(false)}
+                      className="inline-flex items-center gap-1 rounded-md bg-slate-900 px-2.5 py-1 text-xs font-medium text-white hover:bg-slate-800"
+                    >
+                      Done
+                    </button>
+                  </div>
+                </div>
+
+                <div className="grid gap-3 md:grid-cols-3">
+                  {/* Types */}
+                  <div className="flex min-h-[240px] flex-col rounded-lg border border-slate-200 p-2">
+                    <p className="mb-1 text-xs font-semibold tracking-wide text-slate-600 uppercase">
+                      Types
+                    </p>
+
+                    <div className="flex-1 overflow-auto pr-1">
+                      <div className="flex flex-wrap gap-1.5">
+                        {sortingOrder.map((t) => {
+                          const active = selectedTypes.has(t);
+                          return (
+                            <button
+                              key={t}
+                              type="button"
+                              onClick={() => toggleType(t)}
+                              className={[
+                                `rounded-full px-3 py-1 text-xs transition`,
+                                active
+                                  ? `bg-primary text-white`
+                                  : `bg-slate-100 text-slate-800 hover:bg-slate-200`,
+                              ].join(` `)}
+                              aria-pressed={active}
+                            >
+                              {t}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {selectedTypes.size > 0 && (
+                      <div className="mt-auto flex justify-center pt-2">
+                        <button
+                          type="button"
+                          onClick={clearTypes}
+                          className="my-2 inline-flex items-center gap-1 rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-800 hover:bg-slate-50"
+                        >
+                          Clear types
+                        </button>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Projects */}
+                  <div className="flex min-h-[240px] flex-col rounded-lg border border-slate-200 p-2">
+                    <p className="mb-1 text-xs font-semibold tracking-wide text-slate-600 uppercase">
+                      Projects
+                    </p>
+
+                    <div className="flex-1 overflow-auto pr-1">
+                      <div className="flex flex-wrap gap-1.5">
+                        {projects.map((p) => {
+                          const active = selectedProjects.has(p);
+                          return (
+                            <button
+                              key={p}
+                              type="button"
+                              onClick={() => toggleProject(p)}
+                              className={[
+                                `rounded-full px-3 py-1 text-xs transition`,
+                                active
+                                  ? `bg-slate-900 text-white`
+                                  : `bg-slate-100 text-slate-800 hover:bg-slate-200`,
+                              ].join(` `)}
+                              aria-pressed={active}
+                              title={p}
+                            >
+                              {p}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {selectedProjects.size > 0 && (
+                      <div className="mt-auto flex justify-center pt-2">
+                        <button
+                          type="button"
+                          onClick={clearProjects}
+                          className="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-800 hover:bg-slate-50"
+                        >
+                          Clear projects
+                        </button>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Years */}
+                  <div className="flex min-h-[240px] flex-col rounded-lg border border-slate-200 p-2">
+                    <p className="mb-1 text-xs font-semibold tracking-wide text-slate-600 uppercase">
+                      Years
+                    </p>
+
+                    <div className="flex-1 overflow-auto pr-1">
+                      <div className="flex flex-wrap gap-1.5">
+                        {allYears.map((y) => {
+                          const active = selectedYears.has(y);
+                          return (
+                            <button
+                              key={y}
+                              type="button"
+                              onClick={() => toggleYear(y)}
+                              className={[
+                                `rounded-full px-3 py-1 text-xs transition`,
+                                active
+                                  ? `bg-sky-700 text-white`
+                                  : `bg-slate-100 text-slate-800 hover:bg-slate-200`,
+                              ].join(` `)}
+                              aria-pressed={active}
+                            >
+                              {y}
+                            </button>
+                          );
+                        })}
+                      </div>
+                    </div>
+
+                    {selectedYears.size > 0 && (
+                      <div className="mt-auto flex justify-center pt-2">
+                        <button
+                          type="button"
+                          onClick={clearYears}
+                          className="inline-flex items-center gap-1 rounded-md border border-slate-200 bg-white px-2.5 py-1 text-xs font-medium text-slate-800 hover:bg-slate-50"
+                        >
+                          Clear years
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
 
-      {/* results meta + TOC */}
+      {/* filter results */}
       <div className="px-2 pt-4 md:px-7">
         <p className="text-sm text-slate-600">
           Showing <span className="font-semibold">{totalResults}</span>
@@ -273,6 +456,26 @@ export default function Impact() {
               </span>
             </>
           )}
+          {selectedTypes.size > 0 && (
+            <>
+              {` `}
+              in{` `}
+              <span className="font-semibold">
+                {[...selectedTypes].join(`, `)}
+              </span>
+            </>
+          )}
+          {selectedYears.size > 0 && (
+            <>
+              {` `}
+              from{` `}
+              <span className="font-semibold">
+                {[...Array.from(selectedYears).sort((a, b) => b - a)].join(
+                  `, `,
+                )}
+              </span>
+            </>
+          )}
           {query && (
             <>
               {` `}
@@ -280,198 +483,153 @@ export default function Impact() {
             </>
           )}
         </p>
-
-        {/* TOC */}
-        <div className="mt-3 flex flex-wrap gap-2">
-          {sortingOrder.map((t) => {
-            const count = grouped[t]?.length ?? 0;
-            if (!count) return null;
-            const active = selectedTypes.has(t);
-            return (
-              <button
-                key={t}
-                type="button"
-                onClick={() => toggleType(t)}
-                className={[
-                  `inline-flex items-center gap-1.5 rounded-full px-3 py-1.5 text-xs font-medium transition`,
-                  active
-                    ? `bg-primary text-white shadow-sm`
-                    : `border border-slate-200 bg-white text-slate-800 hover:bg-slate-50`,
-                ].join(` `)}
-                aria-pressed={active}
-              >
-                {t}
-                {` `}
-                <span className={active ? `opacity-90` : `opacity-70`}>
-                  ({count})
-                </span>
-              </button>
-            );
-          })}
-          {selectedTypes.size > 0 && (
-            <button
-              type="button"
-              onClick={clearTypes}
-              className="ml-1 inline-flex items-center gap-1.5 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 transition hover:bg-slate-50"
-              title="Clear type filters"
-            >
-              <X className="h-3.5 w-3.5" /> Clear types
-            </button>
-          )}
-        </div>
       </div>
 
-      {/* sections */}
       <AnimatePresence mode="popLayout" initial={false}>
-        {(selectedTypes.size
-          ? sortingOrder.filter((t) => selectedTypes.has(t))
-          : sortingOrder
-        ).map((t) => {
-          const items = grouped[t] || [];
-          if (!items.length) return null;
+        <div className="mt-8">
+          {(selectedTypes.size
+            ? sortingOrder.filter((t) => selectedTypes.has(t))
+            : sortingOrder
+          ).map((t) => {
+            const items = grouped[t] || [];
+            if (!items.length) return null;
 
-          const sectionId = slugify(t);
+            const sectionId = slugify(t);
 
-          return (
-            <motion.section
-              key={t}
-              id={sectionId}
-              layout
-              initial={{ opacity: 0, y: 8 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 8 }}
-              transition={{
-                duration: 0.2,
-                layout: {
-                  type: `spring`,
-                  stiffness: 420,
-                  damping: 36,
-                  mass: 0.22,
-                },
-              }}
-              className="my-4 scroll-mt-24 px-2 md:px-7"
-            >
-              {/* section header */}
-              <div className="mb-3 flex items-end justify-between gap-3">
-                <div>
-                  <h2 className="text-left text-2xl font-bold">{t}</h2>
-                  <p className="text-sm text-slate-600">
-                    {items.length} {items.length === 1 ? `entry` : `entries`}
-                  </p>
+            return (
+              <motion.section
+                key={t}
+                id={sectionId}
+                layout
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 8 }}
+                transition={{
+                  duration: 0.2,
+                  layout: {
+                    type: `spring`,
+                    stiffness: 420,
+                    damping: 36,
+                    mass: 0.22,
+                  },
+                }}
+                className="my-4 scroll-mt-24 px-2 md:px-7"
+              >
+                <div className="mb-3 flex items-end justify-between gap-3">
+                  <div>
+                    <h2 className="text-left text-2xl font-bold">{t}</h2>
+                    <p className="text-sm text-slate-600">
+                      {items.length} {items.length === 1 ? `entry` : `entries`}
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <div className="rounded-2xl border border-slate-200 bg-white/70 p-2">
-                <ul className="divide-y divide-slate-200">
-                  {/* Animate list items too */}
-                  <AnimatePresence initial={false}>
-                    {items.map((item) => (
-                      <motion.li
-                        key={item.url}
-                        layout
-                        initial={{ opacity: 0, y: 6 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 6 }}
-                        transition={{
-                          duration: 0.18,
-                          layout: {
-                            type: `spring`,
-                            stiffness: 500,
-                            damping: 35,
-                            mass: 0.2,
-                          },
-                        }}
-                        className="p-3 sm:p-4"
-                      >
-                        {/* title row */}
-                        <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-                          <div className="min-w-0">
-                            <a
-                              href={item.url}
-                              target="_blank"
-                              rel="noopener"
-                              className="text-primary text-base leading-snug font-semibold underline-offset-2 hover:underline"
-                              data-umami-event="Publication link"
-                              data-umami-event-url={item.url}
-                            >
-                              {item.title}
-                            </a>
-                            {item.subtitle ? (
-                              <p className="mt-0.5 line-clamp-2 text-sm text-slate-600">
-                                {item.subtitle}
-                              </p>
-                            ) : null}
-                          </div>
-
-                          <div className="mt-1 flex shrink-0 items-center gap-2">
-                            <a
-                              href={item.url}
-                              target="_blank"
-                              rel="noopener"
-                              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 transition hover:bg-slate-50"
-                              title="Open"
-                            >
-                              <ExternalLink className="h-3.5 w-3.5" />
-                              Open
-                            </a>
-                            <button
-                              type="button"
-                              onClick={() =>
-                                copyCitation(item.citation, item.url)
-                              }
-                              className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 transition hover:bg-slate-50"
-                              title="Copy citation"
-                            >
-                              {copiedUrl === item.url ? (
-                                <Check className="h-3.5 w-3.5" />
-                              ) : (
-                                <Copy className="h-3.5 w-3.5" />
-                              )}
-                              {copiedUrl === item.url ? `Copied` : `Copy`}
-                            </button>
-                          </div>
-                        </div>
-
-                        {/* meta row */}
-                        <div className="my-2 flex flex-wrap items-center gap-2">
-                          <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700">
-                            {item.year}
-                          </span>
-                          {item.project?.map((p) => (
-                            <button
-                              key={p}
-                              type="button"
-                              onClick={() => toggleProject(p)}
-                              className={[
-                                `rounded-full px-2.5 py-0.5 text-xs font-medium transition hover:cursor-pointer`,
-                                selectedProjects.has(p)
-                                  ? `bg-primary text-white`
-                                  : `bg-slate-100 text-slate-800 hover:bg-slate-200`,
-                              ].join(` `)}
-                              title={`Filter by ${p}`}
-                            >
-                              {p}
-                            </button>
-                          ))}
-                        </div>
-
-                        {/* citation */}
-                        <div
-                          id={`cit-${encodeURIComponent(item.url)}`}
-                          className="mt-2 rounded-lg border border-slate-200 bg-sky-50/70 px-3 py-2"
+                <div className="rounded-2xl border border-slate-200 bg-white/70 p-2">
+                  <ul className="divide-y divide-slate-200">
+                    <AnimatePresence initial={false}>
+                      {items.map((item) => (
+                        <motion.li
+                          key={item.url}
+                          layout
+                          initial={{ opacity: 0, y: 6 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: 6 }}
+                          transition={{
+                            duration: 0.18,
+                            layout: {
+                              type: `spring`,
+                              stiffness: 500,
+                              damping: 35,
+                              mass: 0.2,
+                            },
+                          }}
+                          className="p-3 sm:p-4"
                         >
-                          <p className="text-sm leading-relaxed text-slate-800">
-                            {item.citation}
-                          </p>
-                        </div>
-                      </motion.li>
-                    ))}
-                  </AnimatePresence>
-                </ul>
-              </div>
-            </motion.section>
-          );
-        })}
+                          <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                            <div className="min-w-0">
+                              <a
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener"
+                                className="text-primary text-base leading-snug font-semibold underline-offset-2 hover:underline"
+                                data-umami-event="Publication link"
+                                data-umami-event-url={item.url}
+                              >
+                                {item.title}
+                              </a>
+                              {item.subtitle ? (
+                                <p className="mt-0.5 line-clamp-2 text-sm text-slate-600">
+                                  {item.subtitle}
+                                </p>
+                              ) : null}
+                            </div>
+
+                            <div className="mt-1 flex shrink-0 items-center gap-2">
+                              <a
+                                href={item.url}
+                                target="_blank"
+                                rel="noopener"
+                                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 transition hover:bg-slate-50"
+                                title="Open"
+                              >
+                                <Icon
+                                  icon="mdi:external-link"
+                                  className="h-3.5 w-3.5"
+                                />
+                                Open
+                              </a>
+                              <button
+                                type="button"
+                                onClick={() =>
+                                  copyCitation(item.citation, item.url)
+                                }
+                                className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 transition hover:bg-slate-50"
+                                title="Copy citation"
+                              >
+                                {copiedUrl === item.url ? (
+                                  <Icon
+                                    icon="mdi:check"
+                                    className="h-3.5 w-3.5"
+                                  />
+                                ) : (
+                                  <Icon
+                                    icon="mdi:content-copy"
+                                    className="h-3.5 w-3.5"
+                                  />
+                                )}
+                                {copiedUrl === item.url ? `Copied` : `Copy`}
+                              </button>
+                            </div>
+                          </div>
+
+                          <div className="my-2 flex flex-wrap items-center gap-2">
+                            <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-700">
+                              {item.year}
+                            </span>
+                            {item.project?.map((p) => (
+                              <span
+                                key={p}
+                                className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-medium text-slate-800"
+                              >
+                                {p}
+                              </span>
+                            ))}
+                          </div>
+
+                          <div className="mt-2 rounded-lg border border-slate-200 bg-sky-50/70 px-3 py-2">
+                            <p className="text-sm leading-relaxed text-slate-800">
+                              {item.citation}
+                            </p>
+                          </div>
+                        </motion.li>
+                      ))}
+                    </AnimatePresence>
+                  </ul>
+                </div>
+              </motion.section>
+            );
+          })}
+        </div>
       </AnimatePresence>
     </section>
   );

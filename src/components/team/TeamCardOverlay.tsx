@@ -35,11 +35,6 @@ export default function TeamCardOverlay({
   className?: string;
   cardHeight?: string;
 }) {
-  const firstDegree =
-    Array.isArray(profile.education) && profile.education.length > 0
-      ? profile.education[0]?.degree
-      : undefined;
-
   return (
     <motion.button
       type="button"
@@ -72,14 +67,14 @@ export default function TeamCardOverlay({
           <h3 className="text-left text-2xl leading-tight font-extrabold text-white drop-shadow">
             {profile.name}
           </h3>
-          {firstDegree && (
+          {profile?.title && (
             <div className="mt-1 flex items-start text-white/95">
               <Icon
-                icon="lucide:graduation-cap"
+                icon="solar:user-id-bold"
                 className="mr-2 h-5 w-5"
                 aria-hidden
               />
-              <p className="text-sm font-semibold">{firstDegree}</p>
+              <p className="text-sm font-semibold">{profile.title}</p>
             </div>
           )}
         </div>

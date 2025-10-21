@@ -1,0 +1,145 @@
+[
+  {
+    "slug": "/sodaforsparc",
+    "title": "SODA",
+    "subtitle": "Streamlined Organization of Data for the SPARC Portal",
+    "description": "SODA is a cross-platform desktop app that helps researchers prepare and share peripheral nervous system data and research in line with the SPARC Data Structure (SDS).",
+    "completed": false,
+    "image": {
+      "src": "/images/hero/soda-app-macos.png",
+      "alt": "Screenshot of SODA for SPARC",
+      "contain": true
+    },
+    "badges": ["Desktop", "SPARC", "Data Curation"]
+  },
+  {
+    "slug": "/aireadi",
+    "title": "AI-READI",
+    "subtitle": "AI-Ready and Exploratory Atlas for Diabetes Insights",
+    "description": "A Bridge2AI initiative where we lead the Tools module, developing FAIR-forward infrastructure across Data, Ethics, Standards, Teaming, Tools, and Skills.",
+    "completed": false,
+    "image": {
+      "src": "/images/hero/aireadi-logo.png",
+      "alt": "AI-READI Logo",
+      "contain": true
+    },
+    "badges": ["Platform", "Standards", "Guidelines"]
+  },
+  {
+    "slug": "/eyeact",
+    "title": "Eye ACT",
+    "description": "A study leveraging the Envision Portal to explore links between glaucoma, diabetic retinopathy, and early indicators of Alzheimer's by advancing FAIR data sharing and AI-driven research.",
+    "completed": false,
+    "image": {
+      "src": "/images/hero/eye-act-logo.png",
+      "alt": "Eye ACT Logo",
+      "contain": true
+    },
+    "badges": ["Platform", "Standards", "Guidelines"]
+  },
+  {
+    "slug": "/dmp-chef",
+    "title": "DMP Chef",
+    "description": "An open-source, AI-powered platform to draft funder-compliant Data Management Plans through guided, researcher-friendly workflows. With a few clicks, generate comprehensive DMPs that meet funding requirements and support FAIR data practices.",
+    "completed": false,
+    "image": {
+      "src": "/images/dmp/dmp-chef-logo-transparent.svg",
+      "alt": "DMP Chef Logo",
+      "width": 220,
+      "height": 220,
+      "contain": true
+    },
+    "badges": ["Platform", "AI-Assisted", "Workflows"]
+  },
+  {
+    "slug": "/posters-science",
+    "title": "Posters.science",
+    "completed": false,
+    "description": "A free, open-source platform that turns conference posters into enduring, findable research assets. Transform fleeting conference moments into a searchable, citable knowledge base that amplifies research impact and accelerates scientific discovery.",
+    "image": {
+      "src": "/images/hero/posters-science-process.png",
+      "alt": "Posters.science process",
+      "contain": true
+    },
+    "badges": ["Platform", "Open Science", "Discovery"]
+  },
+  {
+    "slug": "/fair-biors",
+    "title": "FAIR-BioRS Guidelines",
+    "description": "Minimal, actionable steps to make biomedical research software reusable, aligned with FAIR4RS principles. Reduce compliance overhead while maximizing software citations and fostering collaboration across research institutions.",
+    "completed": true,
+    "image": {
+      "src": "https://fair-biors.org/img/logo.svg",
+      "alt": "FAIR-BioRS Logo",
+      "width": 220,
+      "height": 220,
+      "contain": true
+    },
+    "badges": ["FAIR4RS", "Guidelines", "Publication"]
+  },
+  {
+    "slug": "/codefair",
+    "title": "Codefair",
+    "description": "An free automated GitHub App that helps make research software reusable and FAIR-aligned by surfacing license, metadata, documentation, and archival through Zenodo.",
+    "completed": false,
+    "image": {
+      "src": "/images/hero/codefair-logo.png",
+      "alt": "Codefair Logo",
+      "contain": true
+    },
+    "badges": ["FAIR", "Automation", "Zenodo"]
+  },
+  {
+    "slug": "/fairshare",
+    "title": "FAIRshare",
+    "description": "A cross-platform desktop software that empowers researchers to effortlessly organize and share biomedical data and software according to applicable FAIR guidelines.",
+    "completed": true,
+    "image": {
+      "src": "/images/hero/fairshare-macos.png",
+      "alt": "FAIRshare macOS screenshot",
+      "contain": true
+    },
+    "badges": ["Desktop", "FAIR", "Biomedical"]
+  },
+  {
+    "slug": "/knowmore",
+    "title": "KnowMore",
+    "description": "An integrable tool for the SPARC Portal that reveals relationships, differences, and similarities between datasets to guide discovery.",
+    "completed": true,
+    "image": {
+      "src": "https://github.com/SPARC-FAIR-Codeathon/KnowMore/raw/main/docs/kmlogo-with-text3.png",
+      "alt": "KnowMore Logo",
+      "width": 280,
+      "height": 120,
+      "contain": true
+    },
+    "badges": ["SPARC", "Comparison", "Insights"]
+  },
+  {
+    "slug": "/sparclink",
+    "title": "SPARClink",
+    "description": "Open tools to visualize how SPARC outputs influence the wider research community through linked publications and networks.",
+    "completed": true,
+    "image": {
+      "src": "https://github.com/SPARC-FAIR-Codeathon/SPARClink/raw/main/docs/images/logo.svg",
+      "alt": "SPARClink Logo",
+      "width": 220,
+      "height": 220,
+      "contain": true
+    },
+    "badges": ["Software", "Visualization", "SPARC"]
+  },
+  {
+    "slug": "/aqua",
+    "title": "AQUA",
+    "subtitle": "Advanced Query Architecture for the SPARC Portal",
+    "description": "Improving discovery on the SPARC Portal with richer, faster, more precise search capabilities.",
+    "completed": true,
+    "image": {
+      "src": "/images/hero/aqua-logo-full.png",
+      "alt": "AQUA logo",
+      "contain": true
+    },
+    "badges": ["Software", "Search", "SPARC"]
+  }
+]
