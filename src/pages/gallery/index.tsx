@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getPlaiceholder } from 'plaiceholder';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import Modal from '@/components/gallery/Modal';
 import Seo from '@/components/seo/seo';
@@ -22,6 +22,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
   const { photoId } = router.query;
   const [lastViewedPhoto, setLastViewedPhoto] = useLastViewedPhoto();
   const lastViewedPhotoRef = useRef<HTMLAnchorElement>(null);
+  const [touchedId, setTouchedId] = useState<number | null>(null);
 
   useEffect(() => {
     if (lastViewedPhoto && !photoId) {
@@ -83,16 +84,15 @@ const Gallery: NextPage<Props> = ({ images }) => {
               <div key={`year-section-${year}`} className="mb-10">
                 <div className="my-8 w-full">
                   <div className="flex items-center">
-                    <div className="h-px flex-1 rounded-lg bg-gradient-to-r from-gray-200 via-gray-300 to-gray-400" />
+                    <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-r" />
 
                     <span className="mx-6 text-4xl font-extrabold tracking-tight text-gray-900 select-none sm:text-5xl">
                       {year}
                     </span>
 
-                    <div className="h-px flex-1 rounded-lg bg-gradient-to-l from-gray-200 via-gray-300 to-gray-400" />
+                    <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-l" />
                   </div>
                 </div>
-
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
                   {buckets.map((col, colIdx) => (
                     <div
@@ -125,7 +125,11 @@ const Gallery: NextPage<Props> = ({ images }) => {
                                   : null
                               }
                               shallow
-                              className="group relative block cursor-pointer"
+                              onTouchStart={() => setTouchedId(id)}
+                              onTouchEnd={() => setTouchedId(id)}
+                              onTouchCancel={() => setTouchedId(null)}
+                              onMouseLeave={() => setTouchedId(id)}
+                              className={`group relative block cursor-pointer`}
                             >
                               <div className="relative transform-gpu overflow-hidden rounded-lg shadow-xs transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl group-hover:shadow-black/10">
                                 <Image
@@ -139,10 +143,18 @@ const Gallery: NextPage<Props> = ({ images }) => {
                                 />
 
                                 {/* hover overlay */}
-                                <div className="pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                                <div
+                                  className={`pointer-events-none absolute inset-0 rounded-lg bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
+                                    touchedId === id ? `opacity-100` : ``
+                                  }`}
+                                />
 
                                 {/* caption */}
-                                <div className="pointer-events-none absolute inset-x-0 bottom-0 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                                <div
+                                  className={`pointer-events-none absolute inset-x-0 bottom-0 p-3 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ${
+                                    touchedId === id ? `opacity-100` : ``
+                                  }`}
+                                >
                                   <p className="text-[11px] font-medium tracking-wide text-white/80">
                                     {date
                                       ? (() => {

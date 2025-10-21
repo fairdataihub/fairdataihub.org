@@ -103,6 +103,10 @@
     overflow-x: hidden;
   }
 
+  .marquee-override.marquee-container {
+    overflow-x: visible !important;
+  }
+
   .required-field::after {
     content: '*';
     color: red;
@@ -248,7 +252,7 @@
     list-style: none;
     width: 160px;
     height: 160px;
-    animation: animate 25s linear infinite;
+    animation: animate 20s linear infinite;
     bottom: -150px;
   }
 
@@ -348,6 +352,57 @@
       opacity: 0;
       border-radius: 50%;
     }
+  }
+}
+
+@layer utilities {
+  /* Spotlight variables
+    --spot-top-left, --spot-top-right
+      - Top trapezoid coordinates (farther apart → wider top)
+
+    --spot-bottom-left, --spot-bottom-right
+      - Bottom trapezoid coordinates (closer to 0%/100% → wider bottom)
+
+    --spot-w, --spot-h
+      - Radial mask ellipse size (width and height) — controls softness & reach
+
+    --spot-mid, --spot-end
+      - Radial gradient stops for fade (midpoint and end transparency)
+
+    --spot-bleed
+      - Extra height added to the spotlight element (how far it bleeds into the next section)
+  */
+  .spotlight {
+    pointer-events: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: calc(100% + var(--spot-bleed, 26rem));
+    z-index: 5;
+
+    /* Trapezoid (top narrow → bottom wide) */
+    clip-path: polygon(
+      var(--spot-top-left, 42%) 0,
+      var(--spot-top-right, 58%) 0,
+      var(--spot-bottom-right, 96%) 100%,
+      var(--spot-bottom-left, 4%) 100%
+    );
+
+    /* Soft “stage light” fade */
+    -webkit-mask-image: radial-gradient(
+      var(--spot-w, 1500px) var(--spot-h, 820px) at 50% 0,
+      black 0%,
+      rgba(0, 0, 0, 0.95) var(--spot-mid, 38%),
+      transparent var(--spot-end, 85%)
+    );
+    mask-image: radial-gradient(
+      var(--spot-w, 1500px) var(--spot-h, 820px) at 50% 0,
+      black 0%,
+      rgba(0, 0, 0, 0.95) var(--spot-mid, 38%),
+      transparent var(--spot-end, 85%)
+    );
   }
 }
 

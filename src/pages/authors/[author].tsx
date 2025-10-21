@@ -1,4 +1,5 @@
 import dayjs from 'dayjs';
+import { motion } from 'framer-motion';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';
@@ -6,7 +7,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import wordsCount from 'words-count';
 
-import PostEntry from '@/components/blog/postEntry';
+import BlogListItem from '@/components/blog/BlogListItem';
 import Seo from '@/components/seo/seo';
 
 const authorsJSON = require(`../../assets/data/authors.json`);
@@ -21,6 +22,8 @@ type BlogList = {
     tags: string[];
     subtitle: string;
     category: string;
+    heroImage: string;
+    imageAuthor: string;
   };
 };
 
@@ -41,7 +44,7 @@ const Author: React.FC<BlogProps> = ({ filteredBlogList, authorInfo }) => {
   const { author } = router.query;
 
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <section className="relative mx-auto mt-20 flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
         templateTitle={`${authorInfo.name} - Authors`}
         templateUrl={`https://fairdataihub.org/authors/${author}`}
@@ -72,22 +75,44 @@ const Author: React.FC<BlogProps> = ({ filteredBlogList, authorInfo }) => {
 
       <hr className="mx-6 my-2 border-dashed border-slate-200" />
 
-      {filteredBlogList.map((post) => {
+      {filteredBlogList.map((post, idx) => {
         const { slug, frontMatter, timeToRead } = post;
 
-        const { title, date, tags, subtitle, category } = frontMatter;
-
         return (
-          <PostEntry
-            key={title}
-            title={title}
-            timeToRead={timeToRead}
-            date={date}
-            slug={slug}
-            subtitle={subtitle}
-            tags={tags}
-            category={category}
-          />
+          <motion.div
+            key={slug}
+            layout
+            className="my-2"
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              scale: 1,
+              transition: {
+                duration: 0.2,
+                delay: idx * 0.02,
+                ease: `easeOut`,
+              },
+            }}
+            viewport={{
+              once: true,
+              amount: 0.1,
+              margin: `0px 0px 150px 0px`,
+            }}
+            exit={{ opacity: 0, y: 10, scale: 0.98 }}
+          >
+            <BlogListItem
+              slug={slug}
+              title={frontMatter.title}
+              subtitle={frontMatter.subtitle}
+              date={frontMatter.date}
+              timeToRead={timeToRead}
+              heroImage={frontMatter.heroImage}
+              imageAuthor={frontMatter.imageAuthor}
+              tags={frontMatter.tags}
+              category={frontMatter.category}
+            />
+          </motion.div>
         );
       })}
     </section>

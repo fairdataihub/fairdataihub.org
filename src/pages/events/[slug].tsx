@@ -75,7 +75,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
   };
 
   return (
-    <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
+    <div className="relative mx-auto mt-20 flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
       <Seo
         templateTitle={`${title} - Events`}
         templateDescription={subtitle}
@@ -137,7 +137,12 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
             </span>
           </div>
 
-          <EventDates startDateTime={startDateTime} endDateTime={endDateTime} />
+          <span className="bg-primary inline-flex items-center rounded-lg border border-white px-2 py-0.5">
+            <EventDates
+              startDateTime={startDateTime}
+              endDateTime={endDateTime}
+            />
+          </span>
 
           <hr className="my-4 border-dashed border-slate-200" />
 

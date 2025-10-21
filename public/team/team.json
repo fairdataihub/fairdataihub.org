@@ -1,0 +1,313 @@
+[
+  {
+    "id": "Bhavesh-Patel",
+    "name": "Bhavesh Patel (he/him)",
+    "title": "Founder/Lead",
+    "bio": "Bhavesh hails from Thiais, France. His expertise lies in modeling (mathematical) and computational simulations. He has also established significant knowledge of software development so he can accurately criticize his team's work. He is passionate about soccer and vegan croissants.",
+    "image": "/images/people/bhavesh-full.jpg",
+    "borderTop": false,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "Ph.D. in Mechanical Engineering",
+        "institution": "UC Berkeley",
+        "year": "2015"
+      },
+      {
+        "degree": "M.A. in Mathematics",
+        "institution": "UC Berkeley",
+        "year": "2014"
+      },
+      {
+        "degree": "M.Sc. In Mechanical Engineering",
+        "institution": "UC Berkeley",
+        "year": "2013"
+      },
+      {
+        "degree": "Diplôme d'Ingénieur",
+        "institution": "Arts et Métiers ParisTech",
+        "year": "2013"
+      }
+    ],
+    "twitter": {
+      "show": true,
+      "link": "https://twitter.com/bvhpatel"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/bvhpatel"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/bvhpatel"
+    }
+  },
+  {
+    "id": "Sanjay-Soundarajan",
+    "name": "Sanjay Soundarajan (he/him)",
+    "title": "Research Software Engineer",
+    "bio": "Sanjay moved from Sri Lanka to pursue higher education. His published works lie in the application of parallelization in Bioinformatics algorithms, development of Human Computer Interaction devices for accessibility and Big Data analysis. He loves exploring new places and trying out new cuisines.",
+    "image": "/images/people/sanjay-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "M.S. in Computer Science",
+        "institution": "University of North Dakota",
+        "year": "2020"
+      },
+      {
+        "degree": "B.Sc. in Computer Science",
+        "institution": "California State University, Fresno",
+        "year": "2018"
+      }
+    ],
+    "twitter": {
+      "show": true,
+      "link": "https://twitter.com/megasanjay"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/megasanjay"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/sanjay-soundarajan"
+    }
+  },
+  {
+    "id": "Christopher-Marroquin",
+    "name": "Christopher Marroquin (he/him)",
+    "title": "Software Developer",
+    "bio": "Christopher is a Central Valley native that has experience in desktop development and a focus on systems design and general web development. His hobbies include playing guitar, reading, and going to concerts.",
+    "image": "/images/people/aaron-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "B.Sc. in Computer Science",
+        "institution": "California State University, Fresno",
+        "year": "2019"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/aaronm-2112"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/christopher-marroquin/"
+    }
+  },
+  {
+    "id": "Jacob-Clark",
+    "name": "Jacob Clark (he/him)",
+    "title": "Software Developer",
+    "bio": "Jacob is a full-stack developer out of Fresno, CA that strives to create applications that are performant, easy to use, and create value for users. In his free time, Jacob enjoys reading, rock climbing, and playing basketball.",
+    "image": "/images/people/jacob-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "B.Sc. in Computer Science",
+        "institution": "Western Governors University, Salt Lake City",
+        "year": "2021"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/JacobiClark"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/jacob-clarksd/"
+    }
+  },
+  {
+    "id": "Dorian-Portillo",
+    "name": "Dorian Portillo (they/them)",
+    "title": "Software Developer",
+    "bio": "Dorian is a Guatemalan and Salvadoran frontend web developer with a focus on design and performance. They are non-binary and interested in seeing technology further progress society. During their free time they like spending time with family, playing video games and drinking matcha.",
+    "image": "/images/people/dorian-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "B.Sc in Computer Science",
+        "institution": "Cal State University, San Bernardino",
+        "year": "2020"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com/"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/slugb0t"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/dorian-portillo-4733b61b5/"
+    }
+  },
+  {
+    "id": "Aydan-Gasimova",
+    "name": "Aydan Gasimova (she/her)",
+    "title": "Software developer",
+    "bio": "Aydan is from Azerbaijan and pursued her M.S degree in Computer Science. She has experience in web development with a focus on building scalable dynamic front-end web applications. She enjoys bike riding, sightseeing, and exploring new places.",
+    "image": "/images/people/aydan-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "M.S. in Computer Science",
+        "institution": "University of North Dakota",
+        "year": "2022"
+      },
+      {
+        "degree": "B.S in Information technologies and system engineering",
+        "institution": "Azerbaijan State Economic University",
+        "year": "2017"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com/"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/Aydawka"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/aydan-gasimova-a98b7521b/"
+    }
+  },
+  {
+    "id": "Xuebin-Dong",
+    "name": "Xuebin Dong (he/him)",
+    "title": "Software Developer",
+    "bio": "Xuebin Dong is a passionate software developer with a strong background in full-stack development, data pipelines, and DevOps. He holds a Master's degree in Computer Science and enjoys solving complex technical problems. In his free time, He loves working out, playing video games, and exploring new technologies.",
+    "image": "/images/people/xuebin-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "M.S. in Computer Science",
+        "institution": "University of Alabama at Birmingham",
+        "year": "2021"
+      },
+      {
+        "degree": "B.S. in Computer Network Engineering",
+        "institution": "Yunnan University",
+        "year": "2019"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com/"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/dxb2306"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/dxb2306"
+    }
+  },
+  {
+    "id": "Nahid-Zeinali",
+    "name": "Nahid Zeinali (she/her)",
+    "title": "AI Research Scientist",
+    "bio": "Nahid Zeinali is an AI Research Scientist from Isfahan, Iran. She specializes in AI, NLP, and deep learning in healthcare and focuses on developing AI-driven healthcare solutions. She enjoys yoga, hiking, tennis, road trips, and Persian poetry in her free time.",
+    "image": "/images/people/nahid-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "Ph.D. in Informatics",
+        "institution": "University of Iowa",
+        "year": "2025"
+      },
+      {
+        "degree": "M.Sc. in Informatics",
+        "institution": "University of Iowa",
+        "year": "2023"
+      },
+      {
+        "degree": "M.Sc. in Informatics",
+        "institution": "Tarbiat Modares University, Iran",
+        "year": "2016"
+      },
+      {
+        "degree": "B.S. in Software Engineering",
+        "institution": "University of Azad Najafabad Isfahan, Iran",
+        "year": "2010"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://x.com/ZeinaliNahid"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/Nahidzeinali-web"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/nahid-zeinali-ph-d-15440910b/6"
+    }
+  },
+  {
+    "id": "James-ONeill",
+    "name": "James ONeill (he/they)",
+    "title": "Research Scientist in AI",
+    "bio": "James completed his PhD in Bioengineering through the SDSU-UCSD Joint Doctoral Program, focusing on AI-driven approaches for biomedical literature analysis. He developed large-scale AI-based frameworks including CarD-T and PubVerse for analyzing scientific literature and mapping research landscapes. In his free time, he enjoys cars, cats, cooking, and coding.",
+    "image": "/images/people/james-full.jpg",
+    "borderTop": true,
+    "borderBottom": false,
+    "education": [
+      {
+        "degree": "Ph.D. in Bioengineering",
+        "institution": "SDSU-UCSD Joint Doctoral Program",
+        "year": "2025"
+      },
+      {
+        "degree": "M.S. in Biological & Medical Informatics",
+        "institution": "San Diego State University",
+        "year": "2020"
+      },
+      {
+        "degree": "B.S. in Biochemistry & Molecular Biology",
+        "institution": "University of California Davis",
+        "year": "2016"
+      },
+      {
+        "degree": "A.A. in English",
+        "institution": "Pasadena City College"
+      }
+    ],
+    "twitter": {
+      "show": false,
+      "link": "https://twitter.com/"
+    },
+    "github": {
+      "show": true,
+      "link": "https://github.com/jimnoneill"
+    },
+    "linkedin": {
+      "show": true,
+      "link": "https://www.linkedin.com/in/jimnoneill/"
+    }
+  }
+]

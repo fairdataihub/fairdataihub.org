@@ -9,6 +9,10 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'fair-biors.org',
+      },
+      {
+        protocol: 'https',
         hostname: 'github.com',
       },
       {
@@ -22,6 +26,14 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'i.imgur.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'berkeleybop.github.io',
       },
       {
         protocol: 'https',
@@ -54,6 +66,10 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'os.nav.fund',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.microlink.io',
       },
     ],
   },

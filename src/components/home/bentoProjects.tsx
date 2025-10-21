@@ -157,7 +157,7 @@ export default function BentoProjects() {
   ];
 
   return (
-    <section className="py-20">
+    <section className="relative py-20">
       <h2 className="mb-6 text-center text-3xl font-extrabold tracking-tight md:text-4xl">
         What we are building
       </h2>
@@ -170,7 +170,7 @@ export default function BentoProjects() {
           return (
             <Link key={i} href={item.href} className={`${item.colSpan} group`}>
               <MagicCard
-                className="flex h-full rounded-2xl p-[2px]"
+                className="flex h-full rounded-2xl p-[1px] md:p-[2px]"
                 gradientColor="oklch(0.592 0.2157 349.761)"
               >
                 <BentoGridItem
@@ -188,7 +188,7 @@ export default function BentoProjects() {
         <p className="font-asap text-xl">
           There is a lot more in the pipeline!
         </p>
-        <Link href="/projects" className="my-4">
+        <Link href="/projects" className="my-4" passHref>
           <button
             type="button"
             className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
