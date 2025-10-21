@@ -191,7 +191,7 @@ export default function Impact() {
   const totalResults = filtered.length;
 
   return (
-    <section className="relative mx-auto flex h-full min-h-[80vh] w-full max-w-screen-xl flex-col overflow-hidden px-5 pt-0 sm:px-10 sm:py-20">
+    <section className="relative mx-auto flex h-full min-h-[calc(150vh)] w-full max-w-screen-xl flex-col overflow-hidden px-5 pt-10 sm:min-h-[80vh] sm:px-10 sm:py-20">
       <Seo
         templateTitle="Impact"
         templateDescription="Resources created by the FAIR Data Innovations"
@@ -306,13 +306,13 @@ export default function Impact() {
 
                 <div className="grid gap-3 md:grid-cols-3">
                   {/* Types */}
-                  <div className="flex min-h-[240px] flex-col rounded-lg border border-slate-200 p-2">
-                    <p className="mb-1 text-xs font-semibold tracking-wide text-slate-600 uppercase">
+                  <div className="flex flex-col rounded-lg border border-slate-200 p-4 sm:min-h-[240px]">
+                    <p className="mb-4 text-xs font-semibold tracking-wide text-slate-600 uppercase">
                       Types
                     </p>
 
                     <div className="flex-1 overflow-auto pr-1">
-                      <div className="flex flex-wrap gap-1.5">
+                      <div className="flex flex-wrap gap-2">
                         {sortingOrder.map((t) => {
                           const active = selectedTypes.has(t);
                           return (
@@ -349,13 +349,13 @@ export default function Impact() {
                   </div>
 
                   {/* Projects */}
-                  <div className="flex min-h-[240px] flex-col rounded-lg border border-slate-200 p-2">
-                    <p className="mb-1 text-xs font-semibold tracking-wide text-slate-600 uppercase">
+                  <div className="flex flex-col rounded-lg border border-slate-200 p-4 sm:min-h-[240px]">
+                    <p className="mb-4 text-xs font-semibold tracking-wide text-slate-600 uppercase">
                       Projects
                     </p>
 
                     <div className="flex-1 overflow-auto pr-1">
-                      <div className="flex flex-wrap gap-1.5">
+                      <div className="flex flex-wrap gap-2">
                         {projects.map((p) => {
                           const active = selectedProjects.has(p);
                           return (
@@ -393,13 +393,13 @@ export default function Impact() {
                   </div>
 
                   {/* Years */}
-                  <div className="flex min-h-[240px] flex-col rounded-lg border border-slate-200 p-2">
-                    <p className="mb-1 text-xs font-semibold tracking-wide text-slate-600 uppercase">
+                  <div className="flex flex-col rounded-lg border border-slate-200 p-4 sm:min-h-[240px]">
+                    <p className="mb-4 text-xs font-semibold tracking-wide text-slate-600 uppercase">
                       Years
                     </p>
 
                     <div className="flex-1 overflow-auto pr-1">
-                      <div className="flex flex-wrap gap-1.5">
+                      <div className="flex flex-wrap gap-2">
                         {allYears.map((y) => {
                           const active = selectedYears.has(y);
                           return (

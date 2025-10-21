@@ -99,13 +99,13 @@ export default function Collaborators() {
   ];
 
   return (
-    <div className="mx-auto w-full pt-4 pb-0">
+    <div className="mx-auto w-full px-6 pt-4 pb-0">
       <div className="mb-4 flex w-full flex-col items-center">
         <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
           We won&apos;t be able to do this alone!
         </h2>
 
-        <p className="my-2 text-center text-xl md:text-left">
+        <p className="my-2 text-left text-xl md:text-center">
           Our work would not be possible without our incredible collaborators
           and funders
         </p>

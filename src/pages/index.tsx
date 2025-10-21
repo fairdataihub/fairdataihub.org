@@ -33,7 +33,7 @@ export default function Home() {
                 data to empower AI driven discoveries
               </h1>
 
-              <div className="relative mx-auto mt-8 h-48 w-full sm:h-40 md:mt-2">
+              <div className="relative mx-auto mt-10 h-48 w-full sm:h-40 md:mt-2">
                 <div
                   aria-hidden
                   className="spotlight [--spot-bleed:28rem] [--spot-bottom-left:2%] [--spot-bottom-right:98%] [--spot-end:90%] [--spot-h:860px] [--spot-mid:34%] [--spot-top-left:20%] [--spot-top-right:90%] [--spot-w:2000px] md:[--spot-end:92%] md:[--spot-top-left:32%] md:[--spot-top-right:66%]"
@@ -54,7 +54,7 @@ export default function Home() {
                 <div className="absolute -top-4 left-1/2 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent md:top-0" />
 
                 <div className="absolute inset-0 z-10 mt-4 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)] md:mt-0" />
-                <div className="absolute inset-0 z-20 flex items-end justify-center">
+                <div className="absolute -inset-6 z-20 flex items-end justify-center px-4 sm:inset-0">
                   <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
                     We develop open source tools, standards, and guidelines that
                     support researchers in preparing and sharing data, software,

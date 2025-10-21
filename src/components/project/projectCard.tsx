@@ -13,7 +13,7 @@ export type ProjectImage = {
 };
 
 export type Project = {
-  slug: string; // e.g., '/projects/codefair'
+  slug: string; // ex: '/projects/codefair'
   title: string;
   subtitle?: string;
   description: string;
@@ -27,24 +27,17 @@ export default function ProjectCard({ project }: { project: Project }) {
   return (
     <Link
       href={slug}
-      className="group block focus:outline-none"
-      aria-label={`${title} — open project`}
+      className="group block touch-manipulation focus:outline-none"
+      aria-label={`${title} - open project`}
     >
       <motion.article
         whileHover={{ y: -4 }}
-        transition={{
-          duration: 0.15,
-          ease: `easeOut`,
-        }}
-        whileNotHover={{
-          y: 0,
-          transition: { duration: 0.2 },
-        }}
+        whileTap={{ y: -2 }}
+        transition={{ duration: 0.15, ease: `easeOut` }}
         className="relative grid h-full min-h-[28rem] overflow-hidden rounded-xl border border-stone-200 bg-white/90 shadow-sm transition dark:border-stone-700 dark:bg-stone-900/60"
         style={{ gridTemplateRows: `auto 1fr` }}
       >
         <div className="relative h-44 w-full overflow-hidden bg-gradient-to-b from-stone-50 to-white dark:from-stone-900 dark:to-stone-900">
-          {/* hover vignette */}
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -70,7 +63,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="flex flex-1 flex-col gap-2 p-4">
-          <h3 className="text-lg font-semibold text-stone-900 transition-colors group-hover:text-stone-950 dark:text-stone-100 dark:group-hover:text-white">
+          <h3 className="group-active:text-primary text-lg font-semibold text-stone-900 transition-colors group-hover:text-stone-950 dark:text-stone-100 dark:group-hover:text-white dark:group-active:text-white">
             {title}
           </h3>
 
@@ -84,13 +77,12 @@ export default function ProjectCard({ project }: { project: Project }) {
             {description}
           </p>
 
-          {/* Badges */}
           {!!badges?.length && (
             <div className="mt-1 flex flex-wrap gap-1.5">
               {badges.map((b) => (
                 <span
                   key={b}
-                  className="rounded border border-pink-300/70 bg-pink-50 px-2 py-0.5 text-[11px] text-pink-700 dark:border-stone-700 dark:text-stone-300"
+                  className="rounded border border-pink-300/70 bg-pink-50 px-2 py-0.5 text-[11px] text-pink-700 transition-colors group-hover:border-pink-400 group-active:border-pink-400 dark:border-stone-700 dark:text-stone-300"
                 >
                   {b}
                 </span>
@@ -98,18 +90,17 @@ export default function ProjectCard({ project }: { project: Project }) {
             </div>
           )}
 
-          <div className="flex-end mt-auto flex pt-2">
-            {/* shrink-to-content and align right */}
+          <div className="mt-auto flex pt-2">
             <div className="relative ml-auto inline-flex items-center gap-2 pl-1">
-              <span className="group-hover:text-primary text-xs text-stone-500 dark:text-stone-400">
+              <span className="group-hover:text-primary group-active:text-primary text-xs text-stone-500 transition-colors dark:text-stone-400">
                 Learn more
               </span>
               <Icon
                 icon="solar:arrow-right-broken"
-                className="group-hover:text-primary h-4 w-4"
+                className="group-hover:text-primary group-active:text-primary h-4 w-4 transition-colors"
                 aria-hidden="true"
               />
-              <span className="bg-primary absolute -bottom-1 left-1/2 h-[2px] w-0 transition-all duration-300 group-hover:left-0 group-hover:w-full"></span>
+              <span className="bg-primary absolute -bottom-1 left-1/2 h-[2px] w-0 transition-all duration-300 group-hover:left-0 group-hover:w-full group-active:left-0 group-active:w-full" />
             </div>
           </div>
         </div>

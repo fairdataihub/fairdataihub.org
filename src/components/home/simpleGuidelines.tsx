@@ -52,12 +52,12 @@ export default function SimpleGuidelines() {
 
   return (
     <section className="relative py-10">
-      <h2 className="mb-6 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+      <h2 className="mb-6 px-6 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
         Simple guides + open tools, so FAIR is effortless
       </h2>
 
-      <div className="font-asap mx-auto max-w-screen-xl">
-        <p className="mb-8 text-center text-xl">
+      <div className="font-asap mx-auto max-w-screen-xl px-6">
+        <p className="mb-8 text-left text-xl md:text-center">
           We believe that researchers already have enough work and
           responsibilities on their hands. Therefore, making data, software, and
           other research outcomes FAIR should be made very easy for them. We are
