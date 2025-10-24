@@ -250,10 +250,96 @@ const TeamPage: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
       templateUrl="https://fairdataihub.org/team"
     />
 
+    <style jsx global>{`
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+        }
+
+        .print\\:grid {
+          display: block !important;
+          width: 100% !important;
+          max-width: none !important;
+        }
+
+        .print\\:grid-cols-3 {
+          display: block !important;
+        }
+
+        .print\\:gap-4 {
+          gap: 0 !important;
+        }
+
+        .print\\:divide-y-0 {
+          border-top: none !important;
+        }
+
+        .print\\:p-0 {
+          padding: 0 !important;
+        }
+
+        .print\\:break-inside-avoid {
+          break-inside: avoid !important;
+          page-break-inside: avoid !important;
+        }
+
+        .print\\:page-break-before-always {
+          page-break-before: always !important;
+        }
+
+        /* Ensure each team member card fits well in print */
+        .team-card-print {
+          border: none;
+          border-radius: 0;
+          padding: 1rem;
+          margin-bottom: 1.5rem;
+          height: fit-content;
+          min-height: 0;
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        /* Hide social media links in print */
+        .social-links {
+          display: none !important;
+        }
+
+        /* Optimize text sizes for print */
+        .print-text-sm {
+          font-size: 0.875rem !important;
+          line-height: 1.25rem !important;
+        }
+
+        .print-text-xs {
+          font-size: 0.75rem !important;
+          line-height: 1rem !important;
+        }
+
+        /* Ensure images are properly sized for print */
+        .print-image {
+          max-width: 100% !important;
+          height: auto !important;
+          max-height: 200px !important;
+          object-fit: contain !important;
+        }
+      }
+    `}</style>
+
     <section className="mx-auto mb-8 flex max-w-screen-2xl flex-col items-center justify-between gap-4 text-black md:mb-0 md:flex-row">
-      <div className="flex w-full flex-col divide-y divide-gray-200 p-2 md:p-10">
-        {TeamMembers.map((team) => (
-          <TeamCard profile={team} key={team.id} />
+      <div className="flex w-full flex-col divide-y divide-gray-200 p-2 md:p-10 print:block print:divide-y-0 print:p-0">
+        {TeamMembers.map((team, index) => (
+          <div
+            key={team.id}
+            className={`print:break-inside-avoid ${
+              index > 0 && index % 3 === 0
+                ? `print:page-break-before-always`
+                : ``
+            }`}
+          >
+            <TeamCard profile={team} />
+          </div>
         ))}
       </div>
     </section>

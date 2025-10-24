@@ -29,10 +29,10 @@ interface TeamCardProps {
 const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
   return (
     <div
-      className={`flex flex-col px-1 py-4 sm:flex-row lg:p-5`}
+      className={`team-card-print flex flex-col px-1 py-4 sm:flex-row lg:p-5 print:mb-4 print:flex-row print:gap-8 print:p-4`}
       id={profile.id}
     >
-      <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5">
+      <div className="my-3 w-full sm:my-2 md:w-1/2 lg:w-2/5 print:my-2 print:mr-4 print:w-4/12">
         <Image
           src={profile.image}
           placeholder="blur"
@@ -45,8 +45,8 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
           className="rounded-xl"
         />
       </div>
-      <div className="flex w-full flex-col px-0 py-3 sm:px-8 sm:py-4 md:w-1/2 lg:ml-2 lg:w-3/5">
-        <h1 className="text-2xl font-semibold sm:text-xl lg:text-3xl">
+      <div className="flex w-full flex-col px-0 py-3 sm:px-8 sm:py-4 md:w-1/2 lg:ml-2 lg:w-2/5 print:w-7/12 print:px-0 print:py-2">
+        <h1 className="text-2xl font-semibold sm:text-xl lg:text-3xl print:text-lg print:font-bold">
           {profile.name}
         </h1>
         <h2 className="pb-1 text-xl font-medium text-primary sm:text-lg lg:text-2xl">
@@ -57,19 +57,19 @@ const TeamCard: React.FC<TeamCardProps> = ({ profile }) => {
         </p>
         {profile.education.length > 0 && (
           <div className="py-2">
-            <h3 className="sm:text-md pb-1 text-lg font-medium text-primary lg:text-xl">
+            <h3 className="sm:text-md pb-1 text-lg font-medium text-primary">
               Education
             </h3>
-            <ul>
+            <ul className="">
               {profile.education.map((degree: string) => (
-                <li key={degree} className="font-asap">
+                <li key={degree} className="font-asapp">
                   {degree}
                 </li>
               ))}
             </ul>
           </div>
         )}
-        <div className="flex py-3">
+        <div className="social-links flex py-3 print:hidden">
           {profile.twitter.show && (
             <a
               href={profile.twitter.link}
