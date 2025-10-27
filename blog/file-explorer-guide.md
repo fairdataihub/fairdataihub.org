@@ -1,5 +1,5 @@
 ---
-title: 'Building a performant File Explorer in the browser with React'
+title: 'Building a Performant File Explorer in the Browser with React'
 authors:
   - 'JacobClark'
 date: '2025-10-15'
@@ -18,15 +18,15 @@ tags:
 
 # Why build your own File Explorer?
 
-Existing file explorer libraries often lack scalability and flexibility. Adapting them to your data can be more work than building a custom solution, especially if you need features beyond a basic nested folder view. This guide provides the essential knowledge and code examples to help get you on your way to building a great file explorer!
+Existing file explorer libraries such as [react-file-tree](https://www.npmjs.com/package/react-file-tree), [react-sortable-tree](https://www.npmjs.com/package/react-sortable-tree), or [Chonky](https://chonky.io/) often fall short when it comes to flexibility, especially with large datasets or complex hierarchical structures. Adapting them to fit a specific data model can quickly become more work than building a custom solution, especially if you need advanced features like virtualization, custom icons, or intricate folder and file state management. I experienced this firsthand while developing a custom file explorer for [SODA for SPARC](https://docs.sodaforsparc.io/), which helps researchers prepare and share standardized data on the NIH-supported sparc.science repository. This guide provides the essential knowledge and code examples to help get you on your way to building a great file explorer!
 
-## Libraries used in the tutorial
+## Libraries Used in the Tutorial
 
 This guide uses the libraries listed below. These are the ones we use, but you can swap them out with alternatives of your choice depending on the stack you are currently using or what you are comfortable with:
 
-- React
-- Tabler Icons
-- TanStack Virtual
+- [React](https://react.dev/)
+- [Tabler Icons](https://tabler.io/icons)
+- [TanStack Virtual](https://tanstack.com/virtual/latest)
 
 ## Deciding on a Data Model for Your File Explorer
 
@@ -350,7 +350,7 @@ const FileExplorer = ({ items, onFolderClick, onFileClick }) => {
 The code above will render a styled file explorer with icons like the one below:
 ![Styled File Explorer](/images/blog/file-explorer-guide/styled_file_explorer.png)
 
-## Adding Virtualization to handle a large amount of folders and files
+## Adding Virtualization to Handle a Large Amount of Folders and Files
 
 When your application needs to display hundreds or even thousands of files, rendering all of them in the DOM at once can drastically slow down the performance of your file explorer. TanStack Virtual solves this by rendering only the items currently visible in the viewport (plus a small buffer that you can tweak depending on the needs of your UI), which means you might only be rendering 40–60 items at a time even if your explorer contains thousands of folders and files.
 
