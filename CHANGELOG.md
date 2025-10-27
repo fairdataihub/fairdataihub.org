@@ -1,3 +1,13 @@
+# [2.72.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.71.0...v2.72.0) (2025-10-27)
+
+
+### Features
+
+* ✨ Add a conclusion to the blog post ([3600528](https://github.com/fairdataihub/fairdataihub.org/commit/3600528b6dea68992681ab6b21948b59e2bc33c2))
+* ✨ Add file explorer guide blog post ([c3b6448](https://github.com/fairdataihub/fairdataihub.org/commit/c3b6448709e9fa0bd772fecde5b5c897452523fc))
+* ✨ Add file explorer guide blog post ([e835010](https://github.com/fairdataihub/fairdataihub.org/commit/e8350102aad244614d4dba5600a02d958cb9d667))
+* Final draft for blog post created ([6c57d5f](https://github.com/fairdataihub/fairdataihub.org/commit/6c57d5f2fcbc8b7ff2591d7a354296c86dacf22f))
+
 # [2.71.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.70.1...v2.71.0) (2025-10-22)
 
 
