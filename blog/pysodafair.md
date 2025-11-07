@@ -4,9 +4,9 @@ authors:
   - 'ChristopherMarroquin'
 date: '2025-10-02'
 category: 'Product'
-heroImage: 'https://images.unsplash.com/photo-1604156787150-ce07a9d1fd37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80'
-imageAuthor: 'Timur Garifov'
-imageAuthorLink: 'https://unsplash.com/@timgarifov'
+heroImage: 'https://images.unsplash.com/photo-1690683790356-c1edb75e3df7?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000'
+imageAuthor: 'Brecht Corbeel'
+imageAuthorLink: 'https://unsplash.com/@brechtcorbeel'
 subtitle: 'A Python Tool to Help Create FAIR Data and Models Following the SPARC Dataset Structure (SDS)'
 tags:
   - FAIR data

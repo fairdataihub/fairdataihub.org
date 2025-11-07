@@ -4,9 +4,9 @@ authors:
   - 'BhaveshPatel'
 date: '2025-04-02'
 category: 'News'
-heroImage: 'https://images.unsplash.com/photo-1655720828018-edd2daec9349?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80'
-imageAuthor: 'Kristaps Ungurs'
-imageAuthorLink: 'https://unsplash.com/@kristapsungurs'
+heroImage: 'https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000'
+imageAuthor: 'Redd Francisco'
+imageAuthorLink: 'https://unsplash.com/@reddfrancisco'
 subtitle: 'Because good science deserves great metadata!'
 tags:
   - Task force
