@@ -33,7 +33,7 @@ export default function Blog({ blogList }: BlogProps) {
   return (
     <div className="relative pt-20">
       <Seo
-        templateDescription="Explore the projects we build at the FAIR Data Innovations Hub—modern, open‑source tools and platforms that help researchers follow FAIR principles."
+        templateDescription="Explore the projects we build at the FAIR Data Innovations Hub-modern, open‑source tools and platforms that help researchers follow FAIR principles."
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
@@ -56,8 +56,11 @@ export default function Blog({ blogList }: BlogProps) {
           className="mb-8 flex flex-col items-start gap-2 sm:mb-10 sm:justify-between"
         >
           <div className="flex flex-col">
-            <h1 className="text-4xl font-black tracking-tight text-pretty text-stone-900 sm:text-5xl dark:text-stone-100">
-              <span>Explore</span>
+            <h1
+              className="text-4xl font-black tracking-tight text-pretty text-stone-900 sm:text-5xl dark:text-stone-100"
+              aria-hidden="true"
+            >
+              <span>Learn</span>
               {` `}
               <TypingAnimation
                 words={[`New Tools`, `Guides`, `FAIR Practices`, `Updates`]}
@@ -65,6 +68,10 @@ export default function Blog({ blogList }: BlogProps) {
                 pauseDelay={2000}
                 loop
               />
+            </h1>
+
+            <h1 className="sr-only">
+              Learn New Tools, Guides, FAIR Practices, Updates
             </h1>
             <p className="font-asap max-w-2xl text-lg text-stone-700 dark:text-stone-300">
               Updates, implementation guides, and FAIR practices from our team.

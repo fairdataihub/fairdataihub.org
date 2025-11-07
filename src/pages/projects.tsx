@@ -32,7 +32,7 @@ export default function ProjectsPage() {
   return (
     <div className="relative pt-20">
       <Seo
-        templateDescription="Explore the projects we build at the FAIR Data Innovations Hub—modern, open‑source tools and platforms that help researchers follow FAIR principles."
+        templateDescription="Explore the projects we build at the FAIR Data Innovations Hub-modern, open-source tools and platforms that help researchers follow FAIR principles."
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
 
         {/* Grid */}
         <AnimatePresence mode="popLayout">
-          <h2 className="my-4 font-semibold tracking-wider text-stone-500 uppercase">
+          <h2 className="my-4 text-lg font-bold tracking-wider text-stone-600 uppercase underline underline-offset-5">
             Ongoing
           </h2>
           <motion.ul
@@ -83,7 +83,7 @@ export default function ProjectsPage() {
             ))}
           </motion.ul>
 
-          <h2 className="my-4 mt-24 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+          <h2 className="my-4 mt-24 text-lg font-bold tracking-wider text-stone-600 uppercase underline underline-offset-5">
             Completed
           </h2>
           <motion.ul
