@@ -1,3 +1,10 @@
+## [2.72.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.72.0...v2.72.1) (2025-11-19)
+
+
+### Bug Fixes
+
+* 🐛 add prerprint to the impact page ([c40108c](https://github.com/fairdataihub/fairdataihub.org/commit/c40108cdb01e03a9d8208c810de997b946bb49a2))
+
 # [2.72.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.71.0...v2.72.0) (2025-10-27)
 
 
