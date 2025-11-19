@@ -62,6 +62,15 @@
   },
   {
     "project": ["aireadi"],
+    "url": "https://doi.org/10.1101/2025.11.18.689064",
+    "title": "Dataset Documentation for Responsible AI: Analysis of Suitability and Usage for Health Datasets",
+    "subtitle": "",
+    "citation": "Heinke, A., Huang, L., Simpkins, K. U., Kalaw, F. G. P., Karsolia, A., Singh, K., Soundarajan, S., Nebeker, C., Baxter, S. L., Lee, C. S., Lee, A. Y., & Patel, B. (2025). Dataset Documentation for Responsible AI: Analysis of Suitability and Usage for Health Datasets. bioRxiv. https://doi.org/10.1101/2025.11.18.689064",
+    "type": "Preprints",
+    "year": 2025
+  },
+  {
+    "project": ["aireadi"],
     "url": "https://doi.org/10.48550/arXiv.2508.01140",
     "title": "Open Data Sharing in Clinical Research and Participants Privacy: Challenges and Opportunities in the Era of Artificial Intelligence",
     "subtitle": "",
