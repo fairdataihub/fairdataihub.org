@@ -1,3 +1,10 @@
+# [2.73.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.72.1...v2.73.0) (2025-11-20)
+
+
+### Features
+
+* ✨ Redesign updates ([#715](https://github.com/fairdataihub/fairdataihub.org/issues/715)) ([b74a48e](https://github.com/fairdataihub/fairdataihub.org/commit/b74a48e96fbc5cf3cd5c1b98b1a0b69959163e00))
+
 ## [2.72.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.72.0...v2.72.1) (2025-11-19)
 
 
