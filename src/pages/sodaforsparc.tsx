@@ -191,12 +191,6 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
             image: `/images/people/bhavesh-head.jpg`,
           },
           {
-            name: `Tram Ngo`,
-            href: `https://www.linkedin.com/in/tramngo1603`,
-            external: true,
-            image: `/images/people/tram-head.jpg`,
-          },
-          {
             name: `Sanjay Soundarajan`,
             href: `/team/#Sanjay-Soundarajan`,
             external: false,
