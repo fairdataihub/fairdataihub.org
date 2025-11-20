@@ -30,7 +30,7 @@ export default function ProjectsPage() {
   const completedProjects = projects.filter((p) => p.completed);
 
   return (
-    <div className="relative pt-20">
+    <div className="relative pt-26">
       <Seo
         templateDescription="Explore the projects we build at the FAIR Data Innovations Hub-modern, open-source tools and platforms that help researchers follow FAIR principles."
         templateImage="https://fairdataihub.org/thumbnails/index.png"

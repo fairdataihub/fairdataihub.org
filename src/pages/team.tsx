@@ -1,8 +1,6 @@
 // pages/team.tsx
 import { motion } from 'framer-motion';
-import imageSize from 'image-size';
 import { InferGetStaticPropsType } from 'next';
-import { getPlaiceholder } from 'plaiceholder';
 import { useState } from 'react';
 
 import Seo from '@/components/seo/seo';
@@ -43,7 +41,7 @@ export default function TeamPage({
         <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
 
-      <section className="mx-auto max-w-screen-xl px-4 pt-26 pb-10">
+      <section className="mx-auto max-w-screen-xl px-4 pt-30 pb-10">
         <motion.header
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -149,15 +147,12 @@ export const getStaticProps = async () => {
     TEAM_JSON.map(async (member: any) => {
       let imageUrl = `https://fairdataihub.org${member.image}`;
       if (process.env.NODE_ENV === `development`) {
-        imageUrl = `http://localhost:3000${member.image}`;
+        imageUrl = `http://localhost:${process.env.PORT}${member.image}`;
       }
-      const buffer = await fetch(imageUrl).then(async (res) =>
-        Buffer.from(await res.arrayBuffer()),
-      );
-      const { width, height } = imageSize(new Uint8Array(buffer));
-      const { base64 } = await getPlaiceholder(buffer);
+      const { width, height } = await safeProbe(imageUrl);
+      const blurDataURL = await safeLqip(imageUrl);
 
-      return { ...member, width, height, blurDataURL: base64 };
+      return { ...member, width, height, blurDataURL: blurDataURL };
     }),
   );
 

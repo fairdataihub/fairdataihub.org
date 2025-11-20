@@ -21,7 +21,6 @@ interface NavbarProps {
 interface NavBodyProps {
   children: React.ReactNode;
   className?: string;
-  visible?: boolean;
 }
 
 interface NavItemsProps {
@@ -84,23 +83,19 @@ export const Navbar = ({ children, className }: NavbarProps) => {
   );
 };
 
-export const NavBody = ({ children, className, visible }: NavBodyProps) => {
+export const NavBody = ({ children, className }: NavBodyProps) => {
   return (
     <motion.div
       animate={{
-        backdropFilter: visible ? `blur(10px)` : `none`,
-        boxShadow: visible
-          ? `0 0 24px rgba(34,42,53,0.06),0 1px 1px rgba(0,0,0,0.05),0 0 0 1px rgba(34,42,53,0.04),0 0 4px rgba(34,42,53,0.08),0 16px 68px rgba(47,48,55,0.05),0 1px 0 rgba(255,255,255,0.1) inset`
-          : `none`,
-        width: visible ? `100%` : `100%`,
-        y: visible ? 8 : 0,
+        backdropFilter: `blur(5px)`,
+        boxShadow: `0 0 24px rgba(34,42,53,0.06),0 1px 1px rgba(0,0,0,0.05),0 0 0 1px rgba(34,42,53,0.04),0 0 4px rgba(34,42,53,0.08),0 16px 68px rgba(47,48,55,0.05),0 1px 0 rgba(255,255,255,0.1) inset`,
+        width: `100%`,
+        y: 8,
       }}
       transition={{ ease: `easeInOut`, duration: 0.3 }}
       className={cn(
-        `relative z-[60] mx-auto hidden w-full ${
-          visible ? `max-w-screen-xl` : `max-w-full`
-        } flex flex-row items-center justify-between rounded-full px-8 py-4 lg:flex`,
-        visible && `bg-white/80 dark:bg-neutral-950/80`,
+        `relative z-[60] mx-auto flex w-full max-w-screen-2xl flex-row items-center justify-between rounded-full px-8 py-4 lg:flex`,
+        `bg-white/80 dark:bg-neutral-950/80`,
         className,
       )}
     >
@@ -116,7 +111,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
     <motion.div
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        `ml-auto flex hidden flex-row items-center justify-end space-x-6 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex`,
+        `ml-auto flex flex-row items-center justify-end space-x-6 text-sm font-medium text-zinc-600 transition duration-200 hover:text-zinc-800 lg:flex`,
         className,
       )}
     >

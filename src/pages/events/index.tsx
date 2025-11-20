@@ -61,7 +61,7 @@ export default function Events({ eventsList }: EventsProps) {
   const [featured, ...upcomingRest] = upcoming;
 
   return (
-    <div className="relative pt-20">
+    <div className="relative pt-26">
       <Seo
         templateTitle="Events"
         templateUrl="https://fairdataihub.org/events"

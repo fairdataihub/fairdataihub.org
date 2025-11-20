@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import HorizontalEventTimelineCarousel from '@/components/horizontal-event-timeline-carousel';
-
 export default function ImpactSection() {
   return (
     <section className="relative py-10">
@@ -46,7 +44,6 @@ export default function ImpactSection() {
           </div>
         </div>
       </div>
-      <HorizontalEventTimelineCarousel />
     </section>
   );
 }

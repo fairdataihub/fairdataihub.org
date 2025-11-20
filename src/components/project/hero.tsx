@@ -1,3 +1,5 @@
+import clsx from 'clsx';
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 import Tooltip from '@/components/ui/tooltip';
@@ -11,6 +13,8 @@ export interface HeroButton {
   disabled?: boolean;
   tooltipContent?: string;
 }
+
+export type HeroImageVariant = 'logo' | 'screenshot';
 
 export interface ProjectHeroProps {
   title: string;
@@ -34,75 +38,125 @@ export default function ProjectHero({
   buttons = [],
 }: ProjectHeroProps) {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <section className="relative mx-auto max-w-screen-2xl py-5">
-        <div className="container mx-auto flex w-full flex-col-reverse items-center px-1 py-2 sm:py-4 md:py-10 lg:flex-row">
-          <div className="mb-2 flex flex-col items-center pt-5 text-center sm:mb-16 sm:pt-0 md:mb-0 md:items-start md:pr-0 md:text-left lg:grow lg:pr-24">
-            <h1 className="mb-1 w-full text-center text-3xl font-black sm:text-4xl">
-              {title}
-            </h1>
-            {subtitle && (
-              <h2 className="mt-2 mb-4 w-full text-center text-2xl font-medium sm:text-2xl">
-                {subtitle}
-              </h2>
-            )}
+    <section className="relative overflow-hidden pt-15">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[420px] bg-gradient-to-b from-pink-50/80 via-white to-white"
+      />
 
-            {description && (
-              <p className="font-asap mb-8 w-full text-center text-base leading-relaxed text-black">
-                {description}
-              </p>
-            )}
-            {buttons.length > 0 && (
-              <div className="flex w-full flex-col justify-center space-y-4 xl:flex-row xl:space-y-0 xl:space-x-4">
-                {buttons.map((button, index) => (
-                  <div key={index} className="flex flex-row justify-center">
-                    {button.disabled && button.tooltipContent ? (
-                      <Tooltip
-                        tooltipContent={button.tooltipContent}
-                        placement="bottom"
-                      >
-                        <button
-                          disabled
-                          aria-label={button.ariaLabel}
-                          className="relative cursor-not-allowed rounded border-0 bg-gray-400 px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all"
-                        >
-                          {button.text}
-                        </button>
-                      </Tooltip>
-                    ) : button.href ? (
-                      <a
-                        href={button.href}
-                        target={button.target}
-                        aria-label={button.ariaLabel}
-                        rel={button.rel}
-                      >
-                        <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:ring-pink-600 focus:outline-none">
-                          {button.text}
-                        </button>
-                      </a>
-                    ) : (
-                      <button className="rounded border-none bg-black px-6 py-2 text-lg text-white ring-2 ring-transparent ring-offset-2 transition-all hover:ring-pink-600 focus:ring-pink-600 focus:outline-none">
-                        {button.text}
-                      </button>
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-x-0 top-4 -z-10 flex justify-center"
+      >
+        <div className="h-[460px] w-[1100px] bg-[radial-gradient(ellipse_at_center,rgba(205,50,159,0.24),rgba(205,50,159,0.08)_45%,transparent_70%)] blur-3xl" />
+      </div>
+
+      <div className="mx-auto flex max-w-screen-2xl flex-col items-center px-4 py-10 sm:px-6 md:flex-row md:items-center md:justify-between md:gap-14 md:py-16 lg:gap-20 lg:px-10">
+        <motion.div
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+          className="order-2 mt-8 flex w-full flex-col items-center text-center md:order-1 md:mt-0 md:max-w-xl md:items-start md:text-left"
+        >
+          <span className="bg-primary/10 text-primary inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold tracking-[0.18em] uppercase">
+            Project
+          </span>
+
+          <h1 className="mt-3 text-3xl font-black tracking-tight text-balance text-stone-900 sm:text-4xl lg:text-5xl">
+            {title}
+          </h1>
+
+          {subtitle && (
+            <p className="mt-2 text-lg font-medium text-stone-700 sm:text-xl">
+              {subtitle}
+            </p>
+          )}
+
+          {description && (
+            <p className="font-asap mt-4 max-w-xl text-sm leading-relaxed text-stone-600 sm:text-base">
+              {description}
+            </p>
+          )}
+
+          {buttons.length > 0 && (
+            <div className="mt-6 flex w-full flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center md:justify-start">
+              {buttons.map((button, index) => {
+                const btn = (
+                  <button
+                    type="button"
+                    disabled={button.disabled}
+                    aria-label={button.ariaLabel}
+                    className={clsx(
+                      `relative inline-flex cursor-pointer items-center justify-center rounded-full px-6 py-2.5 text-sm font-semibold transition-all`,
+                      button.disabled
+                        ? `cursor-not-allowed bg-stone-300 text-stone-600`
+                        : `bg-stone-900 text-white shadow-[0_18px_40px_rgba(0,0,0,0.25)] hover:-translate-y-0.5 hover:ring-2 hover:ring-pink-500 hover:ring-offset-2 hover:ring-offset-pink-100 focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2 focus-visible:ring-offset-pink-100 focus-visible:outline-none`,
                     )}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+                  >
+                    {button.text}
+                  </button>
+                );
 
-          <div className="relative z-10 py-2 sm:py-0 lg:max-w-2xl">
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              width={imageWidth}
-              height={imageHeight}
-              priority={true}
-              className="h-auto w-auto object-scale-down"
-            />
+                if (button.disabled && button.tooltipContent) {
+                  return (
+                    <Tooltip
+                      key={index}
+                      tooltipContent={button.tooltipContent}
+                      placement="bottom"
+                    >
+                      <div>{btn}</div>
+                    </Tooltip>
+                  );
+                }
+
+                if (button.href) {
+                  return (
+                    <a
+                      key={index}
+                      href={button.href}
+                      target={button.target}
+                      aria-label={button.ariaLabel}
+                      rel={button.rel}
+                    >
+                      {btn}
+                    </a>
+                  );
+                }
+
+                return (
+                  <div key={index} className="inline-flex">
+                    {btn}
+                  </div>
+                );
+              })}
+            </div>
+          )}
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.45, delay: 0.08 }}
+          className="order-1 flex w-full justify-center md:order-2 md:flex-1 md:justify-end"
+        >
+          <div className="relative z-10 py-4 sm:py-0">
+            <div className="relative mx-auto flex justify-center md:justify-end">
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                width={imageWidth}
+                height={imageHeight}
+                priority
+                style={{
+                  width: imageWidth ? `${imageWidth}px` : `auto`,
+                  height: imageHeight ? `${imageHeight}px` : `auto`,
+                }}
+                className="h-auto w-auto max-w-full rounded-[32px] object-contain shadow-[0_24px_80px_rgba(0,0,0,0.10)]"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </motion.div>
+      </div>
+    </section>
   );
 }
