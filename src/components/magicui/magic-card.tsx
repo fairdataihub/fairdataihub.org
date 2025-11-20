@@ -1,6 +1,11 @@
 'use client';
 
-import { motion, useMotionTemplate, useMotionValue } from 'motion/react';
+import {
+  motion,
+  type MotionStyle,
+  useMotionValue,
+  useTransform,
+} from 'motion/react';
 import React, { useCallback, useEffect, useRef } from 'react';
 
 import { cn } from '@/lib/utils';
@@ -19,14 +24,28 @@ export function MagicCard({
   children,
   className,
   gradientSize = 200,
-  gradientColor = `#262626`,
   gradientOpacity = 0.8,
   gradientFrom = `#9E7AFF`,
   gradientTo = `#FE8BBB`,
 }: MagicCardProps) {
   const cardRef = useRef<HTMLDivElement>(null);
+
+  const glowSize = gradientSize * 2;
+
   const mouseX = useMotionValue(-gradientSize);
   const mouseY = useMotionValue(-gradientSize);
+
+  const glowX = useTransform(mouseX, (v) => v - gradientSize);
+  const glowY = useTransform(mouseY, (v) => v - gradientSize);
+
+  const glowStyle: MotionStyle = {
+    left: glowX,
+    top: glowY,
+    width: glowSize,
+    height: glowSize,
+    backgroundImage: `radial-gradient(circle, ${gradientFrom}, ${gradientTo}, transparent 70%)`,
+    opacity: gradientOpacity,
+  };
 
   const handleMouseMove = useCallback(
     (e: MouseEvent) => {
@@ -65,20 +84,14 @@ export function MagicCard({
   );
 
   // Reset on re-enter so we don't show a stale glow
-  const handleMouseOut = useCallback(() => {
+  const resetPosition = useCallback(() => {
     mouseX.set(-gradientSize);
     mouseY.set(-gradientSize);
   }, [gradientSize, mouseX, mouseY]);
 
-  const handleTouchEnd = useCallback(() => {
-    mouseX.set(-gradientSize);
-    mouseY.set(-gradientSize);
-  }, [gradientSize, mouseX, mouseY]);
-
-  const handleMouseEnter = useCallback(() => {
-    mouseX.set(-gradientSize);
-    mouseY.set(-gradientSize);
-  }, [gradientSize, mouseX, mouseY]);
+  const handleMouseOut = resetPosition;
+  const handleTouchEnd = resetPosition;
+  const handleMouseEnter = resetPosition;
 
   useEffect(() => {
     // Mouse listeners on window
@@ -104,11 +117,9 @@ export function MagicCard({
     }
 
     // Also reset when the window/tab is not active
-    const handleWindowBlur = () => handleMouseOut();
+    const handleWindowBlur = () => resetPosition();
     const handleVisibility = () => {
-      if (document.visibilityState !== `visible`) {
-        handleMouseOut();
-      }
+      if (document.visibilityState !== `visible`) resetPosition();
     };
     window.addEventListener(`blur`, handleWindowBlur);
     document.addEventListener(`visibilitychange`, handleVisibility);
@@ -135,41 +146,31 @@ export function MagicCard({
     handleTouchStart,
     handleTouchMove,
     handleTouchEnd,
+    resetPosition,
   ]);
 
   useEffect(() => {
-    mouseX.set(-gradientSize);
-    mouseY.set(-gradientSize);
-  }, [gradientSize, mouseX, mouseY]);
+    resetPosition();
+  }, [gradientSize, resetPosition]);
 
   return (
     <div
       ref={cardRef}
       className={cn(`group relative rounded-[inherit]`, className)}
     >
-      <motion.div
-        className="bg-border pointer-events-none absolute inset-0 rounded-[inherit] duration-300 group-hover:opacity-100"
-        style={{
-          background: useMotionTemplate`
-          radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px,
-          ${gradientFrom}, 
-          ${gradientTo}, 
-          var(--border) 100%
-          )
-          `,
-        }}
-      />
+      <div className="bg-border absolute inset-0 rounded-[inherit]" />
       <div className="bg-background absolute inset-px rounded-[inherit]" />
-      <motion.div
-        className="pointer-events-none absolute inset-px rounded-[inherit] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-        style={{
-          background: useMotionTemplate`
-            radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientColor}, transparent 100%)
-          `,
-          opacity: gradientOpacity,
-        }}
-      />
-      <div className="relative">{children}</div>
+
+      {/* Glow layer */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[inherit]">
+        <motion.div
+          className="absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+          style={glowStyle}
+        />
+      </div>
+
+      {/* Content on top */}
+      <div className="relative z-[1]">{children}</div>
     </div>
   );
 }

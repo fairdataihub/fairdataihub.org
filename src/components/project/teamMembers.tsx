@@ -1,3 +1,4 @@
+// components/project/teamMembers.tsx
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -14,59 +15,56 @@ interface TeamMembersProps {
 }
 
 const TeamMembers: React.FC<TeamMembersProps> = ({ teamMembers }) => {
-  if (!teamMembers || teamMembers.length === 0) {
-    return null;
-  }
+  if (!teamMembers || teamMembers.length === 0) return null;
 
   return (
-    <section>
-      <div className="mx-auto flex max-w-screen-lg flex-col">
-        <h1 className="pb-5 text-left text-4xl font-black subpixel-antialiased md:mr-8">
-          Team Members
-        </h1>
-        <div className="w-full">
-          <div>
-            <div className="mb-10 w-full sm:mb-5">
-              <div className="grid grid-cols-2 py-0 md:grid-cols-2 md:gap-3 md:py-1 lg:grid-cols-4 lg:gap-4">
-                {teamMembers.map((member) => {
-                  const memberContent = (
-                    <div className="flex flex-col items-center rounded-lg p-2 transition-all hover:bg-gray-200">
-                      <Image
-                        src={member.image}
-                        alt={member.name + ` profile picture`}
-                        width={112}
-                        height={112}
-                        className="rounded-full"
-                        style={{
-                          maxWidth: `112px`,
-                          maxHeight: `112px`,
-                        }}
-                      />
-
-                      <p className="font-asap ml-2 pt-2 text-center text-lg font-normal">
-                        {member.name}
-                      </p>
-                    </div>
-                  );
-
-                  return (
-                    <div key={member.name} className="cursor-pointer">
-                      {!member.external ? (
-                        <Link href={member.href} passHref>
-                          {memberContent}
-                        </Link>
-                      ) : (
-                        <a href={member.href} target="_blank" rel="noopener">
-                          {memberContent}
-                        </a>
-                      )}
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+    <section className="mx-auto max-w-screen-2xl px-4 pt-6 pb-14 sm:px-6 lg:px-10">
+      <div className="mb-4 flex items-center justify-between gap-2">
+        <div>
+          <p className="text-primary text-xs font-semibold tracking-[0.18em] uppercase">
+            Team
+          </p>
+          <h2 className="text-2xl font-bold text-stone-900 sm:text-3xl">
+            Members
+          </h2>
+          <p className="mt-1 text-sm text-stone-600">
+            Researchers, engineers, and collaborators behind this project.
+          </p>
         </div>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        {teamMembers.map((member) => {
+          const content = (
+            <div className="group flex flex-col items-center rounded-2xl border border-stone-200 bg-white/80 p-3 text-center shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition hover:-translate-y-1 hover:border-pink-200 hover:shadow-[0_20px_60px_rgba(203,67,142,0.16)]">
+              <div className="relative">
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-pink-300/35 via-fuchsia-300/20 to-transparent opacity-0 blur-md transition group-hover:opacity-100" />
+                <Image
+                  src={member.image}
+                  alt={`${member.name} profile picture`}
+                  width={96}
+                  height={96}
+                  className="relative z-10 rounded-full border border-white/80 object-cover"
+                />
+              </div>
+              <p className="font-asap mt-3 text-sm font-medium text-stone-900">
+                {member.name}
+              </p>
+            </div>
+          );
+
+          return (
+            <div key={member.name}>
+              {member.external ? (
+                <a href={member.href} target="_blank" rel="noopener">
+                  {content}
+                </a>
+              ) : (
+                <Link href={member.href}>{content}</Link>
+              )}
+            </div>
+          );
+        })}
       </div>
     </section>
   );

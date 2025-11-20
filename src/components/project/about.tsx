@@ -1,3 +1,4 @@
+// components/project/about.tsx
 import { Icon } from '@iconify/react';
 
 export interface AboutFeature {
@@ -19,60 +20,59 @@ export interface ProjectAboutProps {
 }
 
 export default function ProjectAbout({
-  title = `About`,
+  title = `Overview`,
   description,
   features,
 }: ProjectAboutProps) {
   return (
-    <div className="mx-auto max-w-screen-lg px-6 sm:px-6 lg:px-8">
-      <div className="lg:text-center">
-        <p className="my-2 text-4xl font-extrabold tracking-tight sm:text-4xl">
+    <section className="mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:px-10">
+      <div className="text-center lg:text-left">
+        <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-stone-900 sm:text-4xl">
           {title}
-        </p>
-        <p className="font-asap max-w-2xl text-xl text-black sm:text-xl lg:mx-auto">
+        </h2>
+        <p className="font-asap mt-3 max-w-2xl text-base text-stone-700 sm:text-lg lg:mt-4">
           {description}
         </p>
       </div>
 
-      <div className="mt-10">
-        <dl className="space-y-10 md:grid md:grid-cols-2 md:space-y-0 md:gap-x-8 md:gap-y-10">
-          {features.map((feature, index) => (
-            <div key={index} className="relative">
-              <dt>
-                <div className="bg-light-vision absolute flex h-12 w-12 items-center justify-center rounded-md text-white">
-                  <Icon icon={feature.icon} width={24} height={24} />
-                </div>
-                <p className="ml-16 text-xl font-medium sm:text-lg">
-                  {feature.title}
-                </p>
-              </dt>
-              <dd className="font-asap mt-2 ml-16 text-lg text-black sm:text-base md:mt-0">
-                <div>
-                  {feature.description}
-                  {feature.link && (
-                    <div className="mt-2 flex md:mt-1">
-                      <a
-                        href={feature.link.href}
-                        target={feature.link.target}
-                        rel={feature.link.rel}
-                      >
-                        <p className="text-url hover-underline-animation">
-                          {feature.link.text}
-                          <Icon
-                            icon="solar:arrow-right-broken"
-                            width={20}
-                            height={20}
-                          />
-                        </p>
-                      </a>
-                    </div>
-                  )}
-                </div>
-              </dd>
+      <div className="mt-8 grid gap-5 md:grid-cols-2">
+        {features.map((feature, index) => (
+          <div
+            key={index}
+            className="group relative overflow-hidden rounded-2xl border border-pink-100 bg-white/90 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.06)] transition-all hover:-translate-y-1 hover:border-pink-300 hover:shadow-[0_24px_70px_rgba(203,67,142,0.20)]"
+          >
+            <div className="bg-primary/10 text-primary mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full">
+              <Icon icon={feature.icon} width={22} height={22} />
             </div>
-          ))}
-        </dl>
+            <h3 className="text-lg font-semibold text-stone-900">
+              {feature.title}
+            </h3>
+            <p className="font-asap mt-2 text-sm leading-relaxed text-stone-700">
+              {feature.description}
+            </p>
+            {feature.link && (
+              <div className="mt-3 inline-flex md:mt-2">
+                <a
+                  href={feature.link.href}
+                  target={feature.link.target}
+                  rel={feature.link.rel}
+                  className="group/link text-primary relative inline-flex items-center gap-1 text-sm font-semibold transition-colors duration-300 hover:text-pink-700"
+                >
+                  <span className="relative z-20 inline-flex items-center gap-1">
+                    {feature.link.text}
+                    <Icon
+                      icon="solar:arrow-right-broken"
+                      width={18}
+                      height={18}
+                    />
+                  </span>
+                  <span className="absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover:left-0 group-hover/link:w-full" />
+                </a>
+              </div>
+            )}
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   );
 }

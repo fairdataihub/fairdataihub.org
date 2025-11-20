@@ -4,9 +4,9 @@ authors:
   - 'BhaveshPatel'
 date: '2025-03-31'
 category: 'News'
-heroImage: 'https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80'
-imageAuthor: 'Fotis Fotopoulos'
-imageAuthorLink: 'https://unsplash.com/@ffstop'
+heroImage: 'https://images.unsplash.com/photo-1740645580366-c4f1de0219dd?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000'
+imageAuthor: 'Markus Winkler'
+imageAuthorLink: 'https://unsplash.com/@markuswinkler'
 subtitle: "Let's transform software FAIRness from aspiration to action across all research domains!"
 tags:
   - Task force

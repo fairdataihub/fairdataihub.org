@@ -364,7 +364,7 @@
       - Bottom trapezoid coordinates (closer to 0%/100% → wider bottom)
 
     --spot-w, --spot-h
-      - Radial mask ellipse size (width and height) — controls softness & reach
+      - Radial mask ellipse size (width and height) - controls softness & reach
 
     --spot-mid, --spot-end
       - Radial gradient stops for fade (midpoint and end transparency)

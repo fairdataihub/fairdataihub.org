@@ -1,10 +1,10 @@
+import HorizontalTimeline from '@/components/horizontal-event-timeline-carousel';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
 import PublicationsList from '@/components/project/publicationsList';
 import ResearchPartners from '@/components/project/researchPartners';
 import TeamMembers from '@/components/project/teamMembers';
-import Timeline from '@/components/project/timeline';
 import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
@@ -26,8 +26,8 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
           description="Minimal and actionable step-by-step guidelines for making biomedical research software reusable in line with the FAIR4RS principles"
           imageSrc="/images/hero/fairbiors.svg"
           imageAlt="Screenshot of FAIRshare"
-          imageWidth={1342}
-          imageHeight={975}
+          imageWidth={400}
+          imageHeight={400}
           buttons={[
             {
               text: `Explore the guidelines`,
@@ -146,7 +146,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
-        <Timeline
+        <HorizontalTimeline
           timelineList={[
             {
               longDate: `December 2021`,
@@ -178,7 +178,10 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-white py-10">
-        <PublicationsList publications={publications} />
+        <PublicationsList
+          publications={publications}
+          impactProjects={`fairbiors`}
+        />
       </section>
     </>
   );

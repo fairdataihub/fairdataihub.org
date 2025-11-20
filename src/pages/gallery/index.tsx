@@ -48,7 +48,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
         templateImage="https://kalai.fairdataihub.org/api/generate?title=Gallery&description=A%20collection%20of%20photos%20from%20the%20FAIR%20Data%20Innovations%20Hub&app=fairdataihub&org=fairdataihub"
       />
 
-      <section className="py-10 pt-16">
+      <section className="py-10 pt-30">
         {photoId && (
           <Modal images={images} onClose={() => setLastViewedPhoto(photoId)} />
         )}
@@ -208,40 +208,52 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   );
   const reversed_GALLERY_JSON = [...sorted_GALLERY_JSON].reverse();
 
-  // Process all events and their images concurrently
   const imagePromises = reversed_GALLERY_JSON.flatMap((event) =>
     event.images.map(async (img) => {
       const imageUrl = encodeURI(
         `https://cdn.fairdataihub.org/gallery/${event.folder}/${img.name}`,
       );
 
-      const buffer = await fetch(imageUrl).then(async (res) =>
-        Buffer.from(await res.arrayBuffer()),
-      );
+      try {
+        const res = await fetch(imageUrl);
 
-      const { width, height } = imageSize(new Uint8Array(buffer));
+        if (!res.ok) {
+          // skip broken image
+          console.warn(`Failed to fetch image ${imageUrl}: ${res.status}`);
+          return null;
+        }
 
-      const blurDataUrl = await getPlaiceholder(buffer).then(
-        (res) => res.base64,
-      );
+        const arrayBuffer = await res.arrayBuffer();
+        const buffer = Buffer.from(arrayBuffer);
 
-      return {
-        id: i++,
-        folder: event.folder,
-        name: img.name,
-        alt: img.alt,
-        description: event.description,
-        date: event.date,
-        width,
-        height,
-        blurDataUrl,
-      };
+        const { width, height } = imageSize(new Uint8Array(buffer));
+        const blurDataUrl = (await getPlaiceholder(buffer)).base64;
+
+        return {
+          id: i++,
+          folder: event.folder,
+          name: img.name,
+          alt: img.alt,
+          description: event.description,
+          date: event.date,
+          width,
+          height,
+          blurDataUrl,
+        };
+      } catch (err) {
+        console.error(`Error fetching image ${imageUrl}`, err);
+        // decide: either skip or fall back
+        return null;
+      }
     }),
   );
 
-  const results = (await Promise.all(imagePromises)).flat();
+  const rawResults = await Promise.all(imagePromises);
+  const results = rawResults.filter(
+    (img): img is NonNullable<typeof img> => img !== null,
+  );
 
-  //reassign the id to the images
+  // reassign ids
   results.forEach((img, idx) => (img.id = idx));
 
   return { props: { images: results } };

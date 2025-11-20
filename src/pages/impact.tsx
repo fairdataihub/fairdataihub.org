@@ -1,5 +1,6 @@
 import { Icon } from '@iconify/react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 import { useEffect, useMemo, useRef, useState } from 'react';
 
 import Seo from '@/components/seo/seo';
@@ -36,6 +37,7 @@ const slugify = (s: string) =>
     .replace(/(^-|-$)/g, ``);
 
 export default function Impact() {
+  const router = useRouter();
   // ---------- data ----------
   const all: Pub[] = useMemo(
     () =>
@@ -175,6 +177,24 @@ export default function Impact() {
     return list;
   }, [all, selectedProjects, selectedTypes, selectedYears, query]);
 
+  useEffect(() => {
+    if (!router.isReady) return;
+
+    const q = router.query.project;
+    if (!q) return;
+
+    const projectsFromQuery = Array.isArray(q)
+      ? q
+      : q
+          .split(`,`)
+          .map((p) => p.trim())
+          .filter(Boolean);
+
+    if (projectsFromQuery.length) {
+      setSelectedProjects(new Set(projectsFromQuery));
+    }
+  }, [router.isReady, router.query.project]);
+
   // group by sortingOrder
   const grouped = useMemo(() => {
     const byType: Record<string, Pub[]> = {};
@@ -207,7 +227,7 @@ export default function Impact() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
-        className="mt-8 mb-8 flex flex-col items-start gap-2 sm:mb-2 sm:justify-between"
+        className="mt-14 mb-8 flex flex-col items-start gap-2 sm:mb-2 sm:justify-between"
       >
         <div className="flex flex-col gap-1">
           <h1 className="text-4xl font-black tracking-tight text-pretty text-stone-900 sm:text-5xl dark:text-stone-100">

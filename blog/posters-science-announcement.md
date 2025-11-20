@@ -4,9 +4,9 @@ authors:
   - 'BhaveshPatel'
 date: '2025-08-04'
 category: 'News'
-heroImage: 'https://images.unsplash.com/photo-1649881927251-46644283751a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-imageAuthor: 'Bernd Dittrichs'
-imageAuthorLink: 'https://unsplash.com/@hdbernd'
+heroImage: 'https://images.unsplash.com/photo-1664526937033-fe2c11f1be25?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000'
+imageAuthor: 'GuerrillaBuzz'
+imageAuthorLink: 'https://unsplash.com/@guerrillabuzz'
 subtitle: 'We are developing posters.science through a new grant from The Navigation Fund.'
 tags:
   - funding

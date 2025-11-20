@@ -21,7 +21,7 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
         <section className="bg-gray-50 py-10 pt-16">
           <ProjectHero
             title={`KnowMore`}
-            subtitle={`Say &quot;no more&quot; to manual discovery`}
+            subtitle={`Say "no more" to manual discovery`}
             description={`Automated Knowledge Discovery Tool for SPARC Datasets`}
             imageSrc={`https://github.com/fairdataihub/KnowMore/raw/main/docs/knowmore-website.gif`}
             imageAlt={`Knowmore gif`}
@@ -29,17 +29,10 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
             imageHeight={370}
             buttons={[
               {
-                text: `Test KnowMore`,
-                href: `https://sparc-know-more.herokuapp.com/sparc-app/`,
-                target: `_blank`,
-                ariaLabel: `KnowMore application`,
-                rel: `noopener`,
-              },
-              {
-                text: `Documentation`,
+                text: `View on GitHub`,
                 href: `https://github.com/SPARC-FAIR-Codeathon/KnowMore`,
                 target: `_blank`,
-                ariaLabel: `KnowMore Documentation`,
+                ariaLabel: `GitHub repository`,
                 rel: `noopener`,
               },
             ]}
@@ -171,7 +164,10 @@ const KnowMore: React.FC<PublicationsItemList> = ({ publications }) => {
         </section>
 
         <section className="bg-white py-10">
-          <PublicationsList publications={publications} />
+          <PublicationsList
+            publications={publications}
+            impactProjects={`knowmore`}
+          />
         </section>
       </>
     </>
