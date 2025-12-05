@@ -89,7 +89,7 @@ A typical workflow looks like this:
    - FsF-R1.3-02D — data available in recommended formats
 
 4. F-UJI returns both a human-readable report and a JSON document summarizing the results.
-   A simplified excerpt looks like:
+   A simplified example looks like:
 
 ```json
 {
@@ -107,7 +107,7 @@ These results can be integrated into release workflows, documentation pipelines,
 
 ## Our Case: Improving FAIR Scores Through AI-READI Metadata Optimization
 
-When we first ran F-UJI on our AI-READI dataset [DOI](https://doi.org/10.60775/fairhub.3), several metrics in the Findable (F), Interoperable (I), and Reusable (R) categories showed incomplete or missing metadata. These appeared as yellow markers in the report.
+When we first ran F-UJI on our AI-READI dataset [DOI](https://doi.org/10.60775/fairhub.3), the assessment returned a 67% FAIR score, with several Findable (F), Interoperable (I), and Reusable (R) metrics flagged as incomplete or missing.
 
 ### Failing Checks Before Fixes
 
@@ -189,7 +189,7 @@ All of these updates were implemented inside the Vue application by injecting an
 
 ## Results: From Partial to Full Pass
 
-After updating the JSON-LD, we reran F-UJI on the dataset. All previously failing metrics moved to full passes:
+After updating the JSON-LD, we reran F-UJI on the dataset. The FAIR score increased from 67% to 100%, and every previously failing metric passed successfully:
 
 - **FsF-F4-01M** – metadata is now fully indexable and machine-readable through improved JSON-LD.
 - **FsF-I2-01M** – registered semantic resources (schema.org, PROV-O, PAV) are declared in `@context`.
