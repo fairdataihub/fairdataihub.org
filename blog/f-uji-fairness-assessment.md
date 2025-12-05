@@ -187,7 +187,7 @@ The JSON‑LD block targets major structural fields:
 All of these updates were implemented inside the Vue application by injecting an enriched ```<script type="application/ld+json">``` block into the landing page, so the FAIR-aligned metadata is always rendered with the UI.
 
 
-## Results: From Partial to Full Pass
+## Conclusion
 
 After updating the JSON-LD, we reran F-UJI on the dataset. The FAIR score increased from 67% to 100%, and every previously failing metric passed successfully:
 
