@@ -2,11 +2,11 @@
 title: 'Making FAIR Practical: Automated Dataset Assessment with F-UJI'
 authors:
   - 'AydanGasimova'
-date: '2025-12-04'
+date: '2025-12-05'
 category: 'Product'
 heroImage: 'https://images.unsplash.com/photo-1743183988574-e8b4d2e5830a?q=80&w=830&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-imageAuthor: 'Brecht Corbeel'
-imageAuthorLink: 'https://unsplash.com/@brechtcorbeel'
+imageAuthor: 'Marco Palumbo'
+imageAuthorLink: 'https://unsplash.com/@sapporo2025'
 subtitle: 'Automated FAIR data assessment for better metadata, discoverability, and reusable research outputs.'
 tags:
   - FAIR data
