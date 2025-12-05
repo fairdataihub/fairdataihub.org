@@ -11,10 +11,6 @@ subtitle: 'Automated FAIR data assessment for better metadata, discoverability, 
 tags:
   - FAIR data
   - FAIRhub
-  - FAIR
-  - Metadata
-  - Provenance
-  - Schema.org
   - F-UJI
 ---
 
@@ -57,7 +53,7 @@ You supply a DOI; F-UJI returns a structured report with:
 A typical workflow looks like this:
 
 1. Submit the dataset DOI to the F-UJI API
-   Example: [https://w3id.org/fuji/api/v1/assess?doi=10.xxxx/xxxx](https://w3id.org/fuji/api/v1/assess?doi=10.xxxx/xxxx)
+   Example: `https://w3id.org/fuji/api/v1/assess?doi=10.xxxx/xxxx`
 
 2. F-UJI retrieves metadata from:
    - the DOI landing page
