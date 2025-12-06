@@ -15,6 +15,7 @@ tags:
 ---
 
 ## FAIR in Theory, Difficult in Practice
+
 Modern research workflows depend on datasets that are not only available, but also precisely described, machine-readable, and reusable. The FAIR principles—Findable, Accessible, Interoperable, and Reusable provide that structure, but implementing them consistently is difficult. Metadata drifts, documentation changes, and repository requirements evolve.
 This makes manual FAIR validation unreliable and expensive to maintain across dataset versions.
 
@@ -47,7 +48,6 @@ You supply a DOI; F-UJI returns a structured report with:
 - machine-readable JSON output
 - clear guidance on how to improve missing elements
 
-
 ### How F-UJI Works in Practice
 
 A typical workflow looks like this:
@@ -56,6 +56,7 @@ A typical workflow looks like this:
    Example: `https://w3id.org/fuji/api/v1/assess?doi=10.xxxx/xxxx`
 
 2. F-UJI retrieves metadata from:
+
    - the DOI landing page
    - embedded schema.org JSON-LD
    - DataCite metadata APIs
@@ -64,6 +65,7 @@ A typical workflow looks like this:
 3. It evaluates FAIR metrics, including:
 
    **Findable**
+
    - FsF-F1-01M — globally unique identifier present
    - FsF-F1-02MD — persistent identifier assigned
    - FsF-F2-01M — descriptive core elements available
@@ -71,17 +73,20 @@ A typical workflow looks like this:
    - FsF-F4-01M — metadata indexable by search engines
 
    **Accessible**
+
    - FsF-A1-01M — access level and access conditions provided
    - FsF-A1-02MD — metadata and data retrievable by identifier
    - FsF-A1-01MD — standardized communication protocol used
    - FsF-A1.2-01MD — authentication/authorization protocol supported
 
    **Interoperable**
+
    - FsF-I1-01M — metadata uses a formal knowledge representation language
    - FsF-I2-01M — metadata uses registered semantic resources
    - FsF-I3-01M — metadata includes qualified references
 
    **Reusable**
+
    - FsF-R1-01M — metadata specifies the content of the data
    - FsF-R1.1-01M — license information included
    - FsF-R1.2-01M — machine-readable provenance provided
@@ -97,12 +102,10 @@ A typical workflow looks like this:
   "metric_name": "Provenance Information",
   "score": 1,
   "maturity": 2,
-  "evidence": [
-    "prov:wasDerivedFrom detected",
-    "prov:wasGeneratedBy detected"
-  ]
+  "evidence": ["prov:wasDerivedFrom detected", "prov:wasGeneratedBy detected"]
 }
 ```
+
 These results can be integrated into release workflows, documentation pipelines, or internal QA checks. Because each metric is deterministic and machine-actionable, running F-UJI on every dataset version ensures that FAIR compliance is maintained consistently rather than checked manually.
 
 ## Our Case: Improving FAIR Scores Through AI-READI Metadata Optimization
@@ -157,6 +160,7 @@ This single block carries several FAIR-relevant signals at once:
 Both interoperability and provenance failures were resolved through a **single enriched JSON‑LD injection** inside the Vue `script` block.
 
 Example structural outline of the additions:
+
 ```json
 {
   "@context": [
@@ -184,8 +188,7 @@ The JSON‑LD block targets major structural fields:
   - what the dataset was derived from
   - the activity responsible for generating it
 
-All of these updates were implemented inside the Vue application by injecting an enriched ```<script type="application/ld+json">``` block into the landing page, so the FAIR-aligned metadata is always rendered with the UI.
-
+All of these updates were implemented inside the Vue application by injecting an enriched `<script type="application/ld+json">` block into the landing page, so the FAIR-aligned metadata is always rendered with the UI.
 
 ## Conclusion
 

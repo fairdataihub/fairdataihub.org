@@ -71,6 +71,10 @@ module.exports = {
         protocol: 'https',
         hostname: 'api.microlink.io',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.dailydoseofds.com',
+      },
     ],
   },
 };
