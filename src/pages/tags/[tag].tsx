@@ -7,6 +7,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import wordsCount from 'words-count';
 
+import { slugifyTag } from '@/lib/utils';
+
 import BlogListItem from '@/components/blog/BlogListItem';
 import Seo from '@/components/seo/seo';
 
@@ -27,11 +29,6 @@ type BlogList = {
 interface BlogProps {
   filteredBlogList: BlogList[];
 }
-
-const slugifyTag = (tag: string) => {
-  const base = tag.trim().toLowerCase().replace(/\s+/g, `-`);
-  return base === `metadata` ? `metadata-tag` : base;
-};
 
 const isTagMatch = (raw: string, desiredSlug: string) =>
   slugifyTag(raw) === desiredSlug;
@@ -80,7 +77,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
           <motion.div
             key={slug}
             layout
-            className="my-2"
+            className="my-2 list-none"
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             whileInView={{
               opacity: 1,
@@ -151,6 +148,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   });
 
   const desired = typeof params?.tag === `string` ? params.tag : ``;
+  console.log(`desired`, desired);
 
   const filteredBlogList = blogList.filter((post) => {
     const tags: string[] = Array.isArray(post.frontMatter?.tags)

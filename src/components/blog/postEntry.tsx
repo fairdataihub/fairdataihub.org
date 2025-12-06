@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { slugifyTag } from '@/lib/utils';
+
 interface PostCardProps {
   title: string;
   timeToRead: number;
@@ -98,20 +100,16 @@ export default function PostCard({
 
         {tags?.length ? (
           <div className="mt-auto flex flex-wrap gap-2 pt-2">
-            {tags.map((tag) => {
-              const target =
-                tag.toLowerCase() === `metadata` ? `metadata-tag` : tag;
-              return (
-                <Link
-                  key={tag}
-                  href={`/tags/${target}`}
-                  className="inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
-                  aria-label={`Tag: ${tag}`}
-                >
-                  {tag}
-                </Link>
-              );
-            })}
+            {tags.map((tag) => (
+              <Link
+                key={tag}
+                href={`/tags/${slugifyTag(tag)}`}
+                className="inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-400"
+                aria-label={`Tag: ${tag}`}
+              >
+                {tag}
+              </Link>
+            ))}
           </div>
         ) : null}
 

@@ -2,6 +2,8 @@ import fs from 'fs';
 import matter from 'gray-matter';
 import Link from 'next/link';
 
+import { slugifyTag } from '@/lib/utils';
+
 import Seo from '@/components/seo/seo';
 
 interface ListOfTags {
@@ -64,7 +66,7 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
               <div className="flex w-full flex-row flex-wrap">
                 {tagsWithLetter[letter].map(({ tag, count }) => {
                   return (
-                    <Link href={`/tags/${tag}`} key={tag} passHref>
+                    <Link href={`/tags/${slugifyTag(tag)}`} key={tag} passHref>
                       <div
                         key={tag}
                         className="group hover:border-light-accent hover:text-accent mr-2 flex cursor-pointer items-center rounded-lg border border-slate-300 px-2 py-1 text-sm transition-all"

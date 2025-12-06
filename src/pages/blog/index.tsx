@@ -118,7 +118,7 @@ export default function Blog({ blogList }: BlogProps) {
 
         {/* List */}
         <AnimatePresence mode="popLayout">
-          <motion.ul layout initial={false} className="space-y-4">
+          <motion.ul layout initial={false} className="list-none space-y-4">
             {rest.map(({ slug, frontMatter, timeToRead }, idx) => (
               <motion.div
                 key={slug}

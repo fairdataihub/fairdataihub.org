@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { slugifyTag } from '@/lib/utils';
+
 type ListItemProps = {
   slug: string;
   title: string;
@@ -88,22 +90,24 @@ export default function BlogListItem({
           )}
         </Link>
 
-        <div className="col-start-2 row-start-2 mt-2 flex flex-wrap gap-2">
+        <div className="col-start-2 row-start-2 flex flex-wrap items-center gap-2">
           {category && (
             <Link
               href={`/category/${encodeURIComponent(category)}`}
               aria-label={`View posts in ${category} category`}
-              className="bg-primary rounded-full px-2 py-1 text-[10px] font-medium text-white hover:bg-pink-600"
+              className="bg-primary rounded-lg px-2 py-1 text-xs font-medium text-white hover:bg-pink-600"
             >
               {category}
             </Link>
           )}
 
+          <span className="text-slate-300 select-none">|</span>
+
           {tags.map((tag) => (
             <Link
               key={tag}
-              href={`/category/${encodeURIComponent(tag)}`}
-              className="inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-[11px] text-slate-700 hover:border-slate-400 hover:text-slate-900"
+              href={`/tags/${slugifyTag(tag)}`}
+              className="inline-flex items-center rounded-lg border border-slate-300 px-2 py-1 text-xs text-slate-700 transition-all hover:border-pink-400 hover:text-slate-900"
               aria-label={`View posts tagged ${tag}`}
             >
               {tag}
