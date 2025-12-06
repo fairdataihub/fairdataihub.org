@@ -1,3 +1,10 @@
+## [2.73.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.73.0...v2.73.1) (2025-12-06)
+
+
+### Bug Fixes
+
+* 🐛 minor blog updates ([8a08d48](https://github.com/fairdataihub/fairdataihub.org/commit/8a08d48b7e27a2f019694c567829f993e5bde981))
+
 # [2.73.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.72.1...v2.73.0) (2025-11-20)
 
 
