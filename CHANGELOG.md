@@ -1,3 +1,10 @@
+# [2.74.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.73.1...v2.74.0) (2025-12-06)
+
+
+### Features
+
+* ✨ fix tag links ([e735606](https://github.com/fairdataihub/fairdataihub.org/commit/e735606b078a426730910a2caa13bb9880684d9b))
+
 ## [2.73.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.73.0...v2.73.1) (2025-12-06)
 
 
