@@ -52,7 +52,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               fill
               sizes="(min-width: 768px) 33vw, 100vw"
               className={[
-                `h-full w-full object-contain`,
+                `h-full w-full object-contain pt-4`,
                 `scale-[.95] transform-gpu transition-transform duration-300`,
                 // `group-hover:scale-[.9] group-focus:scale-[.9]`, //turn on if you want image to scale on hover
               ].join(` `)}

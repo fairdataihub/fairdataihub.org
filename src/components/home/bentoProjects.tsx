@@ -157,7 +157,7 @@ export default function BentoProjects() {
   ];
 
   return (
-    <section className="relative py-20">
+    <section className="relative px-6 py-20">
       <h2 className="mb-6 text-center text-3xl font-extrabold tracking-tight md:text-4xl">
         What we are building
       </h2>

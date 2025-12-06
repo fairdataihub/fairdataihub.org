@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer
       id="fairdata-footer"
-      className={`${isDev ? `debug-screens` : ``} relative z-30 bg-white`}
+      className={`${isDev ? `debug-screens` : ``} relative z-30 bg-white px-6`}
     >
       <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
 

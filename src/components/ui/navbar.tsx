@@ -32,7 +32,7 @@ export default function NavMenu() {
 
   return (
     <div className="relative top-0 z-90 w-full print:hidden">
-      <Navbar>
+      <Navbar className="px-3">
         <NavBody className="hidden lg:flex">
           <NavbarLogo />
           <NavItems items={navItems} />
