@@ -1,3 +1,10 @@
+## [2.74.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.0...v2.74.1) (2025-12-07)
+
+
+### Bug Fixes
+
+* 🐛 update react and next ([#719](https://github.com/fairdataihub/fairdataihub.org/issues/719)) ([c3c632f](https://github.com/fairdataihub/fairdataihub.org/commit/c3c632f64a24b0b5e26e7038b1426022ed8ba052))
+
 # [2.74.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.73.1...v2.74.0) (2025-12-06)
 
 
