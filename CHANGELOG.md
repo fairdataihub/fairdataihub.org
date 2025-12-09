@@ -1,3 +1,11 @@
+## [2.74.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.1...v2.74.2) (2025-12-09)
+
+
+### Bug Fixes
+
+* 🐛 an image to the blog ([0a7af1b](https://github.com/fairdataihub/fairdataihub.org/commit/0a7af1b9b6ad1fdd0236ac1649781590b09a463c))
+* 🐛 text and add an image to the blog ([b0897e5](https://github.com/fairdataihub/fairdataihub.org/commit/b0897e5ea5165c15d7c93b7efce158616e1e1e5b))
+
 ## [2.74.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.0...v2.74.1) (2025-12-07)
 
 
