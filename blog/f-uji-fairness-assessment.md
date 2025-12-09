@@ -16,21 +16,13 @@ tags:
 
 ## FAIR in Theory, Difficult in Practice
 
-Modern research workflows depend on datasets that are not only available, but also precisely described, machine-readable, and reusable. The FAIR principles—Findable, Accessible, Interoperable, and Reusable provide that structure, but implementing them consistently is difficult. Metadata drifts, documentation changes, and repository requirements evolve.
-This makes manual FAIR validation unreliable and expensive to maintain across dataset versions.
+Modern research workflows depend on datasets that are not only available, but also precisely described, machine-readable, and reusable. The FAIR (Findable, Accessible, Interoperable, and Reusable) principles provide high-level instructions for achieving that, but validating or checking manually if datasets are compliant with the FAIR principle is difficult to achieve, especially at scale.
 
 ## Why Automated FAIR Assessment?
 
-Manual FAIR review almost always breaks down at scale. Evaluating a dataset by hand means scanning the landing page, checking for a DOI, confirming license visibility, digging through JSON-LD, and guessing whether the metadata covers provenance, distributions, or standardized schemas. Different reviewers make different assumptions, and results are rarely repeatable.
+Manual FAIR review almost always breaks down at scale. Evaluating a dataset by hand means scanning the landing page, checking for a unique and persistent identifier like a DOI (Digital Object Identifier), confirming license visibility, digging through JSON-LD, and guessing whether the metadata covers provenance, distributions, or standardized schemas. Different reviewers make different assumptions, and results are rarely repeatable.
 
-Automated assessment eliminates this ambiguity. With a single query, F-UJI evaluates a dataset against a defined set of FAIR criteria and returns:
-
-- deterministic, machine-actionable results
-- transparent reasoning for each metric
-- standardized scoring
-- outputs that can be integrated directly into QA pipelines or release workflows
-
-Automation turns FAIR compliance from a subjective review into a testable, version-controlled property of the dataset.
+Automated assessment eliminates this ambiguity. A popularly used tool for automated assessment of FAIRness is [F-UJI](https://www.f-uji.net/).
 
 ## F-UJI as a FAIR Evaluation Tool
 
@@ -41,76 +33,21 @@ F-UJI is an automated evaluator designed to test whether a dataset’s metadata 
 - DCAT/Dublin Core fields
 - linked provenance resources
 
-You supply a DOI; F-UJI returns a structured report with:
+You supply a DOI or a URL and F-UJI returns a structured report with:
 
-- FAIR scores per metric
-- explanations of what succeeded or failed
-- machine-readable JSON output
-- clear guidance on how to improve missing elements
+- FAIR scores per metric based on [FAIR metrics established by FAIR IMPACT](https://doi.org/10.5281/zenodo.15045911)
+- Explanations of what succeeded or failed
+- Machine-readable JSON output
+- Clear guidance on how to improve missing elements
 
-### How F-UJI Works in Practice
-
-A typical workflow looks like this:
-
-1. Submit the dataset DOI to the F-UJI API
-   Example: `https://w3id.org/fuji/api/v1/assess?doi=10.xxxx/xxxx`
-
-2. F-UJI retrieves metadata from:
-
-   - the DOI landing page
-   - embedded schema.org JSON-LD
-   - DataCite metadata APIs
-   - linked provenance or distribution resources
-
-3. It evaluates FAIR metrics, including:
-
-   **Findable**
-
-   - FsF-F1-01M — globally unique identifier present
-   - FsF-F1-02MD — persistent identifier assigned
-   - FsF-F2-01M — descriptive core elements available
-   - FsF-F3-01M — metadata includes the dataset identifier
-   - FsF-F4-01M — metadata indexable by search engines
-
-   **Accessible**
-
-   - FsF-A1-01M — access level and access conditions provided
-   - FsF-A1-02MD — metadata and data retrievable by identifier
-   - FsF-A1-01MD — standardized communication protocol used
-   - FsF-A1.2-01MD — authentication/authorization protocol supported
-
-   **Interoperable**
-
-   - FsF-I1-01M — metadata uses a formal knowledge representation language
-   - FsF-I2-01M — metadata uses registered semantic resources
-   - FsF-I3-01M — metadata includes qualified references
-
-   **Reusable**
-
-   - FsF-R1-01M — metadata specifies the content of the data
-   - FsF-R1.1-01M — license information included
-   - FsF-R1.2-01M — machine-readable provenance provided
-   - FsF-R1.3-01M — community-recommended standards followed
-   - FsF-R1.3-02D — data available in recommended formats
-
-4. F-UJI returns both a human-readable report and a JSON document summarizing the results.
-   A simplified example looks like:
-
-```json
-{
-  "metric_identifier": "FsF-R1.2-01M",
-  "metric_name": "Provenance Information",
-  "score": 1,
-  "maturity": 2,
-  "evidence": ["prov:wasDerivedFrom detected", "prov:wasGeneratedBy detected"]
-}
-```
-
-These results can be integrated into release workflows, documentation pipelines, or internal QA checks. Because each metric is deterministic and machine-actionable, running F-UJI on every dataset version ensures that FAIR compliance is maintained consistently rather than checked manually.
+<figure>
+  <img src="/images/blog/f-uji-net-result-example.png" alt="Dorian and Alejandra pair programming on the README comparisons." width="70%" />
+  <figcaption>F-UJI FAIR evaluation results for an AI-READI dataset DOI</figcaption>
+</figure>
 
 ## Our Case: Improving FAIR Scores Through AI-READI Metadata Optimization
 
-When we first ran F-UJI on our AI-READI dataset [DOI](https://doi.org/10.60775/fairhub.3), the assessment returned a 67% FAIR score, with several Findable (F), Interoperable (I), and Reusable (R) metrics flagged as incomplete or missing.
+When we first ran F-UJI using the AI-READI dataset [DOI](https://doi.org/10.60775/fairhub.3) of our AI-READI dataset, the assessment returned a 67% FAIR score, with several Findable (F), Interoperable (I), and Reusable (R) metrics flagged as incomplete or missing.
 
 ### Failing Checks Before Fixes
 
@@ -190,16 +127,11 @@ The JSON‑LD block targets major structural fields:
 
 All of these updates were implemented inside the Vue application by injecting an enriched `<script type="application/ld+json">` block into the landing page, so the FAIR-aligned metadata is always rendered with the UI.
 
+We ran the F-UJI assessment again after these changes and were able to see a 100% score.
+
 ## Conclusion
 
-After updating the JSON-LD, we reran F-UJI on the dataset. The FAIR score increased from 67% to 100%, and every previously failing metric passed successfully:
-
-- **FsF-F4-01M** – metadata is now fully indexable and machine-readable through improved JSON-LD.
-- **FsF-I2-01M** – registered semantic resources (schema.org, PROV-O, PAV) are declared in `@context`.
-- **FsF-R1-01M** – metadata clearly specifies the content and characteristics of the dataset.
-- **FsF-R1.2-01M** – machine-readable provenance information is exposed via PROV-O.
-- **FsF-R1.3-02D** – data is exposed in community-recommended formats (e.g., DICOM) and surfaced through the `distribution` block.
-
+F-UJI is a great tool for assessing automatically the FAIRness of a dataset at the metadata level, and easily identifying required improvements to increase the FAIRness of a dataset. After updating the JSON-LD, we reran F-UJI on the dataset. The FAIR score increased from 67% to 100%, and every previously failing metric passed.
 Together, these changes strengthened the dataset’s FAIR profile and ensured that the landing page now serves a complete, machine-interpretable metadata record that can be validated automatically on every release.
 
 ## Acknowledgements
