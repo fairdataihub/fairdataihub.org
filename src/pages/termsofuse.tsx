@@ -12,7 +12,7 @@ export default function TermsOfUse() {
         templateUrl="https://fairdataihub.org/termsofuse"
       />
 
-      <section className="mx-auto flex max-w-screen-lg flex-col px-6 py-5 text-lg text-black sm:px-6 lg:px-8">
+      <section className="mx-auto mt-20 flex max-w-screen-2xl flex-col px-6 py-5 text-lg text-black sm:px-6 lg:px-8">
         <h2 className="heading">Terms of Use</h2>
 
         <p className="subheading">Version 1.0</p>
