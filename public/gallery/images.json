@@ -558,6 +558,19 @@
     "description": "USRSE25 Conference"
   },
   {
+    "event": "SfN 2025 Conference",
+    "folder": "2025-11-18 - SfN 2025 Conference",
+    "date": "2025-11-18",
+    "images": [
+      {
+        "name": "sfn_2025_vr_demo.jpeg",
+        "alt": "SfN 2025 Conference"
+      }
+    ],
+    "tags": ["conference", "sfn"],
+    "description": "SfN 2025 Conference"
+  },
+  {
     "event": "CalMI2 Monthly Dinner",
     "folder": "2025-11-19 - CalMI2 monthly dinner",
     "date": "2025-11-19",
@@ -573,18 +586,5 @@
     ],
     "tags": ["dinner", "calmi2"],
     "description": "CalMI2 monthly dinner"
-  },
-  {
-    "event": "SfN 2025 Conference",
-    "folder": "2025-11-18 - SfN 2025 Conference",
-    "date": "2025-11-18",
-    "images": [
-      {
-        "name": "sfn_2025_vr_demo.jpeg",
-        "alt": "SfN 2025 Conference"
-      }
-    ],
-    "tags": ["conference", "sfn"],
-    "description": "SfN 2025 Conference"
   }
 ]
