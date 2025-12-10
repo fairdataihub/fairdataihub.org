@@ -34,7 +34,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
   const { category } = router.query;
 
   return (
-    <section className="relative mx-auto mt-20 flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <section className="relative mx-auto mt-20 flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
         templateTitle={`${category} - Categories`}
         templateUrl={`https://fairdataihub.org/category/${category}`}
@@ -74,17 +74,19 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
             }}
             exit={{ opacity: 0, y: 10, scale: 0.98 }}
           >
-            <BlogListItem
-              slug={slug}
-              title={frontMatter.title}
-              subtitle={frontMatter.subtitle}
-              date={frontMatter.date}
-              timeToRead={timeToRead}
-              heroImage={frontMatter.heroImage}
-              imageAuthor={frontMatter.imageAuthor}
-              tags={frontMatter.tags}
-              category={frontMatter.category}
-            />
+            <ul className="list-none">
+              <BlogListItem
+                slug={slug}
+                title={frontMatter.title}
+                subtitle={frontMatter.subtitle}
+                date={frontMatter.date}
+                timeToRead={timeToRead}
+                heroImage={frontMatter.heroImage}
+                imageAuthor={frontMatter.imageAuthor}
+                tags={frontMatter.tags}
+                category={frontMatter.category}
+              />
+            </ul>
           </motion.div>
         );
       })}

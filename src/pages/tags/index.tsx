@@ -45,7 +45,7 @@ const Tags: React.FC<TagsProps> = ({ tagsList }) => {
   }
 
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <section className="relative mx-auto mt-20 flex h-full w-full max-w-screen-2xl flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
         templateTitle="Tags"
         templateUrl="https://fairdataihub.org/tags"

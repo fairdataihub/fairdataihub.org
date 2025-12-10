@@ -46,7 +46,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
   const niceLabel = labelFromSlug(tag);
 
   return (
-    <section className="relative mx-auto mt-20 flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <section className="relative mx-auto mt-20 flex h-full w-full max-w-screen-xl flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
       <Seo
         templateTitle={`${niceLabel} - Tags`}
         templateUrl={`https://fairdataihub.org/tags/${tag}`}
@@ -88,17 +88,19 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
             viewport={{ once: true, amount: 0.1, margin: `0px 0px 150px 0px` }}
             exit={{ opacity: 0, y: 10, scale: 0.98 }}
           >
-            <BlogListItem
-              slug={slug}
-              title={frontMatter.title}
-              subtitle={frontMatter.subtitle}
-              date={frontMatter.date}
-              timeToRead={timeToRead}
-              heroImage={frontMatter.heroImage}
-              imageAuthor={frontMatter.imageAuthor}
-              tags={frontMatter.tags}
-              category={frontMatter.category}
-            />
+            <ul>
+              <BlogListItem
+                slug={slug}
+                title={frontMatter.title}
+                subtitle={frontMatter.subtitle}
+                date={frontMatter.date}
+                timeToRead={timeToRead}
+                heroImage={frontMatter.heroImage}
+                imageAuthor={frontMatter.imageAuthor}
+                tags={frontMatter.tags}
+                category={frontMatter.category}
+              />
+            </ul>
           </motion.div>
         );
       })}
