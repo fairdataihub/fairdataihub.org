@@ -84,10 +84,10 @@ Running a service that fetches arbitrary URLs requires careful attention to secu
 
 ## 🔮 What's Next
 
-The Ollama backend opens possibilities for experimentation with different vision-language models. As new models become available through Ollama, switching is as simple as setting the `OLLAMA_MODEL` environment variable:
+The Ollama backend opens possibilities for experimentation with different vision-language models. The default is `qwen3-vl:4b`, but as new models become available through Ollama, switching is as simple as setting the `OLLAMA_MODEL` environment variable:
 
 ```bash
-OLLAMA_MODEL=llava:13b python ollama_service/server.py
+OLLAMA_MODEL=minicpm-v python ollama_service/server.py
 ```
 
 We're also exploring batch processing for generating alt text across entire datasets, which would be particularly useful for researchers preparing large collections of figures for publication or archival.
