@@ -56,7 +56,9 @@ Ollama handles all the model inference externally, so your Python environment st
 
 ## 🚀 Getting Started
 
-Setting up the Ollama-based Alt-Text-Generator takes just a few minutes. First, install Ollama itself using their install script, then pull the vision model:
+Setting up the Ollama-based Alt-Text-Generator takes just a few minutes. Ollama runs on macOS, Linux, and Windows, and the install script below works for macOS and Linux. Windows users can download the installer from [ollama.com](https://ollama.com/download). You'll need Ollama 0.4.0 or later for vision model support.
+
+First, install Ollama and pull the vision model:
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
@@ -82,7 +84,13 @@ Running a service that fetches arbitrary URLs requires careful attention to secu
 
 ## 🔮 What's Next
 
-The Ollama backend opens possibilities for experimentation with different vision-language models. As new models become available through Ollama, switching is as simple as changing an environment variable. We're also exploring batch processing for generating alt text across entire datasets, which would be particularly useful for researchers preparing large collections of figures for publication or archival.
+The Ollama backend opens possibilities for experimentation with different vision-language models. As new models become available through Ollama, switching is as simple as setting the `OLLAMA_MODEL` environment variable:
+
+```bash
+OLLAMA_MODEL=llava:13b python ollama_service/server.py
+```
+
+We're also exploring batch processing for generating alt text across entire datasets, which would be particularly useful for researchers preparing large collections of figures for publication or archival.
 
 Whether you're building accessible documentation, curating research datasets, or developing applications that need image descriptions, the Alt-Text-Generator now offers a path that's open from end to end.
 
