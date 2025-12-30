@@ -17,9 +17,9 @@ tags:
   - AI
 ---
 
-The [Alt-Text-Generator](https://github.com/fairdataihub/alt-text-generator) has been one of our more popular open source projects since its release, helping developers and researchers automatically generate image descriptions to make the web more accessible. The idea was simple: feed it an image URL, get back a natural language description suitable for alt text. No manual writing required.
+The [Alt-Text-Generator](https://github.com/fairdataihub/alt-text-generator) has been one of our more popular open source projects since its release, helping developers and users automatically generate image descriptions to make the web more accessible. The idea was simple: feed it an image URL, get back a natural language description suitable for alt text. No manual writing required.
 
-The tool lives at [alt.fairdataihub.org](https://alt.fairdataihub.org) and has served its purpose well, but we've always wanted to take it further. The original implementation relied on cloud APIs, which meant images left your machine and usage costs could add up. We wanted something researchers could run entirely on their own hardware, with no external dependencies and no data leaving the building.
+The tool lives at [alt.fairdataihub.org](https://alt.fairdataihub.org) and has served its purpose well, but we've always wanted to take it further. The original implementation relied on cloud APIs, which meant images left your machine and usage costs could add up. We wanted something users could run entirely on their own hardware, with no external dependencies and no data leaving the building.
 
 ## 🖼️ Why Alt Text Matters
 
@@ -58,25 +58,44 @@ Ollama handles all the model inference externally, so your Python environment st
 
 Setting up the Ollama-based Alt-Text-Generator takes just a few minutes. Ollama runs on macOS, Linux, and Windows, and the install script below works for macOS and Linux. Windows users can download the installer from [ollama.com](https://ollama.com/download). You'll need Ollama 0.4.0 or later for vision model support.
 
-First, install Ollama and pull the vision model:
+First, open a Terminal and run these commands to install Ollama and pull the vision model:
 
 ```bash
 curl -fsSL https://ollama.com/install.sh | sh
 ollama pull qwen3-vl:4b
 ```
 
-With the model ready, start the Flask server:
+Next, clone the Alt-Text-Generator repository:
+
+```bash
+git clone https://github.com/fairdataihub/alt-text-generator.git
+cd alt-text-generator
+```
+
+Set up a Python environment (using conda or venv) and install the dependencies:
 
 ```bash
 pip install flask requests
+```
+
+Then start the Flask server:
+
+```bash
 python ollama_service/server.py
 ```
 
 You can now generate alt text by passing an image URL to the API. The service fetches the image, sends it to your local Ollama instance, and returns a concise, natural description suitable for use as alt text:
 
 ```bash
-curl "http://localhost:5000/generate?imageUrl=https://dub.sh/confpic"
+curl "http://localhost:5000/generate?imageUrl=https://fairdataihub.org/images/blog/ismb-2025/dorian-team.jpeg"
 ```
+
+<figure>
+  <img src="/images/blog/ismb-2025/dorian-team.jpeg" alt="FAIR Data Innovations Hub team members working at ISMB 2025" width="70%" />
+  <figcaption>FAIR Data Innovations Hub team at ISMB 2025</figcaption>
+</figure>
+
+Generated alt text: *"Two people with curly hair and glasses sit at a table working on laptops, surrounded by cables and a coffee cup, with a third person visible in the background."*
 
 ## 🔒 Built with Security in Mind
 
@@ -84,7 +103,7 @@ Running a service that fetches arbitrary URLs requires careful attention to secu
 
 ## 🔮 What's Next
 
-The Ollama backend opens possibilities for experimentation with different vision-language models. The default is `qwen3-vl:4b`, but as new models become available through Ollama, switching is as simple as setting the `OLLAMA_MODEL` environment variable:
+The Ollama backend opens possibilities for experimentation with different vision-language models. The default is qwen3-vl:4b, but as new models become available through Ollama, switching is as simple as setting the OLLAMA_MODEL environment variable:
 
 ```bash
 OLLAMA_MODEL=minicpm-v python ollama_service/server.py
@@ -96,8 +115,8 @@ Whether you're building accessible documentation, curating research datasets, or
 
 ## 📢 Try It Out
 
-You can try the cloud-hosted version at [alt.fairdataihub.org](https://alt.fairdataihub.org), or check out the [Alt-Text-Generator on GitHub](https://github.com/fairdataihub/alt-text-generator) and the new `ollama_service/` directory for the local inference option. If you find it useful, consider giving the repository a star.
+Check out the [Alt-Text-Generator on GitHub](https://github.com/fairdataihub/alt-text-generator) and the new `ollama_service/` directory for the local inference option. If you find it useful, consider giving the repository a star. A cloud-hosted version is coming soon.
 
 ## Acknowledgements
 
-The Alt-Text-Generator was originally created by Sanjay Soundarajan. This post was written with assistance from Claude.
+The Alt-Text-Generator was originally created by Sanjay Soundarajan.
