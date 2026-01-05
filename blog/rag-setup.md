@@ -63,8 +63,8 @@ In this scenario, we place a few NIH DMP PDFs in a local data/ folder and ask th
 
 ---
 ## 1)  Ingestion and Chunking
-### 1A) Ingestion (Load NIH PDFs)
-In this step, we ingest all NIH PDF files from the data/ folder and convert them into LangChain Document objects, typically one document per page. We also attach simple metadata such as source_file and page so that any retrieved text can be traced back to the exact PDF and page number for citations. 
+### 1A) Ingestion (Load PDFs)
+In this step, we ingest all  PDF files from the data/ folder and convert them into LangChain Document objects, typically one document per page. We also attach simple metadata such as source_file and page so that any retrieved text can be traced back to the exact PDF and page number for citations. 
 
 ```python
 from pathlib import Path
