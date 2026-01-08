@@ -28,7 +28,7 @@
     "semantic-release": "semantic-release",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\"",
-    "reset": "rimraf .next node_modules && yarn install"
+    "reset": "rm -rf node_modules .next && yarn install"
   },
   "lint-staged": {
     "./src/**/*.{ts,js,jsx,tsx}": [
