@@ -396,6 +396,15 @@
   },
   {
     "project": ["eyeact"],
+    "url": "https://zenodo.org/records/18177260",
+    "title": "White Paper - Envision Portal",
+    "subtitle": "Architecture, philosophy, and design decisions behind the Eye ACT Envision Portal",
+    "citation": "Soundarajan, S., Portillo, D., ONeill, J., Zeinali, N., Wue, Y., Lee, C., & Patel, B. (2026). White Paper - Envision Portal (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18177260",
+    "type": "Preprints",
+    "year": 2026
+  },
+  {
+    "project": ["eyeact"],
     "url": "https://github.com/EyeACT/eyeactstudy.org",
     "title": "Eye ACT Home Page",
     "subtitle": "",
