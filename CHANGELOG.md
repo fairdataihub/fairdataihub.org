@@ -1,3 +1,10 @@
+# [2.75.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.2...v2.75.0) (2026-01-08)
+
+
+### Features
+
+* ✨ add new eye act publication ([2ba7df9](https://github.com/fairdataihub/fairdataihub.org/commit/2ba7df95259be66a83820bbf1fff87e20d6d06f8))
+
 ## [2.74.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.1...v2.74.2) (2025-12-09)
 
 
