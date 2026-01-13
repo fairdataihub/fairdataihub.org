@@ -1,6 +1,14 @@
 [
   {
     "project": ["aireadi"],
+    "title": "Navigating open data sharing and privacy in the age of clinical AI research: from reidentification to pseudo-reidentification",
+    "url": "https://doi.org/10.1016/j.eclinm.2025.103729",
+    "citation": "Hallaj, S., Heinke, A., Kalaw, F. G. P., Gim, N., Blazes, M., Owen, J., Dysinger, E., Benton, E. S., Cordier, B. A., Evans, N. G., Li-Pook-Than, J., Snyder, M. P., Nebeker, C., Zangwill, L. M., Baxter, S. L., McWeeney, S., Lee, C. S., Lee, A. Y., Patel, B., & AI-READI Consortium. (2026). Navigating open data sharing and privacy in the age of clinical AI research: From reidentification to pseudo-reidentification. eClinicalMedicine, 91, 103729. https://doi.org/10.1016/j.eclinm.2025.103729",
+    "type": "Journal Articles",
+    "year": 2026
+  },
+  {
+    "project": ["aireadi"],
     "title": "AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond",
     "url": "https://doi.org/10.1038/s42255-024-01165-x",
     "citation": "AI-READI Consortium. (2024). AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond. Nature Metabolism. https://doi.org/10.1038/s42255-024-01165-x",
@@ -11,7 +19,7 @@
     "project": ["sodaforsparc"],
     "title": "SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data",
     "url": "https://doi.org/10.21105/joss.06140",
-    "citation": "Marroquin, C., Clark, J., Portillo, D., Soundarajan, S., Ngo, T., & Patel, B. (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140, https://doi.org/10.21105/joss.06140",
+    "citation": "Marroquin, C., Clark, J., Portillo, D., Soundarajan, S., Ngo, T., & Patel, B. (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140. https://doi.org/10.21105/joss.06140",
     "type": "Journal Articles",
     "year": 2024
   },
