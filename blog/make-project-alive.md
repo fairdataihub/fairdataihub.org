@@ -53,7 +53,7 @@ In our card components and headers, we didn't just use solid borders. We used ba
 Using blur and low-opacity colors in the background (like soft blues or indigos) helps separate sections without using harsh lines.
 
 <figure>
-  <img src="https://fairdataihub.org/thumbnails/dmp-glow.png" alt="Custom OG image for SODA for SPARC" width="70%" />
+  <img src="/images/blog/dmp-glow.png" alt="The Glow Technique" width="70%" />
 </figure>
 
 ### Gradient Borders
@@ -61,7 +61,7 @@ Using blur and low-opacity colors in the background (like soft blues or indigos)
 A subtle transition from a light grey to a transparent shade makes the cards feel premium and modern.
 
 <figure>
-  <img src="https://fairdataihub.org/thumbnails/dmp-gradient.png" alt="Custom OG image for SODA for SPARC" width="70%" />
+  <img src="/images/blog/dmp-gradient.png" alt="Gradient Borders" width="70%" />
 </figure>
 
 ## 3. Creating Atmosphere: The Particle System
@@ -71,7 +71,7 @@ To give a section a sense of scale and "life," we implemented a particle system.
 Instead of a static image, we have subtle, floating elements that react to the page. This serves a psychological purpose: it signals to the user that the platform is dynamic and modern. The key is subtlety—the movement should be "background noise" that adds character, not a distraction that pulls focus away from the main Call to Action (CTA).
 
 <figure>
-  <img src="https://fairdataihub.org/thumbnails/dmp-particle.png" alt="Custom OG image for SODA for SPARC" width="70%" />
+  <img src="/images/blog/dmp-particle.png" alt="Particle System" width="70%" />
 </figure>
 
 ## Final Thoughts
