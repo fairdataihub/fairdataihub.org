@@ -1,3 +1,10 @@
+# [2.76.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.75.0...v2.76.0) (2026-01-17)
+
+
+### Features
+
+* ✨ add orcid and website support ([2d11589](https://github.com/fairdataihub/fairdataihub.org/commit/2d115897068877c7c48010cb54b970eea7428576))
+
 # [2.75.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.2...v2.75.0) (2026-01-08)
 
 
