@@ -19,6 +19,8 @@ export type Profile = {
   twitter?: ShowLink;
   github?: ShowLink;
   linkedin?: ShowLink;
+  orcid?: ShowLink;
+  website?: ShowLink;
   badges?: string[];
   organization?: string;
   location?: string;

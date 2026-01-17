@@ -155,6 +155,26 @@ export default function ProfileModal({
                         >
                           <Icon icon="mdi:twitter" className="h-6 w-6" />
                         </SocialIcon>
+                        <SocialIcon
+                          href={
+                            profile?.orcid?.show
+                              ? profile?.orcid?.link
+                              : undefined
+                          }
+                          label="ORCID"
+                        >
+                          <Icon icon="simple-icons:orcid" className="h-6 w-6" />
+                        </SocialIcon>
+                        <SocialIcon
+                          href={
+                            profile?.website?.show
+                              ? profile?.website?.link
+                              : undefined
+                          }
+                          label="Website"
+                        >
+                          <Icon icon="mdi:web" className="h-6 w-6" />
+                        </SocialIcon>
                       </div>
                     </div>
 
