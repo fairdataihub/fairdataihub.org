@@ -239,9 +239,6 @@ export default function HorizontalTimeline({
                           <CardContent className="flex flex-col p-0">
                             {/* header */}
                             <div className="flex flex-col items-center px-6 pt-6 pb-4 text-center">
-                              <p className="text-primary/70 text-[11px] font-semibold tracking-[0.18em] uppercase">
-                                Milestone {items.length - index}
-                              </p>
                               <h3 className="text-primary mt-1 text-lg font-bold">
                                 {item.title}
                               </h3>
