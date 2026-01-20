@@ -1,18 +1,5 @@
 # [fairdataihub.org](https://fairdataihub.org)
 
-[![CodeFactor](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub.org/badge)](https://www.codefactor.io/repository/github/fairdataihub/fairdataihub.org)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=bugs)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=fairdataihub_fairdataihub-website&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=fairdataihub_fairdataihub-website)
-![Status](https://status.fairdataihub.org/api/badge/1/status)
-![Ping](https://status.fairdataihub.org/api/badge/1/ping/24)
-![Average Response](https://status.fairdataihub.org/api/badge/1/avg-response/24)
-
 ## Project setup
 
 Make sure to install the dependencies.
@@ -23,7 +10,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 
-Start the development server on http://localhost:3000
+Start the development server on <http://localhost:3000>
 
 ```bash
 yarn dev
@@ -44,7 +31,7 @@ We recommend to look at the [documentation](https://nextjs.org/docs/getting-star
 
 ### Requirements
 
-- Node.js >= 12.22.0
+- Node.js >= 22.18.0
 - Yarn 1 (Classic)
 
 ### Directory Structure
@@ -77,10 +64,6 @@ import { Button } from '@/components/Button';
 import avatar from '@/public/avatar.png';
 ```
 
-## Note
-
-This branch is a work in progress. We are actively working on improving the website.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
@@ -92,5 +75,5 @@ Note: You will not need to do anything to the hosted site. Continuous Delivery h
 A special thank you to Vercel for hosting this website.
 
 <a href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss" target="_blank">
-  <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"  width="auto"/>
+  <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="Powered by Vercel" width="auto"/>
 </a>
