@@ -152,7 +152,7 @@ export default function ProjectHero({
                   width: imageWidth ? `${imageWidth}px` : `auto`,
                   height: imageHeight ? `${imageHeight}px` : `auto`,
                 }}
-                className="h-auto w-auto max-w-full rounded-[32px] object-contain shadow-[0_24px_80px_rgba(0,0,0,0.10)]"
+                className="h-auto w-auto max-w-full rounded-[32px] object-contain"
               />
             </div>
           </div>

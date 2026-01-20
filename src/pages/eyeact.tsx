@@ -35,8 +35,6 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
             target: `_blank`,
             ariaLabel: `Eye ACT website`,
             rel: `noopener`,
-            disabled: true,
-            tooltipContent: `Coming soon`,
           },
           {
             text: `Visit the Envision Portal`,
@@ -44,8 +42,6 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
             target: `_blank`,
             ariaLabel: `Envision Portal`,
             rel: `noopener`,
-            disabled: true,
-            tooltipContent: `Coming soon`,
           },
         ]}
       />
@@ -115,16 +111,18 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
         ]}
       />
 
-      <ProjectInfoSection
-        title="Funding"
-        description="Our contribution to the Eye ACT project is funded through a subaward from the National Institute on Aging (NIA) grant R01AG060942."
-        additionalLinks={[
-          {
-            text: `Explore the award on NIH Reporter`,
-            href: `https://reporter.nih.gov/project-details/10471118`,
-          },
-        ]}
-      />
+      <div className="hidden">
+        <ProjectInfoSection
+          title="Funding"
+          description="Our contribution to the Eye ACT project is funded through a subaward from the National Institute on Aging (NIA) grant R01AG060942."
+          additionalLinks={[
+            {
+              text: `Explore the award on NIH Reporter`,
+              href: `https://reporter.nih.gov/project-details/10471118`,
+            },
+          ]}
+        />
+      </div>
 
       <TeamMembers
         teamMembers={[
@@ -163,7 +161,7 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
 
       <ResearchPartners
         researchPartners={{
-          description: `We are collaborating on this project with Dr. Cecilia Lee's team at the Computational Ophthalmology Lab (University of Washington).`,
+          description: `We are collaborating on this project with Dr. Cecilia Lee's team at the Ophthalmology and Visual Science department (Washington University in St. Louis).`,
         }}
       />
 
