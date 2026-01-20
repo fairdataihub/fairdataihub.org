@@ -1,3 +1,10 @@
+# [2.77.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.76.0...v2.77.0) (2026-01-20)
+
+
+### Features
+
+* ✨ enable eyeact ([4667599](https://github.com/fairdataihub/fairdataihub.org/commit/4667599a4b043ad9cd1745e6769627e25437c8ae))
+
 # [2.76.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.75.0...v2.76.0) (2026-01-17)
 
 
