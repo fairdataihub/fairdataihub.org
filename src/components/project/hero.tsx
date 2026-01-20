@@ -144,7 +144,7 @@ export default function ProjectHero({
               <Image
                 src={imageSrc}
                 alt={imageAlt}
-                unoptimized={imageSrc.includes(`.gif`)}
+                unoptimized={imageSrc.toLowerCase().includes(`.gif`)}
                 width={imageWidth}
                 height={imageHeight}
                 priority

@@ -84,7 +84,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                 <div className="mt-4 flex flex-wrap gap-6">
                   {additionalLinks.map((link) => (
                     <a
-                      key={link.text}
+                      key={link.href}
                       href={link.href}
                       target={link.target || `_blank`}
                       rel={link.rel || `noopener`}
