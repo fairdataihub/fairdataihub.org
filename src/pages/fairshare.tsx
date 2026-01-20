@@ -132,19 +132,23 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
             src: `https://img.shields.io/github/license/fairdataihub/FAIRshare.svg?style=flat-square`,
           },
         ]}
-        additionalLink={{
-          text: `Explore the GitHub repository`,
-          href: `https://github.com/fairdataihub/FAIRshare`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/FAIRshare`,
+          },
+        ]}
       />
 
       <ProjectInfoSection
         title="Funding"
         description={`FAIRshare is funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID).`}
-        additionalLink={{
-          text: `Explore the parent award on NIH Reporter`,
-          href: `https://reporter.nih.gov/project-details/10377989`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the parent award on NIH Reporter`,
+            href: `https://reporter.nih.gov/project-details/10377989`,
+          },
+        ]}
       />
 
       <TeamMembers
@@ -165,7 +169,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
             name: `Taiji Yang`,
             href: `https://www.linkedin.com/in/taiji-yang-1b4b8620b/`,
             external: true,
-            image: `https://ucarecdn.com/12fea441-c679-4471-923f-dbdcd5bece51/-/scale_crop/200x200/smart/`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=TaijiYang`,
           },
         ]}
       />

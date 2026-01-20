@@ -107,10 +107,12 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
             src: `https://img.shields.io/github/license/SPARC-FAIR-Codeathon/SPARClink.svg?style=flat-square`,
           },
         ]}
-        additionalLink={{
-          text: `Explore the GitHub repository`,
-          href: `https://github.com/fairdataihub/SPARClink`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/SPARClink`,
+          },
+        ]}
       />
 
       <ProjectInfoSection
@@ -118,10 +120,12 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
         description="SPARClink began as a concept at the 2021 NIH SPARC FAIR Codeathon: a way to visualize how SPARC publications and datasets are reused across the broader scientific landscape. The prototype placed third in the competition and has since evolved into a sustained open-source effort."
         sideImageSrc="/images/collaborators/sparc-logo.svg"
         sideImageAlt="SPARC logo"
-        additionalLink={{
-          text: `Learn more about the SPARC Codeathon`,
-          href: `https://sparc.science/help/2021-sparc-fair-codeathon`,
-        }}
+        additionalLinks={[
+          {
+            text: `Learn more about the SPARC Codeathon`,
+            href: `https://sparc.science/help/2021-sparc-fair-codeathon`,
+          },
+        ]}
       />
 
       <PublicationsList
@@ -141,25 +145,25 @@ const SparcLink: React.FC<PublicationsItemList> = ({ publications }) => {
             name: `Sachira Kuruppu`,
             href: `https://www.linkedin.com/in/sachirakuruppu/`,
             external: true,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=SachiraKuruppu`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=SachiraKuruppu`,
           },
           {
             name: `Ashutosh Singh`,
             href: `/sparclink`,
             external: false,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=AshutoshSingh`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=AshutoshSingh`,
           },
           {
             name: `Monalisa Achalla`,
             href: `/sparclink`,
             external: false,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=MonalisaAchalla`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=MonalisaAchalla`,
           },
           {
             name: `Jongchan Kim`,
             href: `/sparclink`,
             external: false,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=JongchanKim`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=JongchanKim`,
           },
         ]}
       />

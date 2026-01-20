@@ -165,19 +165,23 @@ const SodaForSparc: React.FC<PublicationsItemList> = ({ publications }) => {
             src: `https://img.shields.io/github/license/fairdataihub/SODA-for-SPARC.svg?style=flat-square`,
           },
         ]}
-        additionalLink={{
-          text: `Explore the GitHub repository`,
-          href: `https://github.com/fairdataihub/SODA-for-SPARC`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/SODA-for-SPARC`,
+          },
+        ]}
       />
 
       <ProjectInfoSection
         title="Funding"
         description={`SODA is funded by the National Institutes of Health (NIH)'s SPARC program. The funding was initially provided as a supplement to an existing SPARC award at CalMI during the first phase of development before now having a standalone award.`}
-        additionalLink={{
-          text: `Explore the award on NIH Reporter`,
-          href: `https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the award on NIH Reporter`,
+            href: `https://reporter.nih.gov/search/ZGaCL05IVE6SWFIbPlZFrg/project-details/10175565`,
+          },
+        ]}
         sideImageSrc="/images/collaborators/sparc-logo.svg"
         sideImageAlt="SPARC logo"
       />

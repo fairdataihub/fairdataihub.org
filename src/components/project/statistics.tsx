@@ -108,7 +108,7 @@ const ProjectStatistics: React.FC<StatisticsProps> = ({
                 key={metric.id || index}
                 className="flex max-w-[260px] min-w-[220px] flex-1 flex-col items-center rounded-2xl bg-stone-50/70 px-4 py-5 text-center shadow-sm ring-1 ring-stone-100/70 transition hover:-translate-y-1 hover:bg-white hover:shadow-[0_18px_45px_rgba(203,67,142,0.20)]"
               >
-                <p className="font-lato text-3xl font-extrabold tracking-tight text-stone-900 sm:text-4xl md:text-5xl">
+                <p className="font-lato text-3xl font-extrabold text-stone-900 sm:text-4xl md:text-5xl">
                   <span
                     id={metric.id}
                     ref={(el) => {
@@ -117,14 +117,14 @@ const ProjectStatistics: React.FC<StatisticsProps> = ({
                   >
                     0
                   </span>
+                  {metric.suffix && (
+                    <span className="font-lato text-3xl text-stone-900 sm:text-4xl md:text-5xl">
+                      {metric.suffix}
+                    </span>
+                  )}
                   {metric.unit && (
                     <span className="ml-1 text-2xl sm:text-3xl">
                       {metric.unit}
-                    </span>
-                  )}
-                  {metric.suffix && (
-                    <span className="ml-1 text-2xl sm:text-3xl">
-                      {metric.suffix}
                     </span>
                   )}
                 </p>

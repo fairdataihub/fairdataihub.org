@@ -134,12 +134,14 @@ const Codefair: React.FC<PublicationsItemList> = ({ publications }) => {
             src: `https://img.shields.io/github/issues/fairdataihub/codefair-app.svg?style=flat-square`,
           },
         ]}
-        additionalLink={{
-          text: `Explore the GitHub repository`,
-          href: `https://github.com/fairdataihub/codefair-app`,
-          target: `_blank`,
-          rel: `noopener`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/codefair-app`,
+            target: `_blank`,
+            rel: `noopener`,
+          },
+        ]}
       />
 
       <TeamMembers

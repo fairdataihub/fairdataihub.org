@@ -71,29 +71,31 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
         sideImageSrc="/images/github-logo.svg"
         sideImageUrl="https://github.com/fairdataihub/posters-science"
         sideImageAlt="GitHub logo"
-        additionalLink={{
-          text: `Explore the GitHub repository`,
-          href: `https://github.com/fairdataihub/posters-science`,
-          target: `_blank`,
-          rel: `noopener`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/posters-science`,
+            target: `_blank`,
+          },
+        ]}
       />
 
       <ProjectInfoSection
         title="Funding"
         description={`This project is funded through a grant from The Navigation Fund. Additional details about the grant and its goals are available through The Navigation Fund and associated records in DataCite Commons.`}
-        additionalLink={{
-          text: `Learn more about The Navigation Fund`,
-          href: `https://www.navigation.org/`,
-          target: `_blank`,
-          rel: `noopener`,
-        }}
+        additionalLinks={[
+          {
+            text: `Learn more about The Navigation Fund`,
+            href: `https://www.navigation.org/`,
+            target: `_blank`,
+          },
+        ]}
         funders={[
           {
             name: `The Navigation Fund`,
             id: `the-navigation-fund`,
             href: `https://www.navigation.org/`,
-            image: `https://os.nav.fund/acknowledge/logos/TNF_Stacked_Logos/stacked_color.svg`,
+            image: `/images/posters-science/nav-fund.svg`,
           },
         ]}
       />

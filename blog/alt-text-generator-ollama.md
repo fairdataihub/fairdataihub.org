@@ -119,4 +119,4 @@ Check out the [Alt-Text-Generator on GitHub](https://github.com/fairdataihub/alt
 
 ## Acknowledgements
 
-The Alt-Text-Generator was originally created by Sanjay Soundarajan.
+The original repository was created by [Vercel](https://vercel.com/templates/next.js/ai-alt-text-generator).

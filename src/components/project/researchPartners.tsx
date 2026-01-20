@@ -31,7 +31,7 @@ const ResearchPartners: React.FC<ResearchPartnersProps> = ({
           Research partners
         </h2>
         {description && (
-          <p className="font-asap mt-3 max-w-2xl text-sm text-stone-700 sm:text-base lg:mt-4">
+          <p className="font-asap mt-3 text-sm text-stone-700 sm:text-base lg:mt-4">
             {description}
           </p>
         )}
@@ -46,30 +46,32 @@ const ResearchPartners: React.FC<ResearchPartnersProps> = ({
                 href={collaborator.href}
                 target="_blank"
                 rel="noopener"
-                className="group flex flex-col items-center rounded-2xl border border-stone-100 bg-stone-50 p-4 text-center transition hover:-translate-y-1 hover:border-pink-200 hover:bg-pink-50"
+                className="group flex flex-col items-center justify-start rounded-2xl border border-stone-100 bg-stone-50 p-4 text-center transition hover:-translate-y-1 hover:border-pink-200 hover:bg-pink-50"
               >
-                {collaborator.type === `person` ? (
-                  <div className="relative mb-3 h-20 w-20 sm:h-24 sm:w-24">
-                    <Image
-                      src={collaborator.image}
-                      alt={`${collaborator.name} profile picture`}
-                      fill
-                      className="rounded-full object-cover ring-2 ring-pink-200"
-                    />
-                  </div>
-                ) : (
-                  <div className="mb-3 flex h-14 w-full items-center justify-center sm:h-16">
+                {/* Unified image wrapper */}
+                <div className="mb-3 flex h-24 w-full items-center justify-center">
+                  {collaborator.type === `person` ? (
+                    <div className="relative h-20 w-20 sm:h-24 sm:w-24">
+                      <Image
+                        src={collaborator.image}
+                        alt={`${collaborator.name} profile picture`}
+                        fill
+                        className="rounded-full object-cover ring-2 ring-pink-200"
+                      />
+                    </div>
+                  ) : (
                     <Image
                       src={collaborator.image}
                       alt={`${collaborator.name} logo`}
                       width={220}
                       height={80}
-                      className="h-full w-auto object-contain"
+                      className="max-h-16 w-auto object-contain"
                     />
-                  </div>
-                )}
+                  )}
+                </div>
 
-                <p className="font-asap text-sm font-semibold text-stone-900 sm:text-base">
+                {/* Name always starts at same Y-position */}
+                <p className="font-asap mt-auto text-sm font-semibold text-stone-900 sm:text-base">
                   {collaborator.name}
                 </p>
               </a>

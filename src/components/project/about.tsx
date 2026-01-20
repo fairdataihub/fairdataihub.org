@@ -30,7 +30,7 @@ export default function ProjectAbout({
         <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-stone-900 sm:text-4xl">
           {title}
         </h2>
-        <p className="font-asap mt-3 max-w-2xl text-base text-stone-700 sm:text-lg lg:mt-4">
+        <p className="font-asap mt-3 text-base text-stone-700 sm:text-lg lg:mt-4">
           {description}
         </p>
       </div>
