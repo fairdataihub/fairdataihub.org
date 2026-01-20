@@ -25,12 +25,12 @@ interface InfoSectionProps {
   description: string;
   sideImageSrc?: string;
   githubBadges?: GitHubBadge[];
-  additionalLink?: {
+  additionalLinks?: {
     text: string;
     href: string;
     target?: string;
     rel?: string;
-  };
+  }[];
   sideImageAlt?: string;
   sideImageUrl?: string;
   funders?: Funder[];
@@ -43,7 +43,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
   sideImageAlt,
   sideImageUrl,
   githubBadges,
-  additionalLink,
+  additionalLinks,
   funders,
 }) => {
   return (
@@ -54,9 +54,9 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
       >
         <div className="rounded-3xl border border-stone-200 bg-white/90 p-6 shadow-[0_16px_50px_rgba(15,23,42,0.06)] lg:p-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-            <div className="md:max-w-2xl">
+            <div className="md:max-w-[80%]">
               <h3 className="text-2xl font-bold text-stone-900">{title}</h3>
-              <p className="font-asap mt-3 text-sm leading-relaxed text-stone-700 sm:text-base">
+              <p className="font-asap mt-3 text-sm text-stone-700 sm:text-base">
                 {description}
               </p>
 
@@ -80,24 +80,27 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                 </div>
               )}
 
-              {additionalLink && (
-                <div className="mt-4">
-                  <a
-                    href={additionalLink.href}
-                    target={additionalLink.target || `_blank`}
-                    rel={additionalLink.rel || `noopener`}
-                    className="text-primary group/link relative inline-flex items-center gap-1 text-sm font-semibold transition-colors duration-300 hover:text-pink-700"
-                  >
-                    <span className="relative z-20 inline-flex items-center gap-1">
-                      {additionalLink.text}
-                      <Icon
-                        icon="solar:arrow-right-broken"
-                        width={18}
-                        height={18}
-                      />
-                    </span>
-                    <span className="pointer-events-none absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover/link:left-0 group-hover/link:w-full" />
-                  </a>
+              {additionalLinks && additionalLinks.length > 0 && (
+                <div className="mt-4 flex flex-wrap gap-6">
+                  {additionalLinks.map((link) => (
+                    <a
+                      key={link.text}
+                      href={link.href}
+                      target={link.target || `_blank`}
+                      rel={link.rel || `noopener`}
+                      className="text-primary group/link relative inline-flex items-center gap-1 text-sm font-semibold transition-colors duration-300 hover:text-pink-700"
+                    >
+                      <span className="relative z-20 inline-flex items-center gap-1">
+                        {link.text}
+                        <Icon
+                          icon="solar:arrow-right-broken"
+                          width={18}
+                          height={18}
+                        />
+                      </span>
+                      <span className="pointer-events-none absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover/link:left-0 group-hover/link:w-full" />
+                    </a>
+                  ))}
                 </div>
               )}
             </div>

@@ -114,20 +114,26 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
         description="All software and tools from the AI-READI project, including fairhub.io, are developed under an MIT License from the AI-READI organization on GitHub."
         sideImageSrc="/images/github-logo.svg"
         sideImageUrl="https://github.com/AI-READI"
-        additionalLink={{
-          text: `Explore the AI-READI GitHub organization`,
-          href: `https://github.com/AI-READI`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the AI-READI GitHub organization`,
+            href: `https://github.com/AI-READI`,
+            target: `_blank`,
+          },
+        ]}
         sideImageAlt="GitHub logo"
       />
 
       <ProjectInfoSection
         title="Funding"
         description="The AI-READI project is funded by the National Institutes of Health (NIH)'s Bridge2AI program."
-        additionalLink={{
-          text: `Explore the award on NIH Reporter`,
-          href: `https://reporter.nih.gov/project-details/10471118`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the award on NIH Reporter`,
+            href: `https://reporter.nih.gov/project-details/10471118`,
+            target: `_blank`,
+          },
+        ]}
       />
 
       <TeamMembers

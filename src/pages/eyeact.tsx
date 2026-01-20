@@ -107,19 +107,23 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
         sideImageSrc="/images/github-logo.svg"
         sideImageUrl="https://github.com/EyeACT/"
         sideImageAlt="GitHub logo"
-        additionalLink={{
-          text: `Explore the Eye ACT GitHub organization`,
-          href: `https://github.com/EyeACT/`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the Eye ACT GitHub organization`,
+            href: `https://github.com/EyeACT/`,
+          },
+        ]}
       />
 
       <ProjectInfoSection
         title="Funding"
         description="Our contribution to the Eye ACT project is funded through a subaward from the National Institute on Aging (NIA) grant R01AG060942."
-        additionalLink={{
-          text: `Explore the award on NIH Reporter`,
-          href: `https://reporter.nih.gov/project-details/10471118`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the award on NIH Reporter`,
+            href: `https://reporter.nih.gov/project-details/10471118`,
+          },
+        ]}
       />
 
       <TeamMembers

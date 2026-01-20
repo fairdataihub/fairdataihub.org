@@ -1,5 +1,4 @@
 import { Icon } from '@iconify/react';
-import { motion } from 'framer-motion';
 import Image, { type StaticImageData } from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -30,11 +29,8 @@ export default function ProjectCard({ project }: { project: Project }) {
       className="group block touch-manipulation focus:outline-none"
       aria-label={`${title} - open project`}
     >
-      <motion.article
-        whileHover={{ y: -4 }}
-        whileTap={{ y: -2 }}
-        transition={{ duration: 0.15, ease: `easeOut` }}
-        className="relative grid h-full min-h-[28rem] overflow-hidden rounded-xl border border-stone-200 bg-white/90 shadow-sm transition dark:border-stone-700 dark:bg-stone-900/60"
+      <article
+        className="relative grid h-full min-h-[28rem] overflow-hidden rounded-xl border border-stone-200 bg-white/90 shadow-sm transition-all duration-300 hover:border-pink-300"
         style={{ gridTemplateRows: `auto 1fr` }}
       >
         <div className="relative h-44 w-full overflow-hidden bg-gradient-to-b from-stone-50 to-white dark:from-stone-900 dark:to-stone-900">
@@ -54,7 +50,7 @@ export default function ProjectCard({ project }: { project: Project }) {
               className={[
                 `h-full w-full object-contain pt-4`,
                 `scale-[.95] transform-gpu transition-transform duration-300`,
-                // `group-hover:scale-[.9] group-focus:scale-[.9]`, //turn on if you want image to scale on hover
+                `group-hover:scale-100 group-focus:scale-100`,
               ].join(` `)}
               draggable={false}
               priority={false}
@@ -104,7 +100,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             </div>
           </div>
         </div>
-      </motion.article>
+      </article>
     </Link>
   );
 }

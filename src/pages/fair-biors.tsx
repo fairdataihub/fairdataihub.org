@@ -90,19 +90,23 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
         <ProjectInfoSection
           title="Development Approach"
           description={`The FAIR-BioRS guidelines were developed in collaboration with researchers from UCSF and ELIXIR (E.U.). We first established a list of outstanding questions we identified for practically implementing the FAIR4RS Principles (e.g., How to obtain a unique identifier for software? How to include metadata? and so on). Then we combined literature review, community feedback, and our own assessment as developers of research software to established answers for these questions. Finally, we organized these answers as a set of step-by-step instructions that follow the typical sofware development process which became the FAIR-BioRS guidelines.`}
-          additionalLink={{
-            text: `Explore the FAIR-BioRS documentation`,
-            href: `https://fair-biors.org`,
-          }}
+          additionalLinks={[
+            {
+              text: `Explore the FAIR-BioRS documentation`,
+              href: `https://fair-biors.org`,
+            },
+          ]}
         />
 
         <ProjectInfoSection
           title="Funding"
           description={`The FAIR-BioRS guidelines were conceived while working on a project funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID). Besides some initial effort through this project for the first few months, the development of the guidelines has been done without any support, through the sole will of the project members to make it easier for our peers wanting to develop and share FAIR software.`}
-          additionalLink={{
-            text: `Explore the parent award on NIH Reporter`,
-            href: `https://reporter.nih.gov/project-details/10377989`,
-          }}
+          additionalLinks={[
+            {
+              text: `Explore the parent award on NIH Reporter`,
+              href: `https://reporter.nih.gov/project-details/10377989`,
+            },
+          ]}
         />
 
         <TeamMembers

@@ -2,7 +2,6 @@ import HorizontalTimeline from '@/components/horizontal-event-timeline-carousel'
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
-import FundingInfo from '@/components/project/fundingInfo';
 import ResearchPartners from '@/components/project/researchPartners';
 import TeamMembers from '@/components/project/teamMembers';
 import Seo from '@/components/seo/seo';
@@ -68,12 +67,14 @@ const DmpChef: React.FC = () => {
         sideImageSrc={`/images/github-logo.svg`}
         sideImageUrl={`https://github.com/fairdataihub/dmpchef`}
         sideImageAlt={`GitHub logo`}
-        additionalLink={{
-          text: `Explore the GitHub repository`,
-          href: `https://github.com/fairdataihub/dmpchef`,
-          target: `_blank`,
-          rel: `noopener`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/dmpchef`,
+            target: `_blank`,
+            rel: `noopener`,
+          },
+        ]}
       />
 
       <TeamMembers
@@ -120,32 +121,36 @@ const DmpChef: React.FC = () => {
               image: `/images/collaborators/grady_photo-265x300.jpg`,
               id: ``,
               href: ``,
+              type: `person`,
             },
             {
               name: `Brian Riley`,
               id: ``,
               href: ``,
               image: `/images/collaborators/brian_r.jpg`,
+              type: `person`,
             },
             {
               name: `California Digital Library`,
               id: `California Digital Library`,
               href: `https://cdlib.org`,
               image: `/images/collaborators/logo-cdl.svg`,
+              type: `lab`,
             },
             {
               name: `DMP Tool`,
               id: `DMP Tool`,
               href: `https://dmptool.org/`,
               image: `/images/collaborators/DMP-Navy-Portrait.svg`,
+              type: `lab`,
             },
           ],
         }}
       />
 
-      <FundingInfo
+      <ProjectInfoSection
         title="Funding"
-        description="This project is a National Science Foundation (NSF) and Chan Zuckerberg Initiative (CZI)-funded collaboration between the FAIR Data Innovations Hub and California Digital Library (University of California Office of the President) as part of a broader extension of the DMP Tool platform."
+        description={`This project is a National Science Foundation (NSF) and Chan Zuckerberg Initiative (CZI)-funded collaboration between the FAIR Data Innovations Hub and California Digital Library (University of California Office of the President) as part of a broader extension of the DMP Tool platform.`}
         additionalLinks={[
           {
             text: `National Science Foundation (NSF)`,

@@ -153,20 +153,25 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
             src: `https://img.shields.io/github/license/SPARC-FAIR-Codeathon/aqua.svg?style=flat-square`,
           },
         ]}
-        additionalLink={{
-          text: `Explore the GitHub repository`,
-          href: `https://github.com/fairdataihub/AQUA`,
-        }}
+        additionalLinks={[
+          {
+            text: `Explore the GitHub repository`,
+            href: `https://github.com/fairdataihub/AQUA`,
+            target: `_blank`,
+          },
+        ]}
       />
       <ProjectInfoSection
         title={`Origin Story`}
         description={`The AQUA project was first born as an idea at the 2021 NIH SPARC Codeathon. The idea was to improve user query understandability and result display of the SPARC Portal search engine. AQUA received the fourth-place prize at the Codeathon.`}
         sideImageSrc="/images/collaborators/sparc-logo.svg"
         sideImageAlt="SPARC logo"
-        additionalLink={{
-          text: `Learn more about the 2021 SPARC FAIR Codeathon`,
-          href: `https://sparc.science/help/2021-sparc-fair-codeathon`,
-        }}
+        additionalLinks={[
+          {
+            text: `Learn more about the 2021 SPARC FAIR Codeathon`,
+            href: `https://sparc.science/help/2021-sparc-fair-codeathon`,
+          },
+        ]}
       />
       <TeamMembers
         teamMembers={[
@@ -180,25 +185,25 @@ const Aqua: React.FC<{ publications: any[] }> = ({ publications }) => {
             name: `Laila Bekhet`,
             href: `/aqua`,
             external: false,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=LailaBekhet`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=LailaBekhet`,
           },
           {
             name: `Yuda Munarko`,
             href: `/aqua`,
             external: false,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=YudaMunarko1`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=YudaMunarko1`,
           },
           {
             name: `Niloofar Shahidi`,
             href: `/aqua`,
             external: false,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=NiloofarShahidi`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=NiloofarShahidi`,
           },
           {
             name: `Xuanzhi `,
             href: `/aqua`,
             external: false,
-            image: `https://api.dicebear.com/7.x/thumbs/svg?seed=Xuanzhi`,
+            image: `https://api.dicebear.com/9.x/thumbs/svg?seed=Xuanzhi`,
           },
         ]}
       />
