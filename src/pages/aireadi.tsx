@@ -184,6 +184,16 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
             title: `Year 1 development`,
             content: `The base framework of fairhub.io will be developed and support will be provided uploading data, structuring high-level data and metadata, and sharing data.`,
           },
+          {
+            longDate: `September 2023 - Aug 2024`,
+            title: `Year 2 development`,
+            content: `Release of AI-READI Dataset v2 through the FAIRhub platform, alongside continued development of FAIRhub, dataset documentation, and FAIR- and AI-ready standards to support broader data access and reuse.`,
+          },
+          {
+            longDate: `September 2024 - Aug 2025`,
+            title: `Year 3 development`,
+            content: `Expansion of the AI-READI dataset toward full cohort enrollment, continued platform maturation, refinement of FAIR and AI-ready standards, and enhanced support for downstream research use and task-force–driven AI applications.`,
+          },
         ]}
       />
 
