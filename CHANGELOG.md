@@ -1,3 +1,10 @@
+## [2.77.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.77.0...v2.77.1) (2026-01-22)
+
+
+### Bug Fixes
+
+* 🐛 aireadi development phase ([7d41b90](https://github.com/fairdataihub/fairdataihub.org/commit/7d41b90b5212498fb88cd5c4147fb33f6471a09e))
+
 # [2.77.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.76.0...v2.77.0) (2026-01-20)
 
 
