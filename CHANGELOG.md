@@ -1,3 +1,10 @@
+# [2.78.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.77.1...v2.78.0) (2026-01-22)
+
+
+### Features
+
+* **posters-science:** update GitHub repo link to poster2json and add James ONeill to team ([#732](https://github.com/fairdataihub/fairdataihub.org/issues/732)) ([77f2ec1](https://github.com/fairdataihub/fairdataihub.org/commit/77f2ec1d5281f67a746819267b7738df8ab77d67))
+
 ## [2.77.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.77.0...v2.77.1) (2026-01-22)
 
 
