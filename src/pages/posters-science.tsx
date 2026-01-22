@@ -69,12 +69,12 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
         title="Development approach"
         description={`Posters.science is developed using an open-source approach, enabling transparency, reuse, and collaboration with the broader community of researchers, institutions, and tool builders.`}
         sideImageSrc="/images/github-logo.svg"
-        sideImageUrl="https://github.com/fairdataihub/posters-science"
+        sideImageUrl="https://github.com/fairdataihub/poster2json"
         sideImageAlt="GitHub logo"
         additionalLinks={[
           {
             text: `Explore the GitHub repository`,
-            href: `https://github.com/fairdataihub/posters-science`,
+            href: `https://github.com/fairdataihub/poster2json`,
             target: `_blank`,
           },
         ]}
@@ -143,6 +143,12 @@ const PostersScience: React.FC<PublicationsItemList> = ({ publications }) => {
             href: `/team/#Aydan-Gasimova`,
             external: false,
             image: `/images/people/aydan-head.jpg`,
+          },
+          {
+            name: `James ONeill`,
+            href: `/team/#James-ONeill`,
+            external: false,
+            image: `/images/people/james-head.jpg`,
           },
         ]}
       />
