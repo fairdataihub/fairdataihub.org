@@ -27,7 +27,7 @@ const DmpChef: React.FC = () => {
         buttons={[
           {
             text: `Visit DMP Chef`,
-            href: `https://survey.dmpchef.org/`,
+            href: `https://github.com/fairdataihub/dmpchef`,
             target: `_blank`,
             ariaLabel: `DMP Chef website`,
             rel: `noopener`,
