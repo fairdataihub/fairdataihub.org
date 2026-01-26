@@ -60,7 +60,7 @@ TypeScript are pre-configured with custom path mappings. To import components or
 ```tsx
 import { Button } from '@/components/Button';
 
-// To import images or other files from the public folder
+// Import images or other files from the public folder
 import avatar from '@/public/avatar.png';
 ```
 
