@@ -1,3 +1,10 @@
+# [2.79.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.78.0...v2.79.0) (2026-01-26)
+
+
+### Features
+
+* ✨ Update team page + gallery ([5f2ae58](https://github.com/fairdataihub/fairdataihub.org/commit/5f2ae586fb85becc6e9220ed7e85e66ca3f7eb85))
+
 # [2.78.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.77.1...v2.78.0) (2026-01-22)
 
 
