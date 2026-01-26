@@ -1,3 +1,10 @@
+## [2.79.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.79.0...v2.79.1) (2026-01-26)
+
+
+### Bug Fixes
+
+* 🐛 correct folder name for cdn image ([9d7abe9](https://github.com/fairdataihub/fairdataihub.org/commit/9d7abe9531c82466ef46812ae540a64f0e2a7485))
+
 # [2.79.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.78.0...v2.79.0) (2026-01-26)
 
 
