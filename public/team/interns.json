@@ -7,6 +7,7 @@
     "image": "/images/people/paapa-full.jpg",
     "borderTop": true,
     "borderBottom": false,
+    "current": true,
     "education": [
       {
         "degree": "Ph.D. in Pharmacology and Neuroscience",
@@ -45,6 +46,7 @@
     "image": "/images/people/gerard-full.jpg",
     "borderTop": true,
     "borderBottom": false,
+    "current": true,
     "education": [
       {
         "degree": "B.A. in Public Policy, Minor in Biology",
@@ -73,6 +75,7 @@
     "image": "/images/people/nada-full.jpg",
     "borderTop": true,
     "borderBottom": false,
+    "current": false,
     "education": [
       {
         "degree": "M.Sc. in Engineering Technology",

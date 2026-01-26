@@ -24,6 +24,7 @@ export type Profile = {
   badges?: string[];
   organization?: string;
   location?: string;
+  startDate?: string;
 };
 
 export default function TeamCardOverlay({

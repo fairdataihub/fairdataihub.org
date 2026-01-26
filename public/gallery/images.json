@@ -586,5 +586,18 @@
     ],
     "tags": ["dinner", "calmi2"],
     "description": "CalMI2 monthly dinner"
+  },
+  {
+    "event": "Monthly Brainstorming Meeting",
+    "folder": "2026-01-22 - Monthly Brainstorming Meeting",
+    "date": "2026-01-22",
+    "images": [
+      {
+        "name": "zoom.JPG",
+        "alt": "Team gathered for montly brainstorming meeting"
+      }
+    ],
+    "tags": ["zoom", "meeting"],
+    "description": "Monthly Brainstorming Meeting"
   }
 ]

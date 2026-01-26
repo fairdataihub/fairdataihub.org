@@ -16,7 +16,8 @@ import { safeLqip, safeProbe } from '@/utils/imageFetch';
 
 export default function TeamPage({
   TeamMembers,
-  Interns,
+  currentInterns,
+  pastInterns,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const [selected, setSelected] = useState<CardProfile | null>(null);
   const [open, setOpen] = useState(false);
@@ -108,14 +109,14 @@ export default function TeamPage({
           </>
         )}
 
-        {/* Interns grid */}
-        {Interns.length > 0 && (
+        {/* Current Interns grid */}
+        {currentInterns.length > 0 && (
           <>
             <div className="my-12 flex items-center">
               <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-r" />
 
               <span className="mx-6 text-4xl font-extrabold tracking-tight text-gray-900 select-none sm:text-5xl">
-                Interns
+                Current Interns
               </span>
 
               <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-l" />
@@ -124,7 +125,30 @@ export default function TeamPage({
               layout
               className="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
             >
-              {Interns.map((p) => (
+              {currentInterns.map((p) => (
+                <TeamCardOverlay key={p.id} profile={p} onOpen={openProfile} />
+              ))}
+            </motion.div>
+          </>
+        )}
+
+        {/* Past Interns grid */}
+        {pastInterns.length > 0 && (
+          <>
+            <div className="my-12 flex items-center">
+              <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-r" />
+
+              <span className="mx-6 text-4xl font-extrabold tracking-tight text-gray-900 select-none sm:text-5xl">
+                Past Interns
+              </span>
+
+              <div className="from-primary/10 via-primary/50 to-primary h-px flex-1 rounded-lg bg-gradient-to-l" />
+            </div>
+            <motion.div
+              layout
+              className="mx-auto grid max-w-screen-xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              {pastInterns.map((p) => (
                 <TeamCardOverlay key={p.id} profile={p} onOpen={openProfile} />
               ))}
             </motion.div>
@@ -156,18 +180,35 @@ export const getStaticProps = async () => {
     }),
   );
 
-  const Interns = await Promise.all(
-    INTERNS_JSON.map(async (member: any) => {
-      let imageUrl = `https://fairdataihub.org${member.image}`;
-      if (process.env.NODE_ENV === `development`) {
-        imageUrl = `http://localhost:3000${member.image}`;
-      }
-      const { width, height } = await safeProbe(imageUrl);
-      const blurDataURL = await safeLqip(imageUrl);
+  const currentInterns = await Promise.all(
+    INTERNS_JSON.filter((intern) => intern.current === true).map(
+      async (member: any) => {
+        let imageUrl = `https://fairdataihub.org${member.image}`;
+        if (process.env.NODE_ENV === `development`) {
+          imageUrl = `http://localhost:3000${member.image}`;
+        }
+        const { width, height } = await safeProbe(imageUrl);
+        const blurDataURL = await safeLqip(imageUrl);
 
-      return { ...member, width, height, blurDataURL };
-    }),
+        return { ...member, width, height, blurDataURL };
+      },
+    ),
   );
 
-  return { props: { TeamMembers, Interns } };
+  const pastInterns = await Promise.all(
+    INTERNS_JSON.filter((intern) => intern.current === false).map(
+      async (member: any) => {
+        let imageUrl = `https://fairdataihub.org${member.image}`;
+        if (process.env.NODE_ENV === `development`) {
+          imageUrl = `http://localhost:3000${member.image}`;
+        }
+        const { width, height } = await safeProbe(imageUrl);
+        const blurDataURL = await safeLqip(imageUrl);
+
+        return { ...member, width, height, blurDataURL };
+      },
+    ),
+  );
+
+  return { props: { TeamMembers, pastInterns, currentInterns } };
 };

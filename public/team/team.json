@@ -40,7 +40,8 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/bvhpatel"
-    }
+    },
+    "startDate": "08/2015"
   },
   {
     "id": "Sanjay-Soundarajan",
@@ -81,7 +82,8 @@
     "orcid": {
       "show": true,
       "link": "https://orcid.org/0000-0003-2829-8032"
-    }
+    },
+    "startDate": "11/2020"
   },
   {
     "id": "Christopher-Marroquin",
@@ -109,7 +111,8 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/christopher-marroquin/"
-    }
+    },
+    "startDate": "10/2021"
   },
   {
     "id": "Jacob-Clark",
@@ -137,7 +140,8 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/jacob-clarksd/"
-    }
+    },
+    "startDate": "11/2021"
   },
   {
     "id": "Dorian-Portillo",
@@ -165,7 +169,8 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/dorian-portillo-4733b61b5/"
-    }
+    },
+    "startDate": "12/2020"
   },
   {
     "id": "Aydan-Gasimova",
@@ -198,7 +203,8 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/aydan-gasimova-a98b7521b/"
-    }
+    },
+    "startDate": "01/2023"
   },
   {
     "id": "Xuebin-Dong",
@@ -231,7 +237,8 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/dxb2306"
-    }
+    },
+    "startDate": "01/2025"
   },
   {
     "id": "Nahid-Zeinali",
@@ -274,7 +281,8 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/nahid-zeinali-15440910b/"
-    }
+    },
+    "startDate": "02/2025"
   },
   {
     "id": "James-ONeill",
@@ -316,6 +324,7 @@
     "linkedin": {
       "show": true,
       "link": "https://www.linkedin.com/in/jimnoneill/"
-    }
+    },
+    "startDate": "09/2025"
   }
 ]

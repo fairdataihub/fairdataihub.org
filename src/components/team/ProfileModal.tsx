@@ -54,6 +54,29 @@ function SocialIcon({
   );
 }
 
+function formatStartDate(raw?: string): string | null {
+  if (!raw) return null;
+  const [mm, yy] = raw.split(`/`);
+  const monthIndex = parseInt(mm, 10) - 1;
+  const year = yy;
+  const monthName = [
+    `Jan`,
+    `Feb`,
+    `Mar`,
+    `Apr`,
+    `May`,
+    `Jun`,
+    `Jul`,
+    `Aug`,
+    `Sep`,
+    `Oct`,
+    `Nov`,
+    `Dec`,
+  ][monthIndex];
+  if (!monthName || !year) return null;
+  return `Since ${monthName} ${year}`;
+}
+
 export default function ProfileModal({
   open,
   onClose,
@@ -209,6 +232,19 @@ export default function ProfileModal({
                             {profile.organization}
                           </Chip>
                         )}
+                        {formatStartDate(profile?.startDate) && (
+                          <Chip
+                            icon={
+                              <Icon
+                                icon="mdi:calendar-start"
+                                className="h-4 w-4"
+                              />
+                            }
+                            title="Start Date"
+                          >
+                            {formatStartDate(profile?.startDate)}
+                          </Chip>
+                        )}
                       </div>
 
                       <div className="mt-2 mb-4 h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
@@ -236,7 +272,7 @@ export default function ProfileModal({
                             {profile.education.map((deg, i) => {
                               const parts = [
                                 deg.degree,
-                                deg.institution && ` — ${deg.institution}`,
+                                deg.institution && ` - ${deg.institution}`,
                                 deg.year && ` (${deg.year})`,
                               ]
                                 .filter(Boolean)
