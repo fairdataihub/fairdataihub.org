@@ -92,38 +92,57 @@ export default function Globe({
   };
 
   useEffect(() => {
+    let globe = null;
+    let frameId = null;
+
+    const initGlobe = () => {
+      if (!canvasRef.current) return;
+
+      setWidth();
+
+      // Wait for the canvas to have actual dimensions before initializing
+      if (width <= 0) {
+        frameId = requestAnimationFrame(initGlobe);
+        return;
+      }
+
+      globe = createGlobe(canvasRef.current, {
+        devicePixelRatio: 2,
+        width: width * 2,
+        height: width * 2,
+        scale: scale,
+        mapBrightness: brightness,
+        dark: dark,
+        baseColor: hexToRgb(baseColor),
+        markerColor: hexToRgb(markerColor),
+        glowColor: hexToRgb(glowColor),
+        opacity: opacity,
+        offset: [offsetX, offsetY],
+        markers: markers,
+        phi: 0,
+        theta: 0.3,
+        diffuse: 0.4,
+        mapSamples: 16000,
+        onRender: (state) => {
+          if (!pointerInteracting.current) {
+            phi += speed;
+          }
+
+          state.phi = phi + r.get();
+          state.width = width * 2;
+          state.height = width * 2;
+        },
+      });
+    };
+
     window.addEventListener('resize', setWidth);
-    setWidth();
+    frameId = requestAnimationFrame(initGlobe);
 
-    const globe = createGlobe(canvasRef.current, {
-      devicePixelRatio: 2,
-      width: width * 2,
-      height: width * 2,
-      scale: scale,
-      mapBrightness: brightness,
-      dark: dark,
-      baseColor: hexToRgb(baseColor),
-      markerColor: hexToRgb(markerColor),
-      glowColor: hexToRgb(glowColor),
-      opacity: opacity,
-      offset: [offsetX, offsetY],
-      markers: markers,
-      phi: 0,
-      theta: 0.3,
-      diffuse: 0.4,
-      mapSamples: 16000,
-      onRender: (state) => {
-        if (!pointerInteracting.current) {
-          phi += speed;
-        }
-
-        state.phi = phi + r.get();
-        state.width = width * 2;
-        state.height = width * 2;
-      },
-    });
-
-    return () => globe.destroy();
+    return () => {
+      window.removeEventListener('resize', setWidth);
+      if (frameId) cancelAnimationFrame(frameId);
+      if (globe) globe.destroy();
+    };
   }, []);
 
   return (
