@@ -1,3 +1,11 @@
+## [2.79.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.79.1...v2.79.2) (2026-02-02)
+
+
+### Bug Fixes
+
+* 🐛 defer globe intialization until canvas has dimensions ([4a5ee92](https://github.com/fairdataihub/fairdataihub.org/commit/4a5ee924e50756ed02d54562ab63f97fd98cba27))
+* 🐛 retry globe init when canvas ref not yet attached ([a242b2b](https://github.com/fairdataihub/fairdataihub.org/commit/a242b2b5b3f9f12b713ea014d7ef335c3396d793))
+
 ## [2.79.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.79.0...v2.79.1) (2026-01-26)
 
 
