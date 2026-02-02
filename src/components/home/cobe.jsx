@@ -96,7 +96,10 @@ export default function Globe({
     let frameId = null;
 
     const initGlobe = () => {
-      if (!canvasRef.current) return;
+      if (!canvasRef.current) {
+        frameId = requestAnimationFrame(initGlobe);
+        return;
+      }
 
       setWidth();
 
