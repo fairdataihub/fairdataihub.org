@@ -1,3 +1,10 @@
+## [2.80.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.0...v2.80.1) (2026-02-13)
+
+
+### Bug Fixes
+
+* 🐛 image update ([4c256c4](https://github.com/fairdataihub/fairdataihub.org/commit/4c256c46925987f85bf3d0c7bc11ab939ee56a61))
+
 # [2.80.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.79.2...v2.80.0) (2026-02-13)
 
 
