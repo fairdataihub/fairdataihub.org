@@ -2,20 +2,22 @@
 title: 'Self Hosting with Kamal Guide'
 authors:
   - 'DorianPortillo'
-date: '2026-02-15'
-category: 'News'
+date: '2026-02-12'
+category: 'Guides'
 heroImage: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 imageAuthor: 'Taylor Vick'
 imageAuthorLink: 'https://unsplash.com/@tvick'
 subtitle: 'Deploy Any Containerized Service with Zero Downtime.'
 tags:
-  - BOSC
-  - ISMB
-  - CoFest
-  - Open Science
-  - FAIR Principles
-  - Community Collaboration
-  - Large Language Models (LLMs)
+  - self-hosting
+  - kamal
+  - docker
+  - deployment
+  - devops
+  - guide
+  - nuxt
+  - prisma
+  - github
 ---
 
 For a long time, self-hosting and deployments were a mystery but lately, I've realized that it is one of the most invaluable skills a developer can learn. Having ownership over your infrastructure and data is important in this era of cloud services where vendor lock-in and data privacy concerns are being raised more and more.
