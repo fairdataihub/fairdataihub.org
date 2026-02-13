@@ -804,11 +804,10 @@ Technology will always continue to change and the way we work. Being willing to 
 
 ## Sources
 
-- [fairdataihub/kamal-deploy](https://github.com/fairdataihub/kamal-deploy)
+- [fairdataihub/kamal-deploy](https://github.com/fairdataihub/kamal-deploy) (Example Nuxt 3 + PostgreSQL + S3 backups repository)
 - [Kamal: Deploy web apps anywhere](https://kamal-deploy.org/) (Official documentation)
 - [Kamal Handbook, 2nd Edition](https://kamalmanual.com/handbook/) by Josef Strzibny (Version 2.0.1, covering Kamal 2.2.1)
 - [We stand to save $7m over five years from our cloud exit](https://world.hey.com/dhh/we-stand-to-save-7m-over-five-years-from-our-cloud-exit-53996caa) by David Heinemeier Hansson, 37signals
-- [fairdataihub/kamal-deploy](https://github.com/fairdataihub/kamal-deploy) (Example Nuxt 3 + PostgreSQL + S3 backups repository)
 - [eeshugerman/postgres-backup-s3](https://github.com/eeshugerman/postgres-backup-s3) (Automated PostgreSQL backup container)
 - [GitHub Secrets](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets)
 - [Kamal Ansible Manager](https://github.com/guillaumebriday/kamal-ansible-manager)
