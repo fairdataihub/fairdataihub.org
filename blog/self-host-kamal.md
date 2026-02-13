@@ -600,10 +600,10 @@ The key thing Kamal needs is a health check endpoint. By default, it hits `GET /
 
 ## Deploying for the First Time
 
-With your `deploy.yml`, `.kamal/secrets`, and `Dockerfile` in place, the first deploy uses `kamal setup` and `kamal deploy`. You will need to ensure all your changes have at least been commited locally since `kamal setup` reads the `deploy.yml` from the current git HEAD to know how to configure the server.
+With your `deploy.yml`, `.kamal/secrets`, and `Dockerfile` in place, the first deploy uses `kamal setup` and `kamal deploy`. You will need to ensure all your changes have at least been committed locally since `kamal setup` reads the `deploy.yml` from the current git HEAD to know how to configure the server.
 
 ```bash
-# After commiting your latest changes to git, run the initial setup
+# After committing your latest changes to git, run the initial setup
 kamal setup
 ```
 
@@ -674,7 +674,7 @@ aliases:
 
 ## Automating Deploys with GitHub Actions
 
-Now you could manually run `kamal deploy` from your local machine everytime you want a new release but the real power comes from wiring it into CI/CD. With GitHub Actions, every push to `main` (or any other branch you configure) can automatically build, push, and deploy your application with zero manual intervention.
+Now you could manually run `kamal deploy` from your local machine every time you want a new release but the real power comes from wiring it into CI/CD. With GitHub Actions, every push to `main` (or any other branch you configure) can automatically build, push, and deploy your application with zero manual intervention.
 
 ### Setting Up GitHub Environment Secrets
 
