@@ -796,9 +796,9 @@ A few things that might trip you up on your first deploy:
 
 ## Wrapping Up
 
-As daunting as it may seem at first, self hosting can be a rewarding experience. In this field, we are all lifelong students. Technology changes quickly, and learning Kamal was a great way to demystify the deployment process. I hope this guide gives you the curiosity to explore self hosting and confidence to deploy your own applications.
+As daunting as it may seem at first, self hosting can be a rewarding experience. In this field, we are all lifelong students. Technology changes quickly, and learning Kamal was a great way to demystify the deployment process.
 
-Technology will always continue to change and the way we work. Being willing to struggle through the initial stages is just part of the journey. I hope this guide gives you the curiosity and confidence to host your own applications!
+Technology will always continue to change and the way we work and struggling through the initial stages is just part of the journey. I hope this guide gives you the curiosity and confidence to host your own applications!
 
 ---
 
