@@ -1,3 +1,24 @@
+## [2.81.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.0...v2.81.1) (2026-02-19)
+
+
+### Bug Fixes
+
+* 🐛 blog ([2e0fbcb](https://github.com/fairdataihub/fairdataihub.org/commit/2e0fbcbf90198e0a8b56e5697c7ef4041f6db14f))
+
+# [2.81.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.2...v2.81.0) (2026-02-19)
+
+
+### Features
+
+* ✨ blog post ([50dd534](https://github.com/fairdataihub/fairdataihub.org/commit/50dd534897e630b2d3fe93730f25438c986e4bfd))
+
+## [2.80.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.1...v2.80.2) (2026-02-19)
+
+
+### Bug Fixes
+
+* 🐛 redirect aireadi learn more ([0b9736e](https://github.com/fairdataihub/fairdataihub.org/commit/0b9736e9c2eb500334103cdff7b843132992cf3d))
+
 ## [2.80.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.0...v2.80.1) (2026-02-13)
 
 
