@@ -24,6 +24,8 @@ export default function ProjectAbout({
   description,
   features,
 }: ProjectAboutProps) {
+  const gridCols = features.length > 3 ? `md:grid-cols-2` : `md:grid-cols-3`;
+
   return (
     <section className="mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:px-10">
       <div className="text-center lg:text-left">
@@ -34,20 +36,21 @@ export default function ProjectAbout({
           {description}
         </p>
       </div>
-
-      <div className="mx-auto mt-16 flex max-w-screen-xl flex-col">
+      <div className={`mt-12 grid gap-6 ${gridCols}`}>
         {features.map((feature, index) => (
           <div
             key={index}
-            className="flex items-start gap-5 border-b border-stone-200 py-7"
+            className="group rounded-xl border border-pink-100 bg-gray-50 p-6 transition-all duration-300 hover:border-pink-300 hover:shadow-[0_8px_30px_rgba(219,39,119,0.08)]"
           >
-            <div className="bg-primary/10 text-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-xl">
-              <Icon icon={feature.icon} width={48} height={48} />
-            </div>
-            <div>
+            <div className="mb-3 flex items-center gap-3">
+              <div className="bg-primary/10 text-primary group-hover:bg-primary/20 flex h-10 w-10 shrink-0 items-center justify-center rounded-xl transition-all duration-300 group-hover:shadow-[0_0_16px_rgba(219,39,119,0.25)]">
+                <Icon icon={feature.icon} width={38} height={38} />
+              </div>
               <h3 className="text-xl font-semibold text-stone-900">
                 {feature.title}
               </h3>
+            </div>
+            <div>
               <p className="font-asap mt-2 text-base leading-relaxed text-stone-700">
                 {feature.description}
               </p>
@@ -67,7 +70,7 @@ export default function ProjectAbout({
                         height={18}
                       />
                     </span>
-                    <span className="absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover:left-0 group-hover/link:w-full" />
+                    <span className="absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover:left-0 group-hover:w-full" />
                   </a>
                 </div>
               )}
@@ -75,6 +78,7 @@ export default function ProjectAbout({
           </div>
         ))}
       </div>
+      {` `}
     </section>
   );
 }
