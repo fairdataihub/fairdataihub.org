@@ -15,9 +15,9 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
   const heroButtons = [
     {
       text: `Learn more`,
-      href: `https://docs.aireadi.org/`, // update later if AI-READI gets its own docs URL
+      href: `https://aireadi.org/`, // update later if AI-READI gets its own docs URL
       target: `_blank`,
-      ariaLabel: `AI-READI Documentation`,
+      ariaLabel: `AI-READI website`,
       rel: `noopener`,
     },
   ];
