@@ -18,11 +18,11 @@ tags:
 
 ## 🚀 AI-READI Dataset v3 is Out
 
-We are excited to announce the release of v3 of the AI-READI dataset. It is now available for access through FAIRhub at [https://doi.org/10.60775/fairhub.3](https://doi.org/10.60775/fairhub.3). This release includes 350k+ files (3.9 TB) of data from 2,280 participants, expanding the breadth and depth of multimodal data available to researchers working to uncover new insights into Type 2 Diabetes.
+We are excited to announce the release of v3 of the AI-READI dataset. It is now available for access through FAIRhub at [https://doi.org/10.60775/fairhub.3](https://doi.org/10.60775/fairhub.3). This release includes 350k+ files (3.8 TB) of data from 2,280 participants, expanding the breadth and depth of multimodal data available to researchers working to uncover new insights into Type 2 Diabetes.
 
 On popular request, we have also released a mini-version of the dataset with data from 100 participants (180 GB, <16k files) that we encourage users to download first to understand the data and set up their pipelines before downloading the full dataset: https://doi.org/10.60775/fairhub.4.
 
-## ✨ What’s new in v3
+## ✨ What’s New in v3
 
 This release adds major new content and improvements aimed at making the dataset more impactful and easier to use:
 
@@ -31,11 +31,11 @@ This release adds major new content and improvements aimed at making the dataset
 - A new scalable dissemination method using Azure storage containers, enabling improved data delivery and access
 
 <figure>
-  <img src="/images/blog/ai-readi-v3/snapshot-v3.png" alt="FAIR Data Innovations Hub team members working at ISMB 2025" width="70%" />
+  <img src="/images/blog/ai-readi-v3/snapshot-v3.png" alt="Overview of the AI-READI dataset v3" width="70%" />
   <figcaption>Overview of the AI-READI dataset v3.</figcaption>
 </figure>
 
-## 🔗Accessing the dataset and resources
+## 🔗Accessing the Dataset and Resources
 
 - Dataset access (request via FAIRhub): https://fairhub.io
 - Documentation: https://docs.aireadi.org/
