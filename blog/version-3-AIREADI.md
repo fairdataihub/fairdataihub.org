@@ -56,7 +56,7 @@ Our team at the FAIR Data Innovations Hub contributes to multiple aspects of AI-
 - Developing and maintaining the project website (https://aireadi.org) and the documentation website (https://docs.aireadi.org)
 - Supporting workforce development through mentoring interns in the AI-ready internship program
 
-## 📢 Disclosures
+## 🤝 Funding and Collaborations
 
 This project is supported by the National Institutes of Health (OT2OD032644). In addition to the FAIR Data Innovations Hub (California Medical Innovations Institute), the AI-READI Consortium includes teams from the following institutions:
 
