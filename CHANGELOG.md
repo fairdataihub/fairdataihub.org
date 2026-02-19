@@ -1,3 +1,10 @@
+# [2.81.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.2...v2.81.0) (2026-02-19)
+
+
+### Features
+
+* ✨ blog post ([50dd534](https://github.com/fairdataihub/fairdataihub.org/commit/50dd534897e630b2d3fe93730f25438c986e4bfd))
+
 ## [2.80.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.1...v2.80.2) (2026-02-19)
 
 
