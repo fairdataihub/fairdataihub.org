@@ -1,3 +1,10 @@
+## [2.80.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.1...v2.80.2) (2026-02-19)
+
+
+### Bug Fixes
+
+* 🐛 redirect aireadi learn more ([0b9736e](https://github.com/fairdataihub/fairdataihub.org/commit/0b9736e9c2eb500334103cdff7b843132992cf3d))
+
 ## [2.80.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.0...v2.80.1) (2026-02-13)
 
 
