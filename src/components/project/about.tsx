@@ -35,41 +35,43 @@ export default function ProjectAbout({
         </p>
       </div>
 
-      <div className="mt-8 grid gap-5 md:grid-cols-2">
+      <div className="mx-auto mt-16 flex max-w-screen-xl flex-col">
         {features.map((feature, index) => (
           <div
             key={index}
-            className="group relative overflow-hidden rounded-2xl border border-pink-100 bg-white/90 p-5 shadow-[0_16px_40px_rgba(15,23,42,0.06)] transition-all hover:-translate-y-1 hover:border-pink-300 hover:shadow-[0_24px_70px_rgba(203,67,142,0.20)]"
+            className="flex items-start gap-5 border-b border-stone-200 py-7"
           >
-            <div className="bg-primary/10 text-primary mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full">
-              <Icon icon={feature.icon} width={22} height={22} />
+            <div className="bg-primary/10 text-primary flex h-12 w-12 shrink-0 items-center justify-center rounded-xl">
+              <Icon icon={feature.icon} width={48} height={48} />
             </div>
-            <h3 className="text-lg font-semibold text-stone-900">
-              {feature.title}
-            </h3>
-            <p className="font-asap mt-2 text-sm leading-relaxed text-stone-700">
-              {feature.description}
-            </p>
-            {feature.link && (
-              <div className="mt-3 inline-flex md:mt-2">
-                <a
-                  href={feature.link.href}
-                  target={feature.link.target}
-                  rel={feature.link.rel}
-                  className="group/link text-primary relative inline-flex items-center gap-1 text-sm font-semibold transition-colors duration-300 hover:text-pink-700"
-                >
-                  <span className="relative z-20 inline-flex items-center gap-1">
-                    {feature.link.text}
-                    <Icon
-                      icon="solar:arrow-right-broken"
-                      width={18}
-                      height={18}
-                    />
-                  </span>
-                  <span className="absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover:left-0 group-hover/link:w-full" />
-                </a>
-              </div>
-            )}
+            <div>
+              <h3 className="text-xl font-semibold text-stone-900">
+                {feature.title}
+              </h3>
+              <p className="font-asap mt-2 text-base leading-relaxed text-stone-700">
+                {feature.description}
+              </p>
+              {feature.link && (
+                <div className="mt-3 inline-flex md:mt-2">
+                  <a
+                    href={feature.link.href}
+                    target={feature.link.target}
+                    rel={feature.link.rel}
+                    className="text-primary relative inline-flex items-center gap-1 text-sm font-semibold transition-colors duration-300 hover:text-pink-700"
+                  >
+                    <span className="relative z-20 inline-flex items-center gap-1">
+                      {feature.link.text}
+                      <Icon
+                        icon="solar:arrow-right-broken"
+                        width={18}
+                        height={18}
+                      />
+                    </span>
+                    <span className="absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover:left-0 group-hover/link:w-full" />
+                  </a>
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>
