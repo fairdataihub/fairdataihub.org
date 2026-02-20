@@ -117,13 +117,13 @@ export default function Carousel({
               return (
                 <div
                   key={img.id}
-                  className="flex items-center justify-center py-4"
+                  className="flex h-full w-full items-center justify-center py-4"
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
                     src={`${CDN_BASE}/${img.folder}/${img.name}`}
                     alt={img.alt || img.description || `Gallery image`}
-                    className="z-5 object-contain"
+                    className="z-5 h-full w-full object-contain"
                   />
                 </div>
               );

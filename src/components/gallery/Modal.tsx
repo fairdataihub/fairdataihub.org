@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 
 import type { ImageProps } from '@/utils/types';
 
-import Carousel from './Carousel ';
+import Carousel from './Carousel';
 
 export default function Modal({ images }: { images: ImageProps[] }) {
   const router = useRouter();

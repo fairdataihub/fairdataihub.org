@@ -1,7 +1,7 @@
 import type { GetStaticProps, NextPage } from 'next';
 import { useRouter } from 'next/router';
 
-import Carousel from '@/components/gallery/Carousel ';
+import Carousel from '@/components/gallery/Carousel';
 import Seo from '@/components/seo/seo';
 
 import GALLERY_JSON from '@/public/gallery/images.json';
