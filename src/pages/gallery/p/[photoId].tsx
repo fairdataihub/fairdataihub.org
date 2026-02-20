@@ -8,9 +8,9 @@ import GALLERY_JSON from '@/public/gallery/images.json';
 import { safeLqip, safeProbe } from '@/utils/imageFetch';
 import type { ImageProps } from '@/utils/types';
 
-type Props = { currentPhoto: ImageProps };
+type Props = { currentPhoto: ImageProps; images: ImageProps[] };
 
-const PhotoPage: NextPage<Props> = ({ currentPhoto }) => {
+const PhotoPage: NextPage<Props> = ({ currentPhoto, images }) => {
   const router = useRouter();
   const { photoId } = router.query;
   const index = Number.isFinite(Number(photoId))
@@ -25,8 +25,8 @@ const PhotoPage: NextPage<Props> = ({ currentPhoto }) => {
         templateUrl={`https://fairdataihub.org/gallery/p/${index}`}
         templateImage="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=GalleryI&org=fairdataihub"
       />
-      <main className="mx-auto max-w-[1960px] p-4">
-        <Carousel currentPhoto={currentPhoto} index={index} />
+      <main className="mx-auto p-4">
+        <Carousel images={images} index={index} />
       </main>
     </>
   );
@@ -36,7 +36,7 @@ export default PhotoPage;
 
 export const getStaticProps: GetStaticProps<Props> = async (context) => {
   const flat: ImageProps[] = [];
-  let i = 0;
+  let i = 1;
 
   const sorted_GALLERY_JSON = [...GALLERY_JSON].sort((a, b) =>
     a.date && b.date ? (a.date > b.date ? 1 : -1) : 0,
@@ -76,7 +76,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   currentPhoto.width = width;
   currentPhoto.height = height;
   currentPhoto.blurDataUrl = blurDataUrl;
-  return { props: { currentPhoto } };
+  return { props: { currentPhoto, images: flat } };
 };
 
 export async function getStaticPaths() {
