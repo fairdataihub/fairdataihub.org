@@ -1,3 +1,10 @@
+## [2.81.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.1...v2.81.2) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 update image id assignment order ([c2f5fe1](https://github.com/fairdataihub/fairdataihub.org/commit/c2f5fe13ec679ea53119c0bd5ba584f99c7e4790))
+
 ## [2.81.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.0...v2.81.1) (2026-02-19)
 
 
