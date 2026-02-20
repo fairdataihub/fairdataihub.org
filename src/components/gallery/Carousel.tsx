@@ -28,8 +28,17 @@ export default function Carousel({
   const router = useRouter();
   const [nav1, setNav1] = useState<Slider | null>(null);
   const [nav2, setNav2] = useState<Slider | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
   const sliderRef1 = useRef<Slider | null>(null);
   const sliderRef2 = useRef<Slider | null>(null);
+
+  useEffect(() => {
+    const checkMobile = () =>
+      setIsMobile(typeof window !== `undefined` && window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener(`resize`, checkMobile);
+    return () => window.removeEventListener(`resize`, checkMobile);
+  }, []);
 
   useEffect(() => {
     setNav1(sliderRef1.current);
@@ -87,7 +96,9 @@ export default function Carousel({
     ref: (slider: Slider | null) => {
       (sliderRef2 as React.MutableRefObject<Slider | null>).current = slider;
     },
-    slidesToShow: Math.min(images.length, 10),
+    slidesToShow: isMobile
+      ? Math.min(images.length, 5)
+      : Math.min(images.length, 10),
     swipeToSlide: true,
     focusOnSelect: true,
     arrows: true,
@@ -96,11 +107,15 @@ export default function Carousel({
     responsive: [
       {
         breakpoint: 1024,
-        settings: { slidesToShow: Math.min(images.length, 4) },
+        settings: {
+          slidesToShow: isMobile
+            ? Math.min(images.length, 5)
+            : Math.min(images.length, 4),
+        },
       },
       {
         breakpoint: 640,
-        settings: { slidesToShow: Math.min(images.length, 3) },
+        settings: { slidesToShow: Math.min(images.length, 5) },
       },
     ],
   };
