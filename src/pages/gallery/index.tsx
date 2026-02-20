@@ -19,7 +19,7 @@ type Props = { images: ImageProps[] };
 const Gallery: NextPage<Props> = ({ images }) => {
   const router = useRouter();
   const { photoId } = router.query;
-  const [touchedId, setTouchedId] = useState<number | null>(null);
+  const [touchedId, setTouchedId] = useState<string | null>(null);
 
   const getYear = (img: ImageProps) =>
     img.date
@@ -184,8 +184,6 @@ const Gallery: NextPage<Props> = ({ images }) => {
 export default Gallery;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  let i = 1;
-
   const sorted_GALLERY_JSON = [...GALLERY_JSON].sort((a, b) =>
     a.date && b.date ? (a.date > b.date ? 1 : -1) : 0,
   );
@@ -212,7 +210,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         const blurDataUrl = (await getPlaiceholder(buffer)).base64;
 
         return {
-          id: i++,
+          id: img.id,
           folder: event.folder,
           name: img.name,
           alt: img.alt,
@@ -234,9 +232,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const results = rawResults.filter(
     (img): img is NonNullable<typeof img> => img !== null,
   );
-
-  // reassign ids (in sorted order, oldest first)
-  results.forEach((img, idx) => (img.id = idx + 1));
 
   // reverse for display (newest first)
   return { props: { images: results.reverse() } };

@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import data from '@/public/gallery/images.json';
 
 type Photo = {
-  id: number;
+  id: string;
   folder: string;
   name: string;
   alt?: string;
@@ -16,18 +16,17 @@ type Photo = {
 
 const flat: Photo[] = (() => {
   const out: Photo[] = [];
-  let i = 0;
   (
     data as Array<{
       folder: string;
       date?: string;
       description?: string;
-      images: Array<{ name: string; alt?: string }>;
+      images: Array<{ id: string; name: string; alt?: string }>;
     }>
   ).forEach((evt) => {
     evt.images.forEach((img) => {
       out.push({
-        id: i++,
+        id: img.id,
         folder: evt.folder,
         name: img.name,
         alt: img.alt,

@@ -22,10 +22,11 @@
     "lint": "eslint --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|jsx)\"",
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|jsx)\" --write",
     "prepare": "husky install",
-    "postinstall": "husky install",
+    "postinstall": "husky install && yarn scripts:gallery_id",
     "commit": "cz",
     "postbuild": "next-sitemap",
     "semantic-release": "semantic-release",
+    "scripts:gallery_id": "tsx scripts/gallery_id.ts",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\"",
     "reset": "rm -rf node_modules .next && yarn install"
@@ -64,6 +65,7 @@
     "lucide-react": "^0.279.0",
     "markdown-it": "13.0.2",
     "motion": "^12.23.24",
+    "nanoid": "^5.1.6",
     "next": "16.0.10",
     "next-themes": "^0.4.6",
     "plaiceholder": "2.5.0",
@@ -141,6 +143,7 @@
     "semantic-release": "22.0.0",
     "tailwindcss": "^4.1.13",
     "tailwindcss-debug-screens": "2.2.1",
+    "tsx": "^4.21.0",
     "typescript": "5.3.3"
   },
   "config": {

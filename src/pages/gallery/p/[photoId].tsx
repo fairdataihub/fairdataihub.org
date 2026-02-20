@@ -12,17 +12,22 @@ type Props = { currentPhoto: ImageProps; images: ImageProps[] };
 
 const PhotoPage: NextPage<Props> = ({ currentPhoto, images }) => {
   const router = useRouter();
-  const { photoId } = router.query;
-  const index = Number.isFinite(Number(photoId))
-    ? Number(photoId)
-    : currentPhoto.id;
+  const photoId =
+    typeof router.query.photoId === `string` ? router.query.photoId : ``;
+  const index =
+    photoId === ``
+      ? 0
+      : Math.max(
+          0,
+          images.findIndex((img) => img.id === photoId),
+        );
 
   return (
     <>
       <Seo
         templateTitle="Gallery"
         templateDescription="A collection of photos from the FAIR Data Innovations Hub"
-        templateUrl={`https://fairdataihub.org/gallery/p/${index}`}
+        templateUrl={`https://fairdataihub.org/gallery/p/${photoId || currentPhoto.id}`}
         templateImage="https://kalai.fairdataihub.org/api/generate?app=fairdataihub&title=GalleryI&org=fairdataihub"
       />
       <main className="mx-auto p-4">
@@ -36,7 +41,6 @@ export default PhotoPage;
 
 export const getStaticProps: GetStaticProps<Props> = async (context) => {
   const flat: ImageProps[] = [];
-  let i = 1;
 
   const sorted_GALLERY_JSON = [...GALLERY_JSON].sort((a, b) =>
     a.date && b.date ? (a.date > b.date ? 1 : -1) : 0,
@@ -45,7 +49,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
   sorted_GALLERY_JSON.forEach((event) => {
     event.images.forEach((img) => {
       flat.push({
-        id: i++,
+        id: img.id,
         folder: event.folder,
         name: img.name,
         alt: img.alt,
@@ -58,7 +62,7 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
     });
   });
 
-  const idParam = Number((context.params as { photoId: string }).photoId);
+  const idParam = (context.params as { photoId: string }).photoId;
   const currentPhoto = flat.find((img) => img.id === idParam);
 
   if (!currentPhoto) {
@@ -81,16 +85,14 @@ export const getStaticProps: GetStaticProps<Props> = async (context) => {
 
 export async function getStaticPaths() {
   const paths: { params: { photoId: string } }[] = [];
-  let i = 0;
 
   const sorted_GALLERY_JSON = [...GALLERY_JSON].sort((a, b) =>
     a.date && b.date ? (a.date > b.date ? 1 : -1) : 0,
   );
 
   sorted_GALLERY_JSON.forEach((event) => {
-    event.images.forEach(() => {
-      paths.push({ params: { photoId: i.toString() } });
-      i++;
+    event.images.forEach((img) => {
+      paths.push({ params: { photoId: img.id } });
     });
   });
 

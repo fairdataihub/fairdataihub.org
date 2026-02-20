@@ -8,20 +8,29 @@ import Carousel from './Carousal';
 
 export default function Modal({ images }: { images: ImageProps[] }) {
   const router = useRouter();
-  const index = Number.isFinite(Number(router.query.photoId))
-    ? Number(router.query.photoId)
-    : 0;
+  const photoId =
+    typeof router.query.photoId === `string` ? router.query.photoId : ``;
+  const index =
+    photoId === ``
+      ? 0
+      : Math.max(
+          0,
+          images.findIndex((img) => img.id === photoId),
+        );
 
   function handleClose() {
     router.push(`/gallery`, undefined, { shallow: true });
   }
 
-  function handleSlideChange(current: number) {
-    router.replace(
-      { pathname: `/gallery`, query: { photoId: current } },
-      undefined,
-      { shallow: true },
-    );
+  function handleSlideChange(slideIndex: number) {
+    const img = images[slideIndex];
+    if (img) {
+      router.replace(
+        { pathname: `/gallery`, query: { photoId: img.id } },
+        undefined,
+        { shallow: true },
+      );
+    }
   }
 
   return (
@@ -40,7 +49,7 @@ export default function Modal({ images }: { images: ImageProps[] }) {
       <div className="relative z-[5] h-full w-full">
         <Carousel
           images={images}
-          index={images.length - index}
+          index={index}
           onClose={handleClose}
           onSlideChange={handleSlideChange}
         />

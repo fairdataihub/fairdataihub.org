@@ -60,11 +60,14 @@ export default function Carousel({
     initialSlide: index,
     afterChange: (current: number) => {
       if (onSlideChange) {
-        onSlideChange(images.length - current);
+        onSlideChange(current);
       } else {
-        router.replace(`/gallery/p/${images.length - current}`, undefined, {
-          shallow: true,
-        });
+        const img = images[current];
+        if (img) {
+          router.replace(`/gallery/p/${img.id}`, undefined, {
+            shallow: true,
+          });
+        }
       }
     },
     arrows: true,
