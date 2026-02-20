@@ -236,8 +236,8 @@ export default function Carousel({
                         <Image
                           src={thumbUrl}
                           alt=""
-                          width={90}
-                          height={60}
+                          width={180}
+                          height={120}
                           className="z-5 h-full w-full object-cover"
                         />
                       </div>
