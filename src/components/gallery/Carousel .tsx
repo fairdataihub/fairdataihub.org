@@ -79,11 +79,11 @@ export default function Carousel({
     ref: (slider: Slider | null) => {
       (sliderRef2 as React.MutableRefObject<Slider | null>).current = slider;
     },
-    slidesToShow: Math.min(images.length, 5),
+    slidesToShow: Math.min(images.length, 10),
     swipeToSlide: true,
     focusOnSelect: true,
     arrows: true,
-    centerMode: images.length > 5,
+    centerMode: images.length > 10,
     centerPadding: `8px`,
     responsive: [
       {
@@ -210,8 +210,8 @@ export default function Carousel({
                         <Image
                           src={thumbUrl}
                           alt=""
-                          width={180}
-                          height={120}
+                          width={90}
+                          height={60}
                           className="z-5 h-full w-full object-cover"
                         />
                       </div>
