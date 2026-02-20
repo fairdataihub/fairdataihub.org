@@ -115,7 +115,6 @@ const Gallery: NextPage<Props> = ({ images }) => {
                               className={`group relative block cursor-pointer`}
                             >
                               <div className="relative transform-gpu overflow-hidden rounded-lg shadow-xs transition duration-300 group-hover:scale-[1.03] group-hover:shadow-xl group-hover:shadow-black/10">
-                                {id}
                                 <Image
                                   alt={alt || description || `Gallery photo`}
                                   src={imageUrl}

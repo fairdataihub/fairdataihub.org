@@ -204,7 +204,6 @@ export default function Carousel({
                   return (
                     <div key={img.id} className="px-1">
                       <div className="aspect-[3/2] overflow-hidden rounded-md text-white">
-                        {img.id}
                         <Image
                           src={thumbUrl}
                           alt=""
