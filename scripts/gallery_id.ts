@@ -24,9 +24,35 @@ interface GalleryEntry {
   description: string;
 }
 
+function findDuplicateIds(data: GalleryEntry[]): string[] {
+  const seen = new Map<string, { folder: string; name: string }>();
+  const duplicates: string[] = [];
+  for (const entry of data) {
+    for (const image of entry.images) {
+      const { id } = image;
+      if (id == null || id === ``) continue;
+      const existing = seen.get(id);
+      if (existing) {
+        if (!duplicates.includes(id)) duplicates.push(id);
+      } else {
+        seen.set(id, { folder: entry.folder, name: image.name });
+      }
+    }
+  }
+  return duplicates;
+}
+
 async function addMissingIds() {
   const raw = await readFile(IMAGES_JSON_PATH, `utf-8`);
   const data: GalleryEntry[] = JSON.parse(raw);
+
+  const duplicateIds = findDuplicateIds(data);
+  if (duplicateIds.length > 0) {
+    console.error(
+      `Error: Duplicate gallery id(s) found: ${duplicateIds.join(`, `)}. Each image must have a unique id.`,
+    );
+    process.exit(1);
+  }
 
   let added = 0;
   for (const entry of data) {

@@ -233,6 +233,15 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     (img): img is NonNullable<typeof img> => img !== null,
   );
 
+  const ids = results.map((img) => img.id);
+  const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
+  const uniqueDuplicates = [...new Set(duplicateIds)];
+  if (uniqueDuplicates.length > 0) {
+    throw new Error(
+      `Duplicate gallery id(s) found: ${uniqueDuplicates.join(`, `)}. Each image must have a unique id in public/gallery/images.json.`,
+    );
+  }
+
   // reverse for display (newest first)
   return { props: { images: results.reverse() } };
 };
