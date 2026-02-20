@@ -206,9 +206,8 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
   const sorted_GALLERY_JSON = [...GALLERY_JSON].sort((a, b) =>
     a.date && b.date ? (a.date > b.date ? 1 : -1) : 0,
   );
-  const reversed_GALLERY_JSON = [...sorted_GALLERY_JSON].reverse();
 
-  const imagePromises = reversed_GALLERY_JSON.flatMap((event) =>
+  const imagePromises = sorted_GALLERY_JSON.flatMap((event) =>
     event.images.map(async (img) => {
       const imageUrl = encodeURI(
         `https://cdn.fairdataihub.org/gallery/${event.folder}/${img.name}`,
@@ -253,8 +252,9 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     (img): img is NonNullable<typeof img> => img !== null,
   );
 
-  // reassign ids
+  // reassign ids (in sorted order, oldest first)
   results.forEach((img, idx) => (img.id = idx));
 
-  return { props: { images: results } };
+  // reverse for display (newest first)
+  return { props: { images: results.reverse() } };
 };
