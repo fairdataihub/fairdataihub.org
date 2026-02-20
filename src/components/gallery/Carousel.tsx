@@ -50,7 +50,15 @@ export default function Carousel({
     }
   }
 
-  useKeypress(`Escape`, closeModal);
+  useKeypress([`Escape`, `ArrowLeft`, `ArrowRight`], (event) => {
+    if (event.key === `Escape`) {
+      closeModal();
+    } else if (event.key === `ArrowLeft`) {
+      sliderRef1.current?.slickPrev();
+    } else if (event.key === `ArrowRight`) {
+      sliderRef1.current?.slickNext();
+    }
+  });
 
   const mainSettings = {
     asNavFor: nav2 ?? undefined,
