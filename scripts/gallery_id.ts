@@ -11,7 +11,7 @@ const IMAGES_JSON_PATH = path.join(
 
 interface GalleryImage {
   name: string;
-  alt: string;
+  alt?: string;
   id?: string;
 }
 

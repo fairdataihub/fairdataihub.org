@@ -173,12 +173,15 @@ export default function Carousel({
             </a>
             <button
               type="button"
-              onClick={() =>
+              onClick={() => {
+                const img = images[index];
+                const filename =
+                  img?.name || (img?.id ? `${img.id}.jpg` : `${index}.jpg`);
                 downloadPhoto(
-                  `${CDN_BASE}/${images[index]?.folder}/${images[index]?.name}`,
-                  `${index}.jpg`,
-                )
-              }
+                  `${CDN_BASE}/${img?.folder}/${img?.name}`,
+                  filename,
+                );
+              }}
               className="rounded-full bg-black/50 p-2 text-white/75 backdrop-blur-lg transition hover:bg-black/75 hover:text-white"
               title="Download fullsize version"
             >

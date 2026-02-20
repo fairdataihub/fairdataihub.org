@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Footer() {
   const isDev = process.env.NODE_ENV === `development`;
-  const isGalleryPage = usePathname().includes(`/gallery/p/`);
+  const isGalleryPage = usePathname().includes(`/gallery/p/`) ?? false;
 
   return (
     <footer
