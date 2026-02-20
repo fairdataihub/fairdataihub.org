@@ -56,50 +56,46 @@ export default function EventListItem({
           </div>
 
           <div className="min-w-0 flex-1">
-            <h3 className="group-hover:text-primary relative line-clamp-2 text-[1.05rem] leading-snug font-semibold text-slate-900 transition-all sm:text-lg">
-              <span className="relative inline-block w-fit align-baseline">
+            <div className="flex-items-center flex justify-between gap-6">
+              <h3 className="group-hover:text-primary font-semibold text-slate-900 transition-all sm:text-lg">
                 {title}
-              </span>
-            </h3>
+              </h3>
+
+              <div className="flex items-center gap-2 text-xs">
+                {type && (
+                  <span className="group-hover:border-primary/50 rounded-lg border border-slate-300 px-2 py-0.5 transition-all">
+                    {type}
+                  </span>
+                )}
+                {location && (
+                  <span className="group-hover:border-primary/50 rounded-lg border border-slate-300 px-2 py-0.5 transition-all">
+                    {location}
+                  </span>
+                )}
+              </div>
+            </div>
 
             {subtitle && (
-              <p className="mt-1 line-clamp-2 text-sm text-slate-700">
-                {subtitle}
-              </p>
+              <p className="line-clamp-2 text-sm text-slate-700">{subtitle}</p>
             )}
 
-            <div className="mt-2 flex flex-wrap items-center gap-2 text-[11px] text-slate-700">
-              <span className="inline-flex rounded-full border border-slate-300 px-2 py-0.5 font-semibold">
-                {isPast ? `Past` : `Upcoming`}
+            <div className="text-slate-700s mt-4 flex items-center justify-between gap-2">
+              <span className="group-hover:text-primary items-center text-sm font-medium transition-all">
+                {isPast ? `View recap` : `Learn more`}
+                <Icon
+                  icon="solar:arrow-right-broken"
+                  className="ml-1 inline h-4 w-4"
+                  aria-hidden
+                />
               </span>
 
-              <span className="bg-primary inline-flex items-center rounded-lg border-2 border-white px-2 py-0.5">
+              <span className="bg-primary items-center rounded-lg px-2 py-0.5 text-xs">
                 <EventDates
                   startDateTime={startDateTime}
                   endDateTime={endDateTime}
                 />
               </span>
-
-              {type && (
-                <span className="rounded-lg border border-slate-300 px-2 py-0.5">
-                  {type}
-                </span>
-              )}
-              {location && (
-                <span className="rounded-lg border border-slate-300 px-2 py-0.5">
-                  {location}
-                </span>
-              )}
             </div>
-
-            <span className="group-hover:text-primary mt-3 inline-flex items-center text-sm font-medium underline-offset-4 transition-all">
-              {isPast ? `View recap` : `Learn more`}
-              <Icon
-                icon="solar:arrow-right-broken"
-                className="ml-1 inline h-4 w-4"
-                aria-hidden
-              />
-            </span>
           </div>
         </div>
       </div>
