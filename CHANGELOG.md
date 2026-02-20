@@ -1,3 +1,10 @@
+# [2.82.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.3...v2.82.0) (2026-02-20)
+
+
+### Features
+
+* ✨ swap image carousel library to react-slick ([#741](https://github.com/fairdataihub/fairdataihub.org/issues/741)) ([3f677a1](https://github.com/fairdataihub/fairdataihub.org/commit/3f677a1b31be024eac626be1d3f715454f09cbe4))
+
 ## [2.81.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.2...v2.81.3) (2026-02-20)
 
 
