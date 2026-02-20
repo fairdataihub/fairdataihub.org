@@ -1,3 +1,10 @@
+## [2.81.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.2...v2.81.3) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 sort gallery images by date for consistent display ([b983db3](https://github.com/fairdataihub/fairdataihub.org/commit/b983db3321f59a40b2af6680711070f5af895328))
+
 ## [2.81.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.1...v2.81.2) (2026-02-20)
 
 
