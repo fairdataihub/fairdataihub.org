@@ -150,7 +150,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   });
 
   const desired = typeof params?.tag === `string` ? params.tag : ``;
-  console.log(`desired`, desired);
 
   const filteredBlogList = blogList.filter((post) => {
     const tags: string[] = Array.isArray(post.frontMatter?.tags)

@@ -9,4 +9,4 @@ timeZone: 'America/Los_Angeles'
 location: 'San Diego, CA'
 ---
 
-[Bhavesh Patel](/team#Bhavesh-Patel) will join other Bridge2AI PIs to discuss high-level progress and strategies of the Bridge2AI Consortium. More etails about this event will be available soon.
+[Bhavesh Patel](/team#Bhavesh-Patel) will join other Bridge2AI PIs to discuss high-level progress and strategies of the Bridge2AI Consortium.
