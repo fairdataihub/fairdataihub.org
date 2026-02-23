@@ -18,18 +18,34 @@ tags:
   - Parquet
 ---
 
-In this blog, we outline a step-by-step traversal of the Software Heritage Graph Dataset using Amazon Athena—starting at the origin table and progressing through the graph to the directory content layer—to produce a filtered, deduplicated set of GitHub README content hashes. We then demonstrate how to retrieve selected content locally in a controlled and reproducible manner. Working with an archive at this scale is inherently challenging, but with a well-defined traversal strategy the process becomes systematic. Finally, a brief cost breakdown for each stage of the pipeline is provided.
-## Overview
-For more than a decade, the Software Heritage initiative has led one of the most comprehensive efforts to archive and preserve publicly available source code worldwide. Its mission is to systematically collect, safeguard, and provide long-term access to the global software commons, ensuring that research software and open-source contributions remain discoverable, citable, and reusable over time. Today, the archive contains billions of source files spanning millions of repositories across diverse ecosystems, captured as a fully deduplicated Merkle DAG. This vast body of software history is stored in Apache Parquet format and exposed through public S3 buckets, transforming what would otherwise be an unmanageable corpus into a structured, queryable archive measured in terabytes.
-## Software Heritage Structure
+Software is a critical component of modern scientific and technological progress, encapsulating both practical expertise and accumulated knowledge. Preserving software is therefore essential not only to safeguard innovation but also to ensure continued access to the tools and methods that underpin research and discovery. Achieving this requires coordinated community efforts. Software Heritage is one initiative that provides common foundations for heritage preservation, science, and industry.
 
-What makes it powerful is not just its size, but its structure. Instead of traditional repository folders, Software Heritage models software as interconnected graph tables. Every object is hash-addressed and deduplicated. That design enables reproducibility at scale, but it also means retrieving specific data requires understanding the traversal path. The traversal process is described in the following paragraphs.
+In this blog, we perform a step-by-step traversal of the Software Heritage Graph Dataset using Amazon Athena to produce a filtered, deduplicated set of GitHub README content hashes. We then walk through retrieving the selected content into a local AWS S3 bucket within a controlled environment. Working with an archive at this scale is inherently challenging, but a structured traversal combined with practical query orchestration enables a systematic and reproducible workflow. Finally, a brief cost breakdown for each stage of the pipeline will be provided.
+
+## Mission of Software Heritage
+
+For more than a decade, the Software Heritage initiative has led one of the most comprehensive efforts to archive and preserve publicly available source code worldwide. Its mission is to systematically collect, safeguard, and provide long-term access to the global software commons, ensuring that research software and open-source contributions remain discoverable, citable, and reusable over time. Today, the archive contains billions of source files spanning millions of repositories across diverse ecosystems, captured as a fully deduplicated Merkle DAG and stored in Apache Parquet format through public S3 buckets, forming a structured and queryable archive measured in terabytes. Beyond its scale, the archive’s strength lies in its graph-based structure: rather than traditional repository folders, Software Heritage models software as interconnected tables where every object is hash-addressed and deduplicated. While this architecture enables reproducibility at scale, retrieving specific data requires understanding the graph traversal path, as described in the following paragraphs.
 
 ## Prerequisites
 Before we get started, you'll need to make sure you have access to the following:
   - AWS account with permissions to use Amazon Athena and S3
   - Access to the public Software Heritage Graph Dataset stored in S3
   - An S3 bucket you control to store intermediate and final query outputs
+
+### To Setup AWS S3 bucket
+
+1. Create (or confirm) an S3 bucket for Athena outputs
+
+  ```bash
+  aws s3 mb s3://<your-bucket-name> --region us-east-1
+  ```
+2. Verify that your IAM role or user has the required S3 permissions for Athena result storage:
+
+```bash
+s3:PutObject
+s3:GetObject
+s3:ListBucket
+```
 
 ### Step 1. Accessing the Software Heritage Graph
 We began by defining an external table in Amazon Athena pointing to the Software Heritage Graph snapshot dated 2025-10-08, stored as Parquet files on S3, in order to query the origin data.
@@ -42,17 +58,21 @@ STORED AS PARQUET
 LOCATION 's3://softwareheritage/graph/2025-10-08/origin/';
 ```
 
-Once the external tables were defined in Athena, our initial objective was to retrieve the required data; however, these elements were distributed across multiple tables, and integrating them required joining six separate tables. To address this challenge, it was necessary to understand the structure of the Software Heritage (SWH) graph schema, a simplified representation of which is shown below:
+Once the external tables were defined in Athena, our initial objective was to retrieve repository URLs, visit dates, and SHA-1 identifiers. To achieve this, it was necessary to understand the structure of the Software Heritage (SWH) graph schema, a simplified representation of which is shown below:
 ```text
 SOFTWARE HERITAGE GRAPH DATASET SCHEMA
 
 📋 origin (origin record)
     │
-    -├──► 📋 origin_visit (visit record)
+    │─────────►🧩URL
+    │
+    ├──► 📋 origin_visit
     │
     │    🔗 snapshot_id
     ▼
 📋 origin_visit_status (visit status)
+    │
+    │─────────►🧩visit_date
     │
     │    🔗 snapshot_id
     ▼
@@ -69,6 +89,8 @@ SOFTWARE HERITAGE GRAPH DATASET SCHEMA
     │         │    📋 directory_entry
     │         │         │
     │         │         ├──► 📋 content (file content)
+    │         │         │
+    │         │         │─────────►🧩SHA1
     │         │         │
     │         │         └──► 📋 directory (subdirectory)
     │         │
@@ -87,25 +109,26 @@ STANDALONE TABLES
 
 ─────────────────────────────────────────────
 
-📋 Table    🔗 Foreign Key    ──► Relationship
+📋 Table    🔗 Foreign key    ──► Relationship 🧩 Selected attributes from tables
 ```
- As illustrated, repository URLs, their corresponding visit dates, and SHA-1 identifiers are located in three different tables. To obtain this information, we attempted to construct a single join query, as shown below.
+
+As illustrated, these elements reside in separate tables. We therefore attempted to construct a single join query to retrieve them; however, the enormous size of the underlying tables, combined with the unpartitioned nature of the SWH Graph dataset, caused this unified query to exceed Athena’s execution limits.
+
 ```sql
 CREATE TABLE default.url_to_content AS
 SELECT
-    u.url,
-    u.visit_date,
-    ovs.snapshot as snapshot_id,
-    sb.name as branch_name,
-    sb.target as revision_id,
-    r.directory as directory_id,
-    de.name as file_name,
-    de.target as content_sha1_git,
-    c.sha1 as content_sha1
-FROM default.url_and_date u
+    o.url,
+    ovs.date AS visit_date,
+    ovs.snapshot AS snapshot_id,
+    sb.name AS branch_name,
+    sb.target AS revision_id,
+    r.directory AS directory_id,
+    de.name AS file_name,
+    de.target AS content_sha1_git,
+    c.sha1 AS content_sha1
+FROM swh_graph_2025_10_08.origin o
 JOIN swh_graph_2025_10_08.origin_visit_status ovs
-    ON u.url = ovs.origin
-    AND u.visit_date = ovs.date
+    ON o.url = ovs.origin
 JOIN swh_graph_2025_10_08.snapshot_branch sb
     ON ovs.snapshot = sb.snapshot_id
 JOIN swh_graph_2025_10_08.revision r
@@ -117,25 +140,25 @@ JOIN swh_graph_2025_10_08.content c
 WHERE sb.target_type = 'revision'
   AND de.type = 'file';
 ```
-However, since each table participating in the join contains over 100 million rows and the SWH Graph dataset is not partitioned, the query placed substantial pressure on Athena’s execution limits and could not be completed successfully. More detailed information about the structure and design of the SWH dataset can be found in the corresponding Software Heritage article.
+In addition to executing the complete join query in a single run, we also attempted to download and store the relevant SWH tables locally in one step. However, this approach likewise resulted in API exhaustion errors. On Athena, joining multiple large unpartitioned tables greatly increases scan and shuffle costs, making a single full join impractical. More detailed information about the structure and design of the SWH dataset can be found in the corresponding Software Heritage article.
 
-In addition to executing the complete join query in a single run, we also attempted to download and store the relevant SWH tables locally in one step. However, this approach likewise resulted in API exhaustion errors. Consequently, in order to obtain the SHA-1 identifiers, we adopted a stepwise strategy: each table was saved locally as an intermediate table, and the joins were performed incrementally.
+Consequently, in order to obtain the SHA-1 identifiers, we adopted a stepwise strategy: each table was saved locally as an intermediate table, and the joins were performed incrementally.
+
 
 ### Step 2. Extracting Repository URLs and Visit Data
 
-We began with the origin table to retrieve all repository URLs, obtaining approximately 400 million URLs. Subsequently, from the origin_visit_status table, we extracted approximately 3 billion records corresponding to repository visits, each representing a crawl attempt and its associated snapshot.
+We began with the origin table to retrieve all repository URLs, obtaining approximately 400 million URLs. We therefore staged intermediate results to progressively narrow the working set. Subsequently, from the origin_visit_status table, we extracted approximately 3 billion records corresponding to repository visits, each representing a crawl attempt and its associated snapshot.
 
 ```sql
 CREATE TABLE default.url_and_date AS
 SELECT
     o.url,
-    ovs.date AS visit_date,
-    ovs.snapshot_id
+    ovs.date AS visit_date
 FROM swh_graph_2025_10_08.origin o
 JOIN swh_graph_2025_10_08.origin_visit_status ovs
     ON o.url = ovs.origin;
 ```
-Once we have dates, we retrieved the snapshot ids as a next:
+Using these dates, we then retrieved the snapshot identifiers:
 ```sql
 CREATE TABLE default.url_date_snapshot_2a AS
 SELECT
@@ -148,9 +171,10 @@ JOIN swh_graph_2025_10_08.origin_visit_status ovs
    AND u.visit_date = ovs.date
 WHERE ovs.snapshot IS NOT NULL;
 ```
+
 ### Step 3. Linking Snapshots to Revisions and Directories
 
-After obtaining the snapshot IDs, attempting to save the snapshot_branch table locally exceeded Athena’s service limits. Therefore, we constrained the query to retrieve only the main and master branches, which in most repositories correspond to the principal development lines. This reduced the data volume while preserving the core revision history relevant to our analysis.
+After obtaining the snapshot IDs, attempting to save the snapshot_branch table locally exceeded Athena’s service limits. Therefore, we constrained the query to retrieve only the main and master branches, which in most repositories correspond to the principal development lines. This reduced the data volume while preserving the core revision history relevant to our analysis, although repositories whose primary development branch uses a different name may be under-represented.
 
 ```sql
 CREATE TABLE default.snapshot_branch_filtered AS
@@ -164,7 +188,7 @@ WHERE target_type = 'revision'
       OR name = CAST('refs/heads/master' AS VARBINARY)
   );
 ```
-Once filtering worked, we then obtained snapshot branches, and revision tables.
+After filtering, we then obtained snapshot branches, and revision tables.
 
 ```sql
 CREATE TABLE default.url_date_branch_2b AS
@@ -172,11 +196,9 @@ SELECT
    u.url,
    u.visit_date,
    sbf.revision_id
-FROM default.url_and_date u
+FROM default.url_date_snapshot_2a u
 JOIN default.snapshot_branch_filtered sbf
    ON u.snapshot_id = sbf.snapshot_id;
-
-
 
 
 CREATE TABLE default.url_date_rev_2c AS
@@ -211,7 +233,7 @@ WHERE type = 'file'
 Once we retrieved the directory-level sha1_git values, we attempted to perform the final join to obtain the canonical sha1 identifiers of the README files together with the associated URL and visit date information. However, joining millions of rows directly with the content table once again resulted in resource exhaustion errors.
 
 ```sql
-CREATE TABLE default.url_content_final AS
+CREATE TABLE default.url_content_attempt AS
 SELECT
     d.url,
     d.visit_date,
@@ -255,7 +277,7 @@ By following the steps above, we retrieved over 450 million GitHub repository re
 
 ### Step 6. Deduplicating Repositories
 
-We then filtered the URLs so that each appeared only once, retaining a single record per repository.
+We then filtered the URLs so that each appeared only once, retaining a single record per repository. The most recent visit date was selected for each URL, with MAX_BY ensuring the associated content hash corresponded to that latest snapshot.
 ```sql
 CREATE TABLE default.filtered_github_unique AS
 SELECT
@@ -281,8 +303,9 @@ Due to the large scale of the Software Heritage (SWH) dataset, processing can be
 Although working with materialized local tables improved performance, operations involving the largest SWH tables remained expensive. In particular, Step 4 was the most demanding stage, as the directory_entry table is among the largest in the dataset, making it the most computationally intensive and costly component of the workflow.
 
 ## Results
-After navigating the dataset like a fog-covered map, where each query gradually revealed the next segment of the route, we arrived at the intended result: a consolidated table containing 223 million records of unique GitHub URLs, their corresponding visit dates, the associated sha1_git revision identifiers, and the SHA-1 hashes of their README contents. Example of the result is provided below:
-| URL | SHA1 README | Date |
+After navigating the dataset through a sequence of queries, where each query gradually revealed the next segment of the route, we arrived at the intended result: a consolidated table containing 223 million records of unique GitHub URLs, their corresponding visit dates, the associated sha1_git revision identifiers, and the SHA-1 hashes of their README contents. An example of the result is shown below:
+
+| URL | SHA1 codes of README files | Date |
 |-----|-------------|------|
 | https://github.com/nygim/pyfairdatatools | 0eca1c249f00956b9264403e9ecd8fb90ac5b428 | 2025-08-30 16:04:36 |
 | https://github.com/fairdataihub/fairshare |  8964359b0597187a29028955ecc3845dfcf86173 | 2025-07-29 12:26:33 |
