@@ -68,13 +68,11 @@ SOFTWARE HERITAGE GRAPH DATASET SCHEMA
     │
     ├──► 📋 origin_visit
     │
-    │    🔗 origin_id
     ▼
 📋 origin_visit_status (visit status)
     │
     │─────────►🧩visit_date
     │
-    │    🔗 snapshot_id
     ▼
 📋 snapshot (repository snapshot)
     │
@@ -100,7 +98,7 @@ SOFTWARE HERITAGE GRAPH DATASET SCHEMA
               │
               └──► 📋 revision or directory
 
-📋 Table    🔗 Foreign key    ──► Relationship 🧩 Selected attributes from tables
+📋 Table   ──► Relationship 🧩 Selected attributes from tables
 ```
 
 As illustrated, these elements reside in separate tables. We initially attempted to construct a single join query spanning all six tables:
