@@ -68,7 +68,7 @@ SOFTWARE HERITAGE GRAPH DATASET SCHEMA
     │
     ├──► 📋 origin_visit
     │
-    │    🔗 snapshot_id
+    │    🔗 origin_id
     ▼
 📋 origin_visit_status (visit status)
     │
@@ -100,47 +100,22 @@ SOFTWARE HERITAGE GRAPH DATASET SCHEMA
               │
               └──► 📋 revision or directory
 
-─────────────────────────────────────────────
-
-STANDALONE TABLES
-
-    📋 person (author/committer metadata)
-    📋 skipped_content (non-archived content)
-
-─────────────────────────────────────────────
-
 📋 Table    🔗 Foreign key    ──► Relationship 🧩 Selected attributes from tables
 ```
 
-As illustrated, these elements reside in separate tables. We therefore attempted to construct a single join query to retrieve them; however, the enormous size of the underlying tables, combined with the unpartitioned nature of the SWH Graph dataset, caused this unified query to exceed Athena’s execution limits.
-
+As illustrated, these elements reside in separate tables. We initially attempted to construct a single join query spanning all six tables:
 ```sql
-CREATE TABLE default.url_to_content AS
-SELECT
-    o.url,
-    ovs.date AS visit_date,
-    ovs.snapshot AS snapshot_id,
-    sb.name AS branch_name,
-    sb.target AS revision_id,
-    r.directory AS directory_id,
-    de.name AS file_name,
-    de.target AS content_sha1_git,
-    c.sha1 AS content_sha1
+-- Initial attempt: single-pass join (exceeded resource limits)
+SELECT o.url, ovs.date AS visit_date, c.sha1 AS content_sha1
 FROM swh_graph_2025_10_08.origin o
-JOIN swh_graph_2025_10_08.origin_visit_status ovs
-    ON o.url = ovs.origin
-JOIN swh_graph_2025_10_08.snapshot_branch sb
-    ON ovs.snapshot = sb.snapshot_id
-JOIN swh_graph_2025_10_08.revision r
-    ON sb.target = r.id
-JOIN swh_graph_2025_10_08.directory_entry de
-    ON r.directory = de.directory_id
-JOIN swh_graph_2025_10_08.content c
-    ON de.target = c.sha1_git
-WHERE sb.target_type = 'revision'
-  AND de.type = 'file';
+JOIN swh_graph_2025_10_08.origin_visit_status ovs ON o.url = ovs.origin
+JOIN swh_graph_2025_10_08.snapshot_branch sb ON ovs.snapshot = sb.snapshot_id
+JOIN swh_graph_2025_10_08.revision r ON sb.target = r.id
+JOIN swh_graph_2025_10_08.directory_entry de ON r.directory = de.directory_id
+JOIN swh_graph_2025_10_08.content c ON de.target = c.sha1_git
+WHERE sb.target_type = 'revision' AND de.type = 'file';
 ```
-In addition to executing the complete join query in a single run, we also attempted to download and store the relevant SWH tables locally in one step. However, this approach likewise resulted in API exhaustion errors. On Athena, joining multiple large unpartitioned tables greatly increases scan and shuffle costs, making a single full join impractical. More detailed information about the structure and design of the SWH dataset can be found in the corresponding Software Heritage article.
+This query exceeded Athena's execution limits due to the enormous size of the underlying tables and the unpartitioned nature of the SWH Graph dataset. On Athena, joining multiple large unpartitioned tables greatly increases scan and shuffle costs, making a single full join impractical. More detailed information about the structure and design of the SWH dataset can be found in the corresponding  Software Heritage article.
 
 Consequently, in order to obtain the SHA-1 identifiers, we adopted a stepwise strategy: each table was saved locally as an intermediate table, and the joins were performed incrementally.
 
@@ -230,27 +205,22 @@ WHERE type = 'file'
 ```
 
 ### Step 5. Resolving Git SHA-1 to Canonical SHA-1
-Once we retrieved the directory-level sha1_git values, we attempted to perform the final join to obtain the canonical sha1 identifiers of the README files together with the associated URL and visit date information. However, joining millions of rows directly with the content table once again resulted in resource exhaustion errors.
 
-```sql
-CREATE TABLE default.url_content_attempt AS
-SELECT
-    d.url,
-    d.visit_date,
-    d.content_sha1_git,
-    ct.sha1,
-    ct.status
-FROM default.url_date_directory_sha_3b d
-JOIN swh_graph_2025_10_08.content ct
-    ON d.content_sha1_git = ct.sha1_git;
-```
-
-To address this issue, we decomposed the query into three incremental steps. First, we extracted the distinct content_sha1_git values from the intermediate result set. Next, we joined this reduced set against the content table to retrieve only the matching sha1_git–sha1 pairs. Finally, we performed the join between the original URL/date dataset and the filtered content results.
+Once we retrieved the directory-level sha1_git values, we decomposed the query into three incremental steps. First, we extracted the distinct content_sha1_git values from the intermediate result set. Next, we joined this reduced set against the content table to retrieve only the matching sha1_git–sha1 pairs. Finally, we performed the join between the original URL/date dataset and the filtered content results.
 
 By materializing intermediate tables and reducing the join cardinality at each stage, we were able to avoid exhaustion errors and complete the retrieval successfully.
 
-
 ```sql
+CREATE TABLE default.url_date_directory_sha_3b AS
+SELECT
+    u.url,
+    u.visit_date,
+    d.content_sha1_git
+FROM default.url_date_rev_2c u
+JOIN default.directory_entry_readme d
+    ON u.directory_id = d.directory_id;
+
+
 CREATE TABLE default.filtered_directory_sha1 AS
 SELECT DISTINCT content_sha1_git
 FROM default.url_date_directory_sha_3b;
@@ -268,10 +238,6 @@ JOIN default.content_matched cm
    ON d.content_sha1_git = cm.sha1_git;
 
 
-CREATE TABLE default.filtered_github_total_table AS
-SELECT url, content_sha1_git, sha1, visit_date
-FROM url_content_final
-WHERE url LIKE 'https://github.com/%';
 ```
 By following the steps above, we retrieved over 450 million GitHub repository records and stored their URLs, visit dates, and SHA-1 identifiers in a local table.
 
@@ -279,6 +245,11 @@ By following the steps above, we retrieved over 450 million GitHub repository re
 
 We then filtered the URLs so that each appeared only once, retaining a single record per repository. The most recent visit date was selected for each URL, with MAX_BY ensuring the associated content hash corresponded to that latest snapshot.
 ```sql
+CREATE TABLE default.filtered_github_total_table AS
+SELECT url, content_sha1_git, sha1, visit_date
+FROM url_content_final
+WHERE url LIKE 'https://github.com/%';
+
 CREATE TABLE default.filtered_github_unique AS
 SELECT
    url,
@@ -296,8 +267,8 @@ Due to the large scale of the Software Heritage (SWH) dataset, processing can be
 | 1 | Accessing SWH via Athena | Minimal | Minimal |
 | 2 | Extracting URLs and Visit Data | ~660 GB | ~$3.3|
 | 3 | Linking Snapshots to Revisions | ~1.84 TB | ~$9.2 |
-| 4 | Extracting README Entries | ~26 TB | ~$130 |
-| 5 | Resolving Git SHA-1 to Canonical SHA-1 | ~1.4 TB | ~$7 |
+| 4 | Extracting README Entries | ~26 TB | ~$130.0 |
+| 5 | Resolving Git SHA-1 to Canonical SHA-1 | ~1.4 TB | ~$7.0 |
 | 6 | GitHub Filtering and Deduplication | Minimal | Minimal |
 
 Although working with materialized local tables improved performance, operations involving the largest SWH tables remained expensive. In particular, Step 4 was the most demanding stage, as the directory_entry table is among the largest in the dataset, making it the most computationally intensive and costly component of the workflow.
@@ -312,3 +283,6 @@ After navigating the dataset through a sequence of queries, where each query gra
 | https://github.com/megasanjay/fairdataihub.org |  458585c7c8b579e4547d445cb49d496b1be1ba19 | 2023-08-19 21:50:20 |
 | https://github.com/fairdataihub/SODA-for-SPARC-Docs  | 47acbdb4c775d1bb5bbd127fde9287211eee504c | 2025-10-06 11:55:02 |
 
+## Conclusion
+
+This guide demonstrated a practical workflow for extracting README content hashes from the Software Heritage Graph Dataset using Amazon Athena. By materializing intermediate tables and breaking large joins into manageable steps, we were able to navigate scale constraints and build a focused dataset. The resulting collection of GitHub URLs and SHA-1 hashes supports downstream tasks such as DOI mining and software citation analysis, illustrating how structured traversal enables effective exploration of large archival datasets.
