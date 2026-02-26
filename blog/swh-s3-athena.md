@@ -259,14 +259,15 @@ GROUP BY url;
 As a result, the dataset was reduced to approximately 225 million rows. After excluding records with empty sha1_git values, the final dataset contained approximately 223 million rows.
 
 ## Computational Cost Breakdown Across Processing Steps
-Due to the large scale of the Software Heritage (SWH) dataset, processing can be costly. In this work, the approximate cost breakdown for each step is presented in the table below.
+Due to the large scale of the Software Heritage (SWH) dataset, processing can be costly. Amazon Athena charges $5 per terabyte of data scanned, and while the SWH dataset itself is publicly hosted at no storage cost, any intermediate tables created during processing are stored in your own S3 bucket and incur standard storage fees (~$0.023 per GB/month). In this work, the approximate cost breakdown for each step is presented in the table below.
+
 | Step | Stage Description | Data Scanned | Cost (USD) |
 |------|-------------------|--------------|------------|
 | 1 | Accessing SWH via Athena | Minimal | Minimal |
-| 2 | Extracting URLs and Visit Data | ~660 GB | ~$3.3|
-| 3 | Linking Snapshots to Revisions | ~1.84 TB | ~$9.2 |
-| 4 | Extracting README Entries | ~26 TB | ~$130.0 |
-| 5 | Resolving Git SHA-1 to Canonical SHA-1 | ~1.4 TB | ~$7.0 |
+| 2 | Extracting URLs and Visit Data | ~660 GB | ~$3.30 |
+| 3 | Linking Snapshots to Revisions | ~1.84 TB | ~$9.20 |
+| 4 | Extracting README Entries | ~26 TB | ~$130.00 |
+| 5 | Resolving Git SHA-1 to Canonical SHA-1 | ~1.4 TB | ~$7.00 |
 | 6 | GitHub Filtering and Deduplication | Minimal | Minimal |
 
 Although working with materialized local tables improved performance, operations involving the largest SWH tables remained expensive. In particular, Step 4 was the most demanding stage, as the directory_entry table is among the largest in the dataset, making it the most computationally intensive and costly component of the workflow.
