@@ -29,7 +29,6 @@ For more than a decade, the Software Heritage initiative has led one of the most
 ## Prerequisites
 Before we get started, you'll need to make sure you have access to the following:
   - AWS account with permissions to use Amazon Athena and S3
-  - Access to the public Software Heritage Graph Dataset stored in S3
   - An S3 bucket you control to store intermediate and final query outputs
 
 ### To Setup AWS S3 bucket
@@ -48,7 +47,7 @@ s3:ListBucket
 ```
 
 ### Step 1. Accessing the Software Heritage Graph
-We began by defining an external table in Amazon Athena pointing to the Software Heritage Graph snapshot dated 2025-10-08, stored as Parquet files on S3, in order to query the origin data.
+We begin by defining an external table in Amazon Athena pointing to the Software Heritage Graph snapshot dated 2025-10-08, stored as Parquet files on S3, in order to query the origin data.
 ```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS swh_graph_2025_10_08.origin (
     id STRING,
@@ -58,7 +57,7 @@ STORED AS PARQUET
 LOCATION 's3://softwareheritage/graph/2025-10-08/origin/';
 ```
 
-Once the external tables were defined in Athena, our initial objective was to retrieve repository URLs, visit dates, and SHA-1 identifiers. To achieve this, it was necessary to understand the structure of the Software Heritage (SWH) graph schema, a simplified representation of which is shown below:
+Once the external tables are defined in Athena, our initial objective is to retrieve repository URLs, visit dates, and SHA-1 identifiers. To achieve this, it is necessary to understand the structure of the Software Heritage (SWH) graph schema, a simplified representation of which is shown below:
 ```text
 SOFTWARE HERITAGE GRAPH DATASET SCHEMA
 
@@ -101,7 +100,7 @@ SOFTWARE HERITAGE GRAPH DATASET SCHEMA
 📋 Table   ──► Relationship 🧩 Selected attributes from tables
 ```
 
-As illustrated, these elements reside in separate tables. We initially attempted to construct a single join query spanning all six tables:
+An initial attempt might look like joining six tables as shown below: these elements reside in separate tables. We initially attempted to construct a single join query spanning all six tables:
 ```sql
 -- Initial attempt: single-pass join (exceeded resource limits)
 SELECT o.url, ovs.date AS visit_date, c.sha1 AS content_sha1
@@ -115,7 +114,7 @@ WHERE sb.target_type = 'revision' AND de.type = 'file';
 ```
 This query exceeded Athena's execution limits due to the enormous size of the underlying tables and the unpartitioned nature of the SWH Graph dataset. On Athena, joining multiple large unpartitioned tables greatly increases scan and shuffle costs, making a single full join impractical. More detailed information about the structure and design of the SWH dataset can be found in the corresponding  Software Heritage article.
 
-Consequently, in order to obtain the SHA-1 identifiers, we adopted a stepwise strategy: each table was saved locally as an intermediate table, and the joins were performed incrementally.
+Consequently, in order to obtain the SHA-1 identifiers, we adopted a stepwise strategy: each table is saved locally as an intermediate table, and the joins are performed incrementally.
 
 
 ### Step 2. Extracting Repository URLs and Visit Data
@@ -185,7 +184,7 @@ JOIN swh_graph_2025_10_08.revision r
 ```
 
 ### Step 4: Extracting README Entries
-Once we obtained the necessary foreign key to proceed, we moved to one of the largest tables in the Software Heritage database. This was the most computationally intensive step, scanning approximately 24 TB of data. To avoid timeouts and resource limit errors, we restricted our query to retrieve only four specific README file types—README.md, readme.md, README, and README.txt—by matching their corresponding hexadecimal filename encodings.
+Once we obtained the necessary foreign key to proceed, we moved to one of the largest tables in the Software Heritage database. This is the most computationally intensive step, scanning approximately 24 TB of data. To avoid timeouts and resource limit errors, we restricted our query to retrieve only four specific README file types—README.md, readme.md, README, and README.txt—by matching their corresponding hexadecimal filename encodings.
 
 ```sql
 CREATE TABLE default.directory_entry_readme AS
@@ -206,7 +205,7 @@ WHERE type = 'file'
 
 Once we retrieved the directory-level sha1_git values, we decomposed the query into three incremental steps. First, we extracted the distinct content_sha1_git values from the intermediate result set. Next, we joined this reduced set against the content table to retrieve only the matching sha1_git–sha1 pairs. Finally, we performed the join between the original URL/date dataset and the filtered content results.
 
-By materializing intermediate tables and reducing the join cardinality at each stage, we were able to avoid exhaustion errors and complete the retrieval successfully.
+By materializing intermediate tables and reducing the join cardinality at each stage, we are able to avoid exhaustion errors and complete the retrieval successfully.
 
 ```sql
 CREATE TABLE default.url_date_directory_sha_3b AS
@@ -241,7 +240,7 @@ By following the steps above, we retrieved over 450 million GitHub repository re
 
 ### Step 6. Deduplicating Repositories
 
-We then filtered the URLs so that each appeared only once, retaining a single record per repository. The most recent visit date was selected for each URL, with MAX_BY ensuring the associated content hash corresponded to that latest snapshot.
+We then filtered the URLs so that each appeared only once, retaining a single record per repository. The most recent visit date is selected for each URL, with MAX_BY ensuring the associated content hash corresponded to that latest snapshot.
 ```sql
 CREATE TABLE default.filtered_github_total_table AS
 SELECT url, content_sha1_git, sha1, visit_date
@@ -256,7 +255,7 @@ SELECT
 FROM default.filtered_github_total_table
 GROUP BY url;
 ```
-As a result, the dataset was reduced to approximately 225 million rows. After excluding records with empty sha1_git values, the final dataset contained approximately 223 million rows.
+As a result, the dataset is now reduced to approximately 225 million rows. After excluding records with empty sha1_git values, the final dataset contained approximately 223 million rows.
 
 ## Computational Cost Breakdown Across Processing Steps
 Due to the large scale of the Software Heritage (SWH) dataset, processing can be costly. Amazon Athena charges $5 per terabyte of data scanned, and while the SWH dataset itself is publicly hosted at no storage cost, any intermediate tables created during processing are stored in your own S3 bucket and incur standard storage fees (~$0.023 per GB/month). In this work, the approximate cost breakdown for each step is presented in the table below.
