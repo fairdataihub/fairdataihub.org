@@ -1,3 +1,10 @@
+## [2.82.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.0...v2.82.1) (2026-03-03)
+
+
+### Bug Fixes
+
+* 🐛 update teammate image ([4c52942](https://github.com/fairdataihub/fairdataihub.org/commit/4c52942c1f0fa5451a552db5660b9d4697af6dbc))
+
 # [2.82.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.3...v2.82.0) (2026-02-20)
 
 
