@@ -11,8 +11,6 @@ on:
       - next
   pull_request:
     types: [opened, reopened, synchronize, closed]
-    branches-ignore:
-      - main
   delete:
 
 jobs:
