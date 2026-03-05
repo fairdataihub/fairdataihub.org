@@ -3,5 +3,6 @@
 # This file is only for the preview deployment target by kamal
 
 env:
-  NODE_ENV: preview
-  NEXT_IMAGE_UNOPTIMIZED: 'true'
+  clear:
+    NODE_ENV: preview
+    NEXT_IMAGE_UNOPTIMIZED: 'true'
