@@ -32,7 +32,7 @@
     "reset": "rm -rf node_modules .next && yarn install"
   },
   "lint-staged": {
-    "./src/**/*.{ts,js,jsx,tsx}": [
+    "./src/**/*.{mx}": [
       "yarn lint --fix",
       "yarn format"
     ]
