@@ -13,7 +13,6 @@ on:
     types: [opened, reopened, synchronize, closed]
     branches-ignore:
       - main
-      - next
   delete:
 
 jobs:
