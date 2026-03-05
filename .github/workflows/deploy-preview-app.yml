@@ -10,7 +10,9 @@ on:
       - main
       - next
   pull_request:
-    types: [opened, reopened, synchronize, closed]
+    types: [closed]
+  pull_request_target:
+    types: [opened, reopened, synchronize]
   delete:
 
 jobs:
@@ -63,18 +65,11 @@ jobs:
 
   comment-preview-on-pr:
     runs-on: ubuntu-latest
-    if: |
-      github.event_name == 'pull_request' &&
-      contains(fromJson('["opened","reopened","synchronize"]'), github.event.action) &&
-      !contains(fromJson('["main","next"]'), github.event.pull_request.head.ref)
+    if: github.event_name == 'pull_request_target' && github.event.action != 'closed'
     permissions:
       contents: read
       issues: write
-      pull-requests: read
-
-    env:
-      KAMAL_APP_NAME: ${{ secrets.KAMAL_APP_NAME }}
-      KAMAL_APP_DOMAIN: ${{ secrets.KAMAL_APP_DOMAIN }}
+      pull-requests: write
 
     steps:
       - name: Set preview app name and domain
