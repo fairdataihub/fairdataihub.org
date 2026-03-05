@@ -92,7 +92,7 @@ export default function Home() {
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
-                The FAIR Data wave (next-2)
+                The FAIR Data wave (next-21)
               </h2>
 
               <div className="font-asap pt-8">
