@@ -64,7 +64,7 @@ jobs:
 
   comment-preview-on-pr:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request_target' && github.event.action != 'closed'
+    if: github.event_name == 'pull_request_target'
     permissions:
       contents: read
       issues: write
@@ -90,7 +90,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const previewUrl = 'https://website-${BRANCH_SLUG}.fairdataihub.org';
+            const previewUrl = 'https://${{ env.KAMAL_APP_DOMAIN }}';
             const issue_number = context.payload.pull_request.number;
 
             const body = `## Preview deployment ready\n\n**Preview URL:** [${previewUrl}](${previewUrl})`;
