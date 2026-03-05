@@ -1,6 +1,10 @@
 module.exports = {
   reactStrictMode: true,
   images: {
+    // In Docker behind a reverse proxy (e.g. Kamal), the /_next/image endpoint can
+    // fail (timeouts, wrong host, or container can't fetch remote URLs). Set
+    // NEXT_IMAGE_UNOPTIMIZED=true in the container env to serve images directly.
+    unoptimized: process.env.NEXT_IMAGE_UNOPTIMIZED === 'true',
     dangerouslyAllowSVG: true,
     remotePatterns: [
       {

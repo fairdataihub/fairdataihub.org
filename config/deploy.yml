@@ -66,7 +66,8 @@ builder:
 env:
   clear:
     NODE_ENV: production # Set to 'production' for production deployments
-
+    # Bypass Next.js image optimization so images work behind the proxy (see next.config.js)
+    NEXT_IMAGE_UNOPTIMIZED: 'true'
 # Use a different ssh user than root
 # Uncomment and configure if you need to use a non-root user for SSH access
 #
