@@ -1,5 +1,4 @@
 # GitHub Actions workflow for deploying the application to production environment
-# This workflow handles both UI deployment and database migrations
 name: Deploy to production environment
 
 # Concurrency control to prevent multiple deployments running simultaneously
@@ -48,28 +47,20 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-      # Step 5: Authenticate with Azure Container Registry
-      - name: Login to Azure Container Registry
-        uses: azure/docker-login@v1
-        with:
-          login-server: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
-          username: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
-          password: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
-
-      # Step 6: Setup Docker Buildx for better caching and performance
+      # Step 5: Setup Docker Buildx for better caching and performance
       - name: Set up Docker Buildx for cache
         uses: docker/setup-buildx-action@v3
 
-      # Step 7: Verify Kamal installation
+      # Step 6: Verify Kamal installation
       - run: kamal version
 
-      # Step 8: Release any existing deployment locks
+      # Step 7: Release any existing deployment locks
       # This prevents conflicts when redeploying while a previous deployment is running
       - run: kamal lock release
       # Uncomment for verbose output during troubleshooting:
       # - run: kamal lock release --verbose
 
-      # Step 9: Initial Kamal setup (only needed once per server)
+      # Step 8: Initial Kamal setup (only needed once per server)
       # Note: This step might need to be run manually on the server first time
       # to add the user to the docker group: `sudo usermod -aG docker $USER | newgrp docker | docker ps`
       - run: kamal setup
