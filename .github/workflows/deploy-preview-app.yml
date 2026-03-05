@@ -11,9 +11,8 @@ on:
       - next
   pull_request:
     types: [closed]
-    branches-ignore:
-      - main
-      - next
+  pull_request_target:
+    types: [opened, reopened, synchronize]
   delete:
 
 jobs:
@@ -31,9 +30,8 @@ jobs:
       KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
       KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
       KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
-      KAMAL_APP_NAME: ${{ secrets.KAMAL_APP_NAME }}
-      KAMAL_APP_DOMAIN: ${{ secrets.KAMAL_APP_DOMAIN }}
-
+      KAMAL_APP_NAME: "fairdataihub-website"
+      KAMAL_APP_DOMAIN: "next.fairdataihub.org"
     steps:
       - uses: actions/checkout@v4
 
@@ -45,8 +43,8 @@ jobs:
             | sed 's/-\+/-/g' \
             | sed 's/^-//;s/-$//')
 
-          APP_NAME="${{ secrets.KAMAL_APP_NAME }}-${BRANCH_SLUG}"
-          APP_DOMAIN="${APP_NAME}.${{ secrets.KAMAL_APP_DOMAIN }}"
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
 
           echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
           echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
@@ -64,50 +62,63 @@ jobs:
 
       - run: kamal deploy -d preview
 
+  comment-preview-on-pr:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request_target' && github.event.action != 'closed'
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ github.event.pull_request.head.ref }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
       - name: Comment preview URL on PR
-        if: success()
         uses: actions/github-script@v7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const branch = '${{ github.ref_name }}';
-            const previewUrl = 'https://${{ env.KAMAL_APP_DOMAIN }}';
-
-            const { data: prs } = await github.rest.pulls.list({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              state: 'open',
-              head: `${context.repo.owner}:${branch}`
-            });
+            const previewUrl = 'https://website-${BRANCH_SLUG}.fairdataihub.org';
+            const issue_number = context.payload.pull_request.number;
 
             const body = `## Preview deployment ready\n\n**Preview URL:** [${previewUrl}](${previewUrl})`;
 
-            for (const pr of prs) {
-              const { data: comments } = await github.rest.issues.listComments({
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number
+            });
+
+            const previewComment = comments.find(
+              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment ready')
+            );
+
+            if (previewComment) {
+              await github.rest.issues.updateComment({
                 owner: context.repo.owner,
                 repo: context.repo.repo,
-                issue_number: pr.number
+                comment_id: previewComment.id,
+                body
               });
-
-              const previewComment = comments.find(
-                c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment ready')
-              );
-
-              if (previewComment) {
-                await github.rest.issues.updateComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  comment_id: previewComment.id,
-                  body
-                });
-              } else {
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: pr.number,
-                  body
-                });
-              }
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body
+              });
             }
 
   remove-preview:
@@ -130,8 +141,8 @@ jobs:
       KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
       KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
       KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
-      KAMAL_APP_NAME: ${{ secrets.KAMAL_APP_NAME }}
-      KAMAL_APP_DOMAIN: ${{ secrets.KAMAL_APP_DOMAIN }}
+      KAMAL_APP_NAME: "fairdataihub-website"
+      KAMAL_APP_DOMAIN: "next.fairdataihub.org"
 
     steps:
       - uses: actions/checkout@v4
@@ -154,8 +165,8 @@ jobs:
             | sed 's/-\+/-/g' \
             | sed 's/^-//;s/-$//')
 
-          APP_NAME="${{ secrets.KAMAL_APP_NAME }}-${BRANCH_SLUG}"
-          APP_DOMAIN="${APP_NAME}.${{ secrets.KAMAL_APP_DOMAIN }}"
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
 
           echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
           echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
