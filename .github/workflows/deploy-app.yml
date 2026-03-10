@@ -1,0 +1,66 @@
+# GitHub Actions workflow for deploying the application to production environment
+name: Deploy to production environment
+
+# Concurrency control to prevent multiple deployments running simultaneously
+# If a new deployment is triggered while one is running, the previous one will be cancelled
+concurrency:
+  group: production-app-deploy
+  cancel-in-progress: true
+
+# Trigger conditions for this workflow
+on:
+  push:
+    branches:
+      - next # Deploy on every push to next branch
+  workflow_dispatch: # Allow manual triggering from GitHub UI
+
+jobs:
+  # Job for deploying the UI/frontend application
+  deploy-ui:
+    runs-on: ubuntu-latest
+
+    # Environment variables for Kamal deployment and container registry
+    env:
+      DOCKER_BUILDKIT: 1 # Enable Docker BuildKit for faster builds
+      KAMAL_REGISTRY_LOGIN_SERVER: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
+      KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
+      KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+      KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
+      KAMAL_APP_DOMAIN: ${{ secrets.KAMAL_APP_DOMAIN }}
+      KAMAL_APP_NAME: ${{ secrets.KAMAL_APP_NAME }}
+
+    steps:
+      # Step 1: Checkout the repository code
+      - uses: actions/checkout@v4
+
+      # Step 2: Setup Ruby environment for Kamal deployment tool
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.1
+          bundler-cache: true # Cache Ruby dependencies for faster builds
+
+      # Step 3: Install Kamal deployment tool
+      - run: gem install kamal
+
+      # Step 4: Setup SSH agent for server access
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Step 5: Setup Docker Buildx for better caching and performance
+      - name: Set up Docker Buildx for cache
+        uses: docker/setup-buildx-action@v3
+
+      # Step 6: Verify Kamal installation
+      - run: kamal version
+
+      # Step 7: Release any existing deployment locks
+      # This prevents conflicts when redeploying while a previous deployment is running
+      - run: kamal lock release
+      # Uncomment for verbose output during troubleshooting:
+      # - run: kamal lock release --verbose
+
+      # Step 8: Initial Kamal setup (only needed once per server)
+      # Note: This step might need to be run manually on the server first time
+      # to add the user to the docker group: `sudo usermod -aG docker $USER | newgrp docker | docker ps`
+      - run: kamal setup

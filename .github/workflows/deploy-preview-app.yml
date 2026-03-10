@@ -1,0 +1,243 @@
+name: Deploy preview environment
+
+concurrency:
+  group: preview-app-deploy-${{ github.event_name }}-${{ github.ref_name || github.event.ref || github.event.pull_request.head.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - next
+  pull_request:
+    types: [closed]
+  pull_request_target:
+    types: [opened, reopened, synchronize]
+  delete:
+
+jobs:
+  deploy-ui:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+
+    env:
+      DOCKER_BUILDKIT: 1
+      KAMAL_REGISTRY_LOGIN_SERVER: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
+      KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
+      KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+      KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
+      KAMAL_APP_NAME: "fairdataihub-website"
+      KAMAL_APP_DOMAIN: "next.fairdataihub.org"
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ github.ref_name }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.1
+          bundler-cache: true
+
+      - run: gem install kamal
+
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - run: kamal deploy -d preview
+
+      - name: Comment preview URL on PR
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const branch = '${{ github.ref_name }}';
+            const previewUrl = 'https://${{ env.KAMAL_APP_DOMAIN }}';
+            const body = `## Preview deployment ready\n\n**Preview URL:** [${previewUrl}](${previewUrl})`;
+
+            const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              head: `${context.repo.owner}:${branch}`
+            });
+
+            if (prs.length === 0) return;
+
+            const issue_number = prs[0].number;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number
+            });
+
+            const previewComment = comments.find(
+              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment ready')
+            );
+
+            if (previewComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: previewComment.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body
+              });
+            }
+
+  comment-preview-on-pr:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request_target'
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ github.event.pull_request.head.ref }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
+      - name: Comment preview URL on PR
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const previewUrl = 'https://${{ env.KAMAL_APP_DOMAIN }}';
+            const issue_number = context.payload.pull_request.number;
+
+            const body = `## Preview deployment ready\n\n**Preview URL:** [${previewUrl}](${previewUrl})`;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number
+            });
+
+            const previewComment = comments.find(
+              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment ready')
+            );
+
+            if (previewComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: previewComment.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body
+              });
+            }
+
+  remove-preview:
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'pull_request' &&
+       github.event.action == 'closed' &&
+       !contains(fromJson('["main","next"]'), github.event.pull_request.head.ref)) ||
+      (github.event_name == 'delete' &&
+       github.event.ref_type == 'branch' &&
+       !contains(fromJson('["main","next"]'), github.event.ref))
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: read
+
+    env:
+      DOCKER_BUILDKIT: 1
+      KAMAL_REGISTRY_LOGIN_SERVER: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
+      KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
+      KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+      KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
+      KAMAL_APP_NAME: "fairdataihub-website"
+      KAMAL_APP_DOMAIN: "next.fairdataihub.org"
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set branch name for remove
+        id: branch
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+          else
+            BRANCH_NAME="${{ github.event.ref }}"
+          fi
+          echo "branch=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ steps.branch.outputs.branch }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.1
+          bundler-cache: true
+
+      - run: gem install kamal
+
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - run: kamal remove -y -d preview
+
+      - name: Comment deployment removed on PR
+        if: github.event_name == 'pull_request' && success()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.payload.pull_request.number,
+              body: '## Preview deployment removed\n\nThe preview environment for this branch has been removed.'
+            });
