@@ -116,7 +116,7 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="mt-3 line-clamp-4 text-base leading-relaxed text-balance md:text-lg">
+          <p className="mt-3 line-clamp-4 text-base md:text-lg">
             A free, open-source platform for sharing and discovering scientific
             posters, promoting collaboration and turning them into enduring
             research assets.
@@ -125,7 +125,7 @@ export default function BentoProjects() {
         </>
       ),
       href: `/posters-science`,
-      colSpan: `md:col-span-2`,
+      colSpan: `md:col-span-3`,
       size: `narrow`,
     },
     {
@@ -142,16 +142,17 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="mt-3 text-lg leading-relaxed text-balance md:text-xl">
-            Eye ACT uses the Envision Portal to study how eye diseases like
-            glaucoma and diabetic retinopathy may signal early Alzheimer&apos;s,
-            advancing AI-driven research under FAIR principles.
+          <p className="d:text-xl mt-3 text-lg">
+            Eye ACT is creating the Envision Portal to study how eye diseases
+            like like glaucoma and diabetic retinopathy may signal early
+            Alzheimer&apos;s, advancing AI-driven research under FAIR
+            principles.
           </p>
           <Badges tags={[`Platform`, `Standards`, `Guidelines`]} />
         </>
       ),
       href: `/eyeact`,
-      colSpan: `md:col-span-4`,
+      colSpan: `md:col-span-3`,
       size: `wide`,
     },
   ];
