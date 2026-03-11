@@ -45,8 +45,6 @@ COPY --from=dependencies /app/node_modules ./node_modules
 COPY . .
 
 ENV NODE_ENV=production
-# Disable Next.js image optimization so images work when running behind a reverse proxy
-ENV NEXT_IMAGE_UNOPTIMIZED=true
 
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
@@ -82,17 +80,17 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
-ENV NEXT_IMAGE_UNOPTIMIZED=true
 
 # Next.js collects completely anonymous telemetry data about general usage.
 # Learn more here: https://nextjs.org/telemetry
 # Uncomment the following line in case you want to disable telemetry during the run time.
 # ENV NEXT_TELEMETRY_DISABLED=1
 
-# Copy production dependencies and build output
-COPY --from=dependencies --chown=node:node /app/node_modules ./node_modules
-COPY --from=builder --chown=node:node /app/package.json ./package.json
-COPY --from=builder --chown=node:node /app/.next ./.next
+# Copy standalone server output (includes its own minimal node_modules)
+COPY --from=builder --chown=node:node /app/.next/standalone ./
+# Static assets must sit at .next/static inside the standalone dir
+COPY --from=builder --chown=node:node /app/.next/static ./.next/static
+# Public assets
 COPY --from=builder --chown=node:node /app/public ./public
 
 # Switch to non-root user for security best practices
@@ -101,5 +99,5 @@ USER node
 # Expose port 3000 to allow HTTP traffic
 EXPOSE 3000
 
-# Start Next.js server (matches "start" script in package.json)
-CMD ["node_modules/.bin/next", "start"]
+# Start the standalone server directly (no next CLI needed)
+CMD ["node", "server.js"]
