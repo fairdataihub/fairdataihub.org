@@ -1,0 +1,187 @@
+name: Cleanup stale preview environments
+
+on:
+  schedule:
+    - cron: '0 2 * * 1' # Every Monday at 2am UTC
+  workflow_dispatch:
+
+jobs:
+  find-stale:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+    outputs:
+      stale_envs: ${{ steps.find.outputs.stale_envs }}
+
+    steps:
+      - name: Find stale preview environments
+        id: find
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const STALE_DAYS = 90;
+            const STALE_MS = STALE_DAYS * 24 * 60 * 60 * 1000;
+            const ENV_PREFIX = 'fairdataihub-website-';
+            const now = Date.now();
+
+            function slugify(branch) {
+              return branch
+                .toLowerCase()
+                .replace(/[^a-z0-9-]/g, '-')
+                .replace(/-+/g, '-')
+                .replace(/^-|-$/g, '');
+            }
+
+            // List all branches
+            const branches = await github.paginate(github.rest.repos.listBranches, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+
+            // Build map: expected environment name → branch object
+            const branchByEnv = new Map();
+            for (const branch of branches) {
+              const envName = `${ENV_PREFIX}${slugify(branch.name)}`;
+              branchByEnv.set(envName, branch);
+            }
+
+            // Get all GitHub environments
+            const { data: envData } = await github.rest.repos.getAllEnvironments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+
+            const previewEnvs = (envData.environments || []).filter(e =>
+              e.name.startsWith(ENV_PREFIX)
+            );
+
+            const staleEnvs = [];
+
+            for (const env of previewEnvs) {
+              const branch = branchByEnv.get(env.name);
+
+              if (!branch) {
+                core.info(`${env.name}: branch no longer exists → stale`);
+                staleEnvs.push(env.name);
+                continue;
+              }
+
+              // Check last commit date on the branch
+              const { data: commit } = await github.rest.repos.getCommit({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                ref: branch.commit.sha,
+              });
+
+              const lastPush = new Date(commit.commit.committer.date).getTime();
+              const ageDays = Math.floor((now - lastPush) / (24 * 60 * 60 * 1000));
+
+              if (now - lastPush > STALE_MS) {
+                core.info(`${env.name}: last push ${ageDays} days ago → stale`);
+                staleEnvs.push(env.name);
+              } else {
+                core.info(`${env.name}: last push ${ageDays} days ago → active`);
+              }
+            }
+
+            core.setOutput('stale_envs', JSON.stringify(staleEnvs));
+            core.info(`Found ${staleEnvs.length} stale environment(s)`);
+
+  cleanup:
+    needs: find-stale
+    runs-on: ubuntu-latest
+    if: needs.find-stale.outputs.stale_envs != '[]'
+    permissions:
+      contents: read
+      deployments: write
+
+    env:
+      KAMAL_REGISTRY_LOGIN_SERVER: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
+      KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
+      KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+      KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.1
+          bundler-cache: true
+
+      - run: gem install kamal
+
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Remove stale Kamal preview deployments
+        run: |
+          echo '${{ needs.find-stale.outputs.stale_envs }}' | jq -r '.[]' | while read -r env_name; do
+            branch_slug="${env_name#fairdataihub-website-}"
+            export KAMAL_APP_NAME="$env_name"
+            export KAMAL_APP_DOMAIN="website-${branch_slug}.fairdataihub.org"
+            echo "Removing stale preview: $env_name"
+            kamal remove -y -d preview || echo "Warning: kamal remove failed for $env_name, continuing..."
+          done
+
+      - name: Set up crane
+        uses: imjasonh/setup-crane@v0.4
+
+      - name: Delete stale registry images
+        run: |
+          crane auth login "$KAMAL_REGISTRY_LOGIN_SERVER" \
+            -u "$KAMAL_REGISTRY_USERNAME" \
+            -p "$KAMAL_REGISTRY_PASSWORD"
+
+          echo '${{ needs.find-stale.outputs.stale_envs }}' | jq -r '.[]' | while read -r env_name; do
+            echo "Deleting registry image: $env_name"
+            crane ls "$KAMAL_REGISTRY_LOGIN_SERVER/$env_name" 2>/dev/null \
+              | xargs -I{} crane delete "$KAMAL_REGISTRY_LOGIN_SERVER/$env_name:{}" 2>/dev/null \
+              || true
+          done
+
+      - name: Deactivate and delete GitHub environments
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const staleEnvs = JSON.parse('${{ needs.find-stale.outputs.stale_envs }}');
+
+            for (const envName of staleEnvs) {
+              try {
+                const { data: deployments } = await github.rest.repos.listDeployments({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  environment: envName,
+                  per_page: 100,
+                });
+
+                for (const d of deployments) {
+                  await github.rest.repos.createDeploymentStatus({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    deployment_id: d.id,
+                    state: 'inactive',
+                  });
+                  await github.rest.repos.deleteDeployment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    deployment_id: d.id,
+                  });
+                }
+
+                await github.rest.repos.deleteAnEnvironment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  environment_name: envName,
+                });
+
+                core.info(`Cleaned up: ${envName}`);
+              } catch (e) {
+                core.warning(`Failed to clean up ${envName}: ${e.message}`);
+              }
+            }
