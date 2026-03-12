@@ -10,7 +10,7 @@ on:
       - main
       - next
   pull_request:
-    types: [closed]
+    types: [opened, reopened, closed]
   delete:
 
 jobs:
@@ -220,6 +220,96 @@ jobs:
                 repo: context.repo.repo,
                 issue_number,
                 body
+              });
+            }
+
+  notify-pr-on-open:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'pull_request' &&
+      (github.event.action == 'opened' || github.event.action == 'reopened') &&
+      !contains(fromJson('["main","next"]'), github.event.pull_request.head.ref)
+    permissions:
+      contents: read
+      deployments: read
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ github.event.pull_request.head.ref }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
+      - name: Post preview status comment
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const previewUrl = `https://${process.env.KAMAL_APP_DOMAIN}`;
+            const issue_number = context.payload.pull_request.number;
+
+            // Look up the latest deployment for this preview environment
+            const { data: deployments } = await github.rest.repos.listDeployments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              environment: process.env.KAMAL_APP_NAME,
+              per_page: 1,
+            });
+
+            let body;
+            if (deployments.length > 0) {
+              const { data: statuses } = await github.rest.repos.listDeploymentStatuses({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployments[0].id,
+                per_page: 1,
+              });
+              const state = statuses[0]?.state;
+              if (state === 'success') {
+                const updatedAt = new Date(deployments[0].updated_at).toUTCString();
+                body = `## Preview deployment ready\n\n**Preview URL:** [${previewUrl}](${previewUrl})\n\n> Last deployed: ${updatedAt}`;
+              } else if (state === 'in_progress') {
+                body = `## Preview deployment in progress\n\nA preview environment is being built and will be available at [${previewUrl}](${previewUrl}) once ready. Please wait...`;
+              } else {
+                body = `## Preview deployment\n\nA preview environment will be available at [${previewUrl}](${previewUrl}) after the next push to this branch.`;
+              }
+            } else {
+              body = `## Preview deployment\n\nA preview environment will be available at [${previewUrl}](${previewUrl}) after the next push to this branch.`;
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number,
+            });
+
+            const existing = comments.find(
+              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body,
               });
             }
 
