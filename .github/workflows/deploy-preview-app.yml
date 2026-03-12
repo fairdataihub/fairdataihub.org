@@ -232,6 +232,7 @@ jobs:
     permissions:
       contents: read
       deployments: read
+      actions: read
       issues: write
       pull-requests: write
 
@@ -257,6 +258,7 @@ jobs:
           script: |
             const previewUrl = `https://${process.env.KAMAL_APP_DOMAIN}`;
             const issue_number = context.payload.pull_request.number;
+            const branch = context.payload.pull_request.head.ref;
 
             // Look up the latest deployment for this preview environment
             const { data: deployments } = await github.rest.repos.listDeployments({
@@ -284,7 +286,22 @@ jobs:
                 body = `## Preview deployment\n\nA preview environment will be available at [${previewUrl}](${previewUrl}) after the next push to this branch.`;
               }
             } else {
-              body = `## Preview deployment\n\nA preview environment will be available at [${previewUrl}](${previewUrl}) after the next push to this branch.`;
+              // No deployment record yet — check if deploy-ui is currently running for this branch.
+              // The GitHub deployment record is only created after kamal completes, so a concurrent
+              // push can leave listDeployments empty while the workflow is still in progress.
+              const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                branch,
+                status: 'in_progress',
+                per_page: 10,
+              });
+              const deployRunning = runs.workflow_runs.some(r => r.name === 'Deploy preview environment');
+              if (deployRunning) {
+                body = `## Preview deployment in progress\n\nA preview environment is being built and will be available at [${previewUrl}](${previewUrl}) once ready. Please wait...`;
+              } else {
+                body = `## Preview deployment\n\nA preview environment will be available at [${previewUrl}](${previewUrl}) after the next push to this branch.`;
+              }
             }
 
             const { data: comments } = await github.rest.issues.listComments({
