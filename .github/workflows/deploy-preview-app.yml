@@ -76,7 +76,7 @@ jobs:
             });
 
             const existing = comments.find(
-              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment')
+              c => c.body.startsWith('## Preview deployment')
             );
 
             let commentId;
@@ -204,7 +204,7 @@ jobs:
             });
 
             const existing = comments.find(
-              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment')
+              c => c.body.startsWith('## Preview deployment')
             );
 
             if (existing) {
@@ -311,7 +311,7 @@ jobs:
             });
 
             const existing = comments.find(
-              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment')
+              c => c.body.startsWith('## Preview deployment')
             );
 
             if (existing) {
@@ -461,7 +461,7 @@ jobs:
             });
 
             const existing = comments.find(
-              c => c.user.type === 'Bot' && c.body.startsWith('## Preview deployment')
+              c => c.body.startsWith('## Preview deployment')
             );
 
             if (existing) {
