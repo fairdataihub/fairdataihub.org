@@ -394,7 +394,7 @@ jobs:
         if: always()
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
           script: |
             const { data: deployments } = await github.rest.repos.listDeployments({
               owner: context.repo.owner,
@@ -410,6 +410,11 @@ jobs:
                 deployment_id: deployment.id,
                 state: 'inactive',
                 description: 'Preview environment removed'
+              });
+              await github.rest.repos.deleteDeployment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployment.id
               });
             }
 
