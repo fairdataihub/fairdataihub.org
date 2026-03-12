@@ -1,7 +1,7 @@
 name: Deploy preview environment
 
 concurrency:
-  group: preview-app-deploy-${{ github.event_name }}-${{ github.ref_name || github.event.ref || github.event.pull_request.head.ref }}
+  group: preview-app-${{ github.ref_name || github.event.ref || github.event.pull_request.head.ref }}
   cancel-in-progress: true
 
 on:
