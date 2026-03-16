@@ -1,4 +1,5 @@
 module.exports = {
+  output: 'standalone',
   reactStrictMode: true,
   images: {
     // In Docker behind a reverse proxy (e.g. Kamal), the /_next/image endpoint can
