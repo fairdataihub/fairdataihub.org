@@ -1,0 +1,481 @@
+name: Deploy preview environment
+
+concurrency:
+  group: preview-app-${{ github.ref_name || github.event.ref || github.event.pull_request.head.ref }}
+  cancel-in-progress: true
+
+on:
+  push:
+    branches-ignore:
+      - main
+      - next
+  pull_request:
+    types: [opened, reopened, closed]
+  delete:
+
+jobs:
+  deploy-ui:
+    runs-on: ubuntu-latest
+    if: github.event_name == 'push'
+    permissions:
+      contents: read
+      deployments: write
+      issues: write
+      pull-requests: write
+
+    env:
+      DOCKER_BUILDKIT: 1
+      KAMAL_REGISTRY_LOGIN_SERVER: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
+      KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
+      KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+      KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
+      KAMAL_APP_NAME: 'fairdataihub-website'
+      KAMAL_APP_DOMAIN: 'next.fairdataihub.org'
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ github.ref_name }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
+      - name: Post in-progress comment on PR
+        id: post-comment
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const branch = '${{ github.ref_name }}';
+            const previewUrl = `https://${process.env.KAMAL_APP_DOMAIN}`;
+
+            const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              head: `${context.repo.owner}:${branch}`
+            });
+
+            if (prs.length === 0) return;
+
+            const issue_number = prs[0].number;
+            const body = `## Preview deployment in progress\n\nA preview environment is being built and will be available at [${previewUrl}](${previewUrl}) once ready. Please wait...`;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number
+            });
+
+            const existing = comments.find(
+              c => c.body.startsWith('## Preview deployment')
+            );
+
+            let commentId;
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body
+              });
+              commentId = existing.id;
+            } else {
+              const { data: newComment } = await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body
+              });
+              commentId = newComment.id;
+            }
+
+            core.setOutput('comment_id', commentId);
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.1
+          bundler-cache: true
+
+      - run: gem install kamal
+
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - id: kamal-deploy
+        run: kamal deploy -d preview
+
+      - name: Manage GitHub deployment
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const deploySucceeded = '${{ steps.kamal-deploy.outcome }}' === 'success';
+
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: context.ref,
+              environment: process.env.KAMAL_APP_NAME,
+              auto_merge: false,
+              required_contexts: []
+            });
+
+            const statusPayload = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: deployment.data.id,
+              state: deploySucceeded ? 'success' : 'failure',
+              description: deploySucceeded ? 'Preview deployment ready' : 'Preview deployment failed'
+            };
+            if (deploySucceeded) {
+              statusPayload.environment_url = `https://${process.env.KAMAL_APP_DOMAIN}`;
+            }
+            await github.rest.repos.createDeploymentStatus(statusPayload);
+
+            const { data: deployments } = await github.rest.repos.listDeployments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              environment: process.env.KAMAL_APP_NAME,
+              per_page: 100
+            });
+
+            for (const d of deployments) {
+              if (d.id === deployment.data.id) continue;
+              await github.rest.repos.createDeploymentStatus({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: d.id,
+                state: 'inactive'
+              });
+            }
+
+      - name: Update PR comment
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const previewUrl = `https://${process.env.KAMAL_APP_DOMAIN}`;
+            const deploySucceeded = '${{ steps.kamal-deploy.outcome }}' === 'success';
+
+            const body = deploySucceeded
+              ? `## Preview deployment ready\n\n**Preview URL:** [${previewUrl}](${previewUrl})\n\n> Last deployed: ${new Date().toUTCString()}`
+              : `## Preview deployment failed\n\nThe deployment for this branch failed. Check the [workflow run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.`;
+
+            const commentId = '${{ steps.post-comment.outputs.comment_id }}';
+
+            if (commentId) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: parseInt(commentId),
+                body
+              });
+              return;
+            }
+
+            // Fallback: no comment was posted at the start (no open PR at that time)
+            const branch = '${{ github.ref_name }}';
+            const { data: prs } = await github.rest.pulls.list({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              head: `${context.repo.owner}:${branch}`
+            });
+
+            if (prs.length === 0) return;
+
+            const issue_number = prs[0].number;
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number
+            });
+
+            const existing = comments.find(
+              c => c.body.startsWith('## Preview deployment')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body
+              });
+            }
+
+  notify-pr-on-open:
+    runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'pull_request' &&
+      (github.event.action == 'opened' || github.event.action == 'reopened') &&
+      !contains(fromJson('["main","next"]'), github.event.pull_request.head.ref)
+    permissions:
+      contents: read
+      deployments: read
+      actions: read
+      issues: write
+      pull-requests: write
+
+    steps:
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ github.event.pull_request.head.ref }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
+      - name: Post preview status comment
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const previewUrl = `https://${process.env.KAMAL_APP_DOMAIN}`;
+            const issue_number = context.payload.pull_request.number;
+            const branch = context.payload.pull_request.head.ref;
+
+            // Look up the latest deployment for this preview environment
+            const { data: deployments } = await github.rest.repos.listDeployments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              environment: process.env.KAMAL_APP_NAME,
+              per_page: 1,
+            });
+
+            let body;
+            if (deployments.length > 0) {
+              const { data: statuses } = await github.rest.repos.listDeploymentStatuses({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployments[0].id,
+                per_page: 1,
+              });
+              const state = statuses[0]?.state;
+              if (state === 'success') {
+                const updatedAt = new Date(deployments[0].updated_at).toUTCString();
+                body = `## Preview deployment ready\n\n**Preview URL:** [${previewUrl}](${previewUrl})\n\n> Last deployed: ${updatedAt}`;
+              } else if (state === 'in_progress') {
+                body = `## Preview deployment in progress\n\nA preview environment is being built and will be available at [${previewUrl}](${previewUrl}) once ready. Please wait...`;
+              } else {
+                body = `## Preview deployment\n\nA preview environment will be available at [${previewUrl}](${previewUrl}) after the next push to this branch.`;
+              }
+            } else {
+              // No deployment record yet — check if deploy-ui is currently running for this branch.
+              // The GitHub deployment record is only created after kamal completes, so a concurrent
+              // push can leave listDeployments empty while the workflow is still in progress.
+              const { data: runs } = await github.rest.actions.listWorkflowRunsForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                branch,
+                status: 'in_progress',
+                per_page: 10,
+              });
+              const deployRunning = runs.workflow_runs.some(r => r.name === 'Deploy preview environment');
+              if (deployRunning) {
+                body = `## Preview deployment in progress\n\nA preview environment is being built and will be available at [${previewUrl}](${previewUrl}) once ready. Please wait...`;
+              } else {
+                body = `## Preview deployment\n\nA preview environment will be available at [${previewUrl}](${previewUrl}) after the next push to this branch.`;
+              }
+            }
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number,
+            });
+
+            const existing = comments.find(
+              c => c.body.startsWith('## Preview deployment')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body,
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body,
+              });
+            }
+
+  remove-preview:
+    runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'pull_request' &&
+       github.event.action == 'closed' &&
+       !contains(fromJson('["main","next"]'), github.event.pull_request.head.ref)) ||
+      (github.event_name == 'delete' &&
+       github.event.ref_type == 'branch' &&
+       !contains(fromJson('["main","next"]'), github.event.ref))
+    permissions:
+      contents: read
+      deployments: write
+      issues: write
+      pull-requests: read
+
+    env:
+      DOCKER_BUILDKIT: 1
+      KAMAL_REGISTRY_LOGIN_SERVER: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
+      KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
+      KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+      KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
+      KAMAL_APP_NAME: 'fairdataihub-website'
+      KAMAL_APP_DOMAIN: 'next.fairdataihub.org'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set branch name for remove
+        id: branch
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH_NAME="${{ github.event.pull_request.head.ref }}"
+          else
+            BRANCH_NAME="${{ github.event.ref }}"
+          fi
+          echo "branch=${BRANCH_NAME}" >> "$GITHUB_OUTPUT"
+
+      - name: Set preview app name and domain
+        run: |
+          BRANCH_SLUG=$(echo "${{ steps.branch.outputs.branch }}" \
+            | tr '[:upper:]' '[:lower:]' \
+            | sed 's/[^a-z0-9-]/-/g' \
+            | sed 's/-\+/-/g' \
+            | sed 's/^-//;s/-$//')
+
+          APP_NAME="fairdataihub-website-${BRANCH_SLUG}"
+          APP_DOMAIN="website-${BRANCH_SLUG}.fairdataihub.org"
+
+          echo "KAMAL_APP_NAME=${APP_NAME}" >> "$GITHUB_ENV"
+          echo "KAMAL_APP_DOMAIN=${APP_DOMAIN}" >> "$GITHUB_ENV"
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.1
+          bundler-cache: true
+
+      - run: gem install kamal
+
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - run: kamal remove -y -d preview
+
+      - name: Delete registry image
+        if: always()
+        uses: imjasonh/setup-crane@v0.4
+      - name: Remove preview image from registry
+        if: always()
+        run: |
+          crane auth login "$KAMAL_REGISTRY_LOGIN_SERVER" \
+            -u "$KAMAL_REGISTRY_USERNAME" \
+            -p "$KAMAL_REGISTRY_PASSWORD"
+          crane ls "$KAMAL_REGISTRY_LOGIN_SERVER/$KAMAL_APP_NAME" 2>/dev/null \
+            | xargs -I{} crane delete "$KAMAL_REGISTRY_LOGIN_SERVER/$KAMAL_APP_NAME:{}" 2>/dev/null \
+            || true
+
+      - name: Deactivate and delete GitHub environment
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+          script: |
+            const { data: deployments } = await github.rest.repos.listDeployments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              environment: process.env.KAMAL_APP_NAME,
+              per_page: 100
+            });
+
+            for (const deployment of deployments) {
+              await github.rest.repos.createDeploymentStatus({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployment.id,
+                state: 'inactive',
+                description: 'Preview environment removed'
+              });
+              await github.rest.repos.deleteDeployment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                deployment_id: deployment.id
+              });
+            }
+
+            try {
+              await github.rest.repos.deleteAnEnvironment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                environment_name: process.env.KAMAL_APP_NAME
+              });
+            } catch (e) {
+              core.warning(`Could not delete environment: ${e.message}`);
+            }
+
+      - name: Update PR comment on removal
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issue_number = context.payload.pull_request.number;
+            const body = `## Preview deployment removed\n\nThe preview environment for this branch has been removed.`;
+
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number
+            });
+
+            const existing = comments.find(
+              c => c.body.startsWith('## Preview deployment')
+            );
+
+            if (existing) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existing.id,
+                body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number,
+                body
+              });
+            }

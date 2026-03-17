@@ -1,0 +1,120 @@
+# GitHub Actions workflow for deploying the application to production environment
+name: Deploy to production environment
+
+# Concurrency control to prevent multiple deployments running simultaneously
+# If a new deployment is triggered while one is running, the previous one will be cancelled
+concurrency:
+  group: production-app-deploy
+  cancel-in-progress: true
+
+# Trigger conditions for this workflow
+on:
+  push:
+    branches:
+      - next # Deploy on every push to next branch
+  workflow_dispatch: # Allow manual triggering from GitHub UI
+
+jobs:
+  # Job for deploying the UI/frontend application
+  deploy-ui:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    # Environment variables for Kamal deployment and container registry
+    env:
+      DOCKER_BUILDKIT: 1 # Enable Docker BuildKit for faster builds
+      KAMAL_REGISTRY_LOGIN_SERVER: ${{ secrets.KAMAL_REGISTRY_LOGIN_SERVER }}
+      KAMAL_REGISTRY_USERNAME: ${{ secrets.KAMAL_REGISTRY_USERNAME }}
+      KAMAL_REGISTRY_PASSWORD: ${{ secrets.KAMAL_REGISTRY_PASSWORD }}
+      KAMAL_SERVER_IP: ${{ secrets.KAMAL_SERVER_IP }}
+      KAMAL_APP_DOMAIN: ${{ secrets.KAMAL_APP_DOMAIN }}
+      KAMAL_APP_NAME: ${{ secrets.KAMAL_APP_NAME }}
+
+    steps:
+      # Step 1: Checkout the repository code
+      - uses: actions/checkout@v4
+
+      # Step 2: Create GitHub deployment record and mark as in_progress
+      - name: Create GitHub deployment
+        id: create-deployment
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const deployment = await github.rest.repos.createDeployment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: context.ref,
+              environment: 'production',
+              auto_merge: false,
+              required_contexts: [],
+            });
+
+            core.setOutput('deployment_id', deployment.data.id);
+
+            await github.rest.repos.createDeploymentStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: deployment.data.id,
+              state: 'in_progress',
+              description: 'Deployment in progress',
+            });
+
+      # Step 3: Setup Ruby environment for Kamal deployment tool
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3.1
+          bundler-cache: true # Cache Ruby dependencies for faster builds
+
+      # Step 4: Install Kamal deployment tool
+      - run: gem install kamal
+
+      # Step 5: Setup SSH agent for server access
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Step 6: Setup Docker Buildx for better caching and performance
+      - name: Set up Docker Buildx for cache
+        uses: docker/setup-buildx-action@v3
+
+      # Step 7: Verify Kamal installation
+      - run: kamal version
+
+      # Step 8: Release any existing deployment locks
+      # This prevents conflicts when redeploying while a previous deployment is running
+      - run: kamal lock release
+      # Uncomment for verbose output during troubleshooting:
+      # - run: kamal lock release --verbose
+
+      # Step 9: Initial Kamal setup (only needed once per server)
+      # Note: This step might need to be run manually on the server first time
+      # to add the user to the docker group: `sudo usermod -aG docker $USER | newgrp docker | docker ps`
+      - id: kamal-deploy
+        run: kamal setup
+
+      # Step 10: Update GitHub deployment status based on outcome
+      - name: Update GitHub deployment status
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const deploymentId = '${{ steps.create-deployment.outputs.deployment_id }}';
+            if (!deploymentId) return;
+
+            const deploySucceeded = '${{ steps.kamal-deploy.outcome }}' === 'success';
+            const statusPayload = {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              deployment_id: parseInt(deploymentId),
+              state: deploySucceeded ? 'success' : 'failure',
+              description: deploySucceeded ? 'Deployment succeeded' : 'Deployment failed',
+            };
+            if (deploySucceeded) {
+              statusPayload.environment_url = `https://${process.env.KAMAL_APP_DOMAIN}`;
+            }
+            await github.rest.repos.createDeploymentStatus(statusPayload);
