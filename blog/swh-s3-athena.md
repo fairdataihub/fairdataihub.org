@@ -28,10 +28,10 @@ For more than a decade, the Software Heritage initiative has led one of the most
 
 ## Prerequisites
 Before we get started, you'll need to make sure you have access to the following:
-  - AWS account with permissions to use Amazon Athena and S3
-  - An S3 bucket you control to store intermediate and final query outputs
+  - An AWS account with an IAM user or role
+  - Correct permissions attached to your IAM user or role
 
-### To Setup AWS S3 bucket
+### Setup AWS S3 bucket
 
 1. Create (or confirm) an S3 bucket for Athena outputs
 
@@ -41,12 +41,13 @@ Before we get started, you'll need to make sure you have access to the following
 2. Verify that your IAM role or user has the required S3 permissions for Athena result storage:
 
 ```bash
-s3:PutObject
-s3:GetObject
-s3:ListBucket
+  athena:StartQueryExecution, athena:GetQueryExecution, athena:GetQueryResults, athena:StopQueryExecution
+  glue:GetTable, glue:GetDatabase, glue:GetPartitions
+  s3:PutObject, s3:GetObject, s3:ListBucket
 ```
 
 ### Step 1. Accessing the Software Heritage Graph
+
 We begin by defining an external table in Amazon Athena pointing to the Software Heritage Graph snapshot dated 2025-10-08, stored as Parquet files on S3, in order to query the origin data.
 ```sql
 CREATE EXTERNAL TABLE IF NOT EXISTS swh_graph_2025_10_08.origin (
