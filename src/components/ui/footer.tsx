@@ -1,13 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 export default function Footer() {
   const isDev = process.env.NODE_ENV === `development`;
+  const isGalleryPage = usePathname().includes(`/gallery/p/`) ?? false;
 
   return (
     <footer
       id="fairdata-footer"
-      className={`${isDev ? `debug-screens` : ``} relative z-30 bg-white px-6`}
+      className={`${isDev ? `debug-screens` : ``} ${isGalleryPage ? `hidden` : ``} relative z-30 bg-white px-6`}
     >
       <div className="h-px w-full bg-gradient-to-r from-transparent via-gray-200 to-transparent" />
 

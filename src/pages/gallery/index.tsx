@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { getPlaiceholder } from 'plaiceholder';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 
 import Modal from '@/components/gallery/Modal';
 import Seo from '@/components/seo/seo';
@@ -12,7 +12,6 @@ import Seo from '@/components/seo/seo';
 import GALLERY_JSON from '@/public/gallery/images.json';
 import { groupByYear, toBuckets } from '@/utils/galleryLayout';
 import type { ImageProps } from '@/utils/types';
-import { useLastViewedPhoto } from '@/utils/useLastViewedPhoto';
 import { useMediaColumns } from '@/utils/useMediaColumns';
 
 type Props = { images: ImageProps[] };
@@ -20,16 +19,7 @@ type Props = { images: ImageProps[] };
 const Gallery: NextPage<Props> = ({ images }) => {
   const router = useRouter();
   const { photoId } = router.query;
-  const [lastViewedPhoto, setLastViewedPhoto] = useLastViewedPhoto();
-  const lastViewedPhotoRef = useRef<HTMLAnchorElement>(null);
-  const [touchedId, setTouchedId] = useState<number | null>(null);
-
-  useEffect(() => {
-    if (lastViewedPhoto && !photoId) {
-      lastViewedPhotoRef.current?.scrollIntoView({ block: `center` });
-      setLastViewedPhoto(null);
-    }
-  }, [photoId, lastViewedPhoto, setLastViewedPhoto]);
+  const [touchedId, setTouchedId] = useState<string | null>(null);
 
   const getYear = (img: ImageProps) =>
     img.date
@@ -49,9 +39,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
       />
 
       <section className="py-10 pt-30">
-        {photoId && (
-          <Modal images={images} onClose={() => setLastViewedPhoto(photoId)} />
-        )}
+        {photoId && <Modal images={images} />}
 
         {/* gradient glow parallax layer */}
         <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
@@ -119,11 +107,6 @@ const Gallery: NextPage<Props> = ({ images }) => {
                               key={id}
                               href={`gallery/?photoId=${id}`}
                               as={`gallery/p/${id}`}
-                              ref={
-                                id === Number(lastViewedPhoto)
-                                  ? lastViewedPhotoRef
-                                  : null
-                              }
                               shallow
                               onTouchStart={() => setTouchedId(id)}
                               onTouchEnd={() => setTouchedId(id)}
@@ -139,7 +122,7 @@ const Gallery: NextPage<Props> = ({ images }) => {
                                   height={height}
                                   placeholder="blur"
                                   blurDataURL={blurDataUrl}
-                                  className="rounded-lg object-cover"
+                                  className="z-0 rounded-lg object-cover"
                                 />
 
                                 {/* hover overlay */}
@@ -201,14 +184,11 @@ const Gallery: NextPage<Props> = ({ images }) => {
 export default Gallery;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
-  let i = 0;
-
   const sorted_GALLERY_JSON = [...GALLERY_JSON].sort((a, b) =>
     a.date && b.date ? (a.date > b.date ? 1 : -1) : 0,
   );
-  const reversed_GALLERY_JSON = [...sorted_GALLERY_JSON].reverse();
 
-  const imagePromises = reversed_GALLERY_JSON.flatMap((event) =>
+  const imagePromises = sorted_GALLERY_JSON.flatMap((event) =>
     event.images.map(async (img) => {
       const imageUrl = encodeURI(
         `https://cdn.fairdataihub.org/gallery/${event.folder}/${img.name}`,
@@ -230,7 +210,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         const blurDataUrl = (await getPlaiceholder(buffer)).base64;
 
         return {
-          id: i++,
+          id: img.id,
           folder: event.folder,
           name: img.name,
           alt: img.alt,
@@ -253,8 +233,15 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     (img): img is NonNullable<typeof img> => img !== null,
   );
 
-  // reassign ids
-  results.forEach((img, idx) => (img.id = idx));
+  const ids = results.map((img) => img.id);
+  const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
+  const uniqueDuplicates = [...new Set(duplicateIds)];
+  if (uniqueDuplicates.length > 0) {
+    throw new Error(
+      `Duplicate gallery id(s) found: ${uniqueDuplicates.join(`, `)}. Each image must have a unique id in public/gallery/images.json.`,
+    );
+  }
 
-  return { props: { images: results } };
+  // reverse for display (newest first)
+  return { props: { images: results.reverse() } };
 };

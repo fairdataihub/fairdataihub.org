@@ -1,3 +1,59 @@
+# [2.83.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.1...v2.83.0) (2026-03-10)
+
+
+### Features
+
+* ✨ add gallery images ([ad082f8](https://github.com/fairdataihub/fairdataihub.org/commit/ad082f82591540530ba7ef16ef6892c2298444e1))
+
+## [2.82.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.0...v2.82.1) (2026-03-03)
+
+
+### Bug Fixes
+
+* 🐛 update teammate image ([4c52942](https://github.com/fairdataihub/fairdataihub.org/commit/4c52942c1f0fa5451a552db5660b9d4697af6dbc))
+
+# [2.82.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.3...v2.82.0) (2026-02-20)
+
+
+### Features
+
+* ✨ swap image carousel library to react-slick ([#741](https://github.com/fairdataihub/fairdataihub.org/issues/741)) ([3f677a1](https://github.com/fairdataihub/fairdataihub.org/commit/3f677a1b31be024eac626be1d3f715454f09cbe4))
+
+## [2.81.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.2...v2.81.3) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 sort gallery images by date for consistent display ([b983db3](https://github.com/fairdataihub/fairdataihub.org/commit/b983db3321f59a40b2af6680711070f5af895328))
+
+## [2.81.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.1...v2.81.2) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 update image id assignment order ([c2f5fe1](https://github.com/fairdataihub/fairdataihub.org/commit/c2f5fe13ec679ea53119c0bd5ba584f99c7e4790))
+
+## [2.81.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.0...v2.81.1) (2026-02-19)
+
+
+### Bug Fixes
+
+* 🐛 blog ([2e0fbcb](https://github.com/fairdataihub/fairdataihub.org/commit/2e0fbcbf90198e0a8b56e5697c7ef4041f6db14f))
+
+# [2.81.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.2...v2.81.0) (2026-02-19)
+
+
+### Features
+
+* ✨ blog post ([50dd534](https://github.com/fairdataihub/fairdataihub.org/commit/50dd534897e630b2d3fe93730f25438c986e4bfd))
+
+## [2.80.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.1...v2.80.2) (2026-02-19)
+
+
+### Bug Fixes
+
+* 🐛 redirect aireadi learn more ([0b9736e](https://github.com/fairdataihub/fairdataihub.org/commit/0b9736e9c2eb500334103cdff7b843132992cf3d))
+
 ## [2.80.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.0...v2.80.1) (2026-02-13)
 
 
