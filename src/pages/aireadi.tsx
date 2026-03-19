@@ -18,14 +18,14 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
       href: `https://aireadi.org/`,
       target: `_blank`,
       ariaLabel: `AI-READI website`,
-      rel: `noopener`,
+      rel: `noopener noreferrer`,
     },
     {
       text: `Visit the FAIRhub Portal`,
       href: `https://fairhub.io/`, // update later if AI-READI gets its own docs URL
       target: `_blank`,
       ariaLabel: `FAIRhub portal`,
-      rel: `noopener`,
+      rel: `noopener noreferrer`,
     },
   ];
 
@@ -60,7 +60,7 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
               text: `Learn more about the AI-READI project`,
               href: `https://aireadi.org`,
               target: `_blank`,
-              rel: `noopener`,
+              rel: `noopener noreferrer`,
             },
           },
           {
@@ -71,7 +71,7 @@ const Aireadi: React.FC<PublicationsItemList> = ({ publications }) => {
               text: `Learn more about FAIR`,
               href: `https://doi.org/10.1038/sdata.2016.18`,
               target: `_blank`,
-              rel: `noopener`,
+              rel: `noopener noreferrer`,
             },
           },
           {
