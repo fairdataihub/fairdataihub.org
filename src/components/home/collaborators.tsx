@@ -76,7 +76,7 @@ export default function Collaborators() {
       href: `https://www.mbfbioscience.com`,
     },
     {
-      src: `https://os.nav.fund/acknowledge/logos/TNF_Stacked_Logos/stacked_color.svg`,
+      src: `/images/collaborators/tnf-logo.png`,
       alt: `The Navigation Fund logo`,
       width: 250,
       height: 200,

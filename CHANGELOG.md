@@ -1,3 +1,52 @@
+## [2.84.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.0...v2.84.1) (2026-03-17)
+
+
+### Bug Fixes
+
+* 🐛 update image size ([d76f99e](https://github.com/fairdataihub/fairdataihub.org/commit/d76f99e6e9e5efa724ac17b608144ce403e17440))
+
+# [2.84.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.83.0...v2.84.0) (2026-03-17)
+
+
+### Features
+
+* ✨ update teammate image ([ce3dcaa](https://github.com/fairdataihub/fairdataihub.org/commit/ce3dcaa12091cba98bbe19c1ee8be98f2867a2f5))
+
+# [2.83.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.1...v2.83.0) (2026-03-10)
+
+
+### Features
+
+* ✨ add gallery images ([ad082f8](https://github.com/fairdataihub/fairdataihub.org/commit/ad082f82591540530ba7ef16ef6892c2298444e1))
+
+## [2.82.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.0...v2.82.1) (2026-03-03)
+
+
+### Bug Fixes
+
+* 🐛 update teammate image ([4c52942](https://github.com/fairdataihub/fairdataihub.org/commit/4c52942c1f0fa5451a552db5660b9d4697af6dbc))
+
+# [2.82.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.3...v2.82.0) (2026-02-20)
+
+
+### Features
+
+* ✨ swap image carousel library to react-slick ([#741](https://github.com/fairdataihub/fairdataihub.org/issues/741)) ([3f677a1](https://github.com/fairdataihub/fairdataihub.org/commit/3f677a1b31be024eac626be1d3f715454f09cbe4))
+
+## [2.81.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.2...v2.81.3) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 sort gallery images by date for consistent display ([b983db3](https://github.com/fairdataihub/fairdataihub.org/commit/b983db3321f59a40b2af6680711070f5af895328))
+
+## [2.81.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.1...v2.81.2) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 update image id assignment order ([c2f5fe1](https://github.com/fairdataihub/fairdataihub.org/commit/c2f5fe13ec679ea53119c0bd5ba584f99c7e4790))
+
 ## [2.81.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.0...v2.81.1) (2026-02-19)
 
 
