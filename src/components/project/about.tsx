@@ -78,7 +78,6 @@ export default function ProjectAbout({
           </div>
         ))}
       </div>
-      {` `}
     </section>
   );
 }
