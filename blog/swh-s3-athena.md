@@ -14,7 +14,7 @@ tags:
   - Software Heritage
   - AWS
   - AWS S3 bucket
-  - Athena api
+  - Athena API
   - Parquet
 ---
 
@@ -34,7 +34,7 @@ Before we get started, you'll need to make sure you have access to the following
   - An AWS account with an IAM user or role
   - Correct permissions attached to your IAM user or role
 
-### Setup AWS S3 bucket
+### Set up AWS S3 bucket
 
 1. Create (or confirm) an S3 bucket for Athena outputs
 
@@ -210,7 +210,7 @@ WHERE type = 'file'
 
 ### Step 5. Resolving Git SHA-1 to Canonical SHA-1
 
-Once we retrieve the directory-level sha1_git values, we decompose the query into three incremental steps. First, we extract the distinct content_sha1_git values from the intermediate result set. Next, we join this reduced set against the content table to retrieve only the matching SHA1 _git and SHA1 pairs. Finally, we perform the join between the original URL/date dataset and the filtered content results.
+Once we retrieve the directory-level sha1_git values, we decompose the query into three incremental steps. First, we extract the distinct content_sha1_git values from the intermediate result set. Next, we join this reduced set against the content table to retrieve only the matching SHA1_git and SHA1 pairs. Finally, we perform the join between the original URL/date dataset and the filtered content results.
 
 By materializing intermediate tables and reducing the join cardinality at each stage, we are able to avoid exhaustion errors and complete the retrieval successfully.
 
