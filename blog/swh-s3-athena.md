@@ -64,47 +64,15 @@ LOCATION 's3://softwareheritage/graph/2025-10-08/origin/';
 
 Once the external tables are defined in Athena, our initial objective is to retrieve repository URLs, visit dates, and SHA-1 identifiers. To achieve this, it is necessary to understand the structure of the Software Heritage (SWH) graph schema, a simplified representation of which is shown below:
 
-```text
-SOFTWARE HERITAGE GRAPH DATASET SCHEMA
-
-📋 origin (origin record)
-    │
-    │─────────►🧩URL
-    │
-    ├──► 📋 origin_visit
-    │
-    ▼
-📋 origin_visit_status (visit status)
-    │
-    │─────────►🧩visit_date
-    │
-    ▼
-📋 snapshot (repository snapshot)
-    │
-    ▼
-📋 snapshot_branch (branches)
-    │
-    ├──► 📋 revision (commit)
-    │         │
-    │         ├──► 📋 directory (root directory)
-    │         │         │
-    │         │         ▼
-    │         │    📋 directory_entry
-    │         │         │
-    │         │         ├──► 📋 content (file content)
-    │         │         │
-    │         │         │─────────►🧩SHA1
-    │         │         │
-    │         │         └──► 📋 directory (subdirectory)
-    │         │
-    │         └──► 📋 revision_history (parent commits)
-    │
-    └──► 📋 release (release tag)
-              │
-              └──► 📋 revision or directory
-
-📋 Table   ──► Relationship 🧩 Selected attributes from tables
-```
+<figure>
+  <img src="/images/blog/athena.png" alt="Software heritage relational schema" width="70%" />
+  <figcaption>
+    Software heritage relational schema.
+    <a href="https://docs.softwareheritage.org/devel/swh-export/graph/schema.html" target="_blank" rel="noopener noreferrer">
+      See details here.
+    </a>
+  </figcaption>
+</figure>
 
 An initial attempt might look like joining six tables as shown below:
 ```sql
