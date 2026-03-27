@@ -1,0 +1,8 @@
+# empty file for preview deployment
+# We are setting up everything in the github action.
+# This file is only for the preview deployment target by kamal
+
+env:
+  clear:
+    NODE_ENV: preview
+    NEXT_IMAGE_UNOPTIMIZED: 'true'
