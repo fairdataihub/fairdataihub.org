@@ -18,16 +18,14 @@ tags:
   - Parquet
 ---
 
-Software is a critical component of modern scientific and technological progress, encapsulating both practical expertise and accumulated knowledge. Preserving software is therefore essential not only to safeguard innovation but also to ensure continued access to the tools and methods that underpin research and discovery. Achieving this requires coordinated community efforts. [Software Heritage](https://docs.softwareheritage.org/index.html) is one initiative that provides common foundations for heritage preservation, science, and industry.
+[Software Heritage](https://docs.softwareheritage.org) is one of the most ambitious efforts to preserve the world's source code. The idea is simple: collect everything, keep it forever, and make it accessible — not just for today, but for future generations of researchers and developers.
 
-In this blog, we perform a step-by-step traversal of the [Software Heritage Graph Dataset](https://docs.softwareheritage.org/devel/swh-export/graph/) using [Amazon Athena](https://docs.aws.amazon.com/athena/latest/APIReference/Welcome.html) to produce a filtered, deduplicated set of GitHub README content hashes. We then walk through retrieving the selected content into a local [AWS S3 bucket](https://aws.amazon.com/s3/) within a controlled environment. Working with an archive at this scale is inherently challenging, but a structured traversal combined with practical query orchestration enables a systematic and reproducible workflow. Finally, a brief cost breakdown for each stage of the pipeline will be provided.
-
-These results will be further developed and implemented in Phase II and the final phase of the Data Sharing Index (“S-Index”) Challenge of National Institutes of Health. If you want the full working stack to follow along or reuse, check out the [fairdataihub/s-index](https://github.com/data-S-index/s-index-pipeline/tree/main/src/sindex/sources/swh) repository.
+In this guide, we walk through how to use the Software Heritage [Graph Dataset](https://docs.softwareheritage.org/devel/swh-export/graph/) on [Amazon Athena](https://docs.aws.amazon.com/athena/latest/APIReference/Welcome.html), using the retrieval of README files from GitHub repositories as an example. We cover the full traversal path, the filters we applied, how results are retrieved into a local  [AWS S3 bucket](https://aws.amazon.com/s3/), and what it actually costs to run something like this.
 
 
 ## Mission of Software Heritage
 
-For more than a decade, the Software Heritage initiative has led one of the most comprehensive efforts to archive and preserve publicly available source code worldwide. Its mission is to systematically collect, safeguard, and provide long-term access to the global software commons, ensuring that research software and open-source contributions remain discoverable, citable, and reusable over time. Today, the archive contains billions of source files spanning millions of repositories across diverse ecosystems, captured as a fully deduplicated [Merkle DAG](https://docs.ipfs.tech/concepts/merkle-dag/) and stored in [Apache Parquet](https://parquet.apache.org/) format through public S3 buckets, forming a structured and queryable archive measured in terabytes. Beyond its scale, the archive’s strength lies in its graph-based structure: rather than traditional repository folders, Software Heritage models software as interconnected tables where every object is hash-addressed and deduplicated. While this architecture enables reproducibility at scale, retrieving specific data requires understanding the graph traversal path, as described in the following paragraphs.
+For over a decade, Software Heritage has been archiving publicly available source code from across the internet. Today, the archive holds billions of source files spanning millions of repositories — stored as a fully deduplicated [Merkle DAG](https://docs.ipfs.tech/concepts/merkle-dag/) in [Apache ORC](https://orc.apache.org/) format, accessible through public S3 buckets on AWS. Instead of simple repository snapshots, it models software as a graph where every object is hash-addressed and deduplicated, making it highly reproducible. Retrieving specific data, however, requires navigating the graph structure, and that is exactly what this guide walks through.
 
 ## Prerequisites
 Before we get started, you'll need to make sure you have access to the following:
@@ -58,7 +56,7 @@ CREATE EXTERNAL TABLE IF NOT EXISTS swh_graph_2025_10_08.origin (
     id STRING,
     url STRING
 )
-STORED AS PARQUET
+STORED AS ORC
 LOCATION 's3://softwareheritage/graph/2025-10-08/origin/';
 ```
 
@@ -253,7 +251,6 @@ After navigating the dataset through a sequence of queries, where each query gra
 
 | URL | SHA1 codes of README files | Date |
 |-----|-------------|------|
-| https://github.com/nygim/pyfairdatatools | 0eca1c249f00956b9264403e9ecd8fb90ac5b428 | 2025-08-30 16:04:36 |
 | https://github.com/fairdataihub/fairshare |  8964359b0597187a29028955ecc3845dfcf86173 | 2025-07-29 12:26:33 |
 | https://github.com/megasanjay/fairdataihub.org |  458585c7c8b579e4547d445cb49d496b1be1ba19 | 2023-08-19 21:50:20 |
 | https://github.com/fairdataihub/SODA-for-SPARC-Docs  | 47acbdb4c775d1bb5bbd127fde9287211eee504c | 2025-10-06 11:55:02 |
