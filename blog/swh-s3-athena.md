@@ -20,12 +20,12 @@ tags:
 
 [Software Heritage](https://docs.softwareheritage.org) (SWH) is one of the most ambitious efforts to archive the world's source code. The idea is simple: collect everything, keep it long-term, and make it accessible, not just for today, but also for future generations of researchers and developers. Beyond that, it also serves as a powerful resource for large-scale code analysis.
 
-In this guide, we explore how to use the Software Heritage [Graph Dataset](https://docs.softwareheritage.org/devel/swh-export/graph/) on [Amazon Athena](https://docs.aws.amazon.com/athena/latest/APIReference/Welcome.html), using the retrieval of README files from GitHub repositories as an example. We cover the full traversal path, the filters we applied, how results are retrieved into an intermediate  [AWS S3 bucket](https://aws.amazon.com/s3/), and what it actually costs to run something like this.
+In this guide, we explore how to use the SWH [Graph Dataset](https://docs.softwareheritage.org/devel/swh-export/graph/) on [Amazon Athena](https://docs.aws.amazon.com/athena/latest/APIReference/Welcome.html), using the retrieval of README files from GitHub repositories as an example. We cover the full traversal path, the filters we apply, how results are written to a user-owned [AWS S3 bucket](https://aws.amazon.com/s3/), and the potential cost of running this workflow.
 
 
 ## Mission of Software Heritage
 
-For over a decade, Software Heritage has been archiving publicly available source code from across the internet. Today, the archive holds billions of source files spanning millions of repositories. These are stored as a fully deduplicated [Merkle DAG](https://docs.ipfs.tech/concepts/merkle-dag/) in [Apache ORC](https://orc.apache.org/) format, accessible through public S3 buckets on AWS. Instead of simple repository snapshots, it models software as a graph where every object is hash-addressed and deduplicated, making it highly reproducible.
+For over a decade, SWH has been archiving publicly available source code from across the internet. Today, the archive holds billions of source files spanning millions of repositories. These are stored as a fully deduplicated [Merkle DAG](https://docs.ipfs.tech/concepts/merkle-dag/) in [Apache ORC](https://orc.apache.org/) format, accessible through public S3 buckets on AWS. Instead of simple repository snapshots, it models software as a graph where every object is hash-addressed and deduplicated, making it highly reproducible.
 
 ## Prerequisites
 Before we get started, you'll need to make sure you have access to the following:
@@ -91,7 +91,7 @@ To address this, we break the process into incremental steps, storing results in
 
 ### Step 2. Extracting Repository URLs and Visit Data
 
-We start with the origin table, pulling around 400 million repository URLs, then stage intermediate results to progressively narrow the working set. From origin_visit_status, we extract around three billion visit records, each representing a crawl attempt and its associated snapshot.
+We start with the origin table, pulling around 400 million repository URLs, then stage intermediate results to progressively narrow the working set. From `origin_visit_status`, we extract around three billion visit records, each representing a crawl attempt and its associated snapshot.
 
 ```sql
 CREATE TABLE default.url_and_date AS
@@ -158,7 +158,7 @@ JOIN swh_graph_2025_10_08.revision r
 
 ### Step 4: Extracting README Entries
 
-This is the most expensive step, as the directory_entry table is one of the largest in the dataset at around 24 TB. To keep it manageable, we filter for just four README filetypes by matching their hexadecimal filename encodings.
+This is the most expensive step, as the `directory_entry` table is one of the largest in the dataset at around 24 TB. To keep it manageable, we filter for just four README filetypes by matching their hexadecimal filename encodings.
 
 ```sql
 CREATE TABLE default.directory_entry_readme AS
@@ -177,7 +177,7 @@ WHERE type = 'file'
 
 ### Step 5. Resolving Git SHA-1 to Canonical SHA-1
 
-Once we have the directory-level sha1_git values, we split the remaining work into three steps. First, we pull the distinct content_sha1_git values from the intermediate table. Then we join this smaller set against the content table to get the matching sha1_git and sha1 pairs. Finally, we join everything back with the original URL and date. Breaking it up this way keeps join sizes manageable and avoids resource exhaustion errors.
+Once we have the directory-level `sha1_git` values, we split the remaining work into three steps. First, we pull the distinct `content_sha1_git` values from the intermediate table. Then we join this smaller set against the content table to get the matching `sha1_git` and `sha1` pairs. Finally, we join everything back with the original URL and date. Breaking it up this way keeps join sizes manageable and avoids resource exhaustion errors.
 
 ```sql
 CREATE TABLE default.url_date_directory_sha_3b AS
@@ -208,7 +208,7 @@ JOIN default.content_matched cm
 
 
 ```
-By following the steps above, we retrieved over 450 million GitHub repository records and stored their URLs, visit dates, and SHA-1 identifiers in an intermediate table.
+By following the steps above, you can retrieve GitHub repository records and store their URLs, visit dates, and SHA-1 identifiers in an intermediate table. In our run, this resulted in over 450 million records.
 
 ### Step 6. Deduplicating Repositories
 
@@ -229,10 +229,11 @@ FROM default.filtered_github_total_table
 GROUP BY url;
 ```
 
-As a result, the dataset is reduced to approximately 225 million rows. After excluding records with empty sha1_git values, the final dataset contained approximately 223 million rows.
+As a result, the dataset is reduced to approximately 225 million rows. After excluding records with empty `sha1_git` values, the final dataset contained approximately 223 million rows.
+
 ## Computational Cost Breakdown Across Processing Steps
 
-Working with a dataset this size comes with real costs. Athena charges $5 per TB scanned, and while the SWH dataset itself is free to query, any intermediate tables you create are stored in your own S3 bucket (~$0.023 per GB/month). The approximate cost breakdown for each step is shown below:
+Working with a dataset of this size comes with real costs. Athena charges $5 per TB scanned, and while the SWH dataset itself is free to query, any intermediate tables are stored in a user-managed S3 bucket (~$0.023 per GB/month at the time of writing). The approximate cost breakdown for each step, based on our run, is shown below:
 
 | Step | Stage Description | Data Scanned | Cost (USD) |
 |------|-------------------|--------------|------------|
@@ -243,10 +244,11 @@ Working with a dataset this size comes with real costs. Athena charges $5 per TB
 | 5 | Resolving Git SHA-1 to Canonical SHA-1 | ~1.4 TB | ~$7.00 |
 | 6 | GitHub Filtering and Deduplication | Minimal | Minimal |
 
-Although materializing intermediate tables improved performance, operations on the largest SWH tables remained costly. In particular, Step 4 was the most expensive, driven by the size of the directory_entry table.
+Although materializing intermediate tables improves performance, operations on the largest SWH tables remain costly. In particular, Step 4 is the most expensive, driven by the size of the directory_entry table.
 
 ## Results
-After working through the query sequence step-by-step, you can get a consolidat table of 223 million unique GitHub URLs, their visit dates, SHA1 git revision identifiers, and the SHA-1 hashes of their README contents. An example is shown below.
+
+After working through the query sequence step by step, you can obtain a consolidated table of unique GitHub URLs, along with their visit dates, SHA-1 git revision identifiers, and the SHA-1 hashes of their README contents. In our case, this process produced approximately 223 million rows. An example is shown below.
 
 | REPOSITORY URL                                     | SHA1 codes of README files | Date |
 |----------------------------------------------------|-------------|------|
@@ -256,4 +258,4 @@ After working through the query sequence step-by-step, you can get a consolidat 
 
 ## Conclusion
 
-In this guide, we walked through a practical approach to extracting README content hashes from the Software Heritage Graph Dataset using Amazon Athena. Breaking large joins into incremental steps and materializing intermediate tables kept things manageable at scale. The resulting dataset, GitHub URLs paired with SHA-1 hashes can be used for downstream tasks like DOI mining and software citation analysis, and the same approach can be adapted for other large-scale archival queries.
+In this guide, we walk through a practical approach to extracting README content hashes from the Software Heritage Graph Dataset using Amazon Athena. Breaking large joins into incremental steps and materializing intermediate tables keeps the workflow manageable at scale. This process produces a dataset of GitHub URLs paired with SHA-1 hashes that can be used for downstream tasks such as DOI mining and software citation analysis, and the same approach can be adapted for other large-scale archival queries.
