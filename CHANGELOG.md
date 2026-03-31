@@ -1,3 +1,31 @@
+## [2.84.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.2...v2.84.3) (2026-03-30)
+
+
+### Bug Fixes
+
+* 🐛 update image size ([ee4d998](https://github.com/fairdataihub/fairdataihub.org/commit/ee4d998f23c17ee3aa85ef7698f4611b8b3141cb))
+
+## [2.84.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.1...v2.84.2) (2026-03-26)
+
+
+### Bug Fixes
+
+* 🐛 update image size ([bddaf01](https://github.com/fairdataihub/fairdataihub.org/commit/bddaf014d79b35984c5a75f8bceae317cae4666b))
+
+## [2.84.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.0...v2.84.1) (2026-03-17)
+
+
+### Bug Fixes
+
+* 🐛 update image size ([d76f99e](https://github.com/fairdataihub/fairdataihub.org/commit/d76f99e6e9e5efa724ac17b608144ce403e17440))
+
+# [2.84.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.83.0...v2.84.0) (2026-03-17)
+
+
+### Features
+
+* ✨ update teammate image ([ce3dcaa](https://github.com/fairdataihub/fairdataihub.org/commit/ce3dcaa12091cba98bbe19c1ee8be98f2867a2f5))
+
 # [2.83.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.1...v2.83.0) (2026-03-10)
 
 
