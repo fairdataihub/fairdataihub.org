@@ -20,7 +20,7 @@ tags:
 
 [Software Heritage](https://docs.softwareheritage.org) is one of the most ambitious efforts to archive the world's source code. The idea is simple: collect everything, keep it long-term, and make it accessible — not just for today, but for future generations of researchers and developers. Beyond that, it also serves as a powerful resource for large-scale code analysis.
 
-In this guide, we explore how to use the Software Heritage [Graph Dataset](https://docs.softwareheritage.org/devel/swh-export/graph/) on [Amazon Athena](https://docs.aws.amazon.com/athena/latest/APIReference/Welcome.html), using the retrieval of README files from GitHub repositories as an example. We cover the full traversal path, the filters we applied, how results are retrieved into a local  [AWS S3 bucket](https://aws.amazon.com/s3/), and what it actually costs to run something like this.
+In this guide, we explore how to use the Software Heritage [Graph Dataset](https://docs.softwareheritage.org/devel/swh-export/graph/) on [Amazon Athena](https://docs.aws.amazon.com/athena/latest/APIReference/Welcome.html), using the retrieval of README files from GitHub repositories as an example. We cover the full traversal path, the filters we applied, how results are retrieved into an intermediate  [AWS S3 bucket](https://aws.amazon.com/s3/), and what it actually costs to run something like this.
 
 
 ## Mission of Software Heritage
