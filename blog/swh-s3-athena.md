@@ -119,7 +119,7 @@ WHERE ovs.snapshot IS NOT NULL;
 
 ### Step 3. Linking Snapshots to Revisions and Directories
 
-After obtaining the snapshot IDs, a direct export of the snapshot_branch table hit Athena's resource limits, so we filter for main and master branches only. Note that repos using a different default branch name may be under-represented.
+After obtaining the snapshot IDs, a direct export of the `snapshot_branch` table hit Athena's resource limits, so we filter for main and master branches only. Note that repos using a different default branch name may be under-represented.
 
 ```sql
 CREATE TABLE default.snapshot_branch_filtered AS
@@ -212,7 +212,7 @@ By following the steps above, you can retrieve GitHub repository records and sto
 
 ### Step 6. Deduplicating Repositories
 
-We then deduplicate the URLs, keeping one record per repository using the most recent visit date, with MAX_BY ensuring the content hash matches that latest snapshot.
+We then deduplicate the URLs, keeping one record per repository using the most recent visit date, with `MAX_BY` ensuring the content hash matches that latest snapshot.
 
 ```sql
 CREATE TABLE default.filtered_github_total_table AS
@@ -244,7 +244,7 @@ Working with a dataset of this size comes with real costs. Athena charges $5 per
 | 5 | Resolving Git SHA-1 to Canonical SHA-1 | ~1.4 TB | ~$7.00 |
 | 6 | GitHub Filtering and Deduplication | Minimal | Minimal |
 
-Although materializing intermediate tables improves performance, operations on the largest SWH tables remain costly. In particular, Step 4 is the most expensive, driven by the size of the directory_entry table.
+Although materializing intermediate tables improves performance, operations on the largest SWH tables remain costly. In particular, Step 4 is the most expensive, driven by the size of the `directory_entry` table.
 
 ## Results
 
