@@ -19,11 +19,11 @@ More details are available on the [workshop website](https://softwarecitationwor
 
 **Bhavesh Patel** will deliver a **flash talk titled "Codefair.io: an open source and free software for easily making GitHub repositories FAIR"** during Session 2 of the flash talks. The talk will introduce [Codefair.io](https://codefair.io), a free and open source tool that helps researchers make their GitHub repositories compliant with FAIR (Findable, Accessible, Interoperable, Reusable) software principles with minimal effort. In particular, Codefair includes a workflow to easily archive source code on Zenodo to get a DOI and maintain a CITATION.cff file for software, both of which are extremely relevant to software citation.
 
-Bhavesh will also participate in the different hands-on activity organized around software citation across the four days of the workshop.
+Bhavesh will also participate in different hands-on activities organized around software citation over the four days of the workshop.
 
 ## 📍 Location
 
-UC San Diego, La Jolla, California  
+UC San Diego, La Jolla, California
 [Workshop Website](https://softwarecitationworkshop.ucsd.edu/)
 
 ## 🗓 Date and Time
