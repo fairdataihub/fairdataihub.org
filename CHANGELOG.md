@@ -1,3 +1,10 @@
+# [2.85.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.3...v2.85.0) (2026-04-08)
+
+
+### Features
+
+* ✨ April and May 2026 events ([#757](https://github.com/fairdataihub/fairdataihub.org/issues/757)) ([214fbe8](https://github.com/fairdataihub/fairdataihub.org/commit/214fbe849d022d9797ca9177faa57473d1bc0438))
+
 ## [2.84.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.2...v2.84.3) (2026-03-30)
 
 
