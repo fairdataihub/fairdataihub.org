@@ -21,11 +21,11 @@ This meeting is open to the public. Lunch will be provided.
 
 ## 📍 Location
 
-Upper Elementary PDR Room
+Upper Elementary PDR Room  
 Eagle Butte, South Dakota
 
 ## 🗓 Date and Time
 
-Monday, April 20, 2026
-11:00 AM – 3:00 PM CT
+Monday, April 20, 2026  
+11:00 AM – 3:00 PM CT  
 Bhavesh's talk is scheduled for 12:05–12:30 PM CT
