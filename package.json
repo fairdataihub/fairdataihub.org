@@ -97,6 +97,12 @@
   "devDependencies": {
     "@fairdataihub/config": "2.2.3",
     "@iconify/react": "6.0.2",
+    "@semantic-release/changelog": "6.0.3",
+    "@semantic-release/commit-analyzer": "10.0.4",
+    "@semantic-release/git": "10.0.1",
+    "@semantic-release/github": "9.0.6",
+    "@semantic-release/npm": "11.0.0",
+    "@semantic-release/release-notes-generator": "11.0.7",
     "@tailwindcss/line-clamp": "0.4.4",
     "@tailwindcss/postcss": "4.2.2",
     "@tailwindcss/typography": "0.5.19",
