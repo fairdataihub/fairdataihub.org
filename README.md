@@ -33,7 +33,7 @@ We recommend to look at the [documentation](https://nextjs.org/docs/getting-star
 
 ### Requirements
 
-- Node.js >= 22.18.0
+- Node.js >= 22
 - [mise](https://mise.jdx.dev/)
 - pnpm >= 10
 
