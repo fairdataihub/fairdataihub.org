@@ -33,14 +33,14 @@ export default function Blog({ blogList }: BlogProps) {
   return (
     <div className="relative pt-24">
       <Seo
-        templateDescription="Explore the projects we build at the FAIR Data Innovations Hub-modern, open‑source tools and platforms that help researchers follow FAIR principles."
+        templateDescription="Explore the projects we build at the FAIR Data Innovations Hub-modern, open-source tools and platforms that help researchers follow FAIR principles."
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
+        <div className="absolute left-1/2 top-0 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
-      <section className="container mx-auto max-w-screen-xl px-4 pt-8 pb-16">
+      <section className="container mx-auto max-w-screen-xl px-4 pb-16 pt-8">
         <Seo
           templateTitle="Blog"
           templateUrl="https://fairdataihub.org/blog"
@@ -57,7 +57,7 @@ export default function Blog({ blogList }: BlogProps) {
         >
           <div className="flex flex-col">
             <h1
-              className="text-4xl font-black tracking-tight text-pretty text-stone-900 sm:text-5xl dark:text-stone-100"
+              className="text-pretty text-4xl font-black tracking-tight text-stone-900 dark:text-stone-100 sm:text-5xl"
               aria-hidden="true"
             >
               <span>Learn</span>
@@ -73,14 +73,14 @@ export default function Blog({ blogList }: BlogProps) {
             <h1 className="sr-only">
               Learn New Tools, Guides, FAIR Practices, Updates
             </h1>
-            <p className="font-asap max-w-2xl text-lg text-stone-700 dark:text-stone-300">
+            <p className="max-w-2xl font-asap text-lg text-stone-700 dark:text-stone-300">
               Updates, implementation guides, and FAIR practices from our team.
             </p>
           </div>
-          <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+          <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
         </motion.header>
 
-        <h2 className="mb-4 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-stone-500">
           Latest Post
         </h2>
 
@@ -110,9 +110,9 @@ export default function Blog({ blogList }: BlogProps) {
           </div>
         )}
 
-        <div className="via-primary/60 mb-6 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+        <div className="mb-6 h-px w-full bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
 
-        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-stone-500">
           Previous posts
         </h2>
 
