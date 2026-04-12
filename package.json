@@ -95,16 +95,8 @@
     "words-count": "2.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.5.0",
-    "@commitlint/config-conventional": "20.5.0",
     "@fairdataihub/config": "2.2.3",
     "@iconify/react": "6.0.2",
-    "@semantic-release/changelog": "6.0.3",
-    "@semantic-release/commit-analyzer": "13.0.1",
-    "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "12.0.6",
-    "@semantic-release/npm": "13.1.5",
-    "@semantic-release/release-notes-generator": "14.1.0",
     "@tailwindcss/line-clamp": "0.4.4",
     "@tailwindcss/postcss": "4.2.2",
     "@tailwindcss/typography": "0.5.19",
@@ -117,7 +109,6 @@
     "autoprefixer": "10.4.27",
     "commitizen": "4.3.1",
     "cypress": "15.13.1",
-    "cz-conventional-changelog": "3.3.0",
     "eslint": "10.2.0",
     "eslint-config-next": "16.2.3",
     "eslint-config-prettier": "10.1.8",
@@ -126,9 +117,6 @@
     "eslint-plugin-simple-import-sort": "13.0.0",
     "eslint-plugin-unused-imports": "4.4.1",
     "front-matter": "4.0.2",
-    "husky": "9.1.7",
-    "lint-staged": "16.4.0",
-    "megasanjay-devmoji": "1.2.1",
     "next-sitemap": "4.2.3",
     "postcss": "8.5.9",
     "prettier": "3.8.2",
@@ -154,7 +142,7 @@
       "cypress",
       "esbuild",
       "sharp",
-      "tsparticles/engine",
+      "@tsparticles/engine",
       "unjs-resolver",
       "unrs-resolver"
     ]
