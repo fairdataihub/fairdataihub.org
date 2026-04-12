@@ -1,3 +1,11 @@
+# [2.86.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.85.0...v2.86.0) (2026-04-12)
+
+
+### Features
+
+* add support for short dates ([68edd2b](https://github.com/fairdataihub/fairdataihub.org/commit/68edd2bd153928c8098694fa1fac1cd9e813903e))
+* move from yarn to pnpm + mise ([#759](https://github.com/fairdataihub/fairdataihub.org/issues/759)) ([4e26700](https://github.com/fairdataihub/fairdataihub.org/commit/4e2670094950ed73950729780987dcbb6db04506))
+
 # [2.85.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.3...v2.85.0) (2026-04-08)
 
 
