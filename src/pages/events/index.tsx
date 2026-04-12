@@ -61,7 +61,7 @@ export default function Events({ eventsList }: EventsProps) {
   const [featured, ...upcomingRest] = upcoming;
 
   return (
-    <div className="pt-26 relative">
+    <div className="relative pt-26">
       <Seo
         templateTitle="Events"
         templateUrl="https://fairdataihub.org/events"
@@ -70,26 +70,26 @@ export default function Events({ eventsList }: EventsProps) {
       />
 
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute left-1/2 top-0 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
+        <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
 
-      <section className="container mx-auto w-full max-w-screen-xl px-4 pb-16 pt-8 xl:min-w-[1280px]">
+      <section className="container mx-auto w-full max-w-screen-xl px-4 pt-8 pb-16 xl:min-w-[1280px]">
         <motion.header
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.35, ease: `easeOut` }}
           className="mb-8 sm:mb-10"
         >
-          <h1 className="text-pretty text-4xl font-black tracking-tight text-stone-900 dark:text-stone-100 sm:text-5xl">
+          <h1 className="text-4xl font-black tracking-tight text-pretty text-stone-900 sm:text-5xl dark:text-stone-100">
             Events
           </h1>
-          <p className="my-2 max-w-2xl font-asap text-lg text-stone-700 dark:text-stone-300">
+          <p className="font-asap my-2 max-w-2xl text-lg text-stone-700 dark:text-stone-300">
             Join our talks, workshops, and community sessions on FAIR practices.
           </p>
-          <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
+          <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
         </motion.header>
 
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-stone-500">
+        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
           Upcoming Events
         </h2>
 
@@ -133,7 +133,7 @@ export default function Events({ eventsList }: EventsProps) {
 
         <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
 
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wider text-stone-500">
+        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
           Past Events
         </h2>
 

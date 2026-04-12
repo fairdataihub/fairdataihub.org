@@ -57,18 +57,18 @@ export default function EventListItem({
 
           <div className="min-w-0 flex-1">
             <div className="flex-items-center flex justify-between gap-6">
-              <h3 className="font-semibold text-slate-900 transition-all group-hover:text-primary sm:text-lg">
+              <h3 className="group-hover:text-primary font-semibold text-slate-900 transition-all sm:text-lg">
                 {title}
               </h3>
 
               <div className="flex w-max items-start gap-2 pt-1 text-xs">
                 {type && (
-                  <span className="w-max rounded-lg border border-slate-300 px-2 py-0.5 transition-all group-hover:border-primary/50">
+                  <span className="group-hover:border-primary/50 w-max rounded-lg border border-slate-300 px-2 py-0.5 transition-all">
                     {type}
                   </span>
                 )}
                 {location && (
-                  <span className="w-max rounded-lg border border-slate-300 px-2 py-0.5 transition-all group-hover:border-primary/50">
+                  <span className="group-hover:border-primary/50 w-max rounded-lg border border-slate-300 px-2 py-0.5 transition-all">
                     {location}
                   </span>
                 )}
@@ -80,7 +80,7 @@ export default function EventListItem({
             )}
 
             <div className="mt-4 flex items-center justify-between gap-2 text-slate-700">
-              <span className="items-center text-sm font-medium transition-all group-hover:text-primary">
+              <span className="group-hover:text-primary items-center text-sm font-medium transition-all">
                 {isPast ? `View recap` : `Learn more`}
                 <Icon
                   icon="solar:arrow-right-broken"
@@ -89,7 +89,7 @@ export default function EventListItem({
                 />
               </span>
 
-              <span className="items-center rounded-lg bg-primary px-2 py-0.5 text-xs">
+              <span className="bg-primary items-center rounded-lg px-2 py-0.5 text-xs">
                 <EventDates
                   startDateTime={startDateTime}
                   endDateTime={endDateTime}
