@@ -63,29 +63,32 @@ export default function EventFeatured({
         )}
 
         <div className="p-5 sm:p-6">
-          <div className="mb-2 flex flex-wrap items-center gap-2 text-xs text-slate-600">
-            <span className="bg-primary inline-flex items-center rounded-lg border border-white px-2 py-0.5">
+          <div className="mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600">
+            <span className="inline-flex items-center rounded-lg border border-white bg-primary px-2 py-0.5">
               <EventDates
                 startDateTime={startDateTime}
                 endDateTime={endDateTime}
               />
             </span>
-            {type && (
-              <span className="rounded-full border border-slate-300 px-2 py-0.5 text-[11px]">
-                {type}
-              </span>
-            )}
-            {location && (
-              <span className="rounded-full border border-slate-300 px-2 py-0.5 text-[11px]">
-                {location}
-              </span>
-            )}
+
+            <div className="flex items-center gap-2">
+              {type && (
+                <span className="rounded-full border border-slate-300 px-2 py-0.5 text-[11px]">
+                  {type}
+                </span>
+              )}
+              {location && (
+                <span className="rounded-full border border-slate-300 px-2 py-0.5 text-[11px]">
+                  {location}
+                </span>
+              )}
+            </div>
           </div>
 
           <motion.h2
             variants={titleV}
             transition={{ duration: 0.2 }}
-            className="group-hover:text-primary text-2xl leading-tight font-bold text-balance text-slate-900 group-hover:underline sm:text-3xl"
+            className="text-balance text-2xl font-bold leading-tight text-slate-900 group-hover:text-primary group-hover:underline sm:text-3xl"
           >
             {title}
           </motion.h2>
@@ -97,7 +100,7 @@ export default function EventFeatured({
           )}
 
           {/* Styled CTA, not a link (the whole card already is) */}
-          <span className="group-hover:text-primary mt-4 inline-flex items-center text-sm font-medium underline-offset-4 group-hover:underline">
+          <span className="mt-4 inline-flex items-center text-sm font-medium underline-offset-4 group-hover:text-primary group-hover:underline">
             View details
             <Icon
               icon="solar:arrow-right-broken"

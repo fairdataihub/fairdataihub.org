@@ -57,18 +57,18 @@ export default function EventListItem({
 
           <div className="min-w-0 flex-1">
             <div className="flex-items-center flex justify-between gap-6">
-              <h3 className="group-hover:text-primary font-semibold text-slate-900 transition-all sm:text-lg">
+              <h3 className="font-semibold text-slate-900 transition-all group-hover:text-primary sm:text-lg">
                 {title}
               </h3>
 
-              <div className="flex items-center gap-2 text-xs">
+              <div className="flex w-max items-start gap-2 pt-1 text-xs">
                 {type && (
-                  <span className="group-hover:border-primary/50 rounded-lg border border-slate-300 px-2 py-0.5 transition-all">
+                  <span className="w-max rounded-lg border border-slate-300 px-2 py-0.5 transition-all group-hover:border-primary/50">
                     {type}
                   </span>
                 )}
                 {location && (
-                  <span className="group-hover:border-primary/50 rounded-lg border border-slate-300 px-2 py-0.5 transition-all">
+                  <span className="w-max rounded-lg border border-slate-300 px-2 py-0.5 transition-all group-hover:border-primary/50">
                     {location}
                   </span>
                 )}
@@ -79,8 +79,8 @@ export default function EventListItem({
               <p className="line-clamp-2 text-sm text-slate-700">{subtitle}</p>
             )}
 
-            <div className="text-slate-700s mt-4 flex items-center justify-between gap-2">
-              <span className="group-hover:text-primary items-center text-sm font-medium transition-all">
+            <div className="mt-4 flex items-center justify-between gap-2 text-slate-700">
+              <span className="items-center text-sm font-medium transition-all group-hover:text-primary">
                 {isPast ? `View recap` : `Learn more`}
                 <Icon
                   icon="solar:arrow-right-broken"
@@ -89,10 +89,11 @@ export default function EventListItem({
                 />
               </span>
 
-              <span className="bg-primary items-center rounded-lg px-2 py-0.5 text-xs">
+              <span className="items-center rounded-lg bg-primary px-2 py-0.5 text-xs">
                 <EventDates
                   startDateTime={startDateTime}
                   endDateTime={endDateTime}
+                  short
                 />
               </span>
             </div>
