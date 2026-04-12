@@ -829,5 +829,22 @@
       "calmi2"
     ],
     "description": "CalMI2 monthly dinner"
+  },
+  {
+    "event": "CalMI2 Monthly Dinner",
+    "folder": "2026-03-26 - CalMI2 monthly dinner",
+    "date": "2026-03-26",
+    "images": [
+      {
+        "name": "IMG_6500.jpeg",
+        "alt": "CalMI2 monthly dinner",
+        "id": "QHOYR"
+      }
+    ],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
+    "description": "CalMI2 monthly dinner"
   }
 ]
