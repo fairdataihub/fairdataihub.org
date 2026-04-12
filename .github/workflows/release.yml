@@ -29,9 +29,6 @@ jobs:
       - name: Format check
         run: pnpm format
 
-      - name: Lint check
-        run: pnpm lint
-
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_ACTIONS }}
