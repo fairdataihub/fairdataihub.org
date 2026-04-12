@@ -31,7 +31,7 @@ export default function Footer() {
               </Link>
             </div>
 
-            <p className="font-inter py-3 text-gray-600">
+            <p className="py-3 font-inter text-gray-600">
               Helping researchers navigate the world of FAIR practices.
             </p>
 
@@ -59,7 +59,7 @@ export default function Footer() {
 
               <Link
                 href="https://www.linkedin.com/company/california-medical-innovations-institute"
-                className="group rounded-md p-1 transition outline-none hover:text-pink-500 focus-visible:ring-2 focus-visible:ring-pink-400/60"
+                className="group rounded-md p-1 outline-none transition hover:text-pink-500 focus-visible:ring-2 focus-visible:ring-pink-400/60"
                 data-umami-event="Navigation link"
                 data-umami-event-location="Footer"
                 data-umami-event-value="LinkedIn"
@@ -86,7 +86,7 @@ export default function Footer() {
               <Link
                 href="https://github.com/fairdataihub"
                 target="_blank"
-                className="group rounded-md p-1 transition outline-none hover:text-pink-500 focus-visible:ring-2 focus-visible:ring-pink-400/60"
+                className="group rounded-md p-1 outline-none transition hover:text-pink-500 focus-visible:ring-2 focus-visible:ring-pink-400/60"
                 data-umami-event="Navigation link"
                 data-umami-event-location="Footer"
                 data-umami-event-value="GitHub"
@@ -109,7 +109,7 @@ export default function Footer() {
             className="grid w-full grid-cols-2 gap-8 md:w-1/2 md:grid-cols-3 md:gap-6"
           >
             <nav aria-label="Company" className="flex flex-col">
-              <h3 className="footer-header mb-2 text-xs font-semibold tracking-wide text-gray-500 uppercase">
+              <h3 className="footer-header mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">
                 Company
               </h3>
               <ul className="space-y-2">
@@ -143,7 +143,7 @@ export default function Footer() {
             </nav>
 
             <nav aria-label="Legal" className="flex flex-col">
-              <h3 className="footer-header mb-2 text-xs font-semibold tracking-wide text-gray-500 uppercase">
+              <h3 className="footer-header mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">
                 Legal
               </h3>
               <ul className="space-y-2">
@@ -175,7 +175,7 @@ export default function Footer() {
             </nav>
 
             <nav aria-label="Projects" className="flex flex-col">
-              <h3 className="footer-header mb-2 text-xs font-semibold tracking-wide text-gray-500 uppercase">
+              <h3 className="footer-header mb-2 text-xs font-semibold uppercase tracking-wide text-gray-500">
                 Projects
               </h3>
               <ul className="space-y-2">
@@ -245,24 +245,6 @@ export default function Footer() {
             © {new Date().getFullYear()} FAIR Data Innovations Hub. All rights
             reserved.
           </p>
-
-          <Link
-            href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss"
-            target="_blank"
-            rel="noopener"
-            className="rounded-md transition outline-none hover:opacity-90 focus-visible:ring-2 focus-visible:ring-pink-400/60"
-            data-umami-event="Navigation link"
-            data-umami-event-location="Footer"
-            data-umami-event-value="Vercel"
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <Image
-              src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg"
-              alt="Powered by Vercel"
-              width={160}
-              height={100}
-            />
-          </Link>
         </div>
       </div>
     </footer>

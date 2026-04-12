@@ -5,7 +5,9 @@
 Make sure to install the dependencies.
 
 ```bash
-yarn install
+mise trust # only needed once
+mise install
+pnpm install
 ```
 
 ### Compiles and hot-reloads for development
@@ -13,7 +15,7 @@ yarn install
 Start the development server on <http://localhost:3000>
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ### Compiles and minifies for production
@@ -21,8 +23,8 @@ yarn dev
 Use this step to build a local production version of the site. Use `start` to preview the local build.
 
 ```bash
-yarn build
-yarn start
+pnpm build
+pnpm start
 ```
 
 ## Documentation
@@ -31,8 +33,9 @@ We recommend to look at the [documentation](https://nextjs.org/docs/getting-star
 
 ### Requirements
 
-- Node.js >= 22.18.0
-- Yarn 1 (Classic)
+- Node.js >= 22
+- [mise](https://mise.jdx.dev/)
+- pnpm >= 10
 
 ### Directory Structure
 
@@ -44,14 +47,14 @@ We recommend to look at the [documentation](https://nextjs.org/docs/getting-star
 
 ### Scripts
 
-- `yarn dev` — Starts the application in development mode at `http://localhost:3000`.
-- `yarn build` — Creates an optimized production build of your application.
-- `yarn start` — Starts the application in production mode.
-- `yarn type-check` — Validate code using TypeScript compiler.
-- `yarn lint` — Runs ESLint for all files in the `src` directory.
-- `yarn format` — Runs Prettier for all files in the `src` directory.
-- `yarn cypress:run` — Runs Cypress tests in headless mode.
-- `yarn cypress:open` — Opens Cypress in interactive mode.
+- `pnpm dev` — Starts the application in development mode at `http://localhost:3000`.
+- `pnpm build` — Creates an optimized production build of your application.
+- `pnpm start` — Starts the application in production mode.
+- `pnpm type-check` — Validate code using TypeScript compiler.
+- `pnpm lint` — Runs ESLint for all files in the `src` directory.
+- `pnpm format` — Runs Prettier for all files in the `src` directory.
+- `pnpm cypress:run` — Runs Cypress tests in headless mode.
+- `pnpm cypress:open` — Opens Cypress in interactive mode.
 
 ### Path Mapping
 
@@ -69,11 +72,3 @@ import avatar from '@/public/avatar.png';
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for more information.
 
 Note: You will not need to do anything to the hosted site. Continuous Delivery has been setup with Vercel. All you need to do is push your commit and wait for it to deploy.
-
-## Acknowledgements
-
-A special thank you to Vercel for hosting this website.
-
-<a href="https://vercel.com/?utm_source=fairdataihub&utm_campaign=oss" target="_blank">
-  <img src="https://www.datocms-assets.com/31049/1618983297-powered-by-vercel.svg" alt="Powered by Vercel" width="auto"/>
-</a>

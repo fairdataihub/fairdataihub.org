@@ -18,16 +18,21 @@ jobs:
         with:
           node-version: 20
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
       - name: Install Node.js dependencies
-        run: yarn install --pure-lockfile
+        run: pnpm install --frozen-lockfile
 
       - name: Format check
-        run: yarn format
+        run: pnpm format
 
       - name: Lint check
-        run: yarn lint
+        run: pnpm lint
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.BOT_ACTIONS }}
-        run: yarn semantic-release
+        run: pnpm semantic-release

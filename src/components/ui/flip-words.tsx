@@ -82,8 +82,6 @@ export const FlipWords = ({
         animate: { opacity: 1, y: 0 },
         exit: { opacity: 0, y: -6 },
         transition: {
-          type: `tween`,
-          ease: `easeOut`,
           duration: minimal ? 0.25 : 0.35,
         },
       },
@@ -92,8 +90,6 @@ export const FlipWords = ({
         animate: { opacity: 1, y: 0, filter: `blur(0px)` },
         exit: { opacity: 0, y: -6, filter: `blur(2px)` },
         transition: {
-          type: `tween`,
-          ease: `easeOut`,
           duration: minimal ? 0.25 : 0.35,
         },
       },

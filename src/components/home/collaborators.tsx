@@ -99,7 +99,7 @@ export default function Collaborators() {
   ];
 
   return (
-    <div className="mx-auto w-full px-6 pt-4 pb-0">
+    <div className="mx-auto w-full px-6 pb-0 pt-4">
       <div className="mb-4 flex w-full flex-col items-center">
         <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
           We won&apos;t be able to do this alone!
@@ -115,7 +115,6 @@ export default function Collaborators() {
         <Marquee
           speed={60}
           gradient={true}
-          gradientColor={[255, 255, 255]}
           gradientWidth="25p"
           pauseOnHover={true}
           className="marquee-override"
