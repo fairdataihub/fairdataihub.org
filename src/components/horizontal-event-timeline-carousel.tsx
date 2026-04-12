@@ -8,6 +8,7 @@ import {
   useTransform,
 } from 'framer-motion';
 import {
+  Ref,
   useCallback,
   useEffect,
   useId,
@@ -132,7 +133,7 @@ export default function HorizontalTimeline({
             {title}
           </h2>
           {description && (
-            <p className="font-asap mt-3 max-w-2xl text-sm text-stone-700 sm:text-base lg:mt-4">
+            <p className="mt-3 max-w-2xl font-asap text-sm text-stone-700 sm:text-base lg:mt-4">
               {description}
             </p>
           )}
@@ -146,7 +147,7 @@ export default function HorizontalTimeline({
             {/* Arrows */}
             <div className="pointer-events-none absolute inset-y-0 left-0 z-[999] hidden items-center md:flex">
               <button
-                className="pointer-events-auto ml-2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white shadow-md ring-offset-2 transition outline-none hover:bg-black/70 focus-visible:ring-2 focus-visible:ring-black/70"
+                className="pointer-events-auto ml-2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white shadow-md outline-none ring-offset-2 transition hover:bg-black/70 focus-visible:ring-2 focus-visible:ring-black/70"
                 onClick={prev}
                 aria-controls={`${regionId}-slides`}
                 aria-label="Previous milestone"
@@ -157,7 +158,7 @@ export default function HorizontalTimeline({
             </div>
             <div className="pointer-events-none absolute inset-y-0 right-0 z-[999] hidden items-center md:flex">
               <button
-                className="pointer-events-auto mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white shadow-md ring-offset-2 transition outline-none hover:bg-black/70 focus-visible:ring-2 focus-visible:ring-black/70"
+                className="pointer-events-auto mr-2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/60 text-white shadow-md outline-none ring-offset-2 transition hover:bg-black/70 focus-visible:ring-2 focus-visible:ring-black/70"
                 onClick={next}
                 aria-controls={`${regionId}-slides`}
                 aria-label="Next milestone"
@@ -182,7 +183,7 @@ export default function HorizontalTimeline({
                   return (
                     <motion.div
                       key={`${item.longDate}-${item.title}`}
-                      className="absolute top-1/2 left-1/2 -translate-y-1/2 select-none"
+                      className="absolute left-1/2 top-1/2 -translate-y-1/2 select-none"
                       style={{
                         x,
                         translateX: `-50%`,
@@ -230,7 +231,7 @@ export default function HorizontalTimeline({
                           `relative w-80 cursor-pointer overflow-hidden rounded-2xl`,
                           `bg-white shadow-lg transition-[transform,box-shadow] duration-500 hover:shadow-xl`,
                           isActive
-                            ? `ring-primary/40 ring-4`
+                            ? `ring-4 ring-primary/40`
                             : `scale-95 border border-pink-300/10`,
                           prefersReducedMotion ? `transition-none` : ``,
                         ].join(` `)}
@@ -238,8 +239,8 @@ export default function HorizontalTimeline({
                         <Card className="border-0 shadow-none">
                           <CardContent className="flex flex-col p-0">
                             {/* header */}
-                            <div className="flex flex-col items-center px-6 pt-6 pb-4 text-center">
-                              <h3 className="text-primary mt-1 text-lg font-bold">
+                            <div className="flex flex-col items-center px-6 pb-4 pt-6 text-center">
+                              <h3 className="mt-1 text-lg font-bold text-primary">
                                 {item.title}
                               </h3>
                               <p className="mt-1 text-xs font-medium text-slate-600">
@@ -251,8 +252,10 @@ export default function HorizontalTimeline({
 
                             {/* body */}
                             <div
-                              ref={(el) => (bodyRefs.current[index] = el)}
-                              className="px-6 pt-4 pb-6 text-sm leading-relaxed text-slate-700"
+                              ref={(el) => {
+                                bodyRefs.current[index] = el;
+                              }}
+                              className="px-6 pb-6 pt-4 text-sm leading-relaxed text-slate-700"
                               onPointerDown={(e) => e.stopPropagation()}
                               aria-hidden={!isActive}
                               tabIndex={isActive ? 0 : -1}
@@ -286,10 +289,12 @@ export default function HorizontalTimeline({
                 aria-selected={i === active}
                 tabIndex={i === active ? 0 : -1}
                 onClick={() => goTo(i)}
-                ref={(el) => (tabsRef.current[i] = el)}
+                ref={(el) => {
+                  tabsRef.current[i] = el;
+                }}
                 className={[
-                  `inline-flex h-6 min-w-6 items-center justify-center rounded-full px-2 text-[11px] ring-offset-2 outline-none`,
-                  `focus-visible:ring-primary/70 focus-visible:ring-2`,
+                  `inline-flex h-6 min-w-6 items-center justify-center rounded-full px-2 text-[11px] outline-none ring-offset-2`,
+                  `focus-visible:ring-2 focus-visible:ring-primary/70`,
                   i === active
                     ? `bg-primary text-white`
                     : `bg-primary/10 text-primary`,
