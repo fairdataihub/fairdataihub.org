@@ -1,3 +1,10 @@
+# [2.87.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.86.0...v2.87.0) (2026-04-12)
+
+
+### Features
+
+* add gallery image ([e42c69b](https://github.com/fairdataihub/fairdataihub.org/commit/e42c69b004a45f5a54f1b323a862fc3e2d33b4d5))
+
 # [2.86.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.85.0...v2.86.0) (2026-04-12)
 
 
