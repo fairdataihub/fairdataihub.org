@@ -124,7 +124,7 @@
     "eslint-plugin-unused-imports": "3.0.0",
     "front-matter": "4.0.2",
     "next-sitemap": "4.2.3",
-    "postcss": "8.5.9",
+    "postcss": "8.5.10",
     "prettier": "3.8.2",
     "prettier-plugin-tailwindcss": "0.7.2",
     "semantic-release": "25.0.3",
