@@ -1,3 +1,10 @@
+## [2.87.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.87.0...v2.87.1) (2026-04-27)
+
+
+### Bug Fixes
+
+* add a preprint ([fa4a47c](https://github.com/fairdataihub/fairdataihub.org/commit/fa4a47c3239116fc4b481327aae8868032489ee0))
+
 # [2.87.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.86.0...v2.87.0) (2026-04-12)
 
 
