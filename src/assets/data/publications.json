@@ -61,6 +61,15 @@
   },
   {
     "project": ["aireadi"],
+    "url": "https://doi.org/10.48550/arXiv.2604.21150",
+    "title": "The State of Scientific Poster Sharing and Reuse",
+    "subtitle": "",
+    "citation": "Gasimova, A., Mensah-Kane, P., Blake, G. F., Soundarajan, S., ONeill, J., & Patel, B. (2026). The State of Scientific Poster Sharing and Reuse. arXiv. https://doi.org/10.48550/arXiv.2604.21150",
+    "type": "Preprints",
+    "year": 2026
+  },
+  {
+    "project": ["aireadi"],
     "url": "https://doi.org/10.48550/arXiv.2508.01141",
     "title": "Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective",
     "subtitle": "",
