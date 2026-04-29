@@ -1,3 +1,10 @@
+# [2.88.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.87.1...v2.88.0) (2026-04-29)
+
+
+### Features
+
+* add gitlab to footer links ([60003b3](https://github.com/fairdataihub/fairdataihub.org/commit/60003b3253f2e805f1076f7335120547c4835a2d))
+
 ## [2.87.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.87.0...v2.87.1) (2026-04-27)
 
 
