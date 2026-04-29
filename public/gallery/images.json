@@ -30,7 +30,9 @@
         "id": "jmDIe"
       }
     ],
-    "tags": ["general"],
+    "tags": [
+      "general"
+    ],
     "description": "Experimental Biology EB 2022 Conference"
   },
   {
@@ -64,7 +66,10 @@
         "id": "V5cc7"
       }
     ],
-    "tags": ["conference", "bosc"],
+    "tags": [
+      "conference",
+      "bosc"
+    ],
     "description": "BOSC 2022 Conference"
   },
   {
@@ -83,7 +88,10 @@
         "id": "eTdq6"
       }
     ],
-    "tags": ["conference", "pmwc"],
+    "tags": [
+      "conference",
+      "pmwc"
+    ],
     "description": "PMWC 2023 Conference"
   },
   {
@@ -97,7 +105,10 @@
         "id": "jmvLr"
       }
     ],
-    "tags": ["meeting", "bridge2ai"],
+    "tags": [
+      "meeting",
+      "bridge2ai"
+    ],
     "description": "Bridge2AI Annual PIs Meeting"
   },
   {
@@ -111,7 +122,10 @@
         "id": "fvBlH"
       }
     ],
-    "tags": ["meeting", "sparc"],
+    "tags": [
+      "meeting",
+      "sparc"
+    ],
     "description": "SPARC 2 PIs Meeting"
   },
   {
@@ -130,7 +144,10 @@
         "id": "wEY8w"
       }
     ],
-    "tags": ["conference", "bosc"],
+    "tags": [
+      "conference",
+      "bosc"
+    ],
     "description": "BOSC 2023 Conference"
   },
   {
@@ -144,7 +161,10 @@
         "id": "woNXp"
       }
     ],
-    "tags": ["meeting", "bridge2ai"],
+    "tags": [
+      "meeting",
+      "bridge2ai"
+    ],
     "description": "Bridge2AI Annual PIs Meeting"
   },
   {
@@ -168,7 +188,10 @@
         "id": "bxIYX"
       }
     ],
-    "tags": ["conference", "sfn"],
+    "tags": [
+      "conference",
+      "sfn"
+    ],
     "description": "SfN 2023 Conference"
   },
   {
@@ -197,7 +220,11 @@
         "id": "BarMa"
       }
     ],
-    "tags": ["meeting", "bridge2ai", "open-house"],
+    "tags": [
+      "meeting",
+      "bridge2ai",
+      "open-house"
+    ],
     "description": "Bridge2AI All Hands Meeting and Open House"
   },
   {
@@ -221,7 +248,10 @@
         "id": "djRfg"
       }
     ],
-    "tags": ["conference", "arvo"],
+    "tags": [
+      "conference",
+      "arvo"
+    ],
     "description": "ARVO 2024 Conference"
   },
   {
@@ -260,7 +290,10 @@
         "id": "4yQlS"
       }
     ],
-    "tags": ["conference", "aps"],
+    "tags": [
+      "conference",
+      "aps"
+    ],
     "description": "APS 2024 Conference"
   },
   {
@@ -309,7 +342,10 @@
         "id": "pyDzx"
       }
     ],
-    "tags": ["conference", "bosc"],
+    "tags": [
+      "conference",
+      "bosc"
+    ],
     "description": "BOSC 2024 Conference"
   },
   {
@@ -323,7 +359,10 @@
         "id": "os5Th"
       }
     ],
-    "tags": ["conference", "force11"],
+    "tags": [
+      "conference",
+      "force11"
+    ],
     "description": "FORCE11 Annual Conference"
   },
   {
@@ -362,7 +401,10 @@
         "id": "VBIbS"
       }
     ],
-    "tags": ["conference", "usrse"],
+    "tags": [
+      "conference",
+      "usrse"
+    ],
     "description": "USRSE24 Conference"
   },
   {
@@ -381,7 +423,10 @@
         "id": "umXKj"
       }
     ],
-    "tags": ["meeting", "bridge2ai"],
+    "tags": [
+      "meeting",
+      "bridge2ai"
+    ],
     "description": "Bridge2AI Annual PIs Meeting"
   },
   {
@@ -395,7 +440,10 @@
         "id": "g1tpl"
       }
     ],
-    "tags": ["hackathon", "metadata"],
+    "tags": [
+      "hackathon",
+      "metadata"
+    ],
     "description": "Metadata Rx Hackathon"
   },
   {
@@ -409,7 +457,10 @@
         "id": "tNoJ1"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -423,7 +474,10 @@
         "id": "APMkJ"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -447,7 +501,10 @@
         "id": "yh_-A"
       }
     ],
-    "tags": ["conference", "arvo"],
+    "tags": [
+      "conference",
+      "arvo"
+    ],
     "description": "ARVO 2025 Conference"
   },
   {
@@ -491,7 +548,11 @@
         "id": "IvTdl"
       }
     ],
-    "tags": ["meeting", "bridge2ai", "open-house"],
+    "tags": [
+      "meeting",
+      "bridge2ai",
+      "open-house"
+    ],
     "description": "B2AI All Hands Meeting and Open House"
   },
   {
@@ -510,7 +571,10 @@
         "id": "7vzrQ"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -524,7 +588,10 @@
         "id": "pUdQu"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -548,7 +615,12 @@
         "id": "4wpUL"
       }
     ],
-    "tags": ["seminar", "sabpa", "ai", "biotechnology"],
+    "tags": [
+      "seminar",
+      "sabpa",
+      "ai",
+      "biotechnology"
+    ],
     "description": "SABPA OCLA AI for Biotechnology Seminar Series"
   },
   {
@@ -567,7 +639,11 @@
         "id": "UwNLO"
       }
     ],
-    "tags": ["bbq", "calmi2", "summer"],
+    "tags": [
+      "bbq",
+      "calmi2",
+      "summer"
+    ],
     "description": "CalMI2 summer BBQ"
   },
   {
@@ -586,7 +662,10 @@
         "id": "Xl5HB"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -635,7 +714,10 @@
         "id": "Dcg7V"
       }
     ],
-    "tags": ["conference", "usrse"],
+    "tags": [
+      "conference",
+      "usrse"
+    ],
     "description": "USRSE25 Conference"
   },
   {
@@ -649,7 +731,10 @@
         "id": "kNXz-"
       }
     ],
-    "tags": ["conference", "sfn"],
+    "tags": [
+      "conference",
+      "sfn"
+    ],
     "description": "SfN 2025 Conference"
   },
   {
@@ -668,7 +753,10 @@
         "id": "7pFtq"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -682,7 +770,10 @@
         "id": "n5WYY"
       }
     ],
-    "tags": ["zoom", "meeting"],
+    "tags": [
+      "zoom",
+      "meeting"
+    ],
     "description": "Monthly Brainstorming Meeting"
   },
   {
@@ -701,7 +792,10 @@
         "id": "Yv5_4"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -730,7 +824,10 @@
         "id": "uDevN"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -744,7 +841,10 @@
         "id": "QHOYR"
       }
     ],
-    "tags": ["dinner", "calmi2"],
+    "tags": [
+      "dinner",
+      "calmi2"
+    ],
     "description": "CalMI2 monthly dinner"
   },
   {
@@ -758,7 +858,9 @@
         "id": "WRQfy"
       }
     ],
-    "tags": ["nativebio"],
+    "tags": [
+      "nativebio"
+    ],
     "description": "AI-READI & Tribal Sovereignty Conversations on Artificial Intelligence in Research meeting"
   }
 ]
