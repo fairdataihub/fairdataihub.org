@@ -50,7 +50,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
     <section className="mx-auto max-w-screen-2xl px-4 py-10 sm:px-6 lg:px-10">
       <MagicCard
         gradientColor="oklch(0.592 0.2157 349.761)"
-        className="w-full rounded-3xl p-[2px]"
+        className="w-full rounded-3xl p-0.5"
       >
         <div className="rounded-3xl border border-stone-200 bg-white/90 p-6 shadow-[0_16px_50px_rgba(15,23,42,0.06)] lg:p-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
@@ -98,7 +98,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                           height={18}
                         />
                       </span>
-                      <span className="pointer-events-none absolute -bottom-1 left-1/2 h-[2px] w-0 bg-pink-600 transition-all duration-300 group-hover/link:left-0 group-hover/link:w-full" />
+                      <span className="pointer-events-none absolute -bottom-1 left-1/2 h-0.5 w-0 bg-pink-600 transition-all duration-300 group-hover/link:left-0 group-hover/link:w-full" />
                     </a>
                   ))}
                 </div>
@@ -115,7 +115,7 @@ const ProjectInfoSection: React.FC<InfoSectionProps> = ({
                   <img
                     src={sideImageSrc}
                     alt={sideImageAlt}
-                    className="h-auto w-[150px]"
+                    className="h-auto w-37.5"
                   />
                 </a>
               </div>

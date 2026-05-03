@@ -1,3 +1,4 @@
+import { Icon } from '@iconify/react';
 import dayjs from 'dayjs';
 import { AnimatePresence, motion } from 'framer-motion';
 import fs from 'fs';
@@ -38,9 +39,9 @@ export default function Blog({ blogList }: BlogProps) {
       />
 
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
+        <div className="absolute top-0 left-1/2 h-180 w-250 -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
-      <section className="container mx-auto max-w-screen-xl px-4 pt-8 pb-16">
+      <section className="container mx-auto max-w-7xl px-4 pt-8 pb-16">
         <Seo
           templateTitle="Blog"
           templateUrl="https://fairdataihub.org/blog"
@@ -77,7 +78,33 @@ export default function Blog({ blogList }: BlogProps) {
               Updates, implementation guides, and FAIR practices from our team.
             </p>
           </div>
-          <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+
+          <div className="via-primary/60 h-px w-full bg-linear-to-r from-transparent to-transparent" />
+
+          <div>
+            Subscribe with your favorite feed reader:
+            <div className="mt-2 ml-2 inline-flex flex-wrap items-center gap-2">
+              <a
+                href="/blog/rss.xml"
+                className="text-primary bg-accent/20 items border-center duration p relative inline-flex gap-1 rounded-md border px-1 text-sm font-semibold transition-colors"
+              >
+                <span className="relative z-20 inline-flex items-center gap-1">
+                  RSS Feed
+                  <Icon icon="line-md:rss" width="12" height="12" />
+                </span>
+              </a>
+
+              <a
+                href="/blog/atom.xml"
+                className="text-primary bg-accent/20 items border-center duration p relative inline-flex gap-1 rounded-md border px-1 text-sm font-semibold transition-colors"
+              >
+                <span className="relative z-20 inline-flex items-center gap-1">
+                  Atom Feed
+                  <Icon icon="boxicons:atom" width="12" height="12" />
+                </span>
+              </a>
+            </div>
+          </div>
         </motion.header>
 
         <h2 className="mb-4 text-sm font-semibold tracking-wider text-stone-500 uppercase">
@@ -110,7 +137,7 @@ export default function Blog({ blogList }: BlogProps) {
           </div>
         )}
 
-        <div className="via-primary/60 mb-6 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+        <div className="via-primary/60 l bg-linear-to-r from-transparent to-transparent" />
 
         <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
           Previous posts

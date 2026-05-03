@@ -23,9 +23,10 @@
     "format": "prettier --ignore-path .gitignore \"src/**/*.+(ts|js|tsx|jsx)\" --write",
     "postinstall": "pnpm run scripts:gallery_id",
     "commit": "cz",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap && pnpm run scripts:feeds",
     "semantic-release": "semantic-release",
     "scripts:gallery_id": "tsx scripts/gallery_id.ts",
+    "scripts:feeds": "tsx scripts/generate_feeds.ts",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\"",
     "reset": "rm -rf node_modules .next && pnpm install"

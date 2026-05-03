@@ -30,10 +30,10 @@ export default function ProjectCard({ project }: { project: Project }) {
       aria-label={`${title} - open project`}
     >
       <article
-        className="relative grid h-full min-h-[28rem] overflow-hidden rounded-xl border border-stone-200 bg-white/90 shadow-sm transition-all duration-300 hover:border-pink-300"
+        className="relative grid h-full min-h-112 overflow-hidden rounded-xl border border-stone-200 bg-white/90 shadow-sm transition-all duration-300 hover:border-pink-300"
         style={{ gridTemplateRows: `auto 1fr` }}
       >
-        <div className="relative h-44 w-full overflow-hidden bg-gradient-to-b from-stone-50 to-white dark:from-stone-900 dark:to-stone-900">
+        <div className="relative h-44 w-full overflow-hidden bg-linear-to-b from-stone-50 to-white dark:from-stone-900 dark:to-stone-900">
           <div
             aria-hidden
             className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
@@ -96,7 +96,7 @@ export default function ProjectCard({ project }: { project: Project }) {
                 className="group-hover:text-primary group-active:text-primary h-4 w-4 transition-colors"
                 aria-hidden="true"
               />
-              <span className="bg-primary absolute -bottom-1 left-1/2 h-[2px] w-0 transition-all duration-300 group-hover:left-0 group-hover:w-full group-active:left-0 group-active:w-full" />
+              <span className="bg-primary absolute -bottom-1 left-1/2 h-0.5 w-0 transition-all duration-300 group-hover:left-0 group-hover:w-full group-active:left-0 group-active:w-full" />
             </div>
           </div>
         </div>

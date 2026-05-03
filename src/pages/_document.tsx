@@ -35,6 +35,19 @@ class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:domain" content="fairdataihub.org" />
 
+          <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="FAIR Data Innovations Hub Blog RSS Feed"
+            href="https://fairdataihub.org/blog/rss.xml"
+          />
+          <link
+            rel="alternate"
+            type="application/atom+xml"
+            title="FAIR Data Innovations Hub Blog Atom Feed"
+            href="https://fairdataihub.org/blog/atom.xml"
+          />
+
           <link rel="shortcut icon" href="/favicon.ico" />
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
