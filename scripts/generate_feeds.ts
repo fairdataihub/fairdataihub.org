@@ -7,7 +7,23 @@ type BlogFrontMatter = {
   title?: string;
   date?: string;
   subtitle?: string;
-  author?: string;
+  authors?: string[];
+};
+
+type AuthorEntry = { name: string };
+type AuthorsJson = Record<string, AuthorEntry>;
+
+const AUTHORS_JSON_PATH = path.resolve(
+  process.cwd(),
+  'src/assets/data/authors.json',
+);
+const authorsJson: AuthorsJson = JSON.parse(
+  fs.readFileSync(AUTHORS_JSON_PATH, 'utf-8'),
+);
+
+const resolveAuthors = (ids: string[] | undefined): string => {
+  if (!ids || ids.length === 0) return 'FAIR Data Innovations Hub';
+  return ids.map((id) => authorsJson[id]?.name ?? id).join(', ');
 };
 
 type BlogPost = {
@@ -74,7 +90,7 @@ const readBlogPosts = (): BlogPost[] => {
         title,
         description,
         date,
-        author: frontMatter.author?.trim() || 'FAIR Data Innovations Hub',
+        author: resolveAuthors(frontMatter.authors),
         url: `${BLOG_URL}/${slug}`,
       };
     })
@@ -107,6 +123,8 @@ const buildRss = (posts: BlogPost[]) => {
       const guid = escapeXml(post.url);
       const pubDate = escapeXml(toRfc2822(post.date));
 
+      const author = escapeXml(post.author);
+
       return [
         '    <item>',
         `      <title>${title}</title>`,
@@ -114,6 +132,7 @@ const buildRss = (posts: BlogPost[]) => {
         `      <link>${link}</link>`,
         `      <guid isPermaLink="true">${guid}</guid>`,
         `      <pubDate>${pubDate}</pubDate>`,
+        `      <author>${author}</author>`,
         '    </item>',
       ].join('\n');
     })
@@ -121,10 +140,11 @@ const buildRss = (posts: BlogPost[]) => {
 
   return [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<rss version="2.0">',
+    '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">',
     '  <channel>',
     '    <title>FAIR Data Innovations Hub Blog</title>',
     `    <link>${escapeXml(BLOG_URL)}</link>`,
+    `    <atom:link href="${escapeXml(`${BLOG_URL}/rss.xml`)}" rel="self" type="application/rss+xml" />`,
     '    <description>Updates and implementation guides from FAIR Data Innovations Hub.</description>',
     '    <language>en-us</language>',
     `    <lastBuildDate>${escapeXml(latestDate)}</lastBuildDate>`,
