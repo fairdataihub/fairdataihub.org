@@ -1,3 +1,10 @@
+# [2.89.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.88.0...v2.89.0) (2026-05-03)
+
+
+### Features
+
+* add support for rss feeds ([#762](https://github.com/fairdataihub/fairdataihub.org/issues/762)) ([1d9afa6](https://github.com/fairdataihub/fairdataihub.org/commit/1d9afa632b3d66df54a3712cb3a51657f50b42bf))
+
 # [2.88.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.87.1...v2.88.0) (2026-04-29)
 
 
