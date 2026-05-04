@@ -1,3 +1,10 @@
+# [2.90.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.89.0...v2.90.0) (2026-05-04)
+
+
+### Features
+
+* May 2026 event ([#761](https://github.com/fairdataihub/fairdataihub.org/issues/761)) ([8017b10](https://github.com/fairdataihub/fairdataihub.org/commit/8017b10bf9bc6fd7a89505416772fdbf1eb07e06))
+
 # [2.89.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.88.0...v2.89.0) (2026-05-03)
 
 
