@@ -848,6 +848,28 @@
     "description": "CalMI2 monthly dinner"
   },
   {
+    "event": "Software Citation Workshop",
+    "folder": "2026-04-14 - Software Citation Workshop",
+    "date": "2026-04-14",
+    "images": [
+      {
+        "name": "DSCN1487.jpeg",
+        "alt": "Software Citation Workshop",
+        "id": "msCGa"
+      },
+      {
+        "name": "IMG_5964.jpeg",
+        "alt": "Software Citation Workshop",
+        "id": "P8wlU"
+      }
+    ],
+    "tags": [
+      "workshop",
+      "software"
+    ],
+    "description": "Software Citation Workshop"
+  },
+  {
     "event": "AI-READI & Tribal Sovereignty Conversations on Artificial Intelligence in Research meeting",
     "folder": "2026-04-20 - AI-READI & Tribal Sovereignty Conversations on Artificial Intelligence in Research meeting",
     "date": "2026-04-20",
@@ -856,6 +878,11 @@
         "name": "1000163934.jpg",
         "alt": "AI-READI & Tribal Sovereignty Conversations on Artificial Intelligence in Research meeting",
         "id": "WRQfy"
+      },
+      {
+        "name": "IMG_20260420_175457.jpg",
+        "alt": "AI-READI & Tribal Sovereignty Conversations on Artificial Intelligence in Research meeting",
+        "id": "5SUKz"
       }
     ],
     "tags": [
@@ -889,5 +916,32 @@
       "calmi2"
     ],
     "description": "CalMI2 monthly dinner"
+  },
+  {
+    "event": "Bridge2AI F2F Meeting",
+    "folder": "2026-04-27 - Bridge2AI-F2F",
+    "date": "2026-04-27",
+    "images": [
+      {
+        "name": "IMG_8637.JPEG",
+        "alt": "Bridge2AI F2F Meeting",
+        "id": "bcDwD"
+      },
+      {
+        "name": "IMG_8638.JPEG",
+        "alt": "Bridge2AI F2F Meeting",
+        "id": "ZJ60I"
+      },
+      {
+        "name": "PXL_20260428_001018289.MP.jpg",
+        "alt": "Bridge2AI F2F Meeting",
+        "id": "4e4Rr"
+      }
+    ],
+    "tags": [
+      "meeting",
+      "bridge2ai"
+    ],
+    "description": "Bridge2AI F2F Meeting"
   }
 ]
