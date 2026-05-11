@@ -9,6 +9,14 @@
   },
   {
     "project": ["aireadi"],
+    "title": "Dataset documentation for responsible AI: analysis of suitability and usage for health datasets",
+    "url": "https://doi.org/10.1038/s41746-026-02714-2",
+    "citation": "Heinke, A., Huang, L., Simpkins, K. U., Kalaw, F. G. P., Karsolia, A., Singh, K., Soundarajan, S., Panny, B., Nebeker, C., Baxter, S. L., Lee, C. S., Lee, A. Y., Patel, B., & AI-READI Consortium. (2026). Dataset documentation for responsible AI: Analysis of suitability and usage for health datasets. npj Digital Medicine. https://doi.org/10.1038/s41746-026-02714-2",
+    "type": "Journal Articles",
+    "year": 2026
+  },
+  {
+    "project": ["aireadi"],
     "title": "AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond",
     "url": "https://doi.org/10.1038/s42255-024-01165-x",
     "citation": "AI-READI Consortium. (2024). AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond. Nature Metabolism. https://doi.org/10.1038/s42255-024-01165-x",
