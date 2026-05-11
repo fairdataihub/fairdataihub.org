@@ -1,3 +1,10 @@
+## [2.90.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.90.0...v2.90.1) (2026-05-11)
+
+
+### Bug Fixes
+
+* add journal article ([9273b11](https://github.com/fairdataihub/fairdataihub.org/commit/9273b113340da1f58e69df282f1f975b0cb4caa5))
+
 # [2.90.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.89.0...v2.90.0) (2026-05-04)
 
 
