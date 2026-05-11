@@ -943,5 +943,54 @@
       "bridge2ai"
     ],
     "description": "Bridge2AI F2F Meeting"
+  },
+  {
+    "event": "ARVO 2026 Conference",
+    "folder": "2026-05-05 - ARVO 2026 Conference",
+    "date": "2026-05-05",
+    "images": [
+      {
+        "name": "1491edf1-8ed1-428d-b1af-4d24974c4144.jpg",
+        "alt": "ARVO 2026 Conference",
+        "id": "BPWbx"
+      },
+      {
+        "name": "IMG_1459.jpeg",
+        "alt": "ARVO 2026 Conference",
+        "id": "HCbny"
+      },
+      {
+        "name": "PXL_20260506_161237030.jpg",
+        "alt": "ARVO 2026 Conference",
+        "id": "rJxKr"
+      }
+    ],
+    "tags": [
+      "conference",
+      "arvo"
+    ],
+    "description": "ARVO 2026 Conference"
+  },
+  {
+    "event": "NCAR Open Hackathon",
+    "folder": "2026-05-06 - NCAR Open Hackathon",
+    "date": "2026-05-06",
+    "images": [
+      {
+        "name": "3d7fae85-1ef9-4b3a-9d52-4df7d371e952.jpg",
+        "alt": "NCAR Open Hackathon",
+        "id": "wHILP"
+      },
+      {
+        "name": "91b586f7-4efb-4407-b301-3fc05b92d7e3.jpg",
+        "alt": "NCAR Open Hackathon",
+        "id": "-jrmR"
+      }
+    ],
+    "tags": [
+      "hackathon",
+      "ncar"
+    ],
+    "description": "NCAR Open Hackathon"
   }
 ]
