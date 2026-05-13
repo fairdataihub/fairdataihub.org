@@ -1,3 +1,10 @@
+## [2.91.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.0...v2.91.1) (2026-05-13)
+
+
+### Bug Fixes
+
+* :bug: update json team list ([9ff4027](https://github.com/fairdataihub/fairdataihub.org/commit/9ff40275cfbe004e5733378dd4068b2d0b172c1a))
+
 # [2.91.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.90.1...v2.91.0) (2026-05-13)
 
 
