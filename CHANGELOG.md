@@ -1,3 +1,12 @@
+# [2.91.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.90.1...v2.91.0) (2026-05-13)
+
+
+### Features
+
+* :sparkles: /authors/[author] redesign to match /blog ([6d89019](https://github.com/fairdataihub/fairdataihub.org/commit/6d8901939c253dabaae68465b7b90e4e4f6eb3b2))
+* :sparkles: Add author and profile image to blog post cards ([f513146](https://github.com/fairdataihub/fairdataihub.org/commit/f5131467a02363ba79d22089f3cd80a46ee173da))
+* :sparkles: Redirect to team page with /team#[author] opens respective author modal ([4d588dc](https://github.com/fairdataihub/fairdataihub.org/commit/4d588dccc676903b393cf138f81f7452efe64264))
+
 ## [2.90.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.90.0...v2.90.1) (2026-05-11)
 
 
