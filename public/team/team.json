@@ -170,6 +170,14 @@
       "show": true,
       "link": "https://www.linkedin.com/in/dorian-portillo-4733b61b5/"
     },
+    "website": {
+      "show": true,
+      "link": "https://dorianportillo.dev"
+    },
+    "orcid": {
+      "show": true,
+      "link": "https://orcid.org/0000-0002-4306-4464"
+    },
     "startDate": "12/2020"
   },
   {
