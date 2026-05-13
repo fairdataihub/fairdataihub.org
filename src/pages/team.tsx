@@ -1,7 +1,7 @@
 // pages/team.tsx
 import { motion } from 'framer-motion';
 import { InferGetStaticPropsType } from 'next';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Seo from '@/components/seo/seo';
 import ProfileModal from '@/components/team/ProfileModal';
@@ -26,6 +26,19 @@ export default function TeamPage({
     setSelected(p);
     setOpen(true);
   };
+
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (!hash) return;
+    const allProfiles: CardProfile[] = [
+      ...TeamMembers,
+      ...currentInterns,
+      ...pastInterns,
+      ...(SUPPORT_JSON as CardProfile[]),
+    ];
+    const matched = allProfiles.find((p) => p.id === hash);
+    if (matched) openProfile(matched);
+  }, [TeamMembers, currentInterns, pastInterns]);
   const closeProfile = () => setOpen(false);
   const clearSelected = () => setSelected(null);
 
