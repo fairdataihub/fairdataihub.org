@@ -21,6 +21,7 @@ type BlogList = {
     category: string;
     heroImage: string;
     imageAuthor: string;
+    authors?: string[];
   };
 };
 
@@ -131,6 +132,7 @@ export default function Blog({ blogList }: BlogProps) {
                   heroImage={featured.frontMatter.heroImage}
                   imageAuthor={featured.frontMatter.imageAuthor}
                   category={featured.frontMatter.category}
+                  authors={featured.frontMatter.authors}
                 />
               </motion.div>
             </AnimatePresence>
@@ -178,6 +180,7 @@ export default function Blog({ blogList }: BlogProps) {
                   imageAuthor={frontMatter.imageAuthor}
                   tags={frontMatter.tags}
                   category={frontMatter.category}
+                  authors={frontMatter.authors}
                 />
               </motion.div>
             ))}

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import authorsData from '@/assets/data/authors.json';
 import { slugifyTag } from '@/lib/utils';
 
 type ListItemProps = {
@@ -15,6 +16,7 @@ type ListItemProps = {
   imageAuthor?: string;
   tags?: string[];
   category?: string;
+  authors?: string[];
 };
 
 const cardV = {
@@ -34,7 +36,13 @@ export default function BlogListItem({
   imageAuthor,
   tags = [],
   category,
+  authors,
 }: ListItemProps) {
+  const resolvedAuthors = (authors ?? []).flatMap((id) => {
+    const data = authorsData[id as keyof typeof authorsData];
+    return data ? [{ id, ...data }] : [];
+  });
+
   return (
     <motion.li
       initial="rest"
@@ -46,7 +54,7 @@ export default function BlogListItem({
     >
       <div className="grid grid-cols-[auto_1fr] items-start gap-4 sm:gap-5">
         <div
-          aria-label={title}
+          aria-hidden
           className="relative col-start-1 row-span-2 aspect-[16/10] w-32 shrink-0 overflow-hidden rounded-xl bg-slate-100 sm:w-44 lg:w-52"
         >
           <motion.div
@@ -64,12 +72,49 @@ export default function BlogListItem({
           </motion.div>
         </div>
 
-        <Link
-          href={`/blog/${slug}`}
-          className="col-start-2 row-start-1 block"
-          aria-label={`Open post: ${title}`}
-        >
-          <div className="mb-1 flex flex-wrap items-center gap-2 text-[11px] text-slate-600">
+        <div className="col-start-2 row-start-1 block">
+          <div className="mb-1 flex flex-wrap items-center gap-1.5 text-[11px] text-slate-600">
+            {resolvedAuthors.length > 0 && (
+              <>
+                <div className="relative z-10 flex items-center gap-1">
+                  <Link
+                    href={`/authors/${resolvedAuthors[0].id}`}
+                    className="flex -space-x-1 transition-opacity hover:opacity-80"
+                    tabIndex={-1}
+                    aria-hidden
+                  >
+                    {resolvedAuthors.slice(0, 3).map((author) => (
+                      <div
+                        key={author.name}
+                        className="relative h-5 w-5 overflow-hidden rounded-full ring-2 ring-white"
+                      >
+                        <Image
+                          src={author.avatar}
+                          alt={author.name}
+                          fill
+                          sizes="20px"
+                          className="object-cover"
+                        />
+                      </div>
+                    ))}
+                  </Link>
+                  <span>
+                    {resolvedAuthors.map((author, i) => (
+                      <span key={author.id}>
+                        {i > 0 && <span className="mr-0.5">,</span>}
+                        <Link
+                          href={`/authors/${author.id}`}
+                          className="hover:underline"
+                        >
+                          {author.name}
+                        </Link>
+                      </span>
+                    ))}
+                  </span>
+                </div>
+                <span className="text-slate-300 select-none">•</span>
+              </>
+            )}
             <time dateTime={date}>{dayjs(date).format(`MMM D, YYYY`)}</time>
             <span className="text-slate-300 select-none">•</span>
             <span>{timeToRead} min read</span>
@@ -88,9 +133,9 @@ export default function BlogListItem({
               {subtitle}
             </p>
           )}
-        </Link>
+        </div>
 
-        <div className="col-start-2 row-start-2 flex flex-wrap items-center gap-2">
+        <div className="relative z-10 col-start-2 row-start-2 flex flex-wrap items-center gap-2">
           {category && (
             <Link
               href={`/category/${encodeURIComponent(category)}`}
@@ -115,6 +160,12 @@ export default function BlogListItem({
           ))}
         </div>
       </div>
+
+      <Link
+        href={`/blog/${slug}`}
+        className="absolute inset-0"
+        aria-label={`Open post: ${title}`}
+      />
     </motion.li>
   );
 }

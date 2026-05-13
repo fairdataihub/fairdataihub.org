@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import authorsData from '@/assets/data/authors.json';
+
 type FeaturedProps = {
   slug: string;
   title: string;
@@ -13,6 +15,7 @@ type FeaturedProps = {
   heroImage: string;
   imageAuthor?: string;
   category?: string;
+  authors?: string[];
 };
 
 const cardV = {
@@ -31,7 +34,13 @@ export default function BlogFeatured({
   heroImage,
   imageAuthor,
   category,
+  authors,
 }: FeaturedProps) {
+  const resolvedAuthors = (authors ?? []).flatMap((id) => {
+    const data = authorsData[id as keyof typeof authorsData];
+    return data ? [{ id, ...data }] : [];
+  });
+
   return (
     <motion.article
       initial="rest"
@@ -39,68 +48,114 @@ export default function BlogFeatured({
       animate="rest"
       variants={cardV}
       transition={{ type: `spring`, stiffness: 220, damping: 24 }}
-      className="group mx-auto w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-200 bg-white"
+      className="group relative mx-auto w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-200 bg-white"
       itemScope
       itemType="https://schema.org/BlogPosting"
     >
-      <Link href={`/blog/${slug}`} className="relative block">
-        <motion.div
-          variants={mediaV}
-          transition={{ duration: 0.25 }}
-          className="relative aspect-[16/9] max-h-[420px] w-full overflow-hidden bg-slate-100 md:aspect-[5/2] md:max-h-[440px] lg:aspect-[21/9] lg:max-h-[460px]"
-        >
-          <Image
-            src={heroImage}
-            alt={imageAuthor || title}
-            fill
-            sizes="(min-width:1280px) 1100px, 100vw"
-            className="object-cover"
-            priority
-          />
-        </motion.div>
-        <div className="p-5 sm:p-6">
-          <div className="mb-2 flex flex-wrap items-center gap-2 text-xs text-slate-600">
-            <time dateTime={date}>{dayjs(date).format(`MMMM D, YYYY`)}</time>
-            <span className="text-slate-300 select-none">•</span>
-            <span>{timeToRead} min read</span>
-            {category && (
-              <>
-                <span className="text-slate-300 select-none">•</span>
-                <div
-                  aria-label={`View posts in ${category} category`}
-                  className="rounded-full border border-slate-300 px-2 py-0.5 text-[11px] font-medium text-slate-700 hover:border-slate-400 hover:text-slate-900"
+      <motion.div
+        variants={mediaV}
+        transition={{ duration: 0.25 }}
+        className="relative aspect-[16/9] max-h-[420px] w-full overflow-hidden bg-slate-100 md:aspect-[5/2] md:max-h-[440px] lg:aspect-[21/9] lg:max-h-[460px]"
+      >
+        <Image
+          src={heroImage}
+          alt={imageAuthor || title}
+          fill
+          sizes="(min-width:1280px) 1100px, 100vw"
+          className="object-cover"
+          priority
+        />
+      </motion.div>
+
+      <div className="p-5 sm:p-6">
+        <div className="mb-2 flex flex-wrap items-center gap-2 text-xs text-slate-600">
+          {resolvedAuthors.length > 0 && (
+            <>
+              <div className="relative z-10 flex items-center gap-1.5">
+                <Link
+                  href={`/authors/${resolvedAuthors[0].id}`}
+                  className="flex -space-x-1.5 transition-opacity hover:opacity-80"
+                  tabIndex={-1}
+                  aria-hidden
                 >
-                  {category}
-                </div>
-              </>
-            )}
-          </div>
-
-          <motion.h2
-            variants={titleV}
-            transition={{ duration: 0.2 }}
-            className="group-hover:text-primary text-2xl leading-tight font-bold text-balance text-slate-900 group-hover:underline sm:text-3xl md:text-[1.9rem]"
-          >
-            {title}
-          </motion.h2>
-
-          {subtitle && (
-            <p className="mt-2 max-w-3xl text-base text-slate-700 md:text-lg">
-              {subtitle}
-            </p>
+                  {resolvedAuthors.slice(0, 3).map((author) => (
+                    <div
+                      key={author.name}
+                      className="relative h-6 w-6 overflow-hidden rounded-full ring-2 ring-white"
+                    >
+                      <Image
+                        src={author.avatar}
+                        alt={author.name}
+                        fill
+                        sizes="24px"
+                        className="object-cover"
+                      />
+                    </div>
+                  ))}
+                </Link>
+                <span>
+                  {resolvedAuthors.map((author, i) => (
+                    <span key={author.id}>
+                      {i > 0 && <span className="mr-0.5">,</span>}
+                      <Link
+                        href={`/authors/${author.id}`}
+                        className="hover:underline"
+                      >
+                        {author.name}
+                      </Link>
+                    </span>
+                  ))}
+                </span>
+              </div>
+              <span className="text-slate-300 select-none">•</span>
+            </>
           )}
+          <time dateTime={date}>{dayjs(date).format(`MMMM D, YYYY`)}</time>
+          <span className="text-slate-300 select-none">•</span>
+          <span>{timeToRead} min read</span>
+          {category && (
+            <>
+              <span className="text-slate-300 select-none">•</span>
+              <div
+                aria-label={`View posts in ${category} category`}
+                className="rounded-full border border-slate-300 px-2 py-0.5 text-[11px] font-medium text-slate-700 hover:border-slate-400 hover:text-slate-900"
+              >
+                {category}
+              </div>
+            </>
+          )}
+        </div>
 
-          <div className="mt-4">
-            <div className="group-hover:text-primary text-sm font-medium underline-offset-4 hover:underline">
-              <span>Read the full story</span>
-              <Icon
-                icon="solar:arrow-right-broken"
-                className="ml-1 inline-block h-4 w-4"
-              />
-            </div>
+        <motion.h2
+          variants={titleV}
+          transition={{ duration: 0.2 }}
+          className="group-hover:text-primary text-2xl leading-tight font-bold text-balance text-slate-900 group-hover:underline sm:text-3xl md:text-[1.9rem]"
+        >
+          {title}
+        </motion.h2>
+
+        {subtitle && (
+          <p className="mt-2 max-w-3xl text-base text-slate-700 md:text-lg">
+            {subtitle}
+          </p>
+        )}
+
+        <div className="mt-4">
+          <div className="group-hover:text-primary text-sm font-medium underline-offset-4 hover:underline">
+            <span>Read the full story</span>
+            <Icon
+              icon="solar:arrow-right-broken"
+              className="ml-1 inline-block h-4 w-4"
+            />
           </div>
         </div>
-      </Link>
+      </div>
+
+      <Link
+        href={`/blog/${slug}`}
+        className="absolute inset-0"
+        aria-label={title}
+      />
     </motion.article>
   );
 }

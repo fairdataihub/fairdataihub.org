@@ -23,6 +23,7 @@ type BlogList = {
     category: string;
     heroImage: string;
     imageAuthor: string;
+    authors?: string[];
   };
 };
 
@@ -99,6 +100,7 @@ const Blog: React.FC<BlogProps> = ({ filteredBlogList }) => {
                 imageAuthor={frontMatter.imageAuthor}
                 tags={frontMatter.tags}
                 category={frontMatter.category}
+                authors={frontMatter.authors}
               />
             </ul>
           </motion.div>
