@@ -83,7 +83,7 @@ What is notably sparse: tools that use AI for **end-to-end FAIR workflows** — 
 
 ## What This Means for the Community
 
-The FAIR tool landscape in 2025 is more capable than it was just two years ago. LLMs are accelerating metadata work that used to require significant manual effort, and purpose-built platforms are making FAIR more accessible outside of well-resourced institutions.
+The FAIR tool landscape in 2026 is more capable than it was just two years ago. LLMs are accelerating metadata work that used to require significant manual effort, and purpose-built platforms are making FAIR more accessible outside of well-resourced institutions.
 
 But gaps remain. Domain-specific tools (bioinformatics, social science) are better served than general-purpose researchers. Many tools are still research prototypes rather than production-ready software. And interoperability between tools — being able to move seamlessly from curation to assessment to publication — is still largely unsolved.
 
