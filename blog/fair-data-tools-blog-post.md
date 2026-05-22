@@ -101,12 +101,10 @@ These gaps are not reasons for pessimism, they are a roadmap for where the commu
 
 The FAIR tool landscape in 2026 is more capable than it was just two years ago. LLMs are accelerating metadata work that used to require significant manual effort, and purpose-built platforms are making FAIR more accessible outside of well-resourced institutions.
 
-But the gaps above make clear that the ecosystem is still maturing. The tools that will matter most in the next few years are those that connect the dots: linking assessment to curation, spanning disciplines, and lowering the barrier for researchers who do not have a dedicated data manager on their team.
-
-We will continue tracking this space. If you know of a tool we missed, we'd love to hear from you.
+But the gaps above make clear that the ecosystem is still maturing. We will continue tracking this space. If you know of a tool we missed, we'd love to hear from you.
 
 ---
 ## Acknowledgements
-Some of the content for this post was made better with the help of Clude's writing tools.
+Some of the content for this post was made better with the help of Claude's writing tools.
 
 *This post is based on a structured two-layer review of FAIR data tools conducted by the FAIR Data Innovations Hub team. Tools were evaluated for usability, FAIR alignment, AI integration, and support for curation or assessment workflows.*
