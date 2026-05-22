@@ -1,3 +1,21 @@
+---
+title: 'The FAIR Data Tool Landscape: What's Out There, What Uses AI, and What to Try'
+authors:
+  - 'Nahid Zeinali'
+date: '2025-05-22'
+category: 'Research'
+heroImage: ''
+imageAuthor: ''
+imageAuthorLink: ''
+subtitle: 'A structured review of FAIR data tools — from curation and assessment to AI-powered metadata workflows'
+tags:
+  - FAIR Data
+  - Data Curation
+  - AI Tools
+  - Metadata
+  - Open Science
+---
+
 # The FAIR Data Tool Landscape: What's Out There, What Uses AI, and What to Try
 
 **The promise of FAIR data — Findable, Accessible, Interoperable, and Reusable — is clear. But knowing *which tools* can actually help you get there is much harder.**
