@@ -1,19 +1,19 @@
 ---
-title: 'The FAIR Data Tool Landscape: What's Out There, What Uses AI, and What to Try'
+title: 'The FAIR Data Tool Landscape'
 authors:
   - 'Nahid Zeinali'
-date: '2025-05-22'
+date: '2026-05-22'
 category: 'Research'
-heroImage: ''
-imageAuthor: ''
-imageAuthorLink: ''
+heroImage: 'https://biosistemika.com/wp-content/uploads/2021/07/FAIR-data_image.webp'
+imageAuthor: 'Jana Erjavec'
+imageAuthorLink: 'https://biosistemika.com/blog/data-integrity-and-fair-principles-faq/'
 subtitle: 'A structured review of FAIR data tools — from curation and assessment to AI-powered metadata workflows'
 tags:
   - FAIR Data
-  - Data Curation
+  - FAIR Curation
+  - FAIR Assessment
+  - FAIR Education
   - AI Tools
-  - Metadata
-  - Open Science
 ---
 
 # The FAIR Data Tool Landscape: What's Out There, What Uses AI, and What to Try
@@ -41,15 +41,13 @@ Only tools that met all four criteria (or came close) made the cut. What follows
 
 The tools we found fall naturally into three buckets. Most researchers need all three at different points in their workflow.
 
-### 🛠️ FAIR Curation — Making Your Data FAIR
+### FAIR Curation — Making Your Data FAIR
 
 These tools help you *do the work*: cleaning metadata, structuring datasets, annotating data elements, and preparing data for sharing.
 
 **[FAIR² Data Management](https://www.frontiersin.org/about/fair-data-management)** is an AI-assisted data management service from Frontiers that helps researchers organize, validate, and publish datasets with enriched metadata. It is particularly useful if you want your data to end up in a citable, shareable form — though note it is a paid service (around $640 for datasets up to 50 GB).
 
 **[FAIRlyz](https://fairlyz.lifetimeomics.com/about-fairlyz/)** is a platform designed for AI/ML use cases, helping researchers curate their data and metadata before sharing. It explicitly targets FAIR compliance and supports AI-driven curation workflows.
-
-**[INCF / Neurobagel LLM Annotation Tool](https://www.incf.org/sig/llm-assisted-tool-annotate-research-data-machine-understandable-semantic-data-dictionaries)** uses large language models to help annotate research data elements into machine-understandable semantic data dictionaries — with human verification built into the loop. A great example of AI augmenting, rather than replacing, the curator.
 
 **[FAIRMetadataCuration](https://github.com/musen-lab/FAIRMetadataCuration)** (from the Musen Lab) provides notebooks and tools that combine LLMs with structured metadata templates to standardize and refine metadata at scale. It is particularly well-suited for researchers dealing with large or messy metadata collections.
 
@@ -59,43 +57,41 @@ These tools help you *do the work*: cleaning metadata, structuring datasets, ann
 
 **[Metacurate-ML](https://metadata-automation.org/metacurate-ml.html)** focuses on social science survey data, using pre-trained language models and zero-shot techniques to automatically extract questionnaire metadata (question text, response options, routing logic) and map it into standard formats. A niche tool, but a strong one for that domain.
 
+**[INCF / Neurobagel LLM Annotation Tool](https://www.incf.org/sig/llm-assisted-tool-annotate-research-data-machine-understandable-semantic-data-dictionaries)** uses large language models to help annotate research data elements into machine-understandable semantic data dictionaries — with human verification built into the loop. A great example of AI augmenting, rather than replacing, the curator.
+
 ---
 
-### 📊 FAIR Assessment — Measuring How FAIR You Already Are
+### FAIR Assessment — Measuring How FAIR You Already Are
 
 These tools help you evaluate the FAIRness of existing datasets and metadata, and identify gaps.
 
 **[FAIR WAY](https://github.com/Anmol-Sharma/Fair-Way)** is a fully automated FAIR assessment system that uses LLMs to evaluate scientific metadata. It is modular, research-grade, and designed to give structured feedback on where your data falls short of FAIR criteria.
 
-**[LLM-based FAIR Assessment Tool (RWTH Aachen, 2024)](https://dbis.rwth-aachen.de/dbis/index.php/2024/llm-based-tool-for-fair-data-assessment/)** is a master's thesis project comparing classical FAIR assessment methods with LLM-based approaches. Beyond assessment, the tool uses the LLM to generate concrete recommendations for improving FAIRness — making it both evaluative and prescriptive.
+**[LLM-based FAIR Assessment Tool (RWTH Aachen, 2024)](https://dbis.rwth-aachen.de/dbis/index.php/2024/llm-based-tool-for-fair-data-assessment/)** is a master's thesis project comparing classical FAIR assessment methods with LLM-based approaches. Beyond assessment, the tool uses the LLM to generate concrete recommendations for improving FAIRness, making it both evaluative and prescriptive.
 
 ---
 
-### 📚 FAIR Education — Learning How to Apply FAIR
+### FAIR Education — Learning How to Apply FAIR
 
-**[FAIR GPT](https://github.com/UB-Mannheim/FAIR-GPT)** is one of the most comprehensive entries we found. It acts as a virtual data steward and AI-powered FAIR consultant. It can review metadata from a repository URL, assess FAIRness via external APIs, recommend missing metadata fields, help generate README files and data management plans, and even suggest suitable data repositories and data journals. If you are new to FAIR data practices, FAIR GPT is one of the best places to start.
-
----
-
-## The AI Trend Is Real — But Uneven
-
-One of the clearest signals from this review: **AI is arriving in the FAIR data space in a meaningful way**, but it is not evenly distributed.
-
-The majority of AI-powered tools focus on **curation** — helping humans annotate, extract, and standardize metadata faster. Assessment tools are starting to adopt LLMs too, with promising results. Education and guidance tools, like FAIR GPT, are using AI to make FAIR more accessible to researchers who lack a dedicated data manager.
-
-What is notably sparse: tools that use AI for **end-to-end FAIR workflows** — from raw data ingestion through assessment and publication. Most tools handle one part of the pipeline well. Combining them still requires manual effort.
+**[FAIR GPT](https://github.com/UB-Mannheim/FAIR-GPT)** is one of the most comprehensive entries we found. It acts as a virtual data steward and AI-powered FAIR consultant. It can review metadata from a repository URL, assess FAIRness via external APIs, recommend missing metadata fields, help generate README files and data management plans, and even suggest suitable data repositories and data journals.
 
 ---
 
-## A Quick Decision Guide
+## Gaps in the Current Landscape
 
-| Your situation | Start here |
-|---|---|
-| You have a dataset and want to check how FAIR it is | FAIR WAY or the RWTH Aachen LLM tool |
-| You need to clean and standardize metadata at scale | FAIRMetadataCuration or Metacurate-ML |
-| You work in life sciences / omics | Genestack ODM, CurateGPT, or INCF/Neurobagel |
-| You are new to FAIR and want guided help | FAIR GPT |
-| You want a platform to manage and publish FAIR data | FAIR² Data Management or FAIRlyz |
+Despite the progress, our review revealed several recurring gaps that the community has not yet fully addressed.
+
+**Most tools are domain-specific.** The strongest, most production-ready tools (Genestack ODM, CurateGPT, INCF/Neurobagel) are built for life sciences and bioinformatics. Researchers in the humanities, social sciences, or interdisciplinary fields have far fewer purpose-built options. Metacurate-ML is a notable exception for survey data, but general-purpose FAIR tooling for non-STEM domains remains underdeveloped.
+
+**AI is mostly applied to curation, not the full lifecycle.** Nearly all AI-powered tools we reviewed focus on one slice of the FAIR workflow — usually metadata extraction or standardization. There are very few tools that support a researcher from raw data intake through to FAIR-compliant publication in a connected, automated way. Researchers still have to stitch tools together manually.
+
+**Many tools are prototypes, not products.** A significant number of entries in our review are GitHub repositories, thesis projects, or research demonstrations. They show what is possible, but they lack documentation, maintenance commitments, or user support that would make them viable for everyday research workflows. The gap between proof-of-concept and production-ready tool remains wide.
+
+**Assessment and curation tools rarely talk to each other.** You might use FAIR WAY to assess your dataset, then switch to a completely separate tool to act on its recommendations. There is almost no interoperability between assessment outputs and curation inputs, meaning the feedback loop that would make FAIR improvement practical is still largely manual.
+
+**Human expertise is still required at critical points.** Even the most capable AI-assisted tools are designed to work *with* a human curator, not replace one. This is the right design philosophy, but it also means that institutions without trained data managers still face a steep adoption barrier.
+
+These gaps are not reasons for pessimism, they are a roadmap for where the community should invest next.
 
 ---
 
@@ -103,10 +99,12 @@ What is notably sparse: tools that use AI for **end-to-end FAIR workflows** — 
 
 The FAIR tool landscape in 2026 is more capable than it was just two years ago. LLMs are accelerating metadata work that used to require significant manual effort, and purpose-built platforms are making FAIR more accessible outside of well-resourced institutions.
 
-But gaps remain. Domain-specific tools (bioinformatics, social science) are better served than general-purpose researchers. Many tools are still research prototypes rather than production-ready software. And interoperability between tools — being able to move seamlessly from curation to assessment to publication — is still largely unsolved.
+But the gaps above make clear that the ecosystem is still maturing. The tools that will matter most in the next few years are those that connect the dots: linking assessment to curation, spanning disciplines, and lowering the barrier for researchers who do not have a dedicated data manager on their team.
 
 We will continue tracking this space. If you know of a tool we missed, we'd love to hear from you.
 
 ---
+## Acknowledgements
+Some of the content for this post was made better with the help of Clude's writing tools.
 
 *This post is based on a structured two-layer review of FAIR data tools conducted by the FAIR Data Innovations Hub team. Tools were evaluated for usability, FAIR alignment, AI integration, and support for curation or assessment workflows.*
