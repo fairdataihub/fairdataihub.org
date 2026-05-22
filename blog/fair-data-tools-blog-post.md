@@ -57,6 +57,8 @@ These tools help you *do the work*: cleaning metadata, structuring datasets, ann
 
 **[Metacurate-ML](https://metadata-automation.org/metacurate-ml.html)** focuses on social science survey data, using pre-trained language models and zero-shot techniques to automatically extract questionnaire metadata (question text, response options, routing logic) and map it into standard formats. A niche tool, but a strong one for that domain.
 
+**[MatrixCurator](https://github.com/tair/matrixcurator?tab=readme-ov-file#about-the-project)** is an AI-assisted curation tool that helps researchers extract morphological character data from scientific papers and convert it into standardized, machine-readable files for phylogenetic studies.
+
 **[INCF / Neurobagel LLM Annotation Tool](https://www.incf.org/sig/llm-assisted-tool-annotate-research-data-machine-understandable-semantic-data-dictionaries)** uses large language models to help annotate research data elements into machine-understandable semantic data dictionaries — with human verification built into the loop. A great example of AI augmenting, rather than replacing, the curator.
 
 ---
@@ -81,7 +83,7 @@ These tools help you evaluate the FAIRness of existing datasets and metadata, an
 
 Despite the progress, our review revealed several recurring gaps that the community has not yet fully addressed.
 
-**Most tools are domain-specific.** The strongest, most production-ready tools (Genestack ODM, CurateGPT, INCF/Neurobagel) are built for life sciences and bioinformatics. Researchers in the humanities, social sciences, or interdisciplinary fields have far fewer purpose-built options. Metacurate-ML is a notable exception for survey data, but general-purpose FAIR tooling for non-STEM domains remains underdeveloped.
+**Most tools are domain-specific.** The strongest, most production-ready tools are built for life sciences and bioinformatics. Researchers in the humanities, social sciences, or interdisciplinary fields have far fewer purpose-built options. 
 
 **AI is mostly applied to curation, not the full lifecycle.** Nearly all AI-powered tools we reviewed focus on one slice of the FAIR workflow — usually metadata extraction or standardization. There are very few tools that support a researcher from raw data intake through to FAIR-compliant publication in a connected, automated way. Researchers still have to stitch tools together manually.
 
