@@ -7,7 +7,7 @@ category: 'Research'
 heroImage: 'https://biosistemika.com/wp-content/uploads/2021/07/FAIR-data_image.webp'
 imageAuthor: 'Jana Erjavec'
 imageAuthorLink: 'https://biosistemika.com/blog/data-integrity-and-fair-principles-faq/'
-subtitle: 'A structured review of FAIR data tools — from curation and assessment to AI-powered metadata workflows'
+subtitle: 'A structured review of FAIR data tools'
 tags:
   - FAIR Data
   - FAIR Curation
