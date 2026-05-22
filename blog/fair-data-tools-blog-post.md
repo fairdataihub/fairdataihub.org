@@ -75,7 +75,7 @@ These tools help you evaluate the FAIRness of existing datasets and metadata, an
 
 ### FAIR Education — Learning How to Apply FAIR
 
-**[FAIR GPT](https://github.com/UB-Mannheim/FAIR-GPT)** is one of the most comprehensive entries we found. It acts as a virtual data steward and AI-powered FAIR consultant. It can review metadata from a repository URL, assess FAIRness via external APIs, recommend missing metadata fields, help generate README files and data management plans, and even suggest suitable data repositories and data journals.
+**[FAIR GPT](https://github.com/UB-Mannheim/FAIR-GPT)**  acts as a virtual data steward and AI-powered FAIR consultant. It can review metadata from a repository URL, assess FAIRness via external APIs, recommend missing metadata fields, help generate README files and data management plans, and even suggest suitable data repositories and data journals.
 
 ---
 
