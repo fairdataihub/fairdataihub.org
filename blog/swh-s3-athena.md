@@ -259,3 +259,8 @@ After working through the query sequence step by step, you can obtain a consolid
 ## Conclusion
 
 In this guide, we walk through a practical approach to extracting README content hashes from the Software Heritage Graph Dataset using Amazon Athena. Breaking large joins into incremental steps and materializing intermediate tables keeps the workflow manageable at scale. This process produces a dataset of GitHub URLs paired with SHA-1 hashes that can be used for downstream tasks such as DOI mining and software citation analysis, and the same approach can be adapted for other large-scale archival queries.
+
+
+## Acknowledgements
+
+Some of the content for this post was made better with the help of Claude's writing tools.
