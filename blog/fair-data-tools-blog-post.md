@@ -4,9 +4,9 @@ authors:
   - 'NahidZeinali'
 date: '2026-05-22'
 category: 'Research'
-heroImage: 'https://d329ms1y997xa5.cloudfront.net/accounts/216856/images/FAIR-white-chop.png'
-imageAuthor: 'University of Hong Kong Library'
-imageAuthorLink: 'https://libguides.lib.hku.hk/openscience'
+heroImage: 'https://images.unsplash.com/photo-1677442135703-1787eea5ce01?q=80&w=2064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+imageAuthor: 'https://unsplash.com/@steve_j'
+imageAuthorLink: 'https://unsplash.com'
 subtitle: 'A structured review of FAIR data tools'
 tags:
   - FAIR Data
