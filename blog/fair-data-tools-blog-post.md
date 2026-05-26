@@ -1,7 +1,7 @@
 ---
 title: 'The FAIR Data Tool Landscape'
 authors:
-  - 'Nahid Zeinali'
+  - 'NahidZeinali'
 date: '2026-05-22'
 category: 'Research'
 heroImage: 'https://biosistemika.com/wp-content/uploads/2021/07/FAIR-data_image.webp'
