@@ -1,3 +1,10 @@
+## [2.91.13](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.12...v2.91.13) (2026-05-26)
+
+
+### Bug Fixes
+
+* 🐛 blog ([5c11d3f](https://github.com/fairdataihub/fairdataihub.org/commit/5c11d3f9653a3971393993abd407a97d75bb1d75))
+
 ## [2.91.12](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.11...v2.91.12) (2026-05-26)
 
 
