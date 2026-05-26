@@ -4,9 +4,9 @@ authors:
   - 'NahidZeinali'
 date: '2026-05-22'
 category: 'Research'
-heroImage: 'https://biosistemika.com/wp-content/uploads/2021/07/FAIR-data_image.webp'
-imageAuthor: 'Jana Erjavec'
-imageAuthorLink: 'https://biosistemika.com/blog/data-integrity-and-fair-principles-faq/'
+heroImage: 'https://d329ms1y997xa5.cloudfront.net/accounts/216856/images/FAIR-white-chop.png'
+imageAuthor: 'University of Hong Kong Library'
+imageAuthorLink: 'https://libguides.lib.hku.hk/openscience'
 subtitle: 'A structured review of FAIR data tools'
 tags:
   - FAIR Data
