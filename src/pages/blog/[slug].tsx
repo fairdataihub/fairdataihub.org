@@ -76,7 +76,7 @@ const BlogPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
   };
 
   return (
-    <div className="relative mx-auto flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
+    <div className="relative mx-auto mt-20 flex h-full w-full max-w-screen-xl flex-col justify-center sm:flex-row">
       <Seo
         templateTitle={`${title} - Blog`}
         templateDescription={subtitle}

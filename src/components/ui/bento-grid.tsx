@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { cn } from '@/lib/utils';
 
 export const BentoGrid = ({
@@ -25,22 +27,76 @@ export const BentoGridItem = ({
   description,
   header,
   icon,
+  animated = true,
 }: {
   className?: string;
   title?: string | React.ReactNode;
   description?: string | React.ReactNode;
   header?: React.ReactNode;
   icon?: React.ReactNode;
+  animated?: boolean;
 }) => {
+  const [isPressed, setIsPressed] = useState(false);
+  const [isTouched, setIsTouched] = useState(false);
+
+  const handleTouchStart = () => {
+    if (animated) {
+      setIsPressed(true);
+      setIsTouched(true);
+    }
+  };
+
+  const handleTouchEnd = () => {
+    if (animated) {
+      setIsPressed(false);
+      // Keep touched state for a brief moment to show the effect
+      setTimeout(() => setIsTouched(false), 200);
+    }
+  };
+
+  const handleMouseEnter = () => {
+    if (animated) {
+      setIsTouched(true);
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (animated) {
+      setIsTouched(false);
+      setIsPressed(false);
+    }
+  };
+
   return (
     <div
       className={cn(
-        `group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 bg-white p-4 transition duration-600 hover:shadow-xl dark:border-white/[0.2] dark:bg-black dark:shadow-none`,
+        `group/bento shadow-input row-span-1 flex flex-col justify-between space-y-4 rounded-xl p-4`,
+        // Base transition classes when animations are enabled
+        animated ? `transition-all duration-600 ease-out` : ``,
+        // Touch/pressed effects for mobile
+        animated && isPressed ? `shadow-lg` : ``,
+        animated && isTouched ? `shadow-xl` : ``,
+        // Dark mode styles
+        `dark:bg-black dark:shadow-none`,
         className,
       )}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      onTouchCancel={handleTouchEnd}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
     >
       {header}
-      <div className="transition-all duration-600 group-hover/bento:translate-x-1">
+      <div
+        className={cn(
+          // Base transition when animations are enabled
+          animated ? `transition-all duration-300 ease-out` : ``,
+          // Transform effects for both hover and touch
+          animated && (isTouched || isPressed)
+            ? `translate-x-1 translate-y-[-2px]`
+            : ``,
+        )}
+      >
         {icon}
         <div className="mt-2 mb-2 font-sans font-bold text-neutral-600 dark:text-neutral-200">
           {title}

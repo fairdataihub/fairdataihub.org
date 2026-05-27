@@ -11,7 +11,7 @@ export async function safeProbe(url: string) {
 
     return imageSize(new Uint8Array(buffer));
   } catch (e) {
-    console.warn(`[probe] failed:`, url, e);
+    // console.warn(`[probe] failed:`, url, e);
     return { width: 1200, height: 800 }; // sensible fallback
   }
 }
@@ -31,7 +31,7 @@ export async function safeLqip(url: string) {
     const { base64 } = await getPlaiceholder(buf);
     return base64;
   } catch (e) {
-    console.warn(`[lqip] failed:`, url, e);
+    // console.warn(`[lqip] failed:`, url, e);
     return TRANSPARENT_1PX;
   }
 }

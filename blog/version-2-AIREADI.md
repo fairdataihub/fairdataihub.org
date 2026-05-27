@@ -4,9 +4,9 @@ authors:
   - 'BhaveshPatel'
 date: '2024-11-08'
 category: 'News'
-heroImage: 'https://images.unsplash.com/photo-1731306138756-8803bc3e5b37?q=80&w=1335&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-imageAuthor: 'Kristaps Ungurs'
-imageAuthorLink: 'https://unsplash.com/@kristapsungurs'
+heroImage: 'https://images.unsplash.com/photo-1692699203597-b5a4464f3f9c?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&fm=jpg&q=60&w=3000'
+imageAuthor: 'Matilda Alloway'
+imageAuthorLink: 'https://unsplash.com/@matildaonthemove'
 subtitle: 'Download the dataset today and start making breakthrough discoveries in type 2 diabetes.'
 tags:
   - funding

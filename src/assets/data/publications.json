@@ -1,6 +1,22 @@
 [
   {
     "project": ["aireadi"],
+    "title": "Navigating open data sharing and privacy in the age of clinical AI research: from reidentification to pseudo-reidentification",
+    "url": "https://doi.org/10.1016/j.eclinm.2025.103729",
+    "citation": "Hallaj, S., Heinke, A., Kalaw, F. G. P., Gim, N., Blazes, M., Owen, J., Dysinger, E., Benton, E. S., Cordier, B. A., Evans, N. G., Li-Pook-Than, J., Snyder, M. P., Nebeker, C., Zangwill, L. M., Baxter, S. L., McWeeney, S., Lee, C. S., Lee, A. Y., Patel, B., & AI-READI Consortium. (2026). Navigating open data sharing and privacy in the age of clinical AI research: From reidentification to pseudo-reidentification. eClinicalMedicine, 91, 103729. https://doi.org/10.1016/j.eclinm.2025.103729",
+    "type": "Journal Articles",
+    "year": 2026
+  },
+  {
+    "project": ["aireadi"],
+    "title": "Dataset documentation for responsible AI: analysis of suitability and usage for health datasets",
+    "url": "https://doi.org/10.1038/s41746-026-02714-2",
+    "citation": "Heinke, A., Huang, L., Simpkins, K. U., Kalaw, F. G. P., Karsolia, A., Singh, K., Soundarajan, S., Panny, B., Nebeker, C., Baxter, S. L., Lee, C. S., Lee, A. Y., Patel, B., & AI-READI Consortium. (2026). Dataset documentation for responsible AI: Analysis of suitability and usage for health datasets. npj Digital Medicine. https://doi.org/10.1038/s41746-026-02714-2",
+    "type": "Journal Articles",
+    "year": 2026
+  },
+  {
+    "project": ["aireadi"],
     "title": "AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond",
     "url": "https://doi.org/10.1038/s42255-024-01165-x",
     "citation": "AI-READI Consortium. (2024). AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond. Nature Metabolism. https://doi.org/10.1038/s42255-024-01165-x",
@@ -11,7 +27,7 @@
     "project": ["sodaforsparc"],
     "title": "SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data",
     "url": "https://doi.org/10.21105/joss.06140",
-    "citation": "Marroquin, C., Clark, J., Portillo, D., Soundarajan, S., Ngo, T., & Patel, B. (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140, https://doi.org/10.21105/joss.06140",
+    "citation": "Marroquin, C., Clark, J., Portillo, D., Soundarajan, S., Ngo, T., & Patel, B. (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140. https://doi.org/10.21105/joss.06140",
     "type": "Journal Articles",
     "year": 2024
   },
@@ -53,10 +69,28 @@
   },
   {
     "project": ["aireadi"],
+    "url": "https://doi.org/10.48550/arXiv.2604.21150",
+    "title": "The State of Scientific Poster Sharing and Reuse",
+    "subtitle": "",
+    "citation": "Gasimova, A., Mensah-Kane, P., Blake, G. F., Soundarajan, S., ONeill, J., & Patel, B. (2026). The State of Scientific Poster Sharing and Reuse. arXiv. https://doi.org/10.48550/arXiv.2604.21150",
+    "type": "Preprints",
+    "year": 2026
+  },
+  {
+    "project": ["aireadi"],
     "url": "https://doi.org/10.48550/arXiv.2508.01141",
     "title": "Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective",
     "subtitle": "",
     "citation": "Caufield, H., Ghosh, S., Kong, S. W., Parker, J., Sheffield, N., Patel, B., Williams, A., Clark, T., & Munoz-Torres, M. C. (2025). Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective. arXiv. https://doi.org/10.48550/arXiv.2508.01141",
+    "type": "Preprints",
+    "year": 2025
+  },
+  {
+    "project": ["aireadi"],
+    "url": "https://doi.org/10.1101/2025.11.18.689064",
+    "title": "Dataset Documentation for Responsible AI: Analysis of Suitability and Usage for Health Datasets",
+    "subtitle": "",
+    "citation": "Heinke, A., Huang, L., Simpkins, K. U., Kalaw, F. G. P., Karsolia, A., Singh, K., Soundarajan, S., Nebeker, C., Baxter, S. L., Lee, C. S., Lee, A. Y., & Patel, B. (2025). Dataset Documentation for Responsible AI: Analysis of Suitability and Usage for Health Datasets. bioRxiv. https://doi.org/10.1101/2025.11.18.689064",
     "type": "Preprints",
     "year": 2025
   },
@@ -205,6 +239,25 @@
     "year": 2024
   },
   {
+    "project": [],
+    "url": "https://doi.org/10.5281/zenodo.17268673",
+    "title": "Presenting the Actionable Guidelines for FAIR Research Software Task Force (Presentation)",
+    "subtitle": "",
+    "citation": "Patel, B., Garijo, D., & Actionable FAIR4RS Task Force. (2025, October 5). Presenting the Actionable Guidelines for FAIR Research Software Task Force (Presentation). US Research Software Engineering Conference 2025 (USRSE'25), Philadelphia, PA. Zenodo. https://doi.org/10.5281/zenodo.17268673",
+    "type": "Conference Presentations",
+    "year": 2025
+  },
+
+  {
+    "project": ["codefair"],
+    "url": "https://doi.org/10.5281/zenodo.17268745",
+    "title": "Making Research Software Findable, Accessible, Interoperable, Reusable (FAIR) with Codefair",
+    "subtitle": "",
+    "citation": "Patel, B., Portillo, D., & Soundarajan, S. (2025, October 5). Making Research Software Findable, Accessible, Interoperable, Reusable (FAIR) with Codefair. US Research Software Engineering Conference 2025 (USRSE'25), Philadelphia, PA. Zenodo. https://doi.org/10.5281/zenodo.17268745",
+    "type": "Conference Presentations",
+    "year": 2025
+  },
+  {
     "project": ["codefair"],
     "url": "https://doi.org/10.7490/f1000research.1119824.1",
     "title": "Codefair: Make biomedical research software FAIR without breaking a sweat",
@@ -230,6 +283,15 @@
     "citation": "Patel, B., & Soundarajan, S. (2022). Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare. F1000 Research Limited. https://doi.org/10.7490/F1000RESEARCH.1119055.1",
     "type": "Conference Presentations",
     "year": 2022
+  },
+  {
+    "project": [],
+    "url": "https://doi.org/10.5281/zenodo.17268692",
+    "title": "Presenting the Actionable Guidelines for FAIR Research Software Task Force (Poster)",
+    "subtitle": "",
+    "citation": "Patel, B., Garijo, D., & Actionable FAIR4RS Task Force. (2025). Presenting the Actionable Guidelines for FAIR Research Software Task Force (Poster) (1.0.0). US Research Software Engineering Conference 2025 (USRSE'25), Philadelphia, PA. Zenodo. https://doi.org/10.5281/zenodo.17268692",
+    "type": "Posters",
+    "year": 2025
   },
   {
     "project": ["aireadi"],
@@ -356,6 +418,15 @@
     "citation": "Envision Portal (started 2024). https://github.com/EyeACT/envision-portal (Development status: Active)",
     "type": "Software",
     "year": 2024
+  },
+  {
+    "project": ["eyeact"],
+    "url": "https://zenodo.org/records/18177260",
+    "title": "White Paper - Envision Portal",
+    "subtitle": "Architecture, philosophy, and design decisions behind the Eye ACT Envision Portal",
+    "citation": "Soundarajan, S., Portillo, D., ONeill, J., Zeinali, N., Wue, Y., Lee, C., & Patel, B. (2026). White Paper - Envision Portal (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18177260",
+    "type": "Preprints",
+    "year": 2026
   },
   {
     "project": ["eyeact"],

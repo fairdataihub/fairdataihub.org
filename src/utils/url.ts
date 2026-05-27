@@ -9,5 +9,5 @@ export function encodeSegmentOnce(segment: string) {
 }
 
 export function bunnyUrl(folder: string, name: string, qp?: string) {
-  return `https://fairdataihub-gallery-s.b-cdn.net/${encodeSegmentOnce(folder)}/${encodeSegmentOnce(name)}${qp ? `?${qp}` : ``}`;
+  return `https://cdn.fairdataihub.org/gallery/${encodeSegmentOnce(folder)}/${encodeSegmentOnce(name)}${qp ? `?${qp}` : ``}`;
 }

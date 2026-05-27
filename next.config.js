@@ -9,6 +9,10 @@ module.exports = {
       },
       {
         protocol: 'https',
+        hostname: 'fair-biors.org',
+      },
+      {
+        protocol: 'https',
         hostname: 'github.com',
       },
       {
@@ -22,6 +26,14 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'i.imgur.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'unsplash.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'berkeleybop.github.io',
       },
       {
         protocol: 'https',
@@ -49,11 +61,19 @@ module.exports = {
       },
       {
         protocol: 'https',
-        hostname: 'fairdataihub-gallery-s.b-cdn.net',
+        hostname: 'cdn.fairdataihub.org',
       },
       {
         protocol: 'https',
         hostname: 'os.nav.fund',
+      },
+      {
+        protocol: 'https',
+        hostname: 'api.microlink.io',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.dailydoseofds.com',
       },
     ],
   },

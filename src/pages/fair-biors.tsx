@@ -1,10 +1,10 @@
+import HorizontalTimeline from '@/components/horizontal-event-timeline-carousel';
 import ProjectAbout from '@/components/project/about';
 import ProjectHero from '@/components/project/hero';
 import ProjectInfoSection from '@/components/project/infoSection';
 import PublicationsList from '@/components/project/publicationsList';
 import ResearchPartners from '@/components/project/researchPartners';
 import TeamMembers from '@/components/project/teamMembers';
-import Timeline from '@/components/project/timeline';
 import Seo from '@/components/seo/seo';
 
 import PublicationsJSON from '@/assets/data/publications.json';
@@ -26,8 +26,8 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
           description="Minimal and actionable step-by-step guidelines for making biomedical research software reusable in line with the FAIR4RS principles"
           imageSrc="/images/hero/fairbiors.svg"
           imageAlt="Screenshot of FAIRshare"
-          imageWidth={1342}
-          imageHeight={975}
+          imageWidth={400}
+          imageHeight={400}
           buttons={[
             {
               text: `Explore the guidelines`,
@@ -90,19 +90,23 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
         <ProjectInfoSection
           title="Development Approach"
           description={`The FAIR-BioRS guidelines were developed in collaboration with researchers from UCSF and ELIXIR (E.U.). We first established a list of outstanding questions we identified for practically implementing the FAIR4RS Principles (e.g., How to obtain a unique identifier for software? How to include metadata? and so on). Then we combined literature review, community feedback, and our own assessment as developers of research software to established answers for these questions. Finally, we organized these answers as a set of step-by-step instructions that follow the typical sofware development process which became the FAIR-BioRS guidelines.`}
-          additionalLink={{
-            text: `Explore the FAIR-BioRS documentation`,
-            href: `https://fair-biors.org`,
-          }}
+          additionalLinks={[
+            {
+              text: `Explore the FAIR-BioRS documentation`,
+              href: `https://fair-biors.org`,
+            },
+          ]}
         />
 
         <ProjectInfoSection
           title="Funding"
           description={`The FAIR-BioRS guidelines were conceived while working on a project funded through a supplemental award from the National Institute of Allergy and Infectious Diseases (NIAID). Besides some initial effort through this project for the first few months, the development of the guidelines has been done without any support, through the sole will of the project members to make it easier for our peers wanting to develop and share FAIR software.`}
-          additionalLink={{
-            text: `Explore the parent award on NIH Reporter`,
-            href: `https://reporter.nih.gov/project-details/10377989`,
-          }}
+          additionalLinks={[
+            {
+              text: `Explore the parent award on NIH Reporter`,
+              href: `https://reporter.nih.gov/project-details/10377989`,
+            },
+          ]}
         />
 
         <TeamMembers
@@ -146,7 +150,7 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-gray-50 py-10 pt-16">
-        <Timeline
+        <HorizontalTimeline
           timelineList={[
             {
               longDate: `December 2021`,
@@ -178,7 +182,10 @@ const FAIRshare: React.FC<PublicationsItemList> = ({ publications }) => {
       </section>
 
       <section className="bg-white py-10">
-        <PublicationsList publications={publications} />
+        <PublicationsList
+          publications={publications}
+          impactProjects={`fairbiors`}
+        />
       </section>
     </>
   );

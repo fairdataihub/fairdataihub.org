@@ -1,12 +1,14 @@
 import dayjs from 'dayjs';
+import { AnimatePresence, motion } from 'framer-motion';
 import fs from 'fs';
 import matter from 'gray-matter';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import wordsCount from 'words-count';
 
-import PostEntry from '@/components/blog/postEntry';
+import BlogListItem from '@/components/blog/BlogListItem';
 import Seo from '@/components/seo/seo';
 
 const authorsJSON = require(`../../assets/data/authors.json`);
@@ -21,6 +23,8 @@ type BlogList = {
     tags: string[];
     subtitle: string;
     category: string;
+    heroImage: string;
+    imageAuthor: string;
   };
 };
 
@@ -35,13 +39,12 @@ interface BlogProps {
   };
 }
 
-// The Author Page Content
 const Author: React.FC<BlogProps> = ({ filteredBlogList, authorInfo }) => {
   const router = useRouter();
   const { author } = router.query;
 
   return (
-    <section className="relative mx-auto flex h-full w-full max-w-screen-lg flex-col overflow-hidden px-5 sm:px-10 sm:py-10">
+    <div className="relative pt-24">
       <Seo
         templateTitle={`${authorInfo.name} - Authors`}
         templateUrl={`https://fairdataihub.org/authors/${author}`}
@@ -49,73 +52,109 @@ const Author: React.FC<BlogProps> = ({ filteredBlogList, authorInfo }) => {
         templateImage="https://fairdataihub.org/thumbnails/index.png"
       />
 
-      <div className="mb-5 px-2 pt-5 sm:pt-0 md:px-7">
-        <h1 className="mb-2 text-left text-4xl font-bold sm:text-4xl">
-          {filteredBlogList.length}
-          {` `}
-          {filteredBlogList.length === 1 ? `post` : `posts`} {` `}
-          {`written by`} {` `}
-          {authorInfo.name}
-        </h1>
-        <Link
-          href={authorInfo.href}
-          passHref
-          className="text-url cursor-pointer hover:underline"
-          target={authorInfo.external ? `_blank` : `_self`}
-          rel={authorInfo.external ? `noopener noreferrer` : undefined}
-        >
-          <h2 className="text-url cursor-pointer text-left hover:underline">
-            View profile
-          </h2>
-        </Link>
+      <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
+        <div className="absolute top-0 left-1/2 h-180 w-250 -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
 
-      <hr className="mx-6 my-2 border-dashed border-slate-200" />
+      <section className="container mx-auto max-w-7xl px-4 pt-8 pb-16">
+        <motion.header
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, ease: `easeOut` }}
+          className="mb-8 sm:mb-10"
+        >
+          <div className="flex items-center gap-4 sm:gap-5">
+            <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-full ring-2 ring-slate-200 sm:h-20 sm:w-20">
+              <Image
+                src={authorInfo.avatar}
+                alt={authorInfo.name}
+                fill
+                sizes="(min-width:640px) 80px, 64px"
+                className="object-cover"
+              />
+            </div>
 
-      {filteredBlogList.map((post) => {
-        const { slug, frontMatter, timeToRead } = post;
+            <div>
+              <h1 className="text-3xl font-black tracking-tight text-stone-900 sm:text-4xl dark:text-stone-100">
+                {filteredBlogList.length}
+                {` `}
+                {filteredBlogList.length === 1 ? `post` : `posts`} by{` `}
+                {authorInfo.name}
+              </h1>
+              <Link
+                href={authorInfo.href}
+                passHref
+                className="text-url cursor-pointer text-sm hover:underline"
+                target={authorInfo.external ? `_blank` : `_self`}
+                rel={authorInfo.external ? `noopener noreferrer` : undefined}
+              >
+                View profile
+              </Link>
+            </div>
+          </div>
 
-        const { title, date, tags, subtitle, category } = frontMatter;
+          <div className="via-primary/60 mt-6 h-px w-full bg-linear-to-r from-transparent to-transparent" />
+        </motion.header>
 
-        return (
-          <PostEntry
-            key={title}
-            title={title}
-            timeToRead={timeToRead}
-            date={date}
-            slug={slug}
-            subtitle={subtitle}
-            tags={tags}
-            category={category}
-          />
-        );
-      })}
-    </section>
+        <AnimatePresence mode="popLayout">
+          <motion.ul layout initial={false} className="list-none space-y-4">
+            {filteredBlogList.map(({ slug, frontMatter, timeToRead }, idx) => (
+              <motion.div
+                key={slug}
+                layout
+                initial={{ opacity: 0, y: 20, scale: 0.95 }}
+                whileInView={{
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  transition: {
+                    duration: 0.2,
+                    delay: idx * 0.02,
+                    ease: `easeOut`,
+                  },
+                }}
+                viewport={{
+                  once: true,
+                  amount: 0.1,
+                  margin: `0px 0px 150px 0px`,
+                }}
+                exit={{ opacity: 0, y: 10, scale: 0.98 }}
+              >
+                <BlogListItem
+                  slug={slug}
+                  title={frontMatter.title}
+                  subtitle={frontMatter.subtitle}
+                  date={frontMatter.date}
+                  timeToRead={timeToRead}
+                  heroImage={frontMatter.heroImage}
+                  imageAuthor={frontMatter.imageAuthor}
+                  tags={frontMatter.tags}
+                  category={frontMatter.category}
+                  authors={frontMatter.authors}
+                />
+              </motion.div>
+            ))}
+          </motion.ul>
+        </AnimatePresence>
+      </section>
+    </div>
   );
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // Get the posts from the `blog` directory
   const files = fs.readdirSync(`./blog`);
 
   const blogList = files.map((fileName) => {
-    // Read the raw content of the file and parse the frontMatter
     const rawFileContent = fs.readFileSync(`blog/${fileName}`, `utf-8`);
-
     const { data: frontMatter } = matter(rawFileContent);
-
-    return {
-      frontMatter,
-    };
+    return { frontMatter };
   });
 
   const authorsList: string[] = [];
 
   for (const post of blogList) {
     const { frontMatter } = post;
-
     const { authors } = frontMatter;
-
     if (authors) {
       authors.forEach((author: string) => {
         if (!authorsList.includes(author)) {
@@ -125,67 +164,36 @@ export const getStaticPaths: GetStaticPaths = async () => {
     }
   }
 
-  const paths = [];
+  const paths = authorsList.map((author) => ({ params: { author } }));
 
-  for (const author of authorsList) {
-    paths.push({
-      params: {
-        author,
-      },
-    });
-  }
-
-  return {
-    paths,
-    fallback: false,
-  };
+  return { paths, fallback: false };
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  // Get the posts from the `blog` directory
   const files = fs.readdirSync(`./blog`);
 
   const blogList = files.map((fileName) => {
-    // Remove the .md extension and use the file name as the slug
     const slug = fileName.replace(`.md`, ``);
-
-    // Read the raw content of the file and parse the frontMatter
     const rawFileContent = fs.readFileSync(`blog/${fileName}`, `utf-8`);
     const timeToRead = Math.ceil(wordsCount(rawFileContent) / 265);
-
     const { data: frontMatter } = matter(rawFileContent);
-
-    return {
-      slug,
-      frontMatter,
-      timeToRead,
-    };
+    return { slug, frontMatter, timeToRead };
   });
 
-  // sort the posts by date in descending order
   blogList.sort((a, b) => {
     const a_date: any = dayjs(a.frontMatter.date, `YYYY-MM-DD`);
     const b_date: any = dayjs(b.frontMatter.date, `YYYY-MM-DD`);
-
     return b_date - a_date;
   });
 
   const filteredBlogList = blogList.filter((post) => {
     const { authors } = post.frontMatter;
-
     return authors && authors.includes(params?.author as string);
   });
 
-  // Get author information
   const authorInfo = authorsJSON[params?.author as string];
 
-  // Return the posts data to the page as props
-  return {
-    props: {
-      filteredBlogList,
-      authorInfo,
-    },
-  };
+  return { props: { filteredBlogList, authorInfo } };
 };
 
 export default Author;

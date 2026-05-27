@@ -1,86 +1,59 @@
 import { Dialog, DialogBackdrop } from '@headlessui/react';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
-import { useEffect, useRef, useState } from 'react';
-import useKeypress from 'react-use-keypress';
 
 import type { ImageProps } from '@/utils/types';
 
-import SharedModal from './SharedModal';
+import Carousel from './Carousel';
 
-export default function Modal({
-  images,
-  onClose,
-}: {
-  images: ImageProps[];
-  onClose?: () => void;
-}) {
-  const overlayRef = useRef<HTMLDivElement>(null);
+export default function Modal({ images }: { images: ImageProps[] }) {
   const router = useRouter();
-
-  const initial = Number.isFinite(Number(router.query.photoId))
-    ? Number(router.query.photoId)
-    : 0;
-
-  const [direction, setDirection] = useState(0);
-  const [curIndex, setCurIndex] = useState(initial);
-
-  // Keep local state in sync with URL changes (back/forward)
-  useEffect(() => {
-    const next = Number(router.query.photoId);
-    if (Number.isFinite(next) && next !== curIndex) {
-      setCurIndex(next);
-    }
-  }, [router.query.photoId, curIndex]);
+  const photoId =
+    typeof router.query.photoId === `string` ? router.query.photoId : ``;
+  const index =
+    photoId === ``
+      ? 0
+      : Math.max(
+          0,
+          images.findIndex((img) => img.id === photoId),
+        );
 
   function handleClose() {
     router.push(`/gallery`, undefined, { shallow: true });
-    onClose?.();
   }
 
-  function changePhotoId(newVal: number) {
-    setDirection(newVal > curIndex ? 1 : -1);
-    setCurIndex(newVal);
-    router.push({ query: { photoId: newVal } }, `gallery/p/${newVal}`, {
-      shallow: true,
-    });
+  function handleSlideChange(slideIndex: number) {
+    const img = images[slideIndex];
+    if (img) {
+      router.replace(
+        { pathname: `/gallery`, query: { photoId: img.id } },
+        undefined,
+        { shallow: true },
+      );
+    }
   }
-
-  useKeypress(`ArrowRight`, () => {
-    if (curIndex + 1 < images.length) {
-      changePhotoId(curIndex + 1);
-    }
-  });
-  useKeypress(`ArrowLeft`, () => {
-    if (curIndex > 0) {
-      changePhotoId(curIndex - 1);
-    }
-  });
 
   return (
     <Dialog
       static
       open
-      onClose={() => handleClose()}
-      initialFocus={overlayRef}
-      className="fixed inset-0 z-10 flex items-center justify-center"
+      onClose={handleClose}
+      className="fixed inset-0 z-[5] flex items-center justify-center"
     >
       <DialogBackdrop
-        ref={overlayRef}
         as={motion.div}
-        key="backdrop"
-        className="fixed inset-0 z-30 bg-black/70 backdrop-blur-2xl"
+        className="fixed inset-0 z-[5] bg-black/90"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
       />
-      <SharedModal
-        index={curIndex}
-        direction={direction}
-        images={images}
-        changePhotoId={changePhotoId}
-        closeModal={handleClose}
-        navigation
-      />
+      <div className="relative z-[5] h-full w-full">
+        <Carousel
+          images={images}
+          index={index}
+          onClose={handleClose}
+          onSlideChange={handleSlideChange}
+        />
+      </div>
     </Dialog>
   );
 }

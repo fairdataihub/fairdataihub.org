@@ -116,7 +116,7 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="mt-3 line-clamp-4 text-base leading-relaxed text-balance md:text-lg">
+          <p className="mt-3 line-clamp-4 text-base md:text-lg">
             A free, open-source platform for sharing and discovering scientific
             posters, promoting collaboration and turning them into enduring
             research assets.
@@ -125,7 +125,7 @@ export default function BentoProjects() {
         </>
       ),
       href: `/posters-science`,
-      colSpan: `md:col-span-2`,
+      colSpan: `md:col-span-3`,
       size: `narrow`,
     },
     {
@@ -142,22 +142,23 @@ export default function BentoProjects() {
       ),
       description: (
         <>
-          <p className="mt-3 text-lg leading-relaxed text-balance md:text-xl">
-            Eye ACT uses the Envision Portal to study how eye diseases like
-            glaucoma and diabetic retinopathy may signal early Alzheimer&apos;s,
-            advancing AI-driven research under FAIR principles.
+          <p className="d:text-xl mt-3 text-lg">
+            Eye ACT is creating the Envision Portal to study how eye diseases
+            like like glaucoma and diabetic retinopathy may signal early
+            Alzheimer&apos;s, advancing AI-driven research under FAIR
+            principles.
           </p>
           <Badges tags={[`Platform`, `Standards`, `Guidelines`]} />
         </>
       ),
       href: `/eyeact`,
-      colSpan: `md:col-span-4`,
+      colSpan: `md:col-span-3`,
       size: `wide`,
     },
   ];
 
   return (
-    <section className="py-20">
+    <section className="relative px-6 py-20">
       <h2 className="mb-6 text-center text-3xl font-extrabold tracking-tight md:text-4xl">
         What we are building
       </h2>
@@ -170,7 +171,7 @@ export default function BentoProjects() {
           return (
             <Link key={i} href={item.href} className={`${item.colSpan} group`}>
               <MagicCard
-                className="flex h-full rounded-2xl p-[2px]"
+                className="flex h-full rounded-2xl p-[1px] md:p-[2px]"
                 gradientColor="oklch(0.592 0.2157 349.761)"
               >
                 <BentoGridItem
@@ -188,7 +189,7 @@ export default function BentoProjects() {
         <p className="font-asap text-xl">
           There is a lot more in the pipeline!
         </p>
-        <Link href="/projects" className="my-4">
+        <Link href="/projects" className="my-4" passHref>
           <button
             type="button"
             className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"

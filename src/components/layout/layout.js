@@ -1,12 +1,12 @@
 import Footer from '../ui/footer';
-import Navbar from '../ui/navbar';
+import NavMenu from '../ui/navbar';
 
 export default function Layout({ children }) {
   return (
     <>
-      <Navbar />
+      <NavMenu />
 
-      <main>{children}</main>
+      <main className="">{children}</main>
 
       <Footer />
     </>

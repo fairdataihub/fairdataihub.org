@@ -1,5 +1,5 @@
 export interface ImageProps {
-  id: number;
+  id: string;
   width: number;
   height: number;
   folder: string;

@@ -5,11 +5,15 @@ import React from 'react';
 import BentoProjects from '@/components/home/bentoProjects';
 import Cobe from '@/components/home/cobe';
 import Collaborators from '@/components/home/collaborators';
-import ProjectsCarousel from '@/components/home/projectsCarousel';
+import ImpactSection from '@/components/home/impactSection';
+import SimpleGuidelines from '@/components/home/simpleGuidelines';
 // import Vision from '@/components/home/vision';
 import Seo from '@/components/seo/seo';
+import { FlipWords } from '@/components/ui/flip-words';
+import { SparklesCore } from '@/components/ui/sparkles';
 
 export default function Home() {
+  const wordsFlips = [`reusable`, `FAIR`, `AI-ready`];
   return (
     <div>
       <Seo
@@ -18,38 +22,48 @@ export default function Home() {
       />
 
       <div className="relative">
-        <section className="mb-10 pt-12 sm:pt-16">
-          <div className="hero container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
-            <div className="w-full p-2 lg:w-7/12">
-              <h1 className="header-gradient-background w-full text-left text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:text-5xl">
-                Simplifying FAIR data practices to empower AI-driven discoveries
+        <section className="relative isolate mb-10 overflow-visible pt-12 sm:pt-30">
+          <div className="hero relative z-10 container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
+            <div className="flex w-full flex-col items-center justify-center p-2">
+              <h1 className="header-gradient-background w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:w-3/4 lg:text-5xl">
+                Streamlining the creation of <FlipWords words={wordsFlips} />
+                {` `}
+                <br />
+                {` `}
+                data to empower AI driven discoveries
               </h1>
 
-              <p className="mt-2 w-full max-w-2xl text-xl font-medium text-black sm:mt-0 sm:text-base md:text-lg lg:text-xl">
-                We develop open source tools, standards, and guidelines that
-                support biomedical researchers in preparing and sharing data,
-                software, and other research outcomes such that they are FAIR,
-                i.e. optimally reusable by both humans and machines
-              </p>
-
-              <Link href="/contact-us" passHref className="hidden">
-                <button
-                  type="button"
-                  className="hover:border-light-accent hover:text-accent my-3 rounded-lg border-2 border-black bg-transparent p-3 text-center text-base font-semibold text-black transition-all"
-                  data-umami-event="Home page link"
-                  data-umami-event-value="Contact us"
+              <div className="relative mx-auto mt-10 h-48 w-full sm:h-40 md:mt-2">
+                <div
+                  aria-hidden
+                  className="spotlight [--spot-bleed:28rem] [--spot-bottom-left:2%] [--spot-bottom-right:98%] [--spot-end:90%] [--spot-h:860px] [--spot-mid:34%] [--spot-top-left:20%] [--spot-top-right:90%] [--spot-w:2000px] md:[--spot-end:92%] md:[--spot-top-left:32%] md:[--spot-top-right:66%]"
                 >
-                  Contact us
-                </button>
-              </Link>
-            </div>
+                  <SparklesCore
+                    background="transparent"
+                    minSize={1.5}
+                    maxSize={4.5}
+                    particleDensity={100}
+                    className="absolute inset-0"
+                    particleColor="#F098D4"
+                  />
+                </div>
 
-            <div className="mt-6 flex w-full items-center justify-center p-5 lg:mt-0 lg:w-5/12 lg:p-2">
-              <img
-                className="w-full max-w-[400px] rounded-lg"
-                src="/images/home/hero.svg"
-                alt="office content 1"
-              />
+                <div className="absolute -top-4 left-1/2 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent md:top-0" />
+
+                <div className="absolute inset-0 z-10 mt-4 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)] md:mt-0" />
+                <div className="absolute -inset-6 z-20 flex items-end justify-center px-4 sm:inset-0">
+                  <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
+                    We develop open source tools, standards, and guidelines that
+                    support researchers in preparing and sharing data, software,
+                    and other research outcomes such that they are preserved
+                    over the long term and readily reusable particularly for AI
+                    applications.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -69,8 +83,12 @@ export default function Home() {
 
       <BentoProjects />
 
-      <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6">
+      <section className="relative pt-4 pb-20">
+        <Collaborators />
+      </section>
+
+      <section className="relative pb-10">
+        <div className="container mx-auto max-w-screen-xl border-t border-pink-300/50 px-6">
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
@@ -104,8 +122,8 @@ export default function Home() {
 
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-full max-w-[400px] rounded-lg"
-                src="/images/home/collaboration.svg"
+                className="w-[400px] rounded-lg"
+                src="/images/home/puzzle-collab-2.png"
                 alt="office content 1"
               />
             </div>
@@ -118,8 +136,8 @@ export default function Home() {
           <div className="items-center justify-center md:flex">
             <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-full max-w-[400px] rounded-lg"
-                src="/images/home/difficult.svg"
+                className="w-[400px] rounded-lg"
+                src="/images/home/fairdataihub-tools.png"
                 alt="office content 1"
               />
             </div>
@@ -155,49 +173,41 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative py-10">
+      {/* <section className="relative py-10">
         <div className="container mx-auto max-w-screen-xl px-6">
-          <div className="flex flex-col-reverse items-center justify-center md:flex-row">
-            <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
-                Simple guidelines and open-source tools for the win!
-              </h2>
+          <div className="flex w-full flex-col items-center justify-center">
+            <h2 className="mb-6 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
+              Simple guidelines and open-source tools for the win!
+            </h2>
 
-              <div className="font-asap pt-8">
-                <p className="mb-4 text-left text-xl">
-                  We believe that researchers already have enough work and
-                  responsibilities on their hands. Therefore, making data,
-                  software, and other research outcomes FAIR should be made very
-                  easy for them. We are trying to achieve that through two main
-                  approaches:
-                </p>
-                <ul className="list list-outside list-decimal px-5">
-                  <li className="mb-4 text-left text-xl">
-                    Developing minimal, step-by-step, and actionable guidelines
-                    for preparing and sharing FAIR datasets, software, and other
-                    research outcomes such that researchers can easily follow
-                    and implement them.
-                  </li>
-                  <li className="text-left text-xl">
-                    Developing open-source and free tools that streamline the
-                    implementation of these guidelines and minimize
-                    researchers&apos; time and effort through a combination of
-                    intuitive user interfaces, AI, and automation.
-                  </li>
-                </ul>
+            <div className="font-asap max-w-4xl">
+              <p className="mb-8 text-center text-xl">
+                We believe that researchers already have enough work and
+                responsibilities on their hands. Therefore, making data,
+                software, and other research outcomes FAIR should be made very
+                easy for them. We are trying to achieve that through two main
+                approaches:
+              </p>
+
+              <div className="grid gap-8 md:grid-cols-2">
+                <div className="text-left text-xl">
+                  Developing minimal, step-by-step, and actionable guidelines
+                  for preparing and sharing FAIR datasets, software, and other
+                  research outcomes such that researchers can easily follow and
+                  implement them.
+                </div>
+                <div className="text-left text-xl">
+                  Developing open-source and free tools that streamline the
+                  implementation of these guidelines and minimize
+                  researchers&apos; time and effort through a combination of
+                  intuitive user interfaces, AI, and automation.
+                </div>
               </div>
-            </div>
-
-            <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
-              <img
-                className="w-full max-w-[400px] rounded-lg"
-                src="/images/home/high-five.svg"
-                alt="office content 1"
-              />
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <SimpleGuidelines />
 
       <section className="relative hidden w-full py-20">
         <div className="mx-auto w-full max-w-screen-xl">
@@ -225,8 +235,8 @@ export default function Home() {
           <div className="items-center justify-center md:flex">
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-full max-w-[400px] rounded-lg"
-                src="/images/home/team.svg"
+                className="w-[400px] rounded-lg"
+                src="/images/home/3d-team.png"
                 alt="office content 1"
               />
             </div>
@@ -273,58 +283,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6">
-          <div className="flex flex-col-reverse items-center justify-center md:flex-row">
-            <div className="h-full w-full p-2 lg:max-w-2xl">
-              <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
-                We are making a difference
-              </h2>
+      <ImpactSection />
 
-              <div className="font-asap pt-8">
-                <p className="mb-4 text-left text-xl">
-                  Our work has led to peer-reviewed publications, development of
-                  open-source software, establishment of new standards and
-                  guidelines, conference presentations, and much more.
-                </p>
-
-                <div className="flex w-full justify-start py-5">
-                  <Link href="/impact" passHref>
-                    <button
-                      type="button"
-                      className="w-max rounded-md border-none bg-black px-5 py-3 text-center text-base font-semibold text-white ring-2 ring-transparent ring-offset-2 transition duration-200 ease-in-out hover:ring-pink-600 focus:ring-pink-600"
-                      data-umami-event="Home page link"
-                      data-umami-event-value="See our impact"
-                    >
-                      See our impact
-                    </button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
-              <img
-                className="w-full max-w-[400px] rounded-lg"
-                src="/images/home/impact.svg"
-                alt="office content 1"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="hidden py-10">
-        <ProjectsCarousel />
-      </section>
-
-      <section className="relative py-10">
+      <section className="relative pb-10">
         <div className="container mx-auto max-w-screen-xl px-4">
           <div className="items-center justify-center md:flex">
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-full max-w-[400px] rounded-lg"
-                src="/images/home/contact.svg"
+                className="w-[400px] rounded-lg"
+                src="/images/home/3d-contact.png"
                 alt="office content 1"
               />
             </div>
@@ -366,10 +333,6 @@ export default function Home() {
             }}
           ></div>
         </div>
-      </section>
-
-      <section className="py-20">
-        <Collaborators />
       </section>
     </div>
   );

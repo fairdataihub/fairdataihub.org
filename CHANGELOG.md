@@ -1,3 +1,396 @@
+## [2.91.13](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.12...v2.91.13) (2026-05-26)
+
+
+### Bug Fixes
+
+* 🐛 blog ([5c11d3f](https://github.com/fairdataihub/fairdataihub.org/commit/5c11d3f9653a3971393993abd407a97d75bb1d75))
+
+## [2.91.12](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.11...v2.91.12) (2026-05-26)
+
+
+### Bug Fixes
+
+* 🐛 blog ([41afcb7](https://github.com/fairdataihub/fairdataihub.org/commit/41afcb77661f3d2162ed4907ea1c5c096e438c12))
+
+## [2.91.11](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.10...v2.91.11) (2026-05-26)
+
+
+### Bug Fixes
+
+* 🐛 blog ([e2deb77](https://github.com/fairdataihub/fairdataihub.org/commit/e2deb77e7e6bdd1c86dd7802d64a6784148fbb5e))
+
+## [2.91.10](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.9...v2.91.10) (2026-05-26)
+
+
+### Bug Fixes
+
+* 🐛 blog ([196edfd](https://github.com/fairdataihub/fairdataihub.org/commit/196edfdef66d302e0ed53468a58bd79cf2867450))
+
+## [2.91.9](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.8...v2.91.9) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([f6c2411](https://github.com/fairdataihub/fairdataihub.org/commit/f6c2411fdd12ebbecdc388d14255a193eb2ba339))
+
+## [2.91.8](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.7...v2.91.8) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([b29127c](https://github.com/fairdataihub/fairdataihub.org/commit/b29127cc2742e0ae760405e1ffb46197a6da44b6))
+
+## [2.91.7](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.6...v2.91.7) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([450311f](https://github.com/fairdataihub/fairdataihub.org/commit/450311f4bd6a00f3c9d48f437c984d8c1567aa9e))
+
+## [2.91.6](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.5...v2.91.6) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([263bdc4](https://github.com/fairdataihub/fairdataihub.org/commit/263bdc44af3764a232a6298eaf07feccb51aecbb))
+
+## [2.91.5](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.4...v2.91.5) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([99456b3](https://github.com/fairdataihub/fairdataihub.org/commit/99456b349c91d82579ea8373b13f005d29221682))
+
+## [2.91.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.3...v2.91.4) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([9d64933](https://github.com/fairdataihub/fairdataihub.org/commit/9d6493353e5d425587c452504e972832df3aecb7))
+
+## [2.91.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.2...v2.91.3) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([034cb24](https://github.com/fairdataihub/fairdataihub.org/commit/034cb24abc511539510b78eb9d3bdcb89dc8ace2))
+
+## [2.91.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.1...v2.91.2) (2026-05-22)
+
+
+### Bug Fixes
+
+* 🐛 blog ([7ce3e1f](https://github.com/fairdataihub/fairdataihub.org/commit/7ce3e1f24a326243bee1ebcf08003207b4cc30a6))
+
+## [2.91.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.0...v2.91.1) (2026-05-13)
+
+
+### Bug Fixes
+
+* :bug: update json team list ([9ff4027](https://github.com/fairdataihub/fairdataihub.org/commit/9ff40275cfbe004e5733378dd4068b2d0b172c1a))
+
+# [2.91.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.90.1...v2.91.0) (2026-05-13)
+
+
+### Features
+
+* :sparkles: /authors/[author] redesign to match /blog ([6d89019](https://github.com/fairdataihub/fairdataihub.org/commit/6d8901939c253dabaae68465b7b90e4e4f6eb3b2))
+* :sparkles: Add author and profile image to blog post cards ([f513146](https://github.com/fairdataihub/fairdataihub.org/commit/f5131467a02363ba79d22089f3cd80a46ee173da))
+* :sparkles: Redirect to team page with /team#[author] opens respective author modal ([4d588dc](https://github.com/fairdataihub/fairdataihub.org/commit/4d588dccc676903b393cf138f81f7452efe64264))
+
+## [2.90.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.90.0...v2.90.1) (2026-05-11)
+
+
+### Bug Fixes
+
+* add journal article ([9273b11](https://github.com/fairdataihub/fairdataihub.org/commit/9273b113340da1f58e69df282f1f975b0cb4caa5))
+
+# [2.90.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.89.0...v2.90.0) (2026-05-04)
+
+
+### Features
+
+* May 2026 event ([#761](https://github.com/fairdataihub/fairdataihub.org/issues/761)) ([8017b10](https://github.com/fairdataihub/fairdataihub.org/commit/8017b10bf9bc6fd7a89505416772fdbf1eb07e06))
+
+# [2.89.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.88.0...v2.89.0) (2026-05-03)
+
+
+### Features
+
+* add support for rss feeds ([#762](https://github.com/fairdataihub/fairdataihub.org/issues/762)) ([1d9afa6](https://github.com/fairdataihub/fairdataihub.org/commit/1d9afa632b3d66df54a3712cb3a51657f50b42bf))
+
+# [2.88.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.87.1...v2.88.0) (2026-04-29)
+
+
+### Features
+
+* add gitlab to footer links ([60003b3](https://github.com/fairdataihub/fairdataihub.org/commit/60003b3253f2e805f1076f7335120547c4835a2d))
+
+## [2.87.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.87.0...v2.87.1) (2026-04-27)
+
+
+### Bug Fixes
+
+* add a preprint ([fa4a47c](https://github.com/fairdataihub/fairdataihub.org/commit/fa4a47c3239116fc4b481327aae8868032489ee0))
+
+# [2.87.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.86.0...v2.87.0) (2026-04-12)
+
+
+### Features
+
+* add gallery image ([e42c69b](https://github.com/fairdataihub/fairdataihub.org/commit/e42c69b004a45f5a54f1b323a862fc3e2d33b4d5))
+
+# [2.86.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.85.0...v2.86.0) (2026-04-12)
+
+
+### Features
+
+* add support for short dates ([68edd2b](https://github.com/fairdataihub/fairdataihub.org/commit/68edd2bd153928c8098694fa1fac1cd9e813903e))
+* move from yarn to pnpm + mise ([#759](https://github.com/fairdataihub/fairdataihub.org/issues/759)) ([4e26700](https://github.com/fairdataihub/fairdataihub.org/commit/4e2670094950ed73950729780987dcbb6db04506))
+
+# [2.85.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.3...v2.85.0) (2026-04-08)
+
+
+### Features
+
+* ✨ April and May 2026 events ([#757](https://github.com/fairdataihub/fairdataihub.org/issues/757)) ([214fbe8](https://github.com/fairdataihub/fairdataihub.org/commit/214fbe849d022d9797ca9177faa57473d1bc0438))
+
+## [2.84.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.2...v2.84.3) (2026-03-30)
+
+
+### Bug Fixes
+
+* 🐛 update image size ([ee4d998](https://github.com/fairdataihub/fairdataihub.org/commit/ee4d998f23c17ee3aa85ef7698f4611b8b3141cb))
+
+## [2.84.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.1...v2.84.2) (2026-03-26)
+
+
+### Bug Fixes
+
+* 🐛 update image size ([bddaf01](https://github.com/fairdataihub/fairdataihub.org/commit/bddaf014d79b35984c5a75f8bceae317cae4666b))
+
+## [2.84.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.84.0...v2.84.1) (2026-03-17)
+
+
+### Bug Fixes
+
+* 🐛 update image size ([d76f99e](https://github.com/fairdataihub/fairdataihub.org/commit/d76f99e6e9e5efa724ac17b608144ce403e17440))
+
+# [2.84.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.83.0...v2.84.0) (2026-03-17)
+
+
+### Features
+
+* ✨ update teammate image ([ce3dcaa](https://github.com/fairdataihub/fairdataihub.org/commit/ce3dcaa12091cba98bbe19c1ee8be98f2867a2f5))
+
+# [2.83.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.1...v2.83.0) (2026-03-10)
+
+
+### Features
+
+* ✨ add gallery images ([ad082f8](https://github.com/fairdataihub/fairdataihub.org/commit/ad082f82591540530ba7ef16ef6892c2298444e1))
+
+## [2.82.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.82.0...v2.82.1) (2026-03-03)
+
+
+### Bug Fixes
+
+* 🐛 update teammate image ([4c52942](https://github.com/fairdataihub/fairdataihub.org/commit/4c52942c1f0fa5451a552db5660b9d4697af6dbc))
+
+# [2.82.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.3...v2.82.0) (2026-02-20)
+
+
+### Features
+
+* ✨ swap image carousel library to react-slick ([#741](https://github.com/fairdataihub/fairdataihub.org/issues/741)) ([3f677a1](https://github.com/fairdataihub/fairdataihub.org/commit/3f677a1b31be024eac626be1d3f715454f09cbe4))
+
+## [2.81.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.2...v2.81.3) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 sort gallery images by date for consistent display ([b983db3](https://github.com/fairdataihub/fairdataihub.org/commit/b983db3321f59a40b2af6680711070f5af895328))
+
+## [2.81.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.1...v2.81.2) (2026-02-20)
+
+
+### Bug Fixes
+
+* 🐛 update image id assignment order ([c2f5fe1](https://github.com/fairdataihub/fairdataihub.org/commit/c2f5fe13ec679ea53119c0bd5ba584f99c7e4790))
+
+## [2.81.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.81.0...v2.81.1) (2026-02-19)
+
+
+### Bug Fixes
+
+* 🐛 blog ([2e0fbcb](https://github.com/fairdataihub/fairdataihub.org/commit/2e0fbcbf90198e0a8b56e5697c7ef4041f6db14f))
+
+# [2.81.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.2...v2.81.0) (2026-02-19)
+
+
+### Features
+
+* ✨ blog post ([50dd534](https://github.com/fairdataihub/fairdataihub.org/commit/50dd534897e630b2d3fe93730f25438c986e4bfd))
+
+## [2.80.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.1...v2.80.2) (2026-02-19)
+
+
+### Bug Fixes
+
+* 🐛 redirect aireadi learn more ([0b9736e](https://github.com/fairdataihub/fairdataihub.org/commit/0b9736e9c2eb500334103cdff7b843132992cf3d))
+
+## [2.80.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.80.0...v2.80.1) (2026-02-13)
+
+
+### Bug Fixes
+
+* 🐛 image update ([4c256c4](https://github.com/fairdataihub/fairdataihub.org/commit/4c256c46925987f85bf3d0c7bc11ab939ee56a61))
+
+# [2.80.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.79.2...v2.80.0) (2026-02-13)
+
+
+### Features
+
+* ✨ Kamal blog post ([#735](https://github.com/fairdataihub/fairdataihub.org/issues/735)) ([c45fbf9](https://github.com/fairdataihub/fairdataihub.org/commit/c45fbf94580d8179b4718eaa1bce018c58da6759))
+
+## [2.79.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.79.1...v2.79.2) (2026-02-02)
+
+
+### Bug Fixes
+
+* 🐛 defer globe intialization until canvas has dimensions ([4a5ee92](https://github.com/fairdataihub/fairdataihub.org/commit/4a5ee924e50756ed02d54562ab63f97fd98cba27))
+* 🐛 retry globe init when canvas ref not yet attached ([a242b2b](https://github.com/fairdataihub/fairdataihub.org/commit/a242b2b5b3f9f12b713ea014d7ef335c3396d793))
+
+## [2.79.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.79.0...v2.79.1) (2026-01-26)
+
+
+### Bug Fixes
+
+* 🐛 correct folder name for cdn image ([9d7abe9](https://github.com/fairdataihub/fairdataihub.org/commit/9d7abe9531c82466ef46812ae540a64f0e2a7485))
+
+# [2.79.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.78.0...v2.79.0) (2026-01-26)
+
+
+### Features
+
+* ✨ Update team page + gallery ([5f2ae58](https://github.com/fairdataihub/fairdataihub.org/commit/5f2ae586fb85becc6e9220ed7e85e66ca3f7eb85))
+
+# [2.78.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.77.1...v2.78.0) (2026-01-22)
+
+
+### Features
+
+* **posters-science:** update GitHub repo link to poster2json and add James ONeill to team ([#732](https://github.com/fairdataihub/fairdataihub.org/issues/732)) ([77f2ec1](https://github.com/fairdataihub/fairdataihub.org/commit/77f2ec1d5281f67a746819267b7738df8ab77d67))
+
+## [2.77.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.77.0...v2.77.1) (2026-01-22)
+
+
+### Bug Fixes
+
+* 🐛 aireadi development phase ([7d41b90](https://github.com/fairdataihub/fairdataihub.org/commit/7d41b90b5212498fb88cd5c4147fb33f6471a09e))
+
+# [2.77.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.76.0...v2.77.0) (2026-01-20)
+
+
+### Features
+
+* ✨ enable eyeact ([4667599](https://github.com/fairdataihub/fairdataihub.org/commit/4667599a4b043ad9cd1745e6769627e25437c8ae))
+
+# [2.76.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.75.0...v2.76.0) (2026-01-17)
+
+
+### Features
+
+* ✨ add orcid and website support ([2d11589](https://github.com/fairdataihub/fairdataihub.org/commit/2d115897068877c7c48010cb54b970eea7428576))
+
+# [2.75.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.2...v2.75.0) (2026-01-08)
+
+
+### Features
+
+* ✨ add new eye act publication ([2ba7df9](https://github.com/fairdataihub/fairdataihub.org/commit/2ba7df95259be66a83820bbf1fff87e20d6d06f8))
+
+## [2.74.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.1...v2.74.2) (2025-12-09)
+
+
+### Bug Fixes
+
+* 🐛 an image to the blog ([0a7af1b](https://github.com/fairdataihub/fairdataihub.org/commit/0a7af1b9b6ad1fdd0236ac1649781590b09a463c))
+* 🐛 text and add an image to the blog ([b0897e5](https://github.com/fairdataihub/fairdataihub.org/commit/b0897e5ea5165c15d7c93b7efce158616e1e1e5b))
+
+## [2.74.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.74.0...v2.74.1) (2025-12-07)
+
+
+### Bug Fixes
+
+* 🐛 update react and next ([#719](https://github.com/fairdataihub/fairdataihub.org/issues/719)) ([c3c632f](https://github.com/fairdataihub/fairdataihub.org/commit/c3c632f64a24b0b5e26e7038b1426022ed8ba052))
+
+# [2.74.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.73.1...v2.74.0) (2025-12-06)
+
+
+### Features
+
+* ✨ fix tag links ([e735606](https://github.com/fairdataihub/fairdataihub.org/commit/e735606b078a426730910a2caa13bb9880684d9b))
+
+## [2.73.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.73.0...v2.73.1) (2025-12-06)
+
+
+### Bug Fixes
+
+* 🐛 minor blog updates ([8a08d48](https://github.com/fairdataihub/fairdataihub.org/commit/8a08d48b7e27a2f019694c567829f993e5bde981))
+
+# [2.73.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.72.1...v2.73.0) (2025-11-20)
+
+
+### Features
+
+* ✨ Redesign updates ([#715](https://github.com/fairdataihub/fairdataihub.org/issues/715)) ([b74a48e](https://github.com/fairdataihub/fairdataihub.org/commit/b74a48e96fbc5cf3cd5c1b98b1a0b69959163e00))
+
+## [2.72.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.72.0...v2.72.1) (2025-11-19)
+
+
+### Bug Fixes
+
+* 🐛 add prerprint to the impact page ([c40108c](https://github.com/fairdataihub/fairdataihub.org/commit/c40108cdb01e03a9d8208c810de997b946bb49a2))
+
+# [2.72.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.71.0...v2.72.0) (2025-10-27)
+
+
+### Features
+
+* ✨ Add a conclusion to the blog post ([3600528](https://github.com/fairdataihub/fairdataihub.org/commit/3600528b6dea68992681ab6b21948b59e2bc33c2))
+* ✨ Add file explorer guide blog post ([c3b6448](https://github.com/fairdataihub/fairdataihub.org/commit/c3b6448709e9fa0bd772fecde5b5c897452523fc))
+* ✨ Add file explorer guide blog post ([e835010](https://github.com/fairdataihub/fairdataihub.org/commit/e8350102aad244614d4dba5600a02d958cb9d667))
+* Final draft for blog post created ([6c57d5f](https://github.com/fairdataihub/fairdataihub.org/commit/6c57d5f2fcbc8b7ff2591d7a354296c86dacf22f))
+
+# [2.71.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.70.1...v2.71.0) (2025-10-22)
+
+
+### Features
+
+* ✨ fairdataihub redesign ([#713](https://github.com/fairdataihub/fairdataihub.org/issues/713)) ([c216be3](https://github.com/fairdataihub/fairdataihub.org/commit/c216be30f620541934e6b1fa0cb9fcac9b630225))
+
+## [2.70.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.70.0...v2.70.1) (2025-10-13)
+
+
+### Bug Fixes
+
+* 🐛 update cdn urls ([7d3bdad](https://github.com/fairdataihub/fairdataihub.org/commit/7d3bdadf8bf54480dda202403f637d422da1596b))
+
+# [2.70.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.69.0...v2.70.0) (2025-10-08)
+
+
+### Features
+
+* ✨ update publications and gallery ([8e803e1](https://github.com/fairdataihub/fairdataihub.org/commit/8e803e1b695231ce3f55716a4ee59232207f42e0))
+
+# [2.69.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.68.0...v2.69.0) (2025-10-02)
+
+
+### Features
+
+* pysodafair blog post ([#711](https://github.com/fairdataihub/fairdataihub.org/issues/711)) ([25dea42](https://github.com/fairdataihub/fairdataihub.org/commit/25dea42b50aabce5e5ed8287cac7dcc99db05f73))
+
 # [2.68.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.67.2...v2.68.0) (2025-10-02)
 
 
