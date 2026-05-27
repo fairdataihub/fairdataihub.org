@@ -1,3 +1,10 @@
+# [2.92.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.13...v2.92.0) (2026-05-27)
+
+
+### Features
+
+* pysodafair blog post ([f76cab9](https://github.com/fairdataihub/fairdataihub.org/commit/f76cab9418febfeb91f6ae8f0b1828976d36f838))
+
 ## [2.91.13](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.12...v2.91.13) (2026-05-26)
 
 
