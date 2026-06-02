@@ -1,0 +1,5 @@
+allowBuilds:
+  '@tsparticles/engine': true
+  cypress: true
+  esbuild: true
+  sharp: true
