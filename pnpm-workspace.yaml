@@ -1,3 +1,6 @@
+packages:
+  - '.'
+
 allowBuilds:
   '@tsparticles/engine': true
   cypress: true
