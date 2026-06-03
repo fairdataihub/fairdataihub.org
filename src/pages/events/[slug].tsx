@@ -138,7 +138,7 @@ const EventPost: React.FC<PostProps> = ({ slug, frontMatter, postContent }) => {
               </span>
             </div>
 
-            <span className="bg-primary inline-flex items-center rounded-lg border border-white px-2 py-0.5">
+            <span className="bg-primary me-2 rounded px-2.5 py-0.5 text-sm font-medium text-purple-800">
               <EventDates
                 startDateTime={startDateTime}
                 endDateTime={endDateTime}
