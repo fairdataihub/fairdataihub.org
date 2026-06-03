@@ -142,16 +142,5 @@
   "bugs": {
     "url": "https://github.com/fairdataihub/fairdataihub-website/issues/new/choose"
   },
-  "homepage": "https://fairdataihub.org",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@tailwindcss/oxide",
-      "cypress",
-      "esbuild",
-      "sharp",
-      "@tsparticles/engine",
-      "unjs-resolver",
-      "unrs-resolver"
-    ]
-  }
+  "homepage": "https://fairdataihub.org"
 }
