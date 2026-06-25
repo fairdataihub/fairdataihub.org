@@ -1,3 +1,10 @@
+# [2.93.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.92.0...v2.93.0) (2026-06-25)
+
+
+### Features
+
+* ISMB 2026 event page ([#767](https://github.com/fairdataihub/fairdataihub.org/issues/767)) ([0a4c921](https://github.com/fairdataihub/fairdataihub.org/commit/0a4c9210009bb365ba71dba325c4f778c3cf2503))
+
 # [2.92.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.91.13...v2.92.0) (2026-05-27)
 
 
