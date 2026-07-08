@@ -1,3 +1,10 @@
+## [2.93.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.93.0...v2.93.1) (2026-07-08)
+
+
+### Bug Fixes
+
+* :bug: Extract timeline slide component to resolve hooks violation ([2e610af](https://github.com/fairdataihub/fairdataihub.org/commit/2e610af68a6daabc1f0c327a03fdd39cb905210a))
+
 # [2.93.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.92.0...v2.93.0) (2026-06-25)
 
 
