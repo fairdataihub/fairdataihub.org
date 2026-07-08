@@ -91,7 +91,6 @@ export default function HorizontalTimeline({
   const prev = () => goTo(active - 1);
   const next = () => goTo(active + 1);
 
-  const zFor = (i: number) => (i === active ? 60 : 30 - Math.abs(i - active));
   const panAccumRef = useRef(0);
 
   const [_status, setStatus] = useState(``);
@@ -175,99 +174,23 @@ export default function HorizontalTimeline({
             {/* Slides */}
             <div id={`${regionId}-slides`} className="relative h-full">
               <div className="relative h-full">
-                {items.map((item, index) => {
-                  // eslint-disable-next-line react-hooks/rules-of-hooks
-                  const x = useTransform(xMv, (v) => v + index * SLIDE_W);
-                  const isActive = active === index;
-
-                  return (
-                    <motion.div
-                      key={`${item.longDate}-${item.title}`}
-                      className="absolute top-1/2 left-1/2 -translate-y-1/2 select-none"
-                      style={{
-                        x,
-                        translateX: `-50%`,
-                        zIndex: zFor(index),
-                        willChange: `transform`,
-                      }}
-                      role="tabpanel"
-                      id={`${regionId}-panel-${index}`}
-                      aria-roledescription="slide"
-                      aria-label={`${item.longDate} - Slide ${
-                        index + 1
-                      } of ${items.length}`}
-                      aria-hidden={!isActive}
-                      tabIndex={-1}
-                    >
-                      <motion.div
-                        onPanStart={() => {
-                          xMv.stop();
-                          panAccumRef.current = 0;
-                        }}
-                        onPan={(e: any, info: any) => {
-                          const overscroll = SLIDE_W * 0.6;
-                          panAccumRef.current += info.delta.x;
-                          const next = xMv.get() + info.delta.x;
-                          const minX = -lastIndex * SLIDE_W;
-                          const maxX = 0;
-                          const clamped = Math.min(
-                            Math.max(next, minX - overscroll),
-                            maxX + overscroll,
-                          );
-                          xMv.set(clamped);
-                        }}
-                        onPanEnd={() => {
-                          if (Math.abs(panAccumRef.current) < 4) {
-                            goTo(index);
-                          } else {
-                            snapToNearest();
-                          }
-                        }}
-                        onClick={() => goTo(index)}
-                        role="button"
-                        aria-label={`Show details for ${item.longDate} – ${item.title}`}
-                        tabIndex={-1}
-                        className={[
-                          `relative w-80 cursor-pointer overflow-hidden rounded-2xl`,
-                          `bg-white shadow-lg transition-[transform,box-shadow] duration-500 hover:shadow-xl`,
-                          isActive
-                            ? `ring-primary/40 ring-4`
-                            : `scale-95 border border-pink-300/10`,
-                          prefersReducedMotion ? `transition-none` : ``,
-                        ].join(` `)}
-                      >
-                        <Card className="border-0 shadow-none">
-                          <CardContent className="flex flex-col p-0">
-                            {/* header */}
-                            <div className="flex flex-col items-center px-6 pt-6 pb-4 text-center">
-                              <h3 className="text-primary mt-1 text-lg font-bold">
-                                {item.title}
-                              </h3>
-                              <p className="mt-1 text-xs font-medium text-slate-600">
-                                {item.longDate}
-                              </p>
-                            </div>
-
-                            <div className="mx-6 mb-0 h-px bg-pink-200/70" />
-
-                            {/* body */}
-                            <div
-                              ref={(el) => {
-                                bodyRefs.current[index] = el;
-                              }}
-                              className="px-6 pt-4 pb-6 text-sm leading-relaxed text-slate-700"
-                              onPointerDown={(e) => e.stopPropagation()}
-                              aria-hidden={!isActive}
-                              tabIndex={isActive ? 0 : -1}
-                            >
-                              {item.content}
-                            </div>
-                          </CardContent>
-                        </Card>
-                      </motion.div>
-                    </motion.div>
-                  );
-                })}
+                {items.map((item, index) => (
+                  <TimelineSlide
+                    key={`${item.longDate}-${item.title}`}
+                    item={item}
+                    index={index}
+                    active={active}
+                    lastIndex={lastIndex}
+                    itemCount={items.length}
+                    xMv={xMv}
+                    regionId={regionId}
+                    prefersReducedMotion={prefersReducedMotion}
+                    panAccumRef={panAccumRef}
+                    bodyRefs={bodyRefs}
+                    goTo={goTo}
+                    snapToNearest={snapToNearest}
+                  />
+                ))}
               </div>
             </div>
           </div>
@@ -310,5 +233,124 @@ export default function HorizontalTimeline({
         </div>
       </div>
     </section>
+  );
+}
+
+type TimelineSlideProps = {
+  item: TimelineItem;
+  index: number;
+  active: number;
+  lastIndex: number;
+  itemCount: number;
+  xMv: MotionValue<number>;
+  regionId: string;
+  prefersReducedMotion: boolean | null;
+  panAccumRef: React.MutableRefObject<number>;
+  bodyRefs: React.MutableRefObject<Array<HTMLDivElement | null>>;
+  goTo: (idx: number) => void;
+  snapToNearest: () => void;
+};
+
+function TimelineSlide({
+  item,
+  index,
+  active,
+  lastIndex,
+  itemCount,
+  xMv,
+  regionId,
+  prefersReducedMotion,
+  panAccumRef,
+  bodyRefs,
+  goTo,
+  snapToNearest,
+}: TimelineSlideProps) {
+  const x = useTransform(xMv, (v) => v + index * SLIDE_W);
+  const isActive = active === index;
+  const zIndex = isActive ? 60 : 30 - Math.abs(index - active);
+
+  return (
+    <motion.div
+      className="absolute top-1/2 left-1/2 -translate-y-1/2 select-none"
+      style={{
+        x,
+        translateX: `-50%`,
+        zIndex,
+        willChange: `transform`,
+      }}
+      role="tabpanel"
+      id={`${regionId}-panel-${index}`}
+      aria-roledescription="slide"
+      aria-label={`${item.longDate} - Slide ${index + 1} of ${itemCount}`}
+      aria-hidden={!isActive}
+      tabIndex={-1}
+    >
+      <motion.div
+        onPanStart={() => {
+          xMv.stop();
+          panAccumRef.current = 0;
+        }}
+        onPan={(e: any, info: any) => {
+          const overscroll = SLIDE_W * 0.6;
+          panAccumRef.current += info.delta.x;
+          const next = xMv.get() + info.delta.x;
+          const minX = -lastIndex * SLIDE_W;
+          const maxX = 0;
+          const clamped = Math.min(
+            Math.max(next, minX - overscroll),
+            maxX + overscroll,
+          );
+          xMv.set(clamped);
+        }}
+        onPanEnd={() => {
+          if (Math.abs(panAccumRef.current) < 4) {
+            goTo(index);
+          } else {
+            snapToNearest();
+          }
+        }}
+        onClick={() => goTo(index)}
+        role="button"
+        aria-label={`Show details for ${item.longDate} – ${item.title}`}
+        tabIndex={-1}
+        className={[
+          `relative w-80 cursor-pointer overflow-hidden rounded-2xl`,
+          `bg-white shadow-lg transition-[transform,box-shadow] duration-500 hover:shadow-xl`,
+          isActive
+            ? `ring-primary/40 ring-4`
+            : `scale-95 border border-pink-300/10`,
+          prefersReducedMotion ? `transition-none` : ``,
+        ].join(` `)}
+      >
+        <Card className="border-0 shadow-none">
+          <CardContent className="flex flex-col p-0">
+            {/* header */}
+            <div className="flex flex-col items-center px-6 pt-6 pb-4 text-center">
+              <h3 className="text-primary mt-1 text-lg font-bold">
+                {item.title}
+              </h3>
+              <p className="mt-1 text-xs font-medium text-slate-600">
+                {item.longDate}
+              </p>
+            </div>
+
+            <div className="mx-6 mb-0 h-px bg-pink-200/70" />
+
+            {/* body */}
+            <div
+              ref={(el) => {
+                bodyRefs.current[index] = el;
+              }}
+              className="px-6 pt-4 pb-6 text-sm leading-relaxed text-slate-700"
+              onPointerDown={(e) => e.stopPropagation()}
+              aria-hidden={!isActive}
+              tabIndex={isActive ? 0 : -1}
+            >
+              {item.content}
+            </div>
+          </CardContent>
+        </Card>
+      </motion.div>
+    </motion.div>
   );
 }
