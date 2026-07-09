@@ -152,7 +152,7 @@ const DmpBridge: React.FC = () => {
 
       <HorizontalTimeline
         title="Project milestones"
-        description="Key milestones in the early development of DMP Chef."
+        description="Key milestones in the development of DMP Bridge."
         timelineList={[
           {
             longDate: `June 2026`,
