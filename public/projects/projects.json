@@ -10,7 +10,11 @@
       "alt": "Screenshot of SODA for SPARC",
       "contain": true
     },
-    "badges": ["Desktop", "SPARC", "Data Curation"]
+    "badges": [
+      "Desktop",
+      "SPARC",
+      "Data Curation"
+    ]
   },
   {
     "slug": "/aireadi",
@@ -23,7 +27,11 @@
       "alt": "AI-READI Logo",
       "contain": true
     },
-    "badges": ["Platform", "Standards", "Guidelines"]
+    "badges": [
+      "Platform",
+      "Standards",
+      "Guidelines"
+    ]
   },
   {
     "slug": "/eyeact",
@@ -35,21 +43,29 @@
       "alt": "Eye ACT Logo",
       "contain": true
     },
-    "badges": ["Platform", "Standards", "Guidelines"]
+    "badges": [
+      "Platform",
+      "Standards",
+      "Guidelines"
+    ]
   },
   {
-    "slug": "/dmp-chef",
-    "title": "DMP Chef",
-    "description": "An open-source, AI-powered platform to draft funder-compliant Data Management Plans through guided, researcher-friendly workflows. With a few clicks, generate comprehensive DMPs that meet funding requirements and support FAIR data practices.",
+    "slug": "/dmp-bridge",
+    "title": "DMP Bridge",
+    "description": "An open-source, AI-powered tool to convert PDF Data Management Plans (DMPs) into machine actionable ones.",
     "completed": false,
     "image": {
-      "src": "/images/dmp/dmp-chef-logo-transparent.svg",
-      "alt": "DMP Chef Logo",
+      "src": "/images/hero/dmp-bridge.png",
+      "alt": "DMP Bridge image",
       "width": 220,
       "height": 220,
       "contain": true
     },
-    "badges": ["Platform", "AI-Assisted", "Workflows"]
+    "badges": [
+      "Tool",
+      "AI-Assisted",
+      "Workflows"
+    ]
   },
   {
     "slug": "/posters-science",
@@ -61,7 +77,11 @@
       "alt": "Posters.science process",
       "contain": true
     },
-    "badges": ["Platform", "Open Science", "Discovery"]
+    "badges": [
+      "Platform",
+      "Open Science",
+      "Discovery"
+    ]
   },
   {
     "slug": "/fair-biors",
@@ -75,7 +95,11 @@
       "height": 220,
       "contain": true
     },
-    "badges": ["FAIR4RS", "Guidelines", "Publication"]
+    "badges": [
+      "FAIR4RS",
+      "Guidelines",
+      "Publication"
+    ]
   },
   {
     "slug": "/codefair",
@@ -87,7 +111,29 @@
       "alt": "Codefair Logo",
       "contain": true
     },
-    "badges": ["FAIR", "Automation", "Zenodo"]
+    "badges": [
+      "FAIR",
+      "Automation",
+      "Zenodo"
+    ]
+  },
+  {
+    "slug": "/dmp-chef",
+    "title": "DMP Chef",
+    "description": "An open-source, AI-powered platform to draft funder-compliant Data Management Plans through guided, researcher-friendly workflows. With a few clicks, generate comprehensive DMPs that meet funding requirements and support FAIR data practices.",
+    "completed": false,
+    "image": {
+      "src": "/images/dmp/dmp-chef-logo-transparent.svg",
+      "alt": "DMP Chef Logo",
+      "width": 220,
+      "height": 220,
+      "contain": true
+    },
+    "badges": [
+      "Platform",
+      "AI-Assisted",
+      "Workflows"
+    ]
   },
   {
     "slug": "/fairshare",
@@ -99,7 +145,11 @@
       "alt": "FAIRshare macOS screenshot",
       "contain": true
     },
-    "badges": ["Desktop", "FAIR", "Biomedical"]
+    "badges": [
+      "Desktop",
+      "FAIR",
+      "Biomedical"
+    ]
   },
   {
     "slug": "/knowmore",
@@ -113,7 +163,11 @@
       "height": 120,
       "contain": true
     },
-    "badges": ["SPARC", "Comparison", "Insights"]
+    "badges": [
+      "SPARC",
+      "Comparison",
+      "Insights"
+    ]
   },
   {
     "slug": "/sparclink",
@@ -127,7 +181,11 @@
       "height": 220,
       "contain": true
     },
-    "badges": ["Software", "Visualization", "SPARC"]
+    "badges": [
+      "Software",
+      "Visualization",
+      "SPARC"
+    ]
   },
   {
     "slug": "/aqua",
@@ -140,6 +198,10 @@
       "alt": "AQUA logo",
       "contain": true
     },
-    "badges": ["Software", "Search", "SPARC"]
+    "badges": [
+      "Software",
+      "Search",
+      "SPARC"
+    ]
   }
 ]
