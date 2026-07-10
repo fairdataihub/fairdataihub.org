@@ -1,3 +1,10 @@
+# [2.94.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.93.1...v2.94.0) (2026-07-10)
+
+
+### Features
+
+* :sparkles: Gradient edges to horizontal timeline ([9eecd0e](https://github.com/fairdataihub/fairdataihub.org/commit/9eecd0e4d828e18aff2a520e99593f1791579c39))
+
 ## [2.93.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.93.0...v2.93.1) (2026-07-08)
 
 
