@@ -8,7 +8,6 @@ import {
   useTransform,
 } from 'framer-motion';
 import {
-  Ref,
   useCallback,
   useEffect,
   useId,
@@ -193,6 +192,9 @@ export default function HorizontalTimeline({
                 ))}
               </div>
             </div>
+
+            <div className="pointer-events-none absolute inset-y-0 left-0 z-100 w-16 bg-linear-to-r from-white via-white/70 to-transparent sm:w-24 lg:w-32" />
+            <div className="pointer-events-none absolute inset-y-0 right-0 z-100 w-16 bg-linear-to-l from-white via-white/70 to-transparent sm:w-24 lg:w-32" />
           </div>
 
           {/* dots */}
