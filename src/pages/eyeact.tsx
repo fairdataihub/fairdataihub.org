@@ -38,7 +38,7 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
           },
           {
             text: `Visit the Envision Portal`,
-            href: `https://envisionportal.io/`,
+            href: `https://envisionportal.org/`,
             target: `_blank`,
             ariaLabel: `Envision Portal`,
             rel: `noopener`,
@@ -155,6 +155,30 @@ const EyeAct: React.FC<PublicationsItemList> = ({ publications }) => {
             href: `/team/#Dorian-Portillo`,
             external: false,
             image: `/images/people/dorian-head.PNG`,
+          },
+          {
+            name: `Xuebin Dong`,
+            href: `/team/#Xuebin-Dong`,
+            external: false,
+            image: `/images/people/xuebin-head.jpg`,
+          },
+          {
+            name: `James ONeill`,
+            href: `/team/#James-ONeill`,
+            external: false,
+            image: `/images/people/james-head.jpg`,
+          },
+          {
+            name: `Christopher Marroquin`,
+            href: `/team/#Christopher-Marroquin`,
+            external: false,
+            image: `/images/people/aaron-head.jpg`,
+          },
+          {
+            name: `Jacob Clark`,
+            href: `/team/#Jacob-Clark`,
+            external: false,
+            image: `/images/people/jacob-head.jpg`,
           },
         ]}
       />
