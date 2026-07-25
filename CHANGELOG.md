@@ -1,3 +1,10 @@
+## [2.94.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.0...v2.94.1) (2026-07-25)
+
+
+### Bug Fixes
+
+* update cdn fetch functions for gallery ([0ef1e06](https://github.com/fairdataihub/fairdataihub.org/commit/0ef1e06abee28be5a42b1f2848fcd9317f969744))
+
 # [2.94.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.93.1...v2.94.0) (2026-07-10)
 
 
