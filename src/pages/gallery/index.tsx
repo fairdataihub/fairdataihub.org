@@ -1,9 +1,7 @@
-import { imageSize } from 'image-size';
 import type { GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { getPlaiceholder } from 'plaiceholder';
 import { useState } from 'react';
 
 import Modal from '@/components/gallery/Modal';
@@ -11,6 +9,7 @@ import Seo from '@/components/seo/seo';
 
 import GALLERY_JSON from '@/public/gallery/images.json';
 import { groupByYear, toBuckets } from '@/utils/galleryLayout';
+import { safeLqip, safeProbe } from '@/utils/imageFetch';
 import type { ImageProps } from '@/utils/types';
 import { useMediaColumns } from '@/utils/useMediaColumns';
 
@@ -194,44 +193,26 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
         `https://cdn.fairdataihub.org/gallery/${event.folder}/${img.name}`,
       );
 
-      try {
-        const res = await fetch(imageUrl);
+      const [{ width, height }, blurDataUrl] = await Promise.all([
+        safeProbe(imageUrl),
+        safeLqip(imageUrl),
+      ]);
 
-        if (!res.ok) {
-          // skip broken image
-          console.warn(`Failed to fetch image ${imageUrl}: ${res.status}`);
-          return null;
-        }
-
-        const arrayBuffer = await res.arrayBuffer();
-        const buffer = Buffer.from(arrayBuffer);
-
-        const { width, height } = imageSize(new Uint8Array(buffer));
-        const blurDataUrl = (await getPlaiceholder(buffer)).base64;
-
-        return {
-          id: img.id,
-          folder: event.folder,
-          name: img.name,
-          alt: img.alt,
-          description: event.description,
-          date: event.date,
-          width,
-          height,
-          blurDataUrl,
-        };
-      } catch (err) {
-        console.error(`Error fetching image ${imageUrl}`, err);
-        // decide: either skip or fall back
-        return null;
-      }
+      return {
+        id: img.id,
+        folder: event.folder,
+        name: img.name,
+        alt: img.alt,
+        description: event.description,
+        date: event.date,
+        width,
+        height,
+        blurDataUrl,
+      };
     }),
   );
 
-  const rawResults = await Promise.all(imagePromises);
-  const results = rawResults.filter(
-    (img): img is NonNullable<typeof img> => img !== null,
-  );
+  const results = await Promise.all(imagePromises);
 
   const ids = results.map((img) => img.id);
   const duplicateIds = ids.filter((id, index) => ids.indexOf(id) !== index);
