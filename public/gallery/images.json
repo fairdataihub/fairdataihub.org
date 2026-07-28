@@ -992,5 +992,96 @@
       "ncar"
     ],
     "description": "NCAR Open Hackathon"
+  },
+  {
+    "event": "2026 ISMB conference NIH track",
+    "folder": "2026-07-13 - ISMB conference NIH track",
+    "date": "2026-07-13",
+    "images": [
+      {
+        "name": "IMG_16929.jpg",
+        "alt": "2026 ISMB conference NIH track panel discussion",
+        "id": "_UWp6"
+      },
+      {
+        "name": "IMG_0293.jpeg",
+        "alt": "2026 ISMB conference NIH track talk",
+        "id": "a4yFO"
+      }
+    ],
+    "tags": [
+      "ISMB",
+      "NIH-Track"
+    ],
+    "description": "2026 ISMB conference NIH track"
+  },
+  {
+    "event": "2026 ISMB BOSC conference",
+    "folder": "2026-07-14-BOSC-conference",
+    "date": "2026-07-14",
+    "images": [
+      {
+        "name": "5131884902931435177.jpg",
+        "alt": "2026 BOSC conference",
+        "id": "Z1PtJ"
+      },
+      {
+        "name": "eb3f3e05-49a4-4622-97f0-e952c75101c3.jpg",
+        "alt": "2026 BOSC conference",
+        "id": "ffP8W"
+      },
+      {
+        "name": "IMG_8887.jpg",
+        "alt": "2026 BOSC conference",
+        "id": "5DsoN"
+      },
+      {
+        "name": "IMG_8968.jpg",
+        "alt": "2026 BOSC conference",
+        "id": "x62C_"
+      },
+      {
+        "name": "PXL_20260714_142435805.jpg",
+        "alt": "2026 BOSC conference",
+        "id": "Jb_VB"
+      }
+    ],
+    "tags": [
+      "ISMB",
+      "BOSC"
+    ],
+    "description": "2026 BOSC conference (July 14–16)"
+  },
+  {
+    "event": "2026 ISMB BOSC CoFest",
+    "folder": "2026-07-17-CoFest",
+    "date": "2026-07-17",
+    "images": [
+      {
+        "name": "IMG_9928.jpg",
+        "alt": "2026 BOSC CoFest",
+        "id": "Aao6D"
+      },
+      {
+        "name": "PXL_20260717_204815933.jpg",
+        "alt": "2026 BOSC CoFest",
+        "id": "4BpKx"
+      },
+      {
+        "name": "PXL_20260717_161011519.MP.jpg",
+        "alt": "2026 BOSC CoFest",
+        "id": "9Ol8h"
+      },
+      {
+        "name": "PXL_20260717_160958554.jpg",
+        "alt": "2026 BOSC CoFest",
+        "id": "i2UaG"
+      }
+    ],
+    "tags": [
+      "CoFest",
+      "BOSC"
+    ],
+    "description": "2026 BOSC CoFest (July 17-18)"
   }
 ]
