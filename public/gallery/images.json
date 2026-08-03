@@ -1017,7 +1017,7 @@
   },
   {
     "event": "2026 ISMB BOSC conference",
-    "folder": "2026-07-14-BOSC-conference",
+    "folder": "2026-07-14 - BOSC 2026 Conference",
     "date": "2026-07-14",
     "images": [
       {
@@ -1050,11 +1050,11 @@
       "ISMB",
       "BOSC"
     ],
-    "description": "2026 BOSC conference (July 14–16)"
+    "description": "2026 BOSC conference"
   },
   {
     "event": "2026 ISMB BOSC CoFest",
-    "folder": "2026-07-17-CoFest",
+    "folder": "2026-07-17 - BOSC 2026 CoFest",
     "date": "2026-07-17",
     "images": [
       {
@@ -1082,6 +1082,6 @@
       "CoFest",
       "BOSC"
     ],
-    "description": "2026 BOSC CoFest (July 17-18)"
+    "description": "2026 BOSC CoFest"
   }
 ]
