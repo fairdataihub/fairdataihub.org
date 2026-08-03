@@ -2,7 +2,6 @@ import dayjs from 'dayjs';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 
 import { slugifyTag } from '@/lib/utils';
 
@@ -22,11 +21,10 @@ type ListItemProps = {
 };
 
 const cardV = {
-  rest: { y: 0, boxShadow: `0 0 0 rgba(0,0,0,0)` },
-  hover: { y: -3, boxShadow: `0 10px 20px rgba(0,0,0,0.06)` },
+  rest: { y: 0 },
+  hover: { y: 0 },
 };
 const thumbV = { rest: { scale: 1 }, hover: { scale: 1.03 } };
-const titleV = { rest: { y: 0 }, hover: { y: -1 } };
 
 export default function BlogListItem({
   slug,
@@ -40,8 +38,6 @@ export default function BlogListItem({
   category,
   authors,
 }: ListItemProps) {
-  const [authorHovered, setAuthorHovered] = useState(false);
-
   const resolvedAuthors = (authors ?? []).flatMap((id) => {
     const data = authorsData[id as keyof typeof authorsData];
     return data ? [{ id, ...data }] : [];
@@ -54,12 +50,12 @@ export default function BlogListItem({
       animate="rest"
       variants={cardV}
       transition={{ type: `spring`, stiffness: 220, damping: 24 }}
-      className="group relative rounded-2xl border border-slate-200 bg-white p-3 sm:p-4"
+      className="group relative rounded-2xl border border-slate-200 bg-white p-3 transition-shadow hover:shadow-lg sm:p-4"
     >
       <div className="grid grid-cols-[auto_1fr] items-start gap-4 sm:gap-5">
         <Link
           href={`/blog/${slug}`}
-          className="relative col-start-1 row-span-2 aspect-[16/10] w-32 shrink-0 overflow-hidden rounded-xl bg-slate-100 sm:w-44 lg:w-52"
+          className="relative col-start-1 row-span-2 aspect-16/10 w-32 shrink-0 overflow-hidden rounded-xl bg-slate-100 sm:w-44 lg:w-52"
           tabIndex={-1}
           aria-hidden
         >
@@ -82,11 +78,7 @@ export default function BlogListItem({
           <div className="mb-1 flex flex-wrap items-center gap-1.5 text-[11px] text-slate-600">
             {resolvedAuthors.length > 0 && (
               <>
-                <div
-                  className="relative z-10 flex items-center gap-1"
-                  onMouseEnter={() => setAuthorHovered(true)}
-                  onMouseLeave={() => setAuthorHovered(false)}
-                >
+                <div className="relative z-10 flex items-center gap-1">
                   <Link
                     href={`/authors/${resolvedAuthors[0].id}`}
                     className="flex -space-x-1 transition-opacity hover:opacity-80"
@@ -130,18 +122,14 @@ export default function BlogListItem({
             <span>{timeToRead} min read</span>
           </div>
 
-          <motion.h3
-            variants={titleV}
-            transition={{ duration: 0.2 }}
-            className={`line-clamp-2 text-[1.05rem] leading-snug font-semibold text-slate-900 sm:text-lg ${authorHovered ? `` : `group-hover:text-primary group-hover:underline`}`}
+          <h3
+            className={`group-hover:text-primary font-medium text-slate-900 group-hover:underline`}
           >
             {title}
-          </motion.h3>
+          </h3>
 
           {subtitle && (
-            <p className="mt-1 line-clamp-2 text-sm text-slate-700 sm:text-[0.975rem]">
-              {subtitle}
-            </p>
+            <p className="line-clamp-2 text-sm text-slate-700">{subtitle}</p>
           )}
         </div>
 

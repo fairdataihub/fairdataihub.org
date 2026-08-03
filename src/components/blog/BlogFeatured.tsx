@@ -20,8 +20,8 @@ type FeaturedProps = {
 };
 
 const cardV = {
-  rest: { y: 0, boxShadow: `0 0 0 rgba(0,0,0,0)` },
-  hover: { y: -4, boxShadow: `0 10px 24px rgba(0,0,0,0.08)` },
+  rest: { y: 0 },
+  hover: { y: 0 },
 };
 const mediaV = { rest: { scale: 1 }, hover: { scale: 1.02 } };
 const titleV = { rest: { y: 0 }, hover: { y: -1 } };
@@ -51,7 +51,7 @@ export default function BlogFeatured({
       animate="rest"
       variants={cardV}
       transition={{ type: `spring`, stiffness: 220, damping: 24 }}
-      className="group relative mx-auto w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-200 bg-white"
+      className="group relative mx-auto w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-200 bg-white transition-shadow hover:shadow-lg"
       itemScope
       itemType="https://schema.org/BlogPosting"
     >
@@ -59,7 +59,7 @@ export default function BlogFeatured({
         <motion.div
           variants={mediaV}
           transition={{ duration: 0.25 }}
-          className="relative aspect-[16/9] max-h-[420px] w-full overflow-hidden bg-slate-100 md:aspect-[5/2] md:max-h-[440px] lg:aspect-[21/9] lg:max-h-[460px]"
+          className="relative aspect-video max-h-105 w-full overflow-hidden bg-slate-100 md:aspect-5/2 md:max-h-110 lg:aspect-21/9 lg:max-h-115"
         >
           <Image
             src={heroImage}
@@ -138,7 +138,7 @@ export default function BlogFeatured({
         <motion.h2
           variants={titleV}
           transition={{ duration: 0.2 }}
-          className={`text-2xl leading-tight font-bold text-balance text-slate-900 sm:text-3xl md:text-[1.9rem] ${authorHovered ? `` : `group-hover:text-primary group-hover:underline`}`}
+          className={`group-hover:text-primary font-bold text-balance text-slate-900 group-hover:underline sm:text-3xl md:text-[1.9rem]`}
         >
           {title}
         </motion.h2>

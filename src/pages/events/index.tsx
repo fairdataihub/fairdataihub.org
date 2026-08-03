@@ -70,10 +70,10 @@ export default function Events({ eventsList }: EventsProps) {
       />
 
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
+        <div className="absolute top-0 left-1/2 h-180 w-250 -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
 
-      <section className="container mx-auto w-full max-w-screen-xl px-4 pt-8 pb-16 xl:min-w-[1280px]">
+      <section className="container mx-auto w-full max-w-7xl px-4 pt-8 pb-16 xl:min-w-7xl">
         <motion.header
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,10 +86,10 @@ export default function Events({ eventsList }: EventsProps) {
           <p className="font-asap my-2 max-w-2xl text-lg text-stone-700 dark:text-stone-300">
             Join our talks, workshops, and community sessions on FAIR practices.
           </p>
-          <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+          <div className="via-primary/60 h-px w-full bg-linear-to-r from-transparent to-transparent" />
         </motion.header>
 
-        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+        <h2 className="mb-3 text-sm font-semibold text-stone-500">
           Upcoming Events
         </h2>
 
@@ -131,9 +131,9 @@ export default function Events({ eventsList }: EventsProps) {
           </ul>
         )}
 
-        <div className="my-8 h-px w-full bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
+        <div className="my-8 h-px w-full bg-linear-to-r from-transparent via-slate-200 to-transparent" />
 
-        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+        <h2 className="mb-3 text-sm font-semibold text-stone-500">
           Past Events
         </h2>
 
@@ -142,7 +142,7 @@ export default function Events({ eventsList }: EventsProps) {
             No past events yet.
           </p>
         ) : (
-          <div className="mx-auto w-full max-w-5xl">
+          <div className="mx-auto w-full">
             {Object.entries(pastByYear)
               .sort(([a], [b]) => Number(b) - Number(a))
               .map(([year, items]) => (

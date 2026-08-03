@@ -108,7 +108,7 @@ export default function Blog({ blogList }: BlogProps) {
           </div>
         </motion.header>
 
-        <h2 className="mb-4 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+        <h2 className="mb-4 text-sm font-semibold text-stone-500">
           Latest Post
         </h2>
 
@@ -141,7 +141,7 @@ export default function Blog({ blogList }: BlogProps) {
 
         <div className="via-primary/60 l bg-linear-to-r from-transparent to-transparent" />
 
-        <h2 className="mb-3 text-sm font-semibold tracking-wider text-stone-500 uppercase">
+        <h2 className="mb-3 text-sm font-semibold text-stone-500">
           Previous posts
         </h2>
 
