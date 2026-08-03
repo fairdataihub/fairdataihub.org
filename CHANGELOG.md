@@ -1,3 +1,10 @@
+## [2.94.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.1...v2.94.2) (2026-08-03)
+
+
+### Bug Fixes
+
+* reduce motion on hover states ([43dd4f6](https://github.com/fairdataihub/fairdataihub.org/commit/43dd4f6b565bc0add7b6196220b3538ba05ac3c7))
+
 ## [2.94.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.0...v2.94.1) (2026-07-25)
 
 
