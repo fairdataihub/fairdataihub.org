@@ -149,7 +149,7 @@
     "year": 2021
   },
  {
-    "project": ["PostersScience"],
+    "project": ["postersscience"],
     "url": "https://github.com/fairdataihub/posters-science",
     "title": "Posters.science",
     "subtitle": "",
@@ -167,7 +167,7 @@
     "year": 2025
   },
   {
-    "project": ["posterSentry"],
+    "project": ["postersentry"],
     "url": "https://github.com/fairdataihub/poster-sentry",
     "title": "PosterSentry",
     "subtitle": "",
@@ -257,7 +257,7 @@
     "year": 2020
   },
   {
-    "project": ["postersScience"],
+    "project": ["postersscience"],
     "url": "https://doi.org/10.5281/zenodo.21830004",
     "title": "Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters",
     "subtitle": "",
