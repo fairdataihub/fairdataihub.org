@@ -261,16 +261,25 @@
     "url": "https://doi.org/10.5281/zenodo.21830004",
     "title": "Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters",
     "subtitle": "",
-    "citation": "Patel, B., O'Neill, J., Portillo, D., & Soundarajan, S. (2026, July 16). Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters. Bioinformatics Open Source Conference (BOSC), Washington, DC. (1.0.0). Zenodo. https://doi.org/10.5281/zenodo.21830004",
+    "citation": "Patel, B., O'Neill, J., Portillo, D., & Soundarajan, S. (2026, July 16). Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters. Bioinformatics Open Source Conference (BOSC), Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21830004",
+    "type": "Conference Presentations",
+    "year": 2026
+  },
+  {
+    "project": ["postercentry"],
+    "url": "https://doi.org/10.5281/zenodo.21842322",
+    "title": "PosterSentry: a Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories",
+    "subtitle": "",
+    "citation": "O'Neill, J., Sarin, P., Buttrick, A., & Patel, B. (2026, July 16). PosterSentry: a Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories. Bioinformatics Open Source Conference (BOSC), Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21842322",
     "type": "Conference Presentations",
     "year": 2026
   },
   {
     "project": ["dmp-chef"],
-    "url": "https://zenodo.org/records/21841727",
+    "url": "https://doi.org/10.5281/zenodo.21841727",
     "title": "Evaluating the Performance of LLMs in Drafting Data Management Plans",
     "subtitle": "",
-    "citation": "Zeinali, N., Xuebin, D., Hofstein Grady, R., Praetzellis, M., Riley, B., & Patel, B. (2026, July 16). Evaluating the Performance of LLMs in Drafting Data Management Plans. Bioinformatics Open Source Conference (BOSC), Washington, DC. (1.0.0). Zenodo. https://zenodo.org/records/21841727",
+    "citation": "Zeinali, N., Xuebin, D., Hofstein Grady, R., Praetzellis, M., Riley, B., & Patel, B. (2026, July 16). Evaluating the Performance of LLMs in Drafting Data Management Plans. Bioinformatics Open Source Conference (BOSC), Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21841727",
     "type": "Conference Presentations",
     "year": 2026
   },
@@ -279,7 +288,7 @@
     "url": "https://zenodo.org/records/21830106",
     "title": "Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Datasets",
     "subtitle": "",
-    "citation": "Gasimova, A., Soundarajan, S., Gim, N., Shaffer, J., Owen, J., Lee, A., & Patel, B. (2026, July 13). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Datasets. Intelligent Systems for Molecular Biology (ISMB) NIH track, Washington, DC. (1.0.0) Zenodo. https://zenodo.org/records/21830106",
+    "citation": "Gasimova, A., Soundarajan, S., Gim, N., Shaffer, J., Owen, J., Lee, A., & Patel, B. (2026, July 13). Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Datasets. Intelligent Systems for Molecular Biology (ISMB) NIH track, Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21830106",
     "type": "Conference Presentations",
     "year": 2026
   },
@@ -352,7 +361,7 @@
     "url": "https://zenodo.org/records/21462937",
     "title": "Clinical Dataset Structure: A Universal Framework for Structuring Clinical Research Datasets",
     "subtitle": "",
-    "citation": "Gasimova, A., Soundarajan, S., Gim, N., Shaffer, J., Owen, J., Lee, A., & Patel, B. (2026). Clinical Dataset Structure: A Universal Framework for Structuring Clinical Research Datasets (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://zenodo.org/records/21462937",
+    "citation": "Gasimova, A., Soundarajan, S., Gim, N., Shaffer, J., Owen, J., Lee, A., & Patel, B. (2026). Clinical Dataset Structure: A Universal Framework for Structuring Clinical Research Datasets (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21462937",
     "type": "Posters",
     "year": 2026
   },
@@ -361,7 +370,7 @@
     "url": "https://zenodo.org/records/21829859",
     "title": "Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters",
     "subtitle": "",
-    "citation": "Patel, B., O'Neill, J., Portillo, D., & Soundarajan, S. (2026). Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://zenodo.org/records/21829859",
+    "citation": "Patel, B., O'Neill, J., Portillo, D., & Soundarajan, S. (2026). Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21829859",
     "type": "Posters",
     "year": 2026
   },
@@ -370,7 +379,7 @@
     "url": "https://zenodo.org/records/21381896",
     "title": "PosterSentry: A Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories",
     "subtitle": "",
-    "citation": "O'Neill, J., Sarin, P., Buttrick, A., & Patel, B. (2026). PosterSentry: A Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://zenodo.org/records/21381896",
+    "citation": "O'Neill, J., Sarin, P., Buttrick, A., & Patel, B. (2026). PosterSentry: A Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21381896",
     "type": "Posters",
     "year": 2026
   },
@@ -379,7 +388,7 @@
     "url": "https://zenodo.org/records/21830002",
     "title": "Evaluating the Performance of LLMs in Drafting Data Management Plans",
     "subtitle": "",
-    "citation": "Zeinali, N., Dong, X., Grady, R. H., Riley, B., Patel, B., & Praetzellis, M. (2026). Evaluating the Performance of LLMs in Drafting Data Management Plans (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://zenodo.org/records/21830002",
+    "citation": "Zeinali, N., Dong, X., Grady, R. H., Riley, B., Patel, B., & Praetzellis, M. (2026). Evaluating the Performance of LLMs in Drafting Data Management Plans (Poster) (1.0.0). Bioinformatics Open Source Conference 2026 (BOSC), Washington, DC. Zenodo. https://doi.org/10.5281/zenodo.21830002",
     "type": "Posters",
     "year": 2026
   },
@@ -406,7 +415,7 @@
     "url": "https://f1000research.com/posters/14-745",
     "title": "Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) (Poster)",
     "subtitle": "",
-    "citation": " Portillo D, Soundarajan S and Patel B. Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) [version 1; not peer reviewed]. F1000Research 2025, 14:745 (poster) (https://doi.org/10.7490/f1000research.1120251.1)",
+    "citation": " Portillo D, Soundarajan S and Patel B. Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) (Poster) [version 1; not peer reviewed]. F1000Research 2025, 14:745  (https://doi.org/10.7490/f1000research.1120251.1)",
     "type": "Posters",
     "year": 2025
   },
