@@ -39,7 +39,7 @@ When we set out to understand how commonly posters are shared, what we found was
 <figure>
   <img src="/images/blog/posters-science-launch/poster-trash.jpg" alt="Photo of poster in a trash bin" width="30%" />
   <figcaption>
-    Note the type of poster sharing we expect (photo taken at ISMB 2026).
+    Not the type of poster sharing we expect (photo taken at ISMB 2026).
   </figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Looking closely at the metadata of posters shared on Zenodo and Figshare, two of
     <strong style="color: #F6339A; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.9rem;">Want the Full Picture?</strong>
   </div>
   <p style="margin: 0; line-height: 1.6; font-size: 0.95rem;">
-    Read our preprint, <em><a href="https://doi.org/10.48550/arXiv.2604.21150">The State of Scientific Poster Sharing and Reuse</a></em> for more background on poster sharing and the state of poster metadata.
+    Read our preprint, <em><a href="https://doi.org/10.48550/arXiv.2604.21150">The State of Scientific Poster Sharing and Reuse</a></em>, for more background on poster sharing and the state of poster metadata.
   </p>
 </div>
 
@@ -97,7 +97,7 @@ Both indexed and shared posters can be browsed using the [Discover page of Poste
 
 ## 🤝 What's Next
 
-Launch is just a starting point. We are actively working on many aspects to improve the platform:
+Launch is just a starting point. We are actively working on several improvements to the platform:
 
 - **Promotion**: We want people to use the platform and let us know how we can make it better!
 - **Easier sharing**: We are working on more integrations and automation so sharing a poster takes even less effort, with fewer manual steps between "I have a poster" and "it's shared, FAIR, and preserved"
@@ -107,7 +107,7 @@ Launch is just a starting point. We are actively working on many aspects to impr
 
 ## 📣 Share Yours Today
 
-Every poster you have ever presented is a piece of research that existed publicly for a moment and then, for most people, vanished. It doesn't have to. **[Visit Posters.science](https://posters.science/) and share your posters**, past and future, so they can be cited, found, reused, and built on, instead of being forgotten.
+Every poster you have ever presented is a piece of research that existed publicly for a moment and then, for most people, vanished. It doesn't have to. **[Visit Posters.science](https://posters.science/) and share your posters**, past and future, so they can be cited, found, reused, and built upon, instead of being forgotten.
 
 ## 📢 Disclosures
 
