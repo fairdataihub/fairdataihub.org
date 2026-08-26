@@ -1,3 +1,10 @@
+## [2.94.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.3...v2.94.4) (2026-08-26)
+
+
+### Bug Fixes
+
+* posters blog typos 2 ([#782](https://github.com/fairdataihub/fairdataihub.org/issues/782)) ([e85ac01](https://github.com/fairdataihub/fairdataihub.org/commit/e85ac01389e58fbfcbf55eb42cc91d6671684e4d))
+
 ## [2.94.3](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.2...v2.94.3) (2026-08-26)
 
 
