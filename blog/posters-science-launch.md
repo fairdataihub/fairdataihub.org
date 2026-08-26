@@ -103,7 +103,7 @@ Launch is just a starting point. We are actively working on several improvements
 - **Easier sharing**: We are working on more integrations and automation so sharing a poster takes even less effort, with fewer manual steps between "I have a poster" and "it's shared, FAIR, and preserved"
 - **Indexing more posters**: We are expanding coverage across more platforms
 - **Smart search**: We are developing a feature where users will be able to ask scientific questions and get back an answer based on our poster records along with a list of relevant posters.
-
+- **Fixing poster metadata at the source**: We are expanding the performance and use cases of PosterSentry and poster2json in collaboration with [COMET](https://www.cometadata.org/projects), a large scale effort to improve metadata quality. We expect these tools to eventually be used to enhance poster metadata directly at the source in the DataCite registry.
 
 ## 📣 Share Yours Today
 
