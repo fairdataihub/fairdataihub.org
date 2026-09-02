@@ -1,8 +1,8 @@
 ---
-title: 'The Evolution of the SODA UI over the years'
+title: 'The evolution of the SODA UI over the years'
 authors:
   - 'JacobClark'
-date: '2026-09-01'
+date: '2026-09-02'
 category: 'Product'
 heroImage: 'https://images.unsplash.com/photo-1602576666092-bf6447a729fc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
 imageAuthor: 'tirzavandijk'
@@ -44,25 +44,25 @@ tags:
 }
 </style>
 
-SODA's UI has been shaped by six different developers, each bringing their own ideas, design choices, and perspective to the project. Along the way, SODA has undergone several changes to both its core workflows and UI libraries. We'll take a look at how these changes influenced the interface and how the UI evolved alongside the functionality of the application.
+SODA's UI has been worked on by six different developers over the years, each bringing their own ideas and design choices to the project. Along the way, SODA has undergone several changes to its workflows and UI libraries, each influencing how users interact with the application. We'll take a look at how these changes influenced the interface and how the UI evolved alongside the functionality of the application.
 
 **Note:** This post covers SODA's UI evolution from version 5.0.0 (October 8, 2021) through version 19.0.2, the latest release at the time of writing.
 
 # The Home Page
 
-The home page is the first thing users see when they open SODA, so making it immediately clear how to get started with dataset curation is important. Over the course of SODA's development, we experimented with several different layouts and approaches. Ultimately, we settled on a simple interface with two main buttons, each clearly indicating which path a user should take based on their dataset curation needs.
+The home page is the first thing users see when they open SODA, so making it immediately clear how to get started with dataset curation is important. Over the course of SODA's development, we experimented with several different layouts and approaches. Ultimately, we settled on a simple interface with two main buttons, each clearly indicating which path a user should take based on their dataset curation needs. Below, you can see the different iterations of the home page during SODA's development.
 
 <div class="comparison-container">
   <div class="comparison-card">
     <img src="/images/blog/soda-ui-evolution/5.0.0-homepage.png" alt="5.0.0 Home Page" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 5.0.0</p>
-    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">The original SODA home page embraced simplicity, however, lacked pizazz. Version 9 introduced animated GIFs and a SODA hero image to give the page a more engaging feel.</p>
+    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">The original SODA home page embraced simplicity but lacked pizazz. Version 9 introduced animated GIFs and a SODA hero image to give the page a more engaging feel.</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
     <img src="/images/blog/soda-ui-evolution/9.0.0-homepage.png" alt="Home Page Evolution" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
-    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 9 had a more visually engaging layout, but the path to begin curating was unclear. This was addressed in version 19 by simplifying the paths to begin curation.</p>
+    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 9 had a more visually engaging layout, but the path to begin curation was unclear. Version 19 addressed this by simplifying the entry points and making it clearer how users could begin curating their data.</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
@@ -72,9 +72,27 @@ The home page is the first thing users see when they open SODA, so making it imm
   </div>
 </div>
 
+# App Container / Sidebar
+
+The App Container and Sidebar provide important feedback on the user's progress through the curation process while allowing them to navigate between pages. Version 9 used an outdated navigation structure that prevented users from moving freely between steps using the sidebar. Instead, users had to repeatedly click the Next and Back buttons to move between pages. We added a consistent sidebar that is used across all curation tasks, allowing us to reuse components and provide users with a familiar navigation experience throughout the application.
+
+<div class="comparison-container two-wide">
+  <div class="comparison-card">
+    <img src="/images/blog/soda-ui-evolution/9.0.0-container-display.png" alt="9.0.0 Container Display" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
+    <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
+    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">The sidebar provided limited feedback on the user's progress and did not allow users to navigate directly between steps.</p>
+  </div>
+  <div class="arrow-nav">→</div>
+  <div class="comparison-card">
+    <img src="/images/blog/soda-ui-evolution/19.0.2-container-display.png" alt="19.0.2 Container Display" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
+    <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 19.0.2</p>
+    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">The sidebar provides a consistent view of the curation workflow and allows users to navigate directly between completed steps.</p>
+  </div>
+</div>
+
 # The File Explorer
 
-The file explorer is a crucial component of SODA, as it provides visual feedback of data imported into SODA and how it will look once the final standardized dataset is created. The aim was to recreate an interface similar to the ones you see within operating systems, allowing users to interact with their data in a way they are familiar with.
+The file explorer is a crucial component of SODA, as it provides visual feedback of data imported into SODA and how it will look once the final standardized dataset is created. The aim was to recreate an interface similar to the ones you see within operating systems, allowing users to interact with their data in a way they are familiar with. Below, you will see some of the common tasks users undergo during the curation process, and how it evolved.
 
 <p style="font-size: 0.95rem; font-weight: 600; color: #333; text-align: center; margin: 1.5rem 0 1rem 0;">Importing Subject Data</p>
 
@@ -91,7 +109,7 @@ The file explorer is a crucial component of SODA, as it provides visual feedback
   </div>
 </div>
 
-<p style="font-size: 0.95rem; font-weight: 600; color: #333; text-align: center; margin: 1.5rem 0 1rem 0;">Rendered Subject Data</p>
+<p style="font-size: 0.95rem; font-weight: 600; color: #333; text-align: center; margin: 1.5rem 0 1rem 0;">View of the subject data after import</p>
 
 <div class="comparison-container two-wide">
   <div class="comparison-card">
@@ -103,7 +121,7 @@ The file explorer is a crucial component of SODA, as it provides visual feedback
   <div class="comparison-card">
     <img src="/images/blog/soda-ui-evolution/19.0.2-subject-data-populated.png" alt="19.0.2 Subject Data Populated" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 19.0.2</p>
-    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 19.0.2 displays the complete nested folder structure, enabling users to more easily see the structure of their data.</p>
+    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 19.0.2 displays the complete nested folder structure, making it easier for users to view the structure of their data.</p>
   </div>
 </div>
 
@@ -124,7 +142,7 @@ The file explorer is a crucial component of SODA, as it provides visual feedback
 
 # Form Fields
 
-Form fields are essential to the data curation workflow, enabling researchers to input and validate metadata and dataset information. As SODA evolved, the form interface was refined to improve usability, reduce errors, and make the data entry process more intuitive and efficient.
+Form fields are essential to the data curation workflow, enabling researchers to input and validate metadata and dataset information. As SODA evolved, the form interface was refined to improve usability, reduce errors, and make the data entry process more intuitive and efficient. Below, you will see how the subject metadata forms evolved during the development of SODA.
 
 <div class="comparison-container">
   <div class="comparison-card">
@@ -136,8 +154,7 @@ Form fields are essential to the data curation workflow, enabling researchers to
   <div class="comparison-card">
     <img src="/images/blog/soda-ui-evolution/9.0.0-subject-form.png" alt="9.0.0 Subject Form" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
-    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 9.0.0 removed the accordions, making all fields immediately accessible. However, the forms took up more real-estate than necessary, and still looked a little dated.</p>
-
+    <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 9.0.0 removed the accordions, making all fields immediately accessible. However, the forms took up more real estate than necessary, and still looked a little dated.</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
@@ -146,3 +163,7 @@ Form fields are essential to the data curation workflow, enabling researchers to
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 19.0.2 tightened the spacing, improved keyboard accessibility, and introduced a modern UI library for a cleaner, more polished form experience.</p>
   </div>
 </div>
+
+# Looking Back
+
+Looking back at SODA's UI from version 5.0.0 to version 19.0.2, a lot has changed. The interface has become simpler, more consistent, and easier to navigate as we learned what worked for users and what didn't. Throughout SODA's many iterations, our goal has always been to make a fairly complicated data curation process as easy as possible for researchers to work through.
