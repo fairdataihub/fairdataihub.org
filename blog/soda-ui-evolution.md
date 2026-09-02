@@ -10,6 +10,8 @@ imageAuthorLink: 'https://unsplash.com/@tirzavandijk'
 subtitle: "A journey through the evolution of SODA's user interface"
 tags:
   - soda
+  - ui
+  - ux
   - data-management
   - fair-data
 ---
