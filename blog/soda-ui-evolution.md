@@ -18,7 +18,7 @@ tags:
 .comparison-container {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
   align-items: center;
   justify-content: center;
   margin-bottom: 2.5rem;
@@ -39,7 +39,7 @@ tags:
   align-self: center;
   transition: transform 0.3s ease;
   flex-shrink: 0;
-  margin: 0.25rem 0;
+  margin: 0 0;
   transform: rotate(90deg);
 }
 </style>
@@ -54,19 +54,19 @@ The home page is the first thing users see when they open SODA, so making it imm
 
 <div class="comparison-container">
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/5.0.0-homepage.png" alt="5.0.0 Home Page" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/5.0.0-homepage.png" alt="5.0.0 Home Page" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 5.0.0</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">The original SODA home page embraced simplicity, however, lacked pizazz. Version 9 introduced animated GIFs and a SODA hero image to give the page a more engaging feel.</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/9.0.0-homepage.png" alt="Home Page Evolution" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/9.0.0-homepage.png" alt="Home Page Evolution" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 9 had a more visually engaging layout, but the path to begin curating was unclear. This was addressed in version 19 by simplifying the paths to begin curation.</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/19.0.2-homepage.png" alt="Current Home Page" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/19.0.2-homepage.png" alt="Current Home Page" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 19.0.2</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">The current version has a clean, focused design, with two main buttons guiding users to the two primary workflows in SODA.</p>
   </div>
@@ -80,12 +80,12 @@ The file explorer is a crucial component of SODA, as it provides visual feedback
 
 <div class="comparison-container two-wide">
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/9.0.0-subject-data-empty.png" alt="9.0.0 Subject Data Empty" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/9.0.0-subject-data-empty.png" alt="9.0.0 Subject Data Empty" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/19.0.2-subject-data-empty.png" alt="19.0.2 Subject Data Empty" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/19.0.2-subject-data-empty.png" alt="19.0.2 Subject Data Empty" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 19.0.2</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 19.0.2 provides additional context to what data should be imported, as well as a clearer area for importing data into SODA.</p>
   </div>
@@ -95,13 +95,13 @@ The file explorer is a crucial component of SODA, as it provides visual feedback
 
 <div class="comparison-container two-wide">
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/9.0.0-subject-data-populated.png" alt="9.0.0 Subject Data Populated" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/9.0.0-subject-data-populated.png" alt="9.0.0 Subject Data Populated" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">The interface looks good functionally, but users can only see data in the current folder, limiting their ability to see the structure of nested items.</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/19.0.2-subject-data-populated.png" alt="19.0.2 Subject Data Populated" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/19.0.2-subject-data-populated.png" alt="19.0.2 Subject Data Populated" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 19.0.2</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 19.0.2 displays the complete nested folder structure, enabling users to more easily see the structure of their data.</p>
   </div>
@@ -111,12 +111,12 @@ The file explorer is a crucial component of SODA, as it provides visual feedback
 
 <div class="comparison-container two-wide">
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/9.0.0-manifest-preview.png" alt="9.0.0 Manifest Preview" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/9.0.0-manifest-preview.png" alt="9.0.0 Manifest Preview" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/19.0.2-manifest-preview.png" alt="19.0.2 Manifest Preview" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/19.0.2-manifest-preview.png" alt="19.0.2 Manifest Preview" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 19.0.2</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 19.0.2 uses the same file explorer UI throughout the application, creating a more unified feel and consistent interaction with their data.</p>
   </div>
@@ -128,20 +128,20 @@ Form fields are essential to the data curation workflow, enabling researchers to
 
 <div class="comparison-container">
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/5.0.0-subject-form.png" alt="5.0.0 Subject Form" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/5.0.0-subject-form.png" alt="5.0.0 Subject Form" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 5.0.0</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 5.0.0 used an accordion-style form to reduce visual clutter. However, users had to manually expand each section to complete the form, making the workflow less efficient.</p>
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/9.0.0-subject-form.png" alt="9.0.0 Subject Form" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/9.0.0-subject-form.png" alt="9.0.0 Subject Form" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 9.0.0</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 9.0.0 removed the accordions, making all fields immediately accessible. However, the forms took up more real-estate than necessary, and still looked a little dated.</p>
 
   </div>
   <div class="arrow-nav">→</div>
   <div class="comparison-card">
-    <img src="/images/blog/soda-ui-evolution/19.0.2-subject-form.png" alt="19.0.2 Subject Form" style="width: 100%; object-fit: cover; margin-bottom: 0.5rem; border-radius: 4px;" />
+    <img src="/images/blog/soda-ui-evolution/19.0.2-subject-form.png" alt="19.0.2 Subject Form" style="width: 100%; object-fit: cover; margin-top: 0px; margin-bottom: 0.25rem; border-radius: 4px;" />
     <p style="font-size: 1rem; font-weight: bold; color: #333; margin: 0.5rem 0 0.25rem 0; text-align: center;">Version 19.0.2</p>
     <p style="font-size: 0.95rem; color: #666; margin: 0; line-height: 1.4; text-align: left;">Version 19.0.2 tightened the spacing, improved keyboard accessibility, and introduced a modern UI library for a cleaner, more polished form experience.</p>
   </div>
