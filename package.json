@@ -65,7 +65,7 @@
     "plaiceholder": "3.0.0",
     "qss": "3.0.0",
     "react": "19.2.5",
-    "react-day-picker": "9.4.1",
+    "react-day-picker": "8.8.2",
     "react-dom": "19.2.5",
     "react-fast-marquee": "1.6.5",
     "react-hooks-global-state": "2.1.0",
