@@ -1,3 +1,10 @@
+# [2.95.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.4...v2.95.0) (2026-09-09)
+
+
+### Features
+
+* :sparkles: New publication entries ([b73f86a](https://github.com/fairdataihub/fairdataihub.org/commit/b73f86adf20f74cbd662e2d3695af18ef45808bd))
+
 ## [2.94.4](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.3...v2.94.4) (2026-08-26)
 
 
