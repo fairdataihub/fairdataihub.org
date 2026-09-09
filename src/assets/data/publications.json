@@ -148,8 +148,8 @@
     "type": "Preprints",
     "year": 2021
   },
- {
-    "project": ["postersscience"],
+  {
+    "project": ["posters-science"],
     "url": "https://github.com/fairdataihub/posters-science",
     "title": "Posters.science",
     "subtitle": "",
@@ -158,7 +158,7 @@
     "year": 2025
   },
   {
-    "project": ["poster2JSON"],
+    "project": ["poster2json", "posters-science"],
     "url": "https://github.com/fairdataihub/poster2json",
     "title": "poster2JSON",
     "subtitle": "",
@@ -167,7 +167,7 @@
     "year": 2025
   },
   {
-    "project": ["postersentry"],
+    "project": ["poster-sentry", "posters-science"],
     "url": "https://github.com/fairdataihub/poster-sentry",
     "title": "PosterSentry",
     "subtitle": "",
@@ -257,7 +257,7 @@
     "year": 2020
   },
   {
-    "project": ["postersscience"],
+    "project": ["posters-science"],
     "url": "https://doi.org/10.5281/zenodo.21830004",
     "title": "Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters",
     "subtitle": "",
@@ -266,7 +266,7 @@
     "year": 2026
   },
   {
-    "project": ["postercentry"],
+    "project": ["poster-sentry", "posters-science"],
     "url": "https://doi.org/10.5281/zenodo.21842322",
     "title": "PosterSentry: a Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories",
     "subtitle": "",
@@ -366,7 +366,7 @@
     "year": 2026
   },
   {
-    "project": ["posterScience"],
+    "project": ["posters-science"],
     "url": "https://zenodo.org/records/21829859",
     "title": "Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters",
     "subtitle": "",
@@ -375,7 +375,7 @@
     "year": 2026
   },
   {
-    "project": ["posterSentry"],
+    "project": ["poster-sentry", "posters-science"],
     "url": "https://zenodo.org/records/21381896",
     "title": "PosterSentry: A Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories",
     "subtitle": "",
@@ -517,6 +517,24 @@
     "citation": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data. (2021). SPARC. https://sparc.science/news-and-events/community-spotlight/success-stories/sharing-is-caring-making-sparc-data-fair-with-soda",
     "type": "Web Articles",
     "year": 2021
+  },
+  {
+    "project": ["sodaforsparc"],
+    "url": "https://doi.org/10.1186/s42234-026-00213-z",
+    "title": "Accelerating the development of bioelectronic medicine: outcomes and innovations from the NIH SPARC initiative",
+    "subtitle": "",
+    "citation": "Patel, B., Pikov, V., Damaser, M. S., Boline, J., Tappan, S. J., Nickerson, D. P., Ward, M. P., Gunalan, P. K., Neufeld, E., Ludwig, K. A., Grethe, J. S., Wagenaar, J. B., & Martone, M. E. (2026). Accelerating the development of bioelectronic medicine: outcomes and innovations from the NIH SPARC initiative. Bioelectronic Medicine, 12(1), 20. https://doi.org/10.1186/s42234-026-00213-z",
+    "type": "Journal Articles",
+    "year": 2026
+  },
+  {
+    "project": ["posters-science"],
+    "url": "https://doi.org/10.1126/science.zeeol4k",
+    "title": "Conference posters could garner a wider audience, thanks to a new online platform",
+    "subtitle": "",
+    "citation": "Brainard, J. (2026, September 9). Conference posters could garner a wider audience, thanks to a new online platform. Science. https://doi.org/10.1126/science.zeeol4k",
+    "type": "Web Articles",
+    "year": 2026
   },
   {
     "project": ["eyeact"],
