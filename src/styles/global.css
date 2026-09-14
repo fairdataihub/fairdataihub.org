@@ -416,7 +416,7 @@
 *,
 ::before,
 ::after {
-  /* removed to fix borders on bento grid 
+  /* removed to fix borders on bento grid
   border-width: 0;
   border-style: solid;
   */
@@ -471,4 +471,8 @@ div[class*=' tally-block-input'] > div > div {
 .tally-block-text {
   display: flex;
   justify-content: center;
+}
+
+.debug {
+  outline: 2px solid red;
 }

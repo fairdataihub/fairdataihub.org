@@ -1,6 +1,5 @@
 import { Icon } from '@iconify/react';
 import dayjs from 'dayjs';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
@@ -18,13 +17,6 @@ type FeaturedProps = {
   category?: string;
   authors?: string[];
 };
-
-const cardV = {
-  rest: { y: 0 },
-  hover: { y: 0 },
-};
-const mediaV = { rest: { scale: 1 }, hover: { scale: 1.02 } };
-const titleV = { rest: { y: 0 }, hover: { y: -1 } };
 
 export default function BlogFeatured({
   slug,
@@ -45,31 +37,23 @@ export default function BlogFeatured({
   });
 
   return (
-    <motion.article
-      initial="rest"
-      whileHover="hover"
-      animate="rest"
-      variants={cardV}
-      transition={{ type: `spring`, stiffness: 220, damping: 24 }}
-      className="group relative mx-auto w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-200 bg-white transition-shadow hover:shadow-lg"
+    <article
+      className="group relative mx-auto w-full overflow-hidden rounded-2xl border border-slate-200 bg-white"
       itemScope
       itemType="https://schema.org/BlogPosting"
     >
       <Link href={`/blog/${slug}`} className="block" tabIndex={-1} aria-hidden>
-        <motion.div
-          variants={mediaV}
-          transition={{ duration: 0.25 }}
-          className="relative aspect-video max-h-105 w-full overflow-hidden bg-slate-100 md:aspect-5/2 md:max-h-110 lg:aspect-21/9 lg:max-h-115"
-        >
+        <div className="relative aspect-video max-h-105 w-full overflow-hidden bg-slate-100 md:aspect-5/2 md:max-h-110 lg:aspect-21/9 lg:max-h-115">
           <Image
             src={heroImage}
             alt={imageAuthor || title}
             fill
             sizes="(min-width:1280px) 1100px, 100vw"
-            className="object-cover"
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             priority
           />
-        </motion.div>
+          <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/10 via-black/0 to-black/0" />
+        </div>
       </Link>
 
       <div className="p-5 sm:p-6">
@@ -135,31 +119,28 @@ export default function BlogFeatured({
           )}
         </div>
 
-        <motion.h2
-          variants={titleV}
-          transition={{ duration: 0.2 }}
-          className={`group-hover:text-primary font-bold text-balance text-slate-900 group-hover:underline sm:text-3xl md:text-[1.9rem]`}
+        <h2
+          className={`text-2xl leading-tight font-bold text-balance text-slate-900 transition-all group-hover:underline sm:text-3xl ${authorHovered ? `` : `group-hover:text-primary`}`}
         >
           {title}
-        </motion.h2>
+        </h2>
 
         {subtitle && (
-          <p className="mt-2 max-w-3xl text-base text-slate-700 md:text-lg">
+          <p className="mt-2 max-w-3xl text-base text-slate-700 sm:text-lg">
             {subtitle}
           </p>
         )}
 
-        <div className="mt-4">
-          <div
-            className={`text-sm font-medium underline-offset-4 hover:underline ${authorHovered ? `` : `group-hover:text-primary`}`}
-          >
-            <span>Read the full story</span>
-            <Icon
-              icon="solar:arrow-right-broken"
-              className="ml-1 inline-block h-4 w-4"
-            />
-          </div>
-        </div>
+        <span
+          className={`mt-4 inline-flex items-center text-sm font-medium underline-offset-4 group-hover:underline ${authorHovered ? `` : `group-hover:text-primary`}`}
+        >
+          Read the full story
+          <Icon
+            icon="solar:arrow-right-broken"
+            className="ml-1 inline-block h-4 w-4"
+            aria-hidden
+          />
+        </span>
       </div>
 
       <Link
@@ -167,6 +148,6 @@ export default function BlogFeatured({
         className="absolute inset-0"
         aria-label={title}
       />
-    </motion.article>
+    </article>
   );
 }
