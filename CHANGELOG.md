@@ -1,3 +1,10 @@
+# [2.96.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.95.0...v2.96.0) (2026-09-14)
+
+
+### Features
+
+* NASA Workshop event ([#785](https://github.com/fairdataihub/fairdataihub.org/issues/785)) ([ce7effc](https://github.com/fairdataihub/fairdataihub.org/commit/ce7effcd961a11cc988c838e7c6b240db664ef6e))
+
 # [2.95.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.94.4...v2.95.0) (2026-09-09)
 
 
