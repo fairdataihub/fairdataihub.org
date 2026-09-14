@@ -2,7 +2,6 @@
 'use client';
 
 import { Icon } from '@iconify/react';
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -18,9 +17,6 @@ type FeaturedProps = {
   location?: string;
   heroImage?: string;
 };
-
-const cardV = { rest: { y: 0 }, hover: { y: -4 } };
-const titleV = { rest: { y: 0 }, hover: { y: -1 } };
 
 export default function EventFeatured({
   slug,
@@ -38,16 +34,9 @@ export default function EventFeatured({
       className="group block"
       aria-label={`Open event: ${title}`}
     >
-      <motion.article
-        initial="rest"
-        whileHover="hover"
-        animate="rest"
-        variants={cardV}
-        transition={{ type: `spring`, stiffness: 220, damping: 24 }}
-        className="mx-auto w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-200 bg-white"
-      >
+      <article className="mx-auto w-full overflow-hidden rounded-2xl border border-slate-200 bg-white">
         {heroImage ? (
-          <div className="relative aspect-[16/9] w-full overflow-hidden">
+          <div className="relative aspect-video w-full overflow-hidden">
             <Image
               src={heroImage}
               alt=""
@@ -56,7 +45,7 @@ export default function EventFeatured({
               sizes="(max-width: 640px) 100vw, (max-width: 1280px) 80vw, 1200px"
               className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             />
-            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/10 via-black/0 to-black/0" />
+            <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/10 via-black/0 to-black/0" />
           </div>
         ) : (
           <div className="h-24 w-full bg-[radial-gradient(ellipse_at_center,rgba(205,50,159,0.15),transparent_70%)] sm:h-28" />
@@ -85,13 +74,9 @@ export default function EventFeatured({
             </div>
           </div>
 
-          <motion.h2
-            variants={titleV}
-            transition={{ duration: 0.2 }}
-            className="group-hover:text-primary text-2xl leading-tight font-bold text-balance text-slate-900 group-hover:underline sm:text-3xl"
-          >
+          <h2 className="group-hover:text-primary text-2xl leading-tight font-bold text-balance text-slate-900 transition-all group-hover:underline sm:text-3xl">
             {title}
-          </motion.h2>
+          </h2>
 
           {subtitle && (
             <p className="mt-2 max-w-3xl text-base text-slate-700 sm:text-lg">
@@ -109,7 +94,7 @@ export default function EventFeatured({
             />
           </span>
         </div>
-      </motion.article>
+      </article>
     </Link>
   );
 }
