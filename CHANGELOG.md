@@ -1,3 +1,10 @@
+# [2.97.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.96.0...v2.97.0) (2026-09-25)
+
+
+### Features
+
+* Add A Practical Primer on Software Citation in Research to publications ([802cc47](https://github.com/fairdataihub/fairdataihub.org/commit/802cc479c14d54f2934333d11309244dd2c71733))
+
 # [2.96.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.95.0...v2.96.0) (2026-09-14)
 
 
