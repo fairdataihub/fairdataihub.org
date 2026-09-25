@@ -1,5 +1,13 @@
 [
   {
+    "project": [],
+    "title": "A Practical Primer on Software Citation in Research",
+    "url": "https://doi.org/10.48550/arXiv.2609.28622",
+    "citation": "Floor S. Broekgaarden, Phil R. Van-Lane, Sasha Levina, Ahmed Bello, Sandra Gesing, Daniel S. Katz, Bhavesh Patel, Pengyin Shan, Samantha Teplitzky, Simon Thill, Peter K. G. Williams, Andrea Zonca",
+    "type": "Preprints",
+    "year": 2026
+  },
+  {
     "project": ["aireadi"],
     "title": "Navigating open data sharing and privacy in the age of clinical AI research: from reidentification to pseudo-reidentification",
     "url": "https://doi.org/10.1016/j.eclinm.2025.103729",
