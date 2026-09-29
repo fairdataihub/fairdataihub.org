@@ -1083,5 +1083,33 @@
       "BOSC"
     ],
     "description": "2026 BOSC CoFest"
+  },
+  {
+    "event": "2026 NIH S-Index Innovation Event",
+    "folder": "2026-07-21 - NIH S-Index Innovation Event",
+    "date": "2026-07-21",
+    "images": [
+      {
+        "name": "bckdbf.JPG",
+        "alt": "2026 NIH S-Index Innovation Event",
+        "id": "l3tHP"
+      },
+      {
+        "name": "akdndd.JPG",
+        "alt": "2026 NIH S-Index Innovation Event",
+        "id": "nvMeB"
+      },
+      {
+        "name": "slfneif.JPG",
+        "alt": "2026 NIH S-Index Innovation Event",
+        "id": "DBi1D"
+      }
+    ],
+    "tags": [
+      "NIH",
+      "S-Index",
+      "Scholar Data"
+    ],
+    "description": "2026 NIH S-Index Innovation Event"
   }
 ]
