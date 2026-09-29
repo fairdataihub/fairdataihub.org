@@ -202,7 +202,7 @@ export default function Impact() {
     for (const p of filtered) if (byType[p.type]) byType[p.type].push(p);
     for (const t of sortingOrder) {
       byType[t].sort(
-        (a, b) => b.year - a.year || a.title.localeCompare(b.title),
+        (a, b) => b.year - a.year
       );
     }
     return byType as Record<(typeof sortingOrder)[number], Pub[]>;

@@ -1,5 +1,13 @@
 [
   {
+    "project": ["aireadi", "postersscience"],
+    "title": "The State of Scientific Poster Sharing and Reuse",
+    "url": "https://doi.org/10.1038/s41597-026-08389-4",
+    "citation": "Gasimova, A., Mensah-Kane, P., Blake, G. F., Soundarajan, S., O’Neill, J., & Patel, B. (2026). The State of Scientific Poster Sharing and Reuse. Scientific Data. https://doi.org/10.1038/s41597-026-08389-4",
+    "type": "Journal Articles",
+    "year": 2026
+  },
+  {
     "project": [],
     "title": "A Practical Primer on Software Citation in Research",
     "url": "https://doi.org/10.48550/arXiv.2609.28622",
