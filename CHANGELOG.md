@@ -1,3 +1,10 @@
+# [2.99.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.98.0...v2.99.0) (2026-09-29)
+
+
+### Features
+
+* update impact ui ([b335e7d](https://github.com/fairdataihub/fairdataihub.org/commit/b335e7d8b4888570b2e1d3d74372ece2a00d3936))
+
 # [2.98.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.97.0...v2.98.0) (2026-09-29)
 
 
