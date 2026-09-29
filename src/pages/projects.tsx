@@ -37,10 +37,10 @@ export default function ProjectsPage() {
       />
 
       <div aria-hidden className="pointer-events-none fixed inset-0 -z-10">
-        <div className="absolute top-0 left-1/2 h-[720px] w-[1000px] -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
+        <div className="absolute top-0 left-1/2 h-180 w-250 -translate-x-1/2 bg-[radial-gradient(ellipse_at_center,rgba(211,75,171,0.30),rgba(211,75,171,0.12)_40%,transparent_75%)] blur-3xl" />
       </div>
 
-      <section className="container mx-auto max-w-screen-xl px-4 pt-8 pb-16">
+      <section className="container mx-auto max-w-7xl px-4 pt-8 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function ProjectsPage() {
               Open-source tools and platforms that make FAIR a habit.
             </p>
           </div>
-          <div className="via-primary/60 h-px w-full bg-gradient-to-r from-transparent to-transparent" />
+          <div className="via-primary/60 h-px w-full bg-linear-to-r from-transparent to-transparent" />
         </motion.div>
 
         {/* Grid */}

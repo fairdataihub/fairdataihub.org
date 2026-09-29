@@ -1,6 +1,9 @@
 [
   {
-    "project": ["aireadi", "postersscience"],
+    "project": [
+      "aireadi",
+      "posters-science"
+    ],
     "title": "The State of Scientific Poster Sharing and Reuse",
     "url": "https://doi.org/10.1038/s41597-026-08389-4",
     "citation": "Gasimova, A., Mensah-Kane, P., Blake, G. F., Soundarajan, S., O’Neill, J., & Patel, B. (2026). The State of Scientific Poster Sharing and Reuse. Scientific Data. https://doi.org/10.1038/s41597-026-08389-4",
@@ -16,7 +19,9 @@
     "year": 2026
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "title": "Navigating open data sharing and privacy in the age of clinical AI research: from reidentification to pseudo-reidentification",
     "url": "https://doi.org/10.1016/j.eclinm.2025.103729",
     "citation": "Hallaj, S., Heinke, A., Kalaw, F. G. P., Gim, N., Blazes, M., Owen, J., Dysinger, E., Benton, E. S., Cordier, B. A., Evans, N. G., Li-Pook-Than, J., Snyder, M. P., Nebeker, C., Zangwill, L. M., Baxter, S. L., McWeeney, S., Lee, C. S., Lee, A. Y., Patel, B., & AI-READI Consortium. (2026). Navigating open data sharing and privacy in the age of clinical AI research: From reidentification to pseudo-reidentification. eClinicalMedicine, 91, 103729. https://doi.org/10.1016/j.eclinm.2025.103729",
@@ -24,7 +29,9 @@
     "year": 2026
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "title": "Dataset documentation for responsible AI: analysis of suitability and usage for health datasets",
     "url": "https://doi.org/10.1038/s41746-026-02714-2",
     "citation": "Heinke, A., Huang, L., Simpkins, K. U., Kalaw, F. G. P., Karsolia, A., Singh, K., Soundarajan, S., Panny, B., Nebeker, C., Baxter, S. L., Lee, C. S., Lee, A. Y., Patel, B., & AI-READI Consortium. (2026). Dataset documentation for responsible AI: Analysis of suitability and usage for health datasets. npj Digital Medicine. https://doi.org/10.1038/s41746-026-02714-2",
@@ -32,7 +39,9 @@
     "year": 2026
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "title": "AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond",
     "url": "https://doi.org/10.1038/s42255-024-01165-x",
     "citation": "AI-READI Consortium. (2024). AI-READI: rethinking AI data collection, preparation and sharing in diabetes research and beyond. Nature Metabolism. https://doi.org/10.1038/s42255-024-01165-x",
@@ -40,7 +49,9 @@
     "year": 2024
   },
   {
-    "project": ["sodaforsparc"],
+    "project": [
+      "sodaforsparc"
+    ],
     "title": "SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data",
     "url": "https://doi.org/10.21105/joss.06140",
     "citation": "Marroquin, C., Clark, J., Portillo, D., Soundarajan, S., Ngo, T., & Patel, B. (2024). SODA: Software to Support the Curation and Sharing of FAIR Autonomic Nervous System Data. Journal of Open Source Software, 9(100), 6140. https://doi.org/10.21105/joss.06140",
@@ -48,7 +59,10 @@
     "year": 2024
   },
   {
-    "project": ["fairshare", "fairbiors"],
+    "project": [
+      "fairshare",
+      "fairbiors"
+    ],
     "url": "https://doi.org/10.1038/s41597-023-02463-x",
     "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
     "subtitle": "",
@@ -57,7 +71,9 @@
     "year": 2023
   },
   {
-    "project": ["eyeact"],
+    "project": [
+      "eyeact"
+    ],
     "url": "https://doi.org/10.1016/j.exer.2025.110342",
     "title": "Publicly Available Imaging Datasets for Age-related Macular Degeneration: Evaluation according to the Findable, Accessible, Interoperable, Reusable (FAIR) Principles",
     "subtitle": "",
@@ -66,7 +82,9 @@
     "year": 2025
   },
   {
-    "project": ["sparclink"],
+    "project": [
+      "sparclink"
+    ],
     "url": "https://doi.org/10.12688/f1000research.75071.1",
     "title": "SPARClink: an interactive tool to visualize the impact of the SPARC program",
     "subtitle": "",
@@ -75,7 +93,9 @@
     "year": 2022
   },
   {
-    "project": ["aqua"],
+    "project": [
+      "aqua"
+    ],
     "url": "https://doi.org/10.12688/f1000research.73018.1",
     "title": "AQUA: an Advanced QUery Architecture for the SPARC Portal",
     "subtitle": "",
@@ -84,7 +104,9 @@
     "year": 2021
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.48550/arXiv.2604.21150",
     "title": "The State of Scientific Poster Sharing and Reuse",
     "subtitle": "",
@@ -93,7 +115,9 @@
     "year": 2026
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.48550/arXiv.2508.01141",
     "title": "Standards in the Preparation of Biomedical Research Metadata: A Bridge2AI Perspective",
     "subtitle": "",
@@ -102,7 +126,9 @@
     "year": 2025
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.1101/2025.11.18.689064",
     "title": "Dataset Documentation for Responsible AI: Analysis of Suitability and Usage for Health Datasets",
     "subtitle": "",
@@ -111,7 +137,9 @@
     "year": 2025
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.48550/arXiv.2508.01140",
     "title": "Open Data Sharing in Clinical Research and Participants Privacy: Challenges and Opportunities in the Era of Artificial Intelligence",
     "subtitle": "",
@@ -120,7 +148,9 @@
     "year": 2025
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.1101/2024.10.23.619844",
     "title": "AI-readiness for Biomedical Data: Bridge2AI Recommendations",
     "subtitle": "",
@@ -129,7 +159,9 @@
     "year": 2024
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.1101/2024.07.29.24310315",
     "title": "Perspective on Harnessing Large Language Models to Uncover Insights in Diabetes Wearable Data",
     "subtitle": "",
@@ -138,7 +170,9 @@
     "year": 2024
   },
   {
-    "project": ["fairshare"],
+    "project": [
+      "fairshare"
+    ],
     "url": "https://doi.org/10.1101/2022.04.18.488694",
     "title": "Making Biomedical Research Software FAIR: Actionable Step-by-step Guidelines with a User-support Tool",
     "subtitle": "",
@@ -147,7 +181,9 @@
     "year": 2022
   },
   {
-    "project": ["sodaforsparc"],
+    "project": [
+      "sodaforsparc"
+    ],
     "url": "https://doi.org/10.1101/2021.02.10.430563",
     "title": "SPARC Data Structure: Rationale and Design of a FAIR Standard for Biomedical Research Data",
     "subtitle": "",
@@ -156,7 +192,9 @@
     "year": 2021
   },
   {
-    "project": ["knowmore"],
+    "project": [
+      "knowmore"
+    ],
     "url": "https://doi.org/10.1101/2021.08.08.455581",
     "title": "KnowMore: An Automated Knowledge Discovery Tool for the FAIR SPARC Datasets",
     "subtitle": "",
@@ -165,7 +203,9 @@
     "year": 2021
   },
   {
-    "project": ["posters-science"],
+    "project": [
+      "posters-science"
+    ],
     "url": "https://github.com/fairdataihub/posters-science",
     "title": "Posters.science",
     "subtitle": "",
@@ -174,7 +214,10 @@
     "year": 2025
   },
   {
-    "project": ["poster2json", "posters-science"],
+    "project": [
+      "poster2json",
+      "posters-science"
+    ],
     "url": "https://github.com/fairdataihub/poster2json",
     "title": "poster2JSON",
     "subtitle": "",
@@ -183,7 +226,10 @@
     "year": 2025
   },
   {
-    "project": ["poster-sentry", "posters-science"],
+    "project": [
+      "poster-sentry",
+      "posters-science"
+    ],
     "url": "https://github.com/fairdataihub/poster-sentry",
     "title": "PosterSentry",
     "subtitle": "",
@@ -192,7 +238,9 @@
     "year": 2025
   },
   {
-    "project": ["dmp-chef"],
+    "project": [
+      "dmp-chef"
+    ],
     "url": "https://github.com/fairdataihub/dmp-chef",
     "title": "DMP Chef",
     "subtitle": "",
@@ -201,7 +249,9 @@
     "year": 2025
   },
   {
-    "project": ["codefair"],
+    "project": [
+      "codefair"
+    ],
     "url": "https://github.com/fairdataihub/codefair-app",
     "title": "Codefair",
     "subtitle": "",
@@ -210,7 +260,9 @@
     "year": 2024
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://github.com/AI-READI/fairhub-app",
     "title": "FAIRhub Study Management Platform",
     "subtitle": "",
@@ -219,7 +271,9 @@
     "year": 2022
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://github.com/AI-READI/fairhub-portal",
     "title": "FAIRhub Data Portal",
     "subtitle": "",
@@ -228,7 +282,9 @@
     "year": 2022
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://github.com/AI-READI/pyfairdatatools",
     "title": "Pyfairdatatools",
     "subtitle": "",
@@ -237,7 +293,9 @@
     "year": 2022
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://fairhub.io/datasets/1",
     "title": "Flagship Dataset of Type 2 Diabetes from the AI-READI Project",
     "subtitle": "",
@@ -246,7 +304,9 @@
     "year": 2022
   },
   {
-    "project": ["fairshare"],
+    "project": [
+      "fairshare"
+    ],
     "url": "https://github.com/fairdataihub/FAIRshare",
     "title": "FAIRshare",
     "subtitle": "",
@@ -255,7 +315,9 @@
     "year": 2021
   },
   {
-    "project": ["sodaforsparc"],
+    "project": [
+      "sodaforsparc"
+    ],
     "url": "https://github.com/fairdataihub/SODA-for-SPARC",
     "title": "SODA (Software to Organize Data Automatically) for SPARC",
     "subtitle": "",
@@ -264,7 +326,9 @@
     "year": 2019
   },
   {
-    "project": ["sodaforsparc"],
+    "project": [
+      "sodaforsparc"
+    ],
     "url": "https://doi.org/10.1096/fasebj.2020.34.s1.02483",
     "title": "SPARC: SODA, an interactive software for curating SPARC datasets",
     "subtitle": "",
@@ -273,7 +337,9 @@
     "year": 2020
   },
   {
-    "project": ["posters-science"],
+    "project": [
+      "posters-science"
+    ],
     "url": "https://doi.org/10.5281/zenodo.21830004",
     "title": "Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters",
     "subtitle": "",
@@ -282,7 +348,10 @@
     "year": 2026
   },
   {
-    "project": ["poster-sentry", "posters-science"],
+    "project": [
+      "poster-sentry",
+      "posters-science"
+    ],
     "url": "https://doi.org/10.5281/zenodo.21842322",
     "title": "PosterSentry: a Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories",
     "subtitle": "",
@@ -291,7 +360,9 @@
     "year": 2026
   },
   {
-    "project": ["dmp-chef"],
+    "project": [
+      "dmp-chef"
+    ],
     "url": "https://doi.org/10.5281/zenodo.21841727",
     "title": "Evaluating the Performance of LLMs in Drafting Data Management Plans",
     "subtitle": "",
@@ -300,7 +371,9 @@
     "year": 2026
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://zenodo.org/records/21830106",
     "title": "Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Datasets",
     "subtitle": "",
@@ -309,7 +382,9 @@
     "year": 2026
   },
   {
-    "project": ["codefair"],
+    "project": [
+      "codefair"
+    ],
     "url": "https://zenodo.org/records/13948381",
     "title": "Codefair: Your Personal Assistant for Developing FAIR Software (Presentation)",
     "subtitle": "",
@@ -335,9 +410,10 @@
     "type": "Conference Presentations",
     "year": 2025
   },
-
   {
-    "project": ["codefair"],
+    "project": [
+      "codefair"
+    ],
     "url": "https://doi.org/10.5281/zenodo.17268745",
     "title": "Making Research Software Findable, Accessible, Interoperable, Reusable (FAIR) with Codefair",
     "subtitle": "",
@@ -346,7 +422,9 @@
     "year": 2025
   },
   {
-    "project": ["codefair"],
+    "project": [
+      "codefair"
+    ],
     "url": "https://doi.org/10.7490/f1000research.1119824.1",
     "title": "Codefair: Make biomedical research software FAIR without breaking a sweat",
     "subtitle": "Slides presented at Bioinformatics Open Source Conference (BOSC), 2024",
@@ -355,7 +433,9 @@
     "year": 2024
   },
   {
-    "project": ["fairbiors"],
+    "project": [
+      "fairbiors"
+    ],
     "url": "https://doi.org/10.7490/f1000research.1119609.1",
     "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
@@ -364,7 +444,9 @@
     "year": 2023
   },
   {
-    "project": ["fairshare"],
+    "project": [
+      "fairshare"
+    ],
     "url": "https://doi.org/10.7490/f1000research.1119055.1",
     "title": "Making biomedical research software findable, accessible, interoperable, reusable (FAIR) with FAIRshare",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
@@ -373,7 +455,9 @@
     "year": 2022
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://zenodo.org/records/21462937",
     "title": "Clinical Dataset Structure: A Universal Framework for Structuring Clinical Research Datasets",
     "subtitle": "",
@@ -382,7 +466,9 @@
     "year": 2026
   },
   {
-    "project": ["posters-science"],
+    "project": [
+      "posters-science"
+    ],
     "url": "https://zenodo.org/records/21829859",
     "title": "Posters.science: Building Open Infrastructure for FAIR and AI-ready Scientific Posters",
     "subtitle": "",
@@ -391,7 +477,10 @@
     "year": 2026
   },
   {
-    "project": ["poster-sentry", "posters-science"],
+    "project": [
+      "poster-sentry",
+      "posters-science"
+    ],
     "url": "https://zenodo.org/records/21381896",
     "title": "PosterSentry: A Lightweight Multimodal Classifier for Scientific Poster Quality Assurance in Open Repositories",
     "subtitle": "",
@@ -400,7 +489,9 @@
     "year": 2026
   },
   {
-    "project": ["dmp-chef"],
+    "project": [
+      "dmp-chef"
+    ],
     "url": "https://zenodo.org/records/21830002",
     "title": "Evaluating the Performance of LLMs in Drafting Data Management Plans",
     "subtitle": "",
@@ -418,7 +509,9 @@
     "year": 2025
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.5281/zenodo.13984769",
     "title": "Clinical Dataset Structure: A Universal Standard for Structuring Clinical Research Data and Metadata (Poster)",
     "subtitle": "",
@@ -427,7 +520,9 @@
     "year": 2024
   },
   {
-    "project": ["codefair"],
+    "project": [
+      "codefair"
+    ],
     "url": "https://f1000research.com/posters/14-745",
     "title": "Codefair: easily make Biomedical Research Software Findable, Accessible, Interoperable, Reusable (FAIR) (Poster)",
     "subtitle": "",
@@ -436,7 +531,9 @@
     "year": 2025
   },
   {
-    "project": ["codefair"],
+    "project": [
+      "codefair"
+    ],
     "url": "https://doi.org/10.5281/zenodo.13948350",
     "title": "Codefair - Your Personal Assistant for Developing FAIR Software (Poster)",
     "subtitle": "",
@@ -445,7 +542,9 @@
     "year": 2024
   },
   {
-    "project": ["codefair"],
+    "project": [
+      "codefair"
+    ],
     "url": "https://doi.org/10.7490/f1000research.1119823.1",
     "title": "Codefair - Make biomedical research software FAIR without breaking a sweat",
     "subtitle": "Slides presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
@@ -454,7 +553,9 @@
     "year": 2024
   },
   {
-    "project": ["fairbiors"],
+    "project": [
+      "fairbiors"
+    ],
     "url": "https://doi.org/10.7490/f1000research.1119608.1",
     "title": "FAIR-BioRS: Actionable guidelines for making biomedical research software FAIR",
     "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2023 and Bioinformatics Open Source Conference (BOSC) 2023",
@@ -463,7 +564,9 @@
     "year": 2023
   },
   {
-    "project": ["fairshare"],
+    "project": [
+      "fairshare"
+    ],
     "url": "https://doi.org/10.7490/f1000research.1119054.1",
     "title": "Making biomedical research software FAIR with FAIRshare",
     "subtitle": "Poster presented at Intelligent Systems for Molecular Biology (ISMB) 2022 and Bioinformatics Open Source Conference (BOSC) 2022",
@@ -472,7 +575,9 @@
     "year": 2022
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.5281/zenodo.13984710",
     "title": "Introduction to AI-READI, Studying Salutogenesis in T2DM (dkNET Presentation)",
     "subtitle": "",
@@ -481,7 +586,9 @@
     "year": 2024
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.5281/zenodo.13984755",
     "title": "Introduction to AI-READI, Studying Salutogenesis in T2DM (Bridge2AI Lecture Series)",
     "subtitle": "",
@@ -490,7 +597,9 @@
     "year": 2024
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://zenodo.org/records/13328255",
     "title": "AI-READI Code of Conduct",
     "subtitle": "",
@@ -499,7 +608,9 @@
     "year": 2024
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.5281/zenodo.10642459",
     "title": "License terms for reusing the AI-READI dataset",
     "subtitle": "",
@@ -508,7 +619,9 @@
     "year": 2024
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.5281/zenodo.7641684",
     "title": "AI-READI Steering Committee Charter",
     "subtitle": "",
@@ -517,7 +630,9 @@
     "year": 2023
   },
   {
-    "project": ["aireadi"],
+    "project": [
+      "aireadi"
+    ],
     "url": "https://doi.org/10.5281/zenodo.7363102",
     "title": "Software Development Best Practices of the AI-READI Project",
     "subtitle": "",
@@ -526,7 +641,9 @@
     "year": 2022
   },
   {
-    "project": ["sodaforsparc"],
+    "project": [
+      "sodaforsparc"
+    ],
     "url": "https://sparc.science/news-and-events/community-spotlight/success-stories/sharing-is-caring-making-sparc-data-fair-with-soda",
     "title": "Sharing is Caring - Making SPARC data FAIR with SODA",
     "subtitle": "",
@@ -535,7 +652,9 @@
     "year": 2021
   },
   {
-    "project": ["sodaforsparc"],
+    "project": [
+      "sodaforsparc"
+    ],
     "url": "https://doi.org/10.1186/s42234-026-00213-z",
     "title": "Accelerating the development of bioelectronic medicine: outcomes and innovations from the NIH SPARC initiative",
     "subtitle": "",
@@ -544,7 +663,9 @@
     "year": 2026
   },
   {
-    "project": ["posters-science"],
+    "project": [
+      "posters-science"
+    ],
     "url": "https://doi.org/10.1126/science.zeeol4k",
     "title": "Conference posters could garner a wider audience, thanks to a new online platform",
     "subtitle": "",
@@ -553,7 +674,9 @@
     "year": 2026
   },
   {
-    "project": ["eyeact"],
+    "project": [
+      "eyeact"
+    ],
     "url": "https://github.com/EyeACT/envision-portal",
     "title": "Envision Portal",
     "subtitle": "",
@@ -562,7 +685,9 @@
     "year": 2024
   },
   {
-    "project": ["eyeact"],
+    "project": [
+      "eyeact"
+    ],
     "url": "https://zenodo.org/records/18177260",
     "title": "White Paper - Envision Portal",
     "subtitle": "Architecture, philosophy, and design decisions behind the Eye ACT Envision Portal",
