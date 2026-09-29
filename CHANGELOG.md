@@ -1,3 +1,10 @@
+# [2.98.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.97.0...v2.98.0) (2026-09-29)
+
+
+### Features
+
+* add journal article and sort same-year publications by JSON order ([a798b5a](https://github.com/fairdataihub/fairdataihub.org/commit/a798b5ac298be04883eb3a0db74b5f3882fc5f9c))
+
 # [2.97.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.96.0...v2.97.0) (2026-09-25)
 
 
