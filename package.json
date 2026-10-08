@@ -27,6 +27,7 @@
     "semantic-release": "semantic-release",
     "scripts:gallery_id": "tsx scripts/gallery_id.ts",
     "scripts:feeds": "tsx scripts/generate_feeds.ts",
+    "scripts:s3_backup": "tsx scripts/s3_backup.ts",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run --browser chrome --headless \"cypress/e2e/**/*.cy.js\"",
     "reset": "rm -rf node_modules .next && pnpm install"
@@ -96,6 +97,8 @@
     "words-count": "2.0.2"
   },
   "devDependencies": {
+    "@aws-sdk/client-s3": "3.1147.0",
+    "@aws-sdk/lib-storage": "3.1147.0",
     "@fairdataihub/config": "2.2.3",
     "@iconify/react": "6.0.2",
     "@semantic-release/changelog": "6.0.3",
