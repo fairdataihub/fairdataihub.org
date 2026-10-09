@@ -278,6 +278,14 @@ async function main() {
   let done = 0;
   const total = toCopy.length + toDownload.length;
   const failures: string[] = [];
+  const marker = `${SNAPSHOT_PREFIX}${today}.json`;
+
+  // A same-day rerun is about to change a completed snapshot; drop its marker
+  // first so a failure part-way through doesn't leave a mixed snapshot marked complete
+  if (snapshots.complete.includes(today) && (total > 0 || stale.length > 0)) {
+    await deleteKeys(dst, dstBucket, [marker]);
+    snapshots.complete = snapshots.complete.filter((date) => date !== today);
+  }
 
   const transfer = async (key: string, fromPrevious: boolean) => {
     try {
@@ -325,11 +333,11 @@ async function main() {
     );
   }
 
-  if (failures.length === 0) {
+  if (failures.length === 0 && !snapshots.complete.includes(today)) {
     await dst.send(
       new PutObjectCommand({
         Bucket: dstBucket,
-        Key: `${SNAPSHOT_PREFIX}${today}.json`,
+        Key: marker,
         ContentType: `application/json`,
         Body: JSON.stringify(
           {
