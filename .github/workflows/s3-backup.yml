@@ -4,12 +4,6 @@ on:
   schedule:
     # Every day at 08:00 UTC
     - cron: '0 8 * * *'
-  workflow_dispatch:
-    inputs:
-      dry_run:
-        description: 'Show what would be copied and pruned without changing anything'
-        type: boolean
-        default: false
 
 concurrency:
   group: s3-backup
