@@ -6014,8 +6014,8 @@ packages:
     peerDependencies:
       jquery: '>=1.8.0'
 
-  source-map-js@1.2.1:
-    resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
+  source-map-js@1.2.2:
+    resolution: {integrity: sha512-KGj/8Y43x35aZVDtt+J4mK1hoLGHULMYfSkODJNQjNDC3oW1PqPoxMwo0pLUsWM/UEGzON/NxeHywEfNXNP3Vw==}
     engines: {node: '>=0.10.0'}
 
   source-map-support@0.5.21:
@@ -8377,7 +8377,7 @@ snapshots:
       jiti: 2.7.0
       lightningcss: 1.32.0
       magic-string: 0.30.21
-      source-map-js: 1.2.1
+      source-map-js: 1.2.2
       tailwindcss: 4.2.2
 
   '@tailwindcss/oxide-android-arm64@4.2.2':
@@ -11828,7 +11828,7 @@ snapshots:
       '@babel/types': 7.29.8
       flow-enums-runtime: 0.0.6
       invariant: 2.2.4
-      metro-symbolicate: 0.84.4(supports-color@8.1.1)
+      metro-symbolicate: 0.84.4
       nullthrows: 1.1.1
       ob1: 0.84.4
       source-map: 0.5.7
@@ -11836,7 +11836,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  metro-symbolicate@0.84.4(supports-color@8.1.1):
+  metro-symbolicate@0.84.4:
     dependencies:
       flow-enums-runtime: 0.0.6
       invariant: 2.2.4
@@ -11844,8 +11844,6 @@ snapshots:
       nullthrows: 1.1.1
       source-map: 0.5.7
       vlq: 1.0.1
-    transitivePeerDependencies:
-      - supports-color
 
   metro-transform-plugins@0.84.4(supports-color@8.1.1):
     dependencies:
@@ -11909,7 +11907,7 @@ snapshots:
       metro-resolver: 0.84.4
       metro-runtime: 0.84.4
       metro-source-map: 0.84.4(supports-color@8.1.1)
-      metro-symbolicate: 0.84.4(supports-color@8.1.1)
+      metro-symbolicate: 0.84.4
       metro-transform-plugins: 0.84.4(supports-color@8.1.1)
       metro-transform-worker: 0.84.4(supports-color@8.1.1)
       mime-types: 3.0.2
@@ -12592,7 +12590,7 @@ snapshots:
     dependencies:
       nanoid: 3.3.18
       picocolors: 1.1.1
-      source-map-js: 1.2.1
+      source-map-js: 1.2.2
 
   prelude-ls@1.2.1: {}
 
@@ -13390,7 +13388,7 @@ snapshots:
     dependencies:
       jquery: 4.0.0
 
-  source-map-js@1.2.1: {}
+  source-map-js@1.2.2: {}
 
   source-map-support@0.5.21:
     dependencies:
