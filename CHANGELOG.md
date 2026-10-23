@@ -1,3 +1,10 @@
+# [2.100.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.99.0...v2.100.0) (2026-10-23)
+
+
+### Features
+
+* add images ([5000cd6](https://github.com/fairdataihub/fairdataihub.org/commit/5000cd63426ea34af432ac352582eb102e136575))
+
 # [2.99.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.98.0...v2.99.0) (2026-09-29)
 
 
