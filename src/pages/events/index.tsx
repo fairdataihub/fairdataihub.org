@@ -30,25 +30,32 @@ interface EventsProps {
 export default function Events({ eventsList }: EventsProps) {
   const today = dayjs().startOf(`day`);
 
-  const parseStart = (s?: string) => {
+  const parseDate = (s?: string) => {
     if (!s) return null;
     const isDateOnly = /^\d{4}-\d{2}-\d{2}$/.test(s);
     const d = isDateOnly ? dayjs(s, `YYYY-MM-DD`).startOf(`day`) : dayjs(s);
     return d.isValid() ? d : null;
   };
 
-  // Upcoming: start >= today
-  const upcoming = eventsList
-    .map((e) => ({ e, d: parseStart(e.frontMatter.startDateTime) }))
-    .filter(({ d }) => d && d.valueOf() >= today.valueOf())
-    .sort((a, b) => a.d!.valueOf() - b.d!.valueOf())
+  // Fall back to the start date when an event has no valid end date
+  const dated = eventsList
+    .map((e) => {
+      const start = parseDate(e.frontMatter.startDateTime);
+      const end = parseDate(e.frontMatter.endDateTime) ?? start;
+      return { e, start, end };
+    })
+    .filter(({ start, end }) => start && end);
+
+  // Upcoming: ends today or later, so ongoing events stay listed
+  const upcoming = dated
+    .filter(({ end }) => !end!.startOf(`day`).isBefore(today))
+    .sort((a, b) => a.start!.valueOf() - b.start!.valueOf())
     .map(({ e }) => e);
 
-  // Past: start < today
-  const past = eventsList
-    .map((e) => ({ e, d: parseStart(e.frontMatter.startDateTime) }))
-    .filter(({ d }) => d && d.valueOf() < today.valueOf())
-    .sort((a, b) => b.d!.valueOf() - a.d!.valueOf())
+  // Past: ended before today
+  const past = dated
+    .filter(({ end }) => end!.startOf(`day`).isBefore(today))
+    .sort((a, b) => b.start!.valueOf() - a.start!.valueOf())
     .map(({ e }) => e);
 
   const pastByYear = past.reduce<Record<string, EventsList[]>>((acc, ev) => {
@@ -113,7 +120,7 @@ export default function Events({ eventsList }: EventsProps) {
         )}
 
         {upcomingRest.length > 0 && (
-          <ul className="mx-auto w-full max-w-5xl space-y-3">
+          <ul className="pace-y-3 mx-auto w-full">
             {upcomingRest.map(({ slug, frontMatter }) => (
               <EventListItem
                 key={slug}
