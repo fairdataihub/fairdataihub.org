@@ -63,7 +63,8 @@ const DmpBridge: React.FC = () => {
 
       <ProjectInfoSection
         title="Development Approach"
-        description={`DMP Bridge is developed using an open-source approach. This allows for transparency and collaboration with the open source community. The GitHub repository will be linked here as we test and develop the tool.`} sideImageSrc={`/images/github-logo.svg`}
+        description={`DMP Bridge is developed using an open-source approach. This allows for transparency and collaboration with the open source community. The GitHub repository will be linked here as we test and develop the tool.`}
+        sideImageSrc={`/images/github-logo.svg`}
         sideImageUrl={`https://github.com/fairdataihub/dmpbridge`}
         sideImageAlt={`GitHub logo`}
         additionalLinks={[
@@ -86,8 +87,8 @@ const DmpBridge: React.FC = () => {
           },
           {
             name: `Nahid Zeinali`,
-            href: `/team/#Nahid-Zeinali`,
-            external: false,
+            href: `https://www.linkedin.com/in/nahid-zeinali-15440910b/`,
+            external: true,
             image: `/images/people/nahid-head.jpg`,
           },
           {

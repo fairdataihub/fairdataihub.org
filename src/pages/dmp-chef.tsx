@@ -105,8 +105,8 @@ const DmpChef: React.FC = () => {
           },
           {
             name: `Nahid Zeinali`,
-            href: `/team/#Nahid-Zeinali`,
-            external: false,
+            href: `https://www.linkedin.com/in/nahid-zeinali-15440910b/`,
+            external: true,
             image: `/images/people/nahid-head.jpg`,
           },
         ]}

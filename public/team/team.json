@@ -249,50 +249,6 @@
     "startDate": "01/2025"
   },
   {
-    "id": "Nahid-Zeinali",
-    "name": "Nahid Zeinali (she/her)",
-    "title": "AI Research Scientist",
-    "bio": "Nahid Zeinali is an AI Research Scientist from Isfahan, Iran. She specializes in AI, NLP, and deep learning in healthcare and focuses on developing AI-driven healthcare solutions. She enjoys yoga, hiking, tennis, road trips, and Persian poetry in her free time.",
-    "image": "/images/people/nahid-full.jpg",
-    "borderTop": true,
-    "borderBottom": false,
-    "education": [
-      {
-        "degree": "Ph.D. in Informatics",
-        "institution": "University of Iowa",
-        "year": "2025"
-      },
-      {
-        "degree": "M.Sc. in Informatics",
-        "institution": "University of Iowa",
-        "year": "2023"
-      },
-      {
-        "degree": "M.Sc. in Informatics",
-        "institution": "Tarbiat Modares University, Iran",
-        "year": "2016"
-      },
-      {
-        "degree": "B.S. in Software Engineering",
-        "institution": "University of Azad Najafabad Isfahan, Iran",
-        "year": "2010"
-      }
-    ],
-    "twitter": {
-      "show": false,
-      "link": "https://x.com/ZeinaliNahid"
-    },
-    "github": {
-      "show": true,
-      "link": "https://github.com/Nahidzeinali-web"
-    },
-    "linkedin": {
-      "show": true,
-      "link": "https://www.linkedin.com/in/nahid-zeinali-15440910b/"
-    },
-    "startDate": "02/2025"
-  },
-  {
     "id": "James-ONeill",
     "name": "James ONeill (he/they)",
     "title": "AI Research Scientist",
