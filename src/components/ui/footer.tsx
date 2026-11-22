@@ -2,6 +2,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
+import { SnowToggle } from './snowfall';
+
 export default function Footer() {
   const isDev = process.env.NODE_ENV === `development`;
   const isGalleryPage = usePathname().includes(`/gallery/p/`) ?? false;
@@ -268,6 +270,8 @@ export default function Footer() {
             © {new Date().getFullYear()} FAIR Data Innovations Hub. All rights
             reserved.
           </p>
+
+          <SnowToggle />
         </div>
       </div>
     </footer>

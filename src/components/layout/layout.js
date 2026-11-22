@@ -1,5 +1,6 @@
 import Footer from '../ui/footer';
 import NavMenu from '../ui/navbar';
+import Snowfall from '../ui/snowfall';
 
 export default function Layout({ children }) {
   return (
@@ -9,6 +10,8 @@ export default function Layout({ children }) {
       <main className="">{children}</main>
 
       <Footer />
+
+      <Snowfall />
     </>
   );
 }
