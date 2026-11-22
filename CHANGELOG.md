@@ -1,3 +1,10 @@
+## [2.101.2](https://github.com/fairdataihub/fairdataihub.org/compare/v2.101.1...v2.101.2) (2026-11-22)
+
+
+### Bug Fixes
+
+* adjust tailwind classes ([96246c2](https://github.com/fairdataihub/fairdataihub.org/commit/96246c2560ac78cd9cd0a90527f0627725c2c0e3))
+
 ## [2.101.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.101.0...v2.101.1) (2026-11-22)
 
 
