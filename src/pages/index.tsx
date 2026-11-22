@@ -23,7 +23,7 @@ export default function Home() {
 
       <div className="relative">
         <section className="relative isolate mb-10 overflow-visible pt-12 sm:pt-30">
-          <div className="hero relative z-10 container mx-auto max-w-screen-xl items-center justify-center px-2 py-8 md:flex">
+          <div className="hero relative z-10 container mx-auto max-w-7xl items-center justify-center px-2 py-8 md:flex">
             <div className="flex w-full flex-col items-center justify-center p-2">
               <h1 className="header-gradient-background w-full text-center text-4xl font-black sm:text-3xl md:py-3 md:text-4xl lg:w-3/4 lg:text-5xl">
                 Streamlining the creation of <FlipWords words={wordsFlips} />
@@ -48,12 +48,12 @@ export default function Home() {
                   />
                 </div>
 
-                <div className="absolute -top-4 left-1/2 z-10 h-[2px] w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
-                <div className="absolute -top-4 left-1/2 z-10 h-px w-[75%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent md:top-0" />
-                <div className="absolute -top-4 left-1/2 z-10 h-[5px] w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
-                <div className="absolute -top-4 left-1/2 z-10 h-px w-[28%] -translate-x-1/2 bg-gradient-to-r from-transparent via-pink-400 to-transparent md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-0.5 w-[75%] -translate-x-1/2 bg-linear-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-px w-[75%] -translate-x-1/2 bg-linear-to-r from-transparent via-pink-400 to-transparent md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-1.25 w-[28%] -translate-x-1/2 bg-linear-to-r from-transparent via-pink-400 to-transparent blur-sm md:top-0" />
+                <div className="absolute -top-4 left-1/2 z-10 h-px w-[28%] -translate-x-1/2 bg-linear-to-r from-transparent via-pink-400 to-transparent md:top-0" />
 
-                <div className="absolute inset-0 z-10 mt-4 h-full w-full bg-transparent [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)] md:mt-0" />
+                <div className="absolute inset-0 z-10 mt-4 h-full w-full bg-transparent mask-[radial-gradient(350px_200px_at_top,transparent_20%,white)] md:mt-0" />
                 <div className="absolute -inset-6 z-20 flex items-end justify-center px-4 sm:inset-0">
                   <p className="mb-1 w-full max-w-2xl text-center text-xl font-medium text-black sm:text-base md:text-lg lg:text-xl">
                     We develop open source tools, standards, and guidelines that
@@ -73,7 +73,7 @@ export default function Home() {
           aria-hidden="true"
         >
           <div
-            className="relative aspect-square rotate-[30deg] bg-gradient-to-tr from-pink-300 to-purple-500 opacity-30"
+            className="relative aspect-square rotate-30 bg-linear-to-tr from-pink-300 to-purple-500 opacity-30"
             style={{
               clipPath: `polygon(6% 8%, 52% 29%, 93% 51%, 68% 82%, 99% 94%, 32% 57%, 48% 10%, 5% 37%, 69% 52%, 63% 63%, 81% 28%, 56% 64%, 62% 21%, 46% 61%, 79% 65%, 93% 68%, 88% 75%)`,
             }}
@@ -88,7 +88,7 @@ export default function Home() {
       </section>
 
       <section className="relative pb-10">
-        <div className="container mx-auto max-w-screen-xl border-t border-pink-300/50 px-6">
+        <div className="container mx-auto max-w-7xl border-t border-pink-300/50 px-6">
           <div className="flex flex-col-reverse items-center justify-center md:flex-row">
             <div className="h-full w-full p-2 lg:max-w-2xl">
               <h2 className="text-left text-4xl font-extrabold text-stone-900 sm:text-4xl">
@@ -122,7 +122,7 @@ export default function Home() {
 
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-100 rounded-lg"
                 src="/images/home/puzzle-collab-2.png"
                 alt="office content 1"
               />
@@ -132,11 +132,11 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6">
+        <div className="container mx-auto max-w-7xl px-6">
           <div className="items-center justify-center md:flex">
             <div className="mt-6 flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-100 rounded-lg"
                 src="/images/home/fairdataihub-tools.png"
                 alt="office content 1"
               />
@@ -165,7 +165,7 @@ export default function Home() {
           aria-hidden="true"
         >
           <div
-            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-100 opacity-50"
+            className="relative aspect-square rotate-45 bg-linear-to-tr from-pink-200 to-purple-100 opacity-50"
             style={{
               clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
             }}
@@ -174,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-6">
+        <div className="container mx-auto max-w-7xl px-6">
           <div className="flex w-full flex-col items-center justify-center">
             <h2 className="mb-6 text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
               Simple guidelines and open-source tools for the win!
@@ -210,11 +210,11 @@ export default function Home() {
       <SimpleGuidelines />
 
       <section className="relative hidden w-full py-20">
-        <div className="mx-auto w-full max-w-screen-xl">
+        <div className="mx-auto w-full max-w-7xl">
           <h2 className="mb-10 w-full text-center text-4xl font-extrabold text-stone-900 sm:text-4xl">
             Our solutions are making a difference worldwide
           </h2>
-          <div className="mx-auto flex max-w-screen-md items-center justify-center">
+          <div className="mx-auto flex max-w-3xl items-center justify-center">
             <div className="font-asap pt-8">
               <p className="mb-4 max-w-md text-center text-xl md:text-left">
                 Our solution are helping researchers all over the world with
@@ -223,7 +223,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="relative mx-auto h-[350px] w-[350px]">
+            <div className="relative mx-auto h-87.5 w-87.5">
               <Cobe className={{}} />
             </div>
           </div>
@@ -231,11 +231,11 @@ export default function Home() {
       </section>
 
       <section className="relative py-10">
-        <div className="container mx-auto max-w-screen-xl px-4">
+        <div className="container mx-auto max-w-7xl px-4">
           <div className="items-center justify-center md:flex">
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-100 rounded-lg"
                 src="/images/home/3d-team.png"
                 alt="office content 1"
               />
@@ -275,7 +275,7 @@ export default function Home() {
           aria-hidden="true"
         >
           <div
-            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-300 opacity-50"
+            className="relative aspect-square rotate-45 bg-linear-to-tr from-pink-200 to-purple-300 opacity-50"
             style={{
               clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
             }}
@@ -286,11 +286,11 @@ export default function Home() {
       <ImpactSection />
 
       <section className="relative pb-10">
-        <div className="container mx-auto max-w-screen-xl px-4">
+        <div className="container mx-auto max-w-7xl px-4">
           <div className="items-center justify-center md:flex">
             <div className="flex w-full items-center justify-center p-8 lg:mt-0 lg:w-1/2">
               <img
-                className="w-[400px] rounded-lg"
+                className="w-100 rounded-lg"
                 src="/images/home/3d-contact.png"
                 alt="office content 1"
               />
@@ -327,7 +327,7 @@ export default function Home() {
           aria-hidden="true"
         >
           <div
-            className="relative aspect-square rotate-[45deg] bg-gradient-to-tr from-pink-200 to-purple-300 opacity-50"
+            className="relative aspect-square rotate-45 bg-linear-to-tr from-pink-200 to-purple-300 opacity-50"
             style={{
               clipPath: `polygon(10% 15%, 60% 35%, 85% 55%, 70% 90%, 95% 98%, 35% 60%, 55% 15%, 10% 40%, 75% 55%, 70% 70%, 85% 35%, 60% 70%, 65% 25%, 50% 65%, 85% 70%, 95% 72%, 90% 80%)`,
             }}

@@ -1,8 +1,6 @@
 import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 
-import { LinkPreview } from '@/components/ui/link-preview';
-
 export default function Collaborators() {
   const logoImages = [
     {
@@ -125,15 +123,15 @@ export default function Collaborators() {
               key={index}
               className="mx-2 flex h-full w-full items-center justify-center"
             >
-              <LinkPreview url={logo.href}>
+              <a href={logo.href} target="_blank" rel="noopener noreferrer">
                 <Image
-                  className="!px-4 transition-all duration-100 hover:grayscale-0 sm:grayscale"
+                  className="px-4! transition-all duration-100 hover:grayscale-0 sm:grayscale"
                   src={logo.src}
                   alt={logo.alt}
                   width={logo.width}
                   height={logo.height}
                 />
-              </LinkPreview>
+              </a>
             </div>
           ))}
         </Marquee>
