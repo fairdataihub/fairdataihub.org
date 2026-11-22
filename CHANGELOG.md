@@ -1,3 +1,10 @@
+# [2.101.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.100.0...v2.101.0) (2026-11-22)
+
+
+### Features
+
+* add holiday effects :) ([ced6d73](https://github.com/fairdataihub/fairdataihub.org/commit/ced6d736c95b95e74baf3b2c48341dfbf05a1ba0))
+
 # [2.100.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.99.0...v2.100.0) (2026-10-23)
 
 
