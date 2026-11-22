@@ -9,8 +9,6 @@ const SEASON_START = new Date(2026, 10, 27);
 const SEASON_END = new Date(2027, 0, 2);
 
 function isSnowSeason() {
-  if (process.env.NODE_ENV === 'development') return true;
-
   const now = new Date();
   return now >= SEASON_START && now < SEASON_END;
 }
