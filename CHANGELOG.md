@@ -1,3 +1,10 @@
+## [2.101.1](https://github.com/fairdataihub/fairdataihub.org/compare/v2.101.0...v2.101.1) (2026-11-22)
+
+
+### Bug Fixes
+
+* remove dev toggle ([ff97d39](https://github.com/fairdataihub/fairdataihub.org/commit/ff97d398509faac93da304770ad0fa30b45a3213))
+
 # [2.101.0](https://github.com/fairdataihub/fairdataihub.org/compare/v2.100.0...v2.101.0) (2026-11-22)
 
 
